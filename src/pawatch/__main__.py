@@ -5,7 +5,7 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 
 from . import CONFIG, DATA, DIGESTS_MD
 from .collect import collect, norm_title
@@ -55,6 +55,7 @@ def cmd_run(args):
     digest = {
         "date": today.isoformat(),
         "model": llm.used_model,
+        "period": {"from": (today - timedelta(days=cfg["lookback_days"])).isoformat(), "to": today.isoformat()},
         "stats": {"candidates": len(cands), "triaged": len(scores),
                   "selected": len(result["items"]), "tokens": llm.usage},
         **result,

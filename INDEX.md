@@ -32,6 +32,6 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/digests/
 
 - 2026-11-16 · [Perfis de atitude de carreira no pós-inflection](https://doi.org/10.1037/apl0001441) · 8/10
 
-## 🔥 Tendência do dia (1)
+## 🔥 Tendências (1)
 
 - **2026-11-16** — A prática de people analytics está migrando de métricas de acesso e frequência para medidas de **uso real, qualidade de interação e risco psicossocial**: telemetria de dispositivos, qualidade de 1:1, miragem de segurança psicológica e viés algorítmico mostram que o indicador fácil engana. Ao mesmo tempo, automação e gestão algorítmica pressionam renda, bem-estar e voz, mas os efeitos dependem de políticas de proteção, previsibilidade e intervenções de liderança. A agenda acionável é combinar instrumentos psicometricamente defensáveis, transparência sobre controle e desenho de condições que reduzam risco interpessoal e desigualdade.

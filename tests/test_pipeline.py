@@ -78,7 +78,13 @@ class RenderTests(unittest.TestCase):
         self.assertIn("🎯 Recrutamento & seleção", out)
         self.assertIn("**[T](https://u)** — AMJ · **9/10** · ⭐ Prasanna Tambe", out)
         self.assertIn("**Menções rápidas**: [Q](https://q) (n)", out)
-        self.assertIn("**🔥 Tendência do dia**: tendência", out)
+        self.assertIn("**🔥 Tendência**: tendência", out)
+        self.assertIn("digest de 16/11/2026**", out)
+
+    def test_markdown_shows_period(self):
+        d = {"date": "2026-11-16", "period": {"from": "2026-11-09", "to": "2026-11-16"},
+             "stats": {"candidates": 3}, "items": [], "quick": []}
+        self.assertIn("digest de 09/11 a 16/11/2026**", digest_markdown(d))
 
     def test_markdown_empty_day(self):
         d = {"date": "2026-11-16", "stats": {"candidates": 3}, "items": [], "quick": []}

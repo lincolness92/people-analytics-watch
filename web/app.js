@@ -16,6 +16,16 @@
     new Date(iso + "T12:00:00").toLocaleDateString("pt-BR", opts);
   const scoreClass = (s) => (s >= 8 ? "hi" : s >= 6 ? "mid" : "lo");
   const themeLabel = (k) => (DATA.themes[k] || k);
+  // "9 a 16 de novembro de 2026" (or "28 de outubro a 3 de novembro de 2026") when the digest covers a period.
+  const fmtPeriod = (d, short = false) => {
+    if (!d.period) return fmtDate(d.date, short ? { day: "2-digit", month: "short", year: "numeric" } : undefined);
+    const a = new Date(d.period.from + "T12:00:00"), b = new Date(d.period.to + "T12:00:00");
+    const m = short ? "short" : "long";
+    const left = a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear()
+      ? a.toLocaleDateString("pt-BR", { day: "numeric" })
+      : a.toLocaleDateString("pt-BR", { day: "numeric", month: m });
+    return `${left} a ${b.toLocaleDateString("pt-BR", { day: "numeric", month: m, year: "numeric" })}`;
+  };
   const authorsShort = (a) => (!a || !a.length ? "" : a.length > 3 ? `${a.slice(0, 3).join(", ")} et al.` : a.join(", "));
 
   function card(it, { showDate = false } = {}) {
@@ -54,15 +64,15 @@
     const idx = Math.max(0, date ? ds.findIndex((d) => d.date === date) : 0);
     const d = ds[idx];
     const newer = ds[idx - 1], older = ds[idx + 1];
-    const options = ds.map((x) => `<option value="${x.date}"${x.date === d.date ? " selected" : ""}>${esc(fmtDate(x.date, { day: "2-digit", month: "short", year: "numeric" }))}</option>`).join("");
+    const options = ds.map((x) => `<option value="${x.date}"${x.date === d.date ? " selected" : ""}>${esc(fmtPeriod(x, true))}</option>`).join("");
 
     let html = `
       <div class="day-nav">
-        <button data-go="${older ? older.date : ""}" ${older ? "" : "disabled"} aria-label="Dia anterior">← anterior</button>
-        <select id="day-select" aria-label="Escolher dia">${options}</select>
-        <button data-go="${newer ? newer.date : ""}" ${newer ? "" : "disabled"} aria-label="Próximo dia">próximo →</button>
+        <button data-go="${older ? older.date : ""}" ${older ? "" : "disabled"} aria-label="Digest anterior">← anterior</button>
+        <select id="day-select" aria-label="Escolher digest">${options}</select>
+        <button data-go="${newer ? newer.date : ""}" ${newer ? "" : "disabled"} aria-label="Próximo digest">próximo →</button>
       </div>
-      <h1 class="day">${esc(fmtDate(d.date))}</h1>
+      <h1 class="day">${esc(fmtPeriod(d))}</h1>
       ${d.headline ? `<p class="dek">${md(d.headline.charAt(0).toUpperCase() + d.headline.slice(1))}</p>` : ""}
       <div class="stats">
         <span><b>${d.stats.candidates}</b> candidatos novos</span>
@@ -70,8 +80,8 @@
         <span><b>${d.items.length}</b> selecionados</span>
         ${d.model ? `<span>modelo: ${esc(d.model.split("/").pop())}</span>` : ""}
       </div>`;
-    if (d.trend) html += `<div class="trend"><span class="label">🔥 Tendência do dia</span>${md(d.trend)}</div>`;
-    if (!d.items.length) html += `<div class="empty">Nada acima da barra neste dia.</div>`;
+    if (d.trend) html += `<div class="trend"><span class="label">🔥 Tendência do período</span>${md(d.trend)}</div>`;
+    if (!d.items.length) html += `<div class="empty">Nada acima da barra neste período.</div>`;
 
     for (const key of Object.keys(DATA.themes)) {
       const group = d.items.filter((it) => it.theme === key);
@@ -102,7 +112,7 @@
       `<button class="chip" data-theme="${k}" aria-pressed="${state.themes.has(k)}">${esc(v)}</button>`).join("");
     app.innerHTML = `
       <h1 class="day">Arquivo</h1>
-      <p class="dek">Todos os papers selecionados, de todos os dias.</p>
+      <p class="dek">Todos os papers selecionados, de todos os digests.</p>
       <div class="filters">
         <input class="search" id="q" type="search" placeholder="Buscar por título, autor, venue, resumo…" value="${esc(state.q)}">
         <div class="chips">${chips}</div>
@@ -147,10 +157,10 @@
     const ds = DATA.digests.filter((d) => d.trend);
     app.innerHTML = `
       <h1 class="day">Tendências</h1>
-      <p class="dek">A síntese de cada dia, em ordem cronológica reversa.</p>
+      <p class="dek">A síntese de cada digest, em ordem cronológica reversa.</p>
       ${ds.length ? `<div class="timeline">${ds.map((d) => `
         <div class="tl-item">
-          <a class="d" href="#/d/${d.date}">${esc(fmtDate(d.date))}</a>
+          <a class="d" href="#/d/${d.date}">${esc(fmtPeriod(d))}</a>
           <p>${md(d.trend)}</p>
         </div>`).join("")}</div>` : `<div class="empty">Sem tendências ainda.</div>`}`;
   }

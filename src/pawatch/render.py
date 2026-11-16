@@ -26,9 +26,11 @@ def _meta(it):
 
 def digest_markdown(d):
     day = date.fromisoformat(d["date"]).strftime("%d/%m/%Y")
+    if d.get("period"):
+        day = f"{date.fromisoformat(d['period']['from']).strftime('%d/%m')} a {day}"
     head = f"**📡 PEOPLE-ANALYTICS-WATCH — digest de {day}** · {d['stats']['candidates']} candidatos novos"
     if not d["items"]:
-        return f"# PEOPLE-ANALYTICS-WATCH {d['date']}\n\n{head}, nada acima da barra hoje.\n"
+        return f"# PEOPLE-ANALYTICS-WATCH {d['date']}\n\n{head}, nada acima da barra no período.\n"
     head += f", {len(d['items'])} selecionados"
     if d.get("headline"):
         head += f" ({d['headline']})"
@@ -47,7 +49,7 @@ def digest_markdown(d):
                        for x in d["quick"])
         lines += [f"**Menções rápidas**: {q}", ""]
     if d.get("trend"):
-        lines += [f"**🔥 Tendência do dia**: {d['trend']}", ""]
+        lines += [f"**🔥 Tendência**: {d['trend']}", ""]
     lines.append(f"<sub>modelo: {d.get('model', '?')}</sub>")
     return "\n".join(lines) + "\n"
 
@@ -69,7 +71,7 @@ def write_markdown(digests):
     for key, label in THEMES.items():
         if themes[key]:
             lines += [f"## {label} ({len(themes[key])})", ""] + themes[key] + [""]
-    lines += [f"## 🔥 Tendência do dia ({len(trends)})", ""] + trends + [""]
+    lines += [f"## 🔥 Tendências ({len(trends)})", ""] + trends + [""]
     (ROOT / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
 
 

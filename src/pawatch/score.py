@@ -23,7 +23,7 @@ Sinais de qualidade: `watch` (autor da watchlist de elite) e `jr` (journal de el
 Atribua um tema `t` entre: """ + ", ".join(f"{k} ({v.split(' ', 1)[1]})" for k, v in THEMES.items()) + """.
 Responda APENAS com JSON: {"r": [{"i": <id>, "s": <nota int>, "t": "<tema>"}, ...]} cobrindo todos os ids."""
 
-WRITE_RULES = """Escreva o digest do dia. Para cada paper selecionado devolva:
+WRITE_RULES = """Escreva o digest do período (papers publicados nos últimos dias). Para cada paper selecionado devolva:
 - "i": id
 - "title": título curto e fiel (pode manter em inglês; encurte subtítulos longos)
 - "summary": 2–3 frases em PT-BR, densas e concretas: o que fizeram (desenho, N, contexto), o achado principal com números quando houver, e a lição prática para quem faz people analytics/RH. Tom direto, sem jargão vazio, sem "este estudo". Pode usar **negrito** em 1 termo-chave e *itálico* pontual.
@@ -31,8 +31,8 @@ WRITE_RULES = """Escreva o digest do dia. Para cada paper selecionado devolva:
 - "theme": tema (mesmas chaves)
 Para cada menção rápida devolva {"i", "title" (curto), "note" (1 frase PT-BR, até ~25 palavras)}.
 Também devolva:
-- "headline": meia frase sobre o dia (ex.: "dia forte em IA no recrutamento")
-- "trend": parágrafo de 2–4 frases em PT-BR com a tendência do dia, conectando os papers (o que está mudando na prática de gestão de pessoas).
+- "headline": meia frase sobre o período (ex.: "semana forte em IA no recrutamento")
+- "trend": parágrafo de 2–4 frases em PT-BR com a tendência do período, conectando os papers (o que está mudando na prática de gestão de pessoas).
 Responda APENAS com JSON: {"headline": "...", "items": [...], "quick": [...], "trend": "..."}."""
 
 

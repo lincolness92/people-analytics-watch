@@ -1,6 +1,10 @@
 {
  "date": "2026-11-16",
  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "period": {
+  "from": "2026-11-09",
+  "to": "2026-11-16"
+ },
  "stats": {
   "candidates": 412,
   "triaged": 220,
@@ -10,7 +14,7 @@
    "completion_tokens": 37879
   }
  },
- "headline": "dia forte em mensuração, segurança psicológica e efeitos da automação no trabalho",
+ "headline": "semana forte em mensuração, segurança psicológica e efeitos da automação no trabalho",
  "trend": "A prática de people analytics está migrando de métricas de acesso e frequência para medidas de **uso real, qualidade de interação e risco psicossocial**: telemetria de dispositivos, qualidade de 1:1, miragem de segurança psicológica e viés algorítmico mostram que o indicador fácil engana. Ao mesmo tempo, automação e gestão algorítmica pressionam renda, bem-estar e voz, mas os efeitos dependem de políticas de proteção, previsibilidade e intervenções de liderança. A agenda acionável é combinar instrumentos psicometricamente defensáveis, transparência sobre controle e desenho de condições que reduzam risco interpessoal e desigualdade.",
  "items": [
   {
