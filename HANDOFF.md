@@ -7,14 +7,14 @@
 - Repo privado criado, e o workflow de render passou no push.
 
 ## Pendente (faça nesta ordem)
-1. **`HF_TOKEN`**: cadastrar como secret do repo, de preferência um token fine-grained só com "Make calls to Inference Providers": `gh secret set HF_TOKEN`. Sem ele, o cron diário (11:30 UTC) falha.
+1. ✅ **`HF_TOKEN`** (feito em 16/11, token "Codex" do `~/.hermes/.env`; 1ª execução manual ok): cadastrar como secret do repo, de preferência um token fine-grained só com "Make calls to Inference Providers": `gh secret set HF_TOKEN`. Sem ele, o cron diário (11:30 UTC) falha.
 2. **`OPENALEX_API_KEY`**: chave grátis em https://openalex.org/settings/api, depois `gh secret set OPENALEX_API_KEY`. Recomendado: sem chave, o orçamento é compartilhado por IP.
-3. **Cloudflare Pages**:
+3. **Cloudflare Pages** (o token salvo em `~/.config/raio-x/cloudflare.env` está inválido; gerar um novo):
    - `npx wrangler login`
    - `npx wrangler pages project create people-analytics-watch --production-branch main`
    - Secrets `CLOUDFLARE_API_TOKEN` (permissão Pages: Edit) e `CLOUDFLARE_ACCOUNT_ID`.
    - Depois, Cloudflare Access (Zero Trust → Applications → Self-hosted) em `people-analytics-watch.pages.dev`, liberando só o seu e-mail.
-4. Rodar o workflow à mão: `gh workflow run "daily digest"` e conferir o deploy.
+4. ✅ Workflow rodado à mão em 16/11 (509 candidatos, 12 selecionados). Falta conferir o deploy depois do passo 3. Rodar o workflow à mão: `gh workflow run "daily digest"` e conferir o deploy.
 5. (Opcional) Secret `DISCORD_WEBHOOK_URL` para receber o digest no Discord, como no sota-watch.
 
 ## Observações
