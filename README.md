@@ -10,6 +10,7 @@ Actions (sem servidor) e publica um site estático no Cloudflare Pages.
 08:30 BRT  GitHub Actions (.github/workflows/daily.yml)
   ├─ coleta    OpenAlex: 16 buscas temáticas + autores da watchlist + journals de elite
   │            arXiv: econ.GN / cs.CY / cs.HC / cs.SI com termos de trabalho/RH
+  │            fontes web dos centros e praticantes (RSS, páginas de listagem, sitemap)
   ├─ dedupe    por DOI/título contra data/seen.json
   ├─ triagem   LLM de pesos abertos (HF Inference Providers) dá nota 0–10 + tema
   ├─ redação   LLM escreve resumo PT-BR dos selecionados, menções rápidas e tendência do dia
@@ -29,10 +30,12 @@ equidade · 📚 Aprendizagem & skills · ⚖️ Ética, governança & regulaç�
 |---|---|
 | `config/queries.json` | buscas do OpenAlex/arXiv, janela (`lookback_days`), limites de seleção |
 | `config/watchlist.json` | pesquisadores, journals, centros e praticantes de referência (com IDs OpenAlex) |
+| `config/sources.json` | feeds e páginas dos centros e praticantes (e quais ainda não têm fonte viável) |
 | `src/pawatch/` | pipeline (stdlib pura, sem dependências): `collect`, `score`, `llm`, `render` |
 | `web/` | site estático (HTML/CSS/JS), lê `data.json` |
 | `data/digests/*.json` | fonte da verdade de cada dia (estruturado) |
 | `data/seen.json` | papers já avaliados (não voltam) |
+| `data/web_state.json` | links já vistos nas páginas/sitemaps das fontes web |
 | `digests/*.md`, `INDEX.md` | gerados a partir dos JSON |
 | `dist/` | build do site (não versionado) |
 
@@ -44,6 +47,7 @@ python -m pawatch run                 # digest de hoje (usa HF_TOKEN ou ~/.cache
 python -m pawatch run --date 2026-11-16 --lookback 30 --force
 python -m pawatch render              # regera markdown, INDEX.md e dist/
 python -m pawatch notify              # envia o digest de hoje ao Discord
+python -m pawatch bundle [--theme bb] # HTML autocontido do site em share/ (bb = identidade BB)
 python -m unittest discover -s tests  # testes
 python3 -m http.server -d dist 8000   # ver o site local em http://localhost:8000
 ```
@@ -77,4 +81,7 @@ Custo típico por dia: ~20 chamadas OpenAlex (≈ US$ 0,02 da cota grátis) e ~6
 - **Barra de qualidade**: `selection.min_score` / `max_selected`.
 - **Watchlist**: edite `config/watchlist.json`. Autores com `openalex_id` têm os papers novos puxados
   diretamente e ganham bônus na triagem e ⭐ no site.
+- **Centros e praticantes**: as fontes ficam em `config/sources.json` (`rss`, `page` ou `sitemap`).
+  Itens delas ganham bônus no pré-filtro e 📌 no site. Para `page`/`sitemap`, a primeira execução
+  só registra os links existentes; depois entram apenas os novos.
 - **Refazer um dia**: `python -m pawatch run --date AAAA-MM-DD --force` (ou *Run workflow* com `force`).

@@ -168,6 +168,7 @@ h1.day {
 .list-simple { padding-left: 18px; }
 .list-simple li { margin-bottom: 8px; color: var(--ink-2); }
 .list-simple li b { color: var(--ink); }
+.list-simple .hits { font-size: 12px; color: var(--star); font-weight: 600; white-space: nowrap; }
 
 .empty { padding: 40px 0; color: var(--muted); text-align: center; }
 .foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted); padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); }

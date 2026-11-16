@@ -15,6 +15,7 @@ from .http import post_json
 from .llm import LLM
 from .render import digest_markdown, load_digests, render_all
 from .score import prefilter, triage, write_digest
+from .web import load_sources
 
 
 def log(msg):
@@ -42,7 +43,10 @@ def cmd_run(args):
         # Redoing the day: papers judged in the earlier run of this same day must be eligible again.
         seen = {k: v for k, v in seen.items() if v != today.isoformat()}
 
-    cands = collect(cfg, watch, set(seen), today, log)
+    web_state_path = DATA / "web_state.json"
+    web_state = load_json(web_state_path, {})
+    cands = collect(cfg, watch, set(seen), today, log,
+                    sources=load_sources(CONFIG / "sources.json"), web_state=web_state)
     sel = cfg["selection"]
     pool = prefilter(cands, sel["max_candidates_for_llm"])
     log(f"enviando {len(pool)} candidatos para triagem")
@@ -71,6 +75,8 @@ def cmd_run(args):
         seen[c["key"]] = today.isoformat()
         seen[f"t:{norm_title(c['title'])}"] = today.isoformat()
     seen_path.write_text(json.dumps(seen, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    # Saved only after a digest is written, so a failed run does not swallow new web links.
+    web_state_path.write_text(json.dumps(web_state, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
 
     n = render_all()
     log(f"ok: {len(result['items'])} selecionados, {len(result['quick'])} menções; "

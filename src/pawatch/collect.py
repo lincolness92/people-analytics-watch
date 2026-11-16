@@ -1,4 +1,5 @@
-"""Collect candidate papers from OpenAlex (queries, watchlist authors, journals) and arXiv."""
+"""Collect candidate papers from OpenAlex (queries, watchlist authors, journals), arXiv and
+the web sources of watchlist centers and practitioners."""
 
 import os
 import re
@@ -7,6 +8,7 @@ import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 
 from .http import get_json, get_text
+from .web import collect_web
 
 OPENALEX = "https://api.openalex.org/works"
 ARXIV = "https://export.arxiv.org/api/query"
@@ -201,10 +203,12 @@ def annotate_and_dedupe(items, watch, seen):
     return out
 
 
-def collect(cfg, watch, seen, today, log=lambda m: print(m, file=sys.stderr)):
+def collect(cfg, watch, seen, today, log=lambda m: print(m, file=sys.stderr), sources=(), web_state=None):
     start = (today - timedelta(days=cfg["lookback_days"])).isoformat()
     end = today.isoformat()
     items = collect_openalex(cfg, watch, start, end, log) + collect_arxiv(cfg, start, log)
+    if sources:
+        items += collect_web(sources, start, web_state if web_state is not None else {}, log)
     fresh = annotate_and_dedupe(items, watch, seen)
     log(f"candidatos novos após dedupe: {len(fresh)}")
     return fresh

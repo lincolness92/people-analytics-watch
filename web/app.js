@@ -33,6 +33,7 @@
     if (it.watch_authors && it.watch_authors.length) {
       meta.push(it.watch_authors.map((n) => `<span class="star">⭐ ${esc(n)}</span>`).join(""));
     }
+    if (it.watch_source) meta.push(`<span class="star">📌 ${esc(it.watch_source)}</span>`);
     if (showDate) meta.push(`<span class="date-tag">${esc(fmtDate(it._date, { day: "2-digit", month: "short", year: "numeric" }))}</span>`);
     meta.push(esc(it.venue || it.origin));
     const au = authorsShort(it.authors);
@@ -169,12 +170,12 @@
     setTab("watchlist");
     const wl = DATA.watchlist || {};
     const hits = {};
-    for (const it of allItems()) for (const n of it.watch_authors || []) hits[n] = (hits[n] || 0) + 1;
+    for (const it of allItems()) for (const n of [...(it.watch_authors || []), ...(it.watch_source ? [it.watch_source] : [])]) hits[n] = (hits[n] || 0) + 1;
     const regions = ["EUA", "Europa", "China/Ásia", "Brasil", "Outros"];
     const people = wl.researchers || [];
     let html = `
       <h1 class="day">Watchlist</h1>
-      <p class="dek">Referências de elite monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐.</p>
+      <p class="dek">Referências de elite monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐; posts e relatórios dos centros e praticantes ganham 📌.</p>
       <section class="wl-section"><h2>Pesquisadores <span class="muted">(${people.length})</span></h2>`;
     for (const r of regions) {
       const group = people.filter((p) => (p.region || "Outros") === r);
@@ -198,7 +199,8 @@
       <section class="wl-section"><h2>${title} <span class="muted">(${arr.length})</span></h2><ul class="list-simple">` +
       arr.map((x) => {
         const name = x.url ? `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener"><b>${esc(x[nameKey])}</b></a>` : `<b>${esc(x[nameKey])}</b>`;
-        return `<li>${name}${subKey && x[subKey] ? ` <span class="muted">· ${esc(x[subKey])}</span>` : ""}${x.why ? ` — ${esc(x.why)}` : ""}</li>`;
+        const hit = hits[x[nameKey]] ? ` <span class="hits">📌 ${hits[x[nameKey]]} no arquivo</span>` : "";
+        return `<li>${name}${subKey && x[subKey] ? ` <span class="muted">· ${esc(x[subKey])}</span>` : ""}${x.why ? ` — ${esc(x.why)}` : ""}${hit}</li>`;
       }).join("") + `</ul></section>`;
     html += simple("Journals", wl.journals, "name");
     html += simple("Centros & laboratórios", wl.centers, "name", "institution");

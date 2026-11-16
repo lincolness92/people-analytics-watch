@@ -20,6 +20,7 @@ TRIAGE_RULES = """Dê uma nota 0–10 a cada paper combinando RELEVÂNCIA e QUAL
 - 5–6: relevante mas incremental, survey genérico, amostra pequena, ou venue fraca.
 - 0–4: fora do tema (clínico, educação escolar, esportes, marketing, engenharia sem pessoas/trabalho) ou baixa qualidade/predatório.
 Sinais de qualidade: `watch` (autor da watchlist de elite) e `jr` (journal de elite) valem bônus, mas não salvam paper fora do tema.
+Itens com `fonte` vêm de centros de pesquisa e praticantes da watchlist (posts, relatórios, podcasts, notícias): avalie pelo mesmo critério; relatório ou estudo com dados próprios pode valer 7+, mas divulgação de evento, marketing, vaga ou post genérico fica em 0–4.
 Atribua um tema `t` entre: """ + ", ".join(f"{k} ({v.split(' ', 1)[1]})" for k, v in THEMES.items()) + """.
 Responda APENAS com JSON: {"r": [{"i": <id>, "s": <nota int>, "t": "<tema>"}, ...]} cobrindo todos os ids."""
 
@@ -46,7 +47,8 @@ def prefilter(cands, limit):
     def rank(c):
         text = f"{c['title']} {c['abstract'][:800]}"
         return (
-            3 * bool(c["watch_authors"]) + 2 * c["watch_journal"] + bool(c["abstract"])
+            3 * bool(c["watch_authors"]) + 2 * c["watch_journal"] + 2 * bool(c.get("watch_source"))
+            + bool(c["abstract"])
             + min(len(kw.findall(text)), 5) * 0.4 + min(c["cited_by"], 20) * 0.02
         )
 
@@ -62,6 +64,8 @@ def _brief(i, c, abstract_chars):
         d["watch"] = ", ".join(c["watch_authors"])
     if c["watch_journal"]:
         d["jr"] = True
+    if c.get("watch_source"):
+        d["fonte"] = c["watch_source"]
     if c["cited_by"]:
         d["cit"] = c["cited_by"]
     d["abstract"] = (c["abstract"] or "(sem abstract)")[:abstract_chars]
@@ -113,7 +117,8 @@ def write_digest(llm, cands, scores, sel_cfg):
             "key": c["key"], "title": extra.get("title") or c["title"], "original_title": c["title"],
             "url": c["url"], "venue": c["venue"], "date": c["date"], "authors": c["authors"][:12],
             "institutions": c["institutions"], "watch_authors": c["watch_authors"],
-            "watch_journal": c["watch_journal"], "origin": c["origin"], "cited_by": c["cited_by"],
+            "watch_journal": c["watch_journal"], "watch_source": c.get("watch_source", ""),
+            "origin": c["origin"], "cited_by": c["cited_by"],
         }
 
     written = {int(x["i"]): x for x in out.get("items", []) if str(x.get("i", "")).isdigit()}

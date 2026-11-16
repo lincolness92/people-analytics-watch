@@ -112,5 +112,57 @@ class BundleTests(unittest.TestCase):
         self.assertNotIn("theme-toggle", bundle(None))
 
 
+
+class WebSourceTests(unittest.TestCase):
+    RSS = """<?xml version="1.0"?><rss version="2.0"><channel><title>Blog</title>
+      <item><title>New study on hybrid work</title><link>https://ex.org/a</link>
+        <description>&lt;p&gt;We ran a field experiment&lt;/p&gt;</description><pubDate>Thu, 12 Nov 2026 14:06:56 +0000</pubDate></item>
+      <item><title>Old post about pay</title><link>https://ex.org/b</link><pubDate>Mon, 02 Nov 2026 10:00:00 +0000</pubDate></item>
+      <item><title>Webinar sobre DPO</title><link>https://ex.org/c</link><pubDate>Fri, 13 Nov 2026 10:00:00 +0000</pubDate></item>
+    </channel></rss>"""
+    ATOM = """<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Atom item</title>
+      <link href="https://ex.org/atom1"/><updated>2026-11-14T18:28:19-05:00</updated><summary>s</summary></entry></feed>"""
+    LISTING = '<a href="/articles/one">x</a> <a href="/articles/two/">y</a> <a href="/about">z</a>'
+    ARTICLE = ('<html><head><meta property="og:title" content="{t}"><meta name="description" content="Resumo {t}">'
+               '{d}</head></html>')
+
+    def test_parse_feed_rss_and_atom(self):
+        from pawatch.web import parse_feed
+        rss = parse_feed(self.RSS)
+        self.assertEqual(rss[0][0], "New study on hybrid work")
+        self.assertEqual(rss[0][1], "https://ex.org/a")
+        self.assertEqual(str(rss[0][3]), "2026-11-12")
+        atom = parse_feed(self.ATOM)
+        self.assertEqual((atom[0][1], str(atom[0][3])), ("https://ex.org/atom1", "2026-11-14"))
+
+    def test_rss_window_and_title_pattern(self):
+        from pawatch.web import collect_web
+        src = [{"name": "Blog", "watch": "Fulano", "kind": "rss", "url": "https://ex.org/feed", "pattern": "(?i)work|pay"}]
+        out = collect_web(src, "2026-11-09", {}, lambda m: None, fetch=lambda u: self.RSS)
+        self.assertEqual([c["title"] for c in out], ["New study on hybrid work"])
+        self.assertEqual(out[0]["abstract"], "We ran a field experiment")
+        self.assertEqual(out[0]["watch_source"], "Fulano")
+        self.assertEqual(out[0]["key"], "web:https://ex.org/a")
+
+    def test_page_baseline_then_only_new_links(self):
+        from pawatch.web import collect_web
+        pages = {
+            "https://ex.org/articles": self.LISTING,
+            "https://ex.org/articles/one": self.ARTICLE.format(t="One", d=""),
+            "https://ex.org/articles/two/": self.ARTICLE.format(
+                t="Two", d='<meta property="article:published_time" content="2026-11-12T10:00:00Z">'),
+            "https://ex.org/articles/three": self.ARTICLE.format(t="Three", d=""),
+        }
+        src = [{"name": "Ins", "kind": "page", "url": "https://ex.org/articles", "pattern": "/articles/[^/]+/?$"}]
+        state = {}
+        first = collect_web(src, "2026-11-09", state, lambda m: None, fetch=pages.__getitem__)
+        self.assertEqual([c["title"] for c in first], ["Two"])  # dated in window; undated "One" is baseline
+        self.assertEqual(len(state["Ins"]), 2)
+        pages["https://ex.org/articles"] += ' <a href="https://ex.org/articles/three">w</a>'
+        second = collect_web(src, "2026-11-09", state, lambda m: None, fetch=pages.__getitem__)
+        self.assertEqual([c["title"] for c in second], ["Three"])
+        self.assertEqual(second[0]["abstract"], "Resumo Three")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,27 @@
+{
+  "_doc": "Fontes web dos centros e praticantes da watchlist. kind: rss (itens com data na janela), page (links novos numa página de listagem) ou sitemap (URLs novas num sitemap). pattern: regex na URL (page/sitemap) ou no título (rss). watch: nome na watchlist. Sem fonte viável hoje: CEP/LSE e FGVneop (sem feed nem listagem legível), AIHR e People Analytics World (bloqueiam robôs, 403), Microsoft WorkLab (página só com JavaScript, sitemap vazio), página própria do Managing the Future of Work (403; coberto pelo HBS Working Knowledge).",
+  "sources": [
+    {"name": "Wharton People Analytics", "watch": "Wharton People Analytics", "kind": "rss", "url": "https://wpa.wharton.upenn.edu/feed/"},
+    {"name": "Wharton Center for Human Resources", "watch": "Center for Human Resources", "kind": "rss", "url": "https://chr.wharton.upenn.edu/feed/"},
+    {"name": "HBS Working Knowledge", "watch": "Managing the Future of Work", "kind": "rss", "url": "https://hbswk.hbs.edu/rss/rss.xml"},
+    {"name": "Harvard D^3", "watch": "Digital Data Design Institute (D^3)", "kind": "rss", "url": "https://aiinstitute.hbs.edu/feed/"},
+    {"name": "Stanford Digital Economy Lab (publicações)", "watch": "Stanford Digital Economy Lab", "kind": "page",
+     "url": "https://digitaleconomy.stanford.edu/research/all-work/?type%5B%5D=publication&sort%5B%5D=newest", "pattern": "/publication/[a-z0-9-]+/?$"},
+    {"name": "Stanford Digital Economy Lab (notícias)", "watch": "Stanford Digital Economy Lab", "kind": "page",
+     "url": "https://digitaleconomy.stanford.edu/news/", "pattern": "/news/[a-z0-9-]+/?$"},
+    {"name": "MIT IWER", "watch": "MIT Institute for Work and Employment Research (IWER)", "kind": "page",
+     "url": "https://mitsloan.mit.edu/institute-work-and-employment-research/about-iwer",
+     "pattern": "/(centers-initiatives/institute-work-and-employment-research|ideas-made-to-matter)/[a-z0-9-]+$"},
+    {"name": "MIT Shaping the Future of Work", "watch": "MIT Shaping the Future of Work Initiative", "kind": "rss", "url": "https://shapingwork.mit.edu/research/feed/"},
+    {"name": "Cornell CAHRS", "watch": "Center for Advanced Human Resource Studies (CAHRS)", "kind": "rss", "url": "https://www.ilr.cornell.edu/blog/53/feed"},
+    {"name": "USC Center for Effective Organizations", "watch": "Center for Effective Organizations (CEO)", "kind": "rss", "url": "https://ceo.usc.edu/feed/"},
+    {"name": "FIA (Progep)", "watch": "Progep - Programa de Estudos em Gestão de Pessoas", "kind": "rss", "url": "https://fia.com.br/feed/",
+     "pattern": "(?i)pessoas|\\bRH\\b|recursos humanos|lideran|carreira|talento|trabalh|colaborador|engajamento|remunera|people|recrut|clima"},
+    {"name": "Insight222 (artigos)", "watch": "Jonathan Ferrar", "kind": "page", "url": "https://www.insight222.com/articles", "pattern": "/articles/[a-z0-9-]+$"},
+    {"name": "Digital HR Leaders (podcast)", "watch": "David Green", "kind": "rss", "url": "https://feeds.acast.com/public/shows/611a598b29aaa600197df91c"},
+    {"name": "Josh Bersin", "watch": "Josh Bersin", "kind": "rss", "url": "https://joshbersin.com/feed/"},
+    {"name": "Directionally Correct", "watch": "Cole Napper", "kind": "rss", "url": "https://directionallycorrectnews.substack.com/feed"},
+    {"name": "Anthropic Economic Index", "watch": "Anthropic Economic Index", "kind": "sitemap", "url": "https://www.anthropic.com/sitemap.xml",
+     "pattern": "/(research|news)/[a-z0-9-]*economic-index[a-z0-9-]*$"}
+  ]
+}
