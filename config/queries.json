@@ -1,0 +1,40 @@
+{
+  "lookback_days": 10,
+  "openalex": {
+    "types": [
+      "article",
+      "preprint",
+      "review",
+      "book-chapter"
+    ],
+    "per_query": 50,
+    "queries": [
+      "\"people analytics\" OR \"HR analytics\" OR \"workforce analytics\" OR \"talent analytics\"",
+      "\"human resource management\" OR \"strategic HRM\" OR \"HRM practices\"",
+      "\"talent management\" OR \"talent acquisition\" OR \"succession planning\"",
+      "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
+      "(\"generative AI\" OR \"large language model\" OR ChatGPT OR copilot) AND (workers OR employees OR workplace OR productivity) AND (experiment OR field OR \"randomized\")",
+      "\"employee turnover\" OR \"employee retention\" OR \"quit intention\" OR \"voluntary turnover\"",
+      "\"employee engagement\" OR \"employee well-being\" OR burnout OR \"job satisfaction\"",
+      "\"remote work\" OR \"hybrid work\" OR \"work from home\" OR \"return to office\"",
+      "(\"performance management\" OR \"performance appraisal\") AND (employees OR workers OR organizations)",
+      "(\"pay equity\" OR \"gender pay gap\" OR \"pay transparency\" OR \"executive compensation\" OR \"employee compensation\")",
+      "upskilling OR reskilling OR \"skills-based hiring\" OR \"skills taxonomy\" OR \"internal mobility\"",
+      "\"organizational network analysis\" OR ((\"workplace collaboration\" OR \"collaboration network\") AND employees)",
+      "\"management practices\" AND (productivity OR firms) AND workers",
+      "\"algorithmic management\" OR \"workplace surveillance\" OR \"employee monitoring\"",
+      "(\"diversity, equity\" OR DEI OR \"workplace inclusion\" OR \"workplace discrimination\") AND (employees OR hiring OR workplace)",
+      "\"gestão de pessoas\" OR \"recursos humanos\" OR \"gestão de talentos\" OR \"rotatividade\""
+    ]
+  },
+  "arxiv": {
+    "max_results": 100,
+    "query": "(cat:econ.GN OR cat:cs.CY OR cat:cs.HC OR cat:cs.SI OR cat:econ.EM) AND (abs:workforce OR abs:employee OR abs:employees OR abs:hiring OR abs:recruitment OR abs:\"human resource\" OR abs:\"labor market\" OR abs:workplace OR abs:\"job seekers\" OR abs:\"people analytics\")"
+  },
+  "selection": {
+    "max_candidates_for_llm": 220,
+    "min_score": 7,
+    "max_selected": 12,
+    "max_quick_mentions": 6
+  }
+}

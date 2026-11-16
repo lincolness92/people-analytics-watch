@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People Analytics Watch</title>
+  <meta name="description" content="Digest diário de pesquisa state-of-the-art em people analytics e gestão de pessoas.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true">📡</span>
+        <span class="brand-text">People Analytics <em>Watch</em></span>
+      </a>
+      <nav class="tabs" aria-label="Seções">
+        <a href="#/" data-tab="digest">Digest</a>
+        <a href="#/arquivo" data-tab="arquivo">Arquivo</a>
+        <a href="#/tendencias" data-tab="tendencias">Tendências</a>
+        <a href="#/watchlist" data-tab="watchlist">Watchlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="wrap" aria-live="polite">
+    <p class="muted">Carregando…</p>
+  </main>
+
+  <footer class="wrap foot">
+    <span id="foot-meta"></span>
+    <span>Curadoria automática diária · OpenAlex + arXiv · LLM de pesos abertos</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+name: daily digest
+
+on:
+  schedule:
+    - cron: "30 11 * * *"   # 08:30 BRT
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Refazer o digest de hoje"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["web/**", "config/watchlist.json", "src/pawatch/render.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      PYTHONPATH: src
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: python -m unittest discover -s tests -q
+
+      - name: Collect + curate
+        if: github.event_name != 'push'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          PAW_MODEL: ${{ vars.PAW_MODEL }}
+        run: python -m pawatch run ${{ inputs.force && '--force' || '' }}
+
+      - name: Render (site-only changes)
+        if: github.event_name == 'push'
+        run: python -m pawatch render
+
+      - name: Commit
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "pa-watch bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data digests INDEX.md
+          if git diff --cached --quiet; then echo "nada novo"; exit 0; fi
+          git commit -q -m "digest: $(date -u +%F)"
+          git push -q
+
+      - name: Discord (opcional)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python -m pawatch notify
+
+      - name: Deploy to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }} --branch=main --commit-dirty=true

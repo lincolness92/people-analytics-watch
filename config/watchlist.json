@@ -1,0 +1,775 @@
+{
+  "generated_at": "2026-11-16",
+  "researchers": [
+    {
+      "name": "Prasanna Tambe",
+      "institution": "Wharton School, University of Pennsylvania",
+      "region": "EUA",
+      "area": "IA em RH, analytics de pessoas, economia de habilidades digitais",
+      "why": "Coautor de 'Artificial Intelligence in Human Resources Management: Challenges and a Path Forward' (California Management Review, 2019), referência central sobre IA aplicada a RH.",
+      "openalex_id": "A5085743615",
+      "links": {
+        "homepage": "https://oid.wharton.upenn.edu/profile/tambe/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Peter Cappelli",
+      "institution": "Wharton School, University of Pennsylvania (Center for Human Resources)",
+      "region": "EUA",
+      "area": "Gestão de RH, contratação, mercado de trabalho corporativo",
+      "why": "Diretor do Wharton Center for Human Resources e autor de 'Talent on Demand' e de trabalhos seminais sobre práticas de contratação e IA em RH.",
+      "openalex_id": "A5057406654",
+      "links": {
+        "homepage": "https://mgmt.wharton.upenn.edu/profile/cappelli/",
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5150675543"
+      ]
+    },
+    {
+      "name": "Matthew Bidwell",
+      "institution": "Wharton School, University of Pennsylvania",
+      "region": "EUA",
+      "area": "Mobilidade interna, contratação externa, carreiras",
+      "why": "'Paying More to Get Less' (ASQ, 2011) mostrou que contratados externos custam mais e performam pior que promovidos internos.",
+      "openalex_id": "A5067155067",
+      "links": {
+        "homepage": "https://mgmt.wharton.upenn.edu/profile/mbidwell/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Ethan Mollick",
+      "institution": "Wharton School, University of Pennsylvania",
+      "region": "EUA",
+      "area": "IA generativa no trabalho, inovação, empreendedorismo",
+      "why": "Coautor do experimento de campo 'Navigating the Jagged Technological Frontier' (BCG) e autor de 'Co-Intelligence', referência sobre GenAI no trabalho.",
+      "openalex_id": "A5061686034",
+      "links": {
+        "homepage": "https://mgmt.wharton.upenn.edu/profile/emollick/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Adam Grant",
+      "institution": "Wharton School, University of Pennsylvania",
+      "region": "EUA",
+      "area": "Comportamento organizacional, motivação, desenho do trabalho",
+      "why": "Um dos pesquisadores de OB mais citados do mundo, com trabalhos seminais sobre desenho relacional do trabalho e motivação pró-social.",
+      "openalex_id": "A5012436442",
+      "links": {
+        "homepage": "https://adamgrant.net/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Raffaella Sadun",
+      "institution": "Harvard Business School",
+      "region": "EUA",
+      "area": "Práticas de gestão, produtividade, liderança e CEOs",
+      "why": "Cofundadora do World Management Survey e coautora de 'Americans Do IT Better' (AER, 2012), que liga práticas de gestão de pessoas à produtividade.",
+      "openalex_id": "A5069134952",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5123969733"
+      ]
+    },
+    {
+      "name": "William R. Kerr",
+      "institution": "Harvard Business School",
+      "region": "EUA",
+      "area": "Futuro do trabalho, talento global, imigração qualificada",
+      "why": "Codiretor do projeto Managing the Future of Work da HBS e autor de 'The Gift of Global Talent'.",
+      "openalex_id": "A5108420666",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5016651603"
+      ]
+    },
+    {
+      "name": "Karim R. Lakhani",
+      "institution": "Harvard Business School (Digital Data Design Institute)",
+      "region": "EUA",
+      "area": "IA no trabalho, equipes humano-IA, inovação",
+      "why": "Fundador do D^3 Institute e coautor dos experimentos de campo 'Jagged Technological Frontier' (BCG) e 'The Cybernetic Teammate' (P&G).",
+      "openalex_id": "A5089560559",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5095319665"
+      ]
+    },
+    {
+      "name": "David J. Deming",
+      "institution": "Harvard University (Kennedy School; Danoff Dean of Harvard College)",
+      "region": "EUA",
+      "area": "Economia do trabalho, habilidades sociais, adoção de IA generativa",
+      "why": "'The Growing Importance of Social Skills in the Labor Market' (QJE, 2017) e coautor de 'The Rapid Adoption of Generative AI'.",
+      "openalex_id": "A5109473006",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5113396094"
+      ]
+    },
+    {
+      "name": "Erik Brynjolfsson",
+      "institution": "Stanford University (Digital Economy Lab, Stanford HAI)",
+      "region": "EUA",
+      "area": "IA e produtividade, economia digital, futuro do trabalho",
+      "why": "Coautor de 'Generative AI at Work' (QJE, 2025), primeiro grande experimento de campo de IA generativa no trabalho, e diretor do Stanford Digital Economy Lab.",
+      "openalex_id": "A5038255653",
+      "links": {
+        "homepage": "https://digitaleconomy.stanford.edu/people/erik-brynjolfsson/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Nicholas Bloom",
+      "institution": "Stanford University (Economics / SIEPR)",
+      "region": "EUA",
+      "area": "Práticas de gestão, trabalho remoto e híbrido, produtividade",
+      "why": "'Does Working from Home Work? Evidence from a Chinese Experiment' (QJE, 2015) e cofundador do World Management Survey.",
+      "openalex_id": "A5044421873",
+      "links": {
+        "homepage": "https://nbloom.people.stanford.edu/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Kathryn L. Shaw",
+      "institution": "Stanford Graduate School of Business",
+      "region": "EUA",
+      "area": "Economia de pessoal, práticas de RH e produtividade",
+      "why": "'The Effects of Human Resource Management Practices on Productivity' (AER, 1997), estudo fundador da economia de pessoal empírica.",
+      "openalex_id": "A5112219963",
+      "links": {
+        "homepage": "https://www.gsb.stanford.edu/faculty-research/faculty/kathryn-shaw",
+        "scholar": null
+      }
+    },
+    {
+      "name": "David Autor",
+      "institution": "MIT (Economics)",
+      "region": "EUA",
+      "area": "Tecnologia, automação e mercado de trabalho",
+      "why": "'The Skill Content of Recent Technological Change' (QJE, 2003), base da abordagem por tarefas, e co-líder da MIT Work of the Future / Shaping the Future of Work.",
+      "openalex_id": "A5029839974",
+      "links": {
+        "homepage": "https://economics.mit.edu/people/faculty/david-h-autor",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Daron Acemoglu",
+      "institution": "MIT (Economics)",
+      "region": "EUA",
+      "area": "Automação, IA e trabalho, instituições",
+      "why": "Nobel de Economia 2024; 'Robots and Jobs' (JPE, 2020) e o arcabouço tarefa-automação que domina o debate sobre IA e emprego.",
+      "openalex_id": "A5012301204",
+      "links": {
+        "homepage": "https://economics.mit.edu/people/faculty/daron-acemoglu",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Danielle Li",
+      "institution": "MIT Sloan School of Management",
+      "region": "EUA",
+      "area": "Algoritmos de contratação, IA generativa no trabalho, economia de pessoal",
+      "why": "Coautora de 'Discretion in Hiring' (QJE, 2018), 'Hiring as Exploration' e 'Generative AI at Work' (QJE, 2025).",
+      "openalex_id": "A5090841852",
+      "links": {
+        "homepage": "https://mitsloan.mit.edu/faculty/directory/danielle-li",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Emilio J. Castilla",
+      "institution": "MIT Sloan School of Management",
+      "region": "EUA",
+      "area": "People analytics, meritocracia, remuneração e avaliação de desempenho",
+      "why": "'The Paradox of Meritocracy in Organizations' (ASQ, 2010) e 'Gender, Race, and Meritocracy in Organizational Careers' (AJS, 2008); leciona People Analytics no MIT.",
+      "openalex_id": "A5062827363",
+      "links": {
+        "homepage": "https://mitsloan.mit.edu/faculty/directory/emilio-j-castilla",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Marianne Bertrand",
+      "institution": "University of Chicago Booth School of Business",
+      "region": "EUA",
+      "area": "Discriminação no mercado de trabalho, economia de pessoal",
+      "why": "'Are Emily and Greg More Employable than Lakisha and Jamal?' (AER, 2004), experimento de currículos de referência sobre viés em contratação.",
+      "openalex_id": "A5111433522",
+      "links": {
+        "homepage": "https://www.chicagobooth.edu/faculty/directory/b/marianne-bertrand",
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5135305703"
+      ]
+    },
+    {
+      "name": "Lauren A. Rivera",
+      "institution": "Kellogg School of Management, Northwestern University",
+      "region": "EUA",
+      "area": "Contratação, seleção de elite, desigualdade",
+      "why": "'Hiring as Cultural Matching' (ASR, 2012) e o livro 'Pedigree', referências sobre vieses em processos seletivos.",
+      "openalex_id": "A5010644797",
+      "links": {
+        "homepage": "https://www.kellogg.northwestern.edu/faculty/directory/rivera_lauren.aspx",
+        "scholar": null
+      }
+    },
+    {
+      "name": "John W. Boudreau",
+      "institution": "USC Marshall School of Business (Center for Effective Organizations)",
+      "region": "EUA",
+      "area": "HR analytics, ciência das decisões de talentos, futuro do trabalho",
+      "why": "Coautor de 'Beyond HR' e de 'An Evidence-Based Review of HR Analytics' (IJHRM, 2017), marcos fundadores do people analytics.",
+      "openalex_id": "A5061422374",
+      "links": {
+        "homepage": "https://ceo.usc.edu/john-boudreau/",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Patrick M. Wright",
+      "institution": "Darla Moore School of Business, University of South Carolina",
+      "region": "EUA",
+      "area": "Gestão estratégica de RH, CHROs, sucessão executiva",
+      "why": "'Human Resources and the Resource Based View of the Firm' (Journal of Management, 2001), obra central da gestão estratégica de RH.",
+      "openalex_id": "A5053226584",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Paul R. Sackett",
+      "institution": "University of Minnesota (Psychology)",
+      "region": "EUA",
+      "area": "Seleção de pessoal, testes, validade preditiva",
+      "why": "'Revisiting Meta-Analytic Estimates of Validity in Personnel Selection' (JAP, 2022) recalibrou a validade dos métodos de seleção.",
+      "openalex_id": "A5078760410",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Lindsey Raymond",
+      "institution": "MIT (Economics, EECS e Schwarzman College of Computing)",
+      "region": "EUA",
+      "area": "IA generativa e produtividade, economia do trabalho",
+      "why": "Coautora de 'Generative AI at Work' (QJE, 2025), que mostrou ganho de 14-15% de produtividade com maior benefício para trabalhadores menos experientes.",
+      "openalex_id": "A5088662762",
+      "links": {
+        "homepage": "https://economics.mit.edu/people/faculty/lindsey-raymond",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Prithwiraj Choudhury",
+      "institution": "Harvard Business School",
+      "region": "EUA",
+      "area": "Trabalho remoto e work-from-anywhere, geografia do talento",
+      "why": "'Work-from-anywhere: The Productivity Effects of Geographic Flexibility' (SMJ, 2021) e o livro 'The World Is Your Office'.",
+      "openalex_id": "A5020108888",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5045050775"
+      ]
+    },
+    {
+      "name": "Mitchell Hoffman",
+      "institution": "UC Santa Barbara (Economics; licenciado da Rotman, University of Toronto)",
+      "region": "EUA",
+      "area": "Economia de pessoal, contratação, indicações e testes",
+      "why": "Coautor de 'Discretion in Hiring' (QJE, 2018) e 'The Value of Hiring through Employee Referrals' (QJE, 2015).",
+      "openalex_id": "A5110876638",
+      "links": {
+        "homepage": "https://sites.google.com/site/mhoffman2",
+        "scholar": null
+      },
+      "openalex_note": "OpenAlex last_known_institutions já aponta UC Santa Barbara; ID confirmado pelas obras mais citadas."
+    },
+    {
+      "name": "Bo Cowgill",
+      "institution": "Rotman School of Management, University of Toronto",
+      "region": "Outros",
+      "area": "Algoritmos de contratação, viés algorítmico, mercados internos de talento",
+      "why": "'Bias and Productivity in Humans and Algorithms', evidência de campo de que triagem algorítmica de currículos reduz erros versus triagem humana.",
+      "openalex_id": "A5008658368",
+      "links": {
+        "homepage": "https://bocowgill.org/",
+        "scholar": null
+      },
+      "openalex_note": "Mudou-se da Columbia Business School para a Rotman (perfil IZA, 2026); páginas da Columbia ainda o listam."
+    },
+    {
+      "name": "John Van Reenen",
+      "institution": "London School of Economics (Centre for Economic Performance)",
+      "region": "Europa",
+      "area": "Práticas de gestão, produtividade, inovação",
+      "why": "'Measuring and Explaining Management Practices Across Firms and Countries' (QJE, 2007), base do World Management Survey.",
+      "openalex_id": "A5004443266",
+      "links": {
+        "homepage": "https://www.lse.ac.uk/economics/people/faculty/john-van-reenen",
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5142649883"
+      ]
+    },
+    {
+      "name": "Lynda Gratton",
+      "institution": "London Business School",
+      "region": "Europa",
+      "area": "Futuro do trabalho, estratégia de RH, longevidade",
+      "why": "Autora de 'The 100-Year Life' (com Andrew Scott) e 'Redesigning Work'; Thinkers50 Lifetime Achievement Award (2025).",
+      "openalex_id": "A5087963705",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Isabel Fernandez-Mateo",
+      "institution": "London Business School",
+      "region": "Europa",
+      "area": "Contratação executiva, gênero, mercados de trabalho intermediados",
+      "why": "'Bending the Pipeline? Executive Search and Gender Inequality in Hiring for Top Management Jobs' (Management Science, 2016).",
+      "openalex_id": "A5107961131",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Phanish Puranam",
+      "institution": "INSEAD",
+      "region": "Europa",
+      "area": "Desenho organizacional, algoritmos e colaboração humano-IA",
+      "why": "Autor de 'The Microstructure of Organizations' e referência em desenho organizacional na era dos algoritmos.",
+      "openalex_id": "A5015167951",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5152190582"
+      ]
+    },
+    {
+      "name": "Dana Minbaeva",
+      "institution": "King's Business School, King's College London (e Copenhagen Business School, parcial)",
+      "region": "Europa",
+      "area": "Human capital analytics, gestão estratégica de capital humano",
+      "why": "'Building Credible Human Capital Analytics for Organizational Competitive Advantage' (HRM, 2018); fundou o Human Capital Analytics Group da CBS.",
+      "openalex_id": "A5037608584",
+      "links": {
+        "homepage": "https://www.kcl.ac.uk/people/dana-minbaeva",
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5129161365"
+      ]
+    },
+    {
+      "name": "Martin R. Edwards",
+      "institution": "UQ Business School, University of Queensland",
+      "region": "Outros",
+      "area": "HR/people analytics, employer branding, ética em analytics",
+      "why": "Autor de 'Predictive HR Analytics' e coautor de 'HR Analytics: An Emerging Field Finding Its Place in the World' (HRMJ, 2022).",
+      "openalex_id": "A5022243584",
+      "links": {
+        "homepage": "https://about.uq.edu.au/experts/24802",
+        "scholar": null
+      }
+    },
+    {
+      "name": "Kenneth S. Law",
+      "institution": "CUHK Business School, Chinese University of Hong Kong",
+      "region": "China/Ásia",
+      "area": "Comportamento organizacional, inteligência emocional, RH na China",
+      "why": "Coautor da escala WLEIS de inteligência emocional (Leadership Quarterly, 2002), uma das mais usadas em OB.",
+      "openalex_id": "A5091092099",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Yaping Gong",
+      "institution": "HKUST Business School",
+      "region": "China/Ásia",
+      "area": "Gestão estratégica de RH, criatividade, comprometimento",
+      "why": "'Employee Learning Orientation, Transformational Leadership, and Employee Creativity' (AMJ, 2009) e estudos sobre sistemas de RH e desempenho da firma.",
+      "openalex_id": "A5018206300",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Jason D. Shaw",
+      "institution": "Nanyang Business School, Nanyang Technological University",
+      "region": "China/Ásia",
+      "area": "Rotatividade, sistemas de remuneração e RH",
+      "why": "Ex-editor-chefe do Academy of Management Journal e autor de estudos seminais sobre turnover e desempenho organizacional (AMJ, 2005).",
+      "openalex_id": "A5065762339",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Soon Ang",
+      "institution": "Nanyang Business School, Nanyang Technological University",
+      "region": "China/Ásia",
+      "area": "Inteligência cultural, trabalho global e terceirização",
+      "why": "Criadora do construto e da escala de inteligência cultural (CQ), amplamente usada em gestão global de talentos.",
+      "openalex_id": "A5113719793",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Jia (Jasmine) Hu",
+      "institution": "Tsinghua University School of Economics and Management",
+      "region": "China/Ásia",
+      "area": "Liderança servidora, equipes, comportamento organizacional",
+      "why": "Coautora da escala SL-7 de liderança servidora (Leadership Quarterly, 2015, prêmio de artigo decenal) e de estudos em JAP/AMJ sobre equipes.",
+      "openalex_id": "A5012597744",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "openalex_note": "Registro OpenAlex contaminado com obras médicas homônimas (Capital Medical University); ID confirmado via DOI 10.1037/a0022465. Filtrar por tópico na ingestão."
+    },
+    {
+      "name": "Ning Li",
+      "institution": "Tsinghua University School of Economics and Management",
+      "region": "China/Ásia",
+      "area": "Equipes, proatividade, reconhecimento e desempenho",
+      "why": "Flextronics Chair Professor na Tsinghua; 'Recognizing \"Me\" Benefits \"We\"' (JAP, 2016) e trabalhos em AMJ/AMR sobre altruísmo e proatividade em equipes.",
+      "openalex_id": "A5081265309",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "openalex_note": "Registro OpenAlex fortemente contaminado por homônimos (253 obras de várias áreas); ID confirmado via DOI 10.1037/apl0000101. Filtrar por tópico/periódico na ingestão."
+    },
+    {
+      "name": "Zhi-Xue Zhang",
+      "institution": "Guanghua School of Management, Peking University",
+      "region": "China/Ásia",
+      "area": "Liderança e equipes no contexto chinês, gestão de pessoas",
+      "why": "Boya Distinguished Professor na Guanghua; 'Transactive Memory System Links Work Team Characteristics and Performance' (JAP, 2007) e pesquisa sobre liderança empresarial chinesa.",
+      "openalex_id": "A5111569106",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "openalex_note": "Registro OpenAlex pequeno (14 obras); a produção pode estar fragmentada sob variações do nome (Zhixue Zhang). Confirmado via DOI 10.1037/0021-9010.92.6.1722."
+    },
+    {
+      "name": "Joel Souza Dutra",
+      "institution": "FEA-USP / Progep-FIA",
+      "region": "Brasil",
+      "area": "Gestão de pessoas por competências, carreira e sucessão",
+      "why": "Principal formulador do modelo brasileiro de gestão de pessoas por competências e carreiras ('Gestão de Pessoas: modelo, processos, tendências e perspectivas'); coordena o Progep-FIA.",
+      "openalex_id": "A5006543235",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "André Luiz Fischer",
+      "institution": "FEA-USP / FIA",
+      "region": "Brasil",
+      "area": "Modelos de gestão de pessoas, clima e cultura organizacional",
+      "why": "Referência brasileira em modelos de gestão de pessoas, com pesquisa longeva sobre inovação e adoção desses modelos, clima e cultura organizacional na FEA-USP/FIA.",
+      "openalex_id": "A5090323753",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5122151953"
+      ]
+    },
+    {
+      "name": "Maria Tereza Leme Fleury",
+      "institution": "FGV EAESP (e FEA-USP)",
+      "region": "Brasil",
+      "area": "Competências, cultura organizacional, gestão internacional",
+      "why": "'Construindo o Conceito de Competência' (RAC, 2001), um dos artigos mais citados da administração brasileira.",
+      "openalex_id": "A5048365336",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      }
+    },
+    {
+      "name": "Anderson de Souza Sant'Anna",
+      "institution": "FGV EAESP (Departamento de Administração Geral e Recursos Humanos)",
+      "region": "Brasil",
+      "area": "Competências individuais, carreira, liderança",
+      "why": "Referência em competências individuais e qualidade de vida no trabalho, integra o FGVneop (Núcleo de Estudos em Organizações e Pessoas).",
+      "openalex_id": "A5050588698",
+      "links": {
+        "homepage": "https://eaesp.fgv.br/pessoa/anderson-souza-santanna",
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5140941649"
+      ]
+    },
+    {
+      "name": "Naercio Menezes-Filho",
+      "institution": "Insper (Centro de Gestão e Políticas Públicas) e FEA-USP",
+      "region": "Brasil",
+      "area": "Economia do trabalho, educação e desigualdade salarial",
+      "why": "Principal economista do trabalho do país em retornos à educação e desigualdade salarial, base empírica para políticas de capital humano.",
+      "openalex_id": "A5072423035",
+      "links": {
+        "homepage": null,
+        "scholar": null
+      },
+      "alt_openalex_ids": [
+        "A5106208154"
+      ]
+    }
+  ],
+  "journals": [
+    {
+      "name": "Personnel Psychology",
+      "openalex_source_id": "S84664706",
+      "why": "Principal periódico de seleção, avaliação e práticas de RH baseadas em evidência."
+    },
+    {
+      "name": "Journal of Applied Psychology",
+      "openalex_source_id": "S166002381",
+      "why": "Periódico de maior prestígio em psicologia organizacional e do trabalho (APA)."
+    },
+    {
+      "name": "Human Resource Management",
+      "openalex_source_id": "S134094273",
+      "why": "Periódico de RH com forte ponte entre pesquisa e prática, incluindo HR analytics."
+    },
+    {
+      "name": "Human Resource Management Journal",
+      "openalex_source_id": "S113497174",
+      "why": "Principal periódico europeu de HRM; publicou o debate de referência sobre HR analytics (2022)."
+    },
+    {
+      "name": "The International Journal of Human Resource Management",
+      "openalex_source_id": "S184846731",
+      "why": "Grande volume de pesquisa em HRM internacional e people analytics, incluindo a revisão de Marler & Boudreau (2017)."
+    },
+    {
+      "name": "Human Resource Management Review",
+      "openalex_source_id": "S185253248",
+      "why": "Revisões conceituais e teóricas em HRM, útil para sínteses sobre IA em RH."
+    },
+    {
+      "name": "Academy of Management Journal",
+      "openalex_source_id": "S117778295",
+      "why": "Topo da pesquisa empírica em gestão, OB e HRM."
+    },
+    {
+      "name": "Journal of Management",
+      "openalex_source_id": "S122767448",
+      "why": "Periódico top em gestão, com revisões amplamente citadas sobre RH estratégico."
+    },
+    {
+      "name": "Organization Science",
+      "openalex_source_id": "S206124708",
+      "why": "Desenho organizacional, trabalho e tecnologia; publicou o estudo 'Jagged Frontier'."
+    },
+    {
+      "name": "Management Science",
+      "openalex_source_id": "S33323087",
+      "why": "Experimentos de campo e economia de pessoal, IA e mercados de trabalho digitais."
+    },
+    {
+      "name": "ILR Review",
+      "openalex_source_id": "S192274990",
+      "why": "Referência em relações de trabalho e economia de pessoal (OpenAlex usa o nome antigo 'Industrial and Labor Relations Review')."
+    },
+    {
+      "name": "Journal of Labor Economics",
+      "openalex_source_id": "S8557221",
+      "why": "Principal periódico de economia do trabalho e de pessoal."
+    },
+    {
+      "name": "RAE - Revista de Administração de Empresas",
+      "openalex_source_id": "S203848637",
+      "why": "Periódico brasileiro mais tradicional em administração (FGV EAESP), com produção relevante em gestão de pessoas."
+    },
+    {
+      "name": "RAC - Revista de Administração Contemporânea",
+      "openalex_source_id": "S2739018597",
+      "why": "Periódico da ANPAD, bem avaliado, onde saiu o artigo clássico sobre competências de Fleury & Fleury."
+    },
+    {
+      "name": "RAUSP Management Journal",
+      "openalex_source_id": "S4306526541",
+      "alt_openalex_source_ids": [
+        "S2898292038"
+      ],
+      "why": "Periódico da FEA-USP; o ID alternativo corresponde à fase anterior 'Revista de Administração' (ISSN 0080-2107)."
+    }
+  ],
+  "centers": [
+    {
+      "name": "Wharton People Analytics",
+      "institution": "Wharton School, University of Pennsylvania",
+      "url": "https://wpa.wharton.upenn.edu/",
+      "why": "Principal centro acadêmico de people analytics do mundo; organiza a Wharton People Analytics Conference."
+    },
+    {
+      "name": "Center for Human Resources",
+      "institution": "Wharton School, University of Pennsylvania",
+      "url": "https://chr.wharton.upenn.edu/",
+      "why": "Centro dirigido por Peter Cappelli, ponte entre pesquisa em RH e grandes empresas."
+    },
+    {
+      "name": "Managing the Future of Work",
+      "institution": "Harvard Business School",
+      "url": "https://www.hbs.edu/managing-the-future-of-work/",
+      "why": "Projeto de Joseph Fuller e William Kerr sobre talento, automação e força de trabalho."
+    },
+    {
+      "name": "Digital Data Design Institute (D^3)",
+      "institution": "Harvard University / Harvard Business School",
+      "url": "https://d3.harvard.edu/",
+      "why": "Origem dos experimentos de campo de IA generativa com BCG e P&G (Lakhani e coautores)."
+    },
+    {
+      "name": "Stanford Digital Economy Lab",
+      "institution": "Stanford University (HAI)",
+      "url": "https://digitaleconomy.stanford.edu/",
+      "why": "Laboratório de Brynjolfsson sobre IA, produtividade e emprego ('Generative AI at Work', 'Canaries in the Coal Mine')."
+    },
+    {
+      "name": "MIT Institute for Work and Employment Research (IWER)",
+      "institution": "MIT Sloan School of Management",
+      "url": "https://iwer.mit.edu/",
+      "why": "Centro histórico de relações de trabalho e emprego no MIT."
+    },
+    {
+      "name": "MIT Shaping the Future of Work Initiative",
+      "institution": "MIT (Economics / Sloan)",
+      "url": "https://shapingwork.mit.edu/",
+      "why": "Iniciativa de Acemoglu, Autor e Johnson sobre direcionar a IA para complementar o trabalho humano; sucessora da Work of the Future Task Force."
+    },
+    {
+      "name": "Centre for Economic Performance (CEP)",
+      "institution": "London School of Economics",
+      "url": "https://cep.lse.ac.uk/",
+      "why": "Base do World Management Survey e de pesquisa de ponta sobre gestão, produtividade e trabalho."
+    },
+    {
+      "name": "Center for Advanced Human Resource Studies (CAHRS)",
+      "institution": "Cornell University (ILR School)",
+      "url": "https://cahrs.ilr.cornell.edu/",
+      "why": "Principal consórcio academia-empresas em RH estratégico nos EUA."
+    },
+    {
+      "name": "Center for Effective Organizations (CEO)",
+      "institution": "USC Marshall School of Business",
+      "url": "https://ceo.usc.edu/",
+      "why": "Centro de John Boudreau e Edward Lawler, referência em HR analytics e desenho organizacional."
+    },
+    {
+      "name": "FGVneop - Núcleo de Estudos em Organizações e Pessoas",
+      "institution": "FGV EAESP",
+      "url": "https://eaesp.fgv.br/en/centers/nucleus-studies-organizations-and-people",
+      "why": "Principal núcleo de pesquisa em gestão de pessoas da FGV EAESP."
+    },
+    {
+      "name": "Progep - Programa de Estudos em Gestão de Pessoas",
+      "institution": "FIA / FEA-USP",
+      "url": "https://fia.com.br/en/institutional-programs/",
+      "why": "Programa coordenado por Joel Dutra, referência brasileira em produção e difusão de conhecimento sobre gestão de pessoas (sem site próprio verificável; link aponta para a página de programas da FIA)."
+    }
+  ],
+  "practitioners": [
+    {
+      "name": "David Green",
+      "org": "Insight222 (podcast Digital HR Leaders)",
+      "url": "https://www.myhrfuture.com/digital-hr-leaders-podcast",
+      "why": "Voz mais influente do people analytics corporativo; podcast e pesquisas anuais com empresas líderes."
+    },
+    {
+      "name": "Jonathan Ferrar",
+      "org": "Insight222",
+      "url": "https://www.insight222.com/",
+      "why": "Coautor de 'Excellence in People Analytics' e da pesquisa anual de maturidade de people analytics da Insight222."
+    },
+    {
+      "name": "Josh Bersin",
+      "org": "The Josh Bersin Company",
+      "url": "https://joshbersin.com/",
+      "why": "Analista de referência em HR tech, IA em RH e tendências de mercado."
+    },
+    {
+      "name": "Cole Napper",
+      "org": "Lightcast (newsletter e podcast Directionally Correct)",
+      "url": "https://directionallycorrectnews.substack.com/",
+      "why": "Newsletter e podcast de people analytics mais seguidos no Substack; autor de 'People Analytics' (2025)."
+    },
+    {
+      "name": "Erik van Vulpen",
+      "org": "AIHR - Academy to Innovate HR",
+      "url": "https://www.aihr.com/",
+      "why": "Principal plataforma de formação e conteúdo em HR analytics e RH digital."
+    },
+    {
+      "name": "Microsoft WorkLab / Work Trend Index",
+      "org": "Microsoft",
+      "url": "https://www.microsoft.com/en-us/worklab",
+      "why": "Pesquisa anual de larga escala sobre IA e produtividade no trabalho, com dados de telemetria do Microsoft 365."
+    },
+    {
+      "name": "Anthropic Economic Index",
+      "org": "Anthropic",
+      "url": "https://www.anthropic.com/economic-index",
+      "why": "Série de dados sobre como a IA é usada por tarefas e ocupações, útil para monitorar IA no trabalho."
+    },
+    {
+      "name": "People Analytics World",
+      "org": "Tucana",
+      "url": "https://www.tucana-global.com/",
+      "why": "Principal conferência de praticantes de people analytics (Londres, Zurique, São Francisco e Nova York)."
+    },
+    {
+      "name": "Wharton People Analytics Conference",
+      "org": "Wharton People Analytics",
+      "url": "https://wpa.wharton.upenn.edu/",
+      "why": "Conferência que reúne academia e praticantes de people analytics de ponta."
+    }
+  ]
+}
