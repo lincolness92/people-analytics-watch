@@ -1,5 +1,5 @@
 {
-  "lookback_days": 10,
+  "lookback_days": 7,
   "openalex": {
     "types": [
       "article",
