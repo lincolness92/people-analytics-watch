@@ -36,6 +36,9 @@ def cmd_run(args):
     watch = load_json(CONFIG / "watchlist.json", {})
     seen_path = DATA / "seen.json"
     seen = load_json(seen_path, {})
+    if args.force:
+        # Redoing the day: papers judged in the earlier run of this same day must be eligible again.
+        seen = {k: v for k, v in seen.items() if v != today.isoformat()}
 
     cands = collect(cfg, watch, set(seen), today, log)
     sel = cfg["selection"]
