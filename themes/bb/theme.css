@@ -1,0 +1,90 @@
+/*
+ * Tema Banco do Brasil para o site (só usado por `python -m pawatch bundle --theme bb`).
+ * Cores: tokens oficiais de brandzoneBB/cores-bb (mesmos de competencias/assets/bb-tokens.css).
+ * Contraste conferido (WCAG): branco/azul 4.9, azul-escuro/amarelo 8.1, azul-escuro/amarelo-claro 8.2.
+ * O amarelo nunca vira cor de texto sobre fundo claro; só fundo, com texto azul-escuro.
+ */
+@font-face { font-family: "BB Textos"; src: url("fonts/BancoDoBrasilTextos-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "BB Textos"; src: url("fonts/BancoDoBrasilTextos-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "BB Textos"; src: url("fonts/BancoDoBrasilTextos-Bold.ttf") format("truetype"); font-weight: 600 800; }
+@font-face { font-family: "BB Titulos"; src: url("fonts/BancoDoBrasilTitulos-Bold.ttf") format("truetype"); font-weight: 400 800; }
+
+:root {
+  --bb-amarelo: #FCFC30;
+  --bb-amarelo-claro: #FFF7B5;
+  --bb-azul: #465EFF;
+  --bb-azul-escuro: #3333BD;
+  --bb-roxo-claro: #BDB6FF;
+
+  --bg: #F0F4F8;
+  --surface: #FFFFFF;
+  --ink: #1A202C;
+  --ink-2: #4A5568;
+  --muted: #5A6478;
+  --line: #E2E8F0;
+  --accent: var(--bb-azul-escuro);
+  --accent-soft: var(--bb-amarelo-claro);
+  --star: var(--bb-azul-escuro);
+  --star-soft: var(--bb-amarelo);
+  --chip: #E8EBFF;
+  --score-hi: #137333;
+  --score-mid: #8A4B00;
+  --score-lo: #4A5568;
+  --serif: "BB Titulos", "BB Textos", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --sans: "BB Textos", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --header-bg: var(--bb-azul);
+  --watch-edge: var(--bb-azul);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12133A;
+    --surface: #1B1D52;
+    --ink: #FFFFFF;
+    --ink-2: #C9CCE8;
+    --muted: #9A9EC8;
+    --line: #2E3170;
+    --accent: var(--bb-amarelo);
+    --accent-soft: #24276B;
+    --star: var(--bb-azul-escuro);
+    --star-soft: var(--bb-amarelo);
+    --chip: #24276B;
+    --score-hi: #83FFEA;
+    --score-mid: #FCFC30;
+    --score-lo: #BDB6FF;
+    --header-bg: var(--bb-azul-escuro);
+    --watch-edge: var(--bb-amarelo);
+    color-scheme: dark;
+  }
+}
+
+body { font-weight: 400; }
+
+/* Faixa azul com o amarelo como destaque, como nas peças BB */
+.top {
+  background: var(--header-bg);
+  backdrop-filter: none;
+  border-bottom: 4px solid var(--bb-amarelo);
+}
+.brand { color: #FFFFFF; font-weight: 700; }
+.brand em { color: var(--bb-amarelo); font-style: normal; }
+.tabs a { color: #FFFFFF; font-weight: 600; }
+.tabs a:hover { background: rgba(255, 255, 255, 0.16); }
+.tabs a.active { background: var(--bb-amarelo); color: var(--bb-azul-escuro); }
+
+h1.day { font-weight: 700; color: var(--ink); letter-spacing: 0; }
+.card h3, .wl-section h2 { font-weight: 700; }
+.card h3 a:hover { text-decoration-color: var(--bb-azul); }
+.card { border-radius: 16px; box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.04); }
+.card.watch { border-left: 4px solid var(--watch-edge); }
+.meta .star { font-weight: 700; }
+
+.trend { border-left: 6px solid var(--bb-amarelo); border-radius: 16px; font-family: var(--sans); }
+
+.theme-h { color: var(--accent); border-bottom: 2px solid var(--line); }
+.tl-item p { font-family: var(--sans); }
+.tl-item::before { background: var(--bb-amarelo); border-color: var(--bb-azul-escuro); }
+.chip[aria-pressed="true"] { background: var(--bb-azul-escuro); color: #FFFFFF; border-color: var(--bb-azul-escuro); }
+.filter-row input[type=range] { accent-color: var(--bb-azul); }
+.day-nav button, .day-nav select { border-radius: 999px; }

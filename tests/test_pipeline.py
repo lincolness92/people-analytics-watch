@@ -1,4 +1,5 @@
 import sys
+import json
 import unittest
 from pathlib import Path
 
@@ -89,6 +90,24 @@ class RenderTests(unittest.TestCase):
     def test_markdown_empty_day(self):
         d = {"date": "2026-11-16", "stats": {"candidates": 3}, "items": [], "quick": []}
         self.assertIn("nada acima da barra", digest_markdown(d))
+
+
+
+class BundleTests(unittest.TestCase):
+    def test_bundle_is_self_contained(self):
+        import re
+        from pawatch.bundle import bundle
+        from pawatch.render import render_all
+        render_all()
+        for theme in (None, "bb"):
+            html = bundle(theme)
+            self.assertNotIn('href="style.css"', html)
+            self.assertNotIn('src="app.js"', html)
+            self.assertNotIn('fetch("data.json"', html)
+            self.assertIsNone(re.search(r'url\("fonts/', html))
+            data = re.search(r'<script id="pa-data" type="application/json">(.*?)</script>', html, re.S).group(1)
+            self.assertIn("digests", json.loads(data))
+        self.assertIn("data:font/ttf;base64,", bundle("bb"))
 
 
 if __name__ == "__main__":

@@ -5,13 +5,15 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from datetime import date, timedelta
 
-from . import CONFIG, DATA, DIGESTS_MD
+from . import CONFIG, DATA, DIGESTS_MD, ROOT
+from .bundle import bundle
 from .collect import collect, norm_title
 from .http import post_json
 from .llm import LLM
-from .render import digest_markdown, render_all
+from .render import digest_markdown, load_digests, render_all
 from .score import prefilter, triage, write_digest
 
 
@@ -81,6 +83,20 @@ def cmd_render(_args):
     return 0
 
 
+def cmd_bundle(args):
+    render_all()
+    if args.out:
+        out = Path(args.out)
+    else:
+        ds = load_digests()
+        latest = ds[0]["date"] if ds else date.today().isoformat()
+        out = ROOT / "share" / f"people-analytics-watch{'-' + args.theme if args.theme else ''}-{latest}.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(bundle(args.theme), encoding="utf-8")
+    log(f"bundle: {out} ({out.stat().st_size // 1024} KB)")
+    return 0
+
+
 def cmd_notify(args):
     """Post a digest to a Discord webhook (DISCORD_WEBHOOK_URL), split into ≤1900-char messages."""
     url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
@@ -116,6 +132,10 @@ def main():
     r.add_argument("--force", action="store_true", help="refaz o digest do dia")
     r.set_defaults(fn=cmd_run)
     sub.add_parser("render", help="regera digests/*.md, INDEX.md e dist/").set_defaults(fn=cmd_render)
+    b = sub.add_parser("bundle", help="gera um HTML autocontido do site em share/")
+    b.add_argument("--theme", help="tema extra em themes/<nome>/ (ex.: bb)")
+    b.add_argument("--out", help="caminho do arquivo (padrão: share/people-analytics-watch[-tema]-<data>.html)")
+    b.set_defaults(fn=cmd_bundle)
     n = sub.add_parser("notify", help="envia o digest ao Discord (opcional)")
     n.add_argument("--date")
     n.set_defaults(fn=cmd_notify)
