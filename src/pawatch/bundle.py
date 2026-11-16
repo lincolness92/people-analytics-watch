@@ -25,6 +25,8 @@ def bundle(theme=None):
     if theme:
         tdir = THEMES_DIR / theme
         css += "\n" + _inline_fonts((tdir / "theme.css").read_text(encoding="utf-8"), tdir)
+        if (tdir / "theme.js").exists():
+            js += "\n" + (tdir / "theme.js").read_text(encoding="utf-8")
     if FETCH not in js:
         raise RuntimeError("app.js mudou: não achei o fetch de data.json para embutir os dados")
     js = js.replace(FETCH, 'Promise.resolve(JSON.parse(document.getElementById("pa-data").textContent))')

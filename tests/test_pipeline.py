@@ -108,6 +108,8 @@ class BundleTests(unittest.TestCase):
             data = re.search(r'<script id="pa-data" type="application/json">(.*?)</script>', html, re.S).group(1)
             self.assertIn("digests", json.loads(data))
         self.assertIn("data:font/ttf;base64,", bundle("bb"))
+        self.assertIn("theme-toggle", bundle("bb"))
+        self.assertNotIn("theme-toggle", bundle(None))
 
 
 if __name__ == "__main__":

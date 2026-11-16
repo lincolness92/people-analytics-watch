@@ -37,26 +37,25 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #12133A;
-    --surface: #1B1D52;
-    --ink: #FFFFFF;
-    --ink-2: #C9CCE8;
-    --muted: #9A9EC8;
-    --line: #2E3170;
-    --accent: var(--bb-amarelo);
-    --accent-soft: #24276B;
-    --star: var(--bb-azul-escuro);
-    --star-soft: var(--bb-amarelo);
-    --chip: #24276B;
-    --score-hi: #83FFEA;
-    --score-mid: #FCFC30;
-    --score-lo: #BDB6FF;
-    --header-bg: var(--bb-azul-escuro);
-    --watch-edge: var(--bb-amarelo);
-    color-scheme: dark;
-  }
+/* Escuro só quando escolhido no botão do topo (theme.js); o padrão é o claro. */
+:root[data-theme="dark"] {
+  --bg: #12133A;
+  --surface: #1B1D52;
+  --ink: #FFFFFF;
+  --ink-2: #C9CCE8;
+  --muted: #9A9EC8;
+  --line: #2E3170;
+  --accent: var(--bb-amarelo);
+  --accent-soft: #24276B;
+  --star: var(--bb-azul-escuro);
+  --star-soft: var(--bb-amarelo);
+  --chip: #24276B;
+  --score-hi: #83FFEA;
+  --score-mid: #FCFC30;
+  --score-lo: #BDB6FF;
+  --header-bg: var(--bb-azul-escuro);
+  --watch-edge: var(--bb-amarelo);
+  color-scheme: dark;
 }
 
 body { font-weight: 400; }
@@ -88,3 +87,18 @@ h1.day { font-weight: 700; color: var(--ink); letter-spacing: 0; }
 .chip[aria-pressed="true"] { background: var(--bb-azul-escuro); color: #FFFFFF; border-color: var(--bb-azul-escuro); }
 .filter-row input[type=range] { accent-color: var(--bb-azul); }
 .day-nav button, .day-nav select { border-radius: 999px; }
+
+/* Botão claro/escuro */
+.theme-toggle {
+  order: 3; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  color: #FFFFFF; background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 999px; padding: 5px 12px;
+  white-space: nowrap;
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, 0.24); }
+.theme-toggle:focus-visible { outline: 3px solid var(--bb-amarelo); outline-offset: 2px; }
+@media (max-width: 640px) {
+  .top-inner { padding-top: 8px; padding-bottom: 6px; row-gap: 6px; }
+  .theme-toggle { order: 1; margin-left: auto; }
+  .tabs { order: 2; flex-basis: 100%; }
+}
