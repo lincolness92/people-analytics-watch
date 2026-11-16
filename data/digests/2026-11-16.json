@@ -2,20 +2,20 @@
  "date": "2026-11-16",
  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
  "stats": {
-  "candidates": 509,
+  "candidates": 412,
   "triaged": 220,
   "selected": 12,
   "tokens": {
-   "prompt_tokens": 45952,
-   "completion_tokens": 28779
+   "prompt_tokens": 45799,
+   "completion_tokens": 37879
   }
  },
- "headline": "dia forte em IA no trabalho — do ganho causal de produtividade ao viés embutido nos anúncios de vaga",
- "trend": "A IA generativa saiu da fase de promessa e entrou na de medição causal: os experimentos de campo mostram ganhos reais mas muito desiguais (+16,3% em um fluxo, zero em outro; mais para os menos experientes), enquanto a auditoria de 48 LLMs expõe que a mesma ferramenta usada para escrever vagas reproduz estereótipos de gênero e salário. Ao mesmo tempo, a evidência europeia sugere que automação não explode a desigualdade de renda disponível porque o Estado absorve o choque — o que desloca a responsabilidade da firma para identificar e requalificar grupos expostos, e para reescrever responsabilidades como \"fazer com IA\". O terceiro fio do dia é que desenho de trabalho continua sendo a alavanca mais barata: previsibilidade de localização no híbrido, sinalização de valor nas decisões de controle e enquadramento de ameaça mudam engajamento, esforço extra-role e voz sem exigir mais recursos. Para quem faz people analytics, a agenda é medir por workflow e por subgrupo, auditar outputs de IA e desconfiar de métricas de clima que capturam miragem em vez de comportamento.",
+ "headline": "dia forte em mensuração, segurança psicológica e efeitos da automação no trabalho",
+ "trend": "A prática de people analytics está migrando de métricas de acesso e frequência para medidas de **uso real, qualidade de interação e risco psicossocial**: telemetria de dispositivos, qualidade de 1:1, miragem de segurança psicológica e viés algorítmico mostram que o indicador fácil engana. Ao mesmo tempo, automação e gestão algorítmica pressionam renda, bem-estar e voz, mas os efeitos dependem de políticas de proteção, previsibilidade e intervenções de liderança. A agenda acionável é combinar instrumentos psicometricamente defensáveis, transparência sobre controle e desenho de condições que reduzam risco interpessoal e desigualdade.",
  "items": [
   {
    "key": "doi:10.1038/s41467-026-78689-1",
-   "title": "Divisão de uso digital: evidência de 40 milhões de dispositivos Windows",
+   "title": "Divisão de uso digital em 40 milhões de dispositivos Windows",
    "original_title": "Evidence and measures of the digital usage divide from 40 million Windows devices",
    "url": "https://doi.org/10.1038/s41467-026-78689-1",
    "venue": "Nature Communications",
@@ -43,13 +43,13 @@
    "watch_journal": false,
    "origin": "watchlist",
    "cited_by": 1,
-   "score": 9,
+   "score": 8,
    "theme": "analytics",
-   "summary": "Telemetria da Microsoft coletada em updates de SO de **40 milhões de dispositivos** nos EUA gerou índices de uso digital por CEP, com granularidade muito maior que surveys públicos ou comerciais. Há forte variação urbano-rural e disparidades dentro de uma mesma área metropolitana, correlacionadas com renda e educação — ou seja, a lacuna não é só de infraestrutura disponível. Para RH e inclusão digital, acesso a dispositivo não equivale a uso efetivo: programas de skills precisam medir profundidade de uso, não posse. Índices são públicos para replicação."
+   "summary": "A partir de telemetria de 40 milhões de dispositivos Windows nos EUA, o estudo cria índices de uso digital por CEP e revela divisão urbano-rural e disparidades dentro de MSAs, correlacionadas com renda e educação. Os gaps vão além de acesso à infraestrutura, apontando para **habilidades de uso**. Lição: medir uso real, não só posse de computador ou banda larga, e combinar acesso com treinamento em skills digitais."
   },
   {
    "key": "doi:10.1287/mnsc.2025.00955",
-   "title": "Esforço vs. oportunismo no tempo discricionário: como decisões de reporte de horas afetam esforço extra-role",
+   "title": "Consumo discricionário do tempo e esforço extra-role",
    "original_title": "Effortful vs. Opportunistic Consumption of Discretionary Time: How Time-Reporting Decisions Influence Extra-Role Effort",
    "url": "https://doi.org/10.1287/mnsc.2025.00955",
    "venue": "Management Science",
@@ -64,9 +64,9 @@
    "watch_journal": true,
    "origin": "journal",
    "cited_by": 0,
-   "score": 8,
+   "score": 7,
    "theme": "analytics",
-   "summary": "Experimento principal manipulando tipo de reporte de tempo (agregado vs. desagregado, que torna o tempo discricionário saliente) e sua origem (escolha do gestor vs. alocação aleatória), mais um experimento online de replicação direcional. Quando o gestor *escolhe* não implementar o reporte desagregado, subordinados reduzem significativamente o esforço extra-role; modelagem SEM mostra que **value signaling** supera o sinal de desconfiança, e com alocação aleatória o esforço não muda. Decisões de controle são lidas como sinal de valor: não medir tempo discricionário tem custo oculto de esforço."
+   "summary": "Experimento manipula formato de relatório de tempo (agregado vs. desagregado) e se a escolha foi do gestor ou aleatória. Quando gestores escolhem não implementar relatório desagregado, subordinados reduzem esforço extra-role; **sinalização de valor** supera sinalização de desconfiança, e a alocação aleatória não muda esforço. Lição: decisões de controle e transparência sinalizam o que a empresa valoriza; não medir tempo discricionário pode ter custo oculto de esforço."
   },
   {
    "key": "doi:10.1111/1748-8583.70071",
@@ -85,36 +85,13 @@
    "watch_journal": true,
    "origin": "journal",
    "cited_by": 0,
-   "score": 8,
-   "theme": "analytics",
-   "summary": "Revisão psicométrica de medidas de item único à luz da teoria clássica dos testes, TRI e teoria da generalizabilidade, com checklist prático. Item único **não consegue** demonstrar estrutura fatorial latente nem consistência interna, e os contornos usuais dependem de suposições não testáveis; já confiabilidade temporal, concordância entre avaliadores e validade de critério são apropriadas, e validade de conteúdo (cobertura e clareza do enunciado) é decisiva. Se você usa pulso de engajamento com um item, pare de reportar alfa e invista em redação do item e estabilidade temporal."
-  },
-  {
-   "key": "doi:10.1111/1748-8583.70073",
-   "title": "Framework de diferenças-em-diferenças para análise de mediação em políticas de RH",
-   "original_title": "Uncovering the Mechanisms of Policy Interventions: A Difference‐In‐Differences Framework for Mediation Analysis",
-   "url": "https://doi.org/10.1111/1748-8583.70073",
-   "venue": "Human Resource Management Journal",
-   "date": "2026-11-06",
-   "authors": [
-    "Robert Andersen",
-    "Anders Holm"
-   ],
-   "institutions": [
-    "Western University",
-    "Ivey Business School"
-   ],
-   "watch_authors": [],
-   "watch_journal": true,
-   "origin": "journal",
-   "cited_by": 0,
    "score": 7,
    "theme": "analytics",
-   "summary": "Framework de dois períodos em diferenças-em-diferenças que acomoda confundidores **não observados invariantes no tempo** entre mediador e desfecho, substituindo a hipótese forte de ignorabilidade sequencial por restrições sobre mudanças (tendências paralelas, exchangeability baseada em mudança). Distingue o que é necessário para identificar efeitos totais e de mediador versus efeitos diretos controlados e indiretos naturais, com termo residual não identificado tratado por análise de sensibilidade; estende para designs escalonados e traz pacote R open-source. Se você quer explicar *por que* uma prática de RH funciona com dados observacionais, este é o desenho a considerar antes de rodar mediação cross-sectional."
+   "summary": "Avaliação psicométrica abrangente mostra que medidas de item único não conseguem demonstrar estrutura fatorial latente nem consistência interna; workarounds comuns dependem de premissas frágeis. Algumas formas de confiabilidade (temporal, entre avaliadores) e validade (critério, aspectos de construto) são apropriadas, e validade de conteúdo é crítica. Lição: use item único só com justificativa e validação criterial; não para construtos multidimensionais ou decisões de alto risco."
   },
   {
    "key": "doi:10.1037/apl0001442.supp",
-   "title": "Meta-análise de três décadas de mensuração em testes de julgamento situacional (SJTs)",
+   "title": "Meta-análise de 30 anos sobre SJTs: clareza de construto vs. poder preditivo",
    "original_title": "Supplemental Material for A Meta-Analysis of Three Decades of Construct Measurement Research on Situational Judgment Tests: Toward a Balance Between Construct Clarity and Predictive Power",
    "url": "https://doi.org/10.1037/apl0001442.supp",
    "venue": "Journal of Applied Psychology",
@@ -137,59 +114,7 @@
    "cited_by": 0,
    "score": 8,
    "theme": "hiring",
-   "summary": "Meta-análise de 30 anos de pesquisa sobre como SJTs são construídos e medidos, buscando o equilíbrio entre **clareza de construto** e poder preditivo. A implicação direta para seleção: SJTs com o mesmo nome medem coisas diferentes conforme formato, instrução de resposta e chave de correção, e isso muda validade e interpretabilidade. Antes de comprar ou desenhar um SJT, exija evidência de construto do formato específico — não do rótulo genérico."
-  },
-  {
-   "key": "doi:10.1111/gwao.70291",
-   "title": "IA reforça estereótipos de gênero? Auditoria de 48 LLMs em descrições de vaga",
-   "original_title": "Does AI Reinforce Gender Stereotypes? Gender Bias in Job Descriptions Generated by 40+ Large Language Models",
-   "url": "https://doi.org/10.1111/gwao.70291",
-   "venue": "Gender Work and Organization",
-   "date": "2026-11-10",
-   "authors": [
-    "Jennifer M. Krebsbach",
-    "Jane E. Lee",
-    "Steven Zeck",
-    "Arti Thakur",
-    "Martin Hilbert"
-   ],
-   "institutions": [
-    "University of California, Davis"
-   ],
-   "watch_authors": [],
-   "watch_journal": false,
-   "origin": "busca",
-   "cited_by": 0,
-   "score": 8,
-   "theme": "hiring",
-   "summary": "Auditoria algorítmica com **48 LLMs**, 32 ocupações e 4.608 descrições geradas a partir de títulos female-coded, male-coded e neutros (ex.: firewoman/fireman/firefighter). Títulos male-coded receberam salários mais altos em vagas white-collar (efeito não robusto em todas as análises); anúncios de títulos gender-coded receberam ratings comparativos mais altos, com os female-coded no topo, e otimização de prompt não os levou ao padrão do título neutro. Quem automatiza job postings deve partir de títulos neutros e auditar outputs — prompt engineering não resolve viés de base."
-  },
-  {
-   "key": "doi:10.1287/mnsc.2026.00623",
-   "title": "IA generativa e produtividade em vendas: experimentos de campo em e-commerce",
-   "original_title": "Generative Artificial Intelligence and Sales Productivity: Field Experiments in Online Retail",
-   "url": "https://doi.org/10.1287/mnsc.2026.00623",
-   "venue": "Management Science",
-   "date": "2026-11-06",
-   "authors": [
-    "Lu Fang",
-    "Zhe Yuan",
-    "Kaifu Zhang",
-    "Dante Donati",
-    "Miklós Sárváry"
-   ],
-   "institutions": [
-    "Zhejiang University of Finance and Economics",
-    "Zhejiang University",
-    "Columbia University"
-   ],
-   "watch_authors": [],
-   "watch_journal": true,
-   "origin": "journal",
-   "cited_by": 1,
-   "score": 9,
-   "theme": "ai_work",
-   "summary": "Sete experimentos de campo randomizados em escala de milhões de usuários numa plataforma cross-border, 2023–2024, testando GenAI em sete fluxos (atendimento, matching produto-consumidor, publicidade, serviços a vendedores). Efeitos em vendas variaram de **zero a +16,3%** conforme a contribuição marginal da IA sobre a prática vigente; nos quatro fluxos positivos, valor incremental de ~US$5 por consumidor/ano, ganhos via conversão (não ticket), sem piora em devoluções ou ratings. Lição: produtividade de IA é altamente heterogênea por workflow e maior para os menos experientes — meça por processo e por subgrupo, não no agregado."
+   "summary": "Meta-análise de três décadas de pesquisas sobre mensuração de testes de julgamento situacional (SJTs) mostra que o campo oscila entre **clareza de construto** e capacidade preditiva. A lição para seleção é não tratar SJT como caixa-preta: documente o construto-alvo, o formato e a validade preditiva antes de usar em decisão de contratação."
   },
   {
    "key": "doi:10.1177/00197939261498019",
@@ -216,34 +141,38 @@
    "cited_by": 0,
    "score": 8,
    "theme": "ai_work",
-   "summary": "Adoção de robôs industriais em **14 países europeus, 2006–2018**, combinada com microsimulação EUROMOD para rastrear o efeito até a renda domiciliar disponível. A automação reduziu salários relativos, emprego e renda de mercado dos grupos demográficos mais expostos, mas o efeito sobre desigualdade de renda disponível foi pequeno: tributos e transferências absorveram o choque, e a diversificação de renda domiciliar ajudou pouco na desigualdade. Para people analytics, o sinal é mapear quais grupos ocupacionais estão expostos — o amortecimento vem de política pública, não da firma."
+   "summary": "Estudo com 14 países europeus (2006–2018) mostra que robôs industriais reduziram salários relativos, emprego e renda de mercado de grupos mais expostos. Ao simular no EUROMOD, o efeito sobre desigualdade de renda disponível foi pequeno porque **transferências e impostos** absorveram o choque; diversificação da renda familiar ajudou, mas pouco. Para people analytics, monitore transições e exposição à automação, sabendo que o impacto final depende do sistema de proteção e de políticas de recolocação."
   },
   {
-   "key": "arxiv:2611.09870",
-   "title": "Exposição à IA e mudança de responsabilidades nos anúncios de vaga",
-   "original_title": "AI Exposure and the Changing Responsibilities in Job Postings",
-   "url": "https://arxiv.org/abs/2611.09870",
-   "venue": "arXiv (cs.CY)",
-   "date": "2026-11-06",
+   "key": "doi:10.1002/job.70134",
+   "title": "Reuniões 1:1 e engajamento: qualidade importa mais que quantidade",
+   "original_title": "One Meeting That Should Not Be an Email: Manager–Direct Report One‐on‐One Meetings and Employee Engagement",
+   "url": "https://doi.org/10.1002/job.70134",
+   "venue": "Journal of Organizational Behavior",
+   "date": "2026-11-15",
    "authors": [
-    "Dora Zhao",
-    "Lin Ai",
-    "Pranav Khadpe",
-    "Siddharth Suri",
-    "Scott Counts"
+    "Jon Gray",
+    "Jonathan R. Flinchum",
+    "Steven G. Rogelberg",
+    "Matthew J. Gerson",
+    "Nicholas Dilley",
+    "Liana M. Kreamer"
    ],
-   "institutions": [],
+   "institutions": [
+    "University of North Carolina at Charlotte",
+    "Florida Institute of Technology"
+   ],
    "watch_authors": [],
    "watch_journal": false,
-   "origin": "arxiv",
+   "origin": "busca",
    "cited_by": 0,
    "score": 8,
-   "theme": "ai_work",
-   "summary": "Pipeline que extrai responsabilidades de anúncios e as mapeia à taxonomia O*NET de Intermediate Work Activities, aplicado a **50 mil vagas de 33 empresas** (2023–2025), cruzado com medidas de exposição à IA derivadas de uso de Copilot e Claude. Menções explícitas a IA cresceram **66%**, boa parte fora da descrição das atividades reais; atividades mais expostas à IA caem levemente em prevalência, mas passam a aparecer acopladas a responsabilidades explicitamente de IA. A leitura prática: a IA não está apagando atividades, está reescrevendo-as como \"fazer com IA\" — revise descrições de cargo e trilhas de skills com essa lente."
+   "theme": "engagement",
+   "summary": "Dois surveys separados no tempo com 303 trabalhadores testaram se reuniões 1:1 entre gestor e subordinado aumentam engajamento via autonomia, competência e vínculo. A **qualidade** do 1:1 (comportamentos de tarefa e relação) foi mais consistentemente ligada a engajamento do que a quantidade, mesmo controlando os mesmos comportamentos fora da reunião. Lição: para engajar, invista em 1:1 bem conduzido, não apenas em mais reuniões."
   },
   {
    "key": "doi:10.1037/apl0001440",
-   "title": "Quando turnos importam em equipes híbridas: previsibilidade de localização",
+   "title": "Turnos em equipes híbridas: previsibilidade de localização",
    "original_title": "When shifts matter for hybrid teams: The moderating role of location predictability.",
    "url": "https://doi.org/10.1037/apl0001440",
    "venue": "Journal of Applied Psychology",
@@ -263,13 +192,13 @@
    "watch_journal": true,
    "origin": "journal",
    "cited_by": 0,
-   "score": 8,
+   "score": 7,
    "theme": "engagement",
-   "summary": "Survey de medidas repetidas com **164 equipes híbridas de vendas** na China e seus supervisores, 6 semanas, 648 respostas semanais, testando quedas semanais na interação face a face. Downshifts de presença reduzem engajamento e performance semanais, mas apenas em equipes com baixa **previsibilidade de localização**; com alta previsibilidade, o efeito desaparece. Em híbrido, o que protege o time não é a quantidade de presença, é a previsibilidade de onde e quando — publique o calendário com antecedência."
+   "summary": "Estudo de campo com 164 equipes híbridas de vendas na China, acompanhadas por 6 semanas (648 respostas semanais), testou quedas semanais na interação presencial. Downshifts de face-to-face reduziram engajamento e desempenho semanais apenas em equipes com baixa **previsibilidade de localização**. Lição: em híbrido, previsibilidade de onde e quando a equipe se encontra protege engajamento; mudanças erráticas de localização custam caro."
   },
   {
    "key": "doi:10.1037/apl0001436",
-   "title": "Contra o viés de ameaça: experimento de campo com duas intervenções de enquadramento",
+   "title": "Intervenções contra viés de ameaça em gestores",
    "original_title": "Counteracting threat bias: A longitudinal field experiment testing two interventions that expand managerial attention to opportunities under economic threat.",
    "url": "https://doi.org/10.1037/apl0001436",
    "venue": "Journal of Applied Psychology",
@@ -286,11 +215,11 @@
    "cited_by": 0,
    "score": 8,
    "theme": "leadership",
-   "summary": "Experimento de campo de cinco ondas com **414 gestores** durante a crise da COVID-19, testando duas intervenções breves de construal (foco em oportunidade; balanceada) com voz avaliada por gestores superiores cegos à condição. Nos não expostos, aumento de ameaça percebida vinha acompanhado de queda no foco de promoção e na voz sobre oportunidades; ambas as intervenções enfraqueceram essa associação e elevaram foco de promoção e voz de oportunidade, com efeitos crescendo ao longo de 3 meses. A ameaça percebida não caiu: mudou-se a resposta a ela — treinar enquadramento é mais viável que tentar reduzir a percepção de risco."
+   "summary": "Experimento de campo com 414 gestores durante a crise da COVID-19 testou duas intervenções breves de enquadramento: foco em oportunidades e balanceada (oportunidades + ameaças). Ambas enfraqueceram o viés de ameaça e elevaram foco em promoção e voz sobre oportunidades; a balanceada também aumentou foco em prevenção e voz sobre ameaças, com efeitos crescendo por 3 meses. Lição: em crises, treine líderes para ampliar atenção a oportunidades sem negar riscos, em vez de só acalmar a ameaça."
   },
   {
    "key": "doi:10.1287/orsc.2024.19549",
-   "title": "A emergência da segurança psicológica — ou sua miragem",
+   "title": "Emergência ou miragem da segurança psicológica",
    "original_title": "The Emergence of Psychological Safety or its Mirage",
    "url": "https://doi.org/10.1287/orsc.2024.19549",
    "venue": "Organization Science",
@@ -309,13 +238,11 @@
    "cited_by": 0,
    "score": 8,
    "theme": "leadership",
-   "summary": "Etnografia longitudinal de dois anos com par de casos pareados, usando transcrições literais de reuniões e entrevistas para captar microprocessos. Identificaram a **miragem de segurança psicológica**: marcadores superficiais de segurança presentes, mas membros seguiam evitando risco interpessoal, porque pressões externas levavam líderes a ações autoprotetivas que reforçavam o risco. Um time rompeu a miragem via processo de três fases — reconhecer coletivamente o risco, de-riscar contribuições com construção de skills e então enactar segurança. Surveys de clima podem medir a miragem: complemente com comportamento observado (quem fala, sobre o quê)."
-  }
- ],
- "quick": [
+   "summary": "Etnografia longitudinal de dois anos com duas equipes pareadas, incluindo transcrições de reuniões e entrevistas, mostra que marcadores superficiais de segurança psicológica podem coexistir com evitação de risco interpessoal — uma **miragem**. Pressões externas levaram líderes a ações autoprotetivas; uma equipe rompeu a miragem com processo de três fases: reconhecer o risco, reduzir risco das contribuições via desenvolvimento de skills e então encenar segurança. Lição: pesquisas de clima podem capturar miragem; segurança real exige de-risking concreto, não só convite à fala."
+  },
   {
    "key": "doi:10.1002/hrm.70110",
-   "title": "Quem recebe tarefas irracionais do supervisor",
+   "title": "Quem recebe tarefas irrazoáveis? Experimento conjoint",
    "original_title": "Who Will be Assigned Unreasonable Tasks by Supervisors: A Conjoint Survey Experiment",
    "url": "https://doi.org/10.1002/hrm.70110",
    "venue": "Human Resource Management",
@@ -334,34 +261,11 @@
    "cited_by": 0,
    "score": 7,
    "theme": "leadership",
-   "note": "Experimento conjoint mostra que atributos do funcionário preveem quem é sobrecarregado com tarefas fora do escopo — revise critérios de designação."
-  },
-  {
-   "key": "doi:10.1080/09585192.2026.2761647",
-   "title": "Discriminação de gênero no trabalho: 50 anos de pesquisa",
-   "original_title": "Workplace gender discrimination: key insights, emerging trends, and future research directions",
-   "url": "https://doi.org/10.1080/09585192.2026.2761647",
-   "venue": "The International Journal of Human Resource Management",
-   "date": "2026-11-14",
-   "authors": [
-    "Mamta Singh",
-    "Anuj Sharma"
-   ],
-   "institutions": [
-    "Chandragupt Institute of Management",
-    "O. P. Jindal Global University"
-   ],
-   "watch_authors": [],
-   "watch_journal": true,
-   "origin": "journal",
-   "cited_by": 0,
-   "score": 7,
-   "theme": "pay_careers",
-   "note": "Topic modeling em 1.091 artigos (1975–2024) revela seis temas e deslocamento do foco em salário/promoção para dinâmicas estruturais."
+   "summary": "Experimento conjoint com 464 supervisores avaliando 4.640 perfis hipotéticos mostrou quem recebe tarefas irrazoáveis fora do escopo. Supervisores escolhem mais jovens, com melhor desempenho, mais comportamento de ajuda, carga recente mais leve e relação mais próxima; a lógica de eficiência foi a mais forte. Lição: monitore tarefas fora do escopo, pois bons colaboradores e pessoas próximas tendem a absorver sobrecarga invisível."
   },
   {
    "key": "doi:10.1111/1748-8583.70079",
-   "title": "Segurança psicológica de equipe pela lente COR",
+   "title": "Cultivando segurança psicológica em equipes via COR",
    "original_title": "Cultivating Team Psychological Safety: A Model Rooted in Conservation of Resources Theory",
    "url": "https://doi.org/10.1111/1748-8583.70079",
    "venue": "Human Resource Management Journal",
@@ -381,59 +285,7 @@
    "cited_by": 0,
    "score": 7,
    "theme": "leadership",
-   "note": "Modelo multinível trata segurança psicológica como \"resource caravan passageway\", conectando iniciativa individual, interação e condições organizacionais."
-  },
-  {
-   "key": "doi:10.21203/rs.3.rs-11446329/v1",
-   "title": "Gestão algorítmica como design de trabalho de dois gumes",
-   "original_title": "Algorithmic Management as a Double-Edged Form of Digital Work Design: Job Demands, Autonomy and Employee Outcomes across 35 European Countries",
-   "url": "https://doi.org/10.21203/rs.3.rs-11446329/v1",
-   "venue": "Research Square",
-   "date": "2026-11-11",
-   "authors": [
-    "Fahri Alp Erdoğan",
-    "Mehmet Alper Akdemir",
-    "Murat Sağbaş"
-   ],
-   "institutions": [
-    "National Defence University",
-    "Ankara Bilim Üniversitesi",
-    "Bahçeşehir Cyprus University"
-   ],
-   "watch_authors": [],
-   "watch_journal": false,
-   "origin": "busca",
-   "cited_by": 0,
-   "score": 7,
-   "theme": "ai_work",
-   "note": "Em 35 países europeus, alocação, escalonamento e monitoramento afetam engajamento e intenção de saída por vias distintas de intensidade e autonomia."
-  },
-  {
-   "key": "doi:10.1080/09585192.2026.2755816",
-   "title": "RH sustentável pela lente da justiça",
-   "original_title": "Sustainable HRM through a justice lens: identifying a leverage point for systemic impact",
-   "url": "https://doi.org/10.1080/09585192.2026.2755816",
-   "venue": "The International Journal of Human Resource Management",
-   "date": "2026-11-06",
-   "authors": [
-    "Nataliya Podgorodnichenko",
-    "Jiarui Yin",
-    "Fiona Edgar",
-    "Adeel Akmal",
-    "Ross Heath"
-   ],
-   "institutions": [
-    "University of Otago",
-    "Universitat Politècnica de Catalunya",
-    "University of Iceland"
-   ],
-   "watch_authors": [],
-   "watch_journal": true,
-   "origin": "journal",
-   "cited_by": 0,
-   "score": 7,
-   "theme": "leadership",
-   "note": "Justiça social é apontada como ponto de alavancagem sistêmico para o RH sustentável sair da ambiguidade conceitual e gerar impacto real."
+   "summary": "Modelo teórico multinível baseado em Conservation of Resources propõe que segurança psicológica de equipe funciona como **passagem de caravana de recursos**, em três estágios: cultivo, florescimento e colheita. Condições organizacionais, iniciativa individual e interação da equipe cultivam e sustentam o clima, que protege, investe e adquire recursos. Lição: segurança psicológica não é só treinamento de líder; exige desenhar condições organizacionais e interações que renovem recursos."
   },
   {
    "key": "doi:10.1037/apl0001441",
@@ -457,9 +309,165 @@
    "watch_journal": true,
    "origin": "journal",
    "cited_by": 0,
-   "score": 7,
+   "score": 8,
    "theme": "pay_careers",
-   "note": "Perfis de carreira foram redefinidos no novo cenário, com parte dos profissionais delegando mais controle da trajetória ao empregador."
+   "summary": "Estudo atualiza perfis de atitudes de carreira no cenário pós-inflection, em que profissionais assumem mais controle da própria trajetória ou delegam parte dele ao empregador. A eficácia relativa dos perfis muda conforme esse novo arranjo de carreira. Lição: segmente políticas de carreira por perfil e expectativa de controle, em vez de oferecer o mesmo modelo a todos."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1111/gwao.70291",
+   "title": "Vieses de gênero em descrições de vagas geradas por 48 LLMs",
+   "original_title": "Does AI Reinforce Gender Stereotypes? Gender Bias in Job Descriptions Generated by 40+ Large Language Models",
+   "url": "https://doi.org/10.1111/gwao.70291",
+   "venue": "Gender Work and Organization",
+   "date": "2026-11-10",
+   "authors": [
+    "Jennifer M. Krebsbach",
+    "Jane E. Lee",
+    "Steven Zeck",
+    "Arti Thakur",
+    "Martin Hilbert"
+   ],
+   "institutions": [
+    "University of California, Davis"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "hiring",
+   "note": "48 LLMs geram descrições de vagas com estereótipos de gênero; revise e padronize prompts antes de publicar."
+  },
+  {
+   "key": "doi:10.13075/ijomeh.1896.02881",
+   "title": "Trabalho gig: demandas, recursos e bem-estar na Europa",
+   "original_title": "Is gig work the same for everyone? Psychosocial job demands, resources, and well-being in platform work across Europe: evidence from the GIG-OSH study",
+   "url": "https://doi.org/10.13075/ijomeh.1896.02881",
+   "venue": "International Journal of Occupational Medicine and Environmental Health",
+   "date": "2026-11-12",
+   "authors": [
+    "Dorota Merecz‐Kot",
+    "Agnieszka Lipińska-Grobelny",
+    "Olga Zwardoń-Kuchciak",
+    "Marta Znajmiecka-Sikora",
+    "Jessie Gevaert",
+    "Filippa Lundh",
+    "Theo Bodin",
+    "Lluís Mangot‐Sala",
+    "Nuria Matilla Santander",
+    "Emelie Thern",
+    "Mireia Julià",
+    "Sangwoo Lee"
+   ],
+   "institutions": [
+    "University of Łódź",
+    "Vrije Universiteit Brussel",
+    "Research Foundation - Flanders",
+    "Karolinska Institutet",
+    "Region Stockholm",
+    "Universitat de Vic - Universitat Central de Catalunya"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "engagement",
+   "note": "Estudo GIG-OSH mostra que gestão algorítmica e demandas psicossociais afetam bem-estar de forma heterogênea entre plataformas."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11660421/v1",
+   "title": "Quando o algoritmo dita o ritmo: gestão digital e voz",
+   "original_title": "When the Algorithm Sets the Pace: Digital Management, Worker Voice and Job Quality",
+   "url": "https://doi.org/10.21203/rs.3.rs-11660421/v1",
+   "venue": "Research Square",
+   "date": "2026-11-10",
+   "authors": [
+    "Sarfaraz Abu Abdullah"
+   ],
+   "institutions": [
+    "University of Rajshahi"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "note": "Reanálise de 27.250 trabalhadores em 29 países associa gestão algorítmica a mais pressão e menor qualidade do trabalho."
+  },
+  {
+   "key": "arxiv:2611.16058",
+   "title": "Match trabalhador-empresa por sobrevivência do vínculo",
+   "original_title": "Human Capital in Context: What Employment Survival Reveals About Worker-Firm Match",
+   "url": "https://arxiv.org/abs/2611.16058",
+   "venue": "arXiv (cs.LG, cs.AI)",
+   "date": "2026-11-11",
+   "authors": [
+    "Jung Ho Choi",
+    "Mario Milone"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "hiring",
+   "note": "Modelo two-tower aprende qualidade do match a partir da sobrevivência do emprego; útil para recrutamento e retenção."
+  },
+  {
+   "key": "doi:10.1111/1748-8583.70076",
+   "title": "Talent managers em ciclos de hype de indústrias emergentes",
+   "original_title": "How Can Talent Managers Create Organizational Value Throughout the Hype Cycles of Emerging and Innovative Industries?",
+   "url": "https://doi.org/10.1111/1748-8583.70076",
+   "venue": "Human Resource Management Journal",
+   "date": "2026-11-10",
+   "authors": [
+    "Francine K. Schlosser",
+    "Márcia Carvalho de Azevedo",
+    "Deborah M. McPhee"
+   ],
+   "institutions": [
+    "University of Windsor",
+    "Universidade Federal de São Paulo",
+    "Brock University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "leadership",
+   "note": "Entrevistas com 14 executivos mostram que sistemas de talent management precisam se reconfigurar conforme regulação e capital."
+  },
+  {
+   "key": "doi:10.1111/1748-8583.70074",
+   "title": "Redes sociais de trabalho, fronteiras e bem-estar",
+   "original_title": "Job Demands‐Resources, Well‐Being and Work‐Life Boundaries: The Pervasiveness of Social Networking Platforms",
+   "url": "https://doi.org/10.1111/1748-8583.70074",
+   "venue": "Human Resource Management Journal",
+   "date": "2026-11-10",
+   "authors": [
+    "Severina Carwright",
+    "Emma Hughes",
+    "Iain Andrew Davies",
+    "Lloyd Harris"
+   ],
+   "institutions": [
+    "University of Liverpool",
+    "University of Manchester",
+    "University of Strathclyde"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engagement",
+   "note": "Entrevistas com 67 gestores revelam que redes sociais de trabalho borram fronteiras e ampliam demandas; políticas de desconexão são necessárias."
   }
  ]
 }
