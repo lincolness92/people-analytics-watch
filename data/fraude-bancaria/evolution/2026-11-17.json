@@ -7,73 +7,33 @@
   "since": "2026-11-17",
   "added": [
    {
-    "title": "Learning to detect phishing emails",
-    "year": 2007,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques: A Guide to Data Science for Fraud Detection",
-    "year": 2015,
-    "era": "2010-2017"
-   },
-   {
-    "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+    "title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts",
     "year": 2018,
     "era": "2018-2022"
-   },
-   {
-    "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
-    "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "Financial fraud detection using graph neural networks: A systematic review",
-    "year": 2023,
-    "era": "2023+"
    }
   ],
   "removed": [
    {
-    "title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
-    "year": 2021,
+    "title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
+    "year": 2019,
     "era": "2018-2022"
-   },
-   {
-    "title": "Deepfake Attacks: Generation, Detection, Datasets, Challenges, and Research Directions",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
-    "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
-    "year": 2025,
-    "era": "2023+"
    }
   ],
-  "note": "Entraram seis marcos: a detecção de e-mails de phishing por aprendizado de máquina (Fette, 2007), o guia de fraud analytics que levou técnicas de rede social para a prática (Baesens et al., 2015), o GEM do Alipay como primeiro GNN heterogêneo em produção (2018), o 'pig butchering' como evolução industrializada do golpe de relacionamento (Cross, 2023) e duas revisões sistemáticas recentes — GNNs para fraude financeira (2023) e analytics de rede para AML (2025). Saíram o Pick and Choose (2021), o FraudGNN-RL (2025) e os dois trabalhos de benchmark in-the-wild de deepfake (2023 e 2025), o que reduziu o peso de aprendizado por reforço e de avaliação in-the-wild no relato da fase atual."
+  "note": "Entrou na época 2018–2022 a detecção de deepfake por artefatos de warping (Li & Ly, 2018), que reforça a linha de defesa por artefato de geração; saiu o Semi-Supervised Graph Attentive Network (2019), sem impacto no argumento da época. O 'now' foi atualizado com os destaques do mês: Large Payments Model, Resolução Conjunta BC/CMN 21/2026 no Open Finance, o debate do Bank of Canada sobre responsabilidade em pagamentos instantâneos e o primeiro estudo holístico de ataques de acesso persistente. O tema 'scams' ficou sem thread por ter um único marco nesta seleção."
  },
  "stats": {
-  "network": 931,
-  "candidates": 453,
-  "triaged": 403,
+  "network": 978,
+  "candidates": 501,
+  "triaged": 73,
   "milestones": 36,
-  "openalex_calls": 94,
-  "openalex_cost": 0.04,
+  "openalex_calls": 97,
+  "openalex_cost": 0.0403,
   "tokens": {
-   "prompt_tokens": 79407,
-   "completion_tokens": 122763
+   "prompt_tokens": 30782,
+   "completion_tokens": 32992
   }
  },
- "overview": "O campo nasceu como mineração de dados sobre transações de cartão — classes extremamente desbalanceadas, custo assimétrico do erro e necessidade de rodar em volume industrial — e ganhou vocabulário estatístico comum com Bolton & Hand (2002). A migração para a web abriu uma segunda frente, o phishing, e entre 2010 e 2017 a área virou engenharia: drift de conceito, latência de verificação e engenharia de features passaram a valer mais que a escolha do algoritmo. De 2018 em diante, grafos e aprendizado de representação assumiram o centro, com camuflagem adversarial e escassez de rótulos como problemas centrais. Desde 2023, a agenda se amplia para deepfakes, identidades sintéticas, golpes de engenharia social industrializados e modelos de fundação treinados em dados transacionais, sob pressão simultânea por explicabilidade, privacidade e responsabilidade legal bem definida.",
+ "overview": "O campo nasceu como mineração de dados sobre transações de cartão — classes extremamente desbalanceadas, custo assimétrico do erro e exigência de rodar em volume industrial — e ganhou vocabulário estatístico comum com Bolton & Hand (2002). A migração para a web abriu a frente do phishing e, entre 2010 e 2017, a área virou engenharia: drift de conceito, latência de verificação e engenharia de features passaram a valer mais que a escolha do algoritmo. De 2018 em diante, grafos, sequências e aprendizado de representação assumiram o centro, com camuflagem adversarial e escassez de rótulos como problemas centrais. Desde 2023, a agenda se amplia para deepfakes, identidades sintéticas, golpes de engenharia social industrializados, ataques de acesso persistente e modelos de fundação treinados em dados transacionais, sob pressão simultânea por explicabilidade, privacidade e responsabilidade legal bem definida.",
  "eras": [
   {
    "key": "ate-1999",
@@ -359,7 +319,7 @@
      "watch": [],
      "score": 8,
      "why": "Fette, Sadeh e Tomasic aplicam aprendizado de máquina a um conjunto de features desenhado para capturar engano direcionado ao usuário, detectando e-mails de phishing com alta precisão. Fecha o ciclo aberto por Dhamija: a defesa deixa de depender só da educação do usuário e passa a ser classificador no lado do provedor.",
-     "new": true
+     "new": false
     }
    ]
   },
@@ -543,7 +503,7 @@
      ],
      "score": 9,
      "why": "Baesens, Van Vlasselaer e Verbeke publicam o primeiro guia completo de fraud analytics, cobrindo coleta, pré-processamento, modelagem e pós-implementação, com técnicas descritivas, preditivas e de rede social. É a ponte entre a era de features e a era de grafos, e vira referência de implementação para times de banco.",
-     "new": true
+     "new": false
     }
    ]
   },
@@ -551,7 +511,7 @@
    "key": "2018-2022",
    "label": "2018–2022",
    "title": "Grafos, sequências e deepfakes",
-   "summary": "A época deslocou o foco da transação isolada para a estrutura: sequências de eventos do mesmo cartão e redes de relacionamento entre usuários, comerciantes e dispositivos. O padrão que emergiu foi GNN com tratamento explícito de camuflagem e desbalanceamento, combinado com aprendizado semi-supervisionado para o regime de poucos rótulos — e, no caso do GEM no Alipay (2018), grafos heterogêneos de contas e dispositivos rodando em escala de produção. Em paralelo, a manipulação facial sintética entrou na agenda com o primeiro benchmark padronizado. Ficou em aberto a robustez dos grafos sob ataque adversarial e a transferência dos detectores de deepfake para o mundo real.",
+   "summary": "A época deslocou o foco da transação isolada para a estrutura: sequências de eventos do mesmo cartão (LSTM de Jurgovsky et al., 2018) e redes de relacionamento entre contas, dispositivos e comerciantes (GEM no Alipay, 2018). O padrão que emergiu foi GNN com tratamento explícito de camuflagem e desbalanceamento (CARE-GNN, 2020), combinado com aprendizado não supervisionado e supervisionado para o regime de rótulos escassos e atrasados (Carcillo et al., 2019) e com ensembles para robustez a ruído (Randhawa et al., 2018). Em paralelo, a manipulação facial sintética entrou na agenda com o primeiro benchmark padronizado (FaceForensics++, 2019) e com a detecção por artefatos de warping (Li & Ly, 2018). Ficou em aberto a robustez dos grafos sob ataque adversarial e a transferência dos detectores de deepfake para o mundo real.",
    "milestones": [
     {
      "id": "W2786577118",
@@ -614,7 +574,7 @@
       "Gianluca Bontempi"
      ],
      "cited_by": 738,
-     "net": 15,
+     "net": 14,
      "url": "https://doi.org/10.1016/j.ins.2019.05.042",
      "theme": "fraud_analytics",
      "versions": [],
@@ -641,7 +601,7 @@
       "Matthias Nießner"
      ],
      "cited_by": 4824,
-     "net": 11.5,
+     "net": 12.0,
      "url": "https://doi.org/10.1109/iccv.2019.00009",
      "theme": "genai_deepfakes",
      "versions": [],
@@ -649,6 +609,48 @@
      "score": 7,
      "why": "FaceForensics++ cria benchmark automatizado para detecção de manipulação facial sobre DeepFakes, Face2Face, FaceSwap e NeuralTextures. É a base de comparação de toda a linha de detecção de deepfake.",
      "new": false
+    },
+    {
+     "id": "W2897862648",
+     "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+     "year": 2018,
+     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+     "authors": [
+      "Ziqi Liu",
+      "Chaochao Chen",
+      "Xinxing Yang",
+      "Jun Zhou",
+      "Xiaolong Li",
+      "Le Song"
+     ],
+     "cited_by": 519,
+     "net": 11.5,
+     "url": "https://doi.org/10.1145/3269206.3272010",
+     "theme": "account_identity",
+     "versions": [],
+     "watch": [],
+     "score": 7,
+     "why": "O GEM, do Alipay, é o primeiro GNN heterogêneo para detecção de contas maliciosas em escala de produção, aprendendo embeddings de grafos conta-dispositivo com atenção por tipo de nó. Explora duas fraquezas estruturais do atacante — agregação de dispositivos e de atividade — e prova que relações valem mais que atributos isolados.",
+     "new": false
+    },
+    {
+     "id": "W2898877033",
+     "title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts",
+     "year": 2018,
+     "venue": "arXiv (Cornell University)",
+     "authors": [
+      "Yuezun Li",
+      "Siwei Lyu"
+     ],
+     "cited_by": 1489,
+     "net": 6.5,
+     "url": "https://doi.org/10.48550/arxiv.1811.00656",
+     "theme": "genai_deepfakes",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Li e Ly mostram que os deepfakes de primeira geração só geram imagens de resolução limitada, e o warping necessário para encaixá-las no rosto original deixa artefatos detectáveis por CNN — sem treinar com grande volume de vídeos falsos. É a primeira defesa baseada em artefato de geração, e por isso ainda serve de linha de base quando há poucos exemplos rotulados.",
+     "new": true
     },
     {
      "id": "W2785637175",
@@ -671,54 +673,6 @@
      "score": 6,
      "why": "Randhawa e coautores aplicam AdaBoost e votação majoritária, testando robustez com ruído adicionado. Populariza ensembles em fraude de cartão com validação em dado real de instituição.",
      "new": false
-    },
-    {
-     "id": "W3009901425",
-     "title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
-     "year": 2019,
-     "venue": "Proceedings",
-     "authors": [
-      "Daixin Wang",
-      "Jianbin Lin",
-      "Peng Cui",
-      "Quanhui Jia",
-      "Zhen Wang",
-      "Yanming Fang",
-      "Quan Yu",
-      "Jun Zhou"
-     ],
-     "cited_by": 650,
-     "net": 12.5,
-     "url": "https://doi.org/10.1109/icdm.2019.00070",
-     "theme": "fraud_analytics",
-     "versions": [],
-     "watch": [],
-     "score": 6,
-     "why": "SemiGNN usa rede atenta em grafo com pouquíssimos nós rotulados, explorando interações multiview dos usuários. Mostra que relações, e não só atributos, separam fraudadores.",
-     "new": false
-    },
-    {
-     "id": "W2897862648",
-     "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
-     "year": 2018,
-     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
-     "authors": [
-      "Ziqi Liu",
-      "Chaochao Chen",
-      "Xinxing Yang",
-      "Jun Zhou",
-      "Xiaolong Li",
-      "Le Song"
-     ],
-     "cited_by": 519,
-     "net": 12.0,
-     "url": "https://doi.org/10.1145/3269206.3272010",
-     "theme": "account_identity",
-     "versions": [],
-     "watch": [],
-     "score": 7,
-     "why": "O GEM, do Alipay, é o primeiro GNN heterogêneo para detecção de contas maliciosas em escala de produção, aprendendo embeddings de grafos conta-dispositivo com atenção por tipo de nó. Explora duas fraquezas estruturais do atacante — agregação de dispositivos e de atividade — e prova que relações valem mais que atributos isolados.",
-     "new": true
     }
    ]
   },
@@ -726,7 +680,7 @@
    "key": "2023+",
    "label": "2023 em diante",
    "title": "Grafos, golpes e explicabilidade",
-   "summary": "A fase atual tem duas pressões simultâneas: a IA generativa amplia a superfície de ataque (deepfakes, identidades sintéticas) e, ao mesmo tempo, exige defesas explicáveis e compatíveis com privacidade. O padrão que se consolida é GNN adaptativo, com amostragem e agregação dinâmicas (ASA-GNN, 2023) e explicabilidade e aprendizado federado tratados como requisitos de projeto (2024). A literatura amadureceu em revisões sistemáticas — GNNs para fraude financeira (2023, 2025) e analytics de rede para prevenção à lavagem de dinheiro (2025) —, enquanto o crime migrou para golpes de relacionamento convertidos em falso investimento em cripto, o 'pig butchering' (Cross, 2023). Ficou em aberto como governar responsabilidade e proteção ao consumidor em pagamentos instantâneos e como treinar modelos de fundação sobre dados transacionais sem violar sigilo.",
+   "summary": "A fase atual tem duas pressões simultâneas: a IA generativa amplia a superfície de ataque (deepfakes, identidades sintéticas) e, ao mesmo tempo, exige defesas explicáveis e compatíveis com privacidade. O padrão que se consolida é GNN adaptativo, com amostragem e agregação dinâmicas (ASA-GNN, 2023), e explicabilidade e aprendizado federado tratados como requisitos de projeto (Awosika et al., 2024). A literatura amadureceu em revisões sistemáticas — GNNs para fraude financeira (2023, 2025), detecção de deepfake (Heidari et al., 2023) e analytics de rede para prevenção à lavagem de dinheiro (Deprez et al., 2025) —, enquanto o crime migrou para golpes de relacionamento convertidos em falso investimento em cripto, o 'pig butchering' (Cross, 2023). Ficou em aberto como governar responsabilidade e proteção ao consumidor em pagamentos instantâneos e como treinar modelos de fundação sobre dados transacionais sem violar sigilo.",
    "milestones": [
     {
      "id": "W4388851105",
@@ -747,6 +701,69 @@
      "watch": [],
      "score": 8,
      "why": "Heidari e coautores fazem revisão sistemática e abrangente de detecção de deepfake por deep learning. Consolida taxonomia de geração e detecção e organiza a literatura dispersa.",
+     "new": false
+    },
+    {
+     "id": "W4386416967",
+     "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
+     "year": 2023,
+     "venue": "Current Issues in Criminal Justice",
+     "authors": [
+      "Cassandra Cross"
+     ],
+     "cited_by": 66,
+     "net": 0,
+     "url": "https://doi.org/10.1080/10345329.2023.2248670",
+     "theme": "scams",
+     "versions": [],
+     "watch": [
+      "Cassandra Cross"
+     ],
+     "score": 8,
+     "why": "Cross documenta a convergência entre fraude de relacionamento e fraude de investimento: romance baiting, cryptorom e 'pig butchering' usam o vínculo afetivo como canal para falso investimento em cripto. Mostra que o golpe deixou de ser episódico e virou operação industrializada, com perdas de longo prazo para a vítima.",
+     "new": false
+    },
+    {
+     "id": "W4414960719",
+     "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+     "year": 2025,
+     "venue": "INFORMS Journal on Data Science",
+     "authors": [
+      "Bruno Deprez",
+      "Toon Vanderschueren",
+      "Bart Baesens",
+      "Tim Verdonck",
+      "Wouter Verbeke"
+     ],
+     "cited_by": 53,
+     "net": 0,
+     "url": "https://doi.org/10.1287/ijds.2024.0042",
+     "theme": "mules_aml",
+     "versions": [],
+     "watch": [
+      "Tim Verdonck"
+     ],
+     "score": 8,
+     "why": "Deprez, Vanderschueren e Baesens revisam 97 artigos e avaliam experimentalmente analytics de rede para AML, propondo taxonomia e comparando poder de detecção. Organiza um campo fragmentado e dá base para decidir quando informação de rede agrega sobre regras e modelos tabulares.",
+     "new": false
+    },
+    {
+     "id": "W4388099759",
+     "title": "Financial fraud detection using graph neural networks: A systematic review",
+     "year": 2023,
+     "venue": "Expert Systems with Applications",
+     "authors": [
+      "Soroor Motie",
+      "Bijan Raahemi"
+     ],
+     "cited_by": 387,
+     "net": 3,
+     "url": "https://doi.org/10.1016/j.eswa.2023.122156",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
+     "score": 7,
+     "why": "Motie e Raahemi fazem revisão sistemática de GNNs aplicados a fraude financeira, catalogando arquiteturas, datasets e métricas. Serve de porta de entrada e de checklist para quem vai construir detecção em grafo.",
      "new": false
     },
     {
@@ -772,69 +789,6 @@
      "score": 7,
      "why": "Cheng e coautores revisam GNNs para fraude financeira, organizando a produção da última década. Serve de referência de entrada para quem vai construir em grafo.",
      "new": false
-    },
-    {
-     "id": "W4386416967",
-     "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
-     "year": 2023,
-     "venue": "Current Issues in Criminal Justice",
-     "authors": [
-      "Cassandra Cross"
-     ],
-     "cited_by": 66,
-     "net": 0,
-     "url": "https://doi.org/10.1080/10345329.2023.2248670",
-     "theme": "scams",
-     "versions": [],
-     "watch": [
-      "Cassandra Cross"
-     ],
-     "score": 8,
-     "why": "Cross documenta a convergência entre fraude de relacionamento e fraude de investimento: romance baiting, cryptorom e 'pig butchering' usam o vínculo afetivo como canal para falso investimento em cripto. Mostra que o golpe deixou de ser episódico e virou operação industrializada, com perdas de longo prazo para a vítima.",
-     "new": true
-    },
-    {
-     "id": "W4414960719",
-     "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
-     "year": 2025,
-     "venue": "INFORMS Journal on Data Science",
-     "authors": [
-      "Bruno Deprez",
-      "Toon Vanderschueren",
-      "Bart Baesens",
-      "Tim Verdonck",
-      "Wouter Verbeke"
-     ],
-     "cited_by": 53,
-     "net": 0,
-     "url": "https://doi.org/10.1287/ijds.2024.0042",
-     "theme": "mules_aml",
-     "versions": [],
-     "watch": [
-      "Tim Verdonck"
-     ],
-     "score": 8,
-     "why": "Deprez, Vanderschueren e Baesens revisam 97 artigos e avaliam experimentalmente analytics de rede para AML, propondo taxonomia e comparando poder de detecção. Organiza um campo fragmentado e dá base para decidir quando informação de rede agrega sobre regras e modelos tabulares.",
-     "new": true
-    },
-    {
-     "id": "W4388099759",
-     "title": "Financial fraud detection using graph neural networks: A systematic review",
-     "year": 2023,
-     "venue": "Expert Systems with Applications",
-     "authors": [
-      "Soroor Motie",
-      "Bijan Raahemi"
-     ],
-     "cited_by": 387,
-     "net": 3,
-     "url": "https://doi.org/10.1016/j.eswa.2023.122156",
-     "theme": "fraud_analytics",
-     "versions": [],
-     "watch": [],
-     "score": 7,
-     "why": "Motie e Raahemi fazem revisão sistemática de GNNs aplicados a fraude financeira, catalogando arquiteturas, datasets e métricas. Serve de porta de entrada e de checklist para quem vai construir detecção em grafo.",
-     "new": true
     },
     {
      "id": "W4389633671",
@@ -881,7 +835,7 @@
   }
  ],
  "now": {
-  "summary": "O campo está migrando de detectores por transação para modelos de fundação e sistemas adaptativos: o Large Payments Model, treinado do zero em dados transacionais estruturados com até 400 bilhões de tokens e autossupervisão ciente do ciclo de vida, é o sinal mais claro dessa virada. Ao mesmo tempo, a governança ganhou peso: a Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e amplia o compartilhamento de dados por pessoas jurídicas, e o debate sobre pagamentos instantâneos mostra que controle centralizado não implementa a alocação ótima de responsabilidade por excluir pagamentos pequenos via tarifas. A superfície de ataque também se deslocou para acesso persistente: o primeiro estudo holístico de ataques de acesso contínuo mapeou 11 rotas em serviços web e simulou ataques em 20 serviços populares, mostrando que remover o invasor é mais difícil que impedir a entrada. A pergunta que atravessa tudo é como conciliar modelos cada vez mais opacos com explicabilidade, privacidade e responsabilidade legal bem definida.",
+  "summary": "O campo está migrando de detectores por transação para modelos de fundação e sistemas adaptativos: o Large Payments Model, treinado do zero em dados transacionais estruturados com até 400 bilhões de tokens e autossupervisão ciente do ciclo de vida, é o sinal mais claro dessa virada, com codificações específicas por campo em vez de features manuais. Ao mesmo tempo, a governança ganhou peso: a Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e amplia o compartilhamento de dados por pessoas jurídicas, e o debate sobre pagamentos instantâneos mostra que controle centralizado não implementa a alocação ótima de responsabilidade por excluir pagamentos pequenos via tarifas. A superfície de ataque também se deslocou para acesso persistente: o primeiro estudo holístico de ataques de acesso contínuo mapeou 11 rotas em serviços web e simulou ataques em 20 serviços populares, mostrando que remover o invasor é mais difícil que impedir a entrada. A pergunta que atravessa tudo é como conciliar modelos cada vez mais opacos com explicabilidade, privacidade e responsabilidade legal bem definida.",
   "open_questions": [
    "Quem responde pelo prejuízo em pagamento instantâneo: banco, PSP, recebedor ou consumidor?",
    "Modelos de fundação em dados transacionais superam GNNs especializados em produção, e a que custo de explicabilidade?",
@@ -893,15 +847,11 @@
  "threads": [
   {
    "theme": "fraud_analytics",
-   "line": "Começa com detecção adaptativa e métricas de captura versus falso alarme (Fawcett & Provost, 1997), passa por revisões estatísticas que definem o vocabulário (Bolton & Hand, 2002) e por modelagem realista com drift e custo (Dal Pozzolo, 2017), e desemboca em grafos, aprendizado semi-supervisionado, explicabilidade e privacidade (2023+) — agora com revisões sistemáticas (2023, 2025) e modelos de fundação transacionais no horizonte."
-  },
-  {
-   "theme": "scams",
-   "line": "Nasce com a evidência empírica de que o phishing funciona porque o usuário ignora indicadores de navegador (Dhamija, 2006), evolui para detecção automatizada por conteúdo de site (Cantina, 2007) e de e-mail (Fette, 2007) e, em 2023, chega ao golpe de relacionamento convertido em falso investimento em cripto, o 'pig butchering' (Cross)."
+   "line": "Começa em modelagem estatística com métricas de captura versus falso alarme e vocabulário comum (Fawcett & Provost, 1997; Bolton & Hand, 2002), passa por modelagem realista de drift e custo (Dal Pozzolo, 2017) e, de 2018 em diante, vira aprendizado de representação: sequências (Jurgovsky), combinação não supervisionada/supervisionada (Carcillo), GNN com camuflagem (CARE-GNN, 2020) e amostragem adaptativa (ASA-GNN, 2023). Fecha o ciclo em revisões sistemáticas (2023, 2025) e no horizonte de modelos de fundação transacionais como o Large Payments Model."
   },
   {
    "theme": "genai_deepfakes",
-   "line": "Abre com o primeiro benchmark padronizado de detecção de manipulação facial (FaceForensics++, 2019) e amadurece em revisões sistemáticas que organizam taxonomia de geração, detecção e datasets (Heidari et al., 2023)."
+   "line": "Abre com a detecção por artefatos de geração — warping de face (Li & Ly, 2018) — e com o primeiro benchmark padronizado de manipulação facial (FaceForensics++, 2019), que se torna base de comparação de toda a linha. Amadurece em revisões sistemáticas que organizam taxonomia de geração, detecção e datasets (Heidari et al., 2023), sem resolver a transferência dos detectores para o mundo real."
   }
  ]
 }
