@@ -1,12 +1,15 @@
 """Small stdlib HTTP helpers with retries (no third-party deps)."""
 
 import json
+import os
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 
 USER_AGENT = "people-analytics-watch/0.1 (research digest)"
+OPENALEX_HOST = "api.openalex.org"
+_openalex_key_ok = True  # flips to False if the key is refused (e.g. not activated yet)
 
 
 def _request(url, data=None, headers=None, timeout=60, retries=3):
@@ -28,16 +31,30 @@ def _request(url, data=None, headers=None, timeout=60, retries=3):
             # 4xx other than 429 will not get better by retrying
             if e.code != 429 and 400 <= e.code < 500:
                 raise RuntimeError(f"HTTP {e.code} for {url.split('?')[0]}: {detail}") from e
+            if e.code == 429 and "budget" in detail.lower():
+                raise RuntimeError(f"HTTP 429 (orçamento diário esgotado) for {url.split('?')[0]}: {detail[:200]}") from e
         except (urllib.error.URLError, TimeoutError) as e:
             last = e
-        time.sleep(2 * (attempt + 1))
+        time.sleep(3 * (attempt + 1) ** 2)
     raise RuntimeError(f"request failed after {retries} tries: {url.split('?')[0]}: {last}")
 
 
 def get_text(url, params=None, **kw):
-    if params:
-        url = f"{url}?{urllib.parse.urlencode(params)}"
-    return _request(url, **kw)
+    global _openalex_key_ok
+    params = dict(params or {})
+    key = os.environ.get("OPENALEX_API_KEY", "").strip()
+    use_key = OPENALEX_HOST in url and key and _openalex_key_ok and "api_key" not in params
+    if use_key:
+        params["api_key"] = key
+    full = f"{url}?{urllib.parse.urlencode(params)}" if params else url
+    try:
+        return _request(full, **kw)
+    except RuntimeError as e:
+        if use_key and any(f"HTTP {c}" in str(e) for c in (401, 403)):
+            _openalex_key_ok = False  # key refused: keep going on the shared free budget
+            params.pop("api_key")
+            return _request(f"{url}?{urllib.parse.urlencode(params)}" if params else url, **kw)
+        raise
 
 
 def get_json(url, params=None, **kw):

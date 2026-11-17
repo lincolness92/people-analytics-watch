@@ -4,3 +4,4 @@ __pycache__/
 .wrangler/
 .env
 .DS_Store
+topics/*/.draft.json

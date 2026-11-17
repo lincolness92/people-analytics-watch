@@ -1,7 +1,6 @@
 """Collect candidate papers from OpenAlex (queries, watchlist authors, journals), arXiv and
 the web sources of watchlist centers and practitioners."""
 
-import os
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -35,7 +34,6 @@ def rebuild_abstract(inv):
 class OpenAlex:
     def __init__(self, start, end):
         self.start, self.end = start, end
-        self.key = os.environ.get("OPENALEX_API_KEY", "").strip()
         self.cost = 0.0
         self.calls = 0
 
@@ -46,8 +44,6 @@ class OpenAlex:
             params = {"filter": ",".join(flt), "per-page": per_page, "page": page, "select": SELECT}
             if search:
                 params["filter"] += f",title_and_abstract.search:{search}"
-            if self.key:
-                params["api_key"] = self.key
             data = get_json(OPENALEX, params)
             self.calls += 1
             self.cost += float((data.get("meta") or {}).get("cost_usd") or 0)

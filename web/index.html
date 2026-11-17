@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>People Analytics Watch</title>
-  <meta name="description" content="Digest diário de pesquisa state-of-the-art em people analytics e gestão de pessoas.">
+  <title>Research Watch</title>
+  <meta name="description" content="Digest de pesquisa state-of-the-art.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
   <link rel="stylesheet" href="style.css">
@@ -13,8 +13,8 @@
   <header class="top">
     <div class="wrap top-inner">
       <a class="brand" href="#/">
-        <span class="brand-mark" aria-hidden="true">📡</span>
-        <span class="brand-text">People Analytics <em>Watch</em></span>
+        <span class="brand-mark" id="brand-mark" aria-hidden="true">📡</span>
+        <span class="brand-text" id="brand-text">Research <em>Watch</em></span>
       </a>
       <nav class="tabs" aria-label="Seções">
         <a href="#/" data-tab="digest">Digest</a>
@@ -22,6 +22,7 @@
         <a href="#/tendencias" data-tab="tendencias">Tendências</a>
         <a href="#/watchlist" data-tab="watchlist">Watchlist</a>
       </nav>
+      <select id="topic-switch" class="topic-switch" aria-label="Trocar de tema" hidden></select>
     </div>
   </header>
 
@@ -31,7 +32,7 @@
 
   <footer class="wrap foot">
     <span id="foot-meta"></span>
-    <span>Curadoria automática diária · OpenAlex + arXiv · LLM de pesos abertos</span>
+    <span>Curadoria automática diária · OpenAlex + arXiv + fontes da watchlist · LLM de pesos abertos</span>
   </footer>
 
   <script src="app.js"></script>

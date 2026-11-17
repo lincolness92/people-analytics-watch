@@ -1,6 +1,10 @@
-# Índice por tema
+# Índice
 
-Gerado automaticamente por `python -m pawatch render` a partir de `data/digests/`.
+Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/digests/`.
+
+# 📡 PEOPLE-ANALYTICS-WATCH
+
+1 digests em `digests/people-analytics/`.
 
 ## 📊 People analytics & métricas (3)
 

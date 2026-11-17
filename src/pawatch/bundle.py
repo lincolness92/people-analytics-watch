@@ -1,6 +1,7 @@
 """Single-file HTML of the site (CSS, JS, data and fonts inlined), for sharing offline."""
 
 import base64
+import json
 import re
 
 from . import DIST, ROOT
@@ -16,12 +17,15 @@ def _inline_fonts(css, base):
     return re.sub(r'url\("(fonts/[^"]+\.ttf)"\)', repl, css)
 
 
-def bundle(theme=None):
-    """Return the site in DIST as one HTML string; call render_all() first."""
-    html = (DIST / "index.html").read_text(encoding="utf-8")
-    css = (DIST / "style.css").read_text(encoding="utf-8")
-    js = (DIST / "app.js").read_text(encoding="utf-8")
-    data = (DIST / "data.json").read_text(encoding="utf-8").replace("</", "<\\/")
+def bundle(slug, theme=None):
+    """Return one topic's site (DIST/<slug>/) as a single HTML string; call render_all() first."""
+    site = DIST / slug
+    html = (site / "index.html").read_text(encoding="utf-8")
+    css = (site / "style.css").read_text(encoding="utf-8")
+    js = (site / "app.js").read_text(encoding="utf-8")
+    data = json.loads((site / "data.json").read_text(encoding="utf-8"))
+    data["topics"] = []  # offline file: no links to the other topics
+    data = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     if theme:
         tdir = THEMES_DIR / theme
         css += "\n" + _inline_fonts((tdir / "theme.css").read_text(encoding="utf-8"), tdir)

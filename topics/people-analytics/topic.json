@@ -1,0 +1,33 @@
+{
+  "name": "People Analytics Watch",
+  "brand": {
+    "text": "People Analytics",
+    "em": "Watch",
+    "mark": "📡"
+  },
+  "description": "Digest de pesquisa state-of-the-art em people analytics e gestão de pessoas.",
+  "order": 1,
+  "audience": "Você é o curador do PEOPLE-ANALYTICS-WATCH, um digest diário em PT-BR para um líder de people analytics de uma grande empresa brasileira. Ele quer só o que é state-of-the-art e acionável em: people analytics, gestão de pessoas/RH, talento, recrutamento, IA no trabalho e futuro do trabalho, engajamento/retenção, liderança e cultura, remuneração e equidade, skills e aprendizagem, governança e ética de dados de pessoas.",
+  "rubric_focus": "RH/people analytics",
+  "off_topic": "clínico, educação escolar, esportes, marketing, engenharia sem pessoas/trabalho",
+  "summary_lesson": "a lição prática para quem faz people analytics/RH",
+  "headline_example": "semana forte em IA no recrutamento",
+  "trend_focus": "o que está mudando na prática de gestão de pessoas",
+  "prefilter_keywords": "people analytics|hr analytics|workforce|employee|worker|hiring|recruit|talent|human resource|labor|labour|turnover|retention|engagement|remote work|hybrid|leadership|manager|compensation|pay |skills|productivity|workplace|job ",
+  "watchlist_labels": {
+    "researchers": "Pesquisadores",
+    "journals": "Journals",
+    "centers": "Centros & laboratórios",
+    "practitioners": "Praticantes & fontes"
+  },
+  "themes": {
+    "analytics": "📊 People analytics & métricas",
+    "hiring": "🎯 Recrutamento & seleção",
+    "ai_work": "🤖 IA & futuro do trabalho",
+    "engagement": "💡 Engajamento, retenção & bem-estar",
+    "leadership": "🧭 Liderança, cultura & times",
+    "pay_careers": "💰 Remuneração, carreira & equidade",
+    "learning": "📚 Aprendizagem & skills",
+    "governance": "⚖️ Ética, governança & regulação"
+  }
+}

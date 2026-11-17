@@ -8,7 +8,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from pawatch.collect import annotate_and_dedupe, norm_title, rebuild_abstract  # noqa: E402
 from pawatch.llm import parse_json  # noqa: E402
 from pawatch.render import digest_markdown  # noqa: E402
-from pawatch.score import prefilter  # noqa: E402
+from pawatch.score import prefilter, triage_rules, write_rules  # noqa: E402
+from pawatch.topic import Topic, all_topics  # noqa: E402
+
+PA = Topic("people-analytics")
 
 
 def cand(key, title, **kw):
@@ -56,7 +59,7 @@ class CollectTests(unittest.TestCase):
         b = cand("b", "Employee turnover prediction", abstract="employee turnover workforce",
                  watch_authors=["X"], watch_journal=False)
         a.update(watch_authors=[], watch_journal=False)
-        self.assertEqual(prefilter([a, b], 1)[0]["key"], "b")
+        self.assertEqual(prefilter([a, b], 1, PA.meta["prefilter_keywords"])[0]["key"], "b")
 
 
 class LLMParseTests(unittest.TestCase):
@@ -75,7 +78,7 @@ class RenderTests(unittest.TestCase):
              "items": [{"title": "T", "url": "https://u", "venue": "AMJ", "score": 9, "theme": "hiring",
                         "summary": "S", "watch_authors": ["Prasanna Tambe"], "cited_by": 0, "origin": "busca"}],
              "quick": [{"title": "Q", "url": "https://q", "note": "n"}], "trend": "tendência"}
-        out = digest_markdown(d)
+        out = digest_markdown(d, PA)
         self.assertIn("🎯 Recrutamento & seleção", out)
         self.assertIn("**[T](https://u)** — AMJ · **9/10** · ⭐ Prasanna Tambe", out)
         self.assertIn("**Menções rápidas**: [Q](https://q) (n)", out)
@@ -85,11 +88,11 @@ class RenderTests(unittest.TestCase):
     def test_markdown_shows_period(self):
         d = {"date": "2026-11-16", "period": {"from": "2026-11-09", "to": "2026-11-16"},
              "stats": {"candidates": 3}, "items": [], "quick": []}
-        self.assertIn("digest de 09/11 a 16/11/2026**", digest_markdown(d))
+        self.assertIn("digest de 09/11 a 16/11/2026**", digest_markdown(d, PA))
 
     def test_markdown_empty_day(self):
         d = {"date": "2026-11-16", "stats": {"candidates": 3}, "items": [], "quick": []}
-        self.assertIn("nada acima da barra", digest_markdown(d))
+        self.assertIn("nada acima da barra", digest_markdown(d, PA))
 
 
 
@@ -100,16 +103,17 @@ class BundleTests(unittest.TestCase):
         from pawatch.render import render_all
         render_all()
         for theme in (None, "bb"):
-            html = bundle(theme)
+            html = bundle("people-analytics", theme)
             self.assertNotIn('href="style.css"', html)
             self.assertNotIn('src="app.js"', html)
             self.assertNotIn('fetch("data.json"', html)
             self.assertIsNone(re.search(r'url\("fonts/', html))
             data = re.search(r'<script id="pa-data" type="application/json">(.*?)</script>', html, re.S).group(1)
             self.assertIn("digests", json.loads(data))
-        self.assertIn("data:font/ttf;base64,", bundle("bb"))
-        self.assertIn("theme-toggle", bundle("bb"))
-        self.assertNotIn("theme-toggle", bundle(None))
+            self.assertEqual(json.loads(data)["topics"], [])
+        self.assertIn("data:font/ttf;base64,", bundle("people-analytics", "bb"))
+        self.assertIn("theme-toggle", bundle("people-analytics", "bb"))
+        self.assertNotIn("theme-toggle", bundle("people-analytics", None))
 
 
 
@@ -162,6 +166,35 @@ class WebSourceTests(unittest.TestCase):
         second = collect_web(src, "2026-11-09", state, lambda m: None, fetch=pages.__getitem__)
         self.assertEqual([c["title"] for c in second], ["Three"])
         self.assertEqual(second[0]["abstract"], "Resumo Three")
+
+
+
+class TopicTests(unittest.TestCase):
+    REQUIRED = ["name", "brand", "audience", "rubric_focus", "off_topic", "summary_lesson",
+                "headline_example", "trend_focus", "prefilter_keywords", "themes"]
+
+    def test_every_topic_pack_is_complete(self):
+        import re
+        topics = all_topics()
+        self.assertTrue(topics)
+        for t in topics:
+            for k in self.REQUIRED:
+                self.assertIn(k, t.meta, f"{t.slug}: falta {k}")
+            re.compile(t.meta["prefilter_keywords"])
+            q = t.queries()
+            for k in ("lookback_days", "openalex", "arxiv", "selection"):
+                self.assertIn(k, q, f"{t.slug}: queries.json sem {k}")
+            for s in t.sources():
+                self.assertIn(s["kind"], ("rss", "page", "sitemap"))
+                if s.get("pattern"):
+                    re.compile(s["pattern"])
+            rules = triage_rules(t) + write_rules(t)
+            for key in t.themes:
+                self.assertIn(key, rules)
+
+    def test_people_analytics_prompts_unchanged(self):
+        self.assertIn("implicação direta para RH/people analytics", triage_rules(PA))
+        self.assertIn("(o que está mudando na prática de gestão de pessoas)", write_rules(PA))
 
 
 if __name__ == "__main__":

@@ -11,7 +11,6 @@ inside the window); later runs emit just the URLs that appeared since.
 
 import email.utils
 import html
-import json
 import re
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -175,6 +174,3 @@ def collect_web(sources, start, state, log, fetch=_fetch):
             log(f"fonte {src['name']} falhou: {str(e)[:160]}")
     return out
 
-
-def load_sources(path):
-    return json.loads(path.read_text(encoding="utf-8")).get("sources", []) if path.exists() else []

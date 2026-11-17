@@ -119,7 +119,7 @@
         <div class="chips">${chips}</div>
         <div class="filter-row">
           <label>Nota mínima <input id="min" type="range" min="0" max="10" value="${state.minScore}"> <b id="minv">${state.minScore}</b></label>
-          <label><input id="ow" type="checkbox" ${state.onlyWatch ? "checked" : ""}> só autores da watchlist ⭐</label>
+          <label><input id="ow" type="checkbox" ${state.onlyWatch ? "checked" : ""}> só da watchlist ⭐📌</label>
         </div>
       </div>
       <div class="count" id="count"></div>
@@ -131,7 +131,7 @@
       const res = items.filter((it) =>
         it.score >= state.minScore &&
         (!state.themes.size || state.themes.has(it.theme)) &&
-        (!state.onlyWatch || (it.watch_authors && it.watch_authors.length)) &&
+        (!state.onlyWatch || (it.watch_authors && it.watch_authors.length) || it.watch_source) &&
         (!q || [it.title, it.original_title, it.summary, it.venue, (it.authors || []).join(" "), (it.institutions || []).join(" ")]
           .join(" ").toLowerCase().includes(q)));
       document.getElementById("count").textContent = `${res.length} de ${items.length} papers`;
@@ -171,12 +171,15 @@
     const wl = DATA.watchlist || {};
     const hits = {};
     for (const it of allItems()) for (const n of [...(it.watch_authors || []), ...(it.watch_source ? [it.watch_source] : [])]) hits[n] = (hits[n] || 0) + 1;
-    const regions = ["EUA", "Europa", "China/Ásia", "Brasil", "Outros"];
     const people = wl.researchers || [];
+    const known = ["EUA", "Europa", "China/Ásia", "Brasil"];
+    const regions = [...known, ...new Set(people.map((p) => p.region || "Outros").filter((r) => !known.includes(r)))];
+    const L = Object.assign({ researchers: "Pesquisadores", journals: "Journals", centers: "Centros & laboratórios",
+      practitioners: "Praticantes & fontes" }, DATA.topic.watchlist_labels || {});
     let html = `
       <h1 class="day">Watchlist</h1>
-      <p class="dek">Referências de elite monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐; posts e relatórios dos centros e praticantes ganham 📌.</p>
-      <section class="wl-section"><h2>Pesquisadores <span class="muted">(${people.length})</span></h2>`;
+      <p class="dek">Referências monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐; posts, relatórios e normas das fontes ganham 📌.</p>
+      <section class="wl-section"><h2>${esc(L.researchers)} <span class="muted">(${people.length})</span></h2>`;
     for (const r of regions) {
       const group = people.filter((p) => (p.region || "Outros") === r);
       if (!group.length) continue;
@@ -202,10 +205,25 @@
         const hit = hits[x[nameKey]] ? ` <span class="hits">📌 ${hits[x[nameKey]]} no arquivo</span>` : "";
         return `<li>${name}${subKey && x[subKey] ? ` <span class="muted">· ${esc(x[subKey])}</span>` : ""}${x.why ? ` — ${esc(x.why)}` : ""}${hit}</li>`;
       }).join("") + `</ul></section>`;
-    html += simple("Journals", wl.journals, "name");
-    html += simple("Centros & laboratórios", wl.centers, "name", "institution");
-    html += simple("Praticantes & fontes", wl.practitioners, "name", "org");
+    html += simple(esc(L.journals), wl.journals, "name");
+    html += simple(esc(L.centers), wl.centers, "name", "institution");
+    html += simple(esc(L.practitioners), wl.practitioners, "name", "org");
     app.innerHTML = html;
+  }
+
+  // ---------- topic identity + switcher ----------
+  function setupTopic(d) {
+    const t = d.topic || {};
+    const b = t.brand || {};
+    if (t.name) document.title = t.name;
+    if (b.mark) document.getElementById("brand-mark").textContent = b.mark;
+    if (b.text) document.getElementById("brand-text").innerHTML = `${esc(b.text)} <em>${esc(b.em || "Watch")}</em>`;
+    const sw = document.getElementById("topic-switch");
+    if (sw && d.topics && d.topics.length > 1) {
+      sw.innerHTML = d.topics.map((x) => `<option value="${esc(x.slug)}"${x.slug === t.slug ? " selected" : ""}>${esc(x.name)}</option>`).join("");
+      sw.hidden = false;
+      sw.addEventListener("change", (e) => { location.href = `../${e.target.value}/`; });
+    }
   }
 
   // ---------- router ----------
@@ -224,6 +242,7 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       DATA = d;
+      setupTopic(d);
       const n = d.digests.reduce((s, x) => s + x.items.length, 0);
       document.getElementById("foot-meta").textContent = `${d.digests.length} digests · ${n} papers · atualizado em ${fmtDate(d.generated)}`;
       window.addEventListener("hashchange", route);

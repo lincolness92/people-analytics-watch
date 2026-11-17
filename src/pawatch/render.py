@@ -1,17 +1,12 @@
-"""Render digests (JSON → Markdown), INDEX.md and the static site bundle."""
+"""Render digests (JSON → Markdown), INDEX.md and the static site (one folder per topic)."""
 
+import html
 import json
 import shutil
 from datetime import date
 
-from . import CONFIG, DATA, DIGESTS_MD, DIST, ROOT, THEMES, WEB
-
-
-def load_digests():
-    out = []
-    for f in sorted((DATA / "digests").glob("*.json"), reverse=True):
-        out.append(json.loads(f.read_text(encoding="utf-8")))
-    return out
+from . import DIST, ROOT, WEB
+from .topic import all_topics
 
 
 def _meta(it):
@@ -21,21 +16,28 @@ def _meta(it):
     meta = ", ".join(bits) + f" · **{it['score']}/10**"
     if it.get("watch_authors"):
         meta += f" · ⭐ {', '.join(it['watch_authors'])}"
+    if it.get("watch_source"):
+        meta += f" · 📌 {it['watch_source']}"
     return meta
 
 
-def digest_markdown(d):
+def _label(topic):
+    return f"{topic.meta.get('brand', {}).get('mark', '📡')} {topic.name.upper().replace(' ', '-')}"
+
+
+def digest_markdown(d, topic):
+    title = topic.name.upper().replace(" ", "-")
     day = date.fromisoformat(d["date"]).strftime("%d/%m/%Y")
     if d.get("period"):
         day = f"{date.fromisoformat(d['period']['from']).strftime('%d/%m')} a {day}"
-    head = f"**📡 PEOPLE-ANALYTICS-WATCH — digest de {day}** · {d['stats']['candidates']} candidatos novos"
+    head = f"**{_label(topic)} — digest de {day}** · {d['stats']['candidates']} candidatos novos"
     if not d["items"]:
-        return f"# PEOPLE-ANALYTICS-WATCH {d['date']}\n\n{head}, nada acima da barra no período.\n"
+        return f"# {title} {d['date']}\n\n{head}, nada acima da barra no período.\n"
     head += f", {len(d['items'])} selecionados"
     if d.get("headline"):
         head += f" ({d['headline']})"
-    lines = [f"# PEOPLE-ANALYTICS-WATCH {d['date']}", "", head, ""]
-    for key, label in THEMES.items():
+    lines = [f"# {title} {d['date']}", "", head, ""]
+    for key, label in topic.themes.items():
         group = [it for it in d["items"] if it["theme"] == key]
         if not group:
             continue
@@ -54,44 +56,77 @@ def digest_markdown(d):
     return "\n".join(lines) + "\n"
 
 
-def write_markdown(digests):
-    DIGESTS_MD.mkdir(exist_ok=True)
-    for d in digests:
-        (DIGESTS_MD / f"{d['date']}.md").write_text(digest_markdown(d), encoding="utf-8")
-
-    themes = {k: [] for k in THEMES}
-    trends = []
-    for d in digests:
-        for it in d["items"]:
-            themes[it["theme"]].append(f"- {d['date']} · [{it['title']}]({it['url']}) · {it['score']}/10")
-        if d.get("trend"):
-            trends.append(f"- **{d['date']}** — {d['trend']}")
-    lines = ["# Índice por tema", "",
-             "Gerado automaticamente por `python -m pawatch render` a partir de `data/digests/`.", ""]
-    for key, label in THEMES.items():
-        if themes[key]:
-            lines += [f"## {label} ({len(themes[key])})", ""] + themes[key] + [""]
-    lines += [f"## 🔥 Tendências ({len(trends)})", ""] + trends + [""]
+def write_markdown(topics):
+    lines = ["# Índice", "", "Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/digests/`.", ""]
+    for topic in topics:
+        digests = topic.digests()
+        topic.digests_md.mkdir(parents=True, exist_ok=True)
+        for d in digests:
+            (topic.digests_md / f"{d['date']}.md").write_text(digest_markdown(d, topic), encoding="utf-8")
+        by_theme = {k: [] for k in topic.themes}
+        trends = []
+        for d in digests:
+            for it in d["items"]:
+                by_theme.setdefault(it["theme"], []).append(
+                    f"- {d['date']} · [{it['title']}]({it['url']}) · {it['score']}/10")
+            if d.get("trend"):
+                trends.append(f"- **{d['date']}** — {d['trend']}")
+        lines += [f"# {_label(topic)}", "", f"{len(digests)} digests em `digests/{topic.slug}/`.", ""]
+        for key, label in topic.themes.items():
+            if by_theme.get(key):
+                lines += [f"## {label} ({len(by_theme[key])})", ""] + by_theme[key] + [""]
+        if trends:
+            lines += [f"## 🔥 Tendências ({len(trends)})", ""] + trends + [""]
     (ROOT / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
 
 
-def build_site(digests):
+def site_data(topic, topics):
+    m = topic.meta
+    return {
+        "generated": date.today().isoformat(),
+        "topic": {"slug": topic.slug, "name": m["name"], "brand": m.get("brand", {}),
+                  "description": m.get("description", ""), "watchlist_labels": m.get("watchlist_labels", {})},
+        "topics": [{"slug": t.slug, "name": t.name} for t in topics],
+        "themes": topic.themes,
+        "digests": topic.digests(),
+        "watchlist": topic.watchlist(),
+    }
+
+
+def _landing(topics):
+    cards = []
+    for t in topics:
+        ds = t.digests()
+        last = ds[0] if ds else None
+        sub = html.escape(last["headline"][:1].upper() + last["headline"][1:]) if last and last.get("headline") else "Sem digest ainda."
+        mark = html.escape(t.meta.get("brand", {}).get("mark", "📡"))
+        cards.append(f'<a class="card" href="{t.slug}/"><h3>{mark} {html.escape(t.name)}</h3>'
+                     f'<p class="muted">{html.escape(t.meta.get("description", ""))}</p>'
+                     f'<p class="summary">{sub}</p></a>')
+    return f"""<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Watch</title><meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+<style>a.card{{display:block;text-decoration:none}} a.card:hover h3{{text-decoration:underline}}</style></head>
+<body><main class="wrap"><h1 class="day">Research Watch</h1>
+<p class="dek">Digests de pesquisa state-of-the-art, um por tema.</p>
+{''.join(cards)}</main></body></html>
+"""
+
+
+def build_site(topics):
     if DIST.exists():
         shutil.rmtree(DIST)
-    shutil.copytree(WEB, DIST)
-    watch_path = CONFIG / "watchlist.json"
-    watch = json.loads(watch_path.read_text(encoding="utf-8")) if watch_path.exists() else {}
-    bundle = {
-        "generated": date.today().isoformat(),
-        "themes": THEMES,
-        "digests": digests,
-        "watchlist": watch,
-    }
-    (DIST / "data.json").write_text(json.dumps(bundle, ensure_ascii=False), encoding="utf-8")
+    DIST.mkdir(parents=True)
+    for t in topics:
+        shutil.copytree(WEB, DIST / t.slug)
+        (DIST / t.slug / "data.json").write_text(json.dumps(site_data(t, topics), ensure_ascii=False), encoding="utf-8")
+    shutil.copy(WEB / "style.css", DIST / "style.css")
+    (DIST / "index.html").write_text(_landing(topics), encoding="utf-8")
 
 
 def render_all():
-    digests = load_digests()
-    write_markdown(digests)
-    build_site(digests)
-    return len(digests)
+    topics = all_topics()
+    write_markdown(topics)
+    build_site(topics)
+    return {t.slug: len(t.digests()) for t in topics}
