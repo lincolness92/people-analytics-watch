@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Watch</title>
+  <meta name="description" content="Digest de pesquisa state-of-the-art.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <style>
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1d1b18;
+  --ink-2: #4a463f;
+  --muted: #807a70;
+  --line: #e4dfd5;
+  --accent: #b4431f;
+  --accent-soft: #f6e4dc;
+  --star: #a8730b;
+  --star-soft: #f7ecd2;
+  --chip: #efebe3;
+  --score-hi: #1f6f4a;
+  --score-mid: #8a6d12;
+  --score-lo: #7a746a;
+  --serif: "Iowan Old Style", "Charter", "Source Serif Pro", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161513;
+    --surface: #1f1d1a;
+    --ink: #ece8e1;
+    --ink-2: #c4beb3;
+    --muted: #8f897f;
+    --line: #34312c;
+    --accent: #ec8a63;
+    --accent-soft: #3a2519;
+    --star: #e2b24f;
+    --star-soft: #382c14;
+    --chip: #2a2824;
+    --score-hi: #6fcf9c;
+    --score-mid: #e2c25b;
+    --score-lo: #9d978d;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 var(--sans);
+}
+a { color: inherit; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+.muted { color: var(--muted); }
+
+/* header */
+.top {
+  position: sticky; top: 0; z-index: 5;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.top-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--serif); font-size: 20px; font-weight: 600; }
+.brand em { color: var(--accent); font-style: italic; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; }
+.tabs a {
+  text-decoration: none; font-size: 14px; color: var(--ink-2);
+  padding: 6px 12px; border-radius: 999px; white-space: nowrap;
+}
+.tabs a:hover { background: var(--chip); }
+.tabs a.active { background: var(--ink); color: var(--bg); }
+.topic-switch { font: inherit; font-size: 14px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; max-width: 100%; }
+
+main { padding-top: 28px; padding-bottom: 40px; min-height: 70vh; }
+
+/* digest header */
+.day-nav { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.day-nav button, .day-nav select {
+  font: inherit; font-size: 14px; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  padding: 5px 10px; cursor: pointer;
+}
+.day-nav button:disabled { opacity: .35; cursor: default; }
+h1.day {
+  font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.15; margin: 10px 0 6px; letter-spacing: -0.01em;
+}
+.dek { color: var(--ink-2); margin: 0 0 22px; }
+.stats { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+.stats b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* trend callout */
+.trend {
+  background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; margin: 0 0 32px;
+  font-family: var(--serif); font-size: 17px; line-height: 1.55;
+}
+.trend .label { display: block; font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+
+/* theme sections */
+.theme-h {
+  font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ink-2); margin: 34px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 18px; margin-bottom: 12px;
+}
+.card.watch { border-left: 3px solid var(--star); }
+.card-top { display: flex; gap: 12px; align-items: flex-start; }
+.card h3 { font-family: var(--serif); font-size: 19px; line-height: 1.3; margin: 0; font-weight: 600; flex: 1; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.score {
+  flex: none; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+  padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor;
+}
+.score.hi { color: var(--score-hi); }
+.score.mid { color: var(--score-mid); }
+.score.lo { color: var(--score-lo); }
+.meta { font-size: 13px; color: var(--muted); margin: 6px 0 10px; }
+.meta .star { color: var(--star); background: var(--star-soft); padding: 1px 7px; border-radius: 999px; font-weight: 600; margin-right: 4px; }
+.summary { margin: 0; color: var(--ink-2); }
+.summary strong { color: var(--ink); }
+.orig { font-size: 12px; color: var(--muted); margin-top: 8px; font-style: italic; }
+
+.quick { margin-top: 30px; }
+.quick ul { padding-left: 18px; margin: 0; }
+.quick li { margin-bottom: 8px; color: var(--ink-2); }
+.quick li a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); text-underline-offset: 3px; }
+
+/* filters */
+.filters { display: grid; gap: 12px; margin-bottom: 22px; }
+.search {
+  width: 100%; font: inherit; padding: 10px 14px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--chip); color: var(--ink-2);
+  border-radius: 999px; padding: 4px 11px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.filter-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); }
+.filter-row input[type=range] { accent-color: var(--accent); }
+.count { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.date-tag { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* trends timeline */
+.timeline { border-left: 2px solid var(--line); margin-left: 6px; padding-left: 20px; }
+.tl-item { position: relative; margin-bottom: 24px; }
+.tl-item::before {
+  content: ""; position: absolute; left: -27px; top: 7px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--accent); border: 2px solid var(--bg);
+}
+.tl-item a.d { font-size: 13px; font-weight: 700; color: var(--accent); text-decoration: none; }
+.tl-item p { margin: 4px 0 0; font-family: var(--serif); font-size: 17px; }
+
+/* watchlist */
+.wl-section { margin-bottom: 36px; }
+.wl-section h2 { font-family: var(--serif); font-size: 24px; margin: 0 0 4px; }
+.region-h { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); margin: 22px 0 10px; }
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.person { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.person .n { font-weight: 650; }
+.person .i { font-size: 13px; color: var(--muted); }
+.person .a { font-size: 13px; color: var(--accent); margin-top: 4px; }
+.person .w { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+.person .l { font-size: 12px; margin-top: 6px; display: flex; gap: 10px; }
+.person .l a { color: var(--muted); }
+.person .hits { font-size: 12px; margin-top: 6px; color: var(--star); font-weight: 600; }
+.list-simple { padding-left: 18px; }
+.list-simple li { margin-bottom: 8px; color: var(--ink-2); }
+.list-simple li b { color: var(--ink); }
+.list-simple .hits { font-size: 12px; color: var(--star); font-weight: 600; white-space: nowrap; }
+
+.empty { padding: 40px 0; color: var(--muted); text-align: center; }
+.foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted); padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); }
+
+@media (max-width: 560px) {
+  .card { padding: 14px; }
+  .card h3 { font-size: 17px; }
+  .brand { font-size: 18px; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+  .chip { white-space: nowrap; }
+}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark" id="brand-mark" aria-hidden="true">📡</span>
+        <span class="brand-text" id="brand-text">Research <em>Watch</em></span>
+      </a>
+      <nav class="tabs" aria-label="Seções">
+        <a href="#/" data-tab="digest">Digest</a>
+        <a href="#/arquivo" data-tab="arquivo">Arquivo</a>
+        <a href="#/tendencias" data-tab="tendencias">Tendências</a>
+        <a href="#/watchlist" data-tab="watchlist">Watchlist</a>
+      </nav>
+      <select id="topic-switch" class="topic-switch" aria-label="Trocar de tema" hidden></select>
+    </div>
+  </header>
+
+  <main id="app" class="wrap" aria-live="polite">
+    <p class="muted">Carregando…</p>
+  </main>
+
+  <footer class="wrap foot">
+    <span id="foot-meta"></span>
+    <span>Curadoria automática diária · OpenAlex + arXiv + fontes da watchlist · LLM de pesos abertos</span>
+  </footer>
+
+  <script id="pa-data" type="application/json">{"generated": "2026-11-17", "topic": {"slug": "fraude-bancaria", "name": "Bank Fraud Watch", "brand": {"text": "Bank Fraud", "em": "Watch", "mark": "🛡️"}, "description": "Digest de pesquisa e regulação state-of-the-art em fraude bancária, golpes, pagamentos e PLD/CFT.", "watchlist_labels": {"researchers": "Pesquisadores", "journals": "Journals & conferências", "centers": "Reguladores, padrões & centros", "practitioners": "Praticantes & fontes"}}, "topics": [], "themes": {"fraud_analytics": "📊 Modelos, dados e métricas de fraude", "scams": "🎣 Golpes e engenharia social", "instant_payments": "⚡ Pix, pagamentos instantâneos & Open Finance", "account_identity": "🔐 Account takeover, autenticação & identidade", "genai_deepfakes": "🤖 IA generativa & deepfakes", "mules_aml": "🕸️ Contas laranja, mulas & PLD/CFT", "cards": "💳 Cartões & e-commerce", "regulation": "⚖️ Regulação, Basileia & padrões"}, "digests": [{"date": "2026-11-17", "model": "deepseek-ai/DeepSeek-V4.1-Flash", "period": {"from": "2026-11-10", "to": "2026-11-17"}, "stats": {"candidates": 127, "triaged": 127, "selected": 4, "tokens": {"prompt_tokens": 25612, "completion_tokens": 20144}}, "headline": "regulação de pagamentos instantâneos, ataques de acesso persistente e foundation models para pagamentos", "trend": "O período conecta três frentes: regulação de pagamentos instantâneos e Open Finance, que pressiona por clareza de responsabilidade e governança de terceiros; pesquisa em account takeover que expõe rotas de acesso persistente e irrevogáveis; e modelos de fundação para pagamentos que prometem representações reutilizáveis, mas com ganhos ainda questionados frente a baselines de boosting. A tendência é que a prevenção a fraude em bancos combine mandatos regulatórios (teto, responsabilidade compartilhada, auditoria de parceiros) com arquiteturas de detecção cientes do ciclo de vida e ligadas a entidades, sem abandonar a validação rigorosa de ganho incremental.", "items": [{"key": "arxiv:2611.15814", "title": "Large Payments Model", "original_title": "Large Payments Model", "url": "https://arxiv.org/abs/2611.15814", "venue": "arXiv (cs.LG, cs.AI)", "date": "2026-11-11", "authors": ["Natraj Raman", "Abhenandhan Manoharan", "Vishwasreddy Thuniki", "Dhvani Kansara", "Anirudh Som", "Hassan Firouzi", "Kostis Gourgoulias", "Laukik Hoshing", "Sudhir Kanala", "Austin Reiter", "Ebby Abdul", "Shantanu Chandra"], "institutions": [], "watch_authors": [], "watch_journal": false, "watch_source": "", "origin": "arxiv", "cited_by": 0, "score": 7, "theme": "fraud_analytics", "summary": "Large Payments Model (LPM) é um foundation model de domínio treinado do zero em dados transacionais estruturados, com até **400 bilhões de tokens**, codificações específicas por campo e autossupervisão ciente do ciclo de vida. Duas arquiteturas: Independent (mascaramento híbrido, inferência por transação) e Sequence (históricos ligados a entidades via representações latentes compactas), com destilação opcional. Supera baselines fortes em tarefas de Merchant e Treasury Services e permite adaptação a alvos não vistos, indicando uma camada reutilizável de inteligência para fraude, autorização e otimização."}, {"key": "doi:10.34989/swp-2026-41", "title": "Instant Payments, Fraud, and Optimal Consumer Protection", "original_title": "Instant Payments, Fraud, and Optimal Consumer Protection", "url": "https://doi.org/10.34989/swp-2026-41", "venue": "Bank of Canada Research", "date": "2026-11-10", "authors": ["Yuteng Cheng", "Charles M. Kahn", "Francisco Rivadeneyra"], "institutions": ["Bank of Canada", "University of Illinois Urbana-Champaign"], "watch_authors": [], "watch_journal": false, "watch_source": "", "origin": "busca", "cited_by": 0, "score": 8, "theme": "instant_payments", "summary": "Modelo teórico do Bank of Canada compara controle centralizado vs. descentralizado de fraude e regras de responsabilização em pagamentos instantâneos. Governança centralizada não implementa a alocação ótima por excluir pagamentos pequenos via tarifas; no regime descentralizado, a divisão ótima de responsabilidade depende da curvatura relativa das tecnologias de prevenção do remetente e do recebedor, tornando-se mais pesada para o remetente quando o monitoramento do recebedor é menos flexível. Lição: desenhar mandatos de acesso e teto (como o **MED** do Pix) e calibrar a responsabilidade compartilhada é tão crítico quanto o modelo de detecção."}, {"key": "web:https://www.bcb.gov.br/detalhenoticia/21313/noticia", "title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas", "original_title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas", "url": "https://www.bcb.gov.br/detalhenoticia/21313/noticia", "venue": "Banco Central do Brasil — notícias", "date": "2026-11-10", "authors": [], "institutions": [], "watch_authors": [], "watch_journal": false, "watch_source": "Banco Central do Brasil", "origin": "fonte", "cited_by": 0, "score": 7, "theme": "instant_payments", "summary": "Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e facilita compartilhamento de dados por pessoas jurídicas, com mais clareza sobre responsabilidades. Exige que a instituição integradora avalie a capacidade da parceira e obtenha **atestação por auditor independente** registrado na CVM, além de reforçar salvaguardas de consentimento, segurança e governança. Para bancos, o onboarding de parceiros e os fluxos de consentimento passam a ser auditáveis e exigem due diligence contínua."}, {"key": "doi:10.1145/3830454.3846598", "title": "Evaluating Ongoing Access Attacks on the Web", "original_title": "Evaluating Ongoing Access Attacks on the Web", "url": "https://doi.org/10.1145/3830454.3846598", "venue": "ACM SIGSAC Conference on Computer and Communications Security (CCS)", "date": "2026-11-12", "authors": ["Arkaprabha Bhattacharya", "Rosanna Frances Bellini", "Thomas Ristenpart", "Nicola Lee Dell"], "institutions": ["Cornell Tech", "New York University", "University of Toronto"], "watch_authors": ["Thomas Ristenpart"], "watch_journal": true, "watch_source": "", "origin": "watchlist", "cited_by": 0, "score": 7, "theme": "account_identity", "summary": "Primeiro estudo holístico de ataques de acesso persistente, em que o invasor reconfigura recursos de segurança para manter acesso mesmo após tentativas de remoção da vítima. Mapeou 11 rotas de acesso em serviços web e simulou ataques em 20 serviços populares: **14 oferecem rota irrevogável** ou sem remediação adequada pelas orientações do provedor. Para bancos, o playbook de resposta a account takeover precisa cobrir SSO, passkeys e mecanismos de recuperação, não apenas reset de senha."}], "quick": [{"key": "doi:10.1108/jfc-04-2026-0185", "title": "Insider threat detection: socio-technical analysis of behavioural pathways", "original_title": "Insider threat detection: a socio-technical analysis of behavioural pathways in malicious insider fraud", "url": "https://doi.org/10.1108/jfc-04-2026-0185", "venue": "Journal of Financial Crime", "date": "2026-11-11", "authors": ["Monica Therese Whitty", "Christopher Ruddy", "David Adam Keatley", "Hassan Jamil"], "institutions": ["Monash University", "Murdoch University"], "watch_authors": ["Monica Therese Whitty"], "watch_journal": true, "watch_source": "", "origin": "journal", "cited_by": 0, "score": 6, "theme": "fraud_analytics", "note": "Combina grounded theory e análise de sequência comportamental para mapear caminhos de fraude interna; útil para detecção além de indicadores técnicos isolados."}, {"key": "doi:10.58766/rpgbcb.v20i1.1263", "title": "Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos", "original_title": "Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos: mecanismos jurídico-regulatórios e proteção ao consumidor no Sistema Financeiro Nacional", "url": "https://doi.org/10.58766/rpgbcb.v20i1.1263", "venue": "Revista da Procuradoria-Geral do Banco Central", "date": "2026-11-11", "authors": ["Danniel Pedro Lima de Araújo Da Conceição"], "institutions": ["Advocacia-Geral da União"], "watch_authors": [], "watch_journal": false, "watch_source": "", "origin": "busca", "cited_by": 0, "score": 6, "theme": "regulation", "note": "Analisa o marco jurídico-regulatório do Pix e resoluções BC/CMN; referência para compliance e defesa do consumidor em fraudes digitais."}, {"key": "doi:10.5281/zenodo.24159810", "title": "Transaction Monitoring That Survives Reconciliation", "original_title": "Transaction Monitoring That Survives Reconciliation", "url": "https://doi.org/10.5281/zenodo.24159810", "venue": "Zenodo (CERN European Organization for Nuclear Research)", "date": "2026-11-12", "authors": ["Mukul Juneja"], "institutions": [], "watch_authors": [], "watch_journal": false, "watch_source": "", "origin": "busca", "cited_by": 0, "score": 6, "theme": "mules_aml", "note": "Caso DOJ mostra banco com ~92% do volume transacional não monitorado por mais de seis anos; falhas ocorrem antes do modelo, na conexão de produtos e dados."}, {"key": "arxiv:2611.18914", "title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?", "original_title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?", "url": "https://arxiv.org/abs/2611.18914", "venue": "arXiv (cs.LG)", "date": "2026-11-13", "authors": ["Carlos Eduardo Martins Relvas", "Gustavo di Giovanni Bernardo"], "institutions": [], "watch_authors": [], "watch_journal": false, "watch_source": "", "origin": "arxiv", "cited_by": 0, "score": 6, "theme": "fraud_analytics", "note": "Propõe TBS, ensemble de boosting com sequências de eventos; ganhos de foundation models sobre LightGBM são modestos e raramente públicos."}, {"key": "web:https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers", "title": "PCI SSC Publishes New Guidance on Understanding PCI DSS Third-Party Service Providers", "original_title": "PCI SSC Publishes New Guidance on Understanding PCI DSS Third-Party Service Providers", "url": "https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers", "venue": "PCI Security Standards Council", "date": "2026-11-10", "authors": [], "institutions": [], "watch_authors": [], "watch_journal": false, "watch_source": "PCI Security Standards Council", "origin": "fonte", "cited_by": 0, "score": 6, "theme": "regulation", "note": "Novo supplement do PCI SSC esclarece requisitos PCI DSS para provedores terceiros; reforça due diligence e responsabilidades contratuais."}]}], "watchlist": {"researchers": [{"name": "Bart Baesens", "institution": "University of Southampton", "region": "Europa", "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude", "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.", "openalex_id": "A5081225515", "openalex_note": "conferido por nome + instituição; h-index 78", "links": {}}, {"name": "David J. Hand", "institution": "Imperial College London", "region": "Europa", "area": "Estatística de detecção de fraude, métricas de avaliação", "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.", "openalex_id": "A5033380454", "openalex_note": "conferido por nome + instituição; h-index 89", "links": {}}, {"name": "Gianluca Bontempi", "institution": "Université Libre de Bruxelles", "region": "Europa", "area": "Detecção de fraude em cartões com dados reais (Worldline)", "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.", "openalex_id": "A5072869049", "openalex_note": "conferido por nome + instituição; h-index 63", "links": {}}, {"name": "Andrea Dal Pozzolo", "institution": "Université Libre de Bruxelles", "region": "Europa", "area": "Concept drift e desbalanceamento em fraude de cartões", "why": "Referência em fraude/crime financeiro; 5 trabalhos no tema no OpenAlex.", "openalex_id": "A5008848385", "openalex_note": "conferido por nome + instituição; h-index 9", "links": {}}, {"name": "Tyler Moore", "institution": "University of Tulsa", "region": "EUA", "area": "Economia do cibercrime, phishing e golpes", "why": "Referência em fraude/crime financeiro; 38 trabalhos no tema no OpenAlex.", "openalex_id": "A5073243028", "openalex_note": "conferido por nome + instituição; h-index 47", "links": {}}, {"name": "Richard Clayton", "institution": "University of Cambridge", "region": "Europa", "area": "Cibercrime e fraude online (Cambridge Cybercrime Centre)", "why": "Referência em fraude/crime financeiro; 8 trabalhos no tema no OpenAlex.", "openalex_id": "A5090866479", "openalex_note": "conferido por nome + instituição; h-index 44", "links": {}}, {"name": "Nicolas Christin", "institution": "Carnegie Mellon University", "region": "EUA", "area": "Ecossistemas criminosos online e golpes", "why": "Referência em fraude/crime financeiro; 14 trabalhos no tema no OpenAlex.", "openalex_id": "A5078075278", "openalex_note": "conferido por nome + instituição; h-index 58", "links": {}}, {"name": "Damon McCoy", "institution": "New York University", "region": "EUA", "area": "Golpes e fraude em pagamentos e plataformas", "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.", "openalex_id": "A5037313918", "openalex_note": "conferido por nome + instituição; h-index 53", "links": {}}, {"name": "Mark Button", "institution": "University of Portsmouth", "region": "Europa", "area": "Counter-fraud, vitimização e políticas antifraude", "why": "Referência em fraude/crime financeiro; 155 trabalhos no tema no OpenAlex.", "openalex_id": "A5041603506", "openalex_note": "conferido por nome + instituição; h-index 41", "links": {}}, {"name": "Michael Levi", "institution": "Cardiff University", "region": "Europa", "area": "Crime financeiro, lavagem e políticas de PLD", "why": "Referência em fraude/crime financeiro; 157 trabalhos no tema no OpenAlex.", "openalex_id": "A5016958062", "openalex_note": "conferido por nome + instituição; h-index 51", "links": {}}, {"name": "Cassandra Cross", "institution": "Queensland University of Technology", "region": "Outros", "area": "Golpes românticos e vítimas de fraude online", "why": "Referência em fraude/crime financeiro; 95 trabalhos no tema no OpenAlex.", "openalex_id": "A5025940101", "openalex_note": "conferido por nome + instituição; h-index 31", "links": {}}, {"name": "Yingtong Dou", "institution": "Visa (United Kingdom)", "region": "Europa", "area": "GNNs para detecção de fraude (hoje na Visa)", "why": "Referência em fraude/crime financeiro; 3 trabalhos no tema no OpenAlex.", "openalex_id": "A5052902632", "openalex_note": "conferido por nome + instituição; h-index 18", "links": {}}, {"name": "Véronique Van Vlasselaer", "institution": "KU Leuven", "region": "Europa", "area": "Fraude em redes (GOTCHA!), seguros e bancos", "why": "Referência em fraude/crime financeiro; 15 trabalhos no tema no OpenAlex.", "openalex_id": "A5066851728", "openalex_note": "conferido por nome + instituição; h-index 8", "links": {}}, {"name": "Monica Therese Whitty", "institution": "Monash University", "region": "Outros", "area": "Psicologia de golpes românticos e engenharia social", "why": "Entre os mais citados sobre o tema em venues de elite: Automatically Dismantling Online Dating Fraud (126 cit.); Who can spot an online romance scam? (58 cit.)", "openalex_id": "A5054441117", "openalex_note": "minerado em venues de elite; h-index 44, 199 trabalhos — conferir homônimos", "links": {}}, {"name": "Dawei Cheng", "institution": "Tongji University", "region": "China/Ásia", "area": "GNNs para fraude em transações (Tongji)", "why": "Entre os mais citados sobre o tema em venues de elite: Graph Neural Network for Fraud Detection via Spatial-Temporal Attention (301 cit.); Enhancing Attribute-Driven Fraud Detection With Risk-Aware Graph Representation (46 cit.)", "openalex_id": "A5069869295", "openalex_note": "minerado em venues de elite; h-index 36, 152 trabalhos — conferir homônimos", "links": {}}, {"name": "Changjun Jiang", "institution": "Tongji University", "region": "China/Ásia", "area": "Detecção de fraude em pagamentos online (Tongji)", "why": "Entre os mais citados sobre o tema em venues de elite: ASIA: A Federated Boosting Tree Model Against Sequence Inference Attacks in Financial Networks (17 cit.); Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance (1 cit.)", "openalex_id": "A5066099338", "openalex_note": "minerado em venues de elite; h-index 55, 495 trabalhos — conferir homônimos", "links": {}}, {"name": "Sebastiaan Höppner", "institution": "KU Leuven", "region": "Europa", "area": "Engenharia de dados e modelos sensíveis a custo para fraude", "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)", "openalex_id": "A5030723848", "openalex_note": "minerado em venues de elite; h-index 7, 10 trabalhos — conferir homônimos", "links": {}}, {"name": "Tim Verdonck", "institution": "University of Antwerp", "region": "Europa", "area": "Estatística robusta e fraude de cartões", "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)", "openalex_id": "A5085208338", "openalex_note": "minerado em venues de elite; h-index 27, 161 trabalhos — conferir homônimos", "links": {}}, {"name": "Xiang Ao", "institution": "Chinese Academy of Sciences", "region": "China/Ásia", "area": "GNNs para fraude (PC-GNN)", "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)", "openalex_id": "A5068007462", "openalex_note": "minerado em venues de elite; h-index 35, 125 trabalhos — conferir homônimos", "links": {}}, {"name": "Jinghua Feng", "institution": "Ant Group (China)", "region": "China/Ásia", "area": "Fraude em pagamentos no Ant Group", "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)", "openalex_id": "A5012138678", "openalex_note": "minerado em venues de elite; h-index 12, 17 trabalhos — conferir homônimos", "links": {}}, {"name": "Bijeeta Pal", "institution": "Uber AI (United States)", "region": "EUA", "area": "Credential stuffing e segurança de contas", "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)", "openalex_id": "A5014563673", "openalex_note": "minerado em venues de elite; h-index 5, 10 trabalhos — conferir homônimos", "links": {}}, {"name": "Thomas Ristenpart", "institution": "University of Toronto", "region": "Outros", "area": "Senhas, account takeover e abuso de tecnologia", "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)", "openalex_id": "A5003774887", "openalex_note": "minerado em venues de elite; h-index 64, 172 trabalhos — conferir homônimos", "links": {}}, {"name": "Meng Shen", "institution": "Beijing Institute of Technology", "region": "China/Ásia", "area": "Detecção de contas fraudulentas por comportamento", "why": "Entre os mais citados sobre o tema em venues de elite: Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph (135 cit.); Breaking the Anonymity of Ethereum Mixing Services Using Graph Feature Learning (53 cit.)", "openalex_id": "A5047030842", "openalex_note": "minerado em venues de elite; h-index 48, 205 trabalhos — conferir homônimos", "links": {}}, {"name": "Jiajing Wu", "institution": "Sun Yat-sen University", "region": "China/Ásia", "area": "Fraude e phishing em redes de transações (blockchain)", "why": "Entre os mais citados sobre o tema em venues de elite: Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph (135 cit.); DenseFlow: Spotting Cryptocurrency Money Laundering in Ethereum Transaction Graphs (56 cit.)", "openalex_id": "A5031531093", "openalex_note": "minerado em venues de elite; h-index 45, 192 trabalhos — conferir homônimos", "links": {}}, {"name": "Yann‐Aël Le Borgne", "institution": "Université Libre de Bruxelles", "region": "Europa", "area": "Fraude de cartões com aprendizado não supervisionado (ULB)", "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)", "openalex_id": "A5025424957", "openalex_note": "minerado em venues de elite; h-index 20, 69 trabalhos — conferir homônimos", "links": {}}, {"name": "Frédéric Oblé", "institution": "Institut National Polytechnique de Lorraine", "region": "Europa", "area": "Fraude de cartões na Worldline (dados de produção)", "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)", "openalex_id": "A5024363057", "openalex_note": "minerado em venues de elite; h-index 11, 112 trabalhos — conferir homônimos", "links": {}}, {"name": "David Buil‐Gil", "institution": "University of Manchester", "region": "Europa", "area": "Criminologia de golpes e fraude online", "why": "Entre os mais citados sobre o tema em venues de elite: Meeting you was a fake: investigating the increase in romance fraud during COVID-19 (110 cit.); The effect of true crime docuseries on romance fraud reporting to the police (10 cit.)", "openalex_id": "A5089356769", "openalex_note": "minerado em venues de elite; h-index 18, 125 trabalhos — conferir homônimos", "links": {}}], "journals": [{"name": "Journal of Financial Crime", "openalex_source_id": "S180105601", "why": "Principal periódico dedicado a crime financeiro, fraude e PLD."}, {"name": "Journal of Money Laundering Control", "openalex_source_id": "S63393118", "why": "Referência em lavagem de dinheiro e controles de PLD/CFT."}, {"name": "Decision Support Systems", "openalex_source_id": "S11479521", "why": "Muitos dos trabalhos aplicados de detecção de fraude com dados reais."}, {"name": "European Journal of Operational Research", "openalex_source_id": "S103321696", "why": "Modelagem de fraude com custo assimétrico e decisão (ex.: Baesens)."}, {"name": "Expert Systems with Applications", "openalex_source_id": "S13144211", "why": "Grande volume de detecção de fraude aplicada; filtrar pela qualidade."}, {"name": "IEEE Transactions on Knowledge and Data Engineering", "openalex_source_id": "S30698027", "why": "Métodos de detecção de anomalias e grafos em escala."}, {"name": "Data Mining and Knowledge Discovery", "openalex_source_id": "S121920818", "why": "Mineração de dados aplicada a fraude e anomalias."}, {"name": "IEEE Transactions on Information Forensics and Security", "openalex_source_id": "S61310614", "why": "Autenticação, biometria, deepfakes e segurança."}, {"name": "Computers & Security", "openalex_source_id": "S12529635", "why": "Segurança aplicada: phishing, account takeover, malware bancário."}, {"name": "Journal of Banking & Finance", "openalex_source_id": "S2876017", "why": "Economia bancária, incluindo perdas operacionais e fraude."}, {"name": "Journal of Financial Services Research", "openalex_source_id": "S79175213", "why": "Regulação e risco em serviços financeiros."}, {"name": "Crime Science", "openalex_source_id": "S2495265100", "why": "Criminologia quantitativa de fraude e golpes."}, {"name": "Information Sciences", "openalex_source_id": "S192650101", "why": "Métodos de ML para fraude e anomalias."}, {"name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)", "openalex_source_id": "S4363608767", "why": "KDD: principal conferência de mineração de dados; muitos papers de fraude em grafos."}, {"name": "USENIX Security Symposium", "openalex_source_id": "S4306421123", "why": "Conferência de elite em segurança; golpes, phishing e fraude online."}, {"name": "IEEE Symposium on Security and Privacy (S&P)", "openalex_source_id": "S4210233669", "why": "Conferência de elite em segurança (Oakland)."}, {"name": "ACM SIGSAC Conference on Computer and Communications Security (CCS)", "openalex_source_id": "S4393917527", "why": "CCS: conferência de elite em segurança."}, {"name": "International World Wide Web Conference (WWW)", "openalex_source_id": "S7407088480", "why": "WWW: fraude em plataformas, grafos e detecção em escala."}], "centers": [{"name": "Basel Committee on Banking Supervision (BCBS)", "institution": "BIS", "url": "https://www.bis.org/committees/bcbs/overview", "why": "Padrões de Basileia: risco operacional (inclui fraude), PLD/CFT e supervisão."}, {"name": "Committee on Payments and Market Infrastructures (CPMI)", "institution": "BIS", "url": "https://www.bis.org/committees/cpmi/overview", "why": "Padrões para pagamentos, incluindo pagamentos instantâneos e fraude em pagamentos."}, {"name": "Financial Stability Institute (FSI/BIS)", "institution": "BIS", "url": "https://www.bis.org/about/fsi/publications", "why": "FSI Insights sobre supervisão de risco operacional, cibersegurança e IA."}, {"name": "BIS Innovation Hub", "institution": "BIS", "url": "https://www.bis.org/about/innovation-hub/publications", "why": "Projetos de bancos centrais sobre detecção de fraude e PLD (ex.: Aurora, Hertha)."}, {"name": "Bank for International Settlements (BIS)", "institution": "BIS", "url": "https://www.bis.org/", "why": "Working papers e boletins sobre pagamentos, cripto, IA e crime financeiro."}, {"name": "Banco Central do Brasil", "institution": "BCB", "url": "https://www.bcb.gov.br/", "why": "Regulador do Pix, do Open Finance e das regras de segurança e compartilhamento de dados de fraude."}, {"name": "Febraban", "institution": "Federação Brasileira de Bancos", "url": "https://portal.febraban.org.br/", "why": "Dados e iniciativas do setor bancário brasileiro contra golpes; organiza a Febraban Tech."}, {"name": "COAF", "institution": "Ministério da Fazenda", "url": "https://www.gov.br/coaf/", "why": "Unidade de inteligência financeira do Brasil (PLD/CFT). Sem fonte automática viável hoje."}, {"name": "FATF/GAFI", "institution": "OCDE", "url": "https://www.fatf-gafi.org/", "why": "Padrões internacionais de PLD/CFT. Bloqueia robôs; sem fonte automática hoje."}, {"name": "Federal Reserve", "institution": "EUA", "url": "https://www.federalreserve.gov/", "why": "Regulação de pagamentos (FedNow), fraude em cheques e working papers (FEDS)."}, {"name": "Financial Conduct Authority (FCA)", "institution": "Reino Unido", "url": "https://www.fca.org.uk/", "why": "Referência em fraude de pagamento autorizado (APP) e reembolso obrigatório."}, {"name": "European Central Bank (ECB)", "institution": "UE", "url": "https://www.ecb.europa.eu/", "why": "Relatórios de fraude em pagamentos na zona do euro e euro digital."}, {"name": "European Banking Authority (EBA)", "institution": "UE", "url": "https://www.eba.europa.eu/", "why": "Dados de fraude em pagamentos (PSD2/PSD3) e PLD."}, {"name": "Financial Stability Board (FSB)", "institution": "G20", "url": "https://www.fsb.org/", "why": "Cibersegurança, pagamentos transfronteiriços e cripto."}, {"name": "PCI Security Standards Council", "institution": "Indústria de cartões", "url": "https://www.pcisecuritystandards.org/", "why": "Padrão PCI DSS de segurança de dados de cartão."}, {"name": "NIST", "institution": "EUA", "url": "https://www.nist.gov/", "why": "Padrões de identidade digital (SP 800-63), autenticação e biometria."}, {"name": "CERT.br / NIC.br", "institution": "NIC.br", "url": "https://www.cert.br/", "why": "Incidentes e golpes na internet brasileira."}, {"name": "Cambridge Cybercrime Centre", "institution": "University of Cambridge", "url": "https://www.cambridgecybercrime.uk/", "why": "Dados e pesquisa sobre cibercrime e fraude online. Sem feed hoje."}], "practitioners": [{"name": "Brian Krebs", "org": "Krebs on Security", "url": "https://krebsonsecurity.com/", "why": "Jornalismo investigativo sobre fraude bancária, golpes e cibercrime."}, {"name": "BleepingComputer", "org": "BleepingComputer", "url": "https://www.bleepingcomputer.com/", "why": "Notícias de malware bancário, phishing e vazamentos de cartão (filtrado)."}, {"name": "Feedzai", "org": "Feedzai", "url": "https://feedzai.com/", "why": "Fornecedor de prevenção a fraude com relatórios de tendências."}, {"name": "BioCatch", "org": "BioCatch", "url": "https://www.biocatch.com/", "why": "Biometria comportamental; relatórios sobre golpes e contas mula."}, {"name": "SEON", "org": "SEON", "url": "https://seon.io/", "why": "Fraud prevention e KYC; conteúdo sobre agentes de IA e identidade."}, {"name": "ACFE", "org": "Association of Certified Fraud Examiners", "url": "https://www.acfe.com/", "why": "Report to the Nations e padrões de investigação de fraude. Sem feed hoje."}]}}</script>
+<script>
+(() => {
+  "use strict";
+
+  const app = document.getElementById("app");
+  let DATA = null;
+  const state = { q: "", themes: new Set(), minScore: 6, onlyWatch: false };
+
+  // ---------- helpers ----------
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const md = (s) => esc(s)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*\s][^*]*?)\*(?!\*)/g, "$1<em>$2</em>");
+  const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "#");
+  const fmtDate = (iso, opts = { day: "2-digit", month: "long", year: "numeric" }) =>
+    new Date(iso + "T12:00:00").toLocaleDateString("pt-BR", opts);
+  const scoreClass = (s) => (s >= 8 ? "hi" : s >= 6 ? "mid" : "lo");
+  const themeLabel = (k) => (DATA.themes[k] || k);
+  // "9 a 16 de novembro de 2026" (or "28 de outubro a 3 de novembro de 2026") when the digest covers a period.
+  const fmtPeriod = (d, short = false) => {
+    if (!d.period) return fmtDate(d.date, short ? { day: "2-digit", month: "short", year: "numeric" } : undefined);
+    const a = new Date(d.period.from + "T12:00:00"), b = new Date(d.period.to + "T12:00:00");
+    const m = short ? "short" : "long";
+    const left = a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear()
+      ? a.toLocaleDateString("pt-BR", { day: "numeric" })
+      : a.toLocaleDateString("pt-BR", { day: "numeric", month: m });
+    return `${left} a ${b.toLocaleDateString("pt-BR", { day: "numeric", month: m, year: "numeric" })}`;
+  };
+  const authorsShort = (a) => (!a || !a.length ? "" : a.length > 3 ? `${a.slice(0, 3).join(", ")} et al.` : a.join(", "));
+
+  function card(it, { showDate = false } = {}) {
+    const meta = [];
+    if (it.watch_authors && it.watch_authors.length) {
+      meta.push(it.watch_authors.map((n) => `<span class="star">⭐ ${esc(n)}</span>`).join(""));
+    }
+    if (it.watch_source) meta.push(`<span class="star">📌 ${esc(it.watch_source)}</span>`);
+    if (showDate) meta.push(`<span class="date-tag">${esc(fmtDate(it._date, { day: "2-digit", month: "short", year: "numeric" }))}</span>`);
+    meta.push(esc(it.venue || it.origin));
+    const au = authorsShort(it.authors);
+    if (au) meta.push(esc(au));
+    if (it.cited_by) meta.push(`cit: ${it.cited_by}`);
+    const orig = it.original_title && it.original_title !== it.title
+      ? `<div class="orig">${esc(it.original_title)}</div>` : "";
+    return `
+      <article class="card${it.watch_authors && it.watch_authors.length ? " watch" : ""}">
+        <div class="card-top">
+          <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
+          <span class="score ${scoreClass(it.score)}" title="nota de relevância × qualidade">${it.score}/10</span>
+        </div>
+        <div class="meta">${meta.join(" · ")}</div>
+        <p class="summary">${md(it.summary)}</p>
+        ${orig}
+      </article>`;
+  }
+
+  function setTab(tab) {
+    document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.tab === tab));
+  }
+
+  // ---------- views ----------
+  function viewDigest(date) {
+    setTab("digest");
+    const ds = DATA.digests;
+    if (!ds.length) { app.innerHTML = `<div class="empty">Nenhum digest ainda.</div>`; return; }
+    const idx = Math.max(0, date ? ds.findIndex((d) => d.date === date) : 0);
+    const d = ds[idx];
+    const newer = ds[idx - 1], older = ds[idx + 1];
+    const options = ds.map((x) => `<option value="${x.date}"${x.date === d.date ? " selected" : ""}>${esc(fmtPeriod(x, true))}</option>`).join("");
+
+    let html = `
+      <div class="day-nav">
+        <button data-go="${older ? older.date : ""}" ${older ? "" : "disabled"} aria-label="Digest anterior">← anterior</button>
+        <select id="day-select" aria-label="Escolher digest">${options}</select>
+        <button data-go="${newer ? newer.date : ""}" ${newer ? "" : "disabled"} aria-label="Próximo digest">próximo →</button>
+      </div>
+      <h1 class="day">${esc(fmtPeriod(d))}</h1>
+      ${d.headline ? `<p class="dek">${md(d.headline.charAt(0).toUpperCase() + d.headline.slice(1))}</p>` : ""}
+      <div class="stats">
+        <span><b>${d.stats.candidates}</b> candidatos novos</span>
+        <span><b>${d.stats.triaged}</b> avaliados</span>
+        <span><b>${d.items.length}</b> selecionados</span>
+        ${d.model ? `<span>modelo: ${esc(d.model.split("/").pop())}</span>` : ""}
+      </div>`;
+    if (d.trend) html += `<div class="trend"><span class="label">🔥 Tendência do período</span>${md(d.trend)}</div>`;
+    if (!d.items.length) html += `<div class="empty">Nada acima da barra neste período.</div>`;
+
+    for (const key of Object.keys(DATA.themes)) {
+      const group = d.items.filter((it) => it.theme === key);
+      if (!group.length) continue;
+      html += `<h2 class="theme-h">${esc(themeLabel(key))}</h2>` + group.map((it) => card(it)).join("");
+    }
+    if (d.quick && d.quick.length) {
+      html += `<section class="quick"><h2 class="theme-h">Menções rápidas</h2><ul>` +
+        d.quick.map((q) => `<li><a href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener">${esc(q.title)}</a>${q.note ? ` — ${md(q.note)}` : ""}</li>`).join("") +
+        `</ul></section>`;
+    }
+    app.innerHTML = html;
+    app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
+      if (b.dataset.go) location.hash = `#/d/${b.dataset.go}`;
+    }));
+    document.getElementById("day-select").addEventListener("change", (e) => { location.hash = `#/d/${e.target.value}`; });
+  }
+
+  function allItems() {
+    const out = [];
+    for (const d of DATA.digests) for (const it of d.items) out.push({ ...it, _date: d.date });
+    return out;
+  }
+
+  function viewArchive() {
+    setTab("arquivo");
+    const chips = Object.entries(DATA.themes).map(([k, v]) =>
+      `<button class="chip" data-theme="${k}" aria-pressed="${state.themes.has(k)}">${esc(v)}</button>`).join("");
+    app.innerHTML = `
+      <h1 class="day">Arquivo</h1>
+      <p class="dek">Todos os papers selecionados, de todos os digests.</p>
+      <div class="filters">
+        <input class="search" id="q" type="search" placeholder="Buscar por título, autor, venue, resumo…" value="${esc(state.q)}">
+        <div class="chips">${chips}</div>
+        <div class="filter-row">
+          <label>Nota mínima <input id="min" type="range" min="0" max="10" value="${state.minScore}"> <b id="minv">${state.minScore}</b></label>
+          <label><input id="ow" type="checkbox" ${state.onlyWatch ? "checked" : ""}> só da watchlist ⭐📌</label>
+        </div>
+      </div>
+      <div class="count" id="count"></div>
+      <div id="results"></div>`;
+
+    const items = allItems();
+    const render = () => {
+      const q = state.q.trim().toLowerCase();
+      const res = items.filter((it) =>
+        it.score >= state.minScore &&
+        (!state.themes.size || state.themes.has(it.theme)) &&
+        (!state.onlyWatch || (it.watch_authors && it.watch_authors.length) || it.watch_source) &&
+        (!q || [it.title, it.original_title, it.summary, it.venue, (it.authors || []).join(" "), (it.institutions || []).join(" ")]
+          .join(" ").toLowerCase().includes(q)));
+      document.getElementById("count").textContent = `${res.length} de ${items.length} papers`;
+      document.getElementById("results").innerHTML = res.length
+        ? res.map((it) => card(it, { showDate: true })).join("")
+        : `<div class="empty">Nenhum paper com esses filtros.</div>`;
+    };
+    document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+    document.getElementById("min").addEventListener("input", (e) => {
+      state.minScore = +e.target.value; document.getElementById("minv").textContent = e.target.value; render();
+    });
+    document.getElementById("ow").addEventListener("change", (e) => { state.onlyWatch = e.target.checked; render(); });
+    app.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => {
+      const k = c.dataset.theme;
+      state.themes.has(k) ? state.themes.delete(k) : state.themes.add(k);
+      c.setAttribute("aria-pressed", state.themes.has(k));
+      render();
+    }));
+    render();
+  }
+
+  function viewTrends() {
+    setTab("tendencias");
+    const ds = DATA.digests.filter((d) => d.trend);
+    app.innerHTML = `
+      <h1 class="day">Tendências</h1>
+      <p class="dek">A síntese de cada digest, em ordem cronológica reversa.</p>
+      ${ds.length ? `<div class="timeline">${ds.map((d) => `
+        <div class="tl-item">
+          <a class="d" href="#/d/${d.date}">${esc(fmtPeriod(d))}</a>
+          <p>${md(d.trend)}</p>
+        </div>`).join("")}</div>` : `<div class="empty">Sem tendências ainda.</div>`}`;
+  }
+
+  function viewWatchlist() {
+    setTab("watchlist");
+    const wl = DATA.watchlist || {};
+    const hits = {};
+    for (const it of allItems()) for (const n of [...(it.watch_authors || []), ...(it.watch_source ? [it.watch_source] : [])]) hits[n] = (hits[n] || 0) + 1;
+    const people = wl.researchers || [];
+    const known = ["EUA", "Europa", "China/Ásia", "Brasil"];
+    const regions = [...known, ...new Set(people.map((p) => p.region || "Outros").filter((r) => !known.includes(r)))];
+    const L = Object.assign({ researchers: "Pesquisadores", journals: "Journals", centers: "Centros & laboratórios",
+      practitioners: "Praticantes & fontes" }, DATA.topic.watchlist_labels || {});
+    let html = `
+      <h1 class="day">Watchlist</h1>
+      <p class="dek">Referências monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐; posts, relatórios e normas das fontes ganham 📌.</p>
+      <section class="wl-section"><h2>${esc(L.researchers)} <span class="muted">(${people.length})</span></h2>`;
+    for (const r of regions) {
+      const group = people.filter((p) => (p.region || "Outros") === r);
+      if (!group.length) continue;
+      html += `<h3 class="region-h">${esc(r)} · ${group.length}</h3><div class="people">` + group.map((p) => {
+        const links = Object.entries(p.links || {}).filter(([, u]) => u)
+          .map(([k, u]) => `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(k)}</a>`);
+        if (p.openalex_id) links.push(`<a href="https://openalex.org/authors/${esc(p.openalex_id)}" target="_blank" rel="noopener">openalex</a>`);
+        return `<div class="person">
+          <div class="n">${esc(p.name)}</div>
+          <div class="i">${esc(p.institution || "")}</div>
+          ${p.area ? `<div class="a">${esc(p.area)}</div>` : ""}
+          ${p.why ? `<div class="w">${esc(p.why)}</div>` : ""}
+          ${hits[p.name] ? `<div class="hits">⭐ ${hits[p.name]} paper(s) no arquivo</div>` : ""}
+          ${links.length ? `<div class="l">${links.join("")}</div>` : ""}
+        </div>`;
+      }).join("") + `</div>`;
+    }
+    html += `</section>`;
+    const simple = (title, arr, nameKey, subKey) => !arr || !arr.length ? "" : `
+      <section class="wl-section"><h2>${title} <span class="muted">(${arr.length})</span></h2><ul class="list-simple">` +
+      arr.map((x) => {
+        const name = x.url ? `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener"><b>${esc(x[nameKey])}</b></a>` : `<b>${esc(x[nameKey])}</b>`;
+        const hit = hits[x[nameKey]] ? ` <span class="hits">📌 ${hits[x[nameKey]]} no arquivo</span>` : "";
+        return `<li>${name}${subKey && x[subKey] ? ` <span class="muted">· ${esc(x[subKey])}</span>` : ""}${x.why ? ` — ${esc(x.why)}` : ""}${hit}</li>`;
+      }).join("") + `</ul></section>`;
+    html += simple(esc(L.journals), wl.journals, "name");
+    html += simple(esc(L.centers), wl.centers, "name", "institution");
+    html += simple(esc(L.practitioners), wl.practitioners, "name", "org");
+    app.innerHTML = html;
+  }
+
+  // ---------- topic identity + switcher ----------
+  function setupTopic(d) {
+    const t = d.topic || {};
+    const b = t.brand || {};
+    if (t.name) document.title = t.name;
+    if (b.mark) document.getElementById("brand-mark").textContent = b.mark;
+    if (b.text) document.getElementById("brand-text").innerHTML = `${esc(b.text)} <em>${esc(b.em || "Watch")}</em>`;
+    const sw = document.getElementById("topic-switch");
+    if (sw && d.topics && d.topics.length > 1) {
+      sw.innerHTML = d.topics.map((x) => `<option value="${esc(x.slug)}"${x.slug === t.slug ? " selected" : ""}>${esc(x.name)}</option>`).join("");
+      sw.hidden = false;
+      sw.addEventListener("change", (e) => { location.href = `../${e.target.value}/index.html`; });
+    }
+  }
+
+  // ---------- router ----------
+  function route() {
+    const h = location.hash.replace(/^#\/?/, "");
+    const [a, b] = h.split("/");
+    if (a === "d") viewDigest(b);
+    else if (a === "arquivo") viewArchive();
+    else if (a === "tendencias") viewTrends();
+    else if (a === "watchlist") viewWatchlist();
+    else viewDigest();
+    window.scrollTo(0, 0);
+  }
+
+  Promise.resolve(JSON.parse(document.getElementById("pa-data").textContent))
+    .then((d) => {
+      DATA = d;
+      setupTopic(d);
+      const n = d.digests.reduce((s, x) => s + x.items.length, 0);
+      document.getElementById("foot-meta").textContent = `${d.digests.length} digests · ${n} papers · atualizado em ${fmtDate(d.generated)}`;
+      window.addEventListener("hashchange", route);
+      route();
+    })
+    .catch((e) => { app.innerHTML = `<div class="empty">Não foi possível carregar os dados (${esc(e.message)}).</div>`; });
+})();
+</script>
+</body>
+</html>

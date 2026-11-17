@@ -100,7 +100,7 @@ def _landing(topics):
         last = ds[0] if ds else None
         sub = html.escape(last["headline"][:1].upper() + last["headline"][1:]) if last and last.get("headline") else "Sem digest ainda."
         mark = html.escape(t.meta.get("brand", {}).get("mark", "📡"))
-        cards.append(f'<a class="card" href="{t.slug}/"><h3>{mark} {html.escape(t.name)}</h3>'
+        cards.append(f'<a class="card" href="{t.slug}/index.html"><h3>{mark} {html.escape(t.name)}</h3>'
                      f'<p class="muted">{html.escape(t.meta.get("description", ""))}</p>'
                      f'<p class="summary">{sub}</p></a>')
     return f"""<!doctype html>

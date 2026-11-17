@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -20,7 +21,8 @@ def _request(url, data=None, headers=None, timeout=60, retries=3):
         body = json.dumps(data).encode("utf-8")
         hdrs.setdefault("Content-Type", "application/json")
     last = None
-    for attempt in range(retries):
+    attempt = waits = 0
+    while attempt < retries:
         req = urllib.request.Request(url, data=body, headers=hdrs)
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -31,11 +33,18 @@ def _request(url, data=None, headers=None, timeout=60, retries=3):
             # 4xx other than 429 will not get better by retrying
             if e.code != 429 and 400 <= e.code < 500:
                 raise RuntimeError(f"HTTP {e.code} for {url.split('?')[0]}: {detail}") from e
-            if e.code == 429 and "budget" in detail.lower():
-                raise RuntimeError(f"HTTP 429 (orçamento diário esgotado) for {url.split('?')[0]}: {detail[:200]}") from e
+            if e.code == 429:
+                hint = re.search(r"retry in (\d+) second", detail)
+                if hint and waits < 20:  # pacing limit (e.g. new OpenAlex keys): wait as told, don't count it
+                    waits += 1
+                    time.sleep(min(int(hint.group(1)), 300) + 1)
+                    continue
+                if "budget" in detail.lower() and not hint:
+                    raise RuntimeError(f"HTTP 429 (orçamento diário esgotado) for {url.split('?')[0]}: {detail[:200]}") from e
         except (urllib.error.URLError, TimeoutError) as e:
             last = e
-        time.sleep(3 * (attempt + 1) ** 2)
+        attempt += 1
+        time.sleep(3 * attempt ** 2)
     raise RuntimeError(f"request failed after {retries} tries: {url.split('?')[0]}: {last}")
 
 

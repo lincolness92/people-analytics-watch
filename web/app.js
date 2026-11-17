@@ -222,7 +222,7 @@
     if (sw && d.topics && d.topics.length > 1) {
       sw.innerHTML = d.topics.map((x) => `<option value="${esc(x.slug)}"${x.slug === t.slug ? " selected" : ""}>${esc(x.name)}</option>`).join("");
       sw.hidden = false;
-      sw.addEventListener("change", (e) => { location.href = `../${e.target.value}/`; });
+      sw.addEventListener("change", (e) => { location.href = `../${e.target.value}/index.html`; });
     }
   }
 

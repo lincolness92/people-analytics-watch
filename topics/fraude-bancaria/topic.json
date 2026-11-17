@@ -1,0 +1,35 @@
+{
+  "name": "Bank Fraud Watch",
+  "brand": {
+    "text": "Bank Fraud",
+    "em": "Watch",
+    "mark": "🛡️"
+  },
+  "description": "Digest de pesquisa e regulação state-of-the-art em fraude bancária, golpes, pagamentos e PLD/CFT.",
+  "order": 2,
+  "audience": "Você é o curador do BANK-FRAUD-WATCH, um digest diário em PT-BR para líderes de prevenção a fraudes, risco operacional, segurança e dados de um grande banco brasileiro. Eles querem só o que é state-of-the-art e acionável em: detecção de fraude transacional (ML, grafos, tempo real), golpes e engenharia social (pagamento autorizado, Pix, falsa central, romance/investimento), account takeover e autenticação, identidade sintética e onboarding (KYC, biometria, deepfakes), contas laranja/mulas e lavagem (PLD/CFT), cartões e e-commerce, e regulação e padrões (Basileia/BCBS, CPMI, Bacen, FATF, PCI, NIST). O contexto brasileiro (Pix, MED, Open Finance, Bacen, Febraban) vale atenção extra.",
+  "rubric_focus": "a prevenção, detecção e resposta a fraudes e golpes em bancos e meios de pagamento",
+  "rubric_strong": "dados reais de transações/contas de bancos ou redes de pagamento, validação out-of-time e avaliação com custo assimétrico (perda evitada × atrito/falso positivo), piloto ou A/B em produção, dados administrativos de golpes/reembolsos, venue de elite (KDD, WWW, USENIX Security, IEEE S&P, CCS, EJOR, DSS) ou norma/relatório de regulador com dados ou exigências novas",
+  "off_topic": "fraude contábil/corporativa e auditoria de demonstrações, fraude em seguros/saúde sem elo bancário, cibersegurança genérica sem dinheiro envolvido (ransomware, vulnerabilidades), risco de crédito e cobrança, cripto como investimento, ML genérico de anomalias sem dados financeiros, surveys repetitivos de 'IA para fraude' sem dados novos",
+  "summary_lesson": "a lição prática para quem previne fraude num banco",
+  "headline_example": "semana forte em golpes via Pix e detecção em grafos",
+  "trend_focus": "o que está mudando na prevenção a fraude e golpes em bancos",
+  "source_kinds": "reguladores e organismos de padrão (BIS/Basileia, Bacen, Fed, FCA, ECB, FSB, PCI, NIST), associações e praticantes",
+  "prefilter_keywords": "fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat",
+  "watchlist_labels": {
+    "researchers": "Pesquisadores",
+    "journals": "Journals & conferências",
+    "centers": "Reguladores, padrões & centros",
+    "practitioners": "Praticantes & fontes"
+  },
+  "themes": {
+    "fraud_analytics": "📊 Modelos, dados e métricas de fraude",
+    "scams": "🎣 Golpes e engenharia social",
+    "instant_payments": "⚡ Pix, pagamentos instantâneos & Open Finance",
+    "account_identity": "🔐 Account takeover, autenticação & identidade",
+    "genai_deepfakes": "🤖 IA generativa & deepfakes",
+    "mules_aml": "🕸️ Contas laranja, mulas & PLD/CFT",
+    "cards": "💳 Cartões & e-commerce",
+    "regulation": "⚖️ Regulação, Basileia & padrões"
+  }
+}

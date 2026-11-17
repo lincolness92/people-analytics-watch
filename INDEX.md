@@ -36,3 +36,24 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 ## 🔥 Tendências (1)
 
 - **2026-11-16** — O período mostra a IA saindo do discurso genérico e entrando na **governança operacional**: auditoria de LLMs em vagas, separação entre funções de gestão algorítmica e evidência de que monitoramento corrói autonomia. Ao mesmo tempo, a pesquisa sobre gestão de pessoas volta a destacar mecanismos concretos — previsibilidade de local em times híbridos, qualidade de 1:1s, reenquadramento de ameaça e de-risking de segurança psicológica — em vez de receitas de engajamento. Para people analytics, a agenda é medir uso efetivo (de IA, de tempo, de canais de voz), documentar validade de construto e testar intervenções com desenho longitudinal.
+
+# 🛡️ BANK-FRAUD-WATCH
+
+1 digests em `digests/fraude-bancaria/`.
+
+## 📊 Modelos, dados e métricas de fraude (1)
+
+- 2026-11-17 · [Large Payments Model](https://arxiv.org/abs/2611.15814) · 7/10
+
+## ⚡ Pix, pagamentos instantâneos & Open Finance (2)
+
+- 2026-11-17 · [Instant Payments, Fraud, and Optimal Consumer Protection](https://doi.org/10.34989/swp-2026-41) · 8/10
+- 2026-11-17 · [Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas](https://www.bcb.gov.br/detalhenoticia/21313/noticia) · 7/10
+
+## 🔐 Account takeover, autenticação & identidade (1)
+
+- 2026-11-17 · [Evaluating Ongoing Access Attacks on the Web](https://doi.org/10.1145/3830454.3846598) · 7/10
+
+## 🔥 Tendências (1)
+
+- **2026-11-17** — O período conecta três frentes: regulação de pagamentos instantâneos e Open Finance, que pressiona por clareza de responsabilidade e governança de terceiros; pesquisa em account takeover que expõe rotas de acesso persistente e irrevogáveis; e modelos de fundação para pagamentos que prometem representações reutilizáveis, mas com ganhos ainda questionados frente a baselines de boosting. A tendência é que a prevenção a fraude em bancos combine mandatos regulatórios (teto, responsabilidade compartilhada, auditoria de parceiros) com arquiteturas de detecção cientes do ciclo de vida e ligadas a entidades, sem abandonar a validação rigorosa de ganho incremental.

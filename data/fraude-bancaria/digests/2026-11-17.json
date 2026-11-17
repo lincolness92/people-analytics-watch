@@ -1,0 +1,235 @@
+{
+ "date": "2026-11-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "period": {
+  "from": "2026-11-10",
+  "to": "2026-11-17"
+ },
+ "stats": {
+  "candidates": 127,
+  "triaged": 127,
+  "selected": 4,
+  "tokens": {
+   "prompt_tokens": 25612,
+   "completion_tokens": 20144
+  }
+ },
+ "headline": "regulação de pagamentos instantâneos, ataques de acesso persistente e foundation models para pagamentos",
+ "trend": "O período conecta três frentes: regulação de pagamentos instantâneos e Open Finance, que pressiona por clareza de responsabilidade e governança de terceiros; pesquisa em account takeover que expõe rotas de acesso persistente e irrevogáveis; e modelos de fundação para pagamentos que prometem representações reutilizáveis, mas com ganhos ainda questionados frente a baselines de boosting. A tendência é que a prevenção a fraude em bancos combine mandatos regulatórios (teto, responsabilidade compartilhada, auditoria de parceiros) com arquiteturas de detecção cientes do ciclo de vida e ligadas a entidades, sem abandonar a validação rigorosa de ganho incremental.",
+ "items": [
+  {
+   "key": "arxiv:2611.15814",
+   "title": "Large Payments Model",
+   "original_title": "Large Payments Model",
+   "url": "https://arxiv.org/abs/2611.15814",
+   "venue": "arXiv (cs.LG, cs.AI)",
+   "date": "2026-11-11",
+   "authors": [
+    "Natraj Raman",
+    "Abhenandhan Manoharan",
+    "Vishwasreddy Thuniki",
+    "Dhvani Kansara",
+    "Anirudh Som",
+    "Hassan Firouzi",
+    "Kostis Gourgoulias",
+    "Laukik Hoshing",
+    "Sudhir Kanala",
+    "Austin Reiter",
+    "Ebby Abdul",
+    "Shantanu Chandra"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "fraud_analytics",
+   "summary": "Large Payments Model (LPM) é um foundation model de domínio treinado do zero em dados transacionais estruturados, com até **400 bilhões de tokens**, codificações específicas por campo e autossupervisão ciente do ciclo de vida. Duas arquiteturas: Independent (mascaramento híbrido, inferência por transação) e Sequence (históricos ligados a entidades via representações latentes compactas), com destilação opcional. Supera baselines fortes em tarefas de Merchant e Treasury Services e permite adaptação a alvos não vistos, indicando uma camada reutilizável de inteligência para fraude, autorização e otimização."
+  },
+  {
+   "key": "doi:10.34989/swp-2026-41",
+   "title": "Instant Payments, Fraud, and Optimal Consumer Protection",
+   "original_title": "Instant Payments, Fraud, and Optimal Consumer Protection",
+   "url": "https://doi.org/10.34989/swp-2026-41",
+   "venue": "Bank of Canada Research",
+   "date": "2026-11-10",
+   "authors": [
+    "Yuteng Cheng",
+    "Charles M. Kahn",
+    "Francisco Rivadeneyra"
+   ],
+   "institutions": [
+    "Bank of Canada",
+    "University of Illinois Urbana-Champaign"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "instant_payments",
+   "summary": "Modelo teórico do Bank of Canada compara controle centralizado vs. descentralizado de fraude e regras de responsabilização em pagamentos instantâneos. Governança centralizada não implementa a alocação ótima por excluir pagamentos pequenos via tarifas; no regime descentralizado, a divisão ótima de responsabilidade depende da curvatura relativa das tecnologias de prevenção do remetente e do recebedor, tornando-se mais pesada para o remetente quando o monitoramento do recebedor é menos flexível. Lição: desenhar mandatos de acesso e teto (como o **MED** do Pix) e calibrar a responsabilidade compartilhada é tão crítico quanto o modelo de detecção."
+  },
+  {
+   "key": "web:https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+   "title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas",
+   "original_title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas",
+   "url": "https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+   "venue": "Banco Central do Brasil — notícias",
+   "date": "2026-11-10",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Banco Central do Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "instant_payments",
+   "summary": "Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e facilita compartilhamento de dados por pessoas jurídicas, com mais clareza sobre responsabilidades. Exige que a instituição integradora avalie a capacidade da parceira e obtenha **atestação por auditor independente** registrado na CVM, além de reforçar salvaguardas de consentimento, segurança e governança. Para bancos, o onboarding de parceiros e os fluxos de consentimento passam a ser auditáveis e exigem due diligence contínua."
+  },
+  {
+   "key": "doi:10.1145/3830454.3846598",
+   "title": "Evaluating Ongoing Access Attacks on the Web",
+   "original_title": "Evaluating Ongoing Access Attacks on the Web",
+   "url": "https://doi.org/10.1145/3830454.3846598",
+   "venue": "ACM SIGSAC Conference on Computer and Communications Security (CCS)",
+   "date": "2026-11-12",
+   "authors": [
+    "Arkaprabha Bhattacharya",
+    "Rosanna Frances Bellini",
+    "Thomas Ristenpart",
+    "Nicola Lee Dell"
+   ],
+   "institutions": [
+    "Cornell Tech",
+    "New York University",
+    "University of Toronto"
+   ],
+   "watch_authors": [
+    "Thomas Ristenpart"
+   ],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "watchlist",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "account_identity",
+   "summary": "Primeiro estudo holístico de ataques de acesso persistente, em que o invasor reconfigura recursos de segurança para manter acesso mesmo após tentativas de remoção da vítima. Mapeou 11 rotas de acesso em serviços web e simulou ataques em 20 serviços populares: **14 oferecem rota irrevogável** ou sem remediação adequada pelas orientações do provedor. Para bancos, o playbook de resposta a account takeover precisa cobrir SSO, passkeys e mecanismos de recuperação, não apenas reset de senha."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1108/jfc-04-2026-0185",
+   "title": "Insider threat detection: socio-technical analysis of behavioural pathways",
+   "original_title": "Insider threat detection: a socio-technical analysis of behavioural pathways in malicious insider fraud",
+   "url": "https://doi.org/10.1108/jfc-04-2026-0185",
+   "venue": "Journal of Financial Crime",
+   "date": "2026-11-11",
+   "authors": [
+    "Monica Therese Whitty",
+    "Christopher Ruddy",
+    "David Adam Keatley",
+    "Hassan Jamil"
+   ],
+   "institutions": [
+    "Monash University",
+    "Murdoch University"
+   ],
+   "watch_authors": [
+    "Monica Therese Whitty"
+   ],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "fraud_analytics",
+   "note": "Combina grounded theory e análise de sequência comportamental para mapear caminhos de fraude interna; útil para detecção além de indicadores técnicos isolados."
+  },
+  {
+   "key": "doi:10.58766/rpgbcb.v20i1.1263",
+   "title": "Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos",
+   "original_title": "Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos: mecanismos jurídico-regulatórios e proteção ao consumidor no Sistema Financeiro Nacional",
+   "url": "https://doi.org/10.58766/rpgbcb.v20i1.1263",
+   "venue": "Revista da Procuradoria-Geral do Banco Central",
+   "date": "2026-11-11",
+   "authors": [
+    "Danniel Pedro Lima de Araújo Da Conceição"
+   ],
+   "institutions": [
+    "Advocacia-Geral da União"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "regulation",
+   "note": "Analisa o marco jurídico-regulatório do Pix e resoluções BC/CMN; referência para compliance e defesa do consumidor em fraudes digitais."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24159810",
+   "title": "Transaction Monitoring That Survives Reconciliation",
+   "original_title": "Transaction Monitoring That Survives Reconciliation",
+   "url": "https://doi.org/10.5281/zenodo.24159810",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-12",
+   "authors": [
+    "Mukul Juneja"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "mules_aml",
+   "note": "Caso DOJ mostra banco com ~92% do volume transacional não monitorado por mais de seis anos; falhas ocorrem antes do modelo, na conexão de produtos e dados."
+  },
+  {
+   "key": "arxiv:2611.18914",
+   "title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+   "original_title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+   "url": "https://arxiv.org/abs/2611.18914",
+   "venue": "arXiv (cs.LG)",
+   "date": "2026-11-13",
+   "authors": [
+    "Carlos Eduardo Martins Relvas",
+    "Gustavo di Giovanni Bernardo"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "fraud_analytics",
+   "note": "Propõe TBS, ensemble de boosting com sequências de eventos; ganhos de foundation models sobre LightGBM são modestos e raramente públicos."
+  },
+  {
+   "key": "web:https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers",
+   "title": "PCI SSC Publishes New Guidance on Understanding PCI DSS Third-Party Service Providers",
+   "original_title": "PCI SSC Publishes New Guidance on Understanding PCI DSS Third-Party Service Providers",
+   "url": "https://blog.pcisecuritystandards.org/pci-ssc-publishes-new-guidance-on-understanding-pci-dss-third-party-service-providers",
+   "venue": "PCI Security Standards Council",
+   "date": "2026-11-10",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "PCI Security Standards Council",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "regulation",
+   "note": "Novo supplement do PCI SSC esclarece requisitos PCI DSS para provedores terceiros; reforça due diligence e responsabilidades contratuais."
+  }
+ ]
+}

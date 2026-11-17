@@ -1,0 +1,514 @@
+{
+  "researchers": [
+    {
+      "name": "Bart Baesens",
+      "institution": "University of Southampton",
+      "region": "Europa",
+      "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude",
+      "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5081225515",
+      "openalex_note": "conferido por nome + instituição; h-index 78",
+      "links": {}
+    },
+    {
+      "name": "David J. Hand",
+      "institution": "Imperial College London",
+      "region": "Europa",
+      "area": "Estatística de detecção de fraude, métricas de avaliação",
+      "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5033380454",
+      "openalex_note": "conferido por nome + instituição; h-index 89",
+      "links": {}
+    },
+    {
+      "name": "Gianluca Bontempi",
+      "institution": "Université Libre de Bruxelles",
+      "region": "Europa",
+      "area": "Detecção de fraude em cartões com dados reais (Worldline)",
+      "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5072869049",
+      "openalex_note": "conferido por nome + instituição; h-index 63",
+      "links": {}
+    },
+    {
+      "name": "Andrea Dal Pozzolo",
+      "institution": "Université Libre de Bruxelles",
+      "region": "Europa",
+      "area": "Concept drift e desbalanceamento em fraude de cartões",
+      "why": "Referência em fraude/crime financeiro; 5 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5008848385",
+      "openalex_note": "conferido por nome + instituição; h-index 9",
+      "links": {}
+    },
+    {
+      "name": "Tyler Moore",
+      "institution": "University of Tulsa",
+      "region": "EUA",
+      "area": "Economia do cibercrime, phishing e golpes",
+      "why": "Referência em fraude/crime financeiro; 38 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5073243028",
+      "openalex_note": "conferido por nome + instituição; h-index 47",
+      "links": {}
+    },
+    {
+      "name": "Richard Clayton",
+      "institution": "University of Cambridge",
+      "region": "Europa",
+      "area": "Cibercrime e fraude online (Cambridge Cybercrime Centre)",
+      "why": "Referência em fraude/crime financeiro; 8 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5090866479",
+      "openalex_note": "conferido por nome + instituição; h-index 44",
+      "links": {}
+    },
+    {
+      "name": "Nicolas Christin",
+      "institution": "Carnegie Mellon University",
+      "region": "EUA",
+      "area": "Ecossistemas criminosos online e golpes",
+      "why": "Referência em fraude/crime financeiro; 14 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5078075278",
+      "openalex_note": "conferido por nome + instituição; h-index 58",
+      "links": {}
+    },
+    {
+      "name": "Damon McCoy",
+      "institution": "New York University",
+      "region": "EUA",
+      "area": "Golpes e fraude em pagamentos e plataformas",
+      "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5037313918",
+      "openalex_note": "conferido por nome + instituição; h-index 53",
+      "links": {}
+    },
+    {
+      "name": "Mark Button",
+      "institution": "University of Portsmouth",
+      "region": "Europa",
+      "area": "Counter-fraud, vitimização e políticas antifraude",
+      "why": "Referência em fraude/crime financeiro; 155 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5041603506",
+      "openalex_note": "conferido por nome + instituição; h-index 41",
+      "links": {}
+    },
+    {
+      "name": "Michael Levi",
+      "institution": "Cardiff University",
+      "region": "Europa",
+      "area": "Crime financeiro, lavagem e políticas de PLD",
+      "why": "Referência em fraude/crime financeiro; 157 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5016958062",
+      "openalex_note": "conferido por nome + instituição; h-index 51",
+      "links": {}
+    },
+    {
+      "name": "Cassandra Cross",
+      "institution": "Queensland University of Technology",
+      "region": "Outros",
+      "area": "Golpes românticos e vítimas de fraude online",
+      "why": "Referência em fraude/crime financeiro; 95 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5025940101",
+      "openalex_note": "conferido por nome + instituição; h-index 31",
+      "links": {}
+    },
+    {
+      "name": "Yingtong Dou",
+      "institution": "Visa (United Kingdom)",
+      "region": "Europa",
+      "area": "GNNs para detecção de fraude (hoje na Visa)",
+      "why": "Referência em fraude/crime financeiro; 3 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5052902632",
+      "openalex_note": "conferido por nome + instituição; h-index 18",
+      "links": {}
+    },
+    {
+      "name": "Véronique Van Vlasselaer",
+      "institution": "KU Leuven",
+      "region": "Europa",
+      "area": "Fraude em redes (GOTCHA!), seguros e bancos",
+      "why": "Referência em fraude/crime financeiro; 15 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5066851728",
+      "openalex_note": "conferido por nome + instituição; h-index 8",
+      "links": {}
+    },
+    {
+      "name": "Monica Therese Whitty",
+      "institution": "Monash University",
+      "region": "Outros",
+      "area": "Psicologia de golpes românticos e engenharia social",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Automatically Dismantling Online Dating Fraud (126 cit.); Who can spot an online romance scam? (58 cit.)",
+      "openalex_id": "A5054441117",
+      "openalex_note": "minerado em venues de elite; h-index 44, 199 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Dawei Cheng",
+      "institution": "Tongji University",
+      "region": "China/Ásia",
+      "area": "GNNs para fraude em transações (Tongji)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Graph Neural Network for Fraud Detection via Spatial-Temporal Attention (301 cit.); Enhancing Attribute-Driven Fraud Detection With Risk-Aware Graph Representation (46 cit.)",
+      "openalex_id": "A5069869295",
+      "openalex_note": "minerado em venues de elite; h-index 36, 152 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Changjun Jiang",
+      "institution": "Tongji University",
+      "region": "China/Ásia",
+      "area": "Detecção de fraude em pagamentos online (Tongji)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: ASIA: A Federated Boosting Tree Model Against Sequence Inference Attacks in Financial Networks (17 cit.); Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance (1 cit.)",
+      "openalex_id": "A5066099338",
+      "openalex_note": "minerado em venues de elite; h-index 55, 495 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Sebastiaan Höppner",
+      "institution": "KU Leuven",
+      "region": "Europa",
+      "area": "Engenharia de dados e modelos sensíveis a custo para fraude",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)",
+      "openalex_id": "A5030723848",
+      "openalex_note": "minerado em venues de elite; h-index 7, 10 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Tim Verdonck",
+      "institution": "University of Antwerp",
+      "region": "Europa",
+      "area": "Estatística robusta e fraude de cartões",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)",
+      "openalex_id": "A5085208338",
+      "openalex_note": "minerado em venues de elite; h-index 27, 161 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Xiang Ao",
+      "institution": "Chinese Academy of Sciences",
+      "region": "China/Ásia",
+      "area": "GNNs para fraude (PC-GNN)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)",
+      "openalex_id": "A5068007462",
+      "openalex_note": "minerado em venues de elite; h-index 35, 125 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Jinghua Feng",
+      "institution": "Ant Group (China)",
+      "region": "China/Ásia",
+      "area": "Fraude em pagamentos no Ant Group",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)",
+      "openalex_id": "A5012138678",
+      "openalex_note": "minerado em venues de elite; h-index 12, 17 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Bijeeta Pal",
+      "institution": "Uber AI (United States)",
+      "region": "EUA",
+      "area": "Credential stuffing e segurança de contas",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)",
+      "openalex_id": "A5014563673",
+      "openalex_note": "minerado em venues de elite; h-index 5, 10 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Thomas Ristenpart",
+      "institution": "University of Toronto",
+      "region": "Outros",
+      "area": "Senhas, account takeover e abuso de tecnologia",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)",
+      "openalex_id": "A5003774887",
+      "openalex_note": "minerado em venues de elite; h-index 64, 172 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Meng Shen",
+      "institution": "Beijing Institute of Technology",
+      "region": "China/Ásia",
+      "area": "Detecção de contas fraudulentas por comportamento",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph (135 cit.); Breaking the Anonymity of Ethereum Mixing Services Using Graph Feature Learning (53 cit.)",
+      "openalex_id": "A5047030842",
+      "openalex_note": "minerado em venues de elite; h-index 48, 205 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Jiajing Wu",
+      "institution": "Sun Yat-sen University",
+      "region": "China/Ásia",
+      "area": "Fraude e phishing em redes de transações (blockchain)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph (135 cit.); DenseFlow: Spotting Cryptocurrency Money Laundering in Ethereum Transaction Graphs (56 cit.)",
+      "openalex_id": "A5031531093",
+      "openalex_note": "minerado em venues de elite; h-index 45, 192 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Yann‐Aël Le Borgne",
+      "institution": "Université Libre de Bruxelles",
+      "region": "Europa",
+      "area": "Fraude de cartões com aprendizado não supervisionado (ULB)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)",
+      "openalex_id": "A5025424957",
+      "openalex_note": "minerado em venues de elite; h-index 20, 69 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Frédéric Oblé",
+      "institution": "Institut National Polytechnique de Lorraine",
+      "region": "Europa",
+      "area": "Fraude de cartões na Worldline (dados de produção)",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)",
+      "openalex_id": "A5024363057",
+      "openalex_note": "minerado em venues de elite; h-index 11, 112 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "David Buil‐Gil",
+      "institution": "University of Manchester",
+      "region": "Europa",
+      "area": "Criminologia de golpes e fraude online",
+      "why": "Entre os mais citados sobre o tema em venues de elite: Meeting you was a fake: investigating the increase in romance fraud during COVID-19 (110 cit.); The effect of true crime docuseries on romance fraud reporting to the police (10 cit.)",
+      "openalex_id": "A5089356769",
+      "openalex_note": "minerado em venues de elite; h-index 18, 125 trabalhos — conferir homônimos",
+      "links": {}
+    }
+  ],
+  "journals": [
+    {
+      "name": "Journal of Financial Crime",
+      "openalex_source_id": "S180105601",
+      "why": "Principal periódico dedicado a crime financeiro, fraude e PLD."
+    },
+    {
+      "name": "Journal of Money Laundering Control",
+      "openalex_source_id": "S63393118",
+      "why": "Referência em lavagem de dinheiro e controles de PLD/CFT."
+    },
+    {
+      "name": "Decision Support Systems",
+      "openalex_source_id": "S11479521",
+      "why": "Muitos dos trabalhos aplicados de detecção de fraude com dados reais."
+    },
+    {
+      "name": "European Journal of Operational Research",
+      "openalex_source_id": "S103321696",
+      "why": "Modelagem de fraude com custo assimétrico e decisão (ex.: Baesens)."
+    },
+    {
+      "name": "Expert Systems with Applications",
+      "openalex_source_id": "S13144211",
+      "why": "Grande volume de detecção de fraude aplicada; filtrar pela qualidade."
+    },
+    {
+      "name": "IEEE Transactions on Knowledge and Data Engineering",
+      "openalex_source_id": "S30698027",
+      "why": "Métodos de detecção de anomalias e grafos em escala."
+    },
+    {
+      "name": "Data Mining and Knowledge Discovery",
+      "openalex_source_id": "S121920818",
+      "why": "Mineração de dados aplicada a fraude e anomalias."
+    },
+    {
+      "name": "IEEE Transactions on Information Forensics and Security",
+      "openalex_source_id": "S61310614",
+      "why": "Autenticação, biometria, deepfakes e segurança."
+    },
+    {
+      "name": "Computers & Security",
+      "openalex_source_id": "S12529635",
+      "why": "Segurança aplicada: phishing, account takeover, malware bancário."
+    },
+    {
+      "name": "Journal of Banking & Finance",
+      "openalex_source_id": "S2876017",
+      "why": "Economia bancária, incluindo perdas operacionais e fraude."
+    },
+    {
+      "name": "Journal of Financial Services Research",
+      "openalex_source_id": "S79175213",
+      "why": "Regulação e risco em serviços financeiros."
+    },
+    {
+      "name": "Crime Science",
+      "openalex_source_id": "S2495265100",
+      "why": "Criminologia quantitativa de fraude e golpes."
+    },
+    {
+      "name": "Information Sciences",
+      "openalex_source_id": "S192650101",
+      "why": "Métodos de ML para fraude e anomalias."
+    },
+    {
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "openalex_source_id": "S4363608767",
+      "why": "KDD: principal conferência de mineração de dados; muitos papers de fraude em grafos."
+    },
+    {
+      "name": "USENIX Security Symposium",
+      "openalex_source_id": "S4306421123",
+      "why": "Conferência de elite em segurança; golpes, phishing e fraude online."
+    },
+    {
+      "name": "IEEE Symposium on Security and Privacy (S&P)",
+      "openalex_source_id": "S4210233669",
+      "why": "Conferência de elite em segurança (Oakland)."
+    },
+    {
+      "name": "ACM SIGSAC Conference on Computer and Communications Security (CCS)",
+      "openalex_source_id": "S4393917527",
+      "why": "CCS: conferência de elite em segurança."
+    },
+    {
+      "name": "International World Wide Web Conference (WWW)",
+      "openalex_source_id": "S7407088480",
+      "why": "WWW: fraude em plataformas, grafos e detecção em escala."
+    }
+  ],
+  "centers": [
+    {
+      "name": "Basel Committee on Banking Supervision (BCBS)",
+      "institution": "BIS",
+      "url": "https://www.bis.org/committees/bcbs/overview",
+      "why": "Padrões de Basileia: risco operacional (inclui fraude), PLD/CFT e supervisão."
+    },
+    {
+      "name": "Committee on Payments and Market Infrastructures (CPMI)",
+      "institution": "BIS",
+      "url": "https://www.bis.org/committees/cpmi/overview",
+      "why": "Padrões para pagamentos, incluindo pagamentos instantâneos e fraude em pagamentos."
+    },
+    {
+      "name": "Financial Stability Institute (FSI/BIS)",
+      "institution": "BIS",
+      "url": "https://www.bis.org/about/fsi/publications",
+      "why": "FSI Insights sobre supervisão de risco operacional, cibersegurança e IA."
+    },
+    {
+      "name": "BIS Innovation Hub",
+      "institution": "BIS",
+      "url": "https://www.bis.org/about/innovation-hub/publications",
+      "why": "Projetos de bancos centrais sobre detecção de fraude e PLD (ex.: Aurora, Hertha)."
+    },
+    {
+      "name": "Bank for International Settlements (BIS)",
+      "institution": "BIS",
+      "url": "https://www.bis.org/",
+      "why": "Working papers e boletins sobre pagamentos, cripto, IA e crime financeiro."
+    },
+    {
+      "name": "Banco Central do Brasil",
+      "institution": "BCB",
+      "url": "https://www.bcb.gov.br/",
+      "why": "Regulador do Pix, do Open Finance e das regras de segurança e compartilhamento de dados de fraude."
+    },
+    {
+      "name": "Febraban",
+      "institution": "Federação Brasileira de Bancos",
+      "url": "https://portal.febraban.org.br/",
+      "why": "Dados e iniciativas do setor bancário brasileiro contra golpes; organiza a Febraban Tech."
+    },
+    {
+      "name": "COAF",
+      "institution": "Ministério da Fazenda",
+      "url": "https://www.gov.br/coaf/",
+      "why": "Unidade de inteligência financeira do Brasil (PLD/CFT). Sem fonte automática viável hoje."
+    },
+    {
+      "name": "FATF/GAFI",
+      "institution": "OCDE",
+      "url": "https://www.fatf-gafi.org/",
+      "why": "Padrões internacionais de PLD/CFT. Bloqueia robôs; sem fonte automática hoje."
+    },
+    {
+      "name": "Federal Reserve",
+      "institution": "EUA",
+      "url": "https://www.federalreserve.gov/",
+      "why": "Regulação de pagamentos (FedNow), fraude em cheques e working papers (FEDS)."
+    },
+    {
+      "name": "Financial Conduct Authority (FCA)",
+      "institution": "Reino Unido",
+      "url": "https://www.fca.org.uk/",
+      "why": "Referência em fraude de pagamento autorizado (APP) e reembolso obrigatório."
+    },
+    {
+      "name": "European Central Bank (ECB)",
+      "institution": "UE",
+      "url": "https://www.ecb.europa.eu/",
+      "why": "Relatórios de fraude em pagamentos na zona do euro e euro digital."
+    },
+    {
+      "name": "European Banking Authority (EBA)",
+      "institution": "UE",
+      "url": "https://www.eba.europa.eu/",
+      "why": "Dados de fraude em pagamentos (PSD2/PSD3) e PLD."
+    },
+    {
+      "name": "Financial Stability Board (FSB)",
+      "institution": "G20",
+      "url": "https://www.fsb.org/",
+      "why": "Cibersegurança, pagamentos transfronteiriços e cripto."
+    },
+    {
+      "name": "PCI Security Standards Council",
+      "institution": "Indústria de cartões",
+      "url": "https://www.pcisecuritystandards.org/",
+      "why": "Padrão PCI DSS de segurança de dados de cartão."
+    },
+    {
+      "name": "NIST",
+      "institution": "EUA",
+      "url": "https://www.nist.gov/",
+      "why": "Padrões de identidade digital (SP 800-63), autenticação e biometria."
+    },
+    {
+      "name": "CERT.br / NIC.br",
+      "institution": "NIC.br",
+      "url": "https://www.cert.br/",
+      "why": "Incidentes e golpes na internet brasileira."
+    },
+    {
+      "name": "Cambridge Cybercrime Centre",
+      "institution": "University of Cambridge",
+      "url": "https://www.cambridgecybercrime.uk/",
+      "why": "Dados e pesquisa sobre cibercrime e fraude online. Sem feed hoje."
+    }
+  ],
+  "practitioners": [
+    {
+      "name": "Brian Krebs",
+      "org": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/",
+      "why": "Jornalismo investigativo sobre fraude bancária, golpes e cibercrime."
+    },
+    {
+      "name": "BleepingComputer",
+      "org": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/",
+      "why": "Notícias de malware bancário, phishing e vazamentos de cartão (filtrado)."
+    },
+    {
+      "name": "Feedzai",
+      "org": "Feedzai",
+      "url": "https://feedzai.com/",
+      "why": "Fornecedor de prevenção a fraude com relatórios de tendências."
+    },
+    {
+      "name": "BioCatch",
+      "org": "BioCatch",
+      "url": "https://www.biocatch.com/",
+      "why": "Biometria comportamental; relatórios sobre golpes e contas mula."
+    },
+    {
+      "name": "SEON",
+      "org": "SEON",
+      "url": "https://seon.io/",
+      "why": "Fraud prevention e KYC; conteúdo sobre agentes de IA e identidade."
+    },
+    {
+      "name": "ACFE",
+      "org": "Association of Certified Fraud Examiners",
+      "url": "https://www.acfe.com/",
+      "why": "Report to the Nations e padrões de investigação de fraude. Sem feed hoje."
+    }
+  ]
+}

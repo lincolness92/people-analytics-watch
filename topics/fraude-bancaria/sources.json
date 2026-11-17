@@ -1,43 +1,160 @@
 {
-  "_doc": "Fontes web do Bank Fraud Watch, curadas e testadas em 17/11/2026. kind: rss (itens com data na janela; pattern filtra pelo título), page (links novos numa listagem; pattern na URL) ou sitemap. Sem fonte viável hoje: FATF/GAFI e UK Finance (bloqueiam robôs, 403), COAF (gov.br sem feed), FinCEN e Europol (feeds removidos), EBA (feed parado desde 2024), IFRS (fora do escopo de fraude; entra no tema de risco de crédito). Pendente: Febraban Tech pelo canal do YouTube (feed https://www.youtube.com/feeds/videos.xml?channel_id=<id>).",
+  "_doc": "Fontes web do Bank Fraud Watch, curadas e testadas em 17/11/2026. kind: rss (itens com data na janela; pattern filtra pelo título), page (links novos numa listagem; pattern na URL) ou sitemap. Sem fonte viável hoje: FATF/GAFI e UK Finance (bloqueiam robôs, 403), COAF (gov.br sem feed), FinCEN e Europol (feeds removidos), IFRS (fora do escopo de fraude; entra no tema de risco de crédito). Pendente: Febraban Tech pelo canal do YouTube (feed https://www.youtube.com/feeds/videos.xml?channel_id=<id>).",
   "sources": [
-    {"name": "BIS — Comitê de Basileia (BCBS)", "watch": "Basel Committee on Banking Supervision (BCBS)", "kind": "page",
-     "url": "https://www.bis.org/committees/bcbs/overview", "pattern": "/publications/[a-z0-9-]+$"},
-    {"name": "BIS — CPMI (pagamentos)", "watch": "Committee on Payments and Market Infrastructures (CPMI)", "kind": "page",
-     "url": "https://www.bis.org/committees/cpmi/overview", "pattern": "/publications/[a-z0-9-]+$"},
-    {"name": "BIS — Financial Stability Institute", "watch": "Financial Stability Institute (FSI/BIS)", "kind": "page",
-     "url": "https://www.bis.org/about/fsi/publications", "pattern": "/publications/[a-z0-9-]+$"},
-    {"name": "BIS Innovation Hub", "watch": "BIS Innovation Hub", "kind": "page",
-     "url": "https://www.bis.org/about/innovation-hub/publications", "pattern": "/publications/[a-z0-9-]+$"},
-    {"name": "BIS Working Papers", "watch": "Bank for International Settlements (BIS)", "kind": "rss", "url": "https://www.bis.org/doclist/wppubls.rss",
-     "pattern": "(?i)fraud|scam|payment|cyber|crime|launder|aml|identity|stablecoin|crypto|tokeni|instant|artificial intelligence|\\bAI\\b|bank run|deposit"},
-    {"name": "BIS Bulletins", "watch": "Bank for International Settlements (BIS)", "kind": "rss", "url": "https://www.bis.org/doclist/bisbulletins.rss",
-     "pattern": "(?i)fraud|scam|payment|cyber|crime|launder|aml|identity|stablecoin|crypto|tokeni|instant|artificial intelligence|\\bAI\\b"},
-    {"name": "Banco Central do Brasil — notícias", "watch": "Banco Central do Brasil", "kind": "rss", "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/noticias",
-     "pattern": "(?i)fraud|golpe|segur|pix|open finance|autentic|consumidor|lavagem|\\bPLD|ciber|incidente|resolu|norma|regra|MED|devolu|conta|identidade|biometr"},
-    {"name": "Banco Central do Brasil — notas", "watch": "Banco Central do Brasil", "kind": "rss", "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/notasImprensa",
-     "pattern": "(?i)fraud|golpe|segur|pix|open finance|autentic|lavagem|\\bPLD|ciber|incidente|resolu|norma|regra|MED|devolu|identidade"},
-    {"name": "Febraban — notícias", "watch": "Febraban", "kind": "page",
-     "url": "https://portal.febraban.org.br/pagina/3271/50/pt-br/noticias", "pattern": "/noticia/\\d+/pt-br/?$"},
-    {"name": "CERT.br", "watch": "CERT.br / NIC.br", "kind": "rss", "url": "https://www.cert.br/rss"},
-    {"name": "Federal Reserve — press", "watch": "Federal Reserve", "kind": "rss", "url": "https://www.federalreserve.gov/feeds/press_all.xml",
-     "pattern": "(?i)fraud|scam|payment|cyber|money laundering|\\bBSA\\b|\\bAML\\b|identity|check|third-party|FedNow|enforcement"},
-    {"name": "Federal Reserve — FEDS papers", "watch": "Federal Reserve", "kind": "rss", "url": "https://www.federalreserve.gov/feeds/feds.xml",
-     "pattern": "(?i)fraud|scam|payment|cyber|launder|identity|crime|artificial intelligence|\\bAI\\b|deposit|bank"},
-    {"name": "FCA (Reino Unido)", "watch": "Financial Conduct Authority (FCA)", "kind": "rss", "url": "https://www.fca.org.uk/news/rss.xml",
-     "pattern": "(?i)fraud|scam|push payment|\\bAPP\\b|reimburs|payment|money laundering|financial crime|mule|cyber|sentenced|fine"},
-    {"name": "ECB — publicações", "watch": "European Central Bank (ECB)", "kind": "rss", "url": "https://www.ecb.europa.eu/rss/pub.html",
-     "pattern": "(?i)fraud|payment|cyber|digital euro|instant|launder|crime|identity|\\bAI\\b|artificial intelligence"},
-    {"name": "Financial Stability Board", "watch": "Financial Stability Board (FSB)", "kind": "rss", "url": "https://www.fsb.org/feed/",
-     "pattern": "(?i)cyber|fraud|launder|payment|crypto|stablecoin|third-party|\\bAI\\b|artificial intelligence|incident"},
-    {"name": "PCI Security Standards Council", "watch": "PCI Security Standards Council", "kind": "rss", "url": "https://blog.pcisecuritystandards.org/rss.xml"},
-    {"name": "NIST", "watch": "NIST", "kind": "rss", "url": "https://www.nist.gov/news-events/news/rss.xml",
-     "pattern": "(?i)identity|authenticat|biometric|deepfake|fraud|cyber|face|liveness|digital id|\\bAI\\b"},
-    {"name": "Krebs on Security", "watch": "Brian Krebs", "kind": "rss", "url": "https://krebsonsecurity.com/feed/"},
-    {"name": "BleepingComputer (bancos)", "watch": "BleepingComputer", "kind": "rss", "url": "https://www.bleepingcomputer.com/feed/",
-     "pattern": "(?i)bank|banking|fraud|scam|phish|payment|card|pix|brazil|trojan|account takeover|sim swap|crypto"},
-    {"name": "Feedzai", "watch": "Feedzai", "kind": "rss", "url": "https://feedzai.com/feed/"},
-    {"name": "BioCatch", "watch": "BioCatch", "kind": "rss", "url": "https://www.biocatch.com/blog/rss.xml"},
-    {"name": "SEON", "watch": "SEON", "kind": "rss", "url": "https://seon.io/feed/"}
+    {
+      "name": "BIS — Comitê de Basileia (BCBS)",
+      "watch": "Basel Committee on Banking Supervision (BCBS)",
+      "kind": "page",
+      "url": "https://www.bis.org/committees/bcbs/overview",
+      "pattern": "/publications/[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS — CPMI (pagamentos)",
+      "watch": "Committee on Payments and Market Infrastructures (CPMI)",
+      "kind": "page",
+      "url": "https://www.bis.org/committees/cpmi/overview",
+      "pattern": "/publications/[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS — Financial Stability Institute",
+      "watch": "Financial Stability Institute (FSI/BIS)",
+      "kind": "page",
+      "url": "https://www.bis.org/about/fsi/publications",
+      "pattern": "/publications/[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS Innovation Hub",
+      "watch": "BIS Innovation Hub",
+      "kind": "page",
+      "url": "https://www.bis.org/about/innovation-hub/publications",
+      "pattern": "/publications/[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS Working Papers",
+      "watch": "Bank for International Settlements (BIS)",
+      "kind": "rss",
+      "url": "https://www.bis.org/doclist/wppubls.rss",
+      "pattern": "(?i)fraud|scam|payment|cyber|crime|launder|aml|identity|stablecoin|crypto|tokeni|instant|artificial intelligence|\\bAI\\b|bank run|deposit"
+    },
+    {
+      "name": "BIS Bulletins",
+      "watch": "Bank for International Settlements (BIS)",
+      "kind": "rss",
+      "url": "https://www.bis.org/doclist/bisbulletins.rss",
+      "pattern": "(?i)fraud|scam|payment|cyber|crime|launder|aml|identity|stablecoin|crypto|tokeni|instant|artificial intelligence|\\bAI\\b"
+    },
+    {
+      "name": "Banco Central do Brasil — notícias",
+      "watch": "Banco Central do Brasil",
+      "kind": "rss",
+      "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/noticias",
+      "pattern": "(?i)fraud|golpe|segur|pix|open finance|autentic|consumidor|lavagem|\\bPLD|ciber|incidente|resolu|norma|regra|MED|devolu|conta|identidade|biometr"
+    },
+    {
+      "name": "Banco Central do Brasil — notas",
+      "watch": "Banco Central do Brasil",
+      "kind": "rss",
+      "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/notasImprensa",
+      "pattern": "(?i)fraud|golpe|segur|pix|open finance|autentic|lavagem|\\bPLD|ciber|incidente|resolu|norma|regra|MED|devolu|identidade"
+    },
+    {
+      "name": "Febraban — notícias",
+      "watch": "Febraban",
+      "kind": "page",
+      "url": "https://portal.febraban.org.br/pagina/3271/50/pt-br/noticias",
+      "pattern": "/noticia/\\d+/pt-br/?$"
+    },
+    {
+      "name": "CERT.br",
+      "watch": "CERT.br / NIC.br",
+      "kind": "rss",
+      "url": "https://www.cert.br/rss"
+    },
+    {
+      "name": "Federal Reserve — press",
+      "watch": "Federal Reserve",
+      "kind": "rss",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "pattern": "(?i)fraud|scam|payment|cyber|money laundering|\\bBSA\\b|\\bAML\\b|identity|check|third-party|FedNow|enforcement"
+    },
+    {
+      "name": "Federal Reserve — FEDS papers",
+      "watch": "Federal Reserve",
+      "kind": "rss",
+      "url": "https://www.federalreserve.gov/feeds/feds.xml",
+      "pattern": "(?i)fraud|scam|payment|cyber|launder|identity|crime|artificial intelligence|\\bAI\\b|deposit|bank"
+    },
+    {
+      "name": "FCA (Reino Unido)",
+      "watch": "Financial Conduct Authority (FCA)",
+      "kind": "rss",
+      "url": "https://www.fca.org.uk/news/rss.xml",
+      "pattern": "(?i)fraud|scam|push payment|\\bAPP\\b|reimburs|payment|money laundering|financial crime|mule|cyber|sentenced|fine"
+    },
+    {
+      "name": "ECB — publicações",
+      "watch": "European Central Bank (ECB)",
+      "kind": "rss",
+      "url": "https://www.ecb.europa.eu/rss/pub.html",
+      "pattern": "(?i)fraud|payment|cyber|digital euro|instant|launder|crime|identity|\\bAI\\b|artificial intelligence"
+    },
+    {
+      "name": "Financial Stability Board",
+      "watch": "Financial Stability Board (FSB)",
+      "kind": "rss",
+      "url": "https://www.fsb.org/feed/",
+      "pattern": "(?i)cyber|fraud|launder|payment|crypto|stablecoin|third-party|\\bAI\\b|artificial intelligence|incident"
+    },
+    {
+      "name": "PCI Security Standards Council",
+      "watch": "PCI Security Standards Council",
+      "kind": "rss",
+      "url": "https://blog.pcisecuritystandards.org/rss.xml"
+    },
+    {
+      "name": "NIST",
+      "watch": "NIST",
+      "kind": "rss",
+      "url": "https://www.nist.gov/news-events/news/rss.xml",
+      "pattern": "(?i)identity|authenticat|biometric|deepfake|fraud|cyber|face|liveness|digital id|\\bAI\\b"
+    },
+    {
+      "name": "Krebs on Security",
+      "watch": "Brian Krebs",
+      "kind": "rss",
+      "url": "https://krebsonsecurity.com/feed/"
+    },
+    {
+      "name": "BleepingComputer (bancos)",
+      "watch": "BleepingComputer",
+      "kind": "rss",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "pattern": "(?i)bank|banking|fraud|scam|phish|payment|card|pix|brazil|trojan|account takeover|sim swap|crypto"
+    },
+    {
+      "name": "Feedzai",
+      "watch": "Feedzai",
+      "kind": "rss",
+      "url": "https://feedzai.com/feed/"
+    },
+    {
+      "name": "BioCatch",
+      "watch": "BioCatch",
+      "kind": "rss",
+      "url": "https://www.biocatch.com/blog/rss.xml"
+    },
+    {
+      "name": "SEON",
+      "watch": "SEON",
+      "kind": "rss",
+      "url": "https://seon.io/feed/"
+    },
+    {
+      "name": "EBA",
+      "watch": "European Banking Authority (EBA)",
+      "kind": "rss",
+      "url": "https://www.eba.europa.eu/rss.xml",
+      "pattern": "(?i)fraud|payment|launder|aml|cft|scam|psd|operational|ict|cyber|identity"
+    }
   ]
 }

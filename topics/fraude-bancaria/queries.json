@@ -1,0 +1,42 @@
+{
+  "lookback_days": 7,
+  "openalex": {
+    "types": [
+      "article",
+      "preprint",
+      "review",
+      "book-chapter",
+      "report"
+    ],
+    "per_query": 50,
+    "queries": [
+      "\"fraud detection\" AND (bank OR banking OR \"financial institution\" OR \"financial transactions\")",
+      "\"credit card fraud\" OR \"card fraud\" OR \"payment card fraud\" OR \"card-not-present\"",
+      "\"authorized push payment\" OR \"APP fraud\" OR \"push payment fraud\" OR \"payment scam\" OR \"investment scam\" OR \"romance scam\"",
+      "(\"instant payment\" OR \"instant payments\" OR \"Pix\" OR \"faster payments\" OR \"real-time payments\") AND (fraud OR scam OR scams)",
+      "\"account takeover\" OR \"SIM swap\" OR \"SIM-swap\" OR \"credential stuffing\"",
+      "(\"synthetic identity\" OR \"identity fraud\" OR \"identity theft\") AND (bank OR banking OR financial OR credit OR onboarding)",
+      "\"money mule\" OR \"money mules\" OR \"mule account\" OR \"mule accounts\"",
+      "(\"anti-money laundering\" OR \"money laundering\") AND (\"machine learning\" OR graph OR \"transaction monitoring\" OR detection)",
+      "(\"graph neural network\" OR \"graph neural networks\" OR \"graph learning\") AND fraud",
+      "(deepfake OR deepfakes OR \"voice cloning\" OR \"face swap\") AND (fraud OR bank OR banking OR KYC OR \"identity verification\")",
+      "(phishing OR smishing OR vishing) AND (bank OR banking OR \"financial institution\" OR \"online banking\")",
+      "(\"behavioral biometrics\" OR \"behavioural biometrics\" OR \"device fingerprinting\") AND (fraud OR authentication)",
+      "(fraud OR scam OR scams) AND (victim OR victims OR victimization) AND (financial OR bank OR banking OR payment)",
+      "(\"operational risk\" OR \"Basel\") AND fraud AND (bank OR banks OR banking)",
+      "(\"large language model\" OR \"large language models\" OR \"generative AI\") AND (fraud OR scam OR scams) AND (financial OR bank OR banking OR payment)",
+      "(\"open banking\" OR \"open finance\") AND (fraud OR security OR scam)",
+      "fraud AND (\"concept drift\" OR \"cost-sensitive\" OR \"class imbalance\") AND (transaction OR transactions OR payment)"
+    ]
+  },
+  "arxiv": {
+    "max_results": 150,
+    "query": "(cat:cs.LG OR cat:cs.CR OR cat:cs.SI OR cat:cs.CY OR cat:q-fin.RM OR cat:q-fin.GN OR cat:stat.ML) AND (abs:fraud OR abs:\"money laundering\" OR abs:\"anti-money laundering\" OR abs:scam OR abs:scams OR abs:\"account takeover\" OR abs:phishing OR abs:\"money mule\" OR abs:\"transaction monitoring\" OR abs:\"payment fraud\")"
+  },
+  "selection": {
+    "max_candidates_for_llm": 220,
+    "min_score": 7,
+    "max_selected": 12,
+    "max_quick_mentions": 6
+  }
+}

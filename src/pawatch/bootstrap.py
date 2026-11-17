@@ -50,7 +50,8 @@ Devolva APENAS um JSON com estas chaves:
 - "openalex_queries": 12–16 buscas booleanas em inglês no estilo OpenAlex (OR/AND, aspas), cada uma cobrindo um subtema, específicas o bastante para não trazer áreas vizinhas
 - "arxiv": {"categories": ["cs.LG", ...], "terms": ["fraud", ...]} (categorias e termos para abs:)
 - "journals": 10–15 periódicos de elite do tema (nomes exatos)
-- "researchers": 15–25 pesquisadores de referência ativos no tema {"name", "institution", "why"} (só pessoas que você tem certeza que publicam sobre o tema)
+- "conferences": 0–8 conferências de elite do tema, se a área publica em conferências (nomes completos)
+- "researchers": até 20 pesquisadores de referência REAIS e ativos no tema {"name" (nome completo como aparece nos papers), "institution", "why" (cite um paper real dele)}. NUNCA invente nomes: se não tiver certeza de que a pessoa existe e publica sobre o tema, deixe de fora; lista vazia é melhor que nome inventado (cada nome será conferido no OpenAlex).
 - "organizations": 12–25 fontes a acompanhar: {"name", "url" (site oficial), "role": "center"|"practitioner", "org", "why"} — inclua reguladores, organismos de padrão, centros acadêmicos, associações e praticantes de referência, nacionais e internacionais.
 
 TEMA: """
@@ -86,16 +87,19 @@ def validate_queries(queries, log):
     return kept
 
 
-def top_authors_and_venues(queries, log, years=5, per_query=50):
+def top_authors_and_venues(queries, log, years=5, per_query=50, venues=None):
     """Top cited recent works per search → authors and venues. Each search weighs the same
-    (score by rank, not raw citations), so one search full of famous surveys cannot dominate."""
+    (score by rank, not raw citations), so one search full of famous surveys cannot dominate.
+    With `venues` (OpenAlex source IDs), only works published there count: in fields flooded by
+    predatory journals and citation rings, raw citations surface the wrong people."""
     since = (date.today() - timedelta(days=365 * years)).isoformat()
+    venue_filter = f",primary_location.source.id:{'|'.join(venues)}" if venues else ""
     author_score, author_name, venue_score, venue_name = Counter(), {}, Counter(), {}
     author_works, author_papers = defaultdict(set), defaultdict(list)
     for q in queries:
         try:
             data = get_json(f"{OPENALEX}/works", {
-                "filter": f"from_publication_date:{since},title_and_abstract.search:{q},type:article|preprint|review",
+                "filter": f"from_publication_date:{since},title_and_abstract.search:{q}{venue_filter}",
                 "sort": "cited_by_count:desc", "per-page": per_query,
                 "select": "id,display_name,cited_by_count,authorships,primary_location"})
         except RuntimeError as e:
@@ -123,15 +127,31 @@ def top_authors_and_venues(queries, log, years=5, per_query=50):
     return author_score, author_name, author_papers, venue_score, venue_name
 
 
-def resolve_researcher(name, topic_query):
-    """OpenAlex author for a suggested name: the homonym with most works matching the topic."""
-    data = get_json(f"{OPENALEX}/authors", {"search": name, "per-page": 5, "select": "id,display_name"})
+def _words(s):
+    stop = {"university", "universidade", "universidad", "of", "the", "de", "do", "da", "and", "institute",
+            "instituto", "school", "college", "research", "center", "centre", "federal", "national"}
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    return {w for w in re.findall(r"[a-z]{3,}", s) if w not in stop}
+
+
+def resolve_researcher(name, institution, topic_query, min_works=3):
+    """OpenAlex author for a suggested name, or None. LLMs invent plausible names, so a match needs
+    the suggested institution to show up in the author's affiliations AND enough works on the topic."""
+    if len(name.split()) < 2 or re.search(r"\b[A-Z]\.?$", name.strip()):
+        return None  # "Katherine A." style half-names cannot be checked
+    data = get_json(f"{OPENALEX}/authors", {"search": name, "per-page": 5,
+                                            "select": "id,display_name,affiliations,last_known_institutions"})
+    want = _words(institution)
     best = None
     for a in data.get("results", []):
+        insts = [i.get("display_name", "") for i in a.get("last_known_institutions") or []]
+        insts += [(x.get("institution") or {}).get("display_name", "") for x in a.get("affiliations") or []]
+        if want and not any(want & _words(i) for i in insts):
+            continue
         aid = a["id"].rsplit("/", 1)[-1]
         n = get_json(f"{OPENALEX}/works", {"filter": f"author.id:{aid},title_and_abstract.search:{topic_query}",
                                            "per-page": 1})["meta"]["count"]
-        if n >= 2 and (not best or n > best[1]):
+        if n >= min_works and (not best or n > best[1]):
             best = (aid, n, a["display_name"])
     return best
 
@@ -149,12 +169,28 @@ def describe_authors(ids):
     return out
 
 
+MIN_VENUE_H = 40  # OpenAlex h-index of a journal/conference; predatory venues sit far below
+
+
 def resolve_journal(name):
-    data = get_json(f"{OPENALEX}/sources", {"search": name, "per-page": 3, "select": "id,display_name,type,works_count"})
+    """(source id, display name) for a journal or conference name, if it is a serious venue."""
+    data = get_json(f"{OPENALEX}/sources", {"search": name, "per-page": 3,
+                                            "select": "id,display_name,type,works_count,summary_stats"})
     for s in data.get("results", []):
-        if s.get("type") in ("journal", "repository") and s.get("works_count", 0) > 50:
+        h = (s.get("summary_stats") or {}).get("h_index") or 0
+        if s.get("type") in ("journal", "conference", "repository") and s.get("works_count", 0) > 50 and h >= MIN_VENUE_H:
             return s["id"].rsplit("/", 1)[-1], s["display_name"]
     return None, None
+
+
+def venue_h(ids):
+    out = {}
+    for i in range(0, len(ids), 50):
+        data = get_json(f"{OPENALEX}/sources", {"filter": "openalex:" + "|".join(ids[i:i + 50]), "per-page": 50,
+                                                "select": "id,summary_stats"})
+        for s in data.get("results", []):
+            out[s["id"].rsplit("/", 1)[-1]] = (s.get("summary_stats") or {}).get("h_index") or 0
+    return out
 
 
 def discover_feed(url):
@@ -202,14 +238,22 @@ def new_topic(name, slug=None, log=print):
     log("[2/4] validando buscas no OpenAlex")
     queries = validate_queries(d.get("openalex_queries", []), log)
 
-    log("[3/4] autores e periódicos mais citados por trás das buscas")
-    a_score, a_name, a_papers, v_score, v_name = top_authors_and_venues(queries, log)
+    log("[3/4] periódicos de elite e autores que publicam neles sobre o tema")
+    journals, seen_j = [], set()
+    for jname in d.get("journals", []) + d.get("conferences", []):
+        sid, disp = resolve_journal(jname)
+        if sid and sid not in seen_j and disp.lower() not in MEGA:
+            seen_j.add(sid)
+            journals.append({"name": disp, "openalex_source_id": sid, "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."})
+        elif not sid:
+            log(f"  venue descartado (não achado ou h-index < {MIN_VENUE_H}): {jname}")
+    a_score, a_name, a_papers, v_score, v_name = top_authors_and_venues(queries, log, years=8, venues=sorted(seen_j) or None)
     # Suggested names first (checked against OpenAlex), then the data-driven list.
     core = " OR ".join(f'"{k}"' for k in d.get("keywords", [])[:6])
     named = {}
     for r in d.get("researchers", []):
         try:
-            hit = resolve_researcher(r["name"], core)
+            hit = resolve_researcher(r["name"], r.get("institution", ""), core)
         except RuntimeError:
             hit = None
         if hit:
@@ -230,16 +274,13 @@ def new_topic(name, slug=None, log=print):
             "openalex_note": (f"sugerido e confirmado ({n} trabalhos no tema); " if sug else "achado pelas citações; ")
             + f"h-index {i.get('h')}, {i.get('works')} trabalhos — conferir homônimos",
             "links": {}})
-    journals, seen_j = [], set()
-    for jname in d.get("journals", []):
-        sid, disp = resolve_journal(jname)
-        if sid and sid not in seen_j and disp.lower() not in MEGA:
-            seen_j.add(sid)
-            journals.append({"name": disp, "openalex_source_id": sid, "why": "Sugerido pelo rascunho; ID conferido no OpenAlex."})
-    for sid, _ in v_score.most_common(8):
-        if sid not in seen_j:
-            seen_j.add(sid)
-            journals.append({"name": v_name[sid], "openalex_source_id": sid, "why": "Entre os periódicos mais citados nas buscas do tema (5 anos)."})
+    if not seen_j:  # no curated venues resolved: fall back to the data-driven ones above the h bar
+        hs = venue_h([sid for sid, _ in v_score.most_common(20)])
+        for sid, _ in v_score.most_common(20):
+            if hs.get(sid, 0) >= MIN_VENUE_H and len(journals) < 10:
+                seen_j.add(sid)
+                journals.append({"name": v_name[sid], "openalex_source_id": sid,
+                                 "why": "Entre os periódicos mais citados nas buscas do tema."})
 
     log("[4/4] procurando feeds das organizações sugeridas")
     centers, practitioners, sources, without = [], [], [], []
