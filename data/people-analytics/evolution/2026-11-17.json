@@ -7,49 +7,39 @@
   "since": "2026-11-17",
   "added": [
    {
-    "title": "Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Global Gig Economy",
-    "year": 2018,
-    "era": "2018-2022"
-   },
-   {
-    "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
-    "year": 2026,
-    "era": "2023+"
+    "title": "Customer Mistreatment, Employee Health, and Job Performance: Cognitive Rumination and Social Sharing as Mediating Mechanisms",
+    "year": 2014,
+    "era": "2010-2017"
    }
   ],
   "removed": [
    {
-    "title": "COVID-19 and the workplace: Implications, issues, and insights for future research and action.",
-    "year": 2020,
-    "era": "2018-2022"
-   },
-   {
-    "title": "Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment",
-    "year": 2024,
-    "era": "2023+"
+    "title": "Work Engagement: A Handbook of Essential Theory and Research",
+    "year": 2010,
+    "era": "2010-2017"
    }
   ],
-  "note": "Entraram dois marcos: Good Gig, Bad Gig (2018), que ancora autonomia e controle algorítmico na gig economy, e Navigating the Jagged Technological Frontier (2026), que formaliza a fronteira irregular da IA. Saíram COVID-19 and the workplace (2020) e Is Hybrid Work the Best of Both Worlds? (2024), deslocando o eixo de pandemia/híbrido para IA, plataformas e governança."
+  "note": "Nesta versão entrou Baranik, Wang & Gong (2014) sobre maltrato de cliente e ruminação, reforçando a leitura de engajamento como fenômeno exposto a fontes externas de desgaste. Saiu o handbook de engajamento de 2010, que era referência de síntese e não marco empírico. O eixo 2010–2017 fica, assim, mais ancorado em evidência primária do que em compilação."
  },
  "stats": {
-  "network": 1494,
+  "network": 1498,
   "candidates": 888,
   "triaged": 0,
   "milestones": 37,
   "openalex_calls": 160,
   "openalex_cost": 0.0448,
   "tokens": {
-   "prompt_tokens": 11022,
-   "completion_tokens": 13940
+   "prompt_tokens": 10961,
+   "completion_tokens": 11307
   }
  },
- "overview": "O campo nasce da economia do capital humano (Becker, 1964) e da psicologia do trabalho (Vroom, 1964; Deci & Ryan, 1985; Kahn, 1990), com a promessa de medir retorno, motivação e validade de seleção (Schmidt & Hunter, 1998). Nos anos 1990-2000, Huselid (1995) liga práticas de RH a desempenho e uma onda de experimentos e dados administrativos expõe discriminação, redes e incentivos. De 2010 em diante, HR Analytics se institucionaliza como campo (Marler & Boudreau, 2016), enquanto automação e algoritmos redefinem tarefas e controle. Hoje, a agenda é IA generativa, auditoria de viés, governança e prova de ROI em decisões de pessoas.",
+ "overview": "O campo nasce entre 1964 e 1998 com duas pernas: a economia do capital humano e da compensação (Becker, Lazear & Rosen) e a psicometria da seleção e da motivação (Vroom, Deci & Ryan, Schmidt & Hunter). Nos anos 2000 ele ganha método — experimentos de campo, dados administrativos de empresas e meta-análise — e passa a medir discriminação e efeito de incentivos com precisão. Entre 2010 e 2022 a agenda se desloca para tarefas, automação e algoritmos, e o HR analytics se institucionaliza como subcampo com dilemas éticos próprios. De 2023 em diante, a IA generativa vira o experimento natural do momento: ganhos de produtividade reais, mas heterogêneos, e a pergunta de governança deixa de ser teórica.",
  "eras": [
   {
    "key": "ate-1999",
    "label": "até 1999",
-   "title": "Fundamentos: capital humano e psicometria",
-   "summary": "Resolveu a base conceitual e empírica do campo: capital humano como investimento (Becker, 1964), motivação e engajamento como estados psicológicos (Vroom, 1964; Deci & Ryan, 1985; Kahn, 1990), validade de seleção por meta-análise (Schmidt & Hunter, 1998) e ligação entre práticas de RH e desempenho (Huselid, 1995). O padrão que se firmou foi medir pessoas com construtos psicológicos, utilidade econômica e testes de validade, além de modelar incentivos relativos (Lazear & Rosen, 1979). Ficou em aberto transformar essas relações em decisão operacional com dados granulares e causalidade.",
+   "title": "Capital humano, motivação e seleção",
+   "summary": "A época resolveu um problema básico: provar que pessoas e práticas de gestão são variáveis econômicas, não custo fixo. Becker (1964) formaliza capital humano, Vroom (1964) e Deci & Ryan (1985) explicam por que as pessoas se engajam, Lazear & Rosen (1979) mostram que a estrutura de prêmios muda esforço, e Huselid (1995) liga sistemas de práticas de alto desempenho a rotatividade, produtividade e resultado financeiro. Schmidt & Hunter (1998) fecham a conta da seleção com 85 anos de validade meta-analítica. Ficou em aberto o problema que domina até hoje: quase tudo é correlação cross-sectional, sem identificação causal nem dados granulares de dentro da empresa.",
    "milestones": [
     {
      "id": "W3122125999",
@@ -59,14 +49,14 @@
      "authors": [
       "Mark A. Huselid"
      ],
-     "cited_by": 12222,
-     "net": 66.0,
+     "cited_by": 12230,
+     "net": 64.5,
      "url": "https://doi.org/10.5465/256741",
      "theme": "analytics",
      "versions": [],
      "watch": [],
      "score": 10,
-     "why": "Mostrou que sistemas de high performance work practices se associam a turnover, produtividade e desempenho financeiro; é a justificativa fundadora de People Analytics como tema de negócio.",
+     "why": "Primeira demonstração em larga escala (quase mil firmas) de que sistemas de práticas de alto desempenho afetam rotatividade, produtividade e resultado financeiro. É a origem da ideia de que RH é variável de resultado, não centro de custo.",
      "new": false
     },
     {
@@ -77,14 +67,14 @@
      "authors": [
       "William A. Kahn"
      ],
-     "cited_by": 16961,
+     "cited_by": 16966,
      "net": 25,
      "url": "https://doi.org/10.5465/256287",
      "theme": "engagement",
      "versions": [],
      "watch": [],
      "score": 10,
-     "why": "Definiu engajamento e desengajamento como graus de uso físico, cognitivo e emocional do self no trabalho; originou o construto que sustenta surveys e teorias de engajamento.",
+     "why": "Define engajamento como uso variável do self — físico, cognitivo e emocional — no papel de trabalho, e desengajamento como defesa. É a base conceitual de praticamente toda medida de engajamento usada em survey corporativo.",
      "new": false
     },
     {
@@ -96,7 +86,7 @@
       "Frank L. Schmidt",
       "John E. Hunter"
      ],
-     "cited_by": 5194,
+     "cited_by": 5193,
      "net": 14,
      "url": "https://doi.org/10.1037/0033-2909.124.2.262",
      "theme": "hiring",
@@ -106,7 +96,7 @@
       "John E. Hunter"
      ],
      "score": 10,
-     "why": "Meta-análise de 85 anos consolidou a validade de métodos de seleção, com GMA combinado a amostra de trabalho, integridade ou entrevista estruturada no topo; referência para seleção baseada em evidência.",
+     "why": "Meta-análise de 85 anos que ordena 19 procedimentos de seleção por validade e utilidade. Ainda hoje é a referência para decidir o que usar em triagem e por que combinações com GMA dominam.",
      "new": false
     },
     {
@@ -117,8 +107,8 @@
      "authors": [
       "Gary S. Becker"
      ],
-     "cited_by": 20769,
-     "net": 8.5,
+     "cited_by": 27254,
+     "net": 9.5,
      "url": "https://doi.org/10.7208/chicago/9780226041223.001.0001",
      "theme": "learning",
      "versions": [
@@ -129,7 +119,7 @@
       "Gary S. Becker"
      ],
      "score": 10,
-     "why": "Tratou educação e treinamento como investimento com custos e retornos; deu base econômica para medir capital humano e retorno de pessoas.",
+     "why": "Formula capital humano como investimento com custo e retorno, ligando educação e treinamento a salários e emprego. É o arcabouço que sustenta qualquer cálculo de ROI de treinamento até hoje.",
      "new": false
     },
     {
@@ -141,7 +131,7 @@
       "Edward L. Deci",
       "Richard M. Ryan"
      ],
-     "cited_by": 54297,
+     "cited_by": 54313,
      "net": 42.0,
      "url": "https://doi.org/10.1007/978-1-4899-2271-7",
      "theme": "engagement",
@@ -150,7 +140,7 @@
      ],
      "watch": [],
      "score": 9,
-     "why": "Formulou a teoria da autodeterminação e a motivação intrínseca; base para explicar autonomia, competência e vínculo no trabalho.",
+     "why": "Estabelece a autodeterminação como motor da motivação intrínseca, com autonomia, competência e vínculo como necessidades básicas. Explica por que incentivo extrínseco pode destruir engajamento — e por que isso virou item de pesquisa em RH.",
      "new": false
     },
     {
@@ -161,14 +151,14 @@
      "authors": [
       "Victor H. Vroom"
      ],
-     "cited_by": 18901,
-     "net": 40.5,
+     "cited_by": 18898,
+     "net": 41.0,
      "url": "https://openalex.org/W1518638857",
      "theme": "engagement",
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "Integrou motivação, escolha de carreira, satisfação e desempenho com expectativa, instrumentalidade e valência; vocabulário clássico de motivação no trabalho.",
+     "why": "Introduz expectativa, instrumentalidade e valência como explicação de escolha, satisfação e desempenho. É o vocabulário que transformou motivação em variável mensurável no trabalho.",
      "new": false
     },
     {
@@ -180,7 +170,7 @@
       "Edward P. Lazear",
       "Sherwin Rosen"
      ],
-     "cited_by": 8777,
+     "cited_by": 8785,
      "net": 33,
      "url": "https://doi.org/10.1086/261010",
      "theme": "pay_careers",
@@ -192,7 +182,7 @@
       "Sherwin Rosen"
      ],
      "score": 9,
-     "why": "Modelou torneios de ordem relativa como contratos ótimos; explica competição interna, prêmios e estrutura de carreiras.",
+     "why": "Mostra que pagar por posição relativa (torneio) pode ser o contrato ótimo e induzir esforço eficiente. Funda a economia de pessoal sobre incentivos e explica estruturas de bônus e promoção por ranking.",
      "new": false
     }
    ]
@@ -200,8 +190,8 @@
   {
    "key": "2000-2009",
    "label": "2000–2009",
-   "title": "Evidência causal e modelos de trabalho",
-   "summary": "Consolidou o desenho causal e a discussão de desigualdade: auditoria de currículos (Bertrand & Mullainathan, 2003), redes e referências (Fernandez et al., 2000), viés meritocrático (Castilla, 2008) e incentivos por peça (Lazear, 2000). O padrão passou a ser usar dados administrativos, experimentos e modelos econômicos para testar seleção, remuneração e discriminação, com GMA ainda como preditor central (Schmidt & Hunter, 2004). Ficou em aberto levar esses achados para sistemas de RH em escala e separar mérito de viés em promoções e salários.",
+   "title": "A virada da identificação causal",
+   "summary": "A década troca a correlação pela identificação: currículos fictícios (Bertrand & Mullainathan, 2003), piece rates na Safelite (Lazear, 2000) e dados de uma única empresa (Fernandez et al., 2000; Castilla, 2008) mostram viés e efeito de incentivo com precisão. O modelo JD-R (Demerouti et al., 2001) organiza demandas e recursos como dois eixos do bem-estar, e Autor, Levy & Murnane (2001) inauguram a leitura do trabalho por tarefas rotineiras vs. não rotineiras. Vira padrão usar dados administrativos de RH como fonte de pesquisa, não só survey. Em aberto: como generalizar de uma firma para outra e como lidar com o fato de que o próprio sistema de mérito produz desigualdade (Castilla, 2008).",
    "milestones": [
     {
      "id": "W3123223998",
@@ -212,7 +202,7 @@
       "Marianne Bertrand",
       "Sendhil Mullainathan"
      ],
-     "cited_by": 7273,
+     "cited_by": 7276,
      "net": 12,
      "url": "https://doi.org/10.1257/0002828042002561",
      "theme": "hiring",
@@ -223,7 +213,7 @@
       "Marianne Bertrand"
      ],
      "score": 10,
-     "why": "Auditoria com currículos falsos mostrou discriminação racial: nomes brancos receberam 50% mais callbacks; referência para auditoria de triagem.",
+     "why": "Experimento de campo com currículos fictícios mede discriminação racial direta: 50% mais callbacks para nomes brancos. Vira o padrão metodológico para auditar triagem e justifica auditorias de currículo até hoje.",
      "new": false
     },
     {
@@ -245,7 +235,7 @@
       "John E. Hunter"
      ],
      "score": 10,
-     "why": "Mostrou que GMA prediz nível ocupacional e desempenho melhor que outras habilidades ou experiência; reforça seleção cognitiva e sua controvérsia.",
+     "why": "Consolida a evidência de que GMA prediz nível ocupacional e desempenho melhor que qualquer outro traço ou experiência. Sustenta o uso de testes cognitivos — e a controvérsia sobre impacto adverso.",
      "new": false
     },
     {
@@ -258,8 +248,8 @@
       "Frank S. Levy",
       "Richard J. Murnane"
      ],
-     "cited_by": 12091,
-     "net": 63.0,
+     "cited_by": 12100,
+     "net": 62.5,
      "url": "https://doi.org/10.1162/003355303322552801",
      "theme": "ai_work",
      "versions": [
@@ -269,7 +259,7 @@
       "David Autor"
      ],
      "score": 9,
-     "why": "Mostrou que computadores substituem tarefas rotineiras e complementam não rotineiras; originou a abordagem task-based para automação.",
+     "why": "Mostra que a computação substitui tarefas rotineiras e complementa tarefas não rotineiras de solução de problemas e comunicação. É a base de toda a discussão posterior sobre automação e composição de skills.",
      "new": false
     },
     {
@@ -283,14 +273,14 @@
       "Friedhelm Nachreiner",
       "Wilmar Bernardus Schaufeli"
      ],
-     "cited_by": 19539,
+     "cited_by": 19555,
      "net": 25.5,
      "url": "https://doi.org/10.1037/0021-9010.86.3.499",
      "theme": "engagement",
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "Modelo JD-R separou demandas e recursos, ligando exaustão e desengajamento; base para diagnóstico de bem-estar e engajamento.",
+     "why": "Organiza as condições de trabalho em demandas e recursos, com efeitos distintos sobre exaustão e desengajamento. Vira o modelo operacional padrão para diagnóstico de bem-estar e desenho de intervenção.",
      "new": false
     },
     {
@@ -301,7 +291,7 @@
      "authors": [
       "Edward P. Lazear"
      ],
-     "cited_by": 3107,
+     "cited_by": 3109,
      "net": 24.5,
      "url": "https://doi.org/10.1257/aer.90.5.1346",
      "theme": "pay_careers",
@@ -310,7 +300,7 @@
       "Edward P. Lazear"
      ],
      "score": 9,
-     "why": "Mudança para piece rates na Safelite elevou produtividade em 44%; evidência clássica de incentivos, seleção e desenho de compensação.",
+     "why": "Mede o efeito de migrar para piece rate na Safelite: +44% de produtividade e mudança na composição da força. É a evidência mais citada de que desenho de compensação muda output.",
      "new": false
     },
     {
@@ -323,7 +313,7 @@
       "Emilio J. Castilla",
       "Paul Moore"
      ],
-     "cited_by": 1057,
+     "cited_by": 1058,
      "net": 22.0,
      "url": "https://doi.org/10.1086/210432",
      "theme": "hiring",
@@ -332,7 +322,7 @@
       "Emilio J. Castilla"
      ],
      "score": 9,
-     "why": "Mostrou que referências de funcionários funcionam como capital social e reduzem custos de contratação; base para canais de recrutamento.",
+     "why": "Quantifica custo e retorno de contratação por indicação em um call center, com mecanismos de pool, match e enriquecimento social. Base para discutir referral como política de recrutamento, não só atalho.",
      "new": false
     },
     {
@@ -352,7 +342,7 @@
       "Emilio J. Castilla"
      ],
      "score": 9,
-     "why": "Demonstrou que mulheres e minorias recebem menos e promovem menos mesmo com avaliações de desempenho iguais; nomeou viés performance-reward.",
+     "why": "Mostra que, com notas de desempenho iguais, mulheres e minorias crescem menos em salário e promoção. Nomeia o viés de performance-reward e vira referência obrigatória em auditoria de mérito.",
      "new": false
     }
    ]
@@ -360,8 +350,8 @@
   {
    "key": "2010-2017",
    "label": "2010–2017",
-   "title": "Analytics, tarefas e engajamento",
-   "summary": "Amadureceu a agenda de automação por tarefas (Acemoglu & Autor, 2010; Frey & Osborne, 2016), o futuro do trabalho (Gratton, 2011) e, no RH, a revisão de HR Analytics (Marler & Boudreau, 2016) e a gestão como prática mensurável (Bloom et al., 2014). Engajamento ganhou teoria robusta com JD-R (Bakker & Demerouti, 2016) e handbook (Bakker & Leiter, 2010). Ficou em aberto a pouca pesquisa peer-reviewed em HR Analytics e o risco de previsões de automação sem granularidade ocupacional.",
+   "title": "Tarefas, automação e HR analytics",
+   "summary": "Aqui o campo se divide em duas frentes que depois se reencontram. De um lado, a economia do trabalho por tarefas (Acemoglu & Autor, 2010) e o choque de Frey & Osborne (2016) colocam a automação no centro do debate de emprego; de outro, Marler & Boudreau (2016) fazem o primeiro balanço sistemático de HR analytics e mostram que quase não havia pesquisa peer-reviewed. Bloom et al. (2014) provam que práticas de gestão explicam parte relevante da produtividade entre firmas e países, dando base empírica para 'gestão importa'. Ficou em aberto a lacuna entre prática e evidência — e o que fazer com o bem-estar quando o trabalho é mediado por cliente e tecnologia (Baranik et al., 2014).",
    "milestones": [
     {
      "id": "W2526781987",
@@ -372,14 +362,14 @@
       "Carl Benedikt Frey",
       "Michael A. Osborne"
      ],
-     "cited_by": 12112,
-     "net": 13.5,
+     "cited_by": 12119,
+     "net": 14.0,
      "url": "https://doi.org/10.1016/j.techfore.2016.08.019",
      "theme": "ai_work",
      "versions": [],
      "watch": [],
      "score": 10,
-     "why": "Estimou a suscetibilidade de ocupações à computerização; popularizou o debate sobre automação, apesar de críticas metodológicas.",
+     "why": "Estima que 47% do emprego americano está em ocupações de alto risco de computerização. Populariza o debate de automação para o público executivo, mesmo com críticas metodológicas.",
      "new": false
     },
     {
@@ -399,7 +389,7 @@
       "Lynda Gratton"
      ],
      "score": 10,
-     "why": "Sintetizou tecnologia, globalização e demografia redesenhando o trabalho; ajudou a pautar a agenda de futuro do trabalho.",
+     "why": "Argumenta que tecnologia, globalização e demografia vão reconfigurar o trabalho em duas décadas. Antecipa a agenda de trabalho híbrido e redes que domina a prática de RH.",
      "new": false
     },
     {
@@ -411,8 +401,8 @@
       "Daron Acemoğlu",
       "David Autor"
      ],
-     "cited_by": 8465,
-     "net": 22,
+     "cited_by": 8469,
+     "net": 22.5,
      "url": "https://doi.org/10.1016/s0169-7218(11)02410-5",
      "theme": "ai_work",
      "versions": [
@@ -423,7 +413,7 @@
       "David Autor"
      ],
      "score": 9,
-     "why": "Framework de tarefas substituiu o modelo canônico de habilidades; mostrou que tecnologia altera conteúdo de tarefas e desigualdade.",
+     "why": "Critica o modelo canônico de dois tipos de skill e propõe a abordagem de tarefas para explicar emprego e desigualdade. É a ponte entre economia do trabalho e desenho de cargos.",
      "new": false
     },
     {
@@ -435,7 +425,7 @@
       "Janet H. Marler",
       "John W. Boudreau"
      ],
-     "cited_by": 1819,
+     "cited_by": 1823,
      "net": 17,
      "url": "https://doi.org/10.1080/09585192.2016.1244699",
      "theme": "analytics",
@@ -444,7 +434,7 @@
       "John W. Boudreau"
      ],
      "score": 9,
-     "why": "Revisão baseada em evidências definiu HR Analytics, seus processos e lacunas; referência para institucionalizar o campo.",
+     "why": "Primeira revisão baseada em evidência de HR analytics: define o conceito, mapeia processos e mostra que quase não havia pesquisa peer-reviewed. Estabelece a agenda acadêmica do subcampo.",
      "new": false
     },
     {
@@ -456,33 +446,14 @@
       "Arnold B. Bakker",
       "Evangelia Demerouti"
      ],
-     "cited_by": 11426,
+     "cited_by": 11442,
      "net": 12,
      "url": "https://doi.org/10.1037/ocp0000056",
      "theme": "engagement",
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "JD-R virou teoria com papel moderador dos recursos; consolidou a ligação entre demandas, burnout e engajamento.",
-     "new": false
-    },
-    {
-     "id": "W4301374750",
-     "title": "Work Engagement: A Handbook of Essential Theory and Research",
-     "year": 2010,
-     "venue": "Psychology Press eBooks",
-     "authors": [
-      "Arnold B. Bakker",
-      "Michael P. Leiter"
-     ],
-     "cited_by": 3357,
-     "net": 7,
-     "url": "https://doi.org/10.4324/9780203853047",
-     "theme": "engagement",
-     "versions": [],
-     "watch": [],
-     "score": 9,
-     "why": "Handbook definiu engajamento no trabalho, antecedentes e implicações; base para surveys e intervenções.",
+     "why": "Consolida o JD-R como teoria, com papel amortecedor dos recursos sobre as demandas. É a versão que sustenta instrumentos de diagnóstico usados em empresas.",
      "new": false
     },
     {
@@ -506,16 +477,39 @@
       "Raffaella Sadun"
      ],
      "score": 9,
-     "why": "World Management Survey mostrou que práticas de gestão explicam parte da produtividade; aproximou gestão de pessoas de mensuração comparável.",
+     "why": "Usa o World Management Survey para mostrar que práticas de gestão explicam cerca de um quarto dos gaps de produtividade entre firmas e países. Dá base empírica ao argumento de que gestão é variável de resultado.",
      "new": false
+    },
+    {
+     "id": "W2028154932",
+     "title": "Customer Mistreatment, Employee Health, and Job Performance: Cognitive Rumination and Social Sharing as Mediating Mechanisms",
+     "year": 2014,
+     "venue": "Journal of Management",
+     "authors": [
+      "Lisa E. Baranik",
+      "Mo Wang",
+      "Yaping Gong",
+      "Junqi Shi"
+     ],
+     "cited_by": 318,
+     "net": 0,
+     "url": "https://doi.org/10.1177/0149206314550995",
+     "theme": "engagement",
+     "versions": [],
+     "watch": [
+      "Yaping Gong"
+     ],
+     "score": 9,
+     "why": "Mostra que maltrato de cliente gera ruminação e afeta saúde e desempenho, com estratégias de regulação emocional como proteção. Traz o desgaste de fonte externa para dentro do modelo de engajamento.",
+     "new": true
     }
    ]
   },
   {
    "key": "2018-2022",
    "label": "2018–2022",
-   "title": "Algoritmos, ética e exploração",
-   "summary": "Resolveu a entrada da IA no RH com desafios de causalidade, dados pequenos, accountability e reação dos empregados (Tambe et al., 2018), além de dilemas éticos em HR Analytics (Edwards et al., 2022). Algoritmos passaram a ser vistos como controle e contestação (Kellogg et al., 2019; Wood et al., 2018), com efeitos de robôs no emprego (Acemoglu & Restrepo, 2019). Seleção incorporou exploração (Li et al., 2020) e percepção de justiça algorítmica (Lee, 2018). Ficou em aberto auditar, explicar e governar sistemas algorítmicos em escala.",
+   "title": "Algoritmos no trabalho e governança",
+   "summary": "A época responde à pergunta 'o que acontece quando o algoritmo vira chefe'. Kellogg, Valentine & Christin (2019) sistematizam os 6 Rs do controle algorítmico, Wood et al. (2018) mostram o trade-off autonomia/controle no gig work, e Lee (2018) mede quando decisões algorítmicas são percebidas como justas. Tambe, Cappelli & Yakubovich (2018) listam os quatro obstáculos do data science em RH — complexidade, dados pequenos, accountability e reação dos empregados — e Li, Raymond & Bergman (2020) propõem hiring como problema de exploração, não só de explotação. Acemoglu & Restrepo (2019) fecham o ciclo com efeitos mensuráveis de robôs sobre emprego e salários. Em aberto: ética e governança entram na pauta (Edwards et al., 2022) sem que exista padrão de auditoria.",
    "milestones": [
     {
      "id": "W2905604475",
@@ -527,7 +521,7 @@
       "Peter H. Cappelli",
       "Valery Yakubovich"
      ],
-     "cited_by": 2914,
+     "cited_by": 2920,
      "net": 18,
      "url": "https://doi.org/10.1177/0008125619867910",
      "theme": "analytics",
@@ -539,7 +533,7 @@
       "Prasanna Tambe"
      ],
      "score": 9,
-     "why": "Mapeou quatro desafios de IA em RH (complexidade, dados pequenos, accountability e reações); propôs causalidade, randomização e contribuição do empregado.",
+     "why": "Lista os quatro obstáculos do data science em RH — complexidade dos fenômenos, dados pequenos, accountability e reação dos empregados — e propõe raciocínio causal, experimentação e participação. É o roteiro prático de quem implanta analytics em RH.",
      "new": false
     },
     {
@@ -552,14 +546,14 @@
       "Melissa Valentine",
       "Angèle Christin"
      ],
-     "cited_by": 4287,
+     "cited_by": 4298,
      "net": 15,
      "url": "https://doi.org/10.5465/annals.2018.0174",
      "theme": "ai_work",
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "Sistematizou controle algorítmico via 6 Rs (restringir, recomendar, registrar, avaliar, substituir, recompensar); base para analisar gestão algorítmica.",
+     "why": "Sistematiza o controle algorítmico em seis mecanismos (restrição, recomendação, registro, avaliação, substituição, recompensa). Vira a taxonomia padrão para analisar gestão algorítmica e resistência dos trabalhadores.",
      "new": false
     },
     {
@@ -571,7 +565,7 @@
       "Daron Acemoğlu",
       "Pascual Restrepo"
      ],
-     "cited_by": 5457,
+     "cited_by": 5467,
      "net": 10,
      "url": "https://doi.org/10.1086/705716",
      "theme": "ai_work",
@@ -580,7 +574,7 @@
       "Daron Acemoglu"
      ],
      "score": 9,
-     "why": "Mostrou que robôs reduzem emprego e salários locais nos EUA; evidência causal de impacto no mercado de trabalho.",
+     "why": "Estima que um robô a mais por mil trabalhadores reduz a razão emprego-população em 0,2 p.p. e salários em 0,42%. Traduz automação em efeito local mensurável, não em projeção.",
      "new": false
     },
     {
@@ -592,8 +586,8 @@
       "Daron Acemoğlu",
       "Pascual Restrepo"
      ],
-     "cited_by": 4055,
-     "net": 8,
+     "cited_by": 4063,
+     "net": 8.5,
      "url": "https://doi.org/10.1257/jep.33.2.3",
      "theme": "ai_work",
      "versions": [],
@@ -601,7 +595,7 @@
       "Daron Acemoglu"
      ],
      "score": 9,
-     "why": "Framework de deslocamento e reinstituição de tarefas; explica por que automação não reduz necessariamente a demanda agregada.",
+     "why": "Formula o efeito deslocamento e o efeito reinstalação de tarefas, mostrando que automação sempre reduz a parcela do trabalho no valor adicionado. É o arcabouço que explica por que produtividade e emprego podem divergir.",
      "new": false
     },
     {
@@ -629,7 +623,7 @@
       "Lindsey Raymond"
      ],
      "score": 9,
-     "why": "Tratou contratação como bandit contextual, equilibrando exploração e aproveitamento; melhorou qualidade de candidatos sub-representados.",
+     "why": "Reformula triagem como problema de bandit contextual e propõe avaliar candidatos por potencial estatístico, não só por histórico. Abre a porta para algoritmos que exploram grupos sub-representados sem sacrificar qualidade.",
      "new": false
     },
     {
@@ -643,15 +637,15 @@
       "Vili Lehdonvirta",
       "Isis Hjorth"
      ],
-     "cited_by": 3263,
+     "cited_by": 3268,
      "net": 14.5,
      "url": "https://doi.org/10.1177/0950017018785616",
      "theme": "ai_work",
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Gig economy remota mostrou autonomia e controle algorítmico simultâneos; base para qualidade de trabalho em plataformas.",
-     "new": true
+     "why": "Mostra, com entrevistas em seis países e survey cross-regional, que controle algorítmico em plataformas oferece flexibilidade mas concentra poder e reduz autonomia. É a evidência de campo que ancora o debate de gig work.",
+     "new": false
     },
     {
      "id": "W2792183666",
@@ -661,14 +655,14 @@
      "authors": [
       "Min Kyung Lee"
      ],
-     "cited_by": 1769,
+     "cited_by": 1771,
      "net": 6,
      "url": "https://doi.org/10.1177/2053951718756684",
      "theme": "governance",
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Mostrou que fairness, confiança e emoção dependem do tipo de tarefa e do decisor; fundamental para adoção de gestão algorítmica.",
+     "why": "Experimento mostra que decisões algorítmicas são percebidas como menos justas e menos confiáveis em tarefas que exigem julgamento humano. Explica por que adoção de algoritmos depende de percepção, não só de acurácia.",
      "new": false
     },
     {
@@ -691,7 +685,7 @@
       "Martin R. Edwards"
      ],
      "score": 8,
-     "why": "Apontou HR Analytics como campo emergente com dilemas éticos; evidenciou fragmentação e necessidade de governança.",
+     "why": "Editorial de special issue que nomeia os dois gargalos do campo: HR analytics não é keyword reconhecida e os desafios éticos seguem sem resposta. Marca a virada do subcampo para governança.",
      "new": false
     }
    ]
@@ -699,8 +693,8 @@
   {
    "key": "2023+",
    "label": "2023 em diante",
-   "title": "IA generativa e fronteira irregular",
-   "summary": "Explodiu a IA generativa: produtividade e aprendizagem (Brynjolfsson et al., 2023; Noy & Zhang, 2023), exposição ocupacional (Eloundou et al., 2024) e fronteira irregular que melhora ou piora tarefas (Dell'Acqua et al., 2026). Seleção se atualiza com validade, diversidade e experiência do candidato (Van Iddekinge et al., 2023) e viés de gênero em anúncios (Castilla & Rho, 2023); promoção revela viés de 'potential' (Benson et al., 2026). Personnel economics revisa produtividade, incentivos, gestores e treinamento (Hoffman & Stanton, 2024). Ficou em aberto medir ROI, governar LLMs em decisões de pessoas e integrar IA sem amplificar viés.",
+   "title": "IA generativa e produtividade desigual",
+   "summary": "A IA generativa transforma o campo em laboratório: Brynjolfsson, Li & Raymond (2023) medem +15% de produtividade em suporte, com ganhos concentrados em quem tem menos experiência; Noy & Zhang (2023) replicam em escrita profissional com -40% de tempo e +18% de qualidade. Eloundou et al. (2024) dimensionam o potencial de exposição por ocupação, e Dell'Acqua et al. (2026) mostram que o efeito é 'jagged' — ajuda em algumas tarefas, atrapalha em outras dentro do mesmo fluxo. Ao mesmo tempo, a agenda de equidade volta com força: Benson, Li & Shue (2026) mostram que 'potencial' subjetivo explica metade do gap de promoção de gênero, e Castilla & Rho (2023) que a linguagem da vaga ainda segrega. Em aberto: como auditar sistemas que mudam de versão a cada mês e como transformar ganho individual de produtividade em resultado organizacional.",
    "milestones": [
     {
      "id": "W4407142724",
@@ -726,7 +720,7 @@
       "Lindsey Raymond"
      ],
      "score": 10,
-     "why": "Assistente generativo elevou produtividade em 15%, com ganhos maiores para menos experientes e possível perda de qualidade entre experts; evidência de campo em IA no trabalho.",
+     "why": "Estudo com 5.172 agentes de suporte mostra +15% de produtividade com assistente generativo, com ganhos maiores para menos experientes. É a evidência de campo mais citada sobre IA no trabalho.",
      "new": false
     },
     {
@@ -745,7 +739,7 @@
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "ChatGPT reduziu tempo em 40% e elevou qualidade em 18% em escrita profissional; mostrou redução de desigualdade e uso posterior.",
+     "why": "Experimento pré-registrado com 453 profissionais mostra -40% de tempo e +18% de qualidade em escrita, com redução de desigualdade entre trabalhadores. Confirma efeito causal em trabalho de colarinho branco.",
      "new": false
     },
     {
@@ -759,14 +753,14 @@
       "Pamela Mishkin",
       "Daniel Rock"
      ],
-     "cited_by": 2696,
+     "cited_by": 2705,
      "net": 13,
      "url": "https://doi.org/10.1126/science.adj0998",
      "theme": "ai_work",
      "versions": [],
      "watch": [],
      "score": 9,
-     "why": "Estimou potencial de exposição de ocupações a LLMs; referência para planejamento de requalificação.",
+     "why": "Estima a exposição de ocupações e tarefas a LLMs, separando potencial de automação de complementaridade. Vira a referência para priorizar onde IA muda o desenho de trabalho.",
      "new": false
     },
     {
@@ -784,7 +778,7 @@
       "Lisa Krayer",
       "François Candelon"
      ],
-     "cited_by": 1659,
+     "cited_by": 1667,
      "net": 10,
      "url": "https://doi.org/10.1287/orsc.2025.21838",
      "theme": "ai_work",
@@ -794,8 +788,8 @@
       "Karim R. Lakhani"
      ],
      "score": 9,
-     "why": "Formalizou a fronteira irregular: IA ajuda em algumas tarefas e atrapalha em outras no mesmo fluxo; base para adoção com verificação humana.",
-     "new": true
+     "why": "Experimento com 758 consultores da BCG define a 'fronteira tecnológica irregular': IA melhora algumas tarefas e piora outras no mesmo fluxo. Impede tratar IA como ganho uniforme e obriga a medir tarefa por tarefa.",
+     "new": false
     },
     {
      "id": "W7126269175",
@@ -816,7 +810,7 @@
       "Danielle Li"
      ],
      "score": 9,
-     "why": "Mostrou que avaliações subjetivas de 'potential' geram metade do gap de promoção de gênero e não preveem desempenho futuro; ataca viés em talent review.",
+     "why": "Com 29.809 funcionários, mostra que avaliações subjetivas de 'potencial' explicam cerca de metade do gap de promoção de gênero, sem prever desempenho futuro. Coloca o julgamento gerencial, não o algoritmo, no centro do problema de equidade.",
      "new": false
     },
     {
@@ -838,7 +832,7 @@
       "Paul R. Sackett"
      ],
      "score": 9,
-     "why": "Revisão de seleção sobre validade, diversidade e experiência do candidato, incluindo uso de IA; guia para decisões de seleção.",
+     "why": "Revisa decisões de desenvolvimento, aplicação e pontuação em seleção, incluindo uso de IA, sob a ótica de validade, diversidade e experiência do candidato. É o guia atual de desenho de processo seletivo.",
      "new": false
     },
     {
@@ -859,7 +853,7 @@
       "Emilio J. Castilla"
      ],
      "score": 8,
-     "why": "Mostrou que linguagem de anúncios influencia candidaturas por gênero; evidencia que postings neutros ainda segregam.",
+     "why": "Combina estudo observacional e experimento de campo para mostrar que a linguagem da vaga afeta quem se candidata, mesmo em postings gender-neutral. Dá alavanca concreta para reduzir segregação ocupacional.",
      "new": false
     },
     {
@@ -880,42 +874,42 @@
       "Mitchell Hoffman"
      ],
      "score": 8,
-     "why": "Survey de personnel economics sobre variação de produtividade, incentivos, contratação, gestores, pares e treinamento; consolida exploração com novos dados.",
+     "why": "Survey de economia de pessoal que documenta variação persistente de produtividade entre pessoas na mesma função e defende exploração de dados e métodos novos. É o mapa mais recente de onde a evidência está e onde falta.",
      "new": false
     }
    ]
   }
  ],
  "now": {
-  "summary": "O campo está na fase de auditoria e operacionalização da IA: não basta medir produtividade, é preciso testar validade, viés, fairness e adoção. Destaques recentes mostram IA reforçando estereótipos de gênero em descrições de vagas, equipes humano-IA rendendo menos que o membro mais forte e auditorias de fairness que expiram em poucos meses. Ao mesmo tempo, engajamento volta ao básico (qualidade de reuniões 1:1, segurança psicológica real, previsibilidade em híbrido) e analytics avança em contrafactuais de turnover, medidas de item único e telemetria de uso digital. A pergunta prática é como conectar RH, IT, dados e governança para gerar ROI sem amplificar viés.",
+  "summary": "O campo está em dois trilhos simultâneos. O primeiro é a IA como ferramenta de trabalho: os destaques recentes mostram que o mito do centauro não se sustenta (meta-análise de 106 experimentos com déficit agregado g = −0,23), que a gestão algorítmica é ambivalente — alocação de tarefas aumenta autonomia, monitoramento a reduz (EWCS 2024, 26.504 trabalhadores) — e que 85% dos knowledge workers usam IA mas só 6% dos executivos veem ROI claro (Atlassian). O segundo é a volta da medição de equidade e de decisão: auditorias de fairness expiram em meses, LLMs reproduzem estereótipos de gênero em descrições de vagas, e novatos com recomendação algorítmica superam especialistas de recrutamento. A pergunta prática do líder de people analytics deixou de ser 'temos dados?' e passou a ser 'nossos dados e modelos ainda valem depois da última atualização?'.",
   "open_questions": [
-   "Como medir ROI de IA em pessoas sem cair em métrica de adoção?",
-   "Como auditar LLMs de forma contínua, já que fairness expira?",
-   "Quando confiar em recomendação algorítmica e quando exigir julgamento humano?",
-   "Como separar 'potencial' de estereótipo em promoções?",
-   "Como desenhar gestão algorítmica que aumente autonomia e não só monitoramento?"
+   "Como auditar modelos que mudam de versão a cada poucos meses?",
+   "Ganho de produtividade individual vira resultado de negócio — ou só mais trabalho?",
+   "Quem responde quando o algoritmo de triagem erra: RH, jurídico ou fornecedor?",
+   "Dá para medir 'potencial' sem reproduzir o viés que ele carrega?",
+   "Qual desenho de trabalho preserva autonomia sob monitoramento algorítmico?"
   ]
  },
  "threads": [
   {
    "theme": "analytics",
-   "line": "De Huselid (1995) ligando práticas de RH a desempenho, o tema passou por HR Analytics como campo (Marler & Boudreau, 2016), gestão mensurável (Bloom et al., 2014), desafios de IA em RH (Tambe et al., 2018) e ética (Edwards et al., 2022). A linha vai de correlação estratégica a desenho causal, governança e ROI, chegando a personnel economics com novos dados (Hoffman & Stanton, 2024)."
+   "line": "Começa como teste de hipótese acadêmica sobre práticas de RH (Huselid, 1995) e vira, em 2016, um subcampo com revisão sistemática (Marler & Boudreau) e evidência de que gestão explica produtividade entre firmas (Bloom et al., 2014). De 2018 em diante, o debate migra de 'existe efeito?' para 'como fazer com responsabilidade' (Tambe et al., 2018; Edwards et al., 2022) e chega a 2024 pedindo exploração metodológica e dados novos (Hoffman & Stanton)."
   },
   {
    "theme": "engagement",
-   "line": "Vroom (1964), Deci & Ryan (1985) e Kahn (1990) fundaram motivação e engajamento; o JD-R (Demerouti et al., 2001) separou demandas e recursos e virou teoria (Bakker & Demerouti, 2016), com handbook em 2010. Hoje engajamento é medido por surveys e conectado a desenho de trabalho, gestores e intervenções."
+   "line": "Vroom (1964), Deci & Ryan (1985) e Kahn (1990) estabelecem que engajamento é escolha individual com determinantes psicológicos. O JD-R (Demerouti et al., 2001) transforma isso em modelo operacional de demandas e recursos, revisado como teoria em 2016 (Bakker & Demerouti). A fronteira atual é o desgaste vindo de fora da organização — cliente, plataforma, turno híbrido (Baranik et al., 2014)."
   },
   {
    "theme": "hiring",
-   "line": "Schmidt & Hunter (1998) consolidaram validade de seleção; auditoria de currículos (Bertrand & Mullainathan, 2003), redes (Fernandez et al., 2000), GMA (Schmidt & Hunter, 2004) e viés meritocrático (Castilla, 2008) expuseram limites. Em 2020, hiring as exploration (Li et al., 2020); em 2023, revisão de validade, diversidade e experiência (Van Iddekinge et al., 2023) e gendering de postings (Castilla & Rho, 2023). A agenda virou seleção preditiva, diversidade e auditoria de IA."
+   "line": "Schmidt & Hunter (1998) fixam a hierarquia de validade dos instrumentos de seleção, e a década de 2000 mostra que o processo real é enviesado: 50% mais callbacks para nomes brancos (Bertrand & Mullainathan, 2003) e retorno real de indicações (Fernandez et al., 2000). Em 2020 o problema é reformulado como exploração vs. explotação (Li et al., 2020), e em 2023 a agenda volta a juntar validade, diversidade e experiência do candidato (Van Iddekinge et al., 2023) e a linguagem da vaga como filtro de gênero (Castilla & Rho, 2023)."
   },
   {
    "theme": "pay_careers",
-   "line": "Lazear & Rosen (1979) explicaram torneios e prêmios relativos; Lazear (2000) mostrou piece rates elevando produtividade; Castilla (2008) revelou viés de recompensa por desempenho; Benson et al. (2026) mostraram que 'potential' subjetivo explica metade do gap de promoção. A linha vai de incentivos ótimos a equidade em promoção e remuneração."
+   "line": "Lazear & Rosen (1979) explicam por que se paga por posição relativa, e Lazear (2000) mede o efeito: +44% de produtividade ao migrar para piece rate. Castilla (2008) mostra o lado sombrio — sistemas de mérito produzem gaps salariais com notas iguais —, e Benson, Li & Shue (2026) estendem o achado para 'potencial' subjetivo, que explica metade do gap de promoção de gênero."
   },
   {
    "theme": "ai_work",
-   "line": "Autor et al. (2001) iniciaram a abordagem task-based; Acemoglu & Autor (2010) e Frey & Osborne (2016) mediram automação; Gratton (2011) contextualizou o futuro do trabalho. Em 2018-2019, controle algorítmico e gig economy (Kellogg et al., 2019; Wood et al., 2018) e robôs (Acemoglu & Restrepo, 2019) mostraram efeitos no trabalho; em 2023+, IA generativa eleva produtividade (Brynjolfsson et al., 2023; Noy & Zhang, 2023), expõe ocupações (Eloundou et al., 2024) e revela fronteira irregular (Dell'Acqua et al., 2026). A questão central muda de 'quantos empregos' para 'como redesenhar tarefas e governar IA'."
+   "line": "Autor, Levy & Murnane (2001) criam a lente de tarefas rotineiras vs. não rotineiras, refinada por Acemoglu & Autor (2010) e popularizada pelo alerta de Frey & Osborne (2016). Em 2018–2019 o foco vira controle e deslocamento: os 6 Rs de Kellogg et al., o gig work de Wood et al. e os efeitos negativos de robôs sobre emprego e salários (Acemoglu & Restrepo). De 2023 em diante, a IA generativa desloca a pergunta de 'quantos empregos' para 'quanto de produtividade, para quem' — com efeitos heterogêneos e fronteira irregular (Brynjolfsson et al., 2023; Noy & Zhang, 2023; Dell'Acqua et al., 2026)."
   }
  ]
 }

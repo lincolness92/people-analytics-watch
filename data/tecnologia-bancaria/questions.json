@@ -1,0 +1,13 @@
+[
+ {
+  "topic": "tecnologia-bancaria",
+  "question": "Me fale mais sobre o caso do inter reduzir a inadimplência",
+  "voter": "lc9fuz5veg",
+  "name": null,
+  "sources": 18,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 1369,
+  "at": "2026-11-17T20:34:41.607Z",
+  "key": "ask:tecnologia-bancaria:2026-11-17T20:34:41.607Z:2c6c08ba"
+ }
+]

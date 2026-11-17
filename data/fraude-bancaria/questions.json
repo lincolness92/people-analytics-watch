@@ -9,5 +9,16 @@
   "answer_chars": 2062,
   "at": "2026-11-17T18:37:36.270Z",
   "key": "ask:fraude-bancaria:2026-11-17T18:37:36.270Z:9d33a0a6"
+ },
+ {
+  "topic": "fraude-bancaria",
+  "question": "Qual técnica é o SOTA para detecção de fraudes em transações?",
+  "voter": "lc9fuz5veg",
+  "name": null,
+  "sources": 18,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 1832,
+  "at": "2026-11-17T20:52:17.532Z",
+  "key": "ask:fraude-bancaria:2026-11-17T20:52:17.532Z:b0410bec"
  }
 ]
