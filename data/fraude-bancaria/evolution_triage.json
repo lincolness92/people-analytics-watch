@@ -124,6 +124,11 @@
 "metodo",
 "fraud_analytics"
 ],
+"W1686810756": [
+0,
+"fora",
+"fraud_analytics"
+],
 "W179922057": [
 2,
 "fora",
@@ -281,6 +286,11 @@
 ],
 "W2019880039": [
 1,
+"fora",
+"fraud_analytics"
+],
+"W2022775778": [
+2,
 "fora",
 "fraud_analytics"
 ],
@@ -2238,6 +2248,11 @@
 2,
 "fora",
 "account_identity"
+],
+"W4320013936": [
+10,
+"marco",
+"genai_deepfakes"
 ],
 "W4320492095": [
 6,
