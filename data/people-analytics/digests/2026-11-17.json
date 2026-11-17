@@ -1,0 +1,432 @@
+{
+ "date": "2026-11-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "period": {
+  "from": "2026-11-10",
+  "to": "2026-11-17"
+ },
+ "stats": {
+  "candidates": 210,
+  "triaged": 210,
+  "selected": 11,
+  "tokens": {
+   "prompt_tokens": 43088,
+   "completion_tokens": 24218
+  }
+ },
+ "headline": "semana de auditoria e calibração da IA no trabalho",
+ "trend": "A tendência do período é menos “IA substitui humanos” e mais “IA precisa de governança, desenho de interface e calibração de confiança”. A meta-análise sobre centauros mostra que equipes humano-IA frequentemente perdem do melhor membro; auditorias de LLMs expiram com trocas de modelo; e vieses etário e implícito persistem na triagem. Ao mesmo tempo, intervenções bem desenhadas — facilitação de grupo por LLM, explicabilidade causal para retenção e separação de permissões — melhoram decisões. Para people analytics, o recado é medir override, versionar auditorias e tratar contexto e workflow como variáveis de resultado.",
+ "items": [
+  {
+   "key": "doi:10.5281/zenodo.24242054",
+   "title": "SCAFFOLD-CF: Causally Constrained Counterfactual Recourse for Employee Turnover and Attrition",
+   "original_title": "SCAFFOLD-CF: Causally Constrained Counterfactual Recourse for Employee Turnover and Attrition",
+   "url": "https://doi.org/10.5281/zenodo.24242054",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-15",
+   "authors": [
+    "Faisal Bin Al-Abid",
+    "Aryati Bakri",
+    "Hasin Jawad Ali",
+    "Md. Ashiful Hoque Chowdhury Tanbin",
+    "Roliana Binti Ibrahim",
+    "Md. Golam Rabiul Alam",
+    "M. Abdullah-Al-Wadud",
+    "Jia Uddin"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "analytics",
+   "summary": "SCAFFOLD-CF propõe explicações contrafactuais causalmente restritas para rotatividade: candidatos a intervenção precisam ser ações deliberadas ou consequências de regras, e as consequências entailed devem ser realizadas. Contra 10 baselines, ProCE e variante soft, o método garante consistência causal, mas abstém-se em 10,5% e 6,6% das consultas; ProCE viola as regras em 14,4% e 13,9% dos casos, e a soft em 54,3% e 28,0%. Lição: recomendações de retenção precisam respeitar causalidade e custo; abster-se é melhor que sugerir ação impossível."
+  },
+  {
+   "key": "oa:W7226060492",
+   "title": "Novices Outperform Hiring Experts With their Own Algorithmic Advice",
+   "original_title": "Novices Outperform Hiring Experts With their Own Algorithmic Advice",
+   "url": "https://osf.io/k7hq5",
+   "venue": "OSF Preprints (OSF Preprints)",
+   "date": "2026-11-11",
+   "authors": [
+    "Nathan R. Kuncel",
+    "Rob R. Meijer",
+    "Marvin Neumann",
+    "A. Susan M. Niessen"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "hiring",
+   "summary": "Em tarefa de seleção, novatos que recebem a recomendação de um algoritmo próprio superam especialistas de recrutamento com a mesma informação; a expertise parece levar a ajustes discricionários que pioram a decisão. O achado inverte a intuição de que só especialistas sabem quando ignorar o modelo. Lição: antes de dar veto a recrutadores experientes, audite se o override melhora ou degrada a acurácia e treine o uso calibrado da recomendação algorítmica."
+  },
+  {
+   "key": "doi:10.1007/s10869-026-10164-6",
+   "title": "Age bias in resume screening: are HR professionals more biased than ChatGPT?",
+   "original_title": "Age bias in resume screening: are HR professionals more biased than ChatGPT?",
+   "url": "https://doi.org/10.1007/s10869-026-10164-6",
+   "venue": "Journal of Business and Psychology",
+   "date": "2026-11-14",
+   "authors": [
+    "Maaike Schellaert",
+    "Eva Derous",
+    "Janneke K. Oostrom",
+    "Louis Lippens"
+   ],
+   "institutions": [
+    "Ghent University",
+    "Tilburg University",
+    "Luxembourg Institute of Socio-Economic Research"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "hiring",
+   "summary": "O estudo confronta profissionais de RH e ChatGPT na triagem de currículos equivalentes que variam a idade do candidato, perguntando se humanos são mais enviesados que o modelo. A pergunta importa porque a triagem etária é um dos vieses mais persistentes e menos auditados em recrutamento. Lição: não basta trocar humano por LLM; é preciso testar viés etário nos dois lados, estruturar critérios e monitorar decisões de triagem."
+  },
+  {
+   "key": "arxiv:2611.20140",
+   "title": "Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems",
+   "original_title": "Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems",
+   "url": "https://arxiv.org/abs/2611.20140",
+   "venue": "arXiv (cs.CY, cs.AI)",
+   "date": "2026-11-15",
+   "authors": [
+    "Spandan Roy",
+    "Subhabrata Majumdar",
+    "Soudeep Deb"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "hiring",
+   "summary": "Framework separa evidência do candidato, avaliação, permissões e registro de decisão, e testa prontidão operacional e de compliance em quatro LLMs, 210 currículos, 14 cargos e seis interfaces de decisão. Scores escalares distinguem melhor mudanças de qualificação que pass/fail; julgamentos comparativos são sensíveis à ordem; regras explícitas de permissão reduzem obediência a instruções maliciosas, mas LLMs frequentemente divergem entre decisão e justificativa. Lição: em triagem com IA, desenhe interface, permissões e trilha de auditoria antes de escalar."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24254416",
+   "title": "The Exceptional Centaur: Why Human–AI Teams Usually Underperform Their Stronger Member",
+   "original_title": "The Exceptional Centaur: Why Human–AI Teams Usually Underperform Their Stronger Member, and the Narrow Conditions That Produce Synergy",
+   "url": "https://doi.org/10.5281/zenodo.24254416",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-15",
+   "authors": [
+    "Josie Jefferson",
+    "Felix Velasco"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "ai_work",
+   "summary": "Meta-análise pré-registrada de 106 experimentos mostra que equipes humano-IA rendem, em média, **menos que o membro mais forte** (déficit agregado g = −0,23), contrariando o mito do centauro. Em testes de campo em radiologia, manutenção de software, consultoria e recrutamento, a confiança supera a acurácia do algoritmo e explicações não recalibram; sinergia só aparece quando erros divergem, a tarefa é aberta e há críticos/challengers/triagem algorítmica. Lição: não presuma ganho de centauro; desenhe fluxos com verificação adversarial e meça quando o humano deve seguir ou sobrepor a máquina."
+  },
+  {
+   "key": "web:https://shows.acast.com/digital-hr-leaders-with-david-green/episodes/how-atlassian-connects-context-people-and-work-to-create-ai",
+   "title": "How Atlassian Connects Context, People and Work to Create AI Value",
+   "original_title": "How Atlassian Connects Context, People and Work to Create AI Value",
+   "url": "https://shows.acast.com/digital-hr-leaders-with-david-green/episodes/how-atlassian-connects-context-people-and-work-to-create-ai",
+   "venue": "Digital HR Leaders (podcast)",
+   "date": "2026-11-17",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "David Green",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "summary": "Podcast do Digital HR Leaders com a Chief People and AI Enablement Officer do Atlassian: 85% dos knowledge workers usam IA, mas só 6% dos executivos apontam ROI claro em toda a organização. A empresa uniu RH, IT interno, ciência de dados e suporte para conectar contexto organizacional, redesenho do trabalho e capacitação, e testa mudanças no operating model de RH. Lição: adoção não é resultado; people analytics deve medir capacidade, contexto e redesenho de tarefas, não só uso nem performance individual."
+  },
+  {
+   "key": "arxiv:2611.21376",
+   "title": "A Crowd-Audited Atlas of Implicit Bias in LLM-Powered Agents",
+   "original_title": "A Crowd-Audited Atlas of Implicit Bias in LLM-Powered Agents",
+   "url": "https://arxiv.org/abs/2611.21376",
+   "venue": "arXiv (cs.CY, cs.CL)",
+   "date": "2026-11-16",
+   "authors": [
+    "Jason Alexander",
+    "Yuxuan Li",
+    "Michael Licamele",
+    "Wesley Hanwen Deng",
+    "Sauvik Das"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "summary": "Atlas gerado a partir de 17 domínios da American Time Use Survey criou 506 cenários de decisão em que LLMs com personas de raça, gênero e ideologia política expressaram viés implícito. Em auditoria crowdsourced, 500 participantes fizeram 8.010 escolhas binárias e priorizaram cenários de ampla relevância, alto risco e decisões unânimes de um grupo simulado, menos influenciados pela magnitude da disparidade. Lição: auditorias de viés precisam de priorização humana e cuidado com estereótipos internalizados, não só métricas de disparidade."
+  },
+  {
+   "key": "arxiv:2611.19652",
+   "title": "LLM Facilitation of Group Decision-Making",
+   "original_title": "LLM Facilitation of Group Decision-Making",
+   "url": "https://arxiv.org/abs/2611.19652",
+   "venue": "arXiv (cs.HC)",
+   "date": "2026-11-14",
+   "authors": [
+    "José Córdova",
+    "Chun-Wei Chiang",
+    "Miriam Schirmer",
+    "Ming Yin",
+    "Emőke-Ágnes Horvát"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "summary": "Experimento online com 138 grupos de três pessoas (N = 414) em tarefa de contratação hidden-profile comparou nenhuma facilitação, LLM individual e LLM de grupo. A facilitação por LLM elevou a taxa de consenso na candidata correta de 32,6% para 56,5%; o LLM de grupo aumentou divulgação de informação privada e recebeu melhor usabilidade que o individual. Lição: LLMs podem atuar como facilitadores de decisão coletiva, mas o desenho — grupo versus indivíduo — muda o que as pessoas compartilham."
+  },
+  {
+   "key": "doi:10.1007/s10869-026-10153-9",
+   "title": "When turnover intention translates into action: boundaryless mindset and time",
+   "original_title": "When turnover intention translates into action: the influence of having a boundaryless mindset and time",
+   "url": "https://doi.org/10.1007/s10869-026-10153-9",
+   "venue": "Journal of Business and Psychology",
+   "date": "2026-11-12",
+   "authors": [
+    "Raquel Redondo",
+    "María Eugenia Fabra",
+    "Susana de los Ríos-Sastre",
+    "Jorge Martín-Magdalena"
+   ],
+   "institutions": [
+    "Universidad Pontificia Comillas"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "engagement",
+   "summary": "Estudo examina quando a intenção de saída vira desligamento efetivo, testando o papel de uma mentalidade boundaryless e do tempo como moderadores. A tradução da intenção em ação não é automática: atitudes de carreira sem fronteiras e janelas temporais alteram a probabilidade de saída. Lição: modelos de attrition devem combinar intenção declarada com orientação de carreira e tempo de exposição, em vez de tratar intenção como preditor único."
+  },
+  {
+   "key": "arxiv:2611.19068",
+   "title": "Corporate Stances on Societal Issues in the US",
+   "original_title": "Corporate Stances on Societal Issues in the US",
+   "url": "https://arxiv.org/abs/2611.19068",
+   "venue": "arXiv (econ.GN, q-fin.GN)",
+   "date": "2026-11-14",
+   "authors": [
+    "Jacob Conway",
+    "Andrew Hall",
+    "Magdalena Larreboure",
+    "Caroline Le Pennec",
+    "Vincent Pons",
+    "Anna Sun"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "leadership",
+   "summary": "Base com 52.000 notícias e press releases de 836 empresas que passaram pelo S&P 500 entre 2008 e 2025 identificou 9.917 posicionamentos em nove temas partidários. Posicionamentos quadruplicaram após 2008, pico em 2021, majoritariamente liberais e concentrados nas maiores empresas; um quarto não traz justificativa de negócio explícita, e a relação com lobbying/doações é fraca. Lição: a voz política corporativa acompanha atenção pública e composição de consumidores, funcionários, executivos e conselho — um sinal de cultura e risco reputacional para people analytics."
+  },
+  {
+   "key": "arxiv:2611.20901",
+   "title": "Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits",
+   "original_title": "Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits of Provider-Served Language Models",
+   "url": "https://arxiv.org/abs/2611.20901",
+   "venue": "arXiv (cs.CY, cs.AI)",
+   "date": "2026-11-16",
+   "authors": [
+    "Mika Facchini"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "governance",
+   "summary": "Auditoria de fairness em LLMs usados para decisões sobre pessoas repetiu o mesmo teste três vezes em 13 meses, com 248.400 chamadas de API e cinco provedores, no cenário de triagem de investimento com fundadores variando gênero, origem e universidade. O mesmo identificador de modelo exibiu padrão de viés significativamente diferente um ano depois; sucessores herdaram o viés com tamanho e forma distintos, e provedores aposentam modelos com aviso de zero a seis meses. Lição: auditoria de LLM é **evidência perecível**; audite classes de modelo, registre versões e reaudite a cada troca."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.3389/feduc.2026.1876200",
+   "title": "Bridging the AI literacy gap",
+   "original_title": "Bridging the AI literacy gap: mixed-methods evidence from employers on workforce readiness and curriculum priorities",
+   "url": "https://doi.org/10.3389/feduc.2026.1876200",
+   "venue": "Frontiers in Education",
+   "date": "2026-11-12",
+   "authors": [
+    "Laura McNeill",
+    "Mohammad Mohı Uddın",
+    "Stephen Abu",
+    "Mengshi Pei",
+    "Idowu David Awoyemi",
+    "Lesley Regalado"
+   ],
+   "institutions": [
+    "University of Alabama"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "learning",
+   "note": "Empregadores apontam lacuna entre formação universitária em IA e competências exigidas; framework de prontidão pode orientar currículos e trilhas de aprendizagem."
+  },
+  {
+   "key": "doi:10.1038/s41598-026-77466-w",
+   "title": "HR-driven imbalanced classification for job-change prediction",
+   "original_title": "A technical framework for HR-driven imbalanced classification: pipeline architecture, oversampling algorithms, ablation analysis, and threshold engineering for data scientist job-change prediction",
+   "url": "https://doi.org/10.1038/s41598-026-77466-w",
+   "venue": "Scientific Reports",
+   "date": "2026-11-15",
+   "authors": [
+    "Anupam Mazumdar",
+    "Md Foysal Ahmed",
+    "Chantor Btissam",
+    "Hriday Chandra Shil",
+    "Nimra Khan",
+    "Md Luman Jamali",
+    "Mehvish Bashir",
+    "Md. Mashfi Chowdhury Aurin",
+    "S.K. Md. Anik Hassan Rabby",
+    "Samrat Ray",
+    "Mir Mohammad Azad",
+    "Md. Nurul Haque Mollah"
+   ],
+   "institutions": [
+    "Arden University",
+    "Western Illinois University",
+    "Sidi Mohamed Ben Abdellah University",
+    "Comilla University",
+    "University of Management and Technology",
+    "Trine University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "analytics",
+   "note": "Pipeline para prever mudança de emprego em 19.158 registros com ~24,9% positivos; oversampling, ablação e engenharia de threshold são centrais para RH."
+  },
+  {
+   "key": "arxiv:2611.16931",
+   "title": "Beyond Curiosity: Habit and Organizational Learning Capability as Predictors of Shadow AI",
+   "original_title": "Beyond Curiosity: Habit and Organizational Learning Capability as Predictors of Shadow AI",
+   "url": "https://arxiv.org/abs/2611.16931",
+   "venue": "arXiv (cs.CY, cs.HC)",
+   "date": "2026-11-12",
+   "authors": [
+    "Nolan Lovett",
+    "Mohan Yang"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "note": "Survey com 510 trabalhadores: hábito de uso e capacidade de aprendizagem organizacional explicam uso não sancionado de IA melhor que curiosidade."
+  },
+  {
+   "key": "doi:10.1108/ebhrm-09-2025-0423",
+   "title": "HR analytics on firm performance and business process performance",
+   "original_title": "Navigating the maze : HR analytics on firm performance and the mediating role of business process performance",
+   "url": "https://doi.org/10.1108/ebhrm-09-2025-0423",
+   "venue": "Evidence-based HRM a Global Forum for Empirical Scholarship",
+   "date": "2026-11-12",
+   "authors": [
+    "Malabika Sahoo",
+    "Nisrutha Dulla",
+    "Chandra Chakraborty",
+    "Lalatendu Kesari Jena"
+   ],
+   "institutions": [
+    "KIIT University",
+    "XIM University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "analytics",
+   "note": "Survey com 300 profissionais de RH na Índia: qualidade de dados, competências analíticas e capacidade estratégica elevam desempenho via processos de negócio."
+  },
+  {
+   "key": "doi:10.4324/9781003240679-5",
+   "title": "The Context of the Rise of Digital Surveillance",
+   "original_title": "The Context of the Rise of Digital Surveillance",
+   "url": "https://doi.org/10.4324/9781003240679-5",
+   "venue": "Routledge eBooks",
+   "date": "2026-11-13",
+   "authors": [
+    "Ivan Manokha"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "governance",
+   "note": "Capítulo situa vigilância digital no capitalismo tardio: erosão de proteções coletivas e precarização explicam difusão, não só inovação tecnológica."
+  },
+  {
+   "key": "arxiv:2611.17530",
+   "title": "AI and the Two Margins of Work",
+   "original_title": "AI and the Two Margins of Work: Why Job Losses Show Up Before Job Creation",
+   "url": "https://arxiv.org/abs/2611.17530",
+   "venue": "arXiv (econ.GN)",
+   "date": "2026-11-12",
+   "authors": [
+    "Mark Esposito",
+    "Liu Zhang"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "note": "Dados de folha mostram perdas antes de ganhos: entrantes pós-1978 detinham 42% da folha em 1998; criação de vagas demora a aparecer."
+  }
+ ]
+}
