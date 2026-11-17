@@ -1,6 +1,21 @@
 {
   "researchers": [
     {
+      "name": "Bart Baesens",
+      "institution": "KU Leuven / University of Southampton",
+      "region": "Europa",
+      "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude",
+      "why": "Referência em fraud analytics (Fraud Analytics Using Descriptive, Predictive and Social Network Techniques, 2015) e ativo: Network Analytics for Anti-money Laundering (INFORMS J. on Data Science, 2026).",
+      "openalex_id": "A5081225515",
+      "openalex_note": "conferido por nome + instituição; h-index 78; ativo em 2025–2026 (Crossref)",
+      "links": {
+        "x": "https://x.com/DataMiningApps",
+        "linkedin": "https://www.linkedin.com/in/bart-baesens-403bb83"
+      },
+      "since": 2025,
+      "evidence": "https://www.theorsociety.com/ORS/ORS/About-OR/News/Professor-Bart-Baesens.aspx — OR Society: 'unexpected passing of Professor Bart Baesens ... on 6 August 2025, at the age of 50'; também perfil LinkedIn memorializado e bartbaesens.com (27/02/1975–06/08/2025)."
+    },
+    {
       "name": "David J. Hand",
       "institution": "Imperial College London",
       "region": "Europa",
@@ -545,22 +560,6 @@
     }
   ],
   "historical": [
-    {
-      "name": "Bart Baesens",
-      "institution": "University of Southampton",
-      "region": "Europa",
-      "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude",
-      "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.",
-      "openalex_id": "A5081225515",
-      "openalex_note": "conferido por nome + instituição; h-index 78",
-      "links": {
-        "x": "https://x.com/DataMiningApps",
-        "linkedin": "https://www.linkedin.com/in/bart-baesens-403bb83"
-      },
-      "status": "falecido",
-      "since": 2025,
-      "evidence": "https://www.theorsociety.com/ORS/ORS/About-OR/News/Professor-Bart-Baesens.aspx — OR Society: 'unexpected passing of Professor Bart Baesens ... on 6 August 2025, at the age of 50'; também perfil LinkedIn memorializado e bartbaesens.com (27/02/1975–06/08/2025)."
-    },
     {
       "name": "Lyn C. Thomas",
       "institution": "University of Southampton (antes University of Edinburgh, Credit Research Centre)",
