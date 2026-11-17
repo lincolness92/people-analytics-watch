@@ -354,7 +354,7 @@ def diverse(ranked, theme_of, n, max_per_theme):
 
 
 def pick_milestones(cands, verdicts, eras, prev=None, stable=(), new_ids=(),
-                    per_era=7, min_score=6, stable_new_min=8, stable_new_max=1, max_per_theme=3):
+                    per_era=7, per_era_recent=8, min_score=6, stable_new_min=8, stable_new_max=1, max_per_theme=3):
     """Milestone ids per era.
 
     Without a previous version: the best `per_era` by LLM score. With one: settled eras keep
@@ -379,7 +379,8 @@ def pick_milestones(cands, verdicts, eras, prev=None, stable=(), new_ids=(),
         bonus = lambda c: verdicts[c["id"]][0] + (1 if c["id"] in incumbents else 0)
         ranked = sorted((c for c in pool if verdicts[c["id"]][0] >= min_score),
                         key=lambda c: (-bonus(c), -c["net"], -c["cited_by"]))
-        picked[k] = [c["id"] for c in diverse(ranked, lambda c: verdicts[c["id"]][2], per_era, max_per_theme)]
+        n = per_era if k in stable else per_era_recent  # recent eras are busier: one more slot
+        picked[k] = [c["id"] for c in diverse(ranked, lambda c: verdicts[c["id"]][2], n, max_per_theme)]
     return {k: [i for i in v if i in by_id or i in prev_index(prev)] for k, v in picked.items()}
 
 

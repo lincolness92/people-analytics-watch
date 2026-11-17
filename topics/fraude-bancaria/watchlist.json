@@ -24,19 +24,6 @@
       }
     },
     {
-      "name": "Andrea Dal Pozzolo",
-      "institution": "Université Libre de Bruxelles",
-      "region": "Europa",
-      "area": "Concept drift e desbalanceamento em fraude de cartões",
-      "why": "Referência em fraude/crime financeiro; 5 trabalhos no tema no OpenAlex.",
-      "openalex_id": "A5008848385",
-      "openalex_note": "conferido por nome + instituição; h-index 9",
-      "links": {
-        "x": "https://x.com/dalpozz",
-        "linkedin": "https://www.linkedin.com/in/dalpozz"
-      }
-    },
-    {
       "name": "Tyler Moore",
       "institution": "University of Tulsa",
       "region": "EUA",
@@ -140,18 +127,6 @@
       }
     },
     {
-      "name": "Véronique Van Vlasselaer",
-      "institution": "KU Leuven",
-      "region": "Europa",
-      "area": "Fraude em redes (GOTCHA!), seguros e bancos",
-      "why": "Referência em fraude/crime financeiro; 15 trabalhos no tema no OpenAlex.",
-      "openalex_id": "A5066851728",
-      "openalex_note": "conferido por nome + instituição; h-index 8",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/v%C3%A9ronique-van-vlasselaer/"
-      }
-    },
-    {
       "name": "Monica Therese Whitty",
       "institution": "Monash University",
       "region": "Outros",
@@ -184,18 +159,6 @@
       "links": {}
     },
     {
-      "name": "Sebastiaan Höppner",
-      "institution": "KU Leuven",
-      "region": "Europa",
-      "area": "Engenharia de dados e modelos sensíveis a custo para fraude",
-      "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)",
-      "openalex_id": "A5030723848",
-      "openalex_note": "minerado em venues de elite; h-index 7, 10 trabalhos — conferir homônimos",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/sebastiaan-h%C3%B6ppner/"
-      }
-    },
-    {
       "name": "Tim Verdonck",
       "institution": "University of Antwerp",
       "region": "Europa",
@@ -215,16 +178,6 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)",
       "openalex_id": "A5068007462",
       "openalex_note": "minerado em venues de elite; h-index 35, 125 trabalhos — conferir homônimos",
-      "links": {}
-    },
-    {
-      "name": "Jinghua Feng",
-      "institution": "Ant Group (China)",
-      "region": "China/Ásia",
-      "area": "Fraude em pagamentos no Ant Group",
-      "why": "Entre os mais citados sobre o tema em venues de elite: Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection (751 cit.); AUC-oriented Graph Neural Network for Fraud Detection (155 cit.)",
-      "openalex_id": "A5012138678",
-      "openalex_note": "minerado em venues de elite; h-index 12, 17 trabalhos — conferir homônimos",
       "links": {}
     },
     {
@@ -272,18 +225,6 @@
       "openalex_id": "A5031531093",
       "openalex_note": "minerado em venues de elite; h-index 45, 192 trabalhos — conferir homônimos",
       "links": {}
-    },
-    {
-      "name": "Yann‐Aël Le Borgne",
-      "institution": "Université Libre de Bruxelles",
-      "region": "Europa",
-      "area": "Fraude de cartões com aprendizado não supervisionado (ULB)",
-      "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)",
-      "openalex_id": "A5025424957",
-      "openalex_note": "minerado em venues de elite; h-index 20, 69 trabalhos — conferir homônimos",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/yannaelb"
-      }
     },
     {
       "name": "Frédéric Oblé",

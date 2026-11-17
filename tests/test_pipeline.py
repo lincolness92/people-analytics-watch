@@ -246,7 +246,7 @@ class EvolutionTests(unittest.TestCase):
         cands = [dict(self.n(i, 2024, i, 10), era="2023+") for i in range(4)]
         verdicts = {"W0": [9, "metodo", "analytics"], "W1": [8, "marco", "hiring"],
                     "W2": [7, "marco", "hiring"], "W3": [5, "marco", "hiring"]}
-        picked = pick_milestones(cands, verdicts, self.eras, per_era=1)
+        picked = pick_milestones(cands, verdicts, self.eras, per_era_recent=1)
         self.assertEqual(picked["2023+"], ["W1"])
 
     def test_pick_caps_one_theme_per_era_then_fills(self):
@@ -254,7 +254,7 @@ class EvolutionTests(unittest.TestCase):
         cands = [dict(self.n(i, 2024, 10 - i, 10), era="2023+") for i in range(6)]
         verdicts = {f"W{i}": [9, "marco", "ai_work"] for i in range(4)}
         verdicts.update({"W4": [7, "marco", "analytics"], "W5": [6, "marco", "hiring"]})
-        picked = pick_milestones(cands, verdicts, self.eras, per_era=5, max_per_theme=2)["2023+"]
+        picked = pick_milestones(cands, verdicts, self.eras, per_era_recent=5, max_per_theme=2)["2023+"]
         self.assertEqual(picked, ["W0", "W1", "W4", "W5", "W2"])  # 2 ai_work, other themes, then refill
 
     def test_incremental_pick_keeps_settled_eras_and_resists_churn(self):
@@ -267,13 +267,13 @@ class EvolutionTests(unittest.TestCase):
         prev = {"eras": [{"key": "ate-1999", "milestones": [{"id": "W1", "url": "u1"}]},
                          {"key": "2023+", "milestones": [{"id": "W4", "url": "u4"}]}]}
         picked = pick_milestones(cands, verdicts, self.eras, prev=prev, stable={"ate-1999"},
-                                 new_ids={"W2", "W3", "W5"}, per_era=1)
+                                 new_ids={"W2", "W3", "W5"}, per_era=1, per_era_recent=1)
         # settled era: incumbent stays, only one strong newcomer admitted
         self.assertEqual(picked["ate-1999"], ["W1", "W2"])
         # recent era: incumbent 7 (+1 bonus = 8) ties the newcomer's 8; the tie goes to the stronger network
         self.assertEqual(picked["2023+"], ["W5"])
         verdicts["W5"] = [7, "marco", "a"]
-        picked = pick_milestones(cands, verdicts, self.eras, prev=prev, stable={"ate-1999"}, new_ids=set(), per_era=1)
+        picked = pick_milestones(cands, verdicts, self.eras, prev=prev, stable={"ate-1999"}, new_ids=set(), per_era=1, per_era_recent=1)
         self.assertEqual(picked["2023+"], ["W4"])  # 7+1 beats 7: no churn on equal scores
 
     def test_evolve_end_to_end_incremental_and_full(self):
