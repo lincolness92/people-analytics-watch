@@ -43,7 +43,13 @@ def _parse_date(s):
         return datetime.fromisoformat(s.replace("Z", "+00:00")[:25]).date()
     except ValueError:
         m = re.match(r"\d{4}-\d{2}-\d{2}", s)
-        return date.fromisoformat(m.group(0)) if m else None
+        if m:
+            return date.fromisoformat(m.group(0))
+        m = re.search(r"([A-Z][a-z]+)\s+(\d{1,2}),?\s+(\d{4})", s)  # "Thursday, November 12, 2026 - 10:00"
+        try:
+            return datetime.strptime(" ".join(m.groups()), "%B %d %Y").date() if m else None
+        except ValueError:
+            return None
 
 
 def _norm_url(u):

@@ -277,6 +277,14 @@ def new_topic(name, slug=None, log=print):
         "sources.json": {"_doc": "Rascunho gerado por new-topic. Sem feed encontrado: " + ", ".join(filter(None, without)),
                          "sources": sources},
     }
+    existing = tdir / "sources.json"
+    if existing.exists():  # hand-curated sources win; only add feeds for URLs not covered yet
+        cur = json.loads(existing.read_text(encoding="utf-8"))
+        have = {x["url"] for x in cur.get("sources", [])}
+        extra = [x for x in sources if x["url"] not in have]
+        cur["sources"] = cur.get("sources", []) + extra
+        files["sources.json"] = cur
+        log(f"  sources.json já existia: mantido, com {len(extra)} feeds novos acrescentados")
     for fname, obj in files.items():
         (tdir / fname).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     draft.unlink()
