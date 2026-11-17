@@ -175,7 +175,22 @@
     const known = ["EUA", "Europa", "China/Ásia", "Brasil"];
     const regions = [...known, ...new Set(people.map((p) => p.region || "Outros").filter((r) => !known.includes(r)))];
     const L = Object.assign({ researchers: "Pesquisadores", journals: "Journals", centers: "Centros & laboratórios",
-      practitioners: "Praticantes & fontes" }, DATA.topic.watchlist_labels || {});
+      practitioners: "Praticantes & fontes", historical: "Referências históricas" }, DATA.topic.watchlist_labels || {});
+    function person(p, evoCount) {
+      const links = Object.entries(p.links || {}).filter(([, u]) => u)
+        .map(([k, u]) => `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(k)}</a>`);
+      if (p.openalex_id) links.push(`<a href="https://openalex.org/authors/${esc(p.openalex_id)}" target="_blank" rel="noopener">openalex</a>`);
+      const status = p.status ? `<span class="status">${esc(p.status)}${p.since ? ` em ${esc(p.since)}` : ""}</span>` : "";
+      return `<div class="person${p.status ? " hist" : ""}">
+        <div class="n">${esc(p.name)} ${status}</div>
+        <div class="i">${esc(p.institution || "")}</div>
+        ${p.area ? `<div class="a">${esc(p.area)}</div>` : ""}
+        ${p.why ? `<div class="w">${esc(p.why)}</div>` : ""}
+        ${hits[p.name] ? `<div class="hits">⭐ ${hits[p.name]} paper(s) no arquivo</div>` : ""}
+        ${evoCount ? `<div class="hits">🏛️ ${evoCount} marco(s) na Evolução</div>` : ""}
+        ${links.length ? `<div class="l">${links.join("")}</div>` : ""}
+      </div>`;
+    }
     let html = `
       <h1 class="day">Watchlist</h1>
       <p class="dek">Referências monitoradas. Papers novos desses autores entram na triagem com bônus e ganham ⭐; posts, relatórios e normas das fontes ganham 📌.</p>
@@ -183,21 +198,17 @@
     for (const r of regions) {
       const group = people.filter((p) => (p.region || "Outros") === r);
       if (!group.length) continue;
-      html += `<h3 class="region-h">${esc(r)} · ${group.length}</h3><div class="people">` + group.map((p) => {
-        const links = Object.entries(p.links || {}).filter(([, u]) => u)
-          .map(([k, u]) => `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(k)}</a>`);
-        if (p.openalex_id) links.push(`<a href="https://openalex.org/authors/${esc(p.openalex_id)}" target="_blank" rel="noopener">openalex</a>`);
-        return `<div class="person">
-          <div class="n">${esc(p.name)}</div>
-          <div class="i">${esc(p.institution || "")}</div>
-          ${p.area ? `<div class="a">${esc(p.area)}</div>` : ""}
-          ${p.why ? `<div class="w">${esc(p.why)}</div>` : ""}
-          ${hits[p.name] ? `<div class="hits">⭐ ${hits[p.name]} paper(s) no arquivo</div>` : ""}
-          ${links.length ? `<div class="l">${links.join("")}</div>` : ""}
-        </div>`;
-      }).join("") + `</div>`;
+      html += `<h3 class="region-h">${esc(r)} · ${group.length}</h3><div class="people">` + group.map(person).join("") + `</div>`;
     }
     html += `</section>`;
+    const hist = wl.historical || [];
+    if (hist.length) {
+      const evoHits = {};
+      for (const e of (DATA.evolution || {}).eras || []) for (const m of e.milestones) for (const n of m.watch || []) evoHits[n] = (evoHits[n] || 0) + 1;
+      html += `<section class="wl-section"><h2>${esc(L.historical)} <span class="muted">(${hist.length})</span></h2>
+        <p class="muted wl-note">Não são mais monitorados no dia a dia; as obras entram na aba <a href="#/evolucao">Evolução</a>.</p>
+        <div class="people">` + hist.map((p) => person(p, evoHits[p.name])).join("") + `</div></section>`;
+    }
     const simple = (title, arr, nameKey, subKey) => !arr || !arr.length ? "" : `
       <section class="wl-section"><h2>${title} <span class="muted">(${arr.length})</span></h2><ul class="list-simple">` +
       arr.map((x) => {

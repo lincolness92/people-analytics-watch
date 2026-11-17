@@ -859,5 +859,137 @@
         "newsletter/blog": "https://wpa.wharton.upenn.edu/content-library/"
       }
     }
+  ],
+  "historical": [
+    {
+      "name": "Edward P. Lazear",
+      "institution": "Stanford Graduate School of Business / Hoover Institution",
+      "region": "EUA",
+      "area": "Economia de pessoal (personnel economics)",
+      "why": "Fundador da economia de pessoal: torneios de promoção (com Rosen, JPE 1981) e 'Performance Pay and Productivity' (AER 2000), base empírica de remuneração por desempenho.",
+      "status": "falecido",
+      "since": 2020,
+      "openalex_id": "A5089574018",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://news.stanford.edu/stories/2020/11/economist-ed-lazear-died — Stanford News: faleceu em 23/11/2020, aos 72 anos."
+    },
+    {
+      "name": "Sherwin Rosen",
+      "institution": "University of Chicago (Economics)",
+      "region": "EUA",
+      "area": "Economia do trabalho, torneios e superstars",
+      "why": "Coautor da teoria de torneios ('Rank-Order Tournaments as Optimum Labor Contracts', JPE 1981) e de 'The Economics of Superstars' (AER 1981), que explicam dispersão salarial e promoções.",
+      "status": "falecido",
+      "since": 2001,
+      "openalex_id": "A5113850381",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://chronicle.uchicago.edu/010329/obit-rosen.shtml — University of Chicago Chronicle: faleceu em 17/03/2001, aos 62 anos."
+    },
+    {
+      "name": "Gary S. Becker",
+      "institution": "University of Chicago (Economics e Sociology)",
+      "region": "EUA",
+      "area": "Capital humano, discriminação no trabalho",
+      "why": "Formulou a teoria do capital humano ('Investment in Human Capital', JPE 1962; livro Human Capital, 1964) e a economia da discriminação, alicerces de treinamento, retenção e equidade salarial; Nobel 1992.",
+      "status": "falecido",
+      "since": 2014,
+      "openalex_id": "A5086017096",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://news.uchicago.edu/story/gary-s-becker-nobel-winning-scholar-economics-and-sociology-1930-2014 — UChicago News: faleceu em 03/05/2014."
+    },
+    {
+      "name": "J. Richard Hackman",
+      "institution": "Harvard University (Psychology)",
+      "region": "EUA",
+      "area": "Desenho do trabalho, equipes",
+      "why": "Criou o Job Characteristics Model e o Job Diagnostic Survey (com Oldham, 1975/1976), referência para engajamento e desenho de cargos, e a teoria de equipes eficazes.",
+      "status": "falecido",
+      "since": 2013,
+      "openalex_id": "A5069513964",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.thecrimson.com/article/2013/1/16/richard-hackman-psychology-pioneer/ — Harvard Crimson: faleceu em 08/01/2013 (também Harvard FAS Memorial Minute)."
+    },
+    {
+      "name": "Frank L. Schmidt",
+      "institution": "University of Iowa (Tippie College of Business)",
+      "region": "EUA",
+      "area": "Seleção de pessoal, meta-análise psicométrica",
+      "why": "Com Hunter, criou a generalização de validade e a meta-análise psicométrica e publicou 'The Validity and Utility of Selection Methods in Personnel Psychology' (Psych. Bulletin 1998), base da seleção baseada em evidências.",
+      "status": "falecido",
+      "since": 2021,
+      "openalex_id": "A5103547969",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://tippie.uiowa.edu/node/3721 — Tippie/University of Iowa: faleceu em 21/08/2021; obituário em Personality and Individual Differences (doi 10.1016/j.paid.2021.111263)."
+    },
+    {
+      "name": "John E. Hunter",
+      "institution": "Michigan State University (Psychology)",
+      "region": "EUA",
+      "area": "Meta-análise, validade de testes de seleção",
+      "why": "Coautor com Schmidt da generalização de validade (JAP 1977), de 'Methods of Meta-Analysis' e da meta-análise de 1998 sobre métodos de seleção, ainda hoje o ponto de partida do debate sobre preditores de desempenho.",
+      "status": "falecido",
+      "since": 2002,
+      "openalex_id": "A5102725948",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://en.wikipedia.org/wiki/John_E._Hunter — faleceu em 26/06/2002 (bio SIOP: https://www.siop.org/wp-content/uploads/2024/05/HunterBio.pdf). Obs.: registro OpenAlex mistura homônimos (obras recentes não são dele)."
+    },
+    {
+      "name": "Kwok Leung",
+      "institution": "CUHK Business School, Chinese University of Hong Kong (antes City University of Hong Kong)",
+      "region": "China/Ásia",
+      "area": "Justiça organizacional e gestão intercultural na China",
+      "why": "Principal referência em justiça, conflito e gestão intercultural em contextos chineses (ex.: 'Culture and international business', JIBS 2005), fundador da pesquisa de OB/RH chinesa moderna.",
+      "status": "falecido",
+      "since": 2015,
+      "openalex_id": "A5030091327",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://cpr.cuhk.edu.hk/en/?p=49028 — CUHK: faleceu em 25/05/2015, aos 57 anos (também in memoriam da CityU: https://www.cb.cityu.edu.hk/CityBusinessMagazine/2015-Autumn/en/in-memoriam). Obs.: registro OpenAlex contaminado por homônimo médico (North District Hospital)."
+    },
+    {
+      "name": "Jiing-Lih Farh",
+      "institution": "HKUST Business School (Professor Emeritus); CEIBS",
+      "region": "China/Ásia",
+      "area": "Liderança paternalista, OCB e guanxi na China",
+      "why": "Pioneiro de OB/RH em contexto chinês: 'Impetus for Action' (ASQ 1997) sobre justiça e OCB, guanxi e demografia relacional (Org. Science 1998) e liderança paternalista.",
+      "status": "aposentado",
+      "since": 2016,
+      "openalex_id": "A5053152348",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://mgmt.hkust.edu.hk/faculty-and-staff/directory/mnlfarh — HKUST: Professor Emeritus desde 2016 (HKUST Annual Report 2016-17). Ressalva: OpenAlex ainda registra ~1 obra/ano em 2024-2026 (coautorias esparsas)."
+    },
+    {
+      "name": "Lyman W. Porter",
+      "institution": "UC Irvine (Paul Merage School of Business)",
+      "region": "EUA",
+      "area": "Comprometimento organizacional, rotatividade",
+      "why": "Criou com Mowday e Steers a medida de comprometimento organizacional (OCQ, 1974/1979) e o modelo Porter-Lawler, base dos modelos de previsão de turnover.",
+      "status": "falecido",
+      "since": 2015,
+      "openalex_id": "A5072158150",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://senate.universityofcalifornia.edu/in-memoriam/files/lyman-w-porter.html — UC Academic Senate In Memoriam: faleceu em 02/07/2015, aos 85 anos."
+    },
+    {
+      "name": "Edward E. Lawler III",
+      "institution": "USC Marshall School of Business (Center for Effective Organizations)",
+      "region": "EUA",
+      "area": "Remuneração, desenho organizacional, métricas de RH",
+      "why": "Fundador do Center for Effective Organizations (1979), referência em remuneração e motivação (modelo Porter-Lawler) e coautor de um dos primeiros estudos sobre 'HR metrics and analytics' (com Levenson e Boudreau, 2004).",
+      "status": "aposentado",
+      "since": null,
+      "openalex_id": "A5112294555",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.marshall.usc.edu/people/ed-lawler — USC: 'Distinguished Research Professor Emeritus of Business'; OpenAlex sem obras novas desde 2021. Vivo, sem data de aposentadoria publicada."
+    }
   ]
 }

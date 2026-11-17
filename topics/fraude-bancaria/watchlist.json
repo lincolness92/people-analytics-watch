@@ -1,19 +1,6 @@
 {
   "researchers": [
     {
-      "name": "Bart Baesens",
-      "institution": "University of Southampton",
-      "region": "Europa",
-      "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude",
-      "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.",
-      "openalex_id": "A5081225515",
-      "openalex_note": "conferido por nome + instituição; h-index 78",
-      "links": {
-        "x": "https://x.com/DataMiningApps",
-        "linkedin": "https://www.linkedin.com/in/bart-baesens-403bb83"
-      }
-    },
-    {
       "name": "David J. Hand",
       "institution": "Imperial College London",
       "region": "Europa",
@@ -596,6 +583,76 @@
         "linkedin": "https://www.linkedin.com/company/acfe/",
         "newsletter/blog": "https://www.acfe.com/podcast"
       }
+    }
+  ],
+  "historical": [
+    {
+      "name": "Bart Baesens",
+      "institution": "University of Southampton",
+      "region": "Europa",
+      "area": "Fraud analytics, aprendizado sensível a custo, redes sociais em fraude",
+      "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5081225515",
+      "openalex_note": "conferido por nome + instituição; h-index 78",
+      "links": {
+        "x": "https://x.com/DataMiningApps",
+        "linkedin": "https://www.linkedin.com/in/bart-baesens-403bb83"
+      },
+      "status": "falecido",
+      "since": 2025,
+      "evidence": "https://www.theorsociety.com/ORS/ORS/About-OR/News/Professor-Bart-Baesens.aspx — OR Society: 'unexpected passing of Professor Bart Baesens ... on 6 August 2025, at the age of 50'; também perfil LinkedIn memorializado e bartbaesens.com (27/02/1975–06/08/2025)."
+    },
+    {
+      "name": "Lyn C. Thomas",
+      "institution": "University of Southampton (antes University of Edinburgh, Credit Research Centre)",
+      "region": "Europa",
+      "area": "Credit scoring e modelagem de risco de crédito",
+      "why": "Fundador do Credit Research Centre de Edimburgo e autor de 'Credit Scoring and Its Applications' e 'A survey of credit and behavioural scoring' (IJF 2000), marco da pontuação de crédito estatística.",
+      "status": "falecido",
+      "since": 2016,
+      "openalex_id": "A5008990681",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.southampton.ac.uk/cormsis/news/2017/04/lyn-thomas-impact-award.page — University of Southampton: faleceu em 14/07/2016."
+    },
+    {
+      "name": "Tom Fawcett",
+      "institution": "Silicon Valley Data Science (antes HP Labs, NYNEX/Verizon, GTE Labs)",
+      "region": "EUA",
+      "area": "Detecção de fraude por mineração de dados, avaliação ROC",
+      "why": "'Adaptive Fraud Detection' (com Provost, DMKD 1997) inaugurou a detecção de fraude por aprendizado de máquina, e 'An introduction to ROC analysis' (2006) virou a referência de avaliação de classificadores desbalanceados.",
+      "status": "falecido",
+      "since": 2020,
+      "openalex_id": "A5039764415",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.kdnuggets.com/2020/06/tom-fawcett-memoriam.html — memorial de Foster Provost (KDnuggets): faleceu em 04/06/2020 em acidente de bicicleta (cita obituário no San Jose Mercury News)."
+    },
+    {
+      "name": "Donald R. Cressey",
+      "institution": "University of California, Santa Barbara",
+      "region": "EUA",
+      "area": "Criminologia da fraude ocupacional, 'triângulo da fraude'",
+      "why": "'The Criminal Violation of Financial Trust' (ASR 1950) e 'Other People's Money' (1953) deram origem ao triângulo da fraude (pressão, oportunidade, racionalização).",
+      "status": "falecido",
+      "since": 1987,
+      "openalex_id": "A5029508621",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://en.wikipedia.org/wiki/Donald_Cressey — faleceu em 21/07/1987; ver também Tickner & Button (2021, Journal of Financial Crime) sobre a origem do triângulo."
+    },
+    {
+      "name": "Edwin H. Sutherland",
+      "institution": "Indiana University",
+      "region": "EUA",
+      "area": "Crime de colarinho branco",
+      "why": "Criou o conceito de crime de colarinho branco ('White-Collar Criminality', ASR 1940; livro White Collar Crime, 1949), fundação da pesquisa sobre crime financeiro e corporativo.",
+      "status": "falecido",
+      "since": 1950,
+      "openalex_id": "A5113781116",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.britannica.com/biography/Edwin-Sutherland — Britannica: faleceu em 11/10/1950, em Bloomington, Indiana."
     }
   ]
 }

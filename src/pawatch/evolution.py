@@ -135,7 +135,7 @@ def merge_versions(nodes):
 
 
 def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, layer1=150, layer2=100,
-                  per_author=12, recent_per_author=6):
+                  per_author=12, recent_per_author=6, per_historical=15):
     cfg = topic.meta.get("evolution", {})
     queries = cfg.get("seed_queries") or topic.queries().get("openalex", {}).get("queries", [])
     nodes = {}
@@ -166,6 +166,15 @@ def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, la
                 add(fetch.by_author(aid, recent_per_author, since=recent), watch=r["name"])
             except RuntimeError as e:
                 log(f"evolução: autor {r['name']} falhou: {e}")
+    # historical references (deceased or retired): their classics, all-time only; not monitored daily
+    for r in topic.watchlist().get("historical", []):
+        for aid in [r.get("openalex_id")] + list(r.get("alt_openalex_ids") or []):
+            if not aid:
+                continue
+            try:
+                add(fetch.by_author(aid, per_historical), watch=r["name"])
+            except RuntimeError as e:
+                log(f"evolução: referência histórica {r['name']} falhou: {e}")
     n_watch = sum(1 for n in nodes.values() if n.get("watch"))
 
     dois = sorted({it["key"][4:] for d in topic.digests() for it in d.get("items", [])
@@ -235,7 +244,8 @@ Para cada uma devolva:
   ex.: SEM, viés de método comum, Fornell-Larcker, análise temática, PLS) ou "fora" (outro campo: {topic.meta["off_topic"]}).
 - "t": tema entre: {themes}.
 Métodos genéricos e obras fora do tema recebem s ≤ 3 mesmo que muito citados.
-`watch` = obra de pesquisador da watchlist de elite. Julgue pelo mesmo critério: autoria não basta, e
+`watch` = obra de pesquisador da watchlist de elite ou de referência histórica do tema (falecido ou
+aposentado). Julgue pelo mesmo critério: autoria não basta, e
 o OpenAlex às vezes atribui a essas pessoas obras de homônimos de outras áreas (essas são "fora").
 Obras recentes (2023+) têm menos citações por serem novas: julgue pela importância do resultado.
 Responda APENAS com JSON: {{"r": [{{"i": <id>, "s": <int>, "k": "...", "t": "..."}}, ...]}} cobrindo todos os ids."""

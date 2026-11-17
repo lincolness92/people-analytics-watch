@@ -364,6 +364,51 @@ class EvolutionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             salvage_verdicts("")
 
+    def test_historical_references_seed_evolution_but_not_daily(self):
+        from pawatch import collect as col
+        from pawatch.evolution import build_network
+
+        def work(i, author_id):
+            return {"id": f"https://openalex.org/W{i}", "display_name": f"Classic {i}", "publication_year": 1990,
+                    "cited_by_count": 5000, "type": "article", "authorships": [{"author": {"id": author_id, "display_name": "Ed L"}}],
+                    "referenced_works": []}
+
+        class FakeFetch:
+            calls, cost = 0, 0.0
+            def __init__(self): self.authors = []
+            def top_cited(self, *a, **k): return []
+            def by_ids(self, ids, field="openalex"): return []
+            def by_author(self, aid, per_page, since=None):
+                self.authors.append((aid, since))
+                return [work(1, aid)] if aid == "A9" else []
+
+        class T:
+            def queries(self): return {}
+            def digests(self): return []
+            meta = {}
+            def watchlist(self): return {"researchers": [], "historical": [{"name": "Edward Lazear", "openalex_id": "A9"}]}
+
+        f = FakeFetch()
+        nodes = build_network(T(), f, lambda m: None)
+        self.assertEqual(nodes["W1"]["watch"], ["Edward Lazear"])
+        self.assertEqual(f.authors, [("A9", None)])  # classics only, no "recent" query
+
+        seen = []
+        class OA:
+            def __init__(self, *a): pass
+            calls, cost = 0, 0.0
+            def works(self, filters, **k):
+                seen.extend(filters)
+                return []
+        orig = col.OpenAlex
+        col.OpenAlex = OA
+        try:
+            col.collect_openalex({"openalex": {"types": ["article"], "queries": [], "per_query": 5}},
+                                 T().watchlist(), "2026-11-01", "2026-11-17", lambda m: None)
+        finally:
+            col.OpenAlex = orig
+        self.assertFalse(any("A9" in f for f in seen))  # not monitored in the daily digest
+
     def test_markdown(self):
         from pawatch.evolution import evolution_markdown
         ev = {"generated": "2026-11-17", "model": "m", "stats": {"milestones": 1, "network": 10},

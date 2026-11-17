@@ -126,6 +126,15 @@ são reescritos. Cada versão registra **o que mudou** (marcos que entraram/saí
 No GitHub: *Actions → evolution → Run workflow*, modo `incremental` ou `completa` (e, se quiser, um tema só). A triagem roda 4 lotes em paralelo.
 Versões em `data/<tema>/evolution/AAAA-MM-DD.json`; markdown em `digests/<tema>/evolucao.md`.
 
+### Referências históricas
+
+`watchlist.json` → `historical`: pesquisadores falecidos ou aposentados que não publicam mais. Saem do
+monitoramento diário (sem busca de papers novos, sem feeds, sem ⭐), mas suas obras mais citadas
+entram como sementes da Evolução e sempre chegam à triagem; como cada obra é julgada uma vez só
+(cache), elas não custam nada nos meses seguintes. Campos: os mesmos de `researchers` mais
+`status` ("falecido" | "aposentado") e `since` (ano). Aparecem numa seção própria da aba Watchlist.
+Ao mover alguém para cá, tire também os feeds dela de `sources.json`.
+
 ## Ajustes comuns
 
 - **Ampliar ou estreitar o escopo**: edite `topics/<tema>/queries.json` (sintaxe booleana do OpenAlex).
