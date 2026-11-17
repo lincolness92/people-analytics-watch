@@ -1,24 +1,32 @@
-# Handoff (atualizado em 17/11/2026)
+# Handoff (atualizado em 17/11/2026, fim do dia)
 
-Desde 17/11 o repo tem vários temas em `topics/` (people analytics e fraude bancária); veja o README e o `ROADMAP.md`.
+Site: https://people-analytics-watch.pages.dev (senha única: secret `SITE_PASSWORD`).
+Temas em `topics/` (people analytics e fraude bancária). Detalhes no README; próximos passos no `ROADMAP.md`.
 
-## Feito
-- Pipeline completo em `src/pawatch` (coleta OpenAlex + arXiv → triagem e redação com LLM de pesos abertos via HF → markdown + site). 8 testes passando.
-- Watchlist curada em `config/watchlist.json`: 43 pesquisadores (EUA 24, China/Ásia 7, Europa 5, Brasil 5, outros 2), 15 journals, 12 centros e 9 praticantes. Todos com ID do OpenAlex verificado.
-- Primeiro digest gerado: `digests/2026-11-16.md` (12 selecionados, modelo DeepSeek-V4.1-Flash, ~72k tokens).
-- Repo privado criado, e o workflow de render passou no push.
+## No ar
+- Digest diário (workflow `daily digest`, 08:30 BRT): coleta, triagem, digest, commit e deploy no Cloudflare Pages.
+- Watchlist com links sociais (X, LinkedIn, Bluesky, Mastodon, newsletters) e feeds abertos como fontes
+  (posts sociais filtrados por palavras do tema, no máximo 4 por perfil). Seção "Referências históricas"
+  (falecidos/aposentados): fora do diário, dentro da Evolução.
+- Aba Evolução (workflow `evolution`, dia 1 de cada mês, incremental). Revisão manual em Actions → evolution:
+  `completa` (refaz seleção e texto com as notas do cache, ~2 min) ou `completa-rejulgando` (refaz a triagem, ~15 min).
+  Épocas recentes: 8 marcos, até 4 do mesmo tema; consolidadas: 7, até 3.
+- Feedback (👍/👎 e comentários) no Cloudflare KV `paw-feedback`, exportado para `data/<tema>/feedback.json`;
+  perguntas da aba Pergunte em `data/<tema>/questions.json`.
+- Aba Pergunte (`functions/api/ask.js`): responde só com o arquivo do tema, citando [n]; 20–40 s por resposta.
 
-## Pendente (faça nesta ordem)
-1. ✅ **`HF_TOKEN`** (feito em 16/11, token "Codex" do `~/.hermes/.env`; 1ª execução manual ok): cadastrar como secret do repo, de preferência um token fine-grained só com "Make calls to Inference Providers": `gh secret set HF_TOKEN`. Sem ele, o cron diário (11:30 UTC) falha.
-2. ✅ **`OPENALEX_API_KEY`** (ativada em 17/11; secret no GitHub e cópia local em `~/.config/pawatch/openalex.env`): chave grátis em https://openalex.org/settings/api, depois `gh secret set OPENALEX_API_KEY`. Recomendado: sem chave, o orçamento é compartilhado por IP.
-3. **Cloudflare Pages** (o token salvo em `~/.config/raio-x/cloudflare.env` está inválido; gerar um novo):
-   - `npx wrangler login`
-   - `npx wrangler pages project create people-analytics-watch --production-branch main`
-   - Secrets `CLOUDFLARE_API_TOKEN` (permissão Pages: Edit) e `CLOUDFLARE_ACCOUNT_ID`.
-   - Depois, Cloudflare Access (Zero Trust → Applications → Self-hosted) em `people-analytics-watch.pages.dev`, liberando só o seu e-mail.
-4. ✅ Workflow rodado à mão em 16/11 (509 candidatos, 12 selecionados). Falta conferir o deploy depois do passo 3. Rodar o workflow à mão: `gh workflow run "daily digest"` e conferir o deploy.
-5. (Opcional) Secret `DISCORD_WEBHOOK_URL` para receber o digest no Discord, como no sota-watch.
+## Pendente
+1. Testar no site, com a senha, um 👍 e uma pergunta na aba Pergunte. Se aparecer "armazenamento de feedback
+   não configurado" ou "IA não configurada", o binding do KV ou o secret `HF_TOKEN` no Pages não pegou
+   (ver passos "Feedback" e "Sync Pages secrets" no log do workflow).
+2. Apagar no dashboard da Cloudflare (Workers & Pages → people-analytics-watch → Deployments) os dois deploys
+   anteriores à senha, que continuam abertos: `7875faa1` e `9f0e5e61`.
+3. Opcional: 9ª vaga em 2023+ para o experimento de trabalho híbrido de Bloom et al. (Nature, 2024), que saiu
+   quando o Jagged Frontier voltou (`per_era_recent` em `src/pawatch/evolution.py`).
+4. Roadmap: Febraban Tech pelo YouTube (decidir: só vídeos novos ou também o acervo) e o tema risco de crédito.
 
 ## Observações
-- Na watchlist, os registros de Jia Hu e Ning Li no OpenAlex misturam homônimos de outras áreas. A triagem descarta os papers fora do tema, mas vale ficar de olho no ⭐ deles.
-- Barra atual: nota ≥7 e no máximo 12 por dia (`config/queries.json` → `selection`).
+- Prithwiraj Choudhury talvez tenha ido de HBS para a LSE em 2025 (watchlist ainda diz HBS).
+- Jia Hu e Ning Li têm homônimos misturados no OpenAlex; a triagem descarta o que é de outra área.
+- OpenAlex local: a cota anônima por IP acaba rápido; a chave fica em `~/.config/pawatch/openalex.env`
+  (lida automaticamente) ou no secret `OPENALEX_API_KEY` do GitHub.
