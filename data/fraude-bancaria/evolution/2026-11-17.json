@@ -2,19 +2,78 @@
  "generated": "2026-11-17",
  "month": "2026-11",
  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "mode": "incremental",
+ "changes": {
+  "since": "2026-11-17",
+  "added": [
+   {
+    "title": "Learning to detect phishing emails",
+    "year": 2007,
+    "era": "2000-2009"
+   },
+   {
+    "title": "Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques: A Guide to Data Science for Fraud Detection",
+    "year": 2015,
+    "era": "2010-2017"
+   },
+   {
+    "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+    "year": 2018,
+    "era": "2018-2022"
+   },
+   {
+    "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
+    "year": 2023,
+    "era": "2023+"
+   },
+   {
+    "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+    "year": 2025,
+    "era": "2023+"
+   },
+   {
+    "title": "Financial fraud detection using graph neural networks: A systematic review",
+    "year": 2023,
+    "era": "2023+"
+   }
+  ],
+  "removed": [
+   {
+    "title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
+    "year": 2021,
+    "era": "2018-2022"
+   },
+   {
+    "title": "Deepfake Attacks: Generation, Detection, Datasets, Challenges, and Research Directions",
+    "year": 2023,
+    "era": "2023+"
+   },
+   {
+    "title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
+    "year": 2025,
+    "era": "2023+"
+   },
+   {
+    "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
+    "year": 2025,
+    "era": "2023+"
+   }
+  ],
+  "note": "Entraram seis marcos: a detecção de e-mails de phishing por aprendizado de máquina (Fette, 2007), o guia de fraud analytics que levou técnicas de rede social para a prática (Baesens et al., 2015), o GEM do Alipay como primeiro GNN heterogêneo em produção (2018), o 'pig butchering' como evolução industrializada do golpe de relacionamento (Cross, 2023) e duas revisões sistemáticas recentes — GNNs para fraude financeira (2023) e analytics de rede para AML (2025). Saíram o Pick and Choose (2021), o FraudGNN-RL (2025) e os dois trabalhos de benchmark in-the-wild de deepfake (2023 e 2025), o que reduziu o peso de aprendizado por reforço e de avaliação in-the-wild no relato da fase atual."
+ },
  "stats": {
-  "network": 648,
-  "candidates": 147,
-  "triaged": 147,
-  "milestones": 34,
-  "openalex_calls": 40,
-  "openalex_cost": 0.0346,
+  "network": 931,
+  "candidates": 453,
+  "triaged": 403,
+  "milestones": 36,
+  "openalex_calls": 94,
+  "openalex_cost": 0.04,
   "tokens": {
-   "prompt_tokens": 27381,
-   "completion_tokens": 26991
+   "prompt_tokens": 79407,
+   "completion_tokens": 122763
   }
  },
- "overview": "O campo nasceu nos anos 1990 como um problema de mineração de dados sobre transações de cartão: classes extremamente desbalanceadas, custo assimétrico do erro e necessidade de rodar em volume industrial. A década de 2000 consolidou o vocabulário estatístico (Bolton & Hand, 2002) e abriu uma segunda frente, o phishing, quando o canal migrou para a web. Entre 2010 e 2017 a área virou engenharia: modelagem realista com concept drift, latência de verificação e engenharia de features passou a valer mais que a escolha do algoritmo. De 2018 em diante, grafos e aprendizado de representação assumiram o centro, e desde 2023 o alvo se ampliou para deepfakes e IA generativa, sob pressão simultânea por explicabilidade, privacidade e modelos de fundação treinados em dados transacionais.",
+ "overview": "O campo nasceu como mineração de dados sobre transações de cartão — classes extremamente desbalanceadas, custo assimétrico do erro e necessidade de rodar em volume industrial — e ganhou vocabulário estatístico comum com Bolton & Hand (2002). A migração para a web abriu uma segunda frente, o phishing, e entre 2010 e 2017 a área virou engenharia: drift de conceito, latência de verificação e engenharia de features passaram a valer mais que a escolha do algoritmo. De 2018 em diante, grafos e aprendizado de representação assumiram o centro, com camuflagem adversarial e escassez de rótulos como problemas centrais. Desde 2023, a agenda se amplia para deepfakes, identidades sintéticas, golpes de engenharia social industrializados e modelos de fundação treinados em dados transacionais, sob pressão simultânea por explicabilidade, privacidade e responsabilidade legal bem definida.",
  "eras": [
   {
    "key": "ate-1999",
@@ -35,7 +94,9 @@
      "url": "https://doi.org/10.1109/hicss.1994.323314",
      "theme": "cards",
      "score": 7,
-     "why": "Primeiro resultado forte de rede neural em dados reais de um emissor: detectou uma ordem de magnitude mais contas fraudulentas com 20x menos falsos positivos que procedimentos baseados em regras. Estabeleceu o argumento de que ML supera regra em fraude de cartão."
+     "why": "Primeiro resultado forte de rede neural em dados reais de um emissor: detectou uma ordem de magnitude mais contas fraudulentas com 20x menos falsos positivos que procedimentos baseados em regras. Estabeleceu o argumento de que ML supera regra em fraude de cartão.",
+     "id": "W2074346829",
+     "new": false
     },
     {
      "title": "Adaptive Fraud Detection",
@@ -50,7 +111,9 @@
      "url": "https://doi.org/10.1023/a:1009700419189",
      "theme": "fraud_analytics",
      "score": 8,
-     "why": "Fawcett e Provost formulam a detecção adaptativa, em que o detector reaprende conforme o fraudador se adapta. É a raiz direta do conceito de concept drift aplicado a fraude."
+     "why": "Fawcett e Provost formulam a detecção adaptativa, em que o detector reaprende conforme o fraudador se adapta. É a raiz direta do conceito de concept drift aplicado a fraude.",
+     "id": "W1517113043",
+     "new": false
     },
     {
      "title": "Neural fraud detection in credit card operations",
@@ -67,7 +130,9 @@
      "url": "https://doi.org/10.1109/72.595879",
      "theme": "cards",
      "score": 6,
-     "why": "Sistema online instalado em hub transacional, decidindo apenas com a operação corrente e seu histórico imediato, sem base histórica do portador. Antecipa o scoring em tempo real com restrição de latência e de dados."
+     "why": "Sistema online instalado em hub transacional, decidindo apenas com a operação corrente e seu histórico imediato, sem base histórica do portador. Antecipa o scoring em tempo real com restrição de latência e de dados.",
+     "id": "W2167374789",
+     "new": false
     },
     {
      "title": "Credit Card Fraud Detection Using Meta-Learning: Issues and Initial Results 1",
@@ -85,7 +150,9 @@
      "url": "https://openalex.org/W2405680064",
      "theme": "cards",
      "score": 6,
-     "why": "Stolfo, Fan e Lee argumentam que taxa de captura e taxa de falso alarme são métricas melhores que acurácia global. Virou o padrão de avaliação que a área usa até hoje."
+     "why": "Stolfo, Fan e Lee argumentam que taxa de captura e taxa de falso alarme são métricas melhores que acurácia global. Virou o padrão de avaliação que a área usa até hoje.",
+     "id": "W2405680064",
+     "new": false
     },
     {
      "title": "Toward scalable learning with non-uniform class and cost distributions: a case study in credit card fraud detection",
@@ -100,7 +167,9 @@
      "url": "https://openalex.org/W145450961",
      "theme": "cards",
      "score": 6,
-     "why": "Chan e Stolfo tratam distribuição de classes enviesada e custo por erro não uniforme com meta-aprendizado multi-classificador. Liga fraude ao problema geral de aprendizado sensível a custo."
+     "why": "Chan e Stolfo tratam distribuição de classes enviesada e custo por erro não uniforme com meta-aprendizado multi-classificador. Liga fraude ao problema geral de aprendizado sensível a custo.",
+     "id": "W145450961",
+     "new": false
     },
     {
      "title": "Distributed data mining in credit card fraud detection",
@@ -117,7 +186,9 @@
      "url": "https://doi.org/10.1109/5254.809570",
      "theme": "cards",
      "score": 6,
-     "why": "Mineração distribuída para volume massivo e e-commerce, com foco em escalabilidade e eficiência. Coloca a capacidade de processar dados em escala como requisito de primeira classe, não detalhe de implementação."
+     "why": "Mineração distribuída para volume massivo e e-commerce, com foco em escalabilidade e eficiência. Coloca a capacidade de processar dados em escala como requisito de primeira classe, não detalhe de implementação.",
+     "id": "W2160150610",
+     "new": false
     }
    ]
   },
@@ -125,9 +196,10 @@
    "key": "2000-2009",
    "label": "2000–2009",
    "title": "Estatística, phishing e agregação de transações",
-   "summary": "A década organizou o campo: revisões estatísticas deram vocabulário comum e reconheceram que o fraudador é adaptativo, o que torna a prevenção insuficiente por si só. Em paralelo, a migração para a web criou uma frente nova — phishing — e a pesquisa de usabilidade mostrou por que usuários caem. Do lado do cartão, o avanço concreto foi representar o histórico do portador por agregações, e não apenas a transação isolada. Ficou em aberto como calibrar probabilidades e custos em produção e como defender o usuário final, não só o banco.",
+   "summary": "A década organizou o campo: revisões estatísticas deram vocabulário comum e reconheceram que o fraudador é adaptativo, o que torna a prevenção insuficiente por si só. Em paralelo, a migração para a web criou uma frente nova — o phishing — e a pesquisa de usabilidade mostrou por que usuários caem, enquanto classificadores sobre o conteúdo do e-mail e do site (Fette, 2007; Cantina, 2007) transformaram a defesa em problema de aprendizado de máquina. Do lado do cartão, o avanço concreto foi representar o histórico do portador por agregações, e não apenas a transação isolada. Ficou em aberto como calibrar probabilidades e custos em produção e como defender o usuário final, não só o banco.",
    "milestones": [
     {
+     "id": "W265896103",
      "title": "Statistical Fraud Detection: A Review",
      "year": 2002,
      "venue": "Statistical Science",
@@ -136,13 +208,19 @@
       "David J. Hand"
      ],
      "cited_by": 2119,
-     "net": 32.5,
+     "net": 41.5,
      "url": "https://doi.org/10.1214/ss/1042727940",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "David J. Hand"
+     ],
      "score": 9,
-     "why": "Bolton e Hand fazem a revisão de referência em detecção estatística de fraude, cobrindo cartão, lavagem, telecom e e-commerce. Define o vocabulário e a agenda da área por mais de uma década."
+     "why": "Bolton e Hand fazem a revisão de referência em detecção estatística de fraude, cobrindo cartão, lavagem, telecom e e-commerce. Define o vocabulário e a agenda da área por mais de uma década.",
+     "new": false
     },
     {
+     "id": "W2585459224",
      "title": "Unsupervised Profiling Methods for Fraud Detection",
      "year": 2002,
      "venue": "",
@@ -151,13 +229,17 @@
       "David J. Hand"
      ],
      "cited_by": 385,
-     "net": 21.0,
+     "net": 22.5,
      "url": "https://openalex.org/W2585459224",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Profiling não supervisionado sobre dados longitudinais para fraude comportamental, separando-a de fraude de aplicação. É a base dos modelos de desvio de comportamento do portador."
+     "why": "Profiling não supervisionado sobre dados longitudinais para fraude comportamental, separando-a de fraude de aplicação. É a base dos modelos de desvio de comportamento do portador.",
+     "new": false
     },
     {
+     "id": "W3127599935",
      "title": "Credit Card Fraud Detection Using Bayesian and Neural Networks",
      "year": 2002,
      "venue": "VUBIR (Vrije Universiteit Brussel)",
@@ -168,13 +250,17 @@
       "Bernard Manderick"
      ],
      "cited_by": 447,
-     "net": 20.0,
+     "net": 21.5,
      "url": "https://openalex.org/W3127599935",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "Compara redes bayesianas e redes neurais em dados financeiros reais e aponta direções de melhoria. Traz probabilidade calibrada para a decisão de bloquear ou não."
+     "why": "Compara redes bayesianas e redes neurais em dados financeiros reais e aponta direções de melhoria. Traz probabilidade calibrada para a decisão de bloquear ou não.",
+     "new": false
     },
     {
+     "id": "W2105809068",
      "title": "Neural data mining for credit card fraud detection",
      "year": 2003,
      "venue": "IEEE International Conference on Tools with Artificial Intelligence (ICTAI)",
@@ -187,10 +273,14 @@
      "net": 18.5,
      "url": "https://doi.org/10.1109/tai.1999.809773",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "Brause e coautores mostram que, com uma fraude em mil transações, o alvo de qualidade é acima de 99,9%, e combinam data mining com rede neural para cobertura alta e falso alarme baixo. Formaliza o patamar de exigência operacional."
+     "why": "Brause e coautores mostram que, com uma fraude em mil transações, o alvo de qualidade é acima de 99,9%, e combinam data mining com rede neural para cobertura alta e falso alarme baixo. Formaliza o patamar de exigência operacional.",
+     "new": false
     },
     {
+     "id": "W2131906261",
      "title": "Why phishing works",
      "year": 2006,
      "venue": "CHI Conference on Human Factors in Computing Systems",
@@ -200,13 +290,17 @@
       "Marti A. Hearst"
      ],
      "cited_by": 1677,
-     "net": 16.5,
+     "net": 15.5,
      "url": "https://doi.org/10.1145/1124772.1124861",
      "theme": "scams",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Dhamija, Tygar e Hearst dão a primeira evidência empírica de por que o phishing funciona: 23% dos participantes nem olhavam indicadores de navegador. Redireciona a defesa de tecnologia para usabilidade."
+     "why": "Dhamija, Tygar e Hearst dão a primeira evidência empírica de por que o phishing funciona: 23% dos participantes nem olhavam indicadores de navegador. Redireciona a defesa de tecnologia para usabilidade.",
+     "new": false
     },
     {
+     "id": "W2139565456",
      "title": "Cantina: a content-based approach to detecting phishing web sites",
      "year": 2007,
      "venue": "International World Wide Web Conference (WWW)",
@@ -216,13 +310,17 @@
       "Lorrie Faith Cranor"
      ],
      "cited_by": 974,
-     "net": 11.0,
+     "net": 10.5,
      "url": "https://doi.org/10.1145/1242572.1242659",
      "theme": "scams",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Cantina detecta sites de phishing por conteúdo com TF-IDF e heurísticas, acertando cerca de 95%. Inaugura a defesa automatizada no lado do site, complementar à educação do usuário."
+     "why": "Cantina detecta sites de phishing por conteúdo com TF-IDF e heurísticas, acertando cerca de 95%. Inaugura a defesa automatizada no lado do site, complementar à educação do usuário.",
+     "new": false
     },
     {
+     "id": "W1966493433",
      "title": "Transaction aggregation as a strategy for credit card fraud detection",
      "year": 2008,
      "venue": "Data Mining and Knowledge Discovery",
@@ -234,11 +332,34 @@
       "Niall M. Adams"
      ],
      "cited_by": 455,
-     "net": 20.5,
+     "net": 28.0,
      "url": "https://doi.org/10.1007/s10618-008-0116-z",
      "theme": "cards",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "Whitrow e coautores mostram que agregar transações ao longo do tempo é uma estratégia eficaz de detecção. Consolida a ideia de que a representação do histórico importa mais que o classificador."
+     "why": "Whitrow e coautores mostram que agregar transações ao longo do tempo é uma estratégia eficaz de detecção. Consolida a ideia de que a representação do histórico importa mais que o classificador.",
+     "new": false
+    },
+    {
+     "id": "W2134750673",
+     "title": "Learning to detect phishing emails",
+     "year": 2007,
+     "venue": "International World Wide Web Conference (WWW)",
+     "authors": [
+      "Ian Fette",
+      "Norman Sadeh",
+      "Anthony Tomasic"
+     ],
+     "cited_by": 784,
+     "net": 12.5,
+     "url": "https://doi.org/10.1145/1242572.1242660",
+     "theme": "scams",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Fette, Sadeh e Tomasic aplicam aprendizado de máquina a um conjunto de features desenhado para capturar engano direcionado ao usuário, detectando e-mails de phishing com alta precisão. Fecha o ciclo aberto por Dhamija: a defesa deixa de depender só da educação do usuário e passa a ser classificador no lado do provedor.",
+     "new": true
     }
    ]
   },
@@ -246,9 +367,10 @@
    "key": "2010-2017",
    "label": "2010–2017",
    "title": "Realismo: drift, custo e features",
-   "summary": "A época resolveu o descasamento entre experimento acadêmico e sistema real: drift de conceito, desbalanceamento extremo e latência de verificação passaram a ser modelados explicitamente. O padrão que se firmou foi avaliação sensível a custo, com engenharia de features baseada em agregações temporais, e a constatação de que modelos simples bem alimentados competem com arquiteturas complexas. Ficou em aberto como lidar com rótulos atrasados e parciais e como integrar relações entre entidades, que a transação isolada não captura.",
+   "summary": "A época resolveu o descasamento entre experimento acadêmico e sistema real: drift de conceito, desbalanceamento extremo e latência de verificação passaram a ser modelados explicitamente. O padrão que se firmou foi avaliação sensível a custo, com engenharia de features baseada em agregações temporais, e a constatação de que modelos simples bem alimentados competem com arquiteturas complexas. A síntese prática chegou em livro (Baesens, Van Vlasselaer & Verbeke, 2015), que já incorporava técnicas de rede social e antecipava a virada para grafos. Ficou em aberto como lidar com rótulos atrasados e parciais e como integrar relações entre entidades, que a transação isolada não captura.",
    "milestones": [
     {
+     "id": "W2085766370",
      "title": "The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature",
      "year": 2010,
      "venue": "Decision Support Systems",
@@ -260,13 +382,17 @@
       "Xin Sun"
      ],
      "cited_by": 2089,
-     "net": 27.0,
+     "net": 30.0,
      "url": "https://doi.org/10.1016/j.dss.2010.08.006",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Ngai e coautores propõem um framework de classificação e revisam a literatura de mineração de dados em fraude financeira. Vira o mapa de referência para posicionar novos trabalhos."
+     "why": "Ngai e coautores propõem um framework de classificação e revisam a literatura de mineração de dados em fraude financeira. Vira o mapa de referência para posicionar novos trabalhos.",
+     "new": false
     },
     {
+     "id": "W2045049630",
      "title": "Data mining for credit card fraud: A comparative study",
      "year": 2010,
      "venue": "Decision Support Systems",
@@ -277,13 +403,17 @@
       "James Christopher Westland"
      ],
      "cited_by": 1532,
-     "net": 39.0,
+     "net": 46.5,
      "url": "https://doi.org/10.1016/j.dss.2010.08.008",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Estudo comparativo em dados reais de cartão de crédito. Consolida que métodos supervisionados relativamente simples são competitivos quando os dados são bem tratados."
+     "why": "Estudo comparativo em dados reais de cartão de crédito. Consolida que métodos supervisionados relativamente simples são competitivos quando os dados são bem tratados.",
+     "new": false
     },
     {
+     "id": "W2032435122",
      "title": "A cost-sensitive decision tree approach for fraud detection",
      "year": 2013,
      "venue": "Expert Systems with Applications",
@@ -296,10 +426,14 @@
      "net": 19.0,
      "url": "https://doi.org/10.1016/j.eswa.2013.05.021",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "Árvore de decisão sensível a custo para fraude. Operacionaliza o custo assimétrico do erro dentro do critério de escolha do modelo, não apenas na métrica final."
+     "why": "Árvore de decisão sensível a custo para fraude. Operacionaliza o custo assimétrico do erro dentro do critério de escolha do modelo, não apenas na métrica final.",
+     "new": false
     },
     {
+     "id": "W2088402748",
      "title": "Learned lessons in credit card fraud detection from a practitioner perspective",
      "year": 2014,
      "venue": "Expert Systems with Applications",
@@ -311,13 +445,21 @@
       "Gianluca Bontempi"
      ],
      "cited_by": 786,
-     "net": 20.0,
+     "net": 31.5,
      "url": "https://doi.org/10.1016/j.eswa.2014.02.026",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "Gianluca Bontempi",
+      "Andrea Dal Pozzolo",
+      "Yann‐Aël Le Borgne"
+     ],
      "score": 8,
-     "why": "Dal Pozzolo e coautores relatam lições de praticante sobre desbalanceamento, amostragem e avaliação fora do laboratório. Aproxima a pesquisa do que funciona em produção."
+     "why": "Dal Pozzolo e coautores relatam lições de praticante sobre desbalanceamento, amostragem e avaliação fora do laboratório. Aproxima a pesquisa do que funciona em produção.",
+     "new": false
     },
     {
+     "id": "W2230049528",
      "title": "Feature engineering strategies for credit card fraud detection",
      "year": 2016,
      "venue": "Expert Systems with Applications",
@@ -328,13 +470,17 @@
       "Björn Ottersten"
      ],
      "cited_by": 673,
-     "net": 16.5,
+     "net": 22.0,
      "url": "https://doi.org/10.1016/j.eswa.2015.12.030",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Bahnsen e coautores sistematizam engenharia de features com agregações periódicas e informação de custo. Mostra ganho relevante sem trocar o algoritmo."
+     "why": "Bahnsen e coautores sistematizam engenharia de features com agregações periódicas e informação de custo. Mostra ganho relevante sem trocar o algoritmo.",
+     "new": false
     },
     {
+     "id": "W2756359217",
      "title": "Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy",
      "year": 2017,
      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
@@ -346,13 +492,20 @@
       "Gianluca Bontempi"
      ],
      "cited_by": 1077,
-     "net": 15.0,
+     "net": 23.5,
      "url": "https://doi.org/10.1109/tnnls.2017.2736643",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "Gianluca Bontempi",
+      "Andrea Dal Pozzolo"
+     ],
      "score": 9,
-     "why": "Dal Pozzolo, Boracchi e Caelen propõem modelagem realista com drift, desbalanceamento e latência de verificação, além de nova estratégia de aprendizado. Vira o protocolo de avaliação realista da área."
+     "why": "Dal Pozzolo, Boracchi e Caelen propõem modelagem realista com drift, desbalanceamento e latência de verificação, além de nova estratégia de aprendizado. Vira o protocolo de avaliação realista da área.",
+     "new": false
     },
     {
+     "id": "W2172852798",
      "title": "Intelligent financial fraud detection: A comprehensive review",
      "year": 2015,
      "venue": "Computers & Security",
@@ -364,8 +517,33 @@
      "net": 15.5,
      "url": "https://doi.org/10.1016/j.cose.2015.09.005",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "West e Bhattacharya fazem revisão abrangente de detecção inteligente de fraude financeira, cobrindo técnicas e lacunas. Serve de balanço crítico do que a década produziu."
+     "why": "West e Bhattacharya fazem revisão abrangente de detecção inteligente de fraude financeira, cobrindo técnicas e lacunas. Serve de balanço crítico do que a década produziu.",
+     "new": false
+    },
+    {
+     "id": "W4238200010",
+     "title": "Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques: A Guide to Data Science for Fraud Detection",
+     "year": 2015,
+     "venue": "Wiley eBooks",
+     "authors": [
+      "Bart Baesens",
+      "Véronique Van Vlasselaer",
+      "Wouter Verbeke"
+     ],
+     "cited_by": 351,
+     "net": 6,
+     "url": "https://doi.org/10.1002/9781119146841",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "Véronique Van Vlasselaer"
+     ],
+     "score": 9,
+     "why": "Baesens, Van Vlasselaer e Verbeke publicam o primeiro guia completo de fraud analytics, cobrindo coleta, pré-processamento, modelagem e pós-implementação, com técnicas descritivas, preditivas e de rede social. É a ponte entre a era de features e a era de grafos, e vira referência de implementação para times de banco.",
+     "new": true
     }
    ]
   },
@@ -373,9 +551,10 @@
    "key": "2018-2022",
    "label": "2018–2022",
    "title": "Grafos, sequências e deepfakes",
-   "summary": "A época deslocou o foco da transação isolada para a estrutura: sequências de eventos do mesmo cartão e redes de relacionamento entre usuários, comerciantes e dispositivos. O padrão que emergiu foi GNN com tratamento explícito de camuflagem e desbalanceamento, combinado com aprendizado semi-supervisionado para o regime de poucos rótulos. Em paralelo, a manipulação facial sintética entrou na agenda com o primeiro benchmark padronizado. Ficou em aberto a robustez dos grafos sob ataque adversarial e a transferência dos detectores de deepfake para o mundo real.",
+   "summary": "A época deslocou o foco da transação isolada para a estrutura: sequências de eventos do mesmo cartão e redes de relacionamento entre usuários, comerciantes e dispositivos. O padrão que emergiu foi GNN com tratamento explícito de camuflagem e desbalanceamento, combinado com aprendizado semi-supervisionado para o regime de poucos rótulos — e, no caso do GEM no Alipay (2018), grafos heterogêneos de contas e dispositivos rodando em escala de produção. Em paralelo, a manipulação facial sintética entrou na agenda com o primeiro benchmark padronizado. Ficou em aberto a robustez dos grafos sob ataque adversarial e a transferência dos detectores de deepfake para o mundo real.",
    "milestones": [
     {
+     "id": "W2786577118",
      "title": "Sequence classification for credit-card fraud detection",
      "year": 2018,
      "venue": "Expert Systems with Applications",
@@ -389,31 +568,67 @@
       "Olivier Caelen"
      ],
      "cited_by": 803,
-     "net": 12.5,
+     "net": 18.5,
      "url": "https://doi.org/10.1016/j.eswa.2018.01.037",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "Jurgovsky e coautores tratam a fraude como classificação de sequências sobre o histórico do cartão, com LSTM. Traz dependência temporal explícita para dentro do modelo."
+     "why": "Jurgovsky e coautores tratam a fraude como classificação de sequências sobre o histórico do cartão, com LSTM. Traz dependência temporal explícita para dentro do modelo.",
+     "new": false
     },
     {
-     "title": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
-     "year": 2018,
-     "venue": "IEEE Access",
+     "id": "W3068123808",
+     "title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
+     "year": 2020,
+     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
      "authors": [
-      "Kuldeep Kaur Randhawa",
-      "Chu Kiong Loo",
-      "Manjeevan Seera",
-      "Chee Peng Lim",
-      "Asoke Kumar Nandi"
+      "Yingtong Dou",
+      "Zhiwei Liu",
+      "Li Sun",
+      "Yutong Deng",
+      "Hao Ming Peng",
+      "Philip S. Yu"
      ],
-     "cited_by": 660,
-     "net": 13.5,
-     "url": "https://doi.org/10.1109/access.2018.2806420",
+     "cited_by": 1044,
+     "net": 15.5,
+     "url": "https://doi.org/10.1145/3340531.3411903",
      "theme": "fraud_analytics",
-     "score": 6,
-     "why": "Randhawa e coautores aplicam AdaBoost e votação majoritária, testando robustez com ruído adicionado. Populariza ensembles em fraude de cartão com validação em dado real de instituição."
+     "versions": [],
+     "watch": [],
+     "score": 7,
+     "why": "CARE-GNN introduz camuflagem de atributos e de relações e propõe agregação que a contorna. Expõe a fragilidade dos GNNs ingênuos quando o fraudador imita vizinhos legítimos.",
+     "new": false
     },
     {
+     "id": "W2945876440",
+     "title": "Combining unsupervised and supervised learning in credit card fraud detection",
+     "year": 2019,
+     "venue": "Information Sciences",
+     "authors": [
+      "Fabrizio Carcillo",
+      "Yann‐Aël Le Borgne",
+      "Olivier Caelen",
+      "Yacine Kessaci",
+      "Frédéric Oblé",
+      "Gianluca Bontempi"
+     ],
+     "cited_by": 738,
+     "net": 15,
+     "url": "https://doi.org/10.1016/j.ins.2019.05.042",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "Gianluca Bontempi",
+      "Yann‐Aël Le Borgne",
+      "Frédéric Oblé"
+     ],
+     "score": 7,
+     "why": "Carcillo e coautores combinam aprendizado não supervisionado e supervisionado para conviver com rótulos escassos e atrasados. Endereça diretamente a latência de verificação.",
+     "new": false
+    },
+    {
+     "id": "W2912336782",
      "title": "FaceForensics++: Learning to Detect Manipulated Facial Images",
      "year": 2019,
      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
@@ -426,13 +641,39 @@
       "Matthias Nießner"
      ],
      "cited_by": 4824,
-     "net": 14.0,
+     "net": 11.5,
      "url": "https://doi.org/10.1109/iccv.2019.00009",
      "theme": "genai_deepfakes",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "FaceForensics++ cria benchmark automatizado para detecção de manipulação facial sobre DeepFakes, Face2Face, FaceSwap e NeuralTextures. É a base de comparação de toda a linha de detecção de deepfake."
+     "why": "FaceForensics++ cria benchmark automatizado para detecção de manipulação facial sobre DeepFakes, Face2Face, FaceSwap e NeuralTextures. É a base de comparação de toda a linha de detecção de deepfake.",
+     "new": false
     },
     {
+     "id": "W2785637175",
+     "title": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
+     "year": 2018,
+     "venue": "IEEE Access",
+     "authors": [
+      "Kuldeep Kaur Randhawa",
+      "Chu Kiong Loo",
+      "Manjeevan Seera",
+      "Chee Peng Lim",
+      "Asoke Kumar Nandi"
+     ],
+     "cited_by": 660,
+     "net": 13.0,
+     "url": "https://doi.org/10.1109/access.2018.2806420",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Randhawa e coautores aplicam AdaBoost e votação majoritária, testando robustez com ruído adicionado. Populariza ensembles em fraude de cartão com validação em dado real de instituição.",
+     "new": false
+    },
+    {
+     "id": "W3009901425",
      "title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
      "year": 2019,
      "venue": "Proceedings",
@@ -447,79 +688,48 @@
       "Jun Zhou"
      ],
      "cited_by": 650,
-     "net": 10.5,
+     "net": 12.5,
      "url": "https://doi.org/10.1109/icdm.2019.00070",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 6,
-     "why": "SemiGNN usa rede atenta em grafo com pouquíssimos nós rotulados, explorando interações multiview dos usuários. Mostra que relações, e não só atributos, separam fraudadores."
+     "why": "SemiGNN usa rede atenta em grafo com pouquíssimos nós rotulados, explorando interações multiview dos usuários. Mostra que relações, e não só atributos, separam fraudadores.",
+     "new": false
     },
     {
-     "title": "Combining unsupervised and supervised learning in credit card fraud detection",
-     "year": 2019,
-     "venue": "Information Sciences",
-     "authors": [
-      "Fabrizio Carcillo",
-      "Yann‐Aël Le Borgne",
-      "Olivier Caelen",
-      "Yacine Kessaci",
-      "Frédéric Oblé",
-      "Gianluca Bontempi"
-     ],
-     "cited_by": 738,
-     "net": 10,
-     "url": "https://doi.org/10.1016/j.ins.2019.05.042",
-     "theme": "fraud_analytics",
-     "score": 7,
-     "why": "Carcillo e coautores combinam aprendizado não supervisionado e supervisionado para conviver com rótulos escassos e atrasados. Endereça diretamente a latência de verificação."
-    },
-    {
-     "title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
-     "year": 2020,
+     "id": "W2897862648",
+     "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+     "year": 2018,
      "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
      "authors": [
-      "Yingtong Dou",
-      "Zhiwei Liu",
-      "Li Sun",
-      "Yutong Deng",
-      "Hao Ming Peng",
-      "Philip S. Yu"
+      "Ziqi Liu",
+      "Chaochao Chen",
+      "Xinxing Yang",
+      "Jun Zhou",
+      "Xiaolong Li",
+      "Le Song"
      ],
-     "cited_by": 1044,
+     "cited_by": 519,
      "net": 12.0,
-     "url": "https://doi.org/10.1145/3340531.3411903",
-     "theme": "fraud_analytics",
+     "url": "https://doi.org/10.1145/3269206.3272010",
+     "theme": "account_identity",
+     "versions": [],
+     "watch": [],
      "score": 7,
-     "why": "CARE-GNN introduz camuflagem de atributos e de relações e propõe agregação que a contorna. Expõe a fragilidade dos GNNs ingênuos quando o fraudador imita vizinhos legítimos."
-    },
-    {
-     "title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
-     "year": 2021,
-     "venue": "International World Wide Web Conference (WWW)",
-     "authors": [
-      "Yang Liu",
-      "Xiang Ao",
-      "Zidi Qin",
-      "Jianfeng Chi",
-      "Jinghua Feng",
-      "Hao Yang",
-      "Qing He"
-     ],
-     "cited_by": 751,
-     "net": 9,
-     "url": "https://doi.org/10.1145/3442381.3449989",
-     "theme": "fraud_analytics",
-     "score": 6,
-     "why": "PC-GNN faz amostragem balanceada de nós e arestas para treinar em mini-lotes em grafos com classes muito desbalanceadas. Resolve o encontro entre GNN e desbalanceamento extremo."
+     "why": "O GEM, do Alipay, é o primeiro GNN heterogêneo para detecção de contas maliciosas em escala de produção, aprendendo embeddings de grafos conta-dispositivo com atenção por tipo de nó. Explora duas fraquezas estruturais do atacante — agregação de dispositivos e de atividade — e prova que relações valem mais que atributos isolados.",
+     "new": true
     }
    ]
   },
   {
    "key": "2023+",
    "label": "2023 em diante",
-   "title": "Fundação, explicabilidade e IA generativa",
-   "summary": "A fase atual tem duas pressões simultâneas: a IA generativa amplia a superfície de ataque (deepfakes, identidades sintéticas) e, ao mesmo tempo, exige defesas que sejam explicáveis e compatíveis com privacidade. O padrão que se consolida é GNN adaptativo com aprendizado por reforço e amostragem dinâmica, avaliado em benchmarks in-the-wild em vez de datasets acadêmicos defasados. Ficou em aberto como governar responsabilidade e proteção ao consumidor em pagamentos instantâneos e como treinar modelos de fundação sobre dados transacionais sem violar sigilo.",
+   "title": "Grafos, golpes e explicabilidade",
+   "summary": "A fase atual tem duas pressões simultâneas: a IA generativa amplia a superfície de ataque (deepfakes, identidades sintéticas) e, ao mesmo tempo, exige defesas explicáveis e compatíveis com privacidade. O padrão que se consolida é GNN adaptativo, com amostragem e agregação dinâmicas (ASA-GNN, 2023) e explicabilidade e aprendizado federado tratados como requisitos de projeto (2024). A literatura amadureceu em revisões sistemáticas — GNNs para fraude financeira (2023, 2025) e analytics de rede para prevenção à lavagem de dinheiro (2025) —, enquanto o crime migrou para golpes de relacionamento convertidos em falso investimento em cripto, o 'pig butchering' (Cross, 2023). Ficou em aberto como governar responsabilidade e proteção ao consumidor em pagamentos instantâneos e como treinar modelos de fundação sobre dados transacionais sem violar sigilo.",
    "milestones": [
     {
+     "id": "W4388851105",
      "title": "Deepfake detection using deep learning methods: A systematic and comprehensive review",
      "year": 2023,
      "venue": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
@@ -533,27 +743,101 @@
      "net": 1,
      "url": "https://doi.org/10.1002/widm.1520",
      "theme": "genai_deepfakes",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Heidari e coautores fazem revisão sistemática e abrangente de detecção de deepfake por deep learning. Consolida taxonomia de geração e detecção e organiza a literatura dispersa."
+     "why": "Heidari e coautores fazem revisão sistemática e abrangente de detecção de deepfake por deep learning. Consolida taxonomia de geração e detecção e organiza a literatura dispersa.",
+     "new": false
     },
     {
-     "title": "Deepfake Attacks: Generation, Detection, Datasets, Challenges, and Research Directions",
-     "year": 2023,
-     "venue": "Computers",
+     "id": "W4404390753",
+     "title": "Graph neural networks for financial fraud detection: a review",
+     "year": 2025,
+     "venue": "Frontiers of Computer Science",
      "authors": [
-      "Amal Naitali",
-      "Mohammed Ridouani",
-      "Fatima Salahdine",
-      "Naima Kaabouch"
+      "Dawei Cheng",
+      "Yao Zou",
+      "Sheng Xiang",
+      "Changjun Jiang"
      ],
-     "cited_by": 166,
-     "net": 1,
-     "url": "https://doi.org/10.3390/computers12100216",
-     "theme": "genai_deepfakes",
-     "score": 6,
-     "why": "Naitali e coautores cobrem geração, detecção, datasets e desafios de deepfake, enquadrando-o como risco de fraude, desinformação e dano reputacional. Dá à área de fraude o mapa de ameaças."
+     "cited_by": 304,
+     "net": 3,
+     "url": "https://doi.org/10.1007/s11704-024-40474-y",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [
+      "Dawei Cheng",
+      "Changjun Jiang"
+     ],
+     "score": 7,
+     "why": "Cheng e coautores revisam GNNs para fraude financeira, organizando a produção da última década. Serve de referência de entrada para quem vai construir em grafo.",
+     "new": false
     },
     {
+     "id": "W4386416967",
+     "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
+     "year": 2023,
+     "venue": "Current Issues in Criminal Justice",
+     "authors": [
+      "Cassandra Cross"
+     ],
+     "cited_by": 66,
+     "net": 0,
+     "url": "https://doi.org/10.1080/10345329.2023.2248670",
+     "theme": "scams",
+     "versions": [],
+     "watch": [
+      "Cassandra Cross"
+     ],
+     "score": 8,
+     "why": "Cross documenta a convergência entre fraude de relacionamento e fraude de investimento: romance baiting, cryptorom e 'pig butchering' usam o vínculo afetivo como canal para falso investimento em cripto. Mostra que o golpe deixou de ser episódico e virou operação industrializada, com perdas de longo prazo para a vítima.",
+     "new": true
+    },
+    {
+     "id": "W4414960719",
+     "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+     "year": 2025,
+     "venue": "INFORMS Journal on Data Science",
+     "authors": [
+      "Bruno Deprez",
+      "Toon Vanderschueren",
+      "Bart Baesens",
+      "Tim Verdonck",
+      "Wouter Verbeke"
+     ],
+     "cited_by": 53,
+     "net": 0,
+     "url": "https://doi.org/10.1287/ijds.2024.0042",
+     "theme": "mules_aml",
+     "versions": [],
+     "watch": [
+      "Tim Verdonck"
+     ],
+     "score": 8,
+     "why": "Deprez, Vanderschueren e Baesens revisam 97 artigos e avaliam experimentalmente analytics de rede para AML, propondo taxonomia e comparando poder de detecção. Organiza um campo fragmentado e dá base para decidir quando informação de rede agrega sobre regras e modelos tabulares.",
+     "new": true
+    },
+    {
+     "id": "W4388099759",
+     "title": "Financial fraud detection using graph neural networks: A systematic review",
+     "year": 2023,
+     "venue": "Expert Systems with Applications",
+     "authors": [
+      "Soroor Motie",
+      "Bijan Raahemi"
+     ],
+     "cited_by": 387,
+     "net": 3,
+     "url": "https://doi.org/10.1016/j.eswa.2023.122156",
+     "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
+     "score": 7,
+     "why": "Motie e Raahemi fazem revisão sistemática de GNNs aplicados a fraude financeira, catalogando arquiteturas, datasets e métricas. Serve de porta de entrada e de checklist para quem vai construir detecção em grafo.",
+     "new": true
+    },
+    {
+     "id": "W4389633671",
      "title": "ASA-GNN: Adaptive Sampling and Aggregation-Based Graph Neural Network for Transaction Fraud Detection",
      "year": 2023,
      "venue": "IEEE Transactions on Computational Social Systems",
@@ -564,13 +848,17 @@
       "MengChu Zhou"
      ],
      "cited_by": 103,
-     "net": 2,
+     "net": 3,
      "url": "https://doi.org/10.1109/tcss.2023.3335485",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 6,
-     "why": "ASA-GNN usa amostragem e agregação adaptativas para fraude transacional, atacando o caso em que o criminoso imita o comportamento do portador. Reduz a dependência de engenharia manual de features."
+     "why": "ASA-GNN usa amostragem e agregação adaptativas para fraude transacional, atacando o caso em que o criminoso imita o comportamento do portador. Reduz a dependência de engenharia manual de features.",
+     "new": false
     },
     {
+     "id": "W4396215553",
      "title": "Transparency and Privacy: The Role of Explainable AI and Federated Learning in Financial Fraud Detection",
      "year": 2024,
      "venue": "IEEE Access",
@@ -583,75 +871,21 @@
      "net": 2,
      "url": "https://doi.org/10.1109/access.2024.3394528",
      "theme": "fraud_analytics",
+     "versions": [],
+     "watch": [],
      "score": 6,
-     "why": "Awosika e coautores combinam IA explicável e aprendizado federado para equilibrar transparência e privacidade sob desbalanceamento. Coloca explicabilidade e sigilo como requisitos de projeto, não adendos."
-    },
-    {
-     "title": "Graph neural networks for financial fraud detection: a review",
-     "year": 2025,
-     "venue": "Frontiers of Computer Science",
-     "authors": [
-      "Dawei Cheng",
-      "Yao Zou",
-      "Sheng Xiang",
-      "Changjun Jiang"
-     ],
-     "cited_by": 304,
-     "net": 2,
-     "url": "https://doi.org/10.1007/s11704-024-40474-y",
-     "theme": "fraud_analytics",
-     "score": 7,
-     "why": "Cheng e coautores revisam GNNs para fraude financeira, organizando a produção da última década. Serve de referência de entrada para quem vai construir em grafo."
-    },
-    {
-     "title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
-     "year": 2025,
-     "venue": "arXiv (Cornell University)",
-     "authors": [
-      "Chandra, Nuria Alina",
-      "Lee, Hannah",
-      "Ryan Murtfeldt",
-      "Qiu, Lin",
-      "Karmakar, Arnab",
-      "Emmanuel Tanumihardja",
-      "Kevin Farhat",
-      "Ben Caffee"
-     ],
-     "cited_by": 160,
-     "net": 1,
-     "url": "https://doi.org/10.48550/arxiv.2503.02857",
-     "theme": "genai_deepfakes",
-     "score": 6,
-     "why": "Deepfake-Eval-2024 reúne deepfakes in-the-wild de 2024 (45h de vídeo, 56,5h de áudio, 1.975 imagens) e mostra que benchmarks acadêmicos estão defasados. Redefine o critério de avaliação realista."
-    },
-    {
-     "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
-     "year": 2025,
-     "venue": "IEEE Open Journal of the Computer Society",
-     "authors": [
-      "Yiwen Cui",
-      "Xu Han",
-      "Jiaying Chen",
-      "Xinguang Zhang",
-      "Jingyun Yang",
-      "Xuguang Zhang"
-     ],
-     "cited_by": 133,
-     "net": 1,
-     "url": "https://doi.org/10.1109/ojcs.2025.3543450",
-     "theme": "fraud_analytics",
-     "score": 6,
-     "why": "FraudGNN-RL modela transações como grafo dinâmico e combina GNN com aprendizado por reforço via convolução temporal-espacial-semântica. Aponta para detecção adaptativa e sensível a contexto."
+     "why": "Awosika e coautores combinam IA explicável e aprendizado federado para equilibrar transparência e privacidade sob desbalanceamento. Coloca explicabilidade e sigilo como requisitos de projeto, não adendos.",
+     "new": false
     }
    ]
   }
  ],
  "now": {
-  "summary": "O campo está migrando de detectores por transação para modelos de fundação e sistemas adaptativos: o Large Payments Model, treinado do zero em dados transacionais estruturados com até 400 bilhões de tokens e autossupervisão ciente do ciclo de vida, é o sinal mais claro dessa virada. Ao mesmo tempo, a agenda regulatória e de governança ganhou peso: a Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e amplia o compartilhamento de dados por pessoas jurídicas, enquanto o debate sobre pagamentos instantâneos discute controle centralizado versus descentralizado de fraude e regras de responsabilização. A superfície de ataque também se deslocou para acesso persistente: o primeiro estudo holístico de ataques de acesso contínuo mapeou 11 rotas em serviços web e simulou ataques em 20 serviços populares, mostrando que remover o invasor é mais difícil que impedir a entrada. A pergunta que atravessa tudo é como conciliar modelos cada vez mais opacos com explicabilidade, privacidade e responsabilidade legal bem definida.",
+  "summary": "O campo está migrando de detectores por transação para modelos de fundação e sistemas adaptativos: o Large Payments Model, treinado do zero em dados transacionais estruturados com até 400 bilhões de tokens e autossupervisão ciente do ciclo de vida, é o sinal mais claro dessa virada. Ao mesmo tempo, a governança ganhou peso: a Resolução Conjunta BC/CMN 21/2026 refina contratos de parceria no Open Finance e amplia o compartilhamento de dados por pessoas jurídicas, e o debate sobre pagamentos instantâneos mostra que controle centralizado não implementa a alocação ótima de responsabilidade por excluir pagamentos pequenos via tarifas. A superfície de ataque também se deslocou para acesso persistente: o primeiro estudo holístico de ataques de acesso contínuo mapeou 11 rotas em serviços web e simulou ataques em 20 serviços populares, mostrando que remover o invasor é mais difícil que impedir a entrada. A pergunta que atravessa tudo é como conciliar modelos cada vez mais opacos com explicabilidade, privacidade e responsabilidade legal bem definida.",
   "open_questions": [
    "Quem responde pelo prejuízo em pagamento instantâneo: banco, PSP, recebedor ou consumidor?",
    "Modelos de fundação em dados transacionais superam GNNs especializados em produção, e a que custo de explicabilidade?",
-   "Como avaliar detecção de deepfake e identidade sintética com benchmarks in-the-wild que envelhecem em meses?",
+   "Como avaliar detecção de deepfake e identidade sintética com benchmarks que envelhecem em meses?",
    "Aprendizado federado entre instituições resolve privacidade sem destruir sinal de fraude entre bancos?",
    "Como detectar acesso persistente e camuflagem adversarial sem gerar falso alarme insuportável para o cliente?"
   ]
@@ -659,19 +893,15 @@
  "threads": [
   {
    "theme": "fraud_analytics",
-   "line": "Começa com detecção adaptativa e métricas de captura versus falso alarme (Fawcett & Provost, 1997), passa por revisões estatísticas que definem o vocabulário (Bolton & Hand, 2002) e por modelagem realista com drift e custo (Dal Pozzolo, 2017), e desemboca em grafos, aprendizado semi-supervisionado e modelos de fundação com explicabilidade e privacidade (2023+)."
-  },
-  {
-   "theme": "cards",
-   "line": "A linha mais antiga do campo: redes neurais superando regras em dados reais de emissor (Ghosh & Reilly, 1994), decisão online em hub transacional (Dorronsoro, 1997) e mineração distribuída para escala (Chan, 1999), até a constatação de que agregar transações no tempo é a feature decisiva (Whitrow, 2008)."
+   "line": "Começa com detecção adaptativa e métricas de captura versus falso alarme (Fawcett & Provost, 1997), passa por revisões estatísticas que definem o vocabulário (Bolton & Hand, 2002) e por modelagem realista com drift e custo (Dal Pozzolo, 2017), e desemboca em grafos, aprendizado semi-supervisionado, explicabilidade e privacidade (2023+) — agora com revisões sistemáticas (2023, 2025) e modelos de fundação transacionais no horizonte."
   },
   {
    "theme": "scams",
-   "line": "Nasce com a evidência empírica de que o phishing funciona porque o usuário ignora indicadores de navegador (Dhamija, 2006) e evolui para detecção automatizada por conteúdo, com TF-IDF e heurísticas acertando cerca de 95% dos sites (Cantina, 2007)."
+   "line": "Nasce com a evidência empírica de que o phishing funciona porque o usuário ignora indicadores de navegador (Dhamija, 2006), evolui para detecção automatizada por conteúdo de site (Cantina, 2007) e de e-mail (Fette, 2007) e, em 2023, chega ao golpe de relacionamento convertido em falso investimento em cripto, o 'pig butchering' (Cross)."
   },
   {
    "theme": "genai_deepfakes",
-   "line": "Abre com o primeiro benchmark padronizado de detecção de manipulação facial (FaceForensics++, 2019), amadurece em revisões sistemáticas de geração, detecção e datasets (2023) e chega à constatação de que benchmarks acadêmicos estão defasados diante de deepfakes in-the-wild (Deepfake-Eval-2024, 2025)."
+   "line": "Abre com o primeiro benchmark padronizado de detecção de manipulação facial (FaceForensics++, 2019) e amadurece em revisões sistemáticas que organizam taxonomia de geração, detecção e datasets (Heidari et al., 2023)."
   }
  ]
 }

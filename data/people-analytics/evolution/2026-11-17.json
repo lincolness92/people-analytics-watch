@@ -2,27 +2,102 @@
  "generated": "2026-11-17",
  "month": "2026-11",
  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "mode": "incremental",
+ "changes": {
+  "since": "2026-11-17",
+  "added": [
+   {
+    "title": "Human resources and sustained competitive advantage: a resource-based perspective",
+    "year": 1994,
+    "era": "ate-1999"
+   },
+   {
+    "title": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+    "year": 2003,
+    "era": "2000-2009"
+   },
+   {
+    "title": "Differences Between Tight and Loose Cultures: A 33-Nation Study",
+    "year": 2011,
+    "era": "2010-2017"
+   },
+   {
+    "title": "Robots and Jobs: Evidence from US Labor Markets",
+    "year": 2019,
+    "era": "2018-2022"
+   },
+   {
+    "title": "Hiring as Exploration",
+    "year": 2020,
+    "era": "2018-2022"
+   },
+   {
+    "title": "GPTs are GPTs: Labor market impact potential of LLMs",
+    "year": 2024,
+    "era": "2023+"
+   },
+   {
+    "title": "Generative AI at Work",
+    "year": 2023,
+    "era": "2023+"
+   },
+   {
+    "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+    "year": 2026,
+    "era": "2023+"
+   }
+  ],
+  "removed": [
+   {
+    "title": "Labour process theory and the gig economy",
+    "year": 2018,
+    "era": "2018-2022"
+   },
+   {
+    "title": "Working and organizing in the age of the learning algorithm",
+    "year": 2018,
+    "era": "2018-2022"
+   },
+   {
+    "title": "Worker and workplace Artificial Intelligence (AI) coexistence: Emerging themes and research agenda",
+    "year": 2023,
+    "era": "2023+"
+   },
+   {
+    "title": "The Impact of Artificial Intelligence on Workers’ Skills: Upskilling and Reskilling in Organisations",
+    "year": 2023,
+    "era": "2023+"
+   },
+   {
+    "title": "The Evolution of Work from Home",
+    "year": 2023,
+    "era": "2023+"
+   }
+  ],
+  "note": "Entraram oito marcos: Wright et al. (1994) nas fundações, Bertrand & Mullainathan (2003) em 2000–2009, Gelfand et al. (2011) em 2010–2017, Acemoğlu & Restrepo (2019) e Li et al. (2020) em 2018–2022, e Brynjolfsson et al. (2023), Eloundou et al. (2024) e Dell'Acqua et al. (2026) em 2023+. Saíram cinco trabalhos de gig economy e IA (labour process theory, learning algorithm, coexistência, upskilling e trabalho remoto), o que estreitou a época 2023+ para evidência causal de produtividade e exposição por tarefa. Títulos e resumos das épocas foram ajustados só para absorver essas entradas e a nova frente de seleção e cultura."
+ },
  "stats": {
-  "network": 732,
-  "candidates": 150,
-  "triaged": 150,
-  "milestones": 35,
-  "openalex_calls": 38,
-  "openalex_cost": 0.0326,
+  "network": 1370,
+  "candidates": 772,
+  "triaged": 740,
+  "milestones": 38,
+  "openalex_calls": 150,
+  "openalex_cost": 0.0438,
   "tokens": {
-   "prompt_tokens": 52339,
-   "completion_tokens": 71845
+   "prompt_tokens": 172258,
+   "completion_tokens": 211267
   }
  },
- "overview": "O campo nasce da pergunta se práticas de RH e atitudes dos trabalhadores afetam desempenho, com raízes na visão baseada em recursos (Barney, 1991), no RH estratégico (Huselid, 1995) e na psicologia do trabalho (Hackman & Oldham, 1976; Kahn, 1990). Entre 2000 e 2017, engajamento e burnout viram medidas padronizadas e o HR analytics se profissionaliza, mas já sob crítica de fad e baixa capacidade analítica. De 2018 em diante, algoritmos, gig economy e IA generativa deslocam o debate para controle, produtividade, viés e governança. Hoje people analytics tenta unir inferência causal, auditoria de fairness e desenho de trabalho em ambientes humano-IA.",
+ "overview": "O campo nasce da pergunta se práticas de RH e atitudes dos trabalhadores afetam desempenho, com raízes na visão baseada em recursos (Barney, 1991), na sua transposição para pessoas (Wright et al., 1994) e na psicologia do trabalho (Hackman & Oldham, 1976; Kahn, 1990). Entre 2000 e 2017, engajamento e burnout viram medidas padronizadas, a discriminação na triagem é demonstrada experimentalmente (Bertrand & Mullainathan, 2003) e o HR analytics se profissionaliza, já sob crítica de fad e baixa capacidade analítica. De 2018 em diante, algoritmos, robôs, gig economy e IA generativa deslocam o debate para controle, produtividade, viés e governança, com estimativas causais substituindo exercícios de suscetibilidade. Hoje people analytics tenta unir inferência causal, auditoria contínua de fairness, desenho de trabalho e governança em ambientes humano-IA — sabendo que o efeito da IA é irregular dentro do mesmo fluxo de trabalho.",
  "eras": [
   {
    "key": "ate-1999",
    "label": "até 1999",
    "title": "Fundações do RH estratégico",
-   "summary": "A época resolveu duas lacunas: provar que sistemas de RH, e não só práticas isoladas, se conectam a turnover, produtividade e desempenho financeiro, e criar medidas confiáveis de vínculo e motivação. A RBV (Barney, 1991) e os feixes de RH (MacDuffie, 1995; Huselid, 1995) viraram padrão para tratar pessoas como recurso estratégico; Hackman & Oldham (1976), Kahn (1990) e Allen & Meyer (1990) deram base psicométrica a engajamento e comprometimento. Ficou em aberto a causalidade e o mecanismo: por que e quando os feixes funcionam, e como medir engajamento sem confundir atitude com resultado.",
+   "summary": "A época resolveu duas lacunas: provar que sistemas de RH, e não só práticas isoladas, se conectam a turnover, produtividade e desempenho financeiro, e criar medidas confiáveis de vínculo e motivação. A RBV (Barney, 1991), sua transposição para capital humano (Wright et al., 1994) e os feixes de RH (MacDuffie, 1995; Huselid, 1995) viraram padrão para tratar pessoas como recurso estratégico; Hackman & Oldham (1976), Kahn (1990) e Allen & Meyer (1990) deram base psicométrica a engajamento e comprometimento. Delery & Doty (1996) organizaram os modos de teorizar em SHRM. Ficou em aberto a causalidade e o mecanismo: por que e quando os feixes funcionam, e como medir engajamento sem confundir atitude com resultado.",
    "milestones": [
     {
+     "id": "W2042623444",
      "title": "Motivation through the design of work: test of a theory",
      "year": 1976,
      "venue": "Organizational Behavior and Human Performance",
@@ -31,13 +106,17 @@
       "Greg R. Oldham"
      ],
      "cited_by": 12928,
-     "net": 11.0,
+     "net": 26.5,
      "url": "https://doi.org/10.1016/0030-5073(76)90016-7",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Modelo de características do trabalho: cinco dimensões centrais geram estados psicológicos e resultados como motivação e satisfação. É a base do desenho de trabalho que hoje sustenta engajamento e produtividade."
+     "why": "Modelo de características do trabalho: cinco dimensões centrais geram estados psicológicos e resultados como motivação e satisfação. É a base do desenho de trabalho que hoje sustenta engajamento e produtividade.",
+     "new": false
     },
     {
+     "id": "W2132199097",
      "title": "PSYCHOLOGICAL CONDITIONS OF PERSONAL ENGAGEMENT AND DISENGAGEMENT AT WORK.",
      "year": 1990,
      "venue": "Academy of Management Journal",
@@ -45,13 +124,17 @@
       "William A. Kahn"
      ],
      "cited_by": 16961,
-     "net": 13.5,
+     "net": 23,
      "url": "https://doi.org/10.5465/256287",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 10,
-     "why": "Define engajamento pessoal como uso físico, cognitivo e emocional do self no trabalho. Funda a linha que trata engajamento como experiência multidimensional, não como satisfação genérica."
+     "why": "Define engajamento pessoal como uso físico, cognitivo e emocional do self no trabalho. Funda a linha que trata engajamento como experiência multidimensional, não como satisfação genérica.",
+     "new": false
     },
     {
+     "id": "W2158517811",
      "title": "The measurement and antecedents of affective, continuance and normative commitment to the organization",
      "year": 1990,
      "venue": "Journal of Occupational Psychology",
@@ -63,24 +146,34 @@
      "net": 11.5,
      "url": "https://doi.org/10.1111/j.2044-8325.1990.tb00506.x",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Propõe comprometimento afetivo, de continuidade e normativo, com escalas que viraram padrão. Permite separar apego emocional de custo de saída e obrigação moral, algo central em retenção."
+     "why": "Propõe comprometimento afetivo, de continuidade e normativo, com escalas que viraram padrão. Permite separar apego emocional de custo de saída e obrigação moral, algo central em retenção.",
+     "new": false
     },
     {
+     "id": "W3124536214",
      "title": "Firm Resources and Sustained Competitive Advantage",
      "year": 1991,
      "venue": "Journal of Management",
      "authors": [
       "Jay Bryan Barney"
      ],
-     "cited_by": 77715,
-     "net": 29.0,
+     "cited_by": 115916,
+     "net": 89.5,
      "url": "https://doi.org/10.1177/014920639101700108",
      "theme": "analytics",
+     "versions": [
+      "https://doi.org/10.1016/s0742-3322(00)17018-4"
+     ],
+     "watch": [],
      "score": 8,
-     "why": "Formula a visão baseada em recursos: recursos valiosos, raros, inimitáveis e insubstituíveis geram vantagem sustentável. Dá licença teórica para tratar capital humano e capacidades de RH como fonte de vantagem."
+     "why": "Formula a visão baseada em recursos: recursos valiosos, raros, inimitáveis e insubstituíveis geram vantagem sustentável. Dá licença teórica para tratar capital humano e capacidades de RH como fonte de vantagem.",
+     "new": false
     },
     {
+     "id": "W3122125999",
      "title": "THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON TURNOVER, PRODUCTIVITY, AND CORPORATE FINANCIAL PERFORMANCE.",
      "year": 1995,
      "venue": "Academy of Management Journal",
@@ -88,13 +181,17 @@
       "Mark A. Huselid"
      ],
      "cited_by": 12222,
-     "net": 28.0,
+     "net": 65.5,
      "url": "https://doi.org/10.5465/256741",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 10,
-     "why": "Mostra, com quase mil firmas, que high performance work practices afetam turnover, produtividade e desempenho financeiro. É o estudo canônico que legitimou investir em sistemas de RH e antecipou a lógica de people analytics."
+     "why": "Mostra, com quase mil firmas, que high performance work practices afetam turnover, produtividade e desempenho financeiro. É o estudo canônico que legitimou investir em sistemas de RH e antecipou a lógica de people analytics.",
+     "new": false
     },
     {
+     "id": "W2110162191",
      "title": "Human Resource Bundles and Manufacturing Performance: Organizational Logic and Flexible Production Systems in the World Auto Industry",
      "year": 1995,
      "venue": "Industrial and Labor Relations Review",
@@ -105,10 +202,14 @@
      "net": 21.0,
      "url": "https://doi.org/10.1177/001979399504800201",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Demonstra que feixes de práticas de RH, e não práticas isoladas, explicam desempenho na indústria automotiva. Consolida a ideia de complementaridade entre práticas, base para modelos de bundles."
+     "why": "Demonstra que feixes de práticas de RH, e não práticas isoladas, explicam desempenho na indústria automotiva. Consolida a ideia de complementaridade entre práticas, base para modelos de bundles.",
+     "new": false
     },
     {
+     "id": "W1981724520",
      "title": "MODES OF THEORIZING IN STRATEGIC HUMAN RESOURCE MANAGEMENT: TESTS OF UNIVERSALISTIC, CONTINGENCY, AND CONFIGURATIONS. PERFORMANCE PREDICTIONS.",
      "year": 1996,
      "venue": "Academy of Management Journal",
@@ -120,18 +221,44 @@
      "net": 15.5,
      "url": "https://doi.org/10.5465/256713",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Organiza a literatura de SHRM em modos universalista, contingencial e configuracional. Dá vocabulário teórico para testar quando práticas de RH predizem desempenho, algo que analytics precisa até hoje."
+     "why": "Organiza a literatura de SHRM em modos universalista, contingencial e configuracional. Dá vocabulário teórico para testar quando práticas de RH predizem desempenho, algo que analytics precisa até hoje.",
+     "new": false
+    },
+    {
+     "id": "W1980090258",
+     "title": "Human resources and sustained competitive advantage: a resource-based perspective",
+     "year": 1994,
+     "venue": "The International Journal of Human Resource Management",
+     "authors": [
+      "Patrick M. Wright",
+      "Gary C. McMahan",
+      "Abagail McWilliams"
+     ],
+     "cited_by": 2769,
+     "net": 19.0,
+     "url": "https://doi.org/10.1080/09585199400000020",
+     "theme": "leadership",
+     "versions": [],
+     "watch": [
+      "Patrick M. Wright"
+     ],
+     "score": 9,
+     "why": "Leva a RBV para dentro do RH: recursos humanos só geram vantagem sustentável se forem valiosos, raros, inimitáveis e insubstituíveis, o que exige práticas que os desenvolvam. É a ponte teórica entre estratégia e gestão de pessoas que sustenta a tese central de people analytics.",
+     "new": true
     }
    ]
   },
   {
    "key": "2000-2009",
    "label": "2000–2009",
-   "title": "Engajamento vira métrica de negócio",
-   "summary": "A época transformou engajamento e burnout de conceitos em constructos mensuráveis e conectados a resultados de negócio. O modelo JD-R (Demerouti et al., 2001; Schaufeli & Bakker, 2004) e a UWES (Schaufeli et al., 2002) viraram padrão; Harter et al. (2002) mostraram relação em nível de unidade de negócio com satisfação, lucro e turnover. Talent management ganha definição estratégica (Collings & Mellahi, 2009), mas ficam em aberto a direção causal, a proliferação de definições de engajamento e a segmentação de talentos.",
+   "title": "Engajamento mensurável e viés na seleção",
+   "summary": "A época transformou engajamento e burnout de conceitos em constructos mensuráveis e conectados a resultados de negócio. O modelo JD-R (Demerouti et al., 2001; Schaufeli & Bakker, 2004) e a UWES (Schaufeli et al., 2002) viraram padrão; Harter et al. (2002) mostraram relação em nível de unidade de negócio com satisfação, lucro e turnover, e Wrzesniewski & Dutton (2001) deslocaram o trabalhador para agente que redesenha o próprio trabalho. Talent management ganha definição estratégica (Collings & Mellahi, 2009), enquanto Bertrand & Mullainathan (2003) expõem discriminação racial na triagem de currículos e abrem a linha de auditoria de seleção. Ficam em aberto a direção causal, a proliferação de definições de engajamento e a segmentação de talentos.",
    "milestones": [
     {
+     "id": "W2127625785",
      "title": "The job demands-resources model of burnout.",
      "year": 2001,
      "venue": "Journal of Applied Psychology",
@@ -142,13 +269,17 @@
       "Wilmar Bernardus Schaufeli"
      ],
      "cited_by": 19539,
-     "net": 26.0,
+     "net": 25.5,
      "url": "https://doi.org/10.1037/0021-9010.86.3.499",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Introduz o modelo job demands-resources: demandas levam à exaustão, falta de recursos ao desengajamento. Estrutura a pesquisa de burnout e engajamento em duas vias, ainda usada em surveys de risco psicossocial."
+     "why": "Introduz o modelo job demands-resources: demandas levam à exaustão, falta de recursos ao desengajamento. Estrutura a pesquisa de burnout e engajamento em duas vias, ainda usada em surveys de risco psicossocial.",
+     "new": false
     },
     {
+     "id": "W4213284804",
      "title": "Job Burnout",
      "year": 2001,
      "venue": "Annual Review of Psychology",
@@ -158,13 +289,17 @@
       "Michael P. Leiter"
      ],
      "cited_by": 22738,
-     "net": 14.5,
+     "net": 17,
      "url": "https://doi.org/10.1146/annurev.psych.52.1.397",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Revisa burnout como resposta prolongada com exaustão, cinismo e ineficácia. Consolida o burnout como fenômeno organizacional e aponta engajamento como antítese positiva."
+     "why": "Revisa burnout como resposta prolongada com exaustão, cinismo e ineficácia. Consolida o burnout como fenômeno organizacional e aponta engajamento como antítese positiva.",
+     "new": false
     },
     {
+     "id": "W2113953571",
      "title": "Crafting a Job: Revisioning Employees as Active Crafters of Their Work",
      "year": 2001,
      "venue": "Academy of Management Review",
@@ -173,13 +308,17 @@
       "Jane E. Dutton"
      ],
      "cited_by": 6570,
-     "net": 11,
+     "net": 21,
      "url": "https://doi.org/10.5465/amr.2001.4378011",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Propõe job crafting: funcionários alteram tarefas, relações e cognições para moldar o trabalho. Desloca a visão do trabalhador passivo para agente ativo, influenciando práticas de autonomia e redesenho."
+     "why": "Propõe job crafting: funcionários alteram tarefas, relações e cognições para moldar o trabalho. Desloca a visão do trabalhador passivo para agente ativo, influenciando práticas de autonomia e redesenho.",
+     "new": false
     },
     {
+     "id": "W1902610065",
      "title": "The Measurement of Engagement and Burnout: A Two Sample Confirmatory Factor Analytic Approach",
      "year": 2002,
      "venue": "Journal of Happiness Studies",
@@ -193,10 +332,14 @@
      "net": 14.5,
      "url": "https://doi.org/10.1023/a:1015630930326",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Desenvolve e valida a UWES, medida de engajamento com vigor, dedicação e absorção. Torna engajamento comparável entre organizações e populações, base de muitos indicadores de people analytics."
+     "why": "Desenvolve e valida a UWES, medida de engajamento com vigor, dedicação e absorção. Torna engajamento comparável entre organizações e populações, base de muitos indicadores de people analytics.",
+     "new": false
     },
     {
+     "id": "W2005673510",
      "title": "Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis.",
      "year": 2002,
      "venue": "Journal of Applied Psychology",
@@ -206,13 +349,17 @@
       "Theodore L. Hayes"
      ],
      "cited_by": 7579,
-     "net": 13.5,
+     "net": 15.5,
      "url": "https://doi.org/10.1037/0021-9010.87.2.268",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Meta-análise com 7.939 unidades de negócio liga satisfação-engajamento a satisfação do cliente, produtividade, lucro, turnover e acidentes. É a evidência que levou engajamento para a agenda de negócios."
+     "why": "Meta-análise com 7.939 unidades de negócio liga satisfação-engajamento a satisfação do cliente, produtividade, lucro, turnover e acidentes. É a evidência que levou engajamento para a agenda de negócios.",
+     "new": false
     },
     {
+     "id": "W2153610778",
      "title": "Job demands, job resources, and their relationship with burnout and engagement: a multi‐sample study",
      "year": 2004,
      "venue": "Journal of Organizational Behavior",
@@ -221,13 +368,17 @@
       "Arnold B. Bakker"
      ],
      "cited_by": 13994,
-     "net": 20.5,
+     "net": 18,
      "url": "https://doi.org/10.1002/job.248",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Em quatro amostras ocupacionais, mostra que burnout é previsto por demandas e engajamento por recursos. Separa preditores e consequências, refinando o JD-R."
+     "why": "Em quatro amostras ocupacionais, mostra que burnout é previsto por demandas e engajamento por recursos. Separa preditores e consequências, refinando o JD-R.",
+     "new": false
     },
     {
+     "id": "W2135296668",
      "title": "Strategic talent management: A review and research agenda",
      "year": 2009,
      "venue": "Human Resource Management Review",
@@ -239,18 +390,45 @@
      "net": 13.5,
      "url": "https://doi.org/10.1016/j.hrmr.2009.04.001",
      "theme": "pay_careers",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Define talent management estratégico e propõe modelo teórico com foco em posições-chave e fluxo de talentos. Dá contorno conceitual a uma área que até então era difusa."
+     "why": "Define talent management estratégico e propõe modelo teórico com foco em posições-chave e fluxo de talentos. Dá contorno conceitual a uma área que até então era difusa.",
+     "new": false
+    },
+    {
+     "id": "W3123223998",
+     "title": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+     "year": 2003,
+     "venue": "American Economic Review",
+     "authors": [
+      "Marianne Bertrand",
+      "Sendhil Mullainathan"
+     ],
+     "cited_by": 7273,
+     "net": 12,
+     "url": "https://doi.org/10.1257/0002828042002561",
+     "theme": "hiring",
+     "versions": [
+      "https://doi.org/10.3386/w9873"
+     ],
+     "watch": [
+      "Marianne Bertrand"
+     ],
+     "score": 10,
+     "why": "Experimento de campo com currículos fictícios mostra que nomes tipicamente afro-americanos recebem cerca de 50% menos retornos de entrevista, e que currículo melhor ajuda muito menos esse grupo. Funda a auditoria experimental de discriminação em seleção, base dos testes de viés em triagem humana e algorítmica.",
+     "new": true
     }
    ]
   },
   {
    "key": "2010-2017",
    "label": "2010–2017",
-   "title": "Analytics de RH e automação",
-   "summary": "A época profissionaliza o HR analytics como campo, com revisões de evidência, modelos de complementaridade e críticas de que seria fad. Davenport et al. (2010) popularizam talent analytics; Aral et al. (2012) mostram complementaridade entre TI, pay-for-performance e analytics; Marler & Boudreau (2016) e Angrave et al. (2016) delimitam promessas e limites. Em paralelo, Frey & Osborne (2016) colocam automação e futuro do emprego no radar, enquanto o JD-R amadurece como teoria (Bakker & Demerouti, 2016).",
+   "title": "Analytics de RH, automação e cultura",
+   "summary": "A época profissionaliza o HR analytics como campo, com revisões de evidência, modelos de complementaridade e críticas de que seria fad. Davenport et al. (2010) popularizam talent analytics; Aral et al. (2012) mostram complementaridade entre TI, pay-for-performance e analytics; Marler & Boudreau (2016) e Angrave et al. (2016) delimitam promessas e limites. Em paralelo, Frey & Osborne (2016) colocam automação e futuro do emprego no radar, o JD-R amadurece como teoria (Bakker & Demerouti, 2016) e Gelfand et al. (2011) mostram que rigidez de normas varia entre culturas, lembrando que práticas de gestão não viajam iguais. Ficam em aberto a capacidade analítica real das áreas de RH e a qualidade dos dados.",
    "milestones": [
     {
+     "id": "W2409812992",
      "title": "Competing on talent analytics.",
      "year": 2010,
      "venue": "PubMed",
@@ -263,10 +441,14 @@
      "net": 7.5,
      "url": "https://openalex.org/W2409812992",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Apresenta seis formas de usar dados de pessoas, de métricas básicas a modelos preditivos, em empresas como Google e P&G. Populariza talent analytics para executivos e vira referência prática do campo."
+     "why": "Apresenta seis formas de usar dados de pessoas, de métricas básicas a modelos preditivos, em empresas como Google e P&G. Populariza talent analytics para executivos e vira referência prática do campo.",
+     "new": false
     },
     {
+     "id": "W2132062278",
      "title": "Three-Way Complementarities: Performance Pay, Human Resource Analytics, and Information Technology",
      "year": 2012,
      "venue": "Management Science",
@@ -279,10 +461,14 @@
      "net": 12,
      "url": "https://doi.org/10.1287/mnsc.1110.1460",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Testa complementaridades de três vias entre TI, remuneração por desempenho e HR analytics. Mostra que analytics gera prêmio de produtividade quando combinado com incentivos e infraestrutura, não isolado."
+     "why": "Testa complementaridades de três vias entre TI, remuneração por desempenho e HR analytics. Mostra que analytics gera prêmio de produtividade quando combinado com incentivos e infraestrutura, não isolado.",
+     "new": false
     },
     {
+     "id": "W397107425",
      "title": "Learning from practice: how HR analytics avoids being a management fad",
      "year": 2015,
      "venue": "Organizational Dynamics",
@@ -294,10 +480,14 @@
      "net": 14.5,
      "url": "https://doi.org/10.1016/j.orgdyn.2015.05.008",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Alerta que HR analytics vira moda se ficar inside-out e centrado em CoE distante do negócio. Propõe abordagem outside-in, acionável e de alto impacto, pauta ainda atual."
+     "why": "Alerta que HR analytics vira moda se ficar inside-out e centrado em CoE distante do negócio. Propõe abordagem outside-in, acionável e de alto impacto, pauta ainda atual.",
+     "new": false
     },
     {
+     "id": "W2554886781",
      "title": "An evidence-based review of HR Analytics",
      "year": 2016,
      "venue": "The International Journal of Human Resource Management",
@@ -306,13 +496,19 @@
       "John W. Boudreau"
      ],
      "cited_by": 1819,
-     "net": 16,
+     "net": 17,
      "url": "https://doi.org/10.1080/09585192.2016.1244699",
      "theme": "analytics",
+     "versions": [],
+     "watch": [
+      "John W. Boudreau"
+     ],
      "score": 9,
-     "why": "Revisão baseada em evidência de 60 artigos define HR analytics, processos, teorias, resultados e requisitos. Organiza o campo e explicita a escassez de estudos em periódicos de qualidade."
+     "why": "Revisão baseada em evidência de 60 artigos define HR analytics, processos, teorias, resultados e requisitos. Organiza o campo e explicita a escassez de estudos em periódicos de qualidade.",
+     "new": false
     },
     {
+     "id": "W2222612072",
      "title": "HR and analytics: why HR is set to fail the big data challenge",
      "year": 2016,
      "venue": "Human Resource Management Journal",
@@ -324,13 +520,17 @@
       "Mark Stuart"
      ],
      "cited_by": 978,
-     "net": 16.0,
+     "net": 19.5,
      "url": "https://doi.org/10.1111/1748-8583.12090",
      "theme": "analytics",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Critica o otimismo com big data em RH e argumenta que a profissão pode falhar sem métodos e capacidade analítica. Antecipa debates sobre exclusão estratégica e qualidade de dados."
+     "why": "Critica o otimismo com big data em RH e argumenta que a profissão pode falhar sem métodos e capacidade analítica. Antecipa debates sobre exclusão estratégica e qualidade de dados.",
+     "new": false
     },
     {
+     "id": "W2526781987",
      "title": "The future of employment: How susceptible are jobs to computerisation?",
      "year": 2016,
      "venue": "Technological Forecasting and Social Change",
@@ -339,13 +539,17 @@
       "Michael A. Osborne"
      ],
      "cited_by": 12112,
-     "net": 11.0,
+     "net": 13.5,
      "url": "https://doi.org/10.1016/j.techfore.2016.08.019",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Estima suscetibilidade de ocupações à computerização e dispara o debate sobre desemprego tecnológico. Ainda é citado em análises de automação e requalificação."
+     "why": "Estima suscetibilidade de ocupações à computerização e dispara o debate sobre desemprego tecnológico. Ainda é citado em análises de automação e requalificação.",
+     "new": false
     },
     {
+     "id": "W2530409471",
      "title": "Job demands–resources theory: Taking stock and looking forward.",
      "year": 2016,
      "venue": "Journal of Occupational Health Psychology",
@@ -354,21 +558,97 @@
       "Evangelia Demerouti"
      ],
      "cited_by": 11426,
-     "net": 10,
+     "net": 12,
      "url": "https://doi.org/10.1037/ocp0000056",
      "theme": "engagement",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Consolida o JD-R como teoria, com recursos amortecendo demandas e agenda futura. Fecha a maturação do modelo que virou padrão em pesquisa de bem-estar e engajamento."
+     "why": "Consolida o JD-R como teoria, com recursos amortecendo demandas e agenda futura. Fecha a maturação do modelo que virou padrão em pesquisa de bem-estar e engajamento.",
+     "new": false
+    },
+    {
+     "id": "W2161411308",
+     "title": "Differences Between Tight and Loose Cultures: A 33-Nation Study",
+     "year": 2011,
+     "venue": "Science",
+     "authors": [
+      "Michele Joy Gelfand",
+      "Jana L. Raver",
+      "Lisa H. Nishii",
+      "Lisa Michelle Leslie",
+      "Janetta Lun",
+      "Beng Chong Lim",
+      "Lili Duan",
+      "Assaf Almaliach"
+     ],
+     "cited_by": 3779,
+     "net": 1,
+     "url": "https://doi.org/10.1126/science.1197754",
+     "theme": "leadership",
+     "versions": [],
+     "watch": [
+      "Soon Ang"
+     ],
+     "score": 10,
+     "why": "Com dados de 33 países, mostra que culturas variam em rigidez de normas (tight) e tolerância ao desvio (loose), com raízes ecológicas e históricas. Dá base comparativa para interpretar diferenças de gestão, feedback e compliance em operações multinacionais.",
+     "new": true
     }
    ]
   },
   {
    "key": "2018-2022",
    "label": "2018–2022",
-   "title": "Algoritmos, gig e governança",
-   "summary": "A época desloca o foco para gestão algorítmica, gig economy e IA em RH, com atenção a controle, fairness e reações dos trabalhadores. Kellogg et al. (2019) sintetizam os 6 Rs do controle algorítmico; Wood et al. (2018) e Duggan et al. (2019) detalham a gig economy; Tambe et al. (2019) apontam desafios de IA em RH; Lee (2018) mostra que percepção de fairness e confiança depende do tipo de decisão. Ficam em aberto accountability, voz do trabalhador e regulação.",
+   "title": "Algoritmos, robôs e governança",
+   "summary": "A época desloca o foco para gestão algorítmica, gig economy e IA em RH, com atenção a controle, fairness e reações dos trabalhadores. Kellogg et al. (2019) sintetizam os 6 Rs do controle algorítmico; Wood et al. (2018) e Duggan et al. (2019) detalham a gig economy; Tambe et al. (2019) apontam desafios de IA em RH; Lee (2018) mostra que percepção de fairness e confiança depende do tipo de decisão. Acemoğlu & Restrepo (2019) dão estimativa causal do efeito de robôs sobre emprego e salários, e Li et al. (2020) tratam triagem como exploração, não só explotação do histórico. Ficam em aberto accountability, voz do trabalhador e regulação.",
    "milestones": [
     {
+     "id": "W2905604475",
+     "title": "Artificial Intelligence in Human Resources Management: Challenges and a Path Forward",
+     "year": 2018,
+     "venue": "California Management Review",
+     "authors": [
+      "Prasanna B. Tambe",
+      "Peter H. Cappelli",
+      "Valery Yakubovich"
+     ],
+     "cited_by": 2914,
+     "net": 18,
+     "url": "https://doi.org/10.1177/0008125619867910",
+     "theme": "ai_work",
+     "versions": [
+      "https://doi.org/10.2139/ssrn.3263878"
+     ],
+     "watch": [
+      "Peter Cappelli",
+      "Prasanna Tambe"
+     ],
+     "score": 9,
+     "why": "Identifica quatro desafios da IA em RH: complexidade dos fenômenos, dados pequenos, accountability e reações dos empregados. Propõe causalidade, experimentos e contribuição do empregado como caminho.",
+     "new": false
+    },
+    {
+     "id": "W2990520658",
+     "title": "Algorithms at Work: The New Contested Terrain of Control",
+     "year": 2019,
+     "venue": "Academy of Management Annals",
+     "authors": [
+      "Katherine C. Kellogg",
+      "Melissa Valentine",
+      "Angèle Christin"
+     ],
+     "cited_by": 4287,
+     "net": 15,
+     "url": "https://doi.org/10.5465/annals.2018.0174",
+     "theme": "ai_work",
+     "versions": [],
+     "watch": [],
+     "score": 9,
+     "why": "Sintetiza controle algorítmico em seis mecanismos: restringir, recomendar, registrar, avaliar, substituir e recompensar. Vira framework central para estudar gestão algorítmica.",
+     "new": false
+    },
+    {
+     "id": "W2887734062",
      "title": "Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Global Gig Economy",
      "year": 2018,
      "venue": "Work Employment and Society",
@@ -382,86 +662,35 @@
      "net": 14.5,
      "url": "https://doi.org/10.1177/0950017018785616",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Analisa trabalho remoto de plataforma em seis países e mostra controle algorítmico com flexibilidade, mas baixa qualidade do trabalho. Evidencia que algoritmos organizam autonomia e insegurança ao mesmo tempo."
+     "why": "Analisa trabalho remoto de plataforma em seis países e mostra controle algorítmico com flexibilidade, mas baixa qualidade do trabalho. Evidencia que algoritmos organizam autonomia e insegurança ao mesmo tempo.",
+     "new": false
     },
     {
-     "title": "Labour process theory and the gig economy",
-     "year": 2018,
-     "venue": "Human Relations",
-     "authors": [
-      "Alessandro Gandini"
-     ],
-     "cited_by": 1271,
-     "net": 9,
-     "url": "https://doi.org/10.1177/0018726718790002",
-     "theme": "ai_work",
-     "score": 8,
-     "why": "Aplica teoria do processo de trabalho à gig economy, discutindo ponto de produção, trabalho emocional e controle. Dá base crítica para entender plataformas além de casos isolados."
-    },
-    {
-     "title": "Working and organizing in the age of the learning algorithm",
-     "year": 2018,
-     "venue": "Information and Organization",
-     "authors": [
-      "Samer A Faraj",
-      "Stella Pachidi",
-      "Karla Sayegh"
-     ],
-     "cited_by": 1386,
-     "net": 8.5,
-     "url": "https://doi.org/10.1016/j.infoandorg.2018.02.005",
-     "theme": "ai_work",
-     "score": 8,
-     "why": "Examina algoritmos que aprendem e reorganizam práticas e conhecimento nas organizações. Ajuda a ver IA como participante do trabalho, não só ferramenta neutra."
-    },
-    {
-     "title": "Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management",
-     "year": 2018,
-     "venue": "Big Data & Society",
-     "authors": [
-      "Min Kyung Lee"
-     ],
-     "cited_by": 1769,
-     "net": 6.5,
-     "url": "https://doi.org/10.1177/2053951718756684",
-     "theme": "governance",
-     "score": 8,
-     "why": "Experimento mostra que decisões algorítmicas e humanas são percebidas de forma diferente conforme a tarefa, afetando fairness, confiança e emoção. Funda a linha de percepção de justiça algorítmica em RH."
-    },
-    {
-     "title": "Algorithms at Work: The New Contested Terrain of Control",
+     "id": "W3021644002",
+     "title": "Robots and Jobs: Evidence from US Labor Markets",
      "year": 2019,
-     "venue": "Academy of Management Annals",
+     "venue": "Journal of Political Economy",
      "authors": [
-      "Katherine C. Kellogg",
-      "Melissa Valentine",
-      "Angèle Christin"
+      "Daron Acemoğlu",
+      "Pascual Restrepo"
      ],
-     "cited_by": 4287,
-     "net": 11,
-     "url": "https://doi.org/10.5465/annals.2018.0174",
+     "cited_by": 5457,
+     "net": 10,
+     "url": "https://doi.org/10.1086/705716",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [
+      "Daron Acemoglu"
+     ],
      "score": 9,
-     "why": "Sintetiza controle algorítmico em seis mecanismos: restringir, recomendar, registrar, avaliar, substituir e recompensar. Vira framework central para estudar gestão algorítmica."
+     "why": "Usa variação de exposição a robôs industriais entre zonas de commuting nos EUA para estimar efeito causal: cada robô por mil trabalhadores reduz a razão emprego-população em 0,2 p.p. e os salários em 0,42%. Substitui o exercício de suscetibilidade ocupacional de Frey & Osborne por estimativa causal de impacto no mercado de trabalho.",
+     "new": true
     },
     {
-     "title": "Artificial Intelligence in Human Resources Management: Challenges and a Path Forward",
-     "year": 2019,
-     "venue": "California Management Review",
-     "authors": [
-      "Prasanna B. Tambe",
-      "Peter H. Cappelli",
-      "Valery Yakubovich"
-     ],
-     "cited_by": 2696,
-     "net": 11,
-     "url": "https://doi.org/10.1177/0008125619867910",
-     "theme": "ai_work",
-     "score": 9,
-     "why": "Identifica quatro desafios da IA em RH: complexidade dos fenômenos, dados pequenos, accountability e reações dos empregados. Propõe causalidade, experimentos e contribuição do empregado como caminho."
-    },
-    {
+     "id": "W2972413052",
      "title": "Algorithmic management and app‐work in the gig economy: A research agenda for employment relations and HRM",
      "year": 2019,
      "venue": "Human Resource Management Journal",
@@ -475,18 +704,68 @@
      "net": 7,
      "url": "https://doi.org/10.1111/1748-8583.12258",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Classifica gig work em app-work, crowdwork e capital platform work e foca a gestão algorítmica no app-work. Organiza a agenda de relações de emprego e HRM para plataformas."
+     "why": "Classifica gig work em app-work, crowdwork e capital platform work e foca a gestão algorítmica no app-work. Organiza a agenda de relações de emprego e HRM para plataformas.",
+     "new": false
+    },
+    {
+     "id": "W2792183666",
+     "title": "Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management",
+     "year": 2018,
+     "venue": "Big Data & Society",
+     "authors": [
+      "Min Kyung Lee"
+     ],
+     "cited_by": 1769,
+     "net": 6,
+     "url": "https://doi.org/10.1177/2053951718756684",
+     "theme": "governance",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Experimento mostra que decisões algorítmicas e humanas são percebidas de forma diferente conforme a tarefa, afetando fairness, confiança e emoção. Funda a linha de percepção de justiça algorítmica em RH.",
+     "new": false
+    },
+    {
+     "id": "W4411224527",
+     "title": "Hiring as Exploration",
+     "year": 2020,
+     "venue": "The Review of Economic Studies",
+     "authors": [
+      "Danielle Li",
+      "Lindsey Raymond",
+      "Peter Bergman"
+     ],
+     "cited_by": 172,
+     "net": 6,
+     "url": "https://doi.org/10.1093/restud/rdaf040",
+     "theme": "hiring",
+     "versions": [
+      "https://doi.org/10.3386/w27736",
+      "https://doi.org/10.2139/ssrn.3683612",
+      "https://doi.org/10.2139/ssrn.3630630",
+      "https://doi.org/10.48550/arxiv.2411.03616"
+     ],
+     "watch": [
+      "Danielle Li",
+      "Lindsey Raymond"
+     ],
+     "score": 9,
+     "why": "Reformula triagem como problema de bandit contextual: algoritmos supervisionados só exploram o histórico e perpetuam grupos sub-representados. Propõe explorar candidatos pelo potencial estatístico e melhora a qualidade das contratações em uma firma Fortune 500 — base do debate de fairness em seleção.",
+     "new": true
     }
    ]
   },
   {
    "key": "2023+",
    "label": "2023 em diante",
-   "title": "IA generativa no trabalho",
-   "summary": "A época é dominada pela IA generativa, com evidência experimental de ganhos de produtividade e uma agenda de coexistência, skills e trabalho híbrido. Noy & Zhang (2023) e Peng et al. (2023) mostram reduções de tempo e ganhos de qualidade em escrita e programação; Budhwar et al. (2023), Bankins et al. (2023) e Zirar et al. (2023) discutem implicações para RH, comportamento e coexistência. Morandini et al. (2023) colocam upskilling/reskilling no centro, e Barrero et al. (2023) documentam a permanência do trabalho remoto. Ficam em aberto ROI, viés, complementaridade humano-IA e governança.",
+   "title": "IA generativa: produtividade e fronteira irregular",
+   "summary": "A época é dominada pela IA generativa, com evidência experimental de ganhos de produtividade e uma agenda de tarefas, skills e coexistência humano-IA. Noy & Zhang (2023) e Peng et al. (2023) mostram reduções de tempo e ganhos de qualidade em escrita e programação; Brynjolfsson et al. (2023) medem +15% de produtividade em suporte, concentrado em trabalhadores menos experientes; Eloundou et al. (2024) estimam exposição por tarefa, não por ocupação. Dell'Acqua et al. (2026) mostram que o efeito é irregular dentro do mesmo fluxo de trabalho, e Budhwar et al. (2023) e Bankins et al. (2023) abrem a agenda de HRM e comportamento organizacional. Ficam em aberto ROI, viés, complementaridade humano-IA e governança.",
    "milestones": [
     {
+     "id": "W4384154918",
      "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
      "year": 2023,
      "venue": "Science",
@@ -495,30 +774,17 @@
       "Whitney Zhang"
      ],
      "cited_by": 3812,
-     "net": 6,
+     "net": 18,
      "url": "https://doi.org/10.1126/science.adh2586",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Experimento pré-registrado com ChatGPT mostra 40% menos tempo e 18% mais qualidade em tarefas profissionais de escrita, com redução de desigualdade. É evidência causal de produtividade da IA generativa."
+     "why": "Experimento pré-registrado com ChatGPT mostra 40% menos tempo e 18% mais qualidade em tarefas profissionais de escrita, com redução de desigualdade. É evidência causal de produtividade da IA generativa.",
+     "new": false
     },
     {
-     "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
-     "year": 2023,
-     "venue": "arXiv (Cornell University)",
-     "authors": [
-      "Sida Peng",
-      "Eirini Kalliamvakou",
-      "Peter Cihon",
-      "Mert Demirer"
-     ],
-     "cited_by": 1717,
-     "net": 4,
-     "url": "https://doi.org/10.48550/arxiv.2302.06590",
-     "theme": "ai_work",
-     "score": 8,
-     "why": "Experimento controlado com GitHub Copilot mostra tarefa concluída 55,8% mais rápido. Reforça o efeito de produtividade em programação e a promessa de transição para carreiras técnicas."
-    },
-    {
+     "id": "W4383913712",
      "title": "Human resource management in the age of generative artificial intelligence: Perspectives and research directions on ChatGPT",
      "year": 2023,
      "venue": "Human Resource Management Journal",
@@ -533,13 +799,114 @@
       "Fang Lee Cooke"
      ],
      "cited_by": 1419,
-     "net": 3,
+     "net": 4,
      "url": "https://doi.org/10.1111/1748-8583.12524",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 9,
-     "why": "Discute implicações do ChatGPT para HRM, incluindo deslocamento versus criação de empregos e relações com stakeholders. Abre agenda de pesquisa sobre IA generativa em RH."
+     "why": "Discute implicações do ChatGPT para HRM, incluindo deslocamento versus criação de empregos e relações com stakeholders. Abre agenda de pesquisa sobre IA generativa em RH.",
+     "new": false
     },
     {
+     "id": "W4399848789",
+     "title": "GPTs are GPTs: Labor market impact potential of LLMs",
+     "year": 2024,
+     "venue": "Science",
+     "authors": [
+      "Tyna Eloundou",
+      "Sam Manning",
+      "Pamela Mishkin",
+      "Daniel Rock"
+     ],
+     "cited_by": 2696,
+     "net": 13,
+     "url": "https://doi.org/10.1126/science.adj0998",
+     "theme": "ai_work",
+     "versions": [],
+     "watch": [],
+     "score": 9,
+     "why": "Estima que cerca de 80% dos trabalhadores dos EUA têm ao menos 10% das tarefas expostas a LLMs e 19% têm 50% ou mais, com exposição maior em ocupações de salário mais alto. Dá métrica de exposição por tarefa que substitui o 'risco de automação' por ocupação.",
+     "new": true
+    },
+    {
+     "id": "W4407142724",
+     "title": "Generative AI at Work",
+     "year": 2023,
+     "venue": "The Quarterly Journal of Economics",
+     "authors": [
+      "Erik Brynjolfsson",
+      "Danielle Li",
+      "Lindsey Raymond"
+     ],
+     "cited_by": 4414,
+     "net": 12,
+     "url": "https://doi.org/10.1093/qje/qjae044",
+     "theme": "ai_work",
+     "versions": [
+      "https://doi.org/10.3386/w31161",
+      "https://doi.org/10.2139/ssrn.4426942"
+     ],
+     "watch": [
+      "Danielle Li",
+      "Erik Brynjolfsson",
+      "Lindsey Raymond"
+     ],
+     "score": 9,
+     "why": "Com 5.172 agentes de suporte, mostra ganho médio de 15% em resolução por hora, concentrado em trabalhadores menos experientes, que também melhoram qualidade; os mais experientes ganham pouco em velocidade e perdem em qualidade. Evidência causal de que a IA comprime desigualdade de desempenho e funciona como treinamento no trabalho.",
+     "new": true
+    },
+    {
+     "id": "W4320854981",
+     "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "authors": [
+      "Sida Peng",
+      "Eirini Kalliamvakou",
+      "Peter Cihon",
+      "Mert Demirer"
+     ],
+     "cited_by": 1717,
+     "net": 12,
+     "url": "https://doi.org/10.48550/arxiv.2302.06590",
+     "theme": "ai_work",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Experimento controlado com GitHub Copilot mostra tarefa concluída 55,8% mais rápido. Reforça o efeito de produtividade em programação e a promessa de transição para carreiras técnicas.",
+     "new": false
+    },
+    {
+     "id": "W7135096569",
+     "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+     "year": 2026,
+     "venue": "Organization Science",
+     "authors": [
+      "Fabrizio Dell’Acqua",
+      "Edward McFowland",
+      "Ethan Mollick",
+      "Hila Lifshitz‐Assaf",
+      "Katherine C. Kellogg",
+      "Saran Rajendran",
+      "Lisa Krayer",
+      "François Candelon"
+     ],
+     "cited_by": 1659,
+     "net": 10,
+     "url": "https://doi.org/10.1287/orsc.2025.21838",
+     "theme": "ai_work",
+     "versions": [],
+     "watch": [
+      "Ethan Mollick",
+      "Karim R. Lakhani"
+     ],
+     "score": 9,
+     "why": "Experimento pré-registrado com 758 consultores na BCG define a 'fronteira tecnológica irregular': a IA melhora desempenho em algumas tarefas e piora em outras dentro do mesmo fluxo de trabalho e com dificuldade aparentemente similar. É a evidência que obriga people analytics a mapear tarefas, não ocupações, antes de escalar IA.",
+     "new": true
+    },
+    {
+     "id": "W4385484319",
      "title": "A multilevel review of artificial intelligence in organizations: Implications for organizational behavior research and practice",
      "year": 2023,
      "venue": "Journal of Organizational Behavior",
@@ -554,85 +921,45 @@
      "net": 1,
      "url": "https://doi.org/10.1002/job.2735",
      "theme": "ai_work",
+     "versions": [],
+     "watch": [],
      "score": 8,
-     "why": "Revisão multinível sistematiza impactos da IA em organizações e comportamento organizacional. Ajuda a conectar IA a desenho de trabalho, experiências e práticas de gestão."
-    },
-    {
-     "title": "Worker and workplace Artificial Intelligence (AI) coexistence: Emerging themes and research agenda",
-     "year": 2023,
-     "venue": "Technovation",
-     "authors": [
-      "Araz Zirar",
-      "Syed Imran Ali",
-      "Nazrul Islam"
-     ],
-     "cited_by": 644,
-     "net": 0,
-     "url": "https://doi.org/10.1016/j.technovation.2023.102747",
-     "theme": "ai_work",
-     "score": 8,
-     "why": "Mapeia temas emergentes sobre coexistência entre trabalhadores e IA nos locais de trabalho. Propõe agenda para entender como humanos e IA dividem tarefas e decisões."
-    },
-    {
-     "title": "The Impact of Artificial Intelligence on Workers’ Skills: Upskilling and Reskilling in Organisations",
-     "year": 2023,
-     "venue": "Informing Science The International Journal of an Emerging Transdiscipline",
-     "authors": [
-      "Sofia Morandini",
-      "Federico Fraboni",
-      "Marco De Angelis",
-      "Gabriele Puzzo",
-      "Davide Giusino",
-      "Luca Pietrantoni"
-     ],
-     "cited_by": 859,
-     "net": 0,
-     "url": "https://doi.org/10.28945/5078",
-     "theme": "learning",
-     "score": 8,
-     "why": "Revisa impacto da IA em skills profissionais e estratégias de upskilling e reskilling. Coloca desenvolvimento de força de trabalho como resposta central à automação."
-    },
-    {
-     "title": "The Evolution of Work from Home",
-     "year": 2023,
-     "venue": "The Journal of Economic Perspectives",
-     "authors": [
-      "Jose Maria Barrero",
-      "Nicholas Bloom",
-      "Steven J. Davis"
-     ],
-     "cited_by": 625,
-     "net": 0,
-     "url": "https://doi.org/10.1257/jep.37.4.23",
-     "theme": "ai_work",
-     "score": 8,
-     "why": "Documenta que 28% dos dias pagos nos EUA eram em casa em meados de 2023, cerca de quatro vezes o nível de 2019. Mostra que o trabalho remoto veio para ficar e afeta salários, produtividade e inovação."
+     "why": "Revisão multinível sistematiza impactos da IA em organizações e comportamento organizacional. Ajuda a conectar IA a desenho de trabalho, experiências e práticas de gestão.",
+     "new": false
     }
    ]
   }
  ],
  "now": {
-  "summary": "Hoje o campo está dividido entre a promessa da IA generativa e evidências desconfortáveis: a meta-análise do centauro mostra que equipes humano-IA costumam render menos que o membro mais forte, e auditorias de fairness expiram quando modelos mudam. Os destaques recentes reforçam que qualidade vence quantidade — reuniões 1:1 só elevam engajamento se forem boas, segurança psicológica pode ser miragem e medidas de item único têm limites psicométricos. Ao mesmo tempo, gestão algorítmica aparece como ambivalente: aloca tarefas e aumenta autonomia, mas monitoramento reduz autonomia e eleva intensidade. People analytics maduro agora combina inferência causal, auditoria contínua, desenho de trabalho e governança de IA, não apenas dashboards.",
+  "summary": "Hoje o campo vive o contraste entre a promessa da IA e evidências desconfortáveis: a meta-análise do centauro mostra que equipes humano-IA rendem, em média, menos que o membro mais forte, e auditorias de fairness expiram quando o modelo muda. Em seleção, a evidência inverte intuições — novatos com recomendação algorítmica superam especialistas, LLMs geram descrições de vaga com estereótipo de gênero e o viés etário persiste em humanos e modelos. Em engajamento e gestão, qualidade vence quantidade: reuniões 1:1 só elevam engajamento se forem boas, segurança psicológica pode ser miragem e gestão algorítmica é ambivalente — alocar tarefas aumenta autonomia, monitorar reduz. O campo maduro combina inferência causal, auditoria contínua, desenho de trabalho e governança, com atenção a desigualdade (robôs e renda na Europa) e aos limites psicométricos de medidas simplificadas.",
   "open_questions": [
    "Como medir ROI de IA generativa sem confundir ganho individual com valor organizacional?",
-   "Auditorias de fairness devem ser contínuas ou por release, dado que expiram?",
+   "Auditorias de fairness devem ser contínuas, dado que expiram a cada mudança de modelo?",
    "Quando times humano-IA superam o melhor membro, e como desenhá-los?",
-   "Como usar dados de monitoramento sem destruir autonomia e confiança?",
-   "Quais métricas de engajamento sobrevivem à crítica psicométrica e à miragem de segurança psicológica?"
+   "Como usar telemetria e monitoramento sem destruir autonomia e confiança?",
+   "Quais medidas de engajamento e de seleção sobrevivem ao escrutínio psicométrico e ao viés de LLMs?"
   ]
  },
  "threads": [
   {
    "theme": "analytics",
-   "line": "Evolui da RBV e dos feixes de RH (Barney, 1991; MacDuffie, 1995; Huselid, 1995) para o HR analytics profissional (Davenport et al., 2010; Aral et al., 2012) e sua revisão crítica (Marler & Boudreau, 2016; Angrave et al., 2016). A linha sai de provar que RH importa para construir analytics causal, outside-in e auditável."
+   "line": "Evolui da RBV e dos feixes de RH (Barney, 1991; Wright et al., 1994; MacDuffie, 1995; Huselid, 1995) para o HR analytics profissional (Davenport et al., 2010; Aral et al., 2012) e sua revisão crítica (Marler & Boudreau, 2016; Angrave et al., 2016). Hoje a linha cobra inferência causal e contrafactuais acionáveis (SCAFFOLD-CF) em vez de dashboards."
   },
   {
    "theme": "engagement",
-   "line": "Sai do desenho de trabalho e do self no trabalho (Hackman & Oldham, 1976; Kahn, 1990) para comprometimento e JD-R (Allen & Meyer, 1990; Demerouti et al., 2001) e medidas como UWES (Schaufeli et al., 2002). Harter et al. (2002) levam engajamento ao negócio; depois vêm refinamento teórico (Bakker & Demerouti, 2016) e escrutínio psicométrico."
+   "line": "Sai do desenho de trabalho e do self no trabalho (Hackman & Oldham, 1976; Kahn, 1990) para comprometimento e JD-R (Allen & Meyer, 1990; Demerouti et al., 2001) e medidas como UWES (Schaufeli et al., 2002). Harter et al. (2002) levam engajamento ao negócio; depois vêm job crafting (Wrzesniewski & Dutton, 2001), refinamento teórico (Bakker & Demerouti, 2016) e escrutínio psicométrico das medidas."
   },
   {
    "theme": "ai_work",
-   "line": "Começa com risco de automação (Frey & Osborne, 2016), passa por gestão algorítmica e gig economy (Wood et al., 2018; Kellogg et al., 2019; Duggan et al., 2019) e chega à IA generativa (Noy & Zhang, 2023; Peng et al., 2023). O debate migra de destruição de empregos para produtividade, controle, skills e coexistência humano-IA."
+   "line": "Começa com risco de automação (Frey & Osborne, 2016), passa por gestão algorítmica e gig economy (Wood et al., 2018; Kellogg et al., 2019; Duggan et al., 2019) e por estimativas causais de robôs (Acemoğlu & Restrepo, 2019). Com a IA generativa (Noy & Zhang, 2023; Brynjolfsson et al., 2023; Eloundou et al., 2024) o debate migra para produtividade, exposição por tarefa e fronteira irregular (Dell'Acqua et al., 2026)."
+  },
+  {
+   "theme": "hiring",
+   "line": "Nasce com o experimento de campo de Bertrand & Mullainathan (2003), que mede discriminação racial por nome em currículos, e reaparece em Li et al. (2020) com triagem tratada como exploração. Hoje a linha é dominada por auditorias de LLMs em seleção: viés de gênero em descrições de vaga, viés etário e prontidão de compliance."
+  },
+  {
+   "theme": "leadership",
+   "line": "Vai de tratar recursos humanos como fonte de vantagem sustentável (Wright et al., 1994) ao reconhecimento de que contexto cultural molda gestão, com a distinção tight-loose de Gelfand et al. (2011). Nos destaques recentes, o tema vira intervenção: reduzir viés de ameaça em gestores e checar se segurança psicológica é real ou miragem."
   }
  ]
 }
