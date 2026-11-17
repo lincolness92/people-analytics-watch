@@ -1,4 +1,6 @@
-# Handoff (16/11/2026)
+# Handoff (atualizado em 17/11/2026)
+
+Desde 17/11 o repo tem vários temas em `topics/` (people analytics e fraude bancária); veja o README e o `ROADMAP.md`.
 
 ## Feito
 - Pipeline completo em `src/pawatch` (coleta OpenAlex + arXiv → triagem e redação com LLM de pesos abertos via HF → markdown + site). 8 testes passando.
@@ -8,7 +10,7 @@
 
 ## Pendente (faça nesta ordem)
 1. ✅ **`HF_TOKEN`** (feito em 16/11, token "Codex" do `~/.hermes/.env`; 1ª execução manual ok): cadastrar como secret do repo, de preferência um token fine-grained só com "Make calls to Inference Providers": `gh secret set HF_TOKEN`. Sem ele, o cron diário (11:30 UTC) falha.
-2. **`OPENALEX_API_KEY`**: chave grátis em https://openalex.org/settings/api, depois `gh secret set OPENALEX_API_KEY`. Recomendado: sem chave, o orçamento é compartilhado por IP.
+2. ✅ **`OPENALEX_API_KEY`** (ativada em 17/11; secret no GitHub e cópia local em `~/.config/pawatch/openalex.env`): chave grátis em https://openalex.org/settings/api, depois `gh secret set OPENALEX_API_KEY`. Recomendado: sem chave, o orçamento é compartilhado por IP.
 3. **Cloudflare Pages** (o token salvo em `~/.config/raio-x/cloudflare.env` está inválido; gerar um novo):
    - `npx wrangler login`
    - `npx wrangler pages project create people-analytics-watch --production-branch main`
