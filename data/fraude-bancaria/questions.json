@@ -1,0 +1,13 @@
+[
+ {
+  "topic": "fraude-bancaria",
+  "question": "O que os papers dizem sobre golpes e engenharia social, e quais são as limitações?",
+  "voter": "lc9fuz5veg",
+  "name": null,
+  "sources": 18,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 2062,
+  "at": "2026-11-17T18:37:36.270Z",
+  "key": "ask:fraude-bancaria:2026-11-17T18:37:36.270Z:9d33a0a6"
+ }
+]
