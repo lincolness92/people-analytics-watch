@@ -1,0 +1,39 @@
+{
+  "lookback_days": 7,
+  "openalex": {
+    "types": [
+      "article",
+      "preprint",
+      "review",
+      "book-chapter",
+      "report"
+    ],
+    "per_query": 50,
+    "queries": [
+      "(\"large language model\" OR \"large language models\" OR \"generative AI\" OR \"GenAI\") AND (bank OR banks OR banking OR \"financial services\" OR \"financial institutions\")",
+      "(\"artificial intelligence\" OR \"machine learning\") AND (bank OR banks OR banking) AND (adoption OR productivity OR employment OR workforce OR efficiency)",
+      "(\"AI agent\" OR \"AI agents\" OR \"agentic AI\") AND (bank OR banks OR banking OR \"financial services\" OR payments)",
+      "(\"open banking\" OR \"open finance\") AND (adoption OR competition OR data OR consumers OR credit)",
+      "\"central bank digital currency\" OR CBDC OR \"tokenized deposits\" OR \"tokenised deposits\" OR \"deposit tokens\"",
+      "(neobank OR neobanks OR \"digital bank\" OR \"digital banks\" OR fintech OR fintechs) AND (competition OR adoption OR \"market share\" OR incumbents)",
+      "(Pix OR \"instant payment\" OR \"instant payments\" OR \"fast payment\") AND (adoption OR banks OR competition OR \"financial inclusion\")",
+      "(\"machine learning\" OR \"deep learning\" OR \"alternative data\") AND (\"credit scoring\" OR \"credit risk\" OR lending OR underwriting) AND (bank OR fintech OR lender)",
+      "(\"core banking\" OR \"legacy systems\" OR mainframe OR \"cloud computing\") AND (bank OR banks OR banking)",
+      "(\"model risk management\" OR \"AI governance\" OR \"explainable AI\" OR \"algorithmic fairness\") AND (bank OR banking OR \"financial institutions\" OR lending)",
+      "(chatbot OR chatbots OR \"virtual assistant\" OR \"conversational AI\") AND (bank OR banking OR \"customer service\")",
+      "(\"embedded finance\" OR \"banking-as-a-service\" OR \"super app\" OR \"super-app\") AND (bank OR fintech OR payments)",
+      "\"digital transformation\" AND (bank OR banks OR banking) AND (performance OR strategy OR \"branch\")",
+      "(\"robo-advisor\" OR \"robo-advisors\" OR \"robo-advice\" OR \"personal finance management\") AND (AI OR algorithm OR adoption)"
+    ]
+  },
+  "arxiv": {
+    "max_results": 150,
+    "query": "(cat:cs.CL OR cat:cs.AI OR cat:cs.LG OR cat:q-fin.GN OR cat:q-fin.CP OR cat:econ.GN) AND (abs:banking OR abs:\"financial services\" OR abs:\"central bank\" OR abs:fintech OR abs:\"open banking\" OR abs:\"financial institutions\")"
+  },
+  "selection": {
+    "max_candidates_for_llm": 220,
+    "min_score": 7,
+    "max_selected": 12,
+    "max_quick_mentions": 8
+  }
+}

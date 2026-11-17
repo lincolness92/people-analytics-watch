@@ -14,6 +14,7 @@ inside the window); later runs emit just the URLs that appeared since.
 import email.utils
 import html
 import re
+import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import date, datetime
@@ -24,8 +25,19 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; people-analytics-watch/0.1; r
 MAX_NEW_PER_SOURCE = 12
 
 
+_last_hit = {}
+SLOW_HOSTS = {"medium.com": 3.0}  # Medium answers 429 to bursts of feed requests
+
+
 def _fetch(url):
-    return get_text(url, headers=HEADERS, timeout=30, retries=2)
+    host = urllib.parse.urlparse(url).netloc.lower()
+    gap = next((g for h, g in SLOW_HOSTS.items() if host == h or host.endswith("." + h)), 0)
+    if gap:
+        wait = _last_hit.get(host, 0) + gap - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _last_hit[host] = time.monotonic()
+    return get_text(url, headers=HEADERS, timeout=30, retries=3 if gap else 2)
 
 
 def _clean(text, limit=1500):

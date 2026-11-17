@@ -453,6 +453,24 @@
       "institution": "University of Cambridge",
       "url": "https://www.cambridgecybercrime.uk/",
       "why": "Dados e pesquisa sobre cibercrime e fraude online. Sem feed hoje."
+    },
+    {
+      "name": "Mind The Sec",
+      "institution": "Flipside",
+      "url": "https://www.mindthesec.com.br/",
+      "why": "Maior evento de segurança da informação do Brasil; trilhas de fraude e setor financeiro."
+    },
+    {
+      "name": "CMEP (Abecs)",
+      "institution": "Abecs",
+      "url": "https://www.abecs.org.br/cmep",
+      "why": "Congresso de meios eletrônicos de pagamento: cartões, engenharia social e fraude."
+    },
+    {
+      "name": "Merchant Risk Council",
+      "institution": "MRC",
+      "url": "https://merchantriskcouncil.org/",
+      "why": "Comunidade global de fraude e risco em pagamentos (MRC Vegas, Europe)."
     }
   ],
   "practitioners": [

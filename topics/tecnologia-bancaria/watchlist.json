@@ -1,0 +1,548 @@
+{
+  "researchers": [],
+  "journals": [],
+  "centers": [
+    {
+      "name": "Nubank",
+      "url": "https://building.nu.com/",
+      "why": "Melhor fonte brasileira: posts de engenharia, ML e foundation models transacionais (nuFormer, Muon etc.), ativo semanalmente. building.nubank.com e building.nubank.com.br redirecionam para building.nu"
+    },
+    {
+      "name": "Itaú Unibanco",
+      "url": "https://medium.com/itautech",
+      "why": "Publicação Medium da comunidade de tecnologia do Itaú (engenharia, dados, meetups sobre agentes de IA). Ritmo baixo (último post mai/2026). Medium aplica 429 agressivo: espaçar requisições. YouTube of"
+    },
+    {
+      "name": "PicPay",
+      "url": "https://medium.com/inside-picpay",
+      "why": "Blog de engenharia do PicPay (Go, plataforma interna, qualidade de entregas com IA, GPT vs Textract para boletos). Ritmo mensal/irregular. Medium 'picpay-tech' existe mas vazio. YouTube = marketing."
+    },
+    {
+      "name": "Mercado Pago / Mercado Libre",
+      "url": "https://medium.com/mercadolibre-tech",
+      "why": "Blog de engenharia do Mercado Libre (inclui Mercado Pago): profiling, ML, plataforma. Ritmo baixo em 2026. YouTube é do Mercado Pago (tutoriais, ES/PT). Relevante também para Brasil."
+    },
+    {
+      "name": "Mercado Pago",
+      "url": "https://www.mercadopago.com.br/blog",
+      "why": "Blog de produto/educação financeira; ~140 links de artigos no HTML do servidor. Ocasionalmente cobre antifraude com IA e o assistente 'Mago'. Baixa densidade de tech; usar com filtro por palavra-chave"
+    },
+    {
+      "name": "Creditas",
+      "url": "https://medium.com/creditas-tech",
+      "why": "Blog de engenharia ativo (posts recentes de nov/2026, PT-BR): práticas de dev, dados, IA aplicada. Uma das poucas fontes brasileiras realmente ativas. Medium aplica 429."
+    },
+    {
+      "name": "CloudWalk / InfinitePay",
+      "url": "https://www.cloudwalk.io/ai",
+      "why": "Posts técnicos de IA (RAG/tool calling, paper club, conferência própria). Poucos links (3) no HTML do servidor, sem RSS. YouTube é o canal InfinitePay (produto)."
+    },
+    {
+      "name": "Sicredi",
+      "url": "https://www.sicredi.com.br/site/blog/",
+      "why": "Cooperativa. Blog de educação financeira/segurança (golpes), links no HTML. Pouco conteúdo de tecnologia. Sem RSS; Medium 'sicredi' não existe."
+    },
+    {
+      "name": "Sicoob",
+      "url": "https://www.sicoob.com.br/web/sicoob/noticias",
+      "why": "Portal Liferay com ~10 notícias no HTML (ex.: 'Nova versão do app Sicoob incorpora IA e Open Finance'). Sem RSS."
+    },
+    {
+      "name": "Goldman Sachs",
+      "url": "https://developer.gs.com/blog/posts",
+      "why": "Blog de engenharia (ML para resiliência, open source, cloud). ~50 links no HTML do servidor; /blog/rss.xml redireciona para a listagem (sem feed). Ritmo baixo. goldmansachs.com/insights/artificial-int"
+    },
+    {
+      "name": "Morgan Stanley",
+      "url": "https://www.morganstanley.com/insights",
+      "why": "Insights/pesquisa (AI capex, agentic commerce, bancos e IA). Artigos no HTML do servidor; /ideas/rss retorna 500. Sem blog de engenharia público."
+    },
+    {
+      "name": "Citi",
+      "url": "https://www.citigroup.com/global/insights/citi-institute",
+      "why": "Relatórios do Citi Institute (inclui IA em serviços financeiros). Poucos links (~9) no HTML, parte é navegação; newsroom /global/news traz só 1 release no HTML (resto via JS). Fonte fraca."
+    },
+    {
+      "name": "HSBC",
+      "url": "https://www.hsbc.com/news-and-views/views",
+      "why": "Artigos de opinião (pagamentos em tempo real e fraude, comércio digital). Só ~3 no HTML. Complementar com HSBC News: https://www.hsbc.com/news-and-views/news padrão ^/news-and-views/news/hsbc-news-arc"
+    },
+    {
+      "name": "Barclays",
+      "url": "https://home.barclays/insights/uk-unlocked/",
+      "why": "Insights com data na URL (ex.: 'How AI is changing the way young people learn about money'). ~23 links no HTML. Press releases são JS-only. Sem blog de engenharia público encontrado."
+    },
+    {
+      "name": "BBVA",
+      "url": "https://www.bbva.com/en/innovation/",
+      "why": "Feed de inovação geral também ok: https://www.bbva.com/en/innovation/feed/ (10 itens, 2026-11-17; ex.: computação quântica) e versão ES /es/innovacion/feed/. O feed raiz /en/feed/ vem vazio. Ótima fon"
+    },
+    {
+      "name": "ING",
+      "url": "https://medium.com/ing-blog",
+      "why": "Blog de tecnologia/analytics do ING (algoritmos transparentes, engenharia, dados). Ativo (nov/2026). Newsroom ing.com retornou 404 nas URLs testadas."
+    },
+    {
+      "name": "NatWest Group",
+      "url": "https://www.natwestgroup.com/news-and-insights.html",
+      "why": "Seção 'tech-data-and-AI' linkada da página News & Insights (4 links: relatório de adoção de IA). Press releases não expõem links no HTML. YouTube @natwest não é do banco."
+    },
+    {
+      "name": "RBC",
+      "url": "https://rbcborealis.com/research/",
+      "why": "Laboratório de IA do RBC: papers (bandits com LLM, quantização) e research blogs. /feed/ existe mas vem com 0 itens (CPTs não entram no feed) — usar a listagem (~13 links no HTML). YouTube @rbc = inst"
+    },
+    {
+      "name": "TD Bank",
+      "url": "https://layer6.ai/",
+      "why": "Laboratório de IA do TD (causal inference, foundation models). Feed WP ok; também https://layer6.ai/publications/feed/. Ritmo baixo (último set/2026)."
+    },
+    {
+      "name": "Commonwealth Bank of Australia",
+      "url": "https://www.commbank.com.au/newsroom.html",
+      "why": "Newsroom com data na URL (economia, golpes, IA). ~9 links no HTML. Medium 'commbank-engineering' não confirmado (429 do Medium)."
+    },
+    {
+      "name": "DBS Bank",
+      "url": "https://www.dbs.com/media/news-list.page",
+      "why": "Releases (tokenização com Kinexys, IA em PMEs). ~14 links no HTML. Sem blog técnico público; handle YouTube @dbsbank não encontrado."
+    },
+    {
+      "name": "Capital One",
+      "url": "https://www.capitalone.com/tech/blog/",
+      "why": "Blog de tecnologia muito relevante (IA aplicada, pesquisa, ICML/EMNLP, open source). Sem RSS (feed/rss 404); links no HTML (~12 na home, ~6 em /tech/ai/). YouTube publica talks técnicas (ex.: RAG conf"
+    },
+    {
+      "name": "Revolut",
+      "url": "https://medium.com/revolut",
+      "why": "Posts de engenharia (web, plataforma). Último out/2025. revolut.com/blog e /news bloqueados (403)."
+    },
+    {
+      "name": "Monzo",
+      "url": "https://monzo.com/blog/topic/technology",
+      "why": "Ótimo conteúdo técnico (agente de operações, IA generativa contra crime financeiro, FCA AI live testing). Sem RSS (feeds 404); ~15 links no HTML."
+    },
+    {
+      "name": "Starling Bank",
+      "url": "https://www.starlingbank.com/news/",
+      "why": "RSS de notícias corporativas (poucos itens). Blog é de consumo. /blog/feed/ dá 403; rss.xml principal vem vazio."
+    },
+    {
+      "name": "Wise",
+      "url": "https://medium.com/wise-engineering",
+      "why": "Blog de engenharia ativo (nov/2026). Blog wise.com é de consumo."
+    },
+    {
+      "name": "Klarna",
+      "url": "https://engineering.klarna.com/",
+      "why": "Blog de engenharia (treino de modelos, IA). Ritmo baixo (mar/2026). Press room com centenas de links no HTML (inclui anúncios de IA). YouTube @klarna não encontrado."
+    },
+    {
+      "name": "Stripe",
+      "url": "https://stripe.com/blog",
+      "why": "Blog corporativo/produto (agentes, pagamentos agênticos). Ativo."
+    },
+    {
+      "name": "Adyen",
+      "url": "https://medium.com/adyen",
+      "why": "Blog de engenharia ativo (nov/2026). Knowledge Hub (agentic commerce, euro digital) tem links no HTML, sem RSS."
+    },
+    {
+      "name": "PayPal",
+      "url": "https://developer.paypal.com/community/blog/",
+      "why": "Medium paypal-tech foi descontinuado (último post jun/2026 avisa mudança para este blog). Sem RSS; ~100 links no HTML (alguns slugs com espaços — normalizar). Conteúdo: agent payments protocol, AI too"
+    },
+    {
+      "name": "Block (Square / Cash App)",
+      "url": "https://engineering.block.xyz/",
+      "why": "Engenharia da Block (foundation models próprios, sequential store). Ativo. Feed antigo developer.squareup.com/blog/rss.xml parou em 2025-06. YouTube = Square."
+    },
+    {
+      "name": "Kakao Bank",
+      "url": "https://tech.kakaobank.com/",
+      "why": "Blog técnico em coreano (60 itens, Hugo). Ativo. feed.xml dá 403; usar index.xml."
+    },
+    {
+      "name": "N26",
+      "url": "https://n26.com/en-eu/press",
+      "why": "Releases corporativos (~3 no HTML). Blog é de finanças pessoais. Medium de engenharia não confirmado (Medium 429)."
+    },
+    {
+      "name": "bunq",
+      "url": "https://press.bunq.com/",
+      "why": "Releases (pesquisas de consumo, IA 'Finn' ocasionalmente). Medium 'bunq' parado desde 2020."
+    },
+    {
+      "name": "Money20/20 USA",
+      "url": "https://us.money2020.com/",
+      "why": "fintech, pagamentos e bancos (maior evento dos EUA) (Las Vegas, EUA; 2026 realizado em out/2026; próxima: 19–21 out 2027)"
+    },
+    {
+      "name": "Money20/20 Middle East",
+      "url": "https://money2020middleeast.com/",
+      "why": "fintech e pagamentos no Oriente Médio (Riad, Arábia Saudita; 2026 realizado em set/2026; próxima: 14–16 set 2027)"
+    },
+    {
+      "name": "Sibos",
+      "url": "https://www.sibos.com/",
+      "why": "pagamentos internacionais, mensageria financeira, bancos correspondentes (Miami, EUA (2026); Singapura (2027); 28 set–1 out 2026 (realizado); 2027: 20–23 set, Singapura)"
+    },
+    {
+      "name": "Singapore FinTech Festival",
+      "url": "https://www.fintechfestival.sg/",
+      "why": "fintech, reguladores, IA e pagamentos (Ásia) (Singapura; 18–20 nov 2026)"
+    },
+    {
+      "name": "FinovateFall",
+      "url": "https://informaconnect.com/finovatefall/",
+      "why": "demos de fintech e tecnologia bancária (Nova York, EUA; 2026 realizado em set/2026; próxima: 13–15 set 2027)"
+    },
+    {
+      "name": "Paris Fintech Forum",
+      "url": "https://members.parisfintechforum.com/",
+      "why": "fintech e bancos europeus (Paris, França; 2026: série de entrevistas, Women in Finance Lunch (6 out) e Debate & Dinner (25 nov); conferência principal não confirmada)"
+    },
+    {
+      "name": "Hong Kong FinTech Week",
+      "url": "https://www.fintechweek.hk/",
+      "why": "fintech, ativos digitais, IA e regulação (HK/GBA) (Hong Kong; 2–6 nov 2026 (realizado))"
+    },
+    {
+      "name": "Dubai FinTech Summit",
+      "url": "https://dubaifintechsummit.com/",
+      "why": "fintech, bancos e investimento no Golfo (Dubai, EAU; 2–3 nov 2026 (realizado; remarcado de maio))"
+    },
+    {
+      "name": "Nacha Smarter Faster Payments",
+      "url": "https://payments.nacha.org/",
+      "why": "ACH, pagamentos instantâneos, fraude em pagamentos (EUA) (National Harbor (Washington DC), EUA; 11–14 abr 2027)"
+    },
+    {
+      "name": "Fintech Meetup",
+      "url": "https://www.fintechmeetup.com/",
+      "why": "fintech, bancos e pagamentos (networking) (Las Vegas, EUA; 22–24 fev 2027)"
+    },
+    {
+      "name": "UK FinTech Week / Innovate Finance Global Summit",
+      "url": "https://www.innovatefinance.com/ukfintechweek/",
+      "why": "fintech e políticas públicas no Reino Unido (Londres, Reino Unido; 19–23 abr 2027)"
+    },
+    {
+      "name": "PAY360",
+      "url": "https://pay360event.com/",
+      "why": "pagamentos, fraude APP, regulação (UK/Europa) (Londres, Reino Unido; 21–22 abr 2027)"
+    },
+    {
+      "name": "MPE – Merchant Payments Ecosystem",
+      "url": "https://www.merchantpaymentsecosystem.com/",
+      "why": "adquirência, pagamentos de comerciantes, fraude (Berlim, Alemanha; 9–11 mar 2027)"
+    },
+    {
+      "name": "Global Fintech Fest",
+      "url": "https://www.globalfintechfest.com/",
+      "why": "fintech, UPI e pagamentos instantâneos (Índia) (Mumbai, Índia; 8–11 set 2026 (realizado))"
+    },
+    {
+      "name": "Abu Dhabi Finance Week (ADFW)",
+      "url": "https://www.adfw.com/",
+      "why": "finanças, ativos digitais, regulação, capital (Abu Dhabi, EAU; 7–10 dez 2026)"
+    },
+    {
+      "name": "MRC Vegas (Merchant Risk Council)",
+      "url": "https://merchantriskcouncil.org/",
+      "why": "prevenção a fraude em pagamentos e e-commerce (Las Vegas, EUA; 15–18 mar 2027)"
+    },
+    {
+      "name": "Febraban Tech",
+      "url": "https://febrabantech.febraban.org.br/",
+      "why": "tecnologia bancária, IA, Pix, Open Finance, cibersegurança (sucessor do CIAB) (São Paulo (Distrito Anhembi); 24–26 ago 2026 (realizado); 2027: 24–26 ago)"
+    },
+    {
+      "name": "CMEP – Congresso de Meios Eletrônicos de Pagamento",
+      "url": "https://www.abecs.org.br/cmep",
+      "why": "cartões, pagamentos, fraude em cartões, Open Finance (São Paulo; 14–15 abr 2026 (19ª edição, realizado))"
+    },
+    {
+      "name": "Fintouch",
+      "url": "https://www.abfintechs.com.br/",
+      "why": "fintechs, crédito, Open Finance, pagamentos (São Paulo (10 jun 2026) e Brasília (abr 2026); 2026 realizado)"
+    },
+    {
+      "name": "Congresso ABIPAG",
+      "url": "https://abipag.com.br/",
+      "why": "instituições de pagamento, regulação e concorrência (Brasília; 21 mai 2026 (5ª edição, realizado))"
+    },
+    {
+      "name": "Mind The Sec",
+      "url": "https://www.mindthesec.com.br/",
+      "why": "cibersegurança (inclui setor financeiro) (São Paulo (Transamérica Expo Center); 15–17 set 2026 (realizado))"
+    },
+    {
+      "name": "LIFT Day",
+      "url": "https://luma.com/LIFTDay-2026",
+      "why": "inovação financeira: Pix, dados, tokenização, Drex (Brasília (sede do BC); 31 mar 2026 (realizado))"
+    },
+    {
+      "name": "Web Summit Rio",
+      "url": "https://rio.websummit.com/",
+      "why": "tecnologia e startups, com conteúdo de fintech (Rio de Janeiro; 2026 realizado (jun); 2027: 14–17 jun)"
+    },
+    {
+      "name": "Rio Innovation Week",
+      "url": "https://www.rioinnovationweek.com.br/",
+      "why": "inovação ampla, com painéis de Open Finance/fintech (Rio de Janeiro; 4–7 ago 2026 (realizado))"
+    },
+    {
+      "name": "Concred – Congresso Brasileiro do Cooperativismo de Crédito",
+      "url": "https://concred.coop.br/",
+      "why": "cooperativismo financeiro, crédito, tecnologia (Goiânia (2026); 26–28 ago 2026 (16ª edição, realizado))"
+    },
+    {
+      "name": "Open Finance Brasil – eventos e Open Finance Awards",
+      "url": "https://openfinancebrasil.org.br/",
+      "why": "Open Finance: workshops técnicos, consentimentos, dados (São Paulo / online; Open Finance Awards: premiação nov 2026)"
+    },
+    {
+      "name": "Finnosummit",
+      "url": "https://www.finnosummit.com/",
+      "why": "fintech e inovação financeira na América Latina (Cidade do México; 23–24 set 2026 (10ª edição, realizado))"
+    },
+    {
+      "name": "CLAB – Congreso Latinoamericano de Tecnología e Innovación (Felaban)",
+      "url": "https://felaban.com/congresos/",
+      "why": "tecnologia bancária na América Latina (Equador (2026); 2026 (datas não publicadas no site))"
+    },
+    {
+      "name": "Convención Bancaria (Asobancaria)",
+      "url": "https://www.asobancaria.com/",
+      "why": "bancos colombianos, regulação, inclusão financeira (Cartagena, Colômbia; ago 2026 (60ª, realizado))"
+    },
+    {
+      "name": "Chile Fintech Forum",
+      "url": "https://www.chilefintechforum.com/",
+      "why": "fintech e open finance no Chile (Santiago, Chile; 2026 realizado; 2027 a confirmar)"
+    },
+    {
+      "name": "iupana – eventos (FinSeg Day e outros)",
+      "url": "https://iupana.com/",
+      "why": "pagamentos, fraude e segurança bancária na América Latina (Cidade do México / online; FinSeg Day: 23 abr 2026 (realizado))"
+    },
+    {
+      "name": "Money20/20 Europe",
+      "url": "https://europe.money2020.com/",
+      "why": "fintech, pagamentos, open banking na Europa (Amsterdã, Holanda; 2026 realizado em jun/2026; próxima: 8–10 jun 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "Money20/20 Asia",
+      "url": "https://asia.money2020.com/",
+      "why": "fintech e pagamentos na Ásia (Bangkok, Tailândia; 2026 realizado em abr/2026; próxima: 27–29 abr 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "FinovateSpring",
+      "url": "https://informaconnect.com/finovatespring/",
+      "why": "demos de fintech e tecnologia bancária (San Diego, EUA; 3–5 mai 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "FinovateEurope",
+      "url": "https://informaconnect.com/finovateeurope/",
+      "why": "demos de fintech, open banking, antifraude na Europa (Londres, Reino Unido (edições recentes; não confirmado na página); edição 2026 realizada; 2027 não anunciada na página) — sem fonte automática hoje."
+    },
+    {
+      "name": "Point Zero Forum",
+      "url": "https://www.pointzeroforum.com/",
+      "why": "diálogo política–tecnologia: bancos centrais, reguladores, tokenização (Zurique, Suíça; 23–25 jun 2026 (realizado); 2027 a confirmar) — sem fonte automática hoje."
+    },
+    {
+      "name": "Seamless Digital Commerce Middle East",
+      "url": "https://www.terrapinn.com/exhibition/seamless-middle-east/",
+      "why": "pagamentos, e-commerce e varejo (Dubai, EAU; 25–26 mai 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "MoneyLIVE Summit",
+      "url": "https://moneylive-insights.com/events/summit/",
+      "why": "banking de varejo, pagamentos, IA (executivos seniores) (Londres, Reino Unido; 2–3 mar 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "EBAday",
+      "url": "https://www.ebaday.com/",
+      "why": "pagamentos e infraestrutura de pagamentos na Europa (Europa (cidade varia); 15–16 jun 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "Evident AI Symposium",
+      "url": "https://evidentinsights.com/events/",
+      "why": "adoção de IA em bancos e seguradoras (benchmark Evident AI Index) (Nova York, EUA; 22 out 2026 (realizado); 2027 a confirmar) — sem fonte automática hoje."
+    },
+    {
+      "name": "AI in Finance Summit (RE•WORK)",
+      "url": "https://ny-ai-finance.re-work.co/",
+      "why": "IA/ML aplicada a finanças e bancos (Londres (15 set 2026) e Nova York; NY: 12–13 abr 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "ACAMS The Assembly",
+      "url": "https://www.acams.org/en/events/the-assembly/the-assembly-las-vegas",
+      "why": "PLD/AML, crimes financeiros, sanções (Las Vegas, EUA; 29 set–1 out 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "ACFE Global Fraud Conference",
+      "url": "https://www.acfe.com/training-events-and-products/all-events/all-conferences",
+      "why": "antifraude, investigação, fraude em instituições financeiras (Filadélfia, EUA; 11–16 jul 2027 (38ª edição)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Japan Fintech Week",
+      "url": "https://www.fsa.go.jp/policy/japanfintechweek/2026/index_en.html",
+      "why": "fintech, regulação, ativos digitais (Japão) (Tóquio, Japão; 24 fev–5 mar 2027) — sem fonte automática hoje."
+    },
+    {
+      "name": "ACM ICAIF – International Conference on AI in Finance",
+      "url": "https://icaif2026.org/",
+      "why": "pesquisa acadêmica em IA para finanças (Milão, Itália (Bocconi); 14–17 nov 2026 (em andamento)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Machine Learning in Finance Workshop @ KDD",
+      "url": "https://sites.google.com/view/kdd-mlf-2026",
+      "why": "ML/GenAI com dados financeiros (acadêmico) (KDD 2026; 9 ago 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Generative AI in Finance Workshop @ NeurIPS",
+      "url": "https://sites.google.com/view/neurips-25-gen-ai-in-finance/home",
+      "why": "IA generativa em finanças (acadêmico) (NeurIPS (San Diego, 2025); 2025 realizado; edição 2026 não confirmada) — sem fonte automática hoje."
+    },
+    {
+      "name": "Agentic AI in Financial Services Workshop @ AAAI",
+      "url": "https://ai-4-finance.pages.dev",
+      "why": "agentes de IA em serviços financeiros (acadêmico) (Singapura (AAAI-26); 26 jan 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "FinAI Workshop @ ICLR",
+      "url": "https://sites.google.com/view/iclr2026finai/home",
+      "why": "sistemas agênticos e IA em finanças (acadêmico) (ICLR 2026; 27 abr 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "FinNLP Workshop @ EMNLP",
+      "url": "https://sigfintech.github.io/finnlp2026/",
+      "why": "NLP e LLMs financeiros (acadêmico) (Budapeste, Hungria (EMNLP 2026); 28 out 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Febraban SEC (ex-Congresso de Prevenção e Repressão a Fraudes)",
+      "url": "https://febrabantech.febraban.org.br/eventos",
+      "why": "fraudes bancárias, golpes digitais, cibersegurança (São Paulo (Transamerica Expo Center); 18–19 mar 2026 (realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Fintech Americas",
+      "url": "https://www.fintechamericas.co/en",
+      "why": "inovação bancária na América Latina (Miami Beach, EUA (foco América Latina); 2026 realizado (mar); 2027: 16–18 mar) — sem fonte automática hoje."
+    },
+    {
+      "name": "Convención Bancaria (ABM)",
+      "url": "https://www.abm.org.mx/convencion-bancaria/",
+      "why": "bancos mexicanos, regulação, crédito (Cancún, México; 18–20 mar 2026 (89ª, realizado)) — sem fonte automática hoje."
+    },
+    {
+      "name": "Argentina Fintech Forum",
+      "url": "https://www.argentinafintechforum.com/",
+      "why": "fintech e regulação na Argentina (Buenos Aires, Argentina; 2026 (datas não extraídas)) — sem fonte automática hoje."
+    }
+  ],
+  "practitioners": [
+    {
+      "name": "Evident",
+      "url": "https://evidentinsights.com/bankingbrief/",
+      "why": "Newsletter sobre IA em bancos (autores do Evident AI Index). Sem RSS; ~8 links no HTML. Relatórios em https://evidentinsights.com/insights (padrão ^/insights/[a-z0-9-]+/?$; ex.: AI Index 2026, LatAm 2"
+    },
+    {
+      "name": "Banking Dive",
+      "url": "https://www.bankingdive.com/topic/technology/",
+      "why": "Feed temático de tecnologia bancária (EUA), diário. Feed geral: /feeds/news/."
+    },
+    {
+      "name": "American Banker",
+      "url": "https://www.americanbanker.com/",
+      "why": "Feed geral (tecnologia é parte). Feeds por tema testados retornaram 404."
+    },
+    {
+      "name": "Tearsheet",
+      "url": "https://tearsheet.co/artificial-intelligence/",
+      "why": "Feed de IA em serviços financeiros; feed geral https://tearsheet.co/feed/ (10 itens, diário)."
+    },
+    {
+      "name": "Net Interest (Marc Rubinstein)",
+      "url": "https://www.netinterest.co/",
+      "why": "Newsletter semanal sobre setor financeiro, frequentemente sobre IA/tech em bancos (ex.: 'A Banker's Guide to Anthropic')."
+    },
+    {
+      "name": "Fintech Business Weekly (Jason Mikula)",
+      "url": "https://fintechbusinessweekly.substack.com/",
+      "why": "Newsletter semanal de fintech/regulação (EUA)."
+    },
+    {
+      "name": "Accenture",
+      "url": "https://bankingblog.accenture.com/",
+      "why": "Blog de consultoria focado em bancos (IA, segurança, core modernization). Feed ok."
+    },
+    {
+      "name": "BCG",
+      "url": "https://www.bcg.com/industries/financial-institutions/insights",
+      "why": "Sem RSS. ~27 publicações no HTML (mistura anos antigos; filtrar pelo ano na URL)."
+    },
+    {
+      "name": "CB Insights",
+      "url": "https://www.cbinsights.com/research/",
+      "why": "Pesquisa de mercado (fintech e IA incluídos). Requer filtro."
+    },
+    {
+      "name": "The Fintech Times",
+      "url": "https://thefintechtimes.com/",
+      "why": "Notícias de fintech global, diário."
+    },
+    {
+      "name": "Payments Dive",
+      "url": "https://www.paymentsdive.com/",
+      "why": "Notícias de pagamentos (EUA), diário."
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com/banks",
+      "why": "Manchetes do FT sobre bancos (artigos com paywall; títulos/resumos no feed)."
+    },
+    {
+      "name": "AWS",
+      "url": "https://aws.amazon.com/blogs/industries/category/industries/financial-services/",
+      "why": "Casos técnicos de bancos/seguradoras na AWS (muitos co-escritos com bancos, inclusive brasileiros). Opcional."
+    },
+    {
+      "name": "Finsiders Brasil",
+      "url": "https://finsidersbrasil.com.br/",
+      "why": "Principal veículo de fintech/bancos digitais no Brasil; cobre IA em bancos (Mercado Pago, PicPay, Nubank). Diário. Feeds por categoria 404."
+    },
+    {
+      "name": "Let's Money",
+      "url": "https://www.letsmoney.com.br/",
+      "why": "Notícias de bancos/fintechs BR com foco forte em tecnologia e IA (Bradesco Bridge, C6+Kiro, BB+Stefanini). Diário."
+    },
+    {
+      "name": "Mobile Time",
+      "url": "https://www.mobiletime.com.br/",
+      "why": "Mobile, pagamentos, IA agêntica no varejo/finanças. Diário."
+    },
+    {
+      "name": "IT Forum",
+      "url": "https://itforum.com.br/",
+      "why": "TI corporativa BR; muitos cases de bancos (Itaú+Cognition, Bradesco BIA Tech). Volume alto, filtrar."
+    },
+    {
+      "name": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/",
+      "why": "Tecnologia/telecom BR; cobre IA no Banco do Brasil, Bradesco etc."
+    },
+    {
+      "name": "Baguete",
+      "url": "https://www.baguete.com.br/",
+      "why": "TI BR (movimentações de executivos de tecnologia em bancos, contratos). /rss redireciona para /rss/noticias/feed."
+    },
+    {
+      "name": "NeoFeed",
+      "url": "https://neofeed.com.br/",
+      "why": "Negócios/finanças BR; boa cobertura de estratégia de bancos e fintechs."
+    }
+  ]
+}

@@ -1,0 +1,833 @@
+{
+  "_doc": "Fontes do Bank Tech & AI Watch, levantadas e testadas em 17/11/2026: blogs técnicos e de pesquisa de bancos e fintechs, canais de YouTube de conferências (até 4 vídeos por canal por execução), notícias de eventos e mídia especializada (mídia geral filtrada por assunto). Fora por enquanto: canais institucionais de bancos no YouTube (quase só publicidade), press room do Itaú (só PDFs), BCG (403), blog do Sicredi (consumidor), lista de papers do JPMorgan AI Research (arquivo BibTeX). Bloqueiam robôs ou só renderizam com JavaScript: C6, Inter, Revolut (site), SoFi, Chime, BBVA AI Factory, Finextra, The Financial Brand, Fintech Futures, Bank of America, UBS, Deutsche Bank, Ant Group, WeBank. Transcrição dos vídeos: ver ROADMAP.",
+  "sources": [
+    {
+      "name": "Building Nubank (blog de engenharia/dados/IA)",
+      "watch": "Nubank",
+      "kind": "rss",
+      "url": "https://building.nu.com/feed/",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "Itaú Tech (Medium)",
+      "watch": "Itaú Unibanco",
+      "kind": "rss",
+      "url": "https://medium.com/feed/itautech",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "Inside PicPay (Medium)",
+      "watch": "PicPay",
+      "kind": "rss",
+      "url": "https://medium.com/feed/inside-picpay",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "Mercado Libre Tech (Medium)",
+      "watch": "Mercado Pago / Mercado Libre",
+      "kind": "rss",
+      "url": "https://medium.com/feed/mercadolibre-tech",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Blog do Mercado Pago (BR)",
+      "watch": "Mercado Pago",
+      "kind": "page",
+      "url": "https://www.mercadopago.com.br/blog",
+      "pattern": "/blog/[a-z0-9-]+$",
+      "region": "brasil"
+    },
+    {
+      "name": "Creditas Tech (Medium)",
+      "watch": "Creditas",
+      "kind": "rss",
+      "url": "https://medium.com/feed/creditas-tech",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "CloudWalk AI (blog de IA)",
+      "watch": "CloudWalk / InfinitePay",
+      "kind": "page",
+      "url": "https://www.cloudwalk.io/ai",
+      "pattern": "/ai/[a-z0-9-]+$",
+      "region": "brasil"
+    },
+    {
+      "name": "CloudWalk Newsroom",
+      "watch": "CloudWalk / InfinitePay",
+      "kind": "page",
+      "url": "https://www.cloudwalk.io/newsroom",
+      "pattern": "/newsroom/[a-z0-9-]+$",
+      "region": "brasil"
+    },
+    {
+      "name": "InfinitePay Newsroom (PT)",
+      "watch": "CloudWalk / InfinitePay",
+      "kind": "page",
+      "url": "https://www.infinitepay.io/newsroom",
+      "pattern": "/newsroom/[a-z0-9-]+$",
+      "region": "brasil"
+    },
+    {
+      "name": "Notícias Sicoob",
+      "watch": "Sicoob",
+      "kind": "page",
+      "url": "https://www.sicoob.com.br/web/sicoob/noticias",
+      "pattern": "/web/sicoob/noticias/-/asset_publisher/[^/]+/content/.+",
+      "region": "brasil"
+    },
+    {
+      "name": "Goldman Sachs Developer Blog",
+      "watch": "Goldman Sachs",
+      "kind": "page",
+      "url": "https://developer.gs.com/blog/posts",
+      "pattern": "/blog/posts/[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Morgan Stanley Insights",
+      "watch": "Morgan Stanley",
+      "kind": "page",
+      "url": "https://www.morganstanley.com/insights",
+      "pattern": "/insights/articles/[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Citi Institute / Citi GPS insights",
+      "watch": "Citi",
+      "kind": "page",
+      "url": "https://www.citigroup.com/global/insights/citi-institute",
+      "pattern": "/global/insights/(?!tags/|all$)[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "HSBC Views",
+      "watch": "HSBC",
+      "kind": "page",
+      "url": "https://www.hsbc.com/news-and-views/views",
+      "pattern": "/news-and-views/views/hsbc-views/[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Barclays Insights (UK Unlocked)",
+      "watch": "Barclays",
+      "kind": "page",
+      "url": "https://home.barclays/insights/uk-unlocked/",
+      "pattern": "/insights/\\d{4}/\\d{2}/[A-Za-z0-9-]+/$",
+      "region": "mundo"
+    },
+    {
+      "name": "BBVA — Innovation / AI Solutions (RSS)",
+      "watch": "BBVA",
+      "kind": "rss",
+      "url": "https://www.bbva.com/en/innovation/ai-solutions/feed/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "ING Blog (Medium)",
+      "watch": "ING",
+      "kind": "rss",
+      "url": "https://medium.com/feed/ing-blog",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "NatWest — Tech, Data & AI (AI adoption report)",
+      "watch": "NatWest Group",
+      "kind": "page",
+      "url": "https://www.natwestgroup.com/news-and-insights.html",
+      "pattern": "/who-we-are/about-natwest-group/tech-data-and-AI/.+\\.html$",
+      "region": "mundo"
+    },
+    {
+      "name": "RBC Borealis (pesquisa em IA)",
+      "watch": "RBC",
+      "kind": "page",
+      "url": "https://rbcborealis.com/research/",
+      "pattern": "/(research-blogs|publications)/[a-z0-9-]+/$",
+      "region": "mundo"
+    },
+    {
+      "name": "Layer 6 AI (TD)",
+      "watch": "TD Bank",
+      "kind": "rss",
+      "url": "https://layer6.ai/feed/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "CBA Newsroom",
+      "watch": "Commonwealth Bank of Australia",
+      "kind": "page",
+      "url": "https://www.commbank.com.au/newsroom.html",
+      "pattern": "/articles/newsroom/\\d{4}/\\d{2}/[a-z0-9-]+\\.html$",
+      "region": "mundo"
+    },
+    {
+      "name": "DBS Newsroom",
+      "watch": "DBS Bank",
+      "kind": "page",
+      "url": "https://www.dbs.com/media/news-list.page",
+      "pattern": "/newsroom/[A-Za-z0-9_]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Capital One Tech Blog",
+      "watch": "Capital One",
+      "kind": "page",
+      "url": "https://www.capitalone.com/tech/blog/",
+      "pattern": "/tech/[a-z-]+/[a-z0-9-]+/$",
+      "region": "mundo"
+    },
+    {
+      "name": "Revolut Tech (Medium)",
+      "watch": "Revolut",
+      "kind": "rss",
+      "url": "https://medium.com/feed/revolut",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Monzo Blog — Technology",
+      "watch": "Monzo",
+      "kind": "page",
+      "url": "https://monzo.com/blog/topic/technology",
+      "pattern": "/blog/(?!topic/)[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Starling News (RSS)",
+      "watch": "Starling Bank",
+      "kind": "rss",
+      "url": "https://www.starlingbank.com/rss-news.xml",
+      "region": "mundo",
+      "max": 6,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "Wise Engineering (Medium)",
+      "watch": "Wise",
+      "kind": "rss",
+      "url": "https://medium.com/feed/wise-engineering",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Klarna Engineering",
+      "watch": "Klarna",
+      "kind": "rss",
+      "url": "https://engineering.klarna.com/feed",
+      "region": "mundo",
+      "max": 6,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "Stripe Blog",
+      "watch": "Stripe",
+      "kind": "rss",
+      "url": "https://stripe.com/blog/feed.rss",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Stripe Dev Blog (engenharia)",
+      "watch": "Stripe",
+      "kind": "rss",
+      "url": "https://stripe.dev/blog/feed",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Adyen Tech (Medium)",
+      "watch": "Adyen",
+      "kind": "rss",
+      "url": "https://medium.com/feed/adyen",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "PayPal Developer Community Blog",
+      "watch": "PayPal",
+      "kind": "page",
+      "url": "https://developer.paypal.com/community/blog/",
+      "pattern": "/community/blog/[^/]+/?$",
+      "region": "mundo"
+    },
+    {
+      "name": "Block Engineering Blog",
+      "watch": "Block (Square / Cash App)",
+      "kind": "rss",
+      "url": "https://engineering.block.xyz/blog/rss.xml",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Cash App Code Blog",
+      "watch": "Block (Square / Cash App)",
+      "kind": "rss",
+      "url": "https://code.cash.app/feed.xml",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "KakaoBank Tech Blog (coreano)",
+      "watch": "Kakao Bank",
+      "kind": "rss",
+      "url": "https://tech.kakaobank.com/index.xml",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "N26 Newsroom",
+      "watch": "N26",
+      "kind": "page",
+      "url": "https://n26.com/en-eu/press",
+      "pattern": "/en-eu/press/press-release/[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "bunq Newsroom",
+      "watch": "bunq",
+      "kind": "page",
+      "url": "https://press.bunq.com/",
+      "pattern": "/releases/\\d+-[a-z0-9-]+$",
+      "region": "mundo"
+    },
+    {
+      "name": "Evident Banking Brief",
+      "watch": "Evident",
+      "kind": "page",
+      "url": "https://evidentinsights.com/bankingbrief/",
+      "pattern": "/bankingbrief/[a-z0-9-]+/?$",
+      "region": "mundo"
+    },
+    {
+      "name": "Evident (YouTube)",
+      "watch": "Evident",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOJ8WkUk2fSMumhb7pHyrCA",
+      "region": "mundo",
+      "max": 3
+    },
+    {
+      "name": "Banking Dive — Technology",
+      "watch": "Banking Dive",
+      "kind": "rss",
+      "url": "https://www.bankingdive.com/feeds/topic/technology/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "American Banker",
+      "watch": "American Banker",
+      "kind": "rss",
+      "url": "https://www.americanbanker.com/feed?rss=true",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Tearsheet — AI",
+      "watch": "Tearsheet",
+      "kind": "rss",
+      "url": "https://tearsheet.co/artificial-intelligence/feed/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Net Interest",
+      "watch": "Net Interest (Marc Rubinstein)",
+      "kind": "rss",
+      "url": "https://www.netinterest.co/feed",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Fintech Business Weekly",
+      "watch": "Fintech Business Weekly (Jason Mikula)",
+      "kind": "rss",
+      "url": "https://fintechbusinessweekly.substack.com/feed",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Accenture Banking Blog",
+      "watch": "Accenture",
+      "kind": "rss",
+      "url": "https://bankingblog.accenture.com/feed",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "CB Insights Research",
+      "watch": "CB Insights",
+      "kind": "rss",
+      "url": "https://www.cbinsights.com/research/feed/",
+      "region": "mundo",
+      "max": 6,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "The Fintech Times",
+      "watch": "The Fintech Times",
+      "kind": "rss",
+      "url": "https://thefintechtimes.com/feed/",
+      "region": "mundo",
+      "max": 6,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "Payments Dive",
+      "watch": "Payments Dive",
+      "kind": "rss",
+      "url": "https://www.paymentsdive.com/feeds/news/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "FT — Banks",
+      "watch": "Financial Times",
+      "kind": "rss",
+      "url": "https://www.ft.com/banks?format=rss",
+      "region": "mundo",
+      "max": 6,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "AWS for Industries — Financial Services",
+      "watch": "AWS",
+      "kind": "rss",
+      "url": "https://aws.amazon.com/blogs/industries/category/industries/financial-services/feed/",
+      "region": "mundo",
+      "max": 6
+    },
+    {
+      "name": "Finsiders Brasil",
+      "watch": "Finsiders Brasil",
+      "kind": "rss",
+      "url": "https://finsidersbrasil.com.br/feed/",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "Let's Money",
+      "watch": "Let's Money",
+      "kind": "rss",
+      "url": "https://www.letsmoney.com.br/feed/",
+      "region": "brasil",
+      "max": 6
+    },
+    {
+      "name": "Mobile Time",
+      "watch": "Mobile Time",
+      "kind": "rss",
+      "url": "https://www.mobiletime.com.br/feed/",
+      "region": "brasil",
+      "max": 6,
+      "pattern": "(?i)banc|pix|fintech|open finance|drex|febraban|bacen|banco central|crédito|pagament|cart[aã]o|\\bIA\\b|intelig[eê]ncia artificial|nubank|itaú|bradesco|santander|caixa|inter\\b|c6|picpay|mercado pago|stone|btg|xp\\b"
+    },
+    {
+      "name": "IT Forum",
+      "watch": "IT Forum",
+      "kind": "rss",
+      "url": "https://itforum.com.br/feed/",
+      "region": "brasil",
+      "max": 6,
+      "pattern": "(?i)banc|pix|fintech|open finance|drex|febraban|bacen|banco central|crédito|pagament|cart[aã]o|\\bIA\\b|intelig[eê]ncia artificial|nubank|itaú|bradesco|santander|caixa|inter\\b|c6|picpay|mercado pago|stone|btg|xp\\b"
+    },
+    {
+      "name": "Convergência Digital",
+      "watch": "Convergência Digital",
+      "kind": "rss",
+      "url": "https://convergenciadigital.com.br/feed/",
+      "region": "brasil",
+      "max": 6,
+      "pattern": "(?i)banc|pix|fintech|open finance|drex|febraban|bacen|banco central|crédito|pagament|cart[aã]o|\\bIA\\b|intelig[eê]ncia artificial|nubank|itaú|bradesco|santander|caixa|inter\\b|c6|picpay|mercado pago|stone|btg|xp\\b"
+    },
+    {
+      "name": "Baguete",
+      "watch": "Baguete",
+      "kind": "rss",
+      "url": "https://www.baguete.com.br/rss/noticias/feed",
+      "region": "brasil",
+      "max": 6,
+      "pattern": "(?i)banc|pix|fintech|open finance|drex|febraban|bacen|banco central|crédito|pagament|cart[aã]o|\\bIA\\b|intelig[eê]ncia artificial|nubank|itaú|bradesco|santander|caixa|inter\\b|c6|picpay|mercado pago|stone|btg|xp\\b"
+    },
+    {
+      "name": "NeoFeed",
+      "watch": "NeoFeed",
+      "kind": "rss",
+      "url": "https://neofeed.com.br/feed/",
+      "region": "brasil",
+      "max": 6,
+      "pattern": "(?i)banc|pix|fintech|open finance|drex|febraban|bacen|banco central|crédito|pagament|cart[aã]o|\\bIA\\b|intelig[eê]ncia artificial|nubank|itaú|bradesco|santander|caixa|inter\\b|c6|picpay|mercado pago|stone|btg|xp\\b"
+    },
+    {
+      "name": "Money20/20 USA (YouTube)",
+      "watch": "Money20/20 USA",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCip4CIpmM13NOAH-j9GiAzg",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Money20/20 Middle East (YouTube)",
+      "watch": "Money20/20 Middle East",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCg8wNFhEpBAqD7XYTvytFDw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Money20/20 Middle East (notícias)",
+      "watch": "Money20/20 Middle East",
+      "kind": "rss",
+      "url": "https://money2020middleeast.com/rss.xml",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Sibos (YouTube)",
+      "watch": "Sibos",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYDwSnNluJ0pa-h2eo8ZkXg",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Sibos (notícias)",
+      "watch": "Sibos",
+      "kind": "rss",
+      "url": "https://www.sibos.com/rss.xml",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Singapore FinTech Festival (YouTube)",
+      "watch": "Singapore FinTech Festival",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQNI-8DwtJWMFIfSUEOcijA",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "FinovateFall (YouTube)",
+      "watch": "FinovateFall",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIi4K3Gk3hULdetAoPDd-WQ",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "FinovateFall (notícias)",
+      "watch": "FinovateFall",
+      "kind": "rss",
+      "url": "https://finovate.com/feed/",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Paris Fintech Forum (YouTube)",
+      "watch": "Paris Fintech Forum",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFU11TCFKXE2nnYbZdbTaAg",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Hong Kong FinTech Week (YouTube)",
+      "watch": "Hong Kong FinTech Week",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIO_EKTFV-nGWY5pC0kgvTA",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Dubai FinTech Summit (YouTube)",
+      "watch": "Dubai FinTech Summit",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwaR6GKa6OYQ582SbzXkdzg",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Nacha Smarter Faster Payments (YouTube)",
+      "watch": "Nacha Smarter Faster Payments",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLRh3VZPtAD_MhEIiiRevfg",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Nacha Smarter Faster Payments (notícias)",
+      "watch": "Nacha Smarter Faster Payments",
+      "kind": "rss",
+      "url": "https://payments.nacha.org/rss.xml",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Fintech Meetup (YouTube)",
+      "watch": "Fintech Meetup",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBLeux7_W5xSvdB-NqvNjfw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "UK FinTech Week / Innovate Finance Global Summit (YouTube)",
+      "watch": "UK FinTech Week / Innovate Finance Global Summit",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkD1_QN12eXsu0g3hJUWaIw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "PAY360 (YouTube)",
+      "watch": "PAY360",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8wiE_X-HtnYiPmu11NRrtQ",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "PAY360 (notícias)",
+      "watch": "PAY360",
+      "kind": "rss",
+      "url": "https://thepaymentsassociation.org/feed/",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "MPE – Merchant Payments Ecosystem (YouTube)",
+      "watch": "MPE – Merchant Payments Ecosystem",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBuIl-Fi0j_APvaoJiKPKoA",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Global Fintech Fest (YouTube)",
+      "watch": "Global Fintech Fest",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCg06SzV6vquDLtQ5hHCOopw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Abu Dhabi Finance Week (ADFW) (YouTube)",
+      "watch": "Abu Dhabi Finance Week (ADFW)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqwnzB7WLu1U4XPzweDjDtA",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "MRC Vegas (Merchant Risk Council) (YouTube)",
+      "watch": "MRC Vegas (Merchant Risk Council)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFE64Z8VpT6Wmdg-KkK1S-Q",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Febraban Tech (YouTube)",
+      "watch": "Febraban Tech",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOWExcTuCxhqwRkyiu0z35w",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "CMEP – Congresso de Meios Eletrônicos de Pagamento (YouTube)",
+      "watch": "CMEP – Congresso de Meios Eletrônicos de Pagamento",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFac3UYjUnbJIJS98pS0J-w",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Fintouch (YouTube)",
+      "watch": "Fintouch",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZyquXNRP0p5SU4sx1riSrw",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Fintouch (notícias)",
+      "watch": "Fintouch",
+      "kind": "rss",
+      "url": "https://www.abfintechs.com.br/blog-feed.xml",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Congresso ABIPAG (YouTube)",
+      "watch": "Congresso ABIPAG",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC838VF1DGKtgiwNgUsZp5Eg",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Congresso ABIPAG (notícias)",
+      "watch": "Congresso ABIPAG",
+      "kind": "rss",
+      "url": "https://abipag.com.br/feed/",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Mind The Sec (YouTube)",
+      "watch": "Mind The Sec",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2QgCedRNj_tLDrGWSM3GsQ",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "LIFT Day (YouTube)",
+      "watch": "LIFT Day",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_Y9Mf8o6gGAAw8eBrn3SOw",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "LIFT Day (notícias)",
+      "watch": "LIFT Day",
+      "kind": "rss",
+      "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/noticias",
+      "region": "brasil",
+      "max": 4,
+      "pattern": "(?i)pix|drex|open finance|lift|inova|tecnolog|\\bIA\\b|digital|pagament"
+    },
+    {
+      "name": "Web Summit Rio (YouTube)",
+      "watch": "Web Summit Rio",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJtkHqH4Qof97TSx7BzE5IQ",
+      "region": "brasil",
+      "max": 4,
+      "pattern": "(?i)bank|banking|fintech|payment|\\bAI\\b|artificial intelligence|generative|agent|llm|cloud|core|deposit|lending|stablecoin|tokeni|open banking"
+    },
+    {
+      "name": "Rio Innovation Week (YouTube)",
+      "watch": "Rio Innovation Week",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwVgaGTplF88iWmDC6v5aZg",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Concred – Congresso Brasileiro do Cooperativismo de Crédito (YouTube)",
+      "watch": "Concred – Congresso Brasileiro do Cooperativismo de Crédito",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9CLG817KQ6WTY-rTn9n61w",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Concred – Congresso Brasileiro do Cooperativismo de Crédito (notícias)",
+      "watch": "Concred – Congresso Brasileiro do Cooperativismo de Crédito",
+      "kind": "rss",
+      "url": "https://concred.coop.br/feed/",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Open Finance Brasil – eventos e Open Finance Awards (YouTube)",
+      "watch": "Open Finance Brasil – eventos e Open Finance Awards",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcEHG9ibMcBEK1tDAG-2WMQ",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Open Finance Brasil – eventos e Open Finance Awards (notícias)",
+      "watch": "Open Finance Brasil – eventos e Open Finance Awards",
+      "kind": "rss",
+      "url": "https://openfinancebrasil.org.br/feed/",
+      "region": "brasil",
+      "max": 4
+    },
+    {
+      "name": "Finnosummit (YouTube)",
+      "watch": "Finnosummit",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeVmsUTu06Zz8T7DRmFiy-w",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Finnosummit (notícias)",
+      "watch": "Finnosummit",
+      "kind": "rss",
+      "url": "https://www.finnosummit.com/feed/",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "CLAB – Congreso Latinoamericano de Tecnología e Innovación (Felaban) (YouTube)",
+      "watch": "CLAB – Congreso Latinoamericano de Tecnología e Innovación (Felaban)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCueyJZPIm0FIU_-Bwu9eQcw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "CLAB – Congreso Latinoamericano de Tecnología e Innovación (Felaban) (notícias)",
+      "watch": "CLAB – Congreso Latinoamericano de Tecnología e Innovación (Felaban)",
+      "kind": "rss",
+      "url": "https://felaban.com/feed/",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Convención Bancaria (Asobancaria) (YouTube)",
+      "watch": "Convención Bancaria (Asobancaria)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0CxohYbntZf2bwapnUC3QA",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Convención Bancaria (Asobancaria) (notícias)",
+      "watch": "Convención Bancaria (Asobancaria)",
+      "kind": "rss",
+      "url": "https://www.asobancaria.com/feed/",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "Chile Fintech Forum (YouTube)",
+      "watch": "Chile Fintech Forum",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCj41WeQCSBCSLZ-R73CP6Vw",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "iupana – eventos (FinSeg Day e outros) (YouTube)",
+      "watch": "iupana – eventos (FinSeg Day e outros)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPjzrAnrBpXm19ys-X4DvKQ",
+      "region": "mundo",
+      "max": 4
+    },
+    {
+      "name": "iupana – eventos (FinSeg Day e outros) (notícias)",
+      "watch": "iupana – eventos (FinSeg Day e outros)",
+      "kind": "rss",
+      "url": "https://iupana.com/feed/",
+      "region": "mundo",
+      "max": 4
+    }
+  ]
+}

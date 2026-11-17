@@ -1,0 +1,39 @@
+{
+  "name": "Bank Tech & AI Watch",
+  "brand": {
+    "text": "Bank Tech & AI",
+    "em": "Watch",
+    "mark": "🏦"
+  },
+  "description": "Como a tecnologia e a IA estão mudando os bancos, no Brasil e no mundo: pesquisa, bancos, fintechs, conferências e reguladores.",
+  "order": 3,
+  "audience": "Você é o curador do BANK-TECH-AI-WATCH, um digest diário em PT-BR para executivos de tecnologia, dados, produtos e estratégia de um grande banco brasileiro. Eles querem só o que é state-of-the-art e acionável sobre como a tecnologia e a IA estão mudando o setor bancário: IA generativa e agentes em produção nos bancos (casos reais, ganhos medidos, arquitetura, riscos), dados e ML para crédito, risco e personalização, experiência digital e atendimento, pagamentos (Pix, Open Finance, tokenização, CBDC/Drex), core banking, nuvem e engenharia, governança e regulação de IA, e o impacto na força de trabalho e na estratégia. Comparar o que os bancos brasileiros fazem com o que bancos globais e fintechs de fronteira fazem é central.",
+  "rubric_focus": "a estratégia e a operação de tecnologia e IA de um grande banco",
+  "rubric_strong": "caso real em produção com números (custo, receita, produtividade, NPS, adoção), experimento ou dados administrativos de bancos/clientes, paper em venue de elite (finanças, economia, sistemas de informação, ML), relatório de regulador/BIS com dados, ou apresentação técnica de banco/fintech de fronteira com arquitetura e lições",
+  "off_topic": "marketing de produto e anúncio de parceria sem conteúdo técnico, previsão de mercado sem dados, cripto especulativo, finanças pessoais genéricas, surveys repetitivos de 'IA em finanças' sem dados novos, notícia de resultado trimestral sem tecnologia",
+  "summary_lesson": "a lição prática para quem lidera tecnologia, dados ou IA num banco",
+  "headline_example": "semana forte em agentes de IA no atendimento e em modernização de core",
+  "trend_focus": "o que está mudando na forma como os bancos usam tecnologia e IA",
+  "source_kinds": "bancos e fintechs (blogs técnicos e de pesquisa), conferências do setor, reguladores e analistas",
+  "regions": {
+    "brasil": "🇧🇷 Brasil",
+    "mundo": "🌍 Mundo"
+  },
+  "prefilter_keywords": "bank|banking|banco|bancári|financial services|financial institution|fintech|neobank|digital bank|payment|pix|open banking|open finance|cbdc|drex|tokeni|deposit|lending|credit|llm|large language model|generative|genai|artificial intelligence|machine learning|agent|chatbot|assistant|cloud|core banking|mainframe|customer|digital|regulat|central bank|model risk|governance",
+  "watchlist_labels": {
+    "researchers": "Pesquisadores",
+    "journals": "Journals & venues",
+    "centers": "Bancos, fintechs, conferências & reguladores",
+    "practitioners": "Analistas & mídia"
+  },
+  "themes": {
+    "genai_agents": "🤖 IA generativa & agentes nos bancos",
+    "data_ml": "📊 Dados & ML: crédito, risco e personalização",
+    "customer": "📱 Experiência digital & atendimento",
+    "payments": "⚡ Pagamentos, Pix, Open Finance & tokenização",
+    "engineering": "🏗️ Core, nuvem & engenharia",
+    "governance": "⚖️ Governança, regulação & risco de IA",
+    "strategy_work": "📈 Estratégia, ROI & força de trabalho",
+    "events": "🎤 Conferências & bastidores do setor"
+  }
+}

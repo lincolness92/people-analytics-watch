@@ -224,6 +224,37 @@
       "watch": "ACFE",
       "kind": "rss",
       "url": "https://acfe.podbean.com/feed/"
+    },
+    {
+      "name": "Febraban SEC (ex-Congresso de Prevenção e Repressão a Fraudes) (YouTube)",
+      "watch": "Febraban",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOWExcTuCxhqwRkyiu0z35w",
+      "max": 4,
+      "pattern": "(?i)fraud|golpe|segur|ciber|cyber|pix|PLD|lavagem|engenharia social|scam|sec\\b|identidade|biometr|deepfake"
+    },
+    {
+      "name": "Mind The Sec (YouTube)",
+      "watch": "Mind The Sec",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2QgCedRNj_tLDrGWSM3GsQ",
+      "max": 4,
+      "pattern": "(?i)fraud|golpe|segur|ciber|cyber|pix|PLD|lavagem|engenharia social|scam|sec\\b|identidade|biometr|deepfake"
+    },
+    {
+      "name": "CMEP – Congresso de Meios Eletrônicos de Pagamento (YouTube)",
+      "watch": "CMEP (Abecs)",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFac3UYjUnbJIJS98pS0J-w",
+      "max": 4,
+      "pattern": "(?i)fraud|golpe|segur|ciber|cyber|pix|PLD|lavagem|engenharia social|scam|sec\\b|identidade|biometr|deepfake"
+    },
+    {
+      "name": "MRC Vegas (Merchant Risk Council) (YouTube)",
+      "watch": "Merchant Risk Council",
+      "kind": "rss",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFE64Z8VpT6Wmdg-KkK1S-Q",
+      "max": 4
     }
   ]
 }
