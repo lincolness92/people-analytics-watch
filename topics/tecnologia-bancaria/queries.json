@@ -27,7 +27,7 @@
       "\"agentic commerce\" OR \"agent-initiated payments\" OR \"agentic payments\" OR (\"AI agents\" AND (checkout OR shopping OR purchase))",
       "(\"foundation model\" OR \"foundation models\" OR \"pretrained transformer\") AND (\"transaction data\" OR \"financial transactions\" OR \"banking data\" OR \"payment data\")",
       "(personalization OR \"recommender system\" OR \"next best action\" OR \"customer lifetime value\" OR martech) AND (bank OR banking OR \"financial services\")",
-      "(\"debt collection\" OR collections OR \"loan recovery\" OR delinquency) AND (\"machine learning\" OR \"artificial intelligence\" OR \"reinforcement learning\" OR uplift)",
+      "(\"debt collection\" OR \"debt collections\" OR \"loan recovery\" OR \"collection strategy\" OR \"collections strategy\" OR delinquency) AND (\"machine learning\" OR \"artificial intelligence\" OR \"reinforcement learning\" OR uplift) AND (loan OR loans OR credit OR lending OR bank)",
       "(\"corporate venture capital\" OR \"open innovation\" OR \"innovation lab\") AND (bank OR banks OR banking OR \"financial institutions\")",
       "(\"robotic process automation\" OR RPA OR \"intelligent automation\" OR \"process mining\") AND (bank OR banking OR \"financial services\")",
       "(reskilling OR upskilling OR \"data literacy\" OR \"AI literacy\" OR \"digital skills\") AND (bank OR banks OR banking OR \"financial services\")",

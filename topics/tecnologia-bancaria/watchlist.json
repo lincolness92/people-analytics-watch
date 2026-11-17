@@ -1,6 +1,238 @@
 {
-  "researchers": [],
-  "journals": [],
+  "researchers": [
+    {
+      "name": "Thomas Philippon",
+      "institution": "Center for Economic and Policy Research",
+      "region": "EUA",
+      "area": "Custo da intermediação financeira e fintech",
+      "why": "Custo da intermediação financeira e fintech; 26 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5109486762",
+      "openalex_note": "conferido por nome + instituição; h-index 44",
+      "links": {}
+    },
+    {
+      "name": "Tobias Berg",
+      "institution": "Goethe University Frankfurt",
+      "region": "Europa",
+      "area": "Pegadas digitais e crédito (digital footprints)",
+      "why": "Pegadas digitais e crédito (digital footprints); 31 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5074576628",
+      "openalex_note": "conferido por nome + instituição; h-index 25",
+      "links": {}
+    },
+    {
+      "name": "Andreas Fuster",
+      "institution": "University of Zurich",
+      "region": "Europa",
+      "area": "ML em crédito e efeitos distributivos",
+      "why": "ML em crédito e efeitos distributivos; 58 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5026121976",
+      "openalex_note": "conferido por nome + instituição; h-index 40",
+      "links": {}
+    },
+    {
+      "name": "Itay Goldstein",
+      "institution": "National Bureau of Economic Research",
+      "region": "EUA",
+      "area": "Fintech, estabilidade e tecnologia em finanças",
+      "why": "Fintech, estabilidade e tecnologia em finanças; 63 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5023527413",
+      "openalex_note": "conferido por nome + instituição; h-index 53",
+      "links": {}
+    },
+    {
+      "name": "Leonardo Gambacorta",
+      "institution": "Centre for Economic Policy Research",
+      "region": "Europa",
+      "area": "Big techs, fintech e IA em bancos (BIS)",
+      "why": "Big techs, fintech e IA em bancos (BIS); 178 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5047191177",
+      "openalex_note": "conferido por nome + instituição; h-index 81",
+      "links": {}
+    },
+    {
+      "name": "Raphael Auer",
+      "institution": "Bank for International Settlements",
+      "region": "Europa",
+      "area": "CBDC, tokenização e pagamentos (BIS)",
+      "why": "CBDC, tokenização e pagamentos (BIS); 34 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5066992571",
+      "openalex_note": "conferido por nome + instituição; h-index 37",
+      "links": {}
+    },
+    {
+      "name": "Tarun Ramadorai",
+      "institution": "European Corporate Governance Institute",
+      "region": "Europa",
+      "area": "Finanças domiciliares, ML em crédito, fintech",
+      "why": "Finanças domiciliares, ML em crédito, fintech; 11 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5042695170",
+      "openalex_note": "conferido por nome + instituição; h-index 40",
+      "links": {}
+    },
+    {
+      "name": "Greg Buchak",
+      "institution": "Stanford University",
+      "region": "EUA",
+      "area": "Fintechs e shadow banks no crédito",
+      "why": "Fintechs e shadow banks no crédito; 24 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5048631964",
+      "openalex_note": "conferido por nome + instituição; h-index 17",
+      "links": {}
+    },
+    {
+      "name": "Amit Seru",
+      "institution": "Northwestern University",
+      "region": "EUA",
+      "area": "Fintech, regulação e bancos",
+      "why": "Fintech, regulação e bancos; 92 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5080784081",
+      "openalex_note": "conferido por nome + instituição; h-index 62",
+      "links": {}
+    },
+    {
+      "name": "Tomasz Piskorski",
+      "institution": "Northwestern University",
+      "region": "EUA",
+      "area": "Fintech e crédito hipotecário",
+      "why": "Fintech e crédito hipotecário; 62 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5024126693",
+      "openalex_note": "conferido por nome + instituição; h-index 38",
+      "links": {}
+    },
+    {
+      "name": "Erik Brynjolfsson",
+      "institution": "National Bureau of Economic Research",
+      "region": "EUA",
+      "area": "IA generativa e produtividade (atendimento)",
+      "why": "IA generativa e produtividade (atendimento); 32 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5038255653",
+      "openalex_note": "conferido por nome + instituição; h-index 107",
+      "links": {}
+    },
+    {
+      "name": "Julapa Jagtiani",
+      "institution": "Federal Reserve Bank of Philadelphia",
+      "region": "EUA",
+      "area": "Fintech lending e dados alternativos",
+      "why": "Fintech lending e dados alternativos; 101 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5032113166",
+      "openalex_note": "conferido por nome + instituição; h-index 39",
+      "links": {}
+    },
+    {
+      "name": "Hyun Song Shin",
+      "institution": "Bank for International Settlements",
+      "region": "Europa",
+      "area": "Sistema monetário, tokenização e IA (BIS)",
+      "why": "Sistema monetário, tokenização e IA (BIS); 173 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5027298282",
+      "openalex_note": "conferido por nome + instituição; h-index 101",
+      "links": {}
+    },
+    {
+      "name": "Sumit Agarwal",
+      "institution": "National University of Singapore",
+      "region": "China/Ásia",
+      "area": "Finanças digitais e pagamentos",
+      "why": "Finanças digitais e pagamentos; 197 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5076309222",
+      "openalex_note": "conferido por nome + instituição; h-index 70",
+      "links": {}
+    },
+    {
+      "name": "Bruno Giovannetti",
+      "institution": "Escola de Economia de São Paulo",
+      "region": "Brasil",
+      "area": "Finanças domiciliares e mercados no Brasil",
+      "why": "Finanças domiciliares e mercados no Brasil; 18 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5073505652",
+      "openalex_note": "conferido por nome + instituição; h-index 12",
+      "links": {}
+    },
+    {
+      "name": "Huberto M. Ennis",
+      "institution": "Federal Reserve Bank of Richmond",
+      "region": "EUA",
+      "area": "Pagamentos e moeda digital",
+      "why": "Pagamentos e moeda digital; 68 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5046614026",
+      "openalex_note": "conferido por nome + instituição; h-index 22",
+      "links": {}
+    },
+    {
+      "name": "Christine A. Parlour",
+      "institution": "University of California, Berkeley",
+      "region": "EUA",
+      "area": "Fintech, pagamentos e dados",
+      "why": "Fintech, pagamentos e dados; 16 trabalhos no tema no OpenAlex.",
+      "openalex_id": "A5083459584",
+      "openalex_note": "conferido por nome + instituição; h-index 30",
+      "links": {}
+    }
+  ],
+  "journals": [
+    {
+      "name": "Review of Financial Studies",
+      "openalex_source_id": "S170137484",
+      "why": "Topo em finanças; fintech, crédito digital e bancos."
+    },
+    {
+      "name": "The Journal of Finance",
+      "openalex_source_id": "S5353659",
+      "why": "Topo em finanças."
+    },
+    {
+      "name": "Journal of Financial Economics",
+      "openalex_source_id": "S149240962",
+      "why": "Topo em finanças; competição de fintechs e shadow banks."
+    },
+    {
+      "name": "Management Science",
+      "openalex_source_id": "S33323087",
+      "why": "IA e produtividade, operações e experimentos em serviços financeiros."
+    },
+    {
+      "name": "Journal of Financial Intermediation",
+      "openalex_source_id": "S5984737",
+      "why": "Intermediação bancária e tecnologia."
+    },
+    {
+      "name": "Journal of Banking & Finance",
+      "openalex_source_id": "S2876017",
+      "why": "Economia bancária aplicada."
+    },
+    {
+      "name": "Information Systems Research",
+      "openalex_source_id": "S202812398",
+      "why": "Adoção de IA e plataformas digitais."
+    },
+    {
+      "name": "MIS Quarterly",
+      "openalex_source_id": "S57293258",
+      "why": "Sistemas de informação."
+    },
+    {
+      "name": "The Review of Corporate Finance Studies",
+      "openalex_source_id": "S2736251538",
+      "why": "Fintech e finanças corporativas."
+    },
+    {
+      "name": "Financial Innovation",
+      "openalex_source_id": "S3034727917",
+      "why": "Inovação financeira."
+    },
+    {
+      "name": "National Bureau of Economic Research",
+      "openalex_source_id": "S2809516038",
+      "why": "Working papers do NBER sobre fintech, IA e bancos."
+    },
+    {
+      "name": "ACM International Conference on AI in Finance (ICAIF)",
+      "openalex_source_id": "S7407087532",
+      "why": "ICAIF: principal conferência acadêmica de IA em finanças."
+    }
+  ],
   "centers": [
     {
       "name": "Nubank",
