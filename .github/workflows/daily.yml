@@ -11,7 +11,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["web/**", "config/watchlist.json", "src/pawatch/render.py"]
+    paths: ["web/**", "topics/**", "src/pawatch/render.py", ".github/workflows/daily.yml"]
 
 permissions:
   contents: write
@@ -65,6 +65,15 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python -m pawatch notify
+
+      - name: Ensure Cloudflare Pages project exists
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        continue-on-error: true  # fails harmlessly when the project already exists
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create ${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }} --production-branch=main
 
       - name: Deploy to Cloudflare Pages
         if: env.CLOUDFLARE_API_TOKEN != ''
