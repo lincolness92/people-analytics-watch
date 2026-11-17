@@ -1,0 +1,796 @@
+{
+ "generated": "2026-11-17",
+ "month": "2026-11",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "mode": "completa",
+ "changes": null,
+ "stats": {
+  "network": 972,
+  "candidates": 363,
+  "triaged": 363,
+  "milestones": 31,
+  "openalex_calls": 83,
+  "openalex_cost": 0.0479,
+  "tokens": {
+   "prompt_tokens": 91548,
+   "completion_tokens": 126622
+  }
+ },
+ "overview": "De 1993 a 2026, o campo saiu do paradoxo da produtividade de TI — muito investimento e pouco ganho agregado visível — para uma agenda em que valor depende de complementos organizacionais, dados e modelos. Brynjolfsson e Hitt mostraram que retornos aparecem no nível da firma e em horizontes longos; depois, ML, fintechs e LLMs deslocaram a fronteira para crédito algorítmico, linguagem e agentes. Hoje, a pergunta central é como transformar modelos fundacionais e agentes em produtividade bancária mensurável, com equidade, explicabilidade e controle de risco. O arco é menos substituir humanos e mais redesenhar processos, dados e governança.",
+ "eras": [
+  {
+   "key": "ate-1999",
+   "label": "até 1999",
+   "title": "Paradoxo da produtividade de TI",
+   "summary": "A época resolveu nomear e medir o paradoxo da produtividade: computadores se difundiam, mas as estatísticas agregadas não mostravam ganho claro. Brynjolfsson e Hitt deslocaram a análise para o nível da firma e mostraram que qualidade, variedade e reestruturação podiam esconder o valor. A ideia que virou padrão foi separar produtividade, lucratividade e excedente do consumidor ao avaliar TI. Ficou em aberto como capturar intangíveis e benefícios difusos, agenda que dominaria as décadas seguintes.",
+   "milestones": [
+    {
+     "id": "W1978484347",
+     "title": "The productivity paradox of information technology",
+     "year": 1993,
+     "venue": "Communications of the ACM",
+     "authors": [
+      "Erik Brynjolfsson"
+     ],
+     "cited_by": 3172,
+     "net": 6,
+     "url": "https://doi.org/10.1145/163298.163309",
+     "theme": "automation",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 8,
+     "why": "Formulou o paradoxo da produtividade da TI: aumento de poder computacional não aparecia em produtividade agregada. Definiu a agenda de mensuração que ainda sustenta debates sobre ROI de tecnologia.",
+     "new": false
+    },
+    {
+     "id": "W2141954228",
+     "title": "Paradox Lost? Firm-Level Evidence on the Returns to Information Systems Spending",
+     "year": 1996,
+     "venue": "Management Science",
+     "authors": [
+      "Erik Brynjolfsson",
+      "Lorin M. Hitt"
+     ],
+     "cited_by": 2488,
+     "net": 4,
+     "url": "https://doi.org/10.1287/mnsc.42.4.541",
+     "theme": "automation",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 8,
+     "why": "Mostrou, com dados de 367 grandes empresas, que gastos em IS geram retornos no nível da firma, mesmo quando estatísticas agregadas não capturam qualidade e variedade. Base para medir TI além do PIB.",
+     "new": false
+    },
+    {
+     "id": "W2102748455",
+     "title": "Productivity, Business Profitability, and Consumer Surplus: Three Different Measures of Information Technology Value1,2",
+     "year": 1996,
+     "venue": "MIS Quarterly",
+     "authors": [
+      "Lorin M. Hitt",
+      "Erik Brynjolfsson"
+     ],
+     "cited_by": 1919,
+     "net": 1,
+     "url": "https://doi.org/10.2307/249475",
+     "theme": "automation",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 7,
+     "why": "Separou produtividade, lucratividade e excedente do consumidor como perguntas distintas. Evita conclusões simplistas: o valor da TI depende do que se mede e de quais dados se usa.",
+     "new": false
+    }
+   ]
+  },
+  {
+   "key": "2000-2009",
+   "label": "2000–2009",
+   "title": "TI, organização e canais digitais",
+   "summary": "Esta época explicou por que TI só vira valor com complementos: reorganização, novos produtos e capital intangível. A evidência firm-level mostrou retornos maiores no longo prazo e viés em favor de trabalho qualificado, consolidando a visão sociotécnica. Em paralelo, crédito a pequenas empresas já se tornava mais impessoal e à distância, e o autoatendimento emergia como canal de serviço. Ficou em aberto medir esses intangíveis e desenhar canais digitais que não sacrificassem satisfação e acesso.",
+   "milestones": [
+    {
+     "id": "W2151169308",
+     "title": "Beyond Computation: Information Technology, Organizational Transformation and Business Performance",
+     "year": 2000,
+     "venue": "The Journal of Economic Perspectives",
+     "authors": [
+      "Erik Brynjolfsson",
+      "Lorin M. Hitt"
+     ],
+     "cited_by": 4306,
+     "net": 5,
+     "url": "https://doi.org/10.1257/jep.14.4.23",
+     "theme": "automation",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 8,
+     "why": "Argumentou que investimentos organizacionais e intangíveis explicam o valor da TI e que a produtividade agregada reflete capital acumulado no passado. Firmou a visão sociotécnica que guia transformação digital.",
+     "new": false
+    },
+    {
+     "id": "W2890782667",
+     "title": "Information Technology, Workplace Organization, and the Demand for Skilled Labor: Firm-Level Evidence",
+     "year": 2002,
+     "venue": "The Quarterly Journal of Economics",
+     "authors": [
+      "Timothy F. Bresnahan",
+      "Erik Brynjolfsson",
+      "Lorin M. Hitt"
+     ],
+     "cited_by": 4091,
+     "net": 5,
+     "url": "https://doi.org/10.1162/003355302753399526",
+     "theme": "skills",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 8,
+     "why": "Encontrou complementaridade entre TI, reorganização do trabalho e novos produtos, com maior demanda por trabalho qualificado. Antecipou o debate de skills e talento na adoção de tecnologia.",
+     "new": false
+    },
+    {
+     "id": "W3121262326",
+     "title": "Computing Productivity: Firm-Level Evidence",
+     "year": 2003,
+     "venue": "The Review of Economics and Statistics",
+     "authors": [
+      "Erik Brynjolfsson",
+      "Lorin M. Hitt"
+     ],
+     "cited_by": 1940,
+     "net": 1.5,
+     "url": "https://doi.org/10.1162/003465303772815736",
+     "theme": "automation",
+     "versions": [],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 7,
+     "why": "Mostrou que retornos à computação são até cinco vezes maiores em 5–7 anos do que em 1 ano, por causa de investimentos complementares demorados. Importa para expectativas realistas de retorno em TI.",
+     "new": false
+    },
+    {
+     "id": "W3125989415",
+     "title": "Does Distance Still Matter? The Information Revolution in Small Business Lending",
+     "year": 2002,
+     "venue": "The Journal of Finance",
+     "authors": [
+      "Mitchell A. Petersen",
+      "Raghuram G. Rajan"
+     ],
+     "cited_by": 2544,
+     "net": 9.5,
+     "url": "https://doi.org/10.1111/1540-6261.00505",
+     "theme": "risk_credit",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Documentou que a distância entre pequenas empresas e credores aumentou com comunicação impessoal e que a produtividade do credor ampliou acesso ao crédito. Antecipou o crédito digital e a redução de assimetria por dados.",
+     "new": false
+    },
+    {
+     "id": "W2150563888",
+     "title": "Self-Service Technologies: Understanding Customer Satisfaction with Technology-Based Service Encounters",
+     "year": 2000,
+     "venue": "Journal of Marketing",
+     "authors": [
+      "Matthew L. Meuter",
+      "Amy L. Ostrom",
+      "Robert I. Roundtree",
+      "Mary Jo Bitner"
+     ],
+     "cited_by": 3640,
+     "net": 8.0,
+     "url": "https://doi.org/10.1509/jmkg.64.3.50.18024",
+     "theme": "conversational",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Mapeou fontes de satisfação e insatisfação em tecnologias de autoatendimento com mais de 800 incidentes. Fundou a pesquisa de experiência do cliente em canais digitais, base para bancos digitais.",
+     "new": false
+    }
+   ]
+  },
+  {
+   "key": "2010-2017",
+   "label": "2010–2017",
+   "title": "Transformers, fintechs e risco algorítmico",
+   "summary": "A época resolveu duas frentes: ML aplicado a risco de crédito e a arquitetura Transformer, que destravou a IA generativa. Fintechs cresceram em hipotecas e serviços financeiros, em parte por arbitragem regulatória e produtividade operacional. LIME inaugurou explicabilidade pós-hoc, enquanto mobile money mostrou inclusão e compartilhamento de risco em escala. Ficaram em aberto governança de modelos, discriminação algorítmica e como comparar métodos de scoring de forma justa.",
+   "milestones": [
+    {
+     "id": "W2626778328",
+     "title": "Attention Is All You Need",
+     "year": 2017,
+     "venue": "arXiv (Cornell University)",
+     "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Łukasz Kaiser",
+      "Illia Polosukhin"
+     ],
+     "cited_by": 151508,
+     "net": 17.0,
+     "url": "https://doi.org/10.48550/arxiv.1706.03762",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 10,
+     "why": "Introduziu o Transformer, baseado só em atenção, mais paralelizável e sem recorrência. É a arquitetura que viabilizou BERT, GPT e toda a IA generativa atual.",
+     "new": false
+    },
+    {
+     "id": "W2603785580",
+     "title": "Fintech, regulatory arbitrage, and the rise of shadow banks",
+     "year": 2017,
+     "venue": "Journal of Financial Economics",
+     "authors": [
+      "Greg Buchak",
+      "Gregor Matvos",
+      "Tomasz Piskorski",
+      "Amit Seru"
+     ],
+     "cited_by": 2613,
+     "net": 65.0,
+     "url": "https://doi.org/10.1016/j.jfineco.2018.03.011",
+     "theme": "innovation",
+     "versions": [
+      "https://doi.org/10.3386/w23288",
+      "https://doi.org/10.2139/ssrn.2941561"
+     ],
+     "watch": [
+      "Amit Seru",
+      "Greg Buchak",
+      "Tomasz Piskorski"
+     ],
+     "score": 6,
+     "why": "Mostrou que shadow banks e fintechs ganharam participação em hipotecas nos EUA combinando vantagem tecnológica e diferenças regulatórias. Explica a ascensão fintech e o debate de arbitragem regulatória.",
+     "new": false
+    },
+    {
+     "id": "W3121647380",
+     "title": "The FinTech Opportunity",
+     "year": 2016,
+     "venue": "Oxford University Press eBooks",
+     "authors": [
+      "Thomas Philippon"
+     ],
+     "cited_by": 1259,
+     "net": 18.5,
+     "url": "https://doi.org/10.1093/oso/9780198845553.003.0011",
+     "theme": "innovation",
+     "versions": [
+      "https://doi.org/10.3386/w22476"
+     ],
+     "watch": [
+      "Thomas Philippon"
+     ],
+     "score": 6,
+     "why": "Enquadrou o FinTech como inovação que pode reduzir custos financeiros, mas cria desafios de privacidade, regulação e law enforcement. Referência para estratégia e política em serviços financeiros digitais.",
+     "new": false
+    },
+    {
+     "id": "W3121588992",
+     "title": "Consumer credit-risk models via machine-learning algorithms",
+     "year": 2010,
+     "venue": "Journal of Banking & Finance",
+     "authors": [
+      "Amir E. Khandani",
+      "Adlar J. Kim",
+      "Andrew W. Lo"
+     ],
+     "cited_by": 1353,
+     "net": 12.5,
+     "url": "https://doi.org/10.1016/j.jbankfin.2010.06.001",
+     "theme": "risk_credit",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Aplicou machine learning a modelos de risco de crédito ao consumidor, mostrando ganho preditivo sobre abordagens tradicionais. Abriu caminho para ML em crédito, hoje padrão em bancos.",
+     "new": false
+    },
+    {
+     "id": "W2282821441",
+     "title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
+     "year": 2016,
+     "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "authors": [
+      "Marco Túlio Ribeiro",
+      "Sameer Singh",
+      "Carlos Guestrin"
+     ],
+     "cited_by": 28059,
+     "net": 11.5,
+     "url": "https://doi.org/10.1145/2939672.2939778",
+     "theme": "governance",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Propôs LIME para explicar previsões de qualquer classificador de forma local. Tornou-se base de explicabilidade pós-hoc e confiança em modelos regulados.",
+     "new": false
+    },
+    {
+     "id": "W2032874557",
+     "title": "Risk Sharing and Transactions Costs: Evidence from Kenya's Mobile Money Revolution",
+     "year": 2013,
+     "venue": "American Economic Review",
+     "authors": [
+      "William G. Jack",
+      "Tavneet Suri"
+     ],
+     "cited_by": 2099,
+     "net": 11,
+     "url": "https://doi.org/10.1257/aer.104.1.183",
+     "theme": "payments",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Usou expansão do mobile money no Quênia para mostrar redução de custos de transação e melhora no compartilhamento de risco. Evidência seminal de inclusão financeira digital.",
+     "new": false
+    },
+    {
+     "id": "W2131816657",
+     "title": "Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research",
+     "year": 2015,
+     "venue": "European Journal of Operational Research",
+     "authors": [
+      "Stefan Lessmann",
+      "Bart Baesens",
+      "Hsin‐Vonn Seow",
+      "Lyn C. Thomas"
+     ],
+     "cited_by": 1922,
+     "net": 9,
+     "url": "https://doi.org/10.1016/j.ejor.2015.05.030",
+     "theme": "risk_credit",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Atualizou benchmarks de classificação para credit scoring com múltiplos algoritmos e bases. Padronizou comparação e ajudou a levar ML para produção em crédito.",
+     "new": false
+    }
+   ]
+  },
+  {
+   "key": "2018-2022",
+   "label": "2018–2022",
+   "title": "LLMs, crédito alternativo e equidade",
+   "summary": "Esta época industrializou a linguagem: BERT, GPT-3, RLHF e chain-of-thought transformaram LLMs em plataforma de produtos. No crédito, pegada digital ampliou o acesso, mas ML também expôs disparidades raciais e a necessidade de auditoria. Fintechs de hipoteca provaram ganhos de velocidade sem piora de default, e a discriminação passou a ser medida na era algorítmica. Ficou em aberto equidade, explicabilidade em modelos generativos e regulação proporcional ao risco.",
+   "milestones": [
+    {
+     "id": "W3030163527",
+     "title": "Language Models are Few-Shot Learners",
+     "year": 2020,
+     "venue": "arXiv (Cornell University)",
+     "authors": [
+      "Brown, Tom B.",
+      "Benjamin Mann",
+      "Nick Ryder",
+      "Melanie Subbiah",
+      "Jared Kaplan A",
+      "Prafulla Dhariwal",
+      "Arvind Neelakantan",
+      "Pranav Shyam"
+     ],
+     "cited_by": 62052,
+     "net": 21.5,
+     "url": "https://doi.org/10.48550/arxiv.2005.14165",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 10,
+     "why": "Demonstrou que escalar LLMs melhora desempenho few-shot e compete com fine-tuning específico. Mostrou que escala e prompting podiam substituir pipelines task-specific.",
+     "new": false
+    },
+    {
+     "id": "W2963341956",
+     "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+     "year": 2018,
+     "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+     "authors": [
+      "Jacob Devlin",
+      "Ming-Wei Chang",
+      "Kenton Lee",
+      "Kristina Toutanova"
+     ],
+     "cited_by": 182180,
+     "net": 16.5,
+     "url": "https://doi.org/10.18653/v1/n19-1423",
+     "theme": "foundation_models",
+     "versions": [
+      "https://doi.org/10.48550/arxiv.1810.04805"
+     ],
+     "watch": [],
+     "score": 10,
+     "why": "Pré-treinou representações bidirecionais e mostrou que fine-tuning com uma camada extra resolve muitas tarefas de NLP. Virou padrão para aplicações de linguagem em finanças.",
+     "new": false
+    },
+    {
+     "id": "W7133211372",
+     "title": "Training Language Models to Follow Instructions with Human Feedback",
+     "year": 2022,
+     "venue": "neural information processing systems",
+     "authors": [
+      "Long Ouyang",
+      "Jeffrey Wu",
+      "Xu Jiang",
+      "Diogo Almeida",
+      "Carroll L. Wainwright",
+      "Pamela Mishkin",
+      "Chong Zhang",
+      "Sandhini Agarwal"
+     ],
+     "cited_by": 19879,
+     "net": 8.5,
+     "url": "https://doi.org/10.52202/068431-2011",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 10,
+     "why": "Usou feedback humano (RLHF) para alinhar LLMs a instruções. Foi o salto que tornou modelos generativos utilizáveis e seguros o bastante para produtos.",
+     "new": false
+    },
+    {
+     "id": "W3021074122",
+     "title": "On the Rise of FinTechs: Credit Scoring Using Digital Footprints",
+     "year": 2018,
+     "venue": "Review of Financial Studies",
+     "authors": [
+      "Tobias Berg",
+      "Valentin Burg",
+      "Ana Gombović",
+      "Manju Puri B"
+     ],
+     "cited_by": 1570,
+     "net": 27.5,
+     "url": "https://doi.org/10.1093/rfs/hhz099",
+     "theme": "risk_credit",
+     "versions": [
+      "https://doi.org/10.3386/w24551"
+     ],
+     "watch": [
+      "Tobias Berg"
+     ],
+     "score": 9,
+     "why": "Mostrou que pegada digital iguala ou supera bureau scores, inclusive para clientes sem score. Ampliou o debate sobre acesso a crédito e novos modelos de negócio.",
+     "new": false
+    },
+    {
+     "id": "W3209809080",
+     "title": "Predictably Unequal? The Effects of Machine Learning on Credit Markets",
+     "year": 2021,
+     "venue": "The Journal of Finance",
+     "authors": [
+      "Andreas Fuster",
+      "Paul S. Goldsmith-Pinkham",
+      "Tarun Ramadorai",
+      "Ansgar Walther"
+     ],
+     "cited_by": 1138,
+     "net": 20.0,
+     "url": "https://doi.org/10.1111/jofi.13090",
+     "theme": "risk_credit",
+     "versions": [],
+     "watch": [
+      "Andreas Fuster",
+      "Tarun Ramadorai"
+     ],
+     "score": 9,
+     "why": "Estimou que ML em hipotecas pode aumentar disparidades entre grupos raciais ao explorar flexibilidade e triangulação. Alerta central para equidade em crédito algorítmico.",
+     "new": false
+    },
+    {
+     "id": "W7133224126",
+     "title": "Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "year": 2022,
+     "venue": "neural information processing systems",
+     "authors": [
+      "Jason Wei",
+      "Xuezhi Wang",
+      "Dale Schuurmans",
+      "Maarten Bosma",
+      "Brian Ichter",
+      "Fei Xia",
+      "Ed Chi",
+      "Quoc Viet Le"
+     ],
+     "cited_by": 38274,
+     "net": 9.0,
+     "url": "https://doi.org/10.52202/068431-1800",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 9,
+     "why": "Mostrou que prompting com cadeia de pensamento melhora raciocínio aritmético, senso comum e simbólico em LLMs. Habilitou raciocínio complexo e a agenda de agentes.",
+     "new": false
+    },
+    {
+     "id": "W2943908192",
+     "title": "The Role of Technology in Mortgage Lending",
+     "year": 2018,
+     "venue": "Review of Financial Studies",
+     "authors": [
+      "Andreas Fuster",
+      "Matthew C. Plosser",
+      "Philipp Schnabl",
+      "James Ian Vickery"
+     ],
+     "cited_by": 1674,
+     "net": 59.5,
+     "url": "https://doi.org/10.1093/rfs/hhz018",
+     "theme": "risk_credit",
+     "versions": [
+      "https://doi.org/10.3386/w24500",
+      "https://doi.org/10.2139/ssrn.3127175"
+     ],
+     "watch": [
+      "Andreas Fuster"
+     ],
+     "score": 8,
+     "why": "Quantificou que fintechs de hipoteca processam pedidos cerca de 20% mais rápido sem mais defaults e ajustam oferta mais elasticamente. Evidência operacional da vantagem fintech.",
+     "new": false
+    },
+    {
+     "id": "W2770743945",
+     "title": "Consumer-lending discrimination in the FinTech Era",
+     "year": 2019,
+     "venue": "Journal of Financial Economics",
+     "authors": [
+      "Robert P. Bartlett",
+      "Adair Morse",
+      "Richard Stanton",
+      "Nancy E. Wallace"
+     ],
+     "cited_by": 1180,
+     "net": 20.5,
+     "url": "https://doi.org/10.1016/j.jfineco.2021.05.047",
+     "theme": "governance",
+     "versions": [
+      "https://doi.org/10.3386/w25943"
+     ],
+     "watch": [],
+     "score": 8,
+     "why": "Mediu discriminação racial no crédito: fintechs discriminam, mas cerca de 40% menos que canais face a face. Deslocou o debate para auditoria algorítmica e defesa de necessidade de negócio.",
+     "new": false
+    }
+   ]
+  },
+  {
+   "key": "2023+",
+   "label": "2023 em diante",
+   "title": "IA generativa e agentes financeiros",
+   "summary": "A época levou LLMs multimodais e setoriais para produção e fez surgir agentes autônomos em finanças. GPT-4, BloombergGPT, FinGPT e FinRobot criaram uma pilha de modelos e frameworks para tarefas bancárias. Evidência causal mostrou ganho de 15% em produtividade de suporte com IA generativa, enquanto a transformação digital de bancos chineses passou a ser medida e ligada a performance. Ficaram em aberto confiabilidade, compliance, avaliação de agentes e integração com legados.",
+   "milestones": [
+    {
+     "id": "W4327810158",
+     "title": "GPT-4 Technical Report",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "authors": [
+      "OpenAI",
+      "Achiam, Josh",
+      "Adler, Steven",
+      "Agarwal, Sandhini",
+      "Ahmad, Lama",
+      "Akkaya, Ilge",
+      "Aleman, Florencia Leoni",
+      "Almeida, Diogo"
+     ],
+     "cited_by": 55757,
+     "net": 14,
+     "url": "https://doi.org/10.48550/arxiv.2303.08774",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 9,
+     "why": "Apresentou GPT-4 multimodal com desempenho humano em benchmarks profissionais e alinhamento pós-treino. Consolidou o LLM de fronteira como plataforma de produtos.",
+     "new": false
+    },
+    {
+     "id": "W4407142724",
+     "title": "Generative AI at Work",
+     "year": 2023,
+     "venue": "The Quarterly Journal of Economics",
+     "authors": [
+      "Erik Brynjolfsson",
+      "Danielle Li",
+      "Lindsey Raymond"
+     ],
+     "cited_by": 4193,
+     "net": 1,
+     "url": "https://doi.org/10.1093/qje/qjae044",
+     "theme": "conversational",
+     "versions": [
+      "https://doi.org/10.3386/w31161"
+     ],
+     "watch": [
+      "Erik Brynjolfsson"
+     ],
+     "score": 9,
+     "why": "Estimou ganho de 15% em produtividade de agentes de suporte com assistente generativo, maior para menos experientes. Evidência causal de impacto da IA generativa no trabalho.",
+     "new": false
+    },
+    {
+     "id": "W4361866125",
+     "title": "BloombergGPT: A Large Language Model for Finance",
+     "year": 2023,
+     "venue": "RePEc: Research Papers in Economics",
+     "authors": [
+      "Shijie Wu",
+      "Ozan İrsoy",
+      "Steven Z. Lu",
+      "Vadim Dabravolski",
+      "Mark H. Dredze",
+      "Sebastian Gehrmann",
+      "Prabhanjan Kambadur",
+      "David Rosenberg"
+     ],
+     "cited_by": 2430,
+     "net": 9,
+     "url": "https://doi.org/10.48550/arxiv.2303.17564",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Treinou LLM de 50B parâmetros com dados financeiros e mostrou ganhos em tarefas do domínio. Provou valor de modelos setoriais em finanças.",
+     "new": false
+    },
+    {
+     "id": "W4382998379",
+     "title": "FinGPT: Open-Source Financial Large Language Models",
+     "year": 2023,
+     "venue": "SSRN Electronic Journal",
+     "authors": [
+      "Hongyang Yang",
+      "Xiao-Yang Liu",
+      "Christina Dan Wang"
+     ],
+     "cited_by": 996,
+     "net": 4,
+     "url": "https://doi.org/10.2139/ssrn.4489826",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Lançou FinGPT como LLM financeiro open-source. Democratizou acesso a modelos e experimentação no setor.",
+     "new": false
+    },
+    {
+     "id": "W4399146196",
+     "title": "FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models",
+     "year": 2024,
+     "venue": "SSRN Electronic Journal",
+     "authors": [
+      "Hongyang Yang",
+      "Boyu Zhang",
+      "Neng Wang",
+      "Cheng Guo",
+      "Xiaoli Zhang",
+      "Likun Lin",
+      "Junlin Wang",
+      "Tianyu Zhou"
+     ],
+     "cited_by": 184,
+     "net": 3,
+     "url": "https://doi.org/10.2139/ssrn.4841493",
+     "theme": "agentic_bank",
+     "versions": [],
+     "watch": [],
+     "score": 8,
+     "why": "Propôs FinRobot, plataforma open-source de agentes para aplicações financeiras. Estruturou a transição de LLMs para agentes em finanças.",
+     "new": false
+    },
+    {
+     "id": "W4385019067",
+     "title": "FinGPT: Democratizing Internet-scale Data for Financial Large Language Models",
+     "year": 2023,
+     "venue": "RePEc: Research Papers in Economics",
+     "authors": [
+      "Xiaoyang Liu",
+      "Guoxuan Wang",
+      "Yang, Hongyang",
+      "Zha, Daochen"
+     ],
+     "cited_by": 312,
+     "net": 1,
+     "url": "https://doi.org/10.48550/arxiv.2307.10485",
+     "theme": "foundation_models",
+     "versions": [],
+     "watch": [],
+     "score": 7,
+     "why": "Atacou a escassez e o baixo sinal-ruído de dados financeiros ao democratizar dados internet-scale para FinLLMs. Complementa modelos setoriais com infraestrutura de dados.",
+     "new": false
+    },
+    {
+     "id": "W4407615570",
+     "title": "Advancing innovation in financial stability: A comprehensive review of ai agent frameworks, challenges and applications",
+     "year": 2025,
+     "venue": "World Journal of Advanced Engineering Technology and Sciences",
+     "authors": [
+      "Satyadhar Joshi"
+     ],
+     "cited_by": 68,
+     "net": 2,
+     "url": "https://doi.org/10.30574/wjaets.2025.14.2.0071",
+     "theme": "agentic_bank",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Revisou frameworks de agentes como LangGraph, CrewAI e AutoGen para estabilidade financeira. Mapeia arquiteturas, desafios regulatórios e éticos para adoção bancária.",
+     "new": false
+    },
+    {
+     "id": "W4327977692",
+     "title": "Digital transformation of commercial banks in China: Measurement, progress and impact",
+     "year": 2023,
+     "venue": "China Economic Quarterly International",
+     "authors": [
+      "Xuanli Xie",
+      "Shihui Wang"
+     ],
+     "cited_by": 256,
+     "net": 1,
+     "url": "https://doi.org/10.1016/j.ceqi.2023.03.002",
+     "theme": "innovation",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Criou índice de transformação digital de bancos comerciais chineses e mostrou melhora de performance. Torna mensurável o impacto da digitalização bancária.",
+     "new": false
+    }
+   ]
+  }
+ ],
+ "now": {
+  "summary": "Em 2026, o campo está na fase de agentes e modelos fundacionais aplicados a processos bancários ponta a ponta. O caso Northern Trust com engenheiros forward-deployed da Microsoft mostra onboarding agêntico cortando 83% do tempo, de 2,5 semanas para 3 dias, enquanto a OpenAI pluga carteira e agente do ChatGPT nas redes de cartão e sinaliza agentic commerce. Em crédito, um estudo recente mede quanto pré-treino em sequências transacionais agrega sobre LightGBM e encontra ganho limitado, e o Inter reduz inadimplência de consignado de 4,8% para 3,2% com religamento automático. A fronteira agora é operacional: integrar, avaliar e governar agentes sem perder controle de risco.",
+  "open_questions": [
+   "Como medir ROI de agentes de IA em processos bancários ponta a ponta?",
+   "Modelos fundacionais superam baselines tabulares em crédito com dados proprietários?",
+   "Como garantir explicabilidade, equidade e compliance em decisões agênticas?",
+   "Quem responde quando um agente compra, paga ou nega crédito em nome do cliente?",
+   "Como integrar LLMs setoriais a sistemas legados sem criar risco operacional?"
+  ]
+ },
+ "threads": [
+  {
+   "theme": "automation",
+   "line": "Do paradoxo da produtividade (Brynjolfsson, 1993) à co-invenção organizacional (Brynjolfsson & Hitt, 2000), a automação mostrou que TI só vira produtividade com intangíveis, reorganização e horizonte longo. A automação bancária atual herda essa lição: processo e dados importam tanto quanto modelo."
+  },
+  {
+   "theme": "risk_credit",
+   "line": "Começou com distância e informação assimétrica no crédito a pequenas empresas (Petersen & Rajan, 2002), passou por ML em credit scoring (Khandani et al., 2010; Lessmann et al., 2015) e pegada digital (Berg et al., 2018). Chegou a alertas de equidade (Fuster et al., 2021) e cobrança inteligente (Inter, 2026), mostrando que eficiência e justiça agora andam juntas."
+  },
+  {
+   "theme": "conversational",
+   "line": "Saiu de tecnologias de autoatendimento e satisfação do cliente (Meuter et al., 2000) para assistentes generativos no trabalho (Brynjolfsson et al., 2023). O ganho de produtividade é real, mas qualidade e aprendizado variam por nível de experiência."
+  },
+  {
+   "theme": "foundation_models",
+   "line": "O Transformer (Vaswani et al., 2017) viabilizou BERT (2018), GPT-3 (2020), RLHF (2022), chain-of-thought (2022) e GPT-4 (2023). Modelos financeiros como BloombergGPT e FinGPT levaram a arquitetura para domínio regulado, mas ainda disputam espaço com baselines tabulares."
+  },
+  {
+   "theme": "innovation",
+   "line": "Fintechs cresceram por arbitragem regulatória e vantagem tecnológica (Philippon, 2016; Buchak et al., 2017). A transformação digital bancária agora é medida e associada a performance (Xie & Wang, 2023), deslocando a inovação de entrada para dentro dos bancos."
+  },
+  {
+   "theme": "governance",
+   "line": "LIME (Ribeiro et al., 2016) abriu explicabilidade pós-hoc, e Bartlett et al. (2019) mostraram que algoritmos podem discriminar menos, mas ainda discriminam. O debate migrou de explicar um modelo para auditar sistemas inteiros e agentes."
+  },
+  {
+   "theme": "agentic_bank",
+   "line": "FinRobot (2024) e revisões de frameworks (Joshi, 2025) mostram agentes saindo da pesquisa para finanças. Casos recentes como Northern Trust indicam ganhos operacionais, mas compliance, confiabilidade e responsabilidade seguem abertos."
+  }
+ ]
+}
