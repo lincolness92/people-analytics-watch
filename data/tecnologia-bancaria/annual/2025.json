@@ -1,0 +1,805 @@
+{
+ "year": 2025,
+ "partial": false,
+ "generated": "2026-11-17",
+ "model": "Qwen/Qwen3.5-122B-A10B",
+ "overview": "2025 foi definido pela aceleração massiva de agentes de IA e governança, com subtemas como AI agents crescendo 364% e agentic commerce 365%. O foco global migrou para a aplicação prática de modelos fundacionais em risco e crédito, validada por experimentos de campo em atendimento ao cliente. Embora o Open Banking tenha avançado 142% impulsionando competição, o Brasil não aparece nas estatísticas de publicação deste conjunto de dados. A literatura prioriza a análise de bem-estar e eficiência econômica frente à entrada de fintechs e Big Techs.",
+ "trends": [
+  {
+   "title": "Agentes Autônomos e Comércio",
+   "text": "O volume de publicações sobre \"AI agent / AI agents\" explodiu 364% (4,6x), acompanhando o \"agentic commerce\" que também cresceu 365%. Isso sinaliza a transição de assistentes conversacionais para agentes capazes de executar transações financeiras complexas."
+  },
+  {
+   "title": "Governança e Controle de Risco",
+   "text": "A gestão de risco de modelos disparou 265% (3,7x) conforme a adoção de LLMs aumentou 148% (2,5x). Bancos precisam equilibrar inovação em crédito com novos frameworks de compliance e estabilidade financeira."
+  },
+  {
+   "title": "Infraestrutura Aberta e Pagamentos",
+   "text": "\"Open banking / open finance\" cresceu 142% (2,4x) e pagamentos instantâneos dobraram (103%), facilitando a entrada de concorrentes. Evidências mostram que APIs melhoram ROA e reduzem provisões para perdas em bancos americanos."
+  }
+ ],
+ "innovation": "A produção intelectual é dominada pela academia (77,8%), com instituições dos EUA liderando 195 trabalhos seguidas por China e Índia. Empresas privadas respondem por apenas 3,3% das publicações, enquanto bancos centrais e reguladores somam 3,4%. Não há registro de instituições brasileiras ou do país entre os principais produtores de conhecimento listados neste ano. Isso indica que a fronteira teórica está sendo construída fora do mercado doméstico, exigindo atenção estratégica para adaptação local.",
+ "highlights": [
+  {
+   "title": "Acesso a Dados e Entrada de Fintechs via Open Banking",
+   "original_title": "Customer data access and fintech entry: Early evidence from open banking",
+   "url": "https://doi.org/10.1016/j.jfineco.2024.103950",
+   "venue": "Journal of Financial Economics",
+   "date": "2025-04-07",
+   "authors": [
+    "Tania Babina",
+    "Saleem Bahaj",
+    "Greg Buchak",
+    "Filippo De Marco",
+    "Angus Foulis",
+    "Will Gornall",
+    "Francesco Mazzola",
+    "Tong Yu"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "Centre for Economic Policy Research",
+    "University of Maryland, College Park",
+    "University College London",
+    "Bank of England",
+    "Stanford University"
+   ],
+   "watch_authors": [
+    "Greg Buchak"
+   ],
+   "score": 9,
+   "theme": "payments",
+   "region": "mundo",
+   "cited_by": 135,
+   "velocity": 7.11,
+   "why": "Evidência empírica mostra que o Open Banking permite acesso a crédito e aconselhamento, promovendo entrada de fintechs e reduzindo seleção adversa no mercado de empréstimos."
+  },
+  {
+   "title": "IA Generativa na Economia Financeira",
+   "original_title": "(Generative) AI in Financial Economics",
+   "url": "https://doi.org/10.1080/14765284.2025.2569006",
+   "venue": "Journal of Chinese Economic and Business Studies",
+   "date": "2025-10-02",
+   "authors": [
+    "Hongwei Mo",
+    "Shuting Ouyang"
+   ],
+   "institutions": [
+    "University of Oxford"
+   ],
+   "watch_authors": [],
+   "score": 9,
+   "theme": "foundation_models",
+   "region": "",
+   "cited_by": 45,
+   "velocity": 3.46,
+   "why": "Revisão sintetiza o papel emergente de LLMs como ferramentas analíticas e agentes econômicos autônomos, impactando finanças corporativas e inclusão financeira."
+  },
+  {
+   "title": "Engajamento de Clientes com IA em Chats Online",
+   "original_title": "Engaging Customers with AI in Online Chats: Evidence from a Randomized Field Experiment",
+   "url": "https://doi.org/10.1287/mnsc.2022.03920",
+   "venue": "Management Science",
+   "date": "2025-10-01",
+   "authors": [
+    "Shunyuan Zhang",
+    "Das Narayandas"
+   ],
+   "institutions": [
+    "Harvard University"
+   ],
+   "watch_authors": [],
+   "score": 9,
+   "theme": "conversational",
+   "region": "mundo",
+   "cited_by": 26,
+   "velocity": 2.0,
+   "why": "Experimento aleatório demonstra que sugestões de IA melhoram eficiência e sentimento do cliente, especialmente para agentes menos experientes em interações online."
+  },
+  {
+   "title": "Avaliação de Risco de Crédito com Machine Learning",
+   "original_title": "An analytical approach to credit risk assessment using machine learning models",
+   "url": "https://doi.org/10.1016/j.dajour.2025.100605",
+   "venue": "Decision Analytics Journal",
+   "date": "2025-07-15",
+   "authors": [
+    "Marcos Machado",
+    "Daniel Chen",
+    "Joerg Robert Osterrieder"
+   ],
+   "institutions": [
+    "University of Twente"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "cited_by": 64,
+   "velocity": 4.0,
+   "why": "Apresenta um Sistema de Alerta Precoce baseado em ML para monitorar risco comercial, superando indicadores tradicionais de probabilidade de inadimplência."
+  },
+  {
+   "title": "Adoção de APIs e Dados Abertos por Bancos dos EUA",
+   "original_title": "Open data and API adoption of U.S. banks",
+   "url": "https://doi.org/10.1016/j.jfi.2025.101162",
+   "venue": "Journal of Financial Intermediation",
+   "date": "2025-06-19",
+   "authors": [
+    "xiangyu lin",
+    "S. Sarah Zhang",
+    "Markos Zachariadis"
+   ],
+   "institutions": [
+    "Nankai University",
+    "University of Manchester"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "payments",
+   "region": "mundo",
+   "cited_by": 25,
+   "velocity": 1.47,
+   "why": "Bancos que adotam APIs tendem a ser maiores e enfrentam menor pressão competitiva, resultando em aumento de ROA e redução de provisões para perdas."
+  },
+  {
+   "title": "Digitalização Estratégica em Moeda e Pagamentos",
+   "original_title": "Strategic digitization in currency and payment competition",
+   "url": "https://doi.org/10.1016/j.jfineco.2025.104055",
+   "venue": "Journal of Financial Economics",
+   "date": "2025-04-06",
+   "authors": [
+    "Lin William Cong",
+    "Simon Mayer"
+   ],
+   "institutions": [
+    "Cornell University",
+    "Fudan University",
+    "Carnegie Mellon University"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "payments",
+   "region": "mundo",
+   "cited_by": 25,
+   "velocity": 1.32,
+   "why": ""
+  },
+  {
+   "title": "IA e Empréstimo Relacional",
+   "original_title": "Artificial Intelligence and Relationship Lending",
+   "url": "https://doi.org/10.2139/ssrn.5254520",
+   "venue": "SSRN Electronic Journal",
+   "date": "2025-01-01",
+   "authors": [
+    "Leonardo Gambacorta",
+    "Stefano Schiaffi",
+    "Fabiana Sabatini"
+   ],
+   "institutions": [
+    "Centre for Economic Policy Research",
+    "Bank for International Settlements",
+    "Bank of Italy"
+   ],
+   "watch_authors": [
+    "Leonardo Gambacorta"
+   ],
+   "score": 8,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "cited_by": 17,
+   "velocity": 0.77,
+   "why": "Análise da relação entre inteligência artificial e práticas de lending relacional, explorando impactos na dinâmica bancária tradicional."
+  },
+  {
+   "title": "Sistema Financeiro Inteligente: Transformação por IA",
+   "original_title": "Intelligent financial system: How AI is transforming finance",
+   "url": "https://doi.org/10.1016/j.jfs.2025.101472",
+   "venue": "Journal of Financial Stability",
+   "date": "2025-10-29",
+   "authors": [
+    "Iñaki Aldasoro",
+    "Leonardo Gambacorta",
+    "Anton Korinek",
+    "Vatsala Shreeti",
+    "Michael Stein"
+   ],
+   "institutions": [
+    "Bank for International Settlements",
+    "Centre for Economic Policy Research",
+    "Centre for the Governance of AI",
+    "University of Virginia",
+    "University of Oxford"
+   ],
+   "watch_authors": [
+    "Leonardo Gambacorta"
+   ],
+   "score": 7,
+   "theme": "innovation",
+   "region": "mundo",
+   "cited_by": 106,
+   "velocity": 8.15,
+   "why": "Visão macro sobre como a IA está transformando a estabilidade e estrutura do sistema financeiro global através de novas capacidades tecnológicas."
+  },
+  {
+   "title": "Papel dos Sandboxes Regulatórios na Inovação FinTech",
+   "original_title": "The Role of Regulatory Sandboxes in FinTech Innovation: A Comparative Case Study of the UK, Singapore, and Hungary",
+   "url": "https://doi.org/10.3390/fintech4020026",
+   "venue": "FinTech",
+   "date": "2025-06-16",
+   "authors": [
+    "János Kálmán"
+   ],
+   "institutions": [
+    "Széchenyi István University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "innovation",
+   "region": "",
+   "cited_by": 61,
+   "velocity": 3.59,
+   "why": "Estudo comparativo avalia a eficácia de sandboxes no Reino Unido, Cingapura e Hungria para reduzir incerteza regulatória e facilitar entrada de mercado."
+  },
+  {
+   "title": "Robo-Advisors na Finança Comportamental",
+   "original_title": "The role of robo-advisors in behavioural finance, shaping investment decisions",
+   "url": "https://doi.org/10.1080/23322039.2025.2571403",
+   "venue": "Cogent Economics & Finance",
+   "date": "2025-10-14",
+   "authors": [
+    "Mugdha Shailendra Kulkarni",
+    "Kanchan Pranay Patil",
+    "Dhanya Pramod"
+   ],
+   "institutions": [
+    "Symbiosis International University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "martech",
+   "region": "",
+   "cited_by": 46,
+   "velocity": 3.54,
+   "why": "Investiga como robo-advisors influenciam vieses comportamentais como aversão à perda e excesso de confiança em investidores varejistas."
+  },
+  {
+   "title": "Entrada de Fintechs, Concorrência e Bem-Estar",
+   "original_title": "Fintech entry, lending market competition, and welfare",
+   "url": "https://doi.org/10.1016/j.jfineco.2025.104040",
+   "venue": "Journal of Financial Economics",
+   "date": "2025-03-19",
+   "authors": [
+    "Xavier Vives",
+    "Zhiqiang Ye"
+   ],
+   "institutions": [
+    "IESE Business School",
+    "Zhejiang University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "cited_by": 44,
+   "velocity": 2.2,
+   "why": "Framework espacial analisa competição entre bancos e fintechs, mostrando que maior concentração bancária pode aumentar volume de empréstimos fintech."
+  },
+  {
+   "title": "Ledgers Distribuídos e Governança do Dinheiro",
+   "original_title": "Distributed ledgers and the governance of money",
+   "url": "https://doi.org/10.1016/j.jfineco.2025.104026",
+   "venue": "Journal of Financial Economics",
+   "date": "2025-02-22",
+   "authors": [
+    "Raphael A. Auer",
+    "Cyril Monnet",
+    "Hyun Song Shin"
+   ],
+   "institutions": [
+    "Bank for International Settlements",
+    "University of Bern"
+   ],
+   "watch_authors": [
+    "Hyun Song Shin",
+    "Raphael Auer"
+   ],
+   "score": 7,
+   "theme": "payments",
+   "region": "mundo",
+   "cited_by": 40,
+   "velocity": 1.9,
+   "why": "Explora implicações de tecnologias de ledger distribuído na governança monetária e na estrutura do dinheiro digital."
+  },
+  {
+   "title": "Negociação Estratégica e Gestão de Risco em Carteiras",
+   "original_title": "Underwater: Strategic Trading and Risk Management in Bank Securities Portfolios",
+   "url": "https://doi.org/10.21799/frbp.wp.2025.31",
+   "venue": "Working paper",
+   "date": "2025-10-01",
+   "authors": [
+    "Andreas Fuster",
+    "Teodora Paligorova",
+    "James Ian Vickery"
+   ],
+   "institutions": [
+    "Centre for Economic Policy Research",
+    "École Polytechnique Fédérale de Lausanne",
+    "Swiss Finance Institute",
+    "Federal Reserve Board of Governors",
+    "Federal Reserve Bank of Philadelphia"
+   ],
+   "watch_authors": [
+    "Andreas Fuster"
+   ],
+   "score": 7,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "cited_by": 20,
+   "velocity": 1.54,
+   "why": "Analisa como bancos geriram riscos em carteiras de títulos durante a alta de juros de 2022-23, evitando realizar perdas devido a fricções contábeis."
+  },
+  {
+   "title": "Ascensão da IA Industrial na América",
+   "original_title": "The Rise of Industrial AI in America",
+   "url": "https://doi.org/10.2139/ssrn.5036270",
+   "venue": "SSRN Electronic Journal",
+   "date": "2025-01-01",
+   "authors": [
+    "Kristina McElheran",
+    "Mu-Jeung Yang",
+    "Erik Brynjolfsson",
+    "Zachary Kroff"
+   ],
+   "institutions": [
+    "University of Toronto",
+    "University of Colorado Boulder",
+    "University of Oklahoma",
+    "National Bureau of Economic Research",
+    "Stanford University",
+    "United States Census Bureau"
+   ],
+   "watch_authors": [
+    "Erik Brynjolfsson"
+   ],
+   "score": 7,
+   "theme": "automation",
+   "region": "mundo",
+   "cited_by": 21,
+   "velocity": 0.95,
+   "why": "Documenta a adoção e impacto da inteligência artificial aplicada em contextos industriais nos Estados Unidos."
+  },
+  {
+   "title": "Big Techs na Finança",
+   "original_title": "Big Techs in Finance",
+   "url": "https://doi.org/10.1093/oxfordhb/9780198897071.013.14",
+   "venue": "Oxford University Press eBooks",
+   "date": "2025-04-22",
+   "authors": [
+    "Sebastian Doerr",
+    "Jon Frost",
+    "Leonardo Gambacorta",
+    "Vatsala Shreeti"
+   ],
+   "institutions": [
+    "Bank for International Settlements"
+   ],
+   "watch_authors": [
+    "Leonardo Gambacorta"
+   ],
+   "score": 7,
+   "theme": "innovation",
+   "region": "mundo",
+   "cited_by": 6,
+   "velocity": 0.32,
+   "why": "Discute trade-offs entre eficiência e privacidade com a entrada de Big Techs, alertando para riscos de domínio de mercado e discriminação."
+  }
+ ],
+ "growth": [
+  {
+   "label": "agentic commerce / agent-initiated payments",
+   "query": "\"agentic commerce\" OR \"agent-initiated payments\" OR \"agentic payments\" OR (\"AI agents\" AND (checkout OR shopping OR purchase))",
+   "prev": 17,
+   "cur": 79,
+   "cur_full_year": 79,
+   "change": 3.65
+  },
+  {
+   "label": "AI agent / AI agents",
+   "query": "(\"AI agent\" OR \"AI agents\" OR \"agentic AI\") AND (bank OR banks OR banking OR \"financial services\" OR payments)",
+   "prev": 28,
+   "cur": 130,
+   "cur_full_year": 130,
+   "change": 3.64
+  },
+  {
+   "label": "model risk management / AI governance",
+   "query": "(\"model risk management\" OR \"AI governance\" OR \"explainable AI\" OR \"algorithmic fairness\") AND (bank OR banking OR \"financial institutions\" OR lending)",
+   "prev": 139,
+   "cur": 508,
+   "cur_full_year": 508,
+   "change": 2.65
+  },
+  {
+   "label": "data literacy / AI literacy",
+   "query": "(reskilling OR upskilling OR \"data literacy\" OR \"AI literacy\" OR \"digital skills\") AND (bank OR banks OR banking OR \"financial services\")",
+   "prev": 111,
+   "cur": 316,
+   "cur_full_year": 316,
+   "change": 1.85
+  },
+  {
+   "label": "digital transformation / branch",
+   "query": "\"digital transformation\" AND (bank OR banks OR banking) AND (performance OR strategy OR \"branch\")",
+   "prev": 470,
+   "cur": 1256,
+   "cur_full_year": 1256,
+   "change": 1.67
+  },
+  {
+   "label": "large language model / large language models",
+   "query": "(\"large language model\" OR \"large language models\" OR \"generative AI\" OR \"GenAI\") AND (bank OR banks OR banking OR \"financial services\" OR \"financial institutions\")",
+   "prev": 277,
+   "cur": 686,
+   "cur_full_year": 686,
+   "change": 1.48
+  },
+  {
+   "label": "open banking / open finance",
+   "query": "(\"open banking\" OR \"open finance\") AND (adoption OR competition OR data OR consumers OR credit)",
+   "prev": 115,
+   "cur": 278,
+   "cur_full_year": 278,
+   "change": 1.42
+  },
+  {
+   "label": "embedded finance / banking-as-a-service",
+   "query": "(\"embedded finance\" OR \"banking-as-a-service\" OR \"super app\" OR \"super-app\") AND (bank OR fintech OR payments)",
+   "prev": 45,
+   "cur": 108,
+   "cur_full_year": 108,
+   "change": 1.4
+  },
+  {
+   "label": "digital bank / digital banks",
+   "query": "(neobank OR neobanks OR \"digital bank\" OR \"digital banks\" OR fintech OR fintechs) AND (competition OR adoption OR \"market share\" OR incumbents)",
+   "prev": 1277,
+   "cur": 2764,
+   "cur_full_year": 2764,
+   "change": 1.16
+  },
+  {
+   "label": "artificial intelligence / machine learning",
+   "query": "(\"artificial intelligence\" OR \"machine learning\") AND (bank OR banks OR banking) AND (adoption OR productivity OR employment OR workforce OR efficiency)",
+   "prev": 906,
+   "cur": 1937,
+   "cur_full_year": 1937,
+   "change": 1.14
+  },
+  {
+   "label": "recommender system / next best action",
+   "query": "(personalization OR \"recommender system\" OR \"next best action\" OR \"customer lifetime value\" OR martech) AND (bank OR banking OR \"financial services\")",
+   "prev": 660,
+   "cur": 1387,
+   "cur_full_year": 1387,
+   "change": 1.1
+  },
+  {
+   "label": "robo-advisor / robo-advisors",
+   "query": "(\"robo-advisor\" OR \"robo-advisors\" OR \"robo-advice\" OR \"personal finance management\") AND (AI OR algorithm OR adoption)",
+   "prev": 140,
+   "cur": 288,
+   "cur_full_year": 288,
+   "change": 1.06
+  },
+  {
+   "label": "robotic process automation / intelligent automation",
+   "query": "(\"robotic process automation\" OR RPA OR \"intelligent automation\" OR \"process mining\") AND (bank OR banking OR \"financial services\")",
+   "prev": 101,
+   "cur": 207,
+   "cur_full_year": 207,
+   "change": 1.05
+  },
+  {
+   "label": "instant payment / instant payments",
+   "query": "(Pix OR \"instant payment\" OR \"instant payments\" OR \"fast payment\") AND (adoption OR banks OR competition OR \"financial inclusion\")",
+   "prev": 69,
+   "cur": 140,
+   "cur_full_year": 140,
+   "change": 1.03
+  },
+  {
+   "label": "core banking / legacy systems",
+   "query": "(\"core banking\" OR \"legacy systems\" OR mainframe OR \"cloud computing\") AND (bank OR banks OR banking)",
+   "prev": 250,
+   "cur": 480,
+   "cur_full_year": 480,
+   "change": 0.92
+  },
+  {
+   "label": "corporate venture capital / open innovation",
+   "query": "(\"corporate venture capital\" OR \"open innovation\" OR \"innovation lab\") AND (bank OR banks OR banking OR \"financial institutions\")",
+   "prev": 22,
+   "cur": 38,
+   "cur_full_year": 38,
+   "change": 0.73
+  },
+  {
+   "label": "debt collection / debt collections",
+   "query": "(\"debt collection\" OR \"debt collections\" OR \"loan recovery\" OR \"collection strategy\" OR \"collections strategy\" OR delinquency) AND (\"machine learning\" OR \"artificial intelligence\" OR \"reinforcement learning\" OR uplift) AND (loan OR loans OR credit OR lending OR bank)",
+   "prev": 20,
+   "cur": 34,
+   "cur_full_year": 34,
+   "change": 0.7
+  },
+  {
+   "label": "machine learning / deep learning",
+   "query": "(\"machine learning\" OR \"deep learning\" OR \"alternative data\") AND (\"credit scoring\" OR \"credit risk\" OR lending OR underwriting) AND (bank OR fintech OR lender)",
+   "prev": 463,
+   "cur": 730,
+   "cur_full_year": 730,
+   "change": 0.58
+  },
+  {
+   "label": "virtual assistant / conversational AI",
+   "query": "(chatbot OR chatbots OR \"virtual assistant\" OR \"conversational AI\") AND (bank OR banking OR \"customer service\")",
+   "prev": 676,
+   "cur": 1042,
+   "cur_full_year": 1042,
+   "change": 0.54
+  },
+  {
+   "label": "A/B testing / online experiments",
+   "query": "(\"A/B testing\" OR \"online experiments\" OR \"experimentation platform\") AND (bank OR fintech OR payments OR \"financial services\")",
+   "prev": 13,
+   "cur": 19,
+   "cur_full_year": 19,
+   "change": 0.46
+  },
+  {
+   "label": "central bank digital currency / tokenized deposits",
+   "query": "\"central bank digital currency\" OR CBDC OR \"tokenized deposits\" OR \"tokenised deposits\" OR \"deposit tokens\"",
+   "prev": 835,
+   "cur": 1183,
+   "cur_full_year": 1183,
+   "change": 0.42
+  },
+  {
+   "label": "foundation model / foundation models",
+   "query": "(\"foundation model\" OR \"foundation models\" OR \"pretrained transformer\") AND (\"transaction data\" OR \"financial transactions\" OR \"banking data\" OR \"payment data\")",
+   "prev": 0,
+   "cur": 4,
+   "cur_full_year": 4,
+   "change": null
+  }
+ ],
+ "geography": {
+  "works": 820,
+  "sectors": [
+   {
+    "name": "Academia",
+    "works": 638,
+    "share": 0.778
+   },
+   {
+    "name": "Outros",
+    "works": 53,
+    "share": 0.065
+   },
+   {
+    "name": "Sem fins lucrativos",
+    "works": 52,
+    "share": 0.063
+   },
+   {
+    "name": "Governo e reguladores",
+    "works": 28,
+    "share": 0.034
+   },
+   {
+    "name": "Empresas",
+    "works": 27,
+    "share": 0.033
+   },
+   {
+    "name": "Centros de pesquisa",
+    "works": 25,
+    "share": 0.03
+   },
+   {
+    "name": "Saúde",
+    "works": 14,
+    "share": 0.017
+   }
+  ],
+  "institutions": [
+   {
+    "name": "Bank for International Settlements",
+    "works": 29,
+    "country": "CH"
+   },
+   {
+    "name": "National Bureau of Economic Research",
+    "works": 25,
+    "country": "US"
+   },
+   {
+    "name": "Centre for Economic Policy Research",
+    "works": 25,
+    "country": "GB"
+   },
+   {
+    "name": "Stanford University",
+    "works": 21,
+    "country": "US"
+   },
+   {
+    "name": "Harvard University",
+    "works": 14,
+    "country": "US"
+   },
+   {
+    "name": "National University of Singapore",
+    "works": 13,
+    "country": "SG"
+   },
+   {
+    "name": "University of Michigan",
+    "works": 10,
+    "country": "US"
+   },
+   {
+    "name": "University of Pennsylvania",
+    "works": 9,
+    "country": "US"
+   },
+   {
+    "name": "Columbia University",
+    "works": 7,
+    "country": "US"
+   },
+   {
+    "name": "Tsinghua University",
+    "works": 7,
+    "country": "CN"
+   },
+   {
+    "name": "New York University",
+    "works": 7,
+    "country": "US"
+   },
+   {
+    "name": "Cornell University",
+    "works": 7,
+    "country": "US"
+   },
+   {
+    "name": "Swiss Finance Institute",
+    "works": 7,
+    "country": "CH"
+   },
+   {
+    "name": "Massachusetts Institute of Technology",
+    "works": 7,
+    "country": "US"
+   },
+   {
+    "name": "University of Toronto",
+    "works": 7,
+    "country": "CA"
+   }
+  ],
+  "countries": [
+   {
+    "code": "US",
+    "works": 195
+   },
+   {
+    "code": "IN",
+    "works": 80
+   },
+   {
+    "code": "CN",
+    "works": 75
+   },
+   {
+    "code": "GB",
+    "works": 66
+   },
+   {
+    "code": "ID",
+    "works": 44
+   },
+   {
+    "code": "CH",
+    "works": 38
+   },
+   {
+    "code": "MY",
+    "works": 26
+   },
+   {
+    "code": "DE",
+    "works": 25
+   },
+   {
+    "code": "IT",
+    "works": 24
+   },
+   {
+    "code": "SA",
+    "works": 23
+   },
+   {
+    "code": "UA",
+    "works": 23
+   },
+   {
+    "code": "JO",
+    "works": 20
+   }
+  ],
+  "companies": [
+   {
+    "name": "Google (United States)",
+    "works": 12,
+    "country": "US"
+   },
+   {
+    "name": "Alibaba Group (Cayman Islands)",
+    "works": 12,
+    "country": "KY"
+   },
+   {
+    "name": "Alibaba Group (China)",
+    "works": 12,
+    "country": "CN"
+   },
+   {
+    "name": "Microsoft (United States)",
+    "works": 9,
+    "country": "US"
+   },
+   {
+    "name": "State Grid Jilin Electric Power (China)",
+    "works": 5,
+    "country": "CN"
+   },
+   {
+    "name": "Meta (United States)",
+    "works": 5,
+    "country": "US"
+   },
+   {
+    "name": "Visa (United States)",
+    "works": 4,
+    "country": "US"
+   },
+   {
+    "name": "IBM (Ireland)",
+    "works": 3,
+    "country": "IE"
+   },
+   {
+    "name": "Hewlett Packard Enterprise (United States)",
+    "works": 2,
+    "country": "US"
+   },
+   {
+    "name": "Wells Fargo (United States)",
+    "works": 2,
+    "country": "US"
+   }
+  ]
+ },
+ "stats": {
+  "works": 802,
+  "triaged": 150,
+  "highlights": 15,
+  "openalex_calls": 67,
+  "openalex_cost": 0.0661,
+  "tokens": {
+   "prompt_tokens": 53492,
+   "completion_tokens": 50381
+  }
+ }
+}

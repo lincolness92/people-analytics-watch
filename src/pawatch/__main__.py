@@ -160,6 +160,34 @@ def cmd_evolve(args):
         ch = ev.get("changes") or {}
         log(f"[{topic.slug}] evolução ({ev['mode']}): {ev['stats']['milestones']} marcos em {len(ev['eras'])} épocas, "
             f"+{len(ch.get('added', []))}/-{len(ch.get('removed', []))}; tokens {ev['stats']['tokens']}")
+        # The monthly run also refreshes the annual review: current year always, last year once.
+        this_year = date.today().year
+        for year in (this_year - 1, this_year):
+            if year < this_year and (topic.data / "annual" / f"{year}.json").exists() and not args.full:
+                continue
+            ok = run_annual(topic, year) and ok
+    log(f"render: {render_all()}")
+    return 0 if ok else 1
+
+
+def run_annual(topic, year):
+    from .annual import build
+    try:
+        d = build(topic, year, LLM(), log=lambda m, s=topic.slug: log(f"[{s}] {m}"))
+    except Exception as e:  # one topic failing must not block the others
+        log(f"[{topic.slug}] retrospectiva {year} falhou: {e!r}")
+        return False
+    out = topic.data / "annual" / f"{year}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"[{topic.slug}] retrospectiva {year}: {d['stats']['highlights']} destaques, {len(d['trends'])} tendências; "
+        f"OpenAlex ≈ ${d['stats']['openalex_cost']}; tokens {d['stats']['tokens']}")
+    return True
+
+
+def cmd_annual(args):
+    years = [int(y) for y in args.year] if args.year else [date.today().year - 1, date.today().year]
+    ok = all([run_annual(topic, y) for topic in pick(args.topic) for y in years])
     log(f"render: {render_all()}")
     return 0 if ok else 1
 
@@ -200,6 +228,10 @@ def main():
     e.add_argument("--rejudge", action="store_true", help="como --full, mas manda todas as obras de novo para a triagem do LLM")
     e.set_defaults(fn=cmd_evolve)
     sub.add_parser("feedback", help="KV do feedback: garante namespace, gera wrangler.toml e exporta para data/<tema>/feedback.json").set_defaults(fn=cmd_feedback)
+    an = sub.add_parser("annual", help="retrospectiva anual por tema (padrão: ano passado e o atual)")
+    an.add_argument("--topic", help="slug do tema (padrão: todos)")
+    an.add_argument("--year", nargs="*", help="anos, ex.: 2025 2026")
+    an.set_defaults(fn=cmd_annual)
     t = sub.add_parser("new-topic", help="monta o rascunho de um tema novo em topics/<slug>/")
     t.add_argument("name", help='nome do tema, ex.: "fraude bancária"')
     t.add_argument("--slug", help="pasta em topics/ (padrão: derivado do nome)")

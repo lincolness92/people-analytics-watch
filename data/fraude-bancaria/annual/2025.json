@@ -1,0 +1,825 @@
+{
+ "year": 2025,
+ "partial": false,
+ "generated": "2026-11-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "overview": "2025 foi o ano da industrialização da fraude e da resposta com modelos de fundação, grafos e LLMs. A detecção de fraude em instituições financeiras cresceu +119% (2.2x), enquanto account takeover/SIM swap (+182%, 2.8x), voice cloning/face swap (+229%, 3.3x) e instant payment (+166%, 2.7x) sinalizam vetores cada vez mais automatizados e transfronteiriços. Papers como TransactionGPT e TREASURE levaram foundation models para trilhas de transações em escala bilionária, e Deepfake-Eval-2024 mostrou que benchmarks acadêmicos estavam defasados. PLD/CFT (+137%, 2.4x) e risco operacional/Basileia (+142%, 2.4x) ganharam tração, com regulação MiCA/DORA e Open Finance (+181%, 2.8x) redesenhando o perímetro. O Brasil não aparece entre os países ou instituições mais produtivos nos dados.",
+ "trends": [
+  {
+   "title": "Modelos de fundação para transações financeiras",
+   "text": "TransactionGPT e TREASURE, da Visa, propõem foundation models para trilhas de transações em escala bilionária, enquanto LOGIN e CamFD mostram a fusão de LLMs e GNNs. O volume em fraud detection/financial institution cresceu +119% (2.2x), e os subtemas large language model e graph neural network avançaram +179% (2.8x) e +178% (2.8x), respectivamente."
+  },
+  {
+   "title": "Golpes transfronteiriços e engenharia social em escala industrial",
+   "text": "Papers sobre confraternidades nigerianas, migração de fraudadores de romance para Gana e redes nigerianas no Reino Unido revelam estruturas organizadas e transnacionais. APP fraud cresceu +52% (1.5x), instant payment +166% (2.7x) e publicações sobre vítimas de fraude/golpe +61% (1.6x)."
+  },
+  {
+   "title": "Account takeover, identidade sintética e deepfakes",
+   "text": "Objective over Architecture trata de fraude na abertura de contas sob desbalanceamento extremo (1,10% de prevalência), e Deepfake-Eval-2024 expõe a defasagem dos benchmarks acadêmicos. Account takeover/SIM swap cresceu +182% (2.8x), synthetic identity/identity fraud +80% (1.8x), voice cloning/face swap +229% (3.3x) e behavioral biometrics +106% (2.1x)."
+  },
+  {
+   "title": "PLD/CFT, mulas e rastreamento em grafos e blockchains",
+   "text": "Network Analytics for AML revisa 97 papers e avalia o poder de detecção de redes; Track and Trace ataca transações cross-chain em DeFi. AML/money laundering cresceu +137% (2.4x), money mule +79% (1.8x) e graph neural networks +178% (2.8x)."
+  },
+  {
+   "title": "Regulação, risco operacional e Open Finance",
+   "text": "Raising the bar avalia exchanges centralizadas de criptomoedas à luz de MiCA e DORA, enquanto o subtema operational risk/Basel cresceu +142% (2.4x). Open banking/open finance avançou +181% (2.8x), reforçando a pressão regulatória e de infraestrutura sobre o setor."
+  }
+ ],
+ "innovation": "A inovação segue concentrada na academia: 525 trabalhos (78.9%) vêm de universidades, contra 24 (3.6%) de empresas e 20 (3.0%) de governo e reguladores. Entre instituições, lideram Tongji University (16), University of Portsmouth (14), Beijing Institute of Technology (13), London School of Economics and Political Science (10) e University of the Western Cape (9). Nos países, EUA (146), China (93), Reino Unido (66), Índia (50) e Indonésia (32) puxam a produção; Nigéria (14) e África do Sul (13) aparecem via criminologia de fraudes transfronteiriças. Nas empresas, destacam-se Tencent (7), State Grid Jilin Electric Power (5), Visa (5), NEC (3), Microsoft (2), Financial Network Analytics (2), Barclays (2) e Ant Group (2). O Brasil não aparece na lista de países, instituições ou empresas.",
+ "highlights": [
+  {
+   "title": "TransactionGPT",
+   "original_title": "TransactionGPT",
+   "url": "https://doi.org/10.48550/arxiv.2511.08939",
+   "venue": "arXiv (Cornell University)",
+   "date": "2025-11-12",
+   "authors": [
+    "Yingtong Dou",
+    "Zhimeng Jiang",
+    "Tianyi Zhang",
+    "Mingzhi Hu",
+    "Zhichao Xu",
+    "Shubham Jain",
+    "Uday Singh Saini",
+    "Fan, Xiran"
+   ],
+   "institutions": [],
+   "watch_authors": [
+    "Yingtong Dou"
+   ],
+   "score": 10,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 14,
+   "velocity": 1.17,
+   "why": "Apresenta um foundation model para dados de transações de consumidor em uma das maiores redes de pagamento, com arquitetura 3D-Transformer e treinamento em bilhões de transações reais. O modelo busca entender e gerar trajetórias de transação e apoiar tarefas downstream de predição e classificação."
+  },
+  {
+   "title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
+   "original_title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
+   "url": "https://doi.org/10.48550/arxiv.2511.19693",
+   "venue": "arXiv (Cornell University)",
+   "date": "2025-11-24",
+   "authors": [
+    "Chin‐Chia Michael Yeh",
+    "Uday Singh Saini",
+    "Dai, Xin",
+    "Fan, Xiran",
+    "Shubham Jain",
+    "Yujie Fan",
+    "Jiarui Sun",
+    "Junpeng Wang"
+   ],
+   "institutions": [
+    "Visa (United States)"
+   ],
+   "watch_authors": [
+    "Yingtong Dou"
+   ],
+   "score": 10,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 8,
+   "velocity": 0.67,
+   "why": "A Visa propõe um foundation model transformer para dados transacionais de alto volume, capturando comportamento do consumidor e sinais da rede de pagamentos. O trabalho aponta aplicações como detecção de comportamento anormal e insights hiperpersonalizados."
+  },
+  {
+   "title": "LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework",
+   "original_title": "LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework",
+   "url": "https://doi.org/10.1145/3845996",
+   "venue": "ACM Transactions on Intelligent Systems and Technology",
+   "date": "2025-02-26",
+   "authors": [
+    "Yiran Qiao",
+    "Xiang Ao",
+    "Yang Liu",
+    "Jiarong Xu",
+    "Xiaoqian Sun",
+    "Qing He"
+   ],
+   "institutions": [
+    "Chinese Academy of Sciences",
+    "Institute of Computing Technology",
+    "University of Chinese Academy of Sciences",
+    "Fudan University"
+   ],
+   "watch_authors": [
+    "Xiang Ao"
+   ],
+   "score": 9,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 25,
+   "velocity": 1.19,
+   "why": "Formula o paradigma 'LLMs-as-Consultants' para integrar LLMs e GNNs de forma interativa no treinamento. O objetivo é melhorar o desempenho de GNNs em tarefas downstream sem redesenhar variantes complexas."
+  },
+  {
+   "title": "Nigerian confraternities and mass cross-border fraud",
+   "original_title": "Nigerian confraternities and mass cross-border fraud",
+   "url": "https://doi.org/10.1007/s12117-025-09576-2",
+   "venue": "Trends in Organized Crime",
+   "date": "2025-11-01",
+   "authors": [
+    "Mark Button",
+    "Suleman Ibrahim Lazarus",
+    "Branislav Hock",
+    "James Bugbilla Sabia",
+    "Paul Michael Gilmour",
+    "Durgesh Pandey"
+   ],
+   "institutions": [
+    "University of Portsmouth",
+    "University of the Western Cape",
+    "London School of Economics and Political Science"
+   ],
+   "watch_authors": [
+    "Mark Button"
+   ],
+   "score": 9,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 10,
+   "velocity": 0.83,
+   "why": "Avalia o papel crescente de confraternidades nigerianas, como Black Axe, em fraude organizada e em escala industrial. O estudo aprofunda como redes de membros sustentam fraudes transfronteiriças contra estrangeiros e empresas."
+  },
+  {
+   "title": "CamFD: Semi-Supervised Camouflage-Aware Fraud Detection Based on Dynamic Graphs",
+   "original_title": "CamFD: Semi-Supervised Camouflage-Aware Fraud Detection Based on Dynamic Graphs",
+   "url": "https://doi.org/10.1109/tsmc.2025.3648571",
+   "venue": "IEEE Transactions on Systems Man and Cybernetics Systems",
+   "date": "2025-12-31",
+   "authors": [
+    "Rui Ou",
+    "Kun Zhu",
+    "Nana Zhang",
+    "MengChu Zhou",
+    "Changjun Jiang"
+   ],
+   "institutions": [
+    "Tongji University",
+    "Donghua University",
+    "New Jersey Institute of Technology"
+   ],
+   "watch_authors": [
+    "Changjun Jiang"
+   ],
+   "score": 9,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 7,
+   "velocity": 0.64,
+   "why": "Propõe detecção de fraude em grafos dinâmicos ciente de camuflagem, atacando fraudadores que imitam padrões de usuários benignos. Também lida com evolução de padrões e escassez de amostras de fraude para reduzir overfitting."
+  },
+  {
+   "title": "Enhancing Attribute-Driven Fraud Detection With Risk-Aware Graph Representation",
+   "original_title": "Enhancing Attribute-Driven Fraud Detection With Risk-Aware Graph Representation",
+   "url": "https://doi.org/10.1109/tkde.2025.3543887",
+   "venue": "IEEE Transactions on Knowledge and Data Engineering",
+   "date": "2025-02-20",
+   "authors": [
+    "Sheng Xiang",
+    "Guibin Zhang",
+    "Dawei Cheng",
+    "Ying Zhang"
+   ],
+   "institutions": [
+    "University of Technology Sydney",
+    "Tongji University",
+    "Zhejiang Gongshang University"
+   ],
+   "watch_authors": [
+    "Dawei Cheng"
+   ],
+   "score": 8,
+   "theme": "cards",
+   "region": "",
+   "cited_by": 46,
+   "velocity": 2.19,
+   "why": "Apresenta a rede RGTAN, com atenção temporal e representação de risco, para fraude de cartão de crédito. O método busca usar melhor dados não rotulados e capturar estrutura local de risco diante de rótulos escassos."
+  },
+  {
+   "title": "Strategic business movements? The migration of online romance fraudsters from Nigeria to Ghana",
+   "original_title": "Strategic business movements? The migration of online romance fraudsters from Nigeria to Ghana",
+   "url": "https://doi.org/10.1016/j.jeconc.2025.100128",
+   "venue": "Journal of Economic Criminology",
+   "date": "2025-01-27",
+   "authors": [
+    "Suleman Ibrahim Lazarus",
+    "Mark Button",
+    "Kaina Habila Garba",
+    "Adebayo Benedict Soares",
+    "Mariata Hughes"
+   ],
+   "institutions": [
+    "University of the Western Cape",
+    "London School of Economics and Political Science",
+    "University of Portsmouth",
+    "University of Surrey"
+   ],
+   "watch_authors": [
+    "Mark Button"
+   ],
+   "score": 8,
+   "theme": "scams",
+   "region": "",
+   "cited_by": 35,
+   "velocity": 1.59,
+   "why": "Usa entrevistas e grupos focais para examinar a migração de fraudadores de romance da Nigéria para Gana. Revela padrões de migração e a institucionalização de empresas de golpe na África Ocidental."
+  },
+  {
+   "title": "The evolution of Nigerian cybercrime: Two case studies of UK-based offender networks",
+   "original_title": "The evolution of Nigerian cybercrime: Two case studies of UK-based offender networks",
+   "url": "https://doi.org/10.1177/14773708251329695",
+   "venue": "European Journal of Criminology",
+   "date": "2025-04-22",
+   "authors": [
+    "Jonathan Lusthaus",
+    "Thomas J. Holt",
+    "Michael Levi",
+    "E.R. Kleemans",
+    "Rutger Leukfeldt"
+   ],
+   "institutions": [
+    "University of Oxford",
+    "Michigan State University",
+    "Cardiff University",
+    "Vrije Universiteit Amsterdam",
+    "Leiden University",
+    "Netherlands Institute for the Study of Crime and Law Enforcement"
+   ],
+   "watch_authors": [
+    "Michael Levi"
+   ],
+   "score": 8,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 23,
+   "velocity": 1.21,
+   "why": "Analisa qualitativamente duas redes nigerianas baseadas no Reino Unido envolvidas em fraudes cibernéticas com forte componente offline. Discute como essas redes evoluíram e operam fora da Nigéria, especialmente na Europa."
+  },
+  {
+   "title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
+   "original_title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
+   "url": "https://doi.org/10.48550/arxiv.2503.02857",
+   "venue": "arXiv (Cornell University)",
+   "date": "2025-03-04",
+   "authors": [
+    "Chandra, Nuria Alina",
+    "Lee, Hannah",
+    "Ryan Murtfeldt",
+    "Qiu, Lin",
+    "Karmakar, Arnab",
+    "Emmanuel Tanumihardja",
+    "Kevin Farhat",
+    "Ben Caffee"
+   ],
+   "institutions": [
+    "University of Washington",
+    "Allen Institute for Artificial Intelligence",
+    "University of Maryland, College Park",
+    "Chung-Ang University",
+    "Georgetown University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "genai_deepfakes",
+   "region": "",
+   "cited_by": 160,
+   "velocity": 8.0,
+   "why": "Mostra que benchmarks acadêmicos de deepfake estão desatualizados e pouco representativos do mundo real. Reúne 45 horas de vídeo, 56,5 horas de áudio e 1.975 imagens de deepfakes in-the-wild de 2024, de 88 sites diferentes."
+  },
+  {
+   "title": "Objective over Architecture: Fraud Detection Under Extreme Imbalance in Bank Account Opening",
+   "original_title": "Objective over Architecture: Fraud Detection Under Extreme Imbalance in Bank Account Opening",
+   "url": "https://doi.org/10.3390/computation13120290",
+   "venue": "Computation",
+   "date": "2025-12-09",
+   "authors": [
+    "Wu Sun",
+    "Qiannan Shen",
+    "Yijun Gao",
+    "Qinkai Mao",
+    "Tongsong Qi",
+    "Shuo Xu"
+   ],
+   "institutions": [
+    "Johns Hopkins University",
+    "Boston University",
+    "Baruch College",
+    "City University of New York",
+    "Stevens Institute of Technology",
+    "University of California San Diego"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "account_identity",
+   "region": "",
+   "cited_by": 49,
+   "velocity": 4.45,
+   "why": "Compara modelos em 1.000.000 de contas para fraude na abertura de contas, com prevalência de fraude de 1,10% no benchmark BAF Base. Argumenta que métricas padrão podem enganar e que a função objetivo importa mais que a arquitetura."
+  },
+  {
+   "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+   "original_title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+   "url": "https://doi.org/10.1287/ijds.2024.0042",
+   "venue": "INFORMS Journal on Data Science",
+   "date": "2025-10-08",
+   "authors": [
+    "Bruno Deprez",
+    "Toon Vanderschueren",
+    "Bart Baesens",
+    "Tim Verdonck",
+    "Wouter Verbeke"
+   ],
+   "institutions": [
+    "University of Antwerp",
+    "IMEC",
+    "KU Leuven",
+    "University of Southampton"
+   ],
+   "watch_authors": [
+    "Bart Baesens",
+    "Tim Verdonck"
+   ],
+   "score": 7,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 54,
+   "velocity": 4.15,
+   "why": "Revisa 97 papers e propõe taxonomia para analytics de rede em PLD/CFT. Também avalia experimentalmente o poder comparativo de detecção, ajudando a orientar métodos em um campo fragmentado."
+  },
+  {
+   "title": "Track and Trace: Automatically Uncovering Cross-Chain Transactions in the Multi-Blockchain Ecosystems",
+   "original_title": "Track and Trace: Automatically Uncovering Cross-Chain Transactions in the Multi-Blockchain Ecosystems",
+   "url": "https://doi.org/10.1109/tsc.2025.3618729",
+   "venue": "IEEE Transactions on Services Computing",
+   "date": "2025-10-10",
+   "authors": [
+    "Dan Lin",
+    "Ziye Zheng",
+    "Jiajing Wu",
+    "Jingjing Yang",
+    "Kaixin Lin",
+    "Huan Xiao",
+    "Bowen Song",
+    "Zibin Zheng"
+   ],
+   "institutions": [
+    "Sun Yat-sen University",
+    "Ant Group (China)"
+   ],
+   "watch_authors": [
+    "Jiajing Wu"
+   ],
+   "score": 7,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 23,
+   "velocity": 1.77,
+   "why": "Automatiza a descoberta de transações cross-chain em ecossistemas multi-blockchain. O foco é rastrear fluxos usados para ocultar origem e destino de ativos em DeFi, incluindo lavagem de dinheiro."
+  },
+  {
+   "title": "The silence of the phishers: Early-stage voice phishing detection with runtime permission requests",
+   "original_title": "The silence of the phishers: Early-stage voice phishing detection with runtime permission requests",
+   "url": "https://doi.org/10.1016/j.cose.2025.104364",
+   "venue": "Computers & Security",
+   "date": "2025-02-14",
+   "authors": [
+    "Chanjong Lee",
+    "Bedeuro Kim",
+    "Hyoungshick Kim"
+   ],
+   "institutions": [
+    "Sungkyunkwan University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "scams",
+   "region": "",
+   "cited_by": 25,
+   "velocity": 1.19,
+   "why": "Propõe detecção precoce de voice phishing a partir de solicitações de permissão em tempo de execução. O título indica foco no estágio inicial do ataque, antes da interação crítica."
+  },
+  {
+   "title": "Policing cross-border fraud ‘Above and below the surface’: mapping actions and developing a more effective global response",
+   "original_title": "Policing cross-border fraud ‘Above and below the surface’: mapping actions and developing a more effective global response",
+   "url": "https://doi.org/10.1007/s10611-024-10186-2",
+   "venue": "Crime Law and Social Change",
+   "date": "2025-01-10",
+   "authors": [
+    "Mark Button",
+    "Branislav Hock",
+    "Joon Bae Suh",
+    "Chol-Soo Koh"
+   ],
+   "institutions": [
+    "University of Portsmouth",
+    "Korean National Police University"
+   ],
+   "watch_authors": [
+    "Mark Button"
+   ],
+   "score": 7,
+   "theme": "scams",
+   "region": "",
+   "cited_by": 23,
+   "velocity": 1.05,
+   "why": "Mapeia a escala da fraude transfronteiriça e as respostas policiais existentes. Aponta que órgãos internacionais e Estados têm mostrado pouco interesse em respostas globais mais efetivas."
+  },
+  {
+   "title": "Raising the bar: Assessing historical cryptocurrency exchange practices in light of the EU’s MiCA and DORA regulation",
+   "original_title": "Raising the bar: Assessing historical cryptocurrency exchange practices in light of the EU’s MiCA and DORA regulation",
+   "url": "https://doi.org/10.1016/j.clsr.2025.106227",
+   "venue": "Computer law & security review",
+   "date": "2025-11-01",
+   "authors": [
+    "Marilyne Ordekian",
+    "Ingolf Becker",
+    "Tyler Moore",
+    "Marie Vasek"
+   ],
+   "institutions": [
+    "University College London",
+    "University of Tulsa"
+   ],
+   "watch_authors": [
+    "Tyler Moore"
+   ],
+   "score": 7,
+   "theme": "regulation",
+   "region": "",
+   "cited_by": 10,
+   "velocity": 0.83,
+   "why": "Avalia práticas históricas de exchanges centralizadas de criptomoedas à luz de MiCA e DORA. Usa casos como Mt. Gox e FTX para discutir riscos sistêmicos e falhas de governança e segurança operacional."
+  }
+ ],
+ "growth": [
+  {
+   "label": "voice cloning / face swap",
+   "query": "(deepfake OR deepfakes OR \"voice cloning\" OR \"face swap\") AND (fraud OR bank OR banking OR KYC OR \"identity verification\")",
+   "prev": 112,
+   "cur": 369,
+   "cur_full_year": 369,
+   "change": 2.29
+  },
+  {
+   "label": "concept drift / cost-sensitive",
+   "query": "fraud AND (\"concept drift\" OR \"cost-sensitive\" OR \"class imbalance\") AND (transaction OR transactions OR payment)",
+   "prev": 82,
+   "cur": 254,
+   "cur_full_year": 254,
+   "change": 2.1
+  },
+  {
+   "label": "account takeover / SIM swap",
+   "query": "\"account takeover\" OR \"SIM swap\" OR \"SIM-swap\" OR \"credential stuffing\"",
+   "prev": 56,
+   "cur": 158,
+   "cur_full_year": 158,
+   "change": 1.82
+  },
+  {
+   "label": "open banking / open finance",
+   "query": "(\"open banking\" OR \"open finance\") AND (fraud OR security OR scam)",
+   "prev": 36,
+   "cur": 101,
+   "cur_full_year": 101,
+   "change": 1.81
+  },
+  {
+   "label": "large language model / large language models",
+   "query": "(\"large language model\" OR \"large language models\" OR \"generative AI\") AND (fraud OR scam OR scams) AND (financial OR bank OR banking OR payment)",
+   "prev": 75,
+   "cur": 209,
+   "cur_full_year": 209,
+   "change": 1.79
+  },
+  {
+   "label": "graph neural network / graph neural networks",
+   "query": "(\"graph neural network\" OR \"graph neural networks\" OR \"graph learning\") AND fraud",
+   "prev": 91,
+   "cur": 253,
+   "cur_full_year": 253,
+   "change": 1.78
+  },
+  {
+   "label": "instant payment / instant payments",
+   "query": "(\"instant payment\" OR \"instant payments\" OR \"Pix\" OR \"faster payments\" OR \"real-time payments\") AND (fraud OR scam OR scams)",
+   "prev": 29,
+   "cur": 77,
+   "cur_full_year": 77,
+   "change": 1.66
+  },
+  {
+   "label": "operational risk / Basel",
+   "query": "(\"operational risk\" OR \"Basel\") AND fraud AND (bank OR banks OR banking)",
+   "prev": 26,
+   "cur": 63,
+   "cur_full_year": 63,
+   "change": 1.42
+  },
+  {
+   "label": "anti-money laundering / money laundering",
+   "query": "(\"anti-money laundering\" OR \"money laundering\") AND (\"machine learning\" OR graph OR \"transaction monitoring\" OR detection)",
+   "prev": 232,
+   "cur": 549,
+   "cur_full_year": 549,
+   "change": 1.37
+  },
+  {
+   "label": "fraud detection / financial institution",
+   "query": "\"fraud detection\" AND (bank OR banking OR \"financial institution\" OR \"financial transactions\")",
+   "prev": 796,
+   "cur": 1744,
+   "cur_full_year": 1744,
+   "change": 1.19
+  },
+  {
+   "label": "behavioral biometrics / behavioural biometrics",
+   "query": "(\"behavioral biometrics\" OR \"behavioural biometrics\" OR \"device fingerprinting\") AND (fraud OR authentication)",
+   "prev": 108,
+   "cur": 223,
+   "cur_full_year": 223,
+   "change": 1.06
+  },
+  {
+   "label": "synthetic identity / identity fraud",
+   "query": "(\"synthetic identity\" OR \"identity fraud\" OR \"identity theft\") AND (bank OR banking OR financial OR credit OR onboarding)",
+   "prev": 254,
+   "cur": 458,
+   "cur_full_year": 458,
+   "change": 0.8
+  },
+  {
+   "label": "financial institution / online banking",
+   "query": "(phishing OR smishing OR vishing) AND (bank OR banking OR \"financial institution\" OR \"online banking\")",
+   "prev": 189,
+   "cur": 340,
+   "cur_full_year": 340,
+   "change": 0.8
+  },
+  {
+   "label": "money mule / money mules",
+   "query": "\"money mule\" OR \"money mules\" OR \"mule account\" OR \"mule accounts\"",
+   "prev": 19,
+   "cur": 34,
+   "cur_full_year": 34,
+   "change": 0.79
+  },
+  {
+   "label": "(fraud OR scam OR scams) AND (victim OR victims OR victimiza",
+   "query": "(fraud OR scam OR scams) AND (victim OR victims OR victimization) AND (financial OR bank OR banking OR payment)",
+   "prev": 232,
+   "cur": 373,
+   "cur_full_year": 373,
+   "change": 0.61
+  },
+  {
+   "label": "authorized push payment / APP fraud",
+   "query": "\"authorized push payment\" OR \"APP fraud\" OR \"push payment fraud\" OR \"payment scam\" OR \"investment scam\" OR \"romance scam\"",
+   "prev": 61,
+   "cur": 93,
+   "cur_full_year": 93,
+   "change": 0.52
+  },
+  {
+   "label": "credit card fraud / card fraud",
+   "query": "\"credit card fraud\" OR \"card fraud\" OR \"payment card fraud\" OR \"card-not-present\"",
+   "prev": 417,
+   "cur": 608,
+   "cur_full_year": 608,
+   "change": 0.46
+  }
+ ],
+ "geography": {
+  "works": 665,
+  "sectors": [
+   {
+    "name": "Academia",
+    "works": 525,
+    "share": 0.789
+   },
+   {
+    "name": "Centros de pesquisa",
+    "works": 28,
+    "share": 0.042
+   },
+   {
+    "name": "Empresas",
+    "works": 24,
+    "share": 0.036
+   },
+   {
+    "name": "Governo e reguladores",
+    "works": 20,
+    "share": 0.03
+   },
+   {
+    "name": "Outros",
+    "works": 8,
+    "share": 0.012
+   },
+   {
+    "name": "Sem fins lucrativos",
+    "works": 5,
+    "share": 0.008
+   },
+   {
+    "name": "Saúde",
+    "works": 2,
+    "share": 0.003
+   }
+  ],
+  "institutions": [
+   {
+    "name": "Tongji University",
+    "works": 16,
+    "country": "CN"
+   },
+   {
+    "name": "University of Portsmouth",
+    "works": 14,
+    "country": "GB"
+   },
+   {
+    "name": "Beijing Institute of Technology",
+    "works": 13,
+    "country": "CN"
+   },
+   {
+    "name": "London School of Economics and Political Science",
+    "works": 10,
+    "country": "GB"
+   },
+   {
+    "name": "University of the Western Cape",
+    "works": 9,
+    "country": "ZA"
+   },
+   {
+    "name": "Sun Yat-sen University",
+    "works": 9,
+    "country": "CN"
+   },
+   {
+    "name": "KU Leuven",
+    "works": 8,
+    "country": "BE"
+   },
+   {
+    "name": "Monash University",
+    "works": 7,
+    "country": "AU"
+   },
+   {
+    "name": "University of Technology Sydney",
+    "works": 6,
+    "country": "AU"
+   },
+   {
+    "name": "Carnegie Mellon University",
+    "works": 6,
+    "country": "US"
+   },
+   {
+    "name": "St. Francis College",
+    "works": 6,
+    "country": "US"
+   },
+   {
+    "name": "University of Manchester",
+    "works": 6,
+    "country": "GB"
+   },
+   {
+    "name": "University of New Haven",
+    "works": 6,
+    "country": "US"
+   },
+   {
+    "name": "University of the Cumberlands",
+    "works": 6,
+    "country": "US"
+   },
+   {
+    "name": "Trine University",
+    "works": 6,
+    "country": "US"
+   }
+  ],
+  "countries": [
+   {
+    "code": "US",
+    "works": 146
+   },
+   {
+    "code": "CN",
+    "works": 93
+   },
+   {
+    "code": "GB",
+    "works": 66
+   },
+   {
+    "code": "IN",
+    "works": 50
+   },
+   {
+    "code": "ID",
+    "works": 32
+   },
+   {
+    "code": "AU",
+    "works": 27
+   },
+   {
+    "code": "PK",
+    "works": 24
+   },
+   {
+    "code": "MY",
+    "works": 23
+   },
+   {
+    "code": "SA",
+    "works": 18
+   },
+   {
+    "code": "NG",
+    "works": 14
+   },
+   {
+    "code": "UA",
+    "works": 13
+   },
+   {
+    "code": "ZA",
+    "works": 13
+   }
+  ],
+  "companies": [
+   {
+    "name": "Tencent (China)",
+    "works": 7,
+    "country": "CN"
+   },
+   {
+    "name": "State Grid Jilin Electric Power (China)",
+    "works": 5,
+    "country": "CN"
+   },
+   {
+    "name": "Visa (United States)",
+    "works": 5,
+    "country": "US"
+   },
+   {
+    "name": "NEC (Germany)",
+    "works": 3,
+    "country": "DE"
+   },
+   {
+    "name": "Microsoft (United States)",
+    "works": 2,
+    "country": "US"
+   },
+   {
+    "name": "Financial Network Analytics (United Kingdom)",
+    "works": 2,
+    "country": "GB"
+   },
+   {
+    "name": "Barclays (United Kingdom)",
+    "works": 2,
+    "country": "GB"
+   },
+   {
+    "name": "Ant Group (China)",
+    "works": 2,
+    "country": "CN"
+   },
+   {
+    "name": "Intesa Sanpaolo (Italy)",
+    "works": 1,
+    "country": "IT"
+   },
+   {
+    "name": "Lowe's (United States)",
+    "works": 1,
+    "country": "US"
+   }
+  ]
+ },
+ "stats": {
+  "works": 659,
+  "triaged": 150,
+  "highlights": 15,
+  "openalex_calls": 52,
+  "openalex_cost": 0.0511,
+  "tokens": {
+   "prompt_tokens": 51730,
+   "completion_tokens": 49546
+  }
+ }
+}

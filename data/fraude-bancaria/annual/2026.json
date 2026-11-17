@@ -1,0 +1,610 @@
+{
+ "year": 2026,
+ "partial": true,
+ "generated": "2026-11-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "overview": "Em 2026, até 17/11, o tema foi marcado pela escalada de golpes em pagamentos instantâneos e de pagamento autorizado, pelo avanço de account takeover e deepfakes, e pela corrida por modelos fundacionais, grafos e aprendizado contínuo para fraude. Os volumes cresceram em todos os subtemas monitorados, com destaque para money mule (+224%), concept drift/cost-sensitive (+164%), voice cloning/face swap (+143%), instant payment (+127%) e account takeover/SIM swap (+119%). Os destaques do ano mostram a convergência entre foundation models bancários (PRAGMA), detecção agêntica com memória de personas (PersonaAgent), GNNs heterogêneos e contrastivos para colusão e lavagem (Audit-HCL, Guardnet, Hybrid federated continual graph contrastive learning) e ataques adversariais com RL (Fraud-RLA). No bloco de quem publica, a academia domina (495 de 670 trabalhos; 73.9%), enquanto empresas respondem por 26 (3.9%) e governo/reguladores por 14 (2.1%); o Brasil não aparece entre países, instituições ou empresas listados.",
+ "trends": [
+  {
+   "title": "Pagamentos instantâneos e APP fraud sob pressão",
+   "text": "A produção sobre instant payment/instant payments subiu de 77 para 175 (+127%), e authorized push payment/APP fraud de 93 para 163 (+75%). O avanço acompanha a centralidade dos trilhos instantâneos e exige defesa em tempo real contra golpes de engenharia social."
+  },
+  {
+   "title": "Account takeover, identidade sintética e deepfakes",
+   "text": "Account takeover/SIM swap cresceu de 158 para 346 (+119%), synthetic identity/identity fraud de 458 para 714 (+56%), e voice cloning/face swap de 369 para 898 (+143%). É a frente que combina autenticação, biometria comportamental (+38%) e onboarding."
+  },
+  {
+   "title": "Grafos, mulas e AML",
+   "text": "Money mule/money mules saltou de 34 para 110 (+224%), anti-money laundering/money laundering de 549 para 848 (+54%), e graph neural network/graph neural networks de 253 para 507 (+100%). Os destaques Audit-HCL, Guardnet e Hybrid federated continual graph contrastive learning mostram GNNs heterogêneos, contrastivos e federados para colusão e lavagem sob escassez de rótulos."
+  },
+  {
+   "title": "Foundation models, LLMs e drift",
+   "text": "Large language model/large language models cresceu de 209 para 429 (+105%), concept drift/cost-sensitive de 254 para 670 (+164%), e fraud detection/financial institution de 1744 para 2182 (+25%). PRAGMA, DISCO e PersonaAgent apontam para modelos fundacionais, separação entre representação e controle de risco, e atualização contínua de memória/entidades."
+  },
+  {
+   "title": "Cartões e adversários",
+   "text": "Credit card fraud/card fraud subiu de 608 para 761 (+25%), e behavioral biometrics/behavioural biometrics de 223 para 308 (+38%). Fraud-RLA materializa a ameaça adversarial com RL contra sistemas de detecção de fraude em cartões, enquanto a produção em cartões segue relevante."
+  }
+ ],
+ "innovation": "Academia concentra a inovação: 495 de 670 trabalhos (73.9%), contra 26 de empresas (3.9%), 23 de centros de pesquisa (3.4%) e 14 de governo e reguladores (2.1%). Entre empresas, Nvidia (11), Capital One (10), Visa (10), Ant Group (7) e Uber AI (5) puxam publicações; entre países, EUA (132), China (76), Índia (72), Reino Unido (58) e Indonésia (36) lideram. As instituições mais produtivas são Tongji University (19), University of Antwerp (12), Université Libre de Bruxelles (10) e KU Leuven (10). O Brasil não aparece entre países, instituições ou empresas listados, o que indica ausência de protagonismo nos dados deste recorte.",
+ "highlights": [
+  {
+   "title": "PRAGMA: modelo fundacional para eventos bancários",
+   "original_title": "PRAGMA: Revolut Foundation Model",
+   "url": "https://doi.org/10.48550/arxiv.2604.08649",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-04-09",
+   "authors": [
+    "Maxim Ostroukhov",
+    "Ruslan Mikhailov",
+    "Vladimir Iashin",
+    "Artem Sokolov",
+    "Andrei Akshonov",
+    "Vitaly Protasov",
+    "Andrey Goncharov",
+    "Dmitrii Beloborodov"
+   ],
+   "institutions": [
+    "Nvidia (United States)"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 14,
+   "velocity": 2.0,
+   "why": "Pré-treina Transformer com masked modelling em corpus heterogêneo de eventos bancários e mostra que embeddings alimentam tarefas como credit scoring, fraud detection e lifetime value com modelo linear simples. Traz a lógica de foundation models para sequências transacionais, com origem na Nvidia."
+  },
+  {
+   "title": "DISCO: desacoplar representação e controle de risco",
+   "original_title": "DISCO: Decoupling representation learning and risk control for reliable credit card fraud detection",
+   "url": "https://doi.org/10.1016/j.dss.2026.114717",
+   "venue": "Decision Support Systems",
+   "date": "2026-06-22",
+   "authors": [
+    "Ruonan Zhu",
+    "Xinru Zhang",
+    "Tao Wang",
+    "Jingxiao Liao",
+    "Sai‐Ho Chung",
+    "Xiaoge Zhang"
+   ],
+   "institutions": [
+    "Hong Kong Polytechnic University"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 3,
+   "velocity": 0.6,
+   "why": "Propõe separar aprendizado de representação e controle de risco para detecção confiável de fraude em cartão de crédito, endereçando robustez em produção. Publicado na Decision Support Systems, reforça a necessidade de controle de risco explícito além do classificador."
+  },
+  {
+   "title": "PersonaAgent: scoring de anomalias com memória de personas",
+   "original_title": "PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona Memory",
+   "url": "https://doi.org/10.48550/arxiv.2611.08094",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-05",
+   "authors": [
+    "Zhengyu Fang",
+    "Liang Wang",
+    "Yingtong Dou",
+    "Yuzhong Chen",
+    "Shubham Jain",
+    "Junpeng Wang",
+    "Xiran Fan",
+    "Menghai Pan"
+   ],
+   "institutions": [
+    "Case Western Reserve University",
+    "Visa (United States)"
+   ],
+   "watch_authors": [
+    "Yingtong Dou"
+   ],
+   "score": 8,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 0,
+   "velocity": 0.0,
+   "why": "Framework agêntico que representa sinais comportamentais de entidades como personas em memória atualizável, atacando alta cardinalidade e esparsidade de embeddings em redes de pagamento. A colaboração Case Western/Visa indica aplicação direta em detecção transacional em escala."
+  },
+  {
+   "title": "Audit-HCL: grafo heterogêneo dinâmico para colusão",
+   "original_title": "Dynamic heterogeneous graph contrastive learning for uncovering collusive financial fraud",
+   "url": "https://doi.org/10.1038/s41598-026-58938-5",
+   "venue": "Scientific Reports",
+   "date": "2026-06-24",
+   "authors": [
+    "Yanan Jiao",
+    "Huijie Fan",
+    "Xinran Yue",
+    "Wenjie Ping",
+    "Tiejiang Sun",
+    "Jin Wang"
+   ],
+   "institutions": [
+    "Long Island University",
+    "Hunan Agricultural University",
+    "University of Denver",
+    "Georgetown University",
+    "Chang'an University",
+    "University of California, Los Angeles"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 25,
+   "velocity": 5.0,
+   "why": "Modela clientes, contas e dispositivos como snapshots temporais de grafo heterogêneo e usa aprendizado contrastivo dual-view para detectar anéis de colusão sob escassez de rótulos de AML. É uma resposta direta ao atraso de labels confirmados em PLD/CFT."
+  },
+  {
+   "title": "Fraud-RLA: ataque adversarial com RL",
+   "original_title": "Fraud-RLA: A Reinforcement Learning Adversarial Attack Against Credit Card Fraud Detection",
+   "url": "https://doi.org/10.1109/tdsc.2026.3673847",
+   "venue": "IEEE Transactions on Dependable and Secure Computing",
+   "date": "2026-03-13",
+   "authors": [
+    "Daniele Lunghi",
+    "Yannick Molinghen",
+    "Alkis Simitsis",
+    "Tom Lenaerts",
+    "Gianluca Bontempi"
+   ],
+   "institutions": [
+    "Université Libre de Bruxelles",
+    "Athena Research and Innovation Center In Information Communication & Knowledge Technologies"
+   ],
+   "watch_authors": [
+    "Gianluca Bontempi"
+   ],
+   "score": 7,
+   "theme": "cards",
+   "region": "",
+   "cited_by": 20,
+   "velocity": 2.5,
+   "why": "Introduz ataque com reinforcement learning que evita detecção de fraude em cartão maximizando o valor roubado e exigindo menos conhecimento prévio que ataques concorrentes. Expõe a fragilidade adversarial de sistemas de fraude e pressiona por defesas robustas."
+  },
+  {
+   "title": "Guardnet: GNN ciente de desbalanceamento",
+   "original_title": "Guardnet: an imbalance-aware graph neural network for fraud detection",
+   "url": "https://doi.org/10.1007/s10618-025-01181-9",
+   "venue": "Data Mining and Knowledge Discovery",
+   "date": "2026-01-23",
+   "authors": [
+    "Yuhao Chen",
+    "Fanwei Zhu",
+    "Zengwei Zheng",
+    "Jianhua Ma",
+    "Binbin Zhou"
+   ],
+   "institutions": [
+    "Hangzhou City University",
+    "Hosei University"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "fraud_analytics",
+   "region": "",
+   "cited_by": 20,
+   "velocity": 2.0,
+   "why": "Propõe GNN imbalance-aware para detecção de fraude, tratando o desbalanceamento extremo típico do domínio. Publicado em Data Mining and Knowledge Discovery, reforça a linha de grafos como infraestrutura de detecção."
+  },
+  {
+   "title": "Aprendizado contrastivo federado e contínuo para lavagem",
+   "original_title": "Hybrid federated continual graph contrastive learning for evolving money laundering threats",
+   "url": "https://doi.org/10.1007/s10618-026-01192-0",
+   "venue": "Data Mining and Knowledge Discovery",
+   "date": "2026-02-25",
+   "authors": [
+    "Zarka Bashir",
+    "Mridula Verma",
+    "C. Krishna Mohan"
+   ],
+   "institutions": [
+    "Indian Institute of Technology Hyderabad",
+    "Institute for Development and Research in Banking Technology"
+   ],
+   "watch_authors": [],
+   "score": 7,
+   "theme": "mules_aml",
+   "region": "",
+   "cited_by": 12,
+   "velocity": 1.33,
+   "why": "Combina federated learning, continual learning e graph contrastive learning para ameaças evolutivas de money laundering. Endereça privacidade e drift simultaneamente, com origem em IIT Hyderabad e IDRBT."
+  },
+  {
+   "title": "Evolução dos golpes de investimento na era cripto",
+   "original_title": "The evolution of investment cyber scams: vulnerability and victim blaming in the cryptocurrency era",
+   "url": "https://doi.org/10.1016/j.cose.2026.104950",
+   "venue": "Computers & Security",
+   "date": "2026-04-29",
+   "authors": [
+    "Monica Therese Whitty",
+    "Amin Sakzad"
+   ],
+   "institutions": [
+    "Monash University"
+   ],
+   "watch_authors": [
+    "Monica Therese Whitty"
+   ],
+   "score": 7,
+   "theme": "scams",
+   "region": "",
+   "cited_by": 2,
+   "velocity": 0.29,
+   "why": "Com amostra nacional australiana de n=2019 adultos, estima 2,6% (cerca de 550.000) de vítimas de investment cyber scams em uma década, acima dos registros oficiais, e discute vulnerabilidade e victim blaming. Traz evidência populacional sobre subnotificação e evolução dos golpes."
+  }
+ ],
+ "growth": [
+  {
+   "label": "money mule / money mules",
+   "query": "\"money mule\" OR \"money mules\" OR \"mule account\" OR \"mule accounts\"",
+   "prev": 34,
+   "cur": 97,
+   "cur_full_year": 110,
+   "change": 2.24
+  },
+  {
+   "label": "concept drift / cost-sensitive",
+   "query": "fraud AND (\"concept drift\" OR \"cost-sensitive\" OR \"class imbalance\") AND (transaction OR transactions OR payment)",
+   "prev": 254,
+   "cur": 589,
+   "cur_full_year": 670,
+   "change": 1.64
+  },
+  {
+   "label": "voice cloning / face swap",
+   "query": "(deepfake OR deepfakes OR \"voice cloning\" OR \"face swap\") AND (fraud OR bank OR banking OR KYC OR \"identity verification\")",
+   "prev": 369,
+   "cur": 789,
+   "cur_full_year": 898,
+   "change": 1.43
+  },
+  {
+   "label": "instant payment / instant payments",
+   "query": "(\"instant payment\" OR \"instant payments\" OR \"Pix\" OR \"faster payments\" OR \"real-time payments\") AND (fraud OR scam OR scams)",
+   "prev": 77,
+   "cur": 154,
+   "cur_full_year": 175,
+   "change": 1.27
+  },
+  {
+   "label": "account takeover / SIM swap",
+   "query": "\"account takeover\" OR \"SIM swap\" OR \"SIM-swap\" OR \"credential stuffing\"",
+   "prev": 158,
+   "cur": 304,
+   "cur_full_year": 346,
+   "change": 1.19
+  },
+  {
+   "label": "large language model / large language models",
+   "query": "(\"large language model\" OR \"large language models\" OR \"generative AI\") AND (fraud OR scam OR scams) AND (financial OR bank OR banking OR payment)",
+   "prev": 209,
+   "cur": 377,
+   "cur_full_year": 429,
+   "change": 1.05
+  },
+  {
+   "label": "graph neural network / graph neural networks",
+   "query": "(\"graph neural network\" OR \"graph neural networks\" OR \"graph learning\") AND fraud",
+   "prev": 253,
+   "cur": 446,
+   "cur_full_year": 507,
+   "change": 1.0
+  },
+  {
+   "label": "financial institution / online banking",
+   "query": "(phishing OR smishing OR vishing) AND (bank OR banking OR \"financial institution\" OR \"online banking\")",
+   "prev": 340,
+   "cur": 538,
+   "cur_full_year": 612,
+   "change": 0.8
+  },
+  {
+   "label": "authorized push payment / APP fraud",
+   "query": "\"authorized push payment\" OR \"APP fraud\" OR \"push payment fraud\" OR \"payment scam\" OR \"investment scam\" OR \"romance scam\"",
+   "prev": 93,
+   "cur": 143,
+   "cur_full_year": 163,
+   "change": 0.75
+  },
+  {
+   "label": "operational risk / Basel",
+   "query": "(\"operational risk\" OR \"Basel\") AND fraud AND (bank OR banks OR banking)",
+   "prev": 63,
+   "cur": 88,
+   "cur_full_year": 100,
+   "change": 0.59
+  },
+  {
+   "label": "(fraud OR scam OR scams) AND (victim OR victims OR victimiza",
+   "query": "(fraud OR scam OR scams) AND (victim OR victims OR victimization) AND (financial OR bank OR banking OR payment)",
+   "prev": 373,
+   "cur": 516,
+   "cur_full_year": 587,
+   "change": 0.57
+  },
+  {
+   "label": "synthetic identity / identity fraud",
+   "query": "(\"synthetic identity\" OR \"identity fraud\" OR \"identity theft\") AND (bank OR banking OR financial OR credit OR onboarding)",
+   "prev": 458,
+   "cur": 628,
+   "cur_full_year": 714,
+   "change": 0.56
+  },
+  {
+   "label": "anti-money laundering / money laundering",
+   "query": "(\"anti-money laundering\" OR \"money laundering\") AND (\"machine learning\" OR graph OR \"transaction monitoring\" OR detection)",
+   "prev": 549,
+   "cur": 745,
+   "cur_full_year": 848,
+   "change": 0.54
+  },
+  {
+   "label": "behavioral biometrics / behavioural biometrics",
+   "query": "(\"behavioral biometrics\" OR \"behavioural biometrics\" OR \"device fingerprinting\") AND (fraud OR authentication)",
+   "prev": 223,
+   "cur": 271,
+   "cur_full_year": 308,
+   "change": 0.38
+  },
+  {
+   "label": "open banking / open finance",
+   "query": "(\"open banking\" OR \"open finance\") AND (fraud OR security OR scam)",
+   "prev": 101,
+   "cur": 120,
+   "cur_full_year": 137,
+   "change": 0.36
+  },
+  {
+   "label": "fraud detection / financial institution",
+   "query": "\"fraud detection\" AND (bank OR banking OR \"financial institution\" OR \"financial transactions\")",
+   "prev": 1744,
+   "cur": 1918,
+   "cur_full_year": 2182,
+   "change": 0.25
+  },
+  {
+   "label": "credit card fraud / card fraud",
+   "query": "\"credit card fraud\" OR \"card fraud\" OR \"payment card fraud\" OR \"card-not-present\"",
+   "prev": 608,
+   "cur": 669,
+   "cur_full_year": 761,
+   "change": 0.25
+  }
+ ],
+ "geography": {
+  "works": 670,
+  "sectors": [
+   {
+    "name": "Academia",
+    "works": 495,
+    "share": 0.739
+   },
+   {
+    "name": "Empresas",
+    "works": 26,
+    "share": 0.039
+   },
+   {
+    "name": "Centros de pesquisa",
+    "works": 23,
+    "share": 0.034
+   },
+   {
+    "name": "Governo e reguladores",
+    "works": 14,
+    "share": 0.021
+   },
+   {
+    "name": "Sem fins lucrativos",
+    "works": 13,
+    "share": 0.019
+   },
+   {
+    "name": "Outros",
+    "works": 11,
+    "share": 0.016
+   },
+   {
+    "name": "Saúde",
+    "works": 3,
+    "share": 0.004
+   }
+  ],
+  "institutions": [
+   {
+    "name": "Tongji University",
+    "works": 19,
+    "country": "CN"
+   },
+   {
+    "name": "University of Antwerp",
+    "works": 12,
+    "country": "BE"
+   },
+   {
+    "name": "Université Libre de Bruxelles",
+    "works": 10,
+    "country": "BE"
+   },
+   {
+    "name": "KU Leuven",
+    "works": 10,
+    "country": "BE"
+   },
+   {
+    "name": "New York University",
+    "works": 9,
+    "country": "US"
+   },
+   {
+    "name": "University of Portsmouth",
+    "works": 9,
+    "country": "GB"
+   },
+   {
+    "name": "Beijing Institute of Technology",
+    "works": 9,
+    "country": "CN"
+   },
+   {
+    "name": "Carnegie Mellon University",
+    "works": 7,
+    "country": "US"
+   },
+   {
+    "name": "Lamar University",
+    "works": 6,
+    "country": "US"
+   },
+   {
+    "name": "Shanghai Jiao Tong University",
+    "works": 6,
+    "country": "CN"
+   },
+   {
+    "name": "University of Manchester",
+    "works": 6,
+    "country": "GB"
+   },
+   {
+    "name": "Monash University",
+    "works": 6,
+    "country": "AU"
+   },
+   {
+    "name": "International American University",
+    "works": 5,
+    "country": "US"
+   },
+   {
+    "name": "University of the Cumberlands",
+    "works": 5,
+    "country": "US"
+   },
+   {
+    "name": "Imperial College London",
+    "works": 5,
+    "country": "GB"
+   }
+  ],
+  "countries": [
+   {
+    "code": "US",
+    "works": 132
+   },
+   {
+    "code": "CN",
+    "works": 76
+   },
+   {
+    "code": "IN",
+    "works": 72
+   },
+   {
+    "code": "GB",
+    "works": 58
+   },
+   {
+    "code": "ID",
+    "works": 36
+   },
+   {
+    "code": "AU",
+    "works": 29
+   },
+   {
+    "code": "BE",
+    "works": 24
+   },
+   {
+    "code": "SA",
+    "works": 16
+   },
+   {
+    "code": "NG",
+    "works": 13
+   },
+   {
+    "code": "UA",
+    "works": 13
+   },
+   {
+    "code": "EG",
+    "works": 10
+   },
+   {
+    "code": "MY",
+    "works": 10
+   }
+  ],
+  "companies": [
+   {
+    "name": "Nvidia (United States)",
+    "works": 11,
+    "country": "US"
+   },
+   {
+    "name": "Capital One (United States)",
+    "works": 10,
+    "country": "US"
+   },
+   {
+    "name": "Visa (United States)",
+    "works": 10,
+    "country": "US"
+   },
+   {
+    "name": "Ant Group (China)",
+    "works": 7,
+    "country": "CN"
+   },
+   {
+    "name": "Uber AI (United States)",
+    "works": 5,
+    "country": "US"
+   },
+   {
+    "name": "Yandex (Russia)",
+    "works": 4,
+    "country": "RU"
+   },
+   {
+    "name": "Fidelity Investments (United States)",
+    "works": 2,
+    "country": "US"
+   },
+   {
+    "name": "China Southern Power Grid (China)",
+    "works": 2,
+    "country": "CN"
+   },
+   {
+    "name": "China Mobile (China)",
+    "works": 2,
+    "country": "CN"
+   },
+   {
+    "name": "Lloyds Banking Group (United Kingdom)",
+    "works": 2,
+    "country": "GB"
+   }
+  ]
+ },
+ "stats": {
+  "works": 660,
+  "triaged": 150,
+  "highlights": 8,
+  "openalex_calls": 52,
+  "openalex_cost": 0.0511,
+  "tokens": {
+   "prompt_tokens": 33766,
+   "completion_tokens": 20985
+  }
+ }
+}

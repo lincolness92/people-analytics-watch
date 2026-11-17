@@ -6,6 +6,7 @@ import shutil
 from datetime import date
 
 from . import DIST, ROOT, WEB
+from .annual import annual_markdown, latest_by_year
 from .evolution import evolution_markdown, latest as latest_evolution
 from .topic import all_topics
 
@@ -69,6 +70,8 @@ def write_markdown(topics):
         ev = latest_evolution(topic)
         if ev:
             (topic.digests_md / "evolucao.md").write_text(evolution_markdown(ev, topic), encoding="utf-8")
+        for y, ad in latest_by_year(topic).items():
+            (topic.digests_md / f"anual-{y}.md").write_text(annual_markdown(ad, topic), encoding="utf-8")
         by_theme = {k: [] for k in topic.themes}
         trends = []
         for d in digests:
@@ -97,6 +100,7 @@ def site_data(topic, topics):
         "digests": topic.digests(),
         "watchlist": topic.watchlist(),
         "evolution": latest_evolution(topic),
+        "annual": latest_by_year(topic),
     }
 
 

@@ -243,6 +243,46 @@ class TopicTests(unittest.TestCase):
         self.assertIn("(o que está mudando na prática de gestão de pessoas)", write_rules(PA))
 
 
+
+class AnnualTests(unittest.TestCase):
+    def test_label_and_months(self):
+        from datetime import date
+        from pawatch.annual import _label, _months_since
+        self.assertEqual(_label('("AI agent" OR "AI agents") AND bank'), "AI agent / AI agents")
+        self.assertEqual(_months_since("2026-01-10", date(2026, 11, 17)), 10)
+        self.assertEqual(_months_since("2026-11-02", date(2026, 11, 17)), 1)
+
+    def test_geography_counts_each_work_once_per_sector(self):
+        from pawatch.annual import Annual
+        w = {"id": "W1", "authorships": [
+            {"institutions": [{"display_name": "Stanford", "type": "education", "country_code": "US"}]},
+            {"institutions": [{"display_name": "Stanford", "type": "education", "country_code": "US"},
+                              {"display_name": "Visa", "type": "company", "country_code": "US"}]}]}
+        g = Annual(PA, 2026, lambda m: None).geography([(w, "busca"), (w, "watchlist")])
+        self.assertEqual(g["works"], 1)
+        self.assertEqual({s["name"]: s["works"] for s in g["sectors"]}, {"Academia": 1, "Empresas": 1})
+        self.assertEqual(g["companies"], [{"name": "Visa", "works": 1, "country": "US"}])
+
+    def test_clean_prose(self):
+        from pawatch.annual import clean_prose
+        self.assertEqual(clean_prose("Quatro destaques em pay_careers (i=19, i=131) e ai_work (i=2).", PA.themes),
+                         "Quatro destaques em remuneração, carreira & equidade e IA & futuro do trabalho.")
+        self.assertEqual(clean_prose("machine learning and hiring", PA.themes), "machine learning and hiring")
+
+    def test_annual_markdown(self):
+        from pawatch.annual import annual_markdown
+        d = {"year": 2026, "partial": True, "generated": "2026-11-17", "model": "m", "overview": "Ano X.",
+             "trends": [{"title": "T", "text": "cresceu +636%"}], "innovation": "Academia.",
+             "highlights": [{"title": "P", "url": "https://p", "venue": "V", "score": 8, "cited_by": 3,
+                             "theme": "hiring", "why": "porque"}],
+             "growth": [{"label": "AI agent", "prev": 130, "cur_full_year": 957, "change": 6.36}],
+             "stats": {"works": 10}}
+        out = annual_markdown(d, PA)
+        self.assertIn("Retrospectiva 2026 (parcial)", out)
+        self.assertIn("| AI agent | 130 | 957* | +636% |", out)
+        self.assertIn("**[P](https://p)**", out)
+
+
 if __name__ == "__main__":
     unittest.main()
 

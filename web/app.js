@@ -431,6 +431,83 @@
     }));
   }
 
+  // ---------- annual review ----------
+  const COUNTRY = { BR: "Brasil", US: "EUA", GB: "Reino Unido", CN: "China", DE: "Alemanha", FR: "França", IN: "Índia",
+    CA: "Canadá", AU: "Austrália", NL: "Holanda", IT: "Itália", ES: "Espanha", CH: "Suíça", SG: "Singapura", HK: "Hong Kong",
+    JP: "Japão", KR: "Coreia do Sul", BE: "Bélgica", SE: "Suécia", DK: "Dinamarca", IL: "Israel", TW: "Taiwan", PT: "Portugal" };
+  const country = (c) => COUNTRY[c] || c || "";
+
+  function viewAnnual(year) {
+    setTab("anual");
+    const all = DATA.annual || {};
+    const years = Object.keys(all).sort().reverse();
+    if (!years.length) {
+      app.innerHTML = `<h1 class="day">Retrospectiva anual</h1>
+        <div class="empty">A retrospectiva ainda não foi gerada para este tema.<br>Ela é atualizada todo mês, junto com a Evolução.</div>`;
+      return;
+    }
+    const y = years.includes(year) ? year : years[0];
+    const d = all[y];
+    const regs = (DATA.topic && DATA.topic.regions) || {};
+    const pct = (x) => `${Math.round(x * 100)}%`;
+    const chg = (g) => g.change === null || g.change === undefined ? "—"
+      : `<span class="${g.change >= 0 ? "up" : "down"}">${g.change >= 0 ? "▲" : "▼"} ${Math.abs(Math.round(g.change * 100))}%</span>`;
+    const card = (h) => {
+      const meta = [];
+      if (h.region && regs[h.region]) meta.push(`<span class="region-tag">${esc(regs[h.region])}</span>`);
+      if (h.watch_authors && h.watch_authors.length) meta.push(h.watch_authors.map((n) => `<span class="star">⭐ ${esc(n)}</span>`).join(""));
+      meta.push(esc(h.venue || ""));
+      const au = authorsShort(h.authors); if (au) meta.push(esc(au));
+      meta.push(`${(h.cited_by || 0).toLocaleString("pt-BR")} citações`);
+      return `<article class="card${h.watch_authors && h.watch_authors.length ? " watch" : ""}">
+        <div class="card-top"><h3><a href="${esc(safeUrl(h.url))}" target="_blank" rel="noopener">${esc(h.title)}</a></h3>
+        <span class="score ${scoreClass(h.score)}">${h.score}/10</span></div>
+        <div class="meta">${meta.join(" · ")}</div>
+        ${h.why ? `<p class="summary">${md(h.why)}</p>` : ""}
+      </article>`;
+    };
+    let html = `
+      <div class="chips year-chips">${years.map((k) => `<button class="chip" data-year="${k}" aria-pressed="${k === y}">${k}${all[k].partial ? " (parcial)" : ""}</button>`).join("")}</div>
+      <h1 class="day">Retrospectiva ${esc(y)}${d.partial ? ` <span class="muted">até ${esc(fmtDate(d.generated, { day: "2-digit", month: "short" }))}</span>` : ""}</h1>
+      ${d.overview ? `<p class="dek">${md(d.overview)}</p>` : ""}
+      <div class="stats">
+        <span><b>${d.stats.works.toLocaleString("pt-BR")}</b> obras do ano</span>
+        <span><b>${d.stats.triaged}</b> avaliadas</span>
+        <span><b>${d.highlights.length}</b> destaques</span>
+        ${d.model ? `<span>modelo: ${esc(d.model.split("/").pop())}</span>` : ""}
+      </div>`;
+    if ((d.trends || []).length) {
+      html += `<h2 class="theme-h">Tendências do ano</h2><div class="trends-grid">` +
+        d.trends.map((t) => `<div class="trend-card"><b>${esc(t.title || "")}</b><p>${md(t.text || "")}</p></div>`).join("") + `</div>`;
+    }
+    const geo = d.geography || {};
+    html += `<h2 class="theme-h">Onde a inovação acontece</h2>${d.innovation ? `<p>${md(d.innovation)}</p>` : ""}
+      <div class="geo">
+        <div><h3 class="region-h">Quem publica</h3>${(geo.sectors || []).map((s) =>
+          `<div class="bar-row"><span>${esc(s.name)}</span><span class="bar"><i style="width:${pct(s.share)}"></i></span><b>${pct(s.share)}</b></div>`).join("")}
+          <p class="muted small">% das ${(geo.works || 0).toLocaleString("pt-BR")} obras com ao menos um autor do setor.</p></div>
+        <div><h3 class="region-h">Instituições</h3><ol class="list-simple">${(geo.institutions || []).slice(0, 10).map((i) =>
+          `<li>${esc(i.name)} <span class="muted">· ${esc(country(i.country))} · ${i.works}</span></li>`).join("")}</ol></div>
+        <div><h3 class="region-h">Países</h3><ol class="list-simple">${(geo.countries || []).slice(0, 10).map((c) =>
+          `<li>${esc(country(c.code))} <span class="muted">· ${c.works}</span></li>`).join("")}</ol></div>
+        ${(geo.companies || []).length ? `<div><h3 class="region-h">Empresas que publicam</h3><ol class="list-simple">${geo.companies.slice(0, 10).map((c) =>
+          `<li>${esc(c.name)} <span class="muted">· ${esc(country(c.country))} · ${c.works}</span></li>`).join("")}</ol></div>` : ""}
+      </div>`;
+    html += `<h2 class="theme-h">Destaques do ano</h2>`;
+    for (const key of Object.keys(DATA.themes)) {
+      const group = d.highlights.filter((h) => h.theme === key);
+      if (group.length) html += `<h3 class="region-h">${esc(themeLabel(key))}</h3>` + group.map(card).join("");
+    }
+    if ((d.growth || []).length) {
+      html += `<h2 class="theme-h">Volume de publicações por subtema</h2>
+        <table class="growth"><thead><tr><th>Subtema</th><th>${+y - 1}</th><th>${esc(y)}${d.partial ? "*" : ""}</th><th>Variação</th></tr></thead><tbody>` +
+        d.growth.map((g) => `<tr><td title="${esc(g.query)}">${esc(g.label)}</td><td>${g.prev.toLocaleString("pt-BR")}</td><td>${g.cur_full_year.toLocaleString("pt-BR")}</td><td>${chg(g)}</td></tr>`).join("") +
+        `</tbody></table>${d.partial ? `<p class="muted small">* ano em curso, projetado para 12 meses; o OpenAlex indexa com algum atraso, então a variação recente tende a sair subestimada.</p>` : ""}`;
+    }
+    app.innerHTML = html;
+    app.querySelectorAll("[data-year]").forEach((b) => b.addEventListener("click", () => { location.hash = `#/anual/${b.dataset.year}`; }));
+  }
+
   // ---------- ask the archive (POST /api/ask) ----------
   const askState = { history: [], busy: false };
 
@@ -541,6 +618,7 @@
     else if (a === "tendencias") viewTrends();
     else if (a === "watchlist") viewWatchlist();
     else if (a === "evolucao") viewEvolution();
+    else if (a === "anual") viewAnnual(b);
     else if (a === "pergunte") viewAsk();
     else viewDigest();
     window.scrollTo(0, 0);

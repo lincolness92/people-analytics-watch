@@ -1,0 +1,804 @@
+{
+ "year": 2025,
+ "partial": false,
+ "generated": "2026-11-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "overview": "2025 foi o ano em que a IA saiu do piloto e virou variável de gestão: experimentos de campo em empresas reais mostraram ganhos de performance, mas também efeitos desiguais entre trabalhadores. Em paralelo, a pesquisa em people analytics dobrou (+105%, 411→842) e a de seleção por machine learning cresceu +58% (3.207→5.076), sinalizando profissionalização da função. Skills-based hiring (+90%) e algorithmic management (+126%) foram os eixos que mais tensionaram as práticas tradicionais de RH. A agenda de governança — viés em LLMs e misreporting de pay gap — ganhou peso acadêmico e regulatório. Enquanto isso, o trabalho híbrido se estabilizou em um novo equilíbrio, de cerca de 1 dia por semana em média global.",
+ "trends": [
+  {
+   "title": "IA generativa vira infraestrutura de gestão — e a evidência vem de campo",
+   "text": "Publicações em generative AI/LLM cresceram +59% (223→354) e as de algorithmic management/workplace surveillance +126% (253→571, 2,3x). A evidência migrou do ensaio para o experimento: \"The Cybernetic Teammate\" rodou teste de campo com 776 profissionais da Procter & Gamble, e \"How and for whom using generative AI affects creativity\" mostrou que o ganho de criatividade depende das estratégias metacognitivas do funcionário."
+  },
+  {
+   "title": "People analytics e seleção por machine learning se profissionalizam",
+   "text": "People analytics/HR analytics cresceu +105% (411→842, 2,0x) e personnel selection/machine learning +58% (3.207→5.076, 1,6x). A fronteira descrita em \"A Comprehensive Survey of AI Techniques for Talent Analytics\" e em \"Hiring as Exploration\" é a passagem da descrição de dados para a decisão algorítmica — inclusive com exploração deliberada de grupos sub-representados no lugar de pura explotação de histórico."
+  },
+  {
+   "title": "Skills-based hiring deixa de ser experimento e vira política de contratação",
+   "text": "O subtema skills-based hiring/skills taxonomy cresceu +90% (1.487→2.827, 1,9x). \"Skills or degree? The rise of skill-based hiring for AI and green jobs\" analisou cerca de 11 milhões de vagas online no Reino Unido e encontrou adoção de contratação por competências em IA e empregos verdes; \"Reskilling the Workforce for AI\" mostra que a IA complementa expertise de domínio quando o letramento algorítmico é difundido, e não concentrado em especialistas de TI."
+  },
+  {
+   "title": "Governança, viés e ética dos dados de pessoas entram na pauta central",
+   "text": "Diversity, equity/workplace inclusion cresceu +50% (609→916) e pay equity/gender pay gap +19% (937→1.114). \"Measuring gender and racial biases in large language models\" testou GPT-3.5 Turbo, GPT-4o, Gemini 1.5 Flash, Claude 3.5 Sonnet e Llama 3-70b em triagem de currículos, e \"Misreporting of Mandatory ESG Disclosures\" encontrou empresas reportando estatísticas de gênero matematicamente impossíveis — evidência de ESG-washing em dados de pessoas."
+  },
+  {
+   "title": "Redesenho do trabalho: híbrido estabilizado, hierarquia e aprendizagem sob escrutínio",
+   "text": "Remote/hybrid work cresceu +29% (3.141→4.051) e organizational network analysis/workplace collaboration +150% (26→65, 2,5x). \"The global persistence of work from home\" mostra o WFH estabilizado em cerca de 1 dia por semana entre 2023 e o início de 2025, enquanto \"Are less hierarchical firms organized around stronger cultures?\" associa menor hierarquia a culturas organizacionais mais fortes, com base em 1,5 milhão de avaliações do Glassdoor."
+  }
+ ],
+ "innovation": "A inovação continua concentrada na academia: 611 dos 687 trabalhos (88,9%) vêm de universidades, contra apenas 16 (2,3%) de empresas. NBER (34), Stanford (33), MIT (27) e Harvard (20) lideram a produção, com EUA (183), Reino Unido (79) e China (75) dominando por país; o Brasil aparece com 22 trabalhos, bem atrás do topo da lista. No lado corporativo, a Procter & Gamble se destaca (8 trabalhos) por sediar experimentos de campo com IA, seguida por Meta (4), enquanto governo e reguladores respondem por 33 trabalhos (4,8%).",
+ "highlights": [
+  {
+   "title": "Hiring as Exploration",
+   "original_title": "Hiring as Exploration",
+   "url": "https://doi.org/10.1093/restud/rdaf040",
+   "venue": "The Review of Economic Studies",
+   "date": "2025-05-26",
+   "authors": [
+    "Danielle Li",
+    "Lindsey Raymond",
+    "Peter Bergman"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "Massachusetts Institute of Technology",
+    "The University of Texas at Austin"
+   ],
+   "watch_authors": [
+    "Danielle Li",
+    "Lindsey Raymond"
+   ],
+   "score": 10,
+   "theme": "hiring",
+   "region": "",
+   "cited_by": 31,
+   "velocity": 1.72,
+   "why": "Formula a contratação como um problema de bandit contextual: algoritmos de triagem baseados só em supervised learning exploram histórico e ignoram grupos sub-representados. O algoritmo proposto, que valoriza o potencial estatístico do candidato, melhora a qualidade das contratações em uma empresa Fortune 500 de serviços profissionais."
+  },
+  {
+   "title": "The Diffusion of New Technologies",
+   "original_title": "The Diffusion of New Technologies",
+   "url": "https://doi.org/10.1093/qje/qjaf002",
+   "venue": "The Quarterly Journal of Economics",
+   "date": "2025-01-09",
+   "authors": [
+    "Aakash Kalyani",
+    "Nicholas Bloom",
+    "Marcela Carvalho",
+    "Tarek A. Hassan",
+    "Josh Lerner",
+    "Ahmed Tahoun"
+   ],
+   "institutions": [
+    "Federal Reserve Bank of St. Louis",
+    "National Bureau of Economic Research",
+    "Stanford University",
+    "Harvard University",
+    "London Business School",
+    "Boston University"
+   ],
+   "watch_authors": [
+    "Nicholas Bloom"
+   ],
+   "score": 9,
+   "theme": "ai_work",
+   "region": "",
+   "cited_by": 163,
+   "velocity": 7.41,
+   "why": "Usa análise textual de patentes, vagas e earnings calls para mostrar que 56% das tecnologias economicamente mais impactantes vêm de apenas duas regiões dos EUA e que a difusão geográfica dos empregos leva cerca de 50 anos. É insumo direto para planejamento de talento e decisões de localização de força de trabalho."
+  },
+  {
+   "title": "How and for whom using generative AI affects creativity",
+   "original_title": "How and for whom using generative AI affects creativity: A field experiment.",
+   "url": "https://doi.org/10.1037/apl0001296",
+   "venue": "Journal of Applied Psychology",
+   "date": "2025-06-16",
+   "authors": [
+    "Shuhua Sun",
+    "Zhuyi Angelina Li",
+    "Maw‐Der Foo",
+    "Jing Zhou",
+    "Jackson G. Lu"
+   ],
+   "institutions": [
+    "Tulane University",
+    "Renmin University of China",
+    "Nanyang Technological University",
+    "Rice University",
+    "Massachusetts Institute of Technology"
+   ],
+   "watch_authors": [],
+   "score": 9,
+   "theme": "ai_work",
+   "region": "",
+   "cited_by": 92,
+   "velocity": 5.41,
+   "why": "Experimento de campo em uma consultoria de tecnologia mostra que a assistência de LLM aumenta criatividade ao prover recursos cognitivos — mas o efeito é maior em quem tem estratégias metacognitivas elevadas. Contraria a leitura de que a IA nivela todo mundo."
+  },
+  {
+   "title": "The Cybernetic Teammate",
+   "original_title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+   "url": "https://doi.org/10.3386/w33641",
+   "venue": "National Bureau of Economic Research",
+   "date": "2025-04-01",
+   "authors": [
+    "Fabrizio Dell’Acqua",
+    "Charles Ayoubi",
+    "Hila Lifshitz‐Assaf",
+    "Raffaella Sadun",
+    "Ethan Mollick",
+    "Lilach Mollick",
+    "Yi Han",
+    "Jeff Goldman"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research"
+   ],
+   "watch_authors": [
+    "Ethan Mollick",
+    "Karim R. Lakhani",
+    "Raffaella Sadun"
+   ],
+   "score": 9,
+   "theme": "ai_work",
+   "region": "",
+   "cited_by": 102,
+   "velocity": 5.37,
+   "why": "Experimento pré-registrado com 776 profissionais da P&G em desafios reais de inovação: indivíduos com IA igualaram o desempenho de times sem IA. Redefine as premissas sobre colaboração, compartilhamento de expertise e engajamento social no trabalho."
+  },
+  {
+   "title": "Reskilling the Workforce for AI: Domain Expertise and Algorithmic Literacy",
+   "original_title": "Reskilling the Workforce for AI: Domain Expertise and Algorithmic Literacy",
+   "url": "https://doi.org/10.1287/mnsc.2022.03968",
+   "venue": "Management Science",
+   "date": "2025-09-30",
+   "authors": [
+    "Prasanna B. Tambe"
+   ],
+   "institutions": [
+    "University of Pennsylvania"
+   ],
+   "watch_authors": [
+    "Prasanna Tambe"
+   ],
+   "score": 9,
+   "theme": "learning",
+   "region": "",
+   "cited_by": 73,
+   "velocity": 5.21,
+   "why": "Mostra que IA e algoritmos são complementares à expertise de domínio e geram mais valor quando o letramento algorítmico é amplamente difundido, não confinado a especialistas. Ferramentas no-code e em linguagem natural aceleram essa dispersão e mudam o desenho de programas de reskilling."
+  },
+  {
+   "title": "The global persistence of work from home",
+   "original_title": "The global persistence of work from home",
+   "url": "https://doi.org/10.1073/pnas.2509892122",
+   "venue": "Proceedings of the National Academy of Sciences",
+   "date": "2025-07-03",
+   "authors": [
+    "Cevat Giray Aksoy",
+    "Jose Maria Barrero",
+    "Nicholas Bloom",
+    "Steven J. Davis",
+    "Mathias Dolls",
+    "Pablo Zarate"
+   ],
+   "institutions": [
+    "King's College London",
+    "European Bank for Reconstruction and Development",
+    "Instituto Tecnológico Autónomo de México",
+    "Stanford University",
+    "Hoover Institution",
+    "Ifo Institute for Economic Research"
+   ],
+   "watch_authors": [
+    "Nicholas Bloom"
+   ],
+   "score": 9,
+   "theme": "ai_work",
+   "region": "",
+   "cited_by": 78,
+   "velocity": 4.88,
+   "why": "Com o Global Survey of Working Arrangements em dezenas de países, mostra que o WFH estabilizou em cerca de 1 dia por semana entre 2023 e o início de 2025, com o dobro de incidência em economias anglófonas avançadas frente à Ásia. Consolida o híbrido como equilíbrio, não como transição."
+  },
+  {
+   "title": "Hiring People in Organizations: The State and Future of the Science",
+   "original_title": "Hiring People in Organizations: The State and Future of the Science",
+   "url": "https://doi.org/10.1146/annurev-orgpsych-020924-072127",
+   "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+   "date": "2025-08-27",
+   "authors": [
+    "Paul R. Sackett",
+    "Filip Lievens",
+    "Richard N. Landers"
+   ],
+   "institutions": [
+    "University of Minnesota",
+    "University of Minnesota System",
+    "Singapore Management University"
+   ],
+   "watch_authors": [
+    "Paul R. Sackett"
+   ],
+   "score": 9,
+   "theme": "hiring",
+   "region": "",
+   "cited_by": 16,
+   "velocity": 1.07,
+   "why": "Revisão do estado da arte em seleção de pessoal: de preditores holísticos a modulares, de entrevistas presenciais a vídeos assíncronos, de currículos a avaliações em redes sociais, e do uso de IA para criar, aplicar e corrigir testes. Funciona como mapa de referência para redesenhar funis de recrutamento."
+  },
+  {
+   "title": "Are less hierarchical firms organized around stronger cultures?",
+   "original_title": "Are less hierarchical firms organized around stronger cultures? Evidence from big data",
+   "url": "https://doi.org/10.1002/smj.70020",
+   "venue": "Strategic Management Journal",
+   "date": "2025-10-01",
+   "authors": [
+    "Arianna Marchetti",
+    "Phanish Puranam"
+   ],
+   "institutions": [
+    "Singapore Management University",
+    "INSEAD"
+   ],
+   "watch_authors": [
+    "Phanish Puranam"
+   ],
+   "score": 9,
+   "theme": "leadership",
+   "region": "",
+   "cited_by": 13,
+   "velocity": 1.0,
+   "why": "Cruza 1,5 milhão de avaliações do Glassdoor de 23 mil empresas com hierarquia gerencial estimada a partir de 42 milhões de perfis profissionais. Encontra associação negativa entre hierarquia e força cultural, com apoio à hipótese de equivalência funcional — argumento concreto para redesenho organizacional."
+  },
+  {
+   "title": "Managing with Artificial Intelligence: An Integrative Framework",
+   "original_title": "Managing with Artificial Intelligence: An Integrative Framework",
+   "url": "https://doi.org/10.5465/annals.2022.0072",
+   "venue": "Academy of Management Annals",
+   "date": "2025-01-01",
+   "authors": [
+    "Luis Hillebrand",
+    "Sebastian Raisch",
+    "Jonathan Schad"
+   ],
+   "institutions": [
+    "University of Geneva",
+    "Vrije Universiteit Amsterdam"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "leadership",
+   "region": "",
+   "cited_by": 253,
+   "velocity": 11.5,
+   "why": "Integra as literaturas de human-AI collaboration e algorithmic management, que vinham tratando separadamente decisão executiva e controle gerencial. Com 253 citações, oferece o vocabulário comum para pensar contexto, agência, interação e resultado quando algoritmos executam tarefas de gestão."
+  },
+  {
+   "title": "Skills or degree? The rise of skill-based hiring for AI and green jobs",
+   "original_title": "Skills or degree? The rise of skill-based hiring for AI and green jobs",
+   "url": "https://doi.org/10.1016/j.techfore.2025.124042",
+   "venue": "Technological Forecasting and Social Change",
+   "date": "2025-02-26",
+   "authors": [
+    "Matthew Bone",
+    "Eugenia González Ehlinger",
+    "Fabian Stephany"
+   ],
+   "institutions": [
+    "University of Oxford",
+    "Bruegel",
+    "Alexander von Humboldt Institute for Internet and Society"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "hiring",
+   "region": "",
+   "cited_by": 174,
+   "velocity": 8.29,
+   "why": "Analisa cerca de 11 milhões de vagas online no Reino Unido entre 2018 e meados de 2024 e encontra evidência de contratação por competências em funções de IA, como resposta à escassez de mão de obra. Dá base empírica para rever requisitos de diploma em vagas críticas."
+  },
+  {
+   "title": "Measuring gender and racial biases in large language models",
+   "original_title": "Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation",
+   "url": "https://doi.org/10.1093/pnasnexus/pgaf089",
+   "venue": "PNAS Nexus",
+   "date": "2025-02-27",
+   "authors": [
+    "Jiafu An",
+    "Difang Huang",
+    "Chen Lin",
+    "Mingzhu Tai"
+   ],
+   "institutions": [
+    "University of Hong Kong",
+    "Chinese Academy of Sciences",
+    "Academy of Mathematics and Systems Science"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "hiring",
+   "region": "",
+   "cited_by": 171,
+   "velocity": 8.14,
+   "why": "Avalia GPT-3.5 Turbo, GPT-4o, Gemini 1.5 Flash, Claude 3.5 Sonnet e Llama 3-70b na triagem de currículos, com lente interseccional de gênero e raça. É o teste de risco mais direto para quem usa LLM em decisões de alto impacto sobre pessoas."
+  },
+  {
+   "title": "A Comprehensive Survey of AI Techniques for Talent Analytics",
+   "original_title": "A Comprehensive Survey of Artificial Intelligence Techniques for Talent Analytics",
+   "url": "https://doi.org/10.1109/jproc.2025.3572744",
+   "venue": "Proceedings of the IEEE",
+   "date": "2025-02-01",
+   "authors": [
+    "Chuan Qin",
+    "Le Zhang",
+    "Yihang Cheng",
+    "Rui Zha",
+    "Dazhong Shen",
+    "Qi Zhang",
+    "Xi Chen",
+    "Ying Sun"
+   ],
+   "institutions": [
+    "Chinese Academy of Sciences",
+    "Computer Network Information Center",
+    "Baidu (China)",
+    "University of Science and Technology of China",
+    "Nanjing University of Aeronautics and Astronautics",
+    "Shanghai Artificial Intelligence Laboratory"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "analytics",
+   "region": "",
+   "cited_by": 169,
+   "velocity": 8.05,
+   "why": "Mapeia sistematicamente as técnicas de IA aplicadas a decisões de talento, da análise de comportamento organizacional à decisão em tempo real. Serve como referência técnica para arquitetar a stack de people analytics."
+  },
+  {
+   "title": "Misreporting of Mandatory ESG Disclosures: Evidence from Gender Pay Gap Information",
+   "original_title": "Misreporting of Mandatory ESG Disclosures: Evidence from Gender Pay Gap Information",
+   "url": "https://doi.org/10.1287/mnsc.2024.05125",
+   "venue": "Management Science",
+   "date": "2025-11-11",
+   "authors": [
+    "McKenna Bailey",
+    "Stephen Glaeser",
+    "James D. Omartian",
+    "Aneesh Raghunandan"
+   ],
+   "institutions": [
+    "University of Michigan",
+    "University of North Carolina at Chapel Hill",
+    "Yale University"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "cited_by": 52,
+   "velocity": 4.33,
+   "why": "Mostra que muitas empresas britânicas reportam conjuntos de divulgação de gênero e pay gap matematicamente impossíveis, com excesso de estatísticas perfeitamente equilibradas. Conecta misreporting a empresas com controvérsias ESG e violações trabalhistas — alerta direto para a confiabilidade de dados de equidade."
+  },
+  {
+   "title": "Measuring Work from Home",
+   "original_title": "Measuring Work from Home",
+   "url": "https://doi.org/10.3386/w33508",
+   "venue": "National Bureau of Economic Research",
+   "date": "2025-02-01",
+   "authors": [
+    "Shelby Buckman",
+    "Jose Maria Barrero",
+    "Nicholas Bloom",
+    "Steven J. Davis"
+   ],
+   "institutions": [
+    "University of Chicago",
+    "Instituto Tecnológico Autónomo de México",
+    "National Bureau of Economic Research",
+    "Stanford University"
+   ],
+   "watch_authors": [
+    "Nicholas Bloom"
+   ],
+   "score": 8,
+   "theme": "analytics",
+   "region": "",
+   "cited_by": 52,
+   "velocity": 2.48,
+   "why": "Harmoniza conceito, população-alvo e desenho de pergunta entre surveys e reduz a enorme dispersão das estimativas de WFH nos EUA. A estimativa preferida: um quarto dos dias pagos, com 7 pontos percentuais a mais para pais de crianças abaixo de 8 anos e demanda reprimida em todos os grupos demográficos."
+  },
+  {
+   "title": "Novice risk work: How juniors coaching seniors on emerging technologies such as generative AI can lead to learning failures",
+   "original_title": "Novice risk work: How juniors coaching seniors on emerging technologies such as generative AI can lead to learning failures",
+   "url": "https://doi.org/10.1016/j.infoandorg.2025.100559",
+   "venue": "Information and Organization",
+   "date": "2025-02-21",
+   "authors": [
+    "Katherine C. Kellogg",
+    "Hila Lifshitz‐Assaf",
+    "Steven Randazzo",
+    "Ethan Mollick",
+    "Fabrizio Dell’Acqua",
+    "Edward McFowland",
+    "François Candelon",
+    "Karim R. Lakhani"
+   ],
+   "institutions": [
+    "Massachusetts Institute of Technology",
+    "University of Warwick",
+    "University of Pennsylvania",
+    "Harvard University"
+   ],
+   "watch_authors": [
+    "Ethan Mollick",
+    "Karim R. Lakhani"
+   ],
+   "score": 8,
+   "theme": "learning",
+   "region": "",
+   "cited_by": 26,
+   "velocity": 1.24,
+   "why": "Examina o padrão de juniores treinando seniores em tecnologias emergentes e mostra que, com IA generativa, a incerteza de uso pode transformar esse arranjo em falha de aprendizagem. Aviso prático para programas de letramento em IA que dependem de mentoria invertida."
+  }
+ ],
+ "growth": [
+  {
+   "label": "organizational network analysis / workplace collaboration",
+   "query": "\"organizational network analysis\" OR ((\"workplace collaboration\" OR \"collaboration network\") AND employees)",
+   "prev": 26,
+   "cur": 65,
+   "cur_full_year": 65,
+   "change": 1.5
+  },
+  {
+   "label": "algorithmic management / workplace surveillance",
+   "query": "\"algorithmic management\" OR \"workplace surveillance\" OR \"employee monitoring\"",
+   "prev": 253,
+   "cur": 571,
+   "cur_full_year": 571,
+   "change": 1.26
+  },
+  {
+   "label": "people analytics / HR analytics",
+   "query": "\"people analytics\" OR \"HR analytics\" OR \"workforce analytics\" OR \"talent analytics\"",
+   "prev": 411,
+   "cur": 842,
+   "cur_full_year": 842,
+   "change": 1.05
+  },
+  {
+   "label": "skills-based hiring / skills taxonomy",
+   "query": "upskilling OR reskilling OR \"skills-based hiring\" OR \"skills taxonomy\" OR \"internal mobility\"",
+   "prev": 1487,
+   "cur": 2827,
+   "cur_full_year": 2827,
+   "change": 0.9
+  },
+  {
+   "label": "generative AI / large language model",
+   "query": "(\"generative AI\" OR \"large language model\" OR ChatGPT OR copilot) AND (workers OR employees OR workplace OR productivity) AND (experiment OR field OR \"randomized\" OR \"quasi-experimental\" OR staggered OR rollout OR \"difference-in-differences\")",
+   "prev": 223,
+   "cur": 354,
+   "cur_full_year": 354,
+   "change": 0.59
+  },
+  {
+   "label": "personnel selection / machine learning",
+   "query": "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
+   "prev": 3207,
+   "cur": 5076,
+   "cur_full_year": 5076,
+   "change": 0.58
+  },
+  {
+   "label": "diversity, equity / workplace inclusion",
+   "query": "(\"diversity, equity\" OR DEI OR \"workplace inclusion\" OR \"workplace discrimination\") AND (employees OR hiring OR workplace)",
+   "prev": 609,
+   "cur": 916,
+   "cur_full_year": 916,
+   "change": 0.5
+  },
+  {
+   "label": "employee turnover / employee retention",
+   "query": "\"employee turnover\" OR \"employee retention\" OR \"quit intention\" OR \"voluntary turnover\"",
+   "prev": 2163,
+   "cur": 3147,
+   "cur_full_year": 3147,
+   "change": 0.45
+  },
+  {
+   "label": "human resource management / strategic HRM",
+   "query": "\"human resource management\" OR \"strategic HRM\" OR \"HRM practices\"",
+   "prev": 7257,
+   "cur": 10359,
+   "cur_full_year": 10359,
+   "change": 0.43
+  },
+  {
+   "label": "employee engagement / employee well-being",
+   "query": "\"employee engagement\" OR \"employee well-being\" OR burnout OR \"job satisfaction\"",
+   "prev": 25210,
+   "cur": 35658,
+   "cur_full_year": 35658,
+   "change": 0.41
+  },
+  {
+   "label": "talent management / talent acquisition",
+   "query": "\"talent management\" OR \"talent acquisition\" OR \"succession planning\"",
+   "prev": 2170,
+   "cur": 3031,
+   "cur_full_year": 3031,
+   "change": 0.4
+  },
+  {
+   "label": "performance management / performance appraisal",
+   "query": "(\"performance management\" OR \"performance appraisal\") AND (employees OR workers OR organizations)",
+   "prev": 1956,
+   "cur": 2650,
+   "cur_full_year": 2650,
+   "change": 0.35
+  },
+  {
+   "label": "remote work / hybrid work",
+   "query": "\"remote work\" OR \"hybrid work\" OR \"work from home\" OR \"return to office\"",
+   "prev": 3141,
+   "cur": 4051,
+   "cur_full_year": 4051,
+   "change": 0.29
+  },
+  {
+   "label": "management practices",
+   "query": "\"management practices\" AND (productivity OR firms) AND workers",
+   "prev": 94,
+   "cur": 120,
+   "cur_full_year": 120,
+   "change": 0.28
+  },
+  {
+   "label": "pay equity / gender pay gap",
+   "query": "(\"pay equity\" OR \"gender pay gap\" OR \"pay transparency\" OR \"executive compensation\" OR \"employee compensation\")",
+   "prev": 937,
+   "cur": 1114,
+   "cur_full_year": 1114,
+   "change": 0.19
+  },
+  {
+   "label": "gestão de pessoas / recursos humanos",
+   "query": "\"gestão de pessoas\" OR \"recursos humanos\" OR \"gestão de talentos\" OR \"rotatividade\"",
+   "prev": 1709,
+   "cur": 1996,
+   "cur_full_year": 1996,
+   "change": 0.17
+  }
+ ],
+ "geography": {
+  "works": 687,
+  "sectors": [
+   {
+    "name": "Academia",
+    "works": 611,
+    "share": 0.889
+   },
+   {
+    "name": "Sem fins lucrativos",
+    "works": 48,
+    "share": 0.07
+   },
+   {
+    "name": "Saúde",
+    "works": 35,
+    "share": 0.051
+   },
+   {
+    "name": "Governo e reguladores",
+    "works": 33,
+    "share": 0.048
+   },
+   {
+    "name": "Centros de pesquisa",
+    "works": 33,
+    "share": 0.048
+   },
+   {
+    "name": "Outros",
+    "works": 30,
+    "share": 0.044
+   },
+   {
+    "name": "Empresas",
+    "works": 16,
+    "share": 0.023
+   }
+  ],
+  "institutions": [
+   {
+    "name": "National Bureau of Economic Research",
+    "works": 34,
+    "country": "US"
+   },
+   {
+    "name": "Stanford University",
+    "works": 33,
+    "country": "US"
+   },
+   {
+    "name": "Massachusetts Institute of Technology",
+    "works": 27,
+    "country": "US"
+   },
+   {
+    "name": "Harvard University",
+    "works": 20,
+    "country": "US"
+   },
+   {
+    "name": "University of Pennsylvania",
+    "works": 15,
+    "country": "US"
+   },
+   {
+    "name": "University of Oxford",
+    "works": 12,
+    "country": "GB"
+   },
+   {
+    "name": "King's College London",
+    "works": 9,
+    "country": "GB"
+   },
+   {
+    "name": "Northwestern University",
+    "works": 9,
+    "country": "US"
+   },
+   {
+    "name": "Cornell University",
+    "works": 8,
+    "country": "US"
+   },
+   {
+    "name": "INSEAD",
+    "works": 8,
+    "country": "SG"
+   },
+   {
+    "name": "New York University",
+    "works": 8,
+    "country": "US"
+   },
+   {
+    "name": "Princeton University",
+    "works": 8,
+    "country": "US"
+   },
+   {
+    "name": "University of Chicago",
+    "works": 8,
+    "country": "US"
+   },
+   {
+    "name": "London School of Economics and Political Science",
+    "works": 8,
+    "country": "GB"
+   },
+   {
+    "name": "University of Minnesota",
+    "works": 8,
+    "country": "US"
+   }
+  ],
+  "countries": [
+   {
+    "code": "US",
+    "works": 183
+   },
+   {
+    "code": "GB",
+    "works": 79
+   },
+   {
+    "code": "CN",
+    "works": 75
+   },
+   {
+    "code": "IN",
+    "works": 39
+   },
+   {
+    "code": "DE",
+    "works": 38
+   },
+   {
+    "code": "AU",
+    "works": 37
+   },
+   {
+    "code": "ID",
+    "works": 32
+   },
+   {
+    "code": "MY",
+    "works": 28
+   },
+   {
+    "code": "CA",
+    "works": 25
+   },
+   {
+    "code": "IT",
+    "works": 24
+   },
+   {
+    "code": "BR",
+    "works": 22
+   },
+   {
+    "code": "ES",
+    "works": 20
+   }
+  ],
+  "companies": [
+   {
+    "name": "Procter & Gamble (United States)",
+    "works": 8,
+    "country": "US"
+   },
+   {
+    "name": "Meta (United States)",
+    "works": 4,
+    "country": "US"
+   },
+   {
+    "name": "ieso Digital Health (UK) Ltd. (United Kingdom)",
+    "works": 3,
+    "country": "GB"
+   },
+   {
+    "name": "AstraZeneca (United Kingdom)",
+    "works": 2,
+    "country": "GB"
+   },
+   {
+    "name": "Baidu (China)",
+    "works": 1,
+    "country": "CN"
+   },
+   {
+    "name": "ChangeMaker Nexus Ltd (Bangladesh)",
+    "works": 1,
+    "country": "BD"
+   },
+   {
+    "name": "Global University Systems",
+    "works": 1,
+    "country": "GB"
+   },
+   {
+    "name": "PricewaterhouseCoopers (United States)",
+    "works": 1,
+    "country": "US"
+   },
+   {
+    "name": "Microsoft (United States)",
+    "works": 1,
+    "country": "US"
+   },
+   {
+    "name": "Salesforce (United States)",
+    "works": 1,
+    "country": "US"
+   }
+  ]
+ },
+ "stats": {
+  "works": 677,
+  "triaged": 150,
+  "highlights": 15,
+  "openalex_calls": 49,
+  "openalex_cost": 0.0481,
+  "tokens": {
+   "prompt_tokens": 43024,
+   "completion_tokens": 38105
+  }
+ }
+}

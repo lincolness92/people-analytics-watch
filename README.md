@@ -155,6 +155,24 @@ entram como sementes da Evolução e sempre chegam à triagem; como cada obra é
 `status` ("falecido" | "aposentado") e `since` (ano). Aparecem numa seção própria da aba Watchlist.
 Ao mover alguém para cá, tire também os feeds dela de `sources.json`.
 
+## Retrospectiva anual (aba "Anual")
+
+`python -m pawatch annual [--topic X] [--year 2025 2026]` gera, por tema e por ano (padrão: o ano passado e
+o atual), em `data/<tema>/annual/<ano>.json` e `digests/<tema>/anual-<ano>.md`:
+
+- **Destaques do ano**: as obras mais citadas do ano em cada busca do tema e dos pesquisadores da watchlist,
+  ranqueadas por velocidade de citação (citações por mês desde a publicação, para não punir papers recentes),
+  triadas pelo mesmo LLM do digest (nota ≥ 7, no máximo 4 por tema, até 15).
+- **Volume por subtema**: quantas obras cada busca encontra no ano e no anterior; o ano em curso é projetado
+  para 12 meses (o OpenAlex indexa com atraso, então a variação recente sai subestimada).
+- **Quem publica**: setores (academia, empresas, governo...), instituições, países e empresas, a partir das
+  afiliações dos autores.
+- **Síntese do LLM** (panorama, 3–5 tendências, onde a inovação acontece), presa a esses três blocos de dados;
+  ids e chaves internas que vazem no texto são removidos.
+
+Roda sozinha todo mês junto com a Evolução (`evolve`): o ano corrente sempre, o anterior uma vez (ou de novo
+com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por tema e ano.
+
 ## Ajustes comuns
 
 - **Ampliar ou estreitar o escopo**: edite `topics/<tema>/queries.json` (sintaxe booleana do OpenAlex).

@@ -19,10 +19,15 @@ Feito em 17/11/2026: aba "Pergunte" (`functions/api/ask.js`), atrás da senha, c
 arquivo. Junto veio o feedback dos leitores (👍/👎 e comentários, exportados para `data/<tema>/`).
 Ideias: usar o feedback para calibrar a triagem; respostas em streaming para reduzir a espera.
 
+## ✅ Retrospectiva anual por tema (aba "Anual")
+Feito em 17/11/2026: destaques do ano, volume por subtema ano a ano e quem publica (academia × empresas ×
+governo, instituições, países). Ideias: comparar Brasil × mundo nos números; incluir as fontes da web
+(blogs de bancos, conferências) nos destaques do ano, hoje só entram papers.
+
 ## 4. Outros temas
 - **Risco de crédito**: incluir IFRS 9 / perda esperada (IASB), Basileia (BCBS) e Bacen (Resolução
   CMN 4.966). `python -m pawatch new-topic "risco de crédito" --slug risco-credito`.
 
 ## Pendências de configuração
-- Ativar a chave do OpenAlex (e-mail "Activate your OpenAlex API key"). Já está como secret.
+- ✅ Chave do OpenAlex ativa, com saldo pré-pago (US$ 10 em 17/11).
 - ✅ Cloudflare Pages no ar, protegido por senha única (`SITE_PASSWORD`).
