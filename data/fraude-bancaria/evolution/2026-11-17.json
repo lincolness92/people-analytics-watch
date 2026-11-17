@@ -7,184 +7,64 @@
   "since": "2026-11-17",
   "added": [
    {
-    "title": "Social Change and Crime Rate Trends: A Routine Activity Approach",
-    "year": 1979,
+    "title": "Neural fraud detection in credit card operations",
+    "year": 1997,
     "era": "ate-1999"
    },
    {
-    "title": "Combining data mining and machine learning for effective user profiling",
-    "year": 1996,
-    "era": "ate-1999"
-   },
-   {
-    "title": "Money Laundering",
-    "year": 2006,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Credit Card Fraud Detection Using Hidden Markov Model",
-    "year": 2008,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Survey of fraud detection techniques",
-    "year": 2004,
-    "era": "2000-2009"
-   },
-   {
-    "title": "APATE: A novel approach for automated credit card transaction fraud detection using network-based extensions",
+    "title": "Fraud: Detection, Prevention, and Analytics!",
     "year": 2015,
     "era": "2010-2017"
    },
    {
-    "title": "SCARFF : A scalable framework for streaming credit card fraud detection with spark",
-    "year": 2017,
+    "title": "Social Change and Crime Rate Trends: A Routine Activity Approach (1979)",
+    "year": 2010,
     "era": "2010-2017"
    },
    {
-    "title": "Automatically Dismantling Online Dating Fraud",
-    "year": 2019,
-    "era": "2018-2022"
-   },
-   {
-    "title": "Instance-dependent cost-sensitive learning for detecting transfer fraud",
-    "year": 2021,
-    "era": "2018-2022"
-   },
-   {
-    "title": "TransactionGPT",
-    "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
-    "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "LGM-GNN: A Local and Global Aware Memory-Based Graph Neural Network for Fraud Detection",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
-    "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "Cybercriminal networks in the UK and Beyond: Network structure, criminal cooperation and external interactions",
+    "title": "Tainted Love: a Systematic Literature Review of Online Romance Scam Research",
     "year": 2023,
     "era": "2023+"
    }
   ],
   "removed": [
    {
-    "title": "Neural fraud detection in credit card operations",
-    "year": 1997,
-    "era": "ate-1999"
-   },
-   {
-    "title": "Credit Card Fraud Detection Using Meta-Learning: Issues and Initial Results 1",
-    "year": 1997,
-    "era": "ate-1999"
-   },
-   {
-    "title": "Toward scalable learning with non-uniform class and cost distributions: a case study in credit card fraud detection",
-    "year": 1998,
-    "era": "ate-1999"
-   },
-   {
-    "title": "Unsupervised Profiling Methods for Fraud Detection",
-    "year": 2002,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Credit Card Fraud Detection Using Bayesian and Neural Networks",
-    "year": 2002,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Neural data mining for credit card fraud detection",
-    "year": 2003,
-    "era": "2000-2009"
-   },
-   {
-    "title": "Cantina: a content-based approach to detecting phishing web sites",
-    "year": 2007,
-    "era": "2000-2009"
-   },
-   {
-    "title": "A cost-sensitive decision tree approach for fraud detection",
-    "year": 2013,
+    "title": "Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy",
+    "year": 2017,
     "era": "2010-2017"
    },
    {
-    "title": "Learned lessons in credit card fraud detection from a practitioner perspective",
-    "year": 2014,
+    "title": "Feature engineering strategies for credit card fraud detection",
+    "year": 2016,
     "era": "2010-2017"
    },
    {
-    "title": "Intelligent financial fraud detection: A comprehensive review",
-    "year": 2015,
-    "era": "2010-2017"
-   },
-   {
-    "title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts",
-    "year": 2018,
-    "era": "2018-2022"
-   },
-   {
-    "title": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
-    "year": 2018,
-    "era": "2018-2022"
-   },
-   {
-    "title": "Deepfake detection using deep learning methods: A systematic and comprehensive review",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "Financial fraud detection using graph neural networks: A systematic review",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "Graph neural networks for financial fraud detection: a review",
+    "title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
     "year": 2025,
-    "era": "2023+"
-   },
-   {
-    "title": "ASA-GNN: Adaptive Sampling and Aggregation-Based Graph Neural Network for Transaction Fraud Detection",
-    "year": 2023,
-    "era": "2023+"
-   },
-   {
-    "title": "Transparency and Privacy: The Role of Explainable AI and Federated Learning in Financial Fraud Detection",
-    "year": 2024,
     "era": "2023+"
    }
   ],
-  "note": "Em relação à versão anterior, entraram 14 marcos, com clássicos de perfilagem/rotina de atividades, AML e uma onda 2023+ de GNNs e foundation models transacionais; saíram 18, incluindo redes neurais antigas, deepfake e revisões GNN. A curadoria fica mais centrada em modelos de fundação, redes criminais e governança de pagamentos instantâneos/Open Finance."
+  "note": "Entraram quatro marcos que ampliam a base histórica e social: a detecção neural em cartão de 1997, o capítulo de processo de fraud analytics de 2015, a reimpressão aplicada de Cohen & Felson (2010) e a revisão sistemática de romance scam (2023). Saíram três trabalhos de modelagem de cartão (2016 e 2017) e o TREASURE, foundation model da Visa de 2025 — a época 2023+ fica agora ancorada em TransactionGPT, LGM-GNN, FraudGNN-RL e nos estudos de rede criminosa e AML."
  },
  "stats": {
   "network": 978,
   "candidates": 494,
-  "triaged": 484,
-  "milestones": 33,
+  "triaged": 0,
+  "milestones": 34,
   "openalex_calls": 97,
   "openalex_cost": 0.0403,
   "tokens": {
-   "prompt_tokens": 128324,
-   "completion_tokens": 168304
+   "prompt_tokens": 7459,
+   "completion_tokens": 8003
   }
  },
- "overview": "O campo nasce da criminologia ambiental de Cohen e Felson (1979) e da detecção estatística/ML de fraude em cartões nos anos 1990, com Fawcett e Provost formalizando perfilagem adaptativa e custos. Nos anos 2000, revisões de Bolton & Hand e surveys consolidam o uso de estatística e aprendizado de máquina, enquanto phishing e AML entram no escopo. Nos anos 2010, engenharia de features, streaming, redes e modelagem realista de drift/latência viram padrão. A partir de 2018, grafos, sequências, deepfakes e foundation models transacionais deslocam o estado da arte para representações de rede e modelos de fundação, com governança de pagamentos instantâneos e Open Finance como fronteira atual.",
+ "overview": "O campo começou nos anos 1970–90 em duas frentes separadas: a criminologia explicando por que a fraude acontece (Cohen & Felson, 1979) e a estatística/aprendizado de máquina mostrando como detectá-la com custo assimétrico e rótulos atrasados (Ghosh & Reilly, 1994; Fawcett & Provost, 1997). Nos anos 2000 a detecção virou disciplina própria, com revisões estatísticas, agregação de transações e modelos sequenciais substituindo regras manuais. De 2010 a 2022 a área industrializou-se: streaming em tempo real, features de rede, grafos neurais e aprendizado sensível a custo. Desde 2023, foundation models de transação e GNNs adaptativas por reforço disputam o posto de arquitetura padrão, enquanto o risco migrou para pagamentos instantâneos, cripto e redes criminais organizadas.",
  "eras": [
   {
    "key": "ate-1999",
    "label": "até 1999",
-   "title": "Regras, redes neurais e perfilagem",
-   "summary": "Resolveu a passagem de regras manuais para modelos de comportamento e aprendizado supervisionado, com foco em cartões e telecom. A ideia que virou padrão foi perfilagem do usuário, detecção adaptativa e combinação de múltiplos detectores. Ficaram em aberto escala, desbalanceamento extremo, custo de erro e adaptação contínua ao fraudador.",
+   "title": "Redes neurais contra regras manuais",
+   "summary": "O problema era volume: cartões e telefonia celular geravam transações demais para inspeção humana e regras fixas, com fraude crescendo mais rápido que a capacidade de revisão. A ideia que virou padrão foi tratar fraude como classificação supervisionada com classes extremamente desbalanceadas, avaliada por perda financeira e não por acurácia, e usar o perfil de comportamento do cliente como baseline. Redes neurais superaram regras em dados reais de emissor, e a detecção passou a rodar no hub transacional em tempo real. Ficaram em aberto escalabilidade para volumes massivos, rótulos atrasados e parciais, e a pergunta teórica de por que a fraude surge — respondida pela teoria da atividade rotineira.",
    "milestones": [
     {
      "id": "W1517113043",
@@ -196,7 +76,7 @@
       "Foster John Provost"
      ],
      "cited_by": 1074,
-     "net": 23.5,
+     "net": 23.0,
      "url": "https://doi.org/10.1023/a:1009700419189",
      "theme": "fraud_analytics",
      "versions": [],
@@ -204,7 +84,7 @@
       "Tom Fawcett"
      ],
      "score": 8,
-     "why": "Fawcett e Provost (1997) formalizam detecção adaptativa de fraude, com custos e mudança de comportamento. Torna-se referência para sistemas que aprendem com fraude e ajustam decisões ao longo do tempo.",
+     "why": "Formalizou a detecção de fraude como problema de aprendizado com custo assimétrico e rótulos atrasados, e defendeu avaliar o detector por perda financeira. É a referência fundadora da avaliação orientada a negócio.",
      "new": false
     },
     {
@@ -217,13 +97,13 @@
       "Reilly"
      ],
      "cited_by": 558,
-     "net": 23.0,
+     "net": 23.5,
      "url": "https://doi.org/10.1109/hicss.1994.323314",
      "theme": "cards",
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Ghosh e Reilly (1994) aplicam rede neural a transações de cartão e relatam ordem de magnitude mais fraude detectada e redução de falsos positivos contra regras. Mostra que ML supera sistemas baseados em regras em dados reais.",
+     "why": "Primeira demonstração forte de rede neural sobre dados reais de emissor: detectou uma ordem de magnitude mais contas fraudulentas com 20x menos falsos positivos que o sistema baseado em regras.",
      "new": false
     },
     {
@@ -244,8 +124,29 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Chan, Fan e Prodromidis (1999) tratam mineração distribuída em cartões e e-commerce, atacando escala e eficiência. Antecipa a necessidade de detectores distribuídos em volumes massivos de transações.",
+     "why": "Propôs mineração distribuída entre instituições para escalar a volumes massivos, antecipando em duas décadas o debate de aprendizado colaborativo e federado em fraude.",
      "new": false
+    },
+    {
+     "id": "W2167374789",
+     "title": "Neural fraud detection in credit card operations",
+     "year": 1997,
+     "venue": "IEEE Transactions on Neural Networks",
+     "authors": [
+      "José R. Dorronsoro",
+      "F. Ginel",
+      "C. Sgnchez",
+      "C.S. Cruz"
+     ],
+     "cited_by": 307,
+     "net": 19.5,
+     "url": "https://doi.org/10.1109/72.595879",
+     "theme": "cards",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Mostrou que é possível detectar fraude online no hub transacional usando apenas a operação e seu histórico imediato, sem base histórica do portador — a base conceitual do scoring em tempo real.",
+     "new": true
     },
     {
      "id": "W4249855545",
@@ -263,8 +164,8 @@
      "versions": [],
      "watch": [],
      "score": 6,
-     "why": "Cohen e Felson (1979) formalizam a rotina de atividades: crime ocorre na convergência de ofensor motivado, alvo e ausência de guardião. É a base criminológica para prevenção situacional e análise de oportunidade em fraude.",
-     "new": true
+     "why": "Teoria da atividade rotineira: o crime exige convergência de ofensor motivado, alvo adequado e ausência de guardião. É o arcabouço que até hoje justifica monitoramento contínuo e controles de fricção no ponto de transação.",
+     "new": false
     },
     {
      "id": "W2146935111",
@@ -284,16 +185,16 @@
       "Tom Fawcett"
      ],
      "score": 6,
-     "why": "Fawcett e Provost (1996) combinam data mining e constructive induction para perfilar uso de celular e gerar alarmes de alta confiança. Consolida perfil comportamental e combinação de múltiplos profilers.",
-     "new": true
+     "why": "Combinou regras aprendidas com múltiplos profilers para gerar alarmes de alta confiança em telefonia celular; origem do design de ensembles de detectores e do problema de priorização de alertas.",
+     "new": false
     }
    ]
   },
   {
    "key": "2000-2009",
    "label": "2000–2009",
-   "title": "Estatística, phishing e escalabilidade",
-   "summary": "Consolidou estatística e aprendizado de máquina como base da detecção, com revisões que definiram desafios de desbalanceamento, adaptatividade e custo. Phishing e AML entraram no escopo, ampliando fraude para canais digitais e fluxos financeiros. O que ficou em aberto foi avaliação realista, integração de sinais e efetividade das respostas regulatórias.",
+   "title": "A fraude vira problema estatístico",
+   "summary": "A época resolveu a falta de método: a detecção de fraude foi consolidada como subcampo estatístico, com foco em distribuições extremas, sobreposição de classes e avaliação por custo. Viraram padrão a agregação de transações ao longo do tempo como feature e os modelos sequenciais que capturam o comportamento do portador, além do tratamento de phishing como problema de classificação com features de engano. Em aberto ficaram a eficácia real do regime antilavagem, a adaptação a fraudadores que mudam de tática e a ausência de benchmarks comparáveis entre estudos.",
    "milestones": [
     {
      "id": "W265896103",
@@ -313,7 +214,7 @@
       "David J. Hand"
      ],
      "score": 8,
-     "why": "Bolton e Hand (2002) revisam detecção estatística de fraude e organizam desafios como desbalanceamento, adaptatividade e custos. Vira referência para conectar estatística, ML e aplicações antifraude.",
+     "why": "Revisão que consolidou a detecção de fraude como subcampo estatístico, com ênfase em distribuições extremas, sobreposição de classes e custo de erro. Referência obrigatória para desenho de métricas e amostragem.",
      "new": false
     },
     {
@@ -327,13 +228,13 @@
       "Marti A. Hearst"
      ],
      "cited_by": 1677,
-     "net": 15.5,
+     "net": 14.5,
      "url": "https://doi.org/10.1145/1124772.1124861",
      "theme": "scams",
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Dhamija, Tygar e Hearst (2006) fornecem evidência empírica de por que phishing funciona, mostrando que usuários ignoram indicadores de navegador. Muda o desenho de defesas centradas no usuário.",
+     "why": "Primeiro estudo empírico de por que o phishing funciona: 23% dos participantes ignoravam pistas do navegador. Deslocou a responsabilidade de 'educar o usuário' para 'projetar defesa técnica'.",
      "new": false
     },
     {
@@ -354,8 +255,8 @@
       "Michael Levi"
      ],
      "score": 8,
-     "why": "Levi e Reuter (2006) analisam money laundering e concluem que o regime AML global tem efeitos pouco comprovados. Base para discutir efetividade, custo e desenho regulatório.",
-     "new": true
+     "why": "Sintetizou o regime global de antilavagem e mostrou que a evidência de eficácia é fraca. Até hoje é o contraponto cético a qualquer promessa de compliance como solução.",
+     "new": false
     },
     {
      "id": "W1966493433",
@@ -376,7 +277,7 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Whitrow, Hand e Juszczak (2008) usam agregação de transações como estratégia de detecção em cartões. Torna-se padrão de feature engineering para capturar comportamento acumulado.",
+     "why": "Introduziu agregação de transações ao longo do tempo como feature, capturando comportamento acumulado do portador. Virou padrão em feature engineering de cartão.",
      "new": false
     },
     {
@@ -397,8 +298,8 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Srivastava, Kundu e Sural (2008) modelam sequência de operações com Hidden Markov Model. Introduz dependência temporal explícita na detecção de fraude em cartões.",
-     "new": true
+     "why": "Modelou a sequência de operações com Hidden Markov Model treinado no comportamento normal do portador. Antecipou os modelos sequenciais que dominariam a década seguinte.",
+     "new": false
     },
     {
      "id": "W2135689168",
@@ -418,8 +319,8 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Kou, Lu e Sirwongwattana (2004) fazem survey de técnicas em cartões, telecom e intrusão. Padroniza vocabulário e mostra a diversidade de métodos além de cartões.",
-     "new": true
+     "why": "Survey que unificou cartão, telecom e intrusão sob o guarda-chuva de 'detecção de comportamento indesejado', criando vocabulário comum entre áreas que até então não conversavam.",
+     "new": false
     },
     {
      "id": "W2134750673",
@@ -432,13 +333,13 @@
       "Anthony Tomasic"
      ],
      "cited_by": 784,
-     "net": 12.5,
+     "net": 12.0,
      "url": "https://doi.org/10.1145/1242572.1242660",
      "theme": "scams",
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Fette, Sadeh e Tomasic (2007) aplicam ML a features de e-mail para detectar phishing. Operacionaliza a detecção automatizada de engenharia social em larga escala.",
+     "why": "Tratou phishing como classificação de e-mail com features de engano, com generalização para sites falsos. É a base dos filtros modernos de e-mail fraudulento.",
      "new": false
     }
    ]
@@ -446,8 +347,8 @@
   {
    "key": "2010-2017",
    "label": "2010–2017",
-   "title": "Mineração em escala e custo-sensibilidade",
-   "summary": "Trouxe escala, streaming e engenharia de features para o centro, com benchmarks e frameworks de mineração em fraude financeira. Redes de transações e modelagem realista de concept drift, desbalanceamento e latência de verificação viraram referência. Ficaram em aberto explicabilidade, custo operacional e robustez contra adversários adaptativos.",
+   "title": "Escala, streaming e redes de relacionamento",
+   "summary": "O problema era a lacuna entre modelo acadêmico e operação: nada rodava em tempo real em escala e nada capturava que fraudadores agem em rede. A resposta foi dupla — frameworks de referência organizando o campo (tipos de fraude, técnicas, dados) e a virada para features de rede, com APATE mostrando ganho real ao usar endereço, IP e comerciante compartilhados. Ao mesmo tempo, streaming com Spark tornou viável treinar e atualizar modelos continuamente em produção. Ficaram em aberto o custo de negócio real de cada decisão, o drift de modelo e a distância entre benchmark e ambiente produtivo.",
    "milestones": [
     {
      "id": "W614715210",
@@ -473,8 +374,8 @@
       "Bart Baesens"
      ],
      "score": 9,
-     "why": "Van Vlasselaer, Bravo e Caelen (2015) apresentam APATE com extensões de rede para cartões. Antecipa a virada para graph analytics ao usar relações entre transações e entidades.",
-     "new": true
+     "why": "APATE estendeu features de cartão com informação de rede (endereço, IP, comerciante compartilhados) e mostrou ganho sobre modelos puramente transacionais. Marco da virada relacional.",
+     "new": false
     },
     {
      "id": "W2751596245",
@@ -500,8 +401,8 @@
       "Yann‐Aël Le Borgne"
      ],
      "score": 9,
-     "why": "Carcillo, Dal Pozzolo e Le Borgne (2017) propõem SCARFF, framework escalável de streaming com Spark. Ataca latência e volume em detecção de cartões.",
-     "new": true
+     "why": "SCARFF trouxe detecção escalável em streaming com Spark, com treino e atualização contínuos. É a ponte entre pesquisa e operação em tempo real.",
+     "new": false
     },
     {
      "id": "W4238200010",
@@ -523,7 +424,7 @@
       "Bart Baesens"
      ],
      "score": 9,
-     "why": "Baesens, Van Vlasselaer e Verbeke (2015) publicam guia de fraud analytics com técnicas descritivas, preditivas e redes sociais. Consolida prática e teoria para implantação de soluções.",
+     "why": "Primeiro guia a juntar descritivo, preditivo e redes sociais num processo único de analytics de fraude. Virou manual de referência para montar uma função de detecção do zero.",
      "new": false
     },
     {
@@ -544,7 +445,7 @@
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Bhattacharyya, Jha e Tharakunnel (2010) comparam técnicas de data mining em cartões. Vira benchmark para avaliar métodos em fraude de cartão.",
+     "why": "Comparativo sistemático de métodos de mineração em cartão, incluindo efeito de amostragem e custo. Ajudou a estabelecer protocolo de comparação justa entre modelos.",
      "new": false
     },
     {
@@ -566,62 +467,56 @@
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Ngai, Hu e Wong (2010) propõem framework de classificação e revisão acadêmica de data mining em fraude financeira. Organiza o campo e orienta escolhas metodológicas.",
+     "why": "Framework de classificação e revisão da literatura de fraude financeira, organizando o campo em tipos de fraude, técnicas e fontes de dados. Referência para estruturar taxonomias internas.",
      "new": false
     },
     {
-     "id": "W2756359217",
-     "title": "Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy",
-     "year": 2017,
-     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+     "id": "W4233091358",
+     "title": "Fraud: Detection, Prevention, and Analytics!",
+     "year": 2015,
+     "venue": "Wiley eBooks",
      "authors": [
-      "Andrea Dal Pozzolo",
-      "Giacomo Boracchi",
-      "Olivier Caelen",
-      "Cesare Alippi",
-      "Gianluca Bontempi"
+      "Bart Baesens",
+      "Véronique Van Vlasselaer",
+      "Wouter Verbeke"
      ],
-     "cited_by": 1077,
-     "net": 22.5,
-     "url": "https://doi.org/10.1109/tnnls.2017.2736643",
-     "theme": "cards",
+     "cited_by": 5,
+     "net": 0,
+     "url": "https://doi.org/10.1002/9781119146841.ch1",
+     "theme": "fraud_analytics",
      "versions": [],
      "watch": [
-      "Gianluca Bontempi",
-      "Andrea Dal Pozzolo"
+      "Véronique Van Vlasselaer"
      ],
      "score": 8,
-     "why": "Dal Pozzolo, Boracchi e Caelen (2017) modelam fraude de forma realista com concept drift, desbalanceamento e verification latency. Torna-se referência para avaliação e aprendizado em sistemas reais.",
-     "new": false
+     "why": "Definiu o processo de fraud analytics e argumentou por que analytics complementa, e não substitui, as regras de especialistas — enquadramento que ainda orienta a governança de modelos.",
+     "new": true
     },
     {
-     "id": "W2230049528",
-     "title": "Feature engineering strategies for credit card fraud detection",
-     "year": 2016,
-     "venue": "Expert Systems with Applications",
+     "id": "W2088047416",
+     "title": "Social Change and Crime Rate Trends: A Routine Activity Approach (1979)",
+     "year": 2010,
+     "venue": "Routledge eBooks",
      "authors": [
-      "Alejandro Correa Bahnsen",
-      "Djamila Aouada",
-      "Aleksandar Stojanović",
-      "Björn Ottersten"
+      "L.E. COHEN AND M. FELSON"
      ],
-     "cited_by": 673,
-     "net": 22.5,
-     "url": "https://doi.org/10.1016/j.eswa.2015.12.030",
-     "theme": "cards",
+     "cited_by": 5995,
+     "net": 15.0,
+     "url": "https://doi.org/10.4324/9781439817803-12",
+     "theme": "scams",
      "versions": [],
      "watch": [],
-     "score": 8,
-     "why": "Bahnsen, Aouada e Stojanović (2016) mostram estratégias de feature engineering para cartões. Evidencia que features bem desenhadas superam ganhos apenas de algoritmo.",
-     "new": false
+     "score": 6,
+     "why": "A teoria da atividade rotineira volta ao circuito aplicado, sustentando a leitura de fraude como oportunidade estrutural e não como desvio individual — base para desenho de controles.",
+     "new": true
     }
    ]
   },
   {
    "key": "2018-2022",
    "label": "2018–2022",
-   "title": "Grafos, sequências e camuflagem",
-   "summary": "Deslocou o estado da arte para grafos, sequências e representações de relacionamento, com GNNs aplicadas a contas maliciosas e camuflagem. Deepfakes e fraudes sociais entraram como riscos de identidade e engenharia social. Custo-sensibilidade e combinação não/supervisionada avançaram, mas robustez adversarial, privacidade e explicabilidade seguem abertas.",
+   "title": "Grafos, sequências e custo assimétrico",
+   "summary": "A época enfrentou dois problemas novos: fraudadores que se camuflam deliberadamente em grafos de relacionamento e a fraude industrializada em contas maliciosas e mídia sintética. Viraram padrão as GNNs heterogêneas treinadas em grafos conta-dispositivo, os modelos sequenciais com RNN/LSTM sobre histórico de transações e a combinação de aprendizado não supervisionado com supervisionado para lidar com fraude nova e poucos rótulos. O custo de errar deixou de ser constante e passou a ser modelado por instância. Ficaram em aberto explicabilidade, qualidade de rótulos e a nova superfície de ataque sintética.",
    "milestones": [
     {
      "id": "W2786577118",
@@ -644,7 +539,7 @@
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Jurgovsky, Granitzer e Ziegler (2018) aplicam classificação de sequências a cartões. Captura padrões temporais e melhora detecção além de modelos tabulares.",
+     "why": "Classificou sequências de transações com RNN/LSTM e mostrou que o histórico recente do cartão melhora a detecção. Consolidou a abordagem sequencial como padrão em cartão.",
      "new": false
     },
     {
@@ -667,7 +562,7 @@
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Dou, Liu e Sun (2020) tratam camuflagem de fraudadores em GNNs, com feature e relation camouflage. Evidencia que o adversário adapta comportamento para enganar agregadores de grafo.",
+     "why": "CARE-GNN foi o primeiro a tratar explicitamente camuflagem de fraudadores (features e relações falsas), com seleção de vizinhos e agregação ponderada. Virou baseline de robustez em grafos.",
      "new": false
     },
     {
@@ -684,13 +579,13 @@
       "Matthias Nießner"
      ],
      "cited_by": 4824,
-     "net": 11.5,
+     "net": 12.0,
      "url": "https://doi.org/10.1109/iccv.2019.00009",
      "theme": "genai_deepfakes",
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Rössler, Cozzolino e Verdoliva (2019) criam FaceForensics++ como benchmark de detecção de deepfakes. Traz mídia sintética para o risco de fraude de identidade e desinformação.",
+     "why": "FaceForensics++ criou o benchmark de detecção de manipulação facial (DeepFakes, Face2Face, FaceSwap, NeuralTextures). É o padrão de avaliação para KYC e prova de vida.",
      "new": false
     },
     {
@@ -713,7 +608,7 @@
      "versions": [],
      "watch": [],
      "score": 8,
-     "why": "Liu, Chen e Yang (2018) apresentam GEM, GNN heterogêneo para contas maliciosas no Alipay. Usa grafo conta-dispositivo e atenção para detectar agregação de atacantes em produção.",
+     "why": "GEM foi a primeira GNN heterogênea em produção no Alipay, modelando grafos conta-dispositivo com atenção. Mostrou que agregação de dispositivo e de atividade é a fraqueza explorável do atacante.",
      "new": false
     },
     {
@@ -738,8 +633,8 @@
       "Monica Therese Whitty"
      ],
      "score": 8,
-     "why": "Suárez-Tangil, Edwards e Peersman (2019) analisam perfis de romance scam em sites de namoro. Mostra detecção data-driven em fraude social, além de transações.",
-     "new": true
+     "why": "Caracterizou com dados os perfis e as estratégias do romance scam e propôs desmonte automatizado. Trouxe a fraude de engenharia social para o terreno data-driven.",
+     "new": false
     },
     {
      "id": "W3021125242",
@@ -762,8 +657,8 @@
       "Tim Verdonck"
      ],
      "score": 8,
-     "why": "Höppner, Baesens e Verbeke (2021) propõem aprendizado sensível a custo dependente da instância para transfer fraud. Alinha decisão ao custo real de cada erro, não só à acurácia.",
-     "new": true
+     "why": "Aprendizado sensível a custo dependente da instância: o custo de errar varia por transação, e otimizar isso supera o custo fixo. Base para decisão de bloqueio orientada a valor.",
+     "new": false
     },
     {
      "id": "W2945876440",
@@ -789,7 +684,7 @@
       "Frédéric Oblé"
      ],
      "score": 7,
-     "why": "Carcillo, Le Borgne e Caelen (2019) combinam aprendizado não supervisionado e supervisionado em cartões. Endereça rótulos escassos e melhora robustez em produção.",
+     "why": "Combinou detecção não supervisionada de novidade com modelo supervisionado para lidar com fraude nova e rótulos escassos. Padrão em produção quando há poucos casos confirmados.",
      "new": false
     }
    ]
@@ -797,8 +692,8 @@
   {
    "key": "2023+",
    "label": "2023 em diante",
-   "title": "Foundation models e redes criminais",
-   "summary": "Consolida foundation models transacionais, GNNs com RL e network analytics para AML, usando bilhões de eventos e representações generalistas. Scams evoluem para romance baiting, cryptorom e pig butchering, enquanto redes criminosas são estudadas como sistema. O que falta é validação independente, governança, custo e defesa contra adversário ativo em tempo real.",
+   "title": "Foundation models e fraude organizada em rede",
+   "summary": "O problema agora é duplo: modelos tarefa-específicos não aproveitam o volume total de dados transacionais, e a fraude se organizou em cadeias transnacionais que separam golpe e movimentação de dinheiro. O padrão emergente são foundation models de domínio treinados em bilhões de transações, GNNs adaptativas por reforço sobre grafos dinâmicos e network analytics sistematizado para antilavagem. A fraude de relacionamento convergiu com fraude de investimento em cripto, criando canais de captação de alto valor. Ficam em aberto validação, custo computacional, governança de modelos de fundação e responsabilização em pagamentos instantâneos.",
    "milestones": [
     {
      "id": "W4416223251",
@@ -824,8 +719,8 @@
       "Yingtong Dou"
      ],
      "score": 9,
-     "why": "Dou, Jiang e Zhang (2025) apresentam TransactionGPT, foundation model para transações de uma grande rede de pagamentos. Usa 3D-Transformer e bilhões de transações para múltiplas tarefas downstream.",
-     "new": true
+     "why": "TransactionGPT é um foundation model de transação treinado em escala de bilhões, com arquitetura 3D-Transformer e otimização conjunta com tarefas downstream. Sinaliza a migração para modelos de fundação de domínio.",
+     "new": false
     },
     {
      "id": "W4414960719",
@@ -848,7 +743,7 @@
       "Tim Verdonck"
      ],
      "score": 9,
-     "why": "Deprez, Vanderschueren e Baesens (2025) revisam sistematicamente network analytics para AML e avaliam experimentalmente. Consolida evidência e taxonomia em um campo fragmentado.",
+     "why": "Revisão sistemática de 97 papers e avaliação experimental de network analytics para AML. Organiza o que funciona e o que é hype na detecção de lavagem baseada em rede.",
      "new": false
     },
     {
@@ -868,7 +763,7 @@
       "Cassandra Cross"
      ],
      "score": 8,
-     "why": "Cross (2023) descreve a evolução de romance fraud para romance baiting, cryptorom e pig butchering. Mostra a convergência entre engenharia social e investimento em cripto.",
+     "why": "Cross documenta a convergência romance + investimento falso (romance baiting, cryptorom, pig butchering). Mostra que a fraude de relacionamento virou canal de captação para fraude de cripto.",
      "new": false
     },
     {
@@ -891,8 +786,8 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Cui, Han e Chen (2025) propõem FraudGNN-RL, combinando GNN e reinforcement learning para detecção adaptativa. Modela grafo dinâmico com padrões temporal, espacial e semântico.",
-     "new": true
+     "why": "FraudGNN-RL combina GNN com aprendizado por reforço sobre grafo dinâmico, com convolução temporal-espacial-semântica. Aponta para detecção que reage ao comportamento do atacante em vez de só classificá-lo.",
+     "new": false
     },
     {
      "id": "W4313598884",
@@ -912,35 +807,8 @@
      "versions": [],
      "watch": [],
      "score": 7,
-     "why": "Li, Yu e Luo (2023) propõem LGM-GNN com memória local e global para fraude. Captura contexto global além da vizinhança local, importante em e-commerce.",
-     "new": true
-    },
-    {
-     "id": "W4416788802",
-     "title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
-     "year": 2025,
-     "venue": "arXiv (Cornell University)",
-     "authors": [
-      "Chin‐Chia Michael Yeh",
-      "Uday Singh Saini",
-      "Dai, Xin",
-      "Fan, Xiran",
-      "Shubham Jain",
-      "Yujie Fan",
-      "Jiarui Sun",
-      "Junpeng Wang"
-     ],
-     "cited_by": 8,
-     "net": 0,
-     "url": "https://doi.org/10.48550/arxiv.2511.19693",
-     "theme": "fraud_analytics",
-     "versions": [],
-     "watch": [
-      "Yingtong Dou"
-     ],
-     "score": 7,
-     "why": "Yeh, Saini e Dai (2025) apresentam TREASURE, foundation model transformer da Visa para transações. Captura comportamento do consumidor e sinais da rede de pagamentos para anomalias e personalização.",
-     "new": true
+     "why": "LGM-GNN incorpora memória local e global para não perder anomalias que só aparecem na visão global do grafo — corrige o viés de agregação puramente local das GNNs anteriores.",
+     "new": false
     },
     {
      "id": "W4320492095",
@@ -963,38 +831,58 @@
       "Michael Levi"
      ],
      "score": 6,
-     "why": "Lusthaus, Kleemans e Leukfeldt (2023) analisam 10 casos de redes criminais cibernéticas no Reino Unido e além. Mostra divisão entre ataque/scam e componentes de dinheiro, base para AML e mulas.",
+     "why": "Análise de 10 casos de investigações de cibercrime financeiro: divisão clara entre componentes de ataque/golpe e de movimentação de dinheiro, com elementos offline locais. Base para mapear redes de mulas.",
+     "new": false
+    },
+    {
+     "id": "W4388014937",
+     "title": "Tainted Love: a Systematic Literature Review of Online Romance Scam Research",
+     "year": 2023,
+     "venue": "Interacting with Computers",
+     "authors": [
+      "Alexander Bilz",
+      "Lynsay A. Shepherd",
+      "Graham I. Johnson"
+     ],
+     "cited_by": 107,
+     "net": 1,
+     "url": "https://doi.org/10.1093/iwc/iwad048",
+     "theme": "scams",
+     "versions": [],
+     "watch": [],
+     "score": 6,
+     "why": "Revisão sistemática de romance scam consolidando fatores de vitimização e contramedidas, com evidência qualitativa e quantitativa. Referência para desenho de intervenção e suporte à vítima.",
      "new": true
     }
    ]
   }
  ],
  "now": {
-  "summary": "Hoje o campo combina foundation models de transações (TransactionGPT, TREASURE, Large Payments Model) com GNNs adaptativas e network analytics para AML, buscando representações generalistas em escala de bilhões de eventos. Os destaques recentes mostram a pressão regulatória e de produto: pagamentos instantâneos exigem desenho ótimo de responsabilidade e proteção ao consumidor, enquanto Open Finance amplia compartilhamento de dados e responsabilidades. Ataques de acesso persistente na web lembram que fraude não é só transação: identidade, consentimento e recuperação de conta são superfícies críticas. A fronteira é validar esses modelos em produção, com custo, explicabilidade, privacidade e adversário ativo.",
+  "summary": "O campo está migrando de modelos tarefa-específicos para foundation models de domínio: o Large Payments Model, treinado do zero em dados transacionais estruturados com até 400 bilhões de tokens e codificações por campo, é o mesmo movimento que TransactionGPT já apontava. Em paralelo, a discussão saiu do modelo e foi para a governança: o Bank of Canada modela controle centralizado versus descentralizado de fraude em pagamentos instantâneos e mostra que governança centralizada não atinge a alocação ótima por excluir pagamentos pequenos via tarifas, enquanto a Resolução Conjunta BC/CMN 21/2026 refina responsabilidades no Open Finance para pessoa jurídica. Do lado do ataque, o primeiro estudo holístico de ataques de acesso persistente mapeia 11 rotas pelas quais o invasor reconfigura recursos de segurança para sobreviver à remoção da vítima. A fronteira prática hoje é menos 'qual modelo' e mais 'quem responde pelo erro' e 'como manter acesso e identidade sob controle'.",
   "open_questions": [
-   "Como calibrar responsabilidade em pagamentos instantâneos sem excluir pagamentos pequenos?",
-   "Foundation models transacionais generalizam entre bancos, países e regimes de privacidade?",
-   "Como defender identidade e consentimento contra ataques de acesso persistente?",
-   "Como medir custo real e explicar decisões em tempo real com drift e camuflagem?",
-   "Open Finance aumenta a superfície de fraude de consentimento e parceiros?"
+   "Foundation models de transação superam modelos especializados o suficiente para justificar o custo computacional e a opacidade?",
+   "Quem deve absorver a perda em pagamentos instantâneos: banco, PSP, recebedor ou vítima?",
+   "Como detectar acesso persistente e reconfiguração de segurança sem gerar atrito excessivo no cliente legítimo?",
+   "Network analytics para AML tem ganho real fora do laboratório, ou o gargalo é investigação e não detecção?",
+   "Como validar modelos que aprendem com bilhões de eventos quando os rótulos de fraude chegam meses depois?"
   ]
  },
  "threads": [
   {
    "theme": "fraud_analytics",
-   "line": "Evolui de perfilagem e detecção adaptativa (Fawcett & Provost, 1996–1997) e revisões estatísticas (Bolton & Hand, 2002) para engenharia de features, custo-sensibilidade e, em 2023+, GNNs e foundation models transacionais (TransactionGPT, TREASURE)."
+   "line": "Começou como classificação supervisionada com custo assimétrico (Fawcett & Provost, 1997), virou subcampo estatístico com método próprio (Bolton & Hand, 2002) e taxonomia (Ngai, 2010), ganhou processo de negócio (Baesens, 2015) e custo por instância (Höppner, 2021), e hoje se reorganiza em torno de foundation models de transação (TransactionGPT, 2025) e GNNs adaptativas por reforço."
   },
   {
    "theme": "cards",
-   "line": "Sai de redes neurais (Ghosh & Reilly, 1994) e mineração distribuída (1999) para HMM e agregação de transações (2008), streaming e modelagem realista (2017), chegando a sequências e combinação não/supervisionada (2018–2019)."
+   "line": "Saiu de redes neurais contra regras em dados de emissor (Ghosh & Reilly, 1994) para scoring online no hub transacional (Dorronsoro, 1997), depois agregação temporal (Whitrow, 2008) e modelos sequenciais (Srivastava, 2008; Jurgovsky, 2018), chegando a features de rede (APATE, 2015), streaming em Spark (SCARFF, 2017) e combinação não supervisionado+supervisionado (Carcillo, 2019)."
   },
   {
    "theme": "scams",
-   "line": "Parte da rotina de atividades (Cohen & Felson, 1979), passa por phishing (2006–2007) e romance scam (2019), e chega a romance baiting, cryptorom e pig butchering (2023)."
+   "line": "A base teórica veio da criminologia (Cohen & Felson, 1979), a virada empírica veio do phishing (Dhamija, 2006; Fette, 2007) e a fraude de relacionamento foi caracterizada com dados (Suárez-Tangil, 2019; Bilz, 2023), até convergir com fraude de investimento em cripto no pig butchering (Cross, 2023)."
   },
   {
    "theme": "mules_aml",
-   "line": "Começa com a crítica à efetividade do regime AML (Levi & Reuter, 2006), avança para redes criminosas (2023) e network analytics para AML (2025), conectando mulas, cripto e fluxos financeiros."
+   "line": "A eficácia do regime antilavagem foi questionada cedo (Levi & Reuter, 2006), a estrutura das redes criminais foi mapeada empiricamente com a separação entre golpe e movimentação de dinheiro (Lusthaus, 2023), e a detecção baseada em rede só agora foi sistematizada e avaliada experimentalmente (Deprez, 2025)."
   }
  ]
 }
