@@ -6,6 +6,7 @@ import shutil
 from datetime import date
 
 from . import DIST, ROOT, WEB
+from .evolution import evolution_markdown, latest as latest_evolution
 from .topic import all_topics
 
 
@@ -63,6 +64,9 @@ def write_markdown(topics):
         topic.digests_md.mkdir(parents=True, exist_ok=True)
         for d in digests:
             (topic.digests_md / f"{d['date']}.md").write_text(digest_markdown(d, topic), encoding="utf-8")
+        ev = latest_evolution(topic)
+        if ev:
+            (topic.digests_md / "evolucao.md").write_text(evolution_markdown(ev, topic), encoding="utf-8")
         by_theme = {k: [] for k in topic.themes}
         trends = []
         for d in digests:
@@ -90,6 +94,7 @@ def site_data(topic, topics):
         "themes": topic.themes,
         "digests": topic.digests(),
         "watchlist": topic.watchlist(),
+        "evolution": latest_evolution(topic),
     }
 
 

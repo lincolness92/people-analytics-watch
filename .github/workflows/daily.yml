@@ -9,6 +9,10 @@ on:
         description: "Refazer o digest de hoje"
         type: boolean
         default: false
+      evolve:
+        description: "Regerar a aba Evolução agora (normalmente é mensal)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["web/**", "topics/**", "src/pawatch/render.py", ".github/workflows/daily.yml"]
@@ -44,6 +48,15 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           PAW_MODEL: ${{ vars.PAW_MODEL }}
         run: python -m pawatch run ${{ inputs.force && '--force' || '' }}
+
+      - name: Evolution (monthly, only when the month has none yet)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          PAW_MODEL: ${{ vars.PAW_MODEL }}
+        run: python -m pawatch evolve ${{ inputs.evolve && ' ' || '--if-stale' }}
 
       - name: Render (site-only changes)
         if: github.event_name == 'push'

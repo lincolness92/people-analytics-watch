@@ -140,6 +140,28 @@ def cmd_notify(args):
     return 0
 
 
+def cmd_evolve(args):
+    from .evolution import evolve
+    month = date.today().strftime("%Y-%m")
+    ok = True
+    for topic in pick(args.topic):
+        out = topic.data / "evolution" / f"{month}.json"
+        if args.if_stale and out.exists():
+            log(f"[{topic.slug}] evolução de {month} já existe — pulando")
+            continue
+        try:
+            ev = evolve(topic, LLM(), log=lambda m, s=topic.slug: log(f"[{s}] {m}"))
+        except Exception as e:  # one topic failing must not block the others
+            log(f"[{topic.slug}] evolução falhou: {e!r}")
+            ok = False
+            continue
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(ev, ensure_ascii=False, indent=1), encoding="utf-8")
+        log(f"[{topic.slug}] evolução: {ev['stats']['milestones']} marcos em {len(ev['eras'])} épocas; tokens {ev['stats']['tokens']}")
+    log(f"render: {render_all()}")
+    return 0 if ok else 1
+
+
 def cmd_new_topic(args):
     from .bootstrap import new_topic
     return new_topic(args.name, args.slug, log=log)
@@ -164,6 +186,10 @@ def main():
     n.add_argument("--topic")
     n.add_argument("--date")
     n.set_defaults(fn=cmd_notify)
+    e = sub.add_parser("evolve", help="linha do tempo do estado da arte (rede de citações + LLM), mensal")
+    e.add_argument("--topic", help="slug do tema (padrão: todos)")
+    e.add_argument("--if-stale", action="store_true", help="só gera se o mês atual ainda não tiver versão")
+    e.set_defaults(fn=cmd_evolve)
     t = sub.add_parser("new-topic", help="monta o rascunho de um tema novo em topics/<slug>/")
     t.add_argument("name", help='nome do tema, ex.: "fraude bancária"')
     t.add_argument("--slug", help="pasta em topics/ (padrão: derivado do nome)")

@@ -211,6 +211,79 @@
     app.innerHTML = html;
   }
 
+  // ---------- evolution ----------
+  const evoState = { theme: null };
+
+  function viewEvolution() {
+    setTab("evolucao");
+    const ev = DATA.evolution;
+    if (!ev || !ev.eras || !ev.eras.length) {
+      app.innerHTML = `<h1 class="day">Evolução</h1>
+        <div class="empty">A linha do tempo do estado da arte ainda não foi gerada para este tema.<br>
+        Ela é montada uma vez por mês a partir da rede de citações.</div>`;
+      return;
+    }
+    const used = new Set(ev.eras.flatMap((e) => e.milestones.map((m) => m.theme)));
+    const chips = [`<button class="chip" data-evo="" aria-pressed="${!evoState.theme}">Todos os temas</button>`]
+      .concat(Object.entries(DATA.themes).filter(([k]) => used.has(k)).map(([k, v]) =>
+        `<button class="chip" data-evo="${esc(k)}" aria-pressed="${evoState.theme === k}">${esc(v)}</button>`)).join("");
+    const thread = evoState.theme && (ev.threads || []).find((t) => t.theme === evoState.theme);
+
+    const milestone = (m) => {
+      const au = authorsShort(m.authors);
+      const meta = [esc(m.venue || ""), au ? esc(au) : "", m.cited_by ? `${m.cited_by.toLocaleString("pt-BR")} citações` : ""]
+        .filter(Boolean).join(" · ");
+      return `<li class="ms">
+        <span class="ms-year">${esc(m.year ?? "")}</span>
+        <div class="ms-body">
+          <a class="ms-title" href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">${esc(m.title)}</a>
+          <div class="meta">${meta}</div>
+          ${m.why ? `<p class="summary">${md(m.why)}</p>` : ""}
+          <span class="ms-theme">${esc(themeLabel(m.theme))}</span>
+        </div>
+      </li>`;
+    };
+
+    let html = `
+      <h1 class="day">Evolução do estado da arte</h1>
+      ${ev.overview ? `<p class="dek">${md(ev.overview)}</p>` : ""}
+      <div class="stats">
+        <span><b>${ev.stats.milestones}</b> marcos</span>
+        <span>rede de <b>${ev.stats.network.toLocaleString("pt-BR")}</b> obras</span>
+        <span>gerado em ${esc(fmtDate(ev.generated))}</span>
+        ${ev.model ? `<span>modelo: ${esc(ev.model.split("/").pop())}</span>` : ""}
+      </div>
+      <div class="chips evo-chips">${chips}</div>
+      ${thread ? `<div class="trend"><span class="label">Como este tema evoluiu</span>${md(thread.line)}</div>` : ""}
+      <div class="evo">`;
+    for (const e of ev.eras) {
+      const ms = e.milestones.filter((m) => !evoState.theme || m.theme === evoState.theme);
+      html += `<section class="era">
+        <div class="era-label">${esc(e.label)}</div>
+        <h2 class="era-title">${esc(e.title)}</h2>
+        ${e.summary ? `<p class="era-summary">${md(e.summary)}</p>` : ""}
+        ${ms.length ? `<ol class="ms-list">${ms.map(milestone).join("")}</ol>`
+          : `<p class="muted era-none">Nenhum marco deste tema nesta época.</p>`}
+      </section>`;
+    }
+    html += `</div>`;
+    if (ev.now && ev.now.summary) {
+      html += `<section class="now">
+        <h2 class="theme-h">Onde estamos agora</h2>
+        <p>${md(ev.now.summary)}</p>
+        ${ev.now.open_questions && ev.now.open_questions.length
+          ? `<h3 class="now-q">Perguntas em aberto</h3><ul class="list-simple">${ev.now.open_questions.map((q) => `<li>${md(q)}</li>`).join("")}</ul>` : ""}
+      </section>`;
+    }
+    app.innerHTML = html;
+    app.querySelectorAll("[data-evo]").forEach((c) => c.addEventListener("click", () => {
+      evoState.theme = c.dataset.evo || null;
+      const y = window.scrollY;
+      viewEvolution();
+      window.scrollTo(0, y);
+    }));
+  }
+
   // ---------- topic identity + switcher ----------
   function setupTopic(d) {
     const t = d.topic || {};
@@ -234,6 +307,7 @@
     else if (a === "arquivo") viewArchive();
     else if (a === "tendencias") viewTrends();
     else if (a === "watchlist") viewWatchlist();
+    else if (a === "evolucao") viewEvolution();
     else viewDigest();
     window.scrollTo(0, 0);
   }

@@ -48,10 +48,21 @@ def _request(url, data=None, headers=None, timeout=60, retries=3):
     raise RuntimeError(f"request failed after {retries} tries: {url.split('?')[0]}: {last}")
 
 
+def _openalex_key():
+    key = os.environ.get("OPENALEX_API_KEY", "").strip()
+    env_file = os.path.expanduser("~/.config/pawatch/openalex.env")
+    if not key and os.path.exists(env_file):  # local runs: same file the handoff documents
+        for line in open(env_file, encoding="utf-8"):
+            name, _, value = line.strip().partition("=")
+            if name.strip().removeprefix("export ").strip() == "OPENALEX_API_KEY":
+                key = value.strip().strip('"').strip("'")
+    return key
+
+
 def get_text(url, params=None, **kw):
     global _openalex_key_ok
     params = dict(params or {})
-    key = os.environ.get("OPENALEX_API_KEY", "").strip()
+    key = _openalex_key()
     use_key = OPENALEX_HOST in url and key and _openalex_key_ok and "api_key" not in params
     if use_key:
         params["api_key"] = key

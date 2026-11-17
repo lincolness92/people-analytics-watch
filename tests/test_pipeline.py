@@ -199,3 +199,51 @@ class TopicTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EvolutionTests(unittest.TestCase):
+    def setUp(self):
+        from pawatch.evolution import DEFAULT_ERAS
+        self.eras = DEFAULT_ERAS
+
+    def n(self, i, year, net, cit):
+        return {"id": f"W{i}", "title": f"Paper {i}", "year": year, "venue": "V", "authors": ["A", "B"],
+                "cited_by": cit, "url": f"https://doi.org/x/{i}", "abstract": "", "refs": [], "net": net}
+
+    def test_era_of_bounds(self):
+        from pawatch.evolution import era_of
+        self.assertEqual(era_of(1964, self.eras), "ate-1999")
+        self.assertEqual(era_of(2000, self.eras), "2000-2009")
+        self.assertEqual(era_of(2017, self.eras), "2010-2017")
+        self.assertEqual(era_of(2026, self.eras), "2023+")
+        self.assertIsNone(era_of(None, self.eras))
+
+    def test_candidates_rank_within_each_era(self):
+        from pawatch.evolution import candidates
+        nodes = {x["id"]: x for x in [
+            self.n(1, 1990, 50, 90000), self.n(2, 1995, 1, 100),
+            self.n(3, 2024, 9, 300), self.n(4, 2024, 0, 5), self.n(5, 2025, 3, 40)]}
+        out = candidates(nodes, self.eras, per_era=1)
+        # one per era, and the recent era keeps its own best despite far fewer citations
+        self.assertEqual(sorted((c["era"], c["id"]) for c in out), [("2023+", "W3"), ("ate-1999", "W1")])
+
+    def test_pick_milestones_drops_methods_and_caps_per_era(self):
+        from pawatch.evolution import pick_milestones
+        cands = [dict(self.n(i, 2024, i, 10), era="2023+") for i in range(4)]
+        scores = {0: (9, "metodo", "analytics"), 1: (8, "marco", "hiring"),
+                  2: (7, "marco", "hiring"), 3: (5, "marco", "hiring")}
+        picked = pick_milestones(cands, scores, self.eras, per_era=1)
+        self.assertEqual(picked["2023+"], [1])
+
+    def test_markdown(self):
+        from pawatch.evolution import evolution_markdown
+        ev = {"generated": "2026-11-17", "model": "m", "stats": {"milestones": 1, "network": 10},
+              "overview": "Arco.", "eras": [{"label": "2023 em diante", "title": "IA generativa", "summary": "S.",
+              "milestones": [{"title": "T", "url": "https://u", "year": 2024, "authors": ["A", "B", "C", "D"],
+                              "venue": "QJE", "cited_by": 9, "why": "W."}]}],
+              "now": {"summary": "Agora.", "open_questions": ["Q?"]}, "threads": [{"theme": "hiring", "line": "L."}]}
+        out = evolution_markdown(ev, PA)
+        self.assertIn("## 2023 em diante · IA generativa", out)
+        self.assertIn("**[T](https://u)** (2024) — A, B, C et al. · QJE · cit:9", out)
+        self.assertIn("- Q?", out)
+        self.assertIn("**🎯 Recrutamento & seleção**: L.", out)
