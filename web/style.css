@@ -67,6 +67,8 @@ a { color: inherit; }
 }
 .tabs a:hover { background: var(--chip); }
 .tabs a.active { background: var(--ink); color: var(--bg); }
+.region-tag { font-size: 12px; font-weight: 600; white-space: nowrap; }
+.region-chips { margin: -8px 0 18px; }
 .topic-switch { font: inherit; font-size: 14px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; max-width: 100%; }
 
 main { padding-top: 28px; padding-bottom: 40px; min-height: 70vh; }

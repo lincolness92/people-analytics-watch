@@ -3,7 +3,7 @@
 
   const app = document.getElementById("app");
   let DATA = null;
-  const state = { q: "", themes: new Set(), minScore: 6, onlyWatch: false };
+  const state = { q: "", themes: new Set(), minScore: 6, onlyWatch: false, region: "" };
 
   // ---------- helpers ----------
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
@@ -133,6 +133,8 @@
 
   function card(it, { showDate = false } = {}) {
     const meta = [];
+    const regs = (DATA.topic && DATA.topic.regions) || {};
+    if (it.region && regs[it.region]) meta.push(`<span class="region-tag">${esc(regs[it.region])}</span>`);
     if (it.watch_authors && it.watch_authors.length) {
       meta.push(it.watch_authors.map((n) => `<span class="star">⭐ ${esc(n)}</span>`).join(""));
     }
@@ -187,15 +189,21 @@
       </div>`;
     if (d.trend) html += `<div class="trend"><span class="label">🔥 Tendência do período</span>${md(d.trend)}</div>`;
     if (!d.items.length) html += `<div class="empty">Nada acima da barra neste período.</div>`;
+    const regs = (DATA.topic && DATA.topic.regions) || {};
+    if (Object.keys(regs).length) {
+      html += `<div class="chips region-chips">` + [["", "Todos"], ...Object.entries(regs)].map(([k, v]) =>
+        `<button class="chip" data-region="${esc(k)}" aria-pressed="${state.region === k}">${esc(v)}</button>`).join("") + `</div>`;
+    }
+    const inRegion = (it) => !state.region || it.region === state.region;
 
     for (const key of Object.keys(DATA.themes)) {
-      const group = d.items.filter((it) => it.theme === key);
+      const group = d.items.filter((it) => it.theme === key && inRegion(it));
       if (!group.length) continue;
       html += `<h2 class="theme-h">${esc(themeLabel(key))}</h2>` + group.map((it) => card(it)).join("");
     }
     if (d.quick && d.quick.length) {
       html += `<section class="quick"><h2 class="theme-h">Menções rápidas</h2><ul>` +
-        d.quick.map((q) => `<li><a href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener">${esc(q.title)}</a>${q.note ? ` — ${md(q.note)}` : ""}</li>`).join("") +
+        d.quick.filter(inRegion).map((q) => `<li>${q.region && regs[q.region] ? `<span class="region-tag">${esc(regs[q.region])}</span> ` : ""}<a href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener">${esc(q.title)}</a>${q.note ? ` — ${md(q.note)}` : ""}</li>`).join("") +
         `</ul></section>`;
     }
     html += fbBox("digest", d.date, d.headline || d.date, "O que achou deste digest?",
@@ -205,6 +213,9 @@
       if (b.dataset.go) location.hash = `#/d/${b.dataset.go}`;
     }));
     document.getElementById("day-select").addEventListener("change", (e) => { location.hash = `#/d/${e.target.value}`; });
+    app.querySelectorAll("[data-region]").forEach((b) => b.addEventListener("click", () => {
+      state.region = b.dataset.region; viewDigest(d.date);
+    }));
   }
 
   function allItems() {

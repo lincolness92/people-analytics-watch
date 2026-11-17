@@ -140,6 +140,25 @@ class WebSourceTests(unittest.TestCase):
         atom = parse_feed(self.ATOM)
         self.assertEqual((atom[0][1], str(atom[0][3])), ("https://ex.org/atom1", "2026-11-14"))
 
+    def test_parse_youtube_feed_description(self):
+        from pawatch.web import parse_feed
+        yt = """<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+          <entry><title>Painel: IA nos bancos</title><link rel="alternate" href="https://www.youtube.com/watch?v=abc"/>
+          <published>2026-11-15T12:00:00+00:00</published>
+          <media:group><media:title>Painel</media:title><media:description>Como a IA mudou o atendimento</media:description></media:group>
+          </entry></feed>"""
+        (title, link, summary, when), = parse_feed(yt)
+        self.assertEqual((title, link, summary, str(when)),
+                         ("Painel: IA nos bancos", "https://www.youtube.com/watch?v=abc", "Como a IA mudou o atendimento", "2026-11-15"))
+
+    def test_region_rules_only_when_topic_has_regions(self):
+        import copy
+        self.assertNotIn('"g"', triage_rules(PA))
+        t = copy.copy(PA)
+        t.meta = dict(PA.meta, regions={"brasil": "🇧🇷 Brasil", "mundo": "🌍 Mundo"})
+        self.assertIn('"g": "<região>"', triage_rules(t))
+        self.assertIn("No Brasil", write_rules(t))
+
     def test_rss_window_and_title_pattern(self):
         from pawatch.web import collect_web
         src = [{"name": "Blog", "watch": "Fulano", "kind": "rss", "url": "https://ex.org/feed", "pattern": "(?i)work|pay"}]

@@ -85,6 +85,7 @@ def _item(src, url, title, summary, day):
         "cited_by": 0,
         "origin": "fonte",
         "watch_source": src.get("watch") or src["name"],
+        "region": src.get("region", ""),
     }
 
 
@@ -105,6 +106,8 @@ def parse_feed(xml_text):
             elif name not in fields:
                 fields[name] = ch.text or ""
         summary = fields.get("description") or fields.get("summary") or fields.get("content") or fields.get("encoded") or ""
+        if not summary.strip():  # YouTube keeps it in <media:group><media:description>
+            summary = next((d.text or "" for d in it.iter() if d.tag.rsplit("}", 1)[-1] == "description"), "")
         when = _parse_date(fields.get("pubDate") or fields.get("published") or fields.get("updated") or fields.get("date"))
         out.append((fields.get("title", ""), link, summary, when))
     return out

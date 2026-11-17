@@ -22,8 +22,17 @@ def triage_rules(topic):
 - 0–4: fora do tema ({m["off_topic"]}) ou baixa qualidade/predatório.
 Sinais de qualidade: `watch` (autor da watchlist de elite) e `jr` (journal de elite) valem bônus, mas não salvam paper fora do tema.
 Itens com `fonte` vêm de fontes da watchlist ({m.get("source_kinds", "centros de pesquisa e praticantes")}: posts, relatórios, normas, podcasts, notícias): avalie pelo mesmo critério; relatório, norma ou estudo com dados próprios pode valer 7+, mas divulgação de evento, marketing, vaga ou post genérico fica em 0–4.
-Atribua um tema `t` entre: {themes}.
-Responda APENAS com JSON: {{"r": [{{"i": <id>, "s": <nota int>, "t": "<tema>"}}, ...]}} cobrindo todos os ids."""
+Atribua um tema `t` entre: {themes}.{_region_rule(topic)}
+Responda APENAS com JSON: {{"r": [{{"i": <id>, "s": <nota int>, "t": "<tema>"{', "g": "<região>"' if topic.meta.get("regions") else ""}}}, ...]}} cobrindo todos os ids."""
+
+
+def _region_rule(topic):
+    regions = topic.meta.get("regions")
+    if not regions:
+        return ""
+    opts = ", ".join(f"{k} ({v})" for k, v in regions.items())
+    return (f"\nAtribua também a região `g` entre: {opts} — onde o fato, a empresa ou os dados estão "
+            f"(`reg` no item indica a região da fonte, quando conhecida).")
 
 
 def write_rules(topic):
@@ -37,7 +46,7 @@ def write_rules(topic):
 Para cada menção rápida devolva {{"i", "title" (curto), "note" (1 frase PT-BR, até ~25 palavras)}}.
 Também devolva:
 - "headline": meia frase sobre o período (ex.: "{m["headline_example"]}")
-- "trend": parágrafo de 2–4 frases em PT-BR com a tendência do período, conectando os papers ({m["trend_focus"]}).
+- "trend": parágrafo de 2–4 frases em PT-BR com a tendência do período, conectando os papers ({m["trend_focus"]}).{" Separe o que se vê no Brasil e no mundo (ex.: 'No Brasil, ... No mundo, ...'); se uma das regiões não tiver nada relevante, diga isso." if m.get("regions") else ""}
 Responda APENAS com JSON: {{"headline": "...", "items": [...], "quick": [...], "trend": "..."}}."""
 
 
@@ -67,6 +76,8 @@ def _brief(i, c, abstract_chars):
         d["jr"] = True
     if c.get("watch_source"):
         d["fonte"] = c["watch_source"]
+    if c.get("region"):
+        d["reg"] = c["region"]
     if c["cited_by"]:
         d["cit"] = c["cited_by"]
     d["abstract"] = (c["abstract"] or "(sem abstract)")[:abstract_chars]
@@ -90,7 +101,9 @@ def triage(llm, cands, topic, batch=35, log=lambda m: print(m, file=sys.stderr))
                 i = int(r["i"])
                 if start <= i < start + len(chunk):
                     theme = r.get("t") if r.get("t") in topic.themes else next(iter(topic.themes))
-                    scores[i] = (max(0, min(10, int(r.get("s", 0)))), theme)
+                    regions = topic.meta.get("regions") or {}
+                    region = r.get("g") if r.get("g") in regions else (chunk[i - start].get("region") or "")
+                    scores[i] = (max(0, min(10, int(r.get("s", 0)))), theme, region)
             except (KeyError, TypeError, ValueError):
                 continue
         log(f"triagem: {min(start + batch, len(cands))}/{len(cands)}")
@@ -131,12 +144,13 @@ def write_digest(llm, cands, scores, sel_cfg, topic):
             score = max(0, min(10, int(w.get("score", scores[i][0]))))
         except (TypeError, ValueError):
             score = scores[i][0]
-        items.append(dict(item(i, w), score=score, theme=theme,
+        items.append(dict(item(i, w), score=score, theme=theme, region=scores[i][2] if len(scores[i]) > 2 else "",
                           summary=(w.get("summary") or cands[i]["abstract"][:300]).strip()))
     items.sort(key=lambda x: (list(topic.themes).index(x["theme"]), -x["score"]))
 
     qw = {int(x["i"]): x for x in out.get("quick", []) if str(x.get("i", "")).isdigit()}
     quick_items = [dict(item(i, qw.get(i, {})), score=scores[i][0], theme=scores[i][1],
+                        region=scores[i][2] if len(scores[i]) > 2 else "",
                         note=(qw.get(i, {}).get("note") or "").strip()) for i in quick]
 
     return {

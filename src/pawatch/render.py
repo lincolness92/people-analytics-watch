@@ -19,6 +19,8 @@ def _meta(it):
         meta += f" · ⭐ {', '.join(it['watch_authors'])}"
     if it.get("watch_source"):
         meta += f" · 📌 {it['watch_source']}"
+    if it.get("region") == "brasil":
+        meta += " · 🇧🇷"
     return meta
 
 
@@ -88,7 +90,7 @@ def site_data(topic, topics):
     m = topic.meta
     return {
         "generated": date.today().isoformat(),
-        "topic": {"slug": topic.slug, "name": m["name"], "brand": m.get("brand", {}),
+        "topic": {"slug": topic.slug, "name": m["name"], "brand": m.get("brand", {}), "regions": m.get("regions", {}),
                   "description": m.get("description", ""), "watchlist_labels": m.get("watchlist_labels", {})},
         "topics": [{"slug": t.slug, "name": t.name} for t in topics],
         "themes": topic.themes,
