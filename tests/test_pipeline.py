@@ -254,7 +254,7 @@ class EvolutionTests(unittest.TestCase):
         cands = [dict(self.n(i, 2024, 10 - i, 10), era="2023+") for i in range(6)]
         verdicts = {f"W{i}": [9, "marco", "ai_work"] for i in range(4)}
         verdicts.update({"W4": [7, "marco", "analytics"], "W5": [6, "marco", "hiring"]})
-        picked = pick_milestones(cands, verdicts, self.eras, per_era_recent=5, max_per_theme=2)["2023+"]
+        picked = pick_milestones(cands, verdicts, self.eras, per_era_recent=5, max_per_theme_recent=2)["2023+"]
         self.assertEqual(picked, ["W0", "W1", "W4", "W5", "W2"])  # 2 ai_work, other themes, then refill
 
     def test_incremental_pick_keeps_settled_eras_and_resists_churn(self):
