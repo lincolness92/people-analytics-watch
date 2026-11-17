@@ -72,3 +72,27 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 ## 🔥 Tendências (1)
 
 - **2026-11-17** — O período conecta três frentes: regulação de pagamentos instantâneos e Open Finance, que pressiona por clareza de responsabilidade e governança de terceiros; pesquisa em account takeover que expõe rotas de acesso persistente e irrevogáveis; e modelos de fundação para pagamentos que prometem representações reutilizáveis, mas com ganhos ainda questionados frente a baselines de boosting. A tendência é que a prevenção a fraude em bancos combine mandatos regulatórios (teto, responsabilidade compartilhada, auditoria de parceiros) com arquiteturas de detecção cientes do ciclo de vida e ligadas a entidades, sem abandonar a validação rigorosa de ganho incremental.
+
+# 🏦 BANK-TECH-&-AI-WATCH
+
+1 digests em `digests/tecnologia-bancaria/`.
+
+## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (1)
+
+- 2026-11-17 · [Northern Trust usa engenheiros da Microsoft para escalar onboarding agêntico](https://www.bankingdive.com/news/northern-trust-leans-microsoft-fde-agentic-buildout/874362/) · 8/10
+
+## 🧠 Modelos fundacionais em bancos (1)
+
+- 2026-11-17 · [Quanto modelos fundacionais realmente adicionam ao gradient boosting em sequências financeiras?](https://arxiv.org/abs/2611.18914) · 8/10
+
+## 🛒 Comércio agêntico (1)
+
+- 2026-11-17 · [OpenAI cria carteira e pluga agente do ChatGPT nas redes de cartão](https://www.paymentsdive.com/news/openai-wallet-taps-card-networks/874769/) · 7/10
+
+## 📊 Risco, crédito & cobrança com IA (1)
+
+- 2026-11-17 · [Inter: religamento automático derruba inadimplência do consignado privado](https://finsidersbrasil.com.br/bancos-digitais/quem-deve-ao-inter-agora-nao-escapa-nem-se-trocar-de-emprego/) · 7/10
+
+## 🔥 Tendências (1)
+
+- **2026-11-17** — O período marca a passagem do anúncio para a operação: agentes de IA saem do copiloto e entram no fluxo de dinheiro e de decisão. No mundo, a Northern Trust mostra ganho de processo (83% menos tempo de preparação de dados) ao redesenhar o onboarding em torno do agente, enquanto OpenAI, Mastercard e Feedzai disputam quem fica com a camada de confiança do comércio agêntico — pagar, autorizar e distinguir agente legítimo de bot malicioso. No Brasil, o movimento é mais de risco, cobrança e infraestrutura: o Inter prova que automação de cobrança com dado de vínculo derruba inadimplência de 4,8% para 3,2%, o BC organiza o Open Finance PJ e o Nubank trata disciplina de medição como pré-requisito. O paper do arXiv é o contraponto saudável: modelos fundacionais de transações ainda entregam ganho marginal (+1,8 AUC no melhor caso, quase zero com muitos rótulos), então a vantagem competitiva segue em engenharia de features, dados proprietários e processo — não no modelo em si.

@@ -160,7 +160,8 @@ def list_urls(src, fetch=_fetch):
     if src["kind"] == "sitemap":
         urls = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", body)
     else:
-        urls = [urllib.parse.urljoin(src["url"], html.unescape(h)) for h in re.findall(r'href=["\']([^"\'#]+)["\']', body)]
+        urls = [urllib.parse.quote(urllib.parse.urljoin(src["url"], html.unescape(h).strip()), safe=":/?&=%+@,;~!$'()*")
+                for h in re.findall(r'href=["\']([^"\'#]+)["\']', body)]
     out, seen = [], set()
     for u in urls:
         if pat.search(urllib.parse.urlparse(u).path) and _norm_url(u) not in seen:
@@ -193,7 +194,7 @@ def collect_web(sources, start, state, log, fetch=_fetch):
                 for u in fresh[:MAX_NEW_PER_SOURCE]:
                     try:
                         title, desc, when = page_meta(u, fetch)
-                    except RuntimeError as e:
+                    except Exception as e:
                         log(f"fonte {src['name']}: falha ao ler {u}: {str(e)[:120]}")
                         continue
                     if when and when < start_d:
@@ -205,7 +206,7 @@ def collect_web(sources, start, state, log, fetch=_fetch):
                 state[src["name"]] = sorted(known | {_norm_url(u) for u in urls})
             out += new
             log(f"fonte {src['name']}: {len(new)} itens")
-        except (RuntimeError, ET.ParseError, re.error) as e:
+        except Exception as e:  # one broken source must never sink the topic
             log(f"fonte {src['name']} falhou: {str(e)[:160]}")
     return out
 
