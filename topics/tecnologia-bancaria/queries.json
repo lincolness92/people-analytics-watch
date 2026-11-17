@@ -23,7 +23,15 @@
       "(chatbot OR chatbots OR \"virtual assistant\" OR \"conversational AI\") AND (bank OR banking OR \"customer service\")",
       "(\"embedded finance\" OR \"banking-as-a-service\" OR \"super app\" OR \"super-app\") AND (bank OR fintech OR payments)",
       "\"digital transformation\" AND (bank OR banks OR banking) AND (performance OR strategy OR \"branch\")",
-      "(\"robo-advisor\" OR \"robo-advisors\" OR \"robo-advice\" OR \"personal finance management\") AND (AI OR algorithm OR adoption)"
+      "(\"robo-advisor\" OR \"robo-advisors\" OR \"robo-advice\" OR \"personal finance management\") AND (AI OR algorithm OR adoption)",
+      "\"agentic commerce\" OR \"agent-initiated payments\" OR \"agentic payments\" OR (\"AI agents\" AND (checkout OR shopping OR purchase))",
+      "(\"foundation model\" OR \"foundation models\" OR \"pretrained transformer\") AND (\"transaction data\" OR \"financial transactions\" OR \"banking data\" OR \"payment data\")",
+      "(personalization OR \"recommender system\" OR \"next best action\" OR \"customer lifetime value\" OR martech) AND (bank OR banking OR \"financial services\")",
+      "(\"debt collection\" OR collections OR \"loan recovery\" OR delinquency) AND (\"machine learning\" OR \"artificial intelligence\" OR \"reinforcement learning\" OR uplift)",
+      "(\"corporate venture capital\" OR \"open innovation\" OR \"innovation lab\") AND (bank OR banks OR banking OR \"financial institutions\")",
+      "(\"robotic process automation\" OR RPA OR \"intelligent automation\" OR \"process mining\") AND (bank OR banking OR \"financial services\")",
+      "(reskilling OR upskilling OR \"data literacy\" OR \"AI literacy\" OR \"digital skills\") AND (bank OR banks OR banking OR \"financial services\")",
+      "(\"A/B testing\" OR \"online experiments\" OR \"experimentation platform\") AND (bank OR fintech OR payments OR \"financial services\")"
     ]
   },
   "arxiv": {

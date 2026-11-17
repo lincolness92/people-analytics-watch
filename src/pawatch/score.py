@@ -112,8 +112,8 @@ def triage(llm, cands, topic, batch=35, log=lambda m: print(m, file=sys.stderr))
 
 def write_digest(llm, cands, scores, sel_cfg, topic):
     ranked = sorted(scores.items(), key=lambda kv: (-kv[1][0], kv[0]))
-    picked = [i for i, (s, _) in ranked if s >= sel_cfg["min_score"]][: sel_cfg["max_selected"]]
-    quick = [i for i, (s, _) in ranked if i not in picked and s >= sel_cfg["min_score"] - 1][
+    picked = [i for i, (s, *_) in ranked if s >= sel_cfg["min_score"]][: sel_cfg["max_selected"]]
+    quick = [i for i, (s, *_) in ranked if i not in picked and s >= sel_cfg["min_score"] - 1][
         : sel_cfg["max_quick_mentions"]]
     if not picked:
         return None

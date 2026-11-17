@@ -159,6 +159,19 @@ class WebSourceTests(unittest.TestCase):
         self.assertIn('"g": "<região>"', triage_rules(t))
         self.assertIn("No Brasil", write_rules(t))
 
+    def test_write_digest_accepts_scores_with_region(self):
+        from pawatch.score import write_digest
+
+        class FakeLLM:
+            def json(self, system, user, **kw):
+                return {"headline": "h", "trend": "t", "items": [{"i": 0, "summary": "s"}], "quick": []}
+
+        c = cand("doi:1", "AI agents in retail banking", abstract="x")
+        c.update(watch_authors=[], watch_journal=False)
+        out = write_digest(FakeLLM(), [c], {0: (8, "analytics", "brasil")},
+                           {"min_score": 7, "max_selected": 5, "max_quick_mentions": 2}, PA)
+        self.assertEqual(out["items"][0]["region"], "brasil")
+
     def test_rss_window_and_title_pattern(self):
         from pawatch.web import collect_web
         src = [{"name": "Blog", "watch": "Fulano", "kind": "rss", "url": "https://ex.org/feed", "pattern": "(?i)work|pay"}]
