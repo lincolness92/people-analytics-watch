@@ -108,9 +108,11 @@ Custo típico por dia e por tema: ~20 chamadas OpenAlex (≈ US$ 0,02 da cota) e
 `python -m pawatch evolve [--topic X] [--if-stale] [--full]` monta a linha do tempo de cada tema:
 
 1. **Rede de citações**: os mais citados de todos os tempos e desde 7 anos atrás de cada busca do tema,
-   mais os papers dos digests; segue as referências duas camadas para trás e conta as citações dentro da rede.
+   as obras mais citadas de **cada pesquisador da watchlist** (sem filtro de palavra-chave) e os papers
+   dos digests; segue as referências duas camadas para trás e conta as citações dentro da rede.
+   Versões da mesma obra (working paper NBER + artigo, preprint + artigo) são fundidas numa só.
 2. **Candidatos por época** (até 1999, 2000–09, 2010–17, 2018–22, 2023+): ranqueados dentro da época,
-   para trabalhos recentes competirem com os clássicos.
+   para trabalhos recentes competirem com os clássicos. Obras de autores da watchlist sempre vão à triagem.
 3. **Triagem pelo LLM**: nota de "marco", descartando métodos genéricos (SEM, viés de método comum...) e
    obras de outros campos. Cada obra é julgada uma vez só (`data/<tema>/evolution_triage.json`).
 4. **Redação**: narrativa por época, por que cada marco importa, onde estamos agora, perguntas em aberto,
@@ -122,7 +124,7 @@ são reavaliadas com vantagem para os marcos atuais (sem troca por empate); text
 são reescritos. Cada versão registra **o que mudou** (marcos que entraram/saíram + nota do LLM).
 `--full` faz a **revisão completa**: refaz triagem e texto do zero, ainda registrando a diferença.
 No GitHub: *Run workflow* → "Aba Evolução agora" = `incremental` ou `completa`.
-Versões em `data/<tema>/evolution/AAAA-MM.json`; markdown em `digests/<tema>/evolucao.md`.
+Versões em `data/<tema>/evolution/AAAA-MM-DD.json`; markdown em `digests/<tema>/evolucao.md`.
 
 ## Ajustes comuns
 

@@ -13,7 +13,7 @@
       "\"human resource management\" OR \"strategic HRM\" OR \"HRM practices\"",
       "\"talent management\" OR \"talent acquisition\" OR \"succession planning\"",
       "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
-      "(\"generative AI\" OR \"large language model\" OR ChatGPT OR copilot) AND (workers OR employees OR workplace OR productivity) AND (experiment OR field OR \"randomized\")",
+      "(\"generative AI\" OR \"large language model\" OR ChatGPT OR copilot) AND (workers OR employees OR workplace OR productivity) AND (experiment OR field OR \"randomized\" OR \"quasi-experimental\" OR staggered OR rollout OR \"difference-in-differences\")",
       "\"employee turnover\" OR \"employee retention\" OR \"quit intention\" OR \"voluntary turnover\"",
       "\"employee engagement\" OR \"employee well-being\" OR burnout OR \"job satisfaction\"",
       "\"remote work\" OR \"hybrid work\" OR \"work from home\" OR \"return to office\"",

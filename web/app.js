@@ -217,7 +217,8 @@
   function changesBox(ev) {
     const ch = ev.changes;
     if (!ch || !((ch.added || []).length || (ch.removed || []).length || ch.note)) return "";
-    const since = ch.since ? new Date(ch.since + "-15T12:00:00").toLocaleDateString("pt-BR", { month: "long", year: "numeric" }) : "";
+    const since = !ch.since ? "" : ch.since.length > 7 ? fmtDate(ch.since)
+      : new Date(ch.since + "-15T12:00:00").toLocaleDateString("pt-BR", { month: "long", year: "numeric" });
     const li = (m, sign) => `<li><span class="chg-${sign === "+" ? "add" : "del"}">${sign}</span> ${esc(m.title)} <span class="muted">(${esc(m.year ?? "")})</span></li>`;
     return `<details class="changes" open>
       <summary>O que mudou desde ${esc(since)} · <b>+${(ch.added || []).length}</b> / <b>−${(ch.removed || []).length}</b> marcos${ev.mode === "completa" ? " · revisão completa" : ""}</summary>

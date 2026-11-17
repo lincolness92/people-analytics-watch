@@ -13,13 +13,14 @@ import sys
 from collections import Counter
 from datetime import date
 
-from .collect import rebuild_abstract
+from .collect import norm_title, rebuild_abstract
 from .http import get_json
 
 OPENALEX = "https://api.openalex.org/works"
 SELECT = ",".join(["id", "doi", "display_name", "publication_year", "cited_by_count", "type",
                    "primary_location", "authorships", "abstract_inverted_index", "referenced_works"])
-TYPES = "type:article|review|book|book-chapter|preprint"
+TYPES = "type:article|review|book|book-chapter|preprint|report"  # report = NBER/working papers
+PUBLISHED = {"article", "review", "book", "book-chapter"}
 
 DEFAULT_ERAS = [
     {"key": "ate-1999", "label": "até 1999", "from": None, "to": 1999},
@@ -51,6 +52,12 @@ class Fetcher:
             flt.insert(0, f"from_publication_date:{since}-01-01")
         return self.get({"filter": ",".join(flt), "sort": "cited_by_count:desc", "per-page": per_page})
 
+    def by_author(self, author_id, per_page, since=None):
+        flt = [TYPES, f"authorships.author.id:{author_id}"]
+        if since:
+            flt.insert(0, f"from_publication_date:{since}-01-01")
+        return self.get({"filter": ",".join(flt), "sort": "cited_by_count:desc", "per-page": per_page})
+
     def by_ids(self, ids, field="openalex"):
         out = []
         ids = list(ids)
@@ -69,6 +76,7 @@ def node(w):
         "id": _wid(w["id"]),
         "title": (w.get("display_name") or "").strip(),
         "year": w.get("publication_year"),
+        "type": w.get("type") or "",
         "venue": ((loc.get("source") or {}).get("display_name")) or "",
         "authors": [(a.get("author") or {}).get("display_name") for a in (w.get("authorships") or [])][:8],
         "cited_by": w.get("cited_by_count") or 0,
@@ -87,16 +95,57 @@ def era_of(year, eras):
     return None
 
 
-def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, layer1=150, layer2=100):
+def _surnames(n):
+    return {a.split()[-1].lower() for a in n["authors"] if a and a.split()}
+
+
+def merge_versions(nodes):
+    """Fold versions of the same work (working paper + journal article, preprint + article) into one.
+
+    Same normalized title and at least one shared author surname. The published version leads
+    (venue/link); citations, network counts and references are summed; the year is the earliest.
+    """
+    groups = {}
+    for n in nodes.values():
+        t = norm_title(n["title"])
+        if len(t) >= 15:
+            groups.setdefault(t, []).append(n)
+    merged = 0
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        group.sort(key=lambda n: (n.get("type") not in PUBLISHED, -n["cited_by"]))
+        lead = group[0]
+        for other in group[1:]:
+            if not (_surnames(lead) & _surnames(other)):
+                continue
+            lead["cited_by"] += other["cited_by"]
+            lead["net"] = round(lead.get("net", 0) + other.get("net", 0), 1)
+            lead["refs"] = sorted(set(lead["refs"]) | set(other["refs"]))
+            years = [y for y in (lead["year"], other["year"]) if y]
+            lead["year"] = min(years) if years else None
+            lead["watch"] = sorted(set(lead.get("watch", [])) | set(other.get("watch", [])))
+            lead.setdefault("versions", []).append(other["url"])
+            if len(other.get("abstract", "")) > len(lead.get("abstract", "")):
+                lead["abstract"] = other["abstract"]
+            del nodes[other["id"]]
+            merged += 1
+    return merged
+
+
+def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, layer1=150, layer2=100,
+                  per_author=12, recent_per_author=6):
     cfg = topic.meta.get("evolution", {})
     queries = cfg.get("seed_queries") or topic.queries().get("openalex", {}).get("queries", [])
     nodes = {}
 
-    def add(works):
+    def add(works, watch=None):
         for w in works:
             if w.get("id") and w.get("display_name"):
                 n = node(w)
-                nodes.setdefault(n["id"], n)
+                n = nodes.setdefault(n["id"], n)
+                if watch and watch not in n.setdefault("watch", []):
+                    n["watch"].append(watch)
 
     for q in queries:
         try:
@@ -105,11 +154,24 @@ def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, la
         except RuntimeError as e:
             log(f"evolução: busca falhou ({q[:40]}…): {e}")
 
+    # every watchlist researcher seeds the network with their most-cited works, no keyword filter
+    recent = date.today().year - 7
+    for r in topic.watchlist().get("researchers", []):
+        for aid in [r.get("openalex_id")] + list(r.get("alt_openalex_ids") or []):
+            if not aid:
+                continue
+            try:
+                add(fetch.by_author(aid, per_author), watch=r["name"])
+                add(fetch.by_author(aid, recent_per_author, since=recent), watch=r["name"])
+            except RuntimeError as e:
+                log(f"evolução: autor {r['name']} falhou: {e}")
+    n_watch = sum(1 for n in nodes.values() if n.get("watch"))
+
     dois = sorted({it["key"][4:] for d in topic.digests() for it in d.get("items", [])
                    if it.get("key", "").startswith("doi:")})
     add(fetch.by_ids(dois, field="doi"))
     seeds = set(nodes)
-    log(f"evolução: {len(seeds)} sementes ({len(dois)} vindas dos digests)")
+    log(f"evolução: {len(seeds)} sementes ({n_watch} de autores da watchlist, {len(dois)} dos digests)")
 
     net = Counter()
     for nid in seeds:
@@ -126,12 +188,15 @@ def build_network(topic, fetch, log, seeds_per_query=25, recent_per_query=12, la
 
     for n in nodes.values():
         n["net"] = round(net.get(n["id"], 0), 1)
+    merged = merge_versions(nodes)
+    log(f"evolução: {merged} versões duplicadas fundidas (working paper + artigo etc.)")
     log(f"evolução: rede com {len(nodes)} obras; OpenAlex {fetch.calls} chamadas, ≈ ${fetch.cost:.3f}")
     return nodes
 
 
 def candidates(nodes, eras, per_era=30):
-    """Strongest works of each era, ranked inside the era (percentiles of net and global citations)."""
+    """Strongest works of each era, ranked inside the era (percentiles of net and global citations),
+    plus every work by a watchlist researcher regardless of rank: those always reach the LLM."""
     by_era = {e["key"]: [] for e in eras}
     for n in nodes.values():
         k = era_of(n["year"], eras)
@@ -146,15 +211,17 @@ def candidates(nodes, eras, per_era=30):
             return {x["id"]: i / max(1, len(order) - 1) for i, x in enumerate(order)}
         p_net, p_cit = pct("net"), pct("cited_by")
         group.sort(key=lambda x: 0.55 * p_net[x["id"]] + 0.45 * p_cit[x["id"]], reverse=True)
-        for n in group[:per_era]:
-            out.append(dict(n, era=k))
+        for j, n in enumerate(group):
+            if j < per_era or n.get("watch"):
+                out.append(dict(n, era=k))
     return out
 
 
 def _brief(i, n, chars):
     return {"i": i, "title": n["title"], "year": n["year"], "venue": n["venue"],
             "authors": ", ".join(a for a in n["authors"][:3] if a), "cit": n["cited_by"],
-            "net": n.get("net", 0), "abstract": (n.get("abstract") or "")[:chars] or "(sem abstract)"}
+            "net": n.get("net", 0), **({"watch": ", ".join(n["watch"])} if n.get("watch") else {}),
+            "abstract": (n.get("abstract") or "")[:chars] or "(sem abstract)"}
 
 
 def triage_rules(topic):
@@ -167,6 +234,9 @@ Para cada uma devolva:
   ex.: SEM, viés de método comum, Fornell-Larcker, análise temática, PLS) ou "fora" (outro campo: {topic.meta["off_topic"]}).
 - "t": tema entre: {themes}.
 Métodos genéricos e obras fora do tema recebem s ≤ 3 mesmo que muito citados.
+`watch` = obra de pesquisador da watchlist de elite. Julgue pelo mesmo critério: autoria não basta, e
+o OpenAlex às vezes atribui a essas pessoas obras de homônimos de outras áreas (essas são "fora").
+Obras recentes (2023+) têm menos citações por serem novas: julgue pela importância do resultado.
 Responda APENAS com JSON: {{"r": [{{"i": <id>, "s": <int>, "k": "...", "t": "..."}}, ...]}} cobrindo todos os ids."""
 
 
@@ -294,7 +364,7 @@ def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
     prev = latest(topic)
     incremental = bool(prev) and not full
     mode = "incremental" if incremental else "completa"
-    log(f"evolução: modo {mode}" + (f" (base {prev['month']})" if prev else ""))
+    log(f"evolução: modo {mode}" + (f" (base {prev['generated']})" if prev else ""))
 
     fetch = Fetcher(log)
     nodes = build_network(topic, fetch, log)
@@ -400,6 +470,7 @@ def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
                 "id": c.get("id") or wid, "title": c["title"], "year": c["year"], "venue": c["venue"],
                 "authors": [a for a in c["authors"] if a], "cited_by": c["cited_by"], "net": c.get("net", 0),
                 "url": c["url"], "theme": verdicts.get(wid, [0, "", c.get("theme")])[2],
+                "versions": c.get("versions", []), "watch": c.get("watch", []),
                 "score": verdicts.get(wid, [c.get("score", 0)])[0],
                 "why": prev_why[wid] if keep else why.get(wid, ""),
                 "new": bool(prev) and wid in added_ids,
@@ -419,7 +490,7 @@ def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
         "month": date.today().strftime("%Y-%m"),
         "model": llm.used_model,
         "mode": mode,
-        "changes": {"since": prev["month"], **changes, "note": (res.get("changes_note") or "").strip()} if prev else None,
+        "changes": {"since": prev["generated"], **changes, "note": (res.get("changes_note") or "").strip()} if prev else None,
         "stats": {"network": len(nodes), "candidates": len(cands), "triaged": len(new_verdicts),
                   "milestones": sum(len(v) for v in picked.values()), "openalex_calls": fetch.calls,
                   "openalex_cost": round(fetch.cost, 4), "tokens": llm.usage},

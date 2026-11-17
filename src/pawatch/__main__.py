@@ -145,8 +145,8 @@ def cmd_evolve(args):
     month = date.today().strftime("%Y-%m")
     ok = True
     for topic in pick(args.topic):
-        out = topic.data / "evolution" / f"{month}.json"
-        if args.if_stale and out.exists():
+        out = topic.data / "evolution" / f"{date.today().isoformat()}.json"
+        if args.if_stale and any((topic.data / "evolution").glob(f"{month}-*.json")):
             log(f"[{topic.slug}] evolução de {month} já existe — pulando")
             continue
         try:

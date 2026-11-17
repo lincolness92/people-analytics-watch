@@ -291,14 +291,14 @@ class EvolutionTests(unittest.TestCase):
             topic, llm = FakeTopic(d), FakeLLM()
             def save(ev):
                 (topic.data / "evolution").mkdir(parents=True, exist_ok=True)
-                (topic.data / "evolution" / f"{ev['month']}.json").write_text(json.dumps(ev))
+                (topic.data / "evolution" / f"{ev['generated']}.json").write_text(json.dumps(ev))
             with mock.patch.object(evo, "build_network", lambda *a, **k: net()):
                 first = evo.evolve(topic, llm, log=lambda m: None)
             self.assertEqual(first["mode"], "completa")
             self.assertIsNone(first["changes"])
             titles = [m["title"] for e in first["eras"] for m in e["milestones"]]
             self.assertEqual(sorted(titles), ["Paper 1", "Paper 2"])  # the method was dropped
-            first["month"] = "2026-10"
+            first["month"], first["generated"] = "2026-10", "2026-10-01"
             save(first)
 
             llm2 = FakeLLM()
@@ -318,7 +318,30 @@ class EvolutionTests(unittest.TestCase):
                 full = evo.evolve(topic, llm3, full=True, log=lambda m: None)
             self.assertEqual(full["mode"], "completa")
             self.assertEqual(len(llm3.triaged), 3)  # full review re-judges everything
-            self.assertEqual(full["changes"]["since"], "2026-10")
+            self.assertEqual(full["changes"]["since"], "2026-10-01")
+
+    def test_merge_versions_folds_working_paper_into_article(self):
+        from pawatch.evolution import merge_versions
+        wp = dict(self.n(1, 2023, 4, 1752), title="Generative AI at Work", type="report",
+                  authors=["Erik Brynjolfsson", "Danielle Li"], refs=["W9"], watch=["Danielle Li"])
+        art = dict(self.n(2, 2024, 6, 2427), title="Generative AI at Work", type="article",
+                   authors=["Erik Brynjolfsson", "Danielle Li", "Lindsey Raymond"], refs=["W8"])
+        other = dict(self.n(3, 2020, 1, 10), title="Generative AI at Work", type="article", authors=["Someone Else"])
+        nodes = {"W1": wp, "W2": art, "W3": other}
+        self.assertEqual(merge_versions(nodes), 1)
+        self.assertEqual(sorted(nodes), ["W2", "W3"])  # same title, different authors: kept apart
+        lead = nodes["W2"]
+        self.assertEqual((lead["cited_by"], lead["net"], lead["year"]), (4179, 10, 2023))
+        self.assertEqual(lead["refs"], ["W8", "W9"])
+        self.assertEqual(lead["watch"], ["Danielle Li"])
+        self.assertEqual(lead["versions"], ["https://doi.org/x/1"])
+
+    def test_candidates_always_include_watchlist_works(self):
+        from pawatch.evolution import candidates
+        nodes = {x["id"]: x for x in [self.n(1, 2024, 9, 900), dict(self.n(2, 2024, 0, 3), watch=["Danielle Li"]),
+                                      self.n(3, 2024, 0, 2)]}
+        ids = sorted(c["id"] for c in candidates(nodes, self.eras, per_era=1))
+        self.assertEqual(ids, ["W1", "W2"])
 
     def test_markdown(self):
         from pawatch.evolution import evolution_markdown
