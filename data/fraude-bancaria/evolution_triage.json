@@ -1,8 +1,8 @@
 {
 "W1412796528": [
-4,
-"marco",
-"regulation"
+2,
+"fora",
+"scams"
 ],
 "W145450961": [
 6,
@@ -10,14 +10,14 @@
 "cards"
 ],
 "W1467126665": [
-1,
+0,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W1482874976": [
 2,
 "fora",
-"regulation"
+"fraud_analytics"
 ],
 "W1485321296": [
 0,
@@ -32,12 +32,12 @@
 "W1507571043": [
 1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W150968788": [
 0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W1516327740": [
 2,
@@ -52,7 +52,7 @@
 "W1519809459": [
 1,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W1524761913": [
 3,
@@ -65,7 +65,7 @@
 "fraud_analytics"
 ],
 "W1536719366": [
-5,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -75,7 +75,7 @@
 "fraud_analytics"
 ],
 "W1546783247": [
-4,
+6,
 "marco",
 "scams"
 ],
@@ -90,13 +90,13 @@
 "fraud_analytics"
 ],
 "W1570448133": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W1593664746": [
-3,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W1594031697": [
@@ -107,15 +107,15 @@
 "W1655958391": [
 1,
 "fora",
-"scams"
+"fraud_analytics"
 ],
 "W167016754": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
 "W1670263352": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -125,9 +125,14 @@
 "fraud_analytics"
 ],
 "W179922057": [
-3,
+2,
 "fora",
-"mules_aml"
+"instant_payments"
+],
+"W1817561967": [
+2,
+"metodo",
+"fraud_analytics"
 ],
 "W1859998252": [
 2,
@@ -135,7 +140,7 @@
 "fraud_analytics"
 ],
 "W1912982817": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -150,9 +155,9 @@
 "fraud_analytics"
 ],
 "W1964522792": [
-3,
+5,
 "marco",
-"scams"
+"regulation"
 ],
 "W1966493433": [
 7,
@@ -160,12 +165,12 @@
 "cards"
 ],
 "W1973682096": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
 "W1974644450": [
-3,
+2,
 "fora",
 "fraud_analytics"
 ],
@@ -192,15 +197,15 @@
 "W1982697471": [
 0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W1983344107": [
-2,
+3,
 "fora",
 "fraud_analytics"
 ],
 "W1983369083": [
-3,
+4,
 "marco",
 "scams"
 ],
@@ -210,17 +215,17 @@
 "fraud_analytics"
 ],
 "W1988699025": [
-6,
+5,
 "marco",
 "mules_aml"
 ],
 "W1989454713": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W1989742024": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -230,12 +235,12 @@
 "fraud_analytics"
 ],
 "W1990664060": [
-7,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W1990748933": [
-5,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -247,7 +252,7 @@
 "W1998301984": [
 0,
 "fora",
-"scams"
+"regulation"
 ],
 "W2001619934": [
 2,
@@ -255,8 +260,8 @@
 "fraud_analytics"
 ],
 "W2010373152": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2013587512": [
@@ -270,7 +275,7 @@
 "fraud_analytics"
 ],
 "W2015406385": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
@@ -282,12 +287,12 @@
 "W2023056980": [
 1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2025337429": [
 1,
 "fora",
-"fraud_analytics"
+"mules_aml"
 ],
 "W2025604447": [
 0,
@@ -297,7 +302,7 @@
 "W2026783807": [
 0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2026843999": [
 6,
@@ -305,13 +310,13 @@
 "scams"
 ],
 "W2026856259": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2028539073": [
-7,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2032026767": [
@@ -347,7 +352,7 @@
 "W2045049630": [
 8,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2046260364": [
 2,
@@ -355,9 +360,9 @@
 "fraud_analytics"
 ],
 "W2046920607": [
-1,
+0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2048755952": [
 1,
@@ -365,9 +370,9 @@
 "fraud_analytics"
 ],
 "W2048791264": [
-2,
-"fora",
-"scams"
+3,
+"metodo",
+"fraud_analytics"
 ],
 "W2048811172": [
 0,
@@ -380,14 +385,14 @@
 "fraud_analytics"
 ],
 "W2051247397": [
-3,
+2,
 "fora",
 "fraud_analytics"
 ],
 "W2051373182": [
-1,
+0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2053295697": [
 2,
@@ -395,12 +400,12 @@
 "fraud_analytics"
 ],
 "W2053530418": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
 "W2054640944": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
@@ -420,7 +425,7 @@
 "fraud_analytics"
 ],
 "W2060783077": [
-2,
+1,
 "fora",
 "account_identity"
 ],
@@ -430,28 +435,28 @@
 "scams"
 ],
 "W2062470950": [
-1,
+2,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2062493711": [
-7,
+4,
 "marco",
 "regulation"
 ],
 "W2063541844": [
 1,
 "fora",
-"fraud_analytics"
+"mules_aml"
 ],
 "W2064675550": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2067733412": [
-0,
-"fora",
+1,
+"metodo",
 "fraud_analytics"
 ],
 "W2068911395": [
@@ -472,7 +477,7 @@
 "W2071282079": [
 0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2074346829": [
 7,
@@ -480,9 +485,9 @@
 "cards"
 ],
 "W2077632038": [
-0,
+1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2080378484": [
 0,
@@ -490,8 +495,8 @@
 "fraud_analytics"
 ],
 "W2084291987": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2085575750": [
@@ -515,9 +520,9 @@
 "scams"
 ],
 "W2088402748": [
-8,
+7,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2089554624": [
 3,
@@ -532,15 +537,15 @@
 "W2095920302": [
 0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2096266510": [
-6,
+7,
 "marco",
 "cards"
 ],
 "W2096942889": [
-4,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -557,12 +562,12 @@
 "W2100435441": [
 0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2100758987": [
 0,
 "fora",
-"fraud_analytics"
+"account_identity"
 ],
 "W2104007350": [
 0,
@@ -575,7 +580,7 @@
 "fraud_analytics"
 ],
 "W2104933073": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -595,9 +600,9 @@
 "fraud_analytics"
 ],
 "W2113341218": [
-3,
+2,
 "fora",
-"mules_aml"
+"scams"
 ],
 "W2116341502": [
 2,
@@ -605,7 +610,7 @@
 "fraud_analytics"
 ],
 "W2117184241": [
-6,
+7,
 "marco",
 "fraud_analytics"
 ],
@@ -625,7 +630,7 @@
 "fraud_analytics"
 ],
 "W2118978333": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -640,8 +645,8 @@
 "fraud_analytics"
 ],
 "W2122646361": [
-2,
-"fora",
+3,
+"metodo",
 "fraud_analytics"
 ],
 "W2124640147": [
@@ -650,19 +655,19 @@
 "fraud_analytics"
 ],
 "W2125055259": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2127718853": [
 1,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W2128093958": [
-2,
+0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2129249398": [
 3,
@@ -670,9 +675,9 @@
 "fraud_analytics"
 ],
 "W2131816657": [
-2,
-"fora",
-"fraud_analytics"
+3,
+"metodo",
+"cards"
 ],
 "W2131906261": [
 8,
@@ -685,7 +690,7 @@
 "scams"
 ],
 "W2132877060": [
-5,
+4,
 "marco",
 "fraud_analytics"
 ],
@@ -700,12 +705,12 @@
 "fraud_analytics"
 ],
 "W2134335015": [
-0,
+1,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2134750673": [
-8,
+7,
 "marco",
 "scams"
 ],
@@ -715,7 +720,7 @@
 "fraud_analytics"
 ],
 "W2135689168": [
-5,
+7,
 "marco",
 "fraud_analytics"
 ],
@@ -727,7 +732,7 @@
 "W2136778389": [
 0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2136903812": [
 3,
@@ -735,12 +740,12 @@
 "fraud_analytics"
 ],
 "W2137792114": [
-3,
+1,
 "fora",
 "scams"
 ],
 "W2137959503": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -760,17 +765,17 @@
 "scams"
 ],
 "W2142827986": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2143971439": [
-2,
-"fora",
-"fraud_analytics"
+4,
+"marco",
+"scams"
 ],
 "W2145754954": [
-4,
+6,
 "marco",
 "scams"
 ],
@@ -810,19 +815,19 @@
 "fraud_analytics"
 ],
 "W2153579005": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2153635508": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2154505708": [
-3,
+2,
 "fora",
-"regulation"
+"instant_payments"
 ],
 "W2154851992": [
 2,
@@ -830,7 +835,7 @@
 "fraud_analytics"
 ],
 "W2155653793": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -845,7 +850,7 @@
 "fraud_analytics"
 ],
 "W2158016897": [
-5,
+3,
 "marco",
 "fraud_analytics"
 ],
@@ -857,10 +862,10 @@
 "W2158894011": [
 2,
 "fora",
-"regulation"
+"fraud_analytics"
 ],
 "W2160150610": [
-6,
+7,
 "marco",
 "cards"
 ],
@@ -880,12 +885,12 @@
 "fraud_analytics"
 ],
 "W2166200710": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2166290812": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -902,11 +907,11 @@
 "W2168123127": [
 2,
 "fora",
-"cards"
+"fraud_analytics"
 ],
 "W2170913656": [
-7,
-"marco",
+3,
+"metodo",
 "fraud_analytics"
 ],
 "W2171588122": [
@@ -915,12 +920,12 @@
 "fraud_analytics"
 ],
 "W2172029077": [
-2,
-"fora",
-"fraud_analytics"
+4,
+"marco",
+"regulation"
 ],
 "W2172852798": [
-7,
+6,
 "marco",
 "fraud_analytics"
 ],
@@ -930,34 +935,34 @@
 "fraud_analytics"
 ],
 "W2185483300": [
-1,
+0,
 "fora",
 "account_identity"
 ],
 "W2187089797": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
 "W2194775991": [
-0,
-"fora",
+1,
+"metodo",
 "fraud_analytics"
 ],
 "W2208001482": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2221741097": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
 "W2230049528": [
 8,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2230320310": [
 0,
@@ -975,7 +980,7 @@
 "fraud_analytics"
 ],
 "W2248783999": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
@@ -990,19 +995,19 @@
 "fraud_analytics"
 ],
 "W229583245": [
-3,
+2,
 "fora",
 "mules_aml"
 ],
 "W2296719434": [
 3,
-"fora",
+"metodo",
 "fraud_analytics"
 ],
 "W2303253355": [
-3,
+2,
 "fora",
-"mules_aml"
+"instant_payments"
 ],
 "W2316964085": [
 2,
@@ -1010,14 +1015,14 @@
 "fraud_analytics"
 ],
 "W2323049268": [
-4,
+5,
 "marco",
 "scams"
 ],
 "W2325232662": [
 2,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2332215986": [
 0,
@@ -1027,10 +1032,10 @@
 "W2335316204": [
 0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2346878720": [
-3,
+2,
 "fora",
 "account_identity"
 ],
@@ -1045,34 +1050,34 @@
 "cards"
 ],
 "W2414519424": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
 "W2461943168": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
 "W2466279936": [
-7,
-"marco",
+3,
+"metodo",
 "fraud_analytics"
 ],
 "W2468907370": [
-1,
-"fora",
+3,
+"metodo",
 "fraud_analytics"
 ],
 "W2475412994": [
 0,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W2487990896": [
 0,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2488366091": [
 0,
@@ -1080,17 +1085,17 @@
 "account_identity"
 ],
 "W2493018824": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
 "W2499247245": [
 0,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W2515430087": [
-4,
+6,
 "marco",
 "scams"
 ],
@@ -1110,12 +1115,12 @@
 "fraud_analytics"
 ],
 "W2533835508": [
-7,
+6,
 "marco",
 "fraud_analytics"
 ],
 "W2544438446": [
-4,
+6,
 "marco",
 "scams"
 ],
@@ -1125,12 +1130,12 @@
 "fraud_analytics"
 ],
 "W2559631186": [
-5,
+6,
 "marco",
 "scams"
 ],
 "W2582743722": [
-3,
+1,
 "metodo",
 "fraud_analytics"
 ],
@@ -1145,7 +1150,7 @@
 "fraud_analytics"
 ],
 "W2606100535": [
-5,
+4,
 "marco",
 "mules_aml"
 ],
@@ -1155,7 +1160,7 @@
 "fraud_analytics"
 ],
 "W2613161123": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -1180,8 +1185,8 @@
 "fraud_analytics"
 ],
 "W2624197197": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2624431344": [
@@ -1190,9 +1195,9 @@
 "fraud_analytics"
 ],
 "W2626778328": [
-3,
+2,
 "metodo",
-"genai_deepfakes"
+"fraud_analytics"
 ],
 "W262897316": [
 1,
@@ -1200,13 +1205,13 @@
 "fraud_analytics"
 ],
 "W265896103": [
-9,
+8,
 "marco",
 "fraud_analytics"
 ],
 "W2733470369": [
-6,
-"marco",
+2,
+"fora",
 "scams"
 ],
 "W2748025215": [
@@ -1215,14 +1220,14 @@
 "fraud_analytics"
 ],
 "W2751596245": [
-7,
+9,
 "marco",
 "cards"
 ],
 "W2756359217": [
-9,
+8,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2766453196": [
 2,
@@ -1230,7 +1235,7 @@
 "fraud_analytics"
 ],
 "W2767076025": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
@@ -1257,15 +1262,15 @@
 "W2772213089": [
 1,
 "fora",
-"scams"
+"fraud_analytics"
 ],
 "W2779135023": [
-1,
+2,
 "fora",
 "fraud_analytics"
 ],
 "W2781446963": [
-2,
+3,
 "fora",
 "fraud_analytics"
 ],
@@ -1275,18 +1280,18 @@
 "scams"
 ],
 "W2785637175": [
-6,
+5,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2786577118": [
-7,
+8,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2786915849": [
 2,
-"fora",
+"metodo",
 "fraud_analytics"
 ],
 "W2789063661": [
@@ -1305,7 +1310,7 @@
 "fraud_analytics"
 ],
 "W2793715265": [
-7,
+6,
 "marco",
 "scams"
 ],
@@ -1315,9 +1320,9 @@
 "fraud_analytics"
 ],
 "W2795690649": [
-2,
+1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2795873205": [
 5,
@@ -1325,7 +1330,7 @@
 "cards"
 ],
 "W2798647320": [
-1,
+2,
 "fora",
 "fraud_analytics"
 ],
@@ -1335,7 +1340,7 @@
 "instant_payments"
 ],
 "W2807021761": [
-0,
+2,
 "fora",
 "fraud_analytics"
 ],
@@ -1345,9 +1350,9 @@
 "fraud_analytics"
 ],
 "W2887231366": [
-4,
+5,
 "marco",
-"cards"
+"fraud_analytics"
 ],
 "W2889227180": [
 1,
@@ -1355,7 +1360,7 @@
 "account_identity"
 ],
 "W2889443148": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
@@ -1365,27 +1370,27 @@
 "scams"
 ],
 "W2891145043": [
-7,
+6,
 "marco",
 "genai_deepfakes"
 ],
 "W2894175828": [
-0,
-"fora",
-"fraud_analytics"
-],
-"W2895636773": [
 2,
 "fora",
 "fraud_analytics"
 ],
-"W2896796252": [
+"W2895636773": [
 3,
 "fora",
 "fraud_analytics"
 ],
+"W2896796252": [
+2,
+"fora",
+"fraud_analytics"
+],
 "W2897862648": [
-7,
+8,
 "marco",
 "account_identity"
 ],
@@ -1407,10 +1412,10 @@
 "W2905775747": [
 1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W2907492528": [
-0,
+2,
 "fora",
 "fraud_analytics"
 ],
@@ -1425,8 +1430,8 @@
 "instant_payments"
 ],
 "W2911286998": [
-0,
-"fora",
+2,
+"metodo",
 "fraud_analytics"
 ],
 "W2911424785": [
@@ -1435,7 +1440,7 @@
 "genai_deepfakes"
 ],
 "W2911817394": [
-5,
+7,
 "marco",
 "fraud_analytics"
 ],
@@ -1445,12 +1450,12 @@
 "fraud_analytics"
 ],
 "W2912336782": [
-7,
+8,
 "marco",
 "genai_deepfakes"
 ],
 "W2912456704": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
@@ -1460,17 +1465,17 @@
 "fraud_analytics"
 ],
 "W2913978442": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
 "W2914041294": [
-1,
+0,
 "fora",
-"scams"
+"fraud_analytics"
 ],
 "W2914333422": [
-6,
+7,
 "marco",
 "scams"
 ],
@@ -1507,10 +1512,10 @@
 "W2945876440": [
 7,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W2947544539": [
-7,
+8,
 "marco",
 "scams"
 ],
@@ -1520,7 +1525,7 @@
 "scams"
 ],
 "W2955441248": [
-4,
+5,
 "marco",
 "scams"
 ],
@@ -1535,12 +1540,12 @@
 "fraud_analytics"
 ],
 "W2963212997": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
 "W2963341956": [
-0,
+1,
 "fora",
 "fraud_analytics"
 ],
@@ -1555,7 +1560,7 @@
 "mules_aml"
 ],
 "W2972902221": [
-2,
+3,
 "fora",
 "regulation"
 ],
@@ -1565,8 +1570,8 @@
 "fraud_analytics"
 ],
 "W2981679275": [
-4,
-"marco",
+1,
+"fora",
 "regulation"
 ],
 "W2985186227": [
@@ -1575,13 +1580,13 @@
 "account_identity"
 ],
 "W2986011691": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
 "W2989851933": [
-5,
-"marco",
+3,
+"fora",
 "genai_deepfakes"
 ],
 "W2990806707": [
@@ -1590,28 +1595,28 @@
 "scams"
 ],
 "W2991909355": [
-2,
+3,
 "fora",
 "regulation"
 ],
 "W2992080075": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
 "W2992117063": [
 1,
 "fora",
-"fraud_analytics"
+"instant_payments"
 ],
 "W2997591727": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W2997887656": [
-2,
-"metodo",
+0,
+"fora",
 "fraud_analytics"
 ],
 "W2998647770": [
@@ -1620,22 +1625,22 @@
 "fraud_analytics"
 ],
 "W3000225817": [
-6,
+5,
 "marco",
 "mules_aml"
 ],
 "W3000607014": [
-5,
-"marco",
+1,
+"fora",
 "fraud_analytics"
 ],
 "W3009006131": [
-4,
+5,
 "marco",
 "cards"
 ],
 "W3009901425": [
-6,
+7,
 "marco",
 "fraud_analytics"
 ],
@@ -1650,12 +1655,12 @@
 "account_identity"
 ],
 "W3013550427": [
-7,
+4,
 "marco",
 "fraud_analytics"
 ],
 "W3014637033": [
-2,
+0,
 "metodo",
 "fraud_analytics"
 ],
@@ -1665,12 +1670,12 @@
 "instant_payments"
 ],
 "W3016757214": [
-7,
+6,
 "marco",
 "fraud_analytics"
 ],
 "W3017143921": [
-4,
+2,
 "metodo",
 "fraud_analytics"
 ],
@@ -1680,13 +1685,13 @@
 "genai_deepfakes"
 ],
 "W3021125242": [
-5,
+8,
 "marco",
-"instant_payments"
+"fraud_analytics"
 ],
 "W3022662270": [
-3,
-"metodo",
+2,
+"fora",
 "fraud_analytics"
 ],
 "W3022945404": [
@@ -1695,27 +1700,27 @@
 "fraud_analytics"
 ],
 "W3027037167": [
-6,
+5,
 "marco",
 "mules_aml"
 ],
 "W3029014978": [
-2,
+1,
 "fora",
 "mules_aml"
 ],
 "W3029022248": [
-2,
+1,
 "fora",
 "account_identity"
 ],
 "W3034688782": [
-5,
-"marco",
+2,
+"metodo",
 "fraud_analytics"
 ],
 "W3034713808": [
-7,
+6,
 "marco",
 "genai_deepfakes"
 ],
@@ -1730,12 +1735,12 @@
 "scams"
 ],
 "W3046739224": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
 "W3047945431": [
-7,
+5,
 "marco",
 "scams"
 ],
@@ -1745,7 +1750,7 @@
 "account_identity"
 ],
 "W3068123808": [
-7,
+8,
 "marco",
 "fraud_analytics"
 ],
@@ -1755,9 +1760,9 @@
 "fraud_analytics"
 ],
 "W3082230323": [
-2,
+3,
 "fora",
-"account_identity"
+"regulation"
 ],
 "W3088948865": [
 1,
@@ -1765,7 +1770,7 @@
 "regulation"
 ],
 "W3089258356": [
-7,
+6,
 "marco",
 "cards"
 ],
@@ -1775,7 +1780,7 @@
 "fraud_analytics"
 ],
 "W3094954752": [
-1,
+0,
 "fora",
 "scams"
 ],
@@ -1795,12 +1800,12 @@
 "fraud_analytics"
 ],
 "W3106543751": [
-6,
+5,
 "marco",
 "mules_aml"
 ],
 "W3108159510": [
-1,
+2,
 "fora",
 "account_identity"
 ],
@@ -1810,7 +1815,7 @@
 "account_identity"
 ],
 "W3118131514": [
-2,
+0,
 "metodo",
 "fraud_analytics"
 ],
@@ -1832,7 +1837,7 @@
 "W3120227884": [
 1,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W3120740533": [
 1,
@@ -1840,8 +1845,8 @@
 "fraud_analytics"
 ],
 "W3121504158": [
-4,
-"marco",
+1,
+"fora",
 "mules_aml"
 ],
 "W3123427206": [
@@ -1855,8 +1860,8 @@
 "regulation"
 ],
 "W3126470421": [
-2,
-"fora",
+4,
+"marco",
 "regulation"
 ],
 "W3127599935": [
@@ -1867,7 +1872,7 @@
 "W3128667667": [
 1,
 "fora",
-"instant_payments"
+"account_identity"
 ],
 "W3129693849": [
 5,
@@ -1875,12 +1880,12 @@
 "cards"
 ],
 "W3133242313": [
-5,
+6,
 "marco",
 "scams"
 ],
 "W3133846484": [
-2,
+3,
 "fora",
 "fraud_analytics"
 ],
@@ -1895,9 +1900,9 @@
 "scams"
 ],
 "W3145527864": [
-5,
-"marco",
-"instant_payments"
+2,
+"metodo",
+"fraud_analytics"
 ],
 "W3153422264": [
 2,
@@ -1910,7 +1915,7 @@
 "fraud_analytics"
 ],
 "W3155855444": [
-1,
+0,
 "fora",
 "scams"
 ],
@@ -1922,30 +1927,30 @@
 "W3162939761": [
 1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W3163018411": [
-2,
+0,
 "metodo",
 "fraud_analytics"
 ],
 "W3170538644": [
-2,
-"fora",
+5,
+"marco",
 "fraud_analytics"
 ],
 "W3173100042": [
-6,
+5,
 "marco",
 "cards"
 ],
 "W3173769363": [
-4,
-"marco",
-"instant_payments"
+1,
+"fora",
+"fraud_analytics"
 ],
 "W3174769091": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
@@ -1960,38 +1965,38 @@
 "cards"
 ],
 "W3190356133": [
-5,
+6,
 "marco",
 "cards"
 ],
 "W3190469032": [
-1,
+2,
 "fora",
 "fraud_analytics"
 ],
 "W3191940043": [
-1,
+2,
 "fora",
 "scams"
 ],
 "W3203182584": [
-4,
-"metodo",
+1,
+"fora",
 "fraud_analytics"
 ],
 "W3203804139": [
-7,
+5,
 "marco",
 "account_identity"
 ],
 "W3204606269": [
-1,
+0,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W3205731400": [
 2,
-"metodo",
+"fora",
 "fraud_analytics"
 ],
 "W3206093631": [
@@ -2000,12 +2005,12 @@
 "fraud_analytics"
 ],
 "W3213120927": [
-0,
+1,
 "fora",
 "account_identity"
 ],
 "W3217103056": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
@@ -2015,42 +2020,42 @@
 "fraud_analytics"
 ],
 "W4200618797": [
-3,
+1,
 "fora",
 "regulation"
 ],
 "W4205471456": [
-6,
+7,
 "marco",
 "fraud_analytics"
 ],
 "W4206138555": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
 "W4206165935": [
-5,
+6,
 "marco",
-"scams"
+"genai_deepfakes"
 ],
 "W4212887662": [
-2,
+3,
 "metodo",
 "fraud_analytics"
 ],
 "W4213447905": [
-5,
+6,
 "marco",
 "mules_aml"
 ],
 "W4214745526": [
-2,
+0,
 "metodo",
 "fraud_analytics"
 ],
 "W4214809904": [
-2,
+1,
 "fora",
 "scams"
 ],
@@ -2060,14 +2065,14 @@
 "mules_aml"
 ],
 "W4224982001": [
-4,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W4225089253": [
 1,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W4225627404": [
 6,
@@ -2080,24 +2085,24 @@
 "mules_aml"
 ],
 "W4231550118": [
-1,
-"metodo",
+2,
+"fora",
 "fraud_analytics"
 ],
 "W4233091358": [
-4,
+8,
 "marco",
 "fraud_analytics"
 ],
 "W4234223091": [
-1,
-"fora",
-"account_identity"
-],
-"W4237229274": [
 0,
 "fora",
 "fraud_analytics"
+],
+"W4237229274": [
+1,
+"fora",
+"regulation"
 ],
 "W4238200010": [
 9,
@@ -2110,17 +2115,17 @@
 "fraud_analytics"
 ],
 "W4243563432": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W4244240475": [
-0,
-"fora",
+1,
+"metodo",
 "fraud_analytics"
 ],
 "W4247678276": [
-1,
+0,
 "fora",
 "mules_aml"
 ],
@@ -2130,44 +2135,44 @@
 "account_identity"
 ],
 "W4248175462": [
-0,
+2,
 "fora",
-"instant_payments"
+"mules_aml"
 ],
 "W4249143596": [
 1,
 "fora",
-"fraud_analytics"
+"scams"
 ],
 "W4249855545": [
-7,
+6,
 "marco",
 "scams"
 ],
 "W4254182148": [
 3,
-"fora",
+"metodo",
 "fraud_analytics"
 ],
 "W4280598886": [
-1,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W4283399781": [
-1,
+2,
 "fora",
 "scams"
 ],
 "W4286953249": [
-7,
+6,
 "marco",
 "account_identity"
 ],
 "W4293359906": [
 1,
-"fora",
-"scams"
+"metodo",
+"fraud_analytics"
 ],
 "W4294192778": [
 7,
@@ -2180,22 +2185,22 @@
 "account_identity"
 ],
 "W4297347671": [
-6,
+5,
 "marco",
 "fraud_analytics"
 ],
 "W4297494784": [
-6,
+5,
 "marco",
 "cards"
 ],
 "W4300395467": [
-3,
+2,
 "metodo",
 "fraud_analytics"
 ],
 "W4300956553": [
-2,
+1,
 "metodo",
 "fraud_analytics"
 ],
@@ -2207,10 +2212,10 @@
 "W4304195660": [
 1,
 "fora",
-"scams"
+"fraud_analytics"
 ],
 "W4306751875": [
-2,
+3,
 "fora",
 "scams"
 ],
@@ -2220,14 +2225,19 @@
 "instant_payments"
 ],
 "W4313588323": [
-5,
+4,
 "marco",
 "scams"
 ],
 "W4313598884": [
-5,
+7,
 "marco",
 "fraud_analytics"
+],
+"W4315703206": [
+2,
+"fora",
+"account_identity"
 ],
 "W4320492095": [
 6,
@@ -2237,7 +2247,7 @@
 "W4321021837": [
 5,
 "marco",
-"fraud_analytics"
+"instant_payments"
 ],
 "W4361208106": [
 1,
@@ -2245,18 +2255,18 @@
 "account_identity"
 ],
 "W4365420523": [
-4,
-"marco",
+3,
+"fora",
 "genai_deepfakes"
 ],
 "W4367721843": [
-7,
+5,
 "marco",
 "mules_aml"
 ],
 "W4377943556": [
-3,
-"marco",
+2,
+"fora",
 "genai_deepfakes"
 ],
 "W4382397550": [
@@ -2267,11 +2277,11 @@
 "W4383896719": [
 1,
 "fora",
-"account_identity"
+"fraud_analytics"
 ],
 "W4385077585": [
-3,
-"fora",
+5,
+"marco",
 "regulation"
 ],
 "W4386416967": [
@@ -2292,16 +2302,16 @@
 "W4387030594": [
 1,
 "fora",
-"fraud_analytics"
+"regulation"
 ],
 "W4387812465": [
-1,
+2,
 "fora",
-"fraud_analytics"
+"instant_payments"
 ],
 "W4387874311": [
-6,
-"marco",
+3,
+"fora",
 "genai_deepfakes"
 ],
 "W4388014937": [
@@ -2310,14 +2320,14 @@
 "scams"
 ],
 "W4388099759": [
-7,
+6,
 "marco",
 "fraud_analytics"
 ],
 "W4388153965": [
-1,
+2,
 "fora",
-"genai_deepfakes"
+"fraud_analytics"
 ],
 "W4388297464": [
 2,
@@ -2325,49 +2335,49 @@
 "fraud_analytics"
 ],
 "W4388650752": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
 "W4388851105": [
-8,
+5,
 "marco",
 "genai_deepfakes"
 ],
 "W4389633671": [
-6,
+5,
 "marco",
 "fraud_analytics"
 ],
 "W4390547231": [
-5,
+4,
 "marco",
 "cards"
 ],
 "W4390569890": [
-2,
-"fora",
-"fraud_analytics"
+4,
+"marco",
+"cards"
 ],
 "W4391048150": [
-5,
+4,
 "marco",
 "cards"
 ],
 "W4391448402": [
-5,
+4,
 "marco",
 "fraud_analytics"
 ],
 "W4391673292": [
-1,
+2,
 "fora",
 "fraud_analytics"
 ],
 "W4391774404": [
 6,
 "marco",
-"fraud_analytics"
+"cards"
 ],
 "W4393379880": [
 6,
@@ -2375,7 +2385,7 @@
 "genai_deepfakes"
 ],
 "W4394691393": [
-1,
+0,
 "fora",
 "fraud_analytics"
 ],
@@ -2385,23 +2395,23 @@
 "fraud_analytics"
 ],
 "W4396215553": [
-6,
+4,
 "marco",
 "fraud_analytics"
 ],
 "W4396241564": [
-1,
+0,
 "fora",
 "account_identity"
 ],
 "W4399192732": [
-2,
-"fora",
+3,
+"marco",
 "fraud_analytics"
 ],
 "W4400098547": [
-2,
-"fora",
+3,
+"marco",
 "fraud_analytics"
 ],
 "W4403593928": [
@@ -2415,7 +2425,7 @@
 "genai_deepfakes"
 ],
 "W4404390753": [
-7,
+6,
 "marco",
 "fraud_analytics"
 ],
@@ -2445,18 +2455,18 @@
 "regulation"
 ],
 "W4407691196": [
-6,
+7,
 "marco",
 "fraud_analytics"
 ],
 "W4407953340": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
 "W4408799803": [
-5,
-"marco",
+3,
+"fora",
 "genai_deepfakes"
 ],
 "W4409220872": [
@@ -2467,12 +2477,12 @@
 "W4409628942": [
 1,
 "fora",
-"regulation"
+"account_identity"
 ],
 "W4410973814": [
 4,
 "marco",
-"cards"
+"fraud_analytics"
 ],
 "W4411884073": [
 1,
@@ -2480,37 +2490,37 @@
 "regulation"
 ],
 "W4412373414": [
-1,
+2,
 "fora",
 "account_identity"
 ],
 "W4414960719": [
-8,
+9,
 "marco",
 "mules_aml"
 ],
 "W4416011383": [
-2,
-"fora",
+3,
+"metodo",
 "fraud_analytics"
 ],
 "W4416031369": [
-2,
+1,
 "fora",
 "regulation"
 ],
 "W4416043387": [
-2,
+1,
 "fora",
 "fraud_analytics"
 ],
 "W4416111016": [
-6,
-"marco",
+3,
+"fora",
 "genai_deepfakes"
 ],
 "W4416223251": [
-7,
+9,
 "marco",
 "fraud_analytics"
 ],
@@ -2525,7 +2535,7 @@
 "fraud_analytics"
 ],
 "W614715210": [
-8,
+9,
 "marco",
 "cards"
 ],
@@ -2535,7 +2545,7 @@
 "genai_deepfakes"
 ],
 "W7225410413": [
-6,
+5,
 "marco",
 "fraud_analytics"
 ],
