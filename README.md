@@ -103,6 +103,26 @@ Custo típico por dia e por tema: ~20 chamadas OpenAlex (≈ US$ 0,02 da cota) e
 - Teste local: `npx wrangler@3 pages dev dist --binding SITE_PASSWORD=teste` (depois de `python -m pawatch render`).
 - Para acesso por e-mail individual em vez de senha, use Cloudflare Access (Zero Trust → Access → Applications).
 
+## Feedback dos leitores
+
+Cada paper e marco tem 👍/👎 e "comentar"; digests, Evolução e Watchlist têm uma caixa de comentário no
+fim (nome opcional, lembrado no navegador). `functions/api/feedback.js` grava no Cloudflare KV
+(namespace `paw-feedback`, binding `FEEDBACK`). A cada execução dos workflows, `python -m pawatch feedback`
+garante o namespace, gera o `wrangler.toml` com o binding (não versionado) e exporta o que chegou para
+`data/<tema>/feedback.json` (o voto mais recente de cada pessoa por item é o que vale) e as perguntas feitas
+à IA para `data/<tema>/questions.json`. No HTML offline o feedback fica escondido.
+
+## Pergunte (caixinha de IA)
+
+Aba "Pergunte": `functions/api/ask.js` responde perguntas sobre o tema usando só o arquivo dele (papers dos
+digests, menções rápidas, marcos e textos da Evolução, tendências), citando as fontes como [n]. Fluxo:
+o LLM expande a pergunta em termos PT+EN → ranking BM25 sobre o `data.json` do tema → o LLM responde só
+com as 18 melhores fontes (e diz quando o arquivo não cobre o assunto). Aceita perguntas de seguimento
+(as 2 últimas trocas vão junto). Limite de 40 perguntas por pessoa por dia. O `HF_TOKEN` e a `SITE_PASSWORD`
+são copiados para os secrets do Pages a cada deploy. Resposta em ~20–40 s (duas chamadas ao LLM).
+Teste local: crie `.dev.vars` (não versionado) com `SITE_PASSWORD=...` e `HF_TOKEN=...` e rode
+`npx wrangler@3 pages dev dist --kv FEEDBACK`.
+
 ## Evolução do estado da arte (aba "Evolução")
 
 `python -m pawatch evolve [--topic X] [--if-stale] [--full]` monta a linha do tempo de cada tema:

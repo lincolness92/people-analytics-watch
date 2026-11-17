@@ -28,6 +28,109 @@
   };
   const authorsShort = (a) => (!a || !a.length ? "" : a.length > 3 ? `${a.slice(0, 3).join(", ")} et al.` : a.join(", "));
 
+  // ---------- feedback (POST /api/feedback; hidden in the offline bundle) ----------
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode: fine */ } },
+  };
+  const fbOn = () => DATA && !DATA.offline && /^https?:$/.test(location.protocol);
+  const voterId = () => {
+    let v = store.get("paw_voter", "");
+    if (!v) { v = Math.random().toString(36).slice(2, 12); store.set("paw_voter", v); }
+    return v;
+  };
+  const fbKey = (kind, ref) => `${DATA.topic.slug}|${kind}|${ref}`;
+
+  function fbForm(placeholder) {
+    return `<form class="fb-form"${placeholder ? "" : " hidden"}>
+      <textarea name="comment" maxlength="2000" rows="3" placeholder="${esc(placeholder || "O que achou? Está certo, faltou algo, é útil para o seu dia a dia?")}"></textarea>
+      <div class="fb-row">
+        <input name="name" maxlength="60" placeholder="Seu nome (opcional)" value="${esc(store.get("paw_name", ""))}">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>`;
+  }
+
+  // 👍/👎 + "comentar" under a paper or milestone
+  function fbBar(kind, ref, title) {
+    if (!fbOn() || !ref) return "";
+    const v = store.get("paw_votes", {})[fbKey(kind, ref)];
+    return `<div class="fb" data-kind="${esc(kind)}" data-ref="${esc(ref)}" data-title="${esc(title || "")}">
+      <button type="button" class="fb-btn" data-fb-vote="up" aria-pressed="${v === "up"}" title="útil / bom achado">👍</button>
+      <button type="button" class="fb-btn" data-fb-vote="down" aria-pressed="${v === "down"}" title="irrelevante / fraco">👎</button>
+      <button type="button" class="fb-link" data-fb-open>comentar</button>
+      <span class="fb-msg" role="status"></span>
+      ${fbForm()}
+    </div>`;
+  }
+
+  // open comment box at the end of a page
+  function fbBox(kind, ref, title, heading, placeholder) {
+    if (!fbOn()) return "";
+    return `<section class="fb-box fb" data-kind="${esc(kind)}" data-ref="${esc(ref)}" data-title="${esc(title || "")}">
+      <h2 class="theme-h">${esc(heading)}</h2>
+      ${fbForm(placeholder)}
+      <span class="fb-msg" role="status"></span>
+    </section>`;
+  }
+
+  async function fbSend(el, payload) {
+    const msg = el.querySelector(".fb-msg");
+    try {
+      const r = await fetch("/api/feedback", {
+        method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+        body: JSON.stringify({ topic: DATA.topic.slug, kind: el.dataset.kind, ref: el.dataset.ref,
+          title: el.dataset.title, voter: voterId(), ...payload }),
+      });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) throw new Error(out.error || r.status);
+      if (msg) msg.textContent = payload.comment ? "Obrigado! Comentário enviado." : "Obrigado!";
+      return true;
+    } catch (e) {
+      if (msg) msg.textContent = `Não foi possível enviar (${e.message}).`;
+      return false;
+    }
+  }
+
+  function fbWire() {
+    app.addEventListener("click", async (e) => {
+      const btn = e.target.closest("[data-fb-vote], [data-fb-open]");
+      if (!btn) return;
+      const el = btn.closest(".fb");
+      if (btn.hasAttribute("data-fb-open")) {
+        const f = el.querySelector(".fb-form");
+        f.hidden = !f.hidden;
+        if (!f.hidden) f.querySelector("textarea").focus();
+        return;
+      }
+      const votes = store.get("paw_votes", {});
+      const k = fbKey(el.dataset.kind, el.dataset.ref);
+      const vote = votes[k] === btn.dataset.fbVote ? "none" : btn.dataset.fbVote; // clicking again undoes
+      if (await fbSend(el, { vote, name: store.get("paw_name", "") || null })) {
+        if (vote === "none") delete votes[k]; else votes[k] = vote;
+        store.set("paw_votes", votes);
+        el.querySelectorAll("[data-fb-vote]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.fbVote === vote));
+      }
+    });
+    app.addEventListener("submit", async (e) => {
+      const form = e.target.closest(".fb-form");
+      if (!form) return;
+      e.preventDefault();
+      const el = form.closest(".fb");
+      const comment = form.comment.value.trim();
+      const name = form.name.value.trim();
+      if (!comment) { form.comment.focus(); return; }
+      store.set("paw_name", name);
+      const btn = form.querySelector("button");
+      btn.disabled = true;
+      if (await fbSend(el, { comment, name: name || null })) {
+        form.comment.value = "";
+        if (!el.classList.contains("fb-box")) form.hidden = true;
+      }
+      btn.disabled = false;
+    });
+  }
+
   function card(it, { showDate = false } = {}) {
     const meta = [];
     if (it.watch_authors && it.watch_authors.length) {
@@ -50,6 +153,7 @@
         <div class="meta">${meta.join(" · ")}</div>
         <p class="summary">${md(it.summary)}</p>
         ${orig}
+        ${fbBar("paper", it.key || it.url, it.title)}
       </article>`;
   }
 
@@ -94,6 +198,8 @@
         d.quick.map((q) => `<li><a href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener">${esc(q.title)}</a>${q.note ? ` — ${md(q.note)}` : ""}</li>`).join("") +
         `</ul></section>`;
     }
+    html += fbBox("digest", d.date, d.headline || d.date, "O que achou deste digest?",
+      "O que foi útil, o que sobrou, o que faltou? Algum paper que você esperava ver aqui?");
     app.innerHTML = html;
     app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
       if (b.dataset.go) location.hash = `#/d/${b.dataset.go}`;
@@ -219,6 +325,8 @@
     html += simple(esc(L.journals), wl.journals, "name");
     html += simple(esc(L.centers), wl.centers, "name", "institution");
     html += simple(esc(L.practitioners), wl.practitioners, "name", "org");
+    html += fbBox("watchlist", "geral", "Watchlist", "Falta alguém?",
+      "Algum pesquisador, journal, centro ou fonte que deveria estar aqui (ou sair)?");
     app.innerHTML = html;
   }
 
@@ -264,6 +372,7 @@
           <div class="meta">${meta}</div>
           ${m.why ? `<p class="summary">${md(m.why)}</p>` : ""}
           <span class="ms-theme">${esc(themeLabel(m.theme))}</span>
+          ${fbBar("marco", m.id || m.url, m.title)}
         </div>
       </li>`;
     };
@@ -300,6 +409,8 @@
           ? `<h3 class="now-q">Perguntas em aberto</h3><ul class="list-simple">${ev.now.open_questions.map((q) => `<li>${md(q)}</li>`).join("")}</ul>` : ""}
       </section>`;
     }
+    html += fbBox("evolucao", ev.generated, "Evolução do estado da arte", "A linha do tempo faz sentido?",
+      "Falta algum marco? Algum não deveria estar aí? A divisão em épocas faz sentido para você?");
     app.innerHTML = html;
     app.querySelectorAll("[data-evo]").forEach((c) => c.addEventListener("click", () => {
       evoState.theme = c.dataset.evo || null;
@@ -307,6 +418,92 @@
       viewEvolution();
       window.scrollTo(0, y);
     }));
+  }
+
+  // ---------- ask the archive (POST /api/ask) ----------
+  const askState = { history: [], busy: false };
+
+  function renderAnswer(h) {
+    const cite = (n) => {
+      const src = h.sources.find((x) => x.n === +n);
+      return src && src.url
+        ? `<a class="cite" href="${esc(safeUrl(src.url))}" target="_blank" rel="noopener" title="${esc(src.title)}">[${n}]</a>`
+        : `<span class="cite">[${n}]</span>`;
+    };
+    const body = md(h.a).split(/\n{2,}/).map((p) => `<p>${p.replace(/\[(\d{1,2})\]/g, (_, n) => cite(n))}</p>`).join("");
+    const used = new Set([...h.a.matchAll(/\[(\d{1,2})\]/g)].map((m) => +m[1]));
+    const list = h.sources.filter((x) => used.has(x.n));
+    return `<article class="qa">
+      <div class="q">${esc(h.q)}</div>
+      <div class="a">${body}</div>
+      ${list.length ? `<ol class="qa-src">${list.map((x) => `<li value="${x.n}">${x.url
+        ? `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.title)}</a>` : esc(x.title)}
+        <span class="muted">· ${esc(x.kind)}${x.when ? `, ${esc(x.when)}` : ""}</span></li>`).join("")}</ol>` : ""}
+      ${fbBar("resposta", h.q, h.q)}
+    </article>`;
+  }
+
+  function viewAsk() {
+    setTab("pergunte");
+    if (!fbOn()) {
+      app.innerHTML = `<h1 class="day">Pergunte</h1><div class="empty">Disponível só no site publicado.</div>`;
+      return;
+    }
+    const themes = Object.values(DATA.themes).slice(0, 3).map((t) => t.replace(/^\S+\s/, "").toLowerCase());
+    const examples = [
+      `O que há de evidência recente sobre ${themes[0] || "o tema"}?`,
+      `Quais foram os grandes marcos do campo e o que mudou com eles?`,
+      `O que os papers dizem sobre ${themes[1] || themes[0] || "o tema"}, e quais são as limitações?`,
+    ];
+    app.innerHTML = `
+      <h1 class="day">Pergunte ao arquivo</h1>
+      <p class="dek">A IA responde usando só os papers deste arquivo (digests e Evolução) e cita cada um. Se o arquivo não cobre o assunto, ela diz.</p>
+      <div class="chips ask-examples">${examples.map((x) => `<button type="button" class="chip" data-example="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+      <div id="qa-list">${askState.history.map(renderAnswer).join("")}</div>
+      <form id="ask-form" class="ask-form">
+        <textarea name="q" rows="3" maxlength="600" placeholder="Ex.: o que se sabe sobre o efeito do trabalho híbrido em promoções?" required></textarea>
+        <div class="fb-row">
+          <span class="muted ask-hint">${askState.history.length ? "Perguntas de seguimento usam a conversa acima." : "Leva uns 20–40 segundos."}</span>
+          ${askState.history.length ? `<button type="button" class="fb-link" id="ask-reset">nova conversa</button>` : ""}
+          <button type="submit">Perguntar</button>
+        </div>
+        <span class="fb-msg" id="ask-msg" role="status"></span>
+      </form>`;
+    const form = document.getElementById("ask-form");
+    const msg = document.getElementById("ask-msg");
+    app.querySelectorAll("[data-example]").forEach((b) => b.addEventListener("click", () => {
+      form.q.value = b.dataset.example;
+      form.q.focus();
+    }));
+    const reset = document.getElementById("ask-reset");
+    if (reset) reset.addEventListener("click", () => { askState.history = []; viewAsk(); });
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const q = form.q.value.trim();
+      if (q.length < 5 || askState.busy) return;
+      askState.busy = true;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      msg.textContent = "Consultando o arquivo…";
+      try {
+        const r = await fetch("/api/ask", {
+          method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+          body: JSON.stringify({ topic: DATA.topic.slug, question: q, voter: voterId(), name: store.get("paw_name", "") || null,
+            history: askState.history.slice(-2).map((h) => ({ q: h.q, a: h.a })) }),
+        });
+        const out = await r.json().catch(() => ({}));
+        if (!r.ok || !out.ok) throw new Error(out.error || r.status);
+        askState.history.push({ q, a: out.answer, sources: out.sources || [] });
+        askState.busy = false;
+        viewAsk();
+        const items = app.querySelectorAll(".qa");
+        if (items.length) items[items.length - 1].scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch (err) {
+        msg.textContent = `Não foi possível responder (${err.message}).`;
+        btn.disabled = false;
+        askState.busy = false;
+      }
+    });
   }
 
   // ---------- topic identity + switcher ----------
@@ -333,6 +530,7 @@
     else if (a === "tendencias") viewTrends();
     else if (a === "watchlist") viewWatchlist();
     else if (a === "evolucao") viewEvolution();
+    else if (a === "pergunte") viewAsk();
     else viewDigest();
     window.scrollTo(0, 0);
   }
@@ -344,6 +542,8 @@
       setupTopic(d);
       const n = d.digests.reduce((s, x) => s + x.items.length, 0);
       document.getElementById("foot-meta").textContent = `${d.digests.length} digests · ${n} papers · atualizado em ${fmtDate(d.generated)}`;
+      if (fbOn()) fbWire();
+      else { const t = document.getElementById("tab-ask"); if (t) t.hidden = true; }
       window.addEventListener("hashchange", route);
       route();
     })

@@ -25,6 +25,7 @@ def bundle(slug, theme=None):
     js = (site / "app.js").read_text(encoding="utf-8")
     data = json.loads((site / "data.json").read_text(encoding="utf-8"))
     data["topics"] = []  # offline file: no links to the other topics
+    data["offline"] = True  # no server behind it: hide feedback and other live features
     data = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     if theme:
         tdir = THEMES_DIR / theme

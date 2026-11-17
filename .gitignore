@@ -6,3 +6,5 @@ __pycache__/
 .DS_Store
 topics/*/.draft.json
 node_modules/
+wrangler.toml
+.dev.vars

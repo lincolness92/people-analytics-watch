@@ -340,13 +340,28 @@ def stable_eras(eras, year, horizon=8):
     return {e["key"] for e in eras if e["to"] is not None and e["to"] < year - horizon}
 
 
+def diverse(ranked, theme_of, n, max_per_theme):
+    """Top `n` of `ranked`, at most `max_per_theme` per theme; leftover slots ignore the cap."""
+    out, count = [], {}
+    for c in ranked:
+        t = theme_of(c)
+        if count.get(t, 0) < max_per_theme:
+            out.append(c)
+            count[t] = count.get(t, 0) + 1
+        if len(out) == n:
+            return out
+    return out + [c for c in ranked if c not in out][: n - len(out)]
+
+
 def pick_milestones(cands, verdicts, eras, prev=None, stable=(), new_ids=(),
-                    per_era=7, min_score=6, stable_new_min=8, stable_new_max=1):
+                    per_era=7, min_score=6, stable_new_min=8, stable_new_max=1, max_per_theme=3):
     """Milestone ids per era.
 
     Without a previous version: the best `per_era` by LLM score. With one: settled eras keep
     their milestones and admit at most `stable_new_max` never-seen works scoring ≥ stable_new_min;
     recent eras are re-ranked with a +1 incumbency bonus so ties do not churn the list.
+    Re-ranked eras keep at most `max_per_theme` milestones of one theme (scores cluster at 9–10,
+    and the network tiebreak would otherwise let one well-cited theme fill the era).
     """
     by_id = {c["id"]: c for c in cands}
     prev_by_era = {e["key"]: [mid(m) for m in e["milestones"]] for e in (prev or {}).get("eras", [])}
@@ -364,7 +379,7 @@ def pick_milestones(cands, verdicts, eras, prev=None, stable=(), new_ids=(),
         bonus = lambda c: verdicts[c["id"]][0] + (1 if c["id"] in incumbents else 0)
         ranked = sorted((c for c in pool if verdicts[c["id"]][0] >= min_score),
                         key=lambda c: (-bonus(c), -c["net"], -c["cited_by"]))
-        picked[k] = [c["id"] for c in ranked[:per_era]]
+        picked[k] = [c["id"] for c in diverse(ranked, lambda c: verdicts[c["id"]][2], per_era, max_per_theme)]
     return {k: [i for i in v if i in by_id or i in prev_index(prev)] for k, v in picked.items()}
 
 
@@ -401,7 +416,9 @@ def save_cache(topic, cache):
     path.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
 
 
-def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
+def evolve(topic, llm, full=False, rejudge=False, log=lambda m: print(m, file=sys.stderr)):
+    """`full`: rebuild selection and text from scratch (cached verdicts reused);
+    `rejudge`: also send every candidate back to the LLM triage."""
     eras = topic.meta.get("evolution", {}).get("eras") or DEFAULT_ERAS
     prev = latest(topic)
     incremental = bool(prev) and not full
@@ -427,7 +444,7 @@ def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
                           "authors": m["authors"], "cited_by": m["cited_by"], "net": m.get("net", 0),
                           "url": m["url"], "abstract": "", "era": m["era"]})
 
-    cache = load_cache(topic) if incremental else {}
+    cache = {} if rejudge else load_cache(topic)
     if incremental:  # incumbents keep their verdict even without a cache entry (first incremental run)
         for i, m in prev_index(prev).items():
             if m.get("id") and m["id"] not in cache:

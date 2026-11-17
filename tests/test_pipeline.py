@@ -1,6 +1,7 @@
 import sys
 import json
 import unittest
+import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -248,6 +249,14 @@ class EvolutionTests(unittest.TestCase):
         picked = pick_milestones(cands, verdicts, self.eras, per_era=1)
         self.assertEqual(picked["2023+"], ["W1"])
 
+    def test_pick_caps_one_theme_per_era_then_fills(self):
+        from pawatch.evolution import pick_milestones
+        cands = [dict(self.n(i, 2024, 10 - i, 10), era="2023+") for i in range(6)]
+        verdicts = {f"W{i}": [9, "marco", "ai_work"] for i in range(4)}
+        verdicts.update({"W4": [7, "marco", "analytics"], "W5": [6, "marco", "hiring"]})
+        picked = pick_milestones(cands, verdicts, self.eras, per_era=5, max_per_theme=2)["2023+"]
+        self.assertEqual(picked, ["W0", "W1", "W4", "W5", "W2"])  # 2 ai_work, other themes, then refill
+
     def test_incremental_pick_keeps_settled_eras_and_resists_churn(self):
         from pawatch.evolution import pick_milestones
         cands = [dict(self.n(1, 1990, 5, 100), era="ate-1999"), dict(self.n(2, 1992, 9, 900), era="ate-1999"),
@@ -330,7 +339,11 @@ class EvolutionTests(unittest.TestCase):
             with mock.patch.object(evo, "build_network", lambda *a, **k: net()):
                 full = evo.evolve(topic, llm3, full=True, log=lambda m: None)
             self.assertEqual(full["mode"], "completa")
-            self.assertEqual(len(llm3.triaged), 3)  # full review re-judges everything
+            self.assertEqual(len(llm3.triaged), 0)  # full review reuses cached verdicts
+            llm4 = FakeLLM()
+            with mock.patch.object(evo, "build_network", lambda *a, **k: net()):
+                evo.evolve(topic, llm4, full=True, rejudge=True, log=lambda m: None)
+            self.assertEqual(len(llm4.triaged), 3)  # rejudge sends everything back to the LLM
             self.assertEqual(full["changes"]["since"], "2026-10-01")
 
     def test_merge_versions_folds_working_paper_into_article(self):
@@ -421,3 +434,51 @@ class EvolutionTests(unittest.TestCase):
         self.assertIn("**[T](https://u)** (2024) — A, B, C et al. · QJE · cit:9", out)
         self.assertIn("- Q?", out)
         self.assertIn("**🎯 Recrutamento & seleção**: L.", out)
+
+
+class FeedbackTests(unittest.TestCase):
+    def fake_api(self, store, namespaces):
+        calls = {"created": []}
+
+        def get(url, params=None, headers=None):
+            if url.endswith("/namespaces"):
+                return {"result": namespaces, "result_info": {"total_pages": 1}}
+            if url.endswith("/keys"):
+                return {"result": [{"name": k} for k in store if k.startswith(params["prefix"])], "result_info": {}}
+            key = urllib.parse.unquote(url.rsplit("/values/", 1)[1])
+            return store[key]
+
+        def post(url, payload, headers=None):
+            calls["created"].append(payload["title"])
+            return {"result": {"id": "ns-new"}}
+        return get, post, calls
+
+    def test_namespace_created_once_and_export_is_incremental(self):
+        import tempfile
+        from unittest import mock
+        from pawatch import feedback as fb
+        store = {
+            "fb:people-analytics:2026-11-17T10:00:00Z:a": {"topic": "people-analytics", "kind": "paper", "vote": "up", "ref": "doi:1", "voter": "v1", "at": "2026-11-17T10:00:00Z"},
+            "fb:people-analytics:2026-11-17T11:00:00Z:b": {"topic": "people-analytics", "kind": "paper", "vote": "down", "ref": "doi:1", "voter": "v1", "at": "2026-11-17T11:00:00Z"},
+            "fb:people-analytics:2026-11-17T12:00:00Z:c": {"topic": "people-analytics", "kind": "digest", "comment": "ótimo", "name": "Ana", "voter": "v2", "at": "2026-11-17T12:00:00Z"},
+            "fb:unknown-topic:2026-11-17T12:00:00Z:d": {"topic": "unknown-topic", "kind": "site", "comment": "x"},
+        }
+        get, post, calls = self.fake_api(store, [])
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "people-analytics").mkdir()
+            with mock.patch.object(fb, "DATA", Path(d)):
+                kv = fb.KV("t", "acc", get=get, post=post)
+                self.assertEqual(kv.namespace_id(), ("ns-new", True))
+                self.assertEqual(calls["created"], ["paw-feedback"])
+                self.assertEqual(fb.export(kv, "ns", lambda m: None), {"people-analytics": 3})
+                self.assertEqual(fb.export(kv, "ns", lambda m: None), {})  # nothing new the second time
+                entries = json.loads((Path(d) / "people-analytics" / "feedback.json").read_text())
+        self.assertEqual([e["key"][-1] for e in entries], ["a", "b", "c"])
+        # the latest vote of a voter on the same paper wins
+        self.assertEqual(fb.summary(entries), {"up": 0, "down": 1, "comments": 1, "people": 2})
+
+    def test_existing_namespace_is_reused(self):
+        from pawatch import feedback as fb
+        get, post, calls = self.fake_api({}, [{"title": "other", "id": "x"}, {"title": "paw-feedback", "id": "ns-1"}])
+        self.assertEqual(fb.KV("t", "acc", get=get, post=post).namespace_id(), ("ns-1", False))
+        self.assertEqual(calls["created"], [])

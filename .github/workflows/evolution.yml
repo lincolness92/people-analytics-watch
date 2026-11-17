@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "incremental (revisa a versão anterior) ou completa (refaz do zero)"
+        description: "incremental (revisa a anterior) · completa (refaz seleção e texto, reaproveita notas) · completa-rejulgando (refaz também a triagem)"
         type: choice
-        options: ["incremental", "completa"]
+        options: ["incremental", "completa", "completa-rejulgando"]
         default: "incremental"
       topic:
         description: "Só este tema (slug em topics/); vazio = todos"
@@ -50,8 +50,17 @@ jobs:
         run: |
           args=""
           [ "$MODE" = "completa" ] && args="$args --full"
+          [ "$MODE" = "completa-rejulgando" ] && args="$args --rejudge"
           [ -n "$TOPIC" ] && args="$args --topic $TOPIC"
           python -m pawatch evolve $args
+
+      - name: Feedback (Cloudflare KV → data/<tema>/feedback.json + wrangler.toml)
+        if: always() && env.CLOUDFLARE_API_TOKEN != ''
+        continue-on-error: true
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        run: python -m pawatch feedback
 
       - name: Commit
         if: always()
@@ -63,11 +72,16 @@ jobs:
           git commit -q -m "evolução: $(date -u +%F)"
           git pull -q --rebase && git push -q
 
-      - name: Sync site password to Pages
-        if: always() && env.CLOUDFLARE_API_TOKEN != '' && env.SITE_PASSWORD != ''
+      - name: Sync Pages secrets (site password, HF token for the AI box)
+        if: always() && env.CLOUDFLARE_API_TOKEN != ''
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: printf '%s' "$SITE_PASSWORD" | npx -y wrangler@3 pages secret put SITE_PASSWORD --project-name=${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PROJECT: ${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }}
+        run: |
+          [ -n "$SITE_PASSWORD" ] && printf '%s' "$SITE_PASSWORD" | npx -y wrangler@3 pages secret put SITE_PASSWORD --project-name="$PROJECT"
+          [ -n "$HF_TOKEN" ] && printf '%s' "$HF_TOKEN" | npx -y wrangler@3 pages secret put HF_TOKEN --project-name="$PROJECT"
+          true
 
       - name: Deploy to Cloudflare Pages
         if: always() && env.CLOUDFLARE_API_TOKEN != ''

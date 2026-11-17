@@ -14,11 +14,10 @@ Próximos passos combinados (17/11/2026). A ordem é a sugerida; nada aqui está
 Feito em 17/11/2026: `python -m pawatch evolve`, mensal e incremental, com revisão completa sob
 demanda (`--full`). Detalhes no README, seção "Evolução do estado da arte".
 
-## 3. Caixinha para conversar com a IA sobre o tema
-- Campo no site: a pergunta vai a uma função no Cloudflare Pages (que guarda o `HF_TOKEN`), que busca
-  os papers relevantes do arquivo do tema e responde citando-os com link.
-- Fica atrás da mesma senha do site (middleware em `functions/`). Depende de concluir a configuração da Cloudflare.
-- Não funciona no HTML autocontido (offline), só no site publicado.
+## 3. ✅ Caixinha para conversar com a IA sobre o tema
+Feito em 17/11/2026: aba "Pergunte" (`functions/api/ask.js`), atrás da senha, citando os papers do
+arquivo. Junto veio o feedback dos leitores (👍/👎 e comentários, exportados para `data/<tema>/`).
+Ideias: usar o feedback para calibrar a triagem; respostas em streaming para reduzir a espera.
 
 ## 4. Outros temas
 - **Risco de crédito**: incluir IFRS 9 / perda esperada (IASB), Basileia (BCBS) e Bacen (Resolução

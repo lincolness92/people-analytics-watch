@@ -150,7 +150,7 @@ def cmd_evolve(args):
             log(f"[{topic.slug}] evolução de {month} já existe — pulando")
             continue
         try:
-            ev = evolve(topic, LLM(), full=args.full, log=lambda m, s=topic.slug: log(f"[{s}] {m}"))
+            ev = evolve(topic, LLM(), full=args.full or args.rejudge, rejudge=args.rejudge, log=lambda m, s=topic.slug: log(f"[{s}] {m}"))
         except Exception as e:  # one topic failing must not block the others
             log(f"[{topic.slug}] evolução falhou: {e!r}")
             ok = False
@@ -162,6 +162,11 @@ def cmd_evolve(args):
             f"+{len(ch.get('added', []))}/-{len(ch.get('removed', []))}; tokens {ev['stats']['tokens']}")
     log(f"render: {render_all()}")
     return 0 if ok else 1
+
+
+def cmd_feedback(_args):
+    from .feedback import run
+    return run(log=log)
 
 
 def cmd_new_topic(args):
@@ -191,8 +196,10 @@ def main():
     e = sub.add_parser("evolve", help="linha do tempo do estado da arte (rede de citações + LLM), mensal")
     e.add_argument("--topic", help="slug do tema (padrão: todos)")
     e.add_argument("--if-stale", action="store_true", help="só gera se o mês atual ainda não tiver versão")
-    e.add_argument("--full", action="store_true", help="revisão completa: refaz rede, triagem e texto do zero")
+    e.add_argument("--full", action="store_true", help="revisão completa: refaz seleção e texto do zero (reaproveita as notas do cache)")
+    e.add_argument("--rejudge", action="store_true", help="como --full, mas manda todas as obras de novo para a triagem do LLM")
     e.set_defaults(fn=cmd_evolve)
+    sub.add_parser("feedback", help="KV do feedback: garante namespace, gera wrangler.toml e exporta para data/<tema>/feedback.json").set_defaults(fn=cmd_feedback)
     t = sub.add_parser("new-topic", help="monta o rascunho de um tema novo em topics/<slug>/")
     t.add_argument("name", help='nome do tema, ex.: "fraude bancária"')
     t.add_argument("--slug", help="pasta em topics/ (padrão: derivado do nome)")

@@ -50,6 +50,14 @@ jobs:
         if: github.event_name == 'push'
         run: python -m pawatch render
 
+      - name: Feedback (Cloudflare KV → data/<tema>/feedback.json + wrangler.toml)
+        if: always() && env.CLOUDFLARE_API_TOKEN != ''
+        continue-on-error: true
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        run: python -m pawatch feedback
+
       - name: Commit
         if: github.event_name != 'push'
         run: |
@@ -76,11 +84,16 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages project create ${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }} --production-branch=main
 
-      - name: Sync site password to Pages
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.SITE_PASSWORD != ''
+      - name: Sync Pages secrets (site password, HF token for the AI box)
+        if: env.CLOUDFLARE_API_TOKEN != ''
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: printf '%s' "$SITE_PASSWORD" | npx -y wrangler@3 pages secret put SITE_PASSWORD --project-name=${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PROJECT: ${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }}
+        run: |
+          [ -n "$SITE_PASSWORD" ] && printf '%s' "$SITE_PASSWORD" | npx -y wrangler@3 pages secret put SITE_PASSWORD --project-name="$PROJECT"
+          [ -n "$HF_TOKEN" ] && printf '%s' "$HF_TOKEN" | npx -y wrangler@3 pages secret put HF_TOKEN --project-name="$PROJECT"
+          true
 
       - name: Deploy to Cloudflare Pages
         if: env.CLOUDFLARE_API_TOKEN != ''
