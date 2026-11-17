@@ -118,12 +118,12 @@ Custo típico por dia e por tema: ~20 chamadas OpenAlex (≈ US$ 0,02 da cota) e
 4. **Redação**: narrativa por época, por que cada marco importa, onde estamos agora, perguntas em aberto,
    linha de evolução por tema.
 
-**Incremental por padrão** (roda sozinho no 1º run diário de cada mês): épocas consolidadas (terminadas
+**Incremental por padrão** (workflow `evolution`, sozinho no dia 1 de cada mês, limite de 2h30): épocas consolidadas (terminadas
 há mais de 8 anos) mantêm os marcos e só admitem 1 obra inédita por mês com nota ≥ 8; épocas recentes
 são reavaliadas com vantagem para os marcos atuais (sem troca por empate); textos de marcos mantidos não
 são reescritos. Cada versão registra **o que mudou** (marcos que entraram/saíram + nota do LLM).
 `--full` faz a **revisão completa**: refaz triagem e texto do zero, ainda registrando a diferença.
-No GitHub: *Run workflow* → "Aba Evolução agora" = `incremental` ou `completa`.
+No GitHub: *Actions → evolution → Run workflow*, modo `incremental` ou `completa` (e, se quiser, um tema só). A triagem roda 4 lotes em paralelo.
 Versões em `data/<tema>/evolution/AAAA-MM-DD.json`; markdown em `digests/<tema>/evolucao.md`.
 
 ## Ajustes comuns

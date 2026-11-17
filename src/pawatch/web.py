@@ -1,7 +1,9 @@
 """Web sources for watchlist centers and practitioners (blogs, newsletters, podcasts, listings).
 
 Three kinds (config/sources.json):
-- rss: items dated inside the window (optional title regex `pattern`);
+- rss: items dated inside the window (optional title regex `pattern`; with `"social": true` the
+  pattern is also matched against the post text, and untitled posts get their first sentence as title;
+  `max` caps items per run);
 - page: article links on a listing page, matched by URL regex `pattern`;
 - sitemap: URLs in a sitemap, matched by `pattern`.
 For page/sitemap there is no reliable date, so data/web_state.json remembers every URL already
@@ -50,6 +52,15 @@ def _parse_date(s):
             return datetime.strptime(" ".join(m.groups()), "%B %d %Y").date() if m else None
         except ValueError:
             return None
+
+
+def _headline(text, limit=110):
+    """First sentence (or first words) of a post, as a stand-in title."""
+    text = _clean(text, 400)
+    first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0]
+    if len(first) > limit:
+        first = first[:limit].rsplit(" ", 1)[0] + "…"
+    return first
 
 
 def _norm_url(u):
@@ -151,9 +162,12 @@ def collect_web(sources, start, state, log, fetch=_fetch):
         try:
             if src["kind"] == "rss":
                 pat = re.compile(src["pattern"]) if src.get("pattern") else None
-                items = [x for x in parse_feed(fetch(src["url"]))
-                         if x[3] and x[3] >= start_d and x[1] and (not pat or pat.search(x[0]))]
-                new = [_item(src, link, title, summary, when) for title, link, summary, when in items[:MAX_NEW_PER_SOURCE]]
+                # social posts (Bluesky, Mastodon) have no title: use the start of the text instead
+                items = [(t or _headline(summary), link, summary, when) for t, link, summary, when in parse_feed(fetch(src["url"]))]
+                items = [x for x in items if x[3] and x[3] >= start_d and x[1]
+                         and (not pat or pat.search(x[0]) or (src.get("social") and pat.search(_clean(x[2]))))]
+                cap = src.get("max", MAX_NEW_PER_SOURCE)
+                new = [_item(src, link, title, summary, when) for title, link, summary, when in items[:cap]]
             else:
                 urls = list_urls(src, fetch)
                 known = state.get(src["name"])

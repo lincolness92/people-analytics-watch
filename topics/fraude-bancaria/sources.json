@@ -155,6 +155,75 @@
       "kind": "rss",
       "url": "https://www.eba.europa.eu/rss.xml",
       "pattern": "(?i)fraud|payment|launder|aml|cft|scam|psd|operational|ict|cyber|identity"
+    },
+    {
+      "name": "Nicolas Christin (Bluesky)",
+      "watch": "Nicolas Christin",
+      "kind": "rss",
+      "url": "https://bsky.app/profile/nc2y.bsky.social/rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "Nicolas Christin (Mastodon)",
+      "watch": "Nicolas Christin",
+      "kind": "rss",
+      "url": "https://ioc.exchange/@nc2y.rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "Thomas Ristenpart (Bluesky)",
+      "watch": "Thomas Ristenpart",
+      "kind": "rss",
+      "url": "https://bsky.app/profile/ristenpart.bsky.social/rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "David Buil‐Gil (Bluesky)",
+      "watch": "David Buil‐Gil",
+      "kind": "rss",
+      "url": "https://bsky.app/profile/davidbuil.bsky.social/rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "Brian Krebs (Mastodon)",
+      "watch": "Brian Krebs",
+      "kind": "rss",
+      "url": "https://infosec.exchange/@briankrebs.rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "BleepingComputer (Bluesky)",
+      "watch": "BleepingComputer",
+      "kind": "rss",
+      "url": "https://bsky.app/profile/bleepingcomputer.com/rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "BleepingComputer (Mastodon)",
+      "watch": "BleepingComputer",
+      "kind": "rss",
+      "url": "https://infosec.exchange/@BleepingComputer.rss",
+      "social": true,
+      "max": 4,
+      "pattern": "(?i)fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat"
+    },
+    {
+      "name": "ACFE (blog)",
+      "watch": "ACFE",
+      "kind": "rss",
+      "url": "https://acfe.podbean.com/feed/"
     }
   ]
 }

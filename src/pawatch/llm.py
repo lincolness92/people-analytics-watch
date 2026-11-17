@@ -45,8 +45,12 @@ class LLM:
         self.used_model = None
         self.usage = {"prompt_tokens": 0, "completion_tokens": 0}
 
-    def json(self, system, user, max_tokens=6000, temperature=0.2):
-        """Ask for a JSON object; try each configured model, two attempts each."""
+    def json(self, system, user, max_tokens=6000, temperature=0.2, timeout=240, parse=None):
+        """Ask for a JSON object; try each configured model, two attempts each.
+
+        `parse` turns the raw text into the result (default: parse_json) and may salvage partial output.
+        """
+        parse = parse or parse_json
         errors = []
         for model in models():
             for _ in range(2):
@@ -58,13 +62,13 @@ class LLM:
                         "max_tokens": max_tokens,
                         "temperature": temperature,
                         "response_format": {"type": "json_object"},
-                    }, headers={"Authorization": f"Bearer {self.token}"}, timeout=240, retries=2)
+                    }, headers={"Authorization": f"Bearer {self.token}"}, timeout=timeout, retries=2)
                     if resp.get("error"):
                         raise RuntimeError(str(resp["error"])[:300])
                     for k in self.usage:
                         self.usage[k] += (resp.get("usage") or {}).get(k, 0) or 0
                     content = resp["choices"][0]["message"].get("content")
-                    out = parse_json(content)
+                    out = parse(content)
                     self.used_model = model
                     return out
                 except (RuntimeError, ValueError, KeyError, TypeError, json.JSONDecodeError) as e:

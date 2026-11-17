@@ -1,0 +1,78 @@
+name: evolution
+
+on:
+  schedule:
+    - cron: "0 13 1 * *"   # dia 1 de cada mês, 10:00 BRT (depois do digest diário)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "incremental (revisa a versão anterior) ou completa (refaz do zero)"
+        type: choice
+        options: ["incremental", "completa"]
+        default: "incremental"
+      topic:
+        description: "Só este tema (slug em topics/); vazio = todos"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest   # same group as the daily run: never two jobs pushing at once
+  cancel-in-progress: false
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      PYTHONPATH: src
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: python -m unittest discover -s tests -q
+
+      - name: Evolution
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          PAW_MODEL: ${{ vars.PAW_MODEL }}
+          MODE: ${{ inputs.mode || 'incremental' }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          args=""
+          [ "$MODE" = "completa" ] && args="$args --full"
+          [ -n "$TOPIC" ] && args="$args --topic $TOPIC"
+          python -m pawatch evolve $args
+
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "pa-watch bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data digests INDEX.md
+          if git diff --cached --quiet; then echo "nada novo"; exit 0; fi
+          git commit -q -m "evolução: $(date -u +%F)"
+          git pull -q --rebase && git push -q
+
+      - name: Sync site password to Pages
+        if: always() && env.CLOUDFLARE_API_TOKEN != '' && env.SITE_PASSWORD != ''
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: printf '%s' "$SITE_PASSWORD" | npx -y wrangler@3 pages secret put SITE_PASSWORD --project-name=${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }}
+
+      - name: Deploy to Cloudflare Pages
+        if: always() && env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=${{ vars.CF_PAGES_PROJECT || 'people-analytics-watch' }} --branch=main --commit-dirty=true

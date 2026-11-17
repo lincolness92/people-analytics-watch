@@ -9,6 +9,7 @@ the LLM drops generic methods/off-topic works and writes the narrative.
 
 import json
 import math
+import re
 import sys
 from collections import Counter
 from datetime import date
@@ -265,17 +266,35 @@ Inclua todas as épocas recebidas, na ordem, e todos os marcos recebidos (pode r
 Faça "threads" só para temas com pelo menos 2 marcos. Tom direto, concreto, sem jargão vazio; cite anos e autores quando ajudar."""
 
 
-def triage(llm, cands, topic, log, batch=40):
-    """LLM verdict per candidate: {work_id: [score, kind, theme]}."""
-    out = {}
-    for start in range(0, len(cands), batch):
+def salvage_verdicts(text):
+    """Parse the triage reply; if the JSON is cut or broken, keep every complete {"i": ...} object."""
+    from .llm import parse_json
+    try:
+        return parse_json(text)
+    except (ValueError, json.JSONDecodeError):
+        rows = []
+        for m in re.finditer(r"\{[^{}]*\}", text or ""):
+            try:
+                obj = json.loads(m.group(0))
+            except json.JSONDecodeError:
+                continue
+            if isinstance(obj, dict) and "i" in obj and "s" in obj:
+                rows.append(obj)
+        if not rows:
+            raise ValueError(f"no verdicts in model output: {(text or '')[:120]!r}")
+        return {"r": rows}
+
+
+def triage(llm, cands, topic, log, batch=30, workers=4):
+    """LLM verdict per candidate: {work_id: [score, kind, theme]}. Batches run in parallel."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    def run(start):
         chunk = cands[start:start + batch]
         lines = "\n".join(json.dumps(_brief(start + j, n, 350), ensure_ascii=False) for j, n in enumerate(chunk))
-        try:
-            res = llm.json(triage_rules(topic), f"Obras (um JSON por linha):\n{lines}", max_tokens=8000)
-        except RuntimeError as e:
-            log(f"evolução: triagem do lote {start} falhou: {e}")
-            continue
+        res = llm.json(triage_rules(topic), f"Obras (um JSON por linha):\n{lines}", max_tokens=8000,
+                       timeout=90, parse=salvage_verdicts)
+        out = {}
         for r in res.get("r", []):
             try:
                 i = int(r["i"])
@@ -285,7 +304,20 @@ def triage(llm, cands, topic, log, batch=40):
             if start <= i < start + len(chunk):
                 theme = r.get("t") if r.get("t") in topic.themes else next(iter(topic.themes))
                 out[chunk[i - start]["id"]] = [s, r.get("k", "marco"), theme]
-    return out
+        return out
+
+    verdicts, done = {}, 0
+    starts = list(range(0, len(cands), batch))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(run, st): st for st in starts}
+        for fut in as_completed(futures):
+            done += 1
+            try:
+                verdicts.update(fut.result())
+            except RuntimeError as e:
+                log(f"evolução: triagem do lote {futures[fut]} falhou: {e}")
+            log(f"evolução: triagem {done}/{len(starts)} lotes")
+    return verdicts
 
 
 def mid(m):

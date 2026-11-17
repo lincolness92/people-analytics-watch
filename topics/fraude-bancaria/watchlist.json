@@ -8,7 +8,10 @@
       "why": "Referência em fraude/crime financeiro; 42 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5081225515",
       "openalex_note": "conferido por nome + instituição; h-index 78",
-      "links": {}
+      "links": {
+        "x": "https://x.com/DataMiningApps",
+        "linkedin": "https://www.linkedin.com/in/bart-baesens-403bb83"
+      }
     },
     {
       "name": "David J. Hand",
@@ -28,7 +31,10 @@
       "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5072869049",
       "openalex_note": "conferido por nome + instituição; h-index 63",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/gianluca-bontempi-0293b54/",
+        "bluesky": "https://bsky.app/profile/gbonte.bsky.social"
+      }
     },
     {
       "name": "Andrea Dal Pozzolo",
@@ -38,7 +44,10 @@
       "why": "Referência em fraude/crime financeiro; 5 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5008848385",
       "openalex_note": "conferido por nome + instituição; h-index 9",
-      "links": {}
+      "links": {
+        "x": "https://x.com/dalpozz",
+        "linkedin": "https://www.linkedin.com/in/dalpozz"
+      }
     },
     {
       "name": "Tyler Moore",
@@ -48,7 +57,10 @@
       "why": "Referência em fraude/crime financeiro; 38 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5073243028",
       "openalex_note": "conferido por nome + instituição; h-index 47",
-      "links": {}
+      "links": {
+        "x": "https://x.com/TylerWMoore",
+        "linkedin": "https://www.linkedin.com/in/tyler-moore-6555247"
+      }
     },
     {
       "name": "Richard Clayton",
@@ -58,7 +70,9 @@
       "why": "Referência em fraude/crime financeiro; 8 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5090866479",
       "openalex_note": "conferido por nome + instituição; h-index 44",
-      "links": {}
+      "links": {
+        "newsletter/blog": "https://www.lightbluetouchpaper.org/author/rnc1/"
+      }
     },
     {
       "name": "Nicolas Christin",
@@ -68,7 +82,12 @@
       "why": "Referência em fraude/crime financeiro; 14 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5078075278",
       "openalex_note": "conferido por nome + instituição; h-index 58",
-      "links": {}
+      "links": {
+        "x": "https://x.com/nc2y",
+        "linkedin": "https://www.linkedin.com/in/nicolas-christin/",
+        "bluesky": "https://bsky.app/profile/nc2y.bsky.social",
+        "mastodon": "https://ioc.exchange/@nc2y"
+      }
     },
     {
       "name": "Damon McCoy",
@@ -78,7 +97,9 @@
       "why": "Referência em fraude/crime financeiro; 20 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5037313918",
       "openalex_note": "conferido por nome + instituição; h-index 53",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/damon-mccoy-24a2a870"
+      }
     },
     {
       "name": "Mark Button",
@@ -88,7 +109,10 @@
       "why": "Referência em fraude/crime financeiro; 155 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5041603506",
       "openalex_note": "conferido por nome + instituição; h-index 41",
-      "links": {}
+      "links": {
+        "x": "https://x.com/DrMarkButton",
+        "linkedin": "https://www.linkedin.com/in/professor-mark-button-0b27323/"
+      }
     },
     {
       "name": "Michael Levi",
@@ -98,7 +122,9 @@
       "why": "Referência em fraude/crime financeiro; 157 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5016958062",
       "openalex_note": "conferido por nome + instituição; h-index 51",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/michael-levi-b97963/"
+      }
     },
     {
       "name": "Cassandra Cross",
@@ -108,7 +134,9 @@
       "why": "Referência em fraude/crime financeiro; 95 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5025940101",
       "openalex_note": "conferido por nome + instituição; h-index 31",
-      "links": {}
+      "links": {
+        "x": "https://x.com/DrCassCross"
+      }
     },
     {
       "name": "Yingtong Dou",
@@ -118,7 +146,11 @@
       "why": "Referência em fraude/crime financeiro; 3 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5052902632",
       "openalex_note": "conferido por nome + instituição; h-index 18",
-      "links": {}
+      "links": {
+        "x": "https://x.com/dozee_sim",
+        "linkedin": "https://www.linkedin.com/in/ytongdou/",
+        "newsletter/blog": "https://medium.com/@ytongdou"
+      }
     },
     {
       "name": "Véronique Van Vlasselaer",
@@ -128,7 +160,9 @@
       "why": "Referência em fraude/crime financeiro; 15 trabalhos no tema no OpenAlex.",
       "openalex_id": "A5066851728",
       "openalex_note": "conferido por nome + instituição; h-index 8",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/v%C3%A9ronique-van-vlasselaer/"
+      }
     },
     {
       "name": "Monica Therese Whitty",
@@ -138,7 +172,9 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Automatically Dismantling Online Dating Fraud (126 cit.); Who can spot an online romance scam? (58 cit.)",
       "openalex_id": "A5054441117",
       "openalex_note": "minerado em venues de elite; h-index 44, 199 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/monica-whitty-34383a90/"
+      }
     },
     {
       "name": "Dawei Cheng",
@@ -168,7 +204,9 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)",
       "openalex_id": "A5030723848",
       "openalex_note": "minerado em venues de elite; h-index 7, 10 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sebastiaan-h%C3%B6ppner/"
+      }
     },
     {
       "name": "Tim Verdonck",
@@ -178,7 +216,9 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Data engineering for fraud detection (221 cit.); Instance-dependent cost-sensitive learning for detecting transfer fraud (131 cit.)",
       "openalex_id": "A5085208338",
       "openalex_note": "minerado em venues de elite; h-index 27, 161 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/tim-verdonck-205a8a1/"
+      }
     },
     {
       "name": "Xiang Ao",
@@ -208,7 +248,9 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)",
       "openalex_id": "A5014563673",
       "openalex_note": "minerado em venues de elite; h-index 5, 10 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bijeetapal/"
+      }
     },
     {
       "name": "Thomas Ristenpart",
@@ -218,7 +260,11 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Beyond Credential Stuffing: Password Similarity Models Using Neural Networks (160 cit.); Protocols for Checking Compromised Credentials (95 cit.)",
       "openalex_id": "A5003774887",
       "openalex_note": "minerado em venues de elite; h-index 64, 172 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "x": "https://x.com/TomRistenpart",
+        "linkedin": "https://www.linkedin.com/in/thomas-ristenpart-69ab799/",
+        "bluesky": "https://bsky.app/profile/ristenpart.bsky.social"
+      }
     },
     {
       "name": "Meng Shen",
@@ -248,7 +294,9 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)",
       "openalex_id": "A5025424957",
       "openalex_note": "minerado em venues de elite; h-index 20, 69 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yannaelb"
+      }
     },
     {
       "name": "Frédéric Oblé",
@@ -258,7 +306,10 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Combining unsupervised and supervised learning in credit card fraud detection (738 cit.); Assessment of catastrophic forgetting in continual credit card fraud detection (40 cit.)",
       "openalex_id": "A5024363057",
       "openalex_note": "minerado em venues de elite; h-index 11, 112 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "x": "https://x.com/fredericoble",
+        "linkedin": "https://www.linkedin.com/in/fredericoble/"
+      }
     },
     {
       "name": "David Buil‐Gil",
@@ -268,7 +319,10 @@
       "why": "Entre os mais citados sobre o tema em venues de elite: Meeting you was a fake: investigating the increase in romance fraud during COVID-19 (110 cit.); The effect of true crime docuseries on romance fraud reporting to the police (10 cit.)",
       "openalex_id": "A5089356769",
       "openalex_note": "minerado em venues de elite; h-index 18, 125 trabalhos — conferir homônimos",
-      "links": {}
+      "links": {
+        "x": "https://x.com/DavidBuil",
+        "bluesky": "https://bsky.app/profile/davidbuil.bsky.social"
+      }
     }
   ],
   "journals": [
@@ -478,37 +532,70 @@
       "name": "Brian Krebs",
       "org": "Krebs on Security",
       "url": "https://krebsonsecurity.com/",
-      "why": "Jornalismo investigativo sobre fraude bancária, golpes e cibercrime."
+      "why": "Jornalismo investigativo sobre fraude bancária, golpes e cibercrime.",
+      "links": {
+        "x": "https://x.com/briankrebs",
+        "linkedin": "https://www.linkedin.com/in/bkrebs/",
+        "mastodon": "https://infosec.exchange/@briankrebs",
+        "newsletter/blog": "https://krebsonsecurity.com/"
+      }
     },
     {
       "name": "BleepingComputer",
       "org": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/",
-      "why": "Notícias de malware bancário, phishing e vazamentos de cartão (filtrado)."
+      "why": "Notícias de malware bancário, phishing e vazamentos de cartão (filtrado).",
+      "links": {
+        "x": "https://x.com/BleepinComputer",
+        "linkedin": "https://www.linkedin.com/company/bleepingcomputer",
+        "bluesky": "https://bsky.app/profile/bleepingcomputer.com",
+        "mastodon": "https://infosec.exchange/@BleepingComputer",
+        "newsletter/blog": "https://www.bleepingcomputer.com/"
+      }
     },
     {
       "name": "Feedzai",
       "org": "Feedzai",
       "url": "https://feedzai.com/",
-      "why": "Fornecedor de prevenção a fraude com relatórios de tendências."
+      "why": "Fornecedor de prevenção a fraude com relatórios de tendências.",
+      "links": {
+        "x": "https://x.com/feedzai",
+        "linkedin": "https://www.linkedin.com/company/feedzai",
+        "newsletter/blog": "https://www.feedzai.com/blog/"
+      }
     },
     {
       "name": "BioCatch",
       "org": "BioCatch",
       "url": "https://www.biocatch.com/",
-      "why": "Biometria comportamental; relatórios sobre golpes e contas mula."
+      "why": "Biometria comportamental; relatórios sobre golpes e contas mula.",
+      "links": {
+        "x": "https://x.com/biocatch",
+        "linkedin": "https://www.linkedin.com/company/biocatch/",
+        "newsletter/blog": "https://www.biocatch.com/blog"
+      }
     },
     {
       "name": "SEON",
       "org": "SEON",
       "url": "https://seon.io/",
-      "why": "Fraud prevention e KYC; conteúdo sobre agentes de IA e identidade."
+      "why": "Fraud prevention e KYC; conteúdo sobre agentes de IA e identidade.",
+      "links": {
+        "x": "https://x.com/seon_tech",
+        "linkedin": "https://linkedin.com/company/seon-tech",
+        "newsletter/blog": "https://seon.io/resources/"
+      }
     },
     {
       "name": "ACFE",
       "org": "Association of Certified Fraud Examiners",
       "url": "https://www.acfe.com/",
-      "why": "Report to the Nations e padrões de investigação de fraude. Sem feed hoje."
+      "why": "Report to the Nations e padrões de investigação de fraude. Sem feed hoje.",
+      "links": {
+        "x": "https://x.com/theacfe",
+        "linkedin": "https://www.linkedin.com/company/acfe/",
+        "newsletter/blog": "https://www.acfe.com/podcast"
+      }
     }
   ]
 }

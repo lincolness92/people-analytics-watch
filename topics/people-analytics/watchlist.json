@@ -10,7 +10,8 @@
       "openalex_id": "A5085743615",
       "links": {
         "homepage": "https://oid.wharton.upenn.edu/profile/tambe/",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/tambe/"
       }
     },
     {
@@ -22,7 +23,8 @@
       "openalex_id": "A5057406654",
       "links": {
         "homepage": "https://mgmt.wharton.upenn.edu/profile/cappelli/",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/peter-cappelli-14936a3/"
       },
       "alt_openalex_ids": [
         "A5150675543"
@@ -49,7 +51,11 @@
       "openalex_id": "A5061686034",
       "links": {
         "homepage": "https://mgmt.wharton.upenn.edu/profile/emollick/",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/emollick",
+        "linkedin": "https://www.linkedin.com/in/emollick/",
+        "bluesky": "https://bsky.app/profile/emollick.bsky.social",
+        "newsletter/blog": "https://www.oneusefulthing.org/"
       }
     },
     {
@@ -61,7 +67,11 @@
       "openalex_id": "A5012436442",
       "links": {
         "homepage": "https://adamgrant.net/",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/adammgrant",
+        "linkedin": "https://www.linkedin.com/in/AdamMGrant",
+        "bluesky": "https://bsky.app/profile/adamgrant.bsky.social",
+        "newsletter/blog": "https://adamgrant.substack.com/"
       }
     },
     {
@@ -73,7 +83,9 @@
       "openalex_id": "A5069134952",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/raffasadun",
+        "bluesky": "https://bsky.app/profile/raffasadun.bsky.social"
       },
       "alt_openalex_ids": [
         "A5123969733"
@@ -88,7 +100,8 @@
       "openalex_id": "A5108420666",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/william_r_kerr"
       },
       "alt_openalex_ids": [
         "A5016651603"
@@ -103,7 +116,9 @@
       "openalex_id": "A5089560559",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/klakhani",
+        "linkedin": "https://www.linkedin.com/in/professorkl/"
       },
       "alt_openalex_ids": [
         "A5095319665"
@@ -118,7 +133,9 @@
       "openalex_id": "A5109473006",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/ProfDavidDeming",
+        "newsletter/blog": "https://forklightning.substack.com/"
       },
       "alt_openalex_ids": [
         "A5113396094"
@@ -133,7 +150,10 @@
       "openalex_id": "A5038255653",
       "links": {
         "homepage": "https://digitaleconomy.stanford.edu/people/erik-brynjolfsson/",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/erikbryn",
+        "linkedin": "http://linkedin.com/in/erikbrynjolfsson",
+        "bluesky": "https://bsky.app/profile/erikbryn.bsky.social"
       }
     },
     {
@@ -145,7 +165,10 @@
       "openalex_id": "A5044421873",
       "links": {
         "homepage": "https://nbloom.people.stanford.edu/",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/I_Am_NickBloom",
+        "linkedin": "https://www.linkedin.com/in/nick-bloom-stanford/",
+        "bluesky": "https://bsky.app/profile/nickbloom.bsky.social"
       }
     },
     {
@@ -169,7 +192,9 @@
       "openalex_id": "A5029839974",
       "links": {
         "homepage": "https://economics.mit.edu/people/faculty/david-h-autor",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/davidautor",
+        "bluesky": "https://bsky.app/profile/davidautor.bsky.social"
       }
     },
     {
@@ -181,7 +206,9 @@
       "openalex_id": "A5012301204",
       "links": {
         "homepage": "https://economics.mit.edu/people/faculty/daron-acemoglu",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/DAcemogluMIT",
+        "bluesky": "https://bsky.app/profile/dacemoglumit.bsky.social"
       }
     },
     {
@@ -193,7 +220,8 @@
       "openalex_id": "A5090841852",
       "links": {
         "homepage": "https://mitsloan.mit.edu/faculty/directory/danielle-li",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/Danielle__Li"
       }
     },
     {
@@ -205,7 +233,8 @@
       "openalex_id": "A5062827363",
       "links": {
         "homepage": "https://mitsloan.mit.edu/faculty/directory/emilio-j-castilla",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/emilio-j-castilla-b7976/"
       }
     },
     {
@@ -232,7 +261,9 @@
       "openalex_id": "A5010644797",
       "links": {
         "homepage": "https://www.kellogg.northwestern.edu/faculty/directory/rivera_lauren.aspx",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/larivera",
+        "bluesky": "https://bsky.app/profile/larivera.bsky.social"
       }
     },
     {
@@ -280,7 +311,10 @@
       "openalex_id": "A5088662762",
       "links": {
         "homepage": "https://economics.mit.edu/people/faculty/lindsey-raymond",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/LindseyRRaymond",
+        "linkedin": "https://www.linkedin.com/in/lindsey-raymond/",
+        "bluesky": "https://bsky.app/profile/lindseyraymond.bsky.social"
       }
     },
     {
@@ -292,7 +326,10 @@
       "openalex_id": "A5020108888",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/prithwic",
+        "linkedin": "https://www.linkedin.com/in/prithwiraj-choudhury-5566314/",
+        "bluesky": "https://bsky.app/profile/prithwirajc.bsky.social"
       },
       "alt_openalex_ids": [
         "A5045050775"
@@ -320,7 +357,9 @@
       "openalex_id": "A5008658368",
       "links": {
         "homepage": "https://bocowgill.org/",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/bocowgill",
+        "bluesky": "https://bsky.app/profile/bocowgill.bsky.social"
       },
       "openalex_note": "Mudou-se da Columbia Business School para a Rotman (perfil IZA, 2026); páginas da Columbia ainda o listam."
     },
@@ -333,7 +372,9 @@
       "openalex_id": "A5004443266",
       "links": {
         "homepage": "https://www.lse.ac.uk/economics/people/faculty/john-van-reenen",
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/johnvanreenen",
+        "bluesky": "https://bsky.app/profile/johnvanreenen.bsky.social"
       },
       "alt_openalex_ids": [
         "A5142649883"
@@ -348,7 +389,10 @@
       "openalex_id": "A5087963705",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "x": "https://x.com/lyndagratton",
+        "linkedin": "https://www.linkedin.com/in/lynda-gratton-3b179813/",
+        "newsletter/blog": "https://lyndagratton.com/latest-news"
       }
     },
     {
@@ -372,7 +416,8 @@
       "openalex_id": "A5015167951",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "newsletter/blog": "https://phanishpuranam.medium.com/"
       },
       "alt_openalex_ids": [
         "A5152190582"
@@ -387,7 +432,8 @@
       "openalex_id": "A5037608584",
       "links": {
         "homepage": "https://www.kcl.ac.uk/people/dana-minbaeva",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/dana-minbaeva-2818a35/"
       },
       "alt_openalex_ids": [
         "A5129161365"
@@ -402,7 +448,8 @@
       "openalex_id": "A5022243584",
       "links": {
         "homepage": "https://about.uq.edu.au/experts/24802",
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/martin-edwards-0bb4a55/"
       }
     },
     {
@@ -555,7 +602,9 @@
       "openalex_id": "A5072423035",
       "links": {
         "homepage": null,
-        "scholar": null
+        "scholar": null,
+        "linkedin": "https://www.linkedin.com/in/naercio-menezes-filho-22546a10",
+        "newsletter/blog": "https://valor.globo.com/autores/naercio-menezes-filho/"
       },
       "alt_openalex_ids": [
         "A5106208154"
@@ -721,55 +770,94 @@
       "name": "David Green",
       "org": "Insight222 (podcast Digital HR Leaders)",
       "url": "https://www.myhrfuture.com/digital-hr-leaders-podcast",
-      "why": "Voz mais influente do people analytics corporativo; podcast e pesquisas anuais com empresas líderes."
+      "why": "Voz mais influente do people analytics corporativo; podcast e pesquisas anuais com empresas líderes.",
+      "links": {
+        "x": "https://x.com/david_green_uk",
+        "linkedin": "https://www.linkedin.com/in/davidrgreen",
+        "newsletter/blog": "https://www.myhrfuture.com/digital-hr-leaders-podcast"
+      }
     },
     {
       "name": "Jonathan Ferrar",
       "org": "Insight222",
       "url": "https://www.insight222.com/",
-      "why": "Coautor de 'Excellence in People Analytics' e da pesquisa anual de maturidade de people analytics da Insight222."
+      "why": "Coautor de 'Excellence in People Analytics' e da pesquisa anual de maturidade de people analytics da Insight222.",
+      "links": {}
     },
     {
       "name": "Josh Bersin",
       "org": "The Josh Bersin Company",
       "url": "https://joshbersin.com/",
-      "why": "Analista de referência em HR tech, IA em RH e tendências de mercado."
+      "why": "Analista de referência em HR tech, IA em RH e tendências de mercado.",
+      "links": {
+        "x": "https://x.com/Josh_Bersin",
+        "linkedin": "https://www.linkedin.com/in/bersin",
+        "bluesky": "https://bsky.app/profile/joshbersin.bsky.social",
+        "newsletter/blog": "https://joshbersin.com/"
+      }
     },
     {
       "name": "Cole Napper",
       "org": "Lightcast (newsletter e podcast Directionally Correct)",
       "url": "https://directionallycorrectnews.substack.com/",
-      "why": "Newsletter e podcast de people analytics mais seguidos no Substack; autor de 'People Analytics' (2025)."
+      "why": "Newsletter e podcast de people analytics mais seguidos no Substack; autor de 'People Analytics' (2025).",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/colenapper",
+        "newsletter/blog": "https://directionallycorrectnews.substack.com/"
+      }
     },
     {
       "name": "Erik van Vulpen",
       "org": "AIHR - Academy to Innovate HR",
       "url": "https://www.aihr.com/",
-      "why": "Principal plataforma de formação e conteúdo em HR analytics e RH digital."
+      "why": "Principal plataforma de formação e conteúdo em HR analytics e RH digital.",
+      "links": {
+        "x": "https://x.com/van_Vulpen",
+        "linkedin": "https://www.linkedin.com/in/erikvanvulpen",
+        "newsletter/blog": "https://www.aihr.com/blog/"
+      }
     },
     {
       "name": "Microsoft WorkLab / Work Trend Index",
       "org": "Microsoft",
       "url": "https://www.microsoft.com/en-us/worklab",
-      "why": "Pesquisa anual de larga escala sobre IA e produtividade no trabalho, com dados de telemetria do Microsoft 365."
+      "why": "Pesquisa anual de larga escala sobre IA e produtividade no trabalho, com dados de telemetria do Microsoft 365.",
+      "links": {
+        "newsletter/blog": "https://www.microsoft.com/en-us/worklab"
+      }
     },
     {
       "name": "Anthropic Economic Index",
       "org": "Anthropic",
       "url": "https://www.anthropic.com/economic-index",
-      "why": "Série de dados sobre como a IA é usada por tarefas e ocupações, útil para monitorar IA no trabalho."
+      "why": "Série de dados sobre como a IA é usada por tarefas e ocupações, útil para monitorar IA no trabalho.",
+      "links": {
+        "x": "https://x.com/AnthropicAI",
+        "linkedin": "https://www.linkedin.com/company/anthropicresearch",
+        "bluesky": "https://bsky.app/profile/anthropic.com",
+        "newsletter/blog": "https://www.anthropic.com/research"
+      }
     },
     {
       "name": "People Analytics World",
       "org": "Tucana",
       "url": "https://www.tucana-global.com/",
-      "why": "Principal conferência de praticantes de people analytics (Londres, Zurique, São Francisco e Nova York)."
+      "why": "Principal conferência de praticantes de people analytics (Londres, Zurique, São Francisco e Nova York).",
+      "links": {
+        "linkedin": "https://www.linkedin.com/company/peopleanalyticsworld",
+        "bluesky": "https://bsky.app/profile/paworld.bsky.social"
+      }
     },
     {
       "name": "Wharton People Analytics Conference",
       "org": "Wharton People Analytics",
       "url": "https://wpa.wharton.upenn.edu/",
-      "why": "Conferência que reúne academia e praticantes de people analytics de ponta."
+      "why": "Conferência que reúne academia e praticantes de people analytics de ponta.",
+      "links": {
+        "x": "https://x.com/WhartonPA",
+        "linkedin": "https://www.linkedin.com/company/wharton-people-analytics/",
+        "newsletter/blog": "https://wpa.wharton.upenn.edu/content-library/"
+      }
     }
   ]
 }

@@ -148,6 +148,19 @@ class WebSourceTests(unittest.TestCase):
         self.assertEqual(out[0]["watch_source"], "Fulano")
         self.assertEqual(out[0]["key"], "web:https://ex.org/a")
 
+    def test_social_posts_get_titles_keyword_filter_and_cap(self):
+        from pawatch.web import collect_web
+        bsky = """<rss version="2.0"><channel>
+          <item><link>https://bsky.app/p/1</link><description>New paper: remote work cuts quits by a third. Field data from 1,600 workers.</description><pubDate>16 Nov 2026 01:05 +0000</pubDate></item>
+          <item><link>https://bsky.app/p/2</link><description>Lovely sunset at the beach today</description><pubDate>16 Nov 2026 02:05 +0000</pubDate></item>
+          <item><link>https://bsky.app/p/3</link><description>Hiring is hard. More on that soon</description><pubDate>15 Nov 2026 02:05 +0000</pubDate></item>
+        </channel></rss>"""
+        src = [{"name": "X (Bluesky)", "watch": "X", "kind": "rss", "url": "u", "social": True, "max": 1,
+                "pattern": "(?i)remote work|hiring"}]
+        out = collect_web(src, "2026-11-09", {}, lambda m: None, fetch=lambda u: bsky)
+        self.assertEqual([c["title"] for c in out], ["New paper: remote work cuts quits by a third."])  # cap=1, sunset filtered
+        self.assertEqual(out[0]["watch_source"], "X")
+
     def test_page_baseline_then_only_new_links(self):
         from pawatch.web import collect_web
         pages = {
@@ -342,6 +355,14 @@ class EvolutionTests(unittest.TestCase):
                                       self.n(3, 2024, 0, 2)]}
         ids = sorted(c["id"] for c in candidates(nodes, self.eras, per_era=1))
         self.assertEqual(ids, ["W1", "W2"])
+
+    def test_salvage_verdicts_keeps_complete_objects(self):
+        from pawatch.evolution import salvage_verdicts
+        cut = '{"r": [{"i": 0, "s": 8, "k": "marco", "t": "hiring"}, {"i": 1, "s": 3, "k": "metodo", "t": "analytics"}, {"i": 2, "s'
+        self.assertEqual([r["i"] for r in salvage_verdicts(cut)["r"]], [0, 1])
+        self.assertEqual(salvage_verdicts('{"r": [{"i": 5, "s": 7, "k": "marco", "t": "x"}]}')["r"][0]["s"], 7)
+        with self.assertRaises(ValueError):
+            salvage_verdicts("")
 
     def test_markdown(self):
         from pawatch.evolution import evolution_markdown
