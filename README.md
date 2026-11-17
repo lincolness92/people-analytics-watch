@@ -88,19 +88,41 @@ python3 -m http.server -d dist 8000   # ver o site local em http://localhost:800
 | `CLOUDFLARE_ACCOUNT_ID` | secret | p/ site | ID da conta Cloudflare |
 | `DISCORD_WEBHOOK_URL` | secret | não | entrega do digest no Discord |
 | `PAW_MODEL` | variable | não | modelo(s) HF, separados por vírgula (padrão: `deepseek-ai/DeepSeek-V4.1-Flash`, com fallback para Qwen3.5-122B e gpt-oss-120b) |
+| `SITE_PASSWORD` | secret | p/ site | senha única do site; o workflow copia para o Pages a cada deploy. Sem ela o site fica fechado |
 | `CF_PAGES_PROJECT` | variable | não | nome do projeto no Pages (padrão `people-analytics-watch`) |
 
 Custo típico por dia e por tema: ~20 chamadas OpenAlex (≈ US$ 0,02 da cota) e ~60–90k tokens de LLM.
 
-## Site privado no Cloudflare
+## Site no Cloudflare Pages (com senha)
 
-1. Crie o projeto uma vez: `npx wrangler pages project create people-analytics-watch --production-branch main`.
-2. Proteja com **Cloudflare Access** (Zero Trust, grátis até 50 usuários): *Zero Trust → Access →
-   Applications → Add → Self-hosted*, domínio `people-analytics-watch.pages.dev` (e
-   `*.people-analytics-watch.pages.dev` para previews), política *Allow* com o seu e-mail
-   (login por código de uso único).
-3. O workflow faz o deploy a cada execução diária e quando `web/` muda. A raiz do site lista os temas;
-   cada tema fica em `/<slug>/`.
+- O workflow cria o projeto `people-analytics-watch` se ele não existir e faz o deploy a cada execução
+  diária e quando `web/`, `topics/` ou `functions/` mudam. A raiz lista os temas; cada tema fica em `/<slug>/`.
+- **Senha única**: `functions/_middleware.js` (Pages Functions) mostra uma tela de login e, com a senha
+  certa, grava um cookie de 30 dias. A senha vem do secret `SITE_PASSWORD`. Para trocar:
+  `gh secret set SITE_PASSWORD` e rode o workflow; todo mundo precisa entrar de novo.
+- Teste local: `npx wrangler@3 pages dev dist --binding SITE_PASSWORD=teste` (depois de `python -m pawatch render`).
+- Para acesso por e-mail individual em vez de senha, use Cloudflare Access (Zero Trust → Access → Applications).
+
+## Evolução do estado da arte (aba "Evolução")
+
+`python -m pawatch evolve [--topic X] [--if-stale] [--full]` monta a linha do tempo de cada tema:
+
+1. **Rede de citações**: os mais citados de todos os tempos e desde 7 anos atrás de cada busca do tema,
+   mais os papers dos digests; segue as referências duas camadas para trás e conta as citações dentro da rede.
+2. **Candidatos por época** (até 1999, 2000–09, 2010–17, 2018–22, 2023+): ranqueados dentro da época,
+   para trabalhos recentes competirem com os clássicos.
+3. **Triagem pelo LLM**: nota de "marco", descartando métodos genéricos (SEM, viés de método comum...) e
+   obras de outros campos. Cada obra é julgada uma vez só (`data/<tema>/evolution_triage.json`).
+4. **Redação**: narrativa por época, por que cada marco importa, onde estamos agora, perguntas em aberto,
+   linha de evolução por tema.
+
+**Incremental por padrão** (roda sozinho no 1º run diário de cada mês): épocas consolidadas (terminadas
+há mais de 8 anos) mantêm os marcos e só admitem 1 obra inédita por mês com nota ≥ 8; épocas recentes
+são reavaliadas com vantagem para os marcos atuais (sem troca por empate); textos de marcos mantidos não
+são reescritos. Cada versão registra **o que mudou** (marcos que entraram/saíram + nota do LLM).
+`--full` faz a **revisão completa**: refaz triagem e texto do zero, ainda registrando a diferença.
+No GitHub: *Run workflow* → "Aba Evolução agora" = `incremental` ou `completa`.
+Versões em `data/<tema>/evolution/AAAA-MM.json`; markdown em `digests/<tema>/evolucao.md`.
 
 ## Ajustes comuns
 

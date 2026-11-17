@@ -214,6 +214,18 @@
   // ---------- evolution ----------
   const evoState = { theme: null };
 
+  function changesBox(ev) {
+    const ch = ev.changes;
+    if (!ch || !((ch.added || []).length || (ch.removed || []).length || ch.note)) return "";
+    const since = ch.since ? new Date(ch.since + "-15T12:00:00").toLocaleDateString("pt-BR", { month: "long", year: "numeric" }) : "";
+    const li = (m, sign) => `<li><span class="chg-${sign === "+" ? "add" : "del"}">${sign}</span> ${esc(m.title)} <span class="muted">(${esc(m.year ?? "")})</span></li>`;
+    return `<details class="changes" open>
+      <summary>O que mudou desde ${esc(since)} · <b>+${(ch.added || []).length}</b> / <b>−${(ch.removed || []).length}</b> marcos${ev.mode === "completa" ? " · revisão completa" : ""}</summary>
+      ${ch.note ? `<p>${md(ch.note)}</p>` : ""}
+      <ul>${(ch.added || []).map((m) => li(m, "+")).join("")}${(ch.removed || []).map((m) => li(m, "−")).join("")}</ul>
+    </details>`;
+  }
+
   function viewEvolution() {
     setTab("evolucao");
     const ev = DATA.evolution;
@@ -236,7 +248,7 @@
       return `<li class="ms">
         <span class="ms-year">${esc(m.year ?? "")}</span>
         <div class="ms-body">
-          <a class="ms-title" href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">${esc(m.title)}</a>
+          ${m.new ? `<span class="ms-new">novo</span>` : ""}<a class="ms-title" href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">${esc(m.title)}</a>
           <div class="meta">${meta}</div>
           ${m.why ? `<p class="summary">${md(m.why)}</p>` : ""}
           <span class="ms-theme">${esc(themeLabel(m.theme))}</span>
@@ -253,6 +265,7 @@
         <span>gerado em ${esc(fmtDate(ev.generated))}</span>
         ${ev.model ? `<span>modelo: ${esc(ev.model.split("/").pop())}</span>` : ""}
       </div>
+      ${changesBox(ev)}
       <div class="chips evo-chips">${chips}</div>
       ${thread ? `<div class="trend"><span class="label">Como este tema evoluiu</span>${md(thread.line)}</div>` : ""}
       <div class="evo">`;

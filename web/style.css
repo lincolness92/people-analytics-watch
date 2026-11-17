@@ -210,3 +210,11 @@ h1.day {
   .era::before { left: -24px; }
   .ms { flex-direction: column; gap: 4px; padding: 12px 14px; }
 }
+.changes { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 0 0 20px; }
+.changes summary { cursor: pointer; font-size: 14px; color: var(--ink-2); }
+.changes p { margin: 10px 0 6px; color: var(--ink-2); }
+.changes ul { list-style: none; padding: 0; margin: 8px 0 0; font-size: 14px; }
+.changes li { margin-bottom: 4px; }
+.chg-add { color: var(--score-hi); font-weight: 700; }
+.chg-del { color: var(--accent); font-weight: 700; }
+.ms-new { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--bg); background: var(--score-hi); border-radius: 999px; padding: 1px 7px; margin-right: 6px; vertical-align: 2px; }

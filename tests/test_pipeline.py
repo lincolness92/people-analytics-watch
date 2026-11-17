@@ -230,10 +230,95 @@ class EvolutionTests(unittest.TestCase):
     def test_pick_milestones_drops_methods_and_caps_per_era(self):
         from pawatch.evolution import pick_milestones
         cands = [dict(self.n(i, 2024, i, 10), era="2023+") for i in range(4)]
-        scores = {0: (9, "metodo", "analytics"), 1: (8, "marco", "hiring"),
-                  2: (7, "marco", "hiring"), 3: (5, "marco", "hiring")}
-        picked = pick_milestones(cands, scores, self.eras, per_era=1)
-        self.assertEqual(picked["2023+"], [1])
+        verdicts = {"W0": [9, "metodo", "analytics"], "W1": [8, "marco", "hiring"],
+                    "W2": [7, "marco", "hiring"], "W3": [5, "marco", "hiring"]}
+        picked = pick_milestones(cands, verdicts, self.eras, per_era=1)
+        self.assertEqual(picked["2023+"], ["W1"])
+
+    def test_incremental_pick_keeps_settled_eras_and_resists_churn(self):
+        from pawatch.evolution import pick_milestones
+        cands = [dict(self.n(1, 1990, 5, 100), era="ate-1999"), dict(self.n(2, 1992, 9, 900), era="ate-1999"),
+                 dict(self.n(3, 1995, 9, 900), era="ate-1999"),
+                 dict(self.n(4, 2024, 1, 10), era="2023+"), dict(self.n(5, 2024, 9, 10), era="2023+")]
+        verdicts = {"W1": [7, "marco", "a"], "W2": [9, "marco", "a"], "W3": [9, "marco", "a"],
+                    "W4": [7, "marco", "a"], "W5": [8, "marco", "a"]}
+        prev = {"eras": [{"key": "ate-1999", "milestones": [{"id": "W1", "url": "u1"}]},
+                         {"key": "2023+", "milestones": [{"id": "W4", "url": "u4"}]}]}
+        picked = pick_milestones(cands, verdicts, self.eras, prev=prev, stable={"ate-1999"},
+                                 new_ids={"W2", "W3", "W5"}, per_era=1)
+        # settled era: incumbent stays, only one strong newcomer admitted
+        self.assertEqual(picked["ate-1999"], ["W1", "W2"])
+        # recent era: incumbent 7 (+1 bonus = 8) ties the newcomer's 8; the tie goes to the stronger network
+        self.assertEqual(picked["2023+"], ["W5"])
+        verdicts["W5"] = [7, "marco", "a"]
+        picked = pick_milestones(cands, verdicts, self.eras, prev=prev, stable={"ate-1999"}, new_ids=set(), per_era=1)
+        self.assertEqual(picked["2023+"], ["W4"])  # 7+1 beats 7: no churn on equal scores
+
+    def test_evolve_end_to_end_incremental_and_full(self):
+        import tempfile
+        from unittest import mock
+        from pawatch import evolution as evo
+
+        class FakeTopic:
+            meta = {"audience": "Você é o curador. Etc.", "rubric_focus": "RH", "off_topic": "medicina"}
+            themes = {"hiring": "🎯 Recrutamento", "analytics": "📊 Analytics"}
+            def __init__(self, d): self.data = Path(d)
+            def digests(self): return []
+            def queries(self): return {}
+
+        class FakeLLM:
+            used_model, usage = "fake", {}
+            def __init__(self): self.triaged = []
+            def json(self, system, user, **kw):
+                if user.startswith("Obras"):
+                    rows = [json.loads(l) for l in user.splitlines()[1:]]
+                    self.triaged += [r["title"] for r in rows]
+                    return {"r": [{"i": r["i"], "s": 3 if "Method" in r["title"] else 8,
+                                   "k": "metodo" if "Method" in r["title"] else "marco", "t": "hiring"} for r in rows]}
+                payload = json.loads(user)
+                return {"overview": "O.", "changes_note": "N." if "mudancas" in payload else "",
+                        "now": {"summary": "Agora.", "open_questions": ["Q?"]}, "threads": [],
+                        "eras": [{"key": e["key"], "title": f"T {e['key']}", "summary": "S.",
+                                  "milestones": [{"i": m["i"], "why": f"why {m['title']}"} for m in e["marcos"]]}
+                                 for e in payload["eras"]]}
+
+        def net(extra=()):
+            ws = [self.n(1, 1980, 9, 5000), self.n(2, 2024, 5, 50), dict(self.n(3, 1985, 9, 9000), title="Method X")]
+            ws += list(extra)
+            return {w["id"]: w for w in ws}
+
+        with tempfile.TemporaryDirectory() as d:
+            topic, llm = FakeTopic(d), FakeLLM()
+            def save(ev):
+                (topic.data / "evolution").mkdir(parents=True, exist_ok=True)
+                (topic.data / "evolution" / f"{ev['month']}.json").write_text(json.dumps(ev))
+            with mock.patch.object(evo, "build_network", lambda *a, **k: net()):
+                first = evo.evolve(topic, llm, log=lambda m: None)
+            self.assertEqual(first["mode"], "completa")
+            self.assertIsNone(first["changes"])
+            titles = [m["title"] for e in first["eras"] for m in e["milestones"]]
+            self.assertEqual(sorted(titles), ["Paper 1", "Paper 2"])  # the method was dropped
+            first["month"] = "2026-10"
+            save(first)
+
+            llm2 = FakeLLM()
+            with mock.patch.object(evo, "build_network", lambda *a, **k: net([self.n(9, 1990, 9, 7000)])):
+                second = evo.evolve(topic, llm2, log=lambda m: None)
+            self.assertEqual(second["mode"], "incremental")
+            self.assertEqual(llm2.triaged, ["Paper 9"])  # only the never-seen work goes to the LLM
+            old = next(e for e in second["eras"] if e["key"] == "ate-1999")
+            self.assertEqual([m["title"] for m in old["milestones"]], ["Paper 1", "Paper 9"])
+            self.assertEqual(old["milestones"][0]["why"], "why Paper 1")  # kept from the previous month
+            self.assertTrue(old["milestones"][1]["new"])
+            self.assertEqual(second["changes"]["added"], [{"title": "Paper 9", "year": 1990, "era": "ate-1999"}])
+            self.assertEqual(second["changes"]["note"], "N.")
+
+            llm3 = FakeLLM()
+            with mock.patch.object(evo, "build_network", lambda *a, **k: net()):
+                full = evo.evolve(topic, llm3, full=True, log=lambda m: None)
+            self.assertEqual(full["mode"], "completa")
+            self.assertEqual(len(llm3.triaged), 3)  # full review re-judges everything
+            self.assertEqual(full["changes"]["since"], "2026-10")
 
     def test_markdown(self):
         from pawatch.evolution import evolution_markdown

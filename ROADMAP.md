@@ -10,18 +10,14 @@ Próximos passos combinados (17/11/2026). A ordem é a sugerida; nada aqui está
   para a triagem; vídeos longos precisam de um resumo intermediário pelo LLM.
 - Decidir: só vídeos novos (cron) ou também o acervo das edições anteriores (carga única).
 
-## 2. Evolução do estado da arte por tema (aba "Evolução" no site)
-- Semente: papers selecionados nos digests + os mais citados das buscas do tema.
-- Puxar as referências (OpenAlex `referenced_works`) uma ou duas camadas para trás.
-- Marcos = mais citados dentro dessa rede, por época (ex.: <2000, 2000–10, 2010–18, 2018–22, 2023+).
-- O LLM escreve a linha do tempo (o que cada época resolveu, o que mudou, onde está agora), sempre
-  linkando os papers. Rodar mensalmente.
-- Precisa da `OPENALEX_API_KEY` ativa (o volume de chamadas passa da cota compartilhada).
+## 2. ✅ Evolução do estado da arte por tema (aba "Evolução" no site)
+Feito em 17/11/2026: `python -m pawatch evolve`, mensal e incremental, com revisão completa sob
+demanda (`--full`). Detalhes no README, seção "Evolução do estado da arte".
 
 ## 3. Caixinha para conversar com a IA sobre o tema
 - Campo no site: a pergunta vai a uma função no Cloudflare Pages (que guarda o `HF_TOKEN`), que busca
   os papers relevantes do arquivo do tema e responde citando-os com link.
-- Fica atrás do mesmo Cloudflare Access do site. Depende de concluir a configuração da Cloudflare.
+- Fica atrás da mesma senha do site (middleware em `functions/`). Depende de concluir a configuração da Cloudflare.
 - Não funciona no HTML autocontido (offline), só no site publicado.
 
 ## 4. Outros temas
@@ -30,4 +26,4 @@ Próximos passos combinados (17/11/2026). A ordem é a sugerida; nada aqui está
 
 ## Pendências de configuração
 - Ativar a chave do OpenAlex (e-mail "Activate your OpenAlex API key"). Já está como secret.
-- Cloudflare Pages + Access (token novo com permissão Pages: Edit).
+- ✅ Cloudflare Pages no ar, protegido por senha única (`SITE_PASSWORD`).

@@ -154,7 +154,7 @@ def candidates(nodes, eras, per_era=30):
 def _brief(i, n, chars):
     return {"i": i, "title": n["title"], "year": n["year"], "venue": n["venue"],
             "authors": ", ".join(a for a in n["authors"][:3] if a), "cit": n["cited_by"],
-            "net": n["net"], "abstract": n["abstract"][:chars] or "(sem abstract)"}
+            "net": n.get("net", 0), "abstract": (n.get("abstract") or "")[:chars] or "(sem abstract)"}
 
 
 def triage_rules(topic):
@@ -170,10 +170,16 @@ Métodos genéricos e obras fora do tema recebem s ≤ 3 mesmo que muito citados
 Responda APENAS com JSON: {{"r": [{{"i": <id>, "s": <int>, "k": "...", "t": "..."}}, ...]}} cobrindo todos os ids."""
 
 
-def write_rules(topic, eras):
+def write_rules(topic, eras, incremental):
     era_list = ", ".join(f'{e["key"]} ({e["label"]})' for e in eras)
+    revise = """
+Esta é uma REVISÃO MENSAL de uma versão anterior. Cada época enviada traz "titulo_anterior" e
+"resumo_anterior"; marcos mantidos trazem "why_anterior" e marcos novos vêm com "novo": true.
+Preserve o que continua certo: ajuste título e resumo da época só no necessário para incorporar
+marcos novos ou retirar os que saíram. Escreva "why" apenas para os marcos novos.
+Revise "overview" e "now" a partir de "versao_anterior", incorporando os destaques recentes.""" if incremental else ""
     return f"""Escreva em PT-BR a EVOLUÇÃO DO ESTADO DA ARTE do tema, para {topic.meta["audience"].split(".")[0].lower()}.
-Você recebe os marcos de cada época ({era_list}) e os destaques recentes dos digests.
+Você recebe os marcos de cada época ({era_list}) e os destaques recentes dos digests.{revise}
 Devolva APENAS JSON:
 {{
  "overview": "3–4 frases: o arco completo do campo, do início até hoje",
@@ -182,13 +188,15 @@ Devolva APENAS JSON:
    "milestones": [{{"i": <id>, "why": "1–2 frases: a contribuição concreta e por que importa até hoje"}}]}}],
  "now": {{"summary": "3–4 frases: onde o campo está agora, conectando aos destaques recentes",
    "open_questions": ["3 a 5 perguntas em aberto, curtas"]}},
- "threads": [{{"theme": "<chave do tema>", "line": "1–2 frases: como esse tema evoluiu ao longo das épocas"}}]
+ "threads": [{{"theme": "<chave do tema>", "line": "1–2 frases: como esse tema evoluiu ao longo das épocas"}}],
+ "changes_note": "1–3 frases sobre o que mudou em relação à versão anterior (use a lista 'mudancas'); vazio se não houver versão anterior"
 }}
 Inclua todas as épocas recebidas, na ordem, e todos os marcos recebidos (pode reordenar dentro da época).
 Faça "threads" só para temas com pelo menos 2 marcos. Tom direto, concreto, sem jargão vazio; cite anos e autores quando ajudar."""
 
 
 def triage(llm, cands, topic, log, batch=40):
+    """LLM verdict per candidate: {work_id: [score, kind, theme]}."""
     out = {}
     for start in range(0, len(cands), batch):
         chunk = cands[start:start + batch]
@@ -201,76 +209,207 @@ def triage(llm, cands, topic, log, batch=40):
         for r in res.get("r", []):
             try:
                 i = int(r["i"])
+                s = max(0, min(10, int(r.get("s", 0) or 0)))
             except (KeyError, TypeError, ValueError):
                 continue
             if start <= i < start + len(chunk):
                 theme = r.get("t") if r.get("t") in topic.themes else next(iter(topic.themes))
-                out[i] = (max(0, min(10, int(r.get("s", 0) or 0))), r.get("k", "marco"), theme)
+                out[chunk[i - start]["id"]] = [s, r.get("k", "marco"), theme]
     return out
 
 
-def pick_milestones(cands, scores, eras, per_era=7, min_score=6):
+def mid(m):
+    """Stable identity of a milestone (older versions stored only the URL)."""
+    return m.get("id") or m.get("url")
+
+
+def stable_eras(eras, year, horizon=8):
+    """Eras that ended long enough ago to be considered settled."""
+    return {e["key"] for e in eras if e["to"] is not None and e["to"] < year - horizon}
+
+
+def pick_milestones(cands, verdicts, eras, prev=None, stable=(), new_ids=(),
+                    per_era=7, min_score=6, stable_new_min=8, stable_new_max=1):
+    """Milestone ids per era.
+
+    Without a previous version: the best `per_era` by LLM score. With one: settled eras keep
+    their milestones and admit at most `stable_new_max` never-seen works scoring ≥ stable_new_min;
+    recent eras are re-ranked with a +1 incumbency bonus so ties do not churn the list.
+    """
+    by_id = {c["id"]: c for c in cands}
+    prev_by_era = {e["key"]: [mid(m) for m in e["milestones"]] for e in (prev or {}).get("eras", [])}
     picked = {e["key"]: [] for e in eras}
-    ranked = sorted(scores.items(), key=lambda kv: (-kv[1][0], -cands[kv[0]]["net"]))
-    for i, (s, kind, _) in ranked:
-        era = cands[i]["era"]
-        if kind == "marco" and s >= min_score and len(picked[era]) < per_era:
-            picked[era].append(i)
-    return picked
+    for e in eras:
+        k = e["key"]
+        pool = [c for c in cands if c["era"] == k and verdicts.get(c["id"], [0, "fora"])[1] == "marco"]
+        incumbents = prev_by_era.get(k, [])
+        if prev and k in stable and incumbents:
+            fresh = sorted((c for c in pool if c["id"] in new_ids and c["id"] not in incumbents
+                            and verdicts[c["id"]][0] >= stable_new_min),
+                           key=lambda c: (-verdicts[c["id"]][0], -c["net"]))
+            picked[k] = incumbents + [c["id"] for c in fresh[:stable_new_max]]
+            continue
+        bonus = lambda c: verdicts[c["id"]][0] + (1 if c["id"] in incumbents else 0)
+        ranked = sorted((c for c in pool if verdicts[c["id"]][0] >= min_score),
+                        key=lambda c: (-bonus(c), -c["net"], -c["cited_by"]))
+        picked[k] = [c["id"] for c in ranked[:per_era]]
+    return {k: [i for i in v if i in by_id or i in prev_index(prev)] for k, v in picked.items()}
+
+
+def prev_index(prev):
+    return {mid(m): dict(m, era=e["key"]) for e in (prev or {}).get("eras", []) for m in e["milestones"]}
 
 
 def recent_highlights(topic, limit=25):
     items = [dict(it, _date=d["date"]) for d in topic.digests() for it in d.get("items", [])]
-    items.sort(key=lambda x: (-x.get("score", 0), x["_date"]), reverse=False)
+    items.sort(key=lambda x: (-x.get("score", 0), x["_date"]))
     return [{"title": it["title"], "date": it["_date"], "score": it.get("score"), "theme": it.get("theme"),
              "summary": (it.get("summary") or "")[:260]} for it in items[:limit]]
 
 
-def evolve(topic, llm, log=lambda m: print(m, file=sys.stderr)):
+def diff(prev, picked, info):
+    if not prev:
+        return {"added": [], "removed": []}
+    before = prev_index(prev)
+    now = {i for ids in picked.values() for i in ids}
+    added = [{"title": info[i]["title"], "year": info[i]["year"], "era": info[i]["era"]} for ids in picked.values()
+             for i in ids if i not in before]
+    removed = [{"title": m["title"], "year": m["year"], "era": m["era"]} for i, m in before.items() if i not in now]
+    return {"added": added, "removed": removed}
+
+
+def load_cache(topic):
+    path = topic.data / "evolution_triage.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def save_cache(topic, cache):
+    path = topic.data / "evolution_triage.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+
+
+def evolve(topic, llm, full=False, log=lambda m: print(m, file=sys.stderr)):
     eras = topic.meta.get("evolution", {}).get("eras") or DEFAULT_ERAS
+    prev = latest(topic)
+    incremental = bool(prev) and not full
+    mode = "incremental" if incremental else "completa"
+    log(f"evolução: modo {mode}" + (f" (base {prev['month']})" if prev else ""))
+
     fetch = Fetcher(log)
     nodes = build_network(topic, fetch, log)
     cands = candidates(nodes, eras)
-    log(f"evolução: {len(cands)} candidatos a marco para triagem")
-    scores = triage(llm, cands, topic, log)
-    picked = pick_milestones(cands, scores, eras)
-    n_picked = sum(len(v) for v in picked.values())
-    if not n_picked:
-        raise RuntimeError("nenhum marco passou da triagem")
+    if prev:  # versions before ids were stored: recover each milestone's OpenAlex id from its URL
+        url2id = {n["url"]: n["id"] for n in nodes.values()}
+        for e in prev["eras"]:
+            for m in e["milestones"]:
+                m.setdefault("id", url2id.get(m["url"]))
+                if not m["id"]:
+                    m.pop("id")
 
-    payload = {
-        "eras": [{"key": e["key"], "label": e["label"],
-                  "marcos": [dict(_brief(i, cands[i], 700), tema=scores[i][2]) for i in picked[e["key"]]]}
-                 for e in eras if picked[e["key"]]],
-        "destaques_recentes": recent_highlights(topic),
-    }
-    res = llm.json(write_rules(topic, eras), json.dumps(payload, ensure_ascii=False),
+    # previous milestones stay in the running even if they fell out of this month's top slice
+    seen = {c["id"] for c in cands}
+    for i, m in prev_index(prev).items():
+        if incremental and i not in seen and m.get("id"):
+            cands.append({"id": m["id"], "title": m["title"], "year": m["year"], "venue": m["venue"],
+                          "authors": m["authors"], "cited_by": m["cited_by"], "net": m.get("net", 0),
+                          "url": m["url"], "abstract": "", "era": m["era"]})
+
+    cache = load_cache(topic) if incremental else {}
+    if incremental:  # incumbents keep their verdict even without a cache entry (first incremental run)
+        for i, m in prev_index(prev).items():
+            if m.get("id") and m["id"] not in cache:
+                cache[m["id"]] = [m.get("score", 7), "marco", m.get("theme", next(iter(topic.themes)))]
+    todo = [c for c in cands if c["id"] not in cache]
+    log(f"evolução: {len(cands)} candidatos, {len(todo)} novos para triagem")
+    new_verdicts = triage(llm, todo, topic, log) if todo else {}
+    verdicts = {**cache, **new_verdicts}
+    save_cache(topic, {**load_cache(topic), **verdicts})
+
+    # a work counts as "new" only if no earlier run ever judged it
+    picked = pick_milestones(cands, verdicts, eras, prev=prev if incremental else None,
+                             stable=stable_eras(eras, date.today().year), new_ids=set(new_verdicts))
+    info = {c["id"]: c for c in cands}
+    for i, m in prev_index(prev).items():
+        info.setdefault(i, m)
+    if not any(picked.values()):
+        raise RuntimeError("nenhum marco passou da triagem")
+    changes = diff(prev, picked, info)
+
+    prev_eras = {e["key"]: e for e in (prev or {}).get("eras", [])}
+    prev_why = {i: m.get("why", "") for i, m in prev_index(prev).items()}
+    added_ids = {i for ids in picked.values() for i in ids if i not in prev_why}
+    unchanged = {k for k, ids in picked.items()
+                 if incremental and k in prev_eras and ids == [mid(m) for m in prev_eras[k]["milestones"]]
+                 and k in stable_eras(eras, date.today().year)}
+
+    idx, payload_eras = {}, []
+    for e in eras:
+        k = e["key"]
+        if not picked[k] or k in unchanged:
+            continue
+        marcos = []
+        for wid in picked[k]:
+            i = len(idx)
+            idx[i] = wid
+            c = info[wid]
+            b = _brief(i, c, 700)
+            b["tema"] = verdicts.get(wid, [0, "", c.get("theme")])[2]
+            if incremental and wid in prev_why and prev_why[wid]:
+                b.pop("abstract", None)
+                b["why_anterior"] = prev_why[wid]
+            elif incremental:
+                b["novo"] = True
+            marcos.append(b)
+        era_payload = {"key": k, "label": e["label"], "marcos": marcos}
+        if incremental and k in prev_eras:
+            era_payload["titulo_anterior"] = prev_eras[k].get("title", "")
+            era_payload["resumo_anterior"] = prev_eras[k].get("summary", "")
+        payload_eras.append(era_payload)
+
+    payload = {"eras": payload_eras, "destaques_recentes": recent_highlights(topic)}
+    if prev:
+        payload["mudancas"] = {"entraram": changes["added"], "sairam": changes["removed"]}
+    if incremental:
+        payload["versao_anterior"] = {"overview": prev.get("overview", ""), "now": prev.get("now", {}),
+                                      "threads": prev.get("threads", [])}
+    res = llm.json(write_rules(topic, eras, incremental), json.dumps(payload, ensure_ascii=False),
                    max_tokens=14000, temperature=0.4)
 
     written = {e.get("key"): e for e in res.get("eras", []) if isinstance(e, dict)}
     out_eras = []
     for e in eras:
-        ids = picked[e["key"]]
-        if not ids:
+        k = e["key"]
+        if not picked[k]:
             continue
-        w = written.get(e["key"], {})
+        if k in unchanged:
+            out_eras.append(dict(prev_eras[k], milestones=[dict(m, new=False) for m in prev_eras[k]["milestones"]]))
+            continue
+        w = written.get(k, {})
         why = {}
         for m in w.get("milestones", []):
             try:
-                why[int(m["i"])] = (m.get("why") or "").strip()
+                why[idx[int(m["i"])]] = (m.get("why") or "").strip()
             except (KeyError, TypeError, ValueError):
                 continue
-        order = [i for i in why if i in ids] + [i for i in ids if i not in why]
+        ms = []
+        for wid in picked[k]:
+            c = info[wid]
+            keep = incremental and prev_why.get(wid)
+            ms.append({
+                "id": c.get("id") or wid, "title": c["title"], "year": c["year"], "venue": c["venue"],
+                "authors": [a for a in c["authors"] if a], "cited_by": c["cited_by"], "net": c.get("net", 0),
+                "url": c["url"], "theme": verdicts.get(wid, [0, "", c.get("theme")])[2],
+                "score": verdicts.get(wid, [c.get("score", 0)])[0],
+                "why": prev_why[wid] if keep else why.get(wid, ""),
+                "new": bool(prev) and wid in added_ids,
+            })
+        old = prev_eras.get(k, {})
         out_eras.append({
-            "key": e["key"], "label": e["label"],
-            "title": (w.get("title") or e["label"]).strip(),
-            "summary": (w.get("summary") or "").strip(),
-            "milestones": [{
-                "title": cands[i]["title"], "year": cands[i]["year"], "venue": cands[i]["venue"],
-                "authors": [a for a in cands[i]["authors"] if a], "cited_by": cands[i]["cited_by"],
-                "net": cands[i]["net"], "url": cands[i]["url"], "theme": scores[i][2],
-                "score": scores[i][0], "why": why.get(i, ""),
-            } for i in order],
+            "key": k, "label": e["label"],
+            "title": (w.get("title") or old.get("title") or e["label"]).strip(),
+            "summary": (w.get("summary") or old.get("summary") or "").strip(),
+            "milestones": ms,
         })
 
     now = res.get("now") or {}
@@ -279,14 +418,17 @@ def evolve(topic, llm, log=lambda m: print(m, file=sys.stderr)):
         "generated": date.today().isoformat(),
         "month": date.today().strftime("%Y-%m"),
         "model": llm.used_model,
-        "stats": {"network": len(nodes), "candidates": len(cands), "triaged": len(scores),
-                  "milestones": n_picked, "openalex_calls": fetch.calls,
+        "mode": mode,
+        "changes": {"since": prev["month"], **changes, "note": (res.get("changes_note") or "").strip()} if prev else None,
+        "stats": {"network": len(nodes), "candidates": len(cands), "triaged": len(new_verdicts),
+                  "milestones": sum(len(v) for v in picked.values()), "openalex_calls": fetch.calls,
                   "openalex_cost": round(fetch.cost, 4), "tokens": llm.usage},
-        "overview": (res.get("overview") or "").strip(),
+        "overview": (res.get("overview") or (prev or {}).get("overview") or "").strip(),
         "eras": out_eras,
         "now": {"summary": (now.get("summary") or "").strip(),
                 "open_questions": [q for q in now.get("open_questions", []) if isinstance(q, str)]},
-        "threads": [{"theme": t["theme"], "line": (t.get("line") or "").strip()} for t in threads],
+        "threads": [{"theme": t["theme"], "line": (t.get("line") or "").strip()} for t in threads]
+                   or (prev or {}).get("threads", []),
     }
 
 
@@ -301,11 +443,18 @@ def evolution_markdown(ev, topic):
              f"{ev['stats']['network']} obras · modelo {ev.get('model', '?')}</sub>", ""]
     if ev.get("overview"):
         lines += [ev["overview"], ""]
+    ch = ev.get("changes")
+    if ch and (ch.get("added") or ch.get("removed") or ch.get("note")):
+        lines += [f"## O que mudou desde {ch['since']}", ""]
+        if ch.get("note"):
+            lines += [ch["note"], ""]
+        lines += [f"- ➕ {m['title']} ({m['year']})" for m in ch.get("added", [])]
+        lines += [f"- ➖ {m['title']} ({m['year']})" for m in ch.get("removed", [])] + [""]
     for e in ev["eras"]:
         lines += [f"## {e['label']} · {e['title']}", "", e["summary"], ""]
         for m in e["milestones"]:
             au = ", ".join(m["authors"][:3]) + (" et al." if len(m["authors"]) > 3 else "")
-            lines.append(f"- **[{m['title']}]({m['url']})** ({m['year']}) — {au} · {m['venue'] or 's/ venue'} · cit:{m['cited_by']}")
+            lines.append(f"- {'🆕 ' if m.get('new') else ''}**[{m['title']}]({m['url']})** ({m['year']}) — {au} · {m['venue'] or 's/ venue'} · cit:{m['cited_by']}")
             if m.get("why"):
                 lines.append(f"  - {m['why']}")
         lines.append("")

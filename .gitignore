@@ -5,3 +5,4 @@ __pycache__/
 .env
 .DS_Store
 topics/*/.draft.json
+node_modules/
