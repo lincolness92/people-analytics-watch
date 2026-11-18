@@ -28,6 +28,37 @@ governo, instituições, países). Ideias: comparar Brasil × mundo nos números
 - **Risco de crédito**: incluir IFRS 9 / perda esperada (IASB), Basileia (BCBS) e Bacen (Resolução
   CMN 4.966). `python -m pawatch new-topic "risco de crédito" --slug risco-credito`.
 
+## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
+
+**Situação**: a chave grátis do OpenAlex dá US$ 1/dia, e o uso normal cabe nela: digest ≈ US$ 0,02 por tema/dia;
+Evolução ≈ US$ 0,05 e retrospectiva ≈ US$ 0,06 por tema e ano, uma vez por mês. O saldo pré-pago (US$ 10 em
+17/11) só foi preciso porque o dia teve muitas execuções de teste. O OpenAlex usa a cota grátis do dia antes do
+saldo pago.
+
+**Alternativas gratuitas testadas**:
+- **Semantic Scholar (api.semanticscholar.org)**: a melhor substituta para *busca*. A `paper/search/bulk` aceita
+  busca booleana (`"a" | "b"`, `+`, aspas) com filtro de ano e devolve o total (serve para o volume por subtema).
+  Na amostra (fraude em cartões, 2026): 88% com resumo e 73% com link de PDF aberto. Tem citações, referências e
+  IDs de autor, o que basta para a Evolução. Sem chave, o limite é compartilhado e dá 429 já na 2ª chamada;
+  precisa da chave grátis (1 req/s), pedida em semanticscholar.org/product/api. Fraco em afiliações (país e tipo
+  de instituição), então o bloco "quem publica" da retrospectiva perderia qualidade.
+- **Crossref (api.crossref.org)**: grátis e sem chave. A busca é por relevância, sem booleano: "credit card
+  fraud detection" trouxe 19 mil resultados em 7 semanas, então é ruim para descobrir papers. É ótima para
+  "o que saiu de novo nos journals da watchlist" (filtro por ISSN e data). Na amostra: 54% com resumo, 38% com
+  afiliação, 44% com referências abertas.
+- **arXiv**: grátis e já usado. Só cobre preprints (CS, econ, q-fin); não cobre journals de gestão e finanças
+  nem working papers de SSRN e NBER.
+- **Complementos grátis**: RSS de working papers do NBER; Unpaywall (link legal de PDF aberto por DOI);
+  snapshot completo do OpenAlex no S3 (grátis, centenas de GB), útil para análises pesadas pontuais.
+
+**Plano sugerido, se quiser zerar o custo**:
+1. Registrar o gasto diário do OpenAlex (o cabeçalho `x-ratelimit-remaining-usd` já vem em toda resposta) e
+   avisar quando um dia passar da cota grátis.
+2. Quando a cota grátis do dia acabar, cair para o Semantic Scholar nas buscas e na Evolução, em vez de usar
+   o saldo pago. Crossref fica para os journals da watchlist.
+3. Manter o OpenAlex só onde ele é insubstituível: afiliações (setor e país) na retrospectiva anual e
+   validação de pesquisadores no `new-topic`.
+
 ## Pendências de configuração
 - ✅ Chave do OpenAlex ativa, com saldo pré-pago (US$ 10 em 17/11).
 - ✅ Cloudflare Pages no ar, protegido por senha única (`SITE_PASSWORD`).
