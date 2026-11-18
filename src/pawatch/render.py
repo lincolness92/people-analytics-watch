@@ -5,7 +5,7 @@ import json
 import shutil
 from datetime import date
 
-from . import DIST, ROOT, WEB
+from . import DATA, DIST, ROOT, WEB
 from .annual import annual_markdown, latest_by_year
 from .library import load as load_library
 from .searchindex import build_index
@@ -141,6 +141,10 @@ def build_site(topics):
         (DIST / t.slug / "search.json").write_text(json.dumps(build_index(site, lib), ensure_ascii=False, separators=(",", ":")),
                                                    encoding="utf-8")
     shutil.copy(WEB / "style.css", DIST / "style.css")
+    # shared full-text store (one file per paper, whatever the number of topics) + repository catalogue
+    papers = DATA / "papers"
+    if papers.exists():
+        shutil.copytree(papers, DIST / "papers")
     # topic list for the external interfaces (REST v1, MCP, A2A agent card)
     (DIST / "topics.json").write_text(json.dumps([{"slug": t.slug, "name": t.name, "description": t.meta.get("description", "")}
                                                   for t in topics], ensure_ascii=False), encoding="utf-8")

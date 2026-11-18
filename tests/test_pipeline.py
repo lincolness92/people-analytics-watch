@@ -436,6 +436,75 @@ class ApiTokenTests(unittest.TestCase):
         self.assertEqual(js.stdout.strip(), py, js.stderr[-500:])
 
 
+def _tiny_pdf():
+    """A real PDF: Flate content stream, a Type0 font with a ToUnicode CMap (2-byte codes, accents), TJ kerning,
+    a second WinAnsi font with a TeX ligature code, and Td line breaks."""
+    import zlib
+    cmap = (b"/CIDInit /ProcSet findresource begin 12 dict begin begincmap 1 begincodespacerange <0000> <FFFF> "
+            b"endcodespacerange 3 beginbfchar <0001> <0044> <0002> <00E9> <0003> <0074> endbfchar "
+            b"1 beginbfrange <0010> <0012> <0061> endbfrange endcmap end end")
+    content = (b"BT /F1 12 Tf 72 700 Td <000100020003> Tj 0 -14 Td [<0010> -300 <00110012>] TJ "
+               b"/F2 12 Tf 0 -14 Td (\\escaped \(ok\) \014nal) Tj ET")
+    objs = [
+        b"<< /Type /Catalog /Pages 2 0 R >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        b"<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 5 0 R /F2 7 0 R >> >> /Contents 4 0 R >>",
+        b"<< /Filter /FlateDecode /Length %d >>\nstream\n" % len(zlib.compress(content)) + zlib.compress(content) + b"\nendstream",
+        b"<< /Type /Font /Subtype /Type0 /BaseFont /X /Encoding /Identity-H /ToUnicode 6 0 R >>",
+        b"<< /Length %d >>\nstream\n" % len(cmap) + cmap + b"\nendstream",
+        b"<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>",
+    ]
+    out = b"%PDF-1.4\n" + b"".join(b"%d 0 obj\n" % (i + 1) + o + b"\nendobj\n" for i, o in enumerate(objs))
+    return out + b"trailer << /Root 1 0 R >>\n%%EOF"
+
+
+class FulltextTests(unittest.TestCase):
+    def test_pdf_extractor(self):
+        from pawatch.pdftext import extract
+        text = extract(_tiny_pdf())
+        # "\\e" is an unknown PDF escape: the backslash is dropped, as the spec says; 0x0C is the TeX "fi" ligature
+        self.assertEqual(text.split("\n"), ["Dét", "a bc", "escaped (ok) final"])
+        self.assertEqual(extract(b"not a pdf"), "")
+
+    def test_html_sections_and_links(self):
+        from pawatch.fulltext import html_text, sections_from_html
+        text, links = html_text("<html><nav>menu</nav><h2>1 Introduction</h2><p>We study <b>fraud</b>.</p>"
+                                "<script>x()</script><h2>2 Methods</h2><p>Code at <a href='https://github.com/a/b'>repo</a>.</p></html>")
+        self.assertEqual(sections_from_html(text), [("Introduction", "We study fraud."), ("Methods", "Code at repo.")])
+        self.assertEqual(links, ["https://github.com/a/b"])
+        math, _ = html_text('<p>Let <math alttext="d_{model}"><mi>d</mi></math> be the size.</p>')
+        self.assertEqual(math, "Let d_{model} be the size.")
+
+    def test_plain_sections_and_caps(self):
+        from pawatch.fulltext import MAX_SECTION, keep_sections, sections_from_plain
+        secs = sections_from_plain("Title\nAbstract\nWe find X.\n1. Introduction\nText.\n5 Conclusion\nDone.\nReferences\n[1] A.")
+        self.assertEqual([n for n, _ in secs], ["Início", "Abstract", "Introduction", "Conclusion", "References"])
+        kept = keep_sections([("Introduction", "x" * (MAX_SECTION + 500)), ("References", "y" * 500)])
+        self.assertEqual([s["name"] for s in kept], ["Introduction (1/2)", "Introduction (2/2)"])
+
+    def test_repo_links(self):
+        from pawatch.fulltext import find_repos, normalize_repo
+        self.assertEqual(normalize_repo("https://github.com/Owner/Repo.git/tree/main/src."), "https://github.com/owner/repo")
+        self.assertEqual(normalize_repo("github.com/features/actions"), None)
+        self.assertEqual(normalize_repo("https://huggingface.co/datasets/org/data/blob/x"), "https://huggingface.co/datasets/org/data")
+        self.assertEqual(normalize_repo("https://zenodo.org/records/123456"), "https://zenodo.org/records/123456")
+        text = ("Our code is available at https://github.com/lab/fraud-\ngnn. We compare with "
+                "the baseline of Smith (see github.com/other/baseline).")
+        found = {u: own for u, own, _ in find_repos(text, ["https://gitlab.com/x/y", "https://example.com",
+                                                            "https://github.com/arxiv/html_feedback/issues"])}
+        self.assertEqual(found, {"https://github.com/lab/fraud-gnn": True, "https://github.com/other/baseline": False,
+                                 "https://gitlab.com/x/y": False})
+
+    def test_paper_key(self):
+        from pawatch.fulltext import paper_key, safe_name
+        w = {"id": "https://openalex.org/W9", "doi": "https://doi.org/10.1/ABC",
+             "locations": [{"landing_page_url": "https://arxiv.org/abs/2303.17564v2"}]}
+        self.assertEqual(paper_key(w), "arxiv:2303.17564")
+        self.assertEqual(paper_key({"id": "https://openalex.org/W9", "doi": "https://doi.org/10.1/ABC", "locations": []}), "doi:10.1/abc")
+        self.assertEqual(paper_key({"id": "https://openalex.org/W9", "doi": None}), "oa:W9")
+        self.assertEqual(safe_name("doi:10.1/abc(x)"), "doi_10.1_abc_x_")
+
+
 class ServerJsTests(unittest.TestCase):
     def test_node_suite(self):
         """The serving core (server/) and /api/ask adapter are JS; run their node:test suite when node exists."""

@@ -1,7 +1,7 @@
 // Tool catalog over the query core: one definition per capability (name, description, JSON Schema of the
 // input, handler). The REST v1 and MCP adapters expose exactly this list, so they cannot drift apart.
 
-import { DEFAULT_K, getAnnual, getDigest, getEvolution, getPaper, search, TOPIC_RE } from "./archive.js";
+import { DEFAULT_K, getAnnual, getDigest, getEvolution, getPaper, loadFulltext, loadRepos, paperKey, rank, rankChunks, search, TOPIC_RE } from "./archive.js";
 import { ask } from "./agent.js";
 
 const topicArg = { type: "string", description: "Slug do tema (ver list_topics), ex.: fraude-bancaria", pattern: TOPIC_RE.source };
@@ -71,6 +71,51 @@ export const TOOLS = [
     run: async (a, ctx) => getPaper(await ctx.archive(a.topic), a.url),
   },
   {
+    name: "read_paper",
+    description: "Texto completo (cópia aberta e legal) de um paper do acervo: marcos da Evolução e destaques das retrospectivas. " +
+      "Aceita URL, DOI ou id do arXiv. Com `query`, devolve só os trechos mais relevantes; com `section`, só aquela seção; " +
+      "sem nenhum, as seções até `max_chars`. Inclui os repositórios de código citados no paper.",
+    inputSchema: { type: "object", required: ["paper"], additionalProperties: false,
+      properties: { paper: { type: "string", description: "URL, DOI (10.x/...) ou arXiv (2303.17564)" },
+        query: { type: "string" }, section: { type: "string" }, max_chars: { type: "integer", minimum: 1000, maximum: 60000, default: 12000 } } },
+    run: async (a, ctx) => {
+      const papers = await ctx.papers();
+      const key = paperKey(papers, a.paper);
+      if (!key) throw new ToolError("paper fora do acervo de texto completo (só marcos e destaques); use get_paper/search_archive", 404);
+      const e = papers.index[key];
+      const base = { key, title: e.title, year: e.year, topics: e.topics, roles: e.roles, repos: e.repos || [] };
+      const doc = await loadFulltext(papers, key);
+      if (!doc) return { ...base, has_text: false, reason: e.reason || "sem cópia aberta" };
+      const meta = { ...base, has_text: true, source: doc.source, sections: doc.sections.map((s) => s.name), repo_details: doc.repos };
+      if (a.query) return { ...meta, excerpts: rankChunks(doc, [a.query], 8).map(({ section, text }) => ({ section, text })) };
+      const max = Math.min(60000, a.max_chars || 12000);
+      const secs = a.section ? doc.sections.filter((s) => s.name.toLowerCase().startsWith(a.section.toLowerCase())) : doc.sections;
+      let left = max;
+      const text = [];
+      for (const s of secs) { if (left <= 0) break; text.push({ name: s.name, text: s.text.slice(0, left) }); left -= s.text.length; }
+      return { ...meta, text, truncated: left < 0 };
+    },
+  },
+  {
+    name: "list_repos",
+    description: "Repositórios de código e dados citados pelos papers do acervo (GitHub, GitLab, Hugging Face, Zenodo...), com " +
+      "estrelas, linguagem, último push, se é o código do próprio paper e um trecho do README. Filtre por tema e/ou termos. " +
+      "Para ver a implementação, clone a URL (`clone`).",
+    inputSchema: { type: "object", additionalProperties: false,
+      properties: { topic: topicArg, query: { type: "string" }, own_only: { type: "boolean", default: false },
+        k: { type: "integer", minimum: 1, maximum: 100, default: 30 } } },
+    run: async (a, ctx) => {
+      const papers = await ctx.papers();
+      const repos = Object.values(await loadRepos(papers))
+        .filter((r) => (!a.topic || (r.topics || []).includes(a.topic)) && (!a.own_only || r.own));
+      const titled = repos.map((r) => ({ ...r, paper_titles: (r.papers || []).map((k) => papers.index[k]?.title).filter(Boolean) }));
+      const pick = a.query
+        ? rank(titled.map((r) => ({ ...r, text: [r.url, r.description, r.language, (r.readme || "").slice(0, 2000), ...r.paper_titles].join(" ") })), [a.query], a.k || 30)
+        : titled.sort((x, y) => (y.own - x.own) || ((y.stars || 0) - (x.stars || 0)));
+      return pick.slice(0, a.k || 30).map(({ text, readme, ...r }) => ({ ...r, readme_excerpt: (readme || "").slice(0, 800) }));
+    },
+  },
+  {
     name: "ask_archive",
     description: "Pergunta em linguagem natural respondida pelo agente do arquivo, usando só as fontes do tema e citando-as como [n]. " +
       `Usa um LLM (20–40 s); limite de ${ASK_DAILY_LIMIT} por cliente por dia.`,
@@ -79,7 +124,7 @@ export const TOOLS = [
     run: async (a, ctx) => {
       const over = await ctx.quota("ask", ASK_DAILY_LIMIT);
       if (over) throw new ToolError(over, 429);
-      return ask({ archive: await ctx.archive(a.topic), question: a.question.slice(0, 600), llm: ctx.llm() });
+      return ask({ archive: await ctx.archive(a.topic), question: a.question.slice(0, 600), llm: ctx.llm(), papers: await ctx.papers() });
     },
   },
 ];

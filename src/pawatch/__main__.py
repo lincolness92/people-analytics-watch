@@ -169,6 +169,11 @@ def cmd_evolve(args):
             if year < this_year and (topic.data / "annual" / f"{year}.json").exists() and not args.full:
                 continue
             ok = run_annual(topic, year) and ok
+        try:  # new milestones/highlights get their open full text and repositories catalogued
+            from .fulltext import run as fetch_fulltext
+            fetch_fulltext([topic], log=lambda m, s=topic.slug: log(f"[{s}] {m}"))
+        except Exception as e:
+            log(f"[{topic.slug}] texto completo falhou: {e!r}")
     log(f"render: {render_all()}")
     return 0 if ok else 1
 
@@ -213,6 +218,13 @@ def cmd_api_token(args):
     return 0
 
 
+def cmd_fulltext(args):
+    from .fulltext import run
+    r = run(pick(args.topic), log=log, refresh=args.refresh, limit=args.limit)
+    log(f"render: {render_all()}")
+    return 0 if r else 1
+
+
 def cmd_feedback(_args):
     from .feedback import run
     return run(log=log)
@@ -253,6 +265,11 @@ def main():
     an.add_argument("--topic", help="slug do tema (padrão: todos)")
     an.add_argument("--year", nargs="*", help="anos, ex.: 2025 2026")
     an.set_defaults(fn=cmd_annual)
+    ft = sub.add_parser("fulltext", help="baixa o texto aberto dos marcos e destaques e cataloga os repositórios")
+    ft.add_argument("--topic", help="slug do tema (padrão: todos)")
+    ft.add_argument("--refresh", action="store_true", help="tenta de novo os que já foram verificados")
+    ft.add_argument("--limit", type=int, help="no máximo N downloads nesta execução")
+    ft.set_defaults(fn=cmd_fulltext)
     tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
     tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
     tk.set_defaults(fn=cmd_api_token)

@@ -1,0 +1,61 @@
+{
+"key": "arxiv:2403.15281",
+"title": "Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation",
+"year": 2025,
+"doi": "https://doi.org/10.1093/pnasnexus/pgaf089",
+"source": {
+"kind": "html",
+"url": "https://arxiv.org/abs/2403.15281",
+"license": null
+},
+"fetched": "2026-11-18",
+"sections": [
+{
+"name": "Início",
+"text": "[2403.15281] Measuring Gender and Racial Biases in Large Language Models\n\nSkip to main content\n\nPress Enter to search · Advanced search"
+},
+{
+"name": "Title:Measuring Gender and Racial Biases in Large Language Models",
+"text": "Authors:Jiafu An, Difang Huang, Chen Lin, Mingzhu Tai\nView a PDF of the paper titled Measuring Gender and Racial Biases in Large Language Models, by Jiafu An and 2 other authors\nView PDF\n\nAbstract:In traditional decision making processes, social biases of human decision makers can lead to unequal economic outcomes for underrepresented social groups, such as women, racial or ethnic minorities. Recently, the increasing popularity of Large language model based artificial intelligence suggests a potential transition from human to AI based decision making. How would this impact the distributional outcomes across social groups? Here we investigate the gender and racial biases of OpenAIs GPT, a widely used LLM, in a high stakes decision making setting, specifically assessing entry level job candidates from diverse social groups. Instructing GPT to score approximately 361000 resumes with randomized social identities, we find that the LLM awards higher assessment scores for female candidates with similar work experience, education, and skills, while lower scores for black male candidates with comparable qualifications. These biases may result in a 1 or 2 percentage point difference in hiring probabilities for otherwise similar candidates at a certain threshold and are consistent across various job positions and subsamples. Meanwhile, we also find stronger pro female and weaker anti black male patterns in democratic states. Our results demonstrate that this LLM based AI system has the potential to mitigate the gender bias, but it may not necessarily cure the racial bias. Further research is needed to comprehend the root causes of these outcomes and develop strategies to minimize the remaining biases in AI systems. As AI based decision making tools are increasingly employed across diverse domains, our findings underscore the necessity of understanding and addressing the potential unequal outcomes to ensure equitable outcomes across social groups."
+},
+{
+"name": "Submission history",
+"text": "From: Jiafu An [view email]\n[v1]\nFri, 22 Mar 2024 15:23:19 UTC (538 KB)\n\nFull-text links:"
+},
+{
+"name": "Access Paper:",
+"text": "View a PDF of the paper titled Measuring Gender and Racial Biases in Large Language Models, by Jiafu An and 2 other authors\nView PDF\n\nview license"
+},
+{
+"name": "Current browse context:",
+"text": "econ.GN\n\n< prev\n\n  |  \nnext >\n\nnew\n|\nrecent\n| 2024-03\n\nChange to browse by:\n\necon\n\nq-fin\n\nq-fin.EC"
+},
+{
+"name": "Bibliographic and Citation Tools",
+"text": "Bibliographic Explorer Toggle\n\nBibliographic Explorer (What is the Explorer?)\n\nConnected Papers Toggle\n\nConnected Papers (What is Connected Papers?)\n\nLitmaps Toggle\n\nLitmaps (What is Litmaps?)\n\nscite.ai Toggle\n\nscite Smart Citations (What are Smart Citations?)\n\nCode, Data, Media"
+},
+{
+"name": "Code, Data and Media Associated with this Article",
+"text": "alphaXiv Toggle\n\nalphaXiv (What is alphaXiv?)\n\nLinks to Code Toggle\n\nCatalyzeX Code Finder for Papers (What is CatalyzeX?)\n\nDagsHub Toggle\n\nDagsHub (What is DagsHub?)\n\nGotitPub Toggle\n\nGotit.pub (What is GotitPub?)\n\nHuggingface Toggle\n\nHugging Face (What is Huggingface?)\n\nScienceCast Toggle\n\nScienceCast (What is ScienceCast?)\n\nDemos"
+},
+{
+"name": "Demos",
+"text": "Replicate Toggle\n\nReplicate (What is Replicate?)\n\nSpaces Toggle\n\nHugging Face Spaces (What is Spaces?)\n\nSpaces Toggle\n\nTXYZ.AI (What is TXYZ.AI?)\n\nRelated Papers"
+},
+{
+"name": "Recommenders and Search Tools",
+"text": "Link to Influence Flower\n\nInfluence Flower (What are Influence Flowers?)\n\nCore recommender toggle\n\nCORE Recommender (What is CORE?)\n\nAuthor\n\nVenue\n\nInstitution\n\nTopic\n\nAbout arXivLabs"
+},
+{
+"name": "arXivLabs: experimental projects with community collaborators",
+"text": "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs.\n\nWhich authors of this paper are endorsers? |\nDisable MathJax (What is MathJax?)"
+}
+],
+"repos": [
+{
+"url": "https://huggingface.co/docs/hub",
+"own": false,
+"context": "link no HTML do paper"
+}
+]
+}

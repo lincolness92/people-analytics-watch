@@ -137,6 +137,61 @@ export function rank(docs, terms, k = DEFAULT_K) {
   return scored.filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k).map((x) => x.d);
 }
 
+// ---------- full text of papers (shared store dist/papers/, built by src/pawatch/fulltext.py) ----------
+
+/** Shared paper index {key: {title, urls, topics, has_text, file, sections, repos, ...}} plus url → key aliases. */
+export async function loadPapers(fetchAsset) {
+  const opt = async (p) => { try { const r = await fetchAsset(p); return r.ok ? await r.json() : null; } catch { return null; } };
+  const index = (await opt("/papers/index.json")) || {};
+  const byUrl = new Map();
+  for (const [key, e] of Object.entries(index)) {
+    for (const u of e.urls || []) byUrl.set(normUrl(u), key);
+    byUrl.set(key, key);
+  }
+  return { index, byUrl, fetchAsset, cache: new Map(), repos: null, opt };
+}
+
+const normUrl = (u) => String(u || "").trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, "doi:").replace(/\/+$/, "");
+
+/** Key of a paper from a URL, DOI ("10.x/..." or "doi:..."), arXiv id ("arxiv:..." or "2303.17564") or exact key. */
+export function paperKey(papers, ref) {
+  if (!ref) return null;
+  const r = String(ref).trim();
+  const tries = [r, normUrl(r), `doi:${r.toLowerCase()}`, `arxiv:${r.replace(/^arxiv:/i, "").replace(/v\d+$/, "")}`,
+    normUrl(`https://doi.org/${r}`)];
+  for (const t of tries) if (papers.byUrl.has(t)) return papers.byUrl.get(t);
+  return null;
+}
+
+/** Stored full text of a paper ({key, title, source, sections:[{name,text}], repos}) or null. */
+export async function loadFulltext(papers, key) {
+  const e = papers.index[key];
+  if (!e?.has_text || !e.file) return null;
+  if (!papers.cache.has(key)) papers.cache.set(key, papers.opt(`/papers/${e.file}`));
+  return papers.cache.get(key);
+}
+
+/** Paragraph-sized chunks of a paper ranked by BM25 against the terms; best first. */
+export function rankChunks(paper, terms, k = 6, size = 900) {
+  const chunks = [];
+  for (const s of paper.sections || []) {
+    const paras = s.text.split(/\n\s*\n|\n(?=[A-Z])/);
+    let buf = "";
+    for (const p of paras) {
+      if ((buf + " " + p).length > size && buf) { chunks.push({ section: s.name, text: buf.trim() }); buf = ""; }
+      buf += " " + p;
+      while (buf.length > size * 1.5) { chunks.push({ section: s.name, text: buf.slice(0, size).trim() }); buf = buf.slice(size); }
+    }
+    if (buf.trim()) chunks.push({ section: s.name, text: buf.trim() });
+  }
+  return rank(chunks.map((c) => ({ ...c, kind: "trecho" })), terms, k);
+}
+
+export async function loadRepos(papers) {
+  if (!papers.repos) papers.repos = (await papers.opt("/papers/repos.json")) || {};
+  return papers.repos;
+}
+
 // ---------- queries (the contract future adapters expose as tools/endpoints) ----------
 
 /** Topics published on the site: [{slug, name}]. Any topic's data.json lists them all. */

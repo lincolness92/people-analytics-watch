@@ -41,6 +41,11 @@ Combinado em 18/11: núcleo de consulta único + adaptadores finos (ver README, 
 5. ✅ OAuth 2.1 no MCP (descoberta, registro dinâmico, PKCE, refresh), para conectores do Claude.ai.
 Próximos: streaming no A2A/ask; ferramentas que buscam fora do arquivo (OpenAlex/Semantic Scholar) quando ele não cobrir.
 
+## ✅ Texto completo e repositórios (18/11/2026)
+Marcos e destaques com texto aberto em `data/papers/` (sem duplicar entre temas), PDF lido sem dependências,
+repositórios catalogados; ferramentas `read_paper` e `list_repos`. Ideias: estender aos itens com nota ≥ 8 dos
+digests; ler também o código (árvore de arquivos e arquivos principais) no pipeline, para o agente do site.
+
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 
 **Situação**: a chave grátis do OpenAlex dá US$ 1/dia, e o uso normal cabe nela: digest ≈ US$ 0,02 por tema/dia;

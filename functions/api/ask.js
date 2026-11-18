@@ -3,7 +3,7 @@
 // limit, question logging in KV (prefix "ask:") and the JSON response the site expects.
 // Behind functions/_middleware.js (site password). Needs the Pages secret HF_TOKEN; optional PAW_MODEL.
 
-import { loadArchive, TOPIC_RE } from "../../server/archive.js";
+import { loadArchive, loadPapers, TOPIC_RE } from "../../server/archive.js";
 import { ask } from "../../server/agent.js";
 import { makeLLM } from "../../server/llm.js";
 
@@ -34,12 +34,13 @@ export async function onRequestPost({ request, env }) {
     await env.FEEDBACK.put(rlKey, String(used + 1), { expirationTtl: 60 * 60 * 36 });
   }
 
-  const archive = await loadArchive((p) => env.ASSETS.fetch(new URL(p, request.url)), topic);
+  const fetchAsset = (p) => env.ASSETS.fetch(new URL(p, request.url));
+  const archive = await loadArchive(fetchAsset, topic);
   if (!archive) return json({ ok: false, error: "tema não encontrado" }, 404);
 
   let result;
   try {
-    result = await ask({ archive, question, history, llm: makeLLM(env) });
+    result = await ask({ archive, question, history, llm: makeLLM(env), papers: await loadPapers(fetchAsset) });
   } catch (e) {
     return json({ ok: false, error: e.message }, 502);
   }

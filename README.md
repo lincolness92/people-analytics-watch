@@ -228,6 +228,30 @@ o atual), em `data/<tema>/annual/<ano>.json` e `digests/<tema>/anual-<ano>.md`:
 Roda sozinha todo mês junto com a Evolução (`evolve`): o ano corrente sempre, o anterior uma vez (ou de novo
 com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por tema e ano.
 
+## Texto completo dos papers e repositórios de código
+
+`python -m pawatch fulltext [--topic X] [--refresh] [--limit N]` (roda sozinho todo mês, junto com a Evolução):
+
+- **Quais papers**: todos os marcos da Evolução e os destaques das retrospectivas anuais, de todos os temas.
+  Cada paper é guardado **uma vez** em `data/papers/<chave>.json` (chave = arXiv ou DOI), e o
+  `data/papers/index.json` registra em que temas e papéis ele aparece — um paper de IA citado em dois temas não
+  é baixado duas vezes.
+- **De onde vem o texto**, na ordem: HTML do arXiv (arxiv.org/html, ar5iv) → XML do Europe PMC → PDFs abertos
+  listados pelo OpenAlex (repositórios primeiro) → página da editora. **Só cópias abertas e legais**; paper sem
+  cópia aberta fica só com o resumo (o índice diz o motivo). Sem dependências: o PDF é lido por
+  `src/pawatch/pdftext.py` (só `zlib` da biblioteca padrão: object streams, ToUnicode, ligaduras do TeX, TJ).
+- **O que fica guardado**: até 80 mil caracteres por paper, em seções (introdução, método, resultados,
+  conclusão...); referências e apêndices ficam de fora. O texto é para uso privado do agente (repositório
+  privado e site com senha), não para redistribuição.
+- **Repositórios**: links para GitHub, GitLab, Bitbucket, Hugging Face, Zenodo, OSF, Code Ocean, Figshare e Kaggle
+  encontrados no texto (e no Hugging Face papers, para arXiv), com a marca `own` quando a frase diz que é o
+  código do próprio paper. Ficam em `data/papers/repos.json` com estrelas, linguagem, último push, licença,
+  URL de clone e o começo do README (API do GitHub com `GITHUB_TOKEN`/`gh auth token`, se houver).
+- **Quem usa**: o agente da aba Pergunte junta trechos do texto completo dos papers mais relevantes às fontes
+  da resposta; no catálogo de ferramentas (REST/MCP/A2A) entram `read_paper` (texto, uma seção, ou os trechos
+  mais relevantes para uma pergunta) e `list_repos` (para um cliente com terminal, como o Claude Code, clonar e
+  ler a implementação; o agente do site, que roda no Cloudflare, lê o README já baixado).
+
 ## Ajustes comuns
 
 - **Ampliar ou estreitar o escopo**: edite `topics/<tema>/queries.json` (sintaxe booleana do OpenAlex).

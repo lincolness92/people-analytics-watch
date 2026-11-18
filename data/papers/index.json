@@ -1,0 +1,4594 @@
+{
+ "arxiv:1706.03762": {
+  "chars": 26986,
+  "checked": "2026-11-18",
+  "file": "arxiv_1706.03762.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/tensorflow/tensor2tensor"
+  ],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "Attention Is All You Need",
+   "Introduction",
+   "Background",
+   "Model Architecture",
+   "Encoder and Decoder Stacks",
+   "Attention",
+   "Scaled Dot-Product Attention",
+   "Multi-Head Attention",
+   "Applications of Attention in our Model",
+   "Position-wise Feed-Forward Networks",
+   "Embeddings and Softmax",
+   "Positional Encoding",
+   "Why Self-Attention",
+   "Training Data and Batching",
+   "Hardware and Schedule",
+   "Optimizer",
+   "Regularization",
+   "Machine Translation",
+   "Model Variations",
+   "English Constituency Parsing",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "Attention Is All You Need",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.1706.03762"
+  ],
+  "year": 2017
+ },
+ "arxiv:1709.08920": {
+  "chars": 39618,
+  "checked": "2026-11-18",
+  "file": "arxiv_1709.08920.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/datastax/spark-cassandra-connector",
+   "https://github.com/mapr-demos/frdo",
+   "https://github.com/vakshorton/creditcardtransactionmonitor",
+   "https://github.com/bhomass/marseille",
+   "https://github.com/azure/azure-content",
+   "https://github.com/hadooparchitecturebook/fraud-detection-tutorial",
+   "https://github.com/pranab/beymani",
+   "https://github.com/namebrandon/sparkov"
+  ],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "SCARFF: a Scalable Framework for Streaming Credit Card Fraud Detection with Spar",
+   "Introduction",
+   "Real-world Fraud Detection Systems",
+   "The Big Data ecosystem",
+   "Transactions Collection",
+   "Data Analysis",
+   "Data Storage",
+   "Online learning and streaming solutions",
+   "The machine learning engine",
+   "The streaming analytics engine",
+   "Data throughput",
+   "Data Preprocessing",
+   "Feature engineering",
+   "Online classification",
+   "Data storage",
+   "Pseudo-code",
+   "Experiments",
+   "Scalability",
+   "Impact of internal parametrization on computational performance",
+   "Classification Precision",
+   "Conclusions and future work"
+  ],
+  "source_kind": "html",
+  "title": "SCARFF : A scalable framework for streaming credit card fraud detection with spark",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.inffus.2017.09.005"
+  ],
+  "year": 2017
+ },
+ "arxiv:1901.08971": {
+  "chars": 35312,
+  "checked": "2026-11-18",
+  "file": "arxiv_1901.08971.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/ondyari/faceforensics",
+   "https://github.com/deepfakes/faceswap",
+   "https://github.com/marekkowalski/faceswap"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "FaceForensics++: Learning to Detect Manipulated Facial Images",
+   "Introduction",
+   "Related Work",
+   "Large-Scale Facial Forgery Database",
+   "Forgery Detection",
+   "Forgery Detection of Human Observers",
+   "Automatic Forgery Detection Methods",
+   "Detection based on Steganalysis Features:",
+   "Detection based on Learned Features:",
+   "Benchmark",
+   "Discussion & Conclusion",
+   "D.1 Manipulation Methods",
+   "D.2 Classification Methods"
+  ],
+  "source_kind": "html",
+  "title": "FaceForensics++: Learning to Detect Manipulated Facial Images",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/iccv.2019.00009"
+  ],
+  "year": 2019
+ },
+ "arxiv:1905.12593": {
+  "chars": 64755,
+  "checked": "2026-11-18",
+  "file": "arxiv_1905.12593.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/gsuareztangil/automatic-romancescam-digger"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Automatically Dismantling Online Dating FraudThanks: A shorter version of this p",
+   "Introduction",
+   "Characterizing Dating Profiles",
+   "Data",
+   "Profile Demographics",
+   "Age, Gender, Ethnicity and Marital Status",
+   "Occupation",
+   "Location",
+   "Image Recognition",
+   "Profile Descriptions",
+   "Classifying False Profiles",
+   "Feature Engineering",
+   "Prediction Models",
+   "Demographics Classifier",
+   "Images Classifier",
+   "Descriptions Classifier",
+   "Ensemble Classifier",
+   "Single Classifier",
+   "Evaluation",
+   "Methodology",
+   "Classification Results",
+   "Summary",
+   "Feature Analysis",
+   "True Positives",
+   "True Negatives",
+   "False Positives",
+   "False Negatives",
+   "Discussion",
+   "Context-based Performance Maximization",
+   "Comparison with Moderator Justifications",
+   "Evasion",
+   "Comparison of Dating Site Elements",
+   "Limitations & Deployment Considerations",
+   "Related Work",
+   "Conclusions",
+   "Availability"
+  ],
+  "source_kind": "html",
+  "title": "Automatically Dismantling Online Dating Fraud",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tifs.2019.2930479"
+  ],
+  "year": 2019
+ },
+ "arxiv:2002.12307": {
+  "chars": 39648,
+  "checked": "2026-11-18",
+  "file": "arxiv_2002.12307.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Heterogeneous Graph Neural Networks",
+   "Introduction",
+   "Preliminaries",
+   "Graph Neural Networks",
+   "Node Embedding",
+   "The Proposed Approaches",
+   "Data Analysis",
+   "A Motivation: Subgraph Components",
+   "Heterogeneous Graph Construction",
+   "Models",
+   "Attention Mechanism",
+   "Experiments",
+   "Datasets",
+   "Experimental Settings",
+   "Basic Measures",
+   "Precision-Recall Curves",
+   "Model Complexity",
+   "Attention Coefficients",
+   "Online Results",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/3269206.3272010"
+  ],
+  "year": 2018
+ },
+ "arxiv:2003.01171": {
+  "chars": 40969,
+  "checked": "2026-11-18",
+  "file": "arxiv_2003.01171.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "A Semi-supervised Graph Attentive Network for Financial Fraud Detection",
+   "Introduction",
+   "II-A Financial Fraud Detection",
+   "II-B Learning over graphs",
+   "III-A Problem Definition and Notations",
+   "III-B1 Overall Architecture",
+   "III-B2 Node-level Attention",
+   "III-B3 View-level Attention",
+   "III-B4 Loss function and Optimization",
+   "III-B5 Analysis of the Proposed Model",
+   "Experiment",
+   "IV-A Dataset",
+   "IV-B Baseline Methods",
+   "IV-C Implementation Details",
+   "IV-D1 User Default Prediction",
+   "IV-D2 User Attribute Prediction",
+   "IV-D3 The effect of different views",
+   "IV-E Interpretable Results",
+   "IV-F Parameter Sensitivity",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/icdm.2019.00070"
+  ],
+  "year": 2019
+ },
+ "arxiv:2005.02488": {
+  "chars": 42557,
+  "checked": "2026-11-18",
+  "file": "arxiv_2005.02488.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/sebastiaanhoppner/costsensitivelearning"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Instance-Dependent Cost-Sensitive Learning",
+   "Introduction",
+   "Instance-dependent cost-sensitive framework for transfer fraud detection",
+   "Making optimal cost-based decisions",
+   "Cost of a fraud detection model",
+   "Cost-sensitive logistic regression and gradient tree boosting",
+   "Logistic regression",
+   "Gradient boosted decision trees",
+   "The cslogit and csboost algorithms",
+   "User interface of cslogit",
+   "User interface of csboost",
+   "Experiments",
+   "Data sets",
+   "Experimental design",
+   "Results",
+   "Conclusions and future research"
+  ],
+  "source_kind": "html",
+  "title": "Instance-dependent cost-sensitive learning for detecting transfer fraud",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.ejor.2021.05.028"
+  ],
+  "year": 2021
+ },
+ "arxiv:2005.14165": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2005.14165.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/openai/gpt-3",
+   "https://github.com/mcdm/commitmentbank"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Language Models are Few-Shot Learners",
+   "Introduction",
+   "Approach",
+   "Model and Architectures",
+   "Training Dataset",
+   "Training Process",
+   "Evaluation",
+   "Results",
+   "Language Modeling, Cloze, and Completion Tasks",
+   "Language Modeling",
+   "LAMBADA",
+   "HellaSwag",
+   "StoryCloze",
+   "Closed Book Question Answering",
+   "Translation",
+   "Winograd-Style Tasks",
+   "Common Sense Reasoning",
+   "Reading Comprehension",
+   "SuperGLUE",
+   "NLI",
+   "Synthetic and Qualitative Tasks",
+   "Arithmetic",
+   "Word Scrambling and Manipulation Tasks",
+   "SAT Analogies",
+   "News Article Generation",
+   "Learning and Using Novel Words",
+   "Correcting English Grammar",
+   "Measuring and Preventing Memorization Of Benchmarks",
+   "Limitations"
+  ],
+  "source_kind": "html",
+  "title": "Language Models are Few-Shot Learners",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2005.14165"
+  ],
+  "year": 2020
+ },
+ "arxiv:2008.08692": {
+  "chars": 45768,
+  "checked": "2026-11-18",
+  "file": "arxiv_2008.08692.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/safe-graph/dgfraud",
+   "https://github.com/yingtongdou/care-gnn"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudst",
+   "Introduction",
+   "Problem Definition",
+   "Model Overview",
+   "Label-aware Similarity Measure",
+   "Similarity-aware Neighbor Selector",
+   "Top-p Sampling",
+   "Finding the Optimal Thresholds with RL",
+   "Relation-aware Neighbor Aggregator",
+   "Proposed CARE-GNN",
+   "Experiments",
+   "Dataset.",
+   "Graph Construction",
+   "Baselines.",
+   "Experimental Setting",
+   "Implementation",
+   "Evaluation Metric",
+   "Camouflage Evidence",
+   "Overall Evaluation",
+   "RL Process Analysis",
+   "Hyper-parameter Sensitivity",
+   "Discussion",
+   "Related Work",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/3340531.3411903"
+  ],
+  "year": 2020
+ },
+ "arxiv:2201.11903": {
+  "chars": 58779,
+  "checked": "2026-11-18",
+  "file": "arxiv_2201.11903.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/chaochun/nlu-asdiv-dataset",
+   "https://github.com/deepmind/aqua",
+   "https://github.com/openai/grade-school-math",
+   "https://github.com/arkilpatel/svamp",
+   "https://github.com/jonathanherzig/commonsenseqa",
+   "https://github.com/google/big-bench",
+   "https://github.com/eladsegal/strategyqa"
+  ],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Chain-of-Thought Prompting Elicits Reasoning",
+   "Introduction",
+   "Chain-of-Thought Prompting",
+   "Arithmetic Reasoning",
+   "Experimental Setup",
+   "Results",
+   "Ablation Study",
+   "Robustness of Chain of Thought",
+   "Commonsense Reasoning",
+   "Symbolic Reasoning",
+   "Tasks.",
+   "Results.",
+   "Discussion",
+   "Related Work",
+   "Conclusions",
+   "Checklist",
+   "A.1 Why does increasing model scale improve chain-of-thought prompting?",
+   "A.2 What is the role of prompt engineering?",
+   "A.3 Will chain-of-thought prompting improve performance for my task of interest?",
+   "A.4 Why is prompting with the equation only not enough for some arithmetic reaso",
+   "C.1 Prompting",
+   "C.2 Natural language explanations",
+   "C.3 Program synthesis and execution",
+   "C.4 Numeric and logical reasoning",
+   "C.5 Intermediate language steps",
+   "D.1 Correct Chain of Thought Analysis",
+   "D.2 Incorrect Chain of Thought Analysis",
+   "D.3 Additional Robustness Analysis",
+   "Version Control",
+   "E.1 Reproducibility Statement",
+   "E.2 Computational Resources",
+   "E.3 Dataset Details and Licenses",
+   "Arithmetic reasoning",
+   "Commonsense reasoning"
+  ],
+  "source_kind": "html",
+  "title": "Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.52202/068431-1800"
+  ],
+  "year": 2022
+ },
+ "arxiv:2303.08774": {
+  "chars": 59213,
+  "checked": "2026-11-18",
+  "file": "arxiv_2303.08774.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/openai/evals",
+   "https://github.com/inverse-scaling/prize"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "GPT-4 Technical Report",
+   "Introduction",
+   "Scope and Limitations of this Technical Report",
+   "Predictable Scaling",
+   "Loss Prediction",
+   "Scaling of Capabilities on HumanEval",
+   "Capabilities",
+   "Visual Inputs",
+   "Limitations",
+   "Risks & mitigations",
+   "Conclusion",
+   "Authorship, Credit Attribution, and Acknowledgements (1/2)",
+   "Authorship, Credit Attribution, and Acknowledgements (2/2)",
+   "A.1 Sourcing.",
+   "A.2 Prompting: multiple-choice",
+   "A.3 Prompting: free-response",
+   "A.4 Images",
+   "A.5 Scoring",
+   "A.6 Codeforces rating",
+   "A.7 Model snapshot details",
+   "Example prompt for a multiple choice exam",
+   "Example prompt for a free-response question"
+  ],
+  "source_kind": "html",
+  "title": "GPT-4 Technical Report",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2303.08774"
+  ],
+  "year": 2023
+ },
+ "arxiv:2303.10130": {
+  "chars": 63173,
+  "checked": "2026-11-18",
+  "file": "arxiv_2303.10130.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Langu",
+   "Introduction",
+   "The Advancement of Large Language Models",
+   "The Economic Impacts of Automation Technologies",
+   "Data on Activities and Tasks Performed by Occupation in the US",
+   "Data on Wages, Employment, and Demographics",
+   "Exposure",
+   "Subjective human judgments",
+   "Measuring LLMs with GPT-4",
+   "Additional Weaknesses",
+   "Results",
+   "Summary Statistics",
+   "Wages and Employment",
+   "Skill Importance",
+   "Barriers to Entry",
+   "Typical Education Needed for Entry",
+   "Comparison to Earlier Efforts",
+   "GPTs as a General-Purpose Technology",
+   "Implications for US Public Policy",
+   "Limitations and Future Work",
+   "Conclusion",
+   "LLM Conclusion (GPT-4’s Version)",
+   "LLM Conclusion (Author-Augmented Version)",
+   "LLM assistance statement",
+   "A.1 Exposure",
+   "Basic Skills",
+   "Content",
+   "Process",
+   "Cross-Functional Skills"
+  ],
+  "source_kind": "html",
+  "title": "GPTs are GPTs: Labor market impact potential of LLMs",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1126/science.adj0998"
+  ],
+  "year": 2024
+ },
+ "arxiv:2303.17564": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2303.17564.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/stanford-crfm/biomedlm",
+   "https://github.com/codelucas/newspaper",
+   "https://github.com/kingoflolz/mesh-transformer-jax",
+   "https://github.com/google-research/bert"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "BloombergGPT: A Large Language Model for Finance",
+   "Introduction",
+   "BloombergGPT",
+   "Broader Contributions",
+   "Dataset",
+   "Financial Datasets (363B tokens – 51.27% of training)",
+   "Web (298B tokens – 42.01% of training)",
+   "News (38B tokens – 5.31% of training)",
+   "Filings (14B tokens – 2.04% of training)",
+   "Press (9B tokens – 1.21% of training)",
+   "Bloomberg (5B tokens – 0.70% of training)",
+   "The Pile (184B tokens – 25.9% of training)",
+   "C4 (138B tokens – 19.48% of training)",
+   "Wikipedia (24B tokens – 3.35% of training)",
+   "Tokenization",
+   "Architecture",
+   "Model Scaling",
+   "Training Configuration",
+   "Large-scale Optimization",
+   "Training Run",
+   "Evaluation",
+   "Few-shot Methodology",
+   "Heldout Loss",
+   "Financial Tasks",
+   "External Financial Tasks",
+   "Internal Task: Sentiment Analysis",
+   "Exploratory Task: NER",
+   "BIG-bench Hard",
+   "Knowledge Assessments",
+   "Reading Comprehension",
+   "Linguistic Tasks",
+   "Summary",
+   "Qualitative Samples",
+   "Related Work",
+   "Ethics, Limitations, and Implications",
+   "Ethical Use"
+  ],
+  "source_kind": "html",
+  "title": "BloombergGPT: A Large Language Model for Finance",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2303.17564"
+  ],
+  "year": 2023
+ },
+ "arxiv:2304.11771": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2304.11771.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "Generative AI and Large Language Models",
+   "Technical Primer",
+   "The Economic Impacts of Generative AI",
+   "Customer Support and Generative AI",
+   "Data Firm Background",
+   "AI System Design",
+   "AI Rollout",
+   "Summary Statistics",
+   "Empirical Strategy",
+   "Overall Impacts",
+   "RCT Analysis",
+   "Instrumenting Individual AI adoption",
+   "Further Robustness",
+   "Heterogeneity by Agent Skill and Tenure",
+   "Pre-treatment Worker Skill",
+   "Pre-treatment Worker Experience",
+   "Moving Down the Experience Curve",
+   "Adherence, Learning, Topic Handling, and Conversational Change",
+   "Adherence to AI recommendations",
+   "Worker Learning",
+   "Handling Routine and Non-Routine Topics"
+  ],
+  "source_kind": "html",
+  "title": "Generative AI at Work",
+  "topics": [
+   "people-analytics",
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjae044"
+  ],
+  "year": 2024
+ },
+ "arxiv:2306.06031": {
+  "chars": 36229,
+  "checked": "2026-11-18",
+  "file": "arxiv_2306.06031.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/ai4finance-foundation/fingpt",
+   "https://github.com/ai4finance-foundation/finnlp",
+   "https://github.com/ai4finance-foundation/finnlp"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "FinGPT: Open-Source Financial Large Language ModelsThanks: AI4Finance Foundation",
+   "Introduction",
+   "The Raise of FinLLMs",
+   "Why Open-Source FinLLMs?",
+   "Overview of FinGPT: An Open-Source Framework for FinLLMs",
+   "Data Sources",
+   "Real-Time Data Curation Pipeline for Financial NLP",
+   "Large Language Models (LLMs)",
+   "Fine-tuning via Low-rank Adaptation (LoRA)",
+   "Fine-tuning via Reinforcement Learning on Stock Prices (RLSP)",
+   "Retrieval Augmented Generation (RAG)",
+   "Fundamental Tasks",
+   "Potential Applications",
+   "Data-Centric Approach for FinLLMs",
+   "Financial News",
+   "Company Filings and Announcements",
+   "Social Media Discussions",
+   "Trends",
+   "Experiments: Financial Sentiment Analysis",
+   "Dataset",
+   "LoRA-based Supervised Fine-Tuning",
+   "Reinforcement Learning on Stock Prices (RLSP)",
+   "Baselines",
+   "Evaluation Metrics",
+   "Overall Performance",
+   "Ablation Study",
+   "Case Study",
+   "Discussion",
+   "Conclusion",
+   "Future Work"
+  ],
+  "source_kind": "html",
+  "title": "FinGPT: Open-Source Financial Large Language Models",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2139/ssrn.4489826"
+  ],
+  "year": 2023
+ },
+ "arxiv:2307.03195": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2307.03195.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "A Comprehensive Survey of Artificial Intelligence Techniques for Talent Analytic",
+   "Introduction",
+   "Data for Talent Analytics",
+   "II-A Internal Data",
+   "II-A1 Recruitment Data",
+   "II-A2 Employee Data",
+   "II-A3 Organizational Data",
+   "II-B External Data",
+   "Talent Management",
+   "III-A Talent Recruitment",
+   "III-A1 Job Posting Generation",
+   "III-A2 Resume Understanding",
+   "III-A3 Talent Searching",
+   "III-A4 Person-Job Fitting",
+   "III-B Talent Assessment",
+   "III-B1 Interview Question Recommendation",
+   "III-B2 Assessment Scoring",
+   "III-C Career Development",
+   "III-C1 Course Recommendation"
+  ],
+  "source_kind": "html",
+  "title": "A Comprehensive Survey of Artificial Intelligence Techniques for Talent Analytics",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/jproc.2025.3572744"
+  ],
+  "year": 2025
+ },
+ "arxiv:2307.10485": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2307.10485.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/ai4finance-foundation/finnlp",
+   "https://huggingface.co/docs/transformers",
+   "https://github.com/ai4finance-foundation/fingpt"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "Data-centric FinGPT: Democratizing Internet-scale Data for Financial Large Langu",
+   "Introduction",
+   "Related Work",
+   "Data-centric FinGPT Framework for FinLLMs",
+   "Challenges of Training FinLLMs",
+   "Overview of FinGPT Framework",
+   "Proprietary Model BloombergGPT",
+   "Demoncratizing Internet-scale Financial Data",
+   "Financial Data Sources",
+   "Data Interface",
+   "Automated Real-Time Data Curation Pipeline",
+   "Data Cleaning",
+   "Document Filtering",
+   "Tokenization",
+   "Lightweight Adaptation of General-Purpoose LLMs to FinLLMs",
+   "Demonstrative Applications of FinGPT",
+   "Application I: Robo-Advisor",
+   "Application II: Sentiment Analysis for Quantitative Trading",
+   "Labeling by Market",
+   "Supervised Fine-tuning",
+   "Application III: Low-code Development",
+   "Conclusion, Discussions, and Future Work",
+   "B.1.1 News",
+   "B.1.2 Social Media",
+   "B.1.3 Filing",
+   "B.1.4 Research Dataset",
+   "B.2 Example Codes for Accessing Data",
+   "B.2.1 News",
+   "B.2.2 Social Media",
+   "B.2.3 Filing",
+   "B.3 Challenges and Solutions",
+   "B.3.1 Asynchronous Crawling",
+   "B.3.2 Incremental Saving",
+   "D.1 Accuracy",
+   "D.2 F1 Score",
+   "D.3 Cumulative Return Rate (CRR)",
+   "E.1 Data",
+   "E.2 Market-Related Financial Labels",
+   "E.3 Training Details",
+   "F.1.1 Financial Phrasebank (FPB)",
+   "F.1.2 FiQA SA",
+   "F.1.3 TFNS",
+   "F.1.4 NWGI",
+   "F.2 Models",
+   "F.3 Training Details",
+   "J.1 Data-centric AI",
+   "J.2 Domain-specific LLMs and Proprietary Data",
+   "J.3 From General-Purpose LLMs to FinLLMs",
+   "J.4 Parameter-Efficient Tuning of LLMs",
+   "J.5 Alignment of LLMs",
+   "J.6 Openness of LLMs",
+   "K.1 Vision",
+   "K.2 Privacy, Ethics, and Openness",
+   "K.2.1 Privacy and Ethics"
+  ],
+  "source_kind": "html",
+  "title": "FinGPT: Democratizing Internet-scale Data for Financial Large Language Models",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2307.10485"
+  ],
+  "year": 2023
+ },
+ "arxiv:2312.11942": {
+  "chars": 3913,
+  "checked": "2026-11-18",
+  "file": "arxiv_2312.11942.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://huggingface.co/docs/hub"
+  ],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Economics > General Economics",
+   "Title:Skills or Degree? The Rise of Skill-Based Hiring for AI and Green Jobs",
+   "Submission history",
+   "Access Paper:",
+   "Current browse context:",
+   "Bibliographic and Citation Tools",
+   "Code, Data and Media Associated with this Article",
+   "Demos",
+   "Recommenders and Search Tools",
+   "arXivLabs: experimental projects with community collaborators"
+  ],
+  "source_kind": "html",
+  "title": "Skills or degree? The rise of skill-based hiring for AI and green jobs",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.techfore.2025.124042"
+  ],
+  "year": 2025
+ },
+ "arxiv:2403.15281": {
+  "chars": 3932,
+  "checked": "2026-11-18",
+  "file": "arxiv_2403.15281.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://huggingface.co/docs/hub"
+  ],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Title:Measuring Gender and Racial Biases in Large Language Models",
+   "Submission history",
+   "Access Paper:",
+   "Current browse context:",
+   "Bibliographic and Citation Tools",
+   "Code, Data and Media Associated with this Article",
+   "Demos",
+   "Recommenders and Search Tools",
+   "arXivLabs: experimental projects with community collaborators"
+  ],
+  "source_kind": "html",
+  "title": "Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/pnasnexus/pgaf089"
+  ],
+  "year": 2025
+ },
+ "arxiv:2405.04352": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "arxiv_2405.04352.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Return to Office and the Tenure Distribution",
+   "Introduction",
+   "People Data Labs",
+   "Return to Office",
+   "Tech Layoffs",
+   "Sample Construction",
+   "Descriptives",
+   "Estimation",
+   "The causal effects of an RTO on tenure and seniority",
+   "Where Do Employees Go After an RTO?",
+   "Discussion",
+   "Conclusion",
+   "A.3 Extended Pre-Treatment Period",
+   "A.4 Spillover Robustness",
+   "B.1 Aggregate Separation and Hiring Rates",
+   "B.2 Composition of New Hires and Departures",
+   "B.3 Seasonal Hiring Patterns: June New Graduate Spike",
+   "B.4 Discussion",
+   "D.1 Labor Market Context",
+   "D.2 Results",
+   "D.3 Interpretation",
+   "D.4 RTO Stringency Gradient"
+  ],
+  "source_kind": "html",
+  "title": "Return to Office and the Tenure Distribution",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1162/rest.a.1866"
+  ],
+  "year": 2026
+ },
+ "arxiv:2405.13902": {
+  "chars": 49354,
+  "checked": "2026-11-18",
+  "file": "arxiv_2405.13902.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/qiaoyran/login",
+   "https://github.com/xiaoxinhe/tape"
+  ],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework",
+   "Introduction",
+   "GNN Variants",
+   "GNNs Designed for Heterophily",
+   "GNNs Designed for Heterogeneity",
+   "GNNs Designed for Class Imbalance",
+   "LLMs for Graphs",
+   "LLMs-as-Predictors",
+   "LLMs-as-Enhancers",
+   "LLMs-as-Consultants Paradigm",
+   "Text-Attributed-Graphs (TAGs)",
+   "Graph Neural Networks (GNNs)",
+   "Homophily Metrics",
+   "Problem Formulation",
+   "Overview of L",
+   "Node Selection Based on Uncertainty",
+   "LLM Consultation",
+   "Instruction.",
+   "Input Data.",
+   "Output Indicator.",
+   "LLM Response Feedback",
+   "When LLM is Right.",
+   "When LLM is Wrong.",
+   "Train and Test",
+   "Evaluation",
+   "Datasets",
+   "Compared Methods",
+   "Implementations",
+   "Performance Comparison (RQ1)",
+   "Comparison with Vanilla Baselines.",
+   "Comparison with Advanced GNNs.",
+   "Comparison with the Simplest Model.",
+   "Ablation Study (RQ2)",
+   "Feature Update.",
+   "Structure Refinement.",
+   "Case Study (RQ3)",
+   "From a Citation Graph: Cora.",
+   "From a Web-page-link Graph: Wisconsin.",
+   "Extensive Study (RQ4)",
+   "Comparison among LLM-based Paradigms (RQ5)",
+   "Consulting with More Nodes (RQ6)",
+   "L",
+   "Conclusion and Future Work"
+  ],
+  "source_kind": "html",
+  "title": "LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/3845996"
+  ],
+  "year": 2025
+ },
+ "arxiv:2405.14767": {
+  "chars": 41392,
+  "checked": "2026-11-18",
+  "file": "arxiv_2405.14767.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/ai4finance-foundation/finrobot",
+   "https://github.com/significant-gravitas/autogpt",
+   "https://github.com/langgenius/dify"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "FinRobot: An Open-Source AI Agent Platform",
+   "Introduction",
+   "LLM-Based AI Agents",
+   "Financial AI Agents",
+   "Open-Source AI Agent Frameworks",
+   "AI4Finance Foundation and Open-Source Culture",
+   "Overview of FinRobot: An Open-Source Platform for Financial Tasks",
+   "Financial AI Agents Layer",
+   "Multi-Agent Workflow",
+   "Utilizing LLMs for Tool Usage",
+   "Financial LLMs Algorithms Layer:",
+   "Financial Large Language Models (FinGPT)",
+   "Financial Reinforcement Learning (FinRL)",
+   "Financial Machine Learning (FinML)",
+   "Financial Multimodal LLMs",
+   "LLMOps Layer",
+   "Smart Scheduler",
+   "Smart Scheduler Architecture",
+   "Smart Scheduler Initialization Process",
+   "Smart Scheduler In Action Process",
+   "Scoring Metrics",
+   "DataOps Layer",
+   "Retrieval Augmented Generation",
+   "Multi-source LLM Foundation Models Layer",
+   "Introduction",
+   "Concept of Financial CoT",
+   "Financial CoT Implementation",
+   "Advantages of Financial CoT Prompting",
+   "Market Simulation: Transcending the Analyst Mimicking",
+   "Application I: Market Forecaster",
+   "Data",
+   "Model",
+   "Prompts",
+   "Sample Forecastings",
+   "Application II: Document Analysis & Generation",
+   "Document Analysis",
+   "Report Generation",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2139/ssrn.4841493"
+  ],
+  "year": 2024
+ },
+ "arxiv:2405.19383": {
+  "chars": 66045,
+  "checked": "2026-11-18",
+  "file": "arxiv_2405.19383.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/b-deprez/aml_network"
+  ],
+  "roles": [
+   "destaque 2025",
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "Network Analytics for Anti-Money Laundering – A Systematic Literature Review and",
+   "Introduction",
+   "Literature Review",
+   "Methodology",
+   "Results",
+   "Review Papers",
+   "Full Scope of Papers",
+   "Methods.",
+   "Objectives.",
+   "Evaluation.",
+   "Data.",
+   "Top Cited Papers",
+   "General Classification.",
+   "Task-Level Objectives.",
+   "Processing steps.",
+   "Challenges.",
+   "Further Considerations",
+   "Experimental Set-Up",
+   "Model Specification",
+   "Data",
+   "Elliptic.",
+   "IBM Money Laundering.",
+   "Hyperparameter Tuning",
+   "Performance Metrics",
+   "Supervised Learning",
+   "Unsupervised Learning",
+   "Ablation Study",
+   "Model Stability",
+   "Literature Review",
+   "Experimental Evaluation",
+   "Limitations"
+  ],
+  "source_kind": "html",
+  "title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/ijds.2024.0042"
+  ],
+  "year": 2025
+ },
+ "arxiv:2502.02290": {
+  "chars": 44969,
+  "checked": "2026-11-18",
+  "file": "arxiv_2502.02290.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://kaggle.com/datasets/mlg-ulb/creditcardfraud"
+  ],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "FRAUD-RLA: A new reinforcement learning adversarial attack",
+   "Introduction",
+   "Background",
+   "Credit Card Fraud Detection",
+   "Attackers",
+   "Adversarial Attacks",
+   "Taxonomy",
+   "Attacks on Credit Card Fraud Detection",
+   "FRAUD-RLA: Reinforcement Learning Against Credit Card Fraud Detection",
+   "Problem Formulation",
+   "RL environment",
+   "RL agent",
+   "Correlations in the action space",
+   "Partial observability",
+   "Experiments Design",
+   "Datasets",
+   "Baseline: Mimicry",
+   "Methodology",
+   "Experimental Findings",
+   "Conclusions and future work",
+   "Ethics Considerations",
+   "Open Science"
+  ],
+  "source_kind": "html",
+  "title": "Fraud-RLA: A Reinforcement Learning Adversarial Attack Against Credit Card Fraud Detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tdsc.2026.3673847"
+  ],
+  "year": 2026
+ },
+ "arxiv:2503.02857": {
+  "chars": 34936,
+  "checked": "2026-11-18",
+  "file": "arxiv_2503.02857.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/truemediaorg/socialbot",
+   "https://github.com/chuangchuangtan/gangen-detection",
+   "https://github.com/borisdayma/dalle-mini",
+   "https://github.com/nuriachandra/deepfake-eval-2024"
+  ],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated ",
+   "Introduction",
+   "Related Work",
+   "Dataset",
+   "Data Collection",
+   "Data Filtering",
+   "Data Labeling",
+   "Experiments",
+   "Open-Source Model Performance",
+   "Finetuned Model Performance",
+   "Commercial Model Performance",
+   "Error Analysis",
+   "Discussion & Limitations",
+   "A.1 Related Work Supplementary Figures",
+   "A.1.1 Overlap between Modality Datasets",
+   "A.2.1 Demographic Estimates of Image and Video Subjects",
+   "A.3 Experimental Compute",
+   "A.5 Dataset Access and Ethics"
+  ],
+  "source_kind": "html",
+  "title": "Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2503.02857"
+  ],
+  "year": 2025
+ },
+ "arxiv:2504.01822": {
+  "chars": 53791,
+  "checked": "2026-11-18",
+  "file": "arxiv_2504.01822.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/connector-tool/abctracer"
+  ],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Track and Trace: Automatically Uncovering Cross-chain Transactions in the Multi-",
+   "Introduction",
+   "II-A Blockchain and Smart Contracts",
+   "II-B Transaction and Event Log",
+   "II-C CeFi Bridge and DeFi Bridge",
+   "II-D Named Entity Recognition and Information Retrieval",
+   "Problem Definition",
+   "Methodology",
+   "IV-A M1: Cross-chain Transaction Identification",
+   "IV-B M2: Candidate Transactions Localization",
+   "IV-B1 Acquisition of Temporal Clues",
+   "IV-B2 Acquisition of Spatial Clues",
+   "IV-B3 Crawling for Candidate Target Transactions",
+   "IV-C M3: Cross-chain Transaction Association",
+   "IV-C1 Implicit Cue Encoding",
+   "IV-C2 Cross-chain Transaction Association",
+   "Experiments",
+   "V-A Datasets",
+   "V-B Baselines and variants",
+   "V-C RQ1: Model effectiveness",
+   "V-C1 Capability of Bidirectional Tracing",
+   "V-C2 Capability of Automatic Learning and Generalization",
+   "V-D RQ2: Application to attack transactions",
+   "V-E RQ3: Application to money laundering transactions",
+   "Related Work",
+   "VI-A Single-chain Transaction Tracing",
+   "VI-B Cross-chain Transaction Tracing",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "Track and Trace: Automatically Uncovering Cross-Chain Transactions in the Multi-Blockchain Ecosystems",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tsc.2025.3618729"
+  ],
+  "year": 2025
+ },
+ "arxiv:2505.12490": {
+  "chars": 50055,
+  "checked": "2026-11-18",
+  "file": "arxiv_2505.12490.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/yedidel/a2a",
+   "https://github.com/yedidel/a2a-prompt-injection-experiment"
+  ],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Improving Google A2A Protocol: Protecting Sensitive Data and Mitigating Unintend",
+   "Introduction",
+   "Related Work and Background",
+   "II-A Risks of Agent-Initiated Misuse of Sensitive Data",
+   "Threat Model",
+   "III-A Actors",
+   "III-B Adversary Capabilities",
+   "III-C Assumptions",
+   "III-D Security Goals",
+   "III-E Illustration",
+   "A2A Security Vulnerabilities, Protocol Enhancements, and Research-Based Justific",
+   "IV-A Absence of Limitations on Token Lifetime",
+   "IV-B Lack of Strong Customer Authentication (SCA)",
+   "IV-C Insufficiently Granular Token Scopes",
+   "IV-D Lack of Transparency and User Consent",
+   "IV-E Potential Excessive Exposure of Data to Agents",
+   "IV-F Risk of Data Disclosure to the Agent Itself",
+   "IV-G Consent Fatigue in Multi-Transaction Workflows",
+   "IV-H Regulatory Compliance Gaps",
+   "IV-I Illustrative Secure Vacation Booking Flow",
+   "Explicit User Consent Orchestration via USER_CONSENT_REQUIRED",
+   "Case Study: Prompt Injection Attack",
+   "Implementation Pattern: Direct Data Flow Controller",
+   "VIII-A Experimental Results for Our Enhanced A2A",
+   "VIII-B Comparison with Prior Empirical Studies",
+   "VIII-C Theoretical Analysis of Leakage Probability",
+   "Performance Considerations and Security Tradeoffs",
+   "Comparative Analysis with Existing Protocols",
+   "X-A Discussion in the Context of Related Work.",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "Improving Google A2A Protocol: Protecting Sensitive Data and Mitigating Unintended Harms in Multi-Agent Systems",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/3821216"
+  ],
+  "year": 2026
+ },
+ "arxiv:2511.08939": {
+  "chars": 75663,
+  "checked": "2026-11-18",
+  "file": "arxiv_2511.08939.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025",
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "TransactionGPT",
+   "Introduction",
+   "Preliminary",
+   "Multi-Modal-Temporal-Tabular Data",
+   "Problem Definition",
+   "Methodology",
+   "Model Architecture Evolution",
+   "Temporal Transformer",
+   "Feature Transformer",
+   "Metadata Transformer",
+   "Modality Fusion",
+   "Late Modality Fusion by Omitting Historical Feature Information",
+   "Early Modality Fusion via Virtual Tokens",
+   "Time Complexity Analysis",
+   "Model Output and Loss Function",
+   "Data Preparation",
+   "Model Config and Training Stats",
+   "Model Evaluation",
+   "Transaction Generation and Anomaly Detection",
+   "Dining Trajectory Generation",
+   "Merchant Category Prediction",
+   "Scalability Evaluation",
+   "Discussion on Model Design and Training",
+   "Deep Learning for Transaction Data",
+   "Transformer for Tabular and Temporal Data",
+   "Continuous Space Tokenization and Feature Crossing",
+   "Conclusion and Future Work"
+  ],
+  "source_kind": "html",
+  "title": "TransactionGPT",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2511.08939"
+  ],
+  "year": 2025
+ },
+ "arxiv:2511.19693": {
+  "chars": 41178,
+  "checked": "2026-11-18",
+  "file": "arxiv_2511.19693.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+   "https://huggingface.co/docs/transformers"
+  ],
+  "roles": [
+   "destaque 2025",
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "TREASURE: The Visa Payment Foundation Model",
+   "Introduction",
+   "Related Work",
+   "Methodology",
+   "Input and Output",
+   "Overall Architecture",
+   "Input Module",
+   "Output Module",
+   "Optimization Objective",
+   "Experiment",
+   "Dataset and Experiment Setup",
+   "Optimization Objective",
+   "Temporal Modeling Architecture",
+   "Negative Sampling Strategy",
+   "Embedding Serving",
+   "Embedding Visualization",
+   "Data and Model Scaling Analysis",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2511.19693"
+  ],
+  "year": 2025
+ },
+ "arxiv:2602.03117": {
+  "chars": 32789,
+  "checked": "2026-11-18",
+  "file": "arxiv_2602.03117.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/leolee99/agentdyn",
+   "https://huggingface.co/ProtectAI/deberta-v3-base-prompt-injection-v2"
+  ],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Envi",
+   "Introduction",
+   "Related Work and Preliminaries",
+   "Benchmarks of Agent Security",
+   "Existing Benchmark Statistics",
+   "Overview and Structure",
+   "Test Case Generation",
+   "AgentDyn Statistics",
+   "Experiments",
+   "Experiment Setup",
+   "Agents and Defenses Evaluation",
+   "Comparing with AgentDojo",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Environments?",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2602.03117"
+  ],
+  "year": 2026
+ },
+ "arxiv:2604.08649": {
+  "chars": 50921,
+  "checked": "2026-11-18",
+  "file": "arxiv_2604.08649.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Introduction",
+   "Dataset",
+   "Event History",
+   "Profile State",
+   "Pre-training Time Range",
+   "Tokenisation",
+   "Model Architecture",
+   "Token Embedding",
+   "Profile State Encoder",
+   "Event Encoder",
+   "History Encoder",
+   "Training",
+   "Training Infrastructure",
+   "Evaluation",
+   "Evaluation Protocol",
+   "Embedding Probing",
+   "Downstream Adaptation with LoRA",
+   "Preparing Downstream Datasets",
+   "Downstream Tasks",
+   "Main Results",
+   "Effect of Model Scale",
+   "Effect of Pre-training",
+   "Effect of Low-Rank Adaptation",
+   "Robustness to Event Staleness",
+   "Effect of Profile State",
+   "Communication Engagement (Uplift)",
+   "Effect of a Pre-trained Text Encoder",
+   "Limitations in Highly Relational Tasks: Anti-Money Laundering",
+   "Transformer",
+   "Masked Modelling",
+   "Transformers for Tabular Data",
+   "Modelling for Recommender Systems",
+   "Foundation Models for Finance",
+   "Conclusion"
+  ],
+  "source_kind": "html",
+  "title": "PRAGMA: Revolut Foundation Model",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2604.08649"
+  ],
+  "year": 2026
+ },
+ "arxiv:2608.12236": {
+  "chars": 57927,
+  "checked": "2026-11-18",
+  "file": "arxiv_2608.12236.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Introduction",
+   "Related Literature",
+   "Data and Measurement",
+   "ChatGPT Enterprise Usage Data",
+   "Job Titles, Firm Industries, and Task Classifications",
+   "Public Company Sample and Summary Statistics",
+   "Four Facts about Enterprise AI Usage",
+   "ChatGPT Enterprise usage has grown rapidly",
+   "Early enterprise AI adopters are larger, more valuable, and more heavily investe",
+   "Financial characteristics",
+   "Usage intensity among adopters",
+   "Firm scale and adoption",
+   "Pre-existing complements and enterprise adoption",
+   "Enterprise AI use is broadly distributed across worker groups but uneven in inte",
+   "The Extensive Margin of Use Across Job Title Class and Seniority",
+   "The Intensive Margin of Use Across Job Title Class and Seniority",
+   "Enterprise AI use spans a broad set of knowledge work tasks within organizations",
+   "Overall Enterprise Task Composition",
+   "Task Differences Across Industries",
+   "Task Differences by Job Title Class and Seniority",
+   "Conclusion",
+   "C.1  Job Title Classification Prompt",
+   "C.2  Job Title Classifier Validation"
+  ],
+  "source_kind": "html",
+  "title": "How Organizations Use AI: Evidence from ChatGPT",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2608.12236"
+  ],
+  "year": 2026
+ },
+ "arxiv:2611.08094": {
+  "chars": 50802,
+  "checked": "2026-11-18",
+  "file": "arxiv_2611.08094.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/troubadour000/awesome-agentic-time-series"
+  ],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "PersonaAgent:",
+   "Introduction",
+   "Transaction representations.",
+   "Retrieval-augmented scoring.",
+   "Agentic design and optimization.",
+   "Preliminaries and Problem Formulation",
+   "Problem.",
+   "Method",
+   "Agentic Persona-Protocol Self-Evolution",
+   "An example topic.",
+   "Semantic Persona Memory Refresh",
+   "Online Adapter Scoring",
+   "Evaluation",
+   "Evaluation Setup",
+   "RQ1: Does PersonaAgent Improve Four Frozen Detectors?",
+   "Contribution of persona views.",
+   "Standalone view prediction.",
+   "Semantic topics versus conventional clustering.",
+   "RQ3: Which Alerts Would the Final Score Change in Deployment?",
+   "RQ4: How Efficient and Robust Is PersonaAgent in Operation?",
+   "Serving cost.",
+   "Sparse history.",
+   "Failure handling.",
+   "Design principles.",
+   "Scope and future directions.",
+   "Conclusion",
+   "Adapter architecture and fitting.",
+   "Memory construction.",
+   "Retrieval keys.",
+   "Lookup and feature vector.",
+   "Fallback rules.",
+   "Card spending behavior for the current transaction.",
+   "Illustrative activity shares.",
+   "An illustrative revision.",
+   "After the protocol is frozen.",
+   "Fixed search inputs.",
+   "Confidence intervals and refits.",
+   "Cross-period performance.",
+   "Record age.",
+   "Matched ablations.",
+   "Correction-fingerprint diagnostic."
+  ],
+  "source_kind": "html",
+  "title": "PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona Memory",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.48550/arxiv.2611.08094"
+  ],
+  "year": 2026
+ },
+ "doi:10.1002/smj.70020": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Are less hierarchical firms organized around stronger cultures? Evidence from big data",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1002/smj.70020"
+  ],
+  "year": 2025
+ },
+ "doi:10.1007/978-1-4899-2271-7": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Intrinsic Motivation and Self-Determination in Human Behavior",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/978-1-4899-2271-7"
+  ],
+  "year": 1985
+ },
+ "doi:10.1007/978-3-658-40442-0_9": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Generative Adversarial Nets",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/978-3-658-40442-0_9"
+  ],
+  "year": 2023
+ },
+ "doi:10.1007/s10611-024-10186-2": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1007_s10611-024-10186-2.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/5)",
+   "Início (2/5)",
+   "Início (3/5)",
+   "Início (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "Policing cross-border fraud ‘Above and below the surface’: mapping actions and developing a more effective global response",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s10611-024-10186-2"
+  ],
+  "year": 2025
+ },
+ "doi:10.1007/s10618-008-0116-z": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Transaction aggregation as a strategy for credit card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s10618-008-0116-z"
+  ],
+  "year": 2008
+ },
+ "doi:10.1007/s10618-025-01181-9": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Guardnet: an imbalance-aware graph neural network for fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s10618-025-01181-9"
+  ],
+  "year": 2026
+ },
+ "doi:10.1007/s10618-026-01192-0": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Hybrid federated continual graph contrastive learning for evolving money laundering threats",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s10618-026-01192-0"
+  ],
+  "year": 2026
+ },
+ "doi:10.1007/s12117-022-09476-9": {
+  "chars": 70918,
+  "checked": "2026-11-18",
+  "file": "doi_10.1007_s12117-022-09476-9.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início (1/4)",
+   "Início (2/4)",
+   "Início (3/4)",
+   "Início (4/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "Cybercriminal networks in the UK and Beyond: Network structure, criminal cooperation and external interactions",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s12117-022-09476-9"
+  ],
+  "year": 2023
+ },
+ "doi:10.1007/s12117-025-09576-2": {
+  "chars": 66170,
+  "checked": "2026-11-18",
+  "file": "doi_10.1007_s12117-025-09576-2.json",
+  "has_text": true,
+  "license": "public-domain",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/4)",
+   "Início (2/4)",
+   "Início (3/4)",
+   "Início (4/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "Nigerian confraternities and mass cross-border fraud",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1007/s12117-025-09576-2"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.ceqi.2023.03.002": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Digital transformation of commercial banks in China: Measurement, progress and impact",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.ceqi.2023.03.002"
+  ],
+  "year": 2023
+ },
+ "doi:10.1016/j.clsr.2025.106227": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Raising the bar: Assessing historical cryptocurrency exchange practices in light of the EU’s MiCA and DORA regulation",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.clsr.2025.106227"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.cose.2015.09.005": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Intelligent financial fraud detection: A comprehensive review",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.cose.2015.09.005"
+  ],
+  "year": 2015
+ },
+ "doi:10.1016/j.cose.2025.104364": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "The silence of the phishers: Early-stage voice phishing detection with runtime permission requests",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.cose.2025.104364"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.cose.2026.104950": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "The evolution of investment cyber scams: vulnerability and victim blaming in the cryptocurrency era",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.cose.2026.104950"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.dajour.2025.100605": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "An analytical approach to credit risk assessment using machine learning models",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.dajour.2025.100605"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.dss.2010.08.006": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.dss.2010.08.006"
+  ],
+  "year": 2010
+ },
+ "doi:10.1016/j.dss.2010.08.008": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Data mining for credit card fraud: A comparative study",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.dss.2010.08.008"
+  ],
+  "year": 2010
+ },
+ "doi:10.1016/j.dss.2015.04.013": {
+  "chars": 60884,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.dss.2015.04.013.json",
+  "has_text": true,
+  "license": "other-oa",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "Background",
+   "Model",
+   "Related Work (1/2)",
+   "Related Work (2/2)",
+   "Results",
+   "Conclusions"
+  ],
+  "source_kind": "pdf",
+  "title": "APATE: A novel approach for automated credit card transaction fraud detection using network-based extensions",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.dss.2015.04.013"
+  ],
+  "year": 2015
+ },
+ "doi:10.1016/j.dss.2026.114717": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "DISCO: Decoupling representation learning and risk control for reliable credit card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.dss.2026.114717"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.ejor.2015.05.030": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.ejor.2015.05.030.json",
+  "has_text": true,
+  "license": "other-oa",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início (1/5)",
+   "Início (2/5)",
+   "Início (3/5)",
+   "Início (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.ejor.2015.05.030"
+  ],
+  "year": 2015
+ },
+ "doi:10.1016/j.eswa.2018.01.037": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Sequence classification for credit-card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.eswa.2018.01.037"
+  ],
+  "year": 2018
+ },
+ "doi:10.1016/j.eswa.2023.122156": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Financial fraud detection using graph neural networks: A systematic review",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.eswa.2023.122156"
+  ],
+  "year": 2023
+ },
+ "doi:10.1016/j.infoandorg.2025.100559": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Novice risk work: How juniors coaching seniors on emerging technologies such as generative AI can lead to learning failures",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.infoandorg.2025.100559"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.ins.2019.05.042": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Combining unsupervised and supervised learning in credit card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.ins.2019.05.042"
+  ],
+  "year": 2019
+ },
+ "doi:10.1016/j.jbankfin.2010.06.001": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Consumer credit-risk models via machine-learning algorithms",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jbankfin.2010.06.001"
+  ],
+  "year": 2010
+ },
+ "doi:10.1016/j.jeconc.2025.100128": {
+  "chars": 50101,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.jeconc.2025.100128.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/2)",
+   "Início (2/2)",
+   "Limitations",
+   "Conclusion"
+  ],
+  "source_kind": "pdf",
+  "title": "Strategic business movements? The migration of online romance fraudsters from Nigeria to Ghana",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jeconc.2025.100128"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfi.2025.101162": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Open data and API adoption of U.S. banks",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfi.2025.101162"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfi.2026.101196": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Beyond the bureau: Interoperable payment data for loan screening and monitoring",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfi.2026.101196"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.jfineco.2018.03.011": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.jfineco.2018.03.011.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/6)",
+   "Introduction (2/6)",
+   "Introduction (3/6)",
+   "Introduction (4/6)"
+  ],
+  "source_kind": "pdf",
+  "title": "Fintech, regulatory arbitrage, and the rise of shadow banks",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2018.03.011"
+  ],
+  "year": 2018
+ },
+ "doi:10.1016/j.jfineco.2021.05.047": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.jfineco.2021.05.047.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction",
+   "Data",
+   "Data",
+   "Data",
+   "Data",
+   "Data",
+   "Data",
+   "Method",
+   "Results",
+   "Model",
+   "Results",
+   "Model",
+   "Conclusion",
+   "Data"
+  ],
+  "source_kind": "pdf",
+  "title": "Consumer-lending discrimination in the FinTech Era",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2021.05.047"
+  ],
+  "year": 2021
+ },
+ "doi:10.1016/j.jfineco.2024.103950": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Customer data access and fintech entry: Early evidence from open banking",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2024.103950"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfineco.2025.104026": {
+  "chars": 77685,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.jfineco.2025.104026.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Introduction (1/4)",
+   "Introduction (2/4)",
+   "Introduction (3/4)",
+   "Introduction (4/4)",
+   "Conclusion"
+  ],
+  "source_kind": "pdf",
+  "title": "Distributed ledgers and the governance of money",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2025.104026"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfineco.2025.104040": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Fintech entry, lending market competition, and welfare",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2025.104040"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfineco.2025.104055": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Strategic digitization in currency and payment competition",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2025.104055"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfineco.2026.104398": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Shadow banks on the rise: Evidence across market segments",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfineco.2026.104398"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.jfs.2025.101472": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Intelligent financial system: How AI is transforming finance",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfs.2025.101472"
+  ],
+  "year": 2025
+ },
+ "doi:10.1016/j.jfs.2026.101543": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Generative AI and labour productivity: A quasi experiment on coding",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfs.2026.101543"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.jfs.2026.101585": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "CB-LMs: language models for central banking",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jfs.2026.101585"
+  ],
+  "year": 2026
+ },
+ "doi:10.1016/j.jnca.2016.04.007": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Fraud detection system: A survey",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.jnca.2016.04.007"
+  ],
+  "year": 2016
+ },
+ "doi:10.1016/j.techfore.2016.08.019": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1016_j.techfore.2016.08.019.json",
+  "has_text": true,
+  "license": "cc-by-nc-nd",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/6)",
+   "Introduction (2/6)",
+   "Introduction (3/6)",
+   "Introduction (4/6)"
+  ],
+  "source_kind": "pdf",
+  "title": "The future of employment: How susceptible are jobs to computerisation?",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/j.techfore.2016.08.019"
+  ],
+  "year": 2016
+ },
+ "doi:10.1016/s0169-7218(11)02410-5": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Skills, Tasks and Technologies: Implications for Employment and Earnings",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1016/s0169-7218(11)02410-5"
+  ],
+  "year": 2011
+ },
+ "doi:10.1023/a:1009700419189": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Adaptive Fraud Detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1023/a:1009700419189"
+  ],
+  "year": 1997
+ },
+ "doi:10.1037/0021-9010.86.3.499": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "The job demands-resources model of burnout.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1037/0021-9010.86.3.499"
+  ],
+  "year": 2001
+ },
+ "doi:10.1037/0022-3514.86.1.162": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "General Mental Ability in the World of Work: Occupational Attainment and Job Performance.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1037/0022-3514.86.1.162"
+  ],
+  "year": 2004
+ },
+ "doi:10.1037/0033-2909.124.2.262": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "The validity and utility of selection methods in personnel psychology: Practical and theoretical implications of 85 years of research findings.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1037/0033-2909.124.2.262"
+  ],
+  "year": 1998
+ },
+ "doi:10.1037/apl0001296": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "How and for whom using generative AI affects creativity: A field experiment.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1037/apl0001296"
+  ],
+  "year": 2025
+ },
+ "doi:10.1037/ocp0000056": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Job demands–resources theory: Taking stock and looking forward.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1037/ocp0000056"
+  ],
+  "year": 2016
+ },
+ "doi:10.1038/s41562-026-02566-6": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Generative AI and the temporary upskilling of knowledge workers",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1038/s41562-026-02566-6"
+  ],
+  "year": 2026
+ },
+ "doi:10.1038/s41598-026-58938-5": {
+  "chars": 62750,
+  "checked": "2026-11-18",
+  "file": "doi_10.1038_s41598-026-58938-5.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Related Work (1/2)",
+   "Related Work (2/2)",
+   "Experiments",
+   "Method (1/2)",
+   "Method (2/2)"
+  ],
+  "source_kind": "pdf",
+  "title": "Dynamic heterogeneous graph contrastive learning for uncovering collusive financial fraud",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1038/s41598-026-58938-5"
+  ],
+  "year": 2026
+ },
+ "doi:10.1073/pnas.2509892122": {
+  "chars": 10945,
+  "checked": "2026-11-18",
+  "file": "doi_10.1073_pnas.2509892122.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "PERMALINK",
+   "Cevat Giray Aksoy",
+   "Jose Maria Barrero",
+   "Nicholas Bloom",
+   "Steven J Davis",
+   "Mathias Dolls",
+   "Pablo Zarate",
+   "Series information",
+   "Abstract",
+   "Global Stabilization of WFH Rates.",
+   "Cross-Country Variation in WFH Adoption.",
+   "Discussion",
+   "Data and Sample.",
+   "Footnotes",
+   "Associated Data"
+  ],
+  "source_kind": "html",
+  "title": "The global persistence of work from home",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1073/pnas.2509892122"
+  ],
+  "year": 2025
+ },
+ "doi:10.1080/09585192.2016.1244699": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "An evidence-based review of HR Analytics",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1080/09585192.2016.1244699"
+  ],
+  "year": 2016
+ },
+ "doi:10.1080/10345329.2023.2248670": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1080/10345329.2023.2248670"
+  ],
+  "year": 2023
+ },
+ "doi:10.1080/14765284.2025.2569006": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "(Generative) AI in Financial Economics",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1080/14765284.2025.2569006"
+  ],
+  "year": 2025
+ },
+ "doi:10.1080/23322039.2025.2571403": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "The role of robo-advisors in behavioural finance, shaping investment decisions",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1080/23322039.2025.2571403"
+  ],
+  "year": 2025
+ },
+ "doi:10.1086/210432": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Social Capital at Work: Networks and Employment at a Phone Center",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1086/210432"
+  ],
+  "year": 2000
+ },
+ "doi:10.1086/261010": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1086_261010.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "sections": [
+   "Início (1/5)",
+   "Início (2/5)",
+   "Início (3/5)",
+   "Início (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "Rank-Order Tournaments as Optimum Labor Contracts",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1086/261010"
+  ],
+  "year": 1981
+ },
+ "doi:10.1086/501508": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Money Laundering",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1086/501508"
+  ],
+  "year": 2006
+ },
+ "doi:10.1086/588738": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Gender, Race, and Meritocracy in Organizational Careers",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1086/588738"
+  ],
+  "year": 2008
+ },
+ "doi:10.1086/705716": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1086_705716.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/3)",
+   "Introduction (2/3)",
+   "Introduction (3/3)",
+   "Results (1/3)"
+  ],
+  "source_kind": "pdf",
+  "title": "Robots and Jobs: Evidence from US Labor Markets",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1086/705716"
+  ],
+  "year": 2019
+ },
+ "doi:10.1093/oso/9780198845553.003.0011": {
+  "chars": 65502,
+  "checked": "2026-11-18",
+  "file": "doi_10.1093_oso_9780198845553.003.0011.json",
+  "has_text": true,
+  "license": "other-oa",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/4)",
+   "Abstract (2/4)",
+   "Abstract (3/4)",
+   "Abstract (4/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "The FinTech Opportunity",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/oso/9780198845553.003.0011"
+  ],
+  "year": 2019
+ },
+ "doi:10.1093/oxfordhb/9780198897071.013.14": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Big Techs in Finance",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/oxfordhb/9780198897071.013.14"
+  ],
+  "year": 2025
+ },
+ "doi:10.1093/qje/qjaf002": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1093_qje_qjaf002.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Introduction (1/4)",
+   "Introduction (2/4)",
+   "Introduction (3/4)",
+   "Introduction (4/4)",
+   "Conclusion"
+  ],
+  "source_kind": "pdf",
+  "title": "The Diffusion of New Technologies",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjaf002"
+  ],
+  "year": 2025
+ },
+ "doi:10.1093/qje/qjag004": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1093_qje_qjag004.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início (1/7)",
+   "Início (2/7)",
+   "Início (3/7)",
+   "Início (4/7)"
+  ],
+  "source_kind": "pdf",
+  "title": "How Do You Identify a Good Manager?",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjag004"
+  ],
+  "year": 2026
+ },
+ "doi:10.1093/qje/qjag006": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Automation and Rent Dissipation: Implications for Wages, Inequality, and Productivity",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjag006"
+  ],
+  "year": 2026
+ },
+ "doi:10.1093/qje/qjag027": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "The Power of Proximity to Coworkers",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjag027"
+  ],
+  "year": 2026
+ },
+ "doi:10.1093/qje/qjag040": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/qje/qjag040"
+  ],
+  "year": 2026
+ },
+ "doi:10.1093/restud/rdaf040": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025",
+   "marco (2018–2022)"
+  ],
+  "title": "Hiring as Exploration",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/restud/rdaf040"
+  ],
+  "year": 2025
+ },
+ "doi:10.1093/rfs/hhz018": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 429: Too Many Requests",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "The Role of Technology in Mortgage Lending",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/rfs/hhz018"
+  ],
+  "year": 2019
+ },
+ "doi:10.1093/rfs/hhz099": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "On the Rise of FinTechs: Credit Scoring Using Digital Footprints",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/rfs/hhz099"
+  ],
+  "year": 2019
+ },
+ "doi:10.1093/rof/rfag046": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Competing digital money",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1093/rof/rfag046"
+  ],
+  "year": 2026
+ },
+ "doi:10.1109/5254.809570": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Distributed data mining in credit card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/5254.809570"
+  ],
+  "year": 1999
+ },
+ "doi:10.1109/72.595879": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 404: Not Found",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Neural fraud detection in credit card operations",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/72.595879"
+  ],
+  "year": 1997
+ },
+ "doi:10.1109/hicss.1994.323314": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Credit card fraud detection with a neural-network",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/hicss.1994.323314"
+  ],
+  "year": 1994
+ },
+ "doi:10.1109/ojcs.2025.3543450": {
+  "chars": 57903,
+  "checked": "2026-11-18",
+  "file": "doi_10.1109_ojcs.2025.3543450.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-",
+   "https://kaggle.com/datasets/sriharshaeedala/Þnancial-fraud-"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início (1/3)",
+   "Início (2/3)",
+   "Início (3/3)"
+  ],
+  "source_kind": "pdf",
+  "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/ojcs.2025.3543450"
+  ],
+  "year": 2025
+ },
+ "doi:10.1109/tai.1999.809773": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Neural data mining for credit card fraud detection",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tai.1999.809773"
+  ],
+  "year": 2003
+ },
+ "doi:10.1109/tdsc.2007.70228": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Credit Card Fraud Detection Using Hidden Markov Model",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tdsc.2007.70228"
+  ],
+  "year": 2008
+ },
+ "doi:10.1109/tkde.2025.3543887": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Enhancing Attribute-Driven Fraud Detection With Risk-Aware Graph Representation",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tkde.2025.3543887"
+  ],
+  "year": 2025
+ },
+ "doi:10.1109/tsmc.2025.3648571": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "CamFD: Semi-Supervised Camouflage-Aware Fraud Detection Based on Dynamic Graphs",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1109/tsmc.2025.3648571"
+  ],
+  "year": 2025
+ },
+ "doi:10.1111/1540-6261.00505": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1111_1540-6261.00505.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "sections": [
+   "Início (1/5)",
+   "Início (2/5)",
+   "Início (3/5)",
+   "Início (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "Does Distance Still Matter? The Information Revolution in Small Business Lending",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1111/1540-6261.00505"
+  ],
+  "year": 2002
+ },
+ "doi:10.1111/1748-8583.12435": {
+  "chars": 41309,
+  "checked": "2026-11-18",
+  "file": "doi_10.1111_1748-8583.12435.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início (1/3)",
+   "Início (2/3)",
+   "Início (3/3)"
+  ],
+  "source_kind": "pdf",
+  "title": "HR analytics: An emerging field finding its place in the world alongside simmering ethical challenges",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1111/1748-8583.12435"
+  ],
+  "year": 2022
+ },
+ "doi:10.1111/jeea.12094": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "JEEA-FBBVA LECTURE 2013: THE NEW EMPIRICAL ECONOMICS OF MANAGEMENT",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1111/jeea.12094"
+  ],
+  "year": 2014
+ },
+ "doi:10.1111/jofi.13090": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: <urlopen error timed out>",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Predictably Unequal? The Effects of Machine Learning on Credit Markets",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1111/jofi.13090"
+  ],
+  "year": 2021
+ },
+ "doi:10.1111/peps.12578": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Personnel selection: A review of ways to maximize validity, diversity, and the applicant experience",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1111/peps.12578"
+  ],
+  "year": 2023
+ },
+ "doi:10.1126/science.adh2586": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1126/science.adh2586"
+  ],
+  "year": 2023
+ },
+ "doi:10.1145/1124772.1124861": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Why phishing works",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/1124772.1124861"
+  ],
+  "year": 2006
+ },
+ "doi:10.1145/1242572.1242659": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Cantina: a content-based approach to detecting phishing web sites",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/1242572.1242659"
+  ],
+  "year": 2007
+ },
+ "doi:10.1145/163298.163309": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "The productivity paradox of information technology",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/163298.163309"
+  ],
+  "year": 1993
+ },
+ "doi:10.1145/2939672.2939778": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1145/2939672.2939778"
+  ],
+  "year": 2016
+ },
+ "doi:10.1146/annurev-orgpsych-020924-072127": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Hiring People in Organizations: The State and Future of the Science",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1146/annurev-orgpsych-020924-072127"
+  ],
+  "year": 2025
+ },
+ "doi:10.1162/003355302753399526": {
+  "chars": 63490,
+  "checked": "2026-11-18",
+  "file": "doi_10.1162_003355302753399526.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/2)",
+   "Introduction (2/2)",
+   "Empirical Results (1/2)",
+   "Empirical Results (2/2)",
+   "Conclusion"
+  ],
+  "source_kind": "pdf",
+  "title": "Information Technology, Workplace Organization, and the Demand for Skilled Labor: Firm-Level Evidence",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1162/003355302753399526"
+  ],
+  "year": 2002
+ },
+ "doi:10.1162/003355303322552801": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1162_003355303322552801.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "sections": [
+   "Início",
+   "Introduction (1/5)",
+   "Introduction (2/5)",
+   "Introduction (3/5)",
+   "Introduction (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "The Skill Content of Recent Technological Change: An Empirical Exploration",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1162/003355303322552801"
+  ],
+  "year": 2003
+ },
+ "doi:10.1162/003465303772815736": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Computing Productivity: Firm-Level Evidence",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1162/003465303772815736"
+  ],
+  "year": 2003
+ },
+ "doi:10.1177/0008125619867910": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Artificial Intelligence in Human Resources Management: Challenges and a Path Forward",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1177/0008125619867910"
+  ],
+  "year": 2019
+ },
+ "doi:10.1177/0149206314550995": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Customer Mistreatment, Employee Health, and Job Performance: Cognitive Rumination and Social Sharing as Mediating Mechanisms",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1177/0149206314550995"
+  ],
+  "year": 2014
+ },
+ "doi:10.1177/0950017018785616": {
+  "chars": 60834,
+  "checked": "2026-11-18",
+  "file": "doi_10.1177_0950017018785616.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "sections": [
+   "Início (1/4)",
+   "Início (2/4)",
+   "Início (3/4)",
+   "Início (4/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Global Gig Economy",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1177/0950017018785616"
+  ],
+  "year": 2018
+ },
+ "doi:10.1177/14773708251329695": {
+  "chars": 66888,
+  "checked": "2026-11-18",
+  "file": "doi_10.1177_14773708251329695.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/4)",
+   "Início (2/4)",
+   "Início (3/4)",
+   "Início (4/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "The evolution of Nigerian cybercrime: Two case studies of UK-based offender networks",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1177/14773708251329695"
+  ],
+  "year": 2025
+ },
+ "doi:10.1177/2053951718756684": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1177/2053951718756684"
+  ],
+  "year": 2018
+ },
+ "doi:10.1214/ss/1042727940": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Statistical Fraud Detection: A Review",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1214/ss/1042727940"
+  ],
+  "year": 2002
+ },
+ "doi:10.1257/0002828042002561": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/0002828042002561"
+  ],
+  "year": 2004
+ },
+ "doi:10.1257/aer.104.1.183": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Risk Sharing and Transactions Costs: Evidence from Kenya's Mobile Money Revolution",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/aer.104.1.183"
+  ],
+  "year": 2013
+ },
+ "doi:10.1257/aer.20220831": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026",
+   "marco (2023 em diante)"
+  ],
+  "title": "“Potential” and the Gender Promotion Gap",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/aer.20220831"
+  ],
+  "year": 2026
+ },
+ "doi:10.1257/aer.90.5.1346": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Performance Pay and Productivity",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/aer.90.5.1346"
+  ],
+  "year": 2000
+ },
+ "doi:10.1257/jep.14.4.23": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "title": "Beyond Computation: Information Technology, Organizational Transformation and Business Performance",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/jep.14.4.23"
+  ],
+  "year": 2000
+ },
+ "doi:10.1257/jep.33.2.3": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Automation and New Tasks: How Technology Displaces and Reinstates Labor",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1257/jep.33.2.3"
+  ],
+  "year": 2019
+ },
+ "doi:10.1287/mnsc.2022.03920": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Engaging Customers with AI in Online Chats: Evidence from a Randomized Field Experiment",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2022.03920"
+  ],
+  "year": 2025
+ },
+ "doi:10.1287/mnsc.2022.03968": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Reskilling the Workforce for AI: Domain Expertise and Algorithmic Literacy",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2022.03968"
+  ],
+  "year": 2025
+ },
+ "doi:10.1287/mnsc.2023.4674": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "title": "The Gendering of Job Postings in the Online Recruitment Process",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2023.4674"
+  ],
+  "year": 2023
+ },
+ "doi:10.1287/mnsc.2024.04703": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Driving Merchant Adoption of Digital Payment Solutions Through Customer Success Management",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2024.04703"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.2024.05125": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: <urlopen error timed out>",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Misreporting of Mandatory ESG Disclosures: Evidence from Gender Pay Gap Information",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2024.05125"
+  ],
+  "year": 2025
+ },
+ "doi:10.1287/mnsc.2024.06807": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Bank Run, Interrupted: Modeling Deposit Withdrawals with Generative AI",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2024.06807"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.2024.07017": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "How Do Different Remote Work Arrangements Impact Employee Job Satisfaction and Retention?",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2024.07017"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.2024.07027": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Does AI Cheapen Talk? Theory and Evidence from Global Entrepreneurship and Hiring",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2024.07027"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.2025.00535": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2025.00535"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.2025.02874": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "Privacy Regulation and Fintech Lending",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.2025.02874"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/mnsc.42.4.541": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Paradox Lost? Firm-Level Evidence on the Returns to Information Systems Spending",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/mnsc.42.4.541"
+  ],
+  "year": 1996
+ },
+ "doi:10.1287/orsc.2025.20702": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/orsc.2025.20702"
+  ],
+  "year": 2026
+ },
+ "doi:10.1287/orsc.2025.21838": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2026",
+   "marco (2023 em diante)"
+  ],
+  "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.1287/orsc.2025.21838"
+  ],
+  "year": 2026
+ },
+ "doi:10.1509/jmkg.64.3.50.18024": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.1509_jmkg.64.3.50.18024.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2000–2009)"
+  ],
+  "sections": [
+   "Início (1/5)",
+   "Início (2/5)",
+   "Início (3/5)",
+   "Início (4/5)"
+  ],
+  "source_kind": "pdf",
+  "title": "Self-Service Technologies: Understanding Customer Satisfaction with Technology-Based Service Encounters",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.1509/jmkg.64.3.50.18024"
+  ],
+  "year": 2000
+ },
+ "doi:10.18653/v1/n19-1423": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "pdf: sem texto legível",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.18653/v1/n19-1423"
+  ],
+  "year": 2019
+ },
+ "doi:10.2139/ssrn.5036270": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "The Rise of Industrial AI in America",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2139/ssrn.5036270"
+  ],
+  "year": 2025
+ },
+ "doi:10.2139/ssrn.5254520": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Artificial Intelligence and Relationship Lending",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2139/ssrn.5254520"
+  ],
+  "year": 2025
+ },
+ "doi:10.21799/frbp.wp.2025.31": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.21799_frbp.wp.2025.31.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Introduction (1/2)",
+   "Introduction (2/2)",
+   "Data (1/4)",
+   "Data (2/4)",
+   "Data (3/4)"
+  ],
+  "source_kind": "pdf",
+  "title": "Underwater: Strategic Trading and Risk Management in Bank Securities Portfolios",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.21799/frbp.wp.2025.31"
+  ],
+  "year": 2025
+ },
+ "doi:10.2307/2094589": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: HTTP Error 403: Forbidden",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Social Change and Crime Rate Trends: A Routine Activity Approach",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2307/2094589"
+  ],
+  "year": 1979
+ },
+ "doi:10.2307/249475": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Productivity, Business Profitability, and Consumer Surplus: Three Different Measures of Information Technology Value1,2",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2307/249475"
+  ],
+  "year": 1996
+ },
+ "doi:10.2867/1772538": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "landing: sem texto legível",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "AI adoption, productivity and employment: Evidence from European firms",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.2867/1772538"
+  ],
+  "year": 2026
+ },
+ "doi:10.30574/wjaets.2025.14.2.0071": {
+  "chars": 32088,
+  "checked": "2026-11-18",
+  "file": "doi_10.30574_wjaets.2025.14.2.0071.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [
+   "https://huggingface.co/blog/smolagents"
+  ],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/2)",
+   "Introduction (2/2)"
+  ],
+  "source_kind": "html",
+  "title": "Advancing innovation in financial stability: A comprehensive review of ai agent frameworks, challenges and applications",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.30574/wjaets.2025.14.2.0071"
+  ],
+  "year": 2025
+ },
+ "doi:10.3386/w32849": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w32849.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "marco (2023 em diante)"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/8)",
+   "Abstract (2/8)",
+   "Abstract (3/8)",
+   "Abstract (4/8)"
+  ],
+  "source_kind": "pdf",
+  "title": "People, Practices, and Productivity: A Review of New Advances in Personnel Economics",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w32849"
+  ],
+  "year": 2024
+ },
+ "doi:10.3386/w33508": {
+  "chars": 78806,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w33508.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/3)",
+   "Abstract (2/3)",
+   "Abstract (3/3)",
+   "Concluding Remarks",
+   "Data"
+  ],
+  "source_kind": "pdf",
+  "title": "Measuring Work from Home",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w33508"
+  ],
+  "year": 2025
+ },
+ "doi:10.3386/w33641": {
+  "chars": 60680,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w33641.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início",
+   "Abstract",
+   "Introduction (1/2)",
+   "Introduction (2/2)",
+   "Empirical Strategy",
+   "Results (1/2)",
+   "Results (2/2)"
+  ],
+  "source_kind": "pdf",
+  "title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w33641"
+  ],
+  "year": 2025
+ },
+ "doi:10.3386/w34910": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w34910.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/7)",
+   "Abstract (2/7)",
+   "Abstract (3/7)",
+   "Abstract (4/7)"
+  ],
+  "source_kind": "pdf",
+  "title": "AI, Human Cognition and Knowledge Collapse",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w34910"
+  ],
+  "year": 2026
+ },
+ "doi:10.3386/w35067": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w35067.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/7)",
+   "Abstract (2/7)",
+   "Abstract (3/7)",
+   "Abstract (4/7)"
+  ],
+  "source_kind": "pdf",
+  "title": "Who Pays for Payments?",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w35067"
+  ],
+  "year": 2026
+ },
+ "doi:10.3386/w35638": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w35638.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/7)",
+   "Abstract (2/7)",
+   "Abstract (3/7)",
+   "Abstract (4/7)"
+  ],
+  "source_kind": "pdf",
+  "title": "Tracing the Impact of Payment Convenience on Deposits: Evidence from Depositor Activeness",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w35638"
+  ],
+  "year": 2026
+ },
+ "doi:10.3386/w35720": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w35720.json",
+  "has_text": true,
+  "license": null,
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/6)",
+   "Abstract (2/6)",
+   "Abstract (3/6)",
+   "Abstract (4/6)"
+  ],
+  "source_kind": "pdf",
+  "title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w35720"
+  ],
+  "year": 2026
+ },
+ "doi:10.3386/w35987": {
+  "chars": 80000,
+  "checked": "2026-11-18",
+  "file": "doi_10.3386_w35987.json",
+  "has_text": true,
+  "license": null,
+  "repos": [
+   "https://github.com/metr/cross-domain-horizon"
+  ],
+  "roles": [
+   "destaque 2026"
+  ],
+  "sections": [
+   "Início",
+   "Abstract (1/13)",
+   "Abstract (2/13)",
+   "Abstract (3/13)",
+   "Abstract (4/13)"
+  ],
+  "source_kind": "pdf",
+  "title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.3386/w35987"
+  ],
+  "year": 2026
+ },
+ "doi:10.3390/computation13120290": {
+  "chars": 56184,
+  "checked": "2026-11-18",
+  "file": "doi_10.3390_computation13120290.json",
+  "has_text": true,
+  "license": "cc-by",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/3)",
+   "Início (2/3)",
+   "Início (3/3)"
+  ],
+  "source_kind": "pdf",
+  "title": "Objective over Architecture: Fraud Detection Under Extreme Imbalance in Bank Account Opening",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.3390/computation13120290"
+  ],
+  "year": 2025
+ },
+ "doi:10.3390/fintech4020026": {
+  "chars": 53253,
+  "checked": "2026-11-18",
+  "file": "doi_10.3390_fintech4020026.json",
+  "has_text": true,
+  "license": "other-oa",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "sections": [
+   "Início (1/3)",
+   "Início (2/3)",
+   "Início (3/3)"
+  ],
+  "source_kind": "pdf",
+  "title": "The Role of Regulatory Sandboxes in FinTech Innovation: A Comparative Case Study of the UK, Singapore, and Hungary",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.3390/fintech4020026"
+  ],
+  "year": 2025
+ },
+ "doi:10.4324/9781439817803-12": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "Social Change and Crime Rate Trends: A Routine Activity Approach (1979)",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.4324/9781439817803-12"
+  ],
+  "year": 2010
+ },
+ "doi:10.5089/9781513533308.068": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2026"
+  ],
+  "title": "How Agentic AI Will Reshape Payments",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.5089/9781513533308.068"
+  ],
+  "year": 2026
+ },
+ "doi:10.52202/068431-2011": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Training Language Models to Follow Instructions with Human Feedback",
+  "topics": [
+   "tecnologia-bancaria"
+  ],
+  "urls": [
+   "https://doi.org/10.52202/068431-2011"
+  ],
+  "year": 2022
+ },
+ "doi:10.5465/256287": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "PSYCHOLOGICAL CONDITIONS OF PERSONAL ENGAGEMENT AND DISENGAGEMENT AT WORK.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.5465/256287"
+  ],
+  "year": 1990
+ },
+ "doi:10.5465/256741": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON TURNOVER, PRODUCTIVITY, AND CORPORATE FINANCIAL PERFORMANCE.",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.5465/256741"
+  ],
+  "year": 1995
+ },
+ "doi:10.5465/annals.2018.0174": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2018–2022)"
+  ],
+  "title": "Algorithms at Work: The New Contested Terrain of Control",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.5465/annals.2018.0174"
+  ],
+  "year": 2019
+ },
+ "doi:10.5465/annals.2022.0072": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "destaque 2025"
+  ],
+  "title": "Managing with Artificial Intelligence: An Integrative Framework",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.5465/annals.2022.0072"
+  ],
+  "year": 2025
+ },
+ "doi:10.7208/chicago/9780226041223.001.0001": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://doi.org/10.7208/chicago/9780226041223.001.0001"
+  ],
+  "year": 1993
+ },
+ "oa:W1518638857": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Work and motivation",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://openalex.org/W1518638857"
+  ],
+  "year": 1964
+ },
+ "oa:W2146935111": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (até 1999)"
+  ],
+  "title": "Combining data mining and machine learning for effective user profiling",
+  "topics": [
+   "fraude-bancaria"
+  ],
+  "urls": [
+   "https://openalex.org/W2146935111"
+  ],
+  "year": 1996
+ },
+ "oa:W645758977": {
+  "checked": "2026-11-18",
+  "has_text": false,
+  "reason": "sem cópia aberta",
+  "repos": [],
+  "roles": [
+   "marco (2010–2017)"
+  ],
+  "title": "The Shift: The Future of Work Is Already Here",
+  "topics": [
+   "people-analytics"
+  ],
+  "urls": [
+   "https://openalex.org/W645758977"
+  ],
+  "year": 2011
+ }
+}

@@ -5,7 +5,10 @@
 // 1) the LLM expands the question into PT+EN search terms; 2) archive.search ranks the archive;
 // 3) the LLM answers from the top sources only.
 
-import { search } from "./archive.js";
+import { loadFulltext, paperKey, rankChunks, search } from "./archive.js";
+
+const FULLTEXT_PAPERS = 3;   // top hits whose stored full text is searched
+const FULLTEXT_CHUNKS = 6;   // passages added to the sources
 
 export const NOT_FOUND = "Não encontrei nada no arquivo deste tema sobre isso. Tente outras palavras, ou um assunto mais próximo dos temas cobertos.";
 
@@ -18,7 +21,27 @@ function answerSystem(name) {
     `Não invente papers, números ou autores. Se as fontes não respondem bem à pergunta, diga isso claramente e diga o que elas cobrem. ` +
     `Fontes "paper triado" trazem o resumo original de papers que a curadoria avaliou mas não necessariamente destacou; ` +
     `"destaque", "marco" e "retrospectiva" já passaram por uma seleção mais rígida — prefira-os quando disserem o mesmo. ` +
+    `Fontes "texto completo" são trechos do próprio paper (método, resultados, números): use-as para detalhes e cite-as. ` +
     `Formato: 1 a 3 parágrafos curtos; pode usar **negrito** em termos-chave. Sem cabeçalhos, sem lista de referências no fim.`;
+}
+
+/** Passages from the stored full text of the best-ranked papers (shared store, see archive.loadPapers). */
+async function fulltextSources(papers, hits, terms) {
+  if (!papers) return [];
+  const out = [];
+  let used = 0;
+  for (const h of hits) {
+    if (used >= FULLTEXT_PAPERS || out.length >= FULLTEXT_CHUNKS) break;
+    const key = h.url && paperKey(papers, h.url);
+    const doc = key && (await loadFulltext(papers, key));
+    if (!doc) continue;
+    used++;
+    for (const c of rankChunks(doc, terms, 2)) {
+      if (out.length >= FULLTEXT_CHUNKS) break;
+      out.push({ kind: "texto completo", title: `${doc.title} — ${c.section}`, url: h.url, when: String(doc.year || ""), text: c.text });
+    }
+  }
+  return out;
 }
 
 /**
@@ -26,9 +49,10 @@ function answerSystem(name) {
  * @param question the user's question
  * @param history  up to the last exchanges [{q, a}]
  * @param llm      async (messages, maxTokens) => {text, model}
+ * @param papers   optional, from archive.loadPapers: adds passages of stored full texts
  * @returns {answer, model, sources: [{n, kind, title, url, when}]}; throws if the answering LLM call fails
  */
-export async function ask({ archive, question, history = [], llm }) {
+export async function ask({ archive, question, history = [], llm, papers = null }) {
   const name = archive.name;
   // 1) search terms in PT and EN (titles are mostly English, questions Portuguese)
   let terms = [question, ...history.map((h) => h.q)];
@@ -40,8 +64,9 @@ export async function ask({ archive, question, history = [], llm }) {
     terms = terms.concat(text.split(/[,;\n]/));
   } catch { /* fall back to the question's own words */ }
 
-  const sources = search(archive, terms);
-  if (!sources.length) return { answer: NOT_FOUND, model: null, sources: [] };
+  const hits = search(archive, terms);
+  if (!hits.length) return { answer: NOT_FOUND, model: null, sources: [] };
+  const sources = [...hits, ...(await fulltextSources(papers, hits, terms))];
 
   // 2) answer from the sources only
   const block = sources.map((s, i) =>
