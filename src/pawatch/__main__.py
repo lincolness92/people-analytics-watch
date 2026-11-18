@@ -55,6 +55,9 @@ def run_topic(topic, args):
     if not scores:
         log(f"[{topic.slug}] triagem não retornou nada — abortando sem gravar")
         return False
+    from .library import add as add_to_library
+    kept = add_to_library(topic, pool, scores, origin="digest", when=today.isoformat())
+    log(f"[{topic.slug}] biblioteca: +{kept} papers com nota ≥ 5")
     result = write_digest(llm, pool, scores, sel, topic) or {"headline": "", "trend": "", "items": [], "quick": []}
 
     digest = {
@@ -177,6 +180,10 @@ def run_annual(topic, year):
     except Exception as e:  # one topic failing must not block the others
         log(f"[{topic.slug}] retrospectiva {year} falhou: {e!r}")
         return False
+    lib = d.pop("_library", None)
+    if lib:
+        from .library import add as add_to_library
+        log(f"[{topic.slug}] biblioteca: +{add_to_library(topic, *lib, origin=f'anual {year}')} papers da retrospectiva")
     out = topic.data / "annual" / f"{year}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -545,7 +545,7 @@
     ];
     app.innerHTML = `
       <h1 class="day">Pergunte ao arquivo</h1>
-      <p class="dek">A IA responde usando só os papers deste arquivo (digests e Evolução) e cita cada um. Se o arquivo não cobre o assunto, ela diz.</p>
+      <p class="dek">A IA responde usando só o arquivo deste tema (digests, Evolução, retrospectivas anuais e a biblioteca de papers triados, com os resumos originais) e cita cada fonte. Se o arquivo não cobre o assunto, ela diz.</p>
       <div class="chips ask-examples">${examples.map((x) => `<button type="button" class="chip" data-example="${esc(x)}">${esc(x)}</button>`).join("")}</div>
       <div id="qa-list">${askState.history.map(renderAnswer).join("")}</div>
       <form id="ask-form" class="ask-form">

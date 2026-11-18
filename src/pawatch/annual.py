@@ -198,6 +198,7 @@ def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150):
         "overview": (out.get("overview") or "").strip(), "trends": out.get("trends") or [],
         "innovation": (out.get("innovation") or "").strip(), "highlights": highlights, "growth": growth,
         "geography": geo,
+        "_library": (pool, scores),  # popped by the caller: triaged papers go to the topic library
         "stats": {"works": len(cands), "triaged": len(scores), "highlights": len(highlights),
                   "openalex_calls": a.calls, "openalex_cost": round(a.cost, 4), "tokens": llm.usage},
     }

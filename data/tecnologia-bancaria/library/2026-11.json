@@ -1,0 +1,1680 @@
+[
+{
+"key": "doi:10.18653/v1/n19-1423",
+"title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+"url": "https://doi.org/10.18653/v1/n19-1423",
+"venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+"date": "2019-01-01",
+"authors": [
+"Jacob Devlin",
+"Ming-Wei Chang",
+"Kenton Lee",
+"Kristina Toutanova"
+],
+"abstract": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.",
+"score": 10,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/2939672.2939778",
+"title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
+"url": "https://doi.org/10.1145/2939672.2939778",
+"venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+"date": "2016-08-08",
+"authors": [
+"Marco Túlio Ribeiro",
+"Sameer Singh",
+"Carlos Guestrin"
+],
+"abstract": "Despite widespread adoption, machine learning models remain mostly black boxes. Understanding the reasons behind predictions is, however, quite important in assessing trust, which is fundamental if one plans to take action based on a prediction, or when choosing whether to deploy a new model. Such understanding also provides insights into the model, which can be used to transform an untrustworthy model or prediction into a trustworthy one.",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.inffus.2019.12.012",
+"title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+"url": "https://doi.org/10.1016/j.inffus.2019.12.012",
+"venue": "Information Fusion",
+"date": "2019-12-26",
+"authors": [
+"Alejandro Barredo Arrieta",
+"Natalia Díaz-Rodríguez",
+"Javier Del Ser",
+"Adrien Bennetot",
+"Siham Tabik",
+"Alberto Barbado"
+],
+"abstract": "",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jsis.2019.01.003",
+"title": "Understanding digital transformation: A review and a research agenda",
+"url": "https://doi.org/10.1016/j.jsis.2019.01.003",
+"venue": "The Journal of Strategic Information Systems",
+"date": "2019-02-10",
+"authors": [
+"Grégory Vial"
+],
+"abstract": "",
+"score": 7,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3236386.3241340",
+"title": "The Mythos of Model Interpretability",
+"url": "https://doi.org/10.1145/3236386.3241340",
+"venue": "Queue",
+"date": "2018-06-01",
+"authors": [
+"Zachary C. Lipton"
+],
+"abstract": "Supervised machine-learning models boast remarkable predictive capabilities. But can you trust your model? Will it work in deployment? What else can it tell you about the world?",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/1094670517752459",
+"title": "Artificial Intelligence in Service",
+"url": "https://doi.org/10.1177/1094670517752459",
+"venue": "Journal of Service Research",
+"date": "2018-02-05",
+"authors": [
+"Ming‐Hui Huang",
+"Roland T. Rust"
+],
+"abstract": "Artificial intelligence (AI) is increasingly reshaping service by performing various tasks, constituting a major source of innovation, yet threatening human jobs. We develop a theory of AI job replacement to address this double-edged impact. The theory specifies four intelligences required for service tasks—mechanical, analytical, intuitive, and empathetic—and lays out the way firms should decide between humans and machines for accomplishing those tasks. AI is developing in a predictable order, with mechanical mostly preceding analytical, analytical mostly preceding intuitive, and intuitive mostly preceding empathetic intelligence. The theory asserts that AI job replacement occurs fundamentally at the task level, rather than the job level, and for “lower” (easier for AI) intelligence tasks first. AI first replaces some of a service job’s tasks, a transition stage seen as augmentation, and then progresses to replace human labor entirely when it has the ability to take over all of a job’s tasks. The progression of AI task replacement from lower to higher intelligences results in predictable shifts over time in the relative importance of the intelligences for service employees. An imp",
+"score": 8,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s11747-019-00696-0",
+"title": "How artificial intelligence will change the future of marketing",
+"url": "https://doi.org/10.1007/s11747-019-00696-0",
+"venue": "Journal of the Academy of Marketing Science",
+"date": "2019-10-10",
+"authors": [
+"Thomas H. Davenport",
+"Abhijit Guha",
+"Dhruv Grewal",
+"Timna Breßgott"
+],
+"abstract": "Abstract In the future, artificial intelligence (AI) is likely to substantially change both marketing strategies and customer behaviors. Building from not only extant research but also extensive interactions with practice, the authors propose a multidimensional framework for understanding the impact of AI involving intelligence levels, task types, and whether AI is embedded in a robot. Prior research typically addresses a subset of these dimensions; this paper integrates all three into a single framework. Next, the authors propose a research agenda that addresses not only how marketing strategies and customer behaviors will change in the future, but also highlights important policy questions relating to privacy, bias and ethics. Finally, the authors suggest AI will be more effective if it augments (rather than replaces) human managers.",
+"score": 8,
+"theme": "martech",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1257/jep.14.4.23",
+"title": "Beyond Computation: Information Technology, Organizational Transformation and Business Performance",
+"url": "https://doi.org/10.1257/jep.14.4.23",
+"venue": "The Journal of Economic Perspectives",
+"date": "2000-11-01",
+"authors": [
+"Erik Brynjolfsson",
+"Lorin M. Hitt"
+],
+"abstract": "To understand the economic value of computers, one must broaden the traditional definition of both the technology and its effects. Case studies and firm-level econometric evidence suggest that: 1) organizational “investments” have a large influence on the value of IT investments; and 2) the benefits of IT investment are often intangible and disproportionately difficult to measure. Our analysis suggests that the link between IT and increased productivity emerged well before the recent surge in the aggregate productivity statistics and that the current macroeconomic productivity revival may in part reflect the contributions of intangible capital accumulated in the past.",
+"score": 8,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1162/003355302753399526",
+"title": "Information Technology, Workplace Organization, and the Demand for Skilled Labor: Firm-Level Evidence",
+"url": "https://doi.org/10.1162/003355302753399526",
+"venue": "The Quarterly Journal of Economics",
+"date": "2002-02-01",
+"authors": [
+"Timothy F. Bresnahan",
+"Erik Brynjolfsson",
+"Lorin M. Hitt"
+],
+"abstract": "We investigate the hypothesis that the combination of three related innovations—1) information technology (IT), 2) complementary workplace reorganization, and 3) new products and services—constitute a significant skill-biased technical change affecting labor demand in the United States. Using detailed firm-level data, we find evidence of complementarities among all three of these innovations in factor demand and productivity regressions. In addition, firms that adopt these innovations tend to use more skilled labor. The effects of IT on labor demand are greater when IT is combined with the particular organizational investments we identify, highlighting the importance of IT-enabled organizational change.",
+"score": 8,
+"theme": "skills",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1509/jmkg.64.3.50.18024",
+"title": "Self-Service Technologies: Understanding Customer Satisfaction with Technology-Based Service Encounters",
+"url": "https://doi.org/10.1509/jmkg.64.3.50.18024",
+"venue": "Journal of Marketing",
+"date": "2000-07-01",
+"authors": [
+"Matthew L. Meuter",
+"Amy L. Ostrom",
+"Robert I. Roundtree",
+"Mary Jo Bitner"
+],
+"abstract": "Self-service technologies (SSTs) are increasingly changing the way customers interact with firms to create service outcomes. Given that the emphasis in the academic literature has focused almost exclusively on the interpersonal dynamics of service encounters, there is much to be learned about customer interactions with technology-based self-service delivery options. In this research, the authors describe the results of a critical incident study based on more than 800 incidents involving SSTs solicited from customers through a Web-based survey. The authors categorize these incidents to discern the sources of satisfaction and dissatisfaction with SSTs. The authors present a discussion of the resulting critical incident categories and their relationship to customer attributions, complaining behavior, word of mouth, and repeat purchase intentions, which is followed by implications for managers and researchers.",
+"score": 6,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/163298.163309",
+"title": "The productivity paradox of information technology",
+"url": "https://doi.org/10.1145/163298.163309",
+"venue": "Communications of the ACM",
+"date": "1993-12-01",
+"authors": [
+"Erik Brynjolfsson"
+],
+"abstract": "The relationship between information technology (IT) and productivity is widely discussed but little understood.Delivered computing power in the U.S. economy has increased by more than two orders of magnitude since 1970 (Figure 1) yet productivity; especially in the B u s i n e s s C o m p u t i n g 1~ble 2. Studies of IT in M a n u f a c t u r i n g 'robl® 3. Studies of IT in Services",
+"score": 8,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/josm-04-2018-0119",
+"title": "Brave new world: service robots in the frontline",
+"url": "https://doi.org/10.1108/josm-04-2018-0119",
+"venue": "Journal of service management",
+"date": "2018-09-26",
+"authors": [
+"Jochen Wirtz",
+"Paul G. Patterson",
+"Werner H. Kunz",
+"Thorsten Gruber",
+"Vinh Nhat Lu",
+"Stefanie Paluch"
+],
+"abstract": "Purpose The service sector is at an inflection point with regard to productivity gains and service industrialization similar to the industrial revolution in manufacturing that started in the eighteenth century. Robotics in combination with rapidly improving technologies like artificial intelligence (AI), mobile, cloud, big data and biometrics will bring opportunities for a wide range of innovations that have the potential to dramatically change service industries. The purpose of this paper is to explore the potential role service robots will play in the future and to advance a research agenda for service researchers. Design/methodology/approach This paper uses a conceptual approach that is rooted in the service, robotics and AI literature. Findings The contribution of this paper is threefold. First, it provides a definition of service robots, describes their key attributes, contrasts their features and capabilities with those of frontline employees, and provides an understanding for which types of service tasks robots will dominate and where humans will dominate. Second, this paper examines consumer perceptions, beliefs and behaviors as related to service robots, and advances the s",
+"score": 7,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1287/mnsc.42.4.541",
+"title": "Paradox Lost? Firm-Level Evidence on the Returns to Information Systems Spending",
+"url": "https://doi.org/10.1287/mnsc.42.4.541",
+"venue": "Management Science",
+"date": "1996-04-01",
+"authors": [
+"Erik Brynjolfsson",
+"Lorin M. Hitt"
+],
+"abstract": "The “productivity paradox” of information systems (IS) is that, despite enormous improvements in the underlying technology, the benefits of IS spending have not been found in aggregate output statistics. One explanation is that IS spending may lead to increases in product quality or variety which tend to be overlooked in the aggregate statistics, even if they increase output at the firm-level. Furthermore, the restructuring and cost-cutting that are often necessary to realize the potential benefits of IS have only recently been undertaken in many firms. Our study uses new firm-level data on several components of IS spending for 1987–1991. The dataset includes 367 large firms which generated approximately 1.8 trillion dollars in output in 1991. We supplemented the IS data with data on other inputs, output, and price deflators from other sources. As a result, we could assess several econometric models of the contribution of IS to firm-level productivity. Our results indicate that IS spending has made a substantial and statistically significant contribution to firm output. We find that the gross marginal product (MP) for computer capital averaged 81% for the firms in our sample. We fi",
+"score": 8,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jfineco.2018.03.011",
+"title": "Fintech, regulatory arbitrage, and the rise of shadow banks",
+"url": "https://doi.org/10.1016/j.jfineco.2018.03.011",
+"venue": "Journal of Financial Economics",
+"date": "2018-09-04",
+"authors": [
+"Greg Buchak",
+"Gregor Matvos",
+"Tomasz Piskorski",
+"Amit Seru"
+],
+"abstract": "Shadow bank market share in residential mortgage origination nearly doubled from 2007 to 2015, with particularly dramatic growth among online “fintech” lenders. We study how two forces, regulatory differences and technological advantages, contributed to this growth. Difference in difference tests exploiting geographical heterogeneity induced by four specific increases in regulatory burden–capital requirements, mortgage servicing rights, mortgage-related lawsuits, and the movement of supervision to Office of Comptroller and Currency following closure of the Office of Thrift Supervision–all reveal that traditional banks contracted in markets where they faced more regulatory constraints; shadow banks partially filled these gaps. Relative to other shadow banks, fintech lenders serve more creditworthy borrowers and are more active in the refinancing market. Fintech lenders charge a premium of 14–16 basis points and appear to provide convenience rather than cost savings to borrowers. They seem to use different information to set interest rates relative to other lenders. A quantitative model of mortgage lending suggests that regulation accounts for roughly 60% of shadow bank growth, while",
+"score": 6,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1257/aer.104.1.183",
+"title": "Risk Sharing and Transactions Costs: Evidence from Kenya's Mobile Money Revolution",
+"url": "https://doi.org/10.1257/aer.104.1.183",
+"venue": "American Economic Review",
+"date": "2013-12-26",
+"authors": [
+"William G. Jack",
+"Tavneet Suri"
+],
+"abstract": "We explore the impact of reduced transaction costs on risk sharing by estimating the effects of a mobile money innovation on consumption. In our panel sample, adoption of the innovation increased from 43 to 70 percent. We find that, while shocks reduce consumption by 7 percent for nonusers, the consumption of user households is unaffected. The mechanisms underlying these consumption effects are increases in remittances received and the diversity of senders. We report robustness checks supporting these results and use the four-fold expansion of the mobile money agent network as a source of exogenous variation in access to the innovation. (JEL E42, G22, O16, O17, Z13)",
+"score": 6,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1162/003465303772815736",
+"title": "Computing Productivity: Firm-Level Evidence",
+"url": "https://doi.org/10.1162/003465303772815736",
+"venue": "The Review of Economics and Statistics",
+"date": "2003-11-01",
+"authors": [
+"Erik Brynjolfsson",
+"Lorin M. Hitt"
+],
+"abstract": "We explore the effect of computerization on productivity and output growth using data from 527 large U.S. firms over 1987–1994. We find that computerization makes a contribution to measured productivity and output growth in the short term (using 1-year differences) that is consistent with normal returns to computer investments. However, the productivity and output contributions associated with computerization are up to 5 times greater over long periods (using 5- to 7-year differences). The results suggest that the observed contribution of computerization is accompanied by relatively large and time-consuming investments in complementary inputs, such as organizational capital, that may be omitted in conventional calculations of productivity. The large long-run contribution of computers and their associated complements that we uncover may partially explain the subsequent investment surge in computers in the late 1990s.",
+"score": 7,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.ejor.2015.05.030",
+"title": "Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research",
+"url": "https://doi.org/10.1016/j.ejor.2015.05.030",
+"venue": "European Journal of Operational Research",
+"date": "2015-05-14",
+"authors": [
+"Stefan Lessmann",
+"Bart Baesens",
+"Hsin‐Vonn Seow",
+"Lyn C. Thomas"
+],
+"abstract": "",
+"score": 6,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2307/249475",
+"title": "Productivity, Business Profitability, and Consumer Surplus: Three Different Measures of Information Technology Value1,2",
+"url": "https://doi.org/10.2307/249475",
+"venue": "MIS Quarterly",
+"date": "1996-06-01",
+"authors": [
+"Lorin M. Hitt",
+"Erik Brynjolfsson"
+],
+"abstract": "The business value of information technology (IT) has been debated for a number of years. While some authors have attributed large productivity improvements and substantial consumer benefits to IT, others report that IT has not had any bottom line impact on business profitability. This paper focuses on the fact that while productivity, consumer value, and business profitability are related, they are ultimately separate questions. Accordingly, the empirical results on IT value depend heavily on which question is being addressed and what data are being used. Applying methods based on economic theory, we are able to define and examine the relevant hypotheses for each of these three questions, using recent firm-level data on IT spending by 370 large firms. Our findings indicate that IT has increased productivity and created substantial value for consumers. However, we do not find evidence that these benefits have resulted in supranormal business profitability. We conclude that while modeling techniques need to be improved, these results are collectively consistent with economic theory. Thus, there is no inherent contradiction between increased productivity, increased consumer value, an",
+"score": 7,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1287/mksc.2019.1192",
+"title": "Frontiers: Machines vs. Humans: The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases",
+"url": "https://doi.org/10.1287/mksc.2019.1192",
+"venue": "Marketing Science",
+"date": "2019-09-20",
+"authors": [
+"Xueming Luo",
+"Siliang Tong",
+"Zheng Fang",
+"Zhe Qu"
+],
+"abstract": "Chatbot identity disclosure negatively affects customer purchases because customers perceive the disclosed bot as less knowledgeable and less empathetic.",
+"score": 6,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jfi.2019.100833",
+"title": "Fintech and Banking",
+"url": "https://doi.org/10.1016/j.jfi.2019.100833",
+"venue": "Journal of Financial Intermediation",
+"date": "2019-01-01",
+"authors": [
+"Anjan V. Thakor"
+],
+"abstract": "",
+"score": 7,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/qje/qjx032",
+"title": "Human Decisions and Machine Predictions",
+"url": "https://doi.org/10.1093/qje/qjx032",
+"venue": "The Quarterly Journal of Economics",
+"date": "2017-08-24",
+"authors": [
+"Jon Michael Kleinberg",
+"Himabindu Lakkaraju",
+"Jure Leskovec",
+"Jens Ludwig",
+"Sendhil Mullainathan"
+],
+"abstract": "Abstract Can machine learning improve human decision making? Bail decisions provide a good test case. Millions of times each year, judges make jail-or-release decisions that hinge on a prediction of what a defendant would do if released. The concreteness of the prediction task combined with the volume of data available makes this a promising machine-learning application. Yet comparing the algorithm to judges proves complicated. First, the available data are generated by prior judge decisions. We only observe crime outcomes for released defendants, not for those judges detained. This makes it hard to evaluate counterfactual decision rules based on algorithmic predictions. Second, judges may have a broader set of preferences than the variable the algorithm predicts; for instance, judges may care specifically about violent crimes or about racial inequities. We deal with these problems using different econometric strategies, such as quasi-random assignment of cases to judges. Even accounting for these concerns, our results suggest potentially large welfare gains: one policy simulation shows crime reductions up to 24.7% with no change in jailing rates, or jailing rate reductions up to 4",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/1094670516679272",
+"title": "Domo Arigato Mr. Roboto: Emergence of Automated Social Presence in Organizational Frontlines and Customers’ Service Experiences",
+"url": "https://doi.org/10.1177/1094670516679272",
+"venue": "Journal of Service Research",
+"date": "2016-11-28",
+"authors": [
+"Jenny van Doorn",
+"Martin Mende",
+"Stephanie M. Noble",
+"John S. Hulland",
+"Amy L. Ostrom",
+"Dhruv Grewal"
+],
+"abstract": "Technology is rapidly changing the nature of service, customers’ service frontline experiences, and customers’ relationships with service providers. Based on the prediction that in the marketplace of 2025, technology (e.g., service-providing humanoid robots) will be melded into numerous service experiences, this article spotlights technology’s ability to engage customers on a social level as a critical advancement of technology infusions. Specifically, it introduces the novel concept of automated social presence (ASP; i.e., the extent to which technology makes customers feel the presence of another social entity) to the services literature. The authors develop a typology that highlights different combinations of automated and human social presence in organizational frontlines and indicates literature gaps, thereby emphasizing avenues for future research. Moreover, the article presents a conceptual framework that focuses on (a) how the relationship between ASP and several key service and customer outcomes is mediated by social cognition and perceptions of psychological ownership as well as (b) three customer-related factors that moderate the relationship between ASP and social cogni",
+"score": 5,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1257/mac.20180386",
+"title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+"url": "https://doi.org/10.1257/mac.20180386",
+"venue": "American Economic Journal Macroeconomics",
+"date": "2020-12-30",
+"authors": [
+"Erik Brynjolfsson",
+"Daniel Rock",
+"Chad Syverson"
+],
+"abstract": "General purpose technologies (GPTs) like AI enable and require significant complementary investments. These investments are often intangible and poorly measured in national accounts. We develop a model that shows how this can lead to underestimation of productivity growth in a new GPTs early years and, later, when the benefits of intangible investments are harvested, productivity growth overestimation. We call this phenomenon the Productivity J-curve. We apply our method to US data and find that adjusting for intangibles related to computer hardware and software yields a TFP level that is 15.9 percent higher than official measures by the end of 2017. (JEL E22, E23, G31, L63, L86)",
+"score": 6,
+"theme": "automation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.chb.2018.03.051",
+"title": "Living up to the chatbot hype: The influence of anthropomorphic design cues and communicative agency framing on conversational agent and company perceptions",
+"url": "https://doi.org/10.1016/j.chb.2018.03.051",
+"venue": "Computers in Human Behavior",
+"date": "2018-03-29",
+"authors": [
+"Theo Araujo"
+],
+"abstract": "",
+"score": 7,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhz007",
+"title": "Blockchain Disruption and Smart Contracts",
+"url": "https://doi.org/10.1093/rfs/hhz007",
+"venue": "Review of Financial Studies",
+"date": "2017-01-01",
+"authors": [
+"Lin William Cong",
+"Zhiguo He",
+"Jingtao Zheng"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhz018",
+"title": "The Role of Technology in Mortgage Lending",
+"url": "https://doi.org/10.1093/rfs/hhz018",
+"venue": "Review of Financial Studies",
+"date": "2019-02-17",
+"authors": [
+"Andreas Fuster",
+"Matthew C. Plosser",
+"Philipp Schnabl",
+"James Ian Vickery"
+],
+"abstract": "Technology-based (\"FinTech\") lenders increased their market share of U.S. mortgage lending from 2% to 8% from 2010 to 2016. Using loan-level data on mortgage applications and originations, we show that FinTech lenders process mortgage applications 20% faster than other lenders, controlling for observable characteristics. Faster processing does not come at the cost of higher defaults. FinTech lenders adjust supply more elastically than do other lenders in response to exogenous mortgage demand shocks. In areas with more FinTech lending, borrowers refinance more, especially when it is in their interest. We find no evidence that FinTech lenders target borrowers with low access to finance.",
+"score": 8,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhz099",
+"title": "On the Rise of FinTechs: Credit Scoring Using Digital Footprints",
+"url": "https://doi.org/10.1093/rfs/hhz099",
+"venue": "Review of Financial Studies",
+"date": "2019-08-28",
+"authors": [
+"Tobias Berg",
+"Valentin Burg",
+"Ana Gombović",
+"Manju Puri B"
+],
+"abstract": "Abstract We analyze the information content of a digital footprint—that is, information that users leave online simply by accessing or registering on a Web site—for predicting consumer default. We show that even simple, easily accessible variables from a digital footprint match the information content of credit bureau scores. A digital footprint complements rather than substitutes for credit bureau information and affects access to credit and reduces default rates. We discuss the implications for financial intermediaries’ business models, access to credit for the unbanked, and the behavior of consumers, firms, and regulators in the digital sphere. (JEL G20, G21, G29)",
+"score": 9,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jbankfin.2010.06.001",
+"title": "Consumer credit-risk models via machine-learning algorithms",
+"url": "https://doi.org/10.1016/j.jbankfin.2010.06.001",
+"venue": "Journal of Banking & Finance",
+"date": "2010-06-11",
+"authors": [
+"Amir E. Khandani",
+"Adlar J. Kim",
+"Andrew W. Lo"
+],
+"abstract": "",
+"score": 6,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/imds-08-2018-0368",
+"title": "Artificial Intelligence in FinTech: understanding robo-advisors adoption among customers",
+"url": "https://doi.org/10.1108/imds-08-2018-0368",
+"venue": "Industrial Management & Data Systems",
+"date": "2019-06-07",
+"authors": [
+"Daniel Belanche",
+"Luis V. Casaló",
+"Carlos Flavián"
+],
+"abstract": "Purpose Considering the increasing impact of Artificial Intelligence (AI) on financial technology (FinTech), the purpose of this paper is to propose a research framework to better understand robo-advisor adoption by a wide range of potential customers. It also predicts that personal and sociodemographic variables (familiarity with robots, age, gender and country) moderate the main relationships. Design/methodology/approach Data from a web survey of 765 North American, British and Portuguese potential users of robo-advisor services confirm the validity of the measurement scales and provide the input for structural equation modeling and multisample analyses of the hypotheses. Findings Consumers’ attitudes toward robo-advisors, together with mass media and interpersonal subjective norms, are found to be the key determinants of adoption. The influences of perceived usefulness and attitude are slightly higher for users with a higher level of familiarity with robots; in turn, subjective norms are significantly more relevant for users with a lower familiarity and for customers from Anglo-Saxon countries. Practical implications Banks and other firms in the finance industry should design ro",
+"score": 7,
+"theme": "martech",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1073/pnas.1900949116",
+"title": "Toward understanding the impact of artificial intelligence on labor",
+"url": "https://doi.org/10.1073/pnas.1900949116",
+"venue": "Proceedings of the National Academy of Sciences",
+"date": "2019-03-25",
+"authors": [
+"Morgan R. Frank",
+"David Autor",
+"James Bessen",
+"Erik Brynjolfsson",
+"Manuel Cebrián",
+"David J Deming"
+],
+"abstract": "Rapid advances in artificial intelligence (AI) and automation technologies have the potential to significantly disrupt labor markets. While AI and automation can augment the productivity of some workers, they can replace the work done by others and will likely transform almost all occupations at least to some degree. Rising automation is happening in a period of growing economic inequality, raising fears of mass technological unemployment and a renewed call for policy efforts to address the consequences of technological change. In this paper we discuss the barriers that inhibit scientists from measuring the effects of AI and automation on the future of work. These barriers include the lack of high-quality data about the nature of work (e.g., the dynamic requirements of occupations), lack of empirically informed models of key microlevel processes (e.g., skill substitution and human-machine complementarity), and insufficient understanding of how cognitive technologies interact with broader economic dynamics and institutional mechanisms (e.g., urban migration and international trade policy). Overcoming these barriers requires improvements in the longitudinal and spatial resolution of ",
+"score": 5,
+"theme": "skills",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhz025",
+"title": "To FinTech and Beyond",
+"url": "https://doi.org/10.1093/rfs/hhz025",
+"venue": "Review of Financial Studies",
+"date": "2019-02-18",
+"authors": [
+"Itay Goldstein B",
+"Wei Jiang",
+"George Andrew Karolyi"
+],
+"abstract": "FinTech is about the introduction of new technologies into the financial sector, and it is now revolutionizing the financial industry. In 2017, when research in this area was not active in the academic community in finance, the editorial team of the Review of Financial Studies decided to launch a competition among scholars to develop research proposals focused on this topic. This special issue is the final outcome of this process. In this introductory article, we describe the recent FinTech phenomenon and the novel editorial protocol employed for this special issue following a Registered Reports format. We discuss what we learned from the submitted proposals about the field of FinTech and what proposals we selected to be completed and ultimately come out in this special issue. We also provide several observations that can hopefully help guide research in the emerging area of FinTech in the future.",
+"score": 5,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/epolic/eiaa003",
+"title": "BigTech and the changing structure of financial intermediation",
+"url": "https://doi.org/10.1093/epolic/eiaa003",
+"venue": "Economic Policy",
+"date": "2019-10-01",
+"authors": [
+"Jon Frost",
+"Leonardo Gambacorta",
+"Yi Huang",
+"Hyun Song Shin",
+"Pablo Zbinden"
+],
+"abstract": "SUMMARY Pablo Zbinden?>We consider the drivers and implications of the growth of ‘BigTech’ in finance – i.e. the financial services offerings of technology companies with established presence in the market for digital services. BigTech firms often start with payments. Thereafter, some expand into the provision of credit, insurance and money management products, either directly or in cooperation with financial institution partners. Focusing on credit, we show that BigTech firms lend more in countries with less competitive banking sectors and less stringent bank regulation. Analysing the case of Argentina, we find support for the hypothesis that BigTech lenders, by acquiring a vast amount of non-traditional information, have an advantage in credit assessment relative to a traditional credit bureau. They also serve unbanked borrowers, and may have an advantage in contract enforcement. It is too early to judge the extent of BigTech’s eventual advance into the provision of financial services. However, the early evidence allows us to pose pertinent questions that bear on their impact on financial stability and overall economic welfare.",
+"score": 8,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jfineco.2021.05.047",
+"title": "Consumer-lending discrimination in the FinTech Era",
+"url": "https://doi.org/10.1016/j.jfineco.2021.05.047",
+"venue": "Journal of Financial Economics",
+"date": "2021-05-28",
+"authors": [
+"Robert P. Bartlett",
+"Adair Morse",
+"Richard Stanton",
+"Nancy E. Wallace"
+],
+"abstract": "U.S. fair-lending law prohibits lenders from making credit determinations that disparately affect minority borrowers if those determinations are based on characteristics unrelated to creditworthiness. Using an identification under this rule, we show risk-equivalent Latinx/Black borrowers pay significantly higher interest rates on GSE-securitized and FHA-insured loans, particularly in high-minority-share neighborhoods. We estimate these rate differences cost minority borrowers over $450 million yearly. FinTech lenders’ rate disparities were similar to those of non-Fintech lenders for GSE mortgages , but lower for FHA mortgages issued in 2009–2015 and for FHA refi mortgages issued in 2018–2019.",
+"score": 8,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhy137",
+"title": "Peer-to-Peer Lenders Versus Banks: Substitutes or Complements?",
+"url": "https://doi.org/10.1093/rfs/hhy137",
+"venue": "Review of Financial Studies",
+"date": "2018-12-20",
+"authors": [
+"Huan Tang"
+],
+"abstract": "This paper studies whether, in the consumer credit market, peer-to-peer (P2P) lending platforms serve as substitutes for banks or instead as complements. I develop a conceptual framework and derive testable predictions to distinguish between these two possibilities. Using a regulatory change as an exogenous shock to bank credit supply, I find that P2P lending is a substitute for bank lending in terms of serving infra-marginal bank borrowers yet complements bank lending with respect to small loans. These results indicate that the credit expansion resulting from P2P lending likely occurs only among borrowers who already have access to bank credit.Received June 1, 2017; editorial decision September 15, 2018 by Editor Andrew Karolyi. Authors have furnished an Internet Appendix, which is available on the Oxford University Press Web site next to the link to the final published paper online.",
+"score": 7,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1146/annurev-financial-100719-120854",
+"title": "Digital Disruption in Banking",
+"url": "https://doi.org/10.1146/annurev-financial-100719-120854",
+"venue": "Annual Review of Financial Economics",
+"date": "2019-12-26",
+"authors": [
+"Xavier Vives"
+],
+"abstract": "This review surveys technological disruption in banking, examining its impact on competition and its potential to increase efficiency and customer welfare. It analyzes the possible strategies of the players involved—incumbents and FinTech and BigTech firms—and the role of regulation. The industry is facing radical transformation and restructuring, as well as a move toward a customer-centric platform-based model. Competition will increase as new players enter the industry, but the long-term impact is more open. Regulation will decisively influence to what extent BigTech will enter the industry and who the dominant players will be. The challenge for regulators will be to keep a level playing field that strikes the right balance between fostering innovation and preserving financial stability. Consumer protection concerns rise to the forefront.",
+"score": 7,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/fima.12295",
+"title": "The roles of alternative data and machine learning in fintech lending: Evidence from the LendingClub consumer platform",
+"url": "https://doi.org/10.1111/fima.12295",
+"venue": "Financial Management",
+"date": "2019-11-06",
+"authors": [
+"Julapa A. Jagtiani",
+"Catharine Lemieux"
+],
+"abstract": "Abstract There have been concerns about the use of alternative data sources by fintech lenders. We compare loans made by LendingClub and similar loans that were originated by banks. The correlations between the rating grades (assigned by LendingClub) and the borrowers’ FICO scores declined from about 80% (for loans originated in 2007) to about 35% for recent vintages (originated in 2014–2015), indicating that nontraditional data (not already accounted for in the FICO scores) have been increasingly used by fintech lenders. The rating grades perform well in predicting loan default. The use of alternative data has allowed some borrowers who would have been classified as subprime by traditional criteria to be slotted into “better” loan grades, allowing them to obtain lower priced credit.",
+"score": 8,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jeconbus.2018.03.001",
+"title": "Do fintech lenders penetrate areas that are underserved by traditional banks?",
+"url": "https://doi.org/10.1016/j.jeconbus.2018.03.001",
+"venue": "Journal of Economics and Business",
+"date": "2018-04-03",
+"authors": [
+"Julapa A. Jagtiani",
+"Catharine Lemieux"
+],
+"abstract": "",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3009952230",
+"title": "The Technology of Retail Central Bank Digital Currency",
+"url": "https://ddd.bis.org/publ/qtrpdf/r_qt2003j.htm",
+"venue": "BIS quarterly review",
+"date": "2020-03-01",
+"authors": [
+"Raphael A. Auer",
+"Rainer Boehme"
+],
+"abstract": "Central bank digital currencies (CBDCs) promise to provide cash-like safety and convenience for peer-to-peer payments. To do so, they must be resilient and accessible. They should also safeguard the user's privacy, while allowing for effective law enforcement. Different technical designs satisfy these attributes to varying degrees, depending on whether they feature intermediaries, a conventional or distributed infrastructure, account- or token-based access, and retail interlinkages across borders. We set out the underlying trade-offs and the related hierarchy of design choices.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jfs.2022.100989",
+"title": "The drivers of cyber risk",
+"url": "https://doi.org/10.1016/j.jfs.2022.100989",
+"venue": "Journal of Financial Stability",
+"date": "2022-03-04",
+"authors": [
+"Iñaki Aldasoro",
+"Leonardo Gambacorta",
+"Paolo Giudici",
+"Thomas Leach"
+],
+"abstract": "",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3014551736",
+"title": "Covid-19, cash, and the future of payments",
+"url": "https://ddd.bis.org/publ/bisbull03.htm",
+"venue": "",
+"date": "2020-04-03",
+"authors": [
+"Raphael A. Auer",
+"Giulio Cornelli",
+"Jon Frost"
+],
+"abstract": "The Covid-19 pandemic has fanned public concerns that the coronavirus could be transmitted by cash. Scientific evidence suggests that the probability of transmission via banknotes is low when compared with other frequently-touched objects, such as credit card terminals or PIN pads. To bolster trust in cash, central banks are actively communicating, urging continued acceptance of cash and, in some instances, sterilising or quarantining banknotes. Some encourage contactless payments. Looking ahead, developments could speed up the shift toward digital payments. This could open a divide in access to payments instruments, which could negatively impact unbanked and older consumers. The pandemic may amplify calls to defend the role of cash - but also calls for central bank digital currencies.",
+"score": 6,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jebo.2020.03.016",
+"title": "Important factors determining Fintech loan default: Evidence from a lendingclub consumer platform",
+"url": "https://doi.org/10.1016/j.jebo.2020.03.016",
+"venue": "Journal of Economic Behavior & Organization",
+"date": "2020-04-15",
+"authors": [
+"Christophe Croux",
+"Julapa A. Jagtiani",
+"Tarunsai Korivi",
+"Miloš Vulanović"
+],
+"abstract": "",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1142/s2705109920500042",
+"title": "Fintech Lending and Mortgage Credit Access",
+"url": "https://doi.org/10.1142/s2705109920500042",
+"venue": "The Journal of FinTech",
+"date": "2019-11-01",
+"authors": [
+"Julapa A. Jagtiani",
+"Lauren Lambie‐Hanson",
+"Timothy Lambie-Hanson"
+],
+"abstract": "Following the 2008 financial crisis, mortgage credit tightened and banks lost significant mortgage market share to nonbank lenders, including to fintech firms recently.Have fintech firms expanded credit access, or are their customers similar to those of traditional lenders?Unlike in small business and unsecured consumers lending, fintech mortgage lenders do not have the same incentives or flexibility to use alternative data for credit decisions because of stringent mortgage origination requirements.Fintech loans are broadly similar to those made by traditional lenders, despite innovations in the marketing and the application process.However, nonbanks market to consumers with weaker credit scores than do banks, and fintech lenders have greater market shares in areas with lower credit scores and higher mortgage denial rates.",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/oso/9780198845553.003.0011",
+"title": "The FinTech Opportunity",
+"url": "https://doi.org/10.1093/oso/9780198845553.003.0011",
+"venue": "Oxford University Press eBooks",
+"date": "2019-08-29",
+"authors": [
+"Thomas Philippon"
+],
+"abstract": "Abstract FinTech covers digital innovations and technology-enabled business model innovations in the financial sector. Such innovations can disrupt existing industry structures and blur industry boundaries, facilitate strategic disintermediation, revolutionize how existing firms create and deliver products and services, provide new gateways for entrepreneurship, democratize access to financial services, but also create significant privacy, regulatory and law-enforcement challenges. This chapter assesses potential impacts of FinTech on the finance industry. First we show that financial services remain surprisingly expensive in the U.S., which helps explain the emergence of new entrants. We then argue that the current regulatory approach is subject to significant political economy and coordination costs, and therefore it is unlikely to deliver much structural change. FinTech can improve both financial stability and access to services, but this will require important changes in the focus of regulations.",
+"score": 6,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.1706.03762",
+"title": "Attention Is All You Need",
+"url": "https://doi.org/10.48550/arxiv.1706.03762",
+"venue": "arXiv (Cornell University)",
+"date": "2017-06-12",
+"authors": [
+"Ashish Vaswani",
+"Noam Shazeer",
+"Niki Parmar",
+"Jakob Uszkoreit",
+"Llion Jones",
+"Aidan N. Gomez"
+],
+"abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+"score": 10,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2005.14165",
+"title": "Language Models are Few-Shot Learners",
+"url": "https://doi.org/10.48550/arxiv.2005.14165",
+"venue": "arXiv (Cornell University)",
+"date": "2020-05-28",
+"authors": [
+"Brown, Tom B.",
+"Benjamin Mann",
+"Nick Ryder",
+"Melanie Subbiah",
+"Jared Kaplan A",
+"Prafulla Dhariwal"
+],
+"abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tas",
+"score": 10,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.2477899",
+"title": "Big Data's Disparate Impact",
+"url": "https://doi.org/10.2139/ssrn.2477899",
+"venue": "SSRN Electronic Journal",
+"date": "2014-01-01",
+"authors": [
+"Solon Barocas",
+"Andrew D. Selbst"
+],
+"abstract": "",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3386/w23711",
+"title": "Central Bank Digital Currency and the Future of Monetary Policy",
+"url": "https://doi.org/10.3386/w23711",
+"venue": "National Bureau of Economic Research",
+"date": "2017-08-01",
+"authors": [
+"Michael David Bordo",
+"Andrew Levin"
+],
+"abstract": "We consider how a central bank digital currency (CBDC) could transform all aspects of the monetary system and facilitate the systematic and transparent conduct of monetary policy.In particular, we find that CBDC can serve as a practically costless medium of exchange, secure store of value, and stable unit of account.To achieve these criteria, CBDC would be accountbased and interest-bearing, and the monetary policy framework would foster true price stability.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.3724070",
+"title": "Rise of the Central Bank Digital Currencies: Drivers, Approaches and Technologies",
+"url": "https://doi.org/10.2139/ssrn.3724070",
+"venue": "SSRN Electronic Journal",
+"date": "2020-01-01",
+"authors": [
+"Raphael A. Auer",
+"Giulio Cornelli",
+"Jon Frost"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3088001206",
+"title": "Fintech and big tech credit: a new database",
+"url": "https://ddd.bis.org/publ/work887.htm",
+"venue": "SSRN Electronic Journal",
+"date": "2020-09-22",
+"authors": [
+"Giulio Cornelli",
+"Jon Frost",
+"Leonardo Gambacorta",
+"P. Raghavendra Rau",
+"Robert Wardrop",
+"Tania Ziegler"
+],
+"abstract": "Fintech and big tech platforms have expanded their lending around the world. We estimate that the flow of these new forms of credit reached USD 223 billion and USD 572 billion in 2019, respectively. China, the United States and the United Kingdom are the largest markets for fintech credit. Big tech credit is growing fast in China, Japan, Korea, Southeast Asia and some countries in Africa and Latin America. Cross-country panel regressions show that such lending is more developed in countries with higher GDP per capita (at a declining rate), where banking sector mark-ups are higher and where banking regulation is less stringent. Fintech credit is larger where there are fewer bank branches per capita. We also find that fintech and big tech credit are more developed where the ease of doing business is greater, and investor protection disclosure and the efficiency of the judicial system are more advanced, the bank credit-to-deposit ratio is lower and where bond and equity markets are more developed. Overall, alternative credit seems to complement other forms of credit, rather than substitute for them.",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.3979495",
+"title": "Stablecoins: Risks, Potential and Regulation",
+"url": "https://doi.org/10.2139/ssrn.3979495",
+"venue": "SSRN Electronic Journal",
+"date": "2021-01-01",
+"authors": [
+"Douglas W. Arner",
+"Raphael A. Auer",
+"Jon Frost"
+],
+"abstract": "",
+"score": 6,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.52202/068431-1800",
+"title": "Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models",
+"url": "https://doi.org/10.52202/068431-1800",
+"venue": "neural information processing systems",
+"date": "2022-01-01",
+"authors": [
+"Jason Wei",
+"Xuezhi Wang",
+"Dale Schuurmans",
+"Maarten Bosma",
+"Brian Ichter",
+"Fei Xia"
+],
+"abstract": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.",
+"score": 9,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.52202/068431-2011",
+"title": "Training Language Models to Follow Instructions with Human Feedback",
+"url": "https://doi.org/10.52202/068431-2011",
+"venue": "neural information processing systems",
+"date": "2022-01-01",
+"authors": [
+"Long Ouyang",
+"Jeffrey Wu",
+"Xu Jiang",
+"Diogo Almeida",
+"Carroll L. Wainwright",
+"Pamela Mishkin"
+],
+"abstract": "",
+"score": 10,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.ijinfomgt.2023.102642",
+"title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
+"url": "https://doi.org/10.1016/j.ijinfomgt.2023.102642",
+"venue": "International Journal of Information Management",
+"date": "2023-03-11",
+"authors": [
+"Yogesh Kumar Dwivedi",
+"Nir Kshetri",
+"Laurie Hughes",
+"Emma Louise Slade",
+"Anand Jeyaraj",
+"Arpan Kumar Kar"
+],
+"abstract": "Transformative artificially intelligent tools, such as ChatGPT, designed to generate sophisticated text indistinguishable from that produced by a human, are applicable across a wide range of contexts. The technology presents opportunities as well as, often ethical and legal, challenges, and has the potential for both positive and negative impacts for organisations, society, and individuals. Offering multi-disciplinary insight into some of these, this article brings together 43 contributions from experts in fields such as computer science, marketing, information systems, education, policy, hospitality and tourism, management, publishing, and nursing. The contributors acknowledge ChatGPT’s capabilities to enhance productivity and suggest that it is likely to offer significant gains in the banking, hospitality and tourism, and information technology industries, and enhance business activities, such as management and marketing. Nevertheless, they also consider its limitations, disruptions to practices, threats to privacy and security, and consequences of biases, misuse, and misinformation. However, opinion is split on whether ChatGPT’s use should be restricted or legislated. Drawing on",
+"score": 5,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W64269816",
+"title": "Big data: the management revolution.",
+"url": "https://pubmed.ncbi.nlm.nih.gov/23074865",
+"venue": "PubMed",
+"date": "2012-10-01",
+"authors": [
+"Andrew P. McAfee",
+"Erik Brynjolfsson"
+],
+"abstract": "Big data, the authors write, is far more powerful than the analytics of the past. Executives can measure and therefore manage more precisely than ever before. They can make better predictions and smarter decisions. They can target more-effective interventions in areas that so far have been dominated by gut and intuition rather than by data and rigor. The differences between big data and analytics are a matter of volume, velocity, and variety: More data now cross the internet every second than were stored in the entire internet 20 years ago. Nearly real-time information makes it possible for a company to be much more agile than its competitors. And that information can come from social networks, images, sensors, the web, or other unstructured sources. The managerial challenges, however, are very real. Senior decision makers have to learn to ask the right questions and embrace evidence-based decision making. Organizations must hire scientists who can find patterns in very large data sets and translate them into useful business information. IT departments have to work hard to integrate all the relevant internal and external sources of data. The authors offer two success stories to ill",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1037/xge0000033",
+"title": "Algorithm Aversion: People Erroneously Avoid Algorithms after Seeing Them Err",
+"url": "https://doi.org/10.1037/xge0000033",
+"venue": "Journal of Experimental Psychology General",
+"date": "2014-01-01",
+"authors": [
+"Berkeley J. Dietvorst",
+"Joseph P. Simmons",
+"Cade Massey"
+],
+"abstract": "Research shows that evidence-based algorithms more accurately predict the future than do human forecasters. Yet when forecasters are deciding whether to use a human forecaster or a statistical algorithm, they often choose the human forecaster. This phenomenon, which we call algorithm aversion, is costly, and it is important to understand its causes. We show that people are especially averse to algorithmic forecasters after seeing them perform, even when they see them outperform a human forecaster. This is because people more quickly lose confidence in algorithmic than human forecasters after seeing them make the same mistake. In 5 studies, participants either saw an algorithm make forecasts, a human make forecasts, both, or neither. They then decided whether to tie their incentives to the future predictions of the algorithm or the human. Participants who saw the algorithm perform were less confident in it, and less likely to choose it over an inferior human forecaster. This was true even among those who saw the algorithm outperform the human.",
+"score": 5,
+"theme": "skills",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/1540-6261.00505",
+"title": "Does Distance Still Matter? The Information Revolution in Small Business Lending",
+"url": "https://doi.org/10.1111/1540-6261.00505",
+"venue": "The Journal of Finance",
+"date": "2002-12-01",
+"authors": [
+"Mitchell A. Petersen",
+"Raghuram G. Rajan"
+],
+"abstract": "The distance between small firms and their lenders is increasing, and they are communicating in more impersonal ways. After documenting these systematic changes, we demonstrate they do not arise from small firms locating differently, consolidation in the banking industry, or biases in the sample. Instead, improvements in lender productivity appear to explain our findings. We also find distant firms no longer have to be the highest quality credits, indicating they have greater access to credit. The evidence indicates there has been substantial development of the financial sector, even in areas such as small business lending.",
+"score": 6,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/qje/qjae044",
+"title": "Generative AI at Work",
+"url": "https://doi.org/10.1093/qje/qjae044",
+"venue": "The Quarterly Journal of Economics",
+"date": "2024-12-29",
+"authors": [
+"Erik Brynjolfsson",
+"Danielle Li",
+"Lindsey Raymond"
+],
+"abstract": "Abstract We study the staggered introduction of a generative AI–based conversational assistant using data from 5,172 customer-support agents. Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers. The effects vary significantly across different agents. Less experienced and lower-skilled workers improve both the speed and quality of their output, while the most experienced and highest-skilled workers see small gains in speed and small declines in quality. We also find evidence that AI assistance facilitates worker learning and improves English fluency, particularly among international agents. While AI systems improve with more training data, we find that the gains from AI adoption are largest for moderately rare problems, where human agents have less baseline experience but the system still has adequate training data. Finally, we provide evidence that AI assistance improves the experience of work along several dimensions: customers are more polite and less likely to ask to speak to a manager.",
+"score": 9,
+"theme": "conversational",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W579193340",
+"title": "Race Against the Machine",
+"url": "http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=025758051&amp;sequence=000002&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA",
+"venue": "",
+"date": "2011-01-01",
+"authors": [
+"Erik Brynjolfsson",
+"Andrew P. McAfee"
+],
+"abstract": "Examines how information technologies are affecting jobs, skills, wages, and the economy. As one of the most important forces in the economy today, digital technologies are transforming the world of work and are key drivers of productivity and growth",
+"score": 5,
+"theme": "skills",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1287/mnsc.1120.1560",
+"title": "Judging Borrowers by the Company They Keep: Friendship Networks and Information Asymmetry in Online Peer-to-Peer Lending",
+"url": "https://doi.org/10.1287/mnsc.1120.1560",
+"venue": "Management Science",
+"date": "2012-09-05",
+"authors": [
+"Mingfeng Lin",
+"Nagpurnanand R. Prabhala",
+"Siva Viswanathan"
+],
+"abstract": "We study the online market for peer-to-peer (P2P) lending, in which individuals bid on unsecured microloans sought by other individual borrowers. Using a large sample of consummated and failed listings from the largest online P2P lending marketplace, Prosper.com, we find that the online friendships of borrowers act as signals of credit quality. Friendships increase the probability of successful funding, lower interest rates on funded loans, and are associated with lower ex post default rates. The economic effects of friendships show a striking gradation based on the roles and identities of the friends. We discuss the implications of our findings for the disintermediation of financial markets and the design of decentralized electronic markets. This paper was accepted by Sandra Slaughter, information systems.",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/jofi.13090",
+"title": "Predictably Unequal? The Effects of Machine Learning on Credit Markets",
+"url": "https://doi.org/10.1111/jofi.13090",
+"venue": "The Journal of Finance",
+"date": "2021-10-28",
+"authors": [
+"Andreas Fuster",
+"Paul S. Goldsmith-Pinkham",
+"Tarun Ramadorai",
+"Ansgar Walther"
+],
+"abstract": "ABSTRACT Innovations in statistical technology in functions including credit‐screening have raised concerns about distributional impacts across categories such as race. Theoretically, distributional effects of better statistical technology can come from greater flexibility to uncover structural relationships or from triangulation of otherwise excluded characteristics. Using data on U.S. mortgages, we predict default using traditional and machine learning models. We find that Black and Hispanic borrowers are disproportionately less likely to gain from the introduction of machine learning. In a simple equilibrium credit market model, machine learning increases disparity in rates between and within groups, with these changes attributable primarily to greater flexibility.",
+"score": 9,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s11846-023-00696-z",
+"title": "The GenAI is out of the bottle: generative artificial intelligence from a business model innovation perspective",
+"url": "https://doi.org/10.1007/s11846-023-00696-z",
+"venue": "Review of Managerial Science",
+"date": "2023-09-13",
+"authors": [
+"Dominik Kurt Kanbach",
+"Louisa Heiduk",
+"Georg Blueher",
+"Maximilian Schreiter",
+"Alexander D.F. Lahmann"
+],
+"abstract": "Abstract The introduction of ChatGPT in November 2022 by OpenAI has stimulated substantial discourse on the implementation of artificial intelligence (AI) in various domains such as academia, business, and society at large. Although AI has been utilized in numerous areas for several years, the emergence of generative AI (GAI) applications such as ChatGPT, Jasper, or DALL-E are considered a breakthrough for the acceleration of AI technology due to their ease of use, intuitive interface, and performance. With GAI, it is possible to create a variety of content such as texts, images, audio, code, and even videos. This creates a variety of implications for businesses requiring a deeper examination, including an influence on business model innovation (BMI). Therefore, this study provides a BMI perspective on GAI with two primary contributions: (1) The development of six comprehensive propositions outlining the impact of GAI on businesses, and (2) the discussion of three industry examples, specifically software engineering, healthcare, and financial services. This study employs a qualitative content analysis using a scoping review methodology, drawing from a wide-ranging sample of 513 dat",
+"score": 5,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jedc.2021.104148",
+"title": "The macroeconomics of central bank digital currencies",
+"url": "https://doi.org/10.1016/j.jedc.2021.104148",
+"venue": "Journal of Economic Dynamics and Control",
+"date": "2021-05-15",
+"authors": [
+"John Barrdear",
+"Michael Kumhof"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jimonfin.2022.102625",
+"title": "Fintech, Cryptocurrencies, and CBDC: Financial Structural Transformation in China",
+"url": "https://doi.org/10.1016/j.jimonfin.2022.102625",
+"venue": "Journal of International Money and Finance",
+"date": "2022-02-22",
+"authors": [
+"Franklin Allen",
+"Xian Gu",
+"Julapa A. Jagtiani"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3178194449",
+"title": "Fintech and the digital transformation of financial services: implications for market structure and public policy",
+"url": "http://www.bis.org/publ/bppdf/bispap117.pdf",
+"venue": "RePEc: Research Papers in Economics",
+"date": "2021-01-01",
+"authors": [
+"Erik H. B. Feyen",
+"Jon Frost",
+"Leonardo Gambacorta",
+"Harish Natarajan",
+"Matthew Saal"
+],
+"abstract": "Economic frictions such as information asymmetries and economic forces such as economies of scale and scope give rise to financial intermediaries. These frictions and forces also shape market structure. While technological advances are not new to finance, digital innovation has brought major improvements in connectivity of systems, in computing power and cost, and in newly created and usable data. These improvements have alleviated transaction costs and given rise to new business models and new entrants. As technology has increased information exchange and reduced transaction costs, the production of financial services could be disaggregated. Specialized players have unbundled financial services, allowing consumers to find and assemble their preferred suites of products. However, classic economic forces remain relevant even in an age of digital production. Economies of scale and scope and network effects are present in many aspects of financial services production, including customer acquisition, funding, compliance activities, data and capital (including trust capital). Despite advances in technology, consumer search and assembly costs remain significant. These forces encourage re",
+"score": 5,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1146/annurev-economics-051420-020324",
+"title": "Central Bank Digital Currencies: Motives, Economic Implications, and the Research Frontier",
+"url": "https://doi.org/10.1146/annurev-economics-051420-020324",
+"venue": "Annual Review of Economics",
+"date": "2022-08-12",
+"authors": [
+"Raphael A. Auer",
+"Jon Frost",
+"Leonardo Gambacorta",
+"Cyril Monnet",
+"Tara N. Rice",
+"Hyun Song Shin"
+],
+"abstract": "In just a few years, central banks have rapidly ramped up their research and development efforts on central bank digital currencies (CBDCs). A growing body of economic research informs these activities, often focusing on the “reserves for all” aspect of CBDCs for retail use. However, CBDCs should be considered in the full context of the digital economy and the centrality of data, which raises concerns around competition, payment system integrity, and privacy. This review gives a guided tour of the growing CBDC literature on the microeconomic considerations related to operation architectures, technologies, and privacy as well as the macroeconomic implications for the financial system, financial stability, and monetary policy. A set of questions, particularly on the cross-border dimensions of CBDCs, remains unresolved and calls for further work to expand the research frontier.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jbankfin.2022.106742",
+"title": "Fintech and big tech credit: Drivers of the growth of digital lending",
+"url": "https://doi.org/10.1016/j.jbankfin.2022.106742",
+"venue": "Journal of Banking & Finance",
+"date": "2022-12-05",
+"authors": [
+"Giulio Cornelli",
+"Jon Frost",
+"Leonardo Gambacorta",
+"P. Raghavendra Rau",
+"Robert Wardrop",
+"Tania Ziegler"
+],
+"abstract": "Fintech and big tech companies are making rapid inroads into credit markets. We hand construct a global database of fintech and big tech lending volumes for 79 countries over 2013–2018. Using a panel regression analysis, we find these new forms of digital lending are larger in countries with higher GDP per capita (albeit at a declining rate), where banking sector mark-ups are higher, and where banking regulation is less stringent. We also find that these alternative forms of credit are more developed where the ease of doing business is greater, investor protection disclosure and the efficiency of the judicial system are more advanced, and where bond and equity markets are more developed. Overall, fintech and big tech credit seem to complement other forms of credit, rather than substitute for them.",
+"score": 6,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1146/annurev-financial-101521-112042",
+"title": "FinTech Lending",
+"url": "https://doi.org/10.1146/annurev-financial-101521-112042",
+"venue": "Annual Review of Financial Economics",
+"date": "2022-08-12",
+"authors": [
+"Tobias Berg",
+"Andreas Fuster",
+"Manju Puri B"
+],
+"abstract": "In this article, we review the growing literature on financial technology (FinTech) lending—the provision of credit facilitated by technology that improves the customer–lender interaction or used in lenders’ screening and monitoring of borrowers. FinTech lending has grown rapidly, though in developed economies like the United States it still accounts for only a small share of total credit. An increase in convenience and speed appears to have been more central to FinTech lending's growth than improved screening or monitoring, though there is certainly potential for the latter, as is the case for increased financial inclusion. The COVID-19 pandemic has shown potential vulnerabilities of FinTech lenders, although in certain segments they have displayed rapid growth.",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s00521-024-10495-6",
+"title": "Large Language Models in Finance (FinLLMs)",
+"url": "https://doi.org/10.1007/s00521-024-10495-6",
+"venue": "Neural Computing and Applications",
+"date": "2025-01-11",
+"authors": [
+"Jean Lee",
+"Nicholas Stevens",
+"Soyeon Caren Han"
+],
+"abstract": "",
+"score": 6,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.ceqi.2023.03.002",
+"title": "Digital transformation of commercial banks in China: Measurement, progress and impact",
+"url": "https://doi.org/10.1016/j.ceqi.2023.03.002",
+"venue": "China Economic Quarterly International",
+"date": "2023-03-01",
+"authors": [
+"Xuanli Xie",
+"Shihui Wang"
+],
+"abstract": "Nowadays, digital transformation has become an urgent strategic task for traditional commercial banks. Due to the lack of measurement of banks’ digital transformation, whether digital transformation could enhance the competitiveness of banks is still inconclusive. In this paper, we construct an index system to measure digital transformation of banks from three dimensions: strategy transformation, business transformation and management transformation. Using data from Chinese commercial banks, this paper measures the progress of digital transformation of banks in China. The empirical results show that digital transformation can improve bank performance, reduce the negative impact of new technology entrants, and promote the exit of offline channels.",
+"score": 6,
+"theme": "innovation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.3814604",
+"title": "Big Data in Finance",
+"url": "https://doi.org/10.2139/ssrn.3814604",
+"venue": "Review of Financial Studies",
+"date": "2021-01-01",
+"authors": [
+"Itay Goldstein B",
+"Chester S. Spatt",
+"Mao Ye"
+],
+"abstract": "",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.30574/wjaets.2024.12.2.0266",
+"title": "Adaptive machine learning models: Concepts for real-time financial fraud prevention in dynamic environments",
+"url": "https://doi.org/10.30574/wjaets.2024.12.2.0266",
+"venue": "World Journal of Advanced Engineering Technology and Sciences",
+"date": "2024-07-07",
+"authors": [
+"Halima Oluwabunmi Bello",
+"Adebimpe Bolatito Ige",
+"Maxwell Nana Ameyaw"
+],
+"abstract": "Adaptive machine learning models are revolutionizing real-time financial fraud prevention in dynamic environments, offering unparalleled accuracy and responsiveness to evolving fraud patterns. Financial institutions face constant threats from increasingly sophisticated fraud schemes that adapt and change over time. Traditional static models often fall short in addressing these rapidly shifting threats, necessitating the adoption of adaptive machine learning techniques. Adaptive machine learning models are designed to evolve continuously by learning from new data and adjusting to emerging fraud patterns. These models employ advanced algorithms, such as reinforcement learning, online learning, and deep learning, to maintain their effectiveness in detecting and preventing fraud. Reinforcement learning algorithms optimize detection strategies by receiving feedback from their actions, continually improving their decision-making processes. Online learning algorithms update models incrementally as new transaction data becomes available, ensuring that the models remain current and responsive. One of the key strengths of adaptive machine learning models is their ability to process vast amou",
+"score": 5,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s42521-023-00088-8",
+"title": "The technology of decentralized finance (DeFi)",
+"url": "https://doi.org/10.1007/s42521-023-00088-8",
+"venue": "Digital Finance",
+"date": "2023-08-01",
+"authors": [
+"Raphael A. Auer",
+"Bernhard Haslhofer",
+"Stefan Kitzler",
+"Pietro Saggese",
+"Friedhelm Victor"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhac022",
+"title": "When FinTech Competes for Payment Flows",
+"url": "https://doi.org/10.1093/rfs/hhac022",
+"venue": "Review of Financial Studies",
+"date": "2022-04-21",
+"authors": [
+"Christine A. Parlour",
+"Uday Rajan",
+"Haoxiang Zhu"
+],
+"abstract": "Abstract We study the impact of FinTech competition in payment services when a monopolist bank uses payment data to learn about consumers’ credit quality. Competition from FinTech payment providers disrupts this information spillover. The bank’s price for payment services and its loan offers are affected. FinTech competition promotes financial inclusion, may hurt consumers with a strong bank preference, and has an ambiguous effect on the loan market. Both FinTech data sales and consumer data portability increase bank lending, but the effects on consumer welfare are ambiguous. Under mild conditions, consumer welfare is higher under data sales than with data portability.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/jofi.13405",
+"title": "Decentralized Exchange: The Uniswap Automated Market Maker",
+"url": "https://doi.org/10.1111/jofi.13405",
+"venue": "The Journal of Finance",
+"date": "2024-12-20",
+"authors": [
+"Alfred Lehar",
+"Christine A. Parlour"
+],
+"abstract": "ABSTRACT Uniswap is a system of smart contracts on the Ethereum blockchain and is the largest decentralized exchange with a liquidity balance worth up to 4 billion USD and daily trading volume of up to 7 billion USD. It is a new model of liquidity provision, so‐called automated market making. For this new market form, we characterize equilibrium in the liquidity pools. We collect all 95.8 million Uniswap interactions and compare this automated market maker (AMM) to a centralized limit order book. We document absence of long‐lived arbitrage opportunities, and show conditions under which the AMM dominates a limit order market.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jfineco.2024.103950",
+"title": "Customer data access and fintech entry: Early evidence from open banking",
+"url": "https://doi.org/10.1016/j.jfineco.2024.103950",
+"venue": "Journal of Financial Economics",
+"date": "2025-04-07",
+"authors": [
+"Tania Babina",
+"Saleem Bahaj",
+"Greg Buchak",
+"Filippo De Marco",
+"Angus Foulis",
+"Will Gornall"
+],
+"abstract": "Open banking (OB) empowers bank customers to share their financial transaction data with fintechs and other banks. New cross-country data shows 49 countries adopted OB policies, privacy preferences predict policy adoption, and adoption spurs fintech entry. UK microdata shows that OB enables: (i) consumers to access both financial advice and credit; (ii) SMEs to establish new lending relationships. In a calibrated model, OB universally improves welfare through entry and product improvements when used for advice. When used for credit, OB promotes entry and competition by reducing adverse selection, but higher prices for costlier or privacy-conscious consumers partially offset these benefits.",
+"score": 7,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/09721509231151491",
+"title": "Digital Financial Services and Open Banking Innovation: Are Banks Becoming ‘invisible’?",
+"url": "https://doi.org/10.1177/09721509231151491",
+"venue": "Global Business Review",
+"date": "2023-05-16",
+"authors": [
+"Valeria Stefanelli",
+"Francesco Manta"
+],
+"abstract": "Digitalization in many economic sectors drove the financial system to adapt to new paradigms of technological transformation. Moreover, the extant regulatory framework forced the financial system to reconsider its business models and its relationship with the market. Such reasons generated also in the banking sector a new model of competition within the ecosystem never seen before in this sector. The new ecosystem of banks and financial institutions lacks a common framework that not only synthesizes the development lines of open innovation in the banking sector but also regarding the planification of strategic choices and organization within the new ecosystems. The present study aims to inquire into the strategic positioning of European banks toward their digital transformation strategies, by analysing the decision-making processes that occurred between 2015 and 2022. A qualitative analysis of partnerships and the adoption of Application Programming Interfaces (APIs) development in support of new service models was carried out. Results have relevant policy implications for regulators, linked to the business evolution and the risks of outsourcing, and managerial implications for the",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/rfs/hhae005",
+"title": "Digital Payments and Consumption: Evidence from the 2016 Demonetization in India",
+"url": "https://doi.org/10.1093/rfs/hhae005",
+"venue": "Review of Financial Studies",
+"date": "2020-01-01",
+"authors": [
+"Sumit D. Agarwal",
+"Pulak Ghosh",
+"Jing Li",
+"Tianyue Ruan"
+],
+"abstract": "Abstract We study how consumer spending responds to digital payments, using the differential switch to digital payments across consumers induced by the sudden 2016 Indian Demonetization for identification. Digital payment use rose by 2.94 percentage points and monthly spending increased by 2.38% for an additional 10 percentage points in prior cash dependence. Spending remained elevated even when cash availability recovered. Robustness analyses show that the spending response is not driven by purchase substitution, income shocks, credit supply, or price changes. We provide causal evidence that digital payments increase consumer spending due to subdued endowment effects.",
+"score": 5,
+"theme": "payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.asoc.2024.111307",
+"title": "An Explainable AI framework for credit evaluation and analysis",
+"url": "https://doi.org/10.1016/j.asoc.2024.111307",
+"venue": "Applied Soft Computing",
+"date": "2024-01-30",
+"authors": [
+"Musiri Kailasanathan Nallakaruppan",
+"Balamurugan Balusamy",
+"M. Lawanya Shri",
+"V. Malathi",
+"Siddhartha Bhattacharyya"
+],
+"abstract": "",
+"score": 6,
+"theme": "risk_credit",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.30574/wjaets.2025.14.2.0071",
+"title": "Advancing innovation in financial stability: A comprehensive review of ai agent frameworks, challenges and applications",
+"url": "https://doi.org/10.30574/wjaets.2025.14.2.0071",
+"venue": "World Journal of Advanced Engineering Technology and Sciences",
+"date": "2025-02-17",
+"authors": [
+"Satyadhar Joshi"
+],
+"abstract": "Artificial Intelligence (AI) agents are revolutionizing industries by enabling autonomous decision-making, task execution, and multi-agent collaboration. This paper provides a comprehensive review of AI agent frameworks, focusing on their architectures, applications, and challenges in financial services. We conduct a comparative analysis of leading frameworks, including LangGraph, CrewAI, and AutoGen, evaluating their strengths, limitations, and suitability for complex financial tasks such as trading, risk assessment, and investment analysis. The integration of AI agents in financial markets presents both opportunities and challenges, particularly in terms of regulatory compliance, ethical considerations, and model robustness. We examine agentic AI design patterns, multi-agent systems, and the deployment of AI agents advancing the proposal to use them for fraud detection and risk management. By synthesizing insights from academic research and industry practices, this review identifies key trends and future directions in AI agent development. This work contributes to the growing discourse on AI-driven automation by outlining technical considerations and open challenges in deploying ",
+"score": 6,
+"theme": "agentic_bank",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2303.08774",
+"title": "GPT-4 Technical Report",
+"url": "https://doi.org/10.48550/arxiv.2303.08774",
+"venue": "arXiv (Cornell University)",
+"date": "2023-03-15",
+"authors": [
+"OpenAI",
+"Achiam, Josh",
+"Adler, Steven",
+"Agarwal, Sandhini",
+"Ahmad, Lama",
+"Akkaya, Ilge"
+],
+"abstract": "We report the development of GPT-4, a large-scale, multimodal model which can accept image and text inputs and produce text outputs. While less capable than humans in many real-world scenarios, GPT-4 exhibits human-level performance on various professional and academic benchmarks, including passing a simulated bar exam with a score around the top 10% of test takers. GPT-4 is a Transformer-based model pre-trained to predict the next token in a document. The post-training alignment process results in improved performance on measures of factuality and adherence to desired behavior. A core component of this project was developing infrastructure and optimization methods that behave predictably across a wide range of scales. This allowed us to accurately predict some aspects of GPT-4's performance based on models trained with no more than 1/1,000th the compute of GPT-4.",
+"score": 9,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2108.07258",
+"title": "On the Opportunities and Risks of Foundation Models",
+"url": "https://doi.org/10.48550/arxiv.2108.07258",
+"venue": "arXiv (Cornell University)",
+"date": "2021-08-16",
+"authors": [
+"Rishi Bommasani",
+"Drew A. Hudson",
+"Ehsan Adeli",
+"Russ Biagio Altman",
+"Simran Arora",
+"Sydney von Arx"
+],
+"abstract": "AI is undergoing a paradigm shift with the rise of models (e.g., BERT, DALL-E, GPT-3) that are trained on broad data at scale and are adaptable to a wide range of downstream tasks. We call these models foundation models to underscore their critically central yet incomplete character. This report provides a thorough account of the opportunities and risks of foundation models, ranging from their capabilities (e.g., language, vision, robotics, reasoning, human interaction) and technical principles(e.g., model architectures, training procedures, data, systems, security, evaluation, theory) to their applications (e.g., law, healthcare, education) and societal impact (e.g., inequity, misuse, economic and environmental impact, legal and ethical considerations). Though foundation models are based on standard deep learning and transfer learning, their scale results in new emergent capabilities,and their effectiveness across so many tasks incentivizes homogenization. Homogenization provides powerful leverage but demands caution, as the defects of the foundation model are inherited by all the adapted models downstream. Despite the impending widespread deployment of foundation models, we curre",
+"score": 8,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2303.17564",
+"title": "BloombergGPT: A Large Language Model for Finance",
+"url": "https://doi.org/10.48550/arxiv.2303.17564",
+"venue": "RePEc: Research Papers in Economics",
+"date": "2023-03-30",
+"authors": [
+"Shijie Wu",
+"Ozan İrsoy",
+"Steven Z. Lu",
+"Vadim Dabravolski",
+"Mark H. Dredze",
+"Sebastian Gehrmann"
+],
+"abstract": "The use of NLP in the realm of financial technology is broad and complex, with applications ranging from sentiment analysis and named entity recognition to question answering. Large Language Models (LLMs) have been shown to be effective on a variety of tasks; however, no LLM specialized for the financial domain has been reported in literature. In this work, we present BloombergGPT, a 50 billion parameter language model that is trained on a wide range of financial data. We construct a 363 billion token dataset based on Bloomberg's extensive data sources, perhaps the largest domain-specific dataset yet, augmented with 345 billion tokens from general purpose datasets. We validate BloombergGPT on standard LLM benchmarks, open financial benchmarks, and a suite of internal benchmarks that most accurately reflect our intended usage. Our mixed dataset training leads to a model that outperforms existing models on financial tasks by significant margins without sacrificing performance on general LLM benchmarks. Additionally, we explain our modeling choices, training process, and evaluation methodology. We release Training Chronicles (Appendix C) detailing our experience in training BloombergG",
+"score": 8,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.4489826",
+"title": "FinGPT: Open-Source Financial Large Language Models",
+"url": "https://doi.org/10.2139/ssrn.4489826",
+"venue": "SSRN Electronic Journal",
+"date": "2023-01-01",
+"authors": [
+"Hongyang Yang",
+"Xiao-Yang Liu",
+"Christina Dan Wang"
+],
+"abstract": "",
+"score": 8,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2307.10485",
+"title": "FinGPT: Democratizing Internet-scale Data for Financial Large Language Models",
+"url": "https://doi.org/10.48550/arxiv.2307.10485",
+"venue": "RePEc: Research Papers in Economics",
+"date": "2023-07-19",
+"authors": [
+"Xiaoyang Liu",
+"Guoxuan Wang",
+"Yang, Hongyang",
+"Zha, Daochen"
+],
+"abstract": "Large language models (LLMs) have demonstrated remarkable proficiency in understanding and generating human-like texts, which may potentially revolutionize the finance industry. However, existing LLMs often fall short in the financial field, which is mainly attributed to the disparities between general text data and financial text data. Unfortunately, there is only a limited number of financial text datasets available, and BloombergGPT, the first financial LLM (FinLLM), is close-sourced (only the training logs were released). In light of this, we aim to democratize Internet-scale financial data for LLMs, which is an open challenge due to diverse data sources, low signal-to-noise ratio, and high time-validity. To address the challenges, we introduce an open-sourced and data-centric framework, Financial Generative Pre-trained Transformer (FinGPT), that automates the collection and curation of real-time financial data from 34 diverse sources on the Internet, providing researchers and practitioners with accessible and transparent resources to develop their FinLLMs. Additionally, we propose a simple yet effective strategy for fine-tuning FinLLM using the inherent feedback from the marke",
+"score": 7,
+"theme": "foundation_models",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.4841493",
+"title": "FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models",
+"url": "https://doi.org/10.2139/ssrn.4841493",
+"venue": "SSRN Electronic Journal",
+"date": "2024-01-01",
+"authors": [
+"Hongyang Yang",
+"Boyu Zhang",
+"Neng Wang",
+"Cheng Guo",
+"Xiaoli Zhang",
+"Likun Lin"
+],
+"abstract": "",
+"score": 8,
+"theme": "agentic_bank",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2139/ssrn.7234653",
+"title": "SWE-Exp: Experience-Driven Software Issue Resolution",
+"url": "https://doi.org/10.2139/ssrn.7234653",
+"venue": "SSRN Electronic Journal",
+"date": "2026-01-01",
+"authors": [
+"SILIN CHEN",
+"Shaoxin Lin",
+"Yanan Shi",
+"Heng Lian",
+"Xiaodong Gu",
+"Longfei Yun"
+],
+"abstract": "",
+"score": 5,
+"theme": "engineering",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+}
+]

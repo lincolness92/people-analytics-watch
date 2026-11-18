@@ -283,6 +283,24 @@ class AnnualTests(unittest.TestCase):
         self.assertIn("**[P](https://p)**", out)
 
 
+
+class LibraryTests(unittest.TestCase):
+    def test_add_keeps_score_5_plus_once_and_load_sorts(self):
+        import tempfile
+        from pawatch import library
+        with tempfile.TemporaryDirectory() as tmp:
+            class T:  # minimal topic stand-in
+                data = Path(tmp)
+            cands = [cand(f"doi:{i}", f"Paper number {i}", abstract="x" * 2000) for i in range(3)]
+            n = library.add(T, cands, {0: (4, "hiring", ""), 1: (7, "hiring", "brasil"), 2: (5, "analytics")}, "digest", "2026-11-18")
+            self.assertEqual(n, 2)
+            self.assertEqual(library.add(T, cands, {1: (8, "hiring", "")}, "digest", "2026-11-18"), 0)
+            out = library.load(T)
+            self.assertEqual([e["key"] for e in out], ["doi:1", "doi:2"])
+            self.assertEqual(out[0]["region"], "brasil")
+            self.assertEqual(len(out[0]["abstract"]), library.EXPORT_ABSTRACT)
+
+
 if __name__ == "__main__":
     unittest.main()
 

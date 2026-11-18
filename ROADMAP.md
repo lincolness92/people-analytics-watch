@@ -18,6 +18,9 @@ demanda (`--full`). Detalhes no README, seção "Evolução do estado da arte".
 Feito em 17/11/2026: aba "Pergunte" (`functions/api/ask.js`), atrás da senha, citando os papers do
 arquivo. Junto veio o feedback dos leitores (👍/👎 e comentários, exportados para `data/<tema>/`).
 Ideias: usar o feedback para calibrar a triagem; respostas em streaming para reduzir a espera.
+18/11: o agente passou a ler as retrospectivas anuais e a biblioteca de papers triados (nota ≥ 5, com resumo
+original). Próximo passo possível: ler a versão aberta (PDF legal) dos papers selecionados para responder com
+detalhes de método; e, se o arquivo crescer muito, trocar o BM25 no Worker por um índice pré-calculado.
 
 ## ✅ Retrospectiva anual por tema (aba "Anual")
 Feito em 17/11/2026: destaques do ano, volume por subtema ano a ano e quem publica (academia × empresas ×

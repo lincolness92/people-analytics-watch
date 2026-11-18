@@ -1,7 +1,8 @@
 // POST /api/ask — answer a question about one topic, citing only papers from its archive.
 // Behind functions/_middleware.js (site password). Needs the Pages secret HF_TOKEN; optional PAW_MODEL.
 // 1) the LLM expands the question into PT+EN search terms; 2) lexical ranking over the topic's
-// data.json (digest items, quick mentions, Evolução milestones, trends); 3) the LLM answers from
+// data.json (digest items, quick mentions, trends, Evolução milestones, annual reviews) plus its
+// library.json (every paper the triage scored >= 5, with the original abstract); 3) the LLM answers from
 // the top sources only, citing them as [n]. Questions are logged in KV (prefix "ask:") when bound.
 
 const ROUTER = "https://router.huggingface.co/v1/chat/completions";
@@ -23,7 +24,7 @@ export function tokens(text) {
     .map((t) => (t.length > 4 && t.endsWith("s") ? t.slice(0, -1) : t));
 }
 
-export function corpus(data) {
+export function corpus(data, library = []) {
   const docs = [];
   for (const d of data.digests || []) {
     for (const it of d.items || []) {
@@ -46,6 +47,24 @@ export function corpus(data) {
     }
     if (ev.now?.summary) docs.push({ kind: "evolução", title: "Onde estamos agora", url: null, when: ev.generated,
       text: [ev.now.summary, ...(ev.now.open_questions || [])].join(" ") });
+  }
+  for (const [year, a] of Object.entries(data.annual || {})) {
+    const label = `retrospectiva ${year}${a.partial ? " (parcial)" : ""}`;
+    if (a.overview) docs.push({ kind: label, title: `Panorama de ${year}`, url: null, when: year, text: a.overview });
+    if (a.innovation) docs.push({ kind: label, title: `Onde a inovação acontece em ${year}`, url: null, when: year, text: a.innovation });
+    for (const t of a.trends || []) docs.push({ kind: label, title: t.title, url: null, when: year, text: `${t.title}. ${t.text}` });
+    for (const h of a.highlights || []) {
+      docs.push({ kind: `destaque de ${year}`, title: h.title, url: h.url, when: (h.date || year).slice(0, 10), venue: h.venue,
+        text: [h.title, h.original_title, h.why, h.venue, (h.authors || []).join(" "), data.themes?.[h.theme]].join(" ") });
+    }
+  }
+  // Library: triaged papers with their original abstracts; skip what the digests already cover.
+  const seen = new Set(docs.map((d) => d.url).filter(Boolean));
+  for (const p of library) {
+    if (!p.url || seen.has(p.url)) continue;
+    seen.add(p.url);
+    docs.push({ kind: "paper triado", title: p.title, url: p.url, when: p.date, venue: p.venue,
+      text: [p.title, p.abstract, p.venue, (p.authors || []).join(" "), data.themes?.[p.theme]].join(" ") });
   }
   return docs;
 }
@@ -130,7 +149,12 @@ export async function onRequestPost({ request, env }) {
     terms = terms.concat(text.split(/[,;\n]/));
   } catch { /* fall back to the question's own words */ }
 
-  const sources = rank(corpus(data), terms);
+  let library = [];
+  try {
+    const lib = await env.ASSETS.fetch(new URL(`/${topic}/library.json`, request.url));
+    if (lib.ok) library = await lib.json();
+  } catch { /* the archive alone still works */ }
+  const sources = rank(corpus(data, library), terms);
   if (!sources.length) {
     return json({ ok: true, answer: "Não encontrei nada no arquivo deste tema sobre isso. Tente outras palavras, ou um assunto mais próximo dos temas cobertos.", sources: [] });
   }
@@ -141,6 +165,8 @@ export async function onRequestPost({ request, env }) {
   const system = `Você é o assistente do ${name}, um arquivo curado de pesquisa. Responda em PT-BR, de forma direta e concreta, ` +
     `usando SOMENTE as fontes numeradas fornecidas. Cite as fontes no texto como [1], [2] logo após cada afirmação. ` +
     `Não invente papers, números ou autores. Se as fontes não respondem bem à pergunta, diga isso claramente e diga o que elas cobrem. ` +
+    `Fontes "paper triado" trazem o resumo original de papers que a curadoria avaliou mas não necessariamente destacou; ` +
+    `"destaque", "marco" e "retrospectiva" já passaram por uma seleção mais rígida — prefira-os quando disserem o mesmo. ` +
     `Formato: 1 a 3 parágrafos curtos; pode usar **negrito** em termos-chave. Sem cabeçalhos, sem lista de referências no fim.`;
   const messages = [{ role: "system", content: system }];
   for (const h of history) messages.push({ role: "user", content: h.q }, { role: "assistant", content: h.a });

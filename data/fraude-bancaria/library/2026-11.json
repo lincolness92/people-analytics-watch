@@ -1,0 +1,2551 @@
+[
+{
+"key": "doi:10.4324/9781439817803-12",
+"title": "Social Change and Crime Rate Trends: A Routine Activity Approach (1979)",
+"url": "https://doi.org/10.4324/9781439817803-12",
+"venue": "Routledge eBooks",
+"date": "2010-05-25",
+"authors": [
+"L.E. COHEN AND M. FELSON"
+],
+"abstract": "In this paper we present a \"routine activity approach \" for analyzing crime rate trends and cycles. Rather than emphasizing the characteristics of offenders, with this approach we concentrate upon the circumstances in which they carry out predatory criminal acts. Most criminal acts require convergence in space and time of likely offenders, suitable targets and the absence of capable guardians against crime. Human ecological theory facilitates an investigation into the way in which social structure produces this convergence, hence allowing illegal activities to feed upon the legal activities of everyday life. In particular, we hypothesize that the dispersion of activities away from households and families increases the opportunity for crime and thus generates higher crime rates. A variety of data is presented in support of the hypothesis, which helps explain crime rate trends in the United States 1947-1974 as a byproduct of changes in such variables as labor force participation and single-adult households.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/wifs.2018.8630761",
+"title": "MesoNet: a Compact Facial Video Forgery Detection Network",
+"url": "https://doi.org/10.1109/wifs.2018.8630761",
+"venue": "IEEE International Workshop on Information Forensics and Security",
+"date": "2018-12-01",
+"authors": [
+"Darius Afchar",
+"Vincent Nozick",
+"Junichi Yamagishi",
+"Isao Echizen"
+],
+"abstract": "This paper presents a method to automatically and efficiently detect face tampering in videos, and particularly focuses on two recent techniques used to generate hyper-realistic forged videos: Deepfake and Face2Face. Traditional image forensics techniques are usually not well suited to videos due to the compression that strongly degrades the data. Thus, this paper follows a deep learning approach and presents two networks, both with a low number of layers to focus on the mesoscopic properties of images. We evaluate those fast networks on both an existing dataset and a dataset we have constituted from online videos. The tests demonstrate a very successful detection rate with more than 98% for Deepfake and 95% for Face2Face.",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1214/ss/1042727940",
+"title": "Statistical Fraud Detection: A Review",
+"url": "https://doi.org/10.1214/ss/1042727940",
+"venue": "Statistical Science",
+"date": "2002-08-01",
+"authors": [
+"Richard J. Bolton",
+"David J. Hand"
+],
+"abstract": "Fraud is increasing dramatically with the expansion of modern technology and the global superhighways of communication, resulting in the loss of billions of dollars worldwide each year. Although prevention technologies are the best way to reduce fraud, fraudsters are adaptive and, given time, will usually find ways to circumvent such measures. Methodologies for the detection of fraud are essential if we are to catch fraudsters once fraud prevention has failed. Statistics and machine learning provide effective technologies for fraud detection and have been applied successfully to detect activities such as money laundering, e-commerce credit card fraud, telecommunications fraud and computer intrusion, to name but a few. We describe the tools available for statistical fraud detection and the areas in which fraud detection technologies are most used.",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2010.08.006",
+"title": "The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature",
+"url": "https://doi.org/10.1016/j.dss.2010.08.006",
+"venue": "Decision Support Systems",
+"date": "2010-08-20",
+"authors": [
+"Eric W.T. Ngai",
+"Yong Qiang Hu",
+"Y.H. Wong",
+"Yijun Chen",
+"Xin Sun"
+],
+"abstract": "",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/1124772.1124861",
+"title": "Why phishing works",
+"url": "https://doi.org/10.1145/1124772.1124861",
+"venue": "CHI Conference on Human Factors in Computing Systems",
+"date": "2006-04-22",
+"authors": [
+"Rachna Dhamija",
+"J. D. Tygar",
+"Marti A. Hearst"
+],
+"abstract": "To build systems shielding users from fraudulent (or phishing) websites, designers need to know which attack strategies work and why. This paper provides the first empirical evidence about which malicious strategies are successful at deceiving general users. We first analyzed a large set of captured phishing attacks and developed a set of hypotheses about why these strategies might work. We then assessed these hypotheses with a usability study in which 22 participants were shown 20 web sites and asked to determine which ones were fraudulent. We found that 23% of the participants did not look at browser-based cues such as the address bar, status bar and the security indicators, leading to incorrect choices 40% of the time. We also found that some visual deception attacks can fool even the most sophisticated users. These results illustrate that standard security indicators are not effective for a substantial fraction of users, and suggest that alternative approaches are needed.",
+"score": 8,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2010.08.008",
+"title": "Data mining for credit card fraud: A comparative study",
+"url": "https://doi.org/10.1016/j.dss.2010.08.008",
+"venue": "Decision Support Systems",
+"date": "2010-08-19",
+"authors": [
+"Siddhartha Bhattacharyya",
+"Sanjeev Jha",
+"Kurian Tharakunnel",
+"James Christopher Westland"
+],
+"abstract": "",
+"score": 8,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2018.09.029",
+"title": "Machine learning based phishing detection from URLs",
+"url": "https://doi.org/10.1016/j.eswa.2018.09.029",
+"venue": "Expert Systems with Applications",
+"date": "2018-09-18",
+"authors": [
+"Özgür Koray Şahingöz",
+"Ebubekir Buber",
+"Önder Demir",
+"Banu Diri"
+],
+"abstract": "",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tnnls.2017.2736643",
+"title": "Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy",
+"url": "https://doi.org/10.1109/tnnls.2017.2736643",
+"venue": "IEEE Transactions on Neural Networks and Learning Systems",
+"date": "2017-09-14",
+"authors": [
+"Andrea Dal Pozzolo",
+"Giacomo Boracchi",
+"Olivier Caelen",
+"Cesare Alippi",
+"Gianluca Bontempi"
+],
+"abstract": "Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS). This lack of realism concerns two main aspects: 1) the way and timing with which supervised information is provided and 2) the measures used to assess fraud-detection performance. This paper has three major contributions. First, we propose, with the help of our industrial partner, a formalization of the fraud-detection problem that realistically describes the operating conditions of FDSs that everyday analyze massive streams of credit card transactions. We also illustrate the most appropriate performance measures to be used for fraud-detection purposes. Second, we design ",
+"score": 8,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1023/a:1009700419189",
+"title": "Adaptive Fraud Detection",
+"url": "https://doi.org/10.1023/a:1009700419189",
+"venue": "Data Mining and Knowledge Discovery",
+"date": "1997-09-01",
+"authors": [
+"Tom E. Fawcett",
+"Foster John Provost"
+],
+"abstract": "",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jnca.2016.04.007",
+"title": "Fraud detection system: A survey",
+"url": "https://doi.org/10.1016/j.jnca.2016.04.007",
+"venue": "Journal of Network and Computer Applications",
+"date": "2016-04-13",
+"authors": [
+"Aisha Abdallah",
+"Mohd Aizaini Maarof",
+"Anazida Binti Zainal"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.cose.2015.09.005",
+"title": "Intelligent financial fraud detection: A comprehensive review",
+"url": "https://doi.org/10.1016/j.cose.2015.09.005",
+"venue": "Computers & Security",
+"date": "2015-11-12",
+"authors": [
+"Jarrod West",
+"Maumita Bhattacharya"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/978-1-4614-4139-7_10",
+"title": "An Analysis of Anonymity in the Bitcoin System",
+"url": "https://doi.org/10.1007/978-1-4614-4139-7_10",
+"venue": "Springer eBooks",
+"date": "2012-07-13",
+"authors": [
+"Fergal Reid",
+"Martin Harrigan"
+],
+"abstract": "",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/1242572.1242659",
+"title": "Cantina: a content-based approach to detecting phishing web sites",
+"url": "https://doi.org/10.1145/1242572.1242659",
+"venue": "International World Wide Web Conference (WWW)",
+"date": "2007-05-08",
+"authors": [
+"Zhang Yue",
+"Jason Hong",
+"Lorrie Faith Cranor"
+],
+"abstract": "Phishing is a significant problem involving fraudulent email and web sites that trick unsuspecting users into revealing private information. In this paper, we present the design, implementation, and evaluation of CANTINA, a novel, content-based approach to detecting phishing web sites, based on the TF-IDF information retrieval algorithm. We also discuss the design and evaluation of several heuristics we developed to reduce false positives. Our experiments show that CANTINA is good at detecting phishing sites, correctly labeling approximately 95% of phishing sites.",
+"score": 8,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2018.01.037",
+"title": "Sequence classification for credit-card fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2018.01.037",
+"venue": "Expert Systems with Applications",
+"date": "2018-01-31",
+"authors": [
+"Johannes Jurgovsky",
+"Michael Granitzer",
+"Konstantin Ziegler",
+"Sylvie Calabretto",
+"Pierre-Édouard Portier",
+"Liyun He-Guelton"
+],
+"abstract": "",
+"score": 8,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2014.02.026",
+"title": "Learned lessons in credit card fraud detection from a practitioner perspective",
+"url": "https://doi.org/10.1016/j.eswa.2014.02.026",
+"venue": "Expert Systems with Applications",
+"date": "2014-02-22",
+"authors": [
+"Andrea Dal Pozzolo",
+"Olivier Caelen",
+"Yann‐Aël Le Borgne",
+"Serge Waterschoot",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/1242572.1242660",
+"title": "Learning to detect phishing emails",
+"url": "https://doi.org/10.1145/1242572.1242660",
+"venue": "International World Wide Web Conference (WWW)",
+"date": "2007-05-08",
+"authors": [
+"Ian Fette",
+"Norman Sadeh",
+"Anthony Tomasic"
+],
+"abstract": "Each month, more attacks are launched with the aim of making web users believe that they are communicating with a trusted entity for the purpose of stealing account information, logon credentials, and identity information in general. This attack method, commonly known as \"phishing,\" is most commonly initiated by sending out emails with links to spoofed websites that harvest information. We present a method for detecting these attacks, which in its most general form is an application of machine learning on a feature set designed to highlight user-targeted deception in electronic communication. This method is applicable, with slight modification, to detection of phishing websites, or the emails used to direct victims to these sites. We evaluate this method on a set of approximately 860 such phishing emails, and 6950 non-phishing emails, and correctly identify over 96% of the phishing emails while only mis-classifying on the order of 0.1% of the legitimate emails. We conclude with thoughts on the future for such techniques to specifically identify deception, specifically with respect to the evolutionary nature of the attacks and information available.",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/1124772.1124863",
+"title": "Do security toolbars actually prevent phishing attacks?",
+"url": "https://doi.org/10.1145/1124772.1124863",
+"venue": "CHI Conference on Human Factors in Computing Systems",
+"date": "2006-04-22",
+"authors": [
+"Min Wu",
+"Robert C. Miller",
+"Simson Garfinkel"
+],
+"abstract": "Security toolbars in a web browser show security-related information about a website to help users detect phishing attacks. Because the toolbars are designed for humans to use, they should be evaluated for usability -- that is, whether these toolbars really prevent users from being tricked into providing personal information. We conducted two user studies of three security toolbars and other browser security indicators and found them all ineffective at preventing phishing attacks. Even though subjects were asked to pay attention to the toolbar, many failed to look at it; others disregarded or explained away the toolbars' warnings if the content of web pages looked legitimate. We found that many subjects do not understand phishing attacks or realize how sophisticated such attacks can be.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2015.12.030",
+"title": "Feature engineering strategies for credit card fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2015.12.030",
+"venue": "Expert Systems with Applications",
+"date": "2016-01-07",
+"authors": [
+"Alejandro Correa Bahnsen",
+"Djamila Aouada",
+"Aleksandar Stojanović",
+"Björn Ottersten"
+],
+"abstract": "",
+"score": 8,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/access.2018.2806420",
+"title": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
+"url": "https://doi.org/10.1109/access.2018.2806420",
+"venue": "IEEE Access",
+"date": "2018-01-01",
+"authors": [
+"Kuldeep Kaur Randhawa",
+"Chu Kiong Loo",
+"Manjeevan Seera",
+"Chee Peng Lim",
+"Asoke Kumar Nandi"
+],
+"abstract": "Credit card fraud is a serious problem in financial services. Billions of dollars are lost due to credit card fraud every year. There is a lack of research studies on analyzing real-world credit card data owing to confidentiality issues. In this paper, machine learning algorithms are used to detect credit card fraud. Standard models are first used. Then, hybrid methods which use AdaBoost and majority voting methods are applied. To evaluate the model efficacy, a publicly available credit card data set is used. Then, a real-world credit card data set from a financial institution is analyzed. In addition, noise is added to the data samples to further assess the robustness of the algorithms. The experimental results positively indicate that the majority voting method achieves good accuracy rates in detecting fraud cases in credit cards.",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tdsc.2007.70228",
+"title": "Credit Card Fraud Detection Using Hidden Markov Model",
+"url": "https://doi.org/10.1109/tdsc.2007.70228",
+"venue": "IEEE Transactions on Dependable and Secure Computing",
+"date": "2008-01-01",
+"authors": [
+"A. Srivastava",
+"A. Kundu",
+"Shamik Sural",
+"Arun Kumar Majumdar"
+],
+"abstract": "The Internet has taken its place beside the telephone and the television as an important part of people's lives. Consumers rely on the Internet to shop, bank and invest online. Most online shoppers use credit cards to pay for their purchases. As credit card becomes the most popular mode of payment, cases of fraud associated with it are also increasing. In this paper, we model the sequence of operations in credit card transaction processing using a Hidden Markov Model (HMM) and show how it can be used for the detection of frauds. An HMM is trained with normal behavior of cardholder. If an incoming credit card transaction is not accepted by the HMM with sufficiently high probability, it is considered to be fraudulent. We present detailed experimental results to show the effectiveness of our approach.",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/5254.809570",
+"title": "Distributed data mining in credit card fraud detection",
+"url": "https://doi.org/10.1109/5254.809570",
+"venue": "IEEE Intelligent Systems and their Applications",
+"date": "1999-11-01",
+"authors": [
+"Philip K. Chan",
+"W. Fan",
+"Andreas L. Prodromidis",
+"Salvatore J. Stolfo"
+],
+"abstract": "Credit card transactions continue to grow in number, taking an ever-larger share of the US payment system and leading to a higher rate of stolen account numbers and subsequent losses by banks. Improved fraud detection thus has become essential to maintain the viability of the US payment system. Banks have used early fraud warning systems for some years. Large scale data-mining techniques can improve the state of the art in commercial practice. Scalable techniques to analyze massive amounts of transaction data that efficiently compute fraud detectors in a timely manner is an important problem, especially for e-commerce. Besides scalability and efficiency, the fraud-detection task exhibits technical problems that include skewed distributions of training data and nonuniform cost per error, both of which have not been widely studied in the knowledge-discovery and data mining community. In this article, we survey and evaluate a number of techniques that address these three main issues concurrently. Our proposed methods of combining multiple learned fraud detectors under a \"cost model\" are general and demonstrably useful; our empirical results demonstrate that we can significantly reduce",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/icnsc.2004.1297040",
+"title": "Survey of fraud detection techniques",
+"url": "https://doi.org/10.1109/icnsc.2004.1297040",
+"venue": "IEEE International Conference on Networking, Sensing and Control (ICNSC)",
+"date": "2004-06-10",
+"authors": [
+"Yufeng Kou",
+"Chang‐Tien Lu",
+"S. Sirwongwattana",
+"Yo-Ping Huang"
+],
+"abstract": "Due to the dramatic increase of fraud which results in loss of billions of dollars worldwide each year, several modern techniques in detecting fraud are continually developed and applied to many business fields. Fraud detection involves monitoring the behavior of populations of users in order to estimate, detect, or avoid undesirable behavior. Undesirable behavior is a broad term including delinquency, fraud, intrusion, and account defaulting. This paper presents a survey of current techniques used in credit card fraud detection, telecommunication fraud detection, and computer intrusion detection. The goal of this paper is to provide a comprehensive review of different techniques to detect frauds.",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/hicss.1994.323314",
+"title": "Credit card fraud detection with a neural-network",
+"url": "https://doi.org/10.1109/hicss.1994.323314",
+"venue": "Hawaii International Conference on System Sciences (HICSS)",
+"date": "1994-01-01",
+"authors": [
+"Ghosh",
+"Reilly"
+],
+"abstract": "Using data from a credit card issuer, a neural network based fraud detection system was trained on a large sample of labelled credit card account transactions and tested on a holdout data set that consisted of all account activity over a subsequent two-month period of time. The neural network was trained on examples of fraud due to lost cards, stolen cards, application fraud, counterfeit fraud, mail-order fraud and NRI (non-received issue) fraud. The network detected significantly more fraud accounts (an order of magnitude more) with significantly fewer false positives (reduced by a factor of 20) over rule-based fraud detection procedures. We discuss the performance of the network on this data set in terms of detection accuracy and earliness of fraud detection. The system has been installed on an IBM 3090 at Mellon Bank and is currently in use for fraud detection on that bank's credit card portfolio.>",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W145450961",
+"title": "Toward scalable learning with non-uniform class and cost distributions: a case study in credit card fraud detection",
+"url": "https://www.aaai.org/Papers/KDD/1998/KDD98-026.pdf",
+"venue": "Knowledge Discovery and Data Mining",
+"date": "1998-08-27",
+"authors": [
+"Philip K. Chan",
+"Salvatore J. Stolfo"
+],
+"abstract": "Very large databases with skewed class distributions and non-uniform cost per error are not uncommon in real-world data mining tasks. One such task is credit card fraud detection: the number of fraudulent transactions is small compared to legitimate ones, the amount of financial loss for each fraudulent transaction depends on the transaction amount and other factors, and millions of transactions occur each day. We devised a multi-classifier meta-learning approach to address these three issues. Our empirical results indicate that the approach can significantly reduce loss due to illegitimate transactions. Keywords: skewed class distributions, non-uniform error cost, large amounts of data, credit card fraud detection. This work was partially funded by grants from DARPA (F30602-96-1-0311), NSF (IRI-96-32225 & CDA96 -25374), NYSSTF (423115-445). 1 Introduction Very large databases with skewed class distributions and non-uniform cost per error are not uncommon in real-world data mining...",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3269206.3272010",
+"title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+"url": "https://doi.org/10.1145/3269206.3272010",
+"venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+"date": "2018-10-17",
+"authors": [
+"Ziqi Liu",
+"Chaochao Chen",
+"Xinxing Yang",
+"Jun Zhou",
+"Xiaolong Li",
+"Le Song"
+],
+"abstract": "We present, GEM, the first heterogeneous graph neural network approach for detecting malicious accounts at Alipay, one of the world's leading mobile cashless payment platform. Our approach, inspired from a connected subgraph approach, adaptively learns discriminative embeddings from heterogeneous account-device graphs based on two fundamental weaknesses of attackers, i.e. device aggregation and activity aggregation. For the heterogeneous graph consists of various types of nodes, we propose an attention mechanism to learn the importance of different types of nodes, while using the sum operator for modeling the aggregation patterns of nodes in each type. Experiments show that our approaches consistently perform promising results compared with competitive methods over time.",
+"score": 8,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3178876.3186046",
+"title": "Detecting Ponzi Schemes on Ethereum: Towards Healthier Blockchain Technology",
+"url": "https://doi.org/10.1145/3178876.3186046",
+"venue": "International World Wide Web Conference (WWW)",
+"date": "2018-01-01",
+"authors": [
+"Weili Chen",
+"Zibin Zheng",
+"Jiahui Cui",
+"Edith C.‐H. Ngai",
+"Peilin Zheng",
+"Yuren Zhou"
+],
+"abstract": "Blockchain technology becomes increasingly popular. It also attracts scams, for example, Ponzi scheme, a classic fraud, has been found making a notable amount of money on Blockchain, which has a very negative impact. To help dealing with this issue, this paper proposes an approach to detect Ponzi schemes on blockchain by using data mining and machine learning methods. By verifying smart contracts on Ethereum, we first extract features from user accounts and operation codes of the smart contracts and then build a classification model to detect latent Ponzi schemes implemented as smart contracts. The experimental results show that the proposed approach can achieve high accuracy for practical use. More importantly, the approach can be used to detect Ponzi schemes even at the moment of its creation. By using the proposed approach, we estimate that there are more than 400 Ponzi schemes running on Ethereum. Based on these results, we propose to build a uniform platform to evaluate and monitor every created smart contract for early warning of scams.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2013.05.021",
+"title": "A cost-sensitive decision tree approach for fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2013.05.021",
+"venue": "Expert Systems with Applications",
+"date": "2013-05-18",
+"authors": [
+"Yusuf Şahin",
+"Serol Bulkan",
+"Ekrem Duman"
+],
+"abstract": "",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s10618-008-0116-z",
+"title": "Transaction aggregation as a strategy for credit card fraud detection",
+"url": "https://doi.org/10.1007/s10618-008-0116-z",
+"venue": "Data Mining and Knowledge Discovery",
+"date": "2008-07-29",
+"authors": [
+"Christopher Whitrow",
+"David J. Hand",
+"Piotr Juszczak",
+"David J. Weston",
+"Niall M. Adams"
+],
+"abstract": "",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.inffus.2017.09.005",
+"title": "SCARFF : A scalable framework for streaming credit card fraud detection with spark",
+"url": "https://doi.org/10.1016/j.inffus.2017.09.005",
+"venue": "Information Fusion",
+"date": "2017-09-09",
+"authors": [
+"Fabrizio Carcillo",
+"Andrea Dal Pozzolo",
+"Yann‐Aël Le Borgne",
+"Olivier Caelen",
+"Yannis Mazzer",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 9,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tai.1999.809773",
+"title": "Neural data mining for credit card fraud detection",
+"url": "https://doi.org/10.1109/tai.1999.809773",
+"venue": "IEEE International Conference on Tools with Artificial Intelligence (ICTAI)",
+"date": "2003-01-20",
+"authors": [
+"Rüdiger W. Brause",
+"T. Langsdorf",
+"M. Hepp"
+],
+"abstract": "The prevention of credit card fraud is an important application for prediction techniques. One major obstacle for using neural network training techniques is the high necessary diagnostic quality: since only one financial transaction in a thousand is invalid no prediction success less than 99.9% is acceptable. Because of these credit card transaction requirements, completely new concepts had to be developed and tested on real credit card data. This paper shows how advanced data mining techniques and a neural network algorithm can be combined successfully to obtain a high fraud coverage combined with a low false alarm rate.",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W2585459224",
+"title": "Unsupervised Profiling Methods for Fraud Detection",
+"url": "http://procon.bg/article/unsupervised-profiling-methods-fraud-detection",
+"venue": "",
+"date": "2002-01-01",
+"authors": [
+"Richard J. Bolton",
+"David J. Hand"
+],
+"abstract": "Credit card fraud falls broadly into two categories: behavioural fraud and application fraud. Application fraud occurs when individuals obtain new credit cards from issuing companies using false personal information and then spend as much as possible in a short space of time. However, most credit card fraud is behavioural and occurs when details of legitimate cards have been obtained fraudulently and sales are made on a 'Cardholder Not Present' basis. These sales include telephone sales and e-commerce transactions where only the card details are required. In this paper, we are concerned with detecting behavioural fraud through the analysis of longitudinal data. These data usually consist of credit card transactions over time, but can include other variables, both static and longitudinal. Statistical methods for fraud detection are often classification (supervised) methods that discriminate between known fraudulent and non-fraudulent transactions; however, these methods rely on accurate identification of fraudulent transactions in historical databases -- information that is often in short supply or non-existent. We are particularly interested in unsupervised methods that do not use ",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1257/jep.23.3.3",
+"title": "The Economics of Online Crime",
+"url": "https://doi.org/10.1257/jep.23.3.3",
+"venue": "The Journal of Economic Perspectives",
+"date": "2009-08-01",
+"authors": [
+"Tyler Moore",
+"Richard Clayton",
+"Ross Anderson"
+],
+"abstract": "This paper will focus on online crime, which has taken off as a serious industry since about 2004. Until then, much of the online nuisance came from amateur hackers who defaced websites and wrote malicious software in pursuit of bragging rights. But now criminal networks have emerged—online black markets in which the bad guys trade with each other, with criminals taking on specialized roles. Just as in Adam Smith's pin factory, specialization has led to impressive productivity gains, even though the subject is now bank card PINs rather than metal ones. Someone who can collect bank card and PIN data, electronic banking passwords, and the information needed to apply for credit in someone else's name can sell these data online to anonymous brokers. The brokers in turn sell the credentials to specialist cashiers who steal and then launder the money. We will examine the data on online crime; discuss the collective-action aspects of the problem; demonstrate how agile attackers shift across national borders as earlier targets wise up to their tactics; describe ways to improve law-enforcement coordination; and we explore how defenders' incentives affect the outcomes.",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/72.595879",
+"title": "Neural fraud detection in credit card operations",
+"url": "https://doi.org/10.1109/72.595879",
+"venue": "IEEE Transactions on Neural Networks",
+"date": "1997-07-01",
+"authors": [
+"José R. Dorronsoro",
+"F. Ginel",
+"C. Sgnchez",
+"C.S. Cruz"
+],
+"abstract": "This paper presents an online system for fraud detection of credit card operations based on a neural classifier. Since it is installed in a transactional hub for operation distribution, and not on a card-issuing institution, it acts solely on the information of the operation to be rated and of its immediate previous history, and not on historic databases of past cardholder activities. Among the main characteristics of credit card traffic are the great imbalance between proper and fraudulent operations, and a great degree of mixing between both. To ensure proper model construction, a nonlinear version of Fisher's discriminant analysis, which adequately separates a good proportion of fraudulent operations away from other closer to normal traffic, has been used. The system is fully operational and currently handles more than 12 million operations per year with very satisfactory results.",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/000271620258200113",
+"title": "Money Laundering and Its Regulation",
+"url": "https://doi.org/10.1177/000271620258200113",
+"venue": "The Annals of the American Academy of Political and Social Science",
+"date": "2002-07-01",
+"authors": [
+"Michael Levi"
+],
+"abstract": "This article examines definitions of \"money laundering\" and the conceptual and actual role its regulation plays in dealing with drug markets. If laundering is prevented, incentives to become major criminals are diminished. It identifies and critiques three aspects of harm arising from laundering: facilitating crime groups' expansion, corroding financial institutions, and extent. After a discussion of laundering techniques used with drug money, including the symbiotic relationship with some otherwise legitimate ordinary businesses, the article examines the history of public- and private-sector antilaundering policies and their implementation in the United States and globally. It concludes that much detected laundering involves the same out-of-place judgments the police use, but though the proportion of routine and suspicious activity reports that yield arrests may be low, they do generate some important enforcement actions. Nevertheless, the impact of antilaundering efforts on enforcement resources, organized crime markets, or drug consumption levels remains modestly understood at present.",
+"score": 7,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W2405680064",
+"title": "Credit Card Fraud Detection Using Meta-Learning: Issues and Initial Results 1",
+"url": "https://www.aaai.org/Papers/Workshops/1997/WS-97-07/WS97-07-015.pdf",
+"venue": "",
+"date": "1997-01-01",
+"authors": [
+"Salvatore J. Stolfo",
+"David W. Fan",
+"Wenke Lee",
+"Andreas L. Prodromidis",
+"Philip K. Chan"
+],
+"abstract": "In this paper we describe initial experiments using meta-learning techniques to learn models of fraudulent credit card transactions. Our collaborators, some of the nation’s largest banks, have provided us with real-world credit card transaction data from which models may be computed to distinguish fraudulent transactions from legitimate ones, a problem growing in importance. Our experiments reported here are the first step towards a better understanding of the advantages and limitations of current meta-learning strategies. We argue that, for the fraud detection domain, fraud catching rate (True Positive rate) and false alarm rate (False Positive rate) are better metrics than the overall accuracy when evaluating the learned fraud classifiers. We show that given a skewed distribution in the original data, artificially more balanced training data leads to better classifiers. We demonstrate how meta-learning can be used to combine different classifiers (from different learning algorithms) and maintain, and in some cases, improve the performance of the best classifier.",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/jiot.2018.2816007",
+"title": "Credit Card Fraud Detection: A Novel Approach Using Aggregation Strategy and Feedback Mechanism",
+"url": "https://doi.org/10.1109/jiot.2018.2816007",
+"venue": "IEEE Internet of Things Journal",
+"date": "2018-03-15",
+"authors": [
+"Changjun Jiang",
+"Jiahui Song",
+"Guanjun Liu",
+"Lutao Zheng",
+"Wenjing Luan"
+],
+"abstract": "With the rapid development of electronic commerce, the number of transactions by credit cards are increasing rapidly. As online shopping becomes the most popular transaction mode, cases of transaction fraud are also increasing. In this paper, we propose a novel fraud detection method that composes of four stages. To enrich a cardholder's behavioral patterns, we first utilize the cardholders' historical transaction data to divide all cardholders into different groups such that the transaction behaviors of the members in the same group are similar. We thus propose a window-sliding strategy to aggregate the transactions in each group. Next, we extract a collection of specific behavioral patterns for each cardholder based on the aggregated transactions and the cardholder's historical transactions. Then we train a set of classifiers for each group on the base of all behavioral patterns. Finally, we use the classifier set to detect fraud online and if a new transaction is fraudulent, a feedback mechanism is taken in the detection process in order to solve the problem of concept drift. The results of our experiments show that our approach is better than others.",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/1748895808096470",
+"title": "Organized fraud and organizing frauds: Unpacking research on networks and organization",
+"url": "https://doi.org/10.1177/1748895808096470",
+"venue": "Criminology & Criminal Justice",
+"date": "2008-11-01",
+"authors": [
+"Michael Levi"
+],
+"abstract": "This article examines the settings for frauds in the context of crime networks, fraud opportunities and of a victim-centric typology of fraud. It demonstrates the variety of actors, settings and the variable need for knowing collaboration between co-offenders in frauds of different types. It explores what is known about those involved in the organization of some forms of frauds; how they find both co-offenders and victims in face-to-face and remote settings; and the barriers to growth of the `fraud business'. It concludes that the globalization of crime is part of contingent relationships between settings, with their rich and varied opportunities (reflecting patterns of business, consumer and investment activities), the variable abilities of would-be perpetrators to recognize and act on those opportunities (the `crime scripts' perspective), and their interactions with controls (including, but not restricted to, law enforcement). Constructs of `organized crime' are becoming less obsessed with the structure of groups than with what people need from the largely illicit and largely licit worlds before they commit fraud. Although some frauds are committed by generic transnational `organ",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/bjc/azn001",
+"title": "Measuring the Impact of Fraud in the UK: A Conceptual and Empirical Journey",
+"url": "https://doi.org/10.1093/bjc/azn001",
+"venue": "The British Journal of Criminology",
+"date": "2007-12-24",
+"authors": [
+"Michael Levi",
+"John Burrows"
+],
+"abstract": "This article examines the conceptual and empirical underpinnings of data on the cost of fraud—collected for a study conducted for the Association of Chief Police Officers and summarized in the article—and reviews the strengths and weaknesses of the data collection processes. It also raises broader questions about the relationship between crime control ideologies, institutional responsibilities, and what data on crime are kept and not kept; and concludes by reviewing the implications of recent strategies for enhancing fraud data collection.",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s41060-018-0116-z",
+"title": "Streaming active learning strategies for real-life credit card fraud detection: assessment and visualization",
+"url": "https://doi.org/10.1007/s41060-018-0116-z",
+"venue": "International Journal of Data Science and Analytics",
+"date": "2018-04-04",
+"authors": [
+"Fabrizio Carcillo",
+"Yann‐Aël Le Borgne",
+"Olivier Caelen",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jfc-10-2017-0095",
+"title": "Predicting susceptibility to cyber-fraud victimhood",
+"url": "https://doi.org/10.1108/jfc-10-2017-0095",
+"venue": "Journal of Financial Crime",
+"date": "2019-01-07",
+"authors": [
+"Monica Therese Whitty"
+],
+"abstract": "Purpose This paper aims to develop a theoretical framework to predict susceptibility to cyber-fraud victimhood. Design/methodology/approach A survey was constructed to examine whether personality, socio-demographic characteristics and online routine activities predicted one-off and repeat victimhood of cyber-fraud. Overall, 11,780 participants completed a survey (one-off victims, N = 728; repeat victims = 329). Findings The final saturated model revealed that psychological and socio-demographic characteristics and online routine activities should be considered when predicting victimhood. Consistent with the hypotheses, victims of cyber-frauds were more likely to be older, score high on impulsivity measures of urgency and sensation seeking, score high on addictive measures and engage in more frequent routine activities that place them at great risk of becoming scammed. There was little distinction between one-off and repeat victims of cyber-frauds. Originality/value This work uniquely combines psychological, socio-demographic and online behaviours to develop a comprehensive theoretical framework to predict susceptibility to cyber-frauds. Importantly, the work here challenges the cur",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.52922/ti148355",
+"title": "The reporting experiences and support needs of victims of online fraud",
+"url": "https://doi.org/10.52922/ti148355",
+"venue": "Australian Institute of Criminology eBooks",
+"date": "2016-08-11",
+"authors": [
+"Cassandra Cross",
+"Kelly Richards",
+"Russell Smith"
+],
+"abstract": "This paper presents the results of in-depth interviews conducted with a sample of 80 individuals from across Australia who lodged complaints of online fraud involving losses of $10,000 or more over the preceding four years. Their stories illustrate the financial impact of fraud and the emotional, psychological, interpersonal and physical impacts of their victimisation. They also document the barriers they faced in reporting these crimes. The paper concludes by identifying the support needs of victims of online fraud.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tcss.2018.2856910",
+"title": "Transaction Fraud Detection Based on Total Order Relation and Behavior Diversity",
+"url": "https://doi.org/10.1109/tcss.2018.2856910",
+"venue": "IEEE Transactions on Computational Social Systems",
+"date": "2018-08-07",
+"authors": [
+"Lutao Zheng",
+"Guanjun Liu",
+"Chungang Yan",
+"Changjun Jiang"
+],
+"abstract": "With the popularization of online shopping, transaction fraud is growing seriously. Therefore, the study on fraud detection is interesting and significant. An important way of detecting fraud is to extract the behavior profiles (BPs) of users based on their historical transaction records, and then to verify if an incoming transaction is a fraud or not in view of their BPs. Markov chain models are popular to represent BPs of users, which is effective for those users whose transaction behaviors are stable relatively. However, with the development and popularization of online shopping, it is more convenient for users to consume via the Internet, which diversifies the transaction behaviors of users. Therefore, Markov chain models are unsuitable for the representation of these behaviors. In this paper, we propose logical graph of BP (LGBP) which is a total order-based model to represent the logical relation of attributes of transaction records. Based on LGBP and users' transaction records, we can compute a path-based transition probability from an attribute to another one. At the same time, we define an information entropy-based diversity coefficient in order to characterize the diversi",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/bjc/azy005",
+"title": "Understanding Romance Fraud: Insights From Domestic Violence Research",
+"url": "https://doi.org/10.1093/bjc/azy005",
+"venue": "The British Journal of Criminology",
+"date": "2018-03-09",
+"authors": [
+"Cassandra Cross",
+"Molly Dragiewicz",
+"Kelly Richards"
+],
+"abstract": "Romance fraud affects thousands of victims globally, yet few scholars have studied it. The dynamics of relationships between victims and offenders are not well understood, and the effects are rarely discussed. This article adapts the concept of psychological abuse from studies of domestic violence to better understand romance fraud. Using interviews with 21 Australian romance fraud victims, we show how offenders use non-violent tactics to ensure compliance with ongoing demands for money. This article identifies similarities and differences between domestic violence and romance fraud. We argue that thinking through domestic violence and romance fraud together offers potential benefits to both bodies of research.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.5204/ijcjsd.v5i4.268",
+"title": "‘They’re Very Lonely’: Understanding the Fraud Victimisation of Seniors",
+"url": "https://doi.org/10.5204/ijcjsd.v5i4.268",
+"venue": "International Journal for Crime Justice and Social Democracy",
+"date": "2016-11-30",
+"authors": [
+"Cassandra Cross"
+],
+"abstract": "There are many theories which seek to explain fraud victimisation. In particular, older victims find themselves at the intersection of various discourses which account for victimisation, primarily from a deficit model. This article examines two discourses relevant to older fraud victims. The first positions older victims of crime as weak and vulnerable and the second positions fraud victims generally as greedy and gullible. Using interviews with twenty-one Canadian volunteers who provide telephone support to older fraud victims (all seniors themselves), this article analyses the extent to which these two discourses are evident in the understandings of these volunteers. It finds that volunteers overwhelmingly perceive fraud to occur out of loneliness and isolation of the victim, and actively resist victim blaming narratives towards these individuals. While neither discourse is overly positive, the article discusses the implications of these discourses for the victims themselves and for their ability to access support.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/police/pau044",
+"title": "Improving the Police Response to Online Fraud",
+"url": "https://doi.org/10.1093/police/pau044",
+"venue": "Policing A Journal of Policy and Practice",
+"date": "2014-12-12",
+"authors": [
+"Cassandra Cross",
+"D. Blackshaw"
+],
+"abstract": "Online fraud poses a significant problem to society in terms of its monetary losses and the devastating impact on victims. It also poses significant challenges to law enforcement agencies, regarding their ability to investigate crimes which are complex, occur in a virtual environment, incorporate multiple (often international) jurisdictions, and have a very low reporting rate. This paper examines the police response to online fraud. It argues that traditionally, fraud has received little attention and priority from police agencies and this is exacerbated in the online context. In contrast to this, the paper presents the example of Project Sunbird, a partnership between the West Australian Police and the West Australian Department of Commerce which has embraced the use of financial intelligence to proactively contact suspected victims of online fraud. This paper argues that a proactive approach to policing online fraud can have substantial positive effects for police and victims alike.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W2146935111",
+"title": "Combining data mining and machine learning for effective user profiling",
+"url": "https://aaaipress.org/Papers/KDD/1996/KDD96-002.pdf",
+"venue": "Knowledge Discovery and Data Mining",
+"date": "1996-08-02",
+"authors": [
+"Tom E. Fawcett",
+"Foster John Provost"
+],
+"abstract": "This paper describes the automatic design of methods for detecting fraudulent behavior. Much of the design is accomplished using a series of machine learning methods. In particular, we combine data mining and constructive induction with more standard machine learning techniques to design methods for detecting fraudulent usage of cellular telephones based on profiling customer behavior. Specifically, we use a rulelearning program to uncover indicators of fraudulent behavior from a large database of cellular calls. These indicators are used to create profilers, which then serve as features to a system that combines evidence from multiple profilers to generate high-confidence alarms. Experiments indicate that this automatic approach performs nearly as well as the best hand-tuned methods for detecting fraud. Introduction In the United States, cellular fraud costs the telecommunications industry hundreds of millions of dollars per year (Walters & Wilkinson 1994). A specific kind of cellul...",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1023/b:cris.0000039600.88691.af",
+"title": "Reducing and preventing organised crime: An evidence-based critique",
+"url": "https://doi.org/10.1023/b:cris.0000039600.88691.af",
+"venue": "Crime Law and Social Change",
+"date": "2004-06-01",
+"authors": [
+"Michael Levi",
+"Mike Maguire"
+],
+"abstract": "",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W1546783247",
+"title": "Fraud typologies and the victims of fraud: literature review",
+"url": "https://puredev.port.ac.uk/en/publications/fraud-typologies-and-the-victims-of-fraud-literature-review",
+"venue": "",
+"date": "2009-01-01",
+"authors": [
+"Mark Button",
+"Chris Lewis",
+"Jacki Tapley"
+],
+"abstract": "This review profiles a wide range of frauds which affect individuals and small businesses. In particular, it looks at mass marketing, identity and small business fraud. The review highlights the diversity within fraud including who perpetrates it. The report also shows the level of innovation and skill involved in committing fraud, thus coining the word ‘scampreneurs’ to describe these criminals.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W2099816907",
+"title": "An Empirical Analysis of the Current State of Phishing Attack and Defence",
+"url": "http://weis2007.econinfosec.org/papers/51.pdf",
+"venue": "WEIS",
+"date": "2007-01-01",
+"authors": [
+"Tyler Moore",
+"Richard Clayton"
+],
+"abstract": "Banks and other organisations deal with fraudulent phishing websites by pressing the hosting service providers to remove the sites from the Internet. Until they are removed, the fraudsters will learn the passwords, personal identification numbers (PINs) and other personal details of the users who are fooled into visiting them. We analyse empirical data on actual phishing website removal times and the number of visitors that the websites attract, and conclude that website removal is part of the answer to phishing, but it is not fast enough to completely mitigate the problem. We also identify a subset of phishing websites (operated by the ‘rock-phish ’ gang) which through architectural innovations have extended the average lifetime of their phishing websites. 1",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jfc-12-2015-0069",
+"title": "The problem of “white noise”: examining current prevention approaches to online fraud",
+"url": "https://doi.org/10.1108/jfc-12-2015-0069",
+"venue": "Journal of Financial Crime",
+"date": "2016-10-03",
+"authors": [
+"Cassandra Cross",
+"Michael Kelly"
+],
+"abstract": "Purpose The purpose of this paper is to examine the current prevention messages that exist surrounding the prevention of online fraud. In particular, it focuses on the amount and level of detail that is promoted for each type of potential fraudulent approach. Design/methodology/approach Multiple data sources are used to establish the main premise of this paper. This includes the publication entitled The Little Black Book of Scams , qualitative data from victims who have experienced online fraud, and materials collected through a police investigation into online fraud. Findings Results of this analysis indicate that current prevention messages are characterised by a large degree of detail about the various ways that (online) fraud can be perpetrated. This is argued to be ineffective, based on the experiences of victims who were unable to apply their previous knowledge about fraud to their experiences. Additionally, the categorisation of fraudulent approaches is highlighted as unimportant to offenders, who are focused on obtaining money by whatever means (or approach) possible. Practical implications This paper provides the impetus to evaluate the effectiveness of current prevention ",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/iccv.2019.00009",
+"title": "FaceForensics++: Learning to Detect Manipulated Facial Images",
+"url": "https://doi.org/10.1109/iccv.2019.00009",
+"venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+"date": "2019-10-01",
+"authors": [
+"Andreas Rössler",
+"Davide Cozzolino",
+"Luisa Verdoliva",
+"Christian Rieß",
+"Justus Thies",
+"Matthias Nießner"
+],
+"abstract": "The rapid progress in synthetic image generation and manipulation has now come to a point where it raises significant concerns for the implications towards society. At best, this leads to a loss of trust in digital content, but could potentially cause further harm by spreading false information or fake news. This paper examines the realism of state-of-the-art image manipulations, and how difficult it is to detect them, either automatically or by humans. To standardize the evaluation of detection methods, we propose an automated benchmark for facial manipulation detection. In particular, the benchmark is based on Deep-Fakes, Face2Face, FaceSwap and NeuralTextures as prominent representatives for facial manipulations at random compression level and size. The benchmark is publicly available and contains a hidden test set as well as a database of over 1.8 million manipulated images. This dataset is over an order of magnitude larger than comparable, publicly available, forgery datasets. Based on this data, we performed a thorough analysis of data-driven forgery detectors. We show that the use of additional domain-specific knowledge improves forgery detection to unprecedented accuracy, e",
+"score": 8,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/cvpr42600.2020.00327",
+"title": "Celeb-DF: A Large-Scale Challenging Dataset for DeepFake Forensics",
+"url": "https://doi.org/10.1109/cvpr42600.2020.00327",
+"venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+"date": "2020-06-01",
+"authors": [
+"Yuezun Li",
+"Xin Yang",
+"Pu Sun",
+"Honggang Qi",
+"Siwei Lyu"
+],
+"abstract": "AI-synthesized face-swapping videos, commonly known as DeepFakes, is an emerging problem threatening the trustworthiness of online information. The need to develop and evaluate DeepFake detection algorithms calls for datasets of DeepFake videos. However, current DeepFake datasets suffer from low visual quality and do not resemble DeepFake videos circulated on the Internet. We present a new large-scale challenging DeepFake video dataset, Celeb-DF, which contains 5,639 high-quality DeepFake videos of celebrities generated using improved synthesis process. We conduct a comprehensive evaluation of DeepFake detection methods and datasets to demonstrate the escalated level of challenges posed by Celeb-DF.",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/wifs.2018.8630787",
+"title": "In Ictu Oculi: Exposing AI Created Fake Videos by Detecting Eye Blinking",
+"url": "https://doi.org/10.1109/wifs.2018.8630787",
+"venue": "IEEE International Workshop on Information Forensics and Security",
+"date": "2018-12-01",
+"authors": [
+"Yuezun Li",
+"Ming‐Ching Chang",
+"Siwei Lyu"
+],
+"abstract": "The new developments in deep generative networks have significantly improve the quality and efficiency in generating realistically-looking fake face videos. In this work, we describe a new method to expose fake face videos generated with deep neural network models. Our method is based on detection of eye blinking in the videos, which is a physiological signal that is not well presented in the synthesized fake videos. Our method is evaluated over benchmarks of eye-blinking detection datasets and shows promising performance on detecting videos generated with DNN based software DeepFake.",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/avss.2018.8639163",
+"title": "Deepfake Video Detection Using Recurrent Neural Networks",
+"url": "https://doi.org/10.1109/avss.2018.8639163",
+"venue": "IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS)",
+"date": "2018-11-01",
+"authors": [
+"David Güera",
+"Edward J. Delp"
+],
+"abstract": "In recent months a machine learning based free software tool has made it easy to create believable face swaps in videos that leaves few traces of manipulation, in what are known as \"deepfake\" videos. Scenarios where these realistic fake videos are used to create political distress, blackmail someone or fake terrorism events are easily envisioned. This paper proposes a temporal-aware pipeline to automatically detect deepfake videos. Our system uses a convolutional neural network (CNN) to extract frame-level features. These features are then used to train a recurrent neural network (RNN) that learns to classify if a video has been subject to manipulation or not. We evaluate our method against a large set of deepfake videos collected from multiple video websites. We show how our system can achieve competitive results in this task while using a simple architecture.",
+"score": 7,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3425780",
+"title": "The Creation and Detection of Deepfakes: A Survey",
+"url": "https://doi.org/10.1145/3425780",
+"venue": "ACM Computing Surveys",
+"date": "2021-01-02",
+"authors": [
+"Yisroel Mirsky",
+"Wenke Lee"
+],
+"abstract": "Generative deep learning algorithms have progressed to a point where it is difficult to tell the difference between what is real and what is fake. In 2018, it was discovered how easy it is to use this technology for unethical and malicious applications, such as the spread of misinformation, impersonation of political leaders, and the defamation of innocent individuals. Since then, these “deepfakes” have advanced significantly. In this article, we explore the creation and detection of deepfakes and provide an in-depth view as to how these architectures work. The purpose of this survey is to provide the reader with a deeper understanding of (1) how deepfakes are created and detected, (2) the current trends and advancements in this domain, (3) the shortcomings of the current defense solutions, and (4) the areas that require further research and attention.",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3340531.3411903",
+"title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
+"url": "https://doi.org/10.1145/3340531.3411903",
+"venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+"date": "2020-10-19",
+"authors": [
+"Yingtong Dou",
+"Zhiwei Liu",
+"Li Sun",
+"Yutong Deng",
+"Hao Ming Peng",
+"Philip S. Yu"
+],
+"abstract": "Graph Neural Networks (GNNs) have been widely applied to fraud detection problems in recent years, revealing the suspiciousness of nodes by aggregating their neighborhood information via different relations. However, few prior works have noticed the camouflage behavior of fraudsters, which could hamper the performance of GNN-based fraud detectors during the aggregation process. In this paper, we introduce two types of camouflages based on recent empirical studies, i.e., the feature camouflage and the relation camouflage. Existing GNNs have not addressed these two camouflages, which results in their poor performance in fraud detection problems. Alternatively, we propose a new model named CAmouflage-REsistant GNN (CARE-GNN), to enhance the GNN aggregation process with three unique modules against camouflages. Concretely, we first devise a label-aware similarity measure to find informative neighboring nodes. Then, we leverage reinforcement learning (RL) to find the optimal amounts of neighbors to be selected. Finally, the selected neighbors across different relations are aggregated together. Comprehensive experiments on two real-world fraud datasets demonstrate the effectiveness of th",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2021.116429",
+"title": "Financial Fraud: A Review of Anomaly Detection Techniques and Recent Advances",
+"url": "https://doi.org/10.1016/j.eswa.2021.116429",
+"venue": "Expert Systems with Applications",
+"date": "2021-12-31",
+"authors": [
+"Waleed Hilal",
+"S. Andrew Gadsden",
+"John Yawney"
+],
+"abstract": "With the rise of technology and the continued economic growth evident in modern society, acts of fraud have become much more prevalent in the financial industry, costing institutions and consumers hundreds of billions of dollars annually. Fraudsters are continuously evolving their approaches to exploit the vulnerabilities of the current prevention measures in place, many of whom are targeting the financial sector. These crimes include credit card fraud, healthcare and automobile insurance fraud, money laundering, securities and commodities fraud and insider trading. On their own, fraud prevention systems do not provide adequate security against these criminal acts. As such, the need for fraud detection systems to detect fraudulent acts after they have already been committed and the potential cost savings of doing so is more evident than ever. Anomaly detection techniques have been intensively studied for this purpose by researchers over the last couple of decades, many of which employed statistical, artificial intelligence and machine learning models. Supervised learning algorithms have been the most popular types of models studied in research up until recently. However, supervised",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/cvpr42600.2020.00296",
+"title": "DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery Detection",
+"url": "https://doi.org/10.1109/cvpr42600.2020.00296",
+"venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+"date": "2020-06-01",
+"authors": [
+"Liming Jiang",
+"Li Ren",
+"Wayne Wu",
+"Chen Qian",
+"Chen Change Loy"
+],
+"abstract": "We present our on-going effort of constructing a large- scale benchmark for face forgery detection. The first version of this benchmark, DeeperForensics-1.0, represents the largest face forgery detection dataset by far, with 60, 000 videos constituted by a total of 17.6 million frames, 10 times larger than existing datasets of the same kind. Extensive real-world perturbations are applied to obtain a more challenging benchmark of larger scale and higher diversity. All source videos in DeeperForensics-1.0 are carefully collected, and fake videos are generated by a newly proposed end-to-end face swapping framework. The quality of generated videos outperforms those in existing datasets, validated by user studies. The benchmark features a hidden test set, which contains manipulated videos achieving high deceptive scores in human evaluations. We further contribute a comprehensive study that evaluates five representative detection baselines and make a thorough analysis of different settings.",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3442381.3449989",
+"title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
+"url": "https://doi.org/10.1145/3442381.3449989",
+"venue": "International World Wide Web Conference (WWW)",
+"date": "2021-04-19",
+"authors": [
+"Yang Liu",
+"Xiang Ao",
+"Zidi Qin",
+"Jianfeng Chi",
+"Jinghua Feng",
+"Hao Yang"
+],
+"abstract": "Graph-based fraud detection approaches have escalated lots of attention recently due to the abundant relational information of graph-structured data, which may be beneficial for the detection of fraudsters. However, the GNN-based algorithms could fare poorly when the label distribution of nodes is heavily skewed, and it is common in sensitive areas such as financial fraud, etc. To remedy the class imbalance problem of graph-based fraud detection, we propose a Pick and Choose Graph Neural Network (PC-GNN for short) for imbalanced supervised learning on graphs. First, nodes and edges are picked with a devised label-balanced sampler to construct sub-graphs for mini-batch training. Next, for each node in the sub-graph, the neighbor candidates are chosen by a proposed neighborhood sampler. Finally, information from the selected neighbors and different relations are aggregated to obtain the final representation of a target node. Experiments on both benchmark and real-world graph-based fraud detection tasks demonstrate that PC-GNN apparently outperforms state-of-the-art baselines.",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.ins.2019.05.042",
+"title": "Combining unsupervised and supervised learning in credit card fraud detection",
+"url": "https://doi.org/10.1016/j.ins.2019.05.042",
+"venue": "Information Sciences",
+"date": "2019-05-15",
+"authors": [
+"Fabrizio Carcillo",
+"Yann‐Aël Le Borgne",
+"Olivier Caelen",
+"Yacine Kessaci",
+"Frédéric Oblé",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/icdm.2019.00070",
+"title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
+"url": "https://doi.org/10.1109/icdm.2019.00070",
+"venue": "Proceedings",
+"date": "2019-11-01",
+"authors": [
+"Daixin Wang",
+"Jianbin Lin",
+"Peng Cui",
+"Quanhui Jia",
+"Zhen Wang",
+"Yanming Fang"
+],
+"abstract": "With the rapid growth of financial services, fraud detection has been a very important problem to guarantee a healthy environment for both users and providers. Conventional solutions for fraud detection mainly use some rule-based methods or distract some features manually to perform prediction. However, in financial services, users have rich interactions and they themselves always show multifaceted information. These data form a large multiview network, which is not fully exploited by conventional methods. Additionally, among the network, only very few of the users are labelled, which also poses a great challenge for only utilizing labeled data to achieve a satisfied performance on fraud detection. To address the problem, we expand the labeled data through their social relations to get the unlabeled data and propose a semi-supervised attentive graph neural network, named SemiGNN to utilize the multi-view labeled and unlabeled data for fraud detection. Moreover, we propose a hierarchical attention mechanism to better correlate different neighbors and different views. Simultaneously, the attention mechanism can make the model interpretable and tell what are the important factors for ",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2020.113303",
+"title": "Fraud detection: A systematic literature review of graph-based anomaly detection approaches",
+"url": "https://doi.org/10.1016/j.dss.2020.113303",
+"venue": "Decision Support Systems",
+"date": "2020-04-16",
+"authors": [
+"Tahereh Pourhabibi",
+"Kok‐Leong Ong",
+"Booi Kam",
+"Yee Ling Boo"
+],
+"abstract": "Graph-based anomaly detection (GBAD) approaches are among the most popular techniques used to analyze connectivity patterns in communication networks and identify suspicious behaviors. Given the different GBAD approaches proposed for fraud detection, in this study, we develop a framework to synthesize the existing literature on the application of GBAD methods in fraud detection published between 2007 and 2018. This study aims to investigate the present trends and identify the key challenges that require significant research efforts to increase the credibility of the technique. Additionally, we provide some recommendations to deal with these challenges.",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/501508",
+"title": "Money Laundering",
+"url": "https://doi.org/10.1086/501508",
+"venue": "Crime and Justice",
+"date": "2006-01-01",
+"authors": [
+"Michael Levi",
+"Peter H. Reuter"
+],
+"abstract": "Techniques for hiding proceeds of crime include transporting cash out of the country, purchasing businesses through which funds can be channeled, buying easily transportable valuables, transfer pricing, and using “underground banks.” Since the mid‐1980s, governments and law enforcement have developed an increasingly global, intrusive, and routinized set of measures to affect criminal revenues passing through the financial system. Except at an anecdotal level, the effects of this system on laundering methods and prices, or on offenders’ willingness to engage in various crimes, are unknown. Available data weakly suggest that the anti–money laundering (AML) regime has not had major effects in suppressing crimes. The regime does facilitate investigation and prosecution of some criminal participants who would otherwise evade justice, but fewer than expected by advocates of “follow the money” methods. It also permits the readier recovery of funds from core criminals and from financial intermediaries. However, the volume is very slight compared with income or even profits from crime. Though the regime also targets terrorist finances, modern terrorists need little money for their operation",
+"score": 8,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1145/3397271.3401253",
+"title": "Alleviating the Inconsistency Problem of Applying Graph Neural Network to Fraud Detection",
+"url": "https://doi.org/10.1145/3397271.3401253",
+"venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+"date": "2020-07-25",
+"authors": [
+"Zhiwei Liu",
+"Yingtong Dou",
+"Philip S. Yu",
+"Yutong Deng",
+"Hao Peng"
+],
+"abstract": "Graph-based models have been widely used to fraud detection tasks. Owing to the development of Graph Neural Networks~(GNNs), recent works have proposed many GNN-based fraud detectors based on either homogeneous or heterogeneous graphs. These works leverage existing GNNs and aggregate the neighborhood information to learn the node embeddings, which relies on the assumption that the neighbors share similar context, features, and relations. However, the inconsistency problem incurred by fraudsters is hardly investigated, i.e., the context inconsistency, feature inconsistency, and relation inconsistency. In this paper, we introduce these inconsistencies and design a new GNN framework, GraphConsis, to tackle the inconsistency problem: (1) for the context inconsistency, we propose to combine the context embeddings with node features; (2) for the feature inconsistency, we design a consistency score to filter the inconsistent neighbors and generate corresponding sampling probability; (3) for the relation inconsistency, we learn the relation attention weights associated with the sampled nodes. Empirical analysis on four datasets demonstrates that the inconsistency problem is critical in fra",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tsmc.2020.3016821",
+"title": "Who Are the Phishers? Phishing Scam Detection on Ethereum via Network Embedding",
+"url": "https://doi.org/10.1109/tsmc.2020.3016821",
+"venue": "IEEE Transactions on Systems Man and Cybernetics Systems",
+"date": "2020-09-02",
+"authors": [
+"Jiajing Wu",
+"Qi Yuan",
+"Dan Lin",
+"Wei You",
+"Weili Chen",
+"Chuan Chen"
+],
+"abstract": "Recently, blockchain technology has become a topic in the spotlight but also a hotbed of various cybercrimes. Among them, phishing scams on blockchain have been found to make a notable amount of money, thus emerging as a serious threat to the trading security of the blockchain ecosystem. In order to create a favorable environment for investment, an effective method for detecting phishing scams is urgently needed in the blockchain ecosystem. To this end, this article proposes an approach to detect phishing scams on Ethereum by mining its transaction records. Specifically, we first crawl the labeled phishing addresses from two authorized websites and reconstruct the transaction network according to the collected transaction records. Then, by taking the transaction amount and timestamp into consideration, we propose a novel network embedding algorithm calledtrans2vecto extract the features of the addresses for subsequent phishing identification. Finally, we adopt the one-class support vector machine (SVM) to classify the nodes into normal and phishing ones. Experimental results demonstrate that the phishing detection method works effectively on Ethereum, and indicate the efficacy oftr",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3127599935",
+"title": "Credit Card Fraud Detection Using Bayesian and Neural Networks",
+"url": "https://biblio.vub.ac.be/vubir/credit-card-fraud-detection-using-bayesian-and-neural-networks(4bab3eb9-63bb-4bf8-b625-e5f3cc09cc30).html",
+"venue": "VUBIR (Vrije Universiteit Brussel)",
+"date": "2002-01-01",
+"authors": [
+"Sam Maes",
+"Karl Tuyls",
+"Bram Vanschoenwinkel",
+"Bernard Manderick"
+],
+"abstract": "This paper discusses automated credit card fraud detection by means of machine learning. In an era of digitalization, credit card fraud detection is of great importance to financial institutions. We apply two machine learning techniques suited for reasoning under uncertainty: artificial neural networks and Bayesian belief networks to the problem and show their significant results on real world financial data. Finally, future directions are indicated to improve both techniques and results.",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/14616696.2020.1804973",
+"title": "Cybercrime and shifts in opportunities during COVID-19: a preliminary analysis in the UK",
+"url": "https://doi.org/10.1080/14616696.2020.1804973",
+"venue": "European Societies",
+"date": "2020-08-11",
+"authors": [
+"David Buil‐Gil",
+"Fernando Miró Llinares",
+"Asier Moneva",
+"Steven Kemp",
+"Nacho Díaz-Castaño"
+],
+"abstract": "The COVID-19 outbreak and the far-reaching lockdown measures are having direct and indirect effects on complex social domains, including opportunities for crime offline and online. This paper presents preliminary analyses about the short-term effect of COVID-19 and lockdown measures on cyber-dependent crime and online fraud in the UK. Time series analyses from data about crimes known to police between May 2019 and May 2020 are used to explore the extent to which cybercrime has been affected by the COVID-19 outbreak. More specifically, we examine whether cybercrime has suffered an increase during the months with the strictest lockdown restrictions, as an effect of the displacement of crime opportunities from physical to online environments. Results indicate that reports of cybercrime have increased during the COVID-19 outbreak, and these were remarkably large during the two months with the strictest lockdown policies and measures. In particular, the number of frauds associated with online shopping and auctions, and the hacking of social media and email, which are the two most common cybercrime categories in the UK, have seen the largest increases in the number of incidents. The incr",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tkde.2020.3025588",
+"title": "Graph Neural Network for Fraud Detection via Spatial-Temporal Attention",
+"url": "https://doi.org/10.1109/tkde.2020.3025588",
+"venue": "IEEE Transactions on Knowledge and Data Engineering",
+"date": "2020-09-23",
+"authors": [
+"Dawei Cheng",
+"Xiaoyang Wang",
+"Ying Zhang",
+"Liqing Zhang"
+],
+"abstract": "Card fraud is an important issue and incurs a considerable cost for both cardholders and issuing banks. Contemporary methods apply machine learning-based approaches to detect fraudulent behavior from transaction records. But manually generating features needs domain knowledge and may lay behind the modus operandi of fraud, which means we need to automatically focus on the most relevant fraudulent behavior patterns in the online detection system. Therefore, in this work, we propose a spatial-temporal attention-based graph network (STAGN) for credit card fraud detection. In particular, we learn the temporal and location-based transaction graph features by a graph neural network first. Afterwards, we employ the spatial-temporal attention on top of learned tensor representations, which are then fed into a 3D convolution network. The attentional weights are jointly learned in an end-to-end manner with 3D convolution and detection networks. After that, we conduct extensive experiments on the real-word card transaction dataset. The result shows that STAGN performs better than other state-of-the-art baselines in both AUC and precision-recall curves. Moreover, we conduct empirical studies w",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.xinn.2021.100176",
+"title": "Intelligent financial fraud detection practices in post-pandemic era",
+"url": "https://doi.org/10.1016/j.xinn.2021.100176",
+"venue": "The Innovation",
+"date": "2021-10-22",
+"authors": [
+"Xiaoqian Zhu",
+"Xiang Ao",
+"Zidi Qin",
+"Yanpeng Chang",
+"Yang Liu",
+"Qing He"
+],
+"abstract": "The great losses caused by financial fraud have attracted continuous attention from academia, industry, and regulatory agencies. More concerning, the ongoing coronavirus pandemic (COVID-19) unexpectedly shocks the global financial system and accelerates the use of digital financial services, which brings new challenges in effective financial fraud detection. This paper provides a comprehensive overview of intelligent financial fraud detection practices. We analyze the new features of fraud risk caused by the pandemic and review the development of data types used in fraud detection practices from quantitative tabular data to various unstructured data. The evolution of methods in financial fraud detection is summarized, and the emerging Graph Neural Network methods in the post-pandemic era are discussed in particular. Finally, some of the key challenges and potential directions are proposed to provide inspiring information on intelligent financial fraud detection in the future.",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tsmc.2021.3049278",
+"title": "Detecting Mixing Services via Mining Bitcoin Transaction Network With Hybrid Motifs",
+"url": "https://doi.org/10.1109/tsmc.2021.3049278",
+"venue": "IEEE Transactions on Systems Man and Cybernetics Systems",
+"date": "2021-01-21",
+"authors": [
+"Jiajing Wu",
+"Jieli Liu",
+"Weili Chen",
+"Huawei Huang",
+"Zibin Zheng",
+"Yan Zhang"
+],
+"abstract": "As the first decentralized peer-to-peer (P2P) cryptocurrency system allowing people to trade with pseudonymous addresses, Bitcoin has become increasingly popular in recent years. However, the P2P and pseudonymous nature of Bitcoin make transactions on this platform very difficult to track, thus triggering the emergence of various illegal activities in the Bitcoin ecosystem. Particularly,mixing servicesin Bitcoin, originally designed to enhance transaction anonymity, have been widely employed for money laundering to complicate the process of trailing illicit fund. In this article, we focus on the detection of the addresses belonging to mixing services, which is an important task for anti-money laundering in Bitcoin. Specifically, we provide a feature-based network analysis framework to identify statistical properties of mixing services from three levels, namely, network level, account level, and transaction level. To better characterize the transaction patterns of different types of addresses, we propose the concept of attributed temporal heterogeneous motifs (ATH motifs). Moreover, to deal with the issue of imperfect labeling, we tackle the mixing detection task as a positive and u",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.jnca.2021.103139",
+"title": "Analysis of cryptocurrency transactions from a network perspective: An overview",
+"url": "https://doi.org/10.1016/j.jnca.2021.103139",
+"venue": "Journal of Network and Computer Applications",
+"date": "2021-06-06",
+"authors": [
+"Jiajing Wu",
+"Jieli Liu",
+"Yijing Zhao",
+"Zibin Zheng"
+],
+"abstract": "",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2021.113492",
+"title": "Data engineering for fraud detection",
+"url": "https://doi.org/10.1016/j.dss.2021.113492",
+"venue": "Decision Support Systems",
+"date": "2021-01-12",
+"authors": [
+"Bart Baesens",
+"Sebastiaan Höppner",
+"Tim Verdonck"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2021.114750",
+"title": "A hybrid method with dynamic weighted entropy for handling the problem of class imbalance with overlap in credit card fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2021.114750",
+"venue": "Expert Systems with Applications",
+"date": "2021-02-25",
+"authors": [
+"Zhenchuan Li",
+"Mian Huang",
+"Guanjun Liu",
+"Changjun Jiang"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/10439862211027986",
+"title": "Empty Streets, Busy Internet: A Time-Series Analysis of Cybercrime and Fraud Trends During COVID-19",
+"url": "https://doi.org/10.1177/10439862211027986",
+"venue": "Journal of Contemporary Criminal Justice",
+"date": "2021-07-18",
+"authors": [
+"Steven Kemp",
+"David Buil‐Gil",
+"Asier Moneva",
+"Fernando Miró Llinares",
+"Nacho Díaz-Castaño"
+],
+"abstract": "The unprecedented changes in routine activities brought about by COVID-19 and the associated lockdown measures contributed to a reduction in opportunities for predatory crimes in outdoor physical spaces, while people spent more time connected to the internet, and opportunities for cybercrime and fraud increased. This article applies time-series analysis to historical data on cybercrime and fraud reported to Action Fraud in the United Kingdom to examine whether any potential increases are beyond normal crime variability. Furthermore, the discrepancies between fraud types and individual and organizational victims are also analyzed. The results show that while both total cybercrime and total fraud increased beyond predicted levels, the changes in victimization were not homogeneous across fraud types and victims. The implications of these findings on how changes in routine activities during COVID-19 have influenced cybercrime and fraud opportunities are discussed in relation to policy, practice, and academic debate.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tcss.2020.2970805",
+"title": "Deep Representation Learning With Full Center Loss for Credit Card Fraud Detection",
+"url": "https://doi.org/10.1109/tcss.2020.2970805",
+"venue": "IEEE Transactions on Computational Social Systems",
+"date": "2020-02-18",
+"authors": [
+"Zhenchuan Li",
+"Guanjun Liu",
+"Changjun Jiang"
+],
+"abstract": "Credit card fraud detection is an important study in the current era of mobile payment. Improving the performance of a fraud detection model and keeping its stability are very challenging because users' payment behaviors and criminals' fraud behaviors are often changing. In this article, we focus on obtaining deep feature representations of legal and fraud transactions from the aspect of the loss function of a deep neural network. Our purpose is to obtain better separability and discrimination of features so that it can improve the performance of our fraud detection model and keep its stability. We propose a new kind of loss function, full center loss (FCL), which considers both distances and angles among features and, thus, can comprehensively supervise the deep representation learning. We conduct lots of experiments on two big data sets of credit card transactions, one is private and another is public, to demonstrate the detection performance of our model by comparing FCL with other state-of-the-art loss functions. The results illustrate that FCL outperforms others. We also conduct experiments to show that FCL can ensure a more stable model than others.",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tifs.2022.3208471",
+"title": "Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph",
+"url": "https://doi.org/10.1109/tifs.2022.3208471",
+"venue": "IEEE Transactions on Information Forensics and Security",
+"date": "2022-01-01",
+"authors": [
+"Jiajun Zhou",
+"Chenkai Hu",
+"Jianlei Chi",
+"Jiajing Wu",
+"Meng Shen",
+"Qi Xuan"
+],
+"abstract": "Blockchain technology has the characteristics of decentralization, traceability and tamper-proof, which creates a reliable decentralized trust mechanism, further accelerating the development of blockchain finance. However, the anonymization of blockchain hinders market regulation, resulting in increasing illegal activities such as money laundering, gambling and phishing fraud on blockchain financial platforms. Thus, financial security has become a top priority in the blockchain ecosystem, calling for effective market regulation. In this paper, we consider identifying Ethereum accounts from a graph classification perspective, and propose an end-to-end graph neural network framework namedEthident, to characterize the behavior patterns of accounts and further achieve account de-anonymization. Specifically, we first construct an Account Interaction Graph (AIG) using raw Ethereum data. Then we design a hierarchical graph attention encoder namedHGATEas the backbone of our framework, which can effectively characterize the node-level account features and subgraph-level behavior patterns. For alleviating account label scarcity, we further introduce contrastive self-supervision mechanism as ",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tcss.2022.3158318",
+"title": "Time-Aware Attention-Based Gated Network for Credit Card Fraud Detection by Extracting Transactional Behaviors",
+"url": "https://doi.org/10.1109/tcss.2022.3158318",
+"venue": "IEEE Transactions on Computational Social Systems",
+"date": "2022-03-30",
+"authors": [
+"Yu Xie",
+"Guanjun Liu",
+"Chungang Yan",
+"Changjun Jiang",
+"MengChu Zhou"
+],
+"abstract": "With the popularity of credit cards worldwide, timely and accurate fraud detection has become critically important to ensure the safety of their user accounts. Existing models generally utilize original features or manually aggregated features as their transactional representations, while they fail to reveal the hidden fraudulent behaviors. In this work, we propose a novel model to extract transactional behaviors of users and learn new transactional behavioral representations for credit card fraud detection. Considering the characteristics of transactional behaviors, two time-aware gates are designed in a recurrent neural net unit to learn long- and short-term transactional habits of users, respectively, and to capture behavioral changes of users caused by different time intervals between their consecutive transactions. A time-aware-attention module is proposed and employed to extract the behavioral information from their consecutive historical transactions with time intervals, which enables the proposed model to capture behavioral motive and periodicity inside their historical transactional behaviors. An interaction module is designed to learn more comprehensive and rational repre",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.ejor.2021.05.028",
+"title": "Instance-dependent cost-sensitive learning for detecting transfer fraud",
+"url": "https://doi.org/10.1016/j.ejor.2021.05.028",
+"venue": "European Journal of Operational Research",
+"date": "2021-05-29",
+"authors": [
+"Sebastiaan Höppner",
+"Bart Baesens",
+"Wouter Verbeke",
+"Tim Verdonck"
+],
+"abstract": "",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tifs.2019.2930479",
+"title": "Automatically Dismantling Online Dating Fraud",
+"url": "https://doi.org/10.1109/tifs.2019.2930479",
+"venue": "IEEE Transactions on Information Forensics and Security",
+"date": "2019-07-22",
+"authors": [
+"Guillermo Suárez‐Tangil",
+"Matthew Edwards",
+"Claudia Peersman",
+"Gianluca Stringhini",
+"Awais Rashid",
+"Monica Therese Whitty"
+],
+"abstract": "Online romance scams are a prevalent form of mass-marketing fraud in the West, and yet few studies have presented data-driven responses to this problem. In this type of scam, fraudsters craft fake profiles and manually interact with their victims. Because of the characteristics of this type of fraud and how dating sites operate, traditional detection methods (e.g., those used in spam filtering) are ineffective. In this paper, we investigate the archetype of online dating profiles used in this form of fraud, including their use of demographics, profile descriptions, and images, shedding light on both the strategies deployed by scammers to appeal to victims and the traits of victims themselves. Furthermore, in response to the severe financial and psychological harm caused by dating fraud, we develop a system to detect romance scammers on online dating platforms. This paper presents the first fully described system for automatically detecting this fraud. Our aim is to provide an early detection system to stop romance scammers as they create fraudulent profiles or before they engage with potential victims. Previous research has indicated that the victims of romance scams score highly o",
+"score": 8,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jfc-02-2021-0042",
+"title": "Meeting you was a fake: investigating the increase in romance fraud during COVID-19",
+"url": "https://doi.org/10.1108/jfc-02-2021-0042",
+"venue": "Journal of Financial Crime",
+"date": "2021-05-10",
+"authors": [
+"David Buil‐Gil",
+"Yongyu Zeng"
+],
+"abstract": "Purpose Romance fraud refers to situations where an individual is deceived for financial gain by someone with whom the victim perceives to be in a romantic relationship. With the increase in internet use, the growth in loneliness and the increasing engagement in online dating sites during COVID-19, opportunities for romance fraud may have suffered an important increase. This paper aims to analyse changes in romance fraud, loneliness and internet use during the pandemic. Design/methodology/approach Data about romance fraud reported to the police in the UK, and survey data recorded by the Understanding Society longitudinal survey, are used to address our research questions. Auto regressive integrated moving average (ARIMA) modelling is used to analyse whether temporal changes observed are an effect of social changes associated with lockdown and stay-at-home orders. Findings The analysis shows that cyber-enabled romance fraud experienced a large increase after April 2020, which is greatly above any expected crime variation considering known pre-COVID trends. The increase in romance fraud was more abrupt among young adults than older persons. The results also indicate that only young a",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1057/s41284-019-00166-w",
+"title": "Online romance scams and victimhood",
+"url": "https://doi.org/10.1057/s41284-019-00166-w",
+"venue": "Security Journal",
+"date": "2019-01-21",
+"authors": [
+"Tom Sorell",
+"Monica Therese Whitty"
+],
+"abstract": "",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/1748895819835910",
+"title": "‘Oh we can’t actually do anything about that’: The problematic nature of jurisdiction for online fraud victims",
+"url": "https://doi.org/10.1177/1748895819835910",
+"venue": "Criminology & Criminal Justice",
+"date": "2019-03-13",
+"authors": [
+"Cassandra Cross"
+],
+"abstract": "One of the most pressing challenges with policing online fraud relates to jurisdiction. Policing is traditionally based on territoriality, but the internet has changed this. Offenders in one country can target a victim in a second country, who is requested to send money to a third or fourth country. This article examines online fraud victims’ reporting to police. Specifically, it demonstrates the misconceptions that exist regarding jurisdiction, namely the relationship between the Australian Federal Police and state/territory police. A clear disconnect emerges between understandings and expectations of who can investigate what relating to online fraud. The Australian Cybercrime Online Reporting Network’s establishment in 2014 is a positive step but this has not fixed the issue entirely. Overall, the article argues that the jurisdictional challenges experienced by police are not understood by victims, and improvement is needed regarding awareness of victims and police alike, to reduce unnecessary, additional trauma to victims.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jfc-10-2020-0204",
+"title": "Deconstructing the origins of Cressey’s Fraud Triangle",
+"url": "https://doi.org/10.1108/jfc-10-2020-0204",
+"venue": "Journal of Financial Crime",
+"date": "2021-06-01",
+"authors": [
+"Peter Tickner",
+"Mark Button"
+],
+"abstract": "Purpose Cressey’s Fraud Triangle has been referenced in 8,584 studies and academic papers [1] and is a stalwart of training courses for accounting and audit practitioners and fraud investigators. The Fraud Triangle has endured for three decades in the academic and practitioner worlds. This study aims to explore the origins of Cressey’s Fraud Triangle and challenge its practical value to a fraud investigator. Design/methodology/approach This study has developed from analysis of a targeted literature review carried out as part of a wider study into occupational fraud and corruption. Findings Cressey’s name is intrinsically linked to the Fraud Triangle, although he never used the expression during his lifetime. Two of the three motivational factors identified by Cressey (1953) were developed from the earlier work of Svend Riemer (1941), who it is suggested should have equal billing with Donald Cressey for the concepts that led to the creation of the Fraud Triangle. Practical implications The paper illustrates the limitations of Cressey’s Fraud Triangle for practitioners. Originality/value Many academics and researchers have either misunderstood Cressey’s role in the development of the",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/0894439321999311",
+"title": "“I Suspect That the Pictures Are Stolen”: Romance Fraud, Identity Crime, and Responding to Suspicions of Inauthentic Identities",
+"url": "https://doi.org/10.1177/0894439321999311",
+"venue": "Social Science Computer Review",
+"date": "2021-03-19",
+"authors": [
+"Cassandra Cross",
+"Rebecca Layt"
+],
+"abstract": "Romance fraud impacts the lives of thousands of people globally. Financial losses exceed millions of dollars each year and are steadily increasing annually. It occurs when an offender uses the guise of an intimate relationship to gain a financial advantage. Offenders use a variety of platforms and communications methods to target victims and develop the required trust and rapport to defraud them. As part of this process, offenders use false identities. This can be through the misappropriation of a genuine person’s identity, or it can be through the stealing of photos and other images of a genuine person to create a false or fictitious identity. In this way, romance fraud encompasses two categories of victims: those who lose money through a relationship and those who are subject to identity crime by romance fraud offenders. This article examines how individuals responded to suspicions of inauthentic identities to a person they were communicating with online. It uses romance fraud complaints lodged with Scamwatch (an Australian online fraud porting portal) between July 2018 and July 2019 (inclusive). The qualitative analysis indicates that many complainants used an internet search to",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.4324/9781003081753",
+"title": "Economic Crime: From Conception to Response",
+"url": "https://doi.org/10.4324/9781003081753",
+"venue": "Routledge eBooks",
+"date": "2022-02-23",
+"authors": [
+"Mark Button",
+"Branislav Hock",
+"David Shepherd"
+],
+"abstract": "This book is the first attempt to establish 'economic crime' as a new sub-discipline within criminology. Fraud, corruption, bribery, money laundering, price-fixing cartels and intellectual property crimes pursued typically for financial and professional gain, have devastating consequences for the prosperity of economic life. While most police forces in the UK and the USA have an ‘economic crime’ department, and many European bodies such as Europol use the term and develop strategies and structures to deal with it, it is yet to grain traction as a widely used term in the academic community. Economic Crime: From Conception to Response aims to change that and covers: definitions of the key premises of economic crime as the academic sub-discipline within criminology; an overview of the key research on each of the crimes associated with economic crime; public, private and global responses to economic crime across its different forms and sectors of the economy, both within the UK and globally. This book is an essential resource for students, academics and practitioners engaged with aspects of economic crime, as well as the related areas of financial crime, white-collar crime and crimes o",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1057/s41300-021-00134-w",
+"title": "Using artificial intelligence (AI) and deepfakes to deceive victims: the need to rethink current romance fraud prevention messaging",
+"url": "https://doi.org/10.1057/s41300-021-00134-w",
+"venue": "Crime Prevention and Community Safety",
+"date": "2022-01-04",
+"authors": [
+"Cassandra Cross"
+],
+"abstract": "",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/15564886.2020.1850582",
+"title": "The Use of Military Profiles in Romance Fraud Schemes",
+"url": "https://doi.org/10.1080/15564886.2020.1850582",
+"venue": "Victims & Offenders",
+"date": "2021-02-16",
+"authors": [
+"Cassandra Cross",
+"Thomas J. Holt"
+],
+"abstract": "Romance fraud occurs when offenders use the guise of a genuine relationship to defraud a victim, typically via online communications. Research has focused on the general structure of romance frauds, but few scholars have considered the potential link between victimization and specific narratives employed by offenders. This article explores the reported romance fraud victimizations of a group of Australians and explores similarities and differences in how a military narrative is involved compared to other genres. Limited differences were observed between those frauds using military narratives, highlighting the need for broader consideration of fraud prevention and disruption measures.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/access.2021.3104472",
+"title": "Transfer Learning Strategies for Credit Card Fraud Detection",
+"url": "https://doi.org/10.1109/access.2021.3104472",
+"venue": "IEEE Access",
+"date": "2021-01-01",
+"authors": [
+"Bertrand Lebichot",
+"Théo Verhelst",
+"Yann‐Aël Le Borgne",
+"Liyun He-Guelton",
+"Frédéric Oblé",
+"Gianluca Bontempi"
+],
+"abstract": "Credit card fraud jeopardizes the trust of customers in e-commerce transactions. This led in recent years to major advances in the design of automatic Fraud Detection Systems (FDS) able to detect fraudulent transactions with short reaction time and high precision. Nevertheless, the heterogeneous nature of the fraud behavior makes it difficult to tailor existing systems to different contexts (e.g. new payment systems, different countries and/or population segments). Given the high cost (research, prototype development, and implementation in production) of designing data-driven FDSs, it is crucial for transactional companies to define procedures able to adapt existing pipelines to new challenges. From an AI/machine learning perspective, this is known as the problem oftransfer learning. This paper discusses the design and implementation of transfer learning approaches for e-commerce credit card fraud detection and their assessment in a real setting. The case study, based on a six-month dataset (more than 200 million e-commerce transactions) provided by the industrial partner, relates to the transfer of detection models developed for a European country to another country. In particular",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s12117-020-09401-y",
+"title": "Making sense of professional enablers’ involvement in laundering organized crime proceeds and of their regulation",
+"url": "https://doi.org/10.1007/s12117-020-09401-y",
+"venue": "Trends in Organized Crime",
+"date": "2020-11-26",
+"authors": [
+"Michael Levi"
+],
+"abstract": "Money laundering has ascended the enforcement and criminological agenda in the course of this century, and has been accompanied by an increased focus on legal professionals as 'enablers' of crime. This article explores the dynamics of this enforcement, media and political agenda, and how the legal profession has responded in the UK and elsewhere, within the context of ignoring the difficulties of judging the effectiveness of anti money laundering. It concludes that legal responses are a function of their lobbying power, the determination of governments to clamp down on the toxic impacts of legal structures, and different legal cultures. However, it remains unclear what the effects on the levels and organization of serious crimes for gain are of controls on the professions.",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s41060-021-00258-0",
+"title": "Incremental learning strategies for credit cards fraud detection",
+"url": "https://doi.org/10.1007/s41060-021-00258-0",
+"venue": "International Journal of Data Science and Analytics",
+"date": "2021-06-09",
+"authors": [
+"Bertrand Lebichot",
+"Gian Marco Paldino",
+"Wissam Siblini",
+"Liyun He-Guelton",
+"Frédéric Oblé",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s11417-020-09319-y",
+"title": "Evaluating the Control of Money Laundering and Its Underlying Offences: the Search for Meaningful Data",
+"url": "https://doi.org/10.1007/s11417-020-09319-y",
+"venue": "Asian Journal of Criminology",
+"date": "2020-05-20",
+"authors": [
+"Michael Levi"
+],
+"abstract": "This article examines the political and criminological history of anti-money controls, including the involvement of Asian countries and the varied motivations and interests engaged. It goes on to review where empirical evidence has been used and can be used in fighting the financial components of underlying crimes, examining the denotation of the problem(s) we are supposed to be fighting-money laundering as an evil in itself and/or the underlying crimes which give rise to it; estimates of the size and harmfulness of the problems and identifies any improvements/emerging problems in the assessment of money laundering. It concludes with some reflections on assessing policy effectiveness and the need for greater engagement by criminologists and other social scientists in this process.",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.52922/ti187564",
+"title": "Challenges of responding to online fraud victimisation in Australia",
+"url": "https://doi.org/10.52922/ti187564",
+"venue": "Australian Institute of Criminology eBooks",
+"date": "2014-05-22",
+"authors": [
+"Cassandra Cross",
+"Russell Smith",
+"Kelly Richards"
+],
+"abstract": "Online fraud occurs when an individual or a business responds in some manner to an unsolicited invitation received via the internet and suffers financial or other detrimental effects as a result. In 2010–11, the Australian Bureau of Statistics (2012) found that over 1.2 million Australians (6.7% of the population aged 15 years and over) had been a victim of personal fraud, losing approximately $1.4b in the preceding 12 months. More than half of these victims (55.7%) were contacted via the internet or email (online victimisation). In addition to monetary losses, victims of online fraud suffer serious psychological, emotional, social and even physical problems as a consequence of their victimisation. This paper explores the challenges of responding to online fraud victimisation in Australia and describes some of the specific support services that have recently emerged to support victims of this crime.",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1057/s41284-019-00187-5",
+"title": "Policing fraud in England and Wales: examining constables’ and sergeants’ online fraud preparedness",
+"url": "https://doi.org/10.1057/s41284-019-00187-5",
+"venue": "Security Journal",
+"date": "2019-07-02",
+"authors": [
+"Adam M. Bossler",
+"Thomas J. Holt",
+"Cassandra Cross",
+"George W. Burruss"
+],
+"abstract": "",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W2911817394",
+"title": "Fraud detection",
+"url": "https://dl.acm.org/citation.cfm?id=778212.778318",
+"venue": "",
+"date": "2002-01-01",
+"authors": [
+"Tom E. Fawcett",
+"Foster John Provost"
+],
+"abstract": "Fraud is the deliberate use of deception to conduct illicit activities. Automatic fraud detection involves scanning large volumes of data to uncover patterns of fradulent usage, and as such it is well suited to data mining techniques. We present three general types of fraud that have been addressed in data mining research, and we summarize the approaches taken. We also discuss general characteristics of fraud detection problems that make them difficult, as well as system integration issues for automatic fraud detection systems.",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1002/9781119146841.ch1",
+"title": "Fraud: Detection, Prevention, and Analytics!",
+"url": "https://doi.org/10.1002/9781119146841.ch1",
+"venue": "Wiley eBooks",
+"date": "2015-07-27",
+"authors": [
+"Bart Baesens",
+"Véronique Van Vlasselaer",
+"Wouter Verbeke"
+],
+"abstract": "In this first chapter we set the scene for what's ahead by introducing fraud analytics using descriptive, predictive, and social network techniques. We start off by defining and characterizing fraud and discuss different types of fraud. Next, fraud detection and prevention are discussed as a means to address and limit the amount and overall impact of fraud. Big data and analytics provide powerful tools that may improve an organization's fraud detection system. We discuss in detail how and why these tools complement traditional expert-based fraud-detection approaches. Subsequently, the fraud analytics process model is introduced, providing a high-level overview of the steps that are followed in developing and implementing a data-driven fraud-detection system. The chapter concludes by discussing the characteristics and skills of a good fraud data scientist, followed by a scientific perspective on the topic.",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.1811.00656",
+"title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts",
+"url": "https://doi.org/10.48550/arxiv.1811.00656",
+"venue": "arXiv (Cornell University)",
+"date": "2018-11-01",
+"authors": [
+"Yuezun Li",
+"Siwei Lyu"
+],
+"abstract": "In this work, we describe a new deep learning based method that can effectively distinguish AI-generated fake videos (referred to as {\\em DeepFake} videos hereafter) from real videos. Our method is based on the observations that current DeepFake algorithm can only generate images of limited resolutions, which need to be further warped to match the original faces in the source video. Such transforms leave distinctive artifacts in the resulting DeepFake videos, and we show that they can be effectively captured by convolutional neural networks (CNNs). Compared to previous methods which use a large amount of real and DeepFake generated images to train CNN classifier, our method does not need DeepFake generated images as negative training examples since we target the artifacts in affine face warping as the distinctive feature to distinguish real and fake images. The advantages of our method are two-fold: (1) Such artifacts can be simulated directly using simple image processing operations on a image to make it as negative example. Since training a DeepFake model to generate negative examples is time-consuming and resource-demanding, our method saves a plenty of time and resources in tra",
+"score": 8,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.1812.08685",
+"title": "DeepFakes: a New Threat to Face Recognition? Assessment and Detection",
+"url": "https://doi.org/10.48550/arxiv.1812.08685",
+"venue": "arXiv (Cornell University)",
+"date": "2018-12-20",
+"authors": [
+"Pavel Korshunov",
+"Sébastien Marcel"
+],
+"abstract": "It is becoming increasingly easy to automatically replace a face of one person in a video with the face of another person by using a pre-trained generative adversarial network (GAN). Recent public scandals, e.g., the faces of celebrities being swapped onto pornographic videos, call for automated ways to detect these Deepfake videos. To help developing such methods, in this paper, we present the first publicly available set of Deepfake videos generated from videos of VidTIMIT database. We used open source software based on GANs to create the Deepfakes, and we emphasize that training and blending parameters can significantly impact the quality of the resulted videos. To demonstrate this impact, we generated videos with low and high visual quality (320 videos each) using differently tuned parameter sets. We showed that the state of the art face recognition systems based on VGG and Facenet neural networks are vulnerable to Deepfake videos, with 85.62% and 95.00% false acceptance rates respectively, which means methods for detecting Deepfake videos are necessary. By considering several baseline approaches, we found that audio-visual approach based on lip-sync inconsistency detection was",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.1908.02591",
+"title": "Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics",
+"url": "https://doi.org/10.48550/arxiv.1908.02591",
+"venue": "RePEc: Research Papers in Economics",
+"date": "2019-07-31",
+"authors": [
+"Weber, Mark",
+"Giacomo Domeniconi",
+"Jie Chen",
+"Daniel Karl I. Weidele",
+"C. Bellei",
+"Robinson, Tom"
+],
+"abstract": "Anti-money laundering (AML) regulations play a critical role in safeguarding financial systems, but bear high costs for institutions and drive financial exclusion for those on the socioeconomic and international margins. The advent of cryptocurrency has introduced an intriguing paradox: pseudonymity allows criminals to hide in plain sight, but open data gives more power to investigators and enables the crowdsourcing of forensic analysis. Meanwhile advances in learning algorithms show great promise for the AML toolkit. In this workshop tutorial, we motivate the opportunity to reconcile the cause of safety with that of financial inclusion. We contribute the Elliptic Data Set, a time series graph of over 200K Bitcoin transactions (nodes), 234K directed payment flows (edges), and 166 node features, including ones based on non-public data; to our knowledge, this is the largest labelled transaction data set publicly available in any cryptocurrency. We share results from a binary classification task predicting illicit transactions using variations of Logistic Regression (LR), Random Forest (RF), Multilayer Perceptrons (MLP), and Graph Convolutional Networks (GCN), with GCN being of specia",
+"score": 7,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2107.09323",
+"title": "Transfer Learning for Credit Card Fraud Detection: A Journey from Research to Production",
+"url": "https://doi.org/10.48550/arxiv.2107.09323",
+"venue": "arXiv (Cornell University)",
+"date": "2021-07-20",
+"authors": [
+"Wissam Siblini",
+"Guillaume Coter",
+"Rémy Fabry",
+"Liyun He-Guelton",
+"Frédéric Oblé",
+"Bertrand Lebichot"
+],
+"abstract": "The dark face of digital commerce generalization is the increase of fraud attempts. To prevent any type of attacks, state-of-the-art fraud detection systems are now embedding Machine Learning (ML) modules. The conception of such modules is only communicated at the level of research and papers mostly focus on results for isolated benchmark datasets and metrics. But research is only a part of the journey, preceded by the right formulation of the business problem and collection of data, and followed by a practical integration. In this paper, we give a wider vision of the process, on a case study of transfer learning for fraud detection, from business to research, and back to business.",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W3203804139",
+"title": "Might I Get Pwned: A Second Generation Password Breach Alerting Service.",
+"url": "http://export.arxiv.org/pdf/2109.14490v1",
+"venue": "arXiv (Cornell University)",
+"date": "2021-09-29",
+"authors": [
+"Bijeeta Pal",
+"Mazharul Islam",
+"Thomas Ristenpart",
+"Rahul Chatterjee"
+],
+"abstract": "Credential stuffing attacks use stolen passwords to log into victim accounts. To defend against these attacks, recently deployed compromised credential checking (C3) services provide APIs that help users and companies check whether a username, password pair is exposed. These services however only check if the exact password is leaked, and therefore do not mitigate credential tweaking attacks in which the adversary guesses variants of a user's leaked passwords. \r\nWe initiate work on C3 APIs that protect users from credential tweaking attacks. The core underlying challenge is how to identify passwords that are similar to their leaked passwords while preserving honest clients' privacy and also preventing malicious clients from extracting breach data from the service. We formalize the problem and explore a variety of ways to measure password similarity that balance efficacy, performance, and security. \r\nBased on this exploration, we design Might I Get Pwned (MIGP), a new kind of breach alerting service. Our simulations show that MIGP reduces the efficacy of state-of-the-art 10-guess credential tweaking attacks by 81%. MIGP preserves user privacy and limits potential exposure of sensiti",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/978-3-658-40442-0_9",
+"title": "Generative Adversarial Nets",
+"url": "https://doi.org/10.1007/978-3-658-40442-0_9",
+"venue": "Springer eBooks",
+"date": "2023-01-31",
+"authors": [
+"Raphael Labaca-Castro"
+],
+"abstract": "",
+"score": 10,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2307/2094589",
+"title": "Social Change and Crime Rate Trends: A Routine Activity Approach",
+"url": "https://doi.org/10.2307/2094589",
+"venue": "American Sociological Review",
+"date": "1979-08-01",
+"authors": [
+"Lawrence E. Cohen",
+"Marcus Felson"
+],
+"abstract": "",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3390/app12199637",
+"title": "Financial Fraud Detection Based on Machine Learning: A Systematic Literature Review",
+"url": "https://doi.org/10.3390/app12199637",
+"venue": "Applied Sciences",
+"date": "2022-09-26",
+"authors": [
+"Abdulalem Ali",
+"Shukor Bin Abd Razak",
+"Siti Hajar Othman",
+"Taiseer Abdalla Elfadil Eisa",
+"Arafat Al-Dhaqm",
+"Maged Nasser"
+],
+"abstract": "Financial fraud, considered as deceptive tactics for gaining financial benefits, has recently become a widespread menace in companies and organizations. Conventional techniques such as manual verifications and inspections are imprecise, costly, and time consuming for identifying such fraudulent activities. With the advent of artificial intelligence, machine-learning-based approaches can be used intelligently to detect fraudulent transactions by analyzing a large number of financial data. Therefore, this paper attempts to present a systematic literature review (SLR) that systematically reviews and synthesizes the existing literature on machine learning (ML)-based fraud detection. Particularly, the review employed the Kitchenham approach, which uses well-defined protocols to extract and synthesize the relevant articles; it then report the obtained results. Based on the specified search strategies from popular electronic database libraries, several studies have been gathered. After inclusion/exclusion criteria, 93 articles were chosen, synthesized, and analyzed. The review summarizes popular ML techniques used for fraud detection, the most popular fraud type, and evaluation metrics. T",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2015.04.013",
+"title": "APATE: A novel approach for automated credit card transaction fraud detection using network-based extensions",
+"url": "https://doi.org/10.1016/j.dss.2015.04.013",
+"venue": "Decision Support Systems",
+"date": "2015-05-08",
+"authors": [
+"Véronique Van Vlasselaer",
+"Cristián Bravo",
+"Olivier Caelen",
+"Tina Eliassi‐Rad",
+"Leman Akoglu",
+"Monique Snoeck"
+],
+"abstract": "",
+"score": 9,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1002/widm.1520",
+"title": "Deepfake detection using deep learning methods: A systematic and comprehensive review",
+"url": "https://doi.org/10.1002/widm.1520",
+"venue": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
+"date": "2023-11-20",
+"authors": [
+"Arash Heidari",
+"Nima Jafari Navimipour",
+"Hasan Dağ",
+"Mehmet Ünal"
+],
+"abstract": "Abstract Deep Learning (DL) has been effectively utilized in various complicated challenges in healthcare, industry, and academia for various purposes, including thyroid diagnosis, lung nodule recognition, computer vision, large data analytics, and human‐level control. Nevertheless, developments in digital technology have been used to produce software that poses a threat to democracy, national security, and confidentiality. Deepfake is one of those DL‐powered apps that has lately surfaced. So, deepfake systems can create fake images primarily by replacement of scenes or images, movies, and sounds that humans cannot tell apart from real ones. Various technologies have brought the capacity to change a synthetic speech, image, or video to our fingers. Furthermore, video and image frauds are now so convincing that it is hard to distinguish between false and authentic content with the naked eye. It might result in various issues and ranging from deceiving public opinion to using doctored evidence in a court. For such considerations, it is critical to have technologies that can assist us in discerning reality. This study gives a complete assessment of the literature on deepfake detection",
+"score": 5,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2023.122156",
+"title": "Financial fraud detection using graph neural networks: A systematic review",
+"url": "https://doi.org/10.1016/j.eswa.2023.122156",
+"venue": "Expert Systems with Applications",
+"date": "2023-10-30",
+"authors": [
+"Soroor Motie",
+"Bijan Raahemi"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1002/9781119146841",
+"title": "Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques: A Guide to Data Science for Fraud Detection",
+"url": "https://doi.org/10.1002/9781119146841",
+"venue": "Wiley eBooks",
+"date": "2015-07-27",
+"authors": [
+"Bart Baesens",
+"Véronique Van Vlasselaer",
+"Wouter Verbeke"
+],
+"abstract": "Detect fraud earlier to mitigate loss and prevent cascading damage Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques is an authoritative guidebook for setting up a comprehensive fraud detection analytics solution. Early detection is a key factor in mitigating fraud damage, but it involves more specialized techniques than detecting fraud at the more advanced stages. This invaluable guide details both the theory and technical aspects of these techniques, and provides expert insight into streamlining implementation. Coverage includes data gathering, preprocessing, model building, and post-implementation, with comprehensive guidance on various learning techniques and the data types utilized by each. These techniques are effective for fraud detection across industry boundaries, including applications in insurance fraud, credit card fraud, anti-money laundering, healthcare fraud, telecommunications fraud, click fraud, tax evasion, and more, giving you a highly practical framework for fraud prevention. It is estimated that a typical organization loses about 5% of its revenue to fraud every year. More effective fraud detection is possible, and this book describes",
+"score": 9,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s11704-024-40474-y",
+"title": "Graph neural networks for financial fraud detection: a review",
+"url": "https://doi.org/10.1007/s11704-024-40474-y",
+"venue": "Frontiers of Computer Science",
+"date": "2025-01-22",
+"authors": [
+"Dawei Cheng",
+"Yao Zou",
+"Sheng Xiang",
+"Changjun Jiang"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.dss.2022.113866",
+"title": "CATCHM: A novel network-based credit card fraud detection method using node representation learning",
+"url": "https://doi.org/10.1016/j.dss.2022.113866",
+"venue": "Decision Support Systems",
+"date": "2022-09-02",
+"authors": [
+"Rafaël Van Belle",
+"Bart Baesens",
+"Jochen De Weerdt"
+],
+"abstract": "",
+"score": 7,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/ojcs.2023.3245801",
+"title": "Financial Crimes in Web3-Empowered Metaverse: Taxonomy, Countermeasures, and Opportunities",
+"url": "https://doi.org/10.1109/ojcs.2023.3245801",
+"venue": "IEEE Open Journal of the Computer Society",
+"date": "2023-01-01",
+"authors": [
+"Jiajing Wu",
+"Kaixin Lin",
+"Dan Lin",
+"Ziye Zheng",
+"Huawei Huang",
+"Zibin Zheng"
+],
+"abstract": "At present, the concept of metaverse has sparked widespread attention from the public to major industries. With the rapid development of blockchain and Web3 technologies, the decentralized metaverse ecology has attracted a large influx of users and capital. Due to the lack of industry standards and regulatory rules, the Web3-empowered metaverse ecosystem has witnessed a variety of financial crimes, such as scams, code exploit, wash trading, money laundering, and illegal services and shops. To this end, it is especially urgent and critical to summarize and classify the financial security threats on the Web3-empowered metaverse in order to maintain the long-term healthy development of its ecology. In this paper, we first outline the background, foundation, and applications of the Web3 metaverse. Then, we provide a comprehensive overview and taxonomy of the security risks and financial crimes that have emerged since the development of the decentralized metaverse. For each financial crime, we focus on three issues: a) existing definitions, b) relevant cases and analysis, and c) existing academic research on this type of crime. Next, from the perspective of academic research and governm",
+"score": 5,
+"theme": "instant_payments",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tnnls.2022.3208967",
+"title": "Learning Transactional Behavioral Representations for Credit Card Fraud Detection",
+"url": "https://doi.org/10.1109/tnnls.2022.3208967",
+"venue": "IEEE Transactions on Neural Networks and Learning Systems",
+"date": "2022-10-05",
+"authors": [
+"Yu Xie",
+"Guanjun Liu",
+"Chungang Yan",
+"Changjun Jiang",
+"MengChu Zhou",
+"Maozhen Li"
+],
+"abstract": "Credit card fraud detection is a challenging task since fraudulent actions are hidden in massive legitimate behaviors. This work aims to learn a new representation for each transaction record based on the historical transactions of users in order to capture fraudulent patterns accurately and, thus, automatically detect a fraudulent transaction. We propose a novel model by improving long short-term memory with a time-aware gate that can capture the behavioral changes caused by consecutive transactions of users. A current-historical attention module is designed to build up connections between current and historical transactional behaviors, which enables the model to capture behavioral periodicity. An interaction module is designed to learn comprehensive and rational behavioral representations. To validate the effectiveness of the learned behavioral representations, experiments are conducted on a large real-world transaction dataset provided to us by a financial company in China, as well as a public dataset. Experimental results and the visualization of the learned representations illustrate that our method delivers a clear distinction between legitimate behaviors and fraudulent ones,",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/ojcs.2025.3543450",
+"title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
+"url": "https://doi.org/10.1109/ojcs.2025.3543450",
+"venue": "IEEE Open Journal of the Computer Society",
+"date": "2025-01-01",
+"authors": [
+"Yiwen Cui",
+"Xu Han",
+"Jiaying Chen",
+"Xinguang Zhang",
+"Jingyun Yang",
+"Xuguang Zhang"
+],
+"abstract": "As financial systems become increasingly complex and interconnected, traditional fraud detection methods struggle to keep pace with sophisticated fraudulent activities. This article introduces FraudGNN-RL, an innovative framework that combines Graph Neural Networks (GNNs) with Reinforcement Learning (RL) for adaptive and context-aware financial fraud detection. Our approach models financial transactions as a dynamic graph, where entities (e.g., users, merchants) are nodes and transactions form edges. We propose a novel GNN architecture, Temporal-Spatial-Semantic Graph Convolution (TSSGC), which simultaneously captures temporal patterns, spatial relationships, and semantic information in transaction data. The RL component, implemented as a Deep Q-Network (DQN), dynamically adjusts the fraud detection threshold and feature importance, allowing the model to adapt to evolving fraud patterns and minimize detection costs. We further introduce a Federated Learning scheme to enable collaborative model training across multiple financial institutions while preserving data privacy. Extensive experiments on a large-scale, real-world financial dataset demonstrate that FraudGNN-RL outperforms st",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tkde.2023.3272396",
+"title": "Anti-Money Laundering by Group-Aware Deep Graph Learning",
+"url": "https://doi.org/10.1109/tkde.2023.3272396",
+"venue": "IEEE Transactions on Knowledge and Data Engineering",
+"date": "2023-05-02",
+"authors": [
+"Dawei Cheng",
+"Yujia Ye",
+"Sheng Xiang",
+"Zhenwei Ma",
+"Ying Zhang",
+"Changjun Jiang"
+],
+"abstract": "Anti-money laundering (AML) is a classical data mining problem in finance applications. As well known, money laundering (ML) is critical to the effective operation of transnational and organized crime, which affects a country's economy, government, and social wellbeings. Financial services organizations facilitate the movement of money and have been enlisted by governments to assist with the detection and prevention of money laundering, which is a key tool in the fight to reduce crime and create sustainable economic development. In the application of AML, user identity and financial behavior data are widely used to detect laundering transactions. In recent years, an increasing number of money laundering activities have been conducted by organized criminal gangs while most existing works still treat the actions of each account as independent identity behavior without considering the group-level conspired interactions. Therefore, in this paper, we propose a group-aware deep graph learning-based approach for organized money-laundering detection. In particular, we design a community-centric encoder to represent the nodes and attributes in user transaction graphs and derive the adjacent",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1093/iwc/iwad048",
+"title": "Tainted Love: a Systematic Literature Review of Online Romance Scam Research",
+"url": "https://doi.org/10.1093/iwc/iwad048",
+"venue": "Interacting with Computers",
+"date": "2023-10-27",
+"authors": [
+"Alexander Bilz",
+"Lynsay A. Shepherd",
+"Graham I. Johnson"
+],
+"abstract": "Abstract Romance scams involve cybercriminals engineering a romantic relationship on online dating platforms for monetary gain. It is a cruel form of cybercrime whereby victims are left heartbroken, often facing financial ruin. We characterize the literary landscape on romance scams, advancing the understanding of researchers and practitioners by systematically reviewing and synthesizing contemporary qualitative and quantitative evidence. The systematic review establishes influencing factors of victimhood and explores countermeasures for mitigating romance scams. We searched 10 scholarly databases and websites using terms related to romance scams. The methodology followed the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines: a total of 279 papers were screened. One hundred seven papers were assessed for eligibility, and 53 were included in the final analysis. Three main contributions were identified: common profile features and techniques used by romance scammers, countermeasures for mitigating romance scams and factors predisposing an individual to become a scammer or a victim. Despite a growing corpus of literature, the total number of empiri",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tcss.2023.3335485",
+"title": "ASA-GNN: Adaptive Sampling and Aggregation-Based Graph Neural Network for Transaction Fraud Detection",
+"url": "https://doi.org/10.1109/tcss.2023.3335485",
+"venue": "IEEE Transactions on Computational Social Systems",
+"date": "2023-12-12",
+"authors": [
+"Yue Tian",
+"Guanjun Liu",
+"Jiacun Wang",
+"MengChu Zhou"
+],
+"abstract": "Many machine learning methods have been proposed to achieve accurate transaction fraud detection, which is essential to the financial security of individuals and banks. However, most existing methods either leverage original features only or require manual feature engineering so that they show a weak ability to learn discriminative representations from transaction data. Moreover, criminals often commit fraud by imitating cardholders’; behaviors, which causes the poor performance of existing detection models. In this article, we propose an adaptive sampling and aggregation-based graph neural network (ASA-GNN) that learns discriminative representations to improve the performance of transaction fraud detection. A neighbor sampling strategy is performed to filter noisy nodes and supplement information for fraudulent nodes. Specifically, we use cosine similarity and edge weights to adaptively select neighbors with similar behavior patterns for target nodes and then find multihop neighbors for fraudulent nodes. A neighbor diversity metric is designed by calculating the entropy of neighbors to tackle the camouflage issue of fraudsters and explicitly alleviate the oversmoothing phenomena. ",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tbdata.2023.3234529",
+"title": "LGM-GNN: A Local and Global Aware Memory-Based Graph Neural Network for Fraud Detection",
+"url": "https://doi.org/10.1109/tbdata.2023.3234529",
+"venue": "IEEE Transactions on Big Data",
+"date": "2023-01-06",
+"authors": [
+"Pengbo Li",
+"Hang Yu",
+"Xiangfeng Luo",
+"Jia Xin Wu"
+],
+"abstract": "Graphs have been widely adopted to accomplish fraud detection tasks because of their inherently favorable structure to capture the intricate features in many complicated scenarios, especially in some modern e-commerce situations that have various relation attributes like transactions. These works tend to utilize the direct aggregate information about neighbor nodes of the target node or the aggregation of the neighbor information after the conditional filter and mostly use local information but ignore global information. However, in some cases, local abnormal points are detected in the global view, so global information is very important for fraud detection. In this article, we propose a local and global aware memory-based graph neural network for fraud detection (LGM-GNN). It first obtains the preliminary node embedding through relation-aware embedding and then interactively aggregates the local and global memory network to fuse and utilize the local and global information. Finally, the node embeddings of different levels are aggregated through the hierarchical information aggregator. Extensive experiments show our proposed LGM-GNN outperforms other SOAT methods on two real-world ",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1109/tifs.2024.3383648",
+"title": "Dual Defense: Adversarial, Traceable, and Invisible Robust Watermarking Against Face Swapping",
+"url": "https://doi.org/10.1109/tifs.2024.3383648",
+"venue": "IEEE Transactions on Information Forensics and Security",
+"date": "2024-01-01",
+"authors": [
+"Yunming Zhang",
+"Dengpan Ye",
+"Caiyun Xie",
+"Long Tang",
+"Xin Liao",
+"Ziyi Liu"
+],
+"abstract": "Malicious applications of deep face swapping technology pose security threats such as misinformation dissemination and identity fraud. Some research propose the utilization of robust watermarking methods to track the copyright of facial images, facilitating post-forgery identity attribution. However, these methods cannot fundamentally prevent or eliminate the adverse impacts of face swapping. To address this issue, we present Dual Defense, an innovative framework based on robust adversarial watermarking. It simultaneously tracks image copyrights and disrupts the face swapping model by one-time embedding the robust adversarial watermark. Specifically, we propose an Original-domain Feature Emulation Attack (OFEA) method, which makes the traceable watermark adversarial through specially designed original domain adversarial loss. Additionally, we conduct a wavelet domain image structural information compensation loss, combined with a channel attention mechanism, to jointly balance watermark invisibility, adversariality, and traceability. Furthermore, we design a more comprehensive and rational evaluation method to thoroughly assess the effectiveness of adversarial attacks against face ",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21428/cb6ab371.5110f208",
+"title": "Economic crime, economic criminology, and serious crimes for economic gain: On the conceptual and disciplinary (dis)order of the object of study",
+"url": "https://doi.org/10.21428/cb6ab371.5110f208",
+"venue": "Journal of Economic Criminology",
+"date": "2023-07-21",
+"authors": [
+"Nicholas J Lord",
+"Michael Levi"
+],
+"abstract": "This article has two main objectives. First, to interrogate the concept and/or conception of ‘economic crime’ (framed as a singular thing). We argue that current policy, and subsequently, social scientific (or criminological more specifically) framings, tend to arbitrarily ‘carve up’ the objects of study that interest us, in turn creating a ‘conceptual disorder’ that has implications for how we explain, and respond to, these harmful crimes. This raises questions about the value of the concept of ‘economic crime’ and about the related process of conceptual abstraction. In analytical terms, we argue that more can be gained by focusing on the necessary and contingent relations of serious crimes for economic gain. Second, to scrutinise the logic of ‘economic criminology’ (framed in terms of a singular discipline) and assess the value that criminology can add to analyses of related behaviours. Notwithstanding the journal’s aim to create a sub-field of ‘economic criminology’, we argue that research into the nature, organisation and control of serious crimes for economic gain ought to begin from the perspective of how we can create integrative, collaborative or multi-dimensional accounts ",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s12117-022-09476-9",
+"title": "Cybercriminal networks in the UK and Beyond: Network structure, criminal cooperation and external interactions",
+"url": "https://doi.org/10.1007/s12117-022-09476-9",
+"venue": "Trends in Organized Crime",
+"date": "2023-02-03",
+"authors": [
+"Jonathan Lusthaus",
+"E.R. Kleemans",
+"Rutger Leukfeldt",
+"Michael Levi",
+"Thomas J. Holt"
+],
+"abstract": "Abstract This article examines the network structure, criminal cooperation, and external interactions of cybercriminal networks. Its contribution is empirical and inductive. The core of this study involved carrying out 10 case analyses on closed cybercrime investigations – all with financial motivations on the part of the offenders - in the UK and beyond. Each analysis involved investigator interview and access to unpublished law enforcement files. The comparison of these cases resulted in a wide range of findings on these cybercriminal networks, including: a common division between the scam/attack components and the money components; the presence of offline/local elements; a broad, and sometimes blurred, spectrum of cybercriminal behaviour and organisation. An overarching theme across the cases that we observe is that cybercriminal business models are relatively stable.",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/10345329.2023.2248670",
+"title": "Romance baiting, cryptorom and ‘pig butchering’: an evolutionary step in romance fraud",
+"url": "https://doi.org/10.1080/10345329.2023.2248670",
+"venue": "Current Issues in Criminal Justice",
+"date": "2023-09-04",
+"authors": [
+"Cassandra Cross"
+],
+"abstract": "Romance fraud uses the guise of a genuine relationship to deceive a victim into transferring often large amounts of money to an offender/s.Romance fraud has been in the top three categories of financial loss for Australian victims over the past decade, and this is a trend mirrored internationally.However, in recent years there has been a convergence of romance fraud and investment fraud approaches.Terms such as romance baiting, cryptorom and 'pig butchering' have all emerged to describe how offenders are evolving in their attempts to defraud victims through offering fake cryptocurrency investment opportunities, using a relationship as the mechanism.This article analyses this shift in romance fraud offending and its embracing of investment scheme opportunities.It highlights the underlying reasons for the success of this amalgamated approach and further demonstrates how it potentially distorts the reporting of fraud as well as prevention messaging targeting these incidents.",
+"score": 8,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/01639625.2024.2446328",
+"title": "Fraud as Legitimate Retribution for Colonial Injustice: Neutralization Techniques in Interviews with Police and Online Romance Fraud Offenders",
+"url": "https://doi.org/10.1080/01639625.2024.2446328",
+"venue": "Deviant Behavior",
+"date": "2025-01-16",
+"authors": [
+"Suleman Ibrahim Lazarus",
+"Mariata Hughes",
+"Mark Button",
+"Kaina Habila Garba"
+],
+"abstract": "This qualitative research examines the phenomenon of online romance fraud, exploring it from contrasting perspectives. The study engaged two distinct groups of participants: (1) fraudsters actively involved in online romance scams (commonly referred to as “Sakawa Boys”) and (2) police officers with experience in investigating and policing internet crimes. We explore the usefulness of neutralization techniques in interpreting data within the cultural context of individuals’ subjective experiences. Thematic analysis of data reveals that both offenders and police officers employ certain neutralization techniques, such as denial of responsibility, condemnation of the condemners, and appeals to higher loyalties, to justify their conduct. In particular, online romance offenders invoke higher loyalties, rationalizing their actions as reparative justice for colonial exploitation and framing their fraud as a means of reclaiming wealth unjustly taken during colonial rule. The findings suggest that participants perceive the enduring legacy of colonialism as a key factor driving the production of cybercrime. This research contributes to the scant body of direct testimonies from romance fraud o",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1287/ijds.2024.0042",
+"title": "Network Analytics for Anti-money Laundering—A Systematic Literature Review and Experimental Evaluation",
+"url": "https://doi.org/10.1287/ijds.2024.0042",
+"venue": "INFORMS Journal on Data Science",
+"date": "2025-10-08",
+"authors": [
+"Bruno Deprez",
+"Toon Vanderschueren",
+"Bart Baesens",
+"Tim Verdonck",
+"Wouter Verbeke"
+],
+"abstract": "Money laundering presents a pervasive challenge, burdening society by financing illegal activities. The use of network information is increasingly being explored to effectively combat money laundering given that it involves connected parties. This led to a surge in research on network analytics for anti-money laundering (AML). The literature is, however, fragmented, and a comprehensive overview of existing work is missing. This results in limited understanding of the methods to apply and their comparative detection power. This paper presents an extensive and unique literature review based on 97 papers from Web of Science and Scopus, resulting in a taxonomy following a recently proposed fraud analytics framework. We conclude that most research relies on expert-based rules and manual features, whereas deep learning methods have been gaining traction. This paper also presents a comprehensive framework to evaluate and compare the performance of prominent methods in a standardized setup. We compare manual feature engineering, random walk-based, and deep learning methods on two publicly available data sets. We conclude (1) that network analytics increases the predictive power but caution",
+"score": 9,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s11634-022-00515-5",
+"title": "The role of diversity and ensemble learning in credit card fraud detection",
+"url": "https://doi.org/10.1007/s11634-022-00515-5",
+"venue": "Advances in Data Analysis and Classification",
+"date": "2022-09-28",
+"authors": [
+"Gian Marco Paldino",
+"Bertrand Lebichot",
+"Yann‐Aël Le Borgne",
+"Wissam Siblini",
+"Frédéric Oblé",
+"Giacomo Boracchi"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.eswa.2024.123445",
+"title": "Assessment of catastrophic forgetting in continual credit card fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2024.123445",
+"venue": "Expert Systems with Applications",
+"date": "2024-02-13",
+"authors": [
+"Bertrand Lebichot",
+"Wissam Siblini",
+"Gian Marco Paldino",
+"Yann‐Aël Le Borgne",
+"Frédéric Oblé",
+"Gianluca Bontempi"
+],
+"abstract": "",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2109.14490",
+"title": "Might I Get Pwned: A Second Generation Compromised Credential Checking Service",
+"url": "https://doi.org/10.48550/arxiv.2109.14490",
+"venue": "arXiv (Cornell University)",
+"date": "2021-09-29",
+"authors": [
+"Bijeeta Pal",
+"Mazharul Islam",
+"Marina Sanusi",
+"Nick Sullivan",
+"Luke Valenta",
+"Tara Whalen"
+],
+"abstract": "Credential stuffing attacks use stolen passwords to log into victim accounts. To defend against these attacks, recently deployed compromised credential checking (C3) services provide APIs that help users and companies check whether a username, password pair is exposed. These services however only check if the exact password is leaked, and therefore do not mitigate credential tweaking attacks - attempts to compromise a user account with variants of a user's leaked passwords. Recent work has shown credential tweaking attacks can compromise accounts quite effectively even when the credential stuffing countermeasures are in place. We initiate work on C3 services that protect users from credential tweaking attacks. The core underlying challenge is how to identify passwords that are similar to their leaked passwords while preserving honest clients' privacy and also preventing malicious clients from extracting breach data from the service. We formalize the problem and explore ways to measure password similarity that balance efficacy, performance, and security. Based on this study, we design \"Might I Get Pwned\" (MIGP), a new kind of breach alerting service. Our simulations show that MIGP r",
+"score": 6,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2511.08939",
+"title": "TransactionGPT",
+"url": "https://doi.org/10.48550/arxiv.2511.08939",
+"venue": "arXiv (Cornell University)",
+"date": "2025-11-12",
+"authors": [
+"Yingtong Dou",
+"Zhimeng Jiang",
+"Tianyi Zhang",
+"Mingzhi Hu",
+"Zhichao Xu",
+"Shubham Jain"
+],
+"abstract": "We present TransactionGPT (TGPT), a foundation model for consumer transaction data within one of the world's largest payment networks. TGPT is designed to understand and generate transaction trajectories while simultaneously supporting a variety of downstream prediction and classification tasks. We introduce a novel 3D-Transformer architecture specifically tailored for capturing the complex dynamics in payment transaction data. This architecture incorporates design innovations that enhance modality fusion and computational efficiency, while seamlessly enabling joint optimization with downstream objectives. Trained on billion-scale real-world transactions, TGPT significantly improves downstream anomaly transaction detection performance against a competitive production model and exhibits advantages over baselines in generating future transactions. We conduct extensive empirical evaluations utilizing a diverse collection of company transaction datasets spanning multiple downstream tasks, thereby enabling a thorough assessment of TGPT's effectiveness and efficiency in comparison to established methodologies. Furthermore, we examine the incorporation of LLM-derived embeddings within TGP",
+"score": 9,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2501.16681",
+"title": "Blockchain Address Poisoning",
+"url": "https://doi.org/10.48550/arxiv.2501.16681",
+"venue": "arXiv (Cornell University)",
+"date": "2025-01-28",
+"authors": [
+"Taro Tsuchiya",
+"Jin-Dong Dong",
+"Kyle Soska",
+"Nicolas Christin"
+],
+"abstract": "In many blockchains, e.g., Ethereum, Binance Smart Chain (BSC), the primary representation used for wallet addresses is a hardly memorable 40-digit hexadecimal string. As a result, users often select addresses from their recent transaction history, which enables blockchain address poisoning. The adversary first generates lookalike addresses similar to one with which the victim has previously interacted, and then engages with the victim to ``poison'' their transaction history. The goal is to have the victim mistakenly send tokens to the lookalike address, as opposed to the intended recipient. Compared to contemporary studies, this paper provides four notable contributions. First, we develop a detection system and perform measurements over two years on both Ethereum and BSC. We identify 13~times more attack attempts than reported previously -- totaling 270M on-chain attacks targeting 17M victims. 6,633 incidents have caused at least 83.8M USD in losses, which makes blockchain address poisoning one of the largest cryptocurrency phishing schemes observed in the wild. Second, we analyze a few large attack entities using improved clustering techniques, and model attacker profitability an",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2511.19693",
+"title": "TREASURE: The Visa Payment Foundation Model for High-Volume Transaction Understanding",
+"url": "https://doi.org/10.48550/arxiv.2511.19693",
+"venue": "arXiv (Cornell University)",
+"date": "2025-11-24",
+"authors": [
+"Chin‐Chia Michael Yeh",
+"Uday Singh Saini",
+"Dai, Xin",
+"Fan, Xiran",
+"Shubham Jain",
+"Yujie Fan"
+],
+"abstract": "Payment networks form the backbone of modern commerce, generating high volumes of transaction records from daily activities. Properly modeling this data can enable applications such as abnormal behavior detection and consumer-level insights for hyper-personalized experiences, ultimately improving people's lives. In this paper, we present TREASURE, TRansformer Engine As Scalable Universal transaction Representation Encoder, a multipurpose transformer-based foundation model specifically designed for transaction data. The model simultaneously captures both consumer behavior and payment network signals (such as response codes and system flags), providing comprehensive information necessary for applications like accurate recommendation systems and abnormal behavior detection. Verified with industry-grade datasets, TREASURE features three key capabilities: 1) an input module with dedicated sub-modules for static and dynamic attributes, enabling more efficient training and inference; 2) an efficient and effective training paradigm for predicting high-cardinality categorical attributes; and 3) demonstrated effectiveness as both a standalone model that increases abnormal behavior detection ",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.48550/arxiv.2611.08094",
+"title": "PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona Memory",
+"url": "https://doi.org/10.48550/arxiv.2611.08094",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-05",
+"authors": [
+"Zhengyu Fang",
+"Liang Wang",
+"Yingtong Dou",
+"Yuzhong Chen",
+"Shubham Jain",
+"Junpeng Wang"
+],
+"abstract": "In large-scale payment networks, entities (card, merchant, etc.) and their interactions play a key role in transaction anomaly detection. However, transaction patterns between different entities usually change more frequently than the production model refresh schedule. Meanwhile, entity embedding tables suffer from high-cardinality and sparse interaction issues. To resolve the above challenges, we present PersonaAgent, an agentic transaction anomaly detection framework which represents the latest entity behavior signals as personas and saves them in a refreshable memory. Offline, a weekly scheduled batch job is used to extract the latest behavior signals and update them in the memory. At inference time, a lightweight adapter retrieves the corresponding entity behavior signals of each transaction from memory and uses them to augment the base anomaly classifier's scoring. Through comprehensive benchmarking with different anomaly detection models at Visa, PersonaAgent is able to score transactions efficiently (a 1,000-transaction CPU batch in 1-2 ms), lifting the PR-AUC by 0.65-6.58% and the production business metric by 8.93-14.24% relatively in deployment.",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "evolução",
+"added": "2026-11-18"
+}
+]
