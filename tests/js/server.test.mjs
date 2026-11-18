@@ -72,13 +72,27 @@ test("agent answers from ranked sources and cites them", async () => {
   const calls = [];
   const llm = async (messages, maxTokens) => {
     calls.push(messages);
-    return maxTokens === 300 ? { text: "money mule, contas laranja, graph", model: "fake" } : { text: "Resposta [1].", model: "fake" };
+    return maxTokens === 1000 ? { text: "money mule, contas laranja, graph, mule accounts, laranjas", model: "fake" } : { text: "Resposta [1].", model: "fake" };
   };
   const r = await ask({ archive, question: "Como detectar contas laranja?", llm });
   assert.equal(r.answer, "Resposta [1].");
   assert.equal(r.sources[0].n, 1);
   assert.equal(r.sources[0].url, "https://doi.org/1");
   assert.match(calls[1].at(-1).content, /^Fontes:\n\n\[1\] \(paper, 2026-11-17, KDD\)/);
+});
+
+test("agent ignores reasoning instead of terms, and adds hits from other topics", async () => {
+  const { parseTerms } = await import("../../server/agent.js");
+  assert.deepEqual(parseTerms("Thinking Process:\n1. **Analyze:** terms, one, line, comma, separated"), []);
+  assert.deepEqual(parseTerms("<think>x, y, z, w, v</think>\nself-supervised, foundation model, pre-training, transformer, BERT"),
+    ["self-supervised", "foundation model", "pre-training", "transformer", "BERT"]);
+  const other = { slug: "tecnologia-bancaria", name: "Bank Tech & AI Watch", library: [], index: null,
+    data: { themes: {}, digests: [{ date: "2026-11-10", items: [{ title: "PRAGMA foundation model for banking events", url: "https://doi.org/9", summary: "self-supervised" }], quick: [] }] } };
+  const llm = async (m, max) => (max === 1000 ? { text: "Thinking...\nself-supervised, foundation model, pre-training, transformer, mule" } : { text: "ok", model: "f" });
+  const r = await ask({ archive, question: "modelos fundacionais auto supervisionados?", llm, others: [other] });
+  const cross = r.sources.find((s) => s.url === "https://doi.org/9");
+  assert.ok(cross, "hit from the other topic");
+  assert.match(cross.kind, /· tema Bank Tech & AI Watch$/);
 });
 
 test("agent says so when nothing matches, without a second LLM call", async () => {
@@ -94,7 +108,7 @@ test("/api/ask adapter keeps the response contract", async () => {
   const realFetch = globalThis.fetch;
   globalThis.fetch = async (_url, init) => {
     const body = JSON.parse(init.body);
-    const text = body.max_tokens === 300 ? "money mule, graph" : "Use grafos [1].";
+    const text = body.max_tokens === 1000 ? "money mule, graph, mule account, laranja, fraud" : "Use grafos [1].";
     return new Response(JSON.stringify({ choices: [{ message: { content: text } }] }));
   };
   try {

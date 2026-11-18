@@ -48,6 +48,17 @@ export async function loadArchive(fetchAsset, topic) {
   return archive;
 }
 
+/** Archives of every other topic listed in /topics.json (for questions that cross topic borders). */
+export async function loadOtherArchives(fetchAsset, slug) {
+  let topics = [];
+  try {
+    const r = await fetchAsset("/topics.json");
+    if (r.ok) topics = await r.json();
+  } catch { /* single-topic answers still work */ }
+  const all = await Promise.all(topics.filter((t) => t.slug !== slug).map((t) => loadArchive(fetchAsset, t.slug)));
+  return all.filter(Boolean);
+}
+
 /** BM25 over a precomputed index (src/pawatch/searchindex.py): only the postings of the query terms are read. */
 export function rankIndex(index, terms, k = DEFAULT_K, keep = null) {
   const q = [...new Set(terms.flatMap(tokens))];

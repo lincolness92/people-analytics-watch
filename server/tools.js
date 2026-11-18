@@ -124,7 +124,8 @@ export const TOOLS = [
     run: async (a, ctx) => {
       const over = await ctx.quota("ask", ASK_DAILY_LIMIT);
       if (over) throw new ToolError(over, 429);
-      return ask({ archive: await ctx.archive(a.topic), question: a.question.slice(0, 600), llm: ctx.llm(), papers: await ctx.papers() });
+      return ask({ archive: await ctx.archive(a.topic), question: a.question.slice(0, 600), llm: ctx.llm(), papers: await ctx.papers(),
+        others: ctx.others ? await ctx.others(a.topic) : [] });
     },
   },
 ];

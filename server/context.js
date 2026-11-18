@@ -1,7 +1,7 @@
 // Request context shared by the external adapters (REST v1, MCP, A2A): loads archives from the published
 // files (cached per request), exposes the topic list, the LLM and the per-client quota.
 
-import { loadArchive, loadPapers } from "./archive.js";
+import { loadArchive, loadOtherArchives, loadPapers } from "./archive.js";
 import { spendQuota } from "./auth.js";
 import { makeLLM } from "./llm.js";
 import { ToolError } from "./tools.js";
@@ -13,6 +13,7 @@ export function makeContext({ request, env, client }) {
   return {
     client,
     papers: () => (papers ||= loadPapers(fetchAsset)),
+    others: (slug) => loadOtherArchives(fetchAsset, slug),
     async topics() {
       const r = await fetchAsset("/topics.json");
       if (!r.ok) throw new ToolError("lista de temas indisponível", 503);

@@ -29,7 +29,7 @@ function env(extra = {}) {
 const fakeLLM = () => {
   globalThis.fetch = async (_u, init) => {
     const b = JSON.parse(init.body);
-    return new Response(JSON.stringify({ choices: [{ message: { content: b.max_tokens === 300 ? "money mule, graph" : "Use grafos [1]." } }] }));
+    return new Response(JSON.stringify({ choices: [{ message: { content: b.max_tokens === 1000 ? "money mule, graph, mule account, laranja, fraud" : "Use grafos [1]." } }] }));
   };
 };
 const req = (path, { method = "GET", token, body } = {}) => new Request(SITE + path, {
