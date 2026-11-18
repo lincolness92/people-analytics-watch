@@ -16,9 +16,10 @@ async function tracedLLM(tracer, parent, name, llm, messages, maxTokens, opts) {
     try {
       const r = await llm(messages, maxTokens, opts);
       s.setMany({ "llm.model_name": r.model, "output.value": r.text, "llm.output_messages.0.message.role": "assistant",
-        "llm.output_messages.0.message.content": r.text, "llm.provider": "huggingface",
+        "llm.output_messages.0.message.content": r.text,
         "llm.token_count.prompt": r.usage?.prompt_tokens, "llm.token_count.completion": r.usage?.completion_tokens,
         "llm.token_count.total": r.usage?.total_tokens, "llm.fallbacks": (r.attempts || []).filter((a) => !a.ok).length,
+        "llm.cost.total": r.cost, "llm.provider.route": String(r.model).startsWith("deepseek:") ? "deepseek" : "huggingface",
         "llm.attempts": JSON.stringify(r.attempts || []) });
       return r;
     } catch (e) {

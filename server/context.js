@@ -36,7 +36,7 @@ export function makeContext({ request, env, client, waitUntil = null, iface = "a
       return a;
     },
     llm() {
-      if (!env.HF_TOKEN) throw new ToolError("IA não configurada (HF_TOKEN)", 503);
+      if (!env.HF_TOKEN && !env.DEEPSEEK_API_KEY) throw new ToolError("IA não configurada (HF_TOKEN ou DEEPSEEK_API_KEY)", 503);
       return makeLLM(env);
     },
     quota: (bucket, limit) => spendQuota(env, client, bucket, limit),

@@ -52,6 +52,13 @@ Phoenix. Próximos: criar o espaço no Phoenix Cloud e pôr as variáveis no Pag
 como anotações dos spans; avaliações automáticas no Phoenix (relevância da busca, resposta fiel às fontes);
 traces do pipeline em Python (triagem, redação) com o mesmo formato.
 
+## Custo de LLM (18/11/2026)
+✅ Custo por chamada registrado (digest, Evolução, retrospectiva, traces); DeepSeek direta como alternativa.
+Avaliado: desconto fora do pico da DeepSeek não reduz o custo atual (a HF via OpenRouter já cobra o equivalente a
+qualquer hora) e a DeepSeek não tem batch. Reavaliar se o volume crescer (muitos temas, triagem da biblioteca,
+resumo de textos completos): então agendar os trabalhos pesados fora do pico na DeepSeek direta (cache) ou usar
+batch (Together/Fireworks). Para o Actions usar a DeepSeek: secret DEEPSEEK_API_KEY + passar no `env` do workflow.
+
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 
 **Situação**: a chave grátis do OpenAlex dá US$ 1/dia, e o uso normal cabe nela: digest ≈ US$ 0,02 por tema/dia;

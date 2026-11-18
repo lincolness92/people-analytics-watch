@@ -16,7 +16,7 @@ const json = (body, status = 200) =>
 const str = (v, max) => (typeof v === "string" ? v.trim().slice(0, max) : "");
 
 export async function onRequestPost({ request, env, waitUntil }) {
-  if (!env.HF_TOKEN) return json({ ok: false, error: "IA não configurada (HF_TOKEN)" }, 503);
+  if (!env.HF_TOKEN && !env.DEEPSEEK_API_KEY) return json({ ok: false, error: "IA não configurada (HF_TOKEN ou DEEPSEEK_API_KEY)" }, 503);
   let body;
   try { body = await request.json(); } catch { return json({ ok: false, error: "JSON inválido" }, 400); }
   const topic = str(body.topic, 40);
@@ -60,7 +60,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
       sources: result.sources.length, model: result.model, answer_chars: result.answer.length, at: new Date().toISOString(),
       terms: (result.terms || []).slice(0, 30), history: history.map((h) => h.q),
       source_list: result.sources.map((s) => `[${s.n}] ${s.kind} | ${s.title}`.slice(0, 200)),
-      answer: result.answer.slice(0, 6000), trace_id: tracer.traceId, trace: tracer.toJSON() }));
+      answer: result.answer.slice(0, 6000), trace_id: tracer.traceId, trace: tracer.toJSON(),
+      cost_usd: tracer.spans.reduce((s, x) => s + (Number(x.attrs["llm.cost.total"]) || 0), 0) }));
   }
   return json({ ok: true, answer: result.answer, model: result.model, sources: result.sources });
 }

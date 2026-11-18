@@ -186,6 +186,7 @@
         <span><b>${d.stats.triaged}</b> avaliados</span>
         <span><b>${d.items.length}</b> selecionados</span>
         ${d.model ? `<span>modelo: ${esc(d.model.split("/").pop())}</span>` : ""}
+        ${d.stats.tokens && d.stats.tokens.cost_usd ? `<span>custo: US$ ${d.stats.tokens.cost_usd.toFixed(3)}</span>` : ""}
       </div>`;
     if (d.trend) html += `<div class="trend"><span class="label">🔥 Tendência do período</span>${md(d.trend)}</div>`;
     if (!d.items.length) html += `<div class="empty">Nada acima da barra neste período.</div>`;

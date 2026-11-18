@@ -88,6 +88,7 @@ python3 -m http.server -d dist 8000   # ver o site local em http://localhost:800
 | `CLOUDFLARE_ACCOUNT_ID` | secret | p/ site | ID da conta Cloudflare |
 | `DISCORD_WEBHOOK_URL` | secret | não | entrega do digest no Discord |
 | `PAW_MODEL` | variable | não | modelo(s) HF, separados por vírgula (padrão: `deepseek-ai/DeepSeek-V4.1-Flash`, com fallback para Qwen3.5-122B e gpt-oss-120b) |
+| `DEEPSEEK_API_KEY` | secret | não | plataforma da DeepSeek: entra como último recurso quando a HF falha; `PAW_MODEL=deepseek:deepseek-flash,...` a põe na frente. Local: `~/.config/pawatch/deepseek.env` |
 | `SITE_PASSWORD` | secret | p/ site | senha única do site; o workflow copia para o Pages a cada deploy. Sem ela o site fica fechado |
 | `CF_PAGES_PROJECT` | variable | não | nome do projeto no Pages (padrão `people-analytics-watch`) |
 
@@ -251,6 +252,16 @@ com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por te
   da resposta; no catálogo de ferramentas (REST/MCP/A2A) entram `read_paper` (texto, uma seção, ou os trechos
   mais relevantes para uma pergunta) e `list_repos` (para um cliente com terminal, como o Claude Code, clonar e
   ler a implementação; o agente do site, que roda no Cloudflare, lê o README já baixado).
+
+## Custos de LLM
+
+Cada chamada registra tokens e custo: a HF informa o custo (`usage.cost`; hoje ela repassa o DeepSeek ao OpenRouter
+por ~US$ 0,10/0,60 por 1M tokens de entrada/saída); na DeepSeek direta o custo é calculado pela tabela oficial
+(metade fora do pico — pico: 01:00–04:00 e 06:00–10:00 UTC, seg–sex; entrada em cache ~50× mais barata). O total
+aparece em `stats.tokens.cost_usd` do digest (e no site), da Evolução e da retrospectiva, e em `llm.cost.total` nos
+traces. Os agendamentos (11:30 UTC diário, 13:00 UTC dia 1) já caem fora do pico. Gasto típico: ~US$ 0,05/dia de
+digest para 3 temas (~US$ 1,40/mês) + centavos por mês de Evolução, retrospectivas e perguntas. A DeepSeek não tem
+API de batch; batch em outros provedores (Together, Fireworks, ~50%) só compensa com muito mais volume.
 
 ## Observabilidade (traces do agente)
 

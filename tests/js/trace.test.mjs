@@ -91,3 +91,26 @@ test("the agent emits one span per step", async () => {
   assert.equal(j.spans[0].attrs["user.id"], "u");
   assert.equal(j.spans.find((s) => s.name === "search").attrs["retrieval.documents.0.document.id"], "u1");
 });
+
+test("LLM client: DeepSeek prices by window, model order, fallback with cost", async () => {
+  const { deepseekCost, deepseekPeak, makeLLM, modelList } = await import("../../server/llm.js");
+  assert.equal(deepseekPeak(new Date("2026-11-18T02:30:00Z")), true);
+  assert.equal(deepseekPeak(new Date("2026-11-18T11:30:00Z")), false);
+  assert.equal(deepseekPeak(new Date("2026-11-21T02:30:00Z")), false); // Saturday
+  const u = { prompt_cache_hit_tokens: 0, prompt_cache_miss_tokens: 1e6, completion_tokens: 1e6 };
+  assert.equal(deepseekCost("deepseek-flash", u, new Date("2026-11-18T12:00:00Z")).toFixed(2), "0.75");
+  assert.deepEqual(modelList({ DEEPSEEK_API_KEY: "k" }).at(-1), "deepseek:deepseek-flash");
+  assert.deepEqual(modelList({}).includes("deepseek:deepseek-flash"), false);
+  const seen = [];
+  const llm = makeLLM({ HF_TOKEN: "h", DEEPSEEK_API_KEY: "d", PAW_MODEL: "x/model" }, async (url, init) => {
+    seen.push([url, JSON.parse(init.body).model, init.headers.Authorization]);
+    if (url.includes("huggingface")) return new Response(JSON.stringify({ error: "down" }), { status: 503 });
+    return new Response(JSON.stringify({ choices: [{ message: { content: "ok" } }], usage: { prompt_tokens: 10, prompt_cache_miss_tokens: 10, completion_tokens: 5 } }));
+  });
+  const r = await llm([{ role: "user", content: "oi" }], 50);
+  assert.equal(r.model, "deepseek:deepseek-flash");
+  assert.deepEqual(seen.map((s) => s[1]), ["x/model", "deepseek-flash"]);
+  assert.equal(seen[1][2], "Bearer d");
+  assert.ok(r.cost > 0);
+  assert.equal(r.attempts[0].ok, false);
+});

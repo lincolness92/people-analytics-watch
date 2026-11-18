@@ -505,6 +505,64 @@ class FulltextTests(unittest.TestCase):
         self.assertEqual(safe_name("doi:10.1/abc(x)"), "doi_10.1_abc_x_")
 
 
+class LLMProviderTests(unittest.TestCase):
+    def setUp(self):
+        import os
+        self.env = {k: os.environ.get(k) for k in ("PAW_MODEL", "DEEPSEEK_API_KEY", "HF_TOKEN")}
+
+    def tearDown(self):
+        import os
+        for k, v in self.env.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+
+    def test_peak_windows_and_cost(self):
+        from datetime import datetime, timezone
+        from pawatch.llm import deepseek_cost, deepseek_peak
+        utc = lambda *a: datetime(*a, tzinfo=timezone.utc)
+        self.assertTrue(deepseek_peak(utc(2026, 11, 18, 2, 30)))      # Wednesday 02:30
+        self.assertTrue(deepseek_peak(utc(2026, 11, 18, 9, 59)))
+        self.assertFalse(deepseek_peak(utc(2026, 11, 18, 11, 30)))    # our daily cron
+        self.assertFalse(deepseek_peak(utc(2026, 11, 21, 2, 30)))     # Saturday
+        u = {"prompt_tokens": 1_000_000, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 1_000_000, "completion_tokens": 1_000_000}
+        self.assertAlmostEqual(deepseek_cost("deepseek-flash", u, utc(2026, 11, 18, 2, 0)), 1.50)
+        self.assertAlmostEqual(deepseek_cost("deepseek-flash", u, utc(2026, 11, 18, 12, 0)), 0.75)
+        cached = {"prompt_tokens": 1_000_000, "prompt_cache_hit_tokens": 1_000_000, "prompt_cache_miss_tokens": 0, "completion_tokens": 0}
+        self.assertAlmostEqual(deepseek_cost("deepseek-flash", cached, utc(2026, 11, 18, 12, 0)), 0.003)
+
+    def test_model_order_and_fallback_with_costs(self):
+        import os
+        from pawatch import llm as L
+        os.environ.pop("PAW_MODEL", None)
+        os.environ["HF_TOKEN"], os.environ["DEEPSEEK_API_KEY"] = "hf", "ds"
+        self.assertEqual(L.models()[-1], "deepseek:deepseek-flash")
+        os.environ["PAW_MODEL"] = "deepseek:deepseek-flash,deepseek-ai/DeepSeek-V4.1-Flash"
+        self.assertEqual(L.models(), ["deepseek:deepseek-flash", "deepseek-ai/DeepSeek-V4.1-Flash"])
+        os.environ["PAW_MODEL"] = "deepseek-ai/DeepSeek-V4.1-Flash"
+        calls = []
+
+        def fake(url, body, headers=None, **kw):
+            calls.append((url, body["model"], headers["Authorization"]))
+            if "huggingface" in url:  # HF answers but with broken JSON (billed anyway)
+                return {"choices": [{"message": {"content": "não é json"}}], "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.001}}
+            return {"choices": [{"message": {"content": '{"ok": 1}'}}],
+                    "usage": {"prompt_tokens": 100, "prompt_cache_miss_tokens": 100, "completion_tokens": 50}}
+        orig = L.post_json
+        L.post_json = fake
+        try:
+            llm = L.LLM()
+            self.assertEqual(llm.json("s", "u"), {"ok": 1})
+        finally:
+            L.post_json = orig
+        self.assertEqual([c[0].split("/")[2] for c in calls], ["router.huggingface.co", "router.huggingface.co", "api.deepseek.com"])
+        self.assertEqual(calls[-1][1:], ("deepseek-flash", "Bearer ds"))
+        self.assertEqual(llm.used_model, "deepseek:deepseek-flash")
+        self.assertEqual((llm.usage["calls"], llm.usage["failures"], llm.usage["prompt_tokens"]), (3, 2, 120))
+        self.assertGreater(llm.usage["cost_usd"], 0.002)
+
+
 class ServerJsTests(unittest.TestCase):
     def test_node_suite(self):
         """The serving core (server/) and /api/ask adapter are JS; run their node:test suite when node exists."""
