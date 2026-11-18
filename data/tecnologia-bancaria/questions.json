@@ -20,5 +20,16 @@
   "answer_chars": 2070,
   "at": "2026-11-18T21:00:22.741Z",
   "key": "ask:tecnologia-bancaria:2026-11-18T21:00:22.741Z:14b992ae"
+ },
+ {
+  "topic": "tecnologia-bancaria",
+  "question": "Em relação ao ganho da utilização de Modelos Fundacionais, oque as pesquisas apontam?",
+  "voter": "b0ufc5qjh6",
+  "name": null,
+  "sources": 32,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 2643,
+  "at": "2026-11-18T21:32:13.644Z",
+  "key": "ask:tecnologia-bancaria:2026-11-18T21:32:13.644Z:03f7b81a"
  }
 ]
