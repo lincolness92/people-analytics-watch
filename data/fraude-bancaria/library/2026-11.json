@@ -2547,5 +2547,288 @@
 "watch": [],
 "origin": "evolução",
 "added": "2026-11-18"
+},
+{
+"key": "web:https://www.ecb.europa.eu//press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.en.html",
+"title": "Financial stability implications of AI adoption in the financial industry and the real economy",
+"url": "https://www.ecb.europa.eu//press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.en.html",
+"venue": "ECB — publicações",
+"date": "2026-11-18",
+"authors": [],
+"abstract": "The rapid adoption of artificial intelligence (AI) is reshaping the financial industry as well as the broader economy, creating both opportunities and risks. Banks and asset managers, which represent key channels of financial intermediation in the euro area, are increasingly using AI for tasks such as credit scoring, fraud detection and portfolio management. While AI adoption can support innovation and enhance operational efficiency, it may also introduce new risks and amplify existing vulnerabilities, including a reliance on a small number of technology providers that creates concentration and third-party dependencies across the financial system. At the same time, financial institutions are also increasingly exposed to AI-driven developments in the real economy. A novel firm-level indicator suggests that a sizeable share of firms, concentrated mainly in the IT and financial sectors, is significantly exposed to AI-related opportunities and risks. Policies should focus on improving the quality of data that monitor the use of AI, strengthening the oversight of critical AI providers and adapting market safeguards and supervisory capabilities to emerging risks.",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [
+"European Central Bank (ECB)"
+],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1186/s40163-026-00308-7",
+"title": "Generative AI and the restructuring of criminal opportunity",
+"url": "https://doi.org/10.1186/s40163-026-00308-7",
+"venue": "Crime Science",
+"date": "2026-11-16",
+"authors": [
+"Fabian Maximilian Johannes Teichmann"
+],
+"abstract": "Fifty years after Crime as Opportunity (Mayhew et al., 1976 ), the opportunity paradigm remains criminology’s most productive account of how and where crime happens. This theoretical article asks what generative artificial intelligence (hereafter AI) does to the opportunity structure that the paradigm describes. It argues that AI is not merely another item in the long list of technologies that create new targets; it is a change in the supply of offender capability itself. Distinguishing three criminal uses of AI—expert on demand, producer of synthetic artefacts and autonomous agent—and placing them beside the crime harvests of earlier technologies, the article works through the constitutive dimensions of a criminal opportunity—effort, risk and reward—and the guardianship that bears on them. AI lowers the effort required to offend, weakens the perceived risk of detection and raises the expected yield per attempt, moving previously unprofitable targets across the threshold of viability. These claims are illustrated with recent evidence on AI-assisted phishing, no-code malware, agent-executed extortion and insurgent use of frontier models. The article maps AI mechanisms onto the five ",
+"score": 5,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "web:https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions",
+"title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+"url": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+"venue": "BleepingComputer (bancos)",
+"date": "2026-11-17",
+"authors": [],
+"abstract": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [
+"BleepingComputer"
+],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3389/frai.2026.1943922",
+"title": "A systematic review of transparent artificial intelligence models for credit card fraud detection",
+"url": "https://doi.org/10.3389/frai.2026.1943922",
+"venue": "Frontiers in Artificial Intelligence",
+"date": "2026-11-17",
+"authors": [
+"Mkhulisi Mahlake",
+"Ibidun Obagbuwa",
+"Fezile Matsebula",
+"Tite Tuyikeze"
+],
+"abstract": "Research on credit card fraud detection has rapidly increased over the past decade due to the increasing use of digital payments and the financial losses caused by fraud. Despite extensive research, most studies focus on detection performance, while transparency, fairness, and auditability remain under-studied, although they matter under regimes such as the General Data Protection Regulation (GDPR) and, for credit-scoring uses of fraud scores, the EU AI Act. This review argues that accountability, the ability to explain, audit, and demonstrate fairness in automated decisions, is under-explored compared to detection performance, and performance-related limits (imbalance handling, generalization, and offline-only testing) also remain unaddressed. To address this gap, a systematic literature review is conducted based on the PRISMA 2020 statement and includes papers published from 2016 to 2026 retrieved from IEEE Xplore, Scopus, ACM Digital Library, Web of Science, and Google Scholar. Five review questions (Section 2.1) framed the study and data extraction. A total of 45 papers were retained from 115 records (110 database records plus 5 citation-search records) after full-text assessme",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.63108/ijlmh.13253",
+"title": "Coerced but “Authorised”: Allocating Loss in India's Digital Arrest Frauds and the Case for a Statutory Reimbursement Regime",
+"url": "https://doi.org/10.63108/ijlmh.13253",
+"venue": "International Journal of Law Management & Humanities",
+"date": "2026-11-17",
+"authors": [
+"Syed Aadil Rizvi"
+],
+"abstract": "In a “digital arrest” fraud, callers posing as police, customs or central-agency officers convince a victim over video that she is under investigation and must move her savings into a “verification” account to avoid arrest. The victim makes the transfers herself. That single fact has shaped how Indian law allocates the loss. Because the payment is authenticated by the customer, it falls outside the “unauthorised transaction” framework that has governed bank liability since 2017, and the victim usually bears the whole loss. This paper examines whether that allocation can be defended and what should replace it. It combines doctrinal analysis of the Reserve Bank of India’s 2017 Circular, the Responsible Business Conduct Third Amendment Directions, 2026, consumer law and the Supreme Court’s continuing suo motu proceedings with analysis of official data placed before Parliament and the Court, and a comparative study of the United Kingdom, the European Union, Singapore and Australia. Reported digital-arrest losses rose from ₹91.14 crore in 2022 to ₹1,935.51 crore in 2024, and the average reported loss per complaint rose from about ₹22,800 to about ₹1.57 lakh. The 2026 Directions bring co",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.62411/jcta.18143",
+"title": "Graph-Based Financial Fraud Detection: A Property-Centric Survey of Static, Temporal, Cycle-Aware, and Generative Methods and Their Evaluation",
+"url": "https://doi.org/10.62411/jcta.18143",
+"venue": "Journal of Computing Theories and Applications",
+"date": "2026-11-17",
+"authors": [
+"Daniel T. Ale",
+"E. O. Ogunti",
+"S. A. Oyetunji",
+"A. A. Ponnle",
+"K. B. Adedeji"
+],
+"abstract": "Financial fraud is increasingly coordinated across multiple accounts and transactions, meaning that its evidence often lies in relationships between accounts, the sequence of events, and, in schemes such as money laundering and wash trading, closed loops of transfers rather than in individual records. This review examines graph-based methods for detecting such fraud, covering static and temporal graph neural networks, graph anomaly detection, cycle- and motif-aware methods, generative models, and the evaluation practices used to assess them. The review draws on 147 sources identified through a documented literature search protocol. Four findings emerge. First, no single method family performs best under all conditions: tree-based models remain highly competitive on feature-rich datasets, whereas graph-based and temporal models offer greater advantages when discriminative signals reside in relational structures or transaction sequences. Second, detecting cyclic laundering is fundamentally a representational problem: standard message-passing architectures have limited ability to capture cycle structures, while recent performance gains have been associated with representations that pr",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.59429/ff.v4i1.15275",
+"title": "Early Detection of Financial Crime Risks: A Conceptual Framework for Incorporating Heuristic Decision Rules into Suspicious Activity Reporting",
+"url": "https://doi.org/10.59429/ff.v4i1.15275",
+"venue": "Frontiers of Finance",
+"date": "2026-11-16",
+"authors": [
+"Hussain Syed Gowhor"
+],
+"abstract": "This conceptual article advances anti-money laundering and counter-terrorist financing (AML/CFT) research by proposing a novel, explainable framework for embedding simple heuristic decision rules into internal suspicious transaction reporting (STR) and suspicious activity reporting (SAR) workflows. Existing transaction-monitoring tools often suffer from massive false-positive burdens (frequently exceeding 90–95%) and operate primarily ex post, struggling to provide timely pre-execution risk indicators. I argue that formal heuristic decision rules—including recognition, take-the-best, fast-and-frugal decision trees (FFTs), tallying, and satisficing—can structure front-line inquiry and analyst triage to support early risk assessment under severe conditions of dynamic uncertainty. Crucially, I establish clear operational boundaries by distinguishing front-line customer due diligence (CDD) and internal compliance escalation from formal institutional STR filing to financial intelligence units (FIUs). I emphasize that customer answers and behavioral anomalies provide initial indicators of risk rather than conclusive evidence of criminal intent (mens rea). Furthermore, I outline strict le",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.5281/zenodo.24323894",
+"title": "Generative AI and Agentic AI in Financial Crimes Compliance",
+"url": "https://doi.org/10.5281/zenodo.24323894",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-17",
+"authors": [
+"Parth Trivedi"
+],
+"abstract": "Abstract Generative Artificial Intelligence (“AI”) (GenAI) (e.g. large language models) and agentic AI (autonomous, goal directed AI agents) offer powerful new capabilities for financial-crime compliance, including Anti Money Laundering (“AML”)/Combating Finance of Terrorism (“CFT”) programs, customer due diligence, transaction monitoring, and investigations. These technologies can automate and scale tasks such as Suspicious Activity Report(“SAR”) narrative drafting, alert triage, and data analysis, potentially improving detection rates and freeing human analysts for complex work. However, they introduce novel risks - for example, “confabulation” (AI-generated false or misleading content), privacy and bias issues, and loss of human control over automated processes. Regulatory guidance is only now beginning to address these innovations: U.S. bank regulators have explicitly excluded generative/agentic AI from standard model risk guidance and signaled dedicated future oversight. In this context, financial institutions must treat generative/agentic AI as high-risk, applying rigorous governance, explainability, data controls, and human-in-the-loop safeguards. Key recommendations include",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11721933/v1",
+"title": "An Explainable Machine Learning Framework with Large Language Model Features for Predicting Monetary Redress in Bank Fraud and Scam Complaints",
+"url": "https://doi.org/10.21203/rs.3.rs-11721933/v1",
+"venue": "Research Square",
+"date": "2026-11-16",
+"authors": [
+"Tahsien Al‐Quraishi",
+"O. S. Albahri",
+"Raza Nowrozy",
+"Naseer Ali Hussien",
+"Urvashi Rahul Saxena",
+"Islam Mohammad Tahidul"
+],
+"abstract": "Abstract Liability for scam losses is shifting towards banks, yet few interpretable tools can anticipate which fraud and scam complaints will end in redress. This study develops SCAM-XD, an explainable framework that predicts whether a complaint to the US Consumer Financial Protection Bureau (CFPB) flagged as possible fraud or a scam closes with monetary relief reported by the company. From the CFPB narratives archive, the study builds a benchmark of these complaints, about half of which human coders confirm as fraud or scams. A large language model (LLM) codes each narrative for scam type, payment rail, authorisation, manipulation cues and signals of the bank's response, agreeing closely with human coding on scam type. These features are combined with structured fields, company identity and text representations in a stacking ensemble, explained with SHapley Additive exPlanations (SHAP) and linked to a cost-sensitive triage layer. Tested on a later period, SCAM-XD improves significantly on strong baselines across seeds, including a reimplemented topic model approach. LLM features yield a compact, interpretable model that nearly matches a high-dimensional text baseline but do not si",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1051/itmconf/20269304026/pdf",
+"title": "Simulation and Anti-Poisoning Research of Financial Federated Learning Architecture Based on Decentralized Reputation Incentive Mechanism",
+"url": "https://doi.org/10.1051/itmconf/20269304026/pdf",
+"venue": "Springer Link (Chiba Institute of Technology)",
+"date": "2026-11-13",
+"authors": [
+"Haodong Huang"
+],
+"abstract": "In financial risk control, banks need to share fraud-detection capability, but privacy rules make raw transaction sharing difficult. Federated Learning (FL) is often used to handle this conflict. Under the common Federated Averaging (FedAvg) setting, however, poisoned updates can still enter the global model, because the server averages client gradients with little quality check. This paper builds a dynamic FL setup with a decentralized reputation incentive, and puts a Reputation-FedAvg strategy at its center. Before aggregation, the server checks each client’s update on a separate validation set. Clients that help the model get higher reputation and larger aggregation weights; clients that hurt the model lose score step by step and may be removed. The method is tested in the Flower simulator on a highly imbalanced credit card fraud dataset. Under strong label-flipping attacks, Reputation-FedAvg raises the Area Under the Precision-Recall Curve (AUPRC) by 5.7% over attacked FedAvg, and Recall reaches 0.8571. The reputation tracker also finds and isolates Byzantine clients with no false-positive removals. These results support its use in cross-bank financial FL systems.",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.22214/ijraset.2026.85692",
+"title": "VoiceShield: Explainable Real-Time Deepfake Speech Detection for Indian Languages",
+"url": "https://doi.org/10.22214/ijraset.2026.85692",
+"venue": "International Journal for Research in Applied Science and Engineering Technology",
+"date": "2026-11-16",
+"authors": [
+"Mrunal Mungelwar",
+"Pranjali Deshmukh",
+"Samiksha Kinkar",
+"Tina Agrawal",
+"Manisha Raut",
+"Anirudh Bhagwat"
+],
+"abstract": "Fraud, impersonation and misinformation are being increasingly leveraged using synthetic speech generated by stateof-the-art speech-to-text and voice conversion systems, but the majority of the detectors are designed for English corpora. This paper introduces an end-to-end VoiceShield system which classifies speech as real or fake for five Indian languages (Hindi, Marathi, Urdu, Kannada and Bengali) using a single multilingual classifier. Audio is standardized to 16 kHz mono, segmented in 4-s chunks with 2-s hop, and transformed to 128-band spectrograms on a log Mel scale, and classified using a compact, 0.39 million parameter convolutional neural network (CNN). By recording-level stratified splitting, leakage of segments does not occur, and by using the Gradient-weighted Class Activation Mapping (Grad-CAM), the time–frequency regions responsible for each decision can be highlighted. The trained network is exported to TorchScript and served using a FastAPI back end which has 2 modes: file upload with per-segment analysis, and WebSocket based real-time monitoring, and a React front end. The curated catalogue covers 10,448 recordings (6,751 real, 3,697 fake). The average time spent o",
+"score": 5,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s10586-026-06747-w",
+"title": "MaRENet: Masked attention and Recurrent Encoding for transaction-level credit card fraud detection",
+"url": "https://doi.org/10.1007/s10586-026-06747-w",
+"venue": "Cluster Computing",
+"date": "2026-11-16",
+"authors": [
+"Duc-Anh Nguyen",
+"Katrina Nguyen",
+"Trong-Nghia Nguyen",
+"Vu-Duc Ngo",
+"Huan Vu",
+"Tien-Cuong Nguyen"
+],
+"abstract": "",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s44163-026-02732-9",
+"title": "Credit card fraud detection through feature reduction and stacking under class imbalance",
+"url": "https://doi.org/10.1007/s44163-026-02732-9",
+"venue": "Discover Artificial Intelligence",
+"date": "2026-11-17",
+"authors": [
+"Ruchika Mehta",
+"Navodit Kapoor",
+"Anurag Bhatnagar"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s42786-026-00069-6",
+"title": "Federated memory propagation: privacy-preserving agentic AI for cross-institutional fraud detection",
+"url": "https://doi.org/10.1007/s42786-026-00069-6",
+"venue": "Journal of Banking and Financial Technology",
+"date": "2026-11-17",
+"authors": [
+"Divesh Sarkar",
+"Flynn Werner",
+"Manish Sarkar"
+],
+"abstract": "",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.csl.2026.102069",
+"title": "Cochleogram-based ResNet-18 Network with Attention Mechanism (CoReA) for fake speech detection",
+"url": "https://doi.org/10.1016/j.csl.2026.102069",
+"venue": "Computer Speech & Language",
+"date": "2026-11-12",
+"authors": [
+"Lalita Luthra",
+"Ritu Agarwal",
+"Varsha Sisaudia"
+],
+"abstract": "",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
 }
 ]

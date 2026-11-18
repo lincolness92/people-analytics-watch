@@ -20,5 +20,38 @@
   "answer_chars": 1832,
   "at": "2026-11-17T20:52:17.532Z",
   "key": "ask:fraude-bancaria:2026-11-17T20:52:17.532Z:b0410bec"
+ },
+ {
+  "topic": "fraude-bancaria",
+  "question": "Como lidar com a alta taxa de subnotificação em problemas de fraude, considerando que não há uma tabela verdade relevante?",
+  "voter": "b0ufc5qjh6",
+  "name": null,
+  "sources": 24,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 2790,
+  "at": "2026-11-18T19:17:25.551Z",
+  "key": "ask:fraude-bancaria:2026-11-18T19:17:25.551Z:7f022936"
+ },
+ {
+  "topic": "fraude-bancaria",
+  "question": "Faltou incluir técnicas auto supervisionadas, como a utilização de arquitetura Transformer por exemplo",
+  "voter": "b0ufc5qjh6",
+  "name": null,
+  "sources": 24,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 2030,
+  "at": "2026-11-18T19:20:18.709Z",
+  "key": "ask:fraude-bancaria:2026-11-18T19:20:18.709Z:dff23ac8"
+ },
+ {
+  "topic": "fraude-bancaria",
+  "question": "Tem alguma referência sobre técnicas autosupervisionadas, como arquiteturas Transformer?",
+  "voter": "b0ufc5qjh6",
+  "name": null,
+  "sources": 20,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 1684,
+  "at": "2026-11-18T19:21:03.900Z",
+  "key": "ask:fraude-bancaria:2026-11-18T19:21:03.900Z:5212c552"
  }
 ]

@@ -9947,5 +9947,1047 @@
 "watch": [],
 "origin": "evolução",
 "added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744975",
+"title": "A new equilibrium: COVID-19 lockdowns and WFH persistence",
+"url": "https://doi.org/10.1086/744975",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Laura Ketter",
+"Todd Morris",
+"Lizi Yu"
+],
+"abstract": "This paper documents a robust link between COVID-19 lockdowns and the uptake and persistence of working from home (WFH) practices. Exploiting rich longitudinal data, we use a difference-in-differences strategy to compare office workers in three heavily locked-down Australian states to similar workers in less affected states. Locked-down workers sustain 43% higher WFH levels through 2023  0.5 days per week  with a monotonic doseresponse relationship. Persistence is driven by adjustments on both sides of the labor market: employers downsize office space and open remote/hybrid positions, while employees relocate away from city centers and invest in home offices and technology.",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744968",
+"title": "Structural Empirical Analysis of Vacancy Referrals with Imperfect Monitoring and the Strategic Use of Sickness Absence",
+"url": "https://doi.org/10.1086/744968",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Bernard van den Berg",
+"Hanno Foerster",
+"Arne Uhlendorff"
+],
+"abstract": "This paper provides a structural analysis of the role of job vacancy referrals (VRs) by public employment agencies in the job search behavior of unemployed individuals, incorporating institutional features of the monitoring of search behavior by the agencies. Notably, rejections of VRs may lead to sanctions (temporary benefits reductions) while workers may report sick to avoid those. We estimate models using German administrative data from social security records linked with caseworker recorded data on VRs, sick reporting and sanctions. The analysis highlights the influence of aspects of the health care system on unemployment durations. We estimate that for around 25% of unemployed workers, removing the channel that enables strategic sick reporting reduces the mean unemployment duration by 4 days.",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/09585192.2026.2762371",
+"title": "‘Flying under the radar’: job crafting when menopause disrupts neurodivergent coping",
+"url": "https://doi.org/10.1080/09585192.2026.2762371",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-16",
+"authors": [
+"Debora Gottardello",
+"Belinda Steffan"
+],
+"abstract": "Human Resource Management increasingly recognises the importance of job crafting, which relies on personal structures of coping. This study foregrounds workplace job crafting using a critical case approach, focusing on neurodivergent individuals whose coping mechanisms may be destabilised during menopause. Qualitative data from semi-structured interviews with 45 neurodivergent women experiencing menopause symptoms (UK and US) were analysed using reflexive thematic analysis. Findings provide insight into how intersecting vulnerabilities shape person-led workplace adaptation. Specifically, neurodivergent women experiencing menopause symptoms were found to engage in different forms of avoidance job crafting (behavioural avoidance demand crafting, behavioural avoidance resource crafting, cognitive avoidance demand crafting). Moreover, a newly identified preservation orientation drives a combination of avoidance and approach job crafting, evidenced by crafting strategies that primarily focus preservation, or maintaining the status quo, to align personal resources within maintaining job performance. This article contributes to the job crafting literature by demonstrating distinctive job ",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744978",
+"title": "The Search for Parental Leave and the Early-Career Gender Wage Gap",
+"url": "https://doi.org/10.1086/744978",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Ilaria D'Angelis"
+],
+"abstract": "Gender differences in preferences for parental leave contribute to the early-career growth in the gender wage gap among highly educated millennial Americans. Estimating a hedonic job-search model, I show that, while both men and women experience wage growth by entering firms offering better pay and benefits, the wage gap increases as women accept lower wages upon receiving job offers from employers providing parental leave. The wage-gap growth could decline by 60% if preferences for paid parental leave did not differ by gender. It could also decline if mandating and subsidizing the provision of paid leave muted workers’ leave-wage trade-off.",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744996",
+"title": "Automation and Gender: Implications for Occupational Segregation and the Gender Skill Gap",
+"url": "https://doi.org/10.1086/744996",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-17",
+"authors": [
+"Patricia Cortés",
+"Ying Feng",
+"Nicolás Guida-Johnson",
+"Jessica Pan"
+],
+"abstract": "We examine the differential effects of automation on the labor market and educational outcomes of women relative to men over the past four decades. Although women were disproportionately employed in occupations with a high risk of automation in 1980, they were more likely to shift to high-skill, high-wage occupations than men in over time. We provide a causal link by exploiting variation in local labor market exposure to automation attributable to historical differences in local industry structure. For a given change in the exposure to automation across commuting zones, women were more likely than men to shift out of routine task-intensive occupations to high-skill, high wage occupations over the subsequent decade. The net effect is that initially routine-intensive local labor markets experienced greater occupational gender integration. College attainment among younger workers, particularly women, also rose signicantly more in areas more exposed to automation. We propose a model of occupational choice with endogenous skill investments, where social skills and routine tasks are q-complements, and women have a comparative advantage in social skills, to explain the observed patterns. ",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1287/mnsc.2025.01479",
+"title": "Does Feedback Enhance Diversity in Selection Decisions?",
+"url": "https://doi.org/10.1287/mnsc.2025.01479",
+"venue": "Management Science",
+"date": "2026-11-17",
+"authors": [
+"Jose Cervantez",
+"Sophia L. Pink",
+"Linda W. Chang",
+"Aneesh Rai",
+"Katherine L. Milkman"
+],
+"abstract": "Some organizations provide employees with feedback on the demographics of people they have chosen to spotlight, hire, and promote, hoping to spur more diverse future selections. However, it is an open question whether purely descriptive feedback accomplishes this. We theorize and show that descriptive feedback highlighting low past selection rates of women or racial minorities (e.g., “5% of previous experts interviewed were women”) triggers a motivation to respond without prejudice, increasing the subsequent selection of members of underrepresented groups. Conversely, providing descriptive feedback about low selection rates of people with other attributes (e.g., areas of expertise, geographical location) that do not evoke image or reputational concerns has less influence on future decisions. We demonstrate these patterns across seven preregistered experiments (total n = 6,502), including one framed field experiment (Study 2). One study identifies motivation to respond without prejudice as a mediator of the effect of descriptive feedback about past choices on future selections of women and racial minorities. Another study shows that when women are overrepresented, the effect of desc",
+"score": 8,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.18502/kss.v11i10.22058",
+"title": "Ethical Governance of AI in Public Sector Human Resource Management: Challenges of Indonesia's Digital Bureaucracy",
+"url": "https://doi.org/10.18502/kss.v11i10.22058",
+"venue": "KnE Social Sciences",
+"date": "2026-11-17",
+"authors": [
+"Eddi Wibowo",
+"Dewi Susita",
+"Ari Saptono"
+],
+"abstract": "The deployment of Artificial Intelligence (AI) in human resource management (HRM) has reshaped recruitment, performance evaluation, talent mapping, and workforce planning across both private and public sectors. While AI-based systems are widely associated with efficiency, objectivity, and data-driven decision-making, their use in public institutions also raises ethical problems concerning transparency, accountability, fairness, and algorithmic bias. AI systems trained on historical data can reproduce discrimination and reinforce structural inequalities. This article examines ethical AI governance in public HRM by exploring the interaction between human–AI collaboration, algorithmic bias, and institutional accountability. Using a qualitativeconceptual approach grounded in a critical literature review of 41 sources published between 2016 and 2026, complemented by analysis of recent Indonesian regulatory and institutional documents (UU No. 20/2023 on ASN, BKN Circular Letter No. 9/2025, the ASN Digital platform, and the GARUDA AI program), the study finds that Indonesia’s digital bureaucracy faces four structural challenges: a governance gap between AI adoption and regulatory readines",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.34135/cejpp.354",
+"title": "Human Resources Management As a Factor Of AI Adoption In Public Sector Institutions: Systematic Literature Review",
+"url": "https://doi.org/10.34135/cejpp.354",
+"venue": "Central European Journal of Public Policy",
+"date": "2026-11-15",
+"authors": [
+"Matej Babšek",
+"Aleksander Aristovnik",
+"Nina Tomaževič"
+],
+"abstract": "The purpose of this paper is to emphasize the central role of Human Resources Management (HRM) processes/constructs in the adoption of artificial intelligence (AI) in public sector institutions and to offer a set of recommendations for internal and external stakeholders for the adoption of AI. The study utilized a systematic literature review following the PRISMA approach in the Scopus database, analyzing 90 publications. It developed a qualitative taxonomy of key HRM processes/constructs influencing AI adoption and mapped the roles of internal and external stakeholders, offering a model to understand, support, and enhance AI adoption in public sector institutions. The study found that human resources (HR) development (including skills/knowledge development and talent management), change management, leadership, and organisational culture are the most discussed HRM factors of AI adoption in public sector institutions. This revealed the key roles of internal stakeholders, such as managers, IT and HR departments, as well as employees. External stakeholders, such as policy makers/regulatory bodies, AI solutions providers and consultants, academic institutions and professional associati",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.65206/pajes.1988136",
+"title": "A hybrid data-driven framework integrating machine learning and multi-criteria decision making for recruitment",
+"url": "https://doi.org/10.65206/pajes.1988136",
+"venue": "Pamukkale University Journal of Engineering Sciences",
+"date": "2026-11-16",
+"authors": [
+"Özlem Üstün",
+"Merve Yılmaz",
+"Hasan Şahin"
+],
+"abstract": "Context—Recruitment has become a multidimensional decision-making process in which organizations must evaluate both qualitative and quantitative candidate attributes simultaneously. While machine iearning (ML) methods are effective for predicting recruitment outcomes and Multi-Criteria Decision-Making (MCDM) techniques provide structured ranking mechanisms, these approaches are commonly applied independently. As a result, the advantages of predictive analytics and expert-based evaluation are not fully utilized within a unified decision-support processObjective—This study proposes a hybrid decision-support framework that integrates ML and MCDM techniques to improve personnel selection. The framework is designed to combine data-driven prediction with systematic multi-criteria evaluation, while also examining the relative importance of recruitment criteria and the consistency of alternative ranking methods.Method—The proposed methodology consists of two sequential stages. First, Decision Tree, Random Forest, and Gradient Boosting Tree algorithms are developed using a publicly available recruitment dataset, and their predictive performances are comparatively evaluated to identify the m",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.5281/zenodo.24298670",
+"title": "Employer Perceptions of AI-Generated Cover Letters: Detection, Trust, and Hiring Decisions",
+"url": "https://doi.org/10.5281/zenodo.24298670",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-17",
+"authors": [
+"Leon Howard"
+],
+"abstract": "The rapid diffusion of generative artificial intelligence (GenAI) has fundamentally disrupted the labor market's traditional signaling mechanisms. Cover letters, long conceptualized as costly signals of candidate conscientiousness, motivation, and organizational fit, can now be synthesized in seconds. This paper provides experimental evidence on how corporate recruiters perceive, detect, and penalize AI-generated cover letters. Utilizing a pre-registered 2 × 4 factorial experiment with 360 verified corporate hiring managers and human resource professionals evaluating 2,160 application dossiers, we orthogonally manipulate actual authorship (human-authored, generic zero-shot LLM, and contextually grounded career-engine AI) and disclosure status (double-blind, disclosed AI assistance, disclosed human authorship, and commercial AI-detector flags).Keywords:Our empirical findings yield three core insights. First, we identify a profound \"Detection Illusion\": in blind evaluations, experienced recruiters distinguish AI-generated cover letters from human-written ones with only 52.8% accuracy—statistically indistinguishable from random chance (p = 0.312). Commercial AI detectors perform equal",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3390/info17111167",
+"title": "Skills Intelligence and Skills-Based Organizing: A Bibliometric Mapping of Two Disconnected Literatures (2000–2026)",
+"url": "https://doi.org/10.3390/info17111167",
+"venue": "Information",
+"date": "2026-11-17",
+"authors": [
+"Angelo Leogrande",
+"Mauro Di Molfetta",
+"Gianluca Zaza",
+"Valeria Notarnicola",
+"Maria Giovanna Trotta",
+"Antonio Volpe Plantamura"
+],
+"abstract": "Skills-based organizing replaces jobs and credentials with information on skills, which artificial intelligence now extracts from job postings, résumés and human resource records at scale. Whether this information is valid for the decisions it supports depends on whether research on skills intelligence and research on human resource management inform each other. We mapped 3649 documents published between 2000 and 2026, screened with a large language model audited against a human reviewer, using co-citation, bibliographic coupling and permutation benchmarks. Managerial and computational research form separate communities: only 13% of coupling links connect them, against 46% expected by chance, and the divide is sharpest between studies of the same practice, recruitment and selection. Computational research, 71% of output in 2023–2025, is itself split between recruitment technology and labor-market analytics; it validates skill information mainly against annotated text, about one study in seven relates it to outcomes, and almost none evaluate the decisions it informs. Taxonomies such as ESCO and O*NET do not bridge the communities; work analysis is the main bridge. We propose a skill",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11745769/v1",
+"title": "Productivity Without Prosperity? Who Captures the Economic Gains from Workplace Artificial Intelligence?",
+"url": "https://doi.org/10.21203/rs.3.rs-11745769/v1",
+"venue": "Research Square",
+"date": "2026-11-17",
+"authors": [
+"Sarfaraz Abdullah"
+],
+"abstract": "Abstract Experiments show that generative AI raises productivity on specific tasks by 14 to 40 percent, but who benefits when it spreads through the economy is far less clear. This study builds a capture accounting from task to economy. It links published field and survey evidence on productivity gains, adoption and wage pass-through to an exact decomposition of productivity gains in the U.S. nonfarm business sector, using the Bureau of Labor Statistics (BLS) release of 5 November 2026 and the Census Bureau’s Business Trends and Outlook Survey. Between the first quarter of 2024 and the third quarter of 2026, output per hour rose by 6.35 log points; 3.28 points (51.7 percent; rounding interval 50.3 to 53.1) reached workers as higher compensation relative to output prices, and 3.07 points went to nonlabor income as the labor share fell to 53.0 percent, the lowest since 1947. Labor’s capture fell from 84 percent in 2024 to 70 percent in 2025 and turned negative (-16 percent) in the four quarters to 2026 Q3, while nonfinancial corporate unit profits rose 16.1 percent. At the worker level, Danish administrative data show only 3 to 7 percent of productivity gains reaching earnings. A con",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11572304/v1",
+"title": "Where turnover contagion tips: Coworker network structure, job embeddedness, and retention targeting in an agent-based model",
+"url": "https://doi.org/10.21203/rs.3.rs-11572304/v1",
+"venue": "Research Square",
+"date": "2026-11-16",
+"authors": [
+"Md Monam Uddin",
+"Muhammad Abdul Mannan",
+"Norazman Saharum"
+],
+"abstract": "Abstract Employee turnover spreads among coworkers, but the organizational consequences of that contagion are poorly understood. We build an agent-based model in which employees embedded in a coworker network start searching for a new job when shocks and the share of searching or vacant coworkers exceed an embeddedness-dependent threshold. Across about 63,000 simulation runs, contagion strength produced a sharp tipping point between modest amplification of turnover and a self-sustaining regime. Clustered networks tipped earlier than random ones, whereas hubs alone did not lower the tipping point. Higher mean job embeddedness delayed tipping strongly. Under a fixed budget, retention practices that reached hubs or brokers and were attached to positions rather than individuals raised the tipping point most. The model is stylized and uncalibrated, so the findings are hypotheses for empirical testing.",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11330157/v1",
+"title": "“The System Says So”: Making Sense of AI-Driven HRM, Conditional Trust and Employee Well-Being in Saudi Arabian Organisations",
+"url": "https://doi.org/10.21203/rs.3.rs-11330157/v1",
+"venue": "Research Square",
+"date": "2026-11-17",
+"authors": [
+"Faris Alsaedi"
+],
+"abstract": "Abstract Purpose This study explores how employees in Saudi Arabian organisations perceive artificial intelligence (AI)-driven human resource management (HRM) and how their interpretations of the technology shape trust in HR systems and employee well-being. Design/methodology/approach: This qualitative study draws on 35 semi-structured interviews analysed using reflexive thematic analysis. Findings: Employees’ perceptions of AI-driven HRM were shaped by transparency, human involvement, and contextual sensitivity. Employees expressed conditional trust in AI used for administrative tasks, but were more reluctant to trust it with consequential decisions such as performance appraisals. Concerns about dignity, autonomy, and mental well-being were closely linked to perceptions of AI-driven HRM as context-blind and overly reductive. Originality/value: By placing employee sensemaking at the centre of the analysis, this study clarifies how AI-driven HRM is interpreted in organisational settings and how such interpretations shape trust and well-being. Practical implications: The study highlights the need for a hybrid HRM model that combines technological efficiency with transparency, context",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.2478/mspe-2026-0051",
+"title": "Gamification in Quality Control in Plastics Production: Impact on Employee Engagement and Process Efficiency",
+"url": "https://doi.org/10.2478/mspe-2026-0051",
+"venue": "Management Systems in Production Engineering",
+"date": "2026-11-17",
+"authors": [
+"Marta Jagusiak-Kocik"
+],
+"abstract": "Abstract The aim of this study is to assess the impact of gamification on employee engagement and the effectiveness of quality control processes in a company producing plastic components for electronic devices. Changes in employee engagement in reporting nonconformities, reporting improvements, response times to quality issues, and the number of nonconformities undetected during quality control were analyzed. The study was conducted among production and quality control employees, divided into experimental and control groups. The experimental group implemented a gamification system, including points for reporting nonconformities, activity badges, and rankings recognizing employees most engaged in quality-related activities. Data was collected before and after system implementation, using selected indicators. The results indicate increased employee engagement and improvements in selected quality indicators, including increased detection of nonconformities and reduced response times to problems. This confirms that gamification can be an effective tool supporting quality management in the production environment, provided it is properly designed, implemented, and adapted to the specific",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/pr-03-2026-0394",
+"title": "Configuring pay-for-performance plans to enhance employee engagement and performance: evidence from China",
+"url": "https://doi.org/10.1108/pr-03-2026-0394",
+"venue": "Personnel Review",
+"date": "2026-11-17",
+"authors": [
+"Jian Peng",
+"Xue Peng",
+"Qi Nie",
+"Nan Hou"
+],
+"abstract": "Purpose While prior pay-for-performance (PFP) research has largely drawn on Western theories and contexts, China's cultural landscape – characterized by a complex hybridity of collectivist traditions and rising individualist values – calls for a reexamination of how PFP plans motivate employees. We investigate how individual PFP (i.e. pay raise and bonus) and collective PFP (i.e. team incentives, gainsharing, profit sharing, and stock ownership) can be configured into coherent bundles that resonate with employees' evolving expectations in this culturally hybrid setting. Design/methodology/approach We collected three-wave survey data from 181 leader–employee pairs across various industries in China and analyzed the data using fuzzy-set qualitative comparative analysis (fsQCA) and regression analysis. Findings fsQCA revealed three complementary PFP configurations associated with high work engagement: (1) gainsharing-featured (gainsharing, profit sharing, pay raises, bonuses); (2) teamwork-featured (team incentives, profit sharing, pay raises, bonuses); and (3) ownership-featured (stock ownership, gainsharing, profit sharing, team incentives, bonuses). Regression analysis showed that ",
+"score": 7,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jocm-07-2026-0780",
+"title": "Communication involvement as a threshold resource in organizational change: effects on employee engagement and turnover intentions",
+"url": "https://doi.org/10.1108/jocm-07-2026-0780",
+"venue": "Journal of Organizational Change Management",
+"date": "2026-11-16",
+"authors": [
+"Te-Yi Lin",
+"Georg Hauer",
+"Michelle Biehl"
+],
+"abstract": "Purpose This study examines how communication involvement shapes employee engagement and turnover intentions during organizational change. Drawing on job demands-resources theory, it conceptualizes change type as a structural job demand and communication involvement as a change-specific job resource. It further investigates whether communication involvement operates as a threshold resource and whether its effects differ between radical and gradual change contexts. Design/methodology/approach A 2 × 3 scenario-based between-subjects experiment was conducted with 239 working adults. Participants were randomly assigned to one of six conditions varying by change type and communication involvement. Change type was manipulated as radical change, represented by a merger and acquisition scenario, or gradual change, represented by an Enterprise Resource Planning (ERP) implementation scenario. Communication involvement was manipulated at low, medium and high levels. Analysis of Variance (ANOVA) and Multivariate Analysis of Variance (MANOVA) were used to test the hypotheses. Findings Radical change produced lower engagement and higher turnover intentions than gradual change. Communication invo",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jfbm-09-2026-0307",
+"title": "Transformational leadership, psychological safety, and work engagement in family businesses: the indirect roles of resilience and job satisfaction",
+"url": "https://doi.org/10.1108/jfbm-09-2026-0307",
+"venue": "Journal of Family Business Management",
+"date": "2026-11-17",
+"authors": [
+"Susana Alves Pereira",
+"Pedro Mota Veiga",
+"Juan Herrera"
+],
+"abstract": "Purpose This study examines how transformational leadership is associated with work engagement in family businesses through interconnected relational, personal and attitudinal pathways involving psychological safety, resilience and job satisfaction, while also assessing the complete sequential indirect association among these constructs. Design/methodology/approach Data were collected from 800 employees working in Portuguese family businesses and analysed using partial least squares structural equation modelling (PLS-SEM). The measurement and structural models, direct and indirect associations, predictive performance and potential endogeneity were assessed. Findings Transformational leadership was positively associated with psychological safety and work engagement. Psychological safety was positively associated with resilience, job satisfaction and work engagement, while resilience was positively associated with job satisfaction and work engagement. Job satisfaction was also positively associated with work engagement. Furthermore, several statistically significant indirect associations linked transformational leadership with work engagement through psychological safety, resilience ",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3390/admsci16110573",
+"title": "Empowering Employees for Advocacy on Social Media: The Role of Sustainable Leadership, Well-Being, and Job Satisfaction in Tourism and Hospitality",
+"url": "https://doi.org/10.3390/admsci16110573",
+"venue": "Administrative Sciences",
+"date": "2026-11-16",
+"authors": [
+"Rana Alblowi",
+"Hebatallah A. M. AHMED",
+"Sameh Fayyad",
+"Abdelrahman Ahmed Abdelhai Abdelghani"
+],
+"abstract": "Tourism and hospitality firms increasingly rely on employees to speak for them online, yet how leadership turns into voluntary, publicly visible advocacy remains poorly understood. Grounded in social exchange and conservation of resources theories, this study examines whether sustainable leadership is related to employee advocacy intention on social media, both directly and through psychological empowerment, employee well-being, and job satisfaction. Survey data from 437 employees of five-star hotels and travel agencies in Riyadh and Jeddah, Saudi Arabia, were analyzed with partial least squares structural equation modeling. Sustainable leadership was positively associated with all four outcomes, and empowerment and well-being partially mediated its links with job satisfaction and advocacy; together, the predictors explained more than two-thirds of the variance in advocacy intention. The findings suggest that employees’ readiness to represent their organization online rests on psychological resources that leadership helps to build, so advocacy is better cultivated than requested. The study’s novelty lies in reconceptualizing the intention to advocate online as an externally directe",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jcre-01-2026-0002",
+"title": "Beyond location: how workplace resources and empowerment drive organisational outcomes in hybrid work",
+"url": "https://doi.org/10.1108/jcre-01-2026-0002",
+"venue": "Journal of Corporate Real Estate",
+"date": "2026-11-17",
+"authors": [
+"Lisanne Bergefurt",
+"Rianne Appel‐Meulenbroek",
+"Jorrit Van Beurden",
+"Pascale Marie Le Blanc",
+"G. Brouwers"
+],
+"abstract": "Purpose This study aims to develop a holistic model to explain how workplace satisfaction, work activities and time allocation between home and office shape individual and organisational outcomes in hybrid work settings. The model integrates insights from social exchange theory, person–environment fit theory and the job demands–resources model to explain how workplace resources and workplace experiences shape organisational outcomes in hybrid work settings. Design/methodology/approach A cross-sectional survey of 10,923 hybrid knowledge workers from ten public organisations in the Netherlands was analysed using path analysis to examine relationships among personal characteristics, workplace satisfaction, work activities, work location allocation and outcomes including creativity, collaboration, performance, commitment and sense of community. Findings Time spent at home or in the office was only weakly associated with outcomes, although greater office presence predicted higher individual performance. Psychosocial workplace satisfaction was the strongest driver of creativity, collaboration, performance and commitment. Psychological empowerment was a key overall predictor, while physic",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1016/j.digbus.2026.100192",
+"title": "Reconstructing engagement: The psychosocial pathways of connection in technology-mediated work",
+"url": "https://doi.org/10.1016/j.digbus.2026.100192",
+"venue": "Digital Business",
+"date": "2026-11-13",
+"authors": [
+"Anupama Tyagi",
+"Anil Bhat",
+"Ritika Bhatia"
+],
+"abstract": "Remote and hybrid work arrangements have introduced numerous challenges in maintaining employee engagement and a sense of belonging within organizations. This paper investigates the association between perceived proximity and employee engagement, with workplace isolation and social identity serving as mediating factors. The study also assesses whether self-efficacy moderates the association between social identity and engagement. Grounded primarily in Social Identity Theory, a quantitative study was conducted with 470 employees working in fully remote or hybrid arrangements across industries in India. Data were analyzed using covariance-based structural equation modeling in AMOS 24 and PROCESS Model 87 in SPSS, with bootstrapping for indirect and conditional pathways. A post-hoc expert evaluation involving 21 senior industry practitioners was subsequently conducted to complement the quantitative findings, assess the model's practical interpretability, and obtain contextual insights into the observed relationships. The findings show that perceived proximity was positively, rather than negatively, associated with workplace isolation, whereas workplace isolation was negatively associa",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1007/s10597-026-01751-1",
+"title": "Present but not Supported: Inadequate Supervision for Lived Experience Workers in Australian Mental Health",
+"url": "https://doi.org/10.1007/s10597-026-01751-1",
+"venue": "Community Mental Health Journal",
+"date": "2026-11-17",
+"authors": [
+"Liam Hodge",
+"Tania Pearce",
+"Sarah Wayland",
+"Myfanwy J. Maple"
+],
+"abstract": "Abstract Lived Experience Workers are increasingly employed in Australian mental health services. Unlike clinical staff, who can access discipline-specific supervision, Lived Experience Workers routinely lack structured support. There is currently limited evidence to understand Australian Lived Experience Workers’ supervision experiences. This study seeks to understand Lived Experience workers supervision experiences in Australian mental health settings, examining supervision expectations and requirements, barriers, and consequences of inadequate support. Eighteen semi-structured interviews were conducted with Lived Experience Workers across four Australian states, using a qualitative narrative inquiry framework. Thematic analysis examined experiences across temporality, sociality, and place dimensions. Analysis identified nine themes. Participants articulated that effective supervision should be externally provided, discipline-specific, regularly scheduled, delivered by trained Lived Experience supervisors during protected work time. Current supervision was often undertaken by line managers, causing power imbalances, conflation with performance management, lack of discipline-speci",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/jbfa.70098",
+"title": "Managerial Ability and Employee Workplace Health and Safety",
+"url": "https://doi.org/10.1111/jbfa.70098",
+"venue": "Journal of Business Finance &amp Accounting",
+"date": "2026-11-16",
+"authors": [
+"Emdad Islam",
+"Christo Karuna",
+"Lubna Rahman"
+],
+"abstract": "ABSTRACT This study investigates the relationship between managerial ability to efficiently convert capital into revenue (which we refer to as “managerial ability”) and employee workplace health and safety violations. We document a positive association between managerial ability and employee workplace health and safety violations. This relation is more pronounced in firm environments with weaker labor unionization, and becomes weaker in more innovative firm environments, when executive compensation includes stronger employee workplace health and safety incentives and when CEOs have longer horizons. Collectively, these findings suggest that while higher managerial ability is associated with greater employee workplace health and safety violations, firm environments that emphasize stakeholder protections and longer‐term managerial horizons attenuate this relation. Finally, while employee workplace health and safety violations do not significantly affect short‐ to medium‐term financial performance, they appear to harm long‐term financial performance in firms led by high‐ability managers.",
+"score": 7,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.35912/ambus.v2.n1.p47-62.2026",
+"title": "Reskilling Versus Replacement under Technological Change and the Future of Employment Relations",
+"url": "https://doi.org/10.35912/ambus.v2.n1.p47-62.2026",
+"venue": "Advances in Management and Business Studies",
+"date": "2026-11-16",
+"authors": [
+"Agare Oghenerume",
+"Oghenochuko Richard Ohwona",
+"Akaliduwa Akpevwe Miracle"
+],
+"abstract": "Purpose: Rapid technological innovation makes skills obsolete faster and forces organizations to choose between replacing employees through external hiring and reskilling and redeploying incumbents. This article examines how these strategic workforce responses affect organizational value and employment relations outcomes under different technological, labor market, and employment relations conditions. Research Methodology: An agent based model of an organization with 500 employees was developed, in which technology depreciates skills and trust shapes effort, training participation, and turnover. Four strategies, namely passive adaptation, buy, make, and hybrid reskilling with redeployment, were compared over ten years across 48 scenarios that combine technology intensity, labor market tightness, and adversarial or partnership based employment relations. Results: Internal development strategies (make or hybrid) produced a higher Net Present Value (NPV) than external replacement in all 12 technology, labor market, and climate combinations while avoiding layoffs. External replacement achieved the highest skill fit but laid off 19% to 83% of incumbents, eroded trust, and performed wors",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1057/s41599-026-09549-y",
+"title": "Workforce reskilling and training-finance optimization for Laem Chabang Port Phase 3: a scenario-based MILP framework",
+"url": "https://doi.org/10.1057/s41599-026-09549-y",
+"venue": "Humanities and Social Sciences Communications",
+"date": "2026-11-16",
+"authors": [
+"Taisith Kruasom",
+"Sumalee Ngeoywijit",
+"Jarun Bootdachi"
+],
+"abstract": "Laem Chabang Port Phase 3 is intended to increase container-handling capacity from approximately 11 to 18 million TEU while strengthening rail connectivity within Thailand’s Eastern Economic Corridor. This study develops a scenario-based decision-support framework that links throughput and rail-share assumptions to occupation- and region-specific workforce requirements and a policy-constrained mixed-integer linear programming model. The final reproducibility calibration uses public project and labour-market data, benchmark-derived labour-intensity parameters, explicitly labelled policy scenarios, and probability-adjusted training outcomes. Under an 80% workforce-coverage target, the corrected model requires approximately 1,612 enrollments under a 15% rail-share scenario and 1,739 under a 25% scenario over 2026–2027. Two-year training expenditure is estimated at THB 137.5–148.3 million against a THB 118 million envelope, while support expenditure reaches THB 37.2–40.1 million against a THB 22 million envelope. One-way sensitivity analysis shows that both financing gaps persist under coverage targets of 70–90%, completion-placement probabilities of ±10%, and support-cost changes of ±",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11371853/v1",
+"title": "AI, Employee Productivity and Performance: An Integrated ISM–MICMAC and SEM Investigation of the Pathway from Organisational Investment to Individual Output",
+"url": "https://doi.org/10.21203/rs.3.rs-11371853/v1",
+"venue": "Research Square",
+"date": "2026-11-17",
+"authors": [
+"Deepak Ranjan Sahoo",
+"Vaishali Deepak Sahoo",
+"Ashwini Deshpande Joshi"
+],
+"abstract": "Abstract Organisations have committed substantial capital to artificial intelligence in workforce management without a settled account of why productivity returns arrive so unevenly across employees working in the same firm under the same systems. This study approaches that problem in two stages. Twelve enabling and constraining factors are first extracted from the AI-HRM literature and ordered through interpretive structural modelling (ISM), with the resulting structure classified by driving and dependence power using MICMAC analysis. The hierarchy that emerges places top management commitment and digital leadership at the base and employee productivity and performance at the eighth and final level, with employee trust in AI and AI-related job insecurity occupying a reciprocal middle position that separates organisational investment from employee outcome. The mid-hierarchy portion of that structure is then specified as a measurement model and estimated on 412 employee responses from Indian knowledge-intensive firms using confirmatory factor analysis and structural equation modelling. The measurement model fits acceptably and every construct clears conventional reliability and disc",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.7275/democratic-communique.5076",
+"title": "Instagram as Organizing Infrastructure: New York City Immigration Delivery Workers in the Digital Economy",
+"url": "https://doi.org/10.7275/democratic-communique.5076",
+"venue": "University of Massachusetts (UMass) Amherst",
+"date": "2026-11-16",
+"authors": [
+"Melissa R. Meade"
+],
+"abstract": "Scholarship on platform labor has documented how algorithmic management disciplines workers but has paid less attention to how organized workers use public social media to contest platform power. This article analyzes Los Deliveristas Unidos (LDU), a predominantly immigrant, mixed-status organization of app-based delivery workers in New York City, and its discursive use of Instagram as organizing infrastructure. Using qualitative content analysis of 102 systematically sampled posts from @losdeliveristasunidos_ny (2021-2025), the study develops three interrelated discursive strategies: algorithmic witnessing, victory documentation, and corporate narrative warfare. Algorithmic witnessing uses Instagram to document and archive wage theft, “digital firings,” and unsafe conditions. Victory documentation stages regulatory and legal wins to counter platform fatalism and build collective efficacy by showing that regulation of gig work is possible. Corporate narrative warfare names platform firms and city agencies as antagonists and disputes their public claims, framing policy debates as struggles between organized workers and identifiable opponents. The analysis shows how these practices r",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.63108/ijlmh.13189",
+"title": "Human Rights of Gig and Platform Workers in India: Social Security, Labour Rights and Legal Accountability",
+"url": "https://doi.org/10.63108/ijlmh.13189",
+"venue": "International Journal of Law Management & Humanities",
+"date": "2026-11-16",
+"authors": [
+"R Vimala"
+],
+"abstract": "Transport, food delivery, home services, logistics and other app-based services have transformed the way people work in India. Platform work is not just a flexible means of engagement in the labour market: it can also bring irregular income, ambiguous rating systems, unilateral termination of accounts and lower social security benefits, and so raises issues of dignity, equality, occupational safety and social protection. Through doctrinal and analytical methods, this paper explores the human rights position of gig and platform workers in light of international labour standards, the Code on Social Security, 2020 and the Constitution. The Code, which came into force on 21 November 2025, explicitly deals with gig workers, platform workers and aggregators: Section 113 provides for their registration, and Section 114 for schemes of life and disability cover, accident insurance, health and maternity benefits and old-age protection. Even with statutory recognition, registration, funding, portability and grievance redressal will remain important. The paper offers a rights-based solution which includes social security, clear algorithmic management, fair compensation, occupational security, ",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1080/09585192.2026.2761053",
+"title": "Fostering sustainable employee behavior through green human resource management: a moderated mediation model",
+"url": "https://doi.org/10.1080/09585192.2026.2761053",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-16",
+"authors": [
+"Thi That Pham",
+"Wann-Yih Wu",
+"Thi Thanh An Dao",
+"Trang Thu Nguyen",
+"Thanh Truc Phan"
+],
+"abstract": "",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.4102/sajhrm.v24i0.3921",
+"title": "Artificial intelligence capabilities and human resource management functions: Evidence from Saudi Arabia",
+"url": "https://doi.org/10.4102/sajhrm.v24i0.3921",
+"venue": "SA Journal of Human Resource Management",
+"date": "2026-11-16",
+"authors": [
+"Omar A. Baakeel"
+],
+"abstract": "Orientation: Artificial intelligence (AI) is increasingly used in human resource management (HRM), yet evidence remains limited on how specific AI capabilities relate to distinct HRM functions in Saudi private-sector organisations. Research purpose: This research explored the connections of knowledge sharing systems, decision support systems and smart systems with recruitment, training and performance appraisal. Motivation for the study: Prior research often treats AI as a broad organisational technology, providing limited insight into capability-specific relationships across HRM functions in the Saudi context. Research approach/design and method: A quantitative cross-sectional survey was conducted among workers in private-sector organisations in Saudi Arabia. Purposive sampling, supplemented by snowball sampling to improve access across organisations and regions, yielded 431 respondents. Data were collected electronically between November 2025 and February 2026 using a structured questionnaire adapted from established scales and analysed using structural equation modelling. Main findings: Knowledge sharing systems showed a positive correlation with recruitment (β = 0.784, p < 0.00",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.35912/ahrmr.v6.n4.p25-41.2026",
+"title": "Employment Relations and Labor Market Dynamics under Globalization and Digitalization, a Task Based Simulation",
+"url": "https://doi.org/10.35912/ahrmr.v6.n4.p25-41.2026",
+"venue": "Annals of Human Resource Management Research",
+"date": "2026-11-16",
+"authors": [
+"Oghenochuko Richard Ohwona",
+"Akaliduwa Akpevwe Miracle",
+"Agare Oghenerume"
+],
+"abstract": "Purpose: Globalization and digitalization are reshaping labor markets by relocating tasks abroad and transferring tasks from workers to machines. This article examines their combined effects on employment structure, wages, and income distribution, and the capacity of employment relations institutions to shape these effects. Research Methodology: A general equilibrium task model with three skill groups, routine biased automation, and offshorable tasks is simulated over 20 years. Scenarios separate globalization and digitalization shocks and compare five institutional regimes, namely market adjustment, a productivity indexed wage floor, negotiated technology adoption, reskilling, and a coordinated regime, using illustrative parameters for theory building. Results: The combined shocks moved 30% of tasks to automation and 4% abroad, and the share of tasks performed by middle skill workers fell from 41% to 25%, reproducing job polarization. Output doubled and real wages rose for all groups, but middle skill wages grew least (23% versus 39% and 43%), and the labor share fell to 69%. A strongly indexed wage floor created 6.6% unemployment, negotiated adoption preserved the labor share at ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744974",
+"title": "Immigration, Local Crowd-Out and Labor Market Effects",
+"url": "https://doi.org/10.1086/744974",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Michael Amior"
+],
+"abstract": "",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744969",
+"title": "Understanding the Heterogeneity of Earnings Losses After Job Displacement: A Machine Learning Approach",
+"url": "https://doi.org/10.1086/744969",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Andreas Gulyas",
+"Krzysztof Pytka"
+],
+"abstract": "",
+"score": 7,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.5281/zenodo.24271144",
+"title": "Algorithmic Hiring Bias in Applicant Tracking Systems: Evidence from Resume Audit Studies",
+"url": "https://doi.org/10.5281/zenodo.24271144",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-16",
+"authors": [
+"Leon Howard"
+],
+"abstract": "Applicant Tracking Systems (ATS) mediate the vast majority of modern corporate hiring funnels, serving as automated gatekeepers that filter candidates prior to human recruiter evaluation. This paper provides large-scale empirical evidence on algorithmic bias in ATS screening using a pre-registered, matched-pair resume audit experiment (N = 3,200 paired applications) submitted across four major economic sectors and six U.S. metropolitan areas. We orthogonally randomize applicant demographic signals (names associated with specific racial, ethnic, and gender identities) and linguistic syntax markers characteristic of non-native English speakers, while strictly holding substantive qualifications, employment duration, and credential prestige invariant across pairs.Keywords:Our econometric findings reveal substantial disparate impact in initial algorithmic parsing stages. First, while direct demographic name penalties in automated scoring remain modest (a 2.8 percentage point gap, p = 0.086), non-native English syntactic patterns and non-standard keyword formulations trigger severe algorithmic degradation: resumes exhibiting non-native phrasing experience a 14.2 percentage point decline ",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.4324/9781003688778-8",
+"title": "Ethics at Work, Part 2",
+"url": "https://doi.org/10.4324/9781003688778-8",
+"venue": "Routledge eBooks",
+"date": "2026-11-17",
+"authors": [
+"Jeffrey Moriarty"
+],
+"abstract": "This chapter considers ethical issues connected to hiring and firing, privacy, artificial intelligence, and whistleblowing. Information is at the center of each of these issues – who should have access to it and how can it be used? The chapter begins by discussing the principles that should guide employers’ hiring and firing decisions. Next, it considers what sorts of information employers should be able to access about employees. Artificial intelligence is increasingly used to make employment decisions; the ethical issues to which it gives rise are examined. The chapter concludes by discussing the ethical status of whistleblowing, which involves sharing information that employers prefer to keep confidential. This chapter clarifies how ‘business ethics’ will be understood in this book: normatively, not descriptively. It motivates the study of the field, identifying and evaluating reasons to care about business ethics. This book does not tell readers what to think about ethical issues in business; rather, it provides the tools necessary to think through them rationally and reach one’s own conclusions.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1111/jopy.70104",
+"title": "Personality Was Robust to the Transition to Remote Work Under the COVID‐19 Pandemic",
+"url": "https://doi.org/10.1111/jopy.70104",
+"venue": "Journal of Personality",
+"date": "2026-11-16",
+"authors": [
+"Meaghan M. Tracy",
+"Adam W. Meade",
+"Tara S. Behrend"
+],
+"abstract": "OBJECTIVE: The current study examines whether the transition between work contexts (in-person work to remote work) during the COVID-19 pandemic influenced an individual's personality in a sample of 1475 working adults. Previous work on personality change during the COVID-19 pandemic suggests that people experienced a significant change in personality. METHOD: Drawing from the personality dynamics literature and frame-of-reference effects, we extend this work by conducting IRT-based invariance analyses and by fitting linear mixed-effects models on longitudinal, archival data. RESULTS: Results indicate that transitioning to remote work did not affect either interpretations of personality items nor mean-level personality trait scores during the COVID-19 pandemic. CONCLUSIONS: Findings from the current study suggest that while many aspects of work and non-work life changed in 2020 and 2021, we did not find evidence that the pandemic and the sudden shift to remote work influenced personality assessment. Findings also provide support for the established theory that personality is robust to situational changes, highlighting the robustness of personality to predict future behaviors and att",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.17148/iarjset.2026.131153",
+"title": "When Flexibility Follows Employees Home: Remote-Work Latitude, Work-to-Life Spillover and the Paradoxical Role of Organisational Support in India's IT-Enabled Services Sector",
+"url": "https://doi.org/10.17148/iarjset.2026.131153",
+"venue": "IARJSET",
+"date": "2026-11-15",
+"authors": [
+"Maya Sarangapani",
+"Raji S."
+],
+"abstract": "Purpose: This study examines whether the latitude to work remotely is associated with the spillover of work into personal life among employees of IT-enabled services (ITES) firms, whether techno-stress and boundary concerns explain this association, and whether organisational support weakens or strengthens it.Design/methodology/approach: Survey data were collected from 104 ITES employees in Karnataka, India.Hierarchical regression, bootstrapped parallel mediation and moderated regression with simple-slope and Johnson-Neyman analyses were used.Findings: Remote-work latitude was positively related to work interference with personal life (β = .283,p = .004),while the number of days worked from home was not.Techno-stress and boundary, isolation and career concerns did not mediate this relationship.Contrary to the buffering hypothesis, organisational support strengthened the relationship: latitude was associated with spillover only when support was moderate to high. Practical implications:Flexibility and a caring climate do not by themselves protect employees' personal time.ITES firms need explicit norms on after-hours availability, and supervisors should actively encourage supported em",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/20319525261498423",
+"title": "From safeguard to surveillance justification: The transformation of the right to be informed in ECtHR jurisprudence",
+"url": "https://doi.org/10.1177/20319525261498423",
+"venue": "European Labour Law Journal",
+"date": "2026-11-17",
+"authors": [
+"Maéva El Bouchikhi"
+],
+"abstract": "This article examines the evolving function of the right to be informed in regulating workplace surveillance through a systematic analysis of the European Court of Human Rights’ case law. It asks whether workers’ prior information continues to operate as a meaningful safeguard against employer monitoring or whether its function within the Court's reasoning has progressively changed. While the Court continues formally to rely on the criterion established in Bărbulescu v Romania , a systematic examination of its subsequent case law reveals that workers’ information has lost much of its protective force. Once a safeguard whose absence weighed heavily against employers, information is increasingly treated as one criterion among others within the Court's proportionality assessment, readily outweighed by expanding managerial and property-based interests and, once formally satisfied, capable of supporting the very monitoring it was meant to constrain. The article traces this evolution through two interconnected developments. First, the circumstances in which employers may engage in covert surveillance have progressively broadened. Second, increasingly intrusive monitoring practices have b",
+"score": 7,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3389/fpubh.2026.1937368",
+"title": "Beyond individual factors: a multilevel review of barriers and facilitators to employment inclusion in autism",
+"url": "https://doi.org/10.3389/fpubh.2026.1937368",
+"venue": "Frontiers in Public Health",
+"date": "2026-11-17",
+"authors": [
+"Anna Meduri",
+"Chiara Failla",
+"Chiara Marraffa",
+"Ileana Scarcella",
+"Gaetano Vivona",
+"Giovanni Pioggia"
+],
+"abstract": "Background Employment is a key social determinant of health, shaping autonomy, wellbeing, and social participation across adulthood. Yet adolescents and adults with autism continue to experience substantial inequalities in access to work, workplace inclusion, and employment sustainability. Although the literature on this topic has expanded, evidence remains fragmented across recruitment, organizational practices, workplace culture, and broader institutional conditions. Methods This integrative review synthesized empirical studies on barriers and facilitators to employment inclusion in adolescents and adults with autism. A structured search of PubMed, Scopus, and Google Scholar was conducted for studies published between January 2015 and March 2026. A total of 2,757 records were identified, of which 45 were retained for formal title and abstract screening. Fifteen studies met the inclusion criteria following full-text assessment. Given the methodological heterogeneity of the included literature, findings were examined through integrative narrative synthesis. Results Across the reviewed studies, employment inclusion emerged as a multilevel phenomenon shaped by interacting institution",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3389/fsoc.2026.1955156",
+"title": "Not to be served but to serve: cumulative employment precarity and later-life agency among older Chinese migrants in the United Kingdom",
+"url": "https://doi.org/10.3389/fsoc.2026.1955156",
+"venue": "Frontiers in Sociology",
+"date": "2026-11-16",
+"authors": [
+"Matt Flynn",
+"Stuart McClure",
+"Melisa Yazdanpanahi",
+"Louise Yuen Ming Wong"
+],
+"abstract": "Population ageing has led governments to seek ways to encourage older people to delay retirement using policy instruments such as increasing state pension ages, prohibiting workplace discrimination, and encouraging employers to recognise older workers as a source of skilled labour. Capacity to delay retirement is unevenly distributed and concerns have been raised about the impact of the Extended Working Life agenda on older people whose careers have been characterised by precarious work. This article explores the experiences of one such community: older migrants who have faced lifetimes of discrimination, language barriers, and institutional barriers to formal employment. This 2022 study examines how cumulative migration-related employment precarity shapes later-life work and retirement choices among older Chinese migrants in Manchester, United Kingdom, most of whom have spent their careers self-employed, running catering businesses. Drawing on Life-course Theory, we explore how factors such as migration timing, labour market structures, health, and economic, business and social relationships across time shape agency in later life as it relates to work and employment. Using a parti",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1086/744970",
+"title": "Incentive Effects of Disability Benefits",
+"url": "https://doi.org/10.1086/744970",
+"venue": "Journal of Labor Economics",
+"date": "2026-11-16",
+"authors": [
+"Annica Gehlen",
+"Sebastian Becker",
+"Johannes Geyer",
+"Peter Haan"
+],
+"abstract": "",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11716365/v1",
+"title": "The role of artificial intelligence in green human resource management and organizational sustainability: a systematic literature review and bibliometric analysis",
+"url": "https://doi.org/10.21203/rs.3.rs-11716365/v1",
+"venue": "Research Square",
+"date": "2026-11-16",
+"authors": [
+"Muhammad Younis",
+"Muhammad Sharjeel Aziz",
+"AMBER ZAHRA",
+"Mustapova Хilolaxon Islamovna",
+"Barno Suyunova",
+"Summera Khalid"
+],
+"abstract": "Abstract Artificial intelligence (AI) is increasingly presented as the technology that will allow green human resource management (GHRM) to deliver organizational sustainability, yet the evidence behind this claim is recent, scattered and largely unexamined. This study combines a PRISMA-guided systematic literature review with a VOSviewer-based bibliometric analysis to establish what is known, how it is known and what remains untested. A Scopus search (12 November 2026) returned 297 records; after document-type filtering and title–abstract–keyword screening, 97 journal articles and reviews formed the mapping corpus, and two further eligible articles were added to the critical synthesis (n = 99). Keyword co-occurrence, overlay, co-citation, bibliographic coupling and country co-authorship maps were produced, and every study was coded for the structural role assigned to AI, theory, method, context and outcome. The field is young (77.3% of the corpus is published from 2025–2026), geographically limited (mostly emerging Asian countries), and methodologically homogeneous, with 44 of 62 quantitative studies using cross-sectional structural equation modelling of self-reported data. Five r",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/02614294261508420",
+"title": "Offload, Surrender, or Augment? Designing Continuous Talent Development in the Age of AI",
+"url": "https://doi.org/10.1177/02614294261508420",
+"venue": "Gifted Education International",
+"date": "2026-11-16",
+"authors": [
+"Fabio Andrés Parra-Martínez",
+"Ophélie Allyssa Desmet"
+],
+"abstract": "Gifted education focuses on who is gifted and what happens after identification. AI complicates both decisions because it changes the work learners can produce and what that work reveals about learning. We distinguish cognitive offloading, surrender of judgment, and augmentation as related patterns of human–AI interaction: delegation can serve or impede learning, while augmentation requires evidence of understanding, judgment, and continued development. We integrate talent-management research, the Actiotope Model, and a person × task × situation perspective of underachievement to outline a governance model for gifted education: a cycle of identification, enrichment, opportunity and support allocation, response assessment, and revision. In this cycle, motivation, well-being, and other psychosocial information inform decisions beyond achievement, alongside documented needs, readiness, and learner accounts. We use AchieveGo, a proof-of-concept evidence index and educator interface, to illustrate how a future AI system could make options, uncertainty, and review points visible to educators, learners, and families.",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.3389/fpubh.2026.1950686",
+"title": "The mediating effect of artificial intelligence literacy in the association between error aversion culture and thriving at work among clinical nurses: a multicenter cross-sectional study",
+"url": "https://doi.org/10.3389/fpubh.2026.1950686",
+"venue": "Frontiers in Public Health",
+"date": "2026-11-16",
+"authors": [
+"Zhenni Xie",
+"Jiangying Han",
+"Dalin Kuang",
+"Jinxiu Hu",
+"ZHAO Xiaoyun",
+"Chenxia Liao"
+],
+"abstract": "Background Thriving at work reflects a positive psychological state in which clinical nurses experience both vitality and continued learning. It is relevant to workforce stability and the quality of nursing services. Error aversion culture and artificial intelligence (AI) literacy may be associated with nurses’ thriving at work, but the relationships among these constructs and the mediating effect of AI literacy remain insufficiently understood. Objective To examine whether AI literacy mediates the association between error aversion culture and thriving at work among clinical nurses. Methods A multicenter cross-sectional survey was conducted in January 2026 among clinical nurses recruited by convenience sampling from 62 hospitals in Anhui Province, China. Participants completed a demographic questionnaire, the Artificial Intelligence Literacy Scale, the Error Aversion Culture Scale, the Thriving at Work Scale, and the General Self-Efficacy Scale. Descriptive statistics, Pearson correlation analysis, hierarchical linear regression, and structural equation modeling were performed. Indirect associations were evaluated using 5,000 bootstrap resamples with bias-corrected 95% confidence ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W7235830027",
+"title": "Interventions Regulating Cognitive Offloading to Generative AI and Subsequent Independent Performance: A Systematic Review Protocol",
+"url": "https://osf.io/yeja3",
+"venue": "OSF Preprints (OSF Preprints)",
+"date": "2026-11-15",
+"authors": [
+"Michał Moneta"
+],
+"abstract": "This systematic review examines interventions designed to regulate cognitive offloading to generative artificial intelligence (GenAI) and their effects on subsequent independent performance in educational and employee development contexts. The review aims to identify how interventions structure the distribution of cognitive work between individuals and GenAI, evaluate their effects on learning and task performance after AI assistance has been withdrawn, and examine the conditions under which these effects may differ. Eligible evidence will include comparative experimental and quasi-experimental studies assessing independent knowledge, skills or task performance following GenAI-supported activities. Electronic searches were conducted in six bibliographic databases and preprint repositories, followed by deduplication and pilot screening. Two reviewers will independently screen studies and extract data. The review will use structured descriptive synthesis, supplemented by meta-analysis where the evidence permits. Risk of bias will be assessed using JBI tools, and certainty of evidence for key outcomes will be evaluated using GRADE. The expected contribution is an evidence-based unders",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.25405/ncl.35010454",
+"title": "Outside the Gates: How Millennial Women in IT Craft Careers Through External Networks and Alternative Work Arrangements",
+"url": "https://doi.org/10.25405/ncl.35010454",
+"venue": "Newcastle University ePrints (Newcastle Univesity)",
+"date": "2026-11-16",
+"authors": [
+"Ana Lopes",
+"Grace Gao",
+"Małgorzata Ciesielska"
+],
+"abstract": "This study examines how millennial women IT professionals craft boundaryless careers through external networks and work arrangements in response to persistent gendered barriers. Drawing on twenty-five interviews, findings reveal how women encounter structural barriers: masculine workplace cultures that valorise overwork, resist work-life integration, and limit advancement, compounded by intersecting marginalisations based on gender, race, and age. In response, women leverage coding bootcamps, professional communities, freelancing, contracting, and remote work to navigate these environments. Drawing on a critical sociological perspective on careers, which treats boundaryless mobility as structurally conditioned rather than a neutral expression of agency, this study extends that perspective by theorising career crafting as a mechanism through which structural disadvantage is channelled into individualised, ostensibly agentic strategies. We show that external networks enable genuine agency for some women while transferring structural risks to individuals, creating new stratifications based on resources and life stage, and reducing pressure for organisational transformation.",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1371/journal.pone.0362940",
+"title": "Enabling vs. directive: How performance management affects innovative performance through thriving at work",
+"url": "https://doi.org/10.1371/journal.pone.0362940",
+"venue": "PLoS ONE",
+"date": "2026-11-16",
+"authors": [
+"Vincent Goossens",
+"Adelien Decramer",
+"Mieke Audenaert"
+],
+"abstract": "Rapid changes in the business landscape push organizations to innovate. Scholars, practitioners and policymakers have emphasized the importance of innovative performance to remain competitive. This study investigates how directive and enabling performance management (PM) affect employee innovative performance. Drawing on the socially-embedded model of thriving, we propose thriving at work, the joint experience of vitality and learning, as mediating mechanism. Using three-wave, multi-source data from 461 employees and their supervisors, Structural Equation Modeling results indicate that: (1) enabling PM is positively related to innovative performance through both vitality and learning, whereas for directive PM only learning mediates the negative indirect relationship; (2) both vitality and learning are individually positively associated with innovative performance; and (3) learning only enhances innovative performance when vitality is high. This research explains how distinct PM approaches affect innovative performance and identifies vitality as a critical boundary condition for the learning-innovative performance relationship. These findings suggest that the joint effects of vitali",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1177/20319525261489682",
+"title": "The effectiveness of algorithmic information rights in the labour relationship: Lessons learnt from the Spanish experience",
+"url": "https://doi.org/10.1177/20319525261489682",
+"venue": "European Labour Law Journal",
+"date": "2026-11-16",
+"authors": [
+"Anna Ginès i Fabrellas",
+"Raquel Serrano Olivares",
+"Felipe Díez Prat"
+],
+"abstract": "The study examines the effectiveness of algorithmic information rights in current regulation through an interdisciplinary methodological framework that integrates doctrinal legal research with in-depth interviews. The main finding of this study is that the architecture of algorithmic information rights reveals a fragmented mosaic across the European Union, with varying scopes and configurations at both the EU and state levels, resulting in uneven protections for workers. Furthermore, using Spain as a case study, the article identifies three key factors which result in a lack of company compliance and overall ineffectiveness of algorithmic information rights: an insufficient understanding of both the technology and the current fragmented regulatory landscape; company resistance to the disclosure of algorithmic information; and a reduced capacity of unions and workers’ representatives to holistically address the digitalisation of labour and engage in participatory governance of algorithmic management. These findings underscore the importance of adequate normative design to reinforce information rights for workers and workers’ representatives to increase the effectiveness of algorithm",
+"score": 7,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.32782/dees.26-12",
+"title": "AI-DRIVEN HUMAN CAPITAL DEVELOPMENT: EVIDENCE FROM INTERNATIONAL COMPANIES",
+"url": "https://doi.org/10.32782/dees.26-12",
+"venue": "Цифрова економіка та економічна безпека",
+"date": "2026-11-16",
+"authors": [
+"Наталія Пархоменко",
+"Katarína Gubíniová"
+],
+"abstract": "The study examines the relationship between artificial intelligence (AI) development and human capital development in the context of technological transformation. The research is based on secondary data from ten large international companies representing technology, consulting, industrial, and consumer sectors. Publicly disclosed corporate information is used to identify AI-related human capital practices, including AI and Generative AI training, upskilling and reskilling, continuous learning, career development, and AI-enabled learning. An AI-related Human Capital Development Evidence Index is proposed to systematize the breadth of documented practices. The findings demonstrate that AI adoption is increasingly accompanied by systematic workforce development and continuous learning. The study confirms the importance of AI-related skills development and organizational adaptability for sustainable human capital formation.",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.1108/jices-11-2025-0348",
+"title": "Empowering change through AI competences: insights from the digital competence framework and UTAUT theory",
+"url": "https://doi.org/10.1108/jices-11-2025-0348",
+"venue": "Journal of Information Communication and Ethics in Society",
+"date": "2026-11-16",
+"authors": [
+"Alaa Fawzy Abdellatef",
+"Aya Shata"
+],
+"abstract": "Purpose The emergence of artificial intelligence (AI) calls for a reevaluation of digital competences (DigComp) to better understand individuals’ engagement with the technology. While most AI adoption studies explain the motivational drivers of AI use, limited attention has been given to the role of DigComp, particularly in emerging economies. This study aims to explore the relationship between DigComp and AI adoption in Egypt and how they jointly shape AI readiness for responsible and equitable AI adoption. Design/methodology/approach This study integrated the Unified Theory of Acceptance and Use of Technology (UTAUT) with the DigComp Framework. An online survey was administered to 400 adults residing in Egypt to examine the technological, social and competence-related factors associated with intention to use AI technologies. Findings The findings demonstrate that DigComp complements traditional technology adoption models. All four UTAUT determinants predicted behavioral intention to use AI. DigCom influenced performance and effort expectancies, while facilitating conditions strongly affected all five DigComp dimensions. Problem-solving was the most influential dimension and inter",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.64388/ire1725224",
+"title": "AI-Powered Conversational Mock Interview and Evaluation Systems: A Comprehensive Literature Review and Architecture for NexInterview.ai",
+"url": "https://doi.org/10.64388/ire1725224",
+"venue": "Iconic Research and Engineering Journals",
+"date": "2026-11-16",
+"authors": [
+"Janhavi Ghodake",
+"Sharvari Kekare",
+"Sanchita Khade",
+"Sadhana Kamble",
+"Abhishek Joshi"
+],
+"abstract": "Technical job interviews serve as critical evaluation gateways in the software and information technology industries. However, conventional candidate preparation remains hampered by the scarcity and high cost of expert mentorship, subjective and unstructured feedback, and static, text-based practice tools that fail to reproduce the dynamic pressure of real-time verbal technical communication. Recent breakthroughs in Large Language Models (LLMs), Automatic Speech Recognition (ASR), and Web Real-Time Communication (WebRTC) protocols have motivated the development of automated, conversational interview systems. This paper presents a comprehensive literature review of twenty peer-reviewed research papers published in leading IEEE, ACM, and international venues over the past decade, with a primary focus on developments from 2018 to 2025. The examined literature covers six interrelated dimensions: automated conversational coaching foundations, LLM-driven interactive dialogue generation, dynamic question synthesis from candidate profiles, contextual resume parsing and skill taxonomy extraction, rubric-based automated assessment and explainability, and algorithmic fairness and ethical cons",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "oa:W7234675766",
+"title": "Uso de la Inteligencia Artificial Generativa en decisiones gerenciales de MYPES latinoamericanas: revisión sistemática",
+"url": "https://osf.io/uk63a",
+"venue": "OSF Preprints (OSF Preprints)",
+"date": "2026-11-14",
+"authors": [
+"Melisa Ruth Osores Martínez",
+"Carlos Daniel Polo Calzada",
+"Gary Clodoaldo Ortiz Colca"
+],
+"abstract": "La presente investigación tiene como propósito identificar, evaluar críticamente y sintetizar la evidencia científica disponible sobre el uso de la Inteligencia Artificial Generativa (IAG) en la toma de decisiones gerenciales de las micro, pequeñas y medianas empresas (MYPES) de América Latina. El estudio parte del reconocimiento de que las herramientas de IAG, como los modelos de lenguaje de gran tamaño (LLM) y los asistentes conversacionales, están incorporando nuevas posibilidades para procesar información, generar alternativas, elaborar escenarios y apoyar diferentes actividades de gestión empresarial. Sin embargo, su incorporación no garantiza necesariamente decisiones de mayor calidad, debido a que sus resultados pueden estar condicionados por las capacidades organizacionales, las competencias digitales, la calidad de la información, la supervisión humana y los riesgos asociados a su utilización. La investigación surge de la necesidad de integrar una literatura científica que actualmente aborda el fenómeno desde perspectivas parcialmente diferenciadas: por un lado, estudios sobre la adopción de inteligencia artificial en pequeñas y medianas empresas; por otro, investigaciones",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.5281/zenodo.24270153",
+"title": "Predicting Employee Turnover Using Machine Learning Algorithms: A Comparative Study in Human Resource Analytics",
+"url": "https://doi.org/10.5281/zenodo.24270153",
+"venue": "International journal of engineering inventions.",
+"date": "2026-11-16",
+"authors": [
+"Kuşdoğan Vakkas",
+"Tekin Ilknur Cevik",
+"Taspinar Yavuz Selim"
+],
+"abstract": "",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.70369/ex091v62",
+"title": "Farol do conhecimento: localização de expertise e conexão profissionalna gestão do conhecimento da Petrobras",
+"url": "https://doi.org/10.70369/ex091v62",
+"venue": "Revista Técnica da Universidade Petrobras.",
+"date": "2026-11-16",
+"authors": [
+"Marcio Luiz da Silveira",
+"Andréia Pereira de Souza",
+"André Luis Macedo Barbosa"
+],
+"abstract": "This article analyzes the Knowledge Lighthouse, the name Petrobras gives to the knowledge management practice commonly known as Yellow Pages. The solution is a business intelligence dashboard that integrates corporate data and professional records to locate expertise by knowledge area or by person. A qualitative and descriptive approach was adopted through a single case study and bibliographic and documentary analysis. The theoretical framework combines knowledge management, transactive memory, competence mapping, intellectual capital, communities of practice, and sociotechnical systems. The study describes the dashboard’s conception, its SAP/SIRH data sources, daily D-1 updating, search and profile detail views, query paths, and corporate access. The analytical findings indicate that the solution may improve expert findability, reduce search costs, foster learning and knowledge integration, and support critical knowledge management, team formation, innovation, internal mobility, succession, and organizational memory. Its effectiveness, however, depends on a governed taxonomy, complete and current data, trust, participation, workflow integration, data protection, and value-oriented",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
+},
+{
+"key": "doi:10.52641/cadcajv11i17.131",
+"title": "LIDERANÇA HUMANIZADA E GESTÃO DE PESSOAS: INOVAÇÃO ORGANIZACIONAL E DESEMPENHO SEGUNDO AS REVISÕES DA LITERATURA RECENTE",
+"url": "https://doi.org/10.52641/cadcajv11i17.131",
+"venue": "Cadernos Cajuína",
+"date": "2026-11-16",
+"authors": [
+"Fábio Rocha dos Santos",
+"Mariana Pereira Maito",
+"Nilson Dias Brabo Neto",
+"Marcio Cesar de Castro Aragão",
+"José Rogério Sena e Silva",
+"Joamir Pedro Sales da Silva Junior"
+],
+"abstract": "Este artigo examina o que as revisões recentes da literatura dizem sobre liderança humanizada e gestão de pessoas em sua relação com a inovação organizacional e o desempenho. Trata-se de uma revisão narrativa de revisões, de abordagem qualitativa, que reuniu vinte sínteses publicadas entre 2022 e 2026: três meta-análises, doze revisões sistemáticas, uma revisão de escopo, uma revisão guarda-chuva e três mapeamentos bibliométricos. A análise foi organizada em cinco eixos: conceitos de liderança centrada nas pessoas, segurança psicológica e aprendizagem, práticas de gestão de pessoas e inovação, desempenho e bem-estar, e tecnologia na gestão de pessoas. Os resultados mostram associação consistente entre liderança de apoio e inovação, com correlação meta-analítica de 0,44 entre liderança paradoxal e inovação, e entre liderança e desempenho adaptativo (r = 0,37), mas com heterogeneidade alta (I2 = 94,78%) e predomínio de estudos transversais. As revisões sobre gestão de pessoas indicam que as práticas só geram inovação quando o conhecimento dos trabalhadores é aproveitado. Conclui-se que a liderança humanizada é um fator promissor, porém pouco demonstrado em termos causais, e que as de",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-18"
 }
 ]

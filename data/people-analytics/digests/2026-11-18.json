@@ -1,0 +1,448 @@
+{
+ "date": "2026-11-18",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "period": {
+  "from": "2026-11-11",
+  "to": "2026-11-18"
+ },
+ "stats": {
+  "candidates": 164,
+  "triaged": 164,
+  "selected": 11,
+  "tokens": {
+   "prompt_tokens": 34297,
+   "completion_tokens": 19860
+  }
+ },
+ "headline": "Semana forte em governança de dados de pessoas e em automação/remoto como estruturas, não modas",
+ "trend": "O período consolida três movimentos. Primeiro, a governança de dados de pessoas entrou em fase de execução: a Corte Europeia esvaziou o direito de ser informado como salvaguarda e o caso espanhol mostra que informação algorítmica sem capacidade técnica de sindicatos e comitês não protege ninguém — transparência formal virou defesa jurídica da empresa, não do trabalhador. Segundo, o que era 'resposta à pandemia' se revelou estrutura: home office persistindo 43% acima do nível pré-crise, personalidade medida de forma estável em contexto remoto e automação empurrando mulheres para ocupações de alta habilidade social — ou seja, híbrido, avaliação e reskilling precisam de desenho permanente, não transitório. Terceiro, as alavancas de equidade e retenção são mais baratas e mais configuracionais do que se supõe: feedback descritivo sobre decisões passadas entrega 45–80% do efeito de uma cota, e tanto remuneração quanto comunicação funcionam como pacotes com limiares, não como variáveis isoladas.",
+ "items": [
+  {
+   "key": "doi:10.1086/744969",
+   "title": "Heterogeneidade das perdas salariais após demissão via machine learning",
+   "original_title": "Understanding the Heterogeneity of Earnings Losses After Job Displacement: A Machine Learning Approach",
+   "url": "https://doi.org/10.1086/744969",
+   "venue": "Journal of Labor Economics",
+   "date": "2026-11-16",
+   "authors": [
+    "Andreas Gulyas",
+    "Krzysztof Pytka"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "analytics",
+   "region": "",
+   "summary": "O paper aplica aprendizado de máquina para estimar a distribuição heterogênea das perdas de renda após desligamento, em vez de reportar apenas a média do evento. O achado implícito é que a média esconde dispersão relevante entre perfis de trabalhadores e de trajetória prévia. Prática: modelos de risco de demissão, custo de reposição e priorização de retenção precisam de **estimativas por subgrupo** — um coeficiente único leva a decisões de RH mal calibradas."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2025.01479",
+   "title": "Feedback descritivo aumenta diversidade na seleção?",
+   "original_title": "Does Feedback Enhance Diversity in Selection Decisions?",
+   "url": "https://doi.org/10.1287/mnsc.2025.01479",
+   "venue": "Management Science",
+   "date": "2026-11-17",
+   "authors": [
+    "Jose Cervantez",
+    "Sophia L. Pink",
+    "Linda W. Chang",
+    "Aneesh Rai",
+    "Katherine L. Milkman"
+   ],
+   "institutions": [
+    "University of Pennsylvania",
+    "University of Maryland, College Park"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 9,
+   "theme": "hiring",
+   "region": "",
+   "summary": "Sete experimentos pré-registrados (n=6.502), incluindo um experimento de campo, testam se mostrar ao decisor a taxa passada de seleção de mulheres e minorias raciais (ex.: \"5% das especialistas entrevistadas eram mulheres\") muda escolhas futuras. O feedback descritivo eleva a seleção de grupos sub-representados, com efeito de **45% a 80% do tamanho de uma cota obrigatória**, mediado por motivação para responder sem preconceito; quando mulheres já estão sobrerrepresentadas o efeito inverte, mas com magnitude bem menor. Prática: publicar o histórico demográfico das decisões é intervenção barata e potente — e não exige cota."
+  },
+  {
+   "key": "doi:10.1086/744975",
+   "title": "COVID lockdowns e a persistência do trabalho remoto",
+   "original_title": "A new equilibrium: COVID-19 lockdowns and WFH persistence",
+   "url": "https://doi.org/10.1086/744975",
+   "venue": "Journal of Labor Economics",
+   "date": "2026-11-16",
+   "authors": [
+    "Laura Ketter",
+    "Todd Morris",
+    "Lizi Yu"
+   ],
+   "institutions": [
+    "The University of Queensland",
+    "IZA - Institute of Labor Economics",
+    "UNSW Sydney",
+    "ARC Centre of Excellence for Children and Families over the Life Course",
+    "Network for Studies on Pensions, Aging and Retirement",
+    "Centre for Population Ageing Research"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 4,
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Diferenças-em-diferenças comparando trabalhadores de escritório de três estados australianos com lockdown duro a pares em estados menos afetados: os primeiros sustentam **43% mais home office** até 2023, cerca de 0,5 dia por semana, com relação dose-resposta monotônica à intensidade do lockdown. A persistência vem dos dois lados: empregadores encolhem escritório e abrem vagas remotas/híbridas, trabalhadores se mudam para fora dos centros e investem em home office. Lição: híbrido é equilíbrio estrutural, não resíduo — imobiliário, políticas e metas de produtividade devem ser desenhados nesse patamar."
+  },
+  {
+   "key": "doi:10.1086/744996",
+   "title": "Automação e gênero: segregação ocupacional e skill gap",
+   "original_title": "Automation and Gender: Implications for Occupational Segregation and the Gender Skill Gap",
+   "url": "https://doi.org/10.1086/744996",
+   "venue": "Journal of Labor Economics",
+   "date": "2026-11-17",
+   "authors": [
+    "Patricia Cortés",
+    "Ying Feng",
+    "Nicolás Guida-Johnson",
+    "Jessica Pan"
+   ],
+   "institutions": [
+    "Boston University",
+    "National University of Singapore",
+    "Pontificia Universidad Javeriana"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 9,
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Explorando variação na exposição local à automação (derivada da estrutura industrial histórica) em quatro décadas, mulheres saíram mais que homens de ocupações intensivas em tarefas rotineiras e migraram para ocupações de alta qualificação e alto salário; zonas de commuting mais expostas ficaram mais integradas por gênero e a escolarização feminina subiu mais. O modelo proposto trata **social skills** e tarefas rotineiras como q-complementares, com vantagem comparativa feminina em habilidades sociais — confirmado pelo fluxo maior de mulheres para ocupações de alta exigência social e cognitiva. Prática: automação pode reduzir segregação se o reskilling mirar ocupações de interação, não apenas tech."
+  },
+  {
+   "key": "doi:10.1111/jopy.70104",
+   "title": "Personalidade é robusta à transição para o trabalho remoto",
+   "original_title": "Personality Was Robust to the Transition to Remote Work Under the COVID‐19 Pandemic",
+   "url": "https://doi.org/10.1111/jopy.70104",
+   "venue": "Journal of Personality",
+   "date": "2026-11-16",
+   "authors": [
+    "Meaghan M. Tracy",
+    "Adam W. Meade",
+    "Tara S. Behrend"
+   ],
+   "institutions": [
+    "Purdue University West Lafayette",
+    "North Carolina State University",
+    "Michigan State University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "engagement",
+   "region": "",
+   "summary": "Com 1.475 adultos trabalhadores e dados longitudinais de arquivo, análises de invariância baseadas em TRI e modelos mistos mostram que a passagem para o home office na pandemia não alterou nem a interpretação dos itens nem as médias dos traços de personalidade. Prática: **testes de personalidade** seguem válidos em contexto remoto — não é necessário recalibrar normas ou refazer validação por modalidade de trabalho."
+  },
+  {
+   "key": "doi:10.1111/jbfa.70098",
+   "title": "Habilidade gerencial e segurança e saúde no trabalho",
+   "original_title": "Managerial Ability and Employee Workplace Health and Safety",
+   "url": "https://doi.org/10.1111/jbfa.70098",
+   "venue": "Journal of Business Finance &amp Accounting",
+   "date": "2026-11-16",
+   "authors": [
+    "Emdad Islam",
+    "Christo Karuna",
+    "Lubna Rahman"
+   ],
+   "institutions": [
+    "Monash University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "leadership",
+   "region": "",
+   "summary": "Estudo de firmas americanas documenta associação positiva entre habilidade gerencial (eficiência em converter capital em receita) e violações de saúde e segurança do trabalho. A relação é mais forte onde a sindicalização é fraca e mais fraca com ambiente inovador, incentivos de segurança na remuneração executiva e CEOs de horizonte longo; violações não afetam o desempenho financeiro de curto e médio prazo, mas prejudicam o longo prazo sob gestores de alta habilidade. Prática: eficiência operacional pode ser extraída às custas de segurança — trate segurança como KPI de gestão, não de conformidade."
+  },
+  {
+   "key": "doi:10.1086/744978",
+   "title": "Busca por licença parental e o gap salarial de gênero no início de carreira",
+   "original_title": "The Search for Parental Leave and the Early-Career Gender Wage Gap",
+   "url": "https://doi.org/10.1086/744978",
+   "venue": "Journal of Labor Economics",
+   "date": "2026-11-16",
+   "authors": [
+    "Ilaria D'Angelis"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 12,
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "summary": "Modelo hedônico de busca de emprego com millennials americanos altamente escolarizados mostra que ambos os gêneros crescem salarialmente ao migrar para firmas com melhor pagamento e benefícios, mas o gap aumenta porque mulheres aceitam salários menores em ofertas de empregadores que oferecem licença parental. O crescimento do gap cairia **60%** se as preferências por licença remunerada não diferissem por gênero, e a obrigatoriedade/subsídio da licença atenuaria o trade-off licença-salário. Prática: benefício de licença, sozinho, não neutraliza desigualdade — sem política salarial explícita ele se converte em penalidade feminina."
+  },
+  {
+   "key": "doi:10.1086/744970",
+   "title": "Incentive Effects of Disability Benefits",
+   "original_title": "Incentive Effects of Disability Benefits",
+   "url": "https://doi.org/10.1086/744970",
+   "venue": "Journal of Labor Economics",
+   "date": "2026-11-16",
+   "authors": [
+    "Annica Gehlen",
+    "Sebastian Becker",
+    "Johannes Geyer",
+    "Peter Haan"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "summary": ""
+  },
+  {
+   "key": "doi:10.1108/pr-03-2026-0394",
+   "title": "Configurações de pay-for-performance, engajamento e desempenho",
+   "original_title": "Configuring pay-for-performance plans to enhance employee engagement and performance: evidence from China",
+   "url": "https://doi.org/10.1108/pr-03-2026-0394",
+   "venue": "Personnel Review",
+   "date": "2026-11-17",
+   "authors": [
+    "Jian Peng",
+    "Xue Peng",
+    "Qi Nie",
+    "Nan Hou"
+   ],
+   "institutions": [
+    "Southeast University",
+    "Guangdong University of Foreign Studies",
+    "Nanjing Normal University",
+    "Capital University of Economics and Business"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "pay_careers",
+   "region": "",
+   "summary": "Survey de três ondas com 181 pares líder-colaborador na China, analisado por fsQCA e regressão, identifica três configurações de remuneração associadas a alto engajamento: gainsharing, trabalho em equipe e ownership — todas combinando incentivos individuais (aumento, bônus) com coletivos (participação em lucros, stock). Engajamento media a relação entre a configuração e o desempenho. Prática: em cultura híbrida, não escolha entre PFP individual e coletivo — **desenhe bundles** coerentes em vez de otimizar componentes isolados."
+  },
+  {
+   "key": "doi:10.1177/20319525261498423",
+   "title": "Do salvaguarda à justificativa de vigilância: o direito de ser informado na Corte Europeia",
+   "original_title": "From safeguard to surveillance justification: The transformation of the right to be informed in ECtHR jurisprudence",
+   "url": "https://doi.org/10.1177/20319525261498423",
+   "venue": "European Labour Law Journal",
+   "date": "2026-11-17",
+   "authors": [
+    "Maéva El Bouchikhi"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "governance",
+   "region": "",
+   "summary": "Análise sistemática da jurisprudência da Corte Europeia de Direitos Humanos após Bărbulescu mostra que o direito do trabalhador de ser previamente informado perdeu força protetiva: virou um critério entre outros na proporcionalidade, superado por interesses gerenciais e patrimoniais e, uma vez cumprido formalmente, capaz de sustentar a própria vigilância. A vigilância oculta se ampliou e monitoramentos intrusivos passaram a ser aceitos com informação limitada, ambígua ou tardia, reduzindo a transparência a mera notificação mínima. Prática: cumprir o aviso legal não protege — só controles substantivos e participação sindical reduzem risco jurídico e reputacional."
+  },
+  {
+   "key": "doi:10.1177/20319525261489682",
+   "title": "Efetividade dos direitos de informação algorítmica: lições da Espanha",
+   "original_title": "The effectiveness of algorithmic information rights in the labour relationship: Lessons learnt from the Spanish experience",
+   "url": "https://doi.org/10.1177/20319525261489682",
+   "venue": "European Labour Law Journal",
+   "date": "2026-11-16",
+   "authors": [
+    "Anna Ginès i Fabrellas",
+    "Raquel Serrano Olivares",
+    "Felipe Díez Prat"
+   ],
+   "institutions": [
+    "Esade",
+    "Universitat Ramon Llull",
+    "Universitat de Barcelona",
+    "Universitat Autònoma de Barcelona"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "governance",
+   "region": "",
+   "summary": "Pesquisa doutrinária combinada a entrevistas em profundidade revela um mosaico regulatório fragmentado na UE e três causas de inefetividade na Espanha: compreensão insuficiente da tecnologia e das regras, resistência das empresas a divulgar informação algorítmica e baixa capacidade de sindicatos e representantes para tratar da digitalização. Os autores propõem diretiva europeia de gestão algorítmica, nos moldes da diretiva de trabalho em plataformas. Prática: direito de informação só funciona com capacidade técnica interna, poder de auditoria e governança participativa."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1080/09585192.2026.2762371",
+   "title": "Job crafting na menopausa de mulheres neurodivergentes",
+   "original_title": "‘Flying under the radar’: job crafting when menopause disrupts neurodivergent coping",
+   "url": "https://doi.org/10.1080/09585192.2026.2762371",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-16",
+   "authors": [
+    "Debora Gottardello",
+    "Belinda Steffan"
+   ],
+   "institutions": [
+    "University of Edinburgh"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "45 entrevistas mostram job crafting 'invisível' para contornar sintomas: RH precisa de ajustes formais, não de heroísmo individual."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24298670",
+   "title": "Recrutadores e cartas de apresentação geradas por IA",
+   "original_title": "Employer Perceptions of AI-Generated Cover Letters: Detection, Trust, and Hiring Decisions",
+   "url": "https://doi.org/10.5281/zenodo.24298670",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-17",
+   "authors": [
+    "Leon Howard"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "note": "Experimento 2×4 com 360 recrutadores mede detecção e penalização de cartas geradas por IA: sinal de motivação virou ruído."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11745769/v1",
+   "title": "Produtividade sem prosperidade: quem captura os ganhos da IA",
+   "original_title": "Productivity Without Prosperity? Who Captures the Economic Gains from Workplace Artificial Intelligence?",
+   "url": "https://doi.org/10.21203/rs.3.rs-11745769/v1",
+   "venue": "Research Square",
+   "date": "2026-11-17",
+   "authors": [
+    "Sarfaraz Abdullah"
+   ],
+   "institutions": [
+    "University of Rajshahi"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Decomposição dos ganhos de produtividade da IA no setor não-agrícola americano: capital ou trabalho fica com o excedente?"
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11572304/v1",
+   "title": "Contágio de turnover: estrutura de rede e retenção",
+   "original_title": "Where turnover contagion tips: Coworker network structure, job embeddedness, and retention targeting in an agent-based model",
+   "url": "https://doi.org/10.21203/rs.3.rs-11572304/v1",
+   "venue": "Research Square",
+   "date": "2026-11-16",
+   "authors": [
+    "Md Monam Uddin",
+    "Muhammad Abdul Mannan",
+    "Norazman Saharum"
+   ],
+   "institutions": [
+    "Lincoln University College"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Modelo baseado em agentes (~63 mil simulações) acha tipping point em que a saída se torna autossustentável: monitore clusters, não médias."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11330157/v1",
+   "title": "IA no RH, confiança condicional e bem-estar",
+   "original_title": "“The System Says So”: Making Sense of AI-Driven HRM, Conditional Trust and Employee Well-Being in Saudi Arabian Organisations",
+   "url": "https://doi.org/10.21203/rs.3.rs-11330157/v1",
+   "venue": "Research Square",
+   "date": "2026-11-17",
+   "authors": [
+    "Faris Alsaedi"
+   ],
+   "institutions": [
+    "King Abdulaziz University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "35 entrevistas na Arábia Saudita: transparência e envolvimento humano condicionam a confiança em IA de RH e o bem-estar."
+  },
+  {
+   "key": "doi:10.1108/jocm-07-2026-0780",
+   "title": "Comunicação como recurso-limiar em mudanças organizacionais",
+   "original_title": "Communication involvement as a threshold resource in organizational change: effects on employee engagement and turnover intentions",
+   "url": "https://doi.org/10.1108/jocm-07-2026-0780",
+   "venue": "Journal of Organizational Change Management",
+   "date": "2026-11-16",
+   "authors": [
+    "Te-Yi Lin",
+    "Georg Hauer",
+    "Michelle Biehl"
+   ],
+   "institutions": [
+    "Tatung University",
+    "Stuttgart Technical University of Applied Sciences"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Comunicação só reduz intenção de saída acima de certo nível, e o efeito difere entre mudança radical e gradual."
+  }
+ ]
+}
