@@ -8,6 +8,7 @@ from datetime import date
 from . import DIST, ROOT, WEB
 from .annual import annual_markdown, latest_by_year
 from .library import load as load_library
+from .searchindex import build_index
 from .evolution import evolution_markdown, latest as latest_evolution
 from .topic import all_topics
 
@@ -134,8 +135,15 @@ def build_site(topics):
         shutil.copytree(WEB, DIST / t.slug)
         (DIST / t.slug / "data.json").write_text(json.dumps(site_data(t, topics), ensure_ascii=False), encoding="utf-8")
         # read only by functions/api/ask.js, never by the pages
-        (DIST / t.slug / "library.json").write_text(json.dumps(load_library(t), ensure_ascii=False), encoding="utf-8")
+        lib = load_library(t)
+        (DIST / t.slug / "library.json").write_text(json.dumps(lib, ensure_ascii=False), encoding="utf-8")
+        site = json.loads((DIST / t.slug / "data.json").read_text(encoding="utf-8"))
+        (DIST / t.slug / "search.json").write_text(json.dumps(build_index(site, lib), ensure_ascii=False, separators=(",", ":")),
+                                                   encoding="utf-8")
     shutil.copy(WEB / "style.css", DIST / "style.css")
+    # topic list for the external interfaces (REST v1, MCP, A2A agent card)
+    (DIST / "topics.json").write_text(json.dumps([{"slug": t.slug, "name": t.name, "description": t.meta.get("description", "")}
+                                                  for t in topics], ensure_ascii=False), encoding="utf-8")
     (DIST / "index.html").write_text(_landing(topics), encoding="utf-8")
 
 

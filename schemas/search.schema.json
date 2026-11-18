@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "search.schema.json",
+  "title": "Índice de busca pré-calculado (dist/<tema>/search.json)",
+  "description": "Documentos de corpus() com estatísticas BM25 e índice invertido (src/pawatch/searchindex.py). postings[termo] = [doc, tf, doc, tf, ...].",
+  "type": "object",
+  "required": [
+    "version",
+    "n",
+    "avgdl",
+    "docs",
+    "len",
+    "postings"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "n": {
+      "type": "integer"
+    },
+    "avgdl": {
+      "type": "number"
+    },
+    "docs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "title",
+          "url",
+          "when",
+          "text"
+        ]
+      }
+    },
+    "len": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "postings": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

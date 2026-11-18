@@ -2,7 +2,12 @@
 // The password lives in the Pages secret SITE_PASSWORD; the cookie holds a hash of it, so
 // changing the password logs everyone out. Without the secret the site stays closed.
 
+import { agentCard } from "../server/a2a.js";
+import { makeToken, NAME_RE } from "../server/auth.js";
+
 const COOKIE = "paw_auth";
+const TOKEN_ROUTES = [/^\/api\/v1(\/|$)/, /^\/mcp\/?$/, /^\/a2a\/?$/];
+const AGENT_CARD = "/.well-known/agent-card.json";
 const MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 const LOGIN_PATH = "/__login";
 
@@ -65,6 +70,26 @@ function page(message, next, status) {
   });
 }
 
+// Logged-in readers can mint a named bearer token for REST v1 / MCP / A2A (server/auth.js).
+async function apiToken(url, password) {
+  const name = (url.searchParams.get("name") || "").toLowerCase();
+  if (!NAME_RE.test(name)) {
+    return new Response(JSON.stringify({ ok: false, error: "use /__api-token?name=<cliente> (a-z, 0-9, hífen; até 32)" }),
+      { status: 400, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });
+  }
+  const t = await makeToken(password, name);
+  const base = url.origin;
+  return new Response(JSON.stringify({
+    ok: true, name, token: t,
+    rest: `${base}/api/v1/topics`, mcp: `${base}/mcp`, a2a: `${base}/a2a`, agent_card: `${base}/.well-known/agent-card.json`,
+    examples: {
+      curl: `curl -H "Authorization: Bearer ${t}" ${base}/api/v1/topics`,
+      claude_code: `claude mcp add --transport http research-watch ${base}/mcp --header "Authorization: Bearer ${t}"`,
+    },
+    note: "Guarde o token: ele dá acesso de leitura ao arquivo. Para revogar, ponha o nome na lista REVOKED de server/auth.js.",
+  }, null, 2), { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" } });
+}
+
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
@@ -75,6 +100,15 @@ export async function onRequest(context) {
     });
   }
   const token = await sha256Hex(`paw-v1:${password}`);
+
+  // External interfaces authenticate with their own bearer tokens (server/auth.js), not the site cookie.
+  if (TOKEN_ROUTES.some((r) => r.test(url.pathname))) return next();
+  if (url.pathname === AGENT_CARD) {
+    const topics = await env.ASSETS.fetch(new URL("/topics.json", request.url));
+    return new Response(JSON.stringify(agentCard(url.origin, topics.ok ? await topics.json() : [])), {
+      headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=300" },
+    });
+  }
 
   if (url.pathname === LOGIN_PATH && request.method === "POST") {
     const form = await request.formData();
@@ -92,6 +126,7 @@ export async function onRequest(context) {
   }
 
   if (timingSafeEqual(readCookie(request, COOKIE), token)) {
+    if (url.pathname === "/__api-token") return apiToken(url, password);
     const res = await next();
     const out = new Response(res.body, res);
     out.headers.set("Cache-Control", "private, no-cache");

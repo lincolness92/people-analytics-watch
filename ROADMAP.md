@@ -35,11 +35,11 @@ governo, instituições, países). Ideias: comparar Brasil × mundo nos números
 Combinado em 18/11: núcleo de consulta único + adaptadores finos (ver README, "Arquitetura do lado do servidor").
 1. ✅ Núcleo extraído: `server/archive.js` (consultas), `server/agent.js` (agente), `server/llm.js` (provedor);
    `functions/api/ask.js` virou adaptador. Testes em `tests/js/`.
-2. Schemas (JSON Schema) do `data.json` e do `library.json` + índice de busca pré-calculado no pipeline (tira o
-   BM25 do Worker, que tem limite de CPU por requisição).
-3. API REST `v1` só de leitura, com token (separado da senha do site), num `server/auth.js` comum.
-4. MCP (ferramentas = funções do núcleo) e A2A (agent card + endpoint que delega ao `agent.js`) quando houver um
-   cliente concreto para plugar.
+2. ✅ Schemas em `schemas/` (testados contra os arquivos gerados) + índice de busca pré-calculado (`search.json`).
+3. ✅ REST `v1` com tokens nomeados (`server/auth.js`, derivados da senha do site; página `/__api-token`).
+4. ✅ MCP (`/mcp`) e A2A (`/a2a` + agent card), sobre o catálogo único `server/tools.js`.
+Próximos: OAuth no MCP se algum cliente exigir (conectores remotos do Claude.ai pedem OAuth ou nenhuma auth);
+streaming no A2A/ask; ferramentas que buscam fora do arquivo (OpenAlex/Semantic Scholar) quando ele não cobrir.
 
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 

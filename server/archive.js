@@ -4,6 +4,8 @@
 // The archive is what the Python pipeline publishes per topic:
 //   <topic>/data.json     digests, Evolução, annual reviews, watchlist, themes (see src/pawatch/render.py)
 //   <topic>/library.json  every paper the triage scored >= 5, with its original abstract (src/pawatch/library.py)
+//   <topic>/search.json   the same documents as corpus() below, with BM25 statistics and an inverted index
+//                         precomputed by src/pawatch/searchindex.py (search() falls back to corpus()+rank())
 
 export const TOPIC_RE = /^[a-z0-9-]{1,40}$/;
 export const DEFAULT_K = 18;
@@ -29,12 +31,41 @@ export async function loadArchive(fetchAsset, topic) {
   const res = await fetchAsset(`/${topic}/data.json`);
   if (!res.ok) return null;
   const data = await res.json();
-  let library = [];
-  try {
-    const lib = await fetchAsset(`/${topic}/library.json`);
-    if (lib.ok) library = await lib.json();
-  } catch { /* the archive alone still works */ }
-  return { slug: topic, name: data.topic?.name || topic, data, library };
+  const optional = async (p) => {
+    try {
+      const r = await fetchAsset(p);
+      return r.ok ? await r.json() : null;
+    } catch { return null; }
+  };
+  // Prefer the precomputed index; the library is then only needed for getPaper, so load it lazily.
+  const index = await optional(`/${topic}/search.json`);
+  const archive = { slug: topic, name: data.topic?.name || topic, data, index, library: [] };
+  if (!index) archive.library = (await optional(`/${topic}/library.json`)) || [];
+  archive.loadLibrary = async () => {
+    if (!archive.library.length) archive.library = (await optional(`/${topic}/library.json`)) || [];
+    return archive.library;
+  };
+  return archive;
+}
+
+/** BM25 over a precomputed index (src/pawatch/searchindex.py): only the postings of the query terms are read. */
+export function rankIndex(index, terms, k = DEFAULT_K, keep = null) {
+  const q = [...new Set(terms.flatMap(tokens))];
+  const scores = new Map();
+  for (const t of q) {
+    const p = index.postings[t];
+    if (!p) continue;
+    const df = p.length / 2;
+    const idf = Math.log(1 + (index.n - df + 0.5) / (df + 0.5));
+    for (let j = 0; j < p.length; j += 2) {
+      const i = p[j], f = p[j + 1];
+      const s = idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * index.len[i] / index.avgdl));
+      scores.set(i, (scores.get(i) || 0) + s);
+    }
+  }
+  return [...scores.entries()]
+    .filter(([i]) => !keep || keep(index.docs[i]))
+    .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, k).map(([i]) => index.docs[i]);
 }
 
 /** Every searchable unit of the archive, as {kind, title, url, when, venue, text}. */
@@ -116,6 +147,8 @@ export function listTopics(archive) {
 /** Search one topic. `query` is a string or a list of terms; `kinds` optionally filters by doc kind prefix. */
 export function search(archive, query, { k = DEFAULT_K, kinds = null } = {}) {
   const terms = Array.isArray(query) ? query : [query];
+  const keep = kinds && kinds.length ? (d) => kinds.some((p) => d.kind.startsWith(p)) : null;
+  if (archive.index) return rankIndex(archive.index, terms, k, keep);
   let docs = corpus(archive.data, archive.library);
   if (kinds && kinds.length) docs = docs.filter((d) => kinds.some((p) => d.kind.startsWith(p)));
   return rank(docs, terms, k);
@@ -138,8 +171,9 @@ export function getAnnual(archive, year = null) {
 }
 
 /** Everything the archive knows about a paper, by URL (digest item, milestone, highlight, library entry). */
-export function getPaper(archive, url) {
+export async function getPaper(archive, url) {
   if (!url) return null;
+  if (archive.loadLibrary) await archive.loadLibrary();
   const hits = [];
   const { data, library } = archive;
   for (const d of data.digests || []) {

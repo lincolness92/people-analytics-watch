@@ -1,0 +1,328 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "data.schema.json",
+  "title": "Arquivo publicado de um tema (dist/<tema>/data.json)",
+  "description": "Contrato entre o pipeline (src/pawatch/render.py) e quem lê o site: as páginas, server/archive.js e futuros adaptadores. Campos novos podem ser acrescentados; renomear ou remover exige versão nova.",
+  "type": "object",
+  "required": [
+    "generated",
+    "topic",
+    "topics",
+    "themes",
+    "digests"
+  ],
+  "properties": {
+    "generated": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "slug",
+        "name"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "regions": {
+          "type": "object"
+        },
+        "brand": {
+          "type": "object"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "name"
+        ]
+      }
+    },
+    "themes": {
+      "type": "object"
+    },
+    "digests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "stats",
+          "items",
+          "quick"
+        ],
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "period": {
+            "type": "object"
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "headline": {
+            "type": "string"
+          },
+          "trend": {
+            "type": "string"
+          },
+          "stats": {
+            "type": "object"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "url",
+                "score",
+                "theme"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "original_title": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                },
+                "venue": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "authors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "score": {
+                  "type": "integer"
+                },
+                "theme": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "watch_authors": {
+                  "type": "array"
+                },
+                "watch_source": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "cited_by": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "quick": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "url"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "evolution": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "generated": {
+          "type": "string"
+        },
+        "overview": {
+          "type": "string"
+        },
+        "eras": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "milestones"
+            ],
+            "properties": {
+              "milestones": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "title",
+                    "url",
+                    "year"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "now": {
+          "type": "object"
+        }
+      }
+    },
+    "annual": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "year",
+          "partial",
+          "highlights",
+          "growth",
+          "geography"
+        ],
+        "properties": {
+          "year": {
+            "type": "integer"
+          },
+          "partial": {
+            "type": "boolean"
+          },
+          "overview": {
+            "type": "string"
+          },
+          "trends": {
+            "type": "array"
+          },
+          "innovation": {
+            "type": "string"
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "url",
+                "score",
+                "theme"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "original_title": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                },
+                "venue": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "authors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "score": {
+                  "type": "integer"
+                },
+                "theme": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "watch_authors": {
+                  "type": "array"
+                },
+                "watch_source": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "cited_by": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "growth": {
+            "type": "array"
+          },
+          "geography": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "watchlist": {
+      "type": "object"
+    }
+  }
+}

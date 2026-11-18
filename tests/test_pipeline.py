@@ -302,6 +302,140 @@ class LibraryTests(unittest.TestCase):
 
 
 
+def _check(value, schema, path="$"):
+    """Minimal JSON Schema check (type, required, properties, items, additionalProperties, enum): enough for our contracts."""
+    errors = []
+    types = schema.get("type")
+    if types:
+        types = types if isinstance(types, list) else [types]
+        py = {"object": dict, "array": list, "string": str, "boolean": bool, "null": type(None)}
+        ok = any((t == "integer" and isinstance(value, int) and not isinstance(value, bool))
+                 or (t == "number" and isinstance(value, (int, float)) and not isinstance(value, bool))
+                 or (t in py and isinstance(value, py[t])) for t in types)
+        if not ok:
+            return [f"{path}: esperado {types}, veio {type(value).__name__}"]
+    if "enum" in schema and value not in schema["enum"]:
+        errors.append(f"{path}: {value!r} fora de {schema['enum']}")
+    if isinstance(value, dict):
+        errors += [f"{path}: falta {k}" for k in schema.get("required", []) if k not in value]
+        props = schema.get("properties", {})
+        for k, v in value.items():
+            sub = props.get(k) or (schema.get("additionalProperties") if isinstance(schema.get("additionalProperties"), dict) else None)
+            if sub:
+                errors += _check(v, sub, f"{path}.{k}")
+    if isinstance(value, list) and "items" in schema:
+        for i, v in enumerate(value):
+            errors += _check(v, schema["items"], f"{path}[{i}]")
+    return errors
+
+
+class SchemaTests(unittest.TestCase):
+    """What the pipeline publishes must match schemas/: the contract readers (site, server/, adapters) rely on."""
+
+    def test_published_files_match_schemas(self):
+        from pawatch import DIST, ROOT
+        from pawatch.render import render_all
+        render_all()
+        schemas = {n: json.loads((ROOT / "schemas" / f"{n}.schema.json").read_text(encoding="utf-8")) for n in ("data", "library", "search")}
+        topics = [p for p in DIST.iterdir() if (p / "data.json").exists()]
+        self.assertTrue(topics)
+        for tdir in topics:
+            for name, schema in schemas.items():
+                errs = _check(json.loads((tdir / f"{name}.json").read_text(encoding="utf-8")), schema)
+                self.assertEqual(errs[:5], [], f"{tdir.name}/{name}.json")
+
+    def test_checker_catches_violations(self):
+        schema = {"type": "object", "required": ["a"], "properties": {"a": {"type": "integer"}, "b": {"type": "array", "items": {"type": "string"}}}}
+        self.assertEqual(_check({"a": 1, "b": ["x"]}, schema), [])
+        self.assertEqual(len(_check({"b": [1]}, schema)), 2)
+
+
+class SearchIndexTests(unittest.TestCase):
+    """The Python index (src/pawatch/searchindex.py) must match the JS core (server/archive.js)."""
+
+    def _node(self, script, payload):
+        import shutil
+        import subprocess
+        import tempfile
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node não instalado")
+        root = Path(__file__).resolve().parents[1]
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+            json.dump(payload, f)
+        major = int(subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip().lstrip("v").split(".")[0])
+        flags = ["--experimental-detect-module"] if major < 23 else []
+        code = ("import fs from 'fs'; import * as A from '" + (root / "server" / "archive.js").as_uri() + "';"
+                "const P = JSON.parse(fs.readFileSync(" + json.dumps(f.name) + "));" + script)
+        r = subprocess.run([node, *flags, "--input-type=module", "-e", code], capture_output=True, text=True, timeout=60)
+        self.assertEqual(r.returncode, 0, r.stderr[-2000:])
+        return json.loads(r.stdout)
+
+    FIXTURE = {
+        "themes": {"cards": "💳 Cartões", "mules": "🕸️ Mulas"},
+        "digests": [{"date": "2026-11-17", "trend": "Golpes via Pix e contas laranja crescem.",
+                     "items": [{"title": "Detecção de Contas Laranjas com grafos", "url": "u1", "venue": "KDD",
+                                "summary": "Money mules, GNNs; ação rápida.", "theme": "mules", "authors": ["Ana Ç. Lima"]}],
+                     "quick": [{"title": "Card fraud", "url": "u2", "note": "cartões"}]}],
+        "evolution": {"generated": "2026-11-01", "eras": [{"title": "ML", "summary": "s", "label": "x", "milestones": [
+            {"title": "Credit card fraud detection", "url": "u3", "year": 2015, "why": "Concept drift", "theme": "cards"}]}],
+            "now": {"summary": "Agora grafos.", "open_questions": ["Quem paga?"]}},
+        "annual": {"2026": {"partial": True, "overview": "Mulas +224%.", "innovation": "Academia 77%.",
+                            "trends": [{"title": "Grafos", "text": "Mais grafos."}],
+                            "highlights": [{"title": "Fed AML", "url": "u4", "date": "2026-03-01T00:00", "why": "lavagem", "theme": "mules"}]}},
+    }
+    LIB = [{"title": "dup", "url": "u1", "abstract": "x"}, {"title": "Synthetic identities", "url": "u5", "abstract": "KYC onboarding fraud"}]
+
+    def test_tokens_and_docs_match_js(self):
+        from pawatch.searchindex import build_docs, tokens
+        samples = ["Detecção de Contas Laranjas", "AÇÃO rápida, money-mules e GNNs!", "the of and Pix São Paulo"]
+        js = self._node("console.log(JSON.stringify({t: P.s.map(A.tokens), d: A.corpus(P.data, P.lib)}))",
+                        {"s": samples, "data": self.FIXTURE, "lib": self.LIB})
+        self.assertEqual(js["t"], [tokens(s) for s in samples])
+        py = [{k: d.get(k) for k in ("kind", "title", "url", "when", "text")} for d in build_docs(self.FIXTURE, self.LIB)]
+        self.assertEqual([{k: d.get(k) for k in ("kind", "title", "url", "when", "text")} for d in js["d"]], py)
+
+    def test_index_ranking_matches_js_bm25(self):
+        from pawatch.searchindex import build_index
+        idx = build_index(self.FIXTURE, self.LIB)
+        q = ["contas laranja money mule", "fraude cartão card", "onboarding kyc"]
+        js = self._node("console.log(JSON.stringify(P.q.map((x) => [A.rank(A.corpus(P.data, P.lib), [x]).map((d) => d.title),"
+                        " A.rankIndex(P.idx, [x]).map((d) => d.title)])))",
+                        {"q": q, "data": self.FIXTURE, "lib": self.LIB, "idx": idx})
+        for (full, fast), query in zip(js, q):
+            self.assertTrue(full, query)
+            self.assertEqual(full, fast, query)
+
+
+class ApiTokenTests(unittest.TestCase):
+    def test_cli_token_matches_server_auth(self):
+        import io
+        import os
+        import shutil
+        import subprocess
+        from contextlib import redirect_stdout
+        from types import SimpleNamespace
+        from pawatch.__main__ import cmd_api_token
+        os.environ["SITE_PASSWORD"] = "senha-x"
+        try:
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                self.assertEqual(cmd_api_token(SimpleNamespace(name="claude")), 0)
+        finally:
+            del os.environ["SITE_PASSWORD"]
+        py = buf.getvalue().strip()
+        self.assertRegex(py, r"^paw_claude_[0-9a-f]{32}$")
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node não instalado")
+        root = Path(__file__).resolve().parents[1]
+        major = int(subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip().lstrip("v").split(".")[0])
+        flags = ["--experimental-detect-module"] if major < 23 else []
+        code = f"import {{ makeToken }} from '{(root / 'server' / 'auth.js').as_uri()}'; console.log(await makeToken('senha-x', 'claude'));"
+        js = subprocess.run([node, *flags, "--input-type=module", "-e", code], capture_output=True, text=True, timeout=60)
+        self.assertEqual(js.stdout.strip(), py, js.stderr[-500:])
+
+
 class ServerJsTests(unittest.TestCase):
     def test_node_suite(self):
         """The serving core (server/) and /api/ask adapter are JS; run their node:test suite when node exists."""

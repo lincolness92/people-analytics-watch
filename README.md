@@ -131,6 +131,30 @@ Quatro camadas; a regra é que a lógica fica no núcleo e cada protocolo é um 
 o empacotador segue os imports. Testes do núcleo e do adaptador: `node --test tests/js/*.test.mjs` (rodam também
 dentro de `python -m unittest`, quando há node).
 
+## Integrações: REST v1, MCP e A2A
+
+Três portas de entrada para scripts e outros agentes, todas sobre o mesmo catálogo de ferramentas
+(`server/tools.js`): `list_topics`, `search_archive`, `list_digests`, `get_digest`, `get_evolution`,
+`get_annual_review`, `get_paper` e `ask_archive` (o agente da aba Pergunte; limite de 40 por cliente por dia).
+
+- **Token**: cada cliente tem um token nomeado, derivado da senha do site (HMAC; nenhum secret novo). Com o
+  login do site feito, abra `/__api-token?name=<cliente>` (ex.: `claude-desktop`); ou rode
+  `SITE_PASSWORD=... python -m pawatch api-token <cliente>`. Revogar: nome em `REVOKED` (`server/auth.js`) ou
+  na variável `API_REVOKED` do Pages; trocar a senha do site revoga todos.
+- **REST v1** (`functions/api/v1/[[path]].js`): `GET /api/v1/topics`, `/topics/<tema>/search?q=...`,
+  `/digests`, `/digests/latest|AAAA-MM-DD`, `/evolution`, `/annual[/<ano>]`, `/paper?url=...`,
+  `POST /topics/<tema>/ask {"question": "..."}`, `GET /api/v1/tools`. Header `Authorization: Bearer <token>`.
+- **MCP** (`functions/mcp.js`): Streamable HTTP em `POST /mcp`, sem estado, respostas JSON. Ex.:
+  `claude mcp add --transport http research-watch https://<site>/mcp --header "Authorization: Bearer <token>"`.
+- **A2A** (`server/a2a.js`, `functions/a2a.js`): agent card público em `/.well-known/agent-card.json`;
+  `message/send` em `POST /a2a`, com o tema em `message.metadata.topic`; responde com o texto e uma parte
+  `data` com as fontes.
+- O site continua atrás da senha; só essas rotas usam token (`functions/_middleware.js`).
+
+Contratos dos arquivos publicados: `schemas/data.schema.json`, `library.schema.json` e `search.schema.json`
+(testados contra o que o pipeline gera). A busca usa o índice pré-calculado `<tema>/search.json`
+(`src/pawatch/searchindex.py`), com os mesmos resultados do BM25 antigo e 2–5× mais rápido.
+
 ## Pergunte (caixinha de IA)
 
 Aba "Pergunte": `functions/api/ask.js` responde perguntas sobre o tema usando só o arquivo dele (papers dos

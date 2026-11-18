@@ -199,6 +199,20 @@ def cmd_annual(args):
     return 0 if ok else 1
 
 
+def cmd_api_token(args):
+    """Same derivation as server/auth.js: HMAC-SHA256(key="paw-api-v1:"+SITE_PASSWORD, msg=name)."""
+    import getpass
+    import hashlib
+    import hmac
+    if not re.fullmatch(r"[a-z0-9-]{1,32}", args.name):
+        log("nome inválido: use a-z, 0-9 e hífen (até 32)")
+        return 1
+    password = os.environ.get("SITE_PASSWORD") or getpass.getpass("SITE_PASSWORD: ")
+    digest = hmac.new(f"paw-api-v1:{password}".encode(), args.name.encode(), hashlib.sha256).hexdigest()
+    print(f"paw_{args.name}_{digest[:32]}")
+    return 0
+
+
 def cmd_feedback(_args):
     from .feedback import run
     return run(log=log)
@@ -239,6 +253,9 @@ def main():
     an.add_argument("--topic", help="slug do tema (padrão: todos)")
     an.add_argument("--year", nargs="*", help="anos, ex.: 2025 2026")
     an.set_defaults(fn=cmd_annual)
+    tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
+    tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
+    tk.set_defaults(fn=cmd_api_token)
     t = sub.add_parser("new-topic", help="monta o rascunho de um tema novo em topics/<slug>/")
     t.add_argument("name", help='nome do tema, ex.: "fraude bancária"')
     t.add_argument("--slug", help="pasta em topics/ (padrão: derivado do nome)")

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library.schema.json",
+  "title": "Biblioteca de papers triados (dist/<tema>/library.json)",
+  "description": "Todo paper com nota >= 5 na triagem, com o resumo original (src/pawatch/library.py). Lido só pelo servidor.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "key",
+      "title",
+      "url",
+      "score",
+      "theme",
+      "origin",
+      "added"
+    ],
+    "properties": {
+      "key": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "venue": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "authors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "abstract": {
+        "type": "string"
+      },
+      "score": {
+        "type": "integer"
+      },
+      "theme": {
+        "type": "string"
+      },
+      "region": {
+        "type": "string"
+      },
+      "watch": {
+        "type": "array"
+      },
+      "origin": {
+        "type": "string"
+      },
+      "added": {
+        "type": "string"
+      }
+    }
+  }
+}

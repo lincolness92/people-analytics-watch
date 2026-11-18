@@ -51,8 +51,11 @@ test("query helpers", () => {
   assert.equal(getDigest(archive, "2026-11-16").date, "2026-11-16");
   assert.equal(getDigest(archive, "2000-01-01"), null);
   assert.equal(getAnnual(archive, 2026).overview, "Mulas cresceram +224%.");
-  assert.deepEqual(getPaper(archive, "https://doi.org/1").appearances.map((a) => a.in), ["digest 2026-11-17", "biblioteca"]);
-  assert.equal(getPaper(archive, "https://nope"), null);
+});
+
+test("getPaper finds every appearance of a paper", async () => {
+  assert.deepEqual((await getPaper(archive, "https://doi.org/1")).appearances.map((a) => a.in), ["digest 2026-11-17", "biblioteca"]);
+  assert.equal(await getPaper(archive, "https://nope"), null);
 });
 
 test("loadArchive validates the slug and tolerates a missing library", async () => {
