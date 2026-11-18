@@ -19,7 +19,7 @@ async function tracedLLM(tracer, parent, name, llm, messages, maxTokens, opts) {
         "llm.output_messages.0.message.content": r.text,
         "llm.token_count.prompt": r.usage?.prompt_tokens, "llm.token_count.completion": r.usage?.completion_tokens,
         "llm.token_count.total": r.usage?.total_tokens, "llm.fallbacks": (r.attempts || []).filter((a) => !a.ok).length,
-        "llm.cost.total": r.cost, "llm.provider.route": String(r.model).startsWith("deepseek:") ? "deepseek" : "huggingface",
+        "llm.cost.total": r.cost, "llm.provider.route": String(r.model).startsWith("deepseek:") ? "deepseek" : `huggingface:${String(r.model).split(":")[1] || "auto"}`,
         "llm.attempts": JSON.stringify(r.attempts || []) });
       return r;
     } catch (e) {

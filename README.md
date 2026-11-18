@@ -88,7 +88,7 @@ python3 -m http.server -d dist 8000   # ver o site local em http://localhost:800
 | `CLOUDFLARE_ACCOUNT_ID` | secret | p/ site | ID da conta Cloudflare |
 | `DISCORD_WEBHOOK_URL` | secret | não | entrega do digest no Discord |
 | `PAW_MODEL` | variable | não | modelo(s) HF, separados por vírgula (padrão: `deepseek-ai/DeepSeek-V4.1-Flash`, com fallback para Qwen3.5-122B e gpt-oss-120b) |
-| `DEEPSEEK_API_KEY` | secret | não | plataforma da DeepSeek: entra como último recurso quando a HF falha; `PAW_MODEL=deepseek:deepseek-flash,...` a põe na frente. Local: `~/.config/pawatch/deepseek.env` |
+| `DEEPSEEK_API_KEY` | secret | não | plataforma da DeepSeek: entra na comparação de preço com os provedores da HF. Local: `~/.config/pawatch/deepseek.env` |
 | `SITE_PASSWORD` | secret | p/ site | senha única do site; o workflow copia para o Pages a cada deploy. Sem ela o site fica fechado |
 | `CF_PAGES_PROJECT` | variable | não | nome do projeto no Pages (padrão `people-analytics-watch`) |
 
@@ -253,13 +253,27 @@ com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por te
   mais relevantes para uma pergunta) e `list_repos` (para um cliente com terminal, como o Claude Code, clonar e
   ler a implementação; o agente do site, que roda no Cloudflare, lê o README já baixado).
 
-## Custos de LLM
+## Custos de LLM: rota escolhida por preço
 
-Cada chamada registra tokens e custo: a HF informa o custo (`usage.cost`; hoje ela repassa o DeepSeek ao OpenRouter
-por ~US$ 0,10/0,60 por 1M tokens de entrada/saída); na DeepSeek direta o custo é calculado pela tabela oficial
-(metade fora do pico — pico: 01:00–04:00 e 06:00–10:00 UTC, seg–sex; entrada em cache ~50× mais barata). O total
-aparece em `stats.tokens.cost_usd` do digest (e no site), da Evolução e da retrospectiva, e em `llm.cost.total` nos
-traces.
+Não há provedor principal nem reserva: antes de cada chamada, o cliente (`src/pawatch/llm.py` no pipeline,
+`server/llm.js` no site) compara o preço publicado de cada rota para o modelo e usa a mais barata naquele momento.
+
+- **Hugging Face** (`HF_TOKEN`): `GET /v1/models` traz, por modelo, cada provedor ativo com o preço por 1M tokens de
+  entrada e saída. A rota é `modelo:provedor`.
+- **DeepSeek direta** (`DEEPSEEK_API_KEY`): `GET /models` traz os nomes (`deepseek-flash` = DeepSeek-V4.1-Flash). A
+  API não informa preço; ele é lido da página oficial (`api-docs.deepseek.com/quick_start/pricing.md`), com o
+  horário de pico que ela publica.
+- **Estimativa:** o custo de cada rota é estimado pelo tamanho do prompt e pela saída esperada daquela chamada, na
+  hora atual (pico ou não). Ganha a menor estimativa. Se a rota falha, vai a próxima mais barata (até 4 por modelo)
+  e só depois o próximo modelo da lista.
+- **Filtros de qualidade:** provedor ativo, com suporte a JSON (no pipeline), uptime ≥ 97% no último dia e sem
+  quantização de 4 bits (`PAW_ALLOW_4BIT=1` libera).
+- **Tabela atualizada:** os preços são buscados uma vez por hora. Se uma fonte falhar, vale a tabela embutida.
+- **`PAW_MODEL`:** define a ordem de qualidade dos modelos. Uma entrada já com rota (`modelo:provedor` ou
+  `deepseek:deepseek-flash`) fixa a rota.
+- **Custo registrado:** cada chamada registra tokens e custo (a HF informa `usage.cost`; na DeepSeek o custo vem da
+  tabela). O total aparece em `stats.tokens.cost_usd` do digest (e no site), da Evolução e da retrospectiva, e em
+  `llm.cost.total` nos traces. O log da execução mostra o ranking de rotas.
 
 Horários da DeepSeek direta (preço cheio no pico, metade fora dele):
 
@@ -268,12 +282,11 @@ Horários da DeepSeek direta (preço cheio no pico, metade fora dele):
 | Pico (seg–sex) | 01:00–04:00 e 06:00–10:00 | 22:00–01:00 (dom–qui à noite) e 03:00–07:00 (seg–sex) |
 | Mais barato | todo o resto, e o fim de semana inteiro | 07:00–22:00 nos dias úteis, e o fim de semana inteiro |
 
-Os agendamentos já rodam no horário barato: digest diário às 11:30 UTC (08:30 BRT) e Evolução/retrospectiva no
-dia 1 às 13:00 UTC (10:00 BRT). Disparos manuais podem ser feitos a qualquer hora. Fora do pico a DeepSeek direta
-custa US$ 0,15 por 1M tokens de entrada e US$ 0,60 por 1M de saída, contra US$ 0,10 e US$ 0,60 da HF a qualquer
-hora; por isso a HF continua na frente. Gasto típico: ~US$ 0,05/dia de
-digest para 3 temas (~US$ 1,40/mês) + centavos por mês de Evolução, retrospectivas e perguntas. A DeepSeek não tem
-API de batch; batch em outros provedores (Together, Fireworks, ~50%) só compensa com muito mais volume.
+Os agendamentos rodam no horário barato: digest diário às 11:30 UTC (08:30 BRT), Evolução e retrospectiva no dia 1
+às 13:00 UTC (10:00 BRT). Disparos manuais funcionam a qualquer hora, sempre pela rota mais barata do momento.
+Em 18/11/2026, para o DeepSeek-V4.1-Flash, os provedores mais baratos na HF ficavam em US$ 0,10–0,14 por 1M de
+entrada e US$ 0,42–0,60 de saída; a DeepSeek direta fora do pico cobrava 0,15/0,60, e no pico 0,30/1,20. Ela ganha
+quando os provedores da HF ficam mais caros ou falham. A DeepSeek não tem API de batch.
 
 ## Observabilidade (traces do agente)
 

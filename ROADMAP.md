@@ -53,11 +53,17 @@ como anotações dos spans; avaliações automáticas no Phoenix (relevância da
 traces do pipeline em Python (triagem, redação) com o mesmo formato.
 
 ## Custo de LLM (18/11/2026)
-✅ Custo por chamada registrado (digest, Evolução, retrospectiva, traces); DeepSeek direta como alternativa.
-Avaliado: desconto fora do pico da DeepSeek não reduz o custo atual (a HF via OpenRouter já cobra o equivalente a
-qualquer hora) e a DeepSeek não tem batch. Reavaliar se o volume crescer (muitos temas, triagem da biblioteca,
-resumo de textos completos): então agendar os trabalhos pesados fora do pico na DeepSeek direta (cache) ou usar
-batch (Together/Fireworks). Para o Actions usar a DeepSeek: secret DEEPSEEK_API_KEY + passar no `env` do workflow.
+✅ Custo por chamada registrado (digest, Evolução, retrospectiva, traces).
+✅ Rota escolhida por preço a cada chamada: provedores da HF (`/v1/models`) e DeepSeek direta (página de preços, pico e
+fora do pico).
+
+Para o Actions incluir a DeepSeek na comparação, falta o secret `DEEPSEEK_API_KEY` e passá-lo no `env` do workflow.
+No site, falta o secret no Pages.
+
+Próximos passos possíveis:
+- Contar o cache de entrada da DeepSeek (prompts de sistema repetidos na triagem) na estimativa.
+- Comparar entre modelos diferentes, não só entre rotas do mesmo modelo, com uma nota de qualidade por modelo.
+- Batch (Together, Fireworks) se o volume crescer.
 
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 

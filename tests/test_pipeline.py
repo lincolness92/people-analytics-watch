@@ -508,7 +508,7 @@ class FulltextTests(unittest.TestCase):
 class LLMProviderTests(unittest.TestCase):
     def setUp(self):
         import os
-        self.env = {k: os.environ.get(k) for k in ("PAW_MODEL", "DEEPSEEK_API_KEY", "HF_TOKEN")}
+        self.env = {k: os.environ.get(k) for k in ("PAW_MODEL", "DEEPSEEK_API_KEY", "HF_TOKEN", "PAW_ALLOW_4BIT")}
 
     def tearDown(self):
         import os
@@ -532,35 +532,81 @@ class LLMProviderTests(unittest.TestCase):
         cached = {"prompt_tokens": 1_000_000, "prompt_cache_hit_tokens": 1_000_000, "prompt_cache_miss_tokens": 0, "completion_tokens": 0}
         self.assertAlmostEqual(deepseek_cost("deepseek-flash", cached, utc(2026, 11, 18, 12, 0)), 0.003)
 
-    def test_model_order_and_fallback_with_costs(self):
+    PRICING_MD = """| MODEL | MODEL | MODEL | deepseek-flash(1) | deepseek-v4-pro |
+| --- | --- | --- | --- | --- |
+| PRICING(2) | 1M INPUT TOKENS / (CACHE HIT) | OFF-PEAK | $0.003 | $0.022 |
+| PRICING(2) | 1M INPUT TOKENS / (CACHE HIT) | PEAK | $0.006 | $0.044 |
+| PRICING(2) | 1M INPUT TOKENS / (CACHE MISS) | OFF-PEAK | $0.15 | $0.66 |
+| PRICING(2) | 1M INPUT TOKENS / (CACHE MISS) | PEAK | $0.3 | $1.32 |
+| PRICING(2) | 1M OUTPUT TOKENS | OFF-PEAK | $0.6 | $1.98 |
+| PRICING(2) | 1M OUTPUT TOKENS | PEAK | $1.2 | $3.96 |
+
+(2) Off-peak rates are half of the peak rates. Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday.
+"""
+
+    def book(self):
+        from pawatch import llm as L
+        hf = L.parse_hf_models({"data": [{"id": "x/Flash", "providers": [
+            {"provider": "cheap4bit", "status": "live", "pricing": {"input": 0.01, "output": 0.1}, "quantization": "mxfp4"},
+            {"provider": "nojson", "status": "live", "pricing": {"input": 0.02, "output": 0.2}, "supports_structured_output": False},
+            {"provider": "flaky", "status": "live", "pricing": {"input": 0.03, "output": 0.3}, "uptime_last_day_percent": 80},
+            {"provider": "down", "status": "staging", "pricing": {"input": 0.01, "output": 0.1}},
+            {"provider": "mid", "status": "live", "pricing": {"input": 0.2, "output": 0.8}, "quantization": "fp8"},
+            {"provider": "dear", "status": "live", "pricing": {"input": 0.5, "output": 2.0}}]}]}, ["x/Flash"])
+        prices, peak = L.parse_deepseek_pricing(self.PRICING_MD)
+        return {"hf": hf, "ds_models": {"x/Flash": "deepseek-flash"}, "ds_prices": prices, "peak_utc": peak, "sources": {}}
+
+    def test_pricing_page_and_ranking_by_hour(self):
+        from datetime import datetime, timezone
+        from pawatch import llm as L
+        prices, peak = L.parse_deepseek_pricing(self.PRICING_MD)
+        self.assertEqual(prices["deepseek-flash"], {"peak": (0.006, 0.3, 1.2), "off": (0.003, 0.15, 0.6)})
+        self.assertEqual(prices["deepseek-v4-pro"]["off"], (0.022, 0.66, 1.98))
+        self.assertEqual(peak, ((1, 4), (6, 10)))
+        book = self.book()
+        off = datetime(2026, 11, 18, 12, 0, tzinfo=timezone.utc)
+        on = datetime(2026, 11, 18, 2, 0, tzinfo=timezone.utc)
+        # off-peak DeepSeek (0.15/0.6) beats "mid" (0.2/0.8); at peak (0.3/1.2) it falls behind it
+        self.assertEqual([r for r, _, _ in L.rank_routes(book, "x/Flash", 10000, 1000, when=off)], ["deepseek:deepseek-flash", "x/Flash:mid", "x/Flash:dear"])
+        self.assertEqual([r for r, _, _ in L.rank_routes(book, "x/Flash", 10000, 1000, when=on)], ["x/Flash:mid", "deepseek:deepseek-flash", "x/Flash:dear"])
+        # 4-bit, no JSON support, low uptime and non-live providers are left out (4-bit allowed on request)
+        os = __import__("os")
+        os.environ["PAW_ALLOW_4BIT"] = "1"
+        try:
+            self.assertEqual(L.rank_routes(book, "x/Flash", 10000, 1000, when=on)[0][0], "x/Flash:cheap4bit")
+        finally:
+            os.environ.pop("PAW_ALLOW_4BIT")
+        self.assertEqual(L.rank_routes(book, "x/Flash", 10000, 1000, json_mode=False, when=on)[0][0], "x/Flash:nojson")
+
+    def test_cheapest_route_first_then_next_on_failure(self):
         import os
         from pawatch import llm as L
-        os.environ.pop("PAW_MODEL", None)
+        os.environ["PAW_MODEL"] = "x/Flash,deepseek:deepseek-v4-pro"
         os.environ["HF_TOKEN"], os.environ["DEEPSEEK_API_KEY"] = "hf", "ds"
-        self.assertEqual(L.models()[-1], "deepseek:deepseek-flash")
-        os.environ["PAW_MODEL"] = "deepseek:deepseek-flash,deepseek-ai/DeepSeek-V4.1-Flash"
-        self.assertEqual(L.models(), ["deepseek:deepseek-flash", "deepseek-ai/DeepSeek-V4.1-Flash"])
-        os.environ["PAW_MODEL"] = "deepseek-ai/DeepSeek-V4.1-Flash"
+        book = self.book()
         calls = []
 
         def fake(url, body, headers=None, **kw):
-            calls.append((url, body["model"], headers["Authorization"]))
-            if "huggingface" in url:  # HF answers but with broken JSON (billed anyway)
+            calls.append((url.split("/")[2], body["model"], headers["Authorization"]))
+            if body["model"] == "x/Flash:mid":  # cheapest at this hour: answers with broken JSON (billed anyway)
                 return {"choices": [{"message": {"content": "não é json"}}], "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.001}}
             return {"choices": [{"message": {"content": '{"ok": 1}'}}],
                     "usage": {"prompt_tokens": 100, "prompt_cache_miss_tokens": 100, "completion_tokens": 50}}
-        orig = L.post_json
-        L.post_json = fake
+        orig_post, orig_book, orig_peak = L.post_json, L.price_book, L.deepseek_peak
+        L.post_json, L.price_book = fake, (lambda *a, **k: book)
+        L.deepseek_peak = lambda when=None, windows=None: True  # peak: mid (0.2/0.8) < DeepSeek (0.3/1.2) < dear
         try:
             llm = L.LLM()
+            self.assertEqual([r for r, _ in llm.plan(10000, 1000)],
+                             ["x/Flash:mid", "deepseek:deepseek-flash", "x/Flash:dear", "deepseek:deepseek-v4-pro"])
             self.assertEqual(llm.json("s", "u"), {"ok": 1})
         finally:
-            L.post_json = orig
-        self.assertEqual([c[0].split("/")[2] for c in calls], ["router.huggingface.co", "router.huggingface.co", "api.deepseek.com"])
-        self.assertEqual(calls[-1][1:], ("deepseek-flash", "Bearer ds"))
+            L.post_json, L.price_book, L.deepseek_peak = orig_post, orig_book, orig_peak
+        self.assertEqual(calls, [("router.huggingface.co", "x/Flash:mid", "Bearer hf"), ("api.deepseek.com", "deepseek-flash", "Bearer ds")])
         self.assertEqual(llm.used_model, "deepseek:deepseek-flash")
-        self.assertEqual((llm.usage["calls"], llm.usage["failures"], llm.usage["prompt_tokens"]), (3, 2, 120))
-        self.assertGreater(llm.usage["cost_usd"], 0.002)
+        self.assertEqual(llm.routes, {"deepseek:deepseek-flash": 1})
+        self.assertEqual((llm.usage["calls"], llm.usage["failures"], llm.usage["prompt_tokens"]), (2, 1, 110))
+        self.assertGreater(llm.usage["cost_usd"], 0.001)
 
 
 class ServerJsTests(unittest.TestCase):

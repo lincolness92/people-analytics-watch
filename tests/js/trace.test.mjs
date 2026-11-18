@@ -92,25 +92,46 @@ test("the agent emits one span per step", async () => {
   assert.equal(j.spans.find((s) => s.name === "search").attrs["retrieval.documents.0.document.id"], "u1");
 });
 
-test("LLM client: DeepSeek prices by window, model order, fallback with cost", async () => {
-  const { deepseekCost, deepseekPeak, makeLLM, modelList } = await import("../../server/llm.js");
-  assert.equal(deepseekPeak(new Date("2026-11-18T02:30:00Z")), true);
-  assert.equal(deepseekPeak(new Date("2026-11-18T11:30:00Z")), false);
-  assert.equal(deepseekPeak(new Date("2026-11-21T02:30:00Z")), false); // Saturday
+test("LLM client: routes ranked by published prices, cheapest first, next on failure", async () => {
+  const L = await import("../../server/llm.js");
+  assert.equal(L.deepseekPeak(new Date("2026-11-18T02:30:00Z")), true);
+  assert.equal(L.deepseekPeak(new Date("2026-11-18T11:30:00Z")), false);
+  assert.equal(L.deepseekPeak(new Date("2026-11-21T02:30:00Z")), false); // Saturday
+  const md = ["| MODEL | MODEL | deepseek-flash(1) |", "| --- | --- | --- |",
+    "| PRICING(2) | 1M INPUT TOKENS / (CACHE HIT) | OFF-PEAK | $0.003 |", "| PRICING(2) | 1M INPUT TOKENS / (CACHE HIT) | PEAK | $0.006 |",
+    "| PRICING(2) | 1M INPUT TOKENS / (CACHE MISS) | OFF-PEAK | $0.15 |", "| PRICING(2) | 1M INPUT TOKENS / (CACHE MISS) | PEAK | $0.3 |",
+    "| PRICING(2) | 1M OUTPUT TOKENS | OFF-PEAK | $0.6 |", "| PRICING(2) | 1M OUTPUT TOKENS | PEAK | $1.2 |",
+    "Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday."].join("\n");
+  const p = L.parseDeepseekPricing(md);
+  assert.deepEqual(p.prices["deepseek-flash"], { peak: [0.006, 0.3, 1.2], off: [0.003, 0.15, 0.6] });
+  assert.deepEqual(p.windows, [[1, 4], [6, 10]]);
   const u = { prompt_cache_hit_tokens: 0, prompt_cache_miss_tokens: 1e6, completion_tokens: 1e6 };
-  assert.equal(deepseekCost("deepseek-flash", u, new Date("2026-11-18T12:00:00Z")).toFixed(2), "0.75");
-  assert.deepEqual(modelList({ DEEPSEEK_API_KEY: "k" }).at(-1), "deepseek:deepseek-flash");
-  assert.deepEqual(modelList({}).includes("deepseek:deepseek-flash"), false);
+  assert.equal(L.deepseekCost("deepseek-flash", u, new Date("2026-11-18T12:00:00Z"), p.prices, p.windows).toFixed(2), "0.75");
+  const hfModels = { data: [{ id: "x/Flash", providers: [
+    { provider: "mid", status: "live", pricing: { input: 0.2, output: 0.8 } },
+    { provider: "tiny4", status: "live", pricing: { input: 0.01, output: 0.1 }, quantization: "fp4" },
+    { provider: "dear", status: "live", pricing: { input: 0.5, output: 2 } }] }] };
+  const book = { hf: L.parseHfModels(hfModels, ["x/Flash"]), dsModels: { "x/Flash": "deepseek-flash" }, dsPrices: p.prices, peak: p.windows };
+  assert.deepEqual(L.rankRoutes(book, "x/Flash", 1e4, 1e3, {}, new Date("2026-11-18T12:00:00Z")).map((r) => r.route),
+    ["deepseek:deepseek-flash", "x/Flash:mid", "x/Flash:dear"]);   // off-peak DeepSeek is cheapest
+  assert.deepEqual(L.rankRoutes(book, "x/Flash", 1e4, 1e3, {}, new Date("2026-11-18T02:00:00Z")).map((r) => r.route),
+    ["x/Flash:mid", "deepseek:deepseek-flash", "x/Flash:dear"]);   // at peak it is not
+  L._resetPriceBook();
   const seen = [];
-  const llm = makeLLM({ HF_TOKEN: "h", DEEPSEEK_API_KEY: "d", PAW_MODEL: "x/model" }, async (url, init) => {
-    seen.push([url, JSON.parse(init.body).model, init.headers.Authorization]);
-    if (url.includes("huggingface")) return new Response(JSON.stringify({ error: "down" }), { status: 503 });
-    return new Response(JSON.stringify({ choices: [{ message: { content: "ok" } }], usage: { prompt_tokens: 10, prompt_cache_miss_tokens: 10, completion_tokens: 5 } }));
+  const llm = L.makeLLM({ HF_TOKEN: "h", DEEPSEEK_API_KEY: "d", PAW_MODEL: "x/Flash" }, async (url, init = {}) => {
+    if (url.endsWith("/v1/models")) return new Response(JSON.stringify(hfModels));
+    if (url.endsWith("/models")) return new Response(JSON.stringify({ data: [{ id: "deepseek-flash", name: "Flash" }] }));
+    if (url.endsWith("pricing.md")) return new Response(md);
+    const model = JSON.parse(init.body).model;
+    seen.push([model, init.headers.Authorization]);
+    if (seen.length === 1) return new Response(JSON.stringify({ error: "down" }), { status: 503 });
+    return new Response(JSON.stringify({ choices: [{ message: { content: "ok" } }], usage: { prompt_tokens: 10, prompt_cache_miss_tokens: 10, completion_tokens: 5, cost: 0.0001 } }));
   });
   const r = await llm([{ role: "user", content: "oi" }], 50);
-  assert.equal(r.model, "deepseek:deepseek-flash");
-  assert.deepEqual(seen.map((s) => s[1]), ["x/model", "deepseek-flash"]);
-  assert.equal(seen[1][2], "Bearer d");
+  assert.equal(seen.length, 2);
+  assert.equal(r.model, seen[1][0]);
   assert.ok(r.cost > 0);
   assert.equal(r.attempts[0].ok, false);
+  assert.ok(!seen.some(([m]) => m.endsWith(":tiny4")));
+  L._resetPriceBook();
 });
