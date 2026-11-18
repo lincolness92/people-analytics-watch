@@ -301,6 +301,26 @@ class LibraryTests(unittest.TestCase):
             self.assertEqual(len(out[0]["abstract"]), library.EXPORT_ABSTRACT)
 
 
+
+class ServerJsTests(unittest.TestCase):
+    def test_node_suite(self):
+        """The serving core (server/) and /api/ask adapter are JS; run their node:test suite when node exists."""
+        import shutil
+        import subprocess
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node não instalado")
+        root = Path(__file__).resolve().parents[1]
+        files = sorted(str(f) for f in (root / "tests" / "js").glob("*.test.mjs"))
+        major = int(subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip().lstrip("v").split(".")[0])
+        if major < 20:
+            self.skipTest(f"node {major} é antigo demais para node:test com ESM")
+        # server/*.js use ESM syntax without a package.json "type": older node needs detection switched on
+        flags = ["--experimental-detect-module"] if major < 23 else []
+        r = subprocess.run([node, *flags, "--test", *files], cwd=root, capture_output=True, text=True, timeout=120)
+        self.assertEqual(r.returncode, 0, r.stdout[-3000:] + r.stderr[-2000:])
+
+
 if __name__ == "__main__":
     unittest.main()
 

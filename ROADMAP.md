@@ -31,6 +31,16 @@ governo, instituições, países). Ideias: comparar Brasil × mundo nos números
 - **Risco de crédito**: incluir IFRS 9 / perda esperada (IASB), Basileia (BCBS) e Bacen (Resolução
   CMN 4.966). `python -m pawatch new-topic "risco de crédito" --slug risco-credito`.
 
+## 6. Arquitetura para integrações (MCP, A2A, REST)
+Combinado em 18/11: núcleo de consulta único + adaptadores finos (ver README, "Arquitetura do lado do servidor").
+1. ✅ Núcleo extraído: `server/archive.js` (consultas), `server/agent.js` (agente), `server/llm.js` (provedor);
+   `functions/api/ask.js` virou adaptador. Testes em `tests/js/`.
+2. Schemas (JSON Schema) do `data.json` e do `library.json` + índice de busca pré-calculado no pipeline (tira o
+   BM25 do Worker, que tem limite de CPU por requisição).
+3. API REST `v1` só de leitura, com token (separado da senha do site), num `server/auth.js` comum.
+4. MCP (ferramentas = funções do núcleo) e A2A (agent card + endpoint que delega ao `agent.js`) quando houver um
+   cliente concreto para plugar.
+
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 
 **Situação**: a chave grátis do OpenAlex dá US$ 1/dia, e o uso normal cabe nela: digest ≈ US$ 0,02 por tema/dia;

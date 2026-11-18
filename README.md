@@ -112,6 +112,25 @@ garante o namespace, gera o `wrangler.toml` com o binding (não versionado) e ex
 `data/<tema>/feedback.json` (o voto mais recente de cada pessoa por item é o que vale) e as perguntas feitas
 à IA para `data/<tema>/questions.json`. No HTML offline o feedback fica escondido.
 
+## Arquitetura do lado do servidor
+
+Quatro camadas; a regra é que a lógica fica no núcleo e cada protocolo é um adaptador fino por cima dele:
+
+```
+1. Pipeline (Python, src/pawatch/)      coleta, triagem, digest, Evolução, retrospectiva, biblioteca
+2. Dados publicados (por tema)          dist/<tema>/data.json e library.json: o contrato entre as camadas
+3. Núcleo (JS, server/)                 archive.js: loadArchive, search, getDigest, getEvolution, getAnnual,
+                                        getPaper, listTopics (sem HTTP, sem LLM)
+                                        agent.js: o agente de perguntas, cliente do núcleo; o LLM é injetado
+                                        llm.js: cliente do provedor de LLM (só ele conhece a Hugging Face)
+4. Adaptadores (functions/)             api/ask.js (aba Pergunte). Futuros: REST v1, MCP, A2A — cada
+                                        ferramenta/endpoint chama uma função do núcleo
+```
+
+`server/` fica fora de `functions/` porque o Cloudflare Pages transforma cada arquivo de `functions/` em rota;
+o empacotador segue os imports. Testes do núcleo e do adaptador: `node --test tests/js/*.test.mjs` (rodam também
+dentro de `python -m unittest`, quando há node).
+
 ## Pergunte (caixinha de IA)
 
 Aba "Pergunte": `functions/api/ask.js` responde perguntas sobre o tema usando só o arquivo dele (papers dos
