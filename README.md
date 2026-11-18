@@ -259,7 +259,19 @@ Cada chamada registra tokens e custo: a HF informa o custo (`usage.cost`; hoje e
 por ~US$ 0,10/0,60 por 1M tokens de entrada/saída); na DeepSeek direta o custo é calculado pela tabela oficial
 (metade fora do pico — pico: 01:00–04:00 e 06:00–10:00 UTC, seg–sex; entrada em cache ~50× mais barata). O total
 aparece em `stats.tokens.cost_usd` do digest (e no site), da Evolução e da retrospectiva, e em `llm.cost.total` nos
-traces. Os agendamentos (11:30 UTC diário, 13:00 UTC dia 1) já caem fora do pico. Gasto típico: ~US$ 0,05/dia de
+traces.
+
+Horários da DeepSeek direta (preço cheio no pico, metade fora dele):
+
+| | UTC | Brasília (UTC−3) |
+|---|---|---|
+| Pico (seg–sex) | 01:00–04:00 e 06:00–10:00 | 22:00–01:00 (dom–qui à noite) e 03:00–07:00 (seg–sex) |
+| Mais barato | todo o resto, e o fim de semana inteiro | 07:00–22:00 nos dias úteis, e o fim de semana inteiro |
+
+Os agendamentos já rodam no horário barato: digest diário às 11:30 UTC (08:30 BRT) e Evolução/retrospectiva no
+dia 1 às 13:00 UTC (10:00 BRT). Disparos manuais podem ser feitos a qualquer hora. Fora do pico a DeepSeek direta
+custa US$ 0,15 por 1M tokens de entrada e US$ 0,60 por 1M de saída, contra US$ 0,10 e US$ 0,60 da HF a qualquer
+hora; por isso a HF continua na frente. Gasto típico: ~US$ 0,05/dia de
 digest para 3 temas (~US$ 1,40/mês) + centavos por mês de Evolução, retrospectivas e perguntas. A DeepSeek não tem
 API de batch; batch em outros provedores (Together, Fireworks, ~50%) só compensa com muito mais volume.
 
