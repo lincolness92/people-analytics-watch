@@ -72,7 +72,7 @@ test("agent answers from ranked sources and cites them", async () => {
   const calls = [];
   const llm = async (messages, maxTokens) => {
     calls.push(messages);
-    return maxTokens === 1000 ? { text: "money mule, contas laranja, graph, mule accounts, laranjas", model: "fake" } : { text: "Resposta [1].", model: "fake" };
+    return maxTokens === 300 ? { text: "money mule, contas laranja, graph, mule accounts, laranjas", model: "fake" } : { text: "Resposta [1].", model: "fake" };
   };
   const r = await ask({ archive, question: "Como detectar contas laranja?", llm });
   assert.equal(r.answer, "Resposta [1].");
@@ -88,7 +88,7 @@ test("agent ignores reasoning instead of terms, and adds hits from other topics"
     ["self-supervised", "foundation model", "pre-training", "transformer", "BERT"]);
   const other = { slug: "tecnologia-bancaria", name: "Bank Tech & AI Watch", library: [], index: null,
     data: { themes: {}, digests: [{ date: "2026-11-10", items: [{ title: "PRAGMA foundation model for banking events", url: "https://doi.org/9", summary: "self-supervised" }], quick: [] }] } };
-  const llm = async (m, max) => (max === 1000 ? { text: "Thinking...\nself-supervised, foundation model, pre-training, transformer, mule" } : { text: "ok", model: "f" });
+  const llm = async (m, max) => (max === 300 ? { text: "Thinking...\nself-supervised, foundation model, pre-training, transformer, mule" } : { text: "ok", model: "f" });
   const r = await ask({ archive, question: "modelos fundacionais auto supervisionados?", llm, others: [other] });
   const cross = r.sources.find((s) => s.url === "https://doi.org/9");
   assert.ok(cross, "hit from the other topic");
@@ -108,7 +108,7 @@ test("/api/ask adapter keeps the response contract", async () => {
   const realFetch = globalThis.fetch;
   globalThis.fetch = async (_url, init) => {
     const body = JSON.parse(init.body);
-    const text = body.max_tokens === 1000 ? "money mule, graph, mule account, laranja, fraud" : "Use grafos [1].";
+    const text = body.max_tokens === 300 ? "money mule, graph, mule account, laranja, fraud" : "Use grafos [1].";
     return new Response(JSON.stringify({ choices: [{ message: { content: text } }] }));
   };
   try {

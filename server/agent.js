@@ -17,7 +17,9 @@ const TERMS_SYSTEM = "Você gera termos de busca para um arquivo de papers acad�
   "linha de 8 a 20 termos/expressões separados por vírgula, em português E em inglês, sem raciocínio, sem explicação. " +
   "Traduza o jeito de falar da pergunta para o vocabulário da literatura: sinônimos técnicos, nomes de construtos e de " +
   "métodos, e nomes de modelos ou papers conhecidos do assunto (ex.: \"auto supervisionado com Transformer em transações\" → " +
-  "self-supervised, pre-training, foundation model, transaction foundation model, sequence model, BERT, GPT).";
+  "self-supervised, pre-training, foundation model, transaction foundation model, sequence model, BERT, GPT). Se a pergunta " +
+  "tiver um erro de digitação provável, inclua também a forma correta (ex.: \"modelos funcionais\" falando de IA → " +
+  "modelos fundacionais, foundation models).";
 
 /** The term list from the expansion reply, or [] when the model answered with something else (e.g. its reasoning). */
 export function parseTerms(text) {
@@ -77,8 +79,8 @@ export async function ask({ archive, question, history = [], llm, papers = null,
   try {
     const { text } = await llm([
       { role: "system", content: TERMS_SYSTEM },
-      { role: "user", content: `Tema do arquivo: ${name}.\nPergunta: ${question}${history.length ? `\nContexto anterior: ${history.map((h) => h.q).join(" | ")}` : ""}\n/no_think` },
-    ], 1000); // room for models that reason before answering; parseTerms keeps only the final list
+      { role: "user", content: `Tema do arquivo: ${name}.\nPergunta: ${question}${history.length ? `\nContexto anterior: ${history.map((h) => h.q).join(" | ")}` : ""}` },
+    ], 300, { reasoning: "none" }); // a mechanical step: no hidden reasoning (faster, nothing to leak)
     terms = terms.concat(parseTerms(text));
   } catch { /* fall back to the question's own words */ }
 

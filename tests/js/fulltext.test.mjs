@@ -56,7 +56,7 @@ test("agent adds full-text passages of the top papers to its sources", async () 
     data: { themes: {}, digests: [{ date: "2026-11-17", items: [{ title: "BloombergGPT finance LLM", url: "https://doi.org/10.48550/arxiv.2303.17564", summary: "LLM for finance" }], quick: [] }] } };
   let block = "";
   const llm = async (messages, max) => {
-    if (max === 1000) return { text: "financial tasks, sentiment, LLM finance, BloombergGPT, NER", model: "f" };
+    if (max === 300) return { text: "financial tasks, sentiment, LLM finance, BloombergGPT, NER", model: "f" };
     block = messages.at(-1).content;
     return { text: "Supera em tarefas financeiras [2].", model: "f" };
   };

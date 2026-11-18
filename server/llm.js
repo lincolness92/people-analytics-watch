@@ -10,14 +10,17 @@ export const DEFAULT_MODELS = ["deepseek-ai/DeepSeek-V4.1-Flash", "Qwen/Qwen3.5-
  */
 export function makeLLM(env, fetchImpl = fetch) {
   const models = (env.PAW_MODEL || "").split(",").map((m) => m.trim()).filter(Boolean);
-  return async function llm(messages, maxTokens) {
+  // opts.reasoning = "none" turns off the models' hidden reasoning (both default to it): ~1 s instead of 4–17 s,
+  // and no chance of the reasoning leaking into the reply. Worth it for short mechanical steps.
+  return async function llm(messages, maxTokens, opts = {}) {
     let last;
     for (const model of models.length ? models : DEFAULT_MODELS) {
       try {
         const r = await fetchImpl(ROUTER, {
           method: "POST",
           headers: { Authorization: `Bearer ${env.HF_TOKEN}`, "Content-Type": "application/json" },
-          body: JSON.stringify({ model, messages, max_tokens: maxTokens, temperature: 0.3 }),
+          body: JSON.stringify({ model, messages, max_tokens: maxTokens, temperature: 0.3,
+            ...(opts.reasoning ? { reasoning_effort: opts.reasoning } : {}) }),
         });
         const out = await r.json();
         const text = (out.choices?.[0]?.message?.content || "").replace(/<think>[\s\S]*?<\/think>/g, "").trim();
