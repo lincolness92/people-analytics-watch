@@ -5,13 +5,23 @@ import { loadArchive, loadOtherArchives, loadPapers } from "./archive.js";
 import { spendQuota } from "./auth.js";
 import { makeLLM } from "./llm.js";
 import { ToolError } from "./tools.js";
+import { exportTrace, Tracer } from "./trace.js";
 
-export function makeContext({ request, env, client }) {
+export function makeContext({ request, env, client, waitUntil = null, iface = "api" }) {
   const fetchAsset = (p) => env.ASSETS.fetch(new URL(p, request.url));
   const cache = new Map();
   let papers = null;
+  const tracer = new Tracer({ "deployment.environment": iface });
   return {
     client,
+    tracer,
+    traceAttrs: { "user.id": client, "interface": iface },
+    /** Ship the request's trace to the OTLP backend after the response (Pages waitUntil). */
+    flush() {
+      const job = exportTrace(env, tracer);
+      if (waitUntil) waitUntil(job);
+      return job;
+    },
     papers: () => (papers ||= loadPapers(fetchAsset)),
     others: (slug) => loadOtherArchives(fetchAsset, slug),
     async topics() {

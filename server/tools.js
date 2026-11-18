@@ -3,6 +3,7 @@
 
 import { DEFAULT_K, getAnnual, getDigest, getEvolution, getPaper, loadFulltext, loadRepos, paperKey, rank, rankChunks, search, TOPIC_RE } from "./archive.js";
 import { ask } from "./agent.js";
+import { KIND } from "./trace.js";
 
 const topicArg = { type: "string", description: "Slug do tema (ver list_topics), ex.: fraude-bancaria", pattern: TOPIC_RE.source };
 
@@ -125,7 +126,7 @@ export const TOOLS = [
       const over = await ctx.quota("ask", ASK_DAILY_LIMIT);
       if (over) throw new ToolError(over, 429);
       return ask({ archive: await ctx.archive(a.topic), question: a.question.slice(0, 600), llm: ctx.llm(), papers: await ctx.papers(),
-        others: ctx.others ? await ctx.others(a.topic) : [] });
+        others: ctx.others ? await ctx.others(a.topic) : [], tracer: ctx.tracer, parent: ctx.parentSpan, attrs: ctx.traceAttrs });
     },
   },
 ];
@@ -146,5 +147,12 @@ export async function callTool(name, args, ctx) {
     if (!ok) throw new ToolError(`parâmetro ${k} deve ser ${p.type}`);
     if (p.pattern && !new RegExp(p.pattern).test(v)) throw new ToolError(`parâmetro ${k} inválido`);
   }
-  return tool.run(a, ctx);
+  if (!ctx.tracer) return tool.run(a, ctx);
+  // one TOOL span per call; ask_archive nests its own agent spans under it
+  return ctx.tracer.span(`tool:${name}`, KIND.TOOL, { "tool.name": name, "tool.parameters": JSON.stringify(a), "input.value": JSON.stringify(a),
+    ...(ctx.traceAttrs || {}) }, null, async (s) => {
+    const out = await tool.run(a, { ...ctx, parentSpan: s });
+    s.set("output.value", JSON.stringify(out ?? null).slice(0, 4000));
+    return out;
+  });
 }

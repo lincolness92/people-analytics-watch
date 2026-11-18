@@ -124,7 +124,10 @@ test("/api/ask adapter keeps the response contract", async () => {
     assert.equal(ok.ok, true);
     assert.equal(ok.answer, "Use grafos [1].");
     assert.deepEqual(Object.keys(ok.sources[0]), ["n", "kind", "title", "url", "when"]);
-    assert.ok([...kv.keys()].some((k) => k.startsWith("ask:fraude-bancaria:")));
+    const rec = JSON.parse(kv.get([...kv.keys()].find((k) => k.startsWith("ask:fraude-bancaria:"))));
+    assert.equal(rec.answer, "Use grafos [1].");
+    assert.deepEqual(rec.trace.spans.map((x) => x.name), ["ask", "expand_terms", "search", "fulltext", "answer"]);
+    assert.equal(rec.trace.trace_id, rec.trace_id);
     assert.equal((await post({ topic: "../x", question: "pergunta válida" })).status, 400);
     assert.equal((await post({ topic: "nao-existe", question: "pergunta válida" })).status, 404);
   } finally {

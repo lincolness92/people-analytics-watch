@@ -46,6 +46,12 @@ Marcos e destaques com texto aberto em `data/papers/` (sem duplicar entre temas)
 repositórios catalogados; ferramentas `read_paper` e `list_repos`. Ideias: estender aos itens com nota ≥ 8 dos
 digests; ler também o código (árvore de arquivos e arquivos principais) no pipeline, para o agente do site.
 
+## ✅ Observabilidade (18/11/2026)
+Traces OpenTelemetry/OpenInference do agente e das ferramentas, guardados no KV e enviados em OTLP protobuf ao
+Phoenix. Próximos: criar o espaço no Phoenix Cloud e pôr as variáveis no Pages; mandar os 👍/👎 dos leitores
+como anotações dos spans; avaliações automáticas no Phoenix (relevância da busca, resposta fiel às fontes);
+traces do pipeline em Python (triagem, redação) com o mesmo formato.
+
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 
 **Situação**: a chave grátis do OpenAlex dá US$ 1/dia, e o uso normal cabe nela: digest ≈ US$ 0,02 por tema/dia;

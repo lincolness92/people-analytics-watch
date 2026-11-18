@@ -22,7 +22,7 @@ const reply = (body, status = 200) => new Response(body === null ? null : JSON.s
 const result = (id, r) => ({ jsonrpc: "2.0", id, result: r });
 const error = (id, code, message) => ({ jsonrpc: "2.0", id: id ?? null, error: { code, message } });
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, waitUntil }) {
   const auth = await checkBearer(request, env);
   if (!auth.ok) return new Response(JSON.stringify(error(null, -32001, auth.error)), {
     status: auth.status, headers: { ...CORS, "Content-Type": "application/json",
@@ -44,14 +44,17 @@ export async function onRequestPost({ request, env }) {
     case "tools/list":
       return reply(result(id, { tools: TOOLS.map(({ name, description, inputSchema }) => ({ name, description, inputSchema })) }));
     case "tools/call": {
+      const ctx = makeContext({ request, env, client: auth.client, waitUntil, iface: "mcp" });
       try {
-        const data = await callTool(params.name, params.arguments || {}, makeContext({ request, env, client: auth.client }));
+        const data = await callTool(params.name, params.arguments || {}, ctx);
         const structured = data !== null && typeof data === "object" && !Array.isArray(data) ? data : { result: data };
         return reply(result(id, { content: [{ type: "text", text: JSON.stringify(data ?? null) }], structuredContent: structured, isError: false }));
       } catch (e) {
         if (e instanceof ToolError && e.status === 404 && /ferramenta desconhecida/.test(e.message)) return reply(error(id, -32602, e.message));
         // tool failures are results the model can read and react to, not protocol errors
         return reply(result(id, { content: [{ type: "text", text: e.message }], isError: true }));
+      } finally {
+        ctx.flush();
       }
     }
     default:

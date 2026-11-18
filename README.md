@@ -252,6 +252,23 @@ com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por te
   mais relevantes para uma pergunta) e `list_repos` (para um cliente com terminal, como o Claude Code, clonar e
   ler a implementação; o agente do site, que roda no Cloudflare, lê o README já baixado).
 
+## Observabilidade (traces do agente)
+
+Cada pergunta (aba Pergunte, `ask_archive` no MCP/REST, A2A) e cada chamada de ferramenta vira um trace
+OpenTelemetry com as convenções **OpenInference** (`server/trace.js`), com um span por etapa:
+`ask` (AGENT) → `expand_terms` (LLM) → `search` (RETRIEVER, com os documentos e as notas BM25) → `fulltext`
+(RETRIEVER, trechos) → `answer` (LLM: mensagens, modelo, tokens, tentativas e quedas para o modelo reserva).
+
+- **Nunca se perde**: o trace completo vai junto do registro da pergunta no KV (`ask:*` → exportado todo dia
+  para `data/<tema>/questions.json`, com termos, fontes, resposta e spans).
+- **Backend OTLP** (Arize Phoenix por padrão; Langfuse e outros servem): envio em OTLP/HTTP **protobuf**, por um
+  codificador próprio sem dependências (o runtime do Cloudflare não roda o SDK do OTel), depois da resposta
+  (`waitUntil`). Variáveis do Pages (*Workers & Pages → people-analytics-watch → Settings → Variables and
+  Secrets*): `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` (ex.: `https://app.phoenix.arize.com/s/<espaço>/v1/traces`),
+  `OTEL_EXPORTER_OTLP_HEADERS` (ex.: `Authorization=Bearer <chave>` ou `api_key=<chave>`), opcionais
+  `PHOENIX_PROJECT_NAME` e `OTEL_EXPORTER_OTLP_PROTOCOL=http/json` (para backends que preferem JSON).
+- Testado contra o Phoenix 21 local: os 5 spans chegam com tipos, documentos, tokens e modelos.
+
 ## Ajustes comuns
 
 - **Ampliar ou estreitar o escopo**: edite `topics/<tema>/queries.json` (sintaxe booleana do OpenAlex).

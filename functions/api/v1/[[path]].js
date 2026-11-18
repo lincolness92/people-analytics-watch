@@ -45,7 +45,7 @@ function route(method, parts, url, body) {
   return null;
 }
 
-export async function onRequest({ request, env, params }) {
+export async function onRequest({ request, env, params, waitUntil }) {
   const auth = await checkBearer(request, env);
   if (!auth.ok) return json({ ok: false, error: auth.error }, auth.status);
   const url = new URL(request.url);
@@ -57,11 +57,14 @@ export async function onRequest({ request, env, params }) {
   const r = route(request.method, parts, url, body);
   if (!r) return json({ ok: false, error: "rota não encontrada (ver GET /api/v1/tools)" }, 404);
   if (r.static) return json({ ok: true, data: r.static });
+  const ctx = makeContext({ request, env, client: auth.client, waitUntil, iface: "rest" });
   try {
-    const data = await callTool(r.tool, r.args, makeContext({ request, env, client: auth.client }));
+    const data = await callTool(r.tool, r.args, ctx);
     if (data === null) return json({ ok: false, error: "não encontrado" }, 404);
     return json({ ok: true, data });
   } catch (e) {
     return json({ ok: false, error: e.message }, e instanceof ToolError ? e.status : 502);
+  } finally {
+    ctx.flush();
   }
 }

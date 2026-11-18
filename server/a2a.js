@@ -58,7 +58,7 @@ export async function handleRpc(msg, ctx) {
     const over = await ctx.quota("ask", ASK_DAILY_LIMIT);
     if (over) throw new ToolError(over, 429);
     const r = await ask({ archive: await ctx.archive(topic), question: text.slice(0, 600), llm: ctx.llm(), papers: await ctx.papers(),
-      others: ctx.others ? await ctx.others(topic) : [] });
+      others: ctx.others ? await ctx.others(topic) : [], tracer: ctx.tracer, attrs: { ...(ctx.traceAttrs || {}), "session.id": m.contextId || "" } });
     return {
       jsonrpc: "2.0", id,
       result: {
