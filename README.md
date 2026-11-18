@@ -144,8 +144,16 @@ Três portas de entrada para scripts e outros agentes, todas sobre o mesmo catá
 - **REST v1** (`functions/api/v1/[[path]].js`): `GET /api/v1/topics`, `/topics/<tema>/search?q=...`,
   `/digests`, `/digests/latest|AAAA-MM-DD`, `/evolution`, `/annual[/<ano>]`, `/paper?url=...`,
   `POST /topics/<tema>/ask {"question": "..."}`, `GET /api/v1/tools`. Header `Authorization: Bearer <token>`.
-- **MCP** (`functions/mcp.js`): Streamable HTTP em `POST /mcp`, sem estado, respostas JSON. Ex.:
-  `claude mcp add --transport http research-watch https://<site>/mcp --header "Authorization: Bearer <token>"`.
+- **MCP** (`functions/mcp.js`): Streamable HTTP em `POST /mcp`, sem estado, respostas JSON. Duas formas de auth:
+  - **OAuth 2.1** (`server/oauth.js`, `functions/oauth/`), para Claude.ai e qualquer cliente MCP com OAuth: basta
+    adicionar o conector com a URL `https://<site>/mcp`. O cliente descobre tudo pelo 401 (`WWW-Authenticate` →
+    `/.well-known/oauth-protected-resource` → `/.well-known/oauth-authorization-server`), registra-se sozinho
+    (`/oauth/register`), e a pessoa faz login com a senha do site e aprova numa tela de consentimento
+    (`/oauth/authorize`, PKCE S256). Token de acesso de 1 h, renovação por 30 dias, presos ao recurso `/mcp`.
+    Sem estado nem secret novo: tudo assinado com chave derivada da senha (trocá-la revoga tudo); o KV só
+    garante uso único do código. Revogar um cliente: `oauth-<nome>` (ex.: `oauth-claude`) em `API_REVOKED`.
+  - **Token nomeado** no header, para clientes que aceitam: `claude mcp add --transport http research-watch
+    https://<site>/mcp --header "Authorization: Bearer <token>"`.
 - **A2A** (`server/a2a.js`, `functions/a2a.js`): agent card público em `/.well-known/agent-card.json`;
   `message/send` em `POST /a2a`, com o tema em `message.metadata.topic`; responde com o texto e uma parte
   `data` com as fontes.

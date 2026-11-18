@@ -5,6 +5,8 @@
 // Revoke a client by adding its name to REVOKED below or to the optional Pages env API_REVOKED
 // ("a,b"); changing SITE_PASSWORD revokes every token at once.
 
+import { verifyAccessToken } from "./oauth.js";
+
 export const NAME_RE = /^[a-z0-9-]{1,32}$/;
 const REVOKED = [];
 
@@ -26,13 +28,20 @@ export async function makeToken(sitePassword, name) {
   return `paw_${name}_${(await hmacHex(`paw-api-v1:${sitePassword}`, name)).slice(0, 32)}`;
 }
 
-/** {ok: true, client} or {ok: false, status, error}. */
+/** {ok: true, client} or {ok: false, status, error}. Accepts named API tokens (paw_...) and OAuth access tokens (pat_...). */
 export async function checkBearer(request, env) {
   if (!env.SITE_PASSWORD) return { ok: false, status: 503, error: "acesso externo não configurado (SITE_PASSWORD)" };
-  const m = /^Bearer\s+(paw_([a-z0-9-]{1,32})_[0-9a-f]{32})$/.exec(request.headers.get("Authorization") || "");
+  const header = request.headers.get("Authorization") || "";
+  const revoked = new Set([...REVOKED, ...(env.API_REVOKED || "").split(",").map((s) => s.trim()).filter(Boolean)]);
+  const oauth = /^Bearer\s+(pat_[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+)$/.exec(header);
+  if (oauth) {
+    const v = await verifyAccessToken(env, oauth[1], new URL(request.url).origin);
+    if (!v.ok || revoked.has(v.client)) return { ok: false, status: 401, error: "token inválido, expirado ou revogado", oauthError: "invalid_token" };
+    return { ok: true, client: v.client };
+  }
+  const m = /^Bearer\s+(paw_([a-z0-9-]{1,32})_[0-9a-f]{32})$/.exec(header);
   if (!m) return { ok: false, status: 401, error: "envie Authorization: Bearer <token>" };
   const [, token, name] = m;
-  const revoked = new Set([...REVOKED, ...(env.API_REVOKED || "").split(",").map((s) => s.trim()).filter(Boolean)]);
   if (revoked.has(name) || !sameString(token, await makeToken(env.SITE_PASSWORD, name))) {
     return { ok: false, status: 401, error: "token inválido ou revogado" };
   }

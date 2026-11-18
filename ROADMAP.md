@@ -38,8 +38,8 @@ Combinado em 18/11: núcleo de consulta único + adaptadores finos (ver README, 
 2. ✅ Schemas em `schemas/` (testados contra os arquivos gerados) + índice de busca pré-calculado (`search.json`).
 3. ✅ REST `v1` com tokens nomeados (`server/auth.js`, derivados da senha do site; página `/__api-token`).
 4. ✅ MCP (`/mcp`) e A2A (`/a2a` + agent card), sobre o catálogo único `server/tools.js`.
-Próximos: OAuth no MCP se algum cliente exigir (conectores remotos do Claude.ai pedem OAuth ou nenhuma auth);
-streaming no A2A/ask; ferramentas que buscam fora do arquivo (OpenAlex/Semantic Scholar) quando ele não cobrir.
+5. ✅ OAuth 2.1 no MCP (descoberta, registro dinâmico, PKCE, refresh), para conectores do Claude.ai.
+Próximos: streaming no A2A/ask; ferramentas que buscam fora do arquivo (OpenAlex/Semantic Scholar) quando ele não cobrir.
 
 ## 5. Reduzir a dependência paga do OpenAlex (avaliado em 18/11/2026)
 

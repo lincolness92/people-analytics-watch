@@ -4,9 +4,17 @@
 
 import { agentCard } from "../server/a2a.js";
 import { makeToken, NAME_RE } from "../server/auth.js";
+import { authorizationServerMetadata, protectedResourceMetadata } from "../server/oauth.js";
 
 const COOKIE = "paw_auth";
-const TOKEN_ROUTES = [/^\/api\/v1(\/|$)/, /^\/mcp\/?$/, /^\/a2a\/?$/];
+const TOKEN_ROUTES = [/^\/api\/v1(\/|$)/, /^\/mcp\/?$/, /^\/a2a\/?$/, /^\/oauth\/(token|register)\/?$/];
+// OAuth discovery (public): RFC 9728 protected resource, RFC 8414 authorization server (+ OIDC alias some clients probe).
+const OAUTH_META = {
+  "/.well-known/oauth-protected-resource": protectedResourceMetadata,
+  "/.well-known/oauth-protected-resource/mcp": protectedResourceMetadata,
+  "/.well-known/oauth-authorization-server": authorizationServerMetadata,
+  "/.well-known/openid-configuration": authorizationServerMetadata,
+};
 const AGENT_CARD = "/.well-known/agent-card.json";
 const MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 const LOGIN_PATH = "/__login";
@@ -103,6 +111,11 @@ export async function onRequest(context) {
 
   // External interfaces authenticate with their own bearer tokens (server/auth.js), not the site cookie.
   if (TOKEN_ROUTES.some((r) => r.test(url.pathname))) return next();
+  if (OAUTH_META[url.pathname]) {
+    return new Response(JSON.stringify(OAUTH_META[url.pathname](url.origin)), {
+      headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=300", "Access-Control-Allow-Origin": "*" },
+    });
+  }
   if (url.pathname === AGENT_CARD) {
     const topics = await env.ASSETS.fetch(new URL("/topics.json", request.url));
     return new Response(JSON.stringify(agentCard(url.origin, topics.ok ? await topics.json() : [])), {

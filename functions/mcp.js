@@ -1,8 +1,10 @@
 // MCP server (Streamable HTTP transport, stateless, JSON responses) at POST /mcp.
 // Tools = server/tools.js, so they are the same as REST v1. Bearer token (server/auth.js).
-// Connect, e.g.:  claude mcp add --transport http research-watch https://<site>/mcp --header "Authorization: Bearer <token>"
+// Auth: OAuth 2.1 (server/oauth.js; clients discover it from the 401 WWW-Authenticate header) or a named token:
+//   claude mcp add --transport http research-watch https://<site>/mcp --header "Authorization: Bearer <token>"
 
 import { checkBearer } from "../server/auth.js";
+import { wwwAuthenticate } from "../server/oauth.js";
 import { makeContext } from "../server/context.js";
 import { callTool, ToolError, TOOLS } from "../server/tools.js";
 
@@ -12,15 +14,19 @@ const INSTRUCTIONS = "Arquivo curado de pesquisa state-of-the-art, um por tema (
   "tecnologia e IA em bancos...). Comece por list_topics; use search_archive para achar fontes e get_paper/get_digest/" +
   "get_evolution/get_annual_review para detalhes. ask_archive responde em linguagem natural citando as fontes, mas é lento.";
 
+// Browser-based clients (e.g. MCP Inspector) need CORS; the token is in the Authorization header, never a cookie.
+const CORS = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "Authorization, Content-Type, Mcp-Protocol-Version, Mcp-Session-Id",
+  "Access-Control-Allow-Methods": "POST, OPTIONS", "Access-Control-Expose-Headers": "WWW-Authenticate, Mcp-Session-Id" };
 const reply = (body, status = 200) => new Response(body === null ? null : JSON.stringify(body), {
-  status, headers: body === null ? {} : { "Content-Type": "application/json", "Cache-Control": "no-store" } });
+  status, headers: body === null ? CORS : { ...CORS, "Content-Type": "application/json", "Cache-Control": "no-store" } });
 const result = (id, r) => ({ jsonrpc: "2.0", id, result: r });
 const error = (id, code, message) => ({ jsonrpc: "2.0", id: id ?? null, error: { code, message } });
 
 export async function onRequestPost({ request, env }) {
   const auth = await checkBearer(request, env);
   if (!auth.ok) return new Response(JSON.stringify(error(null, -32001, auth.error)), {
-    status: auth.status, headers: { "Content-Type": "application/json", "WWW-Authenticate": "Bearer" } });
+    status: auth.status, headers: { ...CORS, "Content-Type": "application/json",
+      "WWW-Authenticate": wwwAuthenticate(new URL(request.url).origin, auth.oauthError || null) } });
   let msg;
   try { msg = await request.json(); } catch { return reply(error(null, -32700, "JSON inválido"), 400); }
   if (Array.isArray(msg)) return reply(error(null, -32600, "lotes não são suportados"), 400);
@@ -53,5 +59,6 @@ export async function onRequestPost({ request, env }) {
   }
 }
 
-export const onRequestGet = () => new Response(null, { status: 405, headers: { Allow: "POST" } });
+export const onRequestOptions = () => new Response(null, { status: 204, headers: CORS });
+export const onRequestGet = () => new Response(null, { status: 405, headers: { ...CORS, Allow: "POST" } });
 export const onRequestDelete = () => new Response(null, { status: 405, headers: { Allow: "POST" } });
