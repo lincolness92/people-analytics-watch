@@ -96,6 +96,7 @@ def site_data(topic, topics):
     return {
         "generated": date.today().isoformat(),
         "topic": {"slug": topic.slug, "name": m["name"], "brand": m.get("brand", {}), "regions": m.get("regions", {}),
+                  "focus": m.get("rubric_focus", ""),
                   "description": m.get("description", ""), "watchlist_labels": m.get("watchlist_labels", {})},
         "topics": [{"slug": t.slug, "name": t.name} for t in topics],
         "themes": topic.themes,

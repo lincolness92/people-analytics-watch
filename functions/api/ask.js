@@ -49,8 +49,12 @@ export async function onRequestPost({ request, env }) {
 
   if (env.FEEDBACK) {
     const key = `ask:${topic}:${new Date().toISOString()}:${crypto.randomUUID().slice(0, 8)}`;
+    // full trace (search terms, sources, answer) so a bad answer can be diagnosed from the export, not re-run
     await env.FEEDBACK.put(key, JSON.stringify({ topic, question, voter, name: str(body.name, 60) || null,
-      sources: result.sources.length, model: result.model, answer_chars: result.answer.length, at: new Date().toISOString() }));
+      sources: result.sources.length, model: result.model, answer_chars: result.answer.length, at: new Date().toISOString(),
+      terms: (result.terms || []).slice(0, 30), history: history.map((h) => h.q),
+      source_list: result.sources.map((s) => `[${s.n}] ${s.kind} | ${s.title}`.slice(0, 200)),
+      answer: result.answer.slice(0, 6000) }));
   }
   return json({ ok: true, answer: result.answer, model: result.model, sources: result.sources });
 }

@@ -99,7 +99,7 @@ test("agent says so when nothing matches, without a second LLM call", async () =
   let n = 0;
   const llm = async () => { n++; throw new Error("down"); };
   const r = await ask({ archive, question: "receita de bolo de chocolate", llm });
-  assert.deepEqual(r, { answer: NOT_FOUND, model: null, sources: [] });
+  assert.deepEqual({ answer: r.answer, model: r.model, sources: r.sources }, { answer: NOT_FOUND, model: null, sources: [] });
   assert.equal(n, 1);
 });
 

@@ -60,23 +60,24 @@ export async function loadOtherArchives(fetchAsset, slug) {
 }
 
 /** BM25 over a precomputed index (src/pawatch/searchindex.py): only the postings of the query terms are read. */
-export function rankIndex(index, terms, k = DEFAULT_K, keep = null) {
-  const q = [...new Set(terms.flatMap(tokens))];
+export function rankIndex(index, terms, k = DEFAULT_K, keep = null, withScores = false) {
+  const { weights, phrases } = queryTerms(terms);
   const scores = new Map();
-  for (const t of q) {
+  for (const [t, w] of weights) {
     const p = index.postings[t];
     if (!p) continue;
     const df = p.length / 2;
     const idf = Math.log(1 + (index.n - df + 0.5) / (df + 0.5));
     for (let j = 0; j < p.length; j += 2) {
       const i = p[j], f = p[j + 1];
-      const s = idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * index.len[i] / index.avgdl));
+      const s = w * idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * index.len[i] / index.avgdl));
       scores.set(i, (scores.get(i) || 0) + s);
     }
   }
+  if (phrases.length) for (const [i, s] of scores) scores.set(i, s + phraseBonus(tokens(index.docs[i].text || ""), phrases));
   return [...scores.entries()]
     .filter(([i]) => !keep || keep(index.docs[i]))
-    .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, k).map(([i]) => index.docs[i]);
+    .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, k).map(([i, s]) => (withScores ? { ...index.docs[i], score: s } : index.docs[i]));
 }
 
 /** Every searchable unit of the archive, as {kind, title, url, when, venue, text}. */
@@ -125,27 +126,59 @@ export function corpus(data, library = []) {
   return docs;
 }
 
-/** BM25 over the docs for a list of query terms; best k first. */
-export function rank(docs, terms, k = DEFAULT_K) {
+/**
+ * Query terms → {weights: Map(token → weight), phrases: [{toks, w}]}. A term is a string (weight 1) or {text, w}.
+ * Multi-word terms also count as phrases: a document holding the words in order gets a bonus, so
+ * "foundation model" beats a document that only mentions "model" many times.
+ */
+export function queryTerms(terms) {
+  const weights = new Map(), phrases = [];
+  for (const t of terms) {
+    const text = typeof t === "string" ? t : t.text;
+    const w = typeof t === "string" ? 1 : t.w;
+    const toks = tokens(text);
+    for (const tok of toks) weights.set(tok, Math.max(weights.get(tok) || 0, w));
+    if (toks.length >= 2 && toks.length <= 4) phrases.push({ toks, w });
+  }
+  return { weights, phrases };
+}
+
+const PHRASE_BONUS = 2.0;
+function phraseBonus(docToks, phrases) {
+  let b = 0;
+  for (const { toks, w } of phrases) {
+    for (let i = 0; i + toks.length <= docToks.length; i++) {
+      let ok = true;
+      for (let j = 0; j < toks.length && ok; j++) ok = docToks[i + j] === toks[j];
+      if (ok) { b += PHRASE_BONUS * w; break; }
+    }
+  }
+  return b;
+}
+
+/** BM25 over the docs for a list of query terms (strings or {text, w}); best k first. */
+export function rank(docs, terms, k = DEFAULT_K, withScores = false) {
   const toks = docs.map((d) => tokens(d.text));
   const df = new Map();
   for (const ts of toks) for (const t of new Set(ts)) df.set(t, (df.get(t) || 0) + 1);
   const N = docs.length || 1;
   const avg = toks.reduce((s, ts) => s + ts.length, 0) / N || 1;
-  const q = [...new Set(terms.flatMap(tokens))];
+  const { weights, phrases } = queryTerms(terms);
   const scored = docs.map((d, i) => {
     const tf = new Map();
     for (const t of toks[i]) tf.set(t, (tf.get(t) || 0) + 1);
     let s = 0;
-    for (const t of q) {
+    for (const [t, w] of weights) {
       const f = tf.get(t);
       if (!f) continue;
       const idf = Math.log(1 + (N - df.get(t) + 0.5) / (df.get(t) + 0.5));
-      s += idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * toks[i].length / avg)); // BM25
+      s += w * idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * toks[i].length / avg)); // BM25
     }
+    if (s > 0 && phrases.length) s += phraseBonus(tokens((d.text || "").slice(0, 900)), phrases);
     return { d, s };
   });
-  return scored.filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k).map((x) => x.d);
+  const top = scored.filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k);
+  return withScores ? top.map((x) => ({ ...x.d, score: x.s })) : top.map((x) => x.d);
 }
 
 // ---------- full text of papers (shared store dist/papers/, built by src/pawatch/fulltext.py) ----------
@@ -183,7 +216,7 @@ export async function loadFulltext(papers, key) {
 }
 
 /** Paragraph-sized chunks of a paper ranked by BM25 against the terms; best first. */
-export function rankChunks(paper, terms, k = 6, size = 900) {
+export function rankChunks(paper, terms, k = 6, size = 900, withScores = false) {
   const chunks = [];
   for (const s of paper.sections || []) {
     const paras = s.text.split(/\n\s*\n|\n(?=[A-Z])/);
@@ -195,7 +228,12 @@ export function rankChunks(paper, terms, k = 6, size = 900) {
     }
     if (buf.trim()) chunks.push({ section: s.name, text: buf.trim() });
   }
-  return rank(chunks.map((c) => ({ ...c, kind: "trecho" })), terms, k);
+  // results and conclusions answer "what did they find"; related work and future work rarely do
+  const weight = (name) => /result|experiment|evaluat|finding|conclu|discussion|abstract|resumo|performance|ablation/i.test(name) ? 1.3
+    : /related work|background|literature|future work|limitation|trabalhos relacionados/i.test(name) ? 0.5 : 1;
+  return rank(chunks.map((c) => ({ ...c, kind: "trecho" })), terms, k * 4, true)
+    .map((c) => ({ ...c, score: c.score * weight(c.section) }))
+    .sort((a, b) => b.score - a.score).slice(0, k).map(({ score, ...c }) => (withScores ? { ...c, score } : c));
 }
 
 export async function loadRepos(papers) {
@@ -211,13 +249,13 @@ export function listTopics(archive) {
 }
 
 /** Search one topic. `query` is a string or a list of terms; `kinds` optionally filters by doc kind prefix. */
-export function search(archive, query, { k = DEFAULT_K, kinds = null } = {}) {
-  const terms = Array.isArray(query) ? query : [query];
+export function search(archive, query, { k = DEFAULT_K, kinds = null, scores = false } = {}) {
+  const terms = Array.isArray(query) ? query : [query]; // strings or {text, w}
   const keep = kinds && kinds.length ? (d) => kinds.some((p) => d.kind.startsWith(p)) : null;
-  if (archive.index) return rankIndex(archive.index, terms, k, keep);
+  if (archive.index) return rankIndex(archive.index, terms, k, keep, scores);
   let docs = corpus(archive.data, archive.library);
   if (kinds && kinds.length) docs = docs.filter((d) => kinds.some((p) => d.kind.startsWith(p)));
-  return rank(docs, terms, k);
+  return rank(docs, terms, k, scores);
 }
 
 /** One digest by date (YYYY-MM-DD), or the latest when no date is given. */
