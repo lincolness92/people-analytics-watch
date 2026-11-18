@@ -9,5 +9,16 @@
   "answer_chars": 1369,
   "at": "2026-11-17T20:34:41.607Z",
   "key": "ask:tecnologia-bancaria:2026-11-17T20:34:41.607Z:2c6c08ba"
+ },
+ {
+  "topic": "tecnologia-bancaria",
+  "question": "Em relação ao ganho da utilização de Modelos Funcionais, oque as pesquisas apontam?",
+  "voter": "b0ufc5qjh6",
+  "name": null,
+  "sources": 18,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "answer_chars": 2070,
+  "at": "2026-11-18T21:00:22.741Z",
+  "key": "ask:tecnologia-bancaria:2026-11-18T21:00:22.741Z:14b992ae"
  }
 ]
