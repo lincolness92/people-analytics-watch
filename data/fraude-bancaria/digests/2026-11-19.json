@@ -1,0 +1,107 @@
+{
+ "date": "2026-11-19",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-12",
+  "to": "2026-11-19"
+ },
+ "stats": {
+  "candidates": 43,
+  "triaged": 43,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 9063,
+   "completion_tokens": 6683,
+   "cost_usd": 0.004548,
+   "calls": 3,
+   "failures": 0
+  }
+ },
+ "headline": "semana de LLMs compactos em dados tabulares e decisão antifraude guiada por ROI, com o lado humano dos golpes contra idosos em evidência",
+ "trend": "O período aponta uma dupla correção de rota na detecção de fraude. De um lado, o teto do modelo tabular clássico está sendo revisto: a Visa mostra que um LLM compacto ajustado em escala industrial bate GBDT e o modelo de produção, o que deve reacender a disputa entre features de grafo, transformers tabulares e árvores nos stacks bancários. De outro, o critério de sucesso sai da métrica estatística e vai para o negócio — o framework híbrido grafo-tabular com otimização por ROI reforça que falso positivo tem preço e deve estar na função objetivo. E o paper sobre barreiras à intervenção familiar lembra que, no golpe contra idoso, o elo mais fraco segue sendo o humano: tecnologia de detecção sem canal de escalada para terceiros de confiança resolve metade do problema.",
+ "items": [
+  {
+   "key": "doi:10.48550/arxiv.2611.22308",
+   "title": "VRLLM: LLMs como classificadores tabulares em escala",
+   "original_title": "VRLLM: Turning LLMs into Powerful Tabular Classifiers",
+   "url": "https://doi.org/10.48550/arxiv.2611.22308",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-17",
+   "authors": [
+    "Yingtong Dou",
+    "Shubham Jain",
+    "Junpeng Wang",
+    "Hadi Abdullah",
+    "Vineeth Rakesh Mohan",
+    "Yuzhong Chen",
+    "Liang Wang",
+    "Yiwei Cai"
+   ],
+   "institutions": [],
+   "watch_authors": [
+    "Yingtong Dou"
+   ],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "watchlist",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "fraud_analytics",
+   "region": "",
+   "summary": "A Visa Research fez fine-tuning de um Llama 3.2 1B sobre **bilhões de linhas** de dados tabulares rotulados e ele superou árvores de decisão, redes tabulares dedicadas e o próprio modelo de produção da casa. As ablações mostram que as duas primeiras camadas FFN já concentram informação de tarefa linearmente decodificável, e o modelo aprende associações preditivas específicas por feature. Para quem pontua fraude em transações, o recado é direto: LLM compacto pode virar o scorer tabular de produção, mas o ganho vem do *training recipe* e da preparação dos dados — não do tamanho do modelo — e precisa ser revalidado no seu portfólio antes de substituir o GBDT."
+  }
+ ],
+ "quick": [
+  {
+   "key": "arxiv:2611.24899",
+   "title": "Barreiras à intervenção familiar em golpes contra idosos",
+   "original_title": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+   "url": "https://arxiv.org/abs/2611.24899",
+   "venue": "arXiv (cs.SI, cs.CR)",
+   "date": "2026-11-18",
+   "authors": [
+    "Yipeng Wang",
+    "Huy Gia Han Vu",
+    "Jiaming Liu",
+    "Mihika Mehta",
+    "Poojitha Thota",
+    "Shirin Nilizadeh",
+    "Mohit Singhal"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "scams",
+   "region": "",
+   "note": "13 mil posts do Reddit e 3,9 mil do Baidu Tieba revelam que negação da vítima e falta de provas travam familiares — insumo para alertas a terceiros de confiança."
+  },
+  {
+   "key": "doi:10.1007/s13042-026-03385-x",
+   "title": "Framework híbrido grafo-tabular com decisão por ROI",
+   "original_title": "A business-aware hybrid graph–tabular framework for financial fraud detection with ROI-driven decision optimization",
+   "url": "https://doi.org/10.1007/s13042-026-03385-x",
+   "venue": "International Journal of Machine Learning and Cybernetics",
+   "date": "2026-11-18",
+   "authors": [
+    "Tamim Sifatul Islam",
+    "B. Naga Jagadesh"
+   ],
+   "institutions": [
+    "VIT-AP University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "fraud_analytics",
+   "region": "",
+   "note": "Otimiza a decisão pelo retorno financeiro, não por AUC: lembrete de que custo de falso positivo deve entrar na função objetivo do antifraude."
+  }
+ ]
+}

@@ -10989,5 +10989,559 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-18"
+},
+{
+"key": "doi:10.5465/amj.2024.1009",
+"title": "The Consequences of Pay Standing under Pay Range Transparency",
+"url": "https://doi.org/10.5465/amj.2024.1009",
+"venue": "Academy of Management Journal",
+"date": "2026-11-18",
+"authors": [
+"Meredith Lauren Woehler",
+"Tae‐Youn Park"
+],
+"abstract": "Pay range transparency—that is, disclosing the minimum and maximum pay for a job rather than individuals’ actual pay—has become the most prevalent form of pay transparency. Yet, existing theories explain employee reactions to pay information through present-focused, interpersonal comparisons with coworkers’ pay. We theorize that pay range transparency instead directs employees to interpret their structural pay standing—their pay position relative to the disclosed range boundaries—as a forward-looking signal of the organization’s recognition and structural room for pay growth. Drawing on expectancy theory, we propose that structural pay standing has a curvilinear (attenuated-positive) effect on job satisfaction, intention to stay, and job performance, mediated by pay growth uncertainty: pay near the range minimum offers weak evidence that contributions will be recognized, whereas pay near the maximum reveals limited structural room for further growth, a pattern we term a ceiling effect. Pay-related procedural justice attenuates these effects. Four studies—a natural experiment (n = 371), an online experiment (n = 603), a three-wave field study (n = 525), and an experimental-causal-ch",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://aiinstitute.hbs.edu/using-ai-to-guide-workers",
+"title": "Using AI to Guide Workers",
+"url": "https://aiinstitute.hbs.edu/using-ai-to-guide-workers/",
+"venue": "Harvard D^3",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "New research shows how LLMs can balance organizational performance with individual priorities. Listen to this article: If AI is integrated into operational and decision-making systems within organizations, it could in effect start to act like a manager. Think of AI in charge of assigning workers to tasks, sequencing work, or distributing resources. Executives who oversee […] The post Using AI to Guide Workers appeared first on Harvard Business School AI Institute .",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Digital Data Design Institute (D^3)"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.insight222.com/articles/measuring-value-and-driving-adoption-of-people-analytics-products",
+"title": "Insight222 People Analytics Trends 2024: Measuring Value and Driving Adoption of People Analytics Products",
+"url": "https://www.insight222.com/articles/measuring-value-and-driving-adoption-of-people-analytics-products",
+"venue": "Insight222 (artigos)",
+"date": "",
+"authors": [],
+"abstract": "Since 2020, Insight222 has conducted the largest study each year in the field of people analytics, culminating in the publication of our annual People…",
+"score": 7,
+"theme": "analytics",
+"region": "",
+"watch": [
+"Jonathan Ferrar"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/orsc.2023.18274",
+"title": "Influence Without Authority: Bottom-Up Normalization of Organizational Corruption",
+"url": "https://doi.org/10.1287/orsc.2023.18274",
+"venue": "Organization Science",
+"date": "2026-11-18",
+"authors": [
+"Patricia Helena Hein",
+"Shahzad Shaz Ansari"
+],
+"abstract": "Research on organizational corruption has largely portrayed normalization as a top-down, management-driven process. We know less about how employees with limited formal authority can escalate wrongdoing beyond isolated acts and drive its normalization. Drawing on a qualitative study of a German recruitment firm’s practices during the COVID-19 pandemic, we develop a three-phase model of bottom-up normalization of organizational wrongdoing. Less powerful actors first engage in tolerated rule-bending to demonstrate competence and indispensability and build influence through informal networks. When disruption threatens this influence and legitimate alternatives are unavailable, they may escalate to more serious wrongdoing to safeguard their standing by framing new opportunities as extensions of familiar rule-bending. Normalization then depends on their ability to sustain a cohesive coalition, secure support from actors with formal authority, and contain resistance. We make three contributions. First, we advance a relational view of corruption by showing how central positions in informal networks enable actors lacking formal authority to mobilize support across hierarchical levels and n",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.insight222.com/articles/what-top-companies-do-differently-in-people-analytics",
+"title": "What Top Companies Do Differently in People Analytics",
+"url": "https://www.insight222.com/articles/what-top-companies-do-differently-in-people-analytics",
+"venue": "Insight222 (artigos)",
+"date": "",
+"authors": [],
+"abstract": "If there is one question that is asked by Chief People Officers and other senior HR executives more than any other about people analytics, it is “what are…",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [
+"Jonathan Ferrar"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2023.0461",
+"title": "“Generate” the Future of Work Through AI: Empirical Evidence from Online Labor Markets",
+"url": "https://doi.org/10.1287/isre.2023.0461",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Jin Liu",
+"Xingchen Xu",
+"Xi Nan",
+"Yongjun Li",
+"Yong Tan"
+],
+"abstract": "Generative AI is reshaping online labor markets in ways that go beyond simple job displacement. Using evidence from a leading freelance platform around the release of ChatGPT, this study shows that demand falls sharply in markets whose tasks closely match large language model capabilities. Labor supply also declines, but less than demand, leaving remaining freelancers to compete more intensely for fewer jobs. The study also identifies an important adaptive response: Some freelancers shift toward programming-intensive work as generative AI lowers the human-capital barrier to coding. These transitions are not evenly distributed. Higher-skilled freelancers are more likely to make the shift and to preserve or improve their earning efficiency, whereas less-skilled workers face greater risk of being left behind. The findings suggest that platforms and policymakers should treat AI not only as an automation shock but also as a force that redirects labor supply. Effective responses include real-time information about changing demand, targeted reskilling support, and training that builds workers’ capacity to learn and use new AI tools strategically.",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.insight222.com/articles/the-core-roles-of-a-high-performing-people-analytics-team",
+"title": "The Core Roles of a High-Performing People Analytics Team",
+"url": "https://www.insight222.com/articles/the-core-roles-of-a-high-performing-people-analytics-team",
+"venue": "Insight222 (artigos)",
+"date": "",
+"authors": [],
+"abstract": "Every team and department within a business has a core set of roles and capabilities that contribute to the organisation's overall success. The structure…",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [
+"Jonathan Ferrar"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1002/bse.71877",
+"title": "Understanding the Mediating Role of Talent Retention in SMEs' Sustainability Practices",
+"url": "https://doi.org/10.1002/bse.71877",
+"venue": "Business Strategy and the Environment",
+"date": "2026-11-17",
+"authors": [
+"José Antonio Clemente‐Almendros",
+"Samer Zein",
+"Dorina Nicoara-Popescu",
+"Manuel Moreno‐García"
+],
+"abstract": "ABSTRACT Digital transformation and institutional regulation do not consistently translate into more sustainable practices in small‐ and medium‐sized enterprises (SMEs). This study, which is grounded in the resource‐based view (RBV) and draws on institutional theory (IT) and talent management theory (TMT), emphasizes talent retention as a theoretically central mediating mechanism that links external institutional and digital drivers with embedded sustainability practices. Applying PLS‐SEM to survey data from 253 SMEs in La Rioja (Spain), our findings reveal no significant direct effects of digital management intensity or the social and regulatory framework on sustainability. However, both of these variables have an indirect effect on sustainability via talent retention. Our results suggest that regulatory and digital drivers are more likely to be effective when supported by a stable “Green Pillar” of human capital that can internalize these external stimuli. By positioning talent retention as the core conduit through which external digital and institutional pressures are converted into sustainable practices in SMEs, the study advances TMT, adds to the Digital Green Twin Transition ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1080/10447318.2026.2754402",
+"title": "Working With Robots: How Robot Proportion in Human-Robot Teams and Robot Anthropomorphism Shape Employee Turnover Intention",
+"url": "https://doi.org/10.1080/10447318.2026.2754402",
+"venue": "International Journal of Human-Computer Interaction",
+"date": "2026-11-18",
+"authors": [
+"J. Li",
+"Y. Wang",
+"Z. Wang",
+"L.J. Song"
+],
+"abstract": "Although robots are increasingly reshaping organizational workflows, how the robot proportion in human-robot teams affects employees’ turnover intention remains underexplored. Drawing on conservation of resources theory, we examine whether, why, and when robot proportion exerts divergent effects on turnover intention through two pathways: resource gain and resource loss. Evidence from a scenario-based experiment (Study 1, N = 290) and a three-wave field study (Study 2, N = 306) reveals that these two pathways operate in opposing directions. Specifically, work goal progress and work loneliness mediate the relationship between robot proportion in human-robot teams and turnover intention. Robot anthropomorphism further moderates these pathways: higher anthropomorphism strengthens the beneficial effect on work goal progress, whereas lower anthropomorphism amplifies the detrimental effect on work loneliness. This study offers initial evidence on how the structural composition of human-robot teams shapes employees’ turnover intention, and it provides practical implications for organizations deploying robotic coworkers.",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.56087/03761d91",
+"title": "Regulating Workplace CCTV Surveillance to ProtectEmployees’ Privacy Rights",
+"url": "https://doi.org/10.56087/03761d91",
+"venue": "ADVANCED PRIVATE LEGAL INSIGHTS",
+"date": "2026-11-17",
+"authors": [
+"Farli Usman",
+"Andi Risma",
+"Hasnan Hasbi"
+],
+"abstract": "The use of Closed-Circuit Television (CCTV) in the workplace places employers’ security interests alongside employees’ rights to privacy and personal data protection. This study examines the legal basis and limits of CCTV monitoring and identifies the conditions for civil liability arising from misuse of recordings. It employs normative legal research through statutory and conceptual approaches, with qualitative-prescriptive analysis. Its contribution is a framework connecting lawful grounds for data processing, proportionality of workplace surveillance, governance of recordings, and the elements of an unlawful act in the specific context of workplace CCTV. The findings indicate that workplace monitoring is not absolutely prohibited; however, processing footage that identifies employees must have a lawful basis and a specific purpose, and must be subject to access restrictions, appropriate security, and accountable retention periods. A personal data protection violation does not automatically establish civil liability in tort: a claimant must still prove an unlawful act, fault, loss, and causation. Employers should therefore adopt transparent and proportionate CCTV governance polic",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.69849/g9375q63",
+"title": "Inteligência artificial e o impacto nas relações de trabalho",
+"url": "https://doi.org/10.69849/g9375q63",
+"venue": "Revista fisio&terapia.",
+"date": "2026-11-18",
+"authors": [
+"Luana Gualberto Dias",
+"Luiz Paulo Busquim"
+],
+"abstract": "This study aims to analyze the extent to which current Brazilian labor legislation is sufficient to protect workers subject to algorithmic management through artificial intelligence systems. It seeks to understand the impact of these technologies on labor relations, particularly regarding legal subordination, control mechanisms, and the risks arising from their use. To this end, qualitative bibliographic and documentary research was conducted through the analysis of legislation, legal scholarship, scientific articles, institutional documents, and case law related to artificial intelligence and worker protection. The results demonstrate that Brazilian legislation provides legal instruments capable of protecting workers against algorithmic management, particularly Articles 2, 3, and 6, sole paragraph, of the Consolidation of Labor Laws (CLT), as well as provisions concerning non-pecuniary damages and civil liability. The study also found that algorithmic subordination may constitute legal subordination, since computerized systems can perform command, control, and supervision functions. However, challenges were identified regarding the effectiveness of legal protection, judicial inter",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.4324/9781003590903-11",
+"title": "Intergenerational workforce and workplaces",
+"url": "https://doi.org/10.4324/9781003590903-11",
+"venue": "Routledge eBooks",
+"date": "2026-11-18",
+"authors": [
+"Amy Jia Ying Lim",
+"Peter Waring",
+"Julia Connell"
+],
+"abstract": "Generational cohort theory suggests that workers are categorised according to their birth years and shared characteristics – the baby boomers, Generations X, Y, and Z. Are such categorisations and assumptions applicable to societies within Asia Pacific? Are the categories adequate as a framework? This chapter explores the challenges and opportunities associated with intergenerational workforces and workplaces (IWAW) in the Philippines through the lens of the relations between generations or ‘intergenerational relations’ and investigating whether there is evidence of such workplace relations, that is, rules or norms that regulate workplace relations between older and younger workers and the parties to rule- or norm-making. Case studies and document analysis on retirement age, anti-discrimination as regards age and gender, flexible work arrangements, mental health, and diversity, equity and inclusion (DEI), as IWAW related innovative policies, programmes or initiatives and legal requirements, were undertaken. One case involved ambivalent intergenerational relations in light of the intersection of the rules or norms concerning retirement ages, age- and gender-based discrimination. Ano",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/orsc.2024.19305",
+"title": "Phantom Networks: Window on Agency in Social Mechanisms",
+"url": "https://doi.org/10.1287/orsc.2024.19305",
+"venue": "Organization Science",
+"date": "2026-11-18",
+"authors": [
+"Ronald S. Burt",
+"Ray E. Reagans",
+"Sonja Opper"
+],
+"abstract": "Our goal is to offer proof of concept for the idea that behavioral networks emerging with and beyond assigned treatment networks in experiments can provide a valuable window on agency. We call these often unobserved behavioral structures phantom networks. Most evidence of agency is entangled with audience—what people recall, how others attribute, or who is seen to act. We strip that away to observe agency directly in the ties participants build within and beyond what they are assigned. Their deviation from assignment is not error but structure in action, a behavioral trace of agency. We offer three exhibits of that “behavioral deviation” revealing agency in gendered brokerage, rival brokerage, and structural reproduction. Across the three exhibits, behavioral deviation shows how a team works (sometimes in surprising ways), not how well the team works. Teams perform as expected in theory, but the behavior responsible for their performance is made more apparent by watching behavioral deviation. We close with a summary proof of concept and discussion of next steps for particularly promising future work. Funding: This work was made possible by financial support from the University of C",
+"score": 8,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.70994/jjdms.11593.11603",
+"title": "Competency Assessment of Nursing Staff Using Talent Analytics in Healthcare",
+"url": "https://doi.org/10.70994/jjdms.11593.11603",
+"venue": "Jharkhand Journal of Development and Management Studies",
+"date": "2026-11-18",
+"authors": [
+"Alextius Kerketta",
+"Binit Lakra"
+],
+"abstract": "This study aims to explore the competencies of nursing staff by employing talent analytics in a NABH (National Accreditation Board for Hospitals & Healthcare Providers) – accredited private multispecialty hospital in Ranchi and to identify priority areas for skill development. A quantitative cross-sectional study was conducted among 191 nurses at one hospital using digital competency assessment tools that covered technical skills, infection control, communication, digital literacy, and emergency response. Data were analysed using descriptive statistics and Spearman correlation. The major findings of the study were that overall competency was satisfactory, but notable differences were observed across departments. Technical skills and communication emerged as strengths, while digital literacy was the weakest domain across units. The number of years of experience showed a weak positive, but statistically insignificant relationship with overall competency, though patterns varied by department. The study shows how talent analytics can provide actionable insights for competency monitoring, targeted training and evidence-based workforce planning in the healthcare sector.",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.32782/2786-765x/2026-15-10",
+"title": "ARTIFICIAL INTELLIGENCE IN RECRUITMENT: EFFECTIVENESS, RISKS AND ETHICAL LIMITATIONS",
+"url": "https://doi.org/10.32782/2786-765x/2026-15-10",
+"venue": "Київський економічний науковий журнал",
+"date": "2026-11-18",
+"authors": [
+"Олена Драган",
+"О. М. Кириченко",
+"Дарья Владиславовна Семенова"
+],
+"abstract": "The article examines the effectiveness, risks, and ethical limitations of artificial intelligence (AI) in recruitment. A distinction is made between deterministic automation, algorithmic systems, machine learning, and generative AI, which makes it possible to avoid equating any digital HR tool with artificial intelligence. Based on a systematized review of recent academic literature, comparative and content analysis, as well as analysis of regulatory documents, the evidence regarding the impact of AI on recruitment performance is synthesized. It is shown that the strongest evidence concerns operational effects: the ability to process large volumes of applications, automate repetitive tasks, support sourcing, screening, matching, and communication, and reduce recruiters’ workload. At the same time, the evidence is substantially less conclusive with respect to quality of hire, candidate experience, and the elimination of bias. The article analyzes algorithmic bias, indirect discrimination, opacity, false exclusion of qualified candidates, privacy and information-security risks, automation bias, and the potential dehumanization of recruitment. Particular attention is paid to meaningfu",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24349079",
+"title": "Strategic Upskilling and Employees' Intention to Stay in Metro Manila's Food and Beverage Sector: The Parallel Mediating Roles of Upskilling-Supportive Transformational Leadership and Psychological Empowerment",
+"url": "https://doi.org/10.5281/zenodo.24349079",
+"venue": "International Journal of Education, Research, and Innovation Perspectives",
+"date": "2026-11-19",
+"authors": [
+"Darriela Lane Estrada"
+],
+"abstract": "This study examined the relationship between employee intention to stay (ITS) and perceived strategic upskilling (SU), as well as the parallel mediating roles of psychological empowerment (PE) and upskilling-supportive transformational leadership (USTL) in several food and beverage establishments in Metro Manila. Of the 447 submissions we received, 441 were eligible complete responses from a quantitative cross-sectional survey. We used latent structural equation modeling (SEM), Pearson correlation, descriptive statistics, and supplementary composite-score mediation. All four construct scores were very high (SU M = 4.50; ITS M = 4.29; USTL M = 4.41; PE M = 4.57). SU and ITS were positively correlated (r = .853, p < .001). The USTL indirect effect in the parallel composite model was positive and significant (B = .7836, 95% CI [.6500, .9171]), whereas the PE indirect effect was not significant (B = −.0978, 95% CI [−.2170, .0215]). All latent component paths were positive, but the model fit was poor (CFI = .580; RMSEA = .219), and no latent indirect effect tests were available. The results suggest that development-specific supervisory support is the statistically more consistently supp",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.63199/arthasastra.v2i1.112",
+"title": "From Ujrāh to Algorithmic Accountability: Reconstructing Wage Justice and Human Dignity in the Platform Economy",
+"url": "https://doi.org/10.63199/arthasastra.v2i1.112",
+"venue": "ARTHASASTRA Journal of Economics and Business",
+"date": "2026-11-16",
+"authors": [
+"Rahmawati",
+"Zarqa Zulifqar*"
+],
+"abstract": "Digital labour platforms increasingly organise work through algorithmic systems that allocate tasks, monitor performance, determine access to income-generating opportunities, calculate remuneration, and impose sanctions. These systems may reduce coordination costs and expand market access, yet they also create distinctive problems of wage justice when workers cannot understand the rules governing earnings, verify deductions, contest adverse decisions, or identify the institution responsible for algorithmic outcomes. This article develops a critical-conceptual framework that reconstructs the Islamic concept of ujrāh for the governance of remuneration in the platform economy. It integrates scholarship on algorithmic management and platform labour, organisational justice, labour regulation, and Islamic jurisprudence on ijārah and ethical remuneration. The analysis proceeds through conceptual mapping, normative interpretation, institutional translation, and framework synthesis. It argues that ujrāh should not be confined to the nominal amount agreed for a task; its contemporary ethical assessment must also encompass the procedures and infrastructures through which work is allocated, re",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.70773/revistatopicos/794736522",
+"title": "ROTATIVIDADE DE COLABORADORES NA LOGÍSTICA: UM ESTUDO DE CASO SOBRE CAUSAS E ESTRATÉGIAS DE RETENÇÃO EM CENTROS DE DISTRIBUIÇÃO",
+"url": "https://doi.org/10.70773/revistatopicos/794736522",
+"venue": "Revista Tópicos",
+"date": "2026-11-18",
+"authors": [
+"Anna Kerolainy Louzeiro Maciel",
+"Thalita Mayara Sousa de Araújo",
+"Christiane Silva Sousa Diniz"
+],
+"abstract": "A rotatividade de colaboradores representa um desafio para as organizações, especialmente no setor logístico, em que a continuidade das equipes é importante para o funcionamento das operações. Este estudo tem como objetivo analisar a rotatividade de colaboradores em um Centro de Distribuição, considerando as admissões e os desligamentos ocorridos no período de janeiro a outubro de 2026, bem como discutir estratégias de Gestão de Pessoas que possam contribuir para a retenção dos profissionais. A pesquisa caracteriza-se como um estudo de caso, de caráter descritivo, com abordagem predominantemente quantitativa, desenvolvido por meio de análise documental de informações relacionadas à movimentação de pessoal. Os dados disponibilizados indicaram 136 colaboradores no quadro inicial, 47 admissões e 45 desligamentos, dos quais 20 ocorreram por iniciativa dos próprios trabalhadores. A partir dos indicadores calculados, observou-se uma taxa estimada de turnover de 33,58% no período analisado. Os resultados demonstram a importância do acompanhamento dos indicadores de movimentação de pessoal e da identificação dos motivos de desligamento para o desenvolvimento de ações de retenção. Conclui-s",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1080/09585192.2026.2760547",
+"title": "From exclusive to inclusive? Exploring the barriers of i-deals for functionally diverse (FD) workers",
+"url": "https://doi.org/10.1080/09585192.2026.2760547",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-18",
+"authors": [
+"Patricia Elgoibar",
+"Ryan Armstrong",
+"Francisco J. Sanclemente",
+"Inés Martínez-Corts"
+],
+"abstract": "",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.12804/revistas.urosario.edu.co/empresa/a.16293",
+"title": "Gestión del talento de trabajadores jóvenes en el sector logístico: el caso español",
+"url": "https://doi.org/10.12804/revistas.urosario.edu.co/empresa/a.16293",
+"venue": "Revista Universidad y Empresa",
+"date": "2026-11-18",
+"authors": [
+"Óscar Gutiérrez-Aragón",
+"Júlia Alabart-Algueró",
+"Montse Carrillo-Plaza",
+"Pol Fernández-Duran"
+],
+"abstract": "La incorporación del talento joven al sector logístico constituye uno de los principales retos estratégicos para las organizaciones, en un contexto fuertemente marcado por la digitalización y el cambio generacional. Objetivo: conocer la valoración de las personas responsables de gestionar los recursos humanos acerca de los procesos actuales de captación, gestión y retención del talento de los jóvenes trabajadores centennials y millennials en el sector logístico. Metodología: se empleó análisis cualitativo sobre los datos que se han obtenido a partir de una serie de entrevistas semiestructuradas realizadas a profesionales expertos en la gestión de recursos humanos en el ámbito logístico. Resultados principales: cuestiones como la formación continua, el desarrollo profesional y el employer branding influyen significativamente en la atracción y fidelización del talento joven en la logística. Conclusiones: las empresas han de adaptar la forma de gestionar las políticas de recursos humanos teniendo en consideración las expectativas laborales de los empleados más jóvenes, con el fin de poder cubrir de forma eficiente las vacantes en perfiles técnicos y operativos en los que centennials y",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.69845/tekn.v4i1.591",
+"title": "Análisis de los programas de bienestar integral de los colaboradores del sector bancario hondureño, en Tegucigalpa 202626",
+"url": "https://doi.org/10.69845/tekn.v4i1.591",
+"venue": "Tekné.",
+"date": "2026-11-18",
+"authors": [
+"Fany Marleny Corea Cruz",
+"Edas Betancourth",
+"María Fernanda Martínez-Valladares",
+"Martha Hernandez Martinez"
+],
+"abstract": "Introduction. Holistic well-being has established itself as a strategic factor in Honduras’s financial sector, serving as a pillar for the sustainability of both individuals and organizations. The purpose of this study was to assess financial sector employees’ perceptions of the components of corporate wellness programs and how these programs influence their quality of life at work. Methods. The research was based on the theories of Herzberg, Maslow, and Gartner’s model, employing a quantitative design using a structured survey validated with the content validity coefficient (CVC) and Cronbach’s alpha, which demonstrated the instrument’s reliability. Results. The findings show that intrinsic motivation, a sense of belonging, and job security are the strongest aspects, while stress management and pay equity are critical areas for improvement. Conclusions. Holistic well-being extends beyond the individual sphere, becoming an essential element for competitiveness, stability, and organizational culture in the Honduran financial sector, which not only contributes to the strengthening of human talent but also to the country’s economic and social sustainability.",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.46787/ijaipil.v1i5.8291",
+"title": "Beyond Operational Fluency: A Three-Tier AI Literacy Architecture for Reskilling and Upskilling in Strategic Talent Development",
+"url": "https://doi.org/10.46787/ijaipil.v1i5.8291",
+"venue": "International Journal of AI in Pedagogy Innovation and Learning Futures",
+"date": "2026-11-18",
+"authors": [
+"Jie Ke"
+],
+"abstract": "Artificial intelligence (AI) occupies two positions in talent development simultaneously: the principal driver of the reskilling imperative, obsoleting skills faster than organizations can replace them, and increasingly the instrument through which reskilling is delivered, via adaptive platforms, generated content, and automated coaching. Reskilling scholarship assumes training technology is causally independent of the skill shift it responds to, an assumption prior industrial transitions permitted but AI's shared mechanism no longer does. This conceptual paper argues that AI's dual position generates five failure modes conventional reskilling models cannot detect: velocity without capability, a deskilling loop in which the instrument reproduces the condition it was deployed to remedy, personalization that fragments collective capability, stratified access that widens the divide reskilling was meant to close, and erosion of the entry-level roles through which experiential learning occurs. Drawing on integrative reviews of AI and workers' skills, Industry 4.0 reskilling blueprints, and AI governance scholarship, the paper applies the HUMAN framework (Human Oversight, Upskilling for ",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1177/21522715261509248",
+"title": "When AI Performs, What Remains? An Integrative Review of Generative AI and Cognitive Capital in Individuals and Organizations",
+"url": "https://doi.org/10.1177/21522715261509248",
+"venue": "Cyberpsychology Behavior and Social Networking",
+"date": "2026-11-17",
+"authors": [
+"Giuseppe Riva",
+"Stefania La Rocca",
+"Brenda K. Wiederhold",
+"Andrea Gaggioli"
+],
+"abstract": "Generative artificial intelligence (AI) is rapidly entering knowledge work, and its short-term productivity benefits are increasingly documented. Less is known about what happens, over time, to the knowledge, skills, and judgment that remain in people and organizations. This integrative narrative review addresses that question through the construct of cognitive capital: the accumulated, renewable, and depletable stock of knowledge, cognitive, and metacognitive capabilities, and practices that enable an individual or an organization to learn, interpret information, exercise judgment, solve problems, and adapt. We distinguish individual and organizational cognitive capital from the capability of the human-AI system, so that gains in joint performance and losses in human capability can be observed at the same time. Drawing on experimental, field, and conceptual work, we propose four mechanisms through which interaction with AI affects cognitive capital: substitution of practice, scaffolding and feedback, metacognitive calibration, and organizational aggregation. Seven principles summarize the current evidence, including that assisted performance differs from retained competence, that ",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.3389/fpsyg.2026.1967576",
+"title": "Functional portfolio and work-demand configuration in digital marketing jobs under remote-work signaling: a network analysis of job advertisements",
+"url": "https://doi.org/10.3389/fpsyg.2026.1967576",
+"venue": "Frontiers in Psychology",
+"date": "2026-11-18",
+"authors": [
+"Fan Zhang",
+"Zhijiao Tan"
+],
+"abstract": "Introduction Remote-work labels describe an advertised work arrangement, but whether they accompany different advertised requirements remains unclear. Drawing on signaling theory and work design research, we examine two layers of advertised demand: platform-native functional categories and O*NET-anchored work-style language. Methods The primary analysis uses 550 digital-marketing advertisements from one public LinkedIn dataset, including 220 with an explicit remote-work flag and 330 without a recorded flag. An expanded sample of 1,394 advertisements includes the primary sample and assesses sensitivity to the occupational boundary. Overlap-weighted regression adjusts for role family, seniority, employment type, and description length, with standard errors clustered by employer identifier. The seven-element Work-Style Demand Index (WSDI) measures the breadth of matched work-style signals, rather than their intensity or employees' traits. Results The adjusted WSDI remote-flag contrast was –0.018 (95% CI –0.047 to 0.012); the five-element adaptive/growth subindex (AWDI) contrast was -0.008 (95% CI –0.043 to 0.026). Functional breadth differed by +0.058 categories (95% CI –0.091 to 0.20",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1177/15701255261506243",
+"title": "Digitally Enabled Work Arrangements and Systems, Working Conditions, and Civil Servants’ Subjective Well-Being: Evidence from Korea, 2019–2024",
+"url": "https://doi.org/10.1177/15701255261506243",
+"venue": "Information Polity",
+"date": "2026-11-18",
+"authors": [
+"Young‐Jae Kim"
+],
+"abstract": "Public-sector digitalization changes where civil servants work, how they communicate, and how they authorize administrative tasks. This exploratory study examines the reported frequencies of work from home, Smart Work Center use, video meetings, and mobile electronic approval in relation to evaluative subjective well-being alongside measured working conditions. Using six waves of Korea's Public Service Life Survey (2019–2024; N = 31,272), it estimates weighted repeated cross-sectional models with year and government-tier fixed effects. The four use-frequency measures were jointly associated with subjective well-being, but only video-meeting frequency showed a small positive conditional association after full adjustment; estimates for the others were uncertain or model-dependent. Job autonomy, resource adequacy, and role stressors had larger standardized coefficient magnitudes in the fitted model, subject to differences in measurement precision, response format, and shared response characteristics. Interaction tests detected no period differences. Government-tier interactions were jointly significant, although individual tests did not identify a source. The findings support assessin",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1016/j.techsoc.2026.103634",
+"title": "Bridging the skill gap for smart manufacturing: Training and upskilling for the next industrial revolution",
+"url": "https://doi.org/10.1016/j.techsoc.2026.103634",
+"venue": "Technology in Society",
+"date": "2026-11-14",
+"authors": [
+"Adel Ben Youssef",
+"David Romero",
+"Adelina Zeqiri"
+],
+"abstract": "The diffusion of Industry 4.0 technologies, including artificial intelligence, the Internet of Things, and robotics, is transforming manufacturing by increasing efficiency, customization, and flexibility. At the same time, adoption has exposed a substantial skills gap, particularly in advanced technical capabilities and higher-order problem-solving. This study examines the sources of this gap by focusing on misalignment between educational and industry needs, organizational resistance to upskilling, and the rising demand for cross-disciplinary expertise. The study draws on 43 semi-structured interviews with industry and academic experts across 27 countries, analyzed with the Gioia methodology. The findings identify recurring barriers, including outdated training provision, underinvestment in reskilling, and weak collaboration between academia and industry. The results also point to the need to institutionalize continuous learning and to strengthen industry-led workforce transformation through coordinated partnerships and policy incentives. Building on these findings, the paper proposes the Smart Manufacturing Skills Framework (SMSF). The framework links three layers of competence t",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1108/ijoa-07-2026-7507",
+"title": "Artificial intelligence and HR work transformation: a systematic review and theoretical framework of intra-occupational polarisation",
+"url": "https://doi.org/10.1108/ijoa-07-2026-7507",
+"venue": "International journal of organizational analysis",
+"date": "2026-11-18",
+"authors": [
+"Fernando Arístegui Monge",
+"Mónica Villanueva-Villar",
+"Elena Rivo-López"
+],
+"abstract": "Purpose This study aims to examine how artificial intelligence (AI) transforms human resource (HR) work, arguing that the narrative of homogeneous professional enrichment conceals a distinct pattern: intra-occupational polarisation. AI may split the HR occupational category into a high-value interpretive pole and a residual procedural pole exposed to skill erosion. Design/methodology/approach This study combines a focused PRISMA review of articles from Scopus and Web of Science, a VOSviewer co-occurrence analysis of author keywords, a temporal overlay and a bibliographic coupling analysis of documents, and a directed content analysis of 13 articles selected by citation influence and thematic relevance. Findings The bibliometric map distinguishes strategic-analytical and automation-oriented research streams. The content analysis shows that the literature has implicitly described polarisation without naming it: capability frameworks articulate the interpretive pole but often presuppose a universal transition, while evidence on heterogeneous professional responses and skill erosion explains why the split may widen without organisational intervention. The studies point in the same dire",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "oa:W7236538985",
+"title": "Voluntariado corporativo: uma revisão sistemática da literatura sob a perspectiva da gestão de pessoas",
+"url": "https://osf.io/9e57f",
+"venue": "OSF Preprints (OSF Preprints)",
+"date": "2026-11-16",
+"authors": [
+"Izabele Cristina Linhares Diniz Ariete",
+"Carlos Eduardo Cavalcante"
+],
+"abstract": "A presente revisão sistemática da literatura busca mapear as relações identificadas na produção científica entre a participação em programas de voluntariado corporativo e indicadores de gestão de pessoas. A partir da análise da literatura, pretende-se compreender como as ações de voluntariado corporativo se relacionam com diferentes dimensões da gestão de pessoas, contribuindo para a construção de um framework conceitual integrador e para a proposição de uma agenda de pesquisa.",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24353073",
+"title": "Os desafios da juventude no mercado de trabalho e os efeitos da aprendizagem profissional",
+"url": "https://doi.org/10.5281/zenodo.24353073",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-18",
+"authors": [
+"Ramon Roriz dos Reis"
+],
+"abstract": "Este estudo examina os desafios estruturais da inserção de jovens no mercado de trabalho contemporâneodiante das transformações tecnológicas, da automação e da precarização das relações ocupacionais. Com baseem evidências empíricas e relatórios recentes da Organização Internacional do Trabalho (OIT), daOrganização para a Cooperação e Desenvolvimento Econômico (OCDE) e do Instituto de Mobilidade eDesenvolvimento Social (IMDS), analisa-se a efetividade da política de Aprendizagem Profissional no Brasil.O trabalho demonstra que a aprendizagem estruturada não apenas eleva a empregabilidade formal e osrendimentos na vida adulta, mas também gera retornos estratégicos e incentivos tributários relevantes para osetor privado, incluindo a redução de 75% na alíquota do FGTS e a mitigação de custos de rotatividade erecrutamento.",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s11115-026-01077-2",
+"title": "Moderating Role of Organizational Resources in PSM— Employee Engagement Relationship",
+"url": "https://doi.org/10.1007/s11115-026-01077-2",
+"venue": "Public Organization Review",
+"date": "2026-11-18",
+"authors": [
+"Julius A. Nukpezah",
+"Latara M. Arterberry"
+],
+"abstract": "",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
 }
 ]

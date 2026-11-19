@@ -2830,5 +2830,181 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-18"
+},
+{
+"key": "web:https://www.fca.org.uk/news/press-releases/uk-financial-watchdogs-clarify-cyber-expectations-attacks-rise",
+"title": "UK financial watchdogs clarify cyber expectations as attacks rise",
+"url": "https://www.fca.org.uk/news/press-releases/uk-financial-watchdogs-clarify-cyber-expectations-attacks-rise",
+"venue": "FCA (Reino Unido)",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "UK’s financial regulators are proposing new guidance to help financial services firms prepare for and recover from cyber incidents as threats grow. The Bank of England’s most recent Systemic Risk Survey cited cyber as one of the risks that would have the greatest impact on the UK financial system. October 2026 saw the second-highest monthly number of cyber incidents reported to the FCA in 5 years, and the highest in the past 18 months, 52% above the previous high recorded in May 2025.In response, the Bank, FCA and Prudential Regulation Authority (PRA) are bringing together existing requirements and lessons from supervisory experience to give firms greater clarity about what is expected of them.The proposed guidance aligns with recognised cyber frameworks, including the National Cyber Security Centre’s (NCSC) Cyber Assessment Framework. It sets out how firms should manage their cyber risk and resilience without imposing rigid rules, giving firms flexibility in how they meet the expectations in a fast-evolving threat environment.It covers key areas, including how firms govern, identify, protect against, detect, respond to and recover from cyber risks and incidents. Firms need strong ",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Financial Conduct Authority (FCA)"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.48550/arxiv.2611.22308",
+"title": "VRLLM: Turning LLMs into Powerful Tabular Classifiers",
+"url": "https://doi.org/10.48550/arxiv.2611.22308",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-17",
+"authors": [
+"Yingtong Dou",
+"Shubham Jain",
+"Junpeng Wang",
+"Hadi Abdullah",
+"Vineeth Rakesh Mohan",
+"Yuzhong Chen"
+],
+"abstract": "Large Language Models (LLMs) have shown strong performance on text, but whether pretrained LLMs are effective for large-scale tabular classification remains unclear, as many previous works demonstrate that LLMs' tabular data classification performance falls behind tree-based models or neural architectures designed for tabular data. At Visa Research, we managed to fine-tune a pretrained Llama 3.2 1B LLM on billions of rows of labeled tabular data and make it outperform a wide array of tabular classifiers and even our competitive production deep learning model. For ease of reference, we refer to the model as the Visa Research LLM (VRLLM). In this paper, we share how we achieved this exciting result, covering data preparation, training recipe, ablation studies of design choices and deployment validation. We also benchmark frontier LLMs on the same task and analyze their prediction behavior across model families and generations. Our interpretability experiments suggest that VRLLM learns feature-specific predictive associations, while component ablations indicate that the earliest two FFN layers contribute to the emergence of linearly decodable task information. Our paper provides an en",
+"score": 8,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [
+"Yingtong Dou"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.biocatch.com/blog/ai-agents-leave-tracks-why-behavior-remains-one-of-the-best-ways-to-spot-them",
+"title": "AI agents leave tracks: Why behavior remains one of the best ways to spot them",
+"url": "https://www.biocatch.com/blog/ai-agents-leave-tracks-why-behavior-remains-one-of-the-best-ways-to-spot-them",
+"venue": "BioCatch",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Imagine two digital banking sessions beginning within the same minute.",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [
+"BioCatch"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11431606/v1",
+"title": "FraudBench-NG: A NIBSS-Calibrated Synthetic Dataset and Generator for Nigerian Inter-Bank Fraud Detection",
+"url": "https://doi.org/10.21203/rs.3.rs-11431606/v1",
+"venue": "Research Square",
+"date": "2026-11-18",
+"authors": [
+"Otu Jacob",
+"Colin Kuka",
+"Adam Knowles",
+"Cyrus Orji"
+],
+"abstract": "Abstract Research on inter-bank fraud detection in Nigeria is limited by the lack of shareable transaction data, and synthetic benchmarks can mislead if they leak information or hide their assumptions. FraudBench-NG is a reproducible framework for studying fraud detection under explicitly documented modelling assumptions. It is a parametric simulation calibrated to 2023 NIBSS aggregates, with a released dataset of 2.1~million transactions from 25{,}000 customers and 0.1\\% fraud. Fraud is generated as incidents, matching NIBSS counts and loss per case; every parameter is marked as NIBSS or assumed; and every behavioural feature uses only prior transactions, verified by row-by-row recomputation and a label-permutation test. Logistic regression, random forest and XGBoost reach a PR-AUC of 0.016--0.036 (no-skill 0.0007), with wide customer-level bootstrap intervals, so the models cannot be ranked. At a 1\\% false-positive rate they raise about 70 false alerts per fraud row caught and flag only about 19\\% of incidents at their first transaction. Results depend strongly on the assumptions: a model trained with takeover bursts transfers only partly to data with a different burst probabilit",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24351048",
+"title": "Communication Abuse: Why Spam and Scam Calls, Texts and Emails Persist — and What It Would Take to Stop Them",
+"url": "https://doi.org/10.5281/zenodo.24351048",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-18",
+"authors": [
+"Robert Erio"
+],
+"abstract": "Scam and spam calls, texts, emails and ads, which this paper calls communication abuse, drive much of the 15.9 billion dollars in fraud losses Americans reported to federal authorities in 2025. That figure is nearly five times the 2020 total. Because most victims never report, the Federal Trade Commission (FTC) estimates the true cost could be as high as 195.9 billion dollars. The paper asks why the problem persists despite decades of laws, fines and blocking tools. Its core finding is that enforcement targets scam callers, who are mostly overseas and almost never pay. Meanwhile, the carriers, platforms and payment companies that carry the traffic are paid on volume and face little liability. Courts have narrowed the 1991 Telephone Consumer Protection Act (TCPA), Congress has not updated it, and no single agency owns the problem from first contact to stolen dollar. The abuse has also moved to social media, messaging and dating apps, and political texting, where the rules are weakest. It now runs on bot farms, dark-web phishing kits, forced-labor scam compounds and AI voice cloning. Older adults and people with disabilities lose the most per person and get the least help recovering.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "arxiv:2611.23683",
+"title": "JEV vs. LLMs: A Comparative Analysis for Phishing Email Detection",
+"url": "https://arxiv.org/abs/2611.23683",
+"venue": "arXiv (cs.CR)",
+"date": "2026-11-18",
+"authors": [
+"Muhammad Mahir Malik",
+"Muhammad Moiz Khalid",
+"Hussain Ahmad",
+"Faheem Ullah"
+],
+"abstract": "Phishing remains a major source of credential theft and fraudulent payments, and email security systems must classify large message volumes reliably, quickly, and at manageable cost. Large Language Models (LLMs) offer flexible text understanding, but their token-based generation increases response time and API cost, and the reliability of their confidence values requires measurement. Jev 1.13, a typed decision model from TypeSafe AI, instead returns a structured outcome with a confidence value. This paper compares Jev 1.13 with Gemini 3.5 Flash-Lite, NVIDIA Nemotron 3 Ultra, and Meta Llama 4 Maverick on a labelled dataset of 1500 emails, covering classification performance, decision latency, token consumption, API cost, and probability calibration. Jev achieves the highest accuracy (79.67%), precision (71.43%), recall (97.97%), and F1 score (82.62%). It also records the shortest batch time (173.88 seconds), the lowest token count (597,895), the lowest cost (USD 0.015103 per 1000 decisions), and the lowest Brier score (0.1698) and ECE (0.1594). These results suggest that Jev is a promising option for fast, structured, high-volume triage. LLMs retain the advantage of generating expla",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "arxiv:2611.24899",
+"title": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+"url": "https://arxiv.org/abs/2611.24899",
+"venue": "arXiv (cs.SI, cs.CR)",
+"date": "2026-11-18",
+"authors": [
+"Yipeng Wang",
+"Huy Gia Han Vu",
+"Jiaming Liu",
+"Mihika Mehta",
+"Poojitha Thota",
+"Shirin Nilizadeh"
+],
+"abstract": "When older adults trust scammers despite warnings, families face obstacles to intervention. Complainants aged 60 and older reported \\$4.9 billion in losses in 2024 to the U.S. Internet Crime Complaint Center. To investigate family intervention barriers to elder scams, we collected 2M Reddit posts from May 2021 to June 2026 and 2B Baidu Tieba posts from 2007 to 2026. The final corpora contain 13,082 Reddit posts and 3,933 Baidu Tieba posts, labeled using platform-specific codebooks, manual reference annotations, and LLM coding. Through a mixed-methods analysis, we find that scams often extend beyond a single incident and are reported alongside debt problems and broken family relationships. In 68.0\\% of Reddit posts recording reactions, older adults showed resistance or continued involvement; in Baidu Tieba family-confrontation posts, 41.9\\% showed continued belief. Relatives identified fraud in 74.4\\% of Reddit posts and narrated cases on Baidu Tieba, but without the victim's consent, relatives may lack the legal authority to intervene. In Reddit posts recording reactions, account locks or credential changes appeared in 8.9\\% under resistance or continued involvement, compared with ",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s12626-026-00221-0",
+"title": "DGAB: Enhancing Credit Card Fraud Detection with Dynamic Graph Attribute Binning Representation",
+"url": "https://doi.org/10.1007/s12626-026-00221-0",
+"venue": "The Review of Socionetwork Strategies",
+"date": "2026-11-18",
+"authors": [
+"Duy-Hung Dong Quang",
+"Tri-Thanh Nguyen",
+"Thanh Hai Dang",
+"Duc-Trong Le",
+"Trang Pham"
+],
+"abstract": "",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s13042-026-03385-x",
+"title": "A business-aware hybrid graph–tabular framework for financial fraud detection with ROI-driven decision optimization",
+"url": "https://doi.org/10.1007/s13042-026-03385-x",
+"venue": "International Journal of Machine Learning and Cybernetics",
+"date": "2026-11-18",
+"authors": [
+"Tamim Sifatul Islam",
+"B. Naga Jagadesh"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
 }
 ]

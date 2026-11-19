@@ -2756,5 +2756,835 @@
 ],
 "origin": "digest",
 "added": "2026-11-18"
+},
+{
+"key": "web:https://tearsheet.co/podcasts/fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant?utm_source=rss&utm_medium=rss&utm_campaign=fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant",
+"title": "Fifth Third Bank’s approach to retooling Jeanie into an intent-driven assistant",
+"url": "https://tearsheet.co/podcasts/fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant/?utm_source=rss&utm_medium=rss&utm_campaign=fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant",
+"venue": "Tearsheet — AI",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Fifth Third Bank first used the Jeanie name in 1977 for one of the earliest shared ATM networks in the U.S. During the pandemic as call volumes rose, the bank revived itas the name of its chatbot. That early version ran on a third-party platform and reflected the way the bank was organized internally. Since … Continue reading \"Fifth Third Bank’s approach to retooling Jeanie into an intent-driven assistant\" The post Fifth Third Bank’s approach to retooling Jeanie into an intent-driven assistant appeared first on Tearsheet .",
+"score": 7,
+"theme": "conversational",
+"region": "mundo",
+"watch": [
+"Tearsheet"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://thefintechtimes.com/superintelligence-may-still-be-years-away-ai-agents-inside-bank-accounts-arent",
+"title": "Superintelligence may still be years away. AI agents inside bank accounts aren’t.",
+"url": "https://thefintechtimes.com/superintelligence-may-still-be-years-away-ai-agents-inside-bank-accounts-arent/",
+"venue": "The Fintech Times",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "AI agents are emerging as a cybersecurity risk for financial institutions, with their ability to exploit vulnerabilities and access bank accounts highlighting the need for stronger controls over autonomous payments. The post Superintelligence may still be years away. AI agents inside bank accounts aren’t. appeared first on The Fintech Times .",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://thefintechtimes.com/epaa-maps-tokenised-money-rules-across-13-apac-markets",
+"title": "EPAA Maps Tokenised Money Rules Across 13 APAC Markets",
+"url": "https://thefintechtimes.com/epaa-maps-tokenised-money-rules-across-13-apac-markets/",
+"venue": "The Fintech Times",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "EPAA launches the Tokenised Money Regulatory Heat Map at SFF 2026, tracking stablecoin and tokenised deposit rules across 13 Asia-Pacific markets. The post EPAA Maps Tokenised Money Rules Across 13 APAC Markets appeared first on The Fintech Times .",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2023.0461",
+"title": "“Generate” the Future of Work Through AI: Empirical Evidence from Online Labor Markets",
+"url": "https://doi.org/10.1287/isre.2023.0461",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Jin Liu",
+"Xingchen Xu",
+"Xi Nan",
+"Yongjun Li",
+"Yong Tan"
+],
+"abstract": "Generative AI is reshaping online labor markets in ways that go beyond simple job displacement. Using evidence from a leading freelance platform around the release of ChatGPT, this study shows that demand falls sharply in markets whose tasks closely match large language model capabilities. Labor supply also declines, but less than demand, leaving remaining freelancers to compete more intensely for fewer jobs. The study also identifies an important adaptive response: Some freelancers shift toward programming-intensive work as generative AI lowers the human-capital barrier to coding. These transitions are not evenly distributed. Higher-skilled freelancers are more likely to make the shift and to preserve or improve their earning efficiency, whereas less-skilled workers face greater risk of being left behind. The findings suggest that platforms and policymakers should treat AI not only as an automation shock but also as a force that redirects labor supply. Effective responses include real-time information about changing demand, targeted reskilling support, and training that builds workers’ capacity to learn and use new AI tools strategically.",
+"score": 7,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://stripe.dev/blog/stripe-integration-evals-methodology",
+"title": "Stripe evals: Measuring real-world coding agent performance",
+"url": "https://stripe.dev/blog/stripe-integration-evals-methodology",
+"venue": "Stripe Dev Blog (engenharia)",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "We want developers building with agents to start on the best Stripe setup, and that begins with seeing where agents fall short today. So we built Stripe evals to measure that, and to identify ways to steer agents toward better integrations.",
+"score": 7,
+"theme": "engineering",
+"region": "mundo",
+"watch": [
+"Stripe"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.americanbanker.com/opinion/ai-agents-could-threaten-banks-main-profit-engine",
+"title": "AI agents could threaten banks’ main profit engine",
+"url": "https://www.americanbanker.com/opinion/ai-agents-could-threaten-banks-main-profit-engine",
+"venue": "American Banker",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "In a world where AI agents eliminate the friction consumers experience when moving money between accounts, banks could see their net interest margins come under pressure.",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://thefintechtimes.com/what-indian-lenders-will-ask-their-fintech-partners-under-dpdp",
+"title": "What Indian lenders Will Ask Their Fintech Partners Under DPDP",
+"url": "https://thefintechtimes.com/what-indian-lenders-will-ask-their-fintech-partners-under-dpdp/",
+"venue": "The Fintech Times",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Singahi's Rahul Verma argues that India's DPDP Act leaves lenders answerable for their partners, and sets out the questions fintechs should expect to face. The post What Indian lenders Will Ask Their Fintech Partners Under DPDP appeared first on The Fintech Times .",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2024.1282",
+"title": "Navigating the Sea of Reviews: Unveiling the Effects of Introducing AI-Generated Summaries in E-Commerce",
+"url": "https://doi.org/10.1287/isre.2024.1282",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Qili Wang",
+"Yi SU",
+"Liangfei Qiu",
+"Runyu Chen"
+],
+"abstract": "AI-generated review summaries are reshaping how consumers access product information, but their influence also extends to consumers who write reviews. Examining Amazon’s rollout of AI-generated review summaries, we find that these summaries encourage more review contributions and richer content. Consumers discuss product attributes absent from the summaries and elaborate on topics already covered. A controlled experiment suggests that summaries strengthen consumers’ belief that their contributions, together with others’, help future buyers make informed decisions. The increase in review contributions is stronger for products with many existing reviews or mixed ratings. Platform managers could prioritize summaries for products with mixed ratings, for which additional reviews can provide a more complete picture for future buyers. To build on richer review content, platforms could use writing prompts that highlight product attributes underrepresented in AI summaries. However, additional analyses suggest that AI summaries disproportionately benefit products that already sell well, potentially reinforcing sales concentration. Platforms could increase exposure for niche or new products, ",
+"score": 7,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/pix-6-anos/pix-vira-peca-de-briga-com-os-eua-e-expansao-no-exterior-entra-em-duvida",
+"title": "Pix vira peça de briga com os EUA e expansão no exterior entra em dúvida",
+"url": "https://finsidersbrasil.com.br/pix-6-anos/pix-vira-peca-de-briga-com-os-eua-e-expansao-no-exterior-entra-em-duvida/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Washington critica o duplo papel do Banco Central, que regula o mercado e opera o Pix ao mesmo tempo | Imagem: Finsiders Brasil | gerada por IA via ChatGPT/OpenAI No aniversário de seis anos, sistema segue intacto no Brasil, mas especialistas afirmam que parceiros próximos dos EUA podem adiar acordos de conexão",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/pix-6-anos/falta-de-verba-e-de-servidores-do-bc-acende-alerta-sobre-o-futuro-do-pix",
+"title": "Falta de verba e de servidores do BC acende alerta sobre o futuro do Pix",
+"url": "https://finsidersbrasil.com.br/pix-6-anos/falta-de-verba-e-de-servidores-do-bc-acende-alerta-sobre-o-futuro-do-pix/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-18",
+"authors": [],
+"abstract": "Orçamento e pessoal desafiam gestão do Pix | Imagem: Finsiders Brasil | gerada por IA via ChatGPT/OpenAI Aos seis anos, Pix bate recordes, enquanto regulador convive com cortes no orçamento, contratos sob ameaça e milhares de cargos vagos",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.commbank.com.au/articles/newsroom/2026/11/accelerate-ai-10-takeaways-turning-ambition-into-impact.html",
+"title": "10 takeaways on turning AI ambition into impact – lessons from CommBank’s second Accelerate AI conference",
+"url": "https://www.commbank.com.au/articles/newsroom/2026/11/accelerate-ai-10-takeaways-turning-ambition-into-impact.html",
+"venue": "CBA Newsroom",
+"date": "",
+"authors": [],
+"abstract": "Global and local leaders in business, economics, government and academia came together at CommBank’s Accelerate AI conference to outline what it will take to turn AI adoption into real change for businesses and the economy.",
+"score": 5,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Commonwealth Bank of Australia"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.americanbanker.com/payments/news/could-a2a-payments-knock-cards-off-their-perch",
+"title": "Could A2A payments knock cards off their perch?",
+"url": "https://www.americanbanker.com/payments/news/could-a2a-payments-knock-cards-off-their-perch",
+"venue": "American Banker",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Payment experts say the U.S. has a lot to learn from countries where A2A is more prevalent.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.ft.com/content/06be5c7d-b1f2-44e9-9cad-a2dcb5a2f452?syn-25a6b1a6=1",
+"title": "Deutsche Bank’s Italian unit hid up to €800mn of mortgage lending losses",
+"url": "https://www.ft.com/content/06be5c7d-b1f2-44e9-9cad-a2dcb5a2f452?syn-25a6b1a6=1",
+"venue": "FT — Banks",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "German lender did not publicly disclose scandal or findings of damning internal probe codenamed Project Aetos",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Financial Times"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/inovacao/falta-de-confianca-trava-avanco-dos-agentes-de-ia-nas-financas",
+"title": "Falta de confiança trava avanço dos agentes de IA nas finanças",
+"url": "https://finsidersbrasil.com.br/inovacao/falta-de-confianca-trava-avanco-dos-agentes-de-ia-nas-financas/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Na visão dos especialistas, ainda falta confiança e governança para viabilizar a adoção dessas ferramentas em escala / Thiago Oliveira, da Monest; Helena Passos, do Grupo Recovery (moderadora); Bruno Lodo, da 99Pay; e Paulo Ruza, do Banco Carrefour | Imagem: Guilherme Lima Durante o CMS Financial Innovation 2026, especialistas apontaram falta de governança, segurança e maturidade dos consumidores como entraves à adoção",
+"score": 5,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2024.0917",
+"title": "Campaigns That Click: Unleashing the Power of Push Notifications on Mobile Apps",
+"url": "https://doi.org/10.1287/isre.2024.0917",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Zhuping Liu",
+"Bicheng Yang",
+"Subodha Kumar"
+],
+"abstract": "Push notifications can do more than promote a single merchant: They can redirect attention across an entire mobile marketplace. Drawing on more than 200 campaigns, 60 million user-campaign observations, and two controlled experiments, this study shows that notifications substantially increase same-day engagement with advertised merchants while also generating meaningful spillovers to other merchants within and across categories. Effectiveness varies by merchant, user, message design, and delivery timing. Notifications tend to work especially well for less prominent merchants, newer users, Android users, deeper discounts, urgency cues, and carefully timed delivery. However, repeated exposure produces diminishing returns and can eventually reduce engagement as annoyance and attentional overload increase. For platform managers, the findings support managing notifications as a portfolio rather than evaluating campaigns in isolation: targeting, message design, timing, cross-merchant benefits, and cumulative frequency should be optimized jointly. Platforms should also incorporate spillover value into campaign pricing, performance reporting, and merchant communication. For policymakers an",
+"score": 8,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2024.1510",
+"title": "Online Review Generation in the Digital Age: A Meta-Analytic Study of Online Review Behavior",
+"url": "https://doi.org/10.1287/isre.2024.1510",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Hong Hong",
+"Dapeng Xu",
+"Xiaoquan Zhang"
+],
+"abstract": "A large body of literature on online review generation has investigated various antecedents to online review characteristics. However, the mixed and even contradictory findings in this domain have hampered a clear understanding of consumers’ online review behavior for both researchers and practitioners, thereby complicating actionable strategies. To address this issue, we conduct a comprehensive meta-analysis of 154 independent samples from 152 empirical papers, synthesizing the relationships between 28 antecedent factors and 12 review features, which we categorize into rating-based (evaluative) and non-rating (expressive) dimensions. Our results indicate that rating attributes are dominantly driven by stable reviewer tendencies and market-level reputation cues, whereas non-rating features—such as text length and image inclusion—are primarily influenced by reviewer social embeddedness and platform engagement. Crucially, we identify that inconsistencies in prior literature can be explained by critical boundary conditions, including platform type (business-hosted vs. third-party), goods type (service vs. tangible), and cultural background (Asia vs. North America). By distinguishing b",
+"score": 5,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://evidentinsights.com/bankingbrief/top-ai-asset-managers",
+"title": "Evident - 🚨Top AI asset managers🚨 | Banking Brief",
+"url": "https://evidentinsights.com/bankingbrief/top-ai-asset-managers",
+"venue": "Evident Banking Brief",
+"date": "",
+"authors": [],
+"abstract": "This week: the new Evident AI Index for Asset Management. Who’s winning and what's cutting-edge. Then: buzz from the top financial AI conference.",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [
+"Evident"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/researchers-spot-ach-loopholes/875186",
+"title": "Researchers spot ACH loopholes",
+"url": "https://www.paymentsdive.com/news/researchers-spot-ach-loopholes/875186/",
+"venue": "Payments Dive",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "University of Massachusetts academics have identified vulnerabilities that hackers could exploit in restricted bank accounts.",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/google-wallet-returns-to-apple/875182",
+"title": "Google wallet returns to Apple",
+"url": "https://www.paymentsdive.com/news/google-wallet-returns-to-apple/875182/",
+"venue": "Payments Dive",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "The wallet app gives Google an early lead among iPhone-wielding agentic shoppers and poses a rival for Stripe’s Link wallet, analysts said.",
+"score": 5,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.letsmoney.com.br/open-finance/lina-open-finance-credito-thin-file",
+"title": "Sem histórico, com crédito: Open Finance ajuda quase metade das empresas do setor financeiro a atender clientes thin-file",
+"url": "https://www.letsmoney.com.br/open-finance/lina-open-finance-credito-thin-file/",
+"venue": "Let's Money",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "A dificuldade de avaliar consumidores com pouco ou nenhum histórico de crédito é um dos obstáculos enfrentados pelas instituições financeiras na ampliação do acesso a serviços financeiros.",
+"score": 6,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.mobiletime.com.br/artigos/19/11/2026/split-payment-2027-arquitetura-de-dados-e-ia-o-que-muda-quando-o-calculo-migra-para-a-transacao",
+"title": "Split Payment 2027, arquitetura de dados e IA: o que muda quando o cálculo migra para a transação",
+"url": "https://www.mobiletime.com.br/artigos/19/11/2026/split-payment-2027-arquitetura-de-dados-e-ia-o-que-muda-quando-o-calculo-migra-para-a-transacao/",
+"venue": "Mobile Time",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Com a novidade, o tributo passa a ser segregado pelo prestador de serviço de pagamento na liquidação financeira da operação, e o cálculo ocorre no instante da transação, com os dados disponíveis naquele momento",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/18/11/2026/bancos-dinheiro-ia-teste",
+"title": "Bancos têm dinheiro para IA, mas não saem da fase de testes, avalia estudo da MATH Group",
+"url": "https://www.mobiletime.com.br/noticias/18/11/2026/bancos-dinheiro-ia-teste/",
+"venue": "Mobile Time",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Marcel Ghiraldini, CSO da consultoria, diagnostica o nó do setor: a tecnologia sobra e os protótipos se multiplicam, mas falta liderança disposta a bancar o risco político da virada de chave",
+"score": 5,
+"theme": "automation",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.48550/arxiv.2611.21883",
+"title": "Bajillion: Cryptographic Clearing for Micropayments",
+"url": "https://doi.org/10.48550/arxiv.2611.21883",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-16",
+"authors": [
+"Patrick O'Grady",
+"Guru-Vamsi Policharla"
+],
+"abstract": "Much of the web is funded by advertising, a model that erodes as humans delegate browsing to AI agents acting on their behalf. A natural replacement is for agents to pay for what they consume, often a fraction of a cent per request. At the scale of web traffic, this could mean tens or even hundreds of millions of payments per second. We present Bajillion, a clearing protocol for scalable micropayments. A sender signs a payment request, and an untrusted operator answers with a preconfirmation, which promises the receiver that it will be paid. Periodically, the operator closes an epoch by posting only the net effect of its payments on chain. Bajillion guarantees that a malicious operator can only omit payments -- it can never debit a sender beyond what it signed, nor misdirect a transfer. Posted balances are therefore finalized immediately and can be withdrawn. By design, senders never have to raise disputes, making it suitable for ephemeral AI agents. A receiver that is shortchanged can prove that a close omitted a preconfirmed payment, which halts the protocol and lets every user exit with its finalized balance. Requests from different senders can be processed independently, allowi",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1016/j.isci.2026.118127",
+"title": "Agentic finance and sustainability: governing autonomous capital allocation for societal benefit",
+"url": "https://doi.org/10.1016/j.isci.2026.118127",
+"venue": "iScience",
+"date": "2026-11-16",
+"authors": [
+"Ben Caldecott"
+],
+"abstract": "Financial institutions are beginning to integrate autonomous artificial intelligence agents that can act independently in economic settings. The sustainability governance architecture built over the past decade, including disclosure frameworks, taxonomies, stewardship codes, and regulatory expectations, assumes human decision makers at the point of capital allocation. This perspective defines agentic finance as finance in which at least one party to the allocation, intermediation, or use of capital is an autonomous AI agent. We consider how agentic finance weakens principal-agent controls, complicates the specification of sustainability objectives, and creates channels outside regulated infrastructure, as well as the constraint imposed by its computational footprint. We then propose responses for different implementation horizons. They combine rules that machines can read and, where feasible, infrastructure can enforce, monitoring of agentic financial activity, internationally coordinated regulated infrastructure, and public agentic finance operated by central banks, development banks, and multilateral institutions. Without these responses, existing frameworks risk obsolescence.",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1287/isre.2022.0466",
+"title": "Decision Considerations Influencing Information Systems Modularity: A Multimethod Study of LEGO",
+"url": "https://doi.org/10.1287/isre.2022.0466",
+"venue": "Information Systems Research",
+"date": "2026-11-18",
+"authors": [
+"Stefan Henningsson",
+"Ben A. Eaton",
+"Lorenz Törmer",
+"Suprateek Sarker"
+],
+"abstract": "Abstract. The maturing of concepts such as microservices and open application programming interfaces (APIs) has radically increased the practicality of fine-grained modularization in Information Systems (IS) architecture. These are critical technical advancements, given the central role of modularity in the ability of IS to transform and meet future organizational needs efficiently. Nevertheless, reports from practice suggest that, when presented with new opportunities for modularization, organizations face multifaceted decision criteria and do not necessarily embrace new approaches as may be expected. While emergent IS literature observes that organizations’ decisions on modularity in IS may involve competing concerns, understanding of the considerations involved and how they influence such decisions remains limited. To examine these considerations, we intensively study the experience of LEGO, a global toy company. Specifically, we sequentially apply multiple methods consisting of an exploratory inductive analysis of LEGO’s approach to IS modularity decisions over 36 months, which then informs a crisp-set qualitative comparative analysis (QCA) of 31 episodes of LEGO’s situated dec",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "arxiv:2611.24039",
+"title": "A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises",
+"url": "https://arxiv.org/abs/2611.24039",
+"venue": "arXiv (cs.AI, cs.MA)",
+"date": "2026-11-18",
+"authors": [
+"Abbas Raza Ali",
+"Muhammad Ajmal Siddiqui",
+"Moona Zahid"
+],
+"abstract": "Agentic AI platforms-systems in which LLM agents plan, invoke tools, retain memory and coordinate to change the state of enterprise systems-are being procured faster than they can be measured. Public agent benchmarks score models in fixed harnesses; enterprises buy integrated platforms whose orchestration, memory, governance and tooling layers dominate outcomes, and they buy them largely on the strength of vendor demonstrations. We report an industrial evaluation programme (\"bakeoff\") run by the innovation laboratory of a global bank in which ten platforms-spanning open-source frameworks, proprietary products and hyperscaler ecosystems-were assessed by a cross-functional panel on nine capability dimensions across three financial-services workloads: counterparty credit risk, retrieval-augmented generation and process automation. Scores separate the field into three tiers that are stable under alternative weightings, and surface workload-specific strengths that aggregates hide. A secondary analysis, however, finds Cronbach's alpha = 0.98 across nominally distinct dimensions and rank correlations >= 0.93 with the total for eight of nine: a halo effect indicating that demonstration-bas",
+"score": 7,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.americanbanker.com/news/the-link-between-patchmegeddon-and-recent-tech-outages",
+"title": "The link between ‘patchmegeddon’ and recent tech outages",
+"url": "https://www.americanbanker.com/news/the-link-between-patchmegeddon-and-recent-tech-outages",
+"venue": "American Banker",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Consensus is growing that fast and perhaps sloppy patching of vulnerabilities identified by powerful AI models like Anthropic's Claude Mythos is causing widespread system failures.",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.letsmoney.com.br/credito/olist-fidc-135-milhoes",
+"title": "Olist amplia FIDC a R$ 135 mi após conceder R$ 1 bi a PMEs",
+"url": "https://www.letsmoney.com.br/credito/olist-fidc-135-milhoes/",
+"venue": "Let's Money",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Segunda rodada, já encerrada, eleva o patrimônio do fundo em 50%; em 14 meses, a Olist concedeu R$ 1 bilhão em crédito a pequenas e médias empresas.",
+"score": 5,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://convergenciadigital.com.br/carreira/bootcamp-oferece-5-mil-bolsas-em-treinamento-gratuito-de-ciberseguranca-para-nuvem-e-ia",
+"title": "Bootcamp oferece 5 mil bolsas em treinamento gratuito de cibersegurança para nuvem e IA",
+"url": "https://convergenciadigital.com.br/carreira/bootcamp-oferece-5-mil-bolsas-em-treinamento-gratuito-de-ciberseguranca-para-nuvem-e-ia/",
+"venue": "Convergência Digital",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Sem exigir experiência, o programa, desenvolvido pela AWS e pela DIO, ensina do zero a proteger sistemas e dados na nuvem e usa IA para detectar falhas e responder a ameaças",
+"score": 5,
+"theme": "skills",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://neofeed.com.br/brand-stories/apresentado-por-qi-tech/qi-tech-leva-para-o-setor-de-seguros-a-receita-que-deu-certo-no-credito-e-ja-tem-r-3-bilhoes-na-mira",
+"title": "QI Tech leva para o setor de seguros a receita que deu certo no crédito. E já tem R$ 3 bilhões na mira",
+"url": "https://neofeed.com.br/brand-stories/apresentado-por-qi-tech/qi-tech-leva-para-o-setor-de-seguros-a-receita-que-deu-certo-no-credito-e-ja-tem-r-3-bilhoes-na-mira/",
+"venue": "NeoFeed",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Na hora de comprar um celular, o consumidor informa seus dados e escolhe como pagar. Se quiser protegê-lo contra roubo, porém, pode ter de preencher outro cadastro e cumprir novas etapas antes de contratar o seguro. Para a empresa que vende o aparelho, oferecer essa proteção também exige estrutura: integrar o seguro à jornada de […] O post QI Tech leva para o setor de seguros a receita que deu certo no crédito. E já tem R$ 3 bilhões na mira apareceu primeiro em NeoFeed .",
+"score": 5,
+"theme": "engineering",
+"region": "brasil",
+"watch": [
+"NeoFeed"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://www.youtube.com/shorts/l5CuqLe0eyI",
+"title": "Parcelado sem juros representa 43,3% do valor transacionado no cartão de crédito",
+"url": "https://www.youtube.com/shorts/l5CuqLe0eyI",
+"venue": "CMEP – Congresso de Meios Eletrônicos de Pagamento (YouTube)",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "A predominância dos pagamentos no cartão de crédito é à vista, mas a participação do parcelado sem juros é bastante relevante – no terceiro trimestre de 2026, 43,3% do valor movimentado no cartão de crédito foi parcelado sem juros, o equivalente a R$ 420,6 bilhões. Os dados são da Abecs, e mostram ainda que a preferência dos consumidores é pelos parcelamentos mais curtos: 44,1% dessas compras são em até 4 vezes e 19,2% em até 6 vezes sem juros. Fique por dentro do desempenho dos cartões no terceiro trimestre do ano: https://www.youtube.com/shorts/aHOoEuVF4Gg",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"CMEP – Congresso de Meios Eletrônicos de Pagamento"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://iupana.com/2026/11/19/fragmentacion-de-senales-emerge-como-riesgo-critico-facephi-patrocinado",
+"title": "Fragmentación de señales emerge como riesgo crítico: Facephi",
+"url": "https://iupana.com/2026/11/19/fragmentacion-de-senales-emerge-como-riesgo-critico-facephi-patrocinado/",
+"venue": "iupana – eventos (FinSeg Day e outros) (notícias)",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "La sofisticación del fraude por IA pone presión sobre la banca para conectar información de operaciones sospechosas y verificación de identidad, datos que muchas veces se mantienen separados, sostiene Mariona Campmany de Facephi.... Leer más... La entrada Fragmentación de señales emerge como riesgo crítico: Facephi se publicó primero en IUPANA .",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"iupana – eventos (FinSeg Day e outros)"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "web:https://iupana.com/2026/11/18/codigo-qr-nfc-redeban-ampliara-tecnologia-sistema-pagos-inmediatos-colombia",
+"title": "Del código QR al NFC, Redeban ampliará su tecnología en el sistema de pagos inmediatos en Colombia",
+"url": "https://iupana.com/2026/11/18/codigo-qr-nfc-redeban-ampliara-tecnologia-sistema-pagos-inmediatos-colombia/",
+"venue": "iupana – eventos (FinSeg Day e outros) (notícias)",
+"date": "2026-11-18",
+"authors": [],
+"abstract": "A partir del segundo semestre de 2027, los comercios que usen Redeban podrán ofrecer la tecnología inalámbrica de corto alcance para hacer pagos desde la plataforma Bre-B. ... Leer más... La entrada Del código QR al NFC, Redeban ampliará su tecnología en el sistema de pagos inmediatos en Colombia se publicó primero en IUPANA .",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"iupana – eventos (FinSeg Day e outros)"
+],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24342386",
+"title": "Earned Autonomy for AI Agents: A Pre-registered Error-Budget Test of Per-Action-Type Delegation",
+"url": "https://doi.org/10.5281/zenodo.24342386",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-18",
+"authors": [
+"Otsoa Dubief"
+],
+"abstract": "Which actions may an AI agent take without human sign-off? We propose an open rule: an agent earns autonomy on one action type after N consecutive verified successes and loses it at the first confirmed error; N is derived from an error budget fixed in advance per stakes level by adapting the unrestricted AOQL of continuous sampling plans, with a conditional bound on the extra errors delegation lets through. We test it in a pre-registered replay: three Claude 5.5 models on four public benchmarks (τ-bench airline, retail and banking; WorkBench), 14,266 episodes played (13,623 analysed), writes checked by exact comparison (98.7% coverage) and alerts reviewed on blind sheets by separate Claude instances. No configuration reached the pre-registered level of evidence required for delegation (verdict R4). Only one of twelve configurations had enough volume to be judged; its error rate, 8.6% (lower bound 4.1%), is established above the 0.76% threshold. Of its 79 errors, 48 are one plot end-date discrepancy reviewers decided both ways; lifting it throughout leaves 31, established by two errors, and lifting also four one-day window shifts would not. The other eleven had too little effective ",
+"score": 8,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1111/joca.70089",
+"title": "Too Old to Benefit From FinTech ? An Exploratory Study on Older Adults' Access to and Adoption of Robo‐Advice",
+"url": "https://doi.org/10.1111/joca.70089",
+"venue": "Journal of Consumer Affairs",
+"date": "2026-11-17",
+"authors": [
+"Xinye Cao",
+"Steffen Westermann",
+"Laura de Zwaan",
+"Victor S. H. Wong"
+],
+"abstract": "ABSTRACT Robo‐advice has the potential to provide affordable financial advice to assist older adults with building and managing retirement income. Yet robo‐advice uptake among those aged 60 to 80 years is low, and little is known about how they engage with robo‐advice. Our study examines the drivers and barriers to robo‐advice access and adoption among older adults, and provides practical recommendations for industry and policymakers. Drawing on qualitative surveys and interviews with academic and industry experts familiar with the Australian financial advice landscape. We identify six core themes and their possible interrelationships, which likely affect older adults' access and adoption: robo‐advice design, digital and financial capabilities, trust, psychological comfort, regulatory deficiencies, and social influence. In integrating our findings with the technology acceptance and financial planning literature, we construct a conceptual framework that responds to calls for more comprehensive explanations of consumer behavior toward robo‐advice.",
+"score": 5,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1002/bse.71891",
+"title": "Strengthening or Straining Resilience? Climate Risk Disclosure and Technology Adoption in Banks",
+"url": "https://doi.org/10.1002/bse.71891",
+"venue": "Business Strategy and the Environment",
+"date": "2026-11-17",
+"authors": [
+"Greta Benedetta Ferilli",
+"Yener Altunbaş",
+"Egidio Palmieri"
+],
+"abstract": "ABSTRACT This paper examines bank digital transformation and climate risk disclosure as two concurrent strategic investments and tests their joint effect on market‐implied default risk, a question central to financial‐system resilience under SDG 13. Prior research has largely studied the two strategies in isolation. Drawing on synergy theory, we document negative association between them and show how it evolves across default‐risk horizons. Using a global sample of 543 listed banks from 2000 to 2023, we examine how technology‐firm acquisitions and climate risk disclosure relate to market‐implied default probability. Each strategy is associated with lower perceived fragility when considered separately. However, their interaction is positive and significant, which indicates that pursuing both at once attenuates these stabilizing effects. This pattern is consistent with negative synergy.Scaling both transformations at the same time creates coordination costs, managerial attention constraints, and implementation strain. This negative synergy is strogest at shorter horizons, whereas climate disclosure becomes more relevant at longer maturities. The findings suggest that banks should seq",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24320341",
+"title": "Generative AI and Early-Career Computing Pathways: A Scoping Evidence Map of Skills, Employability Perceptions and Workforce Change, with Coding by Country Income Group",
+"url": "https://doi.org/10.5281/zenodo.24320341",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-17",
+"authors": [
+"Dua Naeem"
+],
+"abstract": "Background. Generative AI coding tools spread rapidly after ChatGPT's release in November 2022, and there is concern that they change how early-career workers enter computing. Existing reviews address junior developers' perceptions, software practice or computing education, but, as far as could be read, none maps the evidence jointly by career stage, outcome type, evidence basis and country income group. Objective. To map the evidence on generative AI and skills, employability perceptions, labour-market change, task or role change and education response for computing students, recent graduates (up to 2 years after graduation) and early-career workers (up to 3 years in a software or IT role), and to show where that evidence comes from. Methods. A scoping evidence map guided by Arksey and O'Malley, Levac et al. and the Joanna Briggs Institute, and reported against PRISMA-ScR. On 7 November 2026 two free sources were searched: arXiv (1,293 records) and OpenAlex (13,005 records), supplemented by earlier purposive searching. After de-duplication and a keyword pre-filter, 702 records were shortlisted and 82 were assessed in detail. The protocol was not registered. Screening and charting ",
+"score": 5,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.26531/vnbu2026.wp03",
+"title": "How NBU’s Communications Have Changed During Full-Scale War: An AI Perspective",
+"url": "https://doi.org/10.26531/vnbu2026.wp03",
+"venue": "",
+"date": "2026-11-12",
+"authors": [
+"Bohdan Chepyha"
+],
+"abstract": "This study examines how the National Bank of Ukraine’s (NBU) communications have changed during the full-scale war. Using a large language model (LLM, Gemini 3.1 Flash-Lite), we classify each sentence of 43 Inflation Reports published in 2015–2026 as policy or nonpolicy communications. We then split policy communications into main objectives (price stability, financial stability, and economic activity), additional tasks (such as anchoring expectations or exchange rate considerations), and the rationales for policy decisions. The share of policy communications, which had already been rising before the full-scale war, averaged 21.3% during the full-scale war, compared to 14.9% before it, and peaked at 26.5% during the transition to managed exchange rate flexibility. The outbreak of full-scale war shifted emphasis toward the financial stability objective and exchange rate-related tasks, while price stability remained the central objective and again accounted for the largest share of main-objective communications under flexible inflation targeting (IT). Supporting regressions show that FX-related topics track exchange rate developments and FX interventions, mainly during managed flexib",
+"score": 6,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1108/rae-08-2026-0402",
+"title": "Factors influencing FinTech adoption in the agrarian sector of developing economies: bridging technology, finance and policy for sustainable development",
+"url": "https://doi.org/10.1108/rae-08-2026-0402",
+"venue": "Revista de Administração de Empresas",
+"date": "2026-11-13",
+"authors": [
+"Akhilesh Sharma",
+"Arvind Mohan",
+"Kapil Ahalawat"
+],
+"abstract": "Purpose This study aims to examine the factors influencing financial technology (FinTech) adoption among Indian farmers by extending the Unified Theory of Acceptance and Use of Technology (UTAUT), with behavioral intention as a mediating mechanism. Design/methodology/approach A quantitative cross-sectional survey was conducted among 461 farmers across nine districts of Uttar Pradesh, India. Data were analyzed using structural equation modeling and multigroup analysis. Findings Facilitating conditions and habit significantly influence behavioral intention, which strongly drives actual FinTech adoption. Behavioral intention mediates these relationships. Multigroup analysis shows that the behavioral intention–adoption relationship remains stable across gender, age and farm size, although demographic characteristics influence antecedent effects. Practical implications Policymakers, financial institutions and FinTech providers should develop intention-focused, demographically sensitive strategies emphasizing digital literacy, accessibility and enabling infrastructure. Social implications Greater FinTech adoption can reduce rural financial exclusion, strengthen economic resilience and su",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "arxiv:2611.22480",
+"title": "RehearsalBench: Can AI Predict What Happens When You Change a Company?",
+"url": "https://arxiv.org/abs/2611.22480",
+"venue": "arXiv (cs.AI)",
+"date": "2026-11-17",
+"authors": [
+"Mika Siddiqui",
+"Tharaka Perera"
+],
+"abstract": "Organizations increasingly ask AI systems what will happen if they change how they operate: which work to automate, which team to resize, what a voice agent will do to waiting times. We introduce RehearsalBench, a benchmark that measures whether AI models can diagnose an operation, choose an intervention, and forecast its consequences. Each model is placed in a simulated bank contact center fitted to real call-level records, sees only what a manager would see, and submits a plan and forecasts that are then played out across 200 seeded futures and three plausible versions of the organization. Decisions are scored in dollars at the stakeholders' stated valuations; forecasts are scored on the effect of each change relative to doing nothing. Ten models made 280 attempts across 14 organizations. The best model, GPT-6 Astra, improved on doing nothing by 6.8% of the no-change cost and made 77% less forecast error than a forecaster who always predicts no effect. On average, every model forecast the direction of every specified effect correctly, but models erred on the size of the same effects in the same direction, overstating a voice agent's effect on repeat contacts about five-fold. No m",
+"score": 7,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.13140/rg.2.2.24634.15047",
+"title": "Evidence-Gated Delegation for Agentic AI How to Let an AI Agent Act Only When the Evidence Justifies It, Learn Safely from Verified Mistakes, and Prove It Offline: A Bank-Reconciliation Case Study",
+"url": "https://doi.org/10.13140/rg.2.2.24634.15047",
+"venue": "",
+"date": "2026-11-18",
+"authors": [
+"Lakshminarasimhan Santhanam"
+],
+"abstract": "",
+"score": 7,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.13140/rg.2.2.29395.34083",
+"title": "Mandata and the Mandate Format (MMF): Bounded Spending Authority for Agent-Initiated Payments",
+"url": "https://doi.org/10.13140/rg.2.2.29395.34083",
+"venue": "",
+"date": "2026-11-17",
+"authors": [
+"Shedrack Chiedozie"
+],
+"abstract": "",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.5281/zenodo.24274019",
+"title": "x402 and Intent: The question behind an agent's payment",
+"url": "https://doi.org/10.5281/zenodo.24274019",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-16",
+"authors": [
+"Ray Fatahi"
+],
+"abstract": "",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s10660-026-10217-1",
+"title": "Beyond technology acceptance: the enabling roles of awareness and perceived risk in AI-powered banking",
+"url": "https://doi.org/10.1007/s10660-026-10217-1",
+"venue": "Electronic Commerce Research",
+"date": "2026-11-13",
+"authors": [
+"Monica C.",
+"Nisha Goyal",
+"Satish Kumar"
+],
+"abstract": "",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s42786-026-00069-6",
+"title": "Federated memory propagation: privacy-preserving agentic AI for cross-institutional fraud detection",
+"url": "https://doi.org/10.1007/s42786-026-00069-6",
+"venue": "Journal of Banking and Financial Technology",
+"date": "2026-11-17",
+"authors": [
+"Divesh Sarkar",
+"Flynn Werner",
+"Manish Sarkar"
+],
+"abstract": "",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s42786-026-00070-z",
+"title": "Strengthen the signal, weaken the system? CBDC design trade-offs and monetary implications",
+"url": "https://doi.org/10.1007/s42786-026-00070-z",
+"venue": "Journal of Banking and Financial Technology",
+"date": "2026-11-12",
+"authors": [
+"Rosa Indira Widiastri",
+"Andry Alamsyah",
+"Irni Yunita"
+],
+"abstract": "",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
+},
+{
+"key": "doi:10.1007/s43681-026-01485-6",
+"title": "Hidden hands on the wheel: located ethical agency as a bipositional evaluation instrument for deployed AI agents",
+"url": "https://doi.org/10.1007/s43681-026-01485-6",
+"venue": "AI and Ethics",
+"date": "2026-11-18",
+"authors": [
+"Abhinav Saxena"
+],
+"abstract": "",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-19"
 }
 ]
