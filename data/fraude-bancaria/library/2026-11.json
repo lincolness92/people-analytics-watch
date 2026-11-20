@@ -3006,5 +3006,101 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-19"
+},
+{
+"key": "doi:10.3390/app162211473",
+"title": "Reassessing Unsupervised Anomaly Augmentation for Fraud Detection: The Roles of Distribution Shift, Learner Instability, and Run-to-Run Variability",
+"url": "https://doi.org/10.3390/app162211473",
+"venue": "Applied Sciences",
+"date": "2026-11-19",
+"authors": [
+"Canan Aslanyürek",
+"Murat Aslanyürek"
+],
+"abstract": "Unsupervised anomaly scores are often added to supervised fraud classifiers, but an apparent gain may stem from learner instability or from the mere addition of a column rather than from anomaly information. We propose a controlled evaluation protocol that combines temporal splitting, multi-seed replication, uninformative negative-control columns, learner-stability checks and prespecified equivalence margins. It is applied to LightGBM and XGBoost with six anomaly representations on the Bank Account Fraud (BAF) benchmark and the chronologically split CreditCard dataset, including rolling-origin windows. On BAF, a single-seed gain of 3.5% in mean-variant AUPRC shrank to 1.2% under multi-seed evaluation, matching the 1.1% gain of a random-noise column. On CreditCard, changing only the LightGBM bagging seed moved baseline AUPRC between 0.004 and 0.742. Bounding leaf values reduced collapses from 77% of runs to none, and a reverse experiment reproduced the collapses in XGBoost once both of its leaf-value safeguards were removed. With stable learners, every anomaly representation was equivalent to a random-noise column within prespecified margins of about 1% (CreditCard) and 4% (BAF) of ",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1177/0926227x261509540",
+"title": "RUID: Privacy-preserving multi-factor authentication through ephemeral user identifiers",
+"url": "https://doi.org/10.1177/0926227x261509540",
+"venue": "Journal of Computer Security",
+"date": "2026-11-19",
+"authors": [
+"Amit Kumar",
+"Wakar Ahmad",
+"Om Pal",
+"Sunil Sunil"
+],
+"abstract": "This paper introduces RUID (Random User Identifier and Dynamic), a privacy-preserving multi-factor authentication (MFA) protocol. Traditional MFA and federated identity frameworks rely on static user identifiers, leaving them vulnerable to user enumeration, cross-session tracking, and credential stuffing. RUID mitigates these threats by replacing persistent identifiers with ephemeral, single-use identifiers cryptographically bound to a registered client device. By removing the static identity from the network transit phase, RUID prevents early-stage reconnaissance and identity correlation. The protocol is analysed using a five-stage approach which provides a precise monitor of the security and performance limits of the extensively used authentication mechanisms. The protocol is assessed against the prominent authentication framework like OAuth2+OIDC, SAML2 based federation, smart card based schemes and digital signature based approaches. The protocol is analysed as benchmark, measuring success rates of attacks, authentication latency, and failure behavior in adverse conditions. In order to have a main consistency and replicability of the protocol all the experiments are made in a t",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.54097/ypkpr569",
+"title": "Maturity-Aware Dual-Timescale Replay for Delayed-Feedback Financial Fraud Screening",
+"url": "https://doi.org/10.54097/ypkpr569",
+"venue": "International Journal of World Economic Research",
+"date": "2026-11-18",
+"authors": [
+"David Gupta",
+"Ryan White",
+"Kiran Tran"
+],
+"abstract": "Fraud-screening labels often arrive after a transaction, with fraudulent outcomes confirmed later than legitimate outcomes. This class-dependent observation process distorts conventional replay under concept drift. We instantiate the adaptive recent/global prioritized replay of DriftShield in a one-step cost-sensitive fraud controller, and extend it with maturity-gated access, transaction-time recency and capped inverse confirmation-visibility weighting. A second, arrival-driven scorer supplies a faster adaptation channel; its predictions are combined with the slow replay scorer using a fixed mixture. The system is tested prequentially on an explicitly synthetic 42,000-event stream with two changes in fraud signatures and asymmetric reporting delays. In the three-seed comparison, 42 model/delay runs include three component ablations and two stress-test delays. An additional 12-seed paired evaluation reports F1 0.262 and average precision 0.236 for the dual-timescale controller, versus 0.239 and 0.223 for arrival-time replay. A fast-only scorer with the same threshold controller instead reaches F1 0.265 and average precision 0.242: the slow branch does not improve that stronger comp",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.3390/jtaer21110430",
+"title": "A Selective State-Space Model for Real-Time E-Commerce Transaction Anomaly Detection in Management Information Systems",
+"url": "https://doi.org/10.3390/jtaer21110430",
+"venue": "Journal of theoretical and applied electronic commerce research",
+"date": "2026-11-19",
+"authors": [
+"Ziad Hmwd A Almtiri"
+],
+"abstract": "Management information systems (MISs) are subject to complex patterns of fraud, which change over time, as they occur at high speeds in class-imbalanced data streams. E-commerce platforms process very large transaction volumes. Existing detectors have three structural problems. The quadratic complexity of transformer attention makes it difficult to meet millisecond-scale inference budgets, recurrent models suffer from gradient pathologies over long behavioral sequences, and static loss functions are unable to adjust to the severe and changing class imbalance found in real transaction logs. This article introduces a selective state-space framework (SHOPMAMBA-MIS) that tackles all three challenges within a single framework. SHOPMAMBA-MIS consists of three parts: Selective-State Autoencoder (SSAE) to compress behavioral transaction sequences with linear-time selectivity, Transaction Attention Module (TAM) to emphasize anomaly boundaries per token without complete self-attention, and Dynamic Imbalance-Focal Sampler (DIFS) to dynamically sample the focal loss weight per mini-batch based on an exponential moving average (EMA) class-ratio estimator. On three public benchmarks, IEEE-CIS Fr",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1016/j.heliyon.2026.e45763",
+"title": "Addressing class imbalance in credit card fraud detection using Mahalanobis-based undersampling of extreme observations",
+"url": "https://doi.org/10.1016/j.heliyon.2026.e45763",
+"venue": "Heliyon",
+"date": "2026-11-19",
+"authors": [
+"Jorge Saavedra-Garrido",
+"Daira Velandia",
+"Cristian Ubal",
+"Eyleen Spencer",
+"Keyla Canibilo Rojas",
+"Rodrigo Salas"
+],
+"abstract": "",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
 }
 ]

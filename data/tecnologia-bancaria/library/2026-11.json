@@ -3586,5 +3586,425 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-19"
+},
+{
+"key": "web:https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
+"title": "SFF day two: the money is ready, the agents are not",
+"url": "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not/",
+"venue": "The Fintech Times",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "the Monetary Authority of Singapore showed how far tokenisation has come, with S$100 million of its own bills issued and settled on a digital ledger, and how far agentic AI has to go The post SFF day two: the money is ready, the agents are not appeared first on The Fintech Times .",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/pix-6-anos/crescimento-do-pix-coloca-a-prova-a-infraestrutura-do-sfn",
+"title": "Crescimento do Pix expõe vulnerabilidades na infraestrutura de pagamentos",
+"url": "https://finsidersbrasil.com.br/pix-6-anos/crescimento-do-pix-coloca-a-prova-a-infraestrutura-do-sfn/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "Pix completa seis anos com novas modalidades de pagamento, como Pix Automático, Pix por Aproximação e Pix por Biometria, que ainda enfrentam ritmos diferentes de adoção no mercado | Imagem: Finsiders Brasil | gerada por IA via ChatGPT/OpenAI Dependência de fornecedores compartilhados, concentração de serviços críticos e expansão das transações colocam à prova a capacidade de sustentação do sistema",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://www.bankingdive.com/news/banks-patching-vulnerabilities-tech-outage-risk-ai-cybersecurity/875329",
+"title": "Banks race to patch vulnerabilities amid amplified tech outage risk",
+"url": "https://www.bankingdive.com/news/banks-patching-vulnerabilities-tech-outage-risk-ai-cybersecurity/875329/",
+"venue": "Banking Dive — Technology",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "Expect more technology outages similar to those occurring over the past week, as artificial intelligence models expose system vulnerabilities, including at banks, experts told Banking Dive Wednesday. Microsoft, the Federal Aviation Administration, JPMorgan Chase , United Airlines, Apple and the National Security Agency have all encountered outages over the last eight days, underscoring the challenge of keeping services functional while patching vulnerabilities, Cybersecurity Dive reported Thursday . “Everybody's updating a lot,” said Justin Herring, a New York-based partner at Mayer Brown. “New vulnerabilities are being found, and each update where you change things around inside of your system is an opportunity for things to break in unexpected ways.” “In theory, we should reach an equilibrium point, at some point, where we're finding vulnerabilities at roughly the same rate we're patching them,” Herring said during a live virtual event co-hosted by Banking Dive and Cybersecurity Dive . “But that is not going to happen in the foreseeable future.” Citi CEO Jane Fraser, addressing the topic Wednesday during an interview with Bloomberg , said she understands why the collection of rec",
+"score": 5,
+"theme": "engineering",
+"region": "mundo",
+"watch": [
+"Banking Dive"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://www.americanbanker.com/news/exclusive-research-jpmorgan-s-ai-strategy-puts-governance-to-the-test",
+"title": "Exclusive Research: JPMorgan’s AI strategy puts governance to the test",
+"url": "https://www.americanbanker.com/news/exclusive-research-jpmorgan-s-ai-strategy-puts-governance-to-the-test",
+"venue": "American Banker",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "American Banker research shows banks with stronger AI governance are better at quantifying financial impact and scaling adoption.",
+"score": 7,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/ia/precisao-da-ia-sobe-e-bancos-usam-em-seguranca-digital",
+"title": "Precisão da IA aumenta e bancos apostam na tecnologia para reforçar segurança digital",
+"url": "https://finsidersbrasil.com.br/ia/precisao-da-ia-sobe-e-bancos-usam-em-seguranca-digital/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "Inteligência Artificial | Imagem: Canva Estudo da Febraban e da Accenture identifica 35 tendências tecnológicas, com destaque para automação, comércio agêntico e proteção digital",
+"score": 6,
+"theme": "automation",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+"title": "Give your agents controlled access to analyze your data and move funds",
+"url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+"venue": "Stripe Blog",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Stripe Treasury now lets agents transfer funds, convert currencies, and pay vendors within limits you set. Give agents the access they need to help run your business, with customizable controls and human approvals.",
+"score": 8,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"Stripe"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://iupana.com/2026/11/20/peru-lanza-dni-digital-y-plantea-cambios-en-el-onboarding-financiero",
+"title": "Perú lanza DNI digital y plantea cambios en el onboarding financiero",
+"url": "https://iupana.com/2026/11/20/peru-lanza-dni-digital-y-plantea-cambios-en-el-onboarding-financiero/",
+"venue": "iupana – eventos (FinSeg Day e outros) (notícias)",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "El nuevo documento permitiría verificar credenciales digitales. Sin embargo, su adopción exige integraciones tecnológicas y la resolución de desafíos de seguridad, continuidad operativa y articulación estatal. ... Leer más... La entrada Perú lanza DNI digital y plantea cambios en el onboarding financiero se publicó primero en IUPANA .",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"iupana – eventos (FinSeg Day e outros)"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/19/11/2026/mercado-pago-34-milhoes",
+"title": "Em seis anos, Mercado Livre movimentou cerca de R$ 700 bilhões em Pix",
+"url": "https://www.mobiletime.com.br/noticias/19/11/2026/mercado-pago-34-milhoes/",
+"venue": "Mobile Time",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Só em 2026, 34 milhões de clientes do banco usaram o meio de pagamento; foram 279 milhões de transações somente em setembro",
+"score": 7,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.48550/arxiv.2611.24661",
+"title": "Metadata-Driven AI: An Architectural Pattern for Sustainable Data Analysis with LLMs",
+"url": "https://doi.org/10.48550/arxiv.2611.24661",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-18",
+"authors": [
+"Renaud Pawlak",
+"Armen Sulejmani",
+"Jordi Cabot"
+],
+"abstract": "Large Language Models (LLMs) let users analyse data in natural language, either by giving the data to the model to read directly or by having the model generate code to process it. Both routes send the data, or fragments of it, to the model; both pay for inference on every run; and the code a model writes to answer a question is usually discarded once the question is answered. We present Metadata-Driven AI, an architectural pattern that keeps the data away from the model and turns each analysis into a reusable program. Only metadata (not the actual data) crosses a one-way inference boundary to the LLM. The program the LLM returns runs next to the data and is kept, so that inference is paid once per analysis rather than once per run. We describe the pattern together with a simple cost model, a measurement of how little information crosses the boundary on public datasets, and a benchmark showing that a small, locally hosted model can serve as the generator. We illustrate the pattern on three applications, each built on a different implementation of it: geospatial photovoltaic prospection over live public APIs, extraction of portfolio positions from bank statements, and a conversation",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.3390/fintech5040111",
+"title": "FinTech and European Bank Performance: A Machine-Learning Analysis of Greenwashing and Sustainability Channels",
+"url": "https://doi.org/10.3390/fintech5040111",
+"venue": "FinTech",
+"date": "2026-11-19",
+"authors": [
+"Mejda Tebessi",
+"Heni Boubaker"
+],
+"abstract": "The parallel diffusion of financial technology and the tightening of European sustainable-finance regulation have reshaped banking, yet how digitalisation affects financial performance remains unclear. Using a panel of 90 European banks over 2014–2025 (1080 bank-year observations) and a Fintech index built from annual-report text through a Dynamic Factor Model, we examine whether, and through which channels, Fintech adoption is associated with bank performance, focusing on two mechanisms usually treated as controls: greenwashing and substantive ESG practices. We combine causal mediation, a sensitivity analysis to hidden confounding, a doubly robust Double Machine Learning estimator, unconditional-quantile (RIF) regressions, Local Projections, a Causal Forest, and optimal policy learning. Four findings emerge. First, Fintech’s direct effect raises long-term soundness while depressing short-term profitability, though its total effect on profitability is insignificant. Second, both channels mediate the relationship in the baseline specification, but only the substantive-ESG channel is robust to alternative measurement: the greenwashing channel, significant in the baseline, does not su",
+"score": 6,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.5281/zenodo.24378766",
+"title": "Governing Rogue AI Agents with Valid Credentials: A Reference Architecture for Business-Aware Autonomy Assurance in Agentic Enterprise Systems",
+"url": "https://doi.org/10.5281/zenodo.24378766",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-19",
+"authors": [
+"Ganesh Raju"
+],
+"abstract": "Technical white paper (v1.0, November 2026). Enterprise adoption of agentic AI is moving autonomous software from advisory roles into payments, ERP, supply chains, clinical systems and plant operations. Most agent security controls evaluate whether a single identity may perform a single action. This paper argues that the dominant failure mode of the next phase of enterprise AI is different: harmful business outcomes produced by agents that hold valid credentials and act within their permissions, either because they were manipulated or because several individually authorized agents compose into an outcome nobody approved. We define this class of failure as the rogue agent with valid credentials, introduce the concept of autonomy debt, and present a vendor-neutral reference architecture in which the model only proposes; an independent, deterministic action gateway decides; business-state invariants are enforced as policy-as-code (Cedar, OPA/Rego) in the systems of record such as SAP and other ERP; approvals are cryptographically bound to action fingerprints; limits are cumulative across agents; and a kill switch operates from a failure domain independent of the agent platform. The pa",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.5281/zenodo.24365287",
+"title": "The Emergence of Agentic Finance: Reimagining Financial Intermediation",
+"url": "https://doi.org/10.5281/zenodo.24365287",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-19",
+"authors": [
+"SOURABH PRADHAN"
+],
+"abstract": "Autonomous AI agents (software that perceives, reasons, plans, and acts toward a goal with limitedhuman intervention) are moving into the everyday plumbing of money. When consumers delegatenegotiation, allocation, or purchase execution to an agent that communicates directly with banksand payment rails, the architecture of financial intermediation is stressed at its core. This paperdefines agentic finance as the regime in which agents become the primary interface and executionlayer between consumers and providers, and asks how that regime could reconfigure the functionsintermediaries perform. Drawing on intermediation theory, I argue that agentic finance is betterunderstood as a reallocate-and-reintermediate shock than as simple disintermediation: value andcontrol migrate toward whoever owns the orchestration layer, the credential rails, and the trustinfrastructure, potentially producing new gatekeepers rather than none. I develop a frameworkof four scenarios plus a null case and outline governance responses. The paper is conceptual;forward-looking statements are labeled as scenarios",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11552307/v1",
+"title": "Does an Integrity-Gated Governance Observability Index Measure Reconstructability? A Simulation-Based Criterion-Validity Study of Agent Telemetry under Out-of-Specification Faults",
+"url": "https://doi.org/10.21203/rs.3.rs-11552307/v1",
+"venue": "Research Square",
+"date": "2026-11-19",
+"authors": [
+"Ravi Shankar NRK"
+],
+"abstract": "Governance of agentic AI systems depends on execution evidence: an operator can judge whether an agent stayed within its authority only if its telemetry allows what it did to be reconstructed. The Governance Observability Index (GOI) proposes to measure this as a gated geometric mean of coverage, fidelity, integrity and timeliness, with an integrity gate intended to stop untrustworthy evidence being masked by completeness elsewhere. This simulation study tests one implementation of the index against criteria computed from complete ground truth, of which the estimator sees only a 40-record ledger sample. A seeded testbed simulates a scripted payments agent, a policy gateway, an authoritative ledger and an HMAC-chained telemetry stream. The estimator uses only the stream, a gateway control total and a 40-record ledger sample. Twelve fault families—four within the original specification, four outside it and four benign infrastructure perturbations—are evaluated in 2,520 single-family runs and 1,000 mixed runs. GOI correlates with reconstruction accuracy (Spearman ρ = 0.85, 95% CI 0.83–0.87) and separates degraded from sound reconstructions (AUC 0.93). It is weaker as a warning of miss",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1142/s0217590826500475",
+"title": "Competition and Bank Stability in China: The Role of Fintech under Nonlinear and Threshold Effects",
+"url": "https://doi.org/10.1142/s0217590826500475",
+"venue": "The Singapore Economic Review",
+"date": "2026-11-19",
+"authors": [
+"Chang-Sheng Liao"
+],
+"abstract": "This study examines the Chinese banking sector over the period 2010–2022 and constructs a bank-level fintech index alongside a macro-level digital finance measure. Using generalised method of moments and panel threshold models, it investigates the relationship between competition, fintech, and bank stability inefficiency. The results indicate a significant non-linear effect of competition on risk, supporting the competition–stability hypothesis. Threshold analyses identify single- and double-threshold effects for capital adequacy and diversification. At the fintech level, macro-level development is associated with a significant reduction in bank risk and exhibits stronger effects than bank-level fintech. In contrast, bank-level fintech appears to mitigate risk only under specific conditions (e.g. high capitalisation or strong competition), suggesting context-dependent effects. Overall, the findings indicate that balanced market competition and stronger macro-level fintech development improve bank stability. The results further suggest that maintaining an appropriate level of competition, strengthening capital adequacy, and promoting a robust fintech ecosystem may enhance financial ",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.52250/bmr.v14i2.1152",
+"title": "Explainable Artificial Intelligence Uncovers Non-Bank Financial Industry Contagion and Safeguards Central Bank Institutional Governance",
+"url": "https://doi.org/10.52250/bmr.v14i2.1152",
+"venue": "Banking & Management Review",
+"date": "2026-11-19",
+"authors": [
+"Iman Supriadi",
+"Mochamad Fatchurrohman",
+"Rizyana Mirda"
+],
+"abstract": "Introduction/Main Objectives: This paper examines systemic risk interconnections within Indonesia's Non-Bank Financial Industry (NBFI), which displays intricate systemic risk interconnections that alter traditional macroprudential dynamics. As financial ecosystems digitalize, understanding cross-sectoral risk transmission beyond banking is crucial for stability. The study further aims to develop a transparent artificial intelligence framework capable of supporting timely macroprudential policy interventions and institutional decision-making. Background Problems: Systemic risk from NBFI interconnections insurance, pension funds, finance companies, guarantee institutions, and P2P lending remains insufficiently mapped, and linear models fail to capture nonlinear contagion, raising the question of how risks transmit across NBFI sectors and what their primary drivers are. Novelty: This paper pioneers integrating econometrics with Explainable AI (SHAP-Random Forest) to construct an NBFI systemic risk framework, offering transparent, actionable insights for regulators to strengthen macroprudential governance and safeguard financial stability. Research Methods: The study employs correlatio",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11765901/v1",
+"title": "Verifiable Incentives: Identity-Bound Contracts and Collusion-Proof Delegation for Agent Commerce",
+"url": "https://doi.org/10.21203/rs.3.rs-11765901/v1",
+"venue": "Research Square",
+"date": "2026-11-19",
+"authors": [
+"Jipu Su"
+],
+"abstract": "Personal agents are entering commerce. Industry protocols now let an agent prove, cryptographically, whom it represents and what it may do, while agent wallets give it a real budget, a payment trail, and one-time merchant credentials. These are usually read as security features. We argue they are something more: the missing infrastructure for incentive contracts. When identity, authority, budget, and payment are verifiable, the principal can contract on them-and the agent's incentives change. We formalize verifiable delegation, model a three-party market of user, agent, and merchant, and derive three results: (i) verifiable identity lowers the bonus and tenure needed to sustain effort; (ii) auditable payments bound merchant collusion, with collusion becoming unprofitable as audit probability rises; and (iii) a posted honesty stake substitutes for monitoring, with the required stake decreasing in audit quality and penalty credibility. We also show how alignment dilutes along nested delegation chains unless contracts are passed through. We instantiate the framework in PAIR-Commerce, an architecture with a verifiable identity layer, wallet ledger, sponsorship registry, collusion monit",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.5281/zenodo.24369966",
+"title": "Target's Turnaround Is Real. Is It Agent-Ready?",
+"url": "https://doi.org/10.5281/zenodo.24369966",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-19",
+"authors": [
+"Mohamed Y. Amer"
+],
+"abstract": "This work assesses Target Corporation’s third-quarter 2026 results (reported November 18, 2026) as a test of whether a large mass-merchandise retailer is ready for agentic commerce, meaning product discovery and purchasing carried out by AI shopping agents. The analysis first separates operating performance from one-time effects. Comparable sales grew 5.6% on a 5.0% traffic gain, but about $2.14 per share of year-to-date tariff refunds account for nearly four-fifths of the raised full-year EPS outlook. On a two-year basis, store comparable sales sit less than one point above 2024. It then examines how agents see a retailer. Gains in on-shelf availability, AI-driven replenishment and price investment strengthen the attributes agents screen on first. Target’s stated advantage with agents, however, is curation built for in-store discovery, which reaches an agent only once it is turned into structured, comparable product data. The paper contrasts a retailer-owned assistant with third-party agents, and it treats Target’s planned $5 to 6 billion in 2027 capital spending on stores and fulfillment as an investment in keeping the transaction with the retailer while discovery moves to AI pla",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.64388/ire1725450",
+"title": "Intelligent Decision Automation for Saudi Government and Banking Services under Vision 2030: Integrating Robotic Process Automation, Business Process Management, and Human-in-the-Loop Decision Governance",
+"url": "https://doi.org/10.64388/ire1725450",
+"venue": "Iconic Research and Engineering Journals",
+"date": "2026-11-19",
+"authors": [
+"Mohammad Nauman"
+],
+"abstract": "Intelligent decision automation promises faster Saudi public and banking services, yet automating a task is not equivalent to governing a decision. This critical integrative review examines how robotic process automation, business process management and human oversight can be combined without weakening procedural fairness, operational resilience or accountability. Thirty peer reviewed studies published between 2020 and 2025 are synthesised alongside the institutional context of Vision 2030, including digital government, regulated finance and electricity related service workflows. The analysis differentiates interface automation from process orchestration and consequential decision authority, and develops an original layered governance architecture with risk dependent human intervention, traceable rules and continuous process assurance. Applications considered include public licences, customer onboarding, banking exceptions, electricity connections, billing disputes and outage compensation. The review finds that automation benefits depend on prior process simplification, dependable data, documented decision rights and meaningful rather than symbolic human review. Machine predictions",
+"score": 5,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://stripe.dev/blog/learning-from-explanations",
+"title": "Learning from explanations",
+"url": "https://stripe.dev/blog/learning-from-explanations",
+"venue": "Stripe Dev Blog (engenharia)",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Training on explanations helps Stripe make more precise risk assessments. We explain our two-stage SFT approach and how on-policy distillation restores the model’s ability to explain its decisions.",
+"score": 8,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Stripe"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "web:https://convergenciadigital.com.br/governo/pl-do-marco-legal-de-ia-vai-retornar-ao-senado-e-votacao-fica-distante-em-2026",
+"title": "PL do Marco Legal de IA vai retornar ao Senado e votação fica distante em 2026",
+"url": "https://convergenciadigital.com.br/governo/pl-do-marco-legal-de-ia-vai-retornar-ao-senado-e-votacao-fica-distante-em-2026/",
+"venue": "Convergência Digital",
+"date": "2026-11-19",
+"authors": [],
+"abstract": "Especialista em privacidade e proteção de dados, Bruno Bioni, diz que a criação do comitê brasileiro de desenvolvimento de IA faz o texto voltar ao Senado. \"Infelizmente o prazo está muito apertado para votar esse ano\", diz.",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.5281/zenodo.24358122",
+"title": "AI Readiness, Adoption, and Productivity: Firm-Level Evidence from Low- and Middle-Income Countries",
+"url": "https://doi.org/10.5281/zenodo.24358122",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-19",
+"authors": [
+"Jones Arkoh Paintsil"
+],
+"abstract": "Can firms in developing economies translate readiness for artificial intelligence (AI) into higher productivity and greater AI adoption? This paper develops Firm-Level AI Enablement Index (FAEI), a composite measure of Power Reliability, Digital Connectivity, Human Capital, and Institutional Environment. Using World Bank Enterprise Survey data for 44,251 firms across 76 low- and middle-income economies and a 2026 follow-up covering 3,579 firms in seven economies, the analysis examines the relationship between readiness, adoption, and productivity. The findings are as follows. First, the FAEI is strongly associated with labour productivity. A 0.1 increase in FAEI is associated with 11.5 percent higher sales per worker, conditional on country, sector, and survey-year fixed effects. Second, Human Capital shows the strongest positive association among the four pillars, followed by Power Reliability and Digital Connectivity. Third, FAEI is not consistently associated with AI adoption. However, firm-level digital practices, particularly website presence and electronic payments, are positively associated with AI adoption and several measures of AI engagement. Fourth, AI adoption is not si",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1287/orsc.2023.17369",
+"title": "When Data Scientists Meet Domain Experts: Artificial Intelligence, Epistemic Conflict, and Knowledge Transformation",
+"url": "https://doi.org/10.1287/orsc.2023.17369",
+"venue": "Organization Science",
+"date": "2026-11-16",
+"authors": [
+"Mayur Prataprai Joshi",
+"Ning Su",
+"Mark Zbaracki"
+],
+"abstract": "Predictive artificial intelligence (AI) models developed by data scientists promise to transform organizational knowledge, yet in practice, the predictions remain inscrutable to domain experts. Existing explanations situate the problems in the opacity of the AI tools, failed adoption, or jurisdictional conflict but offer limited insight into how to make the knowledge accessible. Here, we show how the problem emerges from the competing epistemic stances of data scientists and domain experts, which create conflict over how to produce and evaluate knowledge. We then ask how data scientists and domain experts address that conflict so that their work with AI satisfies each group’s standards for producing and evaluating knowledge. Drawing on an 18-month inductive study of three large Indian banks, we show that the data scientists produce new knowledge, but domain experts hold the power to decide whether it is deployed. Our findings distinguish between epistemic and jurisdictional conflict. We show that data scientists first try to address the epistemic conflict directly through assimilative practices that follow one epistemic stance or the other. When these practices fail to transform kn",
+"score": 6,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "arxiv:2611.26200",
+"title": "A Three-Factor Hull-White Scenario Generator for Macro-Financial Stress Forecasting",
+"url": "https://arxiv.org/abs/2611.26200",
+"venue": "arXiv (q-fin.GN, q-fin.RM)",
+"date": "2026-11-19",
+"authors": [
+"Ahmad Qadi",
+"Thomas Schröder",
+"Francesca Medda"
+],
+"abstract": "This paper builds a scenario engine that maps a yield-curve path into a distribution of macro-financial outcomes. A three-factor Hull-White model generates arbitrage-free curves whose factors are simulated under the physical measure, with an estimated and reported market price of risk. A Minnesota-prior VARX maps the simulated curves into weekly equity returns, the federal funds rate, the Weekly Economic Index, inflation and a bank Marginal Expected Shortfall proxy, with a sign-restricted policy shock adapted to weekly data. Evaluated out of sample from 2017 to 2024, the term-structure block has the lowest forecast error in 13 of 20 maturity and horizon cells, and the density forecasts are well calibrated for the continuously moving variables. At weekly frequency the curve carries no incremental information about these variables once their own lags are controlled for, so the engine's value lies in conditioning on a specified curve path, which no benchmark can do.",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1007/s43546-026-01582-y",
+"title": "Agentic commerce protocols: an integrative review of AI-mediated transactions, consumer trust, and implementation gaps",
+"url": "https://doi.org/10.1007/s43546-026-01582-y",
+"venue": "SN Business & Economics",
+"date": "2026-11-19",
+"authors": [
+"Sanchay Gumber",
+"Sanchit Gumber",
+"Shashank Shekhar",
+"Vishal Sagar Rana"
+],
+"abstract": "",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
 }
 ]

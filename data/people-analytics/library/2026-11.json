@@ -11543,5 +11543,473 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-19"
+},
+{
+"key": "doi:10.1016/j.hrmr.2026.101185",
+"title": "Beyond speak-up: A multidirectional framework for employee voice issue processing",
+"url": "https://doi.org/10.1016/j.hrmr.2026.101185",
+"venue": "Human Resource Management Review",
+"date": "2026-11-19",
+"authors": [
+"Duckjung Shin"
+],
+"abstract": "Employee voice research explains why employees speak up or remain silent and how managers respond when they do. This article develops an organizational-level framework of employee voice issue processing to explain how HRM systems handle voiced concerns and why those concerns lead to different consequences. The framework shifts attention from voice occurrence to the movement, handling, and fate of employee voice issues within HRM voice architecture. It identifies five component pathways—voice up as upward expression, voice down as authoritative response, voice around as lateral voice testing, voice in as inward translation, and voice out as outward escalation—and argues that their consequences depend on how pathways are configured and integrated. The article introduces voice integration capacity as the organization's ability to link, interpret, coordinate, and respond to employee voice issues across these pathways. By connecting voice research with HRM system design, the article explains why opportunities to speak can lead to learning and correction in some settings but pseudo-voice, fragmentation, or external scrutiny in others. It treats employee voice not only as an individual ac",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1177/01492063261495910",
+"title": "Examining Negative Asymmetry in Employee Social Networks: A Meta-Analysis",
+"url": "https://doi.org/10.1177/01492063261495910",
+"venue": "Journal of Management",
+"date": "2026-11-19",
+"authors": [
+"Kameron M. Carter",
+"Hamed Ghahremani",
+"Eean R. Crawford",
+"Prasad Balkundi",
+"Robert J. Barrett"
+],
+"abstract": "Two decades have passed since Labianca and Brass introduced social ledger theory with its focal assumption of negative asymmetry—that the social liabilities created by negative workplace ties are more strongly related to employee outcomes than the social assets created by positive workplace ties. Yet widespread conclusions that negative workplace ties are more consequential have exceeded a surprisingly limited base of empirical tests. This article uses meta-analysis to examine this largely untested assumption by offering 22 original meta-analytic estimates drawn from 248 effect sizes across 71 samples representing 13,369 employees. At the bivariate level, both positive and negative ties have significant relationships with employee outcomes. However, evidence consistent with negative asymmetry emerged only for out-degree ties predicting task performance. In contrast, evidence more consistent with positive asymmetry emerged for in-degree ties predicting task performance and for both in-degree and out-degree ties predicting organizational attachment, although the relationships between in-degree ties and attachment are relatively small. Considerable variation exists around the effect s",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1002/hrm.70111",
+"title": "Toward an Integrative Model of Layoff Effects: A Strategic Human Capital Resources Framework",
+"url": "https://doi.org/10.1002/hrm.70111",
+"venue": "Human Resource Management",
+"date": "2026-11-19",
+"authors": [
+"Kaifeng Jiang",
+"Qianning Liu",
+"Dongyuan Wu",
+"Jie Feng"
+],
+"abstract": "Despite decades of research yielding rich theoretical insights and empirical evidence, the layoff literature remains fragmented. It lacks an overarching framework integrating findings across levels of analysis (e.g., organizational, group, and individual), stakeholder groups (e.g., layoff decision‐makers, executioners, survivors, and displaced employees), and outcomes from proximal processes to distal performance consequences. This fragmentation impedes understanding of how layoff effects unfold and why they vary across individuals and organizations. We review and synthesize layoff research and integrate insights from recent advancements in the strategic human capital resources literature. Our framework explains how layoffs first trigger an outflow of human capital and then reshape the quality, complementarity, and deployment of remaining human capital resources, while shaping the social‐psychological reactions of stakeholder groups. We further identify layoff characteristics as contingencies that determine whether layoffs produce negative or positive shifts in strategic human capital resources states, shape stakeholder reactions, and condition whether individual outcomes aggregate",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1093/oso/9780197817322.003.0017",
+"title": "Green Human Resource Management: Sustainability and the Employment Relationship",
+"url": "https://doi.org/10.1093/oso/9780197817322.003.0017",
+"venue": "Oxford University Press eBooks",
+"date": "2026-11-19",
+"authors": [
+"Andrew Bratton",
+"Peter Holland",
+"Kelsy Hejjas",
+"Aneeq Inam",
+"Tahir Masood Qureshi",
+"Douglas Renwick"
+],
+"abstract": "This chapter examines the opportunities and tensions involved in embedding green human resource management (HRM) in diverse organizational contexts. It highlights how cultural and institutional conditions shape the possibilities and limits of green HRM practices. The chapter first considers the role of HR professionals in leading corporate sustainability, emphasizing their strategic and operational influence on workforce engagement with ecological goals. It then reviews core green HRM practices through the ability-motivation-opportunity (AMO) framework. Drawing on pluralist perspectives, it shows how green HRM bundles are shaped by power, trust, and employee voice across the employee life cycle. The chapter argues that green HRM is embedded in the contested employment relationship and that its effectiveness depends on fairness, employee involvement, and commitment to the common good. Environmental sustainability in the workplace thus becomes a negotiated terrain, where future research and practice should explore how HR can foster more just and sustainable organizational transformations.",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.63544/jbii.v5i11.295",
+"title": "The Rise of Multi-Agent AI in Strategic Human Resource Management: Exploring How Collaborative AI Agents Transform Talent Management, Workforce Coordination, and HR Decision Authority",
+"url": "https://doi.org/10.63544/jbii.v5i11.295",
+"venue": "Journal of Business Insight and Innovation",
+"date": "2026-11-16",
+"authors": [
+"Rabail Shoukat",
+"Muhammad Irfan Syed",
+"EMAAD UDDIN SIDDIQUI",
+"Syed Zeshan Haider",
+"Arbab Mehmood"
+],
+"abstract": "This study examined how professionals in Pakistan understood the role of collaborative artificial intelligence (AI) agents in talent management, workforce coordination and HR decision authority. Guided by Socio-Technical Systems Theory and Organizational Information Processing Theory, the study used reflexive thematic analysis to interpret 20 online interviews with HR, operations and technology professionals. Six themes captured participants’ accounts of recruitment, career development, workforce planning, decision authority, procedural fairness and organizational readiness. Participants located a critical point of recruiter oversight at initial screening, when historical hiring preferences could exclude qualified applicants before human review. In development and scheduling, they identified employee aspirations, skills and personal circumstances as information that could change an otherwise plausible recommendation. They assigned responsibility for pay adjustments to compensation committees and staffing reductions to executives. Across functions, participants connected fairness with understandable reasons and access to a reviewer empowered to correct an outcome. The findings show ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1002/cpe.71023",
+"title": "Data Science Job Profiles Classifiers Using Machine Learning",
+"url": "https://doi.org/10.1002/cpe.71023",
+"venue": "Concurrency and Computation Practice and Experience",
+"date": "2026-11-18",
+"authors": [
+"Carlos Alberto Lastras Rodríguez"
+],
+"abstract": "This research examines the power of various professional competencies and industry characteristics within the Data Science job market to classify profiles in Barcelona and Madrid. We utilized human resource classification criteria and Random Forest, Gradient Boosting Decision Trees, XGBoost, and CatBoost as classification algorithms to identify key variables that drive model interpretability and performance. These variables include education, experience, personal attributes such as adaptability and continuous learning, English level, specific insights, teamwork, and external stakeholders' interactions. Our analysis reveals that soft skills, industry experience, and educational background—particularly English proficiency—are the primary determinants of job market classification, guiding stakeholders in talent development and optimizing recruitment strategy. This study focuses on the variables essential to the classification models, thereby contributing to a more sophisticated understanding of job market dynamics. Specifically, we highlight the synergy between professional skills and industry context as the primary driver of market identity in Barcelona and Madrid. This synergy is cr",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1093/9780197836293.003.0003",
+"title": "On-Demand Labour, Counterdata, and Worker Agency: Building Data Literacies in the Platform Economy",
+"url": "https://doi.org/10.1093/9780197836293.003.0003",
+"venue": "Oxford University Press eBooks",
+"date": "2026-11-19",
+"authors": [
+"Karen Gregory"
+],
+"abstract": "This chapter examines how platform workers develop new relationships with data, both to negotiate platform working conditions and to challenge algorithmic management. The chapter examines four data-driven projects (Turkopticon, Fairwork, Worker Info Exchange, and the Workers Observatory). It argues that each project cultivates a distinct but related form of data fluency. Such fluency is not an individual technical competence but a collective sociopolitical practice through which workers actively produce knowledge and evidence of platform working conditions and platform-based harms. While none of these projects can fully erase the fundamental asymmetries of platform labour, they do demonstrate that algorithmic systems are contested spaces, and that the strategic mobilisation of data fluency can meaningfully redistribute informational power.",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1287/orsc.2023.17369",
+"title": "When Data Scientists Meet Domain Experts: Artificial Intelligence, Epistemic Conflict, and Knowledge Transformation",
+"url": "https://doi.org/10.1287/orsc.2023.17369",
+"venue": "Organization Science",
+"date": "2026-11-16",
+"authors": [
+"Mayur Prataprai Joshi",
+"Ning Su",
+"Mark Zbaracki"
+],
+"abstract": "Predictive artificial intelligence (AI) models developed by data scientists promise to transform organizational knowledge, yet in practice, the predictions remain inscrutable to domain experts. Existing explanations situate the problems in the opacity of the AI tools, failed adoption, or jurisdictional conflict but offer limited insight into how to make the knowledge accessible. Here, we show how the problem emerges from the competing epistemic stances of data scientists and domain experts, which create conflict over how to produce and evaluate knowledge. We then ask how data scientists and domain experts address that conflict so that their work with AI satisfies each group’s standards for producing and evaluating knowledge. Drawing on an 18-month inductive study of three large Indian banks, we show that the data scientists produce new knowledge, but domain experts hold the power to decide whether it is deployed. Our findings distinguish between epistemic and jurisdictional conflict. We show that data scientists first try to address the epistemic conflict directly through assimilative practices that follow one epistemic stance or the other. When these practices fail to transform kn",
+"score": 7,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1287/mnsc.2024.05050",
+"title": "Sample Range as Subjective Variability and Implications for Experience-Based Decision Making",
+"url": "https://doi.org/10.1287/mnsc.2024.05050",
+"venue": "Management Science",
+"date": "2026-11-19",
+"authors": [
+"Tianwei Liu",
+"Benjamin Scheibehenne"
+],
+"abstract": "Variance and standard deviation are common metrics of statistical variability in the management and decision-making literature. In everyday contexts, however, information about sample range prevails. Range is arguably easier to comprehend and compute than variance, yet it often yields equivalent judgments about variability. Hence, we reason that decision makers often rely on range to judge variability. We test this hypothesis across four behavioral experiments (total n = 1,093). When comparing the variability of two number sets, decision makers predominantly based their judgments on sample range rather than sample variance when the two metrics disagree (experiment 1). Sample range tends to increase with sample size, whereas sample variance does not. Consistent with the range as variability hypothesis, decision makers perceived distributions as more variable after observing larger samples (experiment 2). This perceived variability, in turn, influenced risky decisions, as larger sample sizes led to decreased valuations of uncertain rewards for risk-averse decision makers (experiment 3). In further support of the hypothesis, when asked to mentally simulate new samples from a previousl",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1177/23970022261497174",
+"title": "Rhythm and blues in hybrid work: Distinct working from home configurations and related HR policy demands",
+"url": "https://doi.org/10.1177/23970022261497174",
+"venue": "German Journal of Human Resource Management Zeitschrift für Personalforschung",
+"date": "2026-11-18",
+"authors": [
+"Uta Wilkens",
+"Immanuel Lutzeyer"
+],
+"abstract": "Working from home (WFH) research typically presents employees’ preferences and companies’ policies for offsite work in an aggregate manner but neglects differences between employees’ rationales in the light of how digital technology has formed their performative interaction in teams. In this paper we argue that the shortcoming results from underestimating the digital artifact as merely a passive job resource. Thus, we explore WFH preferences as contextualized construct reflecting individual, team, and technological characteristics of digital work also in their interrelatedness. Our theoretical framework adopts a sociomaterial perspective that integrates human-centric and team-centric approaches and guides the identification of distinct WFH configurations. The empirical basis consists of two cross-sectional surveys conducted in 2023 ( n = 296) and 2025 ( n = 290) among German-speaking respondents with WFH options. Using exploratory and confirmatory latent profile analyses to substantiate our configurational approach, we identify three different and robust profiles: (1) a Life Balance Profile emphasizing individual interests for offsite work while expecting HR policies supporting ind",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.4018/979-8-2600-1659-6.ch006",
+"title": "Legal Governance of Digital Platform Practices: Reconciling Gig Economy Models With the Right to Decent Work",
+"url": "https://doi.org/10.4018/979-8-2600-1659-6.ch006",
+"venue": "IGI Global eBooks",
+"date": "2026-11-19",
+"authors": [
+"Pranjal Khare",
+"Pramoda Vithanage"
+],
+"abstract": "This chapter examines the legal governance of digital labor platforms, analyzing the tension between algorithmic management practices and the International Labour Organization's Decent Work Agenda. Through a comparative jurisprudential lens examining developments across the EU, UK, and US, including the UK Supreme Court's Uber v. Aslam ruling, Spain's Ley Rider, and the EU Platform Work Directive, this chapter evaluates the limitations of reactive judicial remedies and third-category labor classifications. It demonstrates how dynamic pricing, automated metrics, and algorithmic deactivation erode foundational labor rights, safety, and non-discrimination standards. To bridge this regulatory gap, the chapter proposes an integrated, rights-based governance framework anchored in a statutory rebuttable presumption of employment, algorithmic transparency, co-determination, worker data rights, competition law exemptions for collective bargaining, and portable benefit schemes to secure human dignity in platform capitalism.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.22235/rd32.5142",
+"title": "Neuroderechos y gestión algorítmica en el trabajo: riesgos laborales emergentes y redefinición del deber de prevención del empleador",
+"url": "https://doi.org/10.22235/rd32.5142",
+"venue": "Revista de Derecho",
+"date": "2026-11-19",
+"authors": [
+"Josué Vásquez"
+],
+"abstract": "This article examines how algorithmic management and neurotechnologies transform occupational risks and the employer’s duty of prevention. Drawing on a legal review of publications from 2015 to 2025 and a doctrinal, functional, and comparative analysis, it examines psychosocial, cognitive, discriminatory, and other risks associated with the processing of neural data. The study compares the safeguards established under European law, International Labour Organization standards, and the Peruvian legal framework governing occupational safety and health, data protection, and artificial intelligence. It identifies difficulties in assessing risks arising from opaque systems, supervising automated decision-making, and safeguarding workers’ right to defend themselves against disciplinary measures. The article proposes clarifying preventive obligations through the provision of clear and comprehensible information, meaningful human involvement in decisions producing significant effects, participatory risk assessments, and limits on the processing of mental data. In the Peruvian context, it distinguishes existing legal obligations from proposed regulatory measures.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1108/cms-10-2025-1048",
+"title": "Leader status-leveling behavior and leadership effectiveness: the roles of warmth-based mechanism and leader gender",
+"url": "https://doi.org/10.1108/cms-10-2025-1048",
+"venue": "Chinese Management Studies",
+"date": "2026-11-20",
+"authors": [
+"Shiyingzi Huang",
+"Lirong Long",
+"Yanghao Zhu"
+],
+"abstract": "Purpose In response to growing organizational efforts to promote diversity, equity and inclusion, many leaders are encouraged to adopt behaviors that reduce hierarchical distance, known as status-leveling behavior. While prior research has emphasized its benefits for employees, little is known about its effects on leaders themselves. This study aims to shift the focus to examine whether, how and for whom leader status-leveling behavior enhances leadership effectiveness. Design/methodology/approach To investigate these relationships, this study adopted a multi-method approach. This study conducted a video-based scenario experiment (n = 155) and a two-wave field survey (n = 212) to test the proposed theoretical model. Findings The video-based scenario experiment and multi-wave survey results showed that leader status-leveling behavior could promote leadership effectiveness through employee’s perceived leader warmth rather than competence. In addition, the status-leveling behavior of male leaders is more effective than that of female leaders in promoting leadership effectiveness through perceived leader warmth. Originality/value This study advances leadership research by repositioning",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "arxiv:2611.24970",
+"title": "HireWatch: Evaluating LLM Compliance with U.S. Employment Law Under Contextual Pressure",
+"url": "https://arxiv.org/abs/2611.24970",
+"venue": "arXiv (cs.CL, cs.AI)",
+"date": "2026-11-16",
+"authors": [
+"Huy Nghiem",
+"Maria Kostylew",
+"Noam Kolt"
+],
+"abstract": "The deployment of large language models (LLMs) in hiring pipelines is growing, yet existing evaluations generally overlook their compliance with legal rules. To fill this gap, we introduce HireWatch, an evaluation that assesses whether LLMs comply with U.S. laws that govern the questions that job candidates may be asked. We construct a 200-item bank of lawful and unlawful interview questions, whose legal classification is based on U.S. federal statutes, regulations, and agency guidance. We instruct LLMs to select questions from this bank in preparing for job interviews, across a set of various occupations and contexts, and report the fraction of unlawful questions that LLMs select. Evaluation of 18 closed and open-weight LLMs across ~100,000 trials under different types of contextual pressure reveals that LLMs' legal compliance is brittle. While LLMs generally avoid selecting unlawful questions in low-pressure contexts, legal violations increase sharply under higher pressure. Explicit prompts to comply with law can improve compliance rates, but do not altogether eliminate legal violations. We publicly release our code and data at https://github.com/hnghiem-nlp/hirewatch_repo.",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "oa:W7236875882",
+"title": "Is Algorithmic Control a Double-Edged Sword? A Systematic Review and Meta-Analysis of Perceived Algorithmic Control and Platform Workers' Well-being and Work Attitudes",
+"url": "https://osf.io/t6ydz",
+"venue": "OSF Preprints (OSF Preprints)",
+"date": "2026-11-17",
+"authors": [
+"Yun Gao"
+],
+"abstract": "This systematic review and meta-analysis synthesizes quantitative studies on the association between platform gig workers' perceived algorithmic control (or algorithmic management) and their well-being, work attitudes, and work behaviors. It estimates overall associations, tests whether distinct dimensions of algorithmic control (e.g., standardized guidance, tracking evaluation, behavioral constraint) relate to outcomes in different directions, and examines contextual and methodological moderators. English-language and Chinese-language literature will be included.",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "arxiv:2611.25269",
+"title": "AI-Induced Social Erosion: Using LLMs for Work Tasks Reduces Help-Seeking Intentions Towards Colleagues",
+"url": "https://arxiv.org/abs/2611.25269",
+"venue": "arXiv (cs.HC, cs.CY)",
+"date": "2026-11-18",
+"authors": [
+"Kevin Chow",
+"Sophia Deng",
+"Bowen He",
+"Hanyi Min",
+"Qiaosi Wang",
+"Koustuv Saha"
+],
+"abstract": "Generative AI is becoming embedded in knowledge work as an intelligent collaborator to assist in completing tasks. However, this readily available assistance risks displacing key interactions through which colleague relationships are built and sustained at work. This paper leverages the concept of help-seeking behaviour to investigate whether and how AI usage shapes colleague relationships. We conducted an online experimental vignette study where 248 knowledge workers evaluated scenarios that systematically varied whether and how AI was used across different work tasks. Using linear mixed-effects models, we found that AI-enabled work reduced help-seeking intentions compared to non-AI work across tasks, and especially for brainstorming. Visible AI usage was associated with greater help-seeking intentions towards colleagues, and individual contributors' colleague relationships were more vulnerable than managers. Our findings identify opportunities for workplace AI tools, practices, and policies to preserve colleague relationships in increasingly AI-integrated workplaces.",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1108/pr-04-2026-0716",
+"title": "How artificial intelligence shapes employer branding: a systematic review of perceptions and paradoxes",
+"url": "https://doi.org/10.1108/pr-04-2026-0716",
+"venue": "Personnel Review",
+"date": "2026-11-20",
+"authors": [
+"Rita Bendaravičienė",
+"Lina Pilelienė"
+],
+"abstract": "Purpose This study systematically synthesizes the emerging literature at the intersection of artificial intelligence (AI) and employer branding, addresses fragmentation across concepts, theories and methods and identifies key mechanisms shaping employer-brand-related perceptions and outcomes. Design/methodology/approach A systematic literature review (SLR) followed PRISMA guidelines, applied the theory–context–methodology (TCM) framework and combined descriptive analysis with thematic synthesis of 21 peer-reviewed studies retrieved from Scopus and Web of Science. Findings AI functions as a socio-technical signal that shapes employer-brand-related perceptions and outcomes through perception-based mechanisms. Organizational attractiveness, application intentions and engagement outcomes are shaped by candidates' perceptions of fairness, trust and emotional responses. A key paradox emerges: AI signals innovation and efficiency, enhancing attractiveness, but may also signal reduced human orientation and cost-driven motives, weakening outcomes. These effects vary by recruitment stage, culture and industry. Research limitations/implications The review is constrained by the relatively smal",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.4018/979-8-3373-9079-6.ch004",
+"title": "Algorithmic Bias and Discrimination in Organizational Decision-Making",
+"url": "https://doi.org/10.4018/979-8-3373-9079-6.ch004",
+"venue": "IGI Global eBooks",
+"date": "2026-11-19",
+"authors": [
+"F. Nazlı SAYĞAN YAĞIZ",
+"Bashar Issam Almetlaq Alzubi",
+"Hala Mohammad Allouzi"
+],
+"abstract": "As digital transformation increases organizational complexity, many organizations are adopting AI algorithms for critical administrative tasks like recruitment and resource allocation. AI algorithms are sequences of mathematical models that make predictions and provide automated decisions based on datasets. AI algorithms can take decisions on complex problems by using human reasoning and mimicking human cognitive processes. These algorithms are no longer merely tools; they now function as digital agents that manage processes by making autonomous decisions. Therefore, the chapter firstly addresses AI algorithms in organizational decision-making and then clarifies the issues of algorithmic bias and discrimination arising from AI algorithms. Secondly, this study highlights the need for governance mechanisms that align technical systems with organizational authorities' values and legal obligations to help reduce discrimination and bias . Finally, this chapter emphasizes the importance of transparent, ethical, responsible, and inclusive algorithms.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.56238/levv17n66-098",
+"title": "GESTÃO DE PESSOAS E IA GENERATIVA: REQUALIFICAÇÃO, SUBSTITUIÇÃO DE FUNÇÕES E EFEITOS SOBRE O CLIMA ORGANIZACIONAL",
+"url": "https://doi.org/10.56238/levv17n66-098",
+"venue": "LUMEN ET VIRTUS",
+"date": "2026-11-18",
+"authors": [
+"Natanael Alves Silva de Araújo",
+"Solange Maria Do Rego"
+],
+"abstract": "A IA generativa entrou nas organizações como ferramenta de produtividade, mas chega aos trabalhadores como decisão sobre o seu trabalho, e a gestão de pessoas responde a ela com duas estratégias principais: requalificar os trabalhadores cujos papéis mudam ou substituir as funções que a tecnologia passa a executar. O artigo pergunta como a gestão de pessoas tem tratado essa adoção e que efeitos cada estratégia tende a produzir sobre o clima organizacional. A análise, uma revisão integrativa de estudos empíricos e teóricos, compara os achados sobre requalificação e deslocamento com as dimensões em que o clima é medido. A requalificação aparece associada a confiança, informação, disposição para adotar a tecnologia e permanência, desde que conduzida com transparência sobre a evolução dos papéis, segurança para experimentar, mentoria e gestores preparados. A substituição atinge quem é dispensado, com perda de identidade e percepção de traição organizacional, atinge quem permanece, pela ansiedade que reduz a adoção, e atinge quem entraria na carreira, pela supressão das tarefas de formação. Na dimensão da igualdade, as duas estratégias concentram ganhos e perdas em grupos diferentes, por",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.1093/jeg/lbag083",
+"title": "Being(s) there(s)—geographies of tacit knowledge through avatars, telepresence robots, and holograms",
+"url": "https://doi.org/10.1093/jeg/lbag083",
+"venue": "Journal of Economic Geography",
+"date": "2026-11-14",
+"authors": [
+"Johanna Hautala",
+"Marianne Mäntyoja"
+],
+"abstract": "We aim to understand emerging geographies of tacit knowledge through advanced remote-work technologies: telepresence robots, holograms and virtual avatars. These technologies enable ‘being there’ in more than one location (and space) at once and using communication that resembles a face-to-face experience. We examine, if tacit knowledge can be shared through these technologies. Based on interviews and autoethnography, we find that each technology confers the ability to exert specific spatial agency elsewhere. From the intellectualist perspective, all studied technologies allow the sharing of some tacit knowledge, whereas virtual avatars enable the sharing of some tacit knowledge also from the phenomenological perspective.",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.5281/zenodo.24383057",
+"title": "Digitalisation de la fonction RH, cognition, bien-être au travail et performance organisationnelle: revue systématique multi-bases et cadre intégrateur à double voie",
+"url": "https://doi.org/10.5281/zenodo.24383057",
+"venue": "International Journal of Accounting, Finance, Auditing, Management and Economics",
+"date": "2026-11-20",
+"authors": [
+"Saoussan LAHSSAINI",
+"El Mehdi BELABBESS"
+],
+"abstract": "Objectif : expliquer pourquoi la digitalisation des ressources humaines (RH) est associée à des bénéfices organisationnels et à des contraintes psychosociales parfois simultanées. La fragmentation des synthèses sur l’e-HRM, le technostress et la gestion algorithmique justifie une analyse intégrée des mécanismes d’appropriation. Méthode : revue systématique à visée intégrative de publications de 2007 à 2026, recherches clôturées le 8 septembre 2026 dans Scopus, Web of Science Core Collection, Business Source Complete et PsycINFO. Cinquante-deux contributions ont atteint l’étape d’éligibilité , 39 ont été retenues et 13 exclues. La synthèse est narrative, structurée par mécanismes, aucun protocole n’a été préenregistré. Résultats : 27 publications datent de 2022 à 2026, l’audit descriptif initial distingue 24 études de crédibilité élevée et 15 de crédibilité modérée. La voie des ressources associe qualité, utilité, appropriation et autonomie. La voie des demandes associe complexité, surveillance, charge cognitive et technostress. Six travaux sur les technologies numériques générales servent d’appui conceptuel à cette seconde voie, sans valoir preuve directe en contexte RH. Contributi",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.56083/rcv6n11-050",
+"title": "ESTRATÉGIAS DE GESTÃO DE PESSOAS PARA A INCLUSÃO DE PROFISSIONAIS NEURODIVERGENTES NO MERCADO DE TRABALHO BRASILEIRO",
+"url": "https://doi.org/10.56083/rcv6n11-050",
+"venue": "Revista Contemporânea",
+"date": "2026-11-19",
+"authors": [
+"Patrícia Soares de Lima",
+"James Fernandes Raphanhin",
+"Hugo Marques Da Silva",
+"Edson Martins"
+],
+"abstract": "A inclusão de profissionais neurodivergentes no mercado de trabalho ainda apresenta desafios relacionados aos processos de recrutamento e seleção, às condições do ambiente organizacional e à permanência e ao desenvolvimento desses profissionais. O estudo analisa e organiza estratégias de Gestão de Pessoas que podem contribuir para a inclusão de profissionais neurodivergentes, com foco em pessoas com Transtorno do Espectro Autista (TEA) e Transtorno de Déficit de Atenção e Hiperatividade (TDAH). A pesquisa possui abordagem qualitativa e caráter descritivo, desenvolvida por meio de revisão bibliográfica narrativa. Como recurso de análise, utiliza-se uma adaptação teórica do método Quality Function Deployment (QFD), aplicada às necessidades identificadas na literatura, sem realização de pesquisa de campo. A análise organiza as principais demandas relacionadas à inclusão e destaca três eixos recorrentes: treinamento de gestores e equipes de Recursos Humanos, reformulação dos processos seletivos e adaptação dos ambientes físicos e das condições de trabalho. Os resultados indicam que a inclusão efetiva depende não apenas do cumprimento das exigências legais, mas também da adoção de práti",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.23900/artefactum.v25i14.121",
+"title": "QUALIDADE DE VIDA NO TRABALHO EM UMA ORGANIZAÇÃO DE MANAUS: PERCEPÇÕES DOS TRABALHADORES SOBRE CONDIÇÕES, BENEFÍCIOS E DESAFIOS",
+"url": "https://doi.org/10.23900/artefactum.v25i14.121",
+"venue": "Artefactum",
+"date": "2026-11-19",
+"authors": [
+"Jonathan da Silva Almada",
+"Evellyn Priscila Medeiros de Lima",
+"Nathalia Medeiros Farias Martins",
+"Tayane da Silva Souza",
+"Alcimar de Lima Marques Filho"
+],
+"abstract": "Este estudo analisou a percepção de 85 trabalhadores de uma organização localizada no bairro Tarumã, em Manaus, Amazonas, sobre a qualidade de vida no trabalho (QVT), seus benefícios e desafios. A pesquisa é aplicada, quantitativa e descritiva, com levantamento bibliográfico e coleta de dados por formulário eletrônico. A amostra foi não probabilística, formada por adesão voluntária. O instrumento reuniu quatro questões de caracterização e oito sobre QVT. As respostas foram analisadas por frequências e percentuais. As relações interpessoais e as condições de trabalho apresentaram avaliações mais favoráveis, enquanto reconhecimento, desenvolvimento profissional e equilíbrio entre vida profissional e pessoal concentraram proporções maiores de respostas intermediárias ou desfavoráveis. O ambiente saudável (25,9%) e a flexibilidade de horários (23,5%) foram os benefícios mais citados; estresse e pressão (27,1%) e excesso de trabalho (24,7%) foram os desafios mais apontados. Os resultados mostram que avaliações positivas das relações profissionais coexistem com dificuldades de valorização e conciliação entre trabalho e vida pessoal. A contribuição do estudo consiste em identificar essas ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.47621/msr.v9i2.258",
+"title": "ATRAÇÃO E SELEÇÃO DE COORDENADORES EM ENSINO SUPERIOR PRIVADO",
+"url": "https://doi.org/10.47621/msr.v9i2.258",
+"venue": "Multi-Science Research",
+"date": "2026-11-19",
+"authors": [
+"Fábio Goldner"
+],
+"abstract": "O presente artigo analisou os processos de atração e seleção de coordenadores de curso em quatro instituições privadas de ensino superior localizadas na grande Vitória, Espírito Santo, considerando a importância do cargo para a gestão acadêmica. O objetivo foi compreender como essas instituições estruturam suas práticas e identificar os principais desafios enfrentados. A pesquisa é aplicada, descritiva e qualitativa, com coleta de dados por meio de questionário estruturado aplicado a coordenadores de curso. Os resultados mostraram que duas instituições utilizam indicações internas sem divulgação formal, enquanto as demais recorrem a canais digitais como site institucional e redes sociais. Os critérios mais valorizados são experiência na docência, liderança e capacidade de inovação, embora metade das instituições não realize avaliação formal do alinhamento à cultura organizacional. Entre os desafios, destacam-se a baixa atratividade do cargo, a sobrecarga de responsabilidades, a remuneração limitada e a necessidade de que a vaga reflita a complexidade real da função para atender às expectativas dos candidatos e elevar o interesse pela posição. Conclui-se que há necessidade de maior ",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
+},
+{
+"key": "doi:10.51952/9781529257359.ch018",
+"title": "Worker Power, Algorithmic Management, and African Resistance in the Digital Age",
+"url": "https://doi.org/10.51952/9781529257359.ch018",
+"venue": "Bristol University Press eBooks",
+"date": "2026-11-19",
+"authors": [
+"Mohammad Amir Anwar"
+],
+"abstract": "",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-20"
 }
 ]

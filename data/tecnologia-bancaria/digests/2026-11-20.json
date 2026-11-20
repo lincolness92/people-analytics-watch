@@ -1,0 +1,329 @@
+{
+ "date": "2026-11-20",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-13",
+  "to": "2026-11-20"
+ },
+ "stats": {
+  "candidates": 80,
+  "triaged": 80,
+  "selected": 6,
+  "tokens": {
+   "prompt_tokens": 18285,
+   "completion_tokens": 14029,
+   "cost_usd": 0.009306,
+   "calls": 4,
+   "failures": 0
+  }
+ },
+ "headline": "semana de infraestrutura para agentes que pagam — e de risco que precisa se explicar",
+ "trend": "O período é dominado por duas frentes que se cruzam: dar aos agentes poder real de movimentar dinheiro sob controle verificável e tornar o risco auditável. No mundo, a Stripe abre transferências e pagamentos a agentes com limites e aprovação humana, enquanto papers propõem contratos de delegação verificável — colusão cai de 48,3% para 33–40% com auditoria — e governança de agentes que agem com credenciais válidas; a pesquisa do American Banker reforça que governança estruturada é o que separa quem escala de quem só pilota. No Brasil, a escala aparece nos R$ 700 bi em Pix do Mercado Livre e no mapeamento Febraban/Accenture de 35 tendências, mas falta pesquisa original local sobre comércio agêntico e modelos fundacionais próprios. A lição comum é que identidade, orçamento, trilha de pagamento e explicabilidade deixaram de ser itens de compliance e viraram requisitos de engenharia.",
+ "items": [
+  {
+   "key": "web:https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+   "title": "Stripe dá a agentes acesso controlado para analisar dados e mover fundos",
+   "original_title": "Give your agents controlled access to analyze your data and move funds",
+   "url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+   "venue": "Stripe Blog",
+   "date": "2026-11-19",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Stripe",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "summary": "O Stripe Treasury passou a permitir que agentes de IA transfiram fundos, convertam moedas e paguem fornecedores dentro de limites definidos pelo cliente, com controles customizáveis e aprovação humana nos pontos críticos. **Orçamento, alçada e trilha de pagamento** viram parte da infraestrutura do agente, não um adendo de segurança. Para bancos, é o sinal de que o comércio agêntico saiu do piloto e exige definir agora limites, reversibilidade e responsabilidade por transação."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11765901/v1",
+   "title": "Verifiable Incentives: contratos de identidade e delegação à prova de colusão",
+   "original_title": "Verifiable Incentives: Identity-Bound Contracts and Collusion-Proof Delegation for Agent Commerce",
+   "url": "https://doi.org/10.21203/rs.3.rs-11765901/v1",
+   "venue": "Research Square",
+   "date": "2026-11-19",
+   "authors": [
+    "Jipu Su"
+   ],
+   "institutions": [
+    "Geely (China)"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "summary": "Propõe delegação verificável para comércio agêntico — identidade, autoridade, orçamento e pagamento auditáveis — instanciada em PAIR-Commerce e testada com AgentCommerce-Bench (60 tarefas, cinco regimes), 600 execuções, sandbox de 800 rodadas e replicação de 1.200 rodadas. Agentes quase não coludem por padrão, mas quando instruídos a maximizar ganho próprio a colusão salta para **48,3%** sem auditoria e cai a 33–40% com auditoria e penalidades. Quem delegar compra a agentes precisa de monitor de colusão e stake de honestidade, não apenas de limite de gasto."
+  },
+  {
+   "key": "web:https://stripe.dev/blog/learning-from-explanations",
+   "title": "Learning from explanations: risco da Stripe treinado a explicar decisões",
+   "original_title": "Learning from explanations",
+   "url": "https://stripe.dev/blog/learning-from-explanations",
+   "venue": "Stripe Dev Blog (engenharia)",
+   "date": "2026-11-19",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Stripe",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "summary": "A engenharia da Stripe descreve um pipeline de dois estágios de SFT e *on-policy distillation* para treinar modelos de risco a explicar as próprias decisões sem perder precisão na avaliação. **Treinar na explicação** melhora o julgamento de risco e preserva a capacidade de justificar o resultado. Para crédito e fraude, é a receita prática de ter modelo auditável sem trocar acurácia por narrativa gerada depois do fato."
+  },
+  {
+   "key": "arxiv:2611.26200",
+   "title": "Gerador de cenários Hull-White de três fatores para estresse macrofinanceiro",
+   "original_title": "A Three-Factor Hull-White Scenario Generator for Macro-Financial Stress Forecasting",
+   "url": "https://arxiv.org/abs/2611.26200",
+   "venue": "arXiv (q-fin.GN, q-fin.RM)",
+   "date": "2026-11-19",
+   "authors": [
+    "Ahmad Qadi",
+    "Thomas Schröder",
+    "Francesca Medda"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "summary": "Constrói um motor que mapeia uma trajetória de curva de juros em distribuição de resultados macrofinanceiros, com Hull-White de três fatores, VARX com prior de Minnesota e choque de política com restrição de sinal, avaliado fora da amostra de 2017 a 2024. O bloco de estrutura a termo tem o menor erro em **13 de 20** células de maturidade e horizonte, com densidades bem calibradas. Em frequência semanal, porém, a curva não agrega informação além dos próprios lags — o valor está em condicionar a um cenário de curva especificado, algo que nenhum benchmark faz."
+  },
+  {
+   "key": "web:https://www.americanbanker.com/news/exclusive-research-jpmorgan-s-ai-strategy-puts-governance-to-the-test",
+   "title": "JPMorgan: governança de IA é o que destrava escala e impacto financeiro",
+   "original_title": "Exclusive Research: JPMorgan’s AI strategy puts governance to the test",
+   "url": "https://www.americanbanker.com/news/exclusive-research-jpmorgan-s-ai-strategy-puts-governance-to-the-test",
+   "venue": "American Banker",
+   "date": "2026-11-20",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "American Banker",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "governance",
+   "region": "mundo",
+   "summary": "Pesquisa proprietária do American Banker mostra que bancos com governança de IA mais estruturada são melhores em quantificar o impacto financeiro e em escalar a adoção, tendo o JPMorgan como caso-teste. **Governança vira pré-condição de escala**, não freio de conformidade. A lição para líderes é medir retorno por caso de uso e amarrar cada modelo a dono, limite e evidência de controle antes de ampliar escopo."
+  },
+  {
+   "key": "web:https://www.mobiletime.com.br/noticias/19/11/2026/mercado-pago-34-milhoes",
+   "title": "Mercado Livre: R$ 700 bi em Pix em seis anos",
+   "original_title": "Em seis anos, Mercado Livre movimentou cerca de R$ 700 bilhões em Pix",
+   "url": "https://www.mobiletime.com.br/noticias/19/11/2026/mercado-pago-34-milhoes/",
+   "venue": "Mobile Time",
+   "date": "2026-11-19",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Mobile Time",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "payments",
+   "region": "brasil",
+   "summary": "O Mercado Livre movimentou cerca de R$ 700 bilhões via Pix desde o lançamento; só em 2026, 34 milhões de clientes usaram o meio, com 279 milhões de transações apenas em setembro. **Escala de plataforma** confirma o Pix como trilho de pagamento de marketplace e varejo, não só de conta corrente. A lição é dimensionar liquidação, capacidade e antifraude para picos de comércio, não para a média de um banco tradicional."
+  }
+ ],
+ "quick": [
+  {
+   "key": "web:https://finsidersbrasil.com.br/pix-6-anos/crescimento-do-pix-coloca-a-prova-a-infraestrutura-do-sfn",
+   "title": "Pix completa seis anos e expõe risco de concentração",
+   "original_title": "Crescimento do Pix expõe vulnerabilidades na infraestrutura de pagamentos",
+   "url": "https://finsidersbrasil.com.br/pix-6-anos/crescimento-do-pix-coloca-a-prova-a-infraestrutura-do-sfn/",
+   "venue": "Finsiders Brasil",
+   "date": "2026-11-20",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Finsiders Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "payments",
+   "region": "brasil",
+   "note": "Pix Automático, por Aproximação e por Biometria avançam em ritmos distintos, enquanto dependência de fornecedores compartilhados testa a resiliência do sistema."
+  },
+  {
+   "key": "web:https://finsidersbrasil.com.br/ia/precisao-da-ia-sobe-e-bancos-usam-em-seguranca-digital",
+   "title": "Febraban e Accenture mapeiam 35 tendências",
+   "original_title": "Precisão da IA aumenta e bancos apostam na tecnologia para reforçar segurança digital",
+   "url": "https://finsidersbrasil.com.br/ia/precisao-da-ia-sobe-e-bancos-usam-em-seguranca-digital/",
+   "venue": "Finsiders Brasil",
+   "date": "2026-11-20",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Finsiders Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "automation",
+   "region": "brasil",
+   "note": "Automação, comércio agêntico e proteção digital lideram a agenda dos bancos brasileiros no estudo conjunto das duas instituições."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.24661",
+   "title": "Metadata-Driven AI mantém dados fora do modelo",
+   "original_title": "Metadata-Driven AI: An Architectural Pattern for Sustainable Data Analysis with LLMs",
+   "url": "https://doi.org/10.48550/arxiv.2611.24661",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-18",
+   "authors": [
+    "Renaud Pawlak",
+    "Armen Sulejmani",
+    "Jordi Cabot"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engineering",
+   "region": "mundo",
+   "note": "Padrão arquitetural evita enviar dados ao LLM e transforma cada análise em artefato reutilizável, cortando custo de inferência."
+  },
+  {
+   "key": "doi:10.3390/fintech5040111",
+   "title": "Fintech e desempenho de 90 bancos europeus",
+   "original_title": "FinTech and European Bank Performance: A Machine-Learning Analysis of Greenwashing and Sustainability Channels",
+   "url": "https://doi.org/10.3390/fintech5040111",
+   "venue": "FinTech",
+   "date": "2026-11-19",
+   "authors": [
+    "Mejda Tebessi",
+    "Heni Boubaker"
+   ],
+   "institutions": [
+    "University of Sousse"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "innovation",
+   "region": "mundo",
+   "note": "Índice de fintech via modelo fatorial dinâmico liga digitalização a performance bancária e a canais de greenwashing em 2014–2025."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24378766",
+   "title": "Arquitetura para governar agentes 'rogue' com credenciais válidas",
+   "original_title": "Governing Rogue AI Agents with Valid Credentials: A Reference Architecture for Business-Aware Autonomy Assurance in Agentic Enterprise Systems",
+   "url": "https://doi.org/10.5281/zenodo.24378766",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-19",
+   "authors": [
+    "Ganesh Raju"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "governance",
+   "region": "mundo",
+   "note": "Foco sai da identidade e vai para o resultado de negócio: agentes autorizados podem ainda assim gerar dano sistêmico."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24369966",
+   "title": "Target está pronta para comércio agêntico?",
+   "original_title": "Target's Turnaround Is Real. Is It Agent-Ready?",
+   "url": "https://doi.org/10.5281/zenodo.24369966",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-19",
+   "authors": [
+    "Mohamed Y. Amer"
+   ],
+   "institutions": [
+    "Pepperdine University",
+    "Fielding Graduate University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "note": "Comparáveis +5,6% com tráfego +5,0%, mas quase 80% do EPS elevado vem de reembolso tarifário — teste de prontidão para agentes de compra."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24358122",
+   "title": "Prontidão e adoção de IA em 44 mil firmas",
+   "original_title": "AI Readiness, Adoption, and Productivity: Firm-Level Evidence from Low- and Middle-Income Countries",
+   "url": "https://doi.org/10.5281/zenodo.24358122",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-19",
+   "authors": [
+    "Jones Arkoh Paintsil"
+   ],
+   "institutions": [
+    "Howard University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "automation",
+   "region": "mundo",
+   "note": "Índice FAEI em 76 economias de renda média e baixa liga energia, conectividade, capital humano e instituições a produtividade e adoção."
+  },
+  {
+   "key": "doi:10.1287/orsc.2023.17369",
+   "title": "Quando cientistas de dados encontram especialistas de domínio",
+   "original_title": "When Data Scientists Meet Domain Experts: Artificial Intelligence, Epistemic Conflict, and Knowledge Transformation",
+   "url": "https://doi.org/10.1287/orsc.2023.17369",
+   "venue": "Organization Science",
+   "date": "2026-11-16",
+   "authors": [
+    "Mayur Prataprai Joshi",
+    "Ning Su",
+    "Mark Zbaracki"
+   ],
+   "institutions": [
+    "University of Ottawa",
+    "Telfer School of Management",
+    "Western University",
+    "Ivey Business School"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "skills",
+   "region": "mundo",
+   "note": "Organization Science mostra que o conflito epistêmico entre as duas tribos, não a opacidade do modelo, trava a transformação do conhecimento preditivo."
+  }
+ ]
+}
