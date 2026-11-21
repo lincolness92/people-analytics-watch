@@ -12011,5 +12011,421 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-20"
+},
+{
+"key": "doi:10.1080/09585192.2026.2762372",
+"title": "The relationship between language ideologies and workplace mistreatment towards North Korean defectors",
+"url": "https://doi.org/10.1080/09585192.2026.2762372",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-20",
+"authors": [
+"Dong geon Lee",
+"Ana Sanz Vergel",
+"Kevin Daniels"
+],
+"abstract": "Previous studies on Social Identity Theory (SIT) have revealed the role of social categorisation in power imbalances between languages, linking it to negative acts in workplaces (e.g. discrimination). We focus on subtle social categorisation along the linguistic dimension, investigating whether North Korean Defectors (NKDs) working at South Korean organisations perceive workplace mistreatment as a result of linguistic discrimination. Repeat interviews were conducted with 20 NKDs, and one-off interviews with 6 NKDs. Our study shows that the use of North Korean accents or lexical items has been regarded as illegitimate in South Korean workplaces, leading NKDs to feel mistreated. We also investigate NKDs’ identity formation in response to workplace mistreatment. Our results show that the majority of NKDs hide their North Korean ethnicity in the workplace for fear of being mistreated due to ingrained stereotypes about NKDs.",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1177/01492063261499657",
+"title": "Why Time Management Leads to Well-Being (and Performance)",
+"url": "https://doi.org/10.1177/01492063261499657",
+"venue": "Journal of Management",
+"date": "2026-11-20",
+"authors": [
+"Brad Aeon"
+],
+"abstract": "Time management is usually seen as a way to get more done. Yet research suggests that it is more strongly associated with well-being than with performance. Why time management improves well-being and why the benefits vary remain unclear. This article proposes three pathways linking time management to well-being and productivity. First, structure brings order to daily life by giving people a sense of control and predictability. Second, synchrony aligns activities with social and biological rhythms, reducing conflict and strengthening social ties. And third, concordance aligns activities with personal values and long-term goals, giving daily life meaning and strengthening the connection between present and future selves. These benefits depend on both individual practices and organizational conditions. Fragmented work, excessive demands on people’s time, and a focus on short-term results can obstruct the pathways. An imbalance among the pathways can also turn otherwise useful time management practices into sources of strain. By distinguishing these mechanisms and their limits, the framework helps explain why time management can improve well-being and productivity in some circumstances",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1002/bse.71875",
+"title": "Beyond Green Rhetoric: How Human Resource Management Bridges Strategy and Sustainability in Hotels",
+"url": "https://doi.org/10.1002/bse.71875",
+"venue": "Business Strategy and the Environment",
+"date": "2026-11-19",
+"authors": [
+"Abdul-Razak Suleman",
+"Mehran Nejati",
+"Azadeh Shafaei",
+"Janice Redmond"
+],
+"abstract": "Drawing on the natural resource‐based view (NRBV) and social cognitive theory (SCT), this study examines the relationships among strategic green intentions, green human resource management (Green HRM) practices, sustainable business performance and employee outcomes in Ghana's hospitality industry. Two independent quantitative studies were conducted in star‐rated hotels. Study 1 surveyed 282 managers and supervisors to examine Green HRM practices as mediating mechanisms linking strategic green intentions to economic, social and environmental performance. Study 2 surveyed 302 frontline employees to investigate employee green commitment as a mediator of the relationships between Green HRM practices and employee green behaviour and turnover intention. Data were analysed using a disjoint two‐stage PLS‐SEM approach. Study 1 revealed that strategic green intentions were directly associated with social performance but not with economic or environmental performance. Green HRM practices exhibited significant positive indirect effects across all three performance dimensions, with indirect‐only mediation for economic and environmental performance and complementary mediation for social perform",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1007/s44163-026-02489-1",
+"title": "SmartCareer an AI-powered integrated career development and recruitment intelligence platform",
+"url": "https://doi.org/10.1007/s44163-026-02489-1",
+"venue": "Discover Artificial Intelligence",
+"date": "2026-11-20",
+"authors": [
+"Chetana Rane",
+"Pranjali Tade",
+"Vijayan Naidu",
+"Lakhichand Khushal Patil",
+"Kalpesh A. Popat"
+],
+"abstract": "Manual resume screening and single-purpose recruitment tools leave a persistent gap: no existing platform combines candidate-facing career support with recruiter-facing evaluation tools while keeping the scoring process transparent and auditable. This paper presents SmartCareer, an integrated AI-powered career intelligence platform that unifies eight candidate- and recruiter-facing modules—domain-aware resume analysis, skill prediction, applicant tracking system (ATS) scoring, resume enhancement, course/certification recommendation, a voice-enabled mock interview simulator, and recruiter-side resume–job matching with shortlist lifecycle tracking—within a single integrated system. Unlike prior work, which typically addresses one stage of the hiring pipeline in isolation, SmartCareer links resume analysis directly to interview preparation by generating interview questions from the candidate’s own resume and domain profile, and it replaces opaque, black-box matching scores with an interpretable, weighted multi-factor composite score that both candidates and recruiters can inspect component by component. The platform is built as a React.js single-page application with a Flask RESTful b",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.3390/su182211825",
+"title": "Urban Agglomeration Development Policies and Firms’ Labor Outsourcing: Evidence from China",
+"url": "https://doi.org/10.3390/su182211825",
+"venue": "Sustainability",
+"date": "2026-11-20",
+"authors": [
+"Bo Zhou",
+"Yuxuan Liu"
+],
+"abstract": "Using panel data on Chinese A-share listed firms from 2012 to 2024, this study examines how national urban agglomeration development policies affect labor outsourcing through a staggered difference-in-differences design. Policy implementation significantly increases labor outsourcing intensity, and the finding is robust to alternative estimators and specifications. The mechanism analysis shows that policy implementation is associated with greater firm specialization, increased labor dispute litigation, and lower regional labor market segmentation. The outsourcing response is concentrated in core cities. Further analysis finds lower internal employment and internal labor costs relative to revenue, alongside higher average employee compensation. These findings extend the evaluation of regional integration policies to firms’ organization of labor inputs and highlight the need to distinguish changes in internal employment from changes in firms’ reliance on external labor services.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1177/01492063261492634",
+"title": "Stakeholder Governance",
+"url": "https://doi.org/10.1177/01492063261492634",
+"venue": "Journal of Management",
+"date": "2026-11-20",
+"authors": [
+"Romain Boulongne",
+"Ryan Federo",
+"Ruth V. Aguilera",
+"Pascual Berrone",
+"Maurizio Zollo"
+],
+"abstract": "Stakeholder governance has become central to debates about stakeholder capitalism, yet research remains fragmented about the configurations through which non-shareholder stakeholders gain authority and firms become credibly bound to stakeholder claims. We systematically review 171 articles in management and related fields to develop a framework organized around stakeholder authority (i.e., the participatory rights or recognized standing through which stakeholders can engage in governance), and firm commitment (i.e., the obligations organizations assume toward stakeholder claims in ways that are costly to reverse or ignore). We identify five recurring configurations: (a) disclosure and evaluation; (b) monitoring and verification; (c) contracting, formal rules, and adjudication; (d) governance rights; and (e) rule-making rights. These configurations generally move from informational authority and very weak firm commitment to constitutional authority and very strong firm commitment. We also identify two off-diagonal configurations—constrained authority and embedded commitment—that reveal how authority and commitment need not align. Our framework distinguishes stakeholder governance th",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "web:https://forklightning.substack.com/p/the-education-of-an-ai-skeptic",
+"title": "The education of an AI skeptic",
+"url": "https://forklightning.substack.com/p/the-education-of-an-ai-skeptic",
+"venue": "David J. Deming (newsletter)",
+"date": "2026-11-16",
+"authors": [],
+"abstract": "How reading 75 experiments on AI in education gave me some cause for optimism",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"David J. Deming"
+],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "web:https://thecontextwindowpodcast.substack.com/p/sal-khan-ai-can-help-us-learn-what",
+"title": "Sal Khan | A.I. can help us learn. What makes us want to?",
+"url": "https://thecontextwindowpodcast.substack.com/p/sal-khan-ai-can-help-us-learn-what",
+"venue": "David J. Deming (newsletter)",
+"date": "2026-11-18",
+"authors": [],
+"abstract": "Listen now (89 mins) | The founder of Khan Academy on the limits of A.I. tutoring, his plans for higher education, and the changes coming to jobs and careers",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"David J. Deming"
+],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.3389/fcomm.2026.1942057",
+"title": "Digital CSR communication and sustainable talent management discourses on Facebook and YouTube: a computational analysis from Jordan",
+"url": "https://doi.org/10.3389/fcomm.2026.1942057",
+"venue": "Frontiers in Communication",
+"date": "2026-11-20",
+"authors": [
+"Mohammed Habes",
+"Suhib Y. Bdoor",
+"Bahaeldin Ali Bashir",
+"Haitham Alaawad",
+"Wafaa Abdel Khalek Tharwat",
+"Abdulkrim Ziani"
+],
+"abstract": "This study examines how corporate social responsibility (CSR) and sustainable talent management themes are represented and received in public Facebook and YouTube interactions in Jordan. The analysis draws on 34,150 anonymized digital-trace records collected between 1 January and 30 June 2025, comprising 18,430 Facebook interactions and 15,720 YouTube interactions. A computational content analysis design integrates topic-model-derived labels, sentiment scoring, engagement metrics, and a descriptive centrality indicator. Five substantive topics were represented in the corpus, led by sustainable work practices (28.1%) and youth empowerment (22.1%). Sentiment was predominantly positive on both platforms, but the platform difference in categorical sentiment was not statistically significant, χ 2 (2, N = 34,097) = 4.44, p = 0.109, Cramér's V = 0.011. Mean sentiment polarity likewise did not differ significantly between Facebook and YouTube, t (34,148) = 1.45, p = 0.147, d = 0.016. Total engagement was also statistically similar across platforms and content formats. These findings qualify stronger platform-difference claims and suggest that, within this corpus, substantive CSR and talent",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.70773/revistatopicos/794927072",
+"title": "DESAFIO DA RETENÇÃO DE TALENTOS EM MICROEMPRESAS BRASILEIRAS: FATORES ORGANIZACIONAIS, FINANCEIROS E DE GESTÃO",
+"url": "https://doi.org/10.70773/revistatopicos/794927072",
+"venue": "Revista Tópicos",
+"date": "2026-11-20",
+"authors": [
+"Carlla Karolyne Ribeiro Nunes",
+"Josenilton Souza Mesquita",
+"Christiane Silva Sousa Diniz"
+],
+"abstract": "As microempresas ocupam posição central na economia brasileira, mas enfrentam dificuldades persistentes para reter profissionais qualificados, em um mercado de trabalho que registrou 9,2 milhões de desligamentos a pedido em 2025. Este artigo tem como objetivo analisar quais fatores organizacionais, financeiros e de gestão influenciam a retenção de talentos em microempresas brasileiras, a fim de identificar estratégias eficazes para reduzir a rotatividade e ampliar a permanência dos colaboradores. Trata-se de pesquisa aplicada, de abordagem qualitativa e caráter exploratório e descritivo, desenvolvida por meio de revisão bibliográfica narrativa, complementada por dados secundários de fontes oficiais e institucionais. O levantamento abrangeu Google Acadêmico, Portal de Periódicos da CAPES, SciELO, SPELL, BDTD e repositórios institucionais, com publicações de 2015 a 2026, e o material foi examinado por meio da análise de conteúdo de Bardin. Os resultados indicam que a retenção é multifatorial: liderança, clima organizacional, comunicação, reconhecimento e desenvolvimento pesam tanto quanto a remuneração, cuja eficácia depende da percepção de justiça. Nas microempresas, diferentemente ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "oa:W7237307814",
+"title": "Generative artificial intelligence in human resource management: a bibliometric analysis and research agenda",
+"url": "https://malque.pub/ojs/index.php/mr/article/view/20733",
+"venue": "Multidisciplinary Reviews",
+"date": "2026-11-18",
+"authors": [
+"Ngoc-Hien Vo"
+],
+"abstract": "Generative artificial intelligence (GenAI), epitomised by large language models such as ChatGPT, is rapidly reshaping human resource management (HRM), yet research at this intersection remains fragmented across management, information systems and computer science. This study maps the intellectual structure and thematic evolution of the emerging GenAI-HRM field and proposes an agenda for future inquiry. Following the PRISMA 2020 protocol, 340 peer-reviewed articles and reviews published between 2023 and July 2026 were retrieved from the Scopus database and analysed through bibliometric performance analysis and science mapping, combining keyword co-occurrence, country co-authorship, bibliographic coupling, thematic mapping based on centrality and density, and trend-topic analysis. The results show that the field is young but expanding exponentially, growing from 8 documents in 2023 to 137 in the first seven months of 2026 and accumulating 4,803 citations, with output led by the United States, China, India and the United Kingdom and dispersed across management, information systems and applied computing outlets. Four thematic clusters emerge: AI-enabled recruitment and talent acquisiti",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.5281/zenodo.24392426",
+"title": "Procedural Provisions of the Pay Transparency Directive: A Procedural (R)evolution?",
+"url": "https://doi.org/10.5281/zenodo.24392426",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-20",
+"authors": [
+"Marchand Fien"
+],
+"abstract": "The EU Pay Transparency Directive has already generated considerable discussion. Some of its procedural provisions have also attracted criticism. This presentation examines a selection of these procedural provisions, analyses their impact on Belgian law, and assesses whether those concerns are well-founded.",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.56345/ijrdv13n319",
+"title": "Artificial Intelligence, Gender Bias, and Human Rights: Challenges for Modern Justice Systems",
+"url": "https://doi.org/10.56345/ijrdv13n319",
+"venue": "Interdisciplinary Journal of Research and Development",
+"date": "2026-11-20",
+"authors": [
+"Elizabeta Imeraj",
+"Flutur Shabani",
+"Marco Cavina"
+],
+"abstract": "Artificial intelligence (AI) has become increasingly integrated into modern justice systems, influencing decision-making in criminal justice, hiring, surveillance, healthcare, and public administration. Although AI promises efficiency and consistency, a growing body of research documents risks of algorithmic bias and unequal performance across demographic groups. This paper examines the relationship between artificial intelligence, gender bias, and human rights within contemporary justice systems through a qualitative, interdisciplinary analysis combining a narrative review of scholarly literature with doctrinal analysis of relevant international and European legal and ethical frameworks. It considers how biased datasets, discriminatory or uneven algorithmic outcomes, and unequal technological representation may affect fairness, equality, privacy, due process, and access to justice. Particular attention is given to documented evidence on facial-analysis systems and automated recruitment, while broader claims concerning institutional legitimacy and human-centered justice are treated as normative implications rather than empirical findings. The paper also evaluates regulatory respons",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1201/9781042053018-27",
+"title": "Sustainable HRM for Organizational Performance and Sustainable Development: The Moderating Role of Analytics",
+"url": "https://doi.org/10.1201/9781042053018-27",
+"venue": "CRC Press eBooks",
+"date": "2026-11-20",
+"authors": [
+"Niharika Atchyutuni",
+"Sheelam Jain"
+],
+"abstract": "Sustainable HRM and the associated concepts such as Green HRM and Social HRM, are gaining much prominence in contemporary strategic as well as scholarly discussions owing to their association with organizational performance. Owing to the various socio-economic and environmental challenges, organizations worldwide are expected to align their strategies and practices towards the accomplishment of the United Nations’ Sustainable Development Goals (SDGs). Data analytics implementation too, is garnering both business and research interest owing to its positive contribution to organizational performance. This paper aims to propose a model connecting all these concepts. Based on an extensive yet focused review of literature, the authors have designed a conceptual model explaining the relationship among sustainable HRM, HR analytics application, organizational performance, and sustainable development. It may be concluded that organizations can boost their performance by implementing sustainable HRM principles and practices while contributing to SDGs. This research also affirms the influence of HR analytics as a moderating variable in the relationship between the comprehensively defined sus",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.48550/arxiv.2611.25263",
+"title": "AI Deactivation Reduces Loneliness and Increases Social Interaction",
+"url": "https://doi.org/10.48550/arxiv.2611.25263",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-18",
+"authors": [
+"Dora Zhao",
+"Grace Wang",
+"Yutong Zhang",
+"Lujain Ibrahim",
+"Robert E. Kraut",
+"Diyi Yang"
+],
+"abstract": "General-purpose artificial intelligence (AI) assistants are increasingly embedded in everyday life, transforming how people accomplish tasks and potentially reshaping how they interact with others. Prior research has focused on how using AI for explicitly social purposes affects users' psychological well-being and social lives. Yet such uses account for only a small portion of interactions with general-purpose AI assistants. Whether using AI for everyday, instrumental tasks affects users' psychological well-being and social behavior remains unclear. Here we investigate these effects through a longitudinal deactivation experiment with active ChatGPT users (N=625), in which participants were randomly assigned to abstain from using AI assistants for either fourteen days (treatment) or one day (control). Participants used AI predominantly for instrumental purposes, with 84.7% reporting productivity as their most frequent use case. Two weeks of deactivation significantly reduced loneliness relative to the control group ($β= -0.10$, $p=0.03$), with reductions persisting two weeks after participants resumed using AI ($β= -0.16$, $p=0.02$). Deactivation also significantly increased the num",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "oa:W7237325274",
+"title": "Social dialogue and collective bargaining on algorithmic management and AI in work-related contexts in Belgium",
+"url": "https://lirias.kuleuven.be/handle/20.500.12942/797510",
+"venue": "Lirias",
+"date": "2026-11-17",
+"authors": [
+"Karolien Lenaerts",
+"Dirk Gillis",
+"Valeria Pulignano"
+],
+"abstract": "In French: un règlement de travail; in Dutch: het arbeidsreglement ; often referred to as 'work regulations'. 8.Negotiations on a new round of CLAs, that is; for 2025-2026, were underway or close to conclusion during autumn 2025 when this chapter was written.",
+"score": 7,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1080/08975930.2026.2759202",
+"title": "Navigating Global Paradoxes: International Business Strategy and the Corporate DEI Exodus",
+"url": "https://doi.org/10.1080/08975930.2026.2759202",
+"venue": "Journal of Teaching in International Business",
+"date": "2026-11-20",
+"authors": [
+"Xiaofei Song",
+"Fan Hong"
+],
+"abstract": "This case examines the strategic and ethical challenges businesses face when pursuing corporate social responsibility (CSR), particularly diversity, equity, and inclusion (DEI), initiatives across fragmented global markets. Divergent political, social, and economic pressures often conflict sharply with financial performance objectives. Despite CSR’s mainstream status, the tension between profitability and social obligations remains under-addressed, especially in international management literature. This tension intensified significantly following the 2024 U.S. presidential election, triggering a widespread corporate retreat from DEI programs. Using a composite multinational firm (AuroraTech Inc.) grounded in empirical data from 2020–2025, the case places students in the role of CEO Maya Cooper. She must navigate declining revenues, activist investor pressure, employee attrition, and conflicting cross-border stakeholder expectations. Students are challenged to evaluate financial and non-financial metrics, assess the validity of ROI attributions for CSR investments, manage regional institutional differences, and determine how the company can uphold its core values (“Technology with P",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.56238/levv17n66-094",
+"title": "BURNOUT COMO INDICADOR DE GESTÃO: CUSTOS ORGANIZACIONAIS DO ADOECIMENTO MENTAL E A EFICÁCIA DE POLÍTICAS DE JORNADA REDUZIDA",
+"url": "https://doi.org/10.56238/levv17n66-094",
+"venue": "LUMEN ET VIRTUS",
+"date": "2026-11-18",
+"authors": [
+"Keila de Souza",
+"André Vilhena Vieira"
+],
+"abstract": "O esgotamento profissional deixa marcas dispersas nas organizações: atestados, faltas, demissões, horas acumuladas e queda de desempenho, registrados em lugares diferentes e raramente lidos em conjunto. Ao mesmo tempo, a redução da jornada aparece como resposta ao adoecimento mental. O artigo pergunta em que medida o burnout serve como indicador de gestão nas organizações brasileiras, considerando os custos de afastamento, absenteísmo, rotatividade e perda de produtividade, e o que a evidência permite afirmar sobre a eficácia da jornada reduzida para diminuir esses custos. A análise se apoia em estudos sobre burnout e afastamentos e na legislação federal sobre jornada e saúde do trabalhador. Os resultados mostram que há instrumentos validados para medir a síndrome no Brasil e que a lei já obriga a produzir a maior parte dos registros de custo, mas cada registro capta só parte do problema: os dados previdenciários diluem a síndrome em diagnósticos vizinhos, a rotatividade nem sempre acompanha o esgotamento e as horas registradas dependem do controle exercido. O burnout funciona como indicador quando composto pela medida periódica da exaustão emocional e pelos registros de custo, lid",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.70773/revistatopicos/794919971",
+"title": "O USO DA INTELIGÊNCIA ARTIFICIAL EM RECRUTAMENTO E SELEÇÃO: IMPACTOS NA PRODUTIVIDADE DO RH E NA PERCEPÇÃO DE JUSTIÇA DOS CANDIDATOS",
+"url": "https://doi.org/10.70773/revistatopicos/794919971",
+"venue": "Revista Tópicos",
+"date": "2026-11-20",
+"authors": [
+"Marco Túlio Mageste Hastenreiter Coelho",
+"Miguel Melo Tavares",
+"Luiz Américo Bertolaci Junior",
+"Marcos Antonio Pereira Coelho",
+"Ricardo Ker Elias"
+],
+"abstract": "Este artigo analisa o que a literatura científica publicada entre 2021 e 2026 permite afirmar sobre os efeitos do uso da inteligência artificial (IA) no recrutamento e seleção sobre a produtividade do setor de recursos humanos e o que ela permite inferir sobre a justiça dos processos seletivos e a experiência dos candidatos. Realizou-se uma revisão bibliográfica integrativa nas bases SciELO e SPELL, com descritores em português, inglês e espanhol. Dos 74 registros identificados, 17 eram duplicados e 42 foram excluídos na leitura de títulos e resumos, resultando em 15 estudos: sete primários, cinco secundários e três análises jurídico-normativas, avaliados quanto à qualidade metodológica e examinados por Análise de Conteúdo. Os resultados indicam que os ganhos de produtividade são relatados por gestores, recrutadores e fornecedores, sobretudo na triagem de currículos, mas nenhum estudo primário os mensurou com indicadores objetivos. Quanto à justiça, nenhum estudo investigou diretamente os candidatos; as evidências disponíveis, provenientes de profissionais de RH, decisores e análises normativas, apontam riscos de viés algorítmico, baixa transparência e redução do contato humano, al",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1080/09537325.2026.2765701",
+"title": "How remote work reshapes talent acquisition and innovation: evidence from U.S. listed firms",
+"url": "https://doi.org/10.1080/09537325.2026.2765701",
+"venue": "Technology Analysis and Strategic Management",
+"date": "2026-11-20",
+"authors": [
+"Woohee Choi",
+"Minyoung Cha",
+"Taekyun Kim"
+],
+"abstract": "",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1007/s11846-026-01079-w",
+"title": "Leadership and voice in the future of work: the unexpected cost of empowering HRM practices",
+"url": "https://doi.org/10.1007/s11846-026-01079-w",
+"venue": "Review of Managerial Science",
+"date": "2026-11-21",
+"authors": [
+"Andrés Salas‐Vallina",
+"M. Carmen Saorín‐Iborra",
+"Francisco Balbastre Benavent"
+],
+"abstract": "",
+"score": 7,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1007/s42943-026-00169-6",
+"title": "Artificial Intelligence Adoption and Firm Competitiveness: Quantifying the Productivity Divide among Indian SMEs",
+"url": "https://doi.org/10.1007/s42943-026-00169-6",
+"venue": "International Journal of Global Business and Competitiveness",
+"date": "2026-11-20",
+"authors": [
+"S.M. Sale",
+"Veena R Humbe"
+],
+"abstract": "",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
 }
 ]

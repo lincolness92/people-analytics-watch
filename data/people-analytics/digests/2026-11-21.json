@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-21",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-14",
+  "to": "2026-11-21"
+ },
+ "stats": {
+  "candidates": 74,
+  "triaged": 74,
+  "selected": 5,
+  "tokens": {
+   "prompt_tokens": 15333,
+   "completion_tokens": 8113,
+   "cost_usd": 0.005746,
+   "calls": 4,
+   "failures": 0
+  }
+ },
+ "headline": "semana de alerta sobre o custo humano da eficiência automatizada",
+ "trend": "O período converge num alerta: eficiência automatizada e flexibilidade têm custo social que não aparece nos dashboards de produtividade. A IA usada para tarefas instrumentais reduz solidão e aumenta interação presencial quando desativada, enquanto a gestão algorítmica já entra na mesa de negociação coletiva na Europa — ou seja, o debate saiu da adoção e foi para governança e efeitos colaterais. Ao mesmo tempo, trabalho remoto e práticas de empoderamento mostram trade-offs reais (inovação, voz) que exigem medição por função e por constructo, não por indicador único. Na prática, people analytics precisa incorporar fragmentação de agenda, interação social e voz como métricas de primeira linha, e não como subproduto de engajamento.",
+ "items": [
+  {
+   "key": "doi:10.1080/09537325.2026.2765701",
+   "title": "Como o trabalho remoto remodela recrutamento e inovação",
+   "original_title": "How remote work reshapes talent acquisition and innovation: evidence from U.S. listed firms",
+   "url": "https://doi.org/10.1080/09537325.2026.2765701",
+   "venue": "Technology Analysis and Strategic Management",
+   "date": "2026-11-20",
+   "authors": [
+    "Woohee Choi",
+    "Minyoung Cha",
+    "Taekyun Kim"
+   ],
+   "institutions": [
+    "Providence College",
+    "Korea Institute for Industrial Economics and Trade",
+    "Chungnam National University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "summary": "Estudo com empresas listadas nos EUA investiga como o trabalho remoto altera a aquisição de talento e a inovação, usando dados de firmas — sem abstract disponível para detalhar desenho, período e magnitudes. A leitura prática é de trade-off: o remoto amplia o raio geográfico de contratação, mas tende a custar densidade de colaboração e inovação, o que recomenda calibrar políticas por função em vez de tratar a empresa como bloco único. Útil para quem modela contratação e produtividade por regime de trabalho."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.25263",
+   "title": "Desativar a IA reduz solidão e aumenta interação social",
+   "original_title": "AI Deactivation Reduces Loneliness and Increases Social Interaction",
+   "url": "https://doi.org/10.48550/arxiv.2611.25263",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-18",
+   "authors": [
+    "Dora Zhao",
+    "Grace Wang",
+    "Yutong Zhang",
+    "Lujain Ibrahim",
+    "Robert E. Kraut",
+    "Diyi Yang"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Experimento longitudinal de desativação com 625 usuários ativos de ChatGPT, sorteados para 14 dias de abstinência de assistentes de IA versus 1 dia (controle); 84,7% usavam IA sobretudo para produtividade. A pausa reduziu a solidão (β=-0,10; p=0,03) e o efeito **persistiu duas semanas** após o retorno (β=-0,16; p=0,02), além de elevar contatos presenciais e tempo de socialização. Uso instrumental de IA pode estar substituindo interação social no trabalho: teste desenho de trabalho e rituais presenciais, não só ganho de produtividade."
+  },
+  {
+   "key": "doi:10.1177/01492063261499657",
+   "title": "Por que gestão do tempo gera bem-estar (e desempenho)",
+   "original_title": "Why Time Management Leads to Well-Being (and Performance)",
+   "url": "https://doi.org/10.1177/01492063261499657",
+   "venue": "Journal of Management",
+   "date": "2026-11-20",
+   "authors": [
+    "Brad Aeon"
+   ],
+   "institutions": [
+    "Highline College"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "engagement",
+   "region": "",
+   "summary": "Modelo teórico propõe três vias que ligam gestão do tempo a bem-estar e produtividade: **estrutura** (controle e previsibilidade), sincronia (ritmos sociais e biológicos) e concordância (valores e metas pessoais). O efeito é mais forte em bem-estar do que em desempenho e depende de condições organizacionais: trabalho fragmentado, demandas excessivas e foco em curto prazo bloqueiam as vias e podem transformar boas práticas em fonte de tensão. Para people analytics, a lição é monitorar fragmentação de agenda e sobrecarga como indicadores de risco, não apenas horas trabalhadas."
+  },
+  {
+   "key": "doi:10.1007/s11846-026-01079-w",
+   "title": "O custo inesperado das práticas de HRM empoderadoras para a voz",
+   "original_title": "Leadership and voice in the future of work: the unexpected cost of empowering HRM practices",
+   "url": "https://doi.org/10.1007/s11846-026-01079-w",
+   "venue": "Review of Managerial Science",
+   "date": "2026-11-21",
+   "authors": [
+    "Andrés Salas‐Vallina",
+    "M. Carmen Saorín‐Iborra",
+    "Francisco Balbastre Benavent"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "leadership",
+   "region": "",
+   "summary": "Estudo examina práticas de HRM empoderadoras (autonomia, participação) e mostra que seu efeito sobre voz e liderança no futuro do trabalho é ambivalente: conceder autonomia sem suporte real pode reduzir, e não ampliar, a disposição de falar abertamente. A implicação para people analytics é medir autonomia e voz como constructos separados e verificar se a correlação entre elas é positiva na sua empresa — empoderamento declarado sem recursos vira silêncio. Vale como alerta contra ler engajamento alto como sinônimo de segurança psicológica."
+  },
+  {
+   "key": "oa:W7237325274",
+   "title": "Diálogo social e negociação coletiva sobre gestão algorítmica na Bélgica",
+   "original_title": "Social dialogue and collective bargaining on algorithmic management and AI in work-related contexts in Belgium",
+   "url": "https://lirias.kuleuven.be/handle/20.500.12942/797510",
+   "venue": "Lirias",
+   "date": "2026-11-17",
+   "authors": [
+    "Karolien Lenaerts",
+    "Dirk Gillis",
+    "Valeria Pulignano"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "governance",
+   "region": "",
+   "summary": "Capítulo mapeia como acordos coletivos e regulamentos de trabalho (règlement de travail / arbeidsreglement) belgas estão sendo usados para negociar gestão algorítmica e IA, criando arenas formais de transparência e voz para quem é avaliado por sistemas automatizados. É um repertório concreto de cláusulas e instâncias de negociação, ainda pouco explorado no Brasil, onde a via sindical em IA segue incipiente. Para RH e people analytics, serve como insumo de **governança**: envolver trabalhadores e seus representantes antes de escalar decisões algorítmicas."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1080/09585192.2026.2762372",
+   "title": "Ideologias linguísticas e mau-trato no trabalho",
+   "original_title": "The relationship between language ideologies and workplace mistreatment towards North Korean defectors",
+   "url": "https://doi.org/10.1080/09585192.2026.2762372",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-20",
+   "authors": [
+    "Dong geon Lee",
+    "Ana Sanz Vergel",
+    "Kevin Daniels"
+   ],
+   "institutions": [
+    "University of East Anglia"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "leadership",
+   "region": "",
+   "note": "Entrevistas repetidas com 20 desertores norte-coreanos mostram categorização linguística sutil virando mau-trato — sinal para medir discriminação linguística."
+  }
+ ]
+}

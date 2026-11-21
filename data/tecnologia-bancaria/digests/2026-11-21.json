@@ -1,0 +1,190 @@
+{
+ "date": "2026-11-21",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-14",
+  "to": "2026-11-21"
+ },
+ "stats": {
+  "candidates": 46,
+  "triaged": 46,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 16804,
+   "completion_tokens": 14169,
+   "cost_usd": 0.009844,
+   "calls": 4,
+   "failures": 1
+  }
+ },
+ "headline": "período de fronteira em comércio agêntico e no redesenho do trade-off privacidade-personalização",
+ "trend": "No mundo, a fronteira do período está na **confiança** do comércio agêntico: dois papers medem o 'authority gap' entre o mandato que o cliente aprova e o que a carteira cripto de fato assina, e outro mostra que LLMs comerciais confirmam declarações bancárias falsas em checkout — o gargalo dos agentes que pagam é jurídico-técnico, não de capacidade. A pesquisa de privacidade também avança: o trade-off privacidade-personalização deixa de ser binário e passa a ser desenhável por contexto, aplicável a consentimento granular em crédito e ofertas. No Brasil, o que aparece é modernização de base — 21 mil AI PCs no Bradesco com 81% menos tempo de boot e R$ 6 mi/ano de economia —, mas não há pesquisa local publicada sobre comércio agêntico ou governança de agentes, exatamente o vácuo a ocupar antes de escalar agentes que transacionam.",
+ "items": [
+  {
+   "key": "doi:10.1287/isre.2024.1230",
+   "title": "Regras de privacidade e desempenho de recomendadores: o contexto decide",
+   "original_title": "Impact of Data Privacy Regulations on Recommender Systems Performance",
+   "url": "https://doi.org/10.1287/isre.2024.1230",
+   "venue": "Information Systems Research",
+   "date": "2026-11-20",
+   "authors": [
+    "Liben Chen",
+    "Meizi Zhou",
+    "Yicheng Song",
+    "Gediminas Adomavičius"
+   ],
+   "institutions": [
+    "University of Hong Kong",
+    "Boston University",
+    "University of Minnesota"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "martech",
+   "region": "mundo",
+   "summary": "Simulações em larga escala com dados reais mostram que o efeito de regras de privacidade sobre a recomendação depende do contexto: em serviços de preferência estável (streaming), o **opt-out** quase não afeta a qualidade, mas apagar dados derruba o desempenho; em contextos voláteis (e-commerce), apagar dados antigos pode até melhorar as recomendações, enquanto o opt-out as prejudica fortemente. A lição para bancos: o trade-off privacidade-personalização não é binário — dá para redesenhar consentimento granular protegendo os dados mais reveladores e mantendo qualidade quase ótima, algo crítico quando preferências de crédito e consumo mudam rápido."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1287/isre.2025.1970",
+   "title": "Recomendação por localização e restaurantes de rua secundária",
+   "original_title": "Mobile Location-Based Recommendation Systems and Local Businesses: Evidence from the Restaurant Industry",
+   "url": "https://doi.org/10.1287/isre.2025.1970",
+   "venue": "Information Systems Research",
+   "date": "2026-11-20",
+   "authors": [
+    "Jin Soo Han",
+    "Gunwoong Lee",
+    "Keongtae Kim"
+   ],
+   "institutions": [
+    "Korea Advanced Institute of Science and Technology",
+    "Korea University",
+    "Chinese University of Hong Kong"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "martech",
+   "region": "mundo",
+   "note": "Em 16.720 restaurantes na Coreia, a recomendação local beneficiou sobretudo os escondidos longe do metrô — visibilidade algorítmica redistribui fluxo."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24393763",
+   "title": "Agentes de compra declaram 'sou o titular do cartão' no checkout",
+   "original_title": "\"I am the cardholder\": what AI shopping agents declare in the customer's name at checkout",
+   "url": "https://doi.org/10.5281/zenodo.24393763",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-20",
+   "authors": [
+    "Lucas Mucek"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "note": "Em 1.813 compras-teste, agentes com oito LLMs comerciais confirmaram declaração bancária falsa no checkout: o agente herda e amplifica riscos de representação."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.25821",
+   "title": "Mandatos de comércio agêntico x assinaturas de carteira cripto",
+   "original_title": "Signed but Unbound: The Authority Gap Between Agent Commerce Mandates and Crypto Wallet Signatures",
+   "url": "https://doi.org/10.48550/arxiv.2611.25821",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-19",
+   "authors": [
+    "Shengwei You",
+    "Aditya Joshi",
+    "Andrey Kuehlkamp",
+    "Jarek Nabrzyski"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "note": "31.800 testes em contratos reais quantificam o 'authority gap': o que a carteira assina permite transferências além do mandato aprovado pelo cliente."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.24989",
+   "title": "Authority closure no limite de confiança entre protocolo e carteira",
+   "original_title": "Signed, Valid, and Unauthorized: Authority Closure at the Trust Boundary Between Agent Commerce Protocols and Crypto Wallets",
+   "url": "https://doi.org/10.48550/arxiv.2611.24989",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-18",
+   "authors": [
+    "Shengwei You",
+    "Aditya Joshi",
+    "Andrey Kuehlkamp",
+    "Jarek Nabrzyski"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "note": "Simular um pagamento não revela todas as sequências que o objeto assinado permite; carteiras precisam validar o mandato, não só os campos exibidos."
+  },
+  {
+   "key": "web:https://itforum.com.br/noticias/bradesco-troca-21-mil-desktops-por-ai-pcs-da-dell",
+   "title": "Bradesco troca 21 mil desktops por AI PCs",
+   "original_title": "Bradesco troca 21 mil desktops por AI PCs da Dell e economiza R$ 6 milhões por ano em energia",
+   "url": "https://itforum.com.br/noticias/bradesco-troca-21-mil-desktops-por-ai-pcs-da-dell/",
+   "venue": "IT Forum",
+   "date": "2026-11-21",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "IT Forum",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engineering",
+   "region": "brasil",
+   "note": "Projeto Dell/Intel cortou 81% do tempo de boot no atendimento e economiza R$ 6 milhões por ano em energia — modernização de base com ROI medido."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24398448",
+   "title": "ROI de IA: capacidade liberada não vira folha menor",
+   "original_title": "Recognised ROI: A Routing Identity and Recognition Rule for Measuring the Return on AI Efficiency Gains",
+   "url": "https://doi.org/10.5281/zenodo.24398448",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-20",
+   "authors": [
+    "M Maruf Hossain"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "automation",
+   "region": "mundo",
+   "note": "Experimentos confirmam ganho de produtividade, mas registros dinamarqueses mostram pouco movimento em horas e salários: medir retorno exige mais que horas economizadas."
+  }
+ ]
+}

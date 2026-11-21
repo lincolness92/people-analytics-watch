@@ -4006,5 +4006,225 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-20"
+},
+{
+"key": "doi:10.1287/isre.2025.1970",
+"title": "Mobile Location-Based Recommendation Systems and Local Businesses: Evidence from the Restaurant Industry",
+"url": "https://doi.org/10.1287/isre.2025.1970",
+"venue": "Information Systems Research",
+"date": "2026-11-20",
+"authors": [
+"Jin Soo Han",
+"Gunwoong Lee",
+"Keongtae Kim"
+],
+"abstract": "When looking for a place to eat, how much do recommendations on your smartphone influence your choice? Can they help restaurants tucked away on side streets thrive in an age of algorithmic recommendations? We studied the launch of a location-based recommendation feature on South Korea’s largest search platform, tracking 16,720 restaurants over eight months. We find that visibility matters, but its benefits are uneven. Restaurants tucked away on side streets, far from subway stops, attracted the most additional attention when recommended by the algorithm. Yet this advantage did not translate into greater intentions to visit. Making a restaurant easier to discover did not necessarily overcome the inconvenience of reaching it. Digital information helped bridge this online-to-offline friction. Hard-to-reach restaurants with stronger online reputations and richer information, including customer reviews, photos, and menus, were better able to turn attention into visit intentions. For small businesses, visibility creates opportunities, but credible information helps turn attention into potential customers. For platforms and policymakers, location-based recommendations can bring overlooked",
+"score": 6,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1287/isre.2024.1230",
+"title": "Impact of Data Privacy Regulations on Recommender Systems Performance",
+"url": "https://doi.org/10.1287/isre.2024.1230",
+"venue": "Information Systems Research",
+"date": "2026-11-20",
+"authors": [
+"Liben Chen",
+"Meizi Zhou",
+"Yicheng Song",
+"Gediminas Adomavičius"
+],
+"abstract": "Data protection regulations like GDPR and CCPA let consumers delete personal data or opt out of collection, but companies struggle to understand how these practices affect their recommendation systems. This matters because recommendations drive substantial revenue; according to industry reports, Netflix’s system saves more than $1 billion annually, and personalized suggestions generate 35% of Amazon purchases. We analyzed how different data privacy practices impact recommendation accuracy using large-scale simulations with real-world data. A critical finding: Context matters enormously. For services where user preferences are more stable (e.g., streaming platforms), opting out barely affects recommendation quality while deleting data cuts performance dramatically. However, for platforms where preferences and needs can change frequently (e.g., e-commerce), deleting old data can actually improve recommendations while opting out severely harms them. For policymakers, this means one-size-fits-all regulations may be counterproductive. For companies, we demonstrate that data privacy practices can be redesigned: users can protect their most revealing data while maintaining close-to-optima",
+"score": 7,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.47941/jts.4121",
+"title": "Policy-as-Code and Compliance Automation for Secrets Governance in Agentic AI Workloads in Regulated Industries",
+"url": "https://doi.org/10.47941/jts.4121",
+"venue": "Journal of Technology and Systems",
+"date": "2026-11-20",
+"authors": [
+"Suhas Madupuri",
+"Rajesh Thondamanati"
+],
+"abstract": "Purpose: This study examined the governance gap that opens when autonomous agents acquire, use, and propagate credentials dynamically, and proposed a reference framework, the Agentic Secrets Governance Framework (ASGF), to narrow it. Methodology: The framework couples a SPIFFE and SPIRE based attestation layer with an Open Policy Agent decision point, a dynamic secrets broker that issues short lived, task scoped credentials, and a compliance control library that expresses obligations drawn from the HIPAA Security Rule, PCI DSS 4.0.1, the EU Digital Operational Resilience Act, the NIST AI Risk Management Framework, and ISO/IEC 42001 as machine evaluable Rego policies. A reference implementation was built and evaluated in a controlled three node Kubernetes testbed. Two workflows, healthcare eligibility determination and card payment fraud triage, were selected by purposive sampling, and ten thousand simulated requests were replayed per configuration. Findings: Policy enforced, ephemeral credential issuance reduced the configured credential exposure window from months to minutes while adding a combined median of 34.3 milliseconds to the request path. In conformance testing, the policy",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.5281/zenodo.24393763",
+"title": "\"I am the cardholder\": what AI shopping agents declare in the customer's name at checkout",
+"url": "https://doi.org/10.5281/zenodo.24393763",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-20",
+"authors": [
+"Lucas Mucek"
+],
+"abstract": "Checkout pages ask the buyer to make declarations: that they are the cardholder, that they have read the terms of sale, that a typed name is their signature. An AI agent that completes a checkout for a customer meets the same wording. This report gives three small measurements, 1,813 recorded test purchases in total, made in November 2026 in a fictional test store that logs every form it receives. (1) With eight commercial language models behind a simple text agent, the agent confirmed a bank-style step worded \"By confirming, you declare that you are the cardholder\" in 125 of 560 purchases. Every model did so at least once, and none of the 125 reports to the customer mentioned it. (2) The agent continued past \"you declare that you have read the Terms of sale\" without opening the terms in 163 of 240 purchases, although the terms added a membership of USD 14.99 a month. All 72 runs that opened the terms told the customer about it. (3) An open-source browser agent program, Skyvern 1.0.58, run locally with default settings, made such a declaration in 70 of 90 purchases and returned the status \"completed\" with no note. One sentence added to the task prompt brought this to 0 of 90. The w",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "oa:W7237324810",
+"title": "PRACTICAL ANALYSIS OF THE LEVEL OF ADOPTION OF OPEN BANKING AND API TECHNOLOGIES IN COMMERCIAL BANKS",
+"url": "http://waerasia.org/index.php/index/article/view/1070",
+"venue": "International journal of technology and academic research",
+"date": "2026-11-19",
+"authors": [
+"Mekhriniso Dilshodbek qizi Urayimova",
+"Khamidjon Usmonovich Sarimsaqov"
+],
+"abstract": "This article presents an applied and empirical analysis of the adoption of Open Banking and Application Programming Interface (API) technologies in commercial banks. The study examines digital transformation in Uzbekistan’s banking sector, integration between banks and FinTech companies, and indicators of technological readiness using comparative analysis and a scoring-based assessment. The findings indicate that digital banks and neobanks demonstrate greater adaptability to Open API infrastructure, while monolithic IT architectures and the lack of unified national standards remain major barriers for large traditional banks. The article also presents a SWOT analysis of the Open Banking model and develops practical recommendations for introducing unified national API standards, strengthening cybersecurity, and improving consent management systems.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.48550/arxiv.2611.25821",
+"title": "Signed but Unbound: The Authority Gap Between Agent Commerce Mandates and Crypto Wallet Signatures",
+"url": "https://doi.org/10.48550/arxiv.2611.25821",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-19",
+"authors": [
+"Shengwei You",
+"Aditya Joshi",
+"Andrey Kuehlkamp",
+"Jarek Nabrzyski"
+],
+"abstract": "When an artificial intelligence agent pays with a stablecoin, the commerce protocol can specify the merchant, order, amount, and facilitator. The token contract enforces the fields the wallet signs. We call the difference the authority gap, define nine constraint classes, and derive them for 12 authorization configurations, including Coinbase's deployed Commerce Payments Protocol. All 31,800 trials on local copies of deployed contract code match the derivation. A controlled comparison shows that committing the terms in the signed nonce binds the order. When the facilitator submits a payment to a merchant account without code, binding the facilitator requires a separate recipient contract. Of 26,653 sampled USD Coin authorizations redeemed on Base, 98.7% followed a path that any holder of the signature could redeem. We prove sufficient conditions for a recipient contract to enforce the signed mandate under a trusted signer and show which recipient a wallet displays. MandateLock, a minimal implementation for immediate payments, rejects all 10,800 modified mandates on deployed token code and accepts signatures from two independent signers. It uses 25% more gas than a transfer that onl",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.48550/arxiv.2611.24989",
+"title": "Signed, Valid, and Unauthorized: Authority Closure at the Trust Boundary Between Agent Commerce Protocols and Crypto Wallets",
+"url": "https://doi.org/10.48550/arxiv.2611.24989",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-18",
+"authors": [
+"Shengwei You",
+"Aditya Joshi",
+"Andrey Kuehlkamp",
+"Jarek Nabrzyski"
+],
+"abstract": "Agent commerce protocols let software agents pay with stablecoins. A buyer approves a payee, asset, spending cap and time window, but the wallet signs an object whose effects depend on the contracts that consume it. Matching the displayed fields or simulating one payment can miss transfers that the signed object still permits. We define authority closure as the set of transfer sequences that holding the signed object can enable. A wallet object respects the mandate when every such sequence meets the buyer's constraints. We characterize when wallet objects can satisfy this property and implement Closure, a wallet-side checker covering 13 families of signed objects. In an evaluation of 2,130 generated objects and 62,979 execution programs, 265 objects with an observed violation passed both a field-and-expiry check and an address allow-list. Under the test model, Closure rejected all 1,680 objects with an observed violation and accepted the remaining 450. In two local checkouts using the x402 reference client, approved payments settled and Closure refused requests outside the mandate before signing. The median decision time was at most 12 microseconds per family.",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11787193/v1",
+"title": "GCP: A Safety-Aware, Payment-Agnostic Commerce Protocol for Automotive and Mobility Agents",
+"url": "https://doi.org/10.21203/rs.3.rs-11787193/v1",
+"venue": "Research Square",
+"date": "2026-11-20",
+"authors": [
+"Jipu Su"
+],
+"abstract": "Personal agents are moving from conversation to commerce. Emerging protocols such as Poppy, UCP, and ACP define how an agent proves whom it represents, discovers merchants, fills a cart, and completes an online checkout. None of them is designed for the commerce that automotive and mobility users actually need: buying a brake pad that fits a specific VIN, booking maintenance at an authorized dealer, binding insurance, or placing a vehicle reservation under safety and consumer-protection rules. This paper proposes GCP 1.0 , an open, capability-based commerce protocol for automotive and mobility agents. GCP adds four things that general commerce protocols lack: (i) vehicle context and safety gates as first-class protocol objects; (ii) a delegation and authorization ladder that lets a human grant bounded purchase authority and revoke it at any time; (iii) a payment-agnostic intent layer that abstracts card, wallet, Alipay, WeChat Pay, OEM finance, and agent-native payment tokens; and (iv) a typed exception and recovery model for the failure modes of real commerce. GCP is compatible by translation: it consumes Poppy identity and session credentials, maps its catalog/cart/checkout objec",
+"score": 5,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "web:https://itforum.com.br/noticias/bradesco-troca-21-mil-desktops-por-ai-pcs-da-dell",
+"title": "Bradesco troca 21 mil desktops por AI PCs da Dell e economiza R$ 6 milhões por ano em energia",
+"url": "https://itforum.com.br/noticias/bradesco-troca-21-mil-desktops-por-ai-pcs-da-dell/",
+"venue": "IT Forum",
+"date": "2026-11-21",
+"authors": [],
+"abstract": "O Bradesco concluiu a troca de cerca de 21 mil desktops das agências por notebooks e periféricos da Dell Technologies com processadores Intel. O projeto, iniciado no terceiro trimestre de 2025 e implementado ao longo de 2026, reduziu em 81% o tempo de inicialização dos equipamentos usados no atendimento. A modernização também cortou em 60% […]",
+"score": 6,
+"theme": "engineering",
+"region": "brasil",
+"watch": [
+"IT Forum"
+],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "web:https://itforum.com.br/noticias/seguranca-dados-55-empresas-manter-ia-schneider-electric",
+"title": "Segurança de dados leva 55% das empresas a manter a IA dentro de casa, aponta estudo da Schneider Electric",
+"url": "https://itforum.com.br/noticias/seguranca-dados-55-empresas-manter-ia-schneider-electric/",
+"venue": "IT Forum",
+"date": "2026-11-20",
+"authors": [],
+"abstract": "Durante mais de uma década, a nuvem pública foi o destino natural de quase todo projeto de tecnologia. A inteligência artificial (IA) começa a mexer nessa lógica. Segundo um estudo global da Schneider Electric, feito em parceria com a consultoria Omdia, 55% das organizações pretendem manter ao menos parte de sua infraestrutura de IA em […]",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"IT Forum"
+],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.5281/zenodo.24398448",
+"title": "Recognised ROI: A Routing Identity and Recognition Rule for Measuring the Return on AI Efficiency Gains",
+"url": "https://doi.org/10.5281/zenodo.24398448",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-20",
+"authors": [
+"M Maruf Hossain"
+],
+"abstract": "Organisations commonly report the return on artificial intelligence by multiplying the hours a tool saves by a fully loaded labour rate. Field experiments support the first half of that calculation: generative AI releases measurable capacity on many tasks. The best available administrative evidence does not support the second half. In linked Danish records, earnings, recorded hours, employment and wage bills have so far moved little, and the chief financial officer of a major bank has said that the benefits are not observable in its quarterly earnings. This paper argues that the gap is not only a measurement lag to be waited out. It is also the predictable result of pricing a reduction in resource usage as though it were a reduction in resource spending, an error that management accounting resolved more than three decades ago. The paper proposes the Recognised ROI model. The model takes the AI-attributed reduction in resource usage, nets off the verification and induced rework created by the AI output, and routes the remainder to five exhaustive destinations: supply removed, supply avoided, additional throughput, reduced loss, and unconverted capacity. Each destination is priced at",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
+},
+{
+"key": "doi:10.1016/j.jbankfin.2026.107857",
+"title": "Product scope, product switching, and ownership structure",
+"url": "https://doi.org/10.1016/j.jbankfin.2026.107857",
+"venue": "Journal of Banking & Finance",
+"date": "2026-11-16",
+"authors": [
+"Tianyu Cai",
+"Jinzhao Du",
+"Leo Liu",
+"Fariborz Moshirian"
+],
+"abstract": "",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-21"
 }
 ]
