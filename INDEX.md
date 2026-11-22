@@ -4,7 +4,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 📡 PEOPLE-ANALYTICS-WATCH
 
-6 digests em `digests/people-analytics/`.
+7 digests em `digests/people-analytics/`.
 
 ## 📊 People analytics & métricas (7)
 
@@ -27,8 +27,10 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-16 · [Meta-análise de 30 anos de medidas de SJT: clareza de construto vs. poder preditivo](https://doi.org/10.1037/apl0001442.supp) · 8/10
 - 2026-11-16 · [IA reforça estereótipos de gênero em descrições de vagas](https://doi.org/10.1111/gwao.70291) · 8/10
 
-## 🤖 IA & futuro do trabalho (12)
+## 🤖 IA & futuro do trabalho (14)
 
+- 2026-11-22 · [Cognitive Ambidexterity: julgamento contextual em decisões mediadas por IA](https://doi.org/10.1177/01492063261501111) · 8/10
+- 2026-11-22 · [Colaboração humano–GenAI e adaptabilidade de carreira de expatriados](https://doi.org/10.1080/09585192.2026.2765510) · 7/10
 - 2026-11-21 · [Desativar a IA reduz solidão e aumenta interação social](https://doi.org/10.48550/arxiv.2611.25263) · 8/10
 - 2026-11-20 · [IA no trabalho reduz a intenção de pedir ajuda a colegas](https://arxiv.org/abs/2611.25269) · 8/10
 - 2026-11-20 · [Geografias do conhecimento tácito via avatares, robôs de telepresença e hologramas](https://doi.org/10.1093/jeg/lbag083) · 5/10
@@ -77,8 +79,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-18 · [Efetividade dos direitos de informação algorítmica: lições da Espanha](https://doi.org/10.1177/20319525261489682) · 7/10
 - 2026-11-17 · [Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits](https://arxiv.org/abs/2611.20901) · 7/10
 
-## 🔥 Tendências (6)
+## 🔥 Tendências (7)
 
+- **2026-11-22** — O período desloca a discussão de IA no trabalho da adoção para a governança do julgamento: quem decide com o algoritmo precisa de mecanismos explícitos de contestação, calibração de confiança e transparência, como mostram tanto os quatro mecanismos de ambidestria cognitiva quanto o papel amortecedor da transparência de RH na avaliação algorítmica. Ao mesmo tempo, a IA generativa se consolida como recurso de carreira — eleva adaptabilidade de expatriados — mas só quando confiança supera insegurança, sinal de que medo de substituição é hoje uma variável de gestão, não um ruído. Para people analytics, isso empurra o portfólio de projetos para auditoria de modelos de avaliação, métricas de segurança psicológica e desenho de canais de voz, enquanto a lacuna de skills digitais (61,5% sem treino recente) segue limitando a própria transformação.
 - **2026-11-21** — O período converge num alerta: eficiência automatizada e flexibilidade têm custo social que não aparece nos dashboards de produtividade. A IA usada para tarefas instrumentais reduz solidão e aumenta interação presencial quando desativada, enquanto a gestão algorítmica já entra na mesa de negociação coletiva na Europa — ou seja, o debate saiu da adoção e foi para governança e efeitos colaterais. Ao mesmo tempo, trabalho remoto e práticas de empoderamento mostram trade-offs reais (inovação, voz) que exigem medição por função e por constructo, não por indicador único. Na prática, people analytics precisa incorporar fragmentação de agenda, interação social e voz como métricas de primeira linha, e não como subproduto de engajamento.
 - **2026-11-20** — A safra do período converge para uma agenda de consequências e governança da IA no trabalho, não mais de adoção. De um lado, evidências novas mostram fragilidade de conformidade legal de LLMs em entrevistas e erosão das redes de ajuda entre colegas quando a IA assume tarefas — dois riscos que o RH raramente mede hoje. De outro, o estudo em bancos indianos indica que o gargalo do people analytics é epistêmico: o modelo só entra em produção quando é traduzido para os artefatos e critérios de quem decide no domínio. Em paralelo, dogmas clássicos estão sendo revisados com dados — a assimetria negativa dos laços sociais não se sustenta em geral, e layoffs passam a ser lidos como gestão do capital humano remanescente. Na prática, isso empurra o time para auditoria de ferramentas de IA, métricas relacionais direcionadas (quem busca quem) e monitoramento de sobreviventes e capacidade crítica após cortes.
 - **2026-11-19** — O período converge para uma mesma virada: as políticas de pessoas estão sendo lidas como *sinais estruturais*, não como benefícios pontuais. Transparência de faixa salarial mostra que revelar o range sem rota de progressão cria efeito teto e erosão de retenção, enquanto IA generativa redireciona demanda e oferta de trabalho e premia quem consegue requalificar rápido. Ao mesmo tempo, digitalização de arranjos de trabalho não eleva bem-estar por si — autonomia, carga e clareza de papel seguem sendo os motores reais. Para people analytics, a fronteira é medir melhor: redes comportamentais reais, adoção de produtos analíticos e capital cognitivo que permanece nas pessoas, e não apenas dashboards de satisfação.
@@ -88,7 +91,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🛡️ BANK-FRAUD-WATCH
 
-5 digests em `digests/fraude-bancaria/`.
+6 digests em `digests/fraude-bancaria/`.
 
 ## 📊 Modelos, dados e métricas de fraude (3)
 
@@ -113,7 +116,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🏦 BANK-TECH-&-AI-WATCH
 
-5 digests em `digests/tecnologia-bancaria/`.
+6 digests em `digests/tecnologia-bancaria/`.
 
 ## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (4)
 
@@ -122,8 +125,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-19 · [Delegação gated por evidência: caso de reconciliação bancária](https://doi.org/10.13140/rg.2.2.24634.15047) · 7/10
 - 2026-11-17 · [Northern Trust usa engenheiros da Microsoft para escalar onboarding agêntico](https://www.bankingdive.com/news/northern-trust-leans-microsoft-fde-agentic-buildout/874362/) · 8/10
 
-## 🧠 Modelos fundacionais em bancos (3)
+## 🧠 Modelos fundacionais em bancos (4)
 
+- 2026-11-22 · [Antom 3-in-1 Transformer: modelo fundacional de pagamentos](https://doi.org/10.48550/arxiv.2611.25403) · 8/10
 - 2026-11-18 · [Large Payments Model: modelo fundacional de pagamentos](https://doi.org/10.48550/arxiv.2611.15814) · 9/10
 - 2026-11-18 · [BBVA avança rumo a modelo fundacional de comportamento do cliente](https://www.bbva.com/en/innovation/bbva-uses-ai-to-better-understand-its-customers-and-takes-a-step-towards-developing-a-foundation-model/) · 8/10
 - 2026-11-17 · [Quanto modelos fundacionais realmente adicionam ao gradient boosting em sequências financeiras?](https://arxiv.org/abs/2611.18914) · 8/10
@@ -182,8 +186,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 - 2026-11-19 · [Stripe evals: medindo performance real de agentes de código](https://stripe.dev/blog/stripe-integration-evals-methodology) · 7/10
 
-## 🔥 Tendências (5)
+## 🔥 Tendências (6)
 
+- **2026-11-22** — O período mostra a verticalização dos modelos fundacionais: em vez de LLMs genéricos, surgem arquiteturas pré-treinadas sobre dados proprietários de um domínio específico — no caso, pagamentos e risco — com ganhos medidos em produção, não em benchmark. No mundo, a fronteira avança em duas frentes complementares: modelos fundacionais de transação (Ant International) e uma higiene de evidência mais dura sobre pagamentos instantâneos, separando causalidade comprovada de narrativa de fornecedor. No Brasil, nada relevante entrou no radar nos últimos dias — o que é um sinal em si: o país lidera em infraestrutura (Pix, Open Finance, Drex) e em escala de dados transacionais, mas a pesquisa aplicada que transforma essa escala em modelo fundacional próprio ainda está sendo publicada por terceiros, não por aqui. Para quem lidera tecnologia em banco, a janela é clara: quem estruturar primeiro seus dados transacionais como corpus de pré-treinamento captura o ganho de transferência antes que o fornecedor o faça por ele.
 - **2026-11-21** — No mundo, a fronteira do período está na **confiança** do comércio agêntico: dois papers medem o 'authority gap' entre o mandato que o cliente aprova e o que a carteira cripto de fato assina, e outro mostra que LLMs comerciais confirmam declarações bancárias falsas em checkout — o gargalo dos agentes que pagam é jurídico-técnico, não de capacidade. A pesquisa de privacidade também avança: o trade-off privacidade-personalização deixa de ser binário e passa a ser desenhável por contexto, aplicável a consentimento granular em crédito e ofertas. No Brasil, o que aparece é modernização de base — 21 mil AI PCs no Bradesco com 81% menos tempo de boot e R$ 6 mi/ano de economia —, mas não há pesquisa local publicada sobre comércio agêntico ou governança de agentes, exatamente o vácuo a ocupar antes de escalar agentes que transacionam.
 - **2026-11-20** — O período é dominado por duas frentes que se cruzam: dar aos agentes poder real de movimentar dinheiro sob controle verificável e tornar o risco auditável. No mundo, a Stripe abre transferências e pagamentos a agentes com limites e aprovação humana, enquanto papers propõem contratos de delegação verificável — colusão cai de 48,3% para 33–40% com auditoria — e governança de agentes que agem com credenciais válidas; a pesquisa do American Banker reforça que governança estruturada é o que separa quem escala de quem só pilota. No Brasil, a escala aparece nos R$ 700 bi em Pix do Mercado Livre e no mapeamento Febraban/Accenture de 35 tendências, mas falta pesquisa original local sobre comércio agêntico e modelos fundacionais próprios. A lição comum é que identidade, orçamento, trilha de pagamento e explicabilidade deixaram de ser itens de compliance e viraram requisitos de engenharia.
 - **2026-11-19** — No Brasil, o período é de infraestrutura e regulação, não de banco agêntico: quase metade das instituições já usa Open Finance para decidir crédito a clientes thin-file e o split payment de 2027 empurra o cálculo do tributo para dentro da liquidação, forçando redesenho da arquitetura de dados do pagamento — e não houve paper brasileiro sobre agentes autônomos. No mundo, a agenda virou medir antes de delegar: teste pré-registrado de autonomia por orçamento de erro, RehearsalBench para prever impacto de mudanças operacionais, bakeoff de dez plataformas agênticas em banco global com efeito halo denunciando demos, e propostas de mandato de gasto e clearing de micropagamentos para agentes que pagam. A conclusão convergente é que autonomia se conquista com evidência auditável e volume estatístico, não com benchmark de modelo — e a ameaça competitiva imediata é o agente corroendo o NIM antes de o banco ter seu próprio agente transacional em produção.

@@ -3102,5 +3102,44 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-20"
+},
+{
+"key": "doi:10.54097/7nnpma38",
+"title": "Temporal Graph Learning for Robust Detection of Coordinated Fraud in Dynamic Transaction Networks",
+"url": "https://doi.org/10.54097/7nnpma38",
+"venue": "International Journal of Advanced Engineering and Technology Research",
+"date": "2026-11-21",
+"authors": [
+"Sofia Lindqvist",
+"Johan Berg",
+"Maya Svensson"
+],
+"abstract": "Coordinated fraud can produce repeated, synchronized transfers whose signatures are obscured by heterogeneous activity, missing edges, and evolving behavior. This paper studies a lightweight temporal graph learning strategy based on account-level transaction attributes, static neighborhood descriptors, and eight-bin temporal coordination statistics. Static and temporal feature variants are each trained with the same simulated edge-deletion augmentation to disentangle the effects of timing descriptors and robustness training. Experiments are conducted on a controlled, fully specified synthetic benchmark containing 4,800 accounts, approximately 15,000 transfers per run, and simulator-assigned coordinated actors; the benchmark is not a real-world labeled fraud dataset. Three independent runs use chronological, nonoverlapping train/validation/test snapshots. The edge-augmented static graph achieves test average precision 0.631, while the identically augmented temporal feature model reaches 0.602; their nonaugmented counterparts score 0.571 and 0.569, respectively. At 20% and 40% test-edge removal, augmented static-graph average precision is 0.518 and 0.389, respectively. A matched augm",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1016/j.cose.2026.105253",
+"title": "Towards an AI-assisted adaptive multi-signature architecture for critical scenarios",
+"url": "https://doi.org/10.1016/j.cose.2026.105253",
+"venue": "Computers & Security",
+"date": "2026-11-19",
+"authors": [
+"Cristina Alcaraz",
+"Davide Ferraris",
+"Hector Guzman",
+"Javier López"
+],
+"abstract": "",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
 }
 ]

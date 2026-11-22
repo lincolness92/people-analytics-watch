@@ -12427,5 +12427,352 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-21"
+},
+{
+"key": "doi:10.1080/09585192.2026.2765510",
+"title": "Generative AI collaboration and expatriate career adaptability: a career construction perspective on sustainable career development",
+"url": "https://doi.org/10.1080/09585192.2026.2765510",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-21",
+"authors": [
+"Zhe Zhu",
+"Tero Vartiainen",
+"Fangfang Li"
+],
+"abstract": "As generative AI (GenAI) technologies become increasingly integrated into global workplaces, their implications for individual career development, particularly among internationally mobile professionals, remain underexplored. This study examines the relationship between human–GenAI collaboration and expatriates’ career adaptability, as well as three career sustainability-related outcomes: career satisfaction, life satisfaction, and perceived AI-enabled task performance. Grounded in Career Construction Theory, the study conceptualizes human–GenAI collaboration as a contextual resource associated with adaptive career responses. Drawing on data from 361 expatriates, the findings indicate that human–GenAI collaboration is positively associated with career adaptability, which in turn relates positively to these career-related outcomes. The results further show that the relationship between human–GenAI collaboration and career adaptability varies according to expatriates’ AI trust and perceived AI-induced job insecurity. This study contributes to research on career development and human–AI interaction by highlighting the role of digitally mediated work practices in adaptive career proces",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1177/01492063261501111",
+"title": "Cognitive Ambidexterity: Balancing Algorithmic Efficiency and Contextual Judgement in AI-Enabled Decision Systems",
+"url": "https://doi.org/10.1177/01492063261501111",
+"venue": "Journal of Management",
+"date": "2026-11-21",
+"authors": [
+"Tahir Abbas Syed"
+],
+"abstract": "AI-enabled decision systems make algorithmic recommendations appear objective and ready for action before contextual, ethical, and stakeholder concerns are fully considered. This study examines how leaders preserve judgment under these conditions. We develop cognitive ambidexterity as a leader-level meta-cognitive capability through which managers balance algorithmic exploitation with contextual exploration in AI-mediated decisions. Using an exploratory sequential mixed-methods design, we first examine five U.K. procurement and infrastructure organizations and identify four mechanisms of cognitive ambidexterity. We then examine these mechanisms through vignette experiments with managers. The findings show that leaders preserve contextual judgment by treating AI outputs as interpretive cues, calibrating trust under ambiguity, slowing decisions when reflection is needed, and building supports that make algorithmic recommendations contestable. The study extends ambidexterity theory by showing how exploration–exploitation tensions are cognitively regulated when exploitation is embedded in algorithmic decision processes. It also uses leadership cognition and Upper Echelons Theory to exp",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24413084",
+"title": "Explainable AI for Fair and Transparent Human Resource Decision- Making",
+"url": "https://doi.org/10.5281/zenodo.24413084",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Spoorthi R",
+"K.Subhashini",
+"Aishwarrya Prakash"
+],
+"abstract": "Human resource (HR) decisions are currently supported by algorithmic processes for hiring, promotions, and retaining employees, the lack of transparency in these models raises concerns about fairness, accountability, and trust of employees towards the process. In this paper, we develop a two-channel explainable artificial intelligence (XAI) model that combines the post hoc explanation methods such as SHAP and LIME with the inherently interpretable classifier for HR decisions. In our methodology, adversarial debiasing is used in the training process to prevent the influence of sensitive attributes on the model performance. For testing the effectiveness of the proposed XAI model, we conduct an experimental evaluation using IBM HR analytics dataset with three HR decision making tasks including promotion prediction, attrition prediction, and candidate selection task. As results, we show that our model achieves reductions in demographic parity disparity without compromising the explanation quality using local accuracy and stability measures. Comparing with baseline models in terms of fairness-utility trade-off consistently yields improvements.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24413388",
+"title": "From Organisational Trust to AI Adoption: Examining the Role of Perceived Fairness, Transparency, and Employee Confidence in AI-Enabled Human Resource Management",
+"url": "https://doi.org/10.5281/zenodo.24413388",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Dinakar K.S"
+],
+"abstract": "Artificial intelligence (AI) is increasingly transforming human resource management (HRM) through its applications in recruitment and selection, performance evaluation, employee engagement, learning and development, workforce planning, and talent management. Despite the operational benefits of AI-enabled HRM, employee acceptance remains influenced by concerns regarding algorithmic fairness, transparency, accountability, privacy, and the reliability of automated decisions. This study develops and examines a framework explaining how perceived fairness, transparency, and employee confidence contribute to organisational trust and how organisational trust subsequently influences employees’ intention to adopt AI-enabled HRM systems. The study is conceptually grounded in organisational trust theory, organisational justice theory, and technology acceptance perspectives. A quantitative, cross-sectional research design is proposed, with an sample of 160 employees and HR professionals working in Indian organisations. A structured questionnaire based on a five-point Likert scale is used as the proposed measurement instrument. Descriptive statistics, reliability analysis, construct validity ass",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "oa:W7237372596",
+"title": "The Predictive Influence of Management Leadership Styles on Employee Retention: A Quantitative Study in the Aerospace and Defense Industry",
+"url": "https://digitalcommons.liberty.edu/jbr/vol5/iss1/7",
+"venue": "Scholars Crossing (Liberty University)",
+"date": "2026-11-20",
+"authors": [
+"Shawn M Hall"
+],
+"abstract": "The Aerospace and Defense (A&D) industry in Northern Virginia faces a critical talent shortage exacerbated by high employee turnover and a retiring workforce. Replacing professionals holding specialized security clearances is commonly estimated at 150 to 250 percent of their annual salary. This quantitative, non-experimental applied research examined the predictive relationship between management leadership style and employee turnover intent within this sector. Grounded in Fiedler's Contingency Theory and Leader-Member Exchange Theory, the study surveyed 773 professionals across seven major organizations to measure turnover intent, management leadership style, job satisfaction, and leader support. Hierarchical multiple regression isolated leadership style's association with turnover intent from four demographic controls: age, gender, role, and years of service. The results showed that demographic variables accounted for 7.5 percent of the variance in turnover intent, and a composite leadership-style score explained an additional, independent 14.8 percent. Higher composite scores (reflecting more participative and delegative, less authoritative, supervisory behavior) were associated",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1007/978-3-032-36098-4_27",
+"title": "Preparing Europe’s Transport Workforce for CCAM – The RESKILLING Employment and Skills Observatory",
+"url": "https://doi.org/10.1007/978-3-032-36098-4_27",
+"venue": "Lecture notes in mobility",
+"date": "2026-11-22",
+"authors": [
+"Matina Loukea",
+"Pavlos Spanidis",
+"Nikolaos Chandrinos",
+"Evangelos D. Bekiaris"
+],
+"abstract": "In the face of persistent challenges—including the energy crisis, supply chain disruptions, and rising living costs— the EU labour market remains resilient, with employment reaching a record 213.7 million. Within this context, the transport sector, which contributes 5% to the EU’s GDP and accounts for 3.1% of total employment, is experiencing significant transformation through the adoption of Cooperative, Connected, and Automated Mobility (CCAM) technologies. While CCAM presents opportunities for innovation, economic growth, and job creation, it also poses risks of workforce displacement and evolving skill demands. Addressing these shifts requires a systemic approach that considers not only transport-specific roles but also broader impacts across the value chain, including education, organisational transformation, and labour market dynamics. Ensuring inclusive transitions, reskilling opportunities, and the attractiveness of transport careers is essential. To this extent, the Horizon Europe project RESKILLING (G101147328) introduces the CCAM Employment & Skills Observatory, an AI-powered tool designed to identify and map evolving skill needs, detect emerging roles, and generate tail",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.32725/kont.2026.066",
+"title": "Employment opportunities and discrimination faced by individuals with mental illness",
+"url": "https://doi.org/10.32725/kont.2026.066",
+"venue": "Kontakt",
+"date": "2026-11-20",
+"authors": [
+"Miluše Balková"
+],
+"abstract": "Background: This study examines the employment experiences of peer workers with lived experience of mental illness in the Czech Republic, focusing on access to the open labour market, employment duration, and workplace discrimination. The aim was to analyse employment trajectories before and during peer work and to explore relationships between employment outcomes, discrimination, and selected sociodemographic characteristics. Methods: A quantitative survey was conducted among peer workers in health and social services (N = 101). Data were analysed using descriptive statistics, analysis of variance (ANOVA), and chi-square tests. Results: A proportion of respondents reported experiencing discrimination during their job search and in the workplace, including rejection in recruitment, negative interactions with colleagues, and exclusion by supervisors. Most respondents reported a strong interest in employment; however, many described employment trajectories that did not correspond to their qualifications. A statistically significant association with a large effect size was found between employment duration and job position. A significant association was also found between employment d",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1002/9781394374861.ch19",
+"title": "Supply Chain Talent in the Digital Era",
+"url": "https://doi.org/10.1002/9781394374861.ch19",
+"venue": "Wiley eBooks",
+"date": "2026-11-20",
+"authors": [
+"Ramatu Abdulkadir",
+"Andre Kreie"
+],
+"abstract": "Talent shortages are constraining digital transformation in logistics and supply chain management (LSCM). This mixed-methods study combines a survey of 179 professionals across 21 countries (Africa-led sample), five expert interviews, and an embedded case from Kaduna State, Nigeria. Respondents view AI/ML (≈60.9%), data analytics (≈49.2%), and IoT (≈45.3%) as most impactful, yet ≈61.5% report no emerging-technology training in the past two years. Top barriers are cost (≈72.6%), limited organizational support (≈40.2%), and access to relevant programs (≈30.1%); preferred formats are blended, work-embedded approaches (≈60.3%). Professional development and career growth consistently outrank compensation as retention levers. The case evidence indicates that project-based learning with real tools/datasets, co-designed with academic/industry partners, accelerates adoption and mobility but should be generalized cautiously. We propose a practical KPI set—time-to-productivity, tech-adoption lead time, internal mobility, role-specific retention, and learning gain—to monitor impact. The findings offer actionable guidance for building a future-ready LSCM workforce.",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24425909",
+"title": "The Illusion of Flexibility: Work-Life Balance and Time Control Among Gig Employees",
+"url": "https://doi.org/10.5281/zenodo.24425909",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Parmesha H N"
+],
+"abstract": "The proliferation of digital platform labor across urban India has been largely driven by the promise of schedule autonomy and temporal freedom. However, emerging empirical evidence suggests that for many platform workers, this freedom is fundamentally paradoxical. This article examines how algorithmic management, financial precarity, dynamic incentive structures, and market volatility convert promised autonomy into pervasive temporal discipline within the Indian gig landscape. Drawing on a mixed-methods investigation of 450 location-based and web-based gig employees across major metropolitan hubs in India including Bengaluru, Mumbai, and the National Capital Region (NCR), we analyze the structural mechanisms that dictate time control and severely compromise work-life balance. Our findings indicate that while gig employees experience high initial levels of perceived schedule control, their actual temporal flexibility is heavily constrained by dynamic surge pricing algorithms, target-based peak incentives, customer rating penalties, and baseline economic necessity. Consequently, gig employees suffer elevated levels of work-family conflict, unpredictable work schedules, severe physic",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.4018/979-8-3373-9564-7.ch011",
+"title": "Technology and the Future of Cross-Cultural Work",
+"url": "https://doi.org/10.4018/979-8-3373-9564-7.ch011",
+"venue": "IGI Global eBooks",
+"date": "2026-11-19",
+"authors": [
+"Pradhyuman Singh Lakhawat",
+"Poonam Singh Singh",
+"Kenneth Amoah Binfoh"
+],
+"abstract": "The rapid integration of artificial intelligence (AI) and digital collaboration platforms is transforming global employment, transcending geographic and cultural boundaries. This chapter examines how AI-driven systems in hiring, performance evaluation, and management introduce efficiency but also embed cultural biases, creating an “algorithmic glass ceiling.” It highlights the emergence of “Third Digital Cultures” shaped by open-source communities and tech ecosystems, promoting shared global norms. However, the persistent digital divide risks excluding developing regions from these benefits. The chapter concludes by advocating “cultural intelligence by design,” emphasizing inclusive, ethical AI systems that balance technological standardization with cultural diversity to foster an equitable global workforce.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1111/gwao.70292",
+"title": "Navigating Authenticity and Adversity: A Qualitative Exploration of Employment Experiences of Transgender and Gender Diverse Texans",
+"url": "https://doi.org/10.1111/gwao.70292",
+"venue": "Gender Work and Organization",
+"date": "2026-11-21",
+"authors": [
+"Paola Roldán",
+"Jacob Goffnett",
+"Kelly Lynn Clary",
+"Angela Matijczak"
+],
+"abstract": "Transgender and gender‐diverse (TGD) individuals face elevated rates of employment discrimination, with consequences for economic stability and psychological well‐being. However, three gaps limit current understanding: the institutional mechanisms through which cisnormative workplaces legally and structurally produce exclusion remain undertheorized; job‐seeking as a distinct stage of employment vulnerability is largely unexamined; and no prior qualitative study has investigated TGD employment in a Southern US state during a period of organized legislative hostility toward the population. This study addresses these gaps through a qualitative exploration of TGD employment experiences in Texas—a context where cisnormative exclusion is actively reinforced by the absence of statewide anti‐discrimination protections and by religious exemption litigation under the Religious Freedom Restoration Act, making it theoretically distinct from states that only lack TGD protections. Drawing on Puwar's (2004) Bodies Out of Place (BOP) framework and Turner's (2024) extension to transgender experience, we analyzed data from three focus groups and three individual interviews with 11 TGD Texans, using ",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24409038",
+"title": "Cognitive Offloading and Automation Bias in Generative AI-Assisted Learning Systems: A Systematic Review and Secondary Evidence Synthesis",
+"url": "https://doi.org/10.5281/zenodo.24409038",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Yadav Rana",
+"Deepak Kumar"
+],
+"abstract": "The use of Generative Artificial Intelligence (AI) tools in learning systems is growing rapidly and is changing the way people learn, solve problems and make decisions. Cognitive offloading refers to the transfer of mental tasks such as remembering, reasoning and evaluating to external systems, while automation bias describes the tendency to rely on the output of automated systems in place of independent judgement. Both phenomena are more visible in generative AI settings, because these systems produce fluent, human-like responses that imitate the process of reasoning itself. Over-reliance on generative AI can therefore threaten intellectual independence and accountability for decisions: it tends to reduce verification behaviour, weaken skill development and increase the risk of reasoning errors, particularly in educational and workplace learning. This paper examines the role of cognitive offloading and automation bias in generative AI-supported learning systems through a systematic review and secondary evidence synthesis of recent empirical studies from educational, technical and professional fields. The results show that unstructured use of generative AI is frequently associated ",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.47573/aya.6228.3.61.27",
+"title": "Gestão de Pessoas e Adequação de Competências na Execução de Obras e Serviços Técnicos em uma Microempresa",
+"url": "https://doi.org/10.47573/aya.6228.3.61.27",
+"venue": "AYA Editora eBooks",
+"date": "2026-11-19",
+"authors": [
+"Clorisvaldo Ferreira Guimarães",
+"Gabriel Cunha Alves"
+],
+"abstract": "A obra *Administração & Gestão: Um Olhar para o Futuro Organizacional - Vol. 14* apresenta uma abordagem voltada às discussões contemporâneas no campo da administração e da gestão, considerando perspectivas relacionadas ao futuro das organizações. O material contribui para a reflexão sobre a dinâmica organizacional e os desafios que acompanham as transformações nos ambientes de gestão. Destina-se a estudantes, pesquisadores, docentes e profissionais interessados em ampliar seus conhecimentos sobre administração, práticas organizacionais e perspectivas futuras para a área. %",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.56238/levv17n66-117",
+"title": "AUTOMAÇÃO E EFICIÊNCIA: IMPACTOS DA INTELIGÊNCIA ARTIFICIAL NA GESTÃO TRABALHISTA E CONTÁBIL",
+"url": "https://doi.org/10.56238/levv17n66-117",
+"venue": "LUMEN ET VIRTUS",
+"date": "2026-11-20",
+"authors": [
+"Regina Gabrieli Martins Batista",
+"Aislan da Silva Nunes"
+],
+"abstract": "Este estudo analisou os impactos da Inteligência Artificial (IA) na automação e na eficiência da gestão trabalhista e contábil, considerando os benefícios, os limites e os desafios para o profissional de Ciências Contábeis. Para isso, foi feita uma pesquisa bibliográfica, de abordagem qualitativa e caráter exploratório, com leitura interpretativa e comparação de nove publicações sobre automação de rotinas, folha de pagamento, gestão de pessoas, eficiência operacional e mudanças na profissão contábil. Os resultados mostraram aplicações em lançamentos, conciliações, classificação de documentos, cálculos tributários e trabalhistas, auditoria, relatórios e identificação de inconsistências. Também foram observados ganhos de tempo, melhor organização das informações, aumento da produtividade e redução de falhas manuais. Conclui-se que a IA pode tornar os processos mais ágeis e integrados, mas seus benefícios dependem da qualidade dos dados, da integração dos sistemas, da capacitação e da supervisão humana. A responsabilidade do contador continua, e sua atuação tende a se ampliar para funções analíticas, consultivas e estratégicas.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24414980",
+"title": "THE IMPACT OF PAY TRANSPARENCY ON EMPLOYEE VOICE BEHAVIOR: THE MEDIATING ROLE OF PSYCHOLOGICAL CONTRACT FULFILMENT AND THE MODERATING ROLE OF PERCEIVED DISTRIBUTIVE JUSTICE",
+"url": "https://doi.org/10.5281/zenodo.24414980",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Sidra,Salman Siraj,Dr. Muhammad Arshad Haroon,Dr. Mahnoor Afzal"
+],
+"abstract": "",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24416415",
+"title": "Digital Human Resource Management Practices through Online Platforms in the Banking Sector",
+"url": "https://doi.org/10.5281/zenodo.24416415",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"B. Hariprabhu Dhakal",
+"P. Chinnadurai",
+"C. Velaudham"
+],
+"abstract": "",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1016/j.outlook.2026.102958",
+"title": "Perfectionism and its associations with stress, burnout, job satisfaction, and performance among nurses and nursing students: A scoping review",
+"url": "https://doi.org/10.1016/j.outlook.2026.102958",
+"venue": "Nursing Outlook",
+"date": "2026-11-21",
+"authors": [
+"Kelly Nkengafac",
+"Philemon Domoyeri",
+"Edwin N. Aroke"
+],
+"abstract": "",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24414042",
+"title": "THE HIDDEN COST OF AI-AUGMENTED PERFORMANCE APPRAISAL: ALGORITHMIC EVALUATION ANXIETY, EMPLOYEE SILENCE, AND THE BUFFERING ROLE OF HR TRANSPARENCY",
+"url": "https://doi.org/10.5281/zenodo.24414042",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Maria Hina",
+"Bakhtawar Batool Khan",
+"Maimoona Gul Kakakhel",
+"Ali Khan"
+],
+"abstract": "",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.1016/j.irfa.2026.105536",
+"title": "Asset structural profitability and executive compensation stickiness: evidence from China",
+"url": "https://doi.org/10.1016/j.irfa.2026.105536",
+"venue": "International Review of Financial Analysis",
+"date": "2026-11-18",
+"authors": [
+"Yongheng Wang",
+"Shimin Sun"
+],
+"abstract": "",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
 }
 ]

@@ -1,0 +1,196 @@
+{
+ "date": "2026-11-22",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-15",
+  "to": "2026-11-22"
+ },
+ "stats": {
+  "candidates": 49,
+  "triaged": 49,
+  "selected": 2,
+  "tokens": {
+   "prompt_tokens": 10794,
+   "completion_tokens": 6944,
+   "cost_usd": 0.005035,
+   "calls": 3,
+   "failures": 0
+  }
+ },
+ "headline": "semana de IA no trabalho: do veredito algorítmico ao julgamento contestável",
+ "trend": "O período desloca a discussão de IA no trabalho da adoção para a governança do julgamento: quem decide com o algoritmo precisa de mecanismos explícitos de contestação, calibração de confiança e transparência, como mostram tanto os quatro mecanismos de ambidestria cognitiva quanto o papel amortecedor da transparência de RH na avaliação algorítmica. Ao mesmo tempo, a IA generativa se consolida como recurso de carreira — eleva adaptabilidade de expatriados — mas só quando confiança supera insegurança, sinal de que medo de substituição é hoje uma variável de gestão, não um ruído. Para people analytics, isso empurra o portfólio de projetos para auditoria de modelos de avaliação, métricas de segurança psicológica e desenho de canais de voz, enquanto a lacuna de skills digitais (61,5% sem treino recente) segue limitando a própria transformação.",
+ "items": [
+  {
+   "key": "doi:10.1177/01492063261501111",
+   "title": "Cognitive Ambidexterity: julgamento contextual em decisões mediadas por IA",
+   "original_title": "Cognitive Ambidexterity: Balancing Algorithmic Efficiency and Contextual Judgement in AI-Enabled Decision Systems",
+   "url": "https://doi.org/10.1177/01492063261501111",
+   "venue": "Journal of Management",
+   "date": "2026-11-21",
+   "authors": [
+    "Tahir Abbas Syed"
+   ],
+   "institutions": [
+    "University of Manchester"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Desenho misto sequencial: cinco organizações britânicas de procurement/infraestrutura mais experimentos de vinheta com gestores revelam quatro mecanismos de **ambidestria cognitiva** — tratar a saída da IA como pista interpretativa, calibrar confiança sob ambiguidade, desacelerar a decisão quando cabe reflexão e criar suportes que tornem a recomendação algorítmica contestável. A implicação para people analytics é direta: performance, promoção e alocação mediadas por modelo precisam de *design* de contestabilidade e treino de líderes, senão a objetividade aparente do algoritmo engole o julgamento contextual."
+  },
+  {
+   "key": "doi:10.1080/09585192.2026.2765510",
+   "title": "Colaboração humano–GenAI e adaptabilidade de carreira de expatriados",
+   "original_title": "Generative AI collaboration and expatriate career adaptability: a career construction perspective on sustainable career development",
+   "url": "https://doi.org/10.1080/09585192.2026.2765510",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-21",
+   "authors": [
+    "Zhe Zhu",
+    "Tero Vartiainen",
+    "Fangfang Li"
+   ],
+   "institutions": [
+    "University of Vaasa",
+    "University of Leeds"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Survey com 361 expatriados, ancorado em Career Construction Theory, mostra que colaboração humano–GenAI se associa a maior adaptabilidade de carreira, que por sua vez eleva satisfação com a carreira e com a vida e desempenho percebido em tarefas com IA. O elo é moderado por confiança na IA e por insegurança percebida de substituição: onde a insegurança é alta, o ganho de adaptabilidade encolhe. Lição: programas de mobilidade global que entregam IA sem endereçar medo de substituição colhem menos *career adaptability* do que prometem."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1002/9781394374861.ch19",
+   "title": "Talento em supply chain digital",
+   "original_title": "Supply Chain Talent in the Digital Era",
+   "url": "https://doi.org/10.1002/9781394374861.ch19",
+   "venue": "Wiley eBooks",
+   "date": "2026-11-20",
+   "authors": [
+    "Ramatu Abdulkadir",
+    "Andre Kreie"
+   ],
+   "institutions": [
+    "Kühne Logistics University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "learning",
+   "region": "",
+   "note": "179 profissionais de 21 países: 61,5% sem treino em tecnologia emergente em 2 anos; custo é a barreira nº 1 (72,6%)."
+  },
+  {
+   "key": "doi:10.1111/gwao.70292",
+   "title": "Emprego de pessoas trans no Texas",
+   "original_title": "Navigating Authenticity and Adversity: A Qualitative Exploration of Employment Experiences of Transgender and Gender Diverse Texans",
+   "url": "https://doi.org/10.1111/gwao.70292",
+   "venue": "Gender Work and Organization",
+   "date": "2026-11-21",
+   "authors": [
+    "Paola Roldán",
+    "Jacob Goffnett",
+    "Kelly Lynn Clary",
+    "Angela Matijczak"
+   ],
+   "institutions": [
+    "Virginia Commonwealth University",
+    "Texas State University",
+    "University of Wisconsin–Milwaukee"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "governance",
+   "region": "",
+   "note": "Qualitativo mostra que a exclusão é produzida estruturalmente já na busca por vaga, não só no dia a dia do trabalho."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24414980",
+   "title": "Transparência salarial e voz do empregado",
+   "original_title": "THE IMPACT OF PAY TRANSPARENCY ON EMPLOYEE VOICE BEHAVIOR: THE MEDIATING ROLE OF PSYCHOLOGICAL CONTRACT FULFILMENT AND THE MODERATING ROLE OF PERCEIVED DISTRIBUTIVE JUSTICE",
+   "url": "https://doi.org/10.5281/zenodo.24414980",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-21",
+   "authors": [
+    "Sidra,Salman Siraj,Dr. Muhammad Arshad Haroon,Dr. Mahnoor Afzal"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "pay_careers",
+   "region": "",
+   "note": "Transparência de pay parece elevar voz via cumprimento do contrato psicológico, condicionada à percepção de justiça distributiva."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24414042",
+   "title": "Custo oculto da avaliação por IA",
+   "original_title": "THE HIDDEN COST OF AI-AUGMENTED PERFORMANCE APPRAISAL: ALGORITHMIC EVALUATION ANXIETY, EMPLOYEE SILENCE, AND THE BUFFERING ROLE OF HR TRANSPARENCY",
+   "url": "https://doi.org/10.5281/zenodo.24414042",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-21",
+   "authors": [
+    "Maria Hina",
+    "Bakhtawar Batool Khan",
+    "Maimoona Gul Kakakhel",
+    "Ali Khan"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Avaliação algorítmica gera ansiedade e silêncio do empregado; transparência de RH aparece como amortecedor do efeito."
+  },
+  {
+   "key": "doi:10.1016/j.irfa.2026.105536",
+   "title": "Rigidez da remuneração executiva na China",
+   "original_title": "Asset structural profitability and executive compensation stickiness: evidence from China",
+   "url": "https://doi.org/10.1016/j.irfa.2026.105536",
+   "venue": "International Review of Financial Analysis",
+   "date": "2026-11-18",
+   "authors": [
+    "Yongheng Wang",
+    "Shimin Sun"
+   ],
+   "institutions": [
+    "Northeastern University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "pay_careers",
+   "region": "",
+   "note": "Estrutura de ativos e rentabilidade explicam por que a remuneração executiva sobe rápido e cai devagar."
+  }
+ ]
+}

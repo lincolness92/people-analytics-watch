@@ -4226,5 +4226,118 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-21"
+},
+{
+"key": "doi:10.5281/zenodo.24413612",
+"title": "Add-in DSE Brain: A Domain-Specific Expertise Architecture for Governing LLM Reasoning via a Graph-Guided SEPath Framework and Causal AI",
+"url": "https://doi.org/10.5281/zenodo.24413612",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Tsung-Nan Chou"
+],
+"abstract": "While Large Language Models (LLMs) have achieved widespread adoption across the financial sector, pure neural architectures still suffer from inherent stochasticity, creating severe bottlenecks in mission-critical, zero-tolerance operations such as corporate syndicated lending, cross-asset portfolio stress testing, and regulatory compliance. Currently, financial institutions rely heavily on costly frontier generalist LLMs, which are plagued by numerical hallucinations, black-box opacity, lack of auditability, and cloud data-leakage risks. Furthermore, because these models rely on surface-level statistical correlations, they are highly susceptible to spurious correlations and confounding biases. Conversely, on-premises compact open-weight LLMs offer superior data localization and cost efficiency, yet their constrained parameter scales prevent them from independently executing complex multi-hop financial logic and causal inference. To overcome these limitations, this study proposes a hybrid neuro-symbolic architecture that decouples natural language representation from causal-logical governance by integrating an on-premises compact open-weight LLM, Retrieval-Augmented Generation (RAG",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.47941/ijf.4119",
+"title": "The Economics of Instant Payments: A Structured, Evidence-Graded Review of Financial Inclusion, Welfare, and Macro-Financial Effects across Global Fast-Payment Systems",
+"url": "https://doi.org/10.47941/ijf.4119",
+"venue": "International Journal of Finance",
+"date": "2026-11-20",
+"authors": [
+"Chandrashekhar Kharche"
+],
+"abstract": "Purpose: This article examines the economic consequences of instant payment systems (financial inclusion, welfare, growth and macro-financial stability) and seeks to separate the well-established effects from the projections and correlations that form the basis of much of the practitioner discussion. Methodology: This is a structured narrative review. The evidence is synthesized under an explicit four-tier scheme that gives primacy to peer-reviewed causal studies and central bank research over industry reports, separates out the observed from the forecasted, and places causal identification at the heart of the analysis. The review draws on 22 sources published between 2014 and 2026. The four systems under review are Brazil's Pix, India's UPI, the US FedNow and RTP and the EU's SEPA Instant. These are compared on design features. Findings: The best-evidenced finding is microeconomic: mobile-money access is estimated to have lifted around 2% of Kenyan households out of poverty and there are quasi-experimental findings on the impact of adoption in Mexico and India. The aggregate GDP and consumer savings data are all based on industry estimates and should be treated as indicative only.",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.59324/ejaset.2026.4(6).14",
+"title": "Digital Transformation and Credit Risk Mitigation in Conflict-Affected Yemen: An Intelligent Decision Support System with Knowledge-Graph Augmented Explainable Boosting",
+"url": "https://doi.org/10.59324/ejaset.2026.4(6).14",
+"venue": "European Journal of Applied Science Engineering and Technology",
+"date": "2026-11-18",
+"authors": [
+"Mohammed Najeeb Ahmed Abdualjaleel Abduallah",
+"Mohammed Saleh A. Almanie",
+"Hadil Najib Ahmed HadiAbduljalil",
+"Muhammad Rizwan Iqbal",
+"Akif Khalique Kamboh",
+"Hummaira Habib"
+],
+"abstract": "This study investigates whether and how digital transformation affects the credit risk of commercial banks in Yemen, where protracted conflict, institutional fragmentation, and severe data constraints complicate the operation and evaluation of the banking system. Using a balanced branch-level panel of 42 branches from two representative Banks over 2013–2024, we construct a composite digital transformation index (DDT) covering digital management, digital business, and digital strategy, and measure credit risk primarily by the Z-score, with the non-performing loan (NPL) ratio as a robustness proxy. The Z-score is constructed in its conventional form, in which higher values denote a greater distance from insolvency and therefore lower credit risk; all regressions were re-estimated with the corrected measure and every reported sign has been reassessed accordingly. Fixed-effects regressions show that digital transformation significantly reduces credit risk, while model fit improves (R² from 0.209 to 0.303). This paper additionally presents the formal architecture, algorithmic pseudocode, and computer simulation of an Intelligent Decision Support System (IDSS). The IDSS introduces the Kn",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.48550/arxiv.2611.25403",
+"title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+"url": "https://doi.org/10.48550/arxiv.2611.25403",
+"venue": "arXiv (Cornell University)",
+"date": "2026-11-19",
+"authors": [
+"Weiyu Han",
+"Haoyu Jiang",
+"Jie Sheng",
+"潘宥西 Pan Youxi",
+"Xianglong Liu",
+"Zeqi Ren"
+],
+"abstract": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
+"score": 8,
+"theme": "foundation_models",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11599318/v1",
+"title": "Separating AI from Capital: Identifying the Productivity Contribution of Artificial Intelligence across Countries and Sectors",
+"url": "https://doi.org/10.21203/rs.3.rs-11599318/v1",
+"venue": "Research Square",
+"date": "2026-11-20",
+"authors": [
+"Syed M. Abdullah",
+"Muhammad Elyoun Seja"
+],
+"abstract": "Does enterprise adoption of artificial intelligence (AI) raise total factor productivity (TFP), or does measured output growth mainly reflect capital deepening and labour growth? We separate these channels in two stages. First, we compute T\\\"ornqvist growth-accounting residuals using time-varying labour shares from the Penn World Table (PWT) 10.01, with PWT capital stocks extended to 2024 by perpetual inventory using World Bank investment data. Second, we relate TFP growth to the share of enterprises using AI, taken from Organisation for Economic Co-operation and Development (OECD) business surveys, in a country-year panel with country and year fixed effects. To address endogenous adoption, we use shift-share instruments that interact 2010 fixed-broadband and internet penetration with leave-one-out cross-country AI diffusion, estimated by two-stage least squares (2SLS) and limited-information maximum likelihood (LIML), with weak-instrument-robust Anderson--Rubin inference. Because adoption data cover only 36 countries in recent years (102 country-year observations), statistical power is limited. We find no detectable contemporaneous effect of AI adoption on TFP growth: the fixed-ef",
+"score": 5,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
+},
+{
+"key": "doi:10.5281/zenodo.24422565",
+"title": "Reviewed Before It Runs: Automated Review of an Architect's Authority",
+"url": "https://doi.org/10.5281/zenodo.24422565",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-21",
+"authors": [
+"Yoni Lavi"
+],
+"abstract": "AI agents are granted authority in two layers: a boundary written in advance for a whole deployment, and a decision on each action as it arrives, made by a person or, increasingly, by a classifier model. Neither states what one task needs before it runs. We study an alternative, in which each task’s authority is written down before anything runs and reviewed there. From a task in natural language, an architect model writes a signal graph, a dataflow graph in which every node declares the capabilities it holds, and every grant quotes the words of the task that need it. Before anything runs, a formal review checks the graph, and a reviewer model, here the architect’s own model in a separate call, reviews it. Because each grant is an artefact, it can be held to least-authority labels registered before the run, so whether review catches a widened grant can be counted. On AgentDojo’s banking suite, with one model (claude-haiku-5-5) as both architect and reviewer, we registered one test: whether a pretext in the task, claiming that wider access had been approved, raises the rate of widenings both reviewers miss. They came in 29 of 160 trials with the pretext (18.1%) and 6 of 80 without i",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-22"
 }
 ]

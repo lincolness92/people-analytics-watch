@@ -1,0 +1,116 @@
+{
+ "date": "2026-11-22",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-15",
+  "to": "2026-11-22"
+ },
+ "stats": {
+  "candidates": 31,
+  "triaged": 31,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 7506,
+   "completion_tokens": 3644,
+   "cost_usd": 0.002585,
+   "calls": 2,
+   "failures": 0
+  }
+ },
+ "headline": "semana de modelos fundacionais verticais em pagamentos e de revisão baseada em evidência sobre pagamentos instantâneos",
+ "trend": "O período mostra a verticalização dos modelos fundacionais: em vez de LLMs genéricos, surgem arquiteturas pré-treinadas sobre dados proprietários de um domínio específico — no caso, pagamentos e risco — com ganhos medidos em produção, não em benchmark. No mundo, a fronteira avança em duas frentes complementares: modelos fundacionais de transação (Ant International) e uma higiene de evidência mais dura sobre pagamentos instantâneos, separando causalidade comprovada de narrativa de fornecedor. No Brasil, nada relevante entrou no radar nos últimos dias — o que é um sinal em si: o país lidera em infraestrutura (Pix, Open Finance, Drex) e em escala de dados transacionais, mas a pesquisa aplicada que transforma essa escala em modelo fundacional próprio ainda está sendo publicada por terceiros, não por aqui. Para quem lidera tecnologia em banco, a janela é clara: quem estruturar primeiro seus dados transacionais como corpus de pré-treinamento captura o ganho de transferência antes que o fornecedor o faça por ele.",
+ "items": [
+  {
+   "key": "doi:10.48550/arxiv.2611.25403",
+   "title": "Antom 3-in-1 Transformer: modelo fundacional de pagamentos",
+   "original_title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+   "url": "https://doi.org/10.48550/arxiv.2611.25403",
+   "venue": "arXiv (Cornell University)",
+   "date": "2026-11-19",
+   "authors": [
+    "Weiyu Han",
+    "Haoyu Jiang",
+    "Jie Sheng",
+    "潘宥西 Pan Youxi",
+    "Xianglong Liu",
+    "Zeqi Ren",
+    "Dongquan Yi",
+    "Yinhao Liu",
+    "Ruobing Zuo",
+    "Ze Zhao",
+    "Huilin He",
+    "Nairong Zhang"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 8,
+   "theme": "foundation_models",
+   "region": "mundo",
+   "summary": "Modelo fundacional de pagamentos da Ant International com ~7B parâmetros e ~1,7B ativados por rota, fundindo representações de sequência, tabular e grafo para detecção de risco. Em experimento online de quatro meses numa plataforma de escala bilionária, a perda total caiu **37,88%** frente ao XGB-Online, e com apenas 25% dos rótulos o modelo pré-treinado supera o baseline treinado do zero com rótulos completos em AP e Recall@0,5%. A lição para banco: pré-treinar em dados de pagamento proprietários gera ganho transferível entre linhas de negócio (+34,5%) e vale mais que acumular rótulos — o ativo estratégico é o dado bruto de comportamento transacional, não o modelo supervisionado."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.47941/ijf.4119",
+   "title": "Economia dos pagamentos instantâneos: revisão graduada por evidência",
+   "original_title": "The Economics of Instant Payments: A Structured, Evidence-Graded Review of Financial Inclusion, Welfare, and Macro-Financial Effects across Global Fast-Payment Systems",
+   "url": "https://doi.org/10.47941/ijf.4119",
+   "venue": "International Journal of Finance",
+   "date": "2026-11-20",
+   "authors": [
+    "Chandrashekhar Kharche"
+   ],
+   "institutions": [
+    "Visa (United Kingdom)",
+    "Visa (United States)"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "payments",
+   "region": "mundo",
+   "note": "Revisão com esquema de evidência em quatro níveis separa efeitos causais comprovados de pagamentos instantâneos das projeções de mercado — útil para calibrar o business case de Pix e Drex."
+  },
+  {
+   "key": "doi:10.59324/ejaset.2026.4(6).14",
+   "title": "Transformação digital e risco de crédito no Iêmen",
+   "original_title": "Digital Transformation and Credit Risk Mitigation in Conflict-Affected Yemen: An Intelligent Decision Support System with Knowledge-Graph Augmented Explainable Boosting",
+   "url": "https://doi.org/10.59324/ejaset.2026.4(6).14",
+   "venue": "European Journal of Applied Science Engineering and Technology",
+   "date": "2026-11-18",
+   "authors": [
+    "Mohammed Najeeb Ahmed Abdualjaleel Abduallah",
+    "Mohammed Saleh A. Almanie",
+    "Hadil Najib Ahmed HadiAbduljalil",
+    "Muhammad Rizwan Iqbal",
+    "Akif Khalique Kamboh",
+    "Hummaira Habib",
+    "Rooh Ullah"
+   ],
+   "institutions": [
+    "Wuhan University of Technology",
+    "Mustaqbal University",
+    "Xidian University",
+    "Shah Abdul Latif University",
+    "Islamia University of Bahawalpur",
+    "Lahore College for Women University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "note": "Painel de 42 agências de dois bancos iemenitas (2013–2024) associa índice composto de transformação digital a menor risco de crédito, via boosting explicável com grafo de conhecimento."
+  }
+ ]
+}
