@@ -4,7 +4,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 📡 PEOPLE-ANALYTICS-WATCH
 
-7 digests em `digests/people-analytics/`.
+8 digests em `digests/people-analytics/`.
 
 ## 📊 People analytics & métricas (7)
 
@@ -91,7 +91,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🛡️ BANK-FRAUD-WATCH
 
-6 digests em `digests/fraude-bancaria/`.
+7 digests em `digests/fraude-bancaria/`.
 
 ## 📊 Modelos, dados e métricas de fraude (3)
 
@@ -108,18 +108,24 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 - 2026-11-17 · [Evaluating Ongoing Access Attacks on the Web](https://doi.org/10.1145/3830454.3846598) · 7/10
 
-## 🔥 Tendências (3)
+## 🕸️ Contas laranja, mulas & PLD/CFT (1)
 
+- 2026-11-23 · [DOiT: ranking de fluxo de dinheiro vs. seleção de contas em revisão de PLD](https://arxiv.org/abs/2611.27809) · 7/10
+
+## 🔥 Tendências (4)
+
+- **2026-11-23** — A fronteira em PLD deixou de ser 'qual modelo ranqueia melhor' e passou a ser arquitetura de decisão: DOiT mostra que ranquear fluxo de dinheiro e escolher qual conta investigar primeiro são tarefas separáveis, e misturá-las pode piorar o rendimento por caso revisado — exatamente o gargalo de equipes de investigação com capacidade limitada. Em paralelo, JevRisk aponta para monitoramento contínuo e personalizado, em que o contexto do cliente (perfil, histórico, atividade) entra na avaliação em vez de limiares únicos para toda a base. Para bancos brasileiros sob Bacen e FATF, isso sugere duas frentes: preservar a ordem de triagem validada em produção e só ceder à IA quando houver evidência fora da amostra, e migrar o risco de relacionamento de regras fixas para camadas contextuais auditáveis, mantendo trilha de decisão para o regulador.
 - **2026-11-19** — O período aponta uma dupla correção de rota na detecção de fraude. De um lado, o teto do modelo tabular clássico está sendo revisto: a Visa mostra que um LLM compacto ajustado em escala industrial bate GBDT e o modelo de produção, o que deve reacender a disputa entre features de grafo, transformers tabulares e árvores nos stacks bancários. De outro, o critério de sucesso sai da métrica estatística e vai para o negócio — o framework híbrido grafo-tabular com otimização por ROI reforça que falso positivo tem preço e deve estar na função objetivo. E o paper sobre barreiras à intervenção familiar lembra que, no golpe contra idoso, o elo mais fraco segue sendo o humano: tecnologia de detecção sem canal de escalada para terceiros de confiança resolve metade do problema.
 - **2026-11-18** — O período trata a fraude como problema de rede, não de instituição isolada: a aposta em memória federada entre bancos ataca exatamente mulas e golpes que atravessam bases. Em paralelo, a responsabilidade por golpes migra para o banco e surgem modelos explicáveis para prever ressarcimento e priorizar reclamações — sinal de que a área passa a ser medida por resultado financeiro, não só por AUC. Na ponta do atendimento, a autenticação por voz vira alvo, e detectar fala sintética deixa de ser pesquisa de áudio para virar controle antifraude de call center. No Brasil, leia isso junto com Pix/MED e Open Finance: consórcio federado e prova de vida por voz são as próximas frentes de controle.
 - **2026-11-17** — O período conecta três frentes: regulação de pagamentos instantâneos e Open Finance, que pressiona por clareza de responsabilidade e governança de terceiros; pesquisa em account takeover que expõe rotas de acesso persistente e irrevogáveis; e modelos de fundação para pagamentos que prometem representações reutilizáveis, mas com ganhos ainda questionados frente a baselines de boosting. A tendência é que a prevenção a fraude em bancos combine mandatos regulatórios (teto, responsabilidade compartilhada, auditoria de parceiros) com arquiteturas de detecção cientes do ciclo de vida e ligadas a entidades, sem abandonar a validação rigorosa de ganho incremental.
 
 # 🏦 BANK-TECH-&-AI-WATCH
 
-6 digests em `digests/tecnologia-bancaria/`.
+7 digests em `digests/tecnologia-bancaria/`.
 
-## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (4)
+## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (5)
 
+- 2026-11-23 · [Accountable AI Delegation in Banking](https://arxiv.org/abs/2611.27505) · 7/10
 - 2026-11-19 · [Autonomia conquistada por orçamento de erro: teste pré-registrado de delegação por tipo de ação](https://doi.org/10.5281/zenodo.24342386) · 8/10
 - 2026-11-19 · [Framework de capacidade para avaliar plataformas de IA agêntica em banco regulado](https://arxiv.org/abs/2611.24039) · 7/10
 - 2026-11-19 · [Delegação gated por evidência: caso de reconciliação bancária](https://doi.org/10.13140/rg.2.2.24634.15047) · 7/10
@@ -132,8 +138,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-18 · [BBVA avança rumo a modelo fundacional de comportamento do cliente](https://www.bbva.com/en/innovation/bbva-uses-ai-to-better-understand-its-customers-and-takes-a-step-towards-developing-a-foundation-model/) · 8/10
 - 2026-11-17 · [Quanto modelos fundacionais realmente adicionam ao gradient boosting em sequências financeiras?](https://arxiv.org/abs/2611.18914) · 8/10
 
-## 🛒 Comércio agêntico (8)
+## 🛒 Comércio agêntico (9)
 
+- 2026-11-23 · [Airwallex lança plugin no ChatGPT para gerir caixa](https://www.letsmoney.com.br/ia/airwallex-plugin-chatgpt-caixa-cartoes/) · 7/10
 - 2026-11-20 · [Stripe dá a agentes acesso controlado para analisar dados e mover fundos](https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds) · 8/10
 - 2026-11-20 · [Verifiable Incentives: contratos de identidade e delegação à prova de colusão](https://doi.org/10.21203/rs.3.rs-11765901/v1) · 7/10
 - 2026-11-19 · [Bajillion: clearing criptográfico para micropagamentos de agentes](https://doi.org/10.48550/arxiv.2611.21883) · 7/10
@@ -154,8 +161,11 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-19 · [Fifth Third reconstrói Jeanie de chatbot a assistente orientado a intenção](https://tearsheet.co/podcasts/fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant/?utm_source=rss&utm_medium=rss&utm_campaign=fifth-third-banks-approach-to-retooling-jeanie-into-an-intent-driven-assistant) · 7/10
 - 2026-11-18 · [Tecban corta cerca de 60% dos e-mails que exigiam equipe](https://www.letsmoney.com.br/ia/tecban-integra-dados/) · 7/10
 
-## 📊 Risco, crédito & cobrança com IA (6)
+## 📊 Risco, crédito & cobrança com IA (9)
 
+- 2026-11-23 · [Separating Automation Gains from Agent Contributions](https://arxiv.org/abs/2611.27094) · 7/10
+- 2026-11-23 · [JevRisk: Zero-Shot Financial Risk Assessment](https://arxiv.org/abs/2611.26999) · 7/10
+- 2026-11-23 · [Held-to-Maturity Accounting: Hidden Losses and Systemic Fragility](https://arxiv.org/abs/2611.26700) · 7/10
 - 2026-11-20 · [Learning from explanations: risco da Stripe treinado a explicar decisões](https://stripe.dev/blog/learning-from-explanations) · 8/10
 - 2026-11-20 · [Gerador de cenários Hull-White de três fatores para estresse macrofinanceiro](https://arxiv.org/abs/2611.26200) · 7/10
 - 2026-11-19 · [Memória federada para detecção de fraude cross-institucional](https://doi.org/10.1007/s42786-026-00069-6) · 7/10
@@ -172,6 +182,11 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-19 · [RehearsalBench: IA prevê (mal) o impacto de mudanças na operação](https://arxiv.org/abs/2611.22480) · 7/10
 - 2026-11-18 · [CommBank opera escudo de cinco agentes de IA contra ciberameaças](https://www.commbank.com.au/articles/newsroom/2026/11/commbank-agentic-shield-ai-cyber-defence.html) · 7/10
 
+## 🧪 Inovação, experimentação & venture capital corporativo (2)
+
+- 2026-11-23 · [Bradesco retoma private equity e venture capital e soma R$ 400 milhões](https://neofeed.com.br/startups/bradesco-volta-ao-jogo-do-private-equity-e-venture-capital-e-ja-soma-r-400-milhoes-em-aportes/) · 7/10
+- 2026-11-23 · [Competition in capital markets and its contribution to growth and innovation](https://doi.org/10.1787/8c126c4f-en) · 7/10
+
 ## 🎓 Proficiência analítica & reskilling (1)
 
 - 2026-11-19 · [IA generativa redireciona o trabalho freelancer: mais código, e só os qualificados migram](https://doi.org/10.1287/isre.2023.0461) · 7/10
@@ -186,8 +201,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 - 2026-11-19 · [Stripe evals: medindo performance real de agentes de código](https://stripe.dev/blog/stripe-integration-evals-methodology) · 7/10
 
-## 🔥 Tendências (6)
+## 🔥 Tendências (7)
 
+- **2026-11-23** — No Brasil, o Bradesco reacelera private equity e venture capital com cerca de R$ 400 milhões em aportes, enquanto fintechs levam transações para dentro do ChatGPT e o BC prepara exigências mais duras para fintechs, BaaS e PLD; o Pix avança no exterior por parcerias privadas, mas a conexão direta entre bancos centrais segue sem prazo. No mundo, a agenda vira governança de agentes: papers propõem contratos de delegação com limite, evidência e recuperação, métricas para separar ganho de automação do mérito do agente e risco zero-shot com LLM, além de 'know your agent' como resposta regulatória. A convergência é que agentes deixam de ser demo e entram em controles de identidade, compromisso, validação e risco, enquanto capital e contabilidade — VC, competição em mercados de capital e HTM — voltam à mesa como fatores de estabilidade e inovação.
 - **2026-11-22** — O período mostra a verticalização dos modelos fundacionais: em vez de LLMs genéricos, surgem arquiteturas pré-treinadas sobre dados proprietários de um domínio específico — no caso, pagamentos e risco — com ganhos medidos em produção, não em benchmark. No mundo, a fronteira avança em duas frentes complementares: modelos fundacionais de transação (Ant International) e uma higiene de evidência mais dura sobre pagamentos instantâneos, separando causalidade comprovada de narrativa de fornecedor. No Brasil, nada relevante entrou no radar nos últimos dias — o que é um sinal em si: o país lidera em infraestrutura (Pix, Open Finance, Drex) e em escala de dados transacionais, mas a pesquisa aplicada que transforma essa escala em modelo fundacional próprio ainda está sendo publicada por terceiros, não por aqui. Para quem lidera tecnologia em banco, a janela é clara: quem estruturar primeiro seus dados transacionais como corpus de pré-treinamento captura o ganho de transferência antes que o fornecedor o faça por ele.
 - **2026-11-21** — No mundo, a fronteira do período está na **confiança** do comércio agêntico: dois papers medem o 'authority gap' entre o mandato que o cliente aprova e o que a carteira cripto de fato assina, e outro mostra que LLMs comerciais confirmam declarações bancárias falsas em checkout — o gargalo dos agentes que pagam é jurídico-técnico, não de capacidade. A pesquisa de privacidade também avança: o trade-off privacidade-personalização deixa de ser binário e passa a ser desenhável por contexto, aplicável a consentimento granular em crédito e ofertas. No Brasil, o que aparece é modernização de base — 21 mil AI PCs no Bradesco com 81% menos tempo de boot e R$ 6 mi/ano de economia —, mas não há pesquisa local publicada sobre comércio agêntico ou governança de agentes, exatamente o vácuo a ocupar antes de escalar agentes que transacionam.
 - **2026-11-20** — O período é dominado por duas frentes que se cruzam: dar aos agentes poder real de movimentar dinheiro sob controle verificável e tornar o risco auditável. No mundo, a Stripe abre transferências e pagamentos a agentes com limites e aprovação humana, enquanto papers propõem contratos de delegação verificável — colusão cai de 48,3% para 33–40% com auditoria — e governança de agentes que agem com credenciais válidas; a pesquisa do American Banker reforça que governança estruturada é o que separa quem escala de quem só pilota. No Brasil, a escala aparece nos R$ 700 bi em Pix do Mercado Livre e no mapeamento Febraban/Accenture de 35 tendências, mas falta pesquisa original local sobre comércio agêntico e modelos fundacionais próprios. A lição comum é que identidade, orçamento, trilha de pagamento e explicabilidade deixaram de ser itens de compliance e viraram requisitos de engenharia.

@@ -3141,5 +3141,97 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-22"
+},
+{
+"key": "web:https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans",
+"title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+"url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+"venue": "BleepingComputer (bancos)",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [
+"BleepingComputer"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://bsky.app/profile/bleepingcomputer.com/post/3n2y3joixru2g",
+"title": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from…",
+"url": "https://bsky.app/profile/bleepingcomputer.com/post/3n2y3joixru2g",
+"venue": "BleepingComputer (Bluesky)",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. https://www. bleepingcomputer.com/news/secu rity/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [
+"BleepingComputer"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.27809",
+"title": "DOiT: Better Money-Flow Ranking Can Coexist with Worse Account Selection in Anti-Money Laundering Review",
+"url": "https://arxiv.org/abs/2611.27809",
+"venue": "arXiv (cs.CE, cs.LG)",
+"date": "2026-11-20",
+"authors": [
+"Gwangui Hong",
+"Seonkyu Lim",
+"Min-Soo Kim"
+],
+"abstract": "Anti-money laundering (AML) review selects suspicious accounts and reconstructs transfers. Downstream graph neural networks (GNNs) rank money-flow evidence but may also reorder the account queue. DOiT separates these decisions at equal review capacity: account selection determines where graph investigation starts. Across AMLWorld and AMLNet, GNN reordering harms higher-yield upstream orders but helps lower-yield ones. On AMLWorld, this harm coexists with higher transaction average precision (AP) in dimension-matched, per-run decoders, demonstrating separable ranking abilities. At small capacities, positive neighbors can displace a denser upstream prefix and lower yield; replacement costs fall as that prefix is exhausted, allowing the preferred order to reverse. A restricted-access synthetic benchmark informed by real transaction patterns reproduces this separation and validation-based upstream preservation. Capacity-matched combination protects upstream ordering while retaining GNN money-flow analysis, admitting GNN queue influence only where held-out evidence supports it.",
+"score": 7,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.26999",
+"title": "JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model",
+"url": "https://arxiv.org/abs/2611.26999",
+"venue": "arXiv (cs.LG, cs.AI)",
+"date": "2026-11-20",
+"authors": [
+"Yaodong Yang",
+"Li Huang",
+"Junpeng Liang",
+"Yi Ma",
+"Hongyao Tang",
+"Xingyu Fan"
+],
+"abstract": "Banks must monitor every customer's financial risk, such as money laundering and credit default, by interpreting financial activity in the context of the customer's profile. Existing risk monitoring systems of banks are mostly based on expert-designed risk indicators, which apply predefined thresholds to every customer and cannot adapt to their personal situations. Supervised models recognise risk patterns from labelled customers, but each label often needs an expert's review or months of repayment history, which is slow and costly. Financial risk assessment therefore calls for a zero-shot decision system that minimises the need for labels and generalises across customers and risk types. To this end, we present JevRisk, a system for zero-shot financial risk assessment with a language decision model. JevRisk works in two steps. First, following regulatory guidelines in the finance domain, JevRisk computes exact risk indicators with code. Second, the language decision model (e.g., \\jev{}) reads these indicators together with the customer's profile and activity, judges the case in context with broad world knowledge, and returns the score of high risk. We evaluate JevRisk on the anti-m",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.5281/zenodo.24444515",
+"title": "Cambodia's Scam Compounds",
+"url": "https://doi.org/10.5281/zenodo.24444515",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-22",
+"authors": [
+"Syed Manzar Abbas Zaidi"
+],
+"abstract": "The intersection of organized crime, romance scams, and human trafficking. Policy brief by Manzar Zaidi.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
 }
 ]

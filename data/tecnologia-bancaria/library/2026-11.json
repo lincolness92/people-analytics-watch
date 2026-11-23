@@ -4339,5 +4339,574 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-22"
+},
+{
+"key": "web:https://www.americanbanker.com/news/banks-plan-move-from-blocking-ai-agents-to-working-with-them",
+"title": "Banks plan move from blocking AI agents to working with them",
+"url": "https://www.americanbanker.com/news/banks-plan-move-from-blocking-ai-agents-to-working-with-them",
+"venue": "American Banker",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "The strategy of blocking all external agents can’t last forever, and “know your agent” frameworks are in the works.",
+"score": 6,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://neofeed.com.br/startups/bradesco-volta-ao-jogo-do-private-equity-e-venture-capital-e-ja-soma-r-400-milhoes-em-aportes",
+"title": "Bradesco volta ao jogo do private equity e venture capital e já soma R$ 400 milhões em aportes",
+"url": "https://neofeed.com.br/startups/bradesco-volta-ao-jogo-do-private-equity-e-venture-capital-e-ja-soma-r-400-milhoes-em-aportes/",
+"venue": "NeoFeed",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Enquanto boa parte dos fundos de private equity enfrenta dificuldades para captar recursos e realizar novos investimentos no Brasil, o Bradesco decidiu seguir na direção contrária. Após alguns anos de menor atividade, o banco retomou sua atuação no segmento e acelerou também os aportes em venture capital em 2026. A instituição já investiu aproximadamente R$ […] O post Bradesco volta ao jogo do private equity e venture capital e já soma R$ 400 milhões em aportes apareceu primeiro em NeoFeed .",
+"score": 7,
+"theme": "innovation",
+"region": "brasil",
+"watch": [
+"NeoFeed"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.americanbanker.com/news/moonpay-seeks-bank-charter-to-federally-issue-stablecoins",
+"title": "MoonPay seeks bank charter to federally issue stablecoins",
+"url": "https://www.americanbanker.com/news/moonpay-seeks-bank-charter-to-federally-issue-stablecoins",
+"venue": "American Banker",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "The white-label crypto payments firm asked the OCC for a stablecoin-focused national trust charter after the agency issued final rulemaking for the GENIUS Act.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.americanbanker.com/news/how-data-center-backlash-could-put-banks-ai-bets-under-pressure",
+"title": "How data center backlash could put banks’ AI bets under pressure",
+"url": "https://www.americanbanker.com/news/how-data-center-backlash-could-put-banks-ai-bets-under-pressure",
+"venue": "American Banker",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Local opposition to data-center construction is creating uncertainty for banks financing the buildout, while lawmakers are weighing new disclosure requirements for AI-related investments.",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/federal-reserve-president-faster-payments-fednow/875321",
+"title": "Fed President pitches FedNow",
+"url": "https://www.paymentsdive.com/news/federal-reserve-president-faster-payments-fednow/875321/",
+"venue": "Payments Dive",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Jeff Schmid, who leads the Kansas City Federal Reserve, nudged credit union executives last week to adopt faster payment options, like FedNow.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/regulamentacao/bc-cancela-autorizacao-da-fintech-a55-apos-operacao-azzardo",
+"title": "BC cancela licença da A55, investigada em esquema de ‘bets’ ilegais",
+"url": "https://finsidersbrasil.com.br/regulamentacao/bc-cancela-autorizacao-da-fintech-a55-apos-operacao-azzardo/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Banco Central | Imagem: Marcello Casal Jr/Agência Brasil Operação Azzardo identificou movimentação de cerca de R$ 1 bilhão em mais de 100 contas vinculadas à fintech",
+"score": 6,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/regulamentacao/bc-prepara-novas-exigencias-para-fintechs-e-empresas-de-baas",
+"title": "BC prepara novas exigências para fintechs e empresas de BaaS",
+"url": "https://finsidersbrasil.com.br/regulamentacao/bc-prepara-novas-exigencias-para-fintechs-e-empresas-de-baas/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Gilneu Vivan, diretor de Regulação do BC, e Rubens Sardenberg, diretor executivo de economia, regulação prudencial e riscos da Febraban, participam de painel no 16º Congresso de PLD/FT | Imagem: divulgação Diretor de Regulação do BC, Gilneu Vivan, diz que fintechs, empresas de BaaS e prestadores de serviços de pagamento terão as mesmas responsabilidades",
+"score": 6,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/pix-6-anos/pix-sem-fronteiras-o-que-ja-funciona-no-exterior-e-o-que-ainda-falta",
+"title": "Pix sem fronteiras? O que já funciona no exterior e o que ainda falta",
+"url": "https://finsidersbrasil.com.br/pix-6-anos/pix-sem-fronteiras-o-que-ja-funciona-no-exterior-e-o-que-ainda-falta/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Este ano, BC e BCE anunciaram estudo de cooperação, mas não há datas para o projeto. | Imagem: Finsiders Brasil | gerada por IA via ChatGPT/OpenAI Parcerias privadas levam o pagamento instantâneo brasileiro a vários países; conexão direta entre bancos centrais ainda está em estudo e sem prazo",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.letsmoney.com.br/internacional/acorda-ex-monzo-capta-pre-seed-golpes",
+"title": "Acorda capta £ 1,8 mi para bancos trocarem dados de golpe",
+"url": "https://www.letsmoney.com.br/internacional/acorda-ex-monzo-capta-pre-seed-golpes/",
+"venue": "Let's Money",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "A Concept Ventures liderou a rodada da Acorda, que testa com três grandes empresas globais de pagamento uma rede para trocar sinais de risco de golpe.",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.letsmoney.com.br/internacional/payoneer-aval-banco-stablecoin-eua",
+"title": "Payoneer ganha aval prévio para banco de stablecoin nos EUA",
+"url": "https://www.letsmoney.com.br/internacional/payoneer-aval-banco-stablecoin-eua/",
+"venue": "Let's Money",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Banco de truste da Payoneer terá de manter US$ 8 mi em capital e só poderá emitir a stablecoin PAYO-USD depois da autorização final do OCC, nos EUA.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.baguete.com.br/noticias/seu-agente-de-ia-esta-pronto-para-operar-sozinho",
+"title": "Seu agente de IA está pronto para operar sozinho?",
+"url": "https://www.baguete.com.br/noticias/seu-agente-de-ia-esta-pronto-para-operar-sozinho",
+"venue": "Baguete",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "A autonomia de um agente de IA deve ser proporcional ao que dá para desfazer.",
+"score": 6,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [
+"Baguete"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://building.nu.com/people-first-ai-second-how-to-lead-an-ai-product-without-being-an-ai-expert",
+"title": "People first, AI second: How to lead an AI product without being an AI expert",
+"url": "https://building.nu.com/people-first-ai-second-how-to-lead-an-ai-product-without-being-an-ai-expert/",
+"venue": "Building Nubank (blog de engenharia/dados/IA)",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "What I've learned about deciding when AI belongs in a product, testing it before it exists and launching it without losing users' trust The post People first, AI second: How to lead an AI product without being an AI expert appeared first on Building Nubank .",
+"score": 6,
+"theme": "skills",
+"region": "brasil",
+"watch": [
+"Nubank"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://home.barclays/insights/2026/11/Black-Friday-2026",
+"title": "Black Friday 2026: Britain’s bargain hunt has become an everyday mindset",
+"url": "https://home.barclays/insights/2026/11/Black-Friday-2026/",
+"venue": "Barclays Insights (UK Unlocked)",
+"date": "",
+"authors": [],
+"abstract": "Black Friday may be one of the biggest moments in the retail calendar, but the search for a good deal now extends far beyond the sales. Steve Fergus, Head of Retail & Wholesale at Barclays UK Corporate Bank, examines what our data tells us about the increasingly considered way consumers are spending, and how technology is changing the hunt for a bargain.",
+"score": 5,
+"theme": "martech",
+"region": "mundo",
+"watch": [
+"Barclays"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.letsmoney.com.br/ia/airwallex-plugin-chatgpt-caixa-cartoes",
+"title": "Fintech Airwallex lança plugin no ChatGPT para gerir caixa",
+"url": "https://www.letsmoney.com.br/ia/airwallex-plugin-chatgpt-caixa-cartoes/",
+"venue": "Let's Money",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Com o plugin, empresas consultam o caixa em várias moedas, emitem cartões e cadastram fornecedores por pedidos em texto, sem sair do chat da OpenAI.",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.letsmoney.com.br/noticias/mastercard-open-finance-consentimento-transparencia",
+"title": "Mastercard quer que open finance mostre quem recebe os dados",
+"url": "https://www.letsmoney.com.br/noticias/mastercard-open-finance-consentimento-transparencia/",
+"venue": "Let's Money",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Para Jess Turner, da Mastercard, 89% dos consumidores em 11 países conectariam contas, mas quase metade quer saber antes como os dados serão usados.",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/23/11/2026/agente-de-ia-super",
+"title": "Agente de IA para compras interessa a 43,9% dos brasileiros que possuem smartphone",
+"url": "https://www.mobiletime.com.br/noticias/23/11/2026/agente-de-ia-super/",
+"venue": "Mobile Time",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Nova pesquisa Super Panorama Mobile Time/Opinion Box investiga potencial do comércio agêntico no país",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.5281/zenodo.24444209",
+"title": "The Three Laws of Payment Physics: Speed-Finality Separation, Friction Relocation, and Multilateral Liquidity-Saving Netting Across Global Retail and Wholesale Rails",
+"url": "https://doi.org/10.5281/zenodo.24444209",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-22",
+"authors": [
+"Jay Thorne"
+],
+"abstract": "Modern electronic checkouts complete contactless card authorizations and mobile QR scans in 150 to 400 milliseconds, sustaining the widespread illusion that sovereign purchasing power moves at fiber-optic speed. In reality, global financial plumbing separates fast cryptographic messaging from irrevocable balance-sheet extinction across commercial and central bank ledgers. Bridging monetary economics with protocol-level distributed systems engineering, this 8-page open-access working paper (Digbijoy Labs Working Paper WP-2026-03) formalizes The Three Laws of Payment Physics: Law I — The Speed–Finality Divide: Authorization messages record conditional intent at fiber-optic speed, whereas interbank debt extinguishes only when central-bank reserves (Tier 0 M0) or statutory settlement assets mutate across nested double-entry ledgers. Law II — The Conservation of Friction: Checkout simplicity never destroys verification complexity; it relocates protocol work into hardware cryptography (EMV ARQC, FIPS 140-3 HSMs), alias and Verification of Payee directories (NPCI VPA, BCB DICT, EU Reg. 2024/886 VoP), prefunded liquidity pools, or post-settlement dispute arbitration. Law III — The Conserva",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.47353/ijema.v4i3.397",
+"title": "Humanizing the Bot: How Conversational AI Responsiveness and Perceived Anthropomorphism Mitigate Customer Decision Hesitation Through Brand Trust",
+"url": "https://doi.org/10.47353/ijema.v4i3.397",
+"venue": "International Journal of Economics Management and Accounting (IJEMA)",
+"date": "2026-11-21",
+"authors": [
+"Achmad Ridha",
+"Lidya Anastasya",
+"Handayani Hasan"
+],
+"abstract": "The rapid integration of Artificial Intelligence (AI) chatbots in e-commerce has restructured customer service delivery. However, online shoppers frequently experience pre-purchase decision hesitation due to transaction uncertainties. Grounded in Uncertainty Reduction Theory and Social Response Theory, this study investigates how Conversational AI Responsiveness and Perceived Anthropomorphism mitigate Customer Decision Hesitation through the mediating role of Brand Trust. Data were collected via an online survey from 195 e-commerce consumers in Indonesia who interacted with AI chatbots during their shopping journeys. The empirical framework was evaluated using Partial Least Squares Structural Equation Modeling (PLS-SEM) in SmartPLS 4. The empirical results reveal that both Conversational AI Responsiveness (β=0.482,p<0.001) and Perceived Anthropomorphism (β=0.325,p<0.001) significantly foster Brand Trust, while directly and indirectly mitigating Customer Decision Hesitation. Furthermore, Brand Trust operates as a vital complementary mediating mechanism (β=-0.395,p<0.001). The structural model explains 51.4 percent of the variance in Brand Trust and 48.7 percent in Customer Decision ",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.70593/978-81-6632-254-9_4",
+"title": "Intelligent Mortgage and Housing Finance Through Predictive Analytics",
+"url": "https://doi.org/10.70593/978-81-6632-254-9_4",
+"venue": "",
+"date": "2026-11-20",
+"authors": [
+"Mahesh Thummala"
+],
+"abstract": "Data-driven intelligence enabled by predictive analytics is transforming diverse aspects of the mortgage and housing ecosystem. Intelligent automation of decision making through predictive models helps mortgage lenders develop efficient, customer-centered underwriting strategies. In addition to credit scoring, open data sources and machine learning techniques are used to enhance forecasting of housing prices and borrower prepayment, default, and delinquency risk. Such advanced analytics should ultimately help lenders develop personalized mortgage offerings throughout the loan lifecycle. Predictive analytics in housing finance encompasses a wide range of techniques across multiple subdomains of the mortgage ecosystem. A systematic literature review reveals major categories and problems, as well as the principal sources and models. However, multiple dimensions of delivering data-driven intelligence in mortgage underwriting remain relatively unexplored. Automated decision making is often limited to the origination phase, with little consideration for the ongoing servicing of existing loans. Furthermore, while credit scoring models are well established, the potential for using predicti",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.5281/zenodo.24416600",
+"title": "Third-party script defences of Nigerian financial institutions after the Optimizely compromise: a passive measurement of 63 bank, fintech and insurer homepages",
+"url": "https://doi.org/10.5281/zenodo.24416600",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-19",
+"authors": [
+"Belo Malik Pelumi"
+],
+"abstract": "On 16 November 2026, an attacker who had gained access to the Optimizely experimentation platform wrote malicious JavaScript into the projects of 178 organisations, and most of their websites served it to visitors for about 16 hours. The payload loaded a second-stage script from an attacker host, carried an obfuscated inline copy that executes through eval when that host is blocked, skimmed payment card data, swapped cryptocurrency addresses, and sent stolen data to the attacker host, card data through navigator.sendBeacon. Each of these steps can be blocked by the host site's Content Security Policy (CSP). We measured how far Nigerian financial institutions deploy that defence. We visited the public homepages of 63 banks, fintechs, insurers and pension managers once, recorded every script and the policies each site enforces, and scored each site against a threat model derived from the published payload. Of the 63 sites, 28 (44.4%) enforce a CSP, 17 (27.0%) restrict scripts, 4 (6.3%; 95% CI 2.5–15.2) forbid eval, and 3 (4.8%; 95% CI 1.6–13.1), all fintechs, would have blocked all three payload stages. Forty-seven (74.6%) block none. Differences between sectors are not statistically",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.27505",
+"title": "Accountable AI Delegation in Banking: Identity, Commitment Controls, Decision Evidence and Recovery",
+"url": "https://arxiv.org/abs/2611.27505",
+"venue": "arXiv (q-fin.GN)",
+"date": "2026-11-20",
+"authors": [
+"Walter Kurz",
+"Besnik Alidemi",
+"Marco Schmidt"
+],
+"abstract": "An AI-assisted payment can pass assessment and lose release authority before commitment. We specify a banking delegation contract that checks current authority, the shared payment cap and the capacity of eligible instruments to cover losses. It books the new payment and its recovery demands and writes the outcome record in the same atomic transition. A paired example identifies the authorised mandate, applied rule and selection inputs a reviewer needs to assess mandate conformance. We show that, under fixed resource inputs, the transition preserves the payment cap and recovery feasibility when commitments and effective withdrawals are ordered against the same authoritative state. Reversing a transmitted priority changes the selected route in 4 of 32 distinct behavioural combinations, represented by 96 of 576 labelled contexts. The executor follows the transmitted rule in all of them. Reusing earlier state admits 23 releases in 123 histories blocked by the reference. Pooling recovery capacity admits 69 infeasible configurations in a grid of 576. Both current-state implementations agree with the reference in all 144 commitment histories and 624 concurrent schedules. The retention tes",
+"score": 7,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.27094",
+"title": "Separating Automation Gains from Agent Contributions in AI-Assisted Model Validation",
+"url": "https://arxiv.org/abs/2611.27094",
+"venue": "arXiv (cs.CL, cs.AI)",
+"date": "2026-11-20",
+"authors": [
+"M. Ahmadi Achachlouei"
+],
+"abstract": "LLM agents are being proposed for bank model validation, yet evaluations that compare agent-assisted work with manual practice credit the agent with gains that come from digitized evidence and deterministic tests. We propose a staged architecture in which an LLM-free controlled workflow (P1) is both the fallback and the control arm for individually authorized agent tasks (P2), and an attribution protocol that credits an agent only for faults P1 does not already report. The protocol charges decoy false alarms, unnecessary actions and endorsed developer assertions, counts invalid outputs as misses, folds newly automatable findings back into P1 with discovery credit, and fixes safety bounds and a break-even cost gate in advance. On a synthetic credit-scorecard harness, five scripted reference policies show why this matters: naive case accuracy (4/6) and pooled detection (3/5) tie four flawed policies, whereas the protocol separates all five and credits only the reference policy with detection beyond P1. One fold-back round raises a P1-parroting policy's naive scores without any change to the policy. A regression matrix of sixteen mutants covers nine ways in which earlier versions of t",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.26999",
+"title": "JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model",
+"url": "https://arxiv.org/abs/2611.26999",
+"venue": "arXiv (cs.LG, cs.AI)",
+"date": "2026-11-20",
+"authors": [
+"Yaodong Yang",
+"Li Huang",
+"Junpeng Liang",
+"Yi Ma",
+"Hongyao Tang",
+"Xingyu Fan"
+],
+"abstract": "Banks must monitor every customer's financial risk, such as money laundering and credit default, by interpreting financial activity in the context of the customer's profile. Existing risk monitoring systems of banks are mostly based on expert-designed risk indicators, which apply predefined thresholds to every customer and cannot adapt to their personal situations. Supervised models recognise risk patterns from labelled customers, but each label often needs an expert's review or months of repayment history, which is slow and costly. Financial risk assessment therefore calls for a zero-shot decision system that minimises the need for labels and generalises across customers and risk types. To this end, we present JevRisk, a system for zero-shot financial risk assessment with a language decision model. JevRisk works in two steps. First, following regulatory guidelines in the finance domain, JevRisk computes exact risk indicators with code. Second, the language decision model (e.g., \\jev{}) reads these indicators together with the customer's profile and activity, judges the case in context with broad world knowledge, and returns the score of high risk. We evaluate JevRisk on the anti-m",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.26775",
+"title": "Know Your Context Bank: Repairing Inconsistency and Measuring Generalization in Context-Aware Text-to-SQL",
+"url": "https://arxiv.org/abs/2611.26775",
+"venue": "arXiv (cs.CL)",
+"date": "2026-11-19",
+"authors": [
+"Hailong Li",
+"Mohammadreza Pourreza",
+"Tal Neiman",
+"Reza Sherkat",
+"Per Jacobsson",
+"Yannis Papakonstantinou"
+],
+"abstract": "Text-to-SQL systems increasingly rely on context banks: curated collections of example queries, metric definitions, and domain knowledge that tell a model how an organization writes its queries. In the enterprise, a bank grows over years as many analysts add entries, checked one at a time for correctness (does the SQL answer its own question?) and rarely for consistency with one another. Yet correctness is often loosely defined: a question seldom fixes how an entity is counted or which table defines it, so two entries can each pass review yet resolve the same decision in opposite ways. We call this condition context bank rot. A second question follows: does a system that uses a bank generalize from it, or only reproduce it? Existing benchmarks cannot tell, as they do not control how far a test question sits from the context. We answer both questions by comparing queries decision by decision, with a fast scorer distilled from human-calibrated LLM judges. Turned inward, the comparison diagnoses and repairs a bank. Fine-tuning on a cleaned BIRD-train bank beats a same-size random subset at every epoch (+2.6 points on average), and 92.4% of our removals had their SQL corrected by an in",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://www.netinterest.co/p/supply-and-demand",
+"title": "Supply and Demand",
+"url": "https://www.netinterest.co/p/supply-and-demand",
+"venue": "Net Interest",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Finding Equilibrium Inside the AI Economy",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [
+"Net Interest (Marc Rubinstein)"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/regulamentacao/quando-o-erro-ganha-escala-corrigir-o-dado-nao-corrige-a-decisao",
+"title": "Quando o erro ganha escala: corrigir o dado não corrige a decisão",
+"url": "https://finsidersbrasil.com.br/regulamentacao/quando-o-erro-ganha-escala-corrigir-o-dado-nao-corrige-a-decisao/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Regra do BC desloca a qualidade da informação do plano predominantemente operacional para o centro da governança | Imagem: Finsiders Brasil | gerada por IA via ChatGPT/OpenAI Em finanças digitais, qualidade da informação exige também revisar as decisões e os efeitos que o dado incorreto produziu",
+"score": 6,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://convergenciadigital.com.br/mercado/inteligencia-artificial-esta-custando-mais-e-pesando-a-mao-nos-orcamentos",
+"title": "Inteligência Artificial está custando mais e pesando a mão nos orçamentos",
+"url": "https://convergenciadigital.com.br/mercado/inteligencia-artificial-esta-custando-mais-e-pesando-a-mao-nos-orcamentos/",
+"venue": "Convergência Digital",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Seis em cada dez organizações não possuem uma visão completa dos custos da IA em toda a empresa e apenas um terço dos executivos consegue estimar com plena confiança os custos indiretos da tecnologia.",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "web:https://convergenciadigital.com.br/governo/tcu-ia-tera-de-ser-medida-pelo-valor-que-traz-ao-negocio",
+"title": "TCU: IA terá de ser medida pelo valor que traz ao negócio",
+"url": "https://convergenciadigital.com.br/governo/tcu-ia-tera-de-ser-medida-pelo-valor-que-traz-ao-negocio/",
+"venue": "Convergência Digital",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "CIO do TCU, Rainério Leite, diz que há uma maneira para saber o valor que a IA provoca: \"Testando, verificando e quantificando\".",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1787/8c126c4f-en",
+"title": "Competition in capital markets and its contribution to growth and innovation",
+"url": "https://doi.org/10.1787/8c126c4f-en",
+"venue": "OECD competition law and policy working papers.",
+"date": "2026-11-23",
+"authors": [
+"OECD"
+],
+"abstract": "Financing conditions influence whether innovative firms can enter, expand and constrain established suppliers. Competition in capital markets can therefore affect innovation and productivity across the economy, as well as conditions in financial markets. This paper examines competition in equity investment in unlisted innovative firms, focussing on independent venture capital, corporate venture capital, private equity and equity crowdfunding. Bank finance, public equity markets, market infrastructure and intermediary services are covered where they offer workable alternatives or affect private financing or exit options. The paper assesses whether firms have credible alternatives that constrain capital providers on financial, governance and strategic terms, and how choice changes over the financing lifecycle. It distinguishes financing constraints arising from the risks of innovation from restrictions on competition among providers and intermediaries. It examines how later stage finance and exit conditions affect bargaining, investment incentives and the merger counterfactual. It considers how barriers to entry and expansion, anticompetitive conduct and mergers may restrict firms’ f",
+"score": 7,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.26700",
+"title": "Held-to-Maturity Accounting: Hidden Losses and Systemic Fragility",
+"url": "https://arxiv.org/abs/2611.26700",
+"venue": "arXiv (q-fin.RM, q-fin.CP)",
+"date": "2026-11-19",
+"authors": [
+"Dongxu Li",
+"Steve Y. Yang"
+],
+"abstract": "This paper studies how accounting-induced opacity affects systemic risk in the banking system. Motivated by the buildup of unrealized losses during recent monetary tightening episodes, we develop a model in which banks hold correlated interest rate sensitive assets and are connected through an endogenous interbank network. We show that Held-To-Maturity (HTM) accounting amplifies systemic risk by delaying loss recognition, allowing losses to accumulate and become synchronized across institutions. When losses are realized under liquidity stress, the interaction of correlated exposures and network linkages generates nonlinear increases in defaults. These findings suggest that accounting regimes are not neutral from a financial stability perspective, as they influence both the buildup and propagation of systemic risk, particularly in environments with common asset exposures and strong interconnectedness.",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.26998",
+"title": "Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming",
+"url": "https://arxiv.org/abs/2611.26998",
+"venue": "arXiv (cs.AI)",
+"date": "2026-11-20",
+"authors": [
+"Chengming Liu",
+"Leon Viti",
+"Hongxu Chen",
+"Erdem Kemik",
+"Mary-Anne Williams",
+"Ruth Oliver"
+],
+"abstract": "We study reward fidelity in an adversarial reinforcement-learning loop for red-teaming financial-services language-model guardrails. Apparent wins can arise when an attack omits prescribed personally identifiable information (PII), or when a reward judge credits a response that did not break the targeted policy. On attacker-generated and public benchmark examples, TypeSafe Jev checks whether the prescribed PII is present. For outcome scoring, we compare the decision models TypeSafe Jev, Laya (pretrained and post-trained), and pretrained CLM-8B with logged Opus 4.8 judgements from a replay corpus. Post-training markedly improves Laya's agreement with the judge. A separate author-reviewed off-target set establishes that Opus can award false wins. The findings motivate specialised decision-model judges for checking prescribed PII in attack inputs and scoring target responses against the intended policy.",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1007/s10796-026-10828-x",
+"title": "Evolving Green Brand Financial and Banking Services Strategy with AI Chatbots: a Cross-National Study of Commercial Banks in Vietnam and Australia",
+"url": "https://doi.org/10.1007/s10796-026-10828-x",
+"venue": "Information Systems Frontiers",
+"date": "2026-11-20",
+"authors": [
+"Khoi Minh Nguyen",
+"Thao Phuong Vu",
+"Anh Minh Hoang",
+"An Bao Minh Phan",
+"Nguyen Khanh Pham",
+"Ngan Thanh Nguyen"
+],
+"abstract": "",
+"score": 6,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
 }
 ]

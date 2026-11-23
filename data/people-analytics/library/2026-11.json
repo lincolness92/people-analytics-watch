@@ -12774,5 +12774,192 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-22"
+},
+{
+"key": "web:https://joshbersin.com/podcast/ai-transforms-healthcare-at-providence-pacesetter-winner",
+"title": "AI Transforms Healthcare at Providence: Pacesetter Winner",
+"url": "https://joshbersin.com/podcast/ai-transforms-healthcare-at-providence-pacesetter-winner/",
+"venue": "Josh Bersin (blog)",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "The healthcare industry is no stranger to challenges around hiring and retaining critical talent. But for Providence , a not-for-profit healthcare system with over 119,000 caregivers, the challenge wasn’t demand—employees wanted to stay and grow. The internal transfer process, however, was getting in the way. In this episode, we speak with Carol McDaniel, Vice President of Talent Acquisition at Providence, a 2026 HR Pacesetter Award winner — about how her team reimagined the internal transfer experience from the ground up, not by patching an existing process, but by rebuilding it entirely through human-centered design. The result is RITA — the Requisition and Internal Transfer Assistant — an AI-powered tool that has not only made transfers seamless—it has also given leaders time back to reinvest in patient care. Carol McDaniel is Vice President of Talent Acquisition at Providence where she focuses on driving hiring innovation, operational effectiveness, and a culture of excellence. She brings more than two decades of experience to her work, with previous roles at Randstad, Delta Airlines, and Johns Hopkins All Children’s Hospital. You can apply to win a 2027 Pacesetter award , cele",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [
+"Josh Bersin"
+],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.5281/zenodo.24439602",
+"title": "People Analytics and Employee Retention: A Descriptive Study of Data-Driven Approaches to Understanding and Reducing Employee Turnover",
+"url": "https://doi.org/10.5281/zenodo.24439602",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-22",
+"authors": [
+"Sanchita Malviya"
+],
+"abstract": "Employee retention is a strategic concern because departures can disrupt operations, weaken institutional knowledge, increase recruitment and training costs, and affect team morale. Traditional practices such as exit interviews, engagement surveys and retrospective turnover reports remain useful but may not identify emerging risks in time. People analytics combines workforce data, statistical analysis and, where appropriate, machine-learning techniques to support better HR decisions. This paper examines the contribution of people analytics to employee retention through a descriptive and conceptual review of the academic literature. It discusses turnover theories, workforce data, analytical methods, HR applications and the ethical conditions required for responsible implementation. It proposes a framework in which data quality and analytical capability support the identification of retention drivers, insights inform fair and targeted interventions, and evaluation supports continuous improvement. The review argues that predictive signals must be interpreted alongside organisational context and employee voice: a model may estimate resignation risk, but it cannot independently establis",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1108/joepp-07-2026-0855",
+"title": "Responsible AI in human resource management: a sustainable framework for employee trust and organisational performance",
+"url": "https://doi.org/10.1108/joepp-07-2026-0855",
+"venue": "Journal of Organizational Effectiveness People and Performance",
+"date": "2026-11-23",
+"authors": [
+"Azzam Altawil",
+"Asad Ur Rehman",
+"Ayesha Nawal",
+"Ihtisham Ullah",
+"Waris Ali Khan"
+],
+"abstract": "Purpose This paper examines how responsible artificial intelligence (AI) governance in human resource management (HRM) may support employee trust and sustainable organisational performance. Design/methodology/approach A conceptual model, developed through purposive theoretical synthesis, connects employee-visible governance with justice, focal trust, employee responses and organisational outcomes, while specifying contextual conditions and learning feedback. Findings The framework proposes that employee-visible responsible AI governance informs justice perceptions, which inform trust in organisationally governed AI-enabled HRM decision processes. Trust may support calibrated reliance and constructive responses; individual performance and collective emergence may then contribute to sustainable organisational performance. Socio-technical alignment, contextual conditions and organisational learning delimit this pathway. The six governance dimensions and twelve propositions are conceptual and have not been empirically validated. Practical implications The conceptually derived guidance links accountable decision ownership, meaningful human review, accessible explanation and appeal, and ",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1108/sl-04-2026-0190",
+"title": "The implications of digital leadership for productivity, innovation, and employee well-being: a systematic literature review",
+"url": "https://doi.org/10.1108/sl-04-2026-0190",
+"venue": "Strategy and Leadership",
+"date": "2026-11-23",
+"authors": [
+"Rami Mustapha Saleh",
+"Mette Baran"
+],
+"abstract": "Purpose This systematic literature review examines digital leadership as a socio-technical capability that sustains digital transformation. Grounded in the Job Demands-Resources (JD-R) model, it examines which employee- and organizational-level outcomes are associated with digital leadership, which mechanisms mediate these relationships, and which contextual factors moderate these effects. Design/methodology/approach Following PRISMA 2020 principles, 47 sources published between 2020 and early 2026 were identified and synthesized, comprising 46 empirical studies and one conceptual-analytical contribution. These 46 empirical studies were appraised for methodological quality using the Mixed Methods Appraisal Tool (MMAT). Outcomes were classified along the JD-R model’s motivational and health impairment pathways, and methodological appraisal was adopted to interpret the synthesized evidence. Findings Digital leadership correlates with more innovative work behavior, engagement, empowerment, and well-being; lower technostress; and organizational success in digital transformation, agility, and innovation performance. Because the evidence base is predominantly cross-sectional, these relat",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.20944/preprints202611.2072.v1",
+"title": "Algorithmic Management and Employee Well-Being: A Text Mining and Behavioral Science Review (2020–2026)",
+"url": "https://doi.org/10.20944/preprints202611.2072.v1",
+"venue": "Preprints.org",
+"date": "2026-11-19",
+"authors": [
+"Jinwoo Chae"
+],
+"abstract": "Algorithmic management (AM)—the use of algorithms and data-driven systems to allocate, monitor, evaluate and discipline work—has expanded from platform labor into conventional organizations and is increasingly linked to employee well-being. This review maps 255 publications from the reference corpus supplied for this study (nominal window 2020–2026) by combining a transparent title-level text-mining workflow, a behavioral-science coding frame and a reference-by-reference narrative synthesis in which every record is discussed. Methods: titles were parsed, tokenized and screened with stop-word removal; term and bigram frequencies, six theme codes and theme co-occurrence were computed, and the records were then synthesized in seventeen thematic sections covering conceptual foundations, platform-worker evidence, double-edged effects, autonomy, technostress, surveillance, fairness, trust, behavioral outcomes, AI adoption, AI-based well-being tools, careers, Industry 5.0 and sectoral contexts. Results: output is strongly recent (175 of 255 records, 69%, fall in 2025–2026), and the literature concentrates on well-being, burnout and stress (152 titles), AI-enabled HRM and analytics (107) a",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "arxiv:2611.27462",
+"title": "On the Challenges of Using LLMs in High-Risk AI Recruitment: Guiding Questions for Legal Conformity with the AI Act",
+"url": "https://arxiv.org/abs/2611.27462",
+"venue": "arXiv (cs.CY, cs.AI)",
+"date": "2026-11-20",
+"authors": [
+"Clara Punzi",
+"Stefano Tramacere",
+"Andrea Fedele",
+"Sezer Kutluk",
+"Roberto Pellungrini",
+"Gizem Gezici"
+],
+"abstract": "The EU Artificial Intelligence Act (AI Act) imposes detailed obligations on providers of high-risk AI systems but offers limited operational guidance, particularly when these systems integrate third-party General-Purpose AI (GPAI) models. This paper introduces a toolkit that fosters the development of legal-by-design AI-assisted recruitment systems by translating the core legal obligations of the AI Act's conformity assessment---specifically Articles 9--15 and Annex IV---into techno-normative requirements and corresponding guiding questions. While recruitment pipelines may involve components with varying technical complexity and differing levels of algorithmic transparency, this paper focuses on the most challenging case: the integration of third-party GPAI models into critical stages of the selection process, including resume and job description parsing, applicant scoring, and shortlist generation. This scenario presents significant challenges for downstream providers of high-risk AI systems, as it underscores the difficulties in obtaining the technical information needed to demonstrate compliance with the AI Act's techno-normative requirements, both prior to and during market dep",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1016/j.futures.2026.103974",
+"title": "Longing for community: Academics’ dystopian and utopian imaginaries of remote work in the future university",
+"url": "https://doi.org/10.1016/j.futures.2026.103974",
+"venue": "Futures",
+"date": "2026-11-16",
+"authors": [
+"Sofia Moratti",
+"Siri Øyslebø Sørensen"
+],
+"abstract": "Purpose In this paper, we explore how academics envision the future university and the role of remote work within it by exploring utopian and dystopian imaginaries, based on 12 in-depth individual interviews with senior academics at a large Norwegian university. We approach imaginaries as a “history of the present”, and draw on Lauren Berlant’s theorization of affect, hope and “cruel optimism” in our interpretation. Major findings Participants’ responses were overwhelmingly dystopian, focused on potential threats to their sense of community and professional identity. Four dystopian scenarios emerged: the Factory, Desert, Anarchy, and Micronation, each highlighting different dimensions of fear, including bureaucratization, dehumanization, atomization, and insulation. The dystopias were often portrayed as already partly unfolding in the present. Alternative hopeful imaginaries were mostly framed as partial and pragmatic acts of resistance, aimed at limiting negative outcomes. Across imaginaries, the longing for community remained a central theme. Community was understood in different ways: as human “contact” (not necessarily in person), collaboration across institutions, redistributi",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1002/bse.71907",
+"title": "When Climate Incentives Matter: CEO Compensation Design and Stock Market Responses to Climate Transition Risk in Europe",
+"url": "https://doi.org/10.1002/bse.71907",
+"venue": "Business Strategy and the Environment",
+"date": "2026-11-22",
+"authors": [
+"Jennifer Martínez‐Ferrero",
+"Marta Sánchez‐Sancho"
+],
+"abstract": "As climate transition risk becomes increasingly priced in capital markets, firms face growing pressure to demonstrate their preparedness for the low‐carbon transition. Climate‐linked CEO incentives have emerged as a prominent governance mechanism, yet their market relevance remains unclear. Using a sample of listed European firms from 2018 to 2022, we examine when climate‐linked CEO incentives are associated with stock market responses to climate transition shocks. We find that a greater economic weight of climate‐linked compensation is associated with more favorable market responses. This association varies with incentive design and context. Transition‐oriented KPIs exhibit the largest association, whereas process‐oriented KPIs also show a positive association. Broader environmental KPIs, by contrast, show no significant association, although this result may partly reflect their low prevalence in the sample. Moreover, the association is stronger when transition risk is more economically material, emerges under stronger internal climate governance, and is further strengthened by greater responsible capital ownership. These findings contribute to the literature by showing that the m",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.1108/jkm-11-2025-1583",
+"title": "Reskilling female entrepreneurs for knowledge spillovers: a KSTE perspective on SMEs in lagging regions",
+"url": "https://doi.org/10.1108/jkm-11-2025-1583",
+"venue": "Journal of Knowledge Management",
+"date": "2026-11-23",
+"authors": [
+"Safiya Mukhtar Alshibani",
+"Reeti Agarwal",
+"Attila Kurucz",
+"Francesco Russo",
+"Antonino Amato"
+],
+"abstract": "Purpose The research focuses on how territorial innovation aids the process of reskilling and training female entrepreneurs in small and medium-sized enterprises (SMEs) through knowledge application and spillover in disadvantaged areas. Based on the knowledge spillover theory of entrepreneurship (KSTE), this study aims to investigate the role of institutional help as an essential tool tying together the development of entrepreneurial competence and application of knowledge. Design/methodology/approach The study uses quantitative research techniques based on structural equation modeling that help identify the correlations between obtaining skills by female entrepreneurs and getting managerial training and implementing innovations in their region concerning knowledge gain and usage. Findings The findings show that territorial innovation enhances entrepreneurial capabilities through reskilling and managerial education, while institutional support facilitates the translation of these capabilities into knowledge application and knowledge spillovers. Firm size and firm age significantly influence knowledge spillovers but do not significantly affect knowledge application. Practical implic",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
+},
+{
+"key": "doi:10.59324/ejmeb.2026.3(6).09",
+"title": "Artificial Intelligence–Empowered Knowledge Management and Technological Innovation: A Systematic Review, Bibliometric Analysis and Research Agenda",
+"url": "https://doi.org/10.59324/ejmeb.2026.3(6).09",
+"venue": "HAL",
+"date": "2026-11-20",
+"authors": [
+"Medha Kareena Almas",
+"Ogulnabat Tashliyeva"
+],
+"abstract": "Artificial intelligence (AI) now performs a growing share of knowledge work in organisations. However, research on how AI affects technological innovation through knowledge management (KM) remains fragmented. This study combines a bibliometric analysis with a systematic literature review. Following PRISMA 2020 and SPAR-4-SLR, it analyses 232 Web of Science articles and reviews published up to 27 October 2026. The analysis uses performance analysis, co-citation analysis, bibliographic coupling, co-word analysis, and thematic mapping. A core sample of 65 studies is then synthesised. The field has grown rapidly since generative AI tools were released, and 70.7% of the documents appeared in 2025–2026. Output is concentrated in the Journal of Knowledge Management and in China. The intellectual base of the field combines the knowledge-based view, organisational learning, absorptive capacity and dynamic capabilities with recent work on AI capability and human–AI augmentation. Five research fronts are identified: AI and organisational learning in innovation; AI capability, green KM and sustainable innovation; AI in KM processes and knowledge sharing; knowledge transfer and ecosystems; and ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-23"
 }
 ]

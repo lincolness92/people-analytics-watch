@@ -1,0 +1,77 @@
+{
+ "date": "2026-11-23",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-16",
+  "to": "2026-11-23"
+ },
+ "stats": {
+  "candidates": 16,
+  "triaged": 16,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 4328,
+   "completion_tokens": 1884,
+   "cost_usd": 0.001397,
+   "calls": 2,
+   "failures": 0
+  }
+ },
+ "headline": "semana de ajuste fino em AML: separar triagem de contas da análise de fluxo com GNNs e levar contexto individual ao risco",
+ "trend": "A fronteira em PLD deixou de ser 'qual modelo ranqueia melhor' e passou a ser arquitetura de decisão: DOiT mostra que ranquear fluxo de dinheiro e escolher qual conta investigar primeiro são tarefas separáveis, e misturá-las pode piorar o rendimento por caso revisado — exatamente o gargalo de equipes de investigação com capacidade limitada. Em paralelo, JevRisk aponta para monitoramento contínuo e personalizado, em que o contexto do cliente (perfil, histórico, atividade) entra na avaliação em vez de limiares únicos para toda a base. Para bancos brasileiros sob Bacen e FATF, isso sugere duas frentes: preservar a ordem de triagem validada em produção e só ceder à IA quando houver evidência fora da amostra, e migrar o risco de relacionamento de regras fixas para camadas contextuais auditáveis, mantendo trilha de decisão para o regulador.",
+ "items": [
+  {
+   "key": "arxiv:2611.27809",
+   "title": "DOiT: ranking de fluxo de dinheiro vs. seleção de contas em revisão de PLD",
+   "original_title": "DOiT: Better Money-Flow Ranking Can Coexist with Worse Account Selection in Anti-Money Laundering Review",
+   "url": "https://arxiv.org/abs/2611.27809",
+   "venue": "arXiv (cs.CE, cs.LG)",
+   "date": "2026-11-20",
+   "authors": [
+    "Gwangui Hong",
+    "Seonkyu Lim",
+    "Min-Soo Kim"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "mules_aml",
+   "region": "",
+   "summary": "Testou, em AMLWorld e AMLNet, se reordenar a fila de revisão de contas por GNNs de fluxo de dinheiro melhora o rendimento da triagem a capacidade de revisão fixa: o reordenamento **prejudica ordens upstream de maior rendimento** e só ajuda as de menor rendimento. Em AMLWorld o dano na fila coexiste com maior average precision transacional em decoders dimension-matched por execução, provando que as duas habilidades são separáveis; em capacidades pequenas, vizinhos positivos deslocam prefixos upstream mais densos, e o custo de substituição cai conforme esse prefixo se esgota. Lição prática: mantenha a ordem upstream de triagem e use o GNN apenas para análise de fluxo, liberando influência na fila só com evidência *held-out*."
+  }
+ ],
+ "quick": [
+  {
+   "key": "arxiv:2611.26999",
+   "title": "JevRisk: risco financeiro zero-shot com modelo de decisão em linguagem",
+   "original_title": "JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model",
+   "url": "https://arxiv.org/abs/2611.26999",
+   "venue": "arXiv (cs.LG, cs.AI)",
+   "date": "2026-11-20",
+   "authors": [
+    "Yaodong Yang",
+    "Li Huang",
+    "Junpeng Liang",
+    "Yi Ma",
+    "Hongyao Tang",
+    "Xingyu Fan",
+    "Jinpeng Li",
+    "Furui Liu"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "fraud_analytics",
+   "region": "",
+   "note": "Propõe avaliação de risco por LLM sem rótulos, superando indicadores de especialista com limiares fixos que ignoram o perfil individual do cliente."
+  }
+ ]
+}
