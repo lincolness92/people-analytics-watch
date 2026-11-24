@@ -4908,5 +4908,652 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-23"
+},
+{
+"key": "web:https://www.cloudwalk.io/newsroom/cloudwalk-reaches-99-customer-support-automation-with-ai-agents-ceo-says",
+"title": "CloudWalk reaches 99% customer support automation with AI agents, CEO says",
+"url": "https://www.cloudwalk.io/newsroom/cloudwalk-reaches-99-customer-support-automation-with-ai-agents-ceo-says",
+"venue": "CloudWalk Newsroom",
+"date": "",
+"authors": [],
+"abstract": "CloudWalk CEO Luis Silva discusses 99% customer support automation, proprietary AI infrastructure and financial performance in an interview with theCUBE.",
+"score": 7,
+"theme": "conversational",
+"region": "brasil",
+"watch": [
+"CloudWalk / InfinitePay"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.youtube.com/shorts/VEqidFeH078",
+"title": "Estudo de Tecnologia Emergentes para o setor bancário 2026",
+"url": "https://www.youtube.com/shorts/VEqidFeH078",
+"venue": "Febraban Tech (YouTube)",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "E se a sua Inteligência Artificial fizesse as compras por você? Você diz o que quer e quanto pode pagar. A inteligência Artificial pesquisa, compara, confirma sua identidade, conclui o pagamento e ainda acompanha a entrega. Tudo dentro dos limites que você definir. Isso se chama comércio agêntico, uma das tendências apontadas pelo Estudo de Tecnologias Emergentes para o Setor Bancário 2026 da Febraban. No vídeo, Eduarda Davidovic, diretora de Inovação e Tecnologia Bancária da Febraban, explica o que vem por aí, do banco conversacional aos R$ 50 bilhões que o setor deve investir em tecnologia em 2026. Acesse o estudo conteúdo completo no link abaixo: https://portal.febraban.org.br/noticia/4524/pt-br/ #Febraban #InteligênciaArtificial #ComércioAgêntico",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "brasil",
+"watch": [
+"Febraban Tech"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.cloudwalk.io/newsroom/cloudwalk-launches-pierre-computer-a-personal-ai-agent-that-autonomously-performs-tasks-across-platforms",
+"title": "CloudWalk Launches Pierre Computer, a Personal AI Agent That Autonomously Performs Tasks Across Platforms",
+"url": "https://www.cloudwalk.io/newsroom/cloudwalk-launches-pierre-computer-a-personal-ai-agent-that-autonomously-performs-tasks-across-platforms",
+"venue": "CloudWalk Newsroom",
+"date": "",
+"authors": [],
+"abstract": "Pierre Computer performs tasks across websites and apps, from planning trips to making purchases within user-defined spending limits.",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "brasil",
+"watch": [
+"CloudWalk / InfinitePay"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.capitalone.com/tech/ai/highlights-from-the-2026-cairfi-ai-workshop",
+"title": "AI Research at CAIRFI 2026",
+"url": "https://www.capitalone.com/tech/ai/highlights-from-the-2026-cairfi-ai-workshop/",
+"venue": "Capital One Tech Blog",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "Go inside the Capital One and Columbia University CAIRFI Workshop to see how researchers are advancing trustworthy LLMs and real-world agentic AI systems.",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [
+"Capital One"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/noticias-sobre-fintechs/nubank-decidiu-emprestar-para-quem-paga-pior-e-a-conta-chegou",
+"title": "Nubank decidiu emprestar para quem paga pior, e a conta chegou",
+"url": "https://finsidersbrasil.com.br/noticias-sobre-fintechs/nubank-decidiu-emprestar-para-quem-paga-pior-e-a-conta-chegou/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Fachada do Nubank em São Paulo | Imagem: divulgação Empresa admite expansão intencional de risco, e o atraso acima de 90 dias sobe de 6,6% para 7,3% desde o fim de 2025",
+"score": 7,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://abipag.com.br/1a-edicao-guia-de-boas-praticas-para-instituicoes-de-pagamento-na-seguranca-cibernetica",
+"title": "1ª Edição – Guia de Boas Práticas para Instituições de Pagamento na Segurança Cibernética",
+"url": "https://abipag.com.br/1a-edicao-guia-de-boas-praticas-para-instituicoes-de-pagamento-na-seguranca-cibernetica/",
+"venue": "Congresso ABIPAG (notícias)",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "A digitalização dos serviços financeiros e de pagamentos trouxe avanços expressivos para o ecossistema financeiro. Esse movimento impulsionou também o aprimoramento dos mecanismos de segurança cibernética, com o objetivo de proteger dados, sistemas e infraestruturas, e assegurar a continuidade dos serviços essenciais de pagamento e a confiança no ecossistema. Nesse contexto, o Banco Central do […] O post 1ª Edição – Guia de Boas Práticas para Instituições de Pagamento na Segurança Cibernética apareceu primeiro em ABIPAG .",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Congresso ABIPAG"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://finsidersbrasil.com.br/regulamentacao/bc-comeca-a-fechar-a-torneira-do-credito-para-clientes-mais-endividados",
+"title": "BC começa a fechar a torneira do crédito para clientes mais endividados",
+"url": "https://finsidersbrasil.com.br/regulamentacao/bc-comeca-a-fechar-a-torneira-do-credito-para-clientes-mais-endividados/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "Pedestres circulam por uma rua de comércio no Rio de Janeiro; BC passou a impedir que bancos procurem clientes da faixa de atenção qualificada com novas ofertas de empréstimo | Imagem: Tânia Rêgo/Agência Brasil Regulador proíbe que instituições procurem consumidores da faixa de atenção qualificada com novas propostas de empréstimo e defende a renegociação das dívidas",
+"score": 6,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://itforum.com.br/noticias/ia-transforma-funcoes-cargos-aponta-gupy",
+"title": "IA transforma funções antes de criar novos cargos, aponta Gupy",
+"url": "https://itforum.com.br/noticias/ia-transforma-funcoes-cargos-aponta-gupy/",
+"venue": "IT Forum",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "A inteligência artificial (IA) está transformando as responsabilidades dos profissionais brasileiros antes mesmo de provocar o surgimento de novos cargos. É o que aponta o relatório Mercado de Trabalho no Brasil 2027, da Gupy, que identificou crescimento de 325% nas menções a prompts e agentes de IA em anúncios de emprego. O movimento indica uma […]",
+"score": 6,
+"theme": "skills",
+"region": "brasil",
+"watch": [
+"IT Forum"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24464596",
+"title": "Telemetry Blindness in LLM Agents: A Controlled Measurement of Valid-Format Semantic Errors at the Write Boundary",
+"url": "https://doi.org/10.5281/zenodo.24464596",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-23",
+"authors": [
+"Estefano Senhor Ferreira"
+],
+"abstract": "An agent built on a large language model (LLM) can write a wrong value into a database while every signal reports success: the value has a valid format, the database accepts it, the write returns success, and the agent's explanation raises no flag. This paper measures how often this happens when the value is a computed financial amount. The reference is computed by deterministic code from Central Bank of Brazil series, and each value is read back from four database engines. The main experiment was specified and frozen in version control before its runs and uses one model, gpt-6-luna, with up to 100 instances per configuration. With reasoning effort none and no calculator, under the weekday calendar, the first answer was wrong in 82 of 100 compound-interest instances, 26 of 100 dated currency conversions and all 100 instances of a task that combines both. Of 532 wrong first answers, 384 were stored and passed every observer, with a median error of 0.15%. The database range rules caught only 9, each either about 5 to 10 times the correct value or about one-fifth to one-hundredth of it. Two pre-specified paired tests rejected their null hypotheses: raising reasoning effort to medium c",
+"score": 5,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.3390/su182211845",
+"title": "Willingness to Use and Actual Use of e-CNY: Mediation Mechanisms Within a Mature Payment Ecosystem",
+"url": "https://doi.org/10.3390/su182211845",
+"venue": "Sustainability",
+"date": "2026-11-20",
+"authors": [
+"Sida Cheng",
+"Jung-Gun Lee",
+"Sang-Gun Lee"
+],
+"abstract": "The e-CNY pilot programs have expanded steadily in recent years, reflecting China’s continued efforts to promote its central bank digital currency (CBDC). However, actual use of the e-CNY remains low in China’s mature payment ecosystem. This study examines the antecedents of willingness to use and actual use of the e-CNY and their mediation pathways by extending the Unified Theory of Acceptance and Use of Technology (UTAUT) with trust, perceived risk, and innovation resistance. Data were collected from 509 respondents and analyzed using partial least squares structural equation modeling (PLS-SEM) and explainable machine learning. PLS-SEM was employed to examine the effects of the antecedents on willingness to use and actual use and to identify their mediation types. SHapley Additive exPlanations (SHAP) was used to assess their relative predictive importance. The results reveal that social influence, trust, and innovation resistance are the key factors associated with willingness to use, whereas performance expectancy and effort expectancy are not significant. When actual use is measured by self-reported transaction items only, the three significant factors are associated with actua",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1201/9781042054305-11",
+"title": "Agentic AI Risk Management: Governance Protocols for Autonomous Multi-Agent Systems in Financial Services",
+"url": "https://doi.org/10.1201/9781042054305-11",
+"venue": "CRC Press eBooks",
+"date": "2026-11-23",
+"authors": [
+"Swetha Sree Kommuri"
+],
+"abstract": "The financial services sector is undergoing a fundamental transformation as institutions transition from reactive, prompt-based AI systems toward autonomous, goal-directed agentic architectures. Unlike prior AI deployments requiring structured inputs and continuous human oversight, agentic systems plan, reason, and execute complex multi-step workflows with minimal intervention. By 2026, adoption of agentic AI in financial operations is projected to exceed 600% growth, with global market spend approaching $50 billion and potential productivity gains of $3 trillion. This rapid deployment introduces a new class of systemic risks—including cascading failures, algorithmic collusion, adversarial prompt injection, and goal inversion—that existing governance frameworks are ill-equipped to address. This paper proposes the Agentic Trust Framework (ATF), a comprehensive governance architecture for monitoring, containing, and auditing autonomous agent workflows in financial institutions. The ATF integrates zero-trust identity management, blockchain-enhanced audit trails, semantic circuit breakers, and a tiered autonomy model grounded in formal control theory. We present Lyapunov-based stabilit",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24466954",
+"title": "GuardRail: Runtime Action Authorization and Behavioral Safety for Agentic AI Systems",
+"url": "https://doi.org/10.5281/zenodo.24466954",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-23",
+"authors": [
+"Niraj Sanjay Karnawat",
+"Ayush Patil",
+"Kunal Chaudhari"
+],
+"abstract": "LLM agents no longer only produce text: they call APIs, query databases, send messages, and initiate payments. The safety mechanisms deployed around them, however, still operate mainly on text. They screen the prompt going in and the response coming out, while the agent's plan, the ordered sequence of tool calls it is about to execute, runs unchecked. That gap is exploitable: instructions planted in a web page, email, or tool result can steer the plan toward actions the user never intended, and an agent can alter an action after it has been approved. We present GuardRail, a runtime action-authorization and behavioral safety layer that sits between an agent and its tools and decides, before execution, whether each proposed action may run. GuardRail combines (i) a plan validation gate that checks every action against a trusted agent registry and four deterministic policy checks, issuing APPROVE, APPROVE_WITH_CONDITIONS, ESCALATE_TO_HUMAN, or BLOCK; (ii) a semantic risk-analysis layer whose signals can raise caution but can never override a deterministic refusal; (iii) forward taint tracking over multi-step plans, with detectors for seven multi-step attack chains; (iv) an Action Passp",
+"score": 7,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1201/9781042054305-107",
+"title": "Impact of Open Finance Data Sharing on Credit Access for Unbanked and Underbanked Populations: A Systematic Review",
+"url": "https://doi.org/10.1201/9781042054305-107",
+"venue": "CRC Press eBooks",
+"date": "2026-11-23",
+"authors": [
+"Vaibhava Srinivasan",
+"Praveen Kumar Sinha",
+"Amruta N",
+"KN Vinod Kumar"
+],
+"abstract": "In addition to being a great means of increasing financial literacy, open finance data sharing has proven itself to be a crucial instrument for enhancing financial inclusion through providing greater access to formal loans. This paper represents a systematic literature review based on a comprehensive analysis of 80 empirical articles written between 2009 and 2026 in different countries across five continents and related to the effects of open finance on the formal credit market. The analysis shows that open finance always positively impacts the probability of receiving loans but does not affect the extent of such an impact. If a country has developed credit bureau infrastructure, the probability of receiving formal loans increases by 3–9%, while in countries where people do not have any formal credit history, the probabilities usually go up by 15–30 percentage points or even higher. For instance, articles referring to the United States demonstrate the increase in the credit approval rate of 6–9 percentage points, and research concerning Peru indicates the increase from 16% to 31-48%. Besides, open finance makes loans more affordable due to a decrease in their interest rates in deve",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.21608/mafs.2026.513923.1617",
+"title": "CENTRAL BANK DIGITAL CURRENCIES (CBDCS) AND CROSS-BORDER PAYMENT EFFICIENCY IN EMERGING MARKETS: A DYNAMIC STOCHASTIC GENERAL EQUILIBRIUM (DSGE) APPROACH NIGERIA CASE STUDY (2010–2024)",
+"url": "https://doi.org/10.21608/mafs.2026.513923.1617",
+"venue": "مجلة الدراسات الأفريقية",
+"date": "2026-11-20",
+"authors": [
+"shimaa wagieh"
+],
+"abstract": "This study examines the impact of Central Bank Digital Currency (CBDC) adoption on cross-border payment efficiency in Nigeria using a Dynamic Stochastic General Equilibrium (DSGE) framework. The eNaira, launched by the Central Bank of Nigeria (CBN) in October 2021, represents Africa's first retail CBDC. Using quarterly data from 2010:Q1 to 2024:Q4, we estimate a medium-scale DSGE model incorporating financial frictions, cross-border payment costs, and CBDC adoption dynamics. The Bayesian estimation results indicate that CBDC adoption shocks significantly improve cross-border payment efficiency, reduce exchange rate volatility, and enhance remittance inflows. Impulse response functions reveal that a one-standard-deviation CBDC adoption shock increases cross-border payment efficiency by 1.2% in the short run and 0.8% in the long run. Variance decomposition analysis shows that CBDC shocks explain approximately 18% of the forecast error variance in payment efficiency at the 20-quarter horizon. The findings provide strong evidence for the welfare-enhancing potential of CBDCs in emerging market economies and offer policy recommendations for optimizing digital currency frameworks in Sub-S",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24466995",
+"title": "Digital Public Infrastructure (DPI): Emerging Challenges and Issues in International Financial Law",
+"url": "https://doi.org/10.5281/zenodo.24466995",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-23",
+"authors": [
+"Anupriya S"
+],
+"abstract": "Digital public infrastructure is slowly becoming the base for many financial services. It includes systems such as digital identity, instant payments, and sharing of financial data with consent. These systems help people receive government benefits, make payments, and open bank accounts more easily. But they also bring legal problems, especially when personal data, private companies, and cross-border transactions are involved. This paper looks at the legal issues connected with digital public infrastructure in international financial law. At present, there is no one international law that covers DPI completely. Payments, data protection, cybersecurity, and digital identity are handled under different laws in different countries. Because of this, companies and users face confusion when a DPI-based service works across borders. The paper studies India, the European Union, and Brazil. These three examples show that countries are building DPI in different ways, but the law has not developed at the same speed. The paper points out problems such as weak cybersecurity, unclear liability when fraud or system failures happen, digital exclusion of people without documents or smartphones, and",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.26794/2587-5671-2027-31-4-2223-2",
+"title": "Artificial Intelligence and Credit Scoring: Opportunities, Ethical Challenges, and Regulatory Implications",
+"url": "https://doi.org/10.26794/2587-5671-2027-31-4-2223-2",
+"venue": "Finance: Theory and Practice",
+"date": "2026-11-23",
+"authors": [
+"Ayesha Anwar",
+"Cristiana Cerqueira Leal",
+"Benilde Oliveira",
+"Tahar Tayachi"
+],
+"abstract": "The aim of this study is to examine how artificial intelligence (AI) is changing credit scoring and to assess the opportunities, ethical concerns, and regulatory challenges associated with its use. It traces the shift from traditional statistical models to AI-based approaches, reviews machine learning, neural networks, and deep learning techniques, and compares their main characteristics with conventional scoring methods. It also considers the safeguards needed for responsible adoption. The study draws on a narrative review of academic literature and regulatory documents, including the European Union’s Ethics Guidelines for Trustworthy AI and the AI Act, alongside a qualitative comparison of credit scoring approaches. The findings suggest that AI can help lenders capture nonlinear relationships, use alternative data, assess applications more quickly, and reach borrowers with limited credit histories. These benefits, however, depend on the quality of the data and how models are validated and used. The review highlights persistent concerns about algorithmic bias, the difficulty of explaining model decisions, data privacy, and regulatory compliance. More accurate predictions alone do ",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11767677/v1",
+"title": "An Explainable Artificial Intelligence Framework for Customer Churn Management and Retention Decision Support in Service Operations",
+"url": "https://doi.org/10.21203/rs.3.rs-11767677/v1",
+"venue": "Research Square",
+"date": "2026-11-23",
+"authors": [
+"Muzamil Mohib"
+],
+"abstract": "Customer churn prediction is a critical task for service-oriented firms because customer loss directly affects revenue stability, customer lifetime value, and long-term profitability. Although machine learning models can identify customers who are likely to churn, many existing approaches emphasize predictive accuracy without sufficiently explaining churn drivers or translating predictions into actionable retention strategies. To address this limitation, this study proposes an explainable AI-driven multi-dataset churn management framework that integrates machine learning prediction, SHAP-based explainability, probability-based risk segmentation, and counterfactual retention strategy simulation. The framework is evaluated using three publicly available customer churn datasets from telecommunications and banking contexts: IBM Telco, Orange Telecom, and Banking Churn. Logistic Regression, Random Forest, and XGBoost are trained and compared using accuracy, precision, recall, F1-score, AUC-ROC, and AUC-PR. The results show that model performance varies across datasets, with XGBoost achieving strong performance on Orange Telecom and Random Forest performing competitively on Banking Churn",
+"score": 5,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24410238",
+"title": "Delegated Loyalty: Fiduciary Duties and Commercial Conflicts in Personal AI Agents",
+"url": "https://doi.org/10.5281/zenodo.24410238",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-20",
+"authors": [
+"Josie Jefferson",
+"Felix Velasco",
+"Unearth Heritage Foundry"
+],
+"abstract": "Delegation transfers a decision without transferring loyalty. Commercial AI providers now market personal agents that search, compare, negotiate, and buy on a user's behalf. The same providers collect merchant fees on completed purchases, sell conversation-matched advertising, and run retail stores whose goods the agent can recommend. In the early 1980s, airline reservation systems presented the same conflict, ranking the owning carrier's flights first. Federal regulators answered with rules against display bias. Common-law agency forbids undisclosed third-party benefits and adverse-party dealing, yet treats software as a tool incapable of owing duties. Any duty attaches to the provider. Seven duties follow from agency doctrine and from broker, search, and online marketplace rules. Those duties require loyalty to declared interests, conflict disclosure, a bar on undisclosed commissions, transparent ranking separated from advertising, audit trails, and portability. Without these duties, a commercial personal agent operates as the provider's representative inside the user's decisions. Keywords: Personal AI Agents, Agentic Commerce, Fiduciary Duty, Duty of Loyalty, Conflict-of-Interes",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.47363/jmscm/2026(5)194",
+"title": "Measuring Brand Visibility in Agentic Commerce Through Citation Share, Basket Capture, and Paid-Presence Transfer in Consumer Packaged Goods",
+"url": "https://doi.org/10.47363/jmscm/2026(5)194",
+"venue": "Journal of Marketing & Supply Chain Management",
+"date": "2026-11-21",
+"authors": [
+"Tarun Gupta",
+"Supriya Bansal"
+],
+"abstract": "Generative assistants and shopping agents increasingly choose which consumer packaged goods (CPG) brands shoppers see, yet no published study has measured brand visibility in these habitual, repeat-purchase categories. This paper introduces a reproducible measurement framework built on five constructs: Citation Share (with a rank-weighted variant), the probability that a brand is named for a brand-free query; Basket Capture Rate, the share of agent-assembled basket items won by one manufacturer; Portfolio Halo, the gain in a manufacturer’s chance of winning a basket slot after winning the previous one; Source Provenance Ratio, the mix of cited domain classes; and the Paid-Presence Index, a count of visible sponsored placements that does not measure advertising spend. All data are simulated. The framework is demonstrated on 12,000 simulated responses (six US CPG categories, 60 anonymized brands, 300 queries, four anonymized engines, two waves eight weeks apart) calibrated to published studies; results show what the framework can detect, not the behavior of any real engine, brand or manufacturer. Visibility was more concentrated than published Figure for technology and services (mean",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24474131",
+"title": "The Agent's Receipt: What an Audit Trail Must Contain When No Human Watched",
+"url": "https://doi.org/10.5281/zenodo.24474131",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-23",
+"authors": [
+"Salem Evbogbai"
+],
+"abstract": "When an AI agent buys something on a customer's behalf, no human watches the purchase. The customer does not see the options, does not hear the reasoning, and cannot describe what happened if the purchase goes wrong. The dispute process, built for human buyers, has no witness to call. This paper proposes the minimum audit trail an agent purchase must leave behind: five records that together let a person who was not present reconstruct what happened and decide who bears the cost. The five records are the mandate record, which captures the customer's instruction as the agent understood it; the reasoning record, which captures what the agent considered and why it chose; the authorization record, which captures the scoped permission for this one purchase; the transaction record, which captures what was actually bought, from whom, and at what price; and the outcome record, which captures what happened after, including objections, corrections, and refunds. The paper argues that a trail is sufficient only when it is complete, tamper-evident, readable, and available to the dispute process, and it works the argument through a replacement purchase in which the exact item is unavailable and t",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "oa:W7237304702",
+"title": "PRACTICAL ANALYSIS OF BANK CUSTOMER BEHAVIOR AND SERVICE DELIVERY CHANNELS IN THE OPEN BANKING ENVIRONMENT",
+"url": "http://waerasia.org/index.php/ijtar/article/view/1069",
+"venue": "International journal of technology and academic research",
+"date": "2026-11-19",
+"authors": [
+"Mekhriniso Dilshodbek qizi Urayimova",
+": Khamidjon Usmonovich Sarimsaqov"
+],
+"abstract": "This article presents an applied and empirical analysis of changes in the behavior of commercial bank customers and in service delivery channels as the Open Banking ecosystem takes shape. The study assesses the shift from traditional bank channels to FinTech and open API platforms, customer preferences, and service efficiency indicators (transaction share, customer reach growth, operating cost, and customer satisfaction index) for 2024–2026. The findings show that the share of transactions made through Open API channels has reached 52%, and that serving customers through traditional branches costs more than 30 times as much as through open digital channels. The article identifies the main barriers (cybersecurity and trust, the digital literacy gap, and fragmented user experience) and develops strategic recommendations for banks: developing a hybrid omnichannel model, increasing the transparency of consent management, and personalized API monetization.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.3126/njmathsci.v7i2.100781",
+"title": "Machine Learning-Based Customer Segmentation and Tailored Financial Advice in the Banking Sector",
+"url": "https://doi.org/10.3126/njmathsci.v7i2.100781",
+"venue": "Nepal Journal of Mathematical Sciences",
+"date": "2026-11-20",
+"authors": [
+"Prasant Bagale",
+"Saurav Acharya",
+"Bishal Khand Thakuri",
+"Deepa Poudel",
+"Nawaraj Paudel"
+],
+"abstract": "Customer segmentation in banking involves grouping customers into distinct segments who exhibit similar behaviors, such as transaction frequency, spending patterns, and savings habits. This enables banks to target their offerings more effectively. This study applied an unsupervised machine learning approach using the K-means clustering algorithm to segment customers. The analysis was based on secondary data comprising 100,000 customers. The silhouette score peaked at k = 3 with a score of 0.3232, but based on the Elbow method and aiming for a potentially more granular segmentation, k = 5 was chosen. The identified customer segments were: established female savers; recently active engagers (mostly male); low-balance, less-active males; core male customers; and a high-value, high-activity segment. To further refine the segmentation, RFM (Recency, Frequency, Monetary) analysis was implemented to reveal customer behaviors within each cluster, resulting in more precise customer profiling. This dual-layer approach enables banks to develop personalized marketing strategies and improve customer relationship management.",
+"score": 5,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.6084/m9.figshare.35080987",
+"title": "Privacy-Preserving AI in Finance: Federated Learning, Secure Computation, and GDPR Compliance for Fraud Detection and Credit Scoring",
+"url": "https://doi.org/10.6084/m9.figshare.35080987",
+"venue": "Figshare",
+"date": "2026-11-20",
+"authors": [
+"Farhana Afroz"
+],
+"abstract": "Financial institutions need large datasets to build AI systems, yet they must protect sensitive customer information under regimes such as the GDPR. This review examines how federated learning, secure multi-party computation, homomorphic encryption, and differential privacy support privacy-preserving AI in financial services. It covers the principles of data sovereignty, federated architectures for enterprise systems, and applications in cross-institutional collaboration, fraud detection, credit scoring, and personalized banking. It also discusses regulatory compliance, auditability, adversarial robustness, and cyber resilience. The literature indicates that these techniques help institutions meet data minimization requirements, reduce legal risk, and collaborate across borders. Trade-offs remain in computational overhead, latency, non-IID data, and model bias. Future work should focus on standardized protocols, hybrid privacy models, and auditing frameworks.",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1287/mnsc.2024.08073",
+"title": "Learning from a Biased Sample",
+"url": "https://doi.org/10.1287/mnsc.2024.08073",
+"venue": "Management Science",
+"date": "2026-11-23",
+"authors": [
+"Roshni Sahoo",
+"Lihua Lei",
+"Stefan Wager"
+],
+"abstract": "The empirical risk minimization approach to data-driven decision making requires access to training data drawn under the same conditions as those that will be faced when the decision rule is deployed. However, we may be concerned that our training sample is biased in the sense that some groups (characterized by either observable or unobservable attributes) may be under- or over-represented relative to the general population; and in this setting, empirical risk minimization over the training set may fail to yield rules that perform well at deployment. We propose a model of sampling bias called conditional [Formula: see text]-biased sampling, where observed covariates can affect the probability of sample selection arbitrarily much but the amount of unexplained variation in the probability of sample selection is bounded by a constant factor. Applying the distributionally robust optimization framework, we propose a method for learning a decision rule that minimizes the worst-case risk incurred under a family of test distributions that can generate the training distribution under conditional [Formula: see text]-biased sampling. We apply a result of Rockafellar and Uryasev to show that t",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1287/mnsc.2023.03136",
+"title": "Deep Tangency Portfolio",
+"url": "https://doi.org/10.1287/mnsc.2023.03136",
+"venue": "Management Science",
+"date": "2026-11-23",
+"authors": [
+"Guanhao Feng",
+"Liang Jiang",
+"Junye Li",
+"Yizhi Song",
+"Yuanzhi Wang"
+],
+"abstract": "We develop a deep learning framework to directly estimate tangency portfolio weights by augmenting benchmark factors with a long-short deep factor derived from high-dimensional characteristics. Guided by a Sharpe ratio maximization objective, the deep factor plays two key roles: (i) providing a natural hedge against benchmark risks and (ii) capturing multimarket signals to enhance the performance of the benchmark. In an empirical application to U.S. corporate bonds using 132 firm-level bond, equity, and option characteristics, the deep factor achieves an out-of-sample Sharpe ratio exceeding one, and the deep tangency portfolio benchmarked against the market factor yields a Sharpe ratio over two, outperforming portfolios spanned by common observable or latent factors. These results demonstrate that bond risk signals are fundamentally dense, requiring the nonlinear integration of multimarket information to span the efficient frontier. This paper was accepted by Agostino Capponi, finance. Funding: G. Feng acknowledges financial support from the Hong Kong Research Grants Council [Grant GRF11502023] and the National Natural Science Foundation of China [Grant 72203190]. G. Feng is partia",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "arxiv:2611.28914",
+"title": "Can Open LLMs Clear Sanctions-Screening Alerts? A Pre-registered Test on Public Sanctions Lists with Turkish Name Variants",
+"url": "https://arxiv.org/abs/2611.28914",
+"venue": "arXiv (cs.CL, cs.AI)",
+"date": "2026-11-21",
+"authors": [
+"Mehmet Murat Huyut"
+],
+"abstract": "Sanctions screening raises name-based alerts that are mostly false positives, and level-1 analysts clear them by checking the customer's date of birth and name against a written policy. We test whether open-weight language models that a bank can run on its own premises can perform this level-1 disposition. From the UK and EU sanctions lists (7,103 natural persons) we built 12,200 synthetic customers: listed persons under six name conditions, including Turkish spellings of Arabic-origin names and Turkish romanisations of Cyrillic names, and two date-of-birth conditions, plus namesakes, near-name customers and a general population. A deterministic fuzzy and embedding screen raised 7,383 alerts, which three open models served on domestic infrastructure and three rule baselines dispositioned under the same policy. The models sent far fewer innocent customers to level 2 than a rule that applies the policy's date clause: 0.6 to 16.9 per 1,000 screened customers against 24.4, and they stated the date-of-birth status correctly in 98.3% to 98.5% of alerts. They also failed to escalate 1.5% to 2.2% of the listed persons. The pre-registered non-inferiority test against the rule was met, but o",
+"score": 8,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.americanbanker.com/news/fhfa-lays-out-a-new-timeline-for-giving-lenders-10t-score",
+"title": "FHFA lays out a new timeline for giving lenders 10T score",
+"url": "https://www.americanbanker.com/news/fhfa-lays-out-a-new-timeline-for-giving-lenders-10t-score",
+"venue": "American Banker",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "The Federal Housing Finance Agency’s timeline shows Fannie Mae and Freddie Mac will start adding a second modernized score through a pilot next year.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/24/11/2026/caixa-eletronico-super",
+"title": "73% dos brasileiros com smartphone não costumam sacar dinheiro em caixa eletrônico",
+"url": "https://www.mobiletime.com.br/noticias/24/11/2026/caixa-eletronico-super/",
+"venue": "Mobile Time",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "Dado faz parte da nova pesquisa Super Panorama Mobile Time/Opinion Box. Baixa utilização deve levar a um maior compartilhamento e reaproveitamento das máquinas em serviço, prevê especialista",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/23/11/2026/ifood-modelo-open-source",
+"title": "iFood aposta em modelos open source de IA generativa para escalar seu uso",
+"url": "https://www.mobiletime.com.br/noticias/23/11/2026/ifood-modelo-open-source/",
+"venue": "Mobile Time",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "Por meio da Zoop, uso de inteligência artificial cresceu 30 vezes desde janeiro deste ano. O consumo de tokens aumentou em 106% desde junho, enquanto a conta caiu 51%",
+"score": 7,
+"theme": "foundation_models",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "web:https://convergenciadigital.com.br/governo/governo-esta-prestes-a-lancar-duas-ia-transacionais-nos-servicos-digitais",
+"title": "Governo está prestes a lançar duas IA transacionais nos serviços digitais",
+"url": "https://convergenciadigital.com.br/governo/governo-esta-prestes-a-lancar-duas-ia-transacionais-nos-servicos-digitais/",
+"venue": "Convergência Digital",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "O anúncio foi feito pela ministra da Gestão e Inovação, Esther Dweck. Diferentemente dos assistentes virtuais que apenas respondem perguntas, essas ferramentas permitirão que cidadãos executem operações diretamente por meio de conversas, modificando registros em bases governamentais.",
+"score": 5,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1016/j.jfineco.2026.104417",
+"title": "Keep calm and bank on: Bank run risks and the role of public communication",
+"url": "https://doi.org/10.1016/j.jfineco.2026.104417",
+"venue": "Journal of Financial Economics",
+"date": "2026-11-23",
+"authors": [
+"Damiano Sandri",
+"Francesco Grigoli",
+"Yuriy Gorodnichenko",
+"Olivier Coibion"
+],
+"abstract": "",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.5281/zenodo.24465390",
+"title": "Independent Execution Authorization for AI Agents: Separating the authority to permit an action from the system that proposes it",
+"url": "https://doi.org/10.5281/zenodo.24465390",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-23",
+"authors": [
+"Damian Kissane"
+],
+"abstract": "AI agents are moving from answering questions to taking actions: they make payments, change records, grant access and commit organizations to third parties. Holding a credential is not the same as being authorized to take a specific action at a specific moment. This position paper defines independent execution authorization: the decision, made immediately before an AI agent's action takes effect, on whether that specific action is permitted to execute, made outside the trust domain of the system taking the action. It grounds the idea in established security principles (separation of privilege, complete mediation, fail-safe defaults), sets out six requirements (independence, action specificity, fail-closed, no route around it, verifiable evidence, every applicable authority), distinguishes it from identity and access management, policy-based authorization, platform gateways, guardrails, agent security and observability, and states its limits. The system taking the action cannot be the system authorizing the action, and if the check cannot run, the action does not. Author: Damian Kissane, founder of INVARIANCE (invarianceip.com), the control plane for safe AI action. INVARIANCE is no",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.48550/arxiv.2611.25327",
+"title": "Now You See Me Now You Don't: A Framework To Detect and Reduce Proxy Capacity",
+"url": "https://doi.org/10.48550/arxiv.2611.25327",
+"venue": "arXiv",
+"date": "2026-11-19",
+"authors": [
+"Nirek Sharma"
+],
+"abstract": "In regulated domains such as lending, the two most salient fairness concepts are disparate impact and disparate treatment: disparate impact is generally defined by differential rates of adverse outcomes between demographic groups, while disparate treatment is generally defined by the use of demographic information or proxies to issue decisions. There already exist established methods to quantitatively detect and mitigate disparate impact; however, there has been less research on doing the same for disparate treatment. From a practitioner's perspective, the manner in which a conditional independence test is formulated and operationalized to identify proxies is nuanced and underexplored. As Machine Learning (ML) systems increase in scope and application in regulated domains, practitioners need a defensible framework to identify proxies at scale. Current disparate treatment frameworks typically rely upon some combination of quantitative and qualitative review of models' inputs to identify proxies. Features that are identified as proxies are then typically removed from the model in practice, and predictive performance degrades in favor of fairness through unawareness. Here, we propose ",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.1057/s41599-026-09547-0",
+"title": "Technology–augmented credit creation in supply chain finance: dynamic synergy of AI, blockchain, and data assetization",
+"url": "https://doi.org/10.1057/s41599-026-09547-0",
+"venue": "Humanities and Social Sciences Communications",
+"date": "2026-11-23",
+"authors": [
+"Guangrong LI",
+"Ying Huang",
+"Ziping Wang",
+"Qiannong Gu"
+],
+"abstract": "The coupling of blockchain, artificial intelligence (AI), and data assetization (DA) offers a transformative pathway for supply chain finance (SCF) to alleviate financing constraints of small and medium–sized enterprises (SMEs). This study develops a tripartite evolutionary game model integrating blockchain–based certification, AI valuation correction, and dynamic incentive–penalty mechanisms for DA–backed SCF financing. We advance a Technology–Augmented Credit Creation (TACC) framework that extends the information production dimension of intermediation theory through a dynamic information cost function, where blockchain credibility and AI valuation precision synergistically reduce information production costs via the supermodular cost complementarity coefficient. Using system dynamics rate–in–tree modeling with Logistic time–varying parameters calibrated through Latin Hypercube sampling and Sobol global sensitivity analysis, we simulate technology diffusion paths and strategic evolution across three typological scenarios varying in data–density and network–externality intensity. Our findings reveal five structural results: (1) blockchain–AI synergy generates supermodular informati",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.59425/eabc.1795471200",
+"title": "Digital skills are no longer optional in the Asia Pacific",
+"url": "https://doi.org/10.59425/eabc.1795471200",
+"venue": "",
+"date": "2026-11-23",
+"authors": [
+"Robin Döttling"
+],
+"abstract": "Listen to this article A 2026 Asian Development Bank study analysed six million online job postings from Indeed across Australia, India, South Korea, Malaysia, the Philippines and Singapore between 2019 and 2024. The study found that demand for digital skills is growing fastest in jobs long considered low-technology occupations, such as teaching, construction, retail and […]",
+"score": 6,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "arxiv:2611.29281",
+"title": "Project financing in vanishing forests: Do investors care about nature protection?",
+"url": "https://arxiv.org/abs/2611.29281",
+"venue": "arXiv (q-fin.GN)",
+"date": "2026-11-22",
+"authors": [
+"Theodor Cojoianu",
+"Mohammad Faour",
+"Andreas Hoepner",
+"Matthew Purslow",
+"Khaladdin Rzayev",
+"Ruoran Zhao"
+],
+"abstract": "Biodiversity risks are increasingly recognized by financial market participants, yet their measurement at the corporate-entity level obscures the locations and assets through which they arise. Project finance links identifiable physical assets to dedicated financing contracts, allowing us to examine this transmission more directly. By linking 9,037 project-loan pairs in 115 countries, we relate bank loan spreads to projects' proximity to protected areas, surrounding forest loss and lenders' nature policies. We find that lenders price proximity to protected areas only when they also have explicit nature risk policies and particularly within 1.5 km buffers from the project location. Realised forest loss around a project is priced more consistently than forest loss after the loan is signed, and risk pricing near protected areas strengthens after the Kunming-Montreal Global Biodiversity Framework. Listed company sponsors also experience negative, but short-lived, abnormal returns around loan signings for projects within 30 km of protected areas or in high-forest-loss landscapes. Our results suggest that while nature risk is partially priced in project finance, this is not a strong ince",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
 }
 ]

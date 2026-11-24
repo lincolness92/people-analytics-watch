@@ -3233,5 +3233,107 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-23"
+},
+{
+"key": "doi:10.1051/e3sconf/202675202002/pdf",
+"title": "Ethical AI in Fintech: Bridging the Gap Between Predictive Performance and Algorithmic Fairness in Fraud Detection",
+"url": "https://doi.org/10.1051/e3sconf/202675202002/pdf",
+"venue": "Springer Link (Chiba Institute of Technology)",
+"date": "2026-11-19",
+"authors": [
+"Hassan Jaha",
+"Elarbi Abdellaoui Alaoui"
+],
+"abstract": "In finance, fraud detection systems frequently struggle to balance accurate predictions with fair outcomes. Many of the machine learning models used today are black boxes, and may be biased based on the data they were trained on, resulting in unfair results. We propose a novel framework that combines fairness-aware machine learning and Explainable AI (XAI). It uses techniques like Robust Scaling, a mix of SMOTE-ENN resampling and SHAP (SHapley Additive Explanations) to improve both performance and explainability. Experiments on the ULB Credit Card Fraud Detection dataset have reached a recall of 92%, with the Demographic Parity Gap maintained at a minimum of 0.0006. The results show you can be fair, accurate, transparent and compliant with regulation such as the EU AI Act",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.3390/fi18120645",
+"title": "Language and Back-Translation Effects in Multi-Class Smishing Classification: A Controlled 16-Language Benchmark",
+"url": "https://doi.org/10.3390/fi18120645",
+"venue": "Future Internet",
+"date": "2026-11-21",
+"authors": [
+"Alicia Martínez-Mendoza",
+"Gonzalo de-Francisco-Rodríguez",
+"Laura Fernández-Robles",
+"Eduardo Fidalgo",
+"Enrique Alegre"
+],
+"abstract": "Smishing is a cyberattack in which fraudulent Short Message Service (SMS) messages are used to obtain personal or financial information by deceiving users. For a Computer Emergency Response Team (CERT), identifying the smishing type (bank/financial, delivery, or e-commerce) helps determine the impersonated entity. However, existing datasets are English-centric, leaving other languages underexplored. We present a controlled benchmark to study automatic translation on multi-class smishing classification, along two complementary lines: multilingual classification and back-translation augmentation for English. We introduce MIMICS-3500-16L, comprising 3500 seven-class smishing messages translated into 15 languages, and MIMICS-56000-BT, containing 56,000 original and back-translated variants. We present four experiments: (1) evaluation of multilingual models (XLM-RoBERTa, mBERT) on 16 languages, (2) comparison of six embeddings (TweetEval, FastText, USE, SMS-Bert, SentenceBert, RoBERTa) as input for SVM, LR, RF, and XGB, (3) proposal for fusion of embeddings, and (4) evaluation of back-translated sample selection using ROUGE and METEOR. XLM-RoBERTa reaches F1-scores of 0.8619 in English ",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.3390/technologies14120787",
+"title": "Profile Poisoning and Selective-Update Bias in Online Behavioral Biometric Authentication",
+"url": "https://doi.org/10.3390/technologies14120787",
+"venue": "Technologies",
+"date": "2026-11-23",
+"authors": [
+"Madi Gali",
+"V.V. Serbin",
+"Aray M. Kassenkhan",
+"Aliya Turegeldinova",
+"Bakytzhan B. Amralinova",
+"Shyndauyl Nugumanov"
+],
+"abstract": "Behavioral continuous authentication can update a user’s profile during operation, but accepted-only adaptation links access errors to future model states. Prior biometric work established separate authentication and update thresholds and quantified erroneous impostor inclusion and genuine-update misses. We examine their coupled security and adaptation consequences in score-level mobile authentication using frozen HMOG long short-term memory scores, a synthetic feature-space shift, and an independent two-day McGill Gait protocol. Poisoning samples were separated from future impostor probes. The strongest benchmark assumed access to claimant scores and presented up to eight initially accepted samples ranked near the authentication boundary; reconnaissance and candidate screening were not counted. At the reference operating points, blind exponential moving-average (EMA) updating increased post-poison attack success rate from 22.92% to 53.96% on HMOG and from 12.37% to 32.09% on McGill. An enrollment-anchored Guarded EMA condition kept the reference-point result close to Frozen. This direction did not persist across recalibrated policies. Under the nominal-1% calibration condition, th",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.48550/arxiv.2611.27784",
+"title": "Neural Defend ARCAS 290M: A Robust Foundation Model for AI-Generated Audio Detection",
+"url": "https://doi.org/10.48550/arxiv.2611.27784",
+"venue": "arXiv",
+"date": "2026-11-20",
+"authors": [
+"Sivashankar Selvarajan",
+"Piyush Verma",
+"Sumit Kumar",
+"Sharayu N. Deshmukh"
+],
+"abstract": "Voice cloning now needs only seconds of audio, and detectors tuned to one dataset often fail when the generator, channel, or language changes. We introduce ARCAS 290M, Neural Defend's foundation model for detecting AI-generated audio. A single frozen production model, with no benchmark-specific fine-tuning, generalizes across text-to-speech, voice-conversion, and codec-language-model generators, telephone and Bluetooth channels, recording conditions, and languages. We evaluate it on the complete official test sets of ten public benchmarks, scoring every recording exactly as released, and against commercial systems on independent leaderboards. ARCAS 290M ranks first among all systems on the Podonos leaderboard and has the lowest equal error rate among commercial detectors on ASVspoof5. It separates real from AI-generated speech almost perfectly on ASVspoof5, SpeechFake, and ShiftySpeech, and detects nearly all AI-generated speech in Hindi, Tamil, Bengali, and Telugu. On every benchmark with a published zero-shot comparison, including in-the-wild audio, partial fakes, and the conditions hardest for the field, it surpasses the strongest reported detector by a wide margin. These result",
+"score": 6,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
+},
+{
+"key": "doi:10.13140/rg.2.2.36463.39840",
+"title": "Adaptive Anti-Money Laundering Risk Detection with Temporal Graph Learning and Falsification Audits",
+"url": "https://doi.org/10.13140/rg.2.2.36463.39840",
+"venue": "",
+"date": "2026-11-23",
+"authors": [
+"Manqing Wang",
+"Zhuli Yang",
+"Muchen Hu",
+"Xin Su",
+"Deshun Lin"
+],
+"abstract": "",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-24"
 }
 ]

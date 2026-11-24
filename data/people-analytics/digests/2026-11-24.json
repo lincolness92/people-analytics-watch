@@ -1,0 +1,242 @@
+{
+ "date": "2026-11-24",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-17",
+  "to": "2026-11-24"
+ },
+ "stats": {
+  "candidates": 115,
+  "triaged": 115,
+  "selected": 3,
+  "tokens": {
+   "prompt_tokens": 23499,
+   "completion_tokens": 16646,
+   "cost_usd": 0.01102,
+   "calls": 5,
+   "failures": 0
+  }
+ },
+ "headline": "IA redesenha demanda por trabalho júnior e a alocação de tarefas",
+ "trend": "O período tem um eixo claro: a IA já está mexendo na *estrutura* do trabalho, não só na produtividade. A evidência mais forte é a queda de 29% na contratação júnior de tecnologia após adoção de assistentes de código, com a demanda migrando para perfis experientes — sinal de que a escada de entrada está sendo reconstruída e que people analytics precisa acompanhar contratação por senioridade, não só headcount. Ao mesmo tempo, o experimento de alocação de tarefas mostra que decisões de redesenho não podem ser puramente técnicas: o prazer esperado de quem executa pesa nas escolhas humanas e até nos LLMs. Fechando o quadro, a adoção lenta de HR analytics e a discussão sobre organizações AI-native indicam que o gargalo segue sendo cultura, governança e redesenho de papéis — exatamente onde a área pode capturar mais valor.",
+ "items": [
+  {
+   "key": "doi:10.1007/s11186-026-09763-2",
+   "title": "Identity and academic hiring in sociology: race, gender, and scholarly merit",
+   "original_title": "Identity and academic hiring in sociology: race, gender, and scholarly merit",
+   "url": "https://doi.org/10.1007/s11186-026-09763-2",
+   "venue": "Theory and Society",
+   "date": "2026-11-23",
+   "authors": [
+    "Jukka Savolainen",
+    "Kevin J. McCaffree"
+   ],
+   "institutions": [
+    "Wayne State University",
+    "University of North Texas"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "summary": "Análise de contratações acadêmicas em sociologia cruzando raça, gênero e métricas de mérito (produtividade, prestígio institucional) para separar efeito de desempenho mensurável do efeito de identidade do candidato. O valor para people analytics é metodológico: é o desenho certo para testar se um proxy de mérito explica sozinho quem é contratado — e, quando não explica, localizar em que etapa do processo seletivo a decisão desvia. Vale replicar em contratação corporativa antes de declarar que o processo é meritocrático."
+  },
+  {
+   "key": "arxiv:2611.31083",
+   "title": "AI-Assisted Programming and Labor Demand",
+   "original_title": "AI-Assisted Programming and Labor Demand",
+   "url": "https://arxiv.org/abs/2611.31083",
+   "venue": "arXiv (econ.GN, cs.AI)",
+   "date": "2026-11-23",
+   "authors": [
+    "Lindsey Raymond",
+    "Eleanor Wiske Dillon"
+   ],
+   "institutions": [],
+   "watch_authors": [
+    "Lindsey Raymond"
+   ],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 9,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Estudo quase-experimental com 5.414 multinacionais (38% da força de programação dos EUA) usando ciclos de compra de software como experimento natural mostra que adotar o GitHub Copilot reduz a contratação técnica trimestral em **29%** após um ano, sem mexer em desligamentos, headcount total ou tempo de vaga. O corte é cirúrgico: cai justamente o subconjunto de vagas júnior com maior densidade de código, enquanto a demanda migra para profissionais experientes e papéis que combinam código com design e escopo mais amplo. Lição direta: monitore a *pipeline* de entrada por faixa de senioridade — se o funil júnior encolhe, a escassez de talento sênior chega em 3 a 5 anos."
+  },
+  {
+   "key": "arxiv:2611.31095",
+   "title": "Tradeoffs between objective outcomes and human enjoyment of work in human-AI task allocation",
+   "original_title": "Tradeoffs between objective outcomes and human enjoyment of work in human-AI task allocation",
+   "url": "https://arxiv.org/abs/2611.31095",
+   "venue": "arXiv (cs.AI, cs.HC)",
+   "date": "2026-11-23",
+   "authors": [
+    "Katherine M. Collins",
+    "Elizabeth Mieczkowski",
+    "Raja Marjieh",
+    "Marlene Berke",
+    "Joshua B. Tenenbaum",
+    "Max Kleiman-Weiner",
+    "Ilia Sucholutsky",
+    "Thomas L. Griffiths"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Em experimentos comportamentais com N=800, pessoas alocando tarefas entre humano e IA não seguem só o desempenho esperado: o modelo que melhor descreve as escolhas pondera performance objetiva com o **prazer esperado** de quem executa, dando peso maior à experiência humana quando a tarefa é desagradável e ajustando pelo risco do projeto. LLMs testados como alocadores também fogem do puramente objetivo, mas com enorme heterogeneidade entre modelos. Para quem desenha trabalho pós-IA: tarefas aversivas criadas pela automação (ex.: auditar saídas de IA) precisam entrar explicitamente nos critérios de alocação, ou a conta de engajamento não fecha."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1080/09585192.2026.2762366",
+   "title": "Adoção lenta de HR analytics",
+   "original_title": "Deciphering the slow adoption of HR analytics: a comprehensive exploration of individual, social, and technological factors",
+   "url": "https://doi.org/10.1080/09585192.2026.2762366",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-23",
+   "authors": [
+    "Susmita Ekka",
+    "Punam Singh",
+    "Priyadarshi Ranjan"
+   ],
+   "institutions": [
+    "Central University of Jammu",
+    "University of Hyderabad",
+    "National Institute of Technology Agartala"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "analytics",
+   "region": "",
+   "note": "Fatores individuais, sociais e tecnológicos explicam a lentidão, com cultura organizacional moderando o efeito sobre a intenção de adotar."
+  },
+  {
+   "key": "web:https://bsky.app/profile/emollick.bsky.social/post/3n2zw35rhxs2g",
+   "title": "Mollick sobre Anthropic",
+   "original_title": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organization &…",
+   "url": "https://bsky.app/profile/emollick.bsky.social/post/3n2zw35rhxs2g",
+   "venue": "Ethan Mollick (Bluesky)",
+   "date": "2026-11-24",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Ethan Mollick",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Valor da IA vem de mudar organização e papéis; resistência dos trabalhadores é ampla e compartilhar ganhos ajuda."
+  },
+  {
+   "key": "web:https://shows.acast.com/digital-hr-leaders-with-david-green/episodes/the-five-stages-of-becoming-an-ai-native-organisation",
+   "title": "Cinco estágios da organização AI-native",
+   "original_title": "The Five Stages of Becoming an AI-Native Organisation",
+   "url": "https://shows.acast.com/digital-hr-leaders-with-david-green/episodes/the-five-stages-of-becoming-an-ai-native-organisation",
+   "venue": "Digital HR Leaders (podcast)",
+   "date": "2026-11-24",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "David Green",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "David Green e Melissa discutem por que dar acesso à ferramenta é fácil, mas treino, suporte e governança é que mudam o trabalho."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24462327",
+   "title": "Trabalho remoto: survey com 6.000 empregadores",
+   "original_title": "WinWin4WorkLife D8.2 General EC Policy Briefs - version 2.4",
+   "url": "https://doi.org/10.5281/zenodo.24462327",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-23",
+   "authors": [
+    "Véronique Van Acker",
+    "Daniel Erdsiek",
+    "Laetitia Hauret",
+    "Giulio Giorgione",
+    "Ludivine Martin"
+   ],
+   "institutions": [
+    "Ghent University",
+    "Luxembourg Institute of Socio-Economic Research",
+    "Centre for European Economic Research"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Compatibilidade da função não basta: fatores organizacionais explicam acesso ao remoto em cinco países europeus."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2024.08073",
+   "title": "Learning from a Biased Sample",
+   "original_title": "Learning from a Biased Sample",
+   "url": "https://doi.org/10.1287/mnsc.2024.08073",
+   "venue": "Management Science",
+   "date": "2026-11-23",
+   "authors": [
+    "Roshni Sahoo",
+    "Lihua Lei",
+    "Stefan Wager"
+   ],
+   "institutions": [
+    "Columbia University",
+    "Stanford University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "analytics",
+   "region": "",
+   "note": "Método para treinar modelos de decisão quando a amostra sub ou super-representa grupos — essencial para modelos de pessoas enviesados."
+  },
+  {
+   "key": "web:https://aiinstitute.hbs.edu/four-futures-in-the-ai-economy",
+   "title": "Quatro futuros da economia da IA",
+   "original_title": "Four Futures in the AI Economy",
+   "url": "https://aiinstitute.hbs.edu/four-futures-in-the-ai-economy/",
+   "venue": "Harvard D^3",
+   "date": "2026-11-24",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Digital Data Design Institute (D^3)",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Cenários em vez de previsões: prepare a força de trabalho para múltiplos futuros plausíveis, não para um só."
+  }
+ ]
+}
