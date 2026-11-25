@@ -1,0 +1,120 @@
+{
+  "about": "Banco de perguntas de referência. Os modelos (templates) são genéricos, por persona e intenção, e valem para qualquer tema: um tema novo só precisa preencher os campos {area}, {subtema}, {tecnica}, {projeto} etc. Cada intenção traz a rubrica do que uma boa resposta precisa cobrir. 'real' são perguntas que usuários fizeram no Pergunte.",
+  "templates": {
+    "onboarding": {
+      "persona": "cientista de dados recém-chegado à equipe",
+      "text": "Estou entrando agora numa equipe de {area}. Sou cientista de dados e não conheço a área. O que está acontecendo, como a área chegou até aqui e o que eu preciso saber para trabalhar no estado da arte?",
+      "rubric": ["panorama do problema e por que importa", "evolução histórica com marcos e datas", "métodos que são o estado da arte hoje, com evidência", "problemas em aberto e limitações", "tendências", "pessoas, grupos e instituições de referência", "o que estudar primeiro (leituras, código, dados)"]
+    },
+    "sota": {
+      "persona": "especialista",
+      "text": "Qual é o estado da arte hoje em {subtema}? Que métodos funcionam melhor e com que evidência?",
+      "rubric": ["métodos atuais nomeados", "comparação com baseline e números", "dados usados (reais, públicos, sintéticos)", "limitações e onde não funciona", "papers recentes citados"]
+    },
+    "evidence": {
+      "persona": "gestor cético",
+      "text": "{tecnica} traz ganho medido de verdade? Quanto, contra qual baseline e com que dados? Tem caso de empresa usando dados próprios?",
+      "rubric": ["números de ganho medido", "baseline explícito", "natureza dos dados (próprios, produção, públicos)", "casos de empresas ou bancos", "honestidade quando a evidência é fraca ou ausente"]
+    },
+    "evolution": {
+      "persona": "especialista",
+      "text": "Como {subtema} evoluiu ao longo do tempo? Quais foram os marcos e o que mudou em cada fase?",
+      "rubric": ["fases ou eras em ordem", "marcos com ano e trabalho", "o que cada fase resolveu", "onde estamos agora"]
+    },
+    "trends": {
+      "persona": "diretor pensando na estratégia",
+      "text": "Para onde {area} está indo nos próximos 2 a 3 anos? Onde vale a pena apostar e o que está perdendo força?",
+      "rubric": ["tendências nomeadas com evidência", "sinais recentes (papers, notícias, indústria)", "o que perde força", "implicação prática para a estratégia"]
+    },
+    "who": {
+      "persona": "diretor",
+      "text": "Quem são as pessoas, grupos de pesquisa e instituições de referência em {subtema} hoje? Quem eu deveria acompanhar?",
+      "rubric": ["pesquisadores nomeados com afiliação", "grupos ou instituições", "empresas e praticantes", "por que cada um importa (trabalho de referência)"]
+    },
+    "industry": {
+      "persona": "diretor",
+      "text": "O que grandes empresas, bancos e fintechs estão fazendo em {subtema}? Tem casos concretos no Brasil e no mundo?",
+      "rubric": ["casos nomeados de empresas", "Brasil e mundo", "resultado ou escala informados", "fonte de cada caso"]
+    },
+    "code": {
+      "persona": "desenvolvedor",
+      "text": "Existe implementação de referência em código aberto para {tecnica}? Por onde eu começo a implementar?",
+      "rubric": ["repositórios nomeados com link", "a que paper cada um corresponde", "dados para testar", "passo a passo para começar"]
+    },
+    "regulation": {
+      "persona": "gestor de risco ou compliance",
+      "text": "Como a regulação (Bacen e reguladores internacionais) se relaciona com {regtema}? O que está mudando e o que isso exige de nós?",
+      "rubric": ["normas ou documentos nomeados com data", "reguladores brasileiros e internacionais", "o que muda e o que exige", "como se encaixa nas técnicas propostas"]
+    },
+    "project_fit": {
+      "persona": "gestor com uma ideia de projeto",
+      "text": "Tenho a ideia de um projeto: {projeto}. Faz sentido? Como ele se encaixa no estado da arte, quem já fez algo parecido e quais são os riscos?",
+      "rubric": ["avaliação franca da ideia", "trabalhos e casos parecidos", "o que o estado da arte sugere para o desenho", "riscos (técnicos, regulatórios, de dados)", "próximos passos"]
+    },
+    "skills": {
+      "persona": "gestor de equipe",
+      "text": "Que habilidades uma equipe precisa ter para trabalhar no estado da arte de {area}? Quais vão ficar mais importantes com as tendências?",
+      "rubric": ["habilidades técnicas específicas ligadas aos métodos atuais", "habilidades de domínio e regulatórias", "habilidades emergentes ligadas às tendências", "ligação com evidência do acervo"]
+    },
+    "training": {
+      "persona": "gestor de equipe",
+      "text": "Monte um plano de qualificação de 3 meses para assessores que vão atuar em {area}, com leituras e prática.",
+      "rubric": ["estrutura por etapas ou semanas", "leituras do acervo (papers seminais e recentes)", "prática com código ou dados", "ligação com o estado da arte e tendências"]
+    },
+    "news": {
+      "persona": "qualquer",
+      "text": "O que aconteceu de mais relevante em {area} nas últimas semanas?",
+      "rubric": ["itens recentes com data", "por que cada um importa", "fontes de pesquisa e de indústria"]
+    }
+  },
+  "topics": {
+    "fraude-bancaria": {
+      "area": "prevenção a fraude bancária",
+      "subtema": "detecção de contas laranja (mulas) e lavagem de dinheiro",
+      "tecnica": "Modelos fundacionais treinados com transações próprias do banco",
+      "regtema": "golpes no Pix e a responsabilidade dos bancos (MED, devolução, autenticação)",
+      "projeto": "um modelo em grafo para detectar contas laranja que recebem Pix de vítimas de golpe",
+      "code_tecnica": "detecção de fraude com redes neurais em grafos (GNN)",
+      "evo_subtema": "detecção de fraude em transações com cartão e pagamentos",
+      "who_subtema": "detecção de fraude com machine learning",
+      "industry_subtema": "prevenção a golpes de pagamento autorizado (engenharia social)"
+    },
+    "tecnologia-bancaria": {
+      "area": "tecnologia e IA no setor bancário",
+      "subtema": "IA generativa e agentes no atendimento e nas operações bancárias",
+      "tecnica": "Modelos fundacionais (LLMs ou modelos treinados em dados transacionais) usados por bancos",
+      "regtema": "o uso de IA em bancos (gestão de risco de modelos, explicabilidade, proteção de dados)",
+      "projeto": "um assistente de IA generativa para gerentes de relacionamento preparar reuniões com clientes",
+      "code_tecnica": "modelos de risco de crédito com machine learning",
+      "evo_subtema": "modelos de risco de crédito",
+      "who_subtema": "IA aplicada a finanças e bancos",
+      "industry_subtema": "IA generativa em bancos"
+    },
+    "people-analytics": {
+      "area": "people analytics na área de gestão de pessoas",
+      "subtema": "previsão de desligamento voluntário (turnover)",
+      "tecnica": "Algoritmos de machine learning na triagem e seleção de candidatos",
+      "regtema": "o uso de algoritmos e IA em decisões sobre pessoas (LGPD, vieses, AI Act)",
+      "projeto": "usar IA generativa para analisar as respostas abertas da pesquisa de clima",
+      "code_tecnica": "análise de redes organizacionais (ONA) com dados de colaboração",
+      "evo_subtema": "people analytics como disciplina",
+      "who_subtema": "people analytics",
+      "industry_subtema": "people analytics e IA em RH"
+    }
+  },
+  "slot_map": {
+    "code": {"tecnica": "code_tecnica"},
+    "evolution": {"subtema": "evo_subtema"},
+    "who": {"subtema": "who_subtema"},
+    "industry": {"subtema": "industry_subtema"}
+  },
+  "real": [
+    {"topic": "fraude-bancaria", "text": "O que os papers dizem sobre golpes e engenharia social, e quais são as limitações?"},
+    {"topic": "fraude-bancaria", "text": "Qual técnica é o SOTA para detecção de fraudes em transações?"},
+    {"topic": "fraude-bancaria", "text": "Como lidar com a alta taxa de subnotificação em problemas de fraude, considerando que não há uma tabela verdade relevante?"},
+    {"topic": "fraude-bancaria", "text": "Tem alguma referência sobre técnicas autosupervisionadas, como arquiteturas Transformer?"},
+    {"topic": "tecnologia-bancaria", "text": "Me fale mais sobre o caso do inter reduzir a inadimplência"},
+    {"topic": "tecnologia-bancaria", "text": "Em relação ao ganho da utilização de Modelos Fundacionais, oque as pesquisas apontam?"},
+    {"topic": "people-analytics", "text": "O que os papers dizem sobre recrutamento & seleção, e quais são as limitações?"}
+  ]
+}

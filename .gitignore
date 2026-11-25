@@ -8,3 +8,7 @@ topics/*/.draft.json
 node_modules/
 wrangler.toml
 .dev.vars
+
+# eval runs: raw runs (with source blocks) stay local; the judged summaries are kept
+evals/runs/*.json
+!evals/runs/*.judged.json

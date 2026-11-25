@@ -135,3 +135,30 @@ test("LLM client: routes ranked by published prices, cheapest first, next on fai
   assert.ok(!seen.some(([m]) => m.endsWith(":tiny4")));
   L._resetPriceBook();
 });
+
+test("LLM client: a cut-off answer (finish_reason length) is a failed route; the next one is tried", async () => {
+  const L = await import("../../server/llm.js");
+  L._resetPriceBook();
+  const models = { data: [{ id: "x/M", providers: [{ provider: "a", status: "live", pricing: { input: 0.1, output: 0.4 } },
+    { provider: "b", status: "live", pricing: { input: 0.2, output: 0.8 } }] }] };
+  const seen = [];
+  const llm = L.makeLLM({ HF_TOKEN: "h", PAW_MODEL: "x/M" }, async (url, init = {}) => {
+    if (url.endsWith("/v1/models")) return new Response(JSON.stringify(models));
+    const m = JSON.parse(init.body).model;
+    seen.push(m);
+    const cut = m === "x/M:a";
+    return new Response(JSON.stringify({ choices: [{ message: { content: cut ? "Resposta pela met" : "Resposta inteira." }, finish_reason: cut ? "length" : "stop" }],
+      usage: { prompt_tokens: 5, completion_tokens: 5, cost: 0.00001 } }));
+  });
+  const r = await llm([{ role: "user", content: "oi" }], 100);
+  assert.deepEqual(seen, ["x/M:a", "x/M:b"]);
+  assert.equal(r.text, "Resposta inteira.");
+  assert.match(r.attempts[0].error, /cortada/);
+  L._resetPriceBook();
+  // every route cut: the longest partial text comes back, flagged
+  const llm2 = L.makeLLM({ HF_TOKEN: "h", PAW_MODEL: "x/M" }, async (url) => url.endsWith("/v1/models") ? new Response(JSON.stringify(models))
+    : new Response(JSON.stringify({ choices: [{ message: { content: "parcial" }, finish_reason: "length" }] })));
+  const r2 = await llm2([{ role: "user", content: "oi" }], 100);
+  assert.equal(r2.truncated, true);
+  L._resetPriceBook();
+});

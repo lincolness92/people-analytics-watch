@@ -140,7 +140,7 @@ export function rankRoutes(book, model, estIn, estOut, env = {}, when = new Date
  * Returns llm(messages, maxTokens, opts) -> {text, model (the route), usage, cost, attempts}, cheapest route first.
  * `env`: HF_TOKEN and/or DEEPSEEK_API_KEY; optional PAW_MODEL, PAW_ALLOW_4BIT.
  * opts.reasoning = "none" turns off the models' hidden reasoning (~1 s instead of 4–17 s); opts.expectOut is the
- * expected output length for the price comparison (default min(maxTokens, 1200)).
+ * expected output length for the price comparison (default min(maxTokens, 1200)); opts.timeoutMs bounds each attempt.
  */
 export function makeLLM(env, fetchImpl = fetch) {
   const models = modelList(env);
@@ -154,7 +154,7 @@ export function makeLLM(env, fetchImpl = fetch) {
       plan.push(...rankRoutes(book, m, estIn, estOut, env).slice(0, MAX_ROUTES).map((r) => r.route));
       if (env.HF_TOKEN && !book.hf[m]) plan.push(m); // no HF price list: the router chooses the provider
     }
-    let last;
+    let last, partial = null;
     const attempts = [];
     for (const route of plan) {
       const t0 = Date.now();
@@ -164,25 +164,31 @@ export function makeLLM(env, fetchImpl = fetch) {
       try {
         const r = await fetchImpl(direct ? DEEPSEEK : ROUTER, {
           method: "POST",
-          signal: AbortSignal.timeout(maxTokens <= 500 ? 20000 : 90000),
+          signal: AbortSignal.timeout(opts.timeoutMs || (maxTokens <= 500 ? 20000 : 90000)),
           headers: { Authorization: `Bearer ${direct ? env.DEEPSEEK_API_KEY : env.HF_TOKEN}`, "Content-Type": "application/json" },
           body: JSON.stringify({ model: apiModel, messages, max_tokens: maxTokens, temperature: 0.3,
             ...(opts.reasoning ? { reasoning_effort: opts.reasoning } : {}) }),
         });
         const out = await r.json();
         const text = (out.choices?.[0]?.message?.content || "").replace(/<think>[\s\S]*?<\/think>/g, "").trim();
-        if (r.ok && text) {
-          const usage = out.usage || null;
-          const cost = usage ? (direct ? deepseekCost(apiModel, usage, new Date(), book.dsPrices, book.peak) : Number(usage.cost || 0)) : 0;
+        const usage = out.usage || null;
+        const cost = usage ? (direct ? deepseekCost(apiModel, usage, new Date(), book.dsPrices, book.peak) : Number(usage.cost || 0)) : 0;
+        // finish_reason "length": the token budget ran out (often spent on hidden reasoning) and the text is cut
+        // mid-sentence. That is a failed attempt: try the next route, keep the text only as a last resort.
+        const cut = out.choices?.[0]?.finish_reason === "length";
+        if (r.ok && text && !cut) {
           attempts.push({ model: route, ok: true, ms: Date.now() - t0, cost });
           return { text, model: route, usage, cost, attempts };
         }
-        last = out.error?.message || out.error || (r.ok ? "resposta vazia" : `HTTP ${r.status}`);
+        if (r.ok && text && cut && (!partial || text.length > partial.text.length)) partial = { text, model: route, usage, cost };
+        last = out.error?.message || out.error || (!r.ok ? `HTTP ${r.status}` : cut ? "resposta cortada (limite de tokens)" : "resposta vazia");
+        if (r.ok) { attempts.push({ model: route, ok: false, ms: Date.now() - t0, cost, error: last }); continue; }
       } catch (e) {
         last = e.message;
       }
       attempts.push({ model: route, ok: false, ms: Date.now() - t0, error: String(last).slice(0, 200) });
     }
+    if (partial) return { ...partial, truncated: true, attempts };
     const err = new Error(`LLM indisponível (${String(last).slice(0, 120)})`);
     err.attempts = attempts;
     throw err;

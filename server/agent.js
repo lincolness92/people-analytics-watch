@@ -41,6 +41,7 @@ const FULLTEXT_CHUNKS = 6;   // passages added to the sources
 const OTHER_WEIGHT = 0.85;   // other topics' hits compete on score with the home topic's, slightly discounted
 const MAX_OTHER = 8;         // at most this many sources from other topics
 const MAX_HITS = 20;
+export const ANSWER_TOKENS = 8000;
 
 export const NOT_FOUND = "Não encontrei nada no arquivo deste tema sobre isso. Tente outras palavras, ou um assunto mais próximo dos temas cobertos.";
 
@@ -172,6 +173,8 @@ async function askInner({ archive, question, history, llm, papers, others, trace
   const messages = [{ role: "system", content: answerSystem(name, archive.data.topic?.focus) }];
   for (const h of history) messages.push({ role: "user", content: h.q }, { role: "assistant", content: h.a });
   messages.push({ role: "user", content: `Fontes:\n\n${block}\n\nPergunta: ${question}` });
-  const { text: answer, model } = await tracedLLM(tracer, root, "answer", llm, messages, 2500, {});
+  // ANSWER_TOKENS leaves room for the hidden reasoning some providers turn on by default; "low" makes every
+  // provider reason the same small amount (a cut-off answer counts as a failed route, see server/llm.js).
+  const { text: answer, model } = await tracedLLM(tracer, root, "answer", llm, messages, ANSWER_TOKENS, { reasoning: "low", expectOut: 1500 });
   return { answer, model, terms: terms.map((t) => t.text), sources: sources.map((s, i) => ({ n: i + 1, kind: s.kind, title: s.title, url: s.url, when: s.when })) };
 }

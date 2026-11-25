@@ -294,7 +294,13 @@ class LLM:
                     if resp.get("error"):
                         raise RuntimeError(str(resp["error"])[:300])
                     usage = resp.get("usage") or {}
-                    out = parse(resp["choices"][0]["message"].get("content"))
+                    choice = resp["choices"][0]
+                    try:
+                        out = parse(choice["message"].get("content"))
+                    except (ValueError, json.JSONDecodeError) as e:
+                        if choice.get("finish_reason") == "length":  # budget spent (often on hidden reasoning): cut output
+                            raise ValueError(f"saída cortada pelo limite de {max_tokens} tokens") from e
+                        raise
                     self._account(route, usage, True)
                     self.used_model = route
                     return out
