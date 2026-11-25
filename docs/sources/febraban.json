@@ -7,6 +7,14 @@
       "tecnologia-bancaria",
       "fraude-bancaria"
     ],
+    "subjects": [
+      "tecnologia",
+      "IA",
+      "cibersegurança",
+      "pagamentos",
+      "dados setoriais",
+      "canais digitais"
+    ],
     "description": "Pesquisa anual com os principais bancos: orçamento e investimento em TI (total, IA/analytics/big data, cloud, cibersegurança), transações por canal (mobile, internet, Pix, agências) e prioridades tecnológicas. Referência brasileira para gasto dos bancos com tecnologia.",
     "publisher": "FEBRABAN",
     "partners": [
@@ -28,6 +36,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff da listagem (links cmsarquivos) + JSON paginas/getitems?idSecao=1117 (DT_INIC_VIGE) + releases JSON (selectedText='Pesquisa FEBRABAN de Tecnologia') → download do PDF novo + pdftotext",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "alta",
       "fraude-bancaria": "média"
     }
@@ -39,6 +48,14 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "tecnologia",
+      "IA",
+      "inovação",
+      "cibersegurança",
+      "ativos digitais",
+      "computação quântica"
     ],
     "description": "Estudo anual de tendências tecnológicas para bancos (IA generativa e agentes, banco conversacional, comércio agêntico, computação quântica/PQC, ativos digitais e tokenização, segurança digital), com radar de maturidade × impacto, teses e cases.",
     "publisher": "FEBRABAN",
@@ -63,6 +80,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff das duas páginas + JSON paginas/getitems?idSecao=52 (DT_INIC_VIGE do item 3353) → PDF + texto",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "alta",
       "fraude-bancaria": "média"
     }
@@ -74,6 +92,13 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "tecnologia",
+      "IA",
+      "inovação",
+      "cibersegurança",
+      "ativos digitais"
     ],
     "description": "Radar de tecnologia interativo: 35 tecnologias em 5 domínios (IA & Dados, Segurança Digital, Arquiteturas Computacionais, Convergência Ciberfísica, DLT & Criptoativos) × 3 maturidades (Conceitual, Emergente, Em escala), impacto 1–5 e status 2026; 6 teses, 287 cases, 368 fontes, glossário, metodologia e edições 2024–2026.",
     "publisher": "FEBRABAN",
@@ -96,6 +121,7 @@
     "robots_notes": "tecemergentes: sem robots.txt (404), sem sitemap (404)",
     "ingestion_suggestion": "HEAD semanal (Last-Modified/ETag); se mudou, 1 GET e parsing do HTML (cards de tecnologia/tese/case); não indexar base64",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "alta",
       "fraude-bancaria": "média"
     }
@@ -107,6 +133,12 @@
     "topics": [
       "fraude-bancaria",
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "cibersegurança",
+      "fraude",
+      "IA",
+      "tecnologia"
     ],
     "description": "Estudos do CyberLab FEBRABAN (criado em set/2020): Estudo Exploratório em Inteligência Cibernética (compartilhamento e colaboração), Guia de Boas Práticas de Segurança da Informação 2026, Estudo de Ameaças Cibernéticas (2024), Relatório Criptografia Quântica (2023), Segurança em IA Generativa (deepfake, clonagem de voz).",
     "publisher": "FEBRABAN",
@@ -127,6 +159,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff quinzenal da página do Lab → PDF + texto",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "alta"
     }
@@ -137,6 +170,9 @@
     "kind": "programa-restrito",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "cibersegurança"
     ],
     "description": "Relatórios, workshops, simulações (CTF, wargame, crise cibernética) e EAD do Laboratório, distribuídos por e-mail/plataforma a associados.",
     "publisher": "FEBRABAN",
@@ -153,6 +189,7 @@
     "robots_notes": "conteudo.febraban.org.br: robots permite tudo; conteúdo atrás de cadastro",
     "ingestion_suggestion": "não consumir (restrito)",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -164,6 +201,14 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "opinião pública",
+      "consumidor",
+      "IA",
+      "educação financeira",
+      "ESG",
+      "inclusão financeira"
     ],
     "description": "Pesquisa de opinião pública com temas variáveis; edições relevantes: segurança de dados (jul/2021), inclusão digital de idosos (set/2022), percepção dos brasileiros sobre IA (jun/2026).",
     "publisher": "FEBRABAN",
@@ -186,6 +231,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff mensal → PDF + texto; release correspondente via JSON de notícias",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "média"
     }
@@ -196,6 +242,13 @@
     "kind": "pesquisa-opiniao",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "opinião pública",
+      "economia",
+      "consumidor",
+      "pagamentos",
+      "fraude"
     ],
     "description": "Não é radar de tecnologia: pesquisa trimestral de expectativas dos brasileiros sobre economia, consumo, bancos, Pix, proteção de dados, golpes e meios de informação (nacional e regional).",
     "publisher": "FEBRABAN",
@@ -218,6 +271,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff mensal; possivelmente descontinuado",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -228,6 +282,12 @@
     "kind": "relatorio",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "consumidor",
+      "ouvidoria",
+      "fraude",
+      "dados setoriais"
     ],
     "description": "Indicadores setoriais de reclamações e canais de relacionamento (Comitê de Ouvidoria). Edição 2025 com foco em integridade digital e fraudes.",
     "publisher": "FEBRABAN",
@@ -250,6 +310,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "page diff mensal → PDF + texto",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "média"
     }
@@ -261,6 +322,17 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "institucional",
+      "economia",
+      "crédito",
+      "regulação",
+      "tecnologia",
+      "fraude",
+      "ESG",
+      "consumidor",
+      "pessoas e trabalho"
     ],
     "description": "~1.000 releases (2017→hoje): pesquisas, Febraban Tech, alertas de golpes, campanhas antifraude, parcerias (MJSP, SSP-SP, FGC), estatísticas próprias (cheques). Releases costumam linkar os PDFs novos.",
     "publisher": "FEBRABAN",
@@ -281,6 +353,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; /Noticias/GetItems não é bloqueado (diferente de /Busca/)",
     "ingestion_suggestion": "JSON diário (página 1) com filtro regex; substituir a fonte atual pagina/3271/50 (que redireciona para a home)",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "alta"
     }
@@ -292,6 +365,10 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "institucional",
+      "índice de publicações"
     ],
     "description": "Índice geral das publicações do portal (tecnologias emergentes, Observatório, Radar, Ouvidorias, guias, autorregulação, BETs...). O campo DT_INIC_VIGE muda quando a página é editada, o que serve de sinal de atualização.",
     "publisher": "FEBRABAN",
@@ -308,6 +385,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS",
     "ingestion_suggestion": "JSON semanal; disparar page diff das páginas cujo DT_INIC_VIGE mudou",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "média"
     }
@@ -319,6 +397,15 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "tecnologia",
+      "IA",
+      "cibersegurança",
+      "fraude",
+      "pagamentos",
+      "regulação",
+      "eventos"
     ],
     "description": "Conteúdo editorial diário sobre IA, segurança/fraude, pagamentos, futurismo, regulação; colunas de especialistas; cobertura dos eventos Febraban Tech, Febraban SEC, PLDFT e G-Risc.",
     "publisher": "FEBRABAN",
@@ -339,6 +426,7 @@
     "robots_notes": "febrabantech.febraban.org.br: Disallow /pesquisa?query=*; sitemap.xml 502; sitemapnews.xml ok (rolante, com news:keywords); bundle JS respondeu 500 ao UA do projeto",
     "ingestion_suggestion": "sitemap news diário; filtrar por news:keywords/título; pegar og:description",
     "priority": {
+      "geral": "alta",
       "tecnologia-bancaria": "alta",
       "fraude-bancaria": "alta"
     }
@@ -350,6 +438,13 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "tecnologia",
+      "IA",
+      "eventos",
+      "pagamentos",
+      "fintech"
     ],
     "description": "Site da edição corrente: agenda, trilhas, palestrantes, expositores, notícias de cobertura (89 em 2026) e vídeos (159 páginas). Inclui a competição de startups Arena Fintech (vencedoras 2026: Fintalk e Carbigdata). Sem PDFs de apresentações localizados.",
     "publisher": "FEBRABAN",
@@ -370,6 +465,7 @@
     "robots_notes": "febrabantech.com: Allow /; sitemap sem lastmod, servido de API Gateway 'hmg' (pode ser instável)",
     "ingestion_suggestion": "diff semanal do sitemap (URLs /noticias/); diária em jul–set",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "média"
     }
@@ -381,6 +477,15 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "institucional",
+      "tecnologia",
+      "fraude",
+      "ESG",
+      "educação financeira",
+      "economia",
+      "pessoas e trabalho"
     ],
     "description": "358 episódios; temporada 2026 forte em IA, fraude, cibercrime, lavagem, Open Finance, quântica e data centers; inclui 'Dicas Meu Bolso em Dia'.",
     "publisher": "FEBRABAN",
@@ -401,6 +506,7 @@
     "robots_notes": "feed público",
     "ingestion_suggestion": "RSS diário com filtro de título",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "média"
     }
@@ -411,6 +517,11 @@
     "kind": "video",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "economia",
+      "fraude",
+      "consumidor"
     ],
     "description": "Vídeos curtos (ISEB, golpes, segurança) indexados no portal; apontam para o YouTube institucional.",
     "publisher": "FEBRABAN",
@@ -431,6 +542,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS",
     "ingestion_suggestion": "desnecessário: coberto pelo RSS do YouTube institucional",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -441,6 +553,9 @@
     "kind": "podcast",
     "topics": [
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "tecnologia"
     ],
     "description": "Podcast da antiga plataforma noomis (blockchain, IA, open banking, fintechs). Parado.",
     "publisher": "FEBRABAN",
@@ -461,6 +576,7 @@
     "robots_notes": "declarado no robots de febrabantech.febraban.org.br",
     "ingestion_suggestion": "não consumir (inativo; 160 episódios históricos)",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -472,6 +588,14 @@
     "topics": [
       "tecnologia-bancaria",
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "institucional",
+      "eventos",
+      "tecnologia",
+      "fraude",
+      "economia",
+      "ESG"
     ],
     "description": "Canal institucional; publica conteúdo do Febraban Tech, Febraban SEC, estudos (ex.: Estudo de Tecnologias Emergentes 2026 em 24/11/2026) e alertas de golpes. Já monitorado, mas rotulado como 'Febraban Tech (YouTube)'.",
     "publisher": "FEBRABAN",
@@ -492,6 +616,7 @@
     "robots_notes": "feed RSS do YouTube",
     "ingestion_suggestion": "já monitorado; só corrigir o nome",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "média",
       "fraude-bancaria": "média"
     }
@@ -502,6 +627,10 @@
     "kind": "video",
     "topics": [
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "tecnologia",
+      "eventos"
     ],
     "description": "Canal específico do Febraban Tech; inativo.",
     "publisher": "FEBRABAN",
@@ -522,6 +651,7 @@
     "robots_notes": null,
     "ingestion_suggestion": "não consumir (sem vídeos desde jan/2024)",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -532,6 +662,10 @@
     "kind": "conteudo-consumidor",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "consumidor"
     ],
     "description": "15 fichas de golpes para o consumidor (falsa central, falso advogado, Pix errado, mão fantasma, falso boleto, falso investimento...) e links de segurança dos bancos. Útil como taxonomia.",
     "publisher": "FEBRABAN",
@@ -552,6 +686,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS",
     "ingestion_suggestion": "JSON semanal (diff por IdAntifraude/DataPublicacao)",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "média"
     }
@@ -562,6 +697,10 @@
     "kind": "iniciativa",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "autorregulação"
     ],
     "description": "Selo setorial que reconhece instituições com padrões de prevenção, detecção e combate a fraudes; lançado por CNF (hoje Fin) e Febraban em 22/10/2024; inscrições até 15/06/2026.",
     "publisher": "FEBRABAN",
@@ -580,6 +719,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; fin.org.br permite tudo",
     "ingestion_suggestion": "manual / page diff trimestral; notícias chegam por releases e RSS da Fin",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "média"
     }
@@ -590,6 +730,11 @@
     "kind": "iniciativa",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "cibersegurança",
+      "políticas públicas"
     ],
     "description": "Acordo MJSP–FEBRABAN com mais de 20 ações em 60 meses (prevenção, compartilhamento de dados, capacitação, atendimento às vítimas). Plano detalhado em PDF no gov.br.",
     "publisher": "FEBRABAN e Ministério da Justiça e Segurança Pública",
@@ -606,6 +751,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS",
     "ingestion_suggestion": "manual; acompanhar via releases",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "média"
     }
@@ -616,6 +762,10 @@
     "kind": "conteudo-consumidor",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "consumidor"
     ],
     "description": "Orientações sobre o app Celular Seguro (MJSP + Febraban + Anatel) e passos após roubo de celular.",
     "publisher": "FEBRABAN",
@@ -632,6 +782,7 @@
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS",
     "ingestion_suggestion": "manual",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -642,6 +793,13 @@
     "kind": "noticias",
     "topics": [
       "fraude-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "pagamentos",
+      "regulação",
+      "tributação",
+      "educação financeira"
     ],
     "description": "Entidade irmã da FEBRABAN; notícias sobre antifraude (Global Anti-Scam Alliance, fórum no STJ), Pix, Selo de Prevenção a Fraudes, regulação.",
     "publisher": "Fin",
@@ -662,6 +820,7 @@
     "robots_notes": "fin.org.br: permite tudo; sitemap_index.xml",
     "ingestion_suggestion": "RSS diário com filtro (fraude|golpe|scam|Pix)",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "média"
     }
@@ -673,6 +832,11 @@
     "topics": [
       "fraude-bancaria",
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "educação corporativa",
+      "pessoas e trabalho",
+      "certificação"
     ],
     "description": "Catálogo de cursos e certificações (inclui Prevenção a Fraudes, PLD, IA, ativos virtuais), Summits (ex.: Summit Cyber Segurança). Pesquisa de Aprendizagem Corporativa com a Deloitte atrás de formulário.",
     "publisher": "FEBRABAN",
@@ -691,18 +855,23 @@
     "robots_notes": "febrabaneducacao.com.br: permite tudo exceto carrinho/pagamento; /feed/ não é RSS",
     "ingestion_suggestion": "manual",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
   },
   {
     "id": "febraban-economia-series",
-    "name": "Séries de economia bancária (Expectativas, ISEB, Panorama de Crédito, Pesquisa Especial de Crédito)",
-    "kind": "dados",
+    "name": "Séries de economia bancária e crédito (agrupador)",
+    "kind": "agrupador",
     "topics": [
       "tecnologia-bancaria"
     ],
-    "description": "Boletins e pesquisas de crédito, juros e expectativas. Fora do escopo dos dois temas; listados para completude.",
+    "subjects": [
+      "economia",
+      "crédito"
+    ],
+    "description": "Agrupador mantido por compatibilidade; as séries estão detalhadas nos itens febraban-pesquisa-expectativas, febraban-iseb, febraban-panorama-credito, febraban-pesquisa-especial-credito, febraban-estudo-spread e febraban-estudos-economia.",
     "publisher": "FEBRABAN",
     "partners": [],
     "format": "PDF",
@@ -719,8 +888,9 @@
     "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/ISEB_DDmmmAA.pdf; Expectativas: /pagina/3235/1120/pt-br/expectativas; Panorama: /pagina/3130/26/pt-br/panorama; Especial: /pagina/3290/21/pt-br/especial",
     "access": "público",
     "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params (utm, gclid, ?s=, ?ref=...); sitemap.xml estático e defasado (até noticia 4280); sem RSS; cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
-    "ingestion_suggestion": "não consumir por ora",
+    "ingestion_suggestion": "ver itens específicos",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -732,25 +902,31 @@
     "topics": [
       "fraude-bancaria"
     ],
-    "description": "Atividades do Sistema de Autorregulação Bancária (normativos, consumidor, BC). 8ª edição = 2024.",
+    "subjects": [
+      "autorregulação",
+      "consumidor",
+      "crédito"
+    ],
+    "description": "Atividades do Sistema de Autorregulação Bancária (SARB), da autorregulação do consignado e da portabilidade: normativos, sanções, diálogo com Procons e BC. Atenção: o link do topo da listagem 3374 (Autorregulacao/relatorio-anual/Autorregulacao2024_2.pdf) dá 404; os PDFs válidos estão na raiz /PDF/.",
     "publisher": "FEBRABAN",
     "partners": [],
     "format": "PDF",
     "language": "pt-BR",
     "periodicity": "anual",
-    "first_edition": null,
+    "first_edition": "2017",
     "latest_edition": {
-      "title": "Relatório Anual da Autorregulação Bancária 2024",
+      "title": "Relatório Anual da Autorregulação Bancária 2024 (8ª edição)",
       "date": "2025-04-03",
-      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao/relatorio-anual/Autorregulacao2024_2.pdf"
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao2025-V2_Completo.pdf"
     },
     "listing_url": "https://portal.febraban.org.br/pagina/3374/16/pt-br/Relat%C3%B3rio%20Anual",
     "feed_url": null,
-    "file_url_pattern": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao/relatorio-anual/<nome livre>.pdf (2017–2022); 2023: https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao2024_2.pdf; 2024: https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao2025-V2_Completo.pdf (página de publicação https://portal.febraban.org.br/pagina/3396/52/pt-br/relatorio-autorregulacao-2024)",
     "access": "público",
     "robots_notes": "www.autorregulacaobancaria.com.br: Disallow: / (não automatizar lá); usar o portal",
     "ingestion_suggestion": "manual / page diff anual no portal",
     "priority": {
+      "geral": "média",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -761,6 +937,9 @@
     "kind": "relatorio",
     "topics": [
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "institucional"
     ],
     "description": "Relatório institucional; o último localizado é o de 2020. A URL antiga /paginas/19/.../relatorio-anual agora mostra o Relatório de Transparência Salarial.",
     "publisher": "FEBRABAN",
@@ -781,6 +960,7 @@
     "robots_notes": "cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "não consumir",
     "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }
@@ -791,6 +971,10 @@
     "kind": "newsletter",
     "topics": [
       "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "regulação",
+      "regulação prudencial"
     ],
     "description": "Boletim de regulação prudencial (Basileia etc.) da DIRPRAE. Menu do portal é '#'; página irm-2022 redireciona para a home; PDFs antigos (2017–2021) seguem no cmsarquivos.",
     "publisher": "FEBRABAN",
@@ -811,6 +995,1636 @@
     "robots_notes": "cmsarquivos: sem robots.txt (404); raiz 403; PDFs públicos",
     "ingestion_suggestion": "não consumir (fora do escopo; sem listagem pública)",
     "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-pesquisa-expectativas",
+    "name": "Pesquisa FEBRABAN de Economia Bancária e Expectativas",
+    "kind": "pesquisa",
+    "topics": [],
+    "subjects": [
+      "economia",
+      "crédito",
+      "juros",
+      "inadimplência",
+      "política monetária"
+    ],
+    "description": "Pesquisa com bancos sobre projeções de crédito (total, livre, direcionado, PF/PJ), inadimplência, Selic, câmbio e leitura da ata do Copom.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "aprox. a cada reunião do Copom (8–10 por ano)",
+    "first_edition": "2023-02 (primeira listada)",
+    "latest_edition": {
+      "title": "Pesquisa de Economia Bancária e Expectativa - Novembro de 2026",
+      "date": "2026-11-18",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Pesquisa%20FEBRABAN%20de%20Economia%20Banc%C3%A1ria%20e%20Expectativas%20-%20Novembro%20de%202026_vImprensa.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3235/1120/pt-br/expectativas",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Pesquisa FEBRABAN de Economia Bancária e Expectativas - {Mês} de {AAAA}_{vImprensa|v_imprensa|imprensa}.pdf (31 edições)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff + release (JSON de notícias, termos 'Selic', 'Pesquisa'); PDF + texto",
+    "priority": {
+      "geral": "alta",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-iseb",
+    "name": "ISEB – Informativo Semanal de Economia Bancária",
+    "kind": "boletim",
+    "topics": [],
+    "subjects": [
+      "economia",
+      "crédito",
+      "conjuntura"
+    ],
+    "description": "Boletim semanal da área de economia (crédito, juros, inflação, mercado), com vídeo semanal no YouTube.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "semanal (segundas)",
+    "first_edition": "2024-01-08 (primeira página anual no portal; há PDFs 2023 avulsos)",
+    "latest_edition": {
+      "title": "ISEB - 23 de novembro de 2026",
+      "date": "2026-11-23",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/ISEB_23nov26.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3413/1121/pt-br/iseb-2026",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/ISEB_{DD}{mmm}{AA}.pdf com variações ('ISEB_23 dez24.pdf', 'ISEB_15 jan.pdf'); uma página por ano: 3337=2024, 3364=2025, 3413=2026 (seção 1121)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff semanal da página do ano corrente; criar a página do novo ano em janeiro (descobrir via JSON paginas/getitems?idSecao=1121)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-panorama-credito",
+    "name": "Panorama do Mercado de Crédito",
+    "kind": "boletim",
+    "topics": [],
+    "subjects": [
+      "crédito",
+      "inadimplência",
+      "spread",
+      "dados setoriais"
+    ],
+    "description": "Resumo mensal da evolução do crédito, inadimplência e spread a partir das notas do Banco Central.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "mensal",
+    "first_edition": "2016-01",
+    "latest_edition": {
+      "title": "Panorama de Crédito - Setembro de 2026",
+      "date": "2026-10",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Panorama%20de%20Cr%C3%A9dito_set26.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3130/26/pt-br/panorama",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Panorama de Crédito_{mmmAA}.pdf | 'Panorama de Crédito - {Mmm}{AA}.pdf' (95 edições)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal; PDF + texto",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-pesquisa-especial-credito",
+    "name": "Pesquisa Especial de Crédito",
+    "kind": "pesquisa",
+    "topics": [],
+    "subjects": [
+      "crédito",
+      "dados setoriais"
+    ],
+    "description": "Prévia mensal da carteira de crédito com dados dos bancos (gera os releases 'Carteira de crédito deve crescer x%').",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "mensal",
+    "first_edition": "2024-01",
+    "latest_edition": {
+      "title": "Pesquisa Especial de Crédito - Outubro de 2026",
+      "date": "2026-11",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Pesquisa%20Especial%20Cr%C3%A9dito_outubro_26%20-%20vers%C3%A3o%20imprensa.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3290/21/pt-br/especial",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Pesquisa Especial Crédito_{mês}_{AA} - versão imprensa.pdf (padrão estável; 34 edições)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal ou adivinhar a URL do mês (padrão estável); release correspondente",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-estudo-spread",
+    "name": "Estudo do Spread Bancário",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "crédito",
+      "spread",
+      "juros",
+      "regulação"
+    ],
+    "description": "Decomposição do spread bancário no Brasil (inadimplência, tributos, custos administrativos, margem).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular (~bienal)",
+    "first_edition": "2017 (estudo inédito, release 3133)",
+    "latest_edition": {
+      "title": "Estudo do Spread 2025",
+      "date": "2025-10-22",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Composi%C3%A7%C3%A3o%20Spread_Site.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3252/26/pt-br/estudos-spread-bancario",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/<nome livre>.pdf ('Febraban_2023_Estudo_do_Spread.pdf', 'Composição Spread_Site.pdf' — o nome da edição 2025 não tem ano, pode ser sobrescrito)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral + HEAD do PDF (Last-Modified), pois o nome pode ser reutilizado",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-estudos-economia",
+    "name": "Estudos Febraban de Economia (avulsos)",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "economia",
+      "crédito",
+      "pagamentos",
+      "endividamento"
+    ],
+    "description": "Estudos pontuais da DIRPRAE: comparativo de taxas de adquirentes independentes vs. vinculadas a bancos, crédito a MPEs na pandemia, endividamento e inadimplência das famílias.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Comparativo Taxas Adquirentes Independentes versus Vinculadas a Bancos",
+      "date": null,
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Comparativo%20Taxas%20Adquirentes%20Independentes%20versus%20Vinculadas%20a%20Bancos.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3141/26/pt-br/apresentacoes-setor-bancario",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-premio-anpec",
+    "name": "Prêmio ANPEC-FEBRABAN de Economia Bancária",
+    "kind": "premio",
+    "topics": [],
+    "subjects": [
+      "economia",
+      "pesquisa acadêmica",
+      "regulação prudencial",
+      "crédito"
+    ],
+    "description": "Prêmio acadêmico criado em 2009 (18ª edição em 2026); a página publica os trabalhos vencedores em PDF.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "ANPEC"
+    ],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "anual",
+    "first_edition": "2009",
+    "latest_edition": {
+      "title": "Prêmio 2026 — trabalhos vencedores (ex.: 'Limiares de entrada e de saída'; 'Sovereign Risk Weights, Bank Capital Floors')",
+      "date": "2026-10-27",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Yuri%20-%20Limiares%20de%20entrada%20e%20de%20sa%C3%ADda.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3348/1123/pt-br/premio-economia-2026",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/{Primeiro nome do autor} - {título}.pdf; slug da página muda por ano (premio-economia-{AAAA}, mesmo id 3348)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff anual (out–nov)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-livro-juros-baixos",
+    "name": "Como fazer os juros serem mais baixos no Brasil (livro-posicionamento)",
+    "kind": "posicionamento",
+    "topics": [],
+    "subjects": [
+      "crédito",
+      "juros",
+      "regulação",
+      "posicionamento"
+    ],
+    "description": "Livro da FEBRABAN com a agenda do setor para reformar o ambiente de crédito (2ª edição).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Juros Mais Baixos 2",
+      "date": "2023-04-18 (upload)",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Juros%20Mais%20Baixos%202.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3257/52/pt-br/juros-baixos-brasil",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual (referência)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-notas-posicionamentos",
+    "name": "Notas, notas conjuntas e posicionamentos",
+    "kind": "posicionamento",
+    "topics": [
+      "tecnologia-bancaria",
+      "fraude-bancaria"
+    ],
+    "subjects": [
+      "regulação",
+      "posicionamento",
+      "banco central",
+      "política pública"
+    ],
+    "description": "Posições públicas da FEBRABAN: notas conjuntas com outras entidades (autonomia do BC, reporte de sustentabilidade), notas à imprensa, respostas (ex.: 'Resposta da Febraban às postagens de David Vélez', PDF de dez/2025). Saem como releases e, às vezes, como página em Publicações.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "HTML (release) + PDF ocasional",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Nota conjunta em apoio à competência legal e técnica do Banco Central",
+      "date": "2026-06-09",
+      "url": "https://portal.febraban.org.br/noticia/4463/pt-br/"
+    },
+    "listing_url": "https://portal.febraban.org.br/Noticias",
+    "feed_url": "https://portal.febraban.org.br/Noticias/GetItems?page=1&selectedData=&selectedText=Nota",
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "JSON de notícias com filtro de título ('Nota', 'Nota Conjunta', 'Resposta', 'defende', 'posição')",
+    "priority": {
+      "geral": "alta",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-autorregulacao-normativos",
+    "name": "Autorregulação Bancária (SARB) — Código, normativos e recomendações",
+    "kind": "normativo",
+    "topics": [],
+    "subjects": [
+      "autorregulação",
+      "consumidor",
+      "regulação",
+      "conduta"
+    ],
+    "description": "Código de Conduta Ética e Autorregulação Bancária e ~69 normativos (vigentes e revogados: idosos, vulneráveis, crédito responsável, cobrança etc.), termo de adesão, recomendações, lista de auditores, selo.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF/DOCX",
+    "language": "pt-BR",
+    "periodicity": "contínua (deliberações do Conselho)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Código de Conduta Ética e Autorregulação Bancária (atualizado por deliberação recente)",
+      "date": null,
+      "url": "https://portal.febraban.org.br/pagina/3370/16/pt-br/Normativos"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3370/16/pt-br/Normativos",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao/normativos/<nome livre>.pdf; DOCX em .../documentos/MSWord/Autorregulacao/normativos/; recomendações em .../PDF/Autorregulacao/recomendacoes/ (link da Recomendação 001/2024 dá 404)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos; autorregulacaobancaria.com.br e cmsarquivos.autorregulacaobancaria.com.br: o site principal tem Disallow: /",
+    "ingestion_suggestion": "page diff mensal da página de Normativos (a lista é longa; comparar hrefs)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-autorregulacao-consignado",
+    "name": "Autorregulação do Crédito Consignado (FEBRABAN + ABBC)",
+    "kind": "normativo",
+    "topics": [
+      "fraude-bancaria"
+    ],
+    "subjects": [
+      "autorregulação",
+      "crédito",
+      "consignado",
+      "consumidor",
+      "dados setoriais"
+    ],
+    "description": "Convenção, documento correlato, anexos e comunicados do sistema iniciado em 02/01/2020; página de Indicadores (sem dados no HTML do servidor); bloqueio 'Não me Perturbe'. As sanções a correspondentes são divulgadas mensalmente em releases (ex.: 2.202 sanções em abr/2026).",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "ABBC"
+    ],
+    "format": "PDF + release",
+    "language": "pt-BR",
+    "periodicity": "mensal (releases de sanções); documentos irregulares",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Bancos mantêm rigor na fiscalização do consignado e sanções a correspondentes já passam de 2,2 mil",
+      "date": "2026-11-25",
+      "url": "https://portal.febraban.org.br/noticia/4530/pt-br/"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3381/1133/pt-br/Documentos",
+    "feed_url": "https://portal.febraban.org.br/Noticias/GetItems?page=1&selectedData=&selectedText=consignado",
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao/consignado-documentos/<nome livre>.pdf",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "JSON de notícias (consignado) para os números mensais; page diff trimestral dos documentos",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "média"
+    }
+  },
+  {
+    "id": "febraban-autorregulacao-portabilidade",
+    "name": "Autorregulação da Portabilidade de Crédito",
+    "kind": "normativo",
+    "topics": [],
+    "subjects": [
+      "autorregulação",
+      "crédito",
+      "portabilidade",
+      "consumidor"
+    ],
+    "description": "Convenção, documento correlato, recomendações e informativos do Comitê Gestor (mais de 600 signatárias).",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "ABBC"
+    ],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/pagina/3387/1134/pt-br/Documentos",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Autorregulacao/portabilidade-documentos/<nome livre>.pdf",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-guia-compliance",
+    "name": "Guia de Boas Práticas de Compliance",
+    "kind": "guia",
+    "topics": [],
+    "subjects": [
+      "compliance",
+      "governança",
+      "regulação"
+    ],
+    "description": "Guia da Comissão de Compliance da FEBRABAN. O link do PDF na página responde 404 (verificado em 25/11/2026).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Guia de boas práticas de Compliance",
+      "date": "(link quebrado)",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Guia%20de%20boas%20pr%C3%A1ticas%20de%20Compliance.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3228/52/pt-br/guia-compliance",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "página pública; PDF indisponível (404)",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual; revisar se o link voltar",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-taxonomia-financas-sustentaveis",
+    "name": "Taxonomia de Finanças Sustentáveis da Febraban (ex-Taxonomia Verde) e aplicação ao crédito",
+    "kind": "estudo+dataset",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "finanças sustentáveis",
+      "crédito",
+      "dados setoriais",
+      "clima"
+    ],
+    "description": "Guia explicativo da taxonomia, lista de CNAEs classificados (XLSX) e o estudo anual que aplica a taxonomia à carteira de crédito do SFN com dados do SCR/BCB (série 2012→2025). Inclui a série histórica 'Mensurando recursos financeiros alocados na Economia Verde' (2014–2021).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF + XLSX",
+    "language": "pt-BR",
+    "periodicity": "anual (estudo de aplicação ~jul; guia e lista CNAE revisados em 2021 e 2026)",
+    "first_edition": "2014 (O SFN e a Economia Verde); taxonomia em 2021",
+    "latest_edition": {
+      "title": "Aplicação da Taxonomia de Finanças Sustentáveis ao crédito bancário no Brasil 2025",
+      "date": "2026-07-30",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Aplica%C3%A7%C3%A3o%20da%20Taxonomia%20de%20Finan%C3%A7as%20Sustent%C3%A1veis%20ao%20cr%C3%A9dito%20banc%C3%A1rio%20no%20Brasil%202025.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3292/1103/pt-br/taxonomia-verde",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/<nome livre>.pdf; planilhas em https://cmsarquivos.febraban.org.br/Arquivos/documentos/MSExcel/<nome>.xlsx (ex.: 'Taxonomia de Finanças Sustentáveis da Febraban - Lista CNAES (2026).xlsx', de 03/08/2026)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal; XLSX como dataset (baixar e versionar quando mudar)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-relatorio-cop",
+    "name": "Relatório do setor bancário para a COP (finanças sustentáveis)",
+    "kind": "relatorio",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "clima",
+      "finanças sustentáveis",
+      "institucional"
+    ],
+    "description": "Relatório anual de compromissos e resultados dos bancos em financiamento sustentável, riscos climáticos e transição, lançado na COP (COP30 em Belém, 2025; COP31, 2026). Versões PT e EN.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR, en",
+    "periodicity": "anual (out–nov)",
+    "first_edition": "2025-10-31 (COP30)",
+    "latest_edition": {
+      "title": "Relatório Febraban COP31",
+      "date": "2026-11-04",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Relat%C3%B3rio%20Febraban_COP31.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3428/1184/pt-br/evolucao-financas-sustentaveis",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Relatório Febraban_COP{NN}[_inglês].pdf; COP30: 'febraban-cop30-v8 web.pdf'",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal (pico out–nov)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-estudos-riscos-socioambientais",
+    "name": "Estudos e guias de gestão de riscos sociais, ambientais e climáticos",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "risco climático",
+      "regulação",
+      "IFRS S1/S2",
+      "desmatamento"
+    ],
+    "description": "Guia de Implementação IFRS S1 e S2 para IFs (jul/2026) e apêndice técnico, gestão de riscos de desmatamento e cadeias livres de conversão (2026), roadmap de desmatamento (2025), Roadmap TCFD-FSB 2018–2023, ferramentas de risco climático (2021), capital natural (2017).",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "FGVces",
+      "CDP (edições antigas)"
+    ],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular (2–4 por ano)",
+    "first_edition": "2017",
+    "latest_edition": {
+      "title": "Guia de Implementação IFRS S1 e IFRS S2 para Instituições Financeiras Brasileiras",
+      "date": "2026-07-31",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Guia%20de%20Implementa%C3%A7%C3%A3o%20IFRS%20S1%20e%20IFRS%20S2%20para%20Institui%C3%A7%C3%B5es%20Financeiras%20Brasileiras.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3432/1190/pt-br/gestao-riscos-sociais",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/<título> {AAAA}.pdf (o ano costuma vir no nome); também listado em /pagina/3439/1198/pt-br/gestao-riscos-climaticos",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal das páginas 3432 e 3439; PDF + texto",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-emissoes-financiadas",
+    "name": "Emissões financiadas e precificação de carbono",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "clima",
+      "emissões financiadas",
+      "metodologia"
+    ],
+    "description": "Fatores de Emissão para Emissões Financiadas no Brasil (2026), Guia sobre Mensuração de Emissões de GEE no Setor Bancário (2020), gestão e precificação de carbono (FGVces, 2017).",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "FGVces"
+    ],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Fatores de Emissão para Emissões Financiadas no Brasil 2026",
+      "date": "2026-06-12",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Fatores%20de%20Emiss%C3%A3o%20para%20Emiss%C3%B5es%20Financiadas%20no%20Brasil%202026.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3433/1191/pt-br/emissoes-financiadas",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-financas-sustentaveis-estudos",
+    "name": "Estudos de finanças sustentáveis (carbono, dívida sustentável, green bonds)",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "finanças sustentáveis",
+      "mercado de carbono"
+    ],
+    "description": "Governança dos Mercados Regulados de Carbono (2025), Guia de Dívida Sustentável no Brasil (atualizado em out/2023), financiamento de energia solar (2018), recomposição florestal (2017), green bonds e CRA (2015); linha do tempo das finanças sustentáveis.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Governança dos Mercados Regulados de Carbono",
+      "date": "2025",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Governan%C3%A7a%20dos%20Mercados%20Regulados%20de%20Carbono.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3434/1192/pt-br/financas-sustentaveis",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-informativo-esg",
+    "name": "Informativo ESG da Febraban",
+    "kind": "newsletter",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "educação financeira",
+      "autorregulação",
+      "consumidor"
+    ],
+    "description": "Informativo sobre sustentabilidade, cidadania financeira, autorregulação e consumidor. A página existe, mas não lista nenhuma edição no HTML (nem por JS identificável), o que sugere distribuição por e-mail.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "desconhecido (provável e-mail)",
+    "language": "pt-BR",
+    "periodicity": "desconhecida",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/pagina/3431/1189/pt-br/informativo-esg",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "sem edições públicas localizadas",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual; checar a página trimestralmente",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-politica-sustentabilidade",
+    "name": "Política de Sustentabilidade, atuação e grupos de trabalho ESG",
+    "kind": "institucional",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "institucional",
+      "governança"
+    ],
+    "description": "Páginas institucionais: política de sustentabilidade, atuação, grupos de trabalho ESG (só associados), desenvolvimento setorial (IFC, UNEP FI, PRB), agenda regulatória socioambiental com links para normas BCB/CMN e guias de suitability e crédito responsável (em cmsarquivos.autorregulacaobancaria.com.br).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "HTML",
+    "language": "pt-BR",
+    "periodicity": "estático",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/pagina/3430/1188/pt-br/hub-sustentabilidade",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual (referência)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-forum-financas-sustentaveis",
+    "name": "Fórum de Finanças Sustentáveis (evento)",
+    "kind": "evento",
+    "topics": [],
+    "subjects": [
+      "ESG",
+      "clima",
+      "eventos"
+    ],
+    "description": "Fórum promovido com Anbima e CNSeg (edição na COP30, Belém, 12/11/2025). A cobertura sai em releases e no YouTube.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "Anbima",
+      "CNSeg"
+    ],
+    "format": "evento / release",
+    "language": "pt-BR",
+    "periodicity": "anual (associado à COP)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Fórum de Finanças Sustentáveis — COP30",
+      "date": "2025-11-12",
+      "url": "https://portal.febraban.org.br/noticia/4372/pt-br/"
+    },
+    "listing_url": null,
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "via releases",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-cartilhas-consumidor",
+    "name": "Cartilhas e guias ao consumidor bancário",
+    "kind": "guia",
+    "topics": [],
+    "subjects": [
+      "consumidor",
+      "crédito",
+      "canais de atendimento",
+      "educação financeira"
+    ],
+    "description": "Cartilha de Canais de Atendimento (nov/2024), cartilha de consignado, venda casada no crédito rural, guia de uso responsável do crédito e guia de suitability (estes dois no domínio de autorregulação), orientações sobre canais dos bancos (/AtendimentoBancos).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Cartilha Canais de Atendimento",
+      "date": "2025-02-07",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/L02_1_FBB_Cartilha%20Canais%20de%20Atendimento_NOV24.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3055/30/pt-br/canais-de-atendimento",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/<nome livre>.pdf; também https://cmsarquivos.autorregulacaobancaria.com.br/Arquivos/documentos/PDF/<nome>.pdf",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual / page diff semestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-semarc",
+    "name": "Semarc Nacional — Seminário de Relacionamento com o Consumidor",
+    "kind": "evento",
+    "topics": [
+      "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "consumidor",
+      "ouvidoria",
+      "autorregulação",
+      "eventos",
+      "tecnologia"
+    ],
+    "description": "Seminário anual da FEBRABAN sobre relacionamento bancos–consumidor (inovação, atendimento, direitos). Tem site próprio na plataforma Febraban Tech.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "evento (site SPA) + release",
+    "language": "pt-BR",
+    "periodicity": "anual (nov)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Semarc Nacional 2026",
+      "date": "2026-11",
+      "url": "https://febrabantech.febraban.org.br/semarcnacional2026"
+    },
+    "listing_url": "https://febrabantech.febraban.org.br/eventos/semarcnacional2026",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "febrabantech.febraban.org.br: SPA; só /pesquisa?query=* bloqueado",
+    "ingestion_suggestion": "via releases e sitemapnews do portal Febraban Tech",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-estudo-bets",
+    "name": "Estudo Nacional sobre BETs",
+    "kind": "pesquisa",
+    "topics": [],
+    "subjects": [
+      "consumidor",
+      "endividamento",
+      "apostas",
+      "opinião pública"
+    ],
+    "description": "Pesquisa quantitativa sobre percepções e atitudes em relação às apostas esportivas online (out/2024). O tema volta no Observatório de jul/2025.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Relatório Pesquisa Quantitativa BETs (out/2024)",
+      "date": "2024-12-19",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/RELAT%C3%93RIO%20PESQUISA%20QUANTITATIVA%20BETs_OUT2024_vf1.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3363/52/pt-br/estudo-nacional-bets",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "meu-bolso-em-dia",
+    "name": "Meu Bolso em Dia (portal de educação financeira)",
+    "kind": "portal",
+    "topics": [],
+    "subjects": [
+      "educação financeira",
+      "inclusão financeira",
+      "consumidor"
+    ],
+    "description": "Plataforma gratuita (ACT Banco Central + FEBRABAN, 2021) com ~702 matérias, 26 vídeos, 16 planilhas e 12 e-books; trilhas temáticas, Mutirão de negociação de dívidas.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "Banco Central do Brasil"
+    ],
+    "format": "HTML, vídeos, e-books, planilhas",
+    "language": "pt-BR",
+    "periodicity": "diária/semanal",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "(sitemap com lastmod diário)",
+      "date": "2026-11-25",
+      "url": "https://meubolsoemdia.com.br/"
+    },
+    "listing_url": "https://meubolsoemdia.com.br/",
+    "feed_url": "https://meubolsoemdia.com.br/sitemap.xml",
+    "file_url_pattern": "https://meubolsoemdia.com.br/{Materias|videos|planilhas|ebooks|paginas}/<slug>; o espelho no portal (/DetalheMeuBolso/{id}) é bloqueado pelo robots",
+    "access": "público",
+    "robots_notes": "meubolsoemdia.com.br: Disallow /busca?q=*; sitemap.xml com <lastmod>",
+    "ingestion_suggestion": "sitemap (lastmod) diário/semanal, filtrando por seção",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "isfb-saude-financeira",
+    "name": "Índice de Saúde Financeira do Brasileiro (I-SFB) — relatório 'A Saúde Financeira do Brasileiro'",
+    "kind": "pesquisa+índice",
+    "topics": [],
+    "subjects": [
+      "inclusão financeira",
+      "educação financeira",
+      "bem-estar financeiro",
+      "dados"
+    ],
+    "description": "Índice desenvolvido com cooperação técnica do Banco Central (2021) e relatório anual com os resultados nacionais; manual metodológico e materiais em inglês. Premiado pela Felaban em 2025.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "Banco Central do Brasil (cooperação técnica)"
+    ],
+    "format": "PDF",
+    "language": "pt-BR, en",
+    "periodicity": "anual",
+    "first_edition": "2021-09 (Relatorio_Febraban_v1.pdf)",
+    "latest_edition": {
+      "title": "A Saúde Financeira do Brasileiro 2025",
+      "date": "2026-01-12",
+      "url": "https://pefmbddiag.blob.core.windows.net/cdn/downloads/A_Saude_Financeira_do_Brasileiro_2025.pdf"
+    },
+    "listing_url": "https://indice.febraban.org.br/",
+    "feed_url": null,
+    "file_url_pattern": "https://pefmbddiag.blob.core.windows.net/cdn/downloads/A_Saude_Financeira_do_Brasileiro_{AAAA}.pdf — a edição 2025 existe no blob mas NÃO está linkada no site (achada pelo padrão); 2022: Febraban_ISFB_2022_SITEVs3.pdf",
+    "access": "público",
+    "robots_notes": "indice.febraban.org.br: sem robots.txt (404); arquivos em Azure Blob público",
+    "ingestion_suggestion": "HEAD anual do padrão de URL do próximo ano (jan) + page diff do site",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-guia-educacao-financeira",
+    "name": "Guia de boas práticas de educação financeira no setor bancário",
+    "kind": "guia",
+    "topics": [],
+    "subjects": [
+      "educação financeira",
+      "inclusão financeira"
+    ],
+    "description": "Guia setorial lançado em 03/11/2025 (release 4371).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Guia de boas práticas de educação financeira",
+      "date": "2025-11-03",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/febraban-guia%20de%20boas%20pr%C3%A1ticas-v7-web.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3408/52/pt-br/guiadeeducacafinanceira",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-avaliacao-impacto-mbed",
+    "name": "Avaliação de Impacto da Plataforma Meu Bolso em Dia (toolkit)",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "educação financeira",
+      "avaliação de impacto"
+    ],
+    "description": "Toolkit/relatório de avaliação de impacto da plataforma Meu Bolso em Dia.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Toolkit Avaliação de Impacto MBeD",
+      "date": "2026-05-27",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Toolkit_Avaliacao_Impacto_MBeD%5Bfinal%5D.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3442/52/pt-br/avaliacaodeimpacto-meubolsoemdia",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "youtube-meubolsoemdia",
+    "name": "YouTube Meu Bolso em Dia",
+    "kind": "video",
+    "topics": [],
+    "subjects": [
+      "educação financeira"
+    ],
+    "description": "Canal de vídeos de educação financeira (ativo; último em 24/11/2026).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "vídeo",
+    "language": "pt-BR",
+    "periodicity": "semanal",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "(feed)",
+      "date": "2026-11-24",
+      "url": "https://www.youtube.com/@meubolsoemdia"
+    },
+    "listing_url": null,
+    "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYnDw_6Yi_xrYyN2LYE9oAw",
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "feed RSS do YouTube",
+    "ingestion_suggestion": "RSS se o watch cobrir educação financeira",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-layouts-padroes",
+    "name": "Layouts e padrões técnicos FEBRABAN (CNAB240, código de barras, débito automático, protesto)",
+    "kind": "padrão técnico",
+    "topics": [
+      "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "pagamentos",
+      "padrões técnicos",
+      "boletos",
+      "arrecadação"
+    ],
+    "description": "Especificações técnicas interbancárias: Layout padrão CNAB240 (v11.0, set/2026), Código de Barras (v8, mai/2026), Débito Automático (v9, mar/2026), autorização de cancelamento, protesto centralizado, ICF.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular (novas versões)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Layout padrão CNAB240 V 11.0",
+      "date": "2026-09-15",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Layout%20padrao%20CNAB240%20V%2011_0%20-%202026_09_11.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3425/33/pt-br/layout-febraban",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Layout <nome> - Versão <n> - <DD_MM_AAAA>.pdf (versão e data no nome)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff mensal (sinaliza nova versão de padrão)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "média",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-plataforma-cobranca",
+    "name": "Nova Plataforma da Cobrança (boletos) e DDA",
+    "kind": "padrão técnico",
+    "topics": [
+      "fraude-bancaria"
+    ],
+    "subjects": [
+      "pagamentos",
+      "boletos",
+      "fraude"
+    ],
+    "description": "Convenção da Cobrança (2021), convênio do RCO, documentação do DDA (Débito Direto Autorizado) e segurança em boletos.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Convenção da Cobrança - 05/02/2021",
+      "date": "2021-02-05",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Conven%C3%A7%C3%A3o%20da%20Cobran%C3%A7a%20-%2005_02_2021_f.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3150/1094/pt-br/servicos-novo-plataforma-boletos",
+    "feed_url": null,
+    "file_url_pattern": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/<nome livre>.pdf; DDA: https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/DDA.pdf (página /pagina/3051/1088/pt-br/dda); a página antiga de publicações 3150/52 redireciona para a home",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff semestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-padronizacao-extratos-compe",
+    "name": "Padronização de extratos e Compe por Imagem",
+    "kind": "padrão técnico",
+    "topics": [],
+    "subjects": [
+      "pagamentos",
+      "padrões técnicos",
+      "compensação"
+    ],
+    "description": "Tabela de padronização das literais dos extratos bancários (XLSX, 2024) e Manual Operacional da Compe por Imagem (v7, 2020).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "XLSX + PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Padronização de extratos (1_2_2024_final.xlsx)",
+      "date": "2024",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/MSExcel/1_2_2024_final.xlsx"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3345/33/pt-br/padronizacao-extratos",
+    "feed_url": null,
+    "file_url_pattern": "Compe: https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Manual%20Op%20da%20Compe%20-%20V7%20-%20Publicado%20em%2012062020.pdf (página /pagina/3169/33/pt-br/compe-por-imagem)",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff semestral; XLSX como dataset",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-codigos-arrecadacao",
+    "name": "Códigos de Arrecadação publicados (convênios de arrecadação)",
+    "kind": "dataset",
+    "topics": [],
+    "subjects": [
+      "pagamentos",
+      "arrecadação",
+      "dados de referência"
+    ],
+    "description": "Tabela pública dos códigos de arrecadação (segmento/empresa) usados em boletos de concessionárias e tributos. Página grande (~1,2 MB) renderizada no servidor; há também a página Sefaz-SP (correspondências por município).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "HTML (tabela)",
+    "language": "pt-BR",
+    "periodicity": "contínua",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/CodigosPublicados",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "snapshot mensal + diff da tabela, se útil como dado de referência",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-feriados-bancarios",
+    "name": "Feriados Bancários",
+    "kind": "dataset",
+    "topics": [],
+    "subjects": [
+      "dados de referência",
+      "pagamentos",
+      "calendário"
+    ],
+    "description": "Calendário de feriados bancários nacionais e municipais, com endpoint JSON.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "JSON",
+    "language": "pt-BR",
+    "periodicity": "anual",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://feriadosbancarios.febraban.org.br/",
+    "feed_url": "https://feriadosbancarios.febraban.org.br/Home/ObterFeriadosFederais?ano=AAAA",
+    "file_url_pattern": "https://feriadosbancarios.febraban.org.br/Home/ObterFeriadosFederais?ano={AAAA} (também ObterFeriadosFederaisF); municipais via outras ações da mesma página",
+    "access": "público",
+    "robots_notes": "feriadosbancarios: sem robots.txt (404)",
+    "ingestion_suggestion": "JSON anual (dado de apoio, não é conteúdo de pesquisa)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-convencoes-coletivas",
+    "name": "Convenções Coletivas dos Bancários (FENABAN) — livros, reajustes e cartilhas",
+    "kind": "relatorio",
+    "topics": [],
+    "subjects": [
+      "pessoas e trabalho",
+      "relações sindicais",
+      "remuneração"
+    ],
+    "description": "Livros das CCTs (2018–2020, 2020–2022, 2022–2024, 2024–2026), tabela de reajuste de salários, benefícios e valores das CCTs (vigência 01/09/2026–31/08/2028) e cartilha das normas coletivas nacionais.",
+    "publisher": "FEBRABAN / FENABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "bienal (CCT) + anual (reajuste)",
+    "first_edition": "2018 (livro 2018–2020)",
+    "latest_edition": {
+      "title": "Reajuste de Salários, Benefícios e Demais Valores das CCTs dos Bancários 2026",
+      "date": "2026-09-29",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Reajuste%20de%20Sal%C3%A1rios%2C%20Benef%C3%ADcios%20e%20Demais%20Valores%20das%20CCTs%20dos%20Banc%C3%A1rios%202026.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3402/9/pt-br/convencao-2025",
+    "feed_url": null,
+    "file_url_pattern": "livros: /pagina/34{03..07}/1159/pt-br/...; PDFs com nome livre ('Convenções Coletivas dos Bancários 2024-2026 - FEBRABAN.pdf')",
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff semestral (pico set–out)",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-sindical-publicacoes",
+    "name": "Febraban Sindical — publicações",
+    "kind": "estudo",
+    "topics": [],
+    "subjects": [
+      "pessoas e trabalho",
+      "justiça do trabalho",
+      "regulação"
+    ],
+    "description": "Estudos da área sindical/trabalhista, por exemplo a Pesquisa sobre Justiça Gratuita nas ações trabalhistas (mai/2026).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Pesquisa sobre Justiça Gratuita nas ações trabalhistas",
+      "date": "2026-05-27",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Doc2_Paper_Pesquisa_FEBRABAN_Justica_Gratuitav2.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3441/1200/pt-br/publicacoes-sindical",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-censo-diversidade",
+    "name": "Censo da Diversidade do setor bancário",
+    "kind": "pesquisa",
+    "topics": [],
+    "subjects": [
+      "pessoas e trabalho",
+      "diversidade",
+      "ESG"
+    ],
+    "description": "Censo do Programa FEBRABAN de Valorização da Diversidade (desde 2007); edição 2025 com site próprio (coleta/resultados).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "plurianual (edições 2008, 2014, 2019, 2023, 2025 segundo o histórico do programa; datas não verificadas uma a uma)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Censo da Diversidade 2025",
+      "date": "2025",
+      "url": "https://censo.diversidade.org.br/"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3401/9/pt-br/censo-diversidade",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "censo.diversidade.org.br: robots permite tudo (Disallow vazio)",
+    "ingestion_suggestion": "manual (checar quando sair o relatório de resultados)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-transparencia-salarial",
+    "name": "Relatório de Transparência e Igualdade Salarial (Portaria MTE 3.714/2023)",
+    "kind": "relatorio",
+    "topics": [],
+    "subjects": [
+      "pessoas e trabalho",
+      "igualdade salarial",
+      "compliance"
+    ],
+    "description": "Relatório obrigatório sobre a FEBRABAN como empregadora (gerado pelo MTE). Não é um dado setorial.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "semestral",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Relatório de Transparência e Igualdade Salarial - 2º Semestre 2026",
+      "date": "2026-09",
+      "url": "https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Relat%C3%B3rio%20de%20Transpar%C3%AAncia%20e%20Igualdade%20Salarial%20de%20Mulheres%20e%20Homens%20-%202%20Semestre%202026.pdf"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3048/19/pt-br/relatorio-salarial",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "não consumir (obrigação legal da entidade)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-aprendizagem-corporativa",
+    "name": "Pesquisa de Aprendizagem Corporativa (Febraban Educação + Deloitte)",
+    "kind": "pesquisa",
+    "topics": [],
+    "subjects": [
+      "pessoas e trabalho",
+      "educação corporativa",
+      "futuro do trabalho"
+    ],
+    "description": "Estudo sobre a função de aprendizagem nas IFs diante de disrupções tecnológicas. Download por formulário.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "Deloitte"
+    ],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Aprendizagem Corporativa",
+      "date": "2025-08-26",
+      "url": "https://materiais.febrabaneducacao.com.br/pesquisa-educacao-corporativa"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3399/52/pt-br/aprendizagemcorporativa",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "exige cadastro (landing com formulário)",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-livro-50-anos",
+    "name": "Livro FEBRABAN 50 anos",
+    "kind": "institucional",
+    "topics": [],
+    "subjects": [
+      "institucional",
+      "história"
+    ],
+    "description": "Livro comemorativo (FEBRABAN criada em 1967) sobre o papel dos bancos nas crises do país. O link da página é um goo.gl que redireciona (com UTM) para o minisite https://portal.febraban.org.br/50anos/ (200).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "PDF",
+    "language": "pt-BR",
+    "periodicity": "pontual",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "FEBRABAN 50 anos",
+      "date": "2017",
+      "url": "https://portal.febraban.org.br/50anos/"
+    },
+    "listing_url": "https://portal.febraban.org.br/pagina/3218/52/pt-br/livro-50-anos",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "manual (referência)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-institucional",
+    "name": "Páginas institucionais (estatuto, código de ética, governança, associados)",
+    "kind": "institucional",
+    "topics": [],
+    "subjects": [
+      "institucional",
+      "governança"
+    ],
+    "description": "Estatuto, Código de Ética e Conduta, conselhos e diretoria, lista de associados (renderizada via AngularJS: o HTML do servidor só traz o template) e Febraban Sindical/FENABAN.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "HTML",
+    "language": "pt-BR",
+    "periodicity": "estático",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/pagina/3164/12/pt-br/associados",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "page diff trimestral do Conselho/Diretoria, se houver interesse em mudanças de governança (ex.: transição de presidência em 2026)",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-eventos-pldft-grisc",
+    "name": "Congresso PLDFT (Prevenção à Lavagem de Dinheiro e Financiamento do Terrorismo) e G-Risc (Gestão de Riscos)",
+    "kind": "evento",
+    "topics": [
+      "fraude-bancaria"
+    ],
+    "subjects": [
+      "PLD/FT",
+      "gestão de riscos",
+      "regulação",
+      "fraude",
+      "eventos"
+    ],
+    "description": "Congressos anuais realizados juntos (16ª edição do PLDFT e G-Risc em 17–18/11/2026, Transamerica Expo Center, presencial e online). A cobertura sai no portal Febraban Tech e em releases; não localizei apresentações em PDF publicadas.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "evento + cobertura HTML/vídeo",
+    "language": "pt-BR",
+    "periodicity": "anual (out–nov)",
+    "first_edition": "PLDFT ~2011 (15ª em 2025); G-Risc 13ª em 2023",
+    "latest_edition": {
+      "title": "PLDFT & G-Risc 2026",
+      "date": "2026-11-18",
+      "url": "https://febrabantech.febraban.org.br/temas/seguranca/pldft-e-grisc-recebem-3200-visitas-nos-2-dias-de-evento"
+    },
+    "listing_url": "https://febrabantech.febraban.org.br/eventos",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "febrabantech.febraban.org.br: SPA",
+    "ingestion_suggestion": "via sitemapnews do portal Febraban Tech + releases",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "média"
+    }
+  },
+  {
+    "id": "febraban-sec-evento",
+    "name": "Febraban SEC (Congresso de Prevenção e Repressão a Fraudes, Segurança Cibernética e Bancária)",
+    "kind": "evento",
+    "topics": [
+      "fraude-bancaria",
+      "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "fraude",
+      "cibersegurança",
+      "eventos"
+    ],
+    "description": "Já inventariado em topics/tecnologia-bancaria/INVENTARIO.md (3ª edição em 18–19/03/2026, com o CELAES/Felaban). A transmissão é pela plataforma Febraban Tech para inscritos; a cobertura sai no portal Febraban Tech e no YouTube institucional.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "evento + cobertura",
+    "language": "pt-BR",
+    "periodicity": "anual (mar)",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Febraban SEC 2026",
+      "date": "2026-03-19",
+      "url": "https://portal.febraban.org.br/noticia/4434/pt-br/"
+    },
+    "listing_url": null,
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "transmissão para inscritos",
+    "robots_notes": "—",
+    "ingestion_suggestion": "via sitemapnews do portal Febraban Tech + YouTube institucional",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "alta"
+    }
+  },
+  {
+    "id": "febraban-summits-educacao",
+    "name": "Summits da Febraban Educação",
+    "kind": "evento",
+    "topics": [],
+    "subjects": [
+      "educação corporativa",
+      "pessoas e trabalho",
+      "eventos",
+      "cibersegurança"
+    ],
+    "description": "Encontros temáticos (ex.: Summit Cyber Segurança, auditoria interna, crédito) organizados pela Febraban Educação, muitas vezes in-company.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "evento",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://febrabaneducacao.com.br/summits/",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "febrabaneducacao.com.br: permite tudo exceto carrinho/pagamento; sitemap.xml",
+    "ingestion_suggestion": "manual",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-forum-pagamentos",
+    "name": "Fórum Técnico de Entidades do Setor de Pagamentos (participação)",
+    "kind": "posicionamento",
+    "topics": [
+      "fraude-bancaria",
+      "tecnologia-bancaria"
+    ],
+    "subjects": [
+      "pagamentos",
+      "Pix",
+      "fraude",
+      "regulação"
+    ],
+    "description": "Fórum de ABBC, Abecs, Abipag, Abranet, Febraban e Zetta; propôs ao BC 10 medidas de segurança digital (out/2025). Divulgado em releases.",
+    "publisher": "FEBRABAN",
+    "partners": [
+      "ABBC",
+      "Abecs",
+      "Abipag",
+      "Abranet",
+      "Zetta"
+    ],
+    "format": "release",
+    "language": "pt-BR",
+    "periodicity": "irregular",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "Fórum de Entidades do Setor de Pagamentos propõe pacote de medidas para reforçar a segurança digital",
+      "date": "2025-11-10",
+      "url": "https://portal.febraban.org.br/noticia/4379/pt-br/"
+    },
+    "listing_url": null,
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "via JSON de notícias",
+    "priority": {
+      "geral": "média",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "média"
+    }
+  },
+  {
+    "id": "youtube-febraban-educacao",
+    "name": "YouTube Febraban Educação",
+    "kind": "video",
+    "topics": [],
+    "subjects": [
+      "educação corporativa"
+    ],
+    "description": "Canal da Febraban Educação, inativo desde 03/10/2022.",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "vídeo",
+    "language": "pt-BR",
+    "periodicity": "inativo",
+    "first_edition": null,
+    "latest_edition": {
+      "title": "(último vídeo)",
+      "date": "2022-10-03",
+      "url": "https://www.youtube.com/@febrabaneducacao"
+    },
+    "listing_url": null,
+    "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuPmpvDBG3rrpyeGPbVG4Vw",
+    "file_url_pattern": null,
+    "access": "público",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "não consumir",
+    "priority": {
+      "geral": "baixa",
+      "tecnologia-bancaria": "baixa",
+      "fraude-bancaria": "baixa"
+    }
+  },
+  {
+    "id": "febraban-redes-sociais",
+    "name": "Redes sociais (LinkedIn, Instagram, Facebook, Threads, Flickr)",
+    "kind": "social",
+    "topics": [],
+    "subjects": [
+      "institucional"
+    ],
+    "description": "Perfis oficiais linkados no portal: linkedin.com/company/502389, instagram.com/febraban_oficial, facebook.com/Febraban, threads.net/febraban_oficial, flickr.com/photos/febraban (fotos de eventos).",
+    "publisher": "FEBRABAN",
+    "partners": [],
+    "format": "social",
+    "language": "pt-BR",
+    "periodicity": "diária",
+    "first_edition": null,
+    "latest_edition": null,
+    "listing_url": "https://portal.febraban.org.br/",
+    "feed_url": null,
+    "file_url_pattern": null,
+    "access": "plataformas de terceiros; exigem login ou bloqueiam robôs",
+    "robots_notes": "portal: Disallow /Busca/, /DetalheTech, /DetalheMeuBolso, /Noticias/GestaoNewsLetter, /en/, query params; sitemap.xml estático e defasado; sem RSS; cmsarquivos: sem robots.txt (404); PDFs públicos",
+    "ingestion_suggestion": "não consumir (o conteúdo replica releases e vídeos)",
+    "priority": {
+      "geral": "baixa",
       "tecnologia-bancaria": "baixa",
       "fraude-bancaria": "baixa"
     }

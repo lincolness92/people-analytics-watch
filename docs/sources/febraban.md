@@ -1,6 +1,8 @@
-# FEBRABAN: mapa de publicações para tecnologia bancária, IA, cibersegurança e fraude
+# FEBRABAN: mapa completo de publicações
 
-Levantamento manual feito em **25/11/2026** para os temas **Bank Tech & AI Watch** (`topics/tecnologia-bancaria/`) e **Bank Fraud Watch** (`topics/fraude-bancaria/`). Este documento só mapeia as fontes. Não traz scraper nem cópia de conteúdo. A versão para máquina está em [`febraban.json`](febraban.json).
+Levantamento manual feito em **25/11/2026**. Cobre tudo o que a FEBRABAN publica e foi pensado para uma plataforma genérica de monitoramento de pesquisa bancária. Os temas **Bank Tech & AI Watch** (`topics/tecnologia-bancaria/`) e **Bank Fraud Watch** (`topics/fraude-bancaria/`) são só os primeiros casos de uso. Este documento mapeia as fontes; não traz scraper nem cópia de conteúdo. A versão para máquina está em [`febraban.json`](febraban.json): 74 itens, cada um com `subjects` (tags livres) e `priority` (`geral` para um watch bancário genérico, mais as prioridades dos dois temas).
+
+Organização: §0 domínios; §1–§5 tecnologia, IA, ciber e fraude (o primeiro recorte); §6 mídia e institucional; **§6A–§6H os demais assuntos** (economia e crédito, regulação e posicionamentos, autorregulação e consumidor, ESG, inclusão e educação financeira, pagamentos e padrões, pessoas e trabalho, eventos); §7 como consumir.
 
 Todas as URLs foram testadas com o User-Agent do projeto (`Mozilla/5.0 (compatible; people-analytics-watch/0.1; research digest)`). As datas de "última edição" vêm do próprio site, do release de imprensa ou do `Last-Modified` do PDF. A fonte de cada data está indicada.
 
@@ -60,7 +62,7 @@ Não achei outro "radar de tendências" ou "radar de inovação" da FEBRABAN. O 
 | Estudos Febraban de Economia / Spread | Estudos avulsos (taxas de adquirentes, crédito MPE...) | PDF | Irregular | — | `/pagina/3141/26/...`, `/pagina/3252/26/...` | Baixa (o comparativo de taxas de adquirentes toca pagamentos) |
 | Relatório de Ouvidorias | Indicadores de reclamações e canais. **A edição 2025 tem foco em integridade digital e fraudes** | PDF (2023 feita com a Deloitte) | Anual | Ed. 2025, publicada em 01/04/2026 (`Febraban%20-%20RAO%202025-2026_Vers%C3%A3oEnvio30_03.pdf`) | `https://portal.febraban.org.br/pagina/3244/52/pt-br/relatorio-ouvidorias-geral` (2017→2025) | **Média para fraude** |
 
-Não há API, dataset aberto (CSV) nem dashboard público de estatística. Tudo sai em PDF.
+Não há API nem dashboard público de estatística. Quase tudo sai em PDF. As exceções são algumas planilhas XLSX (taxonomia, padronização de extratos; ver §6D e §6F) e os endpoints JSON de feriados. As séries de economia estão detalhadas, com histórico e padrão de arquivo, em **§6A**.
 
 ## 4. Eventos e conteúdo do Febraban Tech (além do YouTube)
 
@@ -111,12 +113,124 @@ Não há API, dataset aberto (CSV) nem dashboard público de estatística. Tudo 
 | YouTube Febraban Educação | `UCuPmpvDBG3rrpyeGPbVG4Vw` | feed equivalente | Baixa |
 | Sala de Imprensa | Só contatos (imprensa@febraban.org.br) | `/pagina/3157/62/pt-br/noticias-sala-imprensa` | Sem conteúdo |
 | Relatório Anual institucional | Último localizado: **RA 2020** (`.../PDF/Febraban_RA_2020_final.pdf`). A URL antiga `/paginas/19/...relatorio-anual` agora mostra o Relatório de Transparência Salarial | — | Parece **descontinuado** |
-| Relatório Anual da Autorregulação | 8ª edição (2024). Fala de digital e consumidor | `https://portal.febraban.org.br/pagina/3374/16/pt-br/Relatório%20Anual` (PDF `.../PDF/Autorregulacao/relatorio-anual/Autorregulacao2024_2.pdf`) | `autorregulacaobancaria.com.br` proíbe robôs. Usar o portal |
+| Relatório Anual da Autorregulação | 8ª edição, referente a 2024 (PDF `.../PDF/Autorregulacao2025-V2_Completo.pdf`, de 03/04/2025, linkado em `/pagina/3396/52/...`). A de 2023 é `.../PDF/Autorregulacao2024_2.pdf`. Série desde 2017 | Listagem `https://portal.febraban.org.br/pagina/3374/16/pt-br/Relatório%20Anual` | **O primeiro link da listagem (`.../PDF/Autorregulacao/relatorio-anual/Autorregulacao2024_2.pdf`) dá 404.** `autorregulacaobancaria.com.br` proíbe robôs; usar o portal. Detalhes em §6C |
 | Informativo Regulatório Mensal (IRM) | Boletim de regulação prudencial (Basileia etc.), produzido pela DIRPRAE | PDFs antigos `.../PDF/irm-<mes>%20de%20<ano>.pdf`, `IRM_outubro_21.pdf`. A página `/pagina/3317/1122/pt-br/irm-2022` redireciona para a home. O menu "Informativo Mensal de Regulação Bancária" é `#` | Hoje parece ser **só por e-mail/assinatura**. Fora do escopo |
 | Informativo ESG, Hub de Sustentabilidade, Taxonomia Verde | Sustentabilidade | `/pagina/3431/1189/...` etc. | Fora do escopo |
 | Comitês e grupos de trabalho | Não há página pública que liste comitês técnicos com publicações próprias. O Grupo de Novas Tecnologias aparece como coautor do Estudo de Tecnologias Emergentes, o Comitê de Ouvidoria no Relatório de Ouvidorias, e o CyberLab tem página própria. A página "Grupos de Trabalho" (`/pagina/3435/1193/...`) é de sustentabilidade | — | — |
 | Revistas | A antiga **Revista Ciab FEBRABAN/Noomis** não tem edição recente localizável. Não há revista ativa no portal | — | — |
 | Newsletters | Cadastro em `/Noticias/GestaoNewsLetter` (bloqueado no robots); IRM por assinatura; CyberLab para associados | — | Não automatizar |
+
+---
+
+## 6A. Economia e crédito
+
+| Série | Cobertura | Formato | Periodicidade | Histórico | Última edição | Listagem | Padrão de arquivo |
+|---|---|---|---|---|---|---|---|
+| **Pesquisa FEBRABAN de Economia Bancária e Expectativas** | Projeções dos bancos para o crédito (total, livre, direcionado, PF/PJ), inadimplência, Selic e câmbio; leitura da ata do Copom | PDF ("versão imprensa") + release | ~a cada Copom (8–10 por ano) | fev/2023 → **nov/2026** (31 edições listadas) | Nov/2026 (PDF de 18/11/2026) | `https://portal.febraban.org.br/pagina/3235/1120/pt-br/expectativas` | `Pesquisa FEBRABAN de Economia Bancária e Expectativas - {Mês} de {AAAA}_{vImprensa\|v_imprensa\|imprensa}.pdf` |
+| **ISEB: Informativo Semanal de Economia Bancária** | Conjuntura semanal: crédito, juros, inflação. Tem vídeo semanal no YouTube | PDF + vídeo | Semanal (segundas) | Páginas anuais 2024, 2025 e 2026 (~50 edições/ano) | 23/11/2026 (`ISEB_23nov26.pdf`) | `/pagina/3413/1121/pt-br/iseb-2026` (2024 = 3337, 2025 = 3364) | `ISEB_{DD}{mmm}{AA}.pdf`, com variações (`ISEB_23 dez24.pdf`, `ISEB_15 jan.pdf`). Uma página nova por ano |
+| **Panorama do Mercado de Crédito** | Crédito, inadimplência e spread, a partir das notas do BCB | PDF | Mensal | jan/2016 → set/2026 (95 edições) | Set/2026 | `/pagina/3130/26/pt-br/panorama` | `Panorama de Crédito_{mmmAA}.pdf` ou `Panorama de Crédito - {Mmm}{AA}.pdf` |
+| **Pesquisa Especial de Crédito** | Prévia mensal da carteira com dados dos bancos (origem dos releases "Carteira de crédito deve crescer x%") | PDF | Mensal | jan/2024 → out/2026 (34 edições) | Out/2026 | `/pagina/3290/21/pt-br/especial` | `Pesquisa Especial Crédito_{mês}_{AA} - versão imprensa.pdf` (padrão estável, previsível) |
+| **Estudo do Spread Bancário** | Decomposição do spread (inadimplência, tributos, custos, margem) | PDF | ~Bienal | 2017 (release 3133) → 2025 | 2025 (`Composição Spread_Site.pdf`, de 22/10/2025; o nome não tem ano e pode ser sobrescrito) | `/pagina/3252/26/pt-br/estudos-spread-bancario` | Livre |
+| Estudos Febraban de Economia (avulsos) | Taxas de adquirentes independentes vs. de bancos; crédito a MPEs; endividamento das famílias | PDF | Irregular | — | — | `/pagina/3141/26/pt-br/apresentacoes-setor-bancario` | Livre |
+| **Prêmio ANPEC-FEBRABAN de Economia Bancária** | Prêmio acadêmico (desde 2009; 18ª edição em 2026). Publica os trabalhos vencedores | PDF | Anual (out–nov) | 2009 → 2026 | Trabalhos 2026 (PDF de 27/10/2026) | `/pagina/3348/1123/pt-br/premio-economia-2026` (o id 3348 se mantém e o slug muda por ano) | `{Nome do autor} - {título}.pdf` |
+| Livro "Como fazer os juros serem mais baixos no Brasil" | Agenda do setor para o ambiente de crédito (2ª edição) | PDF | Pontual | — | `Juros Mais Baixos 2.pdf` | `/pagina/3257/52/pt-br/juros-baixos-brasil` | — |
+| Releases de dados | Carteira de crédito, cheques (série desde 1995), transações digitais | HTML | Mensal/irregular | — | — | JSON `/Noticias/GetItems` | — |
+
+A FEBRABAN **não** publica um "Relatório de Economia Bancária" (esse é do Banco Central). Os equivalentes da FEBRABAN são o Estudo do Spread, o Panorama e as pesquisas acima.
+
+## 6B. Regulação e posicionamentos
+
+| Item | O que é | Onde | Observações |
+|---|---|---|---|
+| **Notas, notas conjuntas e respostas** | Posições públicas: autonomia e competência do BC (dez/2025–jun/2026), reporte de sustentabilidade (jun/2026), "Resposta da Febraban às postagens de David Vélez" (PDF, 05/12/2025) | Releases (JSON `selectedText=Nota`); às vezes uma página em Publicações (`/pagina/3410/52/pt-br/resposta-nubank`) | Sem feed próprio. Filtrar releases por título |
+| Fórum Técnico de Entidades do Setor de Pagamentos | ABBC, Abecs, Abipag, Abranet, Febraban e Zetta. Em out/2025 levou 10 medidas de segurança digital ao BC | Release 4379 | Pagamentos e fraude |
+| Agenda regulatória socioambiental | Mapa das normas BCB/CMN (PRSAC, Res. 4.327, 4.945, 4.943, 4.557...) com links para o bcb.gov.br | `/pagina/3437/1195/pt-br/agenda-regulatoria-autorregulacao` | Estático |
+| Informativo Regulatório Mensal (IRM) | Ver §6 (por assinatura; PDFs públicos até 2021) | — | — |
+| Guia de Boas Práticas de Compliance | Comissão de Compliance | `/pagina/3228/52/pt-br/guia-compliance` | **O PDF dá 404** |
+| Consultas públicas | A URL antiga `/pagina/3292/1103/pt-br/consulta-publica` hoje abre a página da Taxonomia. Não há página de respostas da FEBRABAN a consultas públicas | — | — |
+
+## 6C. Autorregulação, consumidor e ouvidoria
+
+| Item | Conteúdo | Formato / data | URL | Notas |
+|---|---|---|---|---|
+| **SARB: Código e normativos** | Código de Conduta Ética e Autorregulação Bancária + ~69 normativos (vigentes e revogados: idosos, vulneráveis, crédito responsável, cobrança...), termo de adesão (DOCX), recomendações, lista de auditores, selo, PES (sistema logado) | PDF/DOCX; contínuo | `/pagina/3370/16/pt-br/Normativos` | Arquivos em `.../PDF/Autorregulacao/normativos/`. A Recomendação 001/2024 (`.../Autorregulacao/recomendacoes/...`) dá 404. `pes.febraban.org.br` exige login |
+| **Relatório Anual da Autorregulação** | 8ª edição (2024) | PDF, 03/04/2025 | `/pagina/3374/16/...` e `/pagina/3396/52/...` | Ver §6 (link quebrado na listagem) |
+| **Autorregulação do Consignado** (FEBRABAN + ABBC) | Convenção, documento correlato, comunicados; página "Indicadores" (sem dados no HTML do servidor); "Não me Perturbe". **Sanções mensais a correspondentes saem em releases** (2.202 em abr/2026; "mais de 2,2 mil" em 25/11/2026) | PDF + release mensal | `/pagina/3381/1133/pt-br/Documentos`; releases `selectedText=consignado` | Os números mensais são uma série boa para extrair dos releases |
+| Autorregulação da Portabilidade de Crédito | Convenção, documento correlato, recomendações do Comitê Gestor (mais de 600 signatárias) | PDF | `/pagina/3387/1134/pt-br/Documentos` | `.../PDF/Autorregulacao/portabilidade-documentos/` |
+| **Relatório de Ouvidorias** | Ver §3 (2017→2025) | PDF anual | `/pagina/3244/52/...` | — |
+| Cartilhas e guias ao consumidor | Canais de Atendimento (nov/2024), consignado, venda casada no crédito rural, guias de uso responsável do crédito e de suitability (em `cmsarquivos.autorregulacaobancaria.com.br`) | PDF | `/pagina/3055/30/...`, `/pagina/3142/52/...`, `/pagina/3289/52/...` | Estáticos |
+| Estudo Nacional sobre BETs | Pesquisa quantitativa sobre apostas online (out/2024) | PDF, 19/12/2024 | `/pagina/3363/52/pt-br/estudo-nacional-bets` | Tema retomado no Observatório de jul/2025 |
+| Semarc Nacional | Seminário de relacionamento com o consumidor (nov/2026) | Evento (SPA) | `https://febrabantech.febraban.org.br/eventos/semarcnacional2026` | Ver §6H |
+| Busca Banco / Atendimento Bancos | Utilitários (agências, canais) | HTML | `https://www.buscabanco.org.br/`, `/AtendimentoBancos` | Não é conteúdo de pesquisa |
+
+## 6D. Sustentabilidade e ESG
+
+Não existe uma "Pesquisa de Sustentabilidade" nem uma "Agenda ESG" com esse nome. A produção de ESG está no **Hub Febraban de Sustentabilidade e Clima** (`/pagina/3430/1188/pt-br/hub-sustentabilidade`), em várias páginas temáticas:
+
+| Série | Conteúdo | Formato | Periodicidade | Histórico / última | Listagem | Notas |
+|---|---|---|---|---|---|---|
+| **Taxonomia de Finanças Sustentáveis** (ex-Taxonomia Verde) + **Aplicação ao crédito bancário** | Guia explicativo (2021, 2026), **lista de CNAEs em XLSX** (2021; 2026 de 03/08/2026) e estudo anual da carteira de crédito do SFN classificada pela taxonomia (dados do SCR/BCB, série 2012→2025) | PDF + **XLSX** | Anual (~jul) | 2014 ("O SFN e a Economia Verde"), "Mensurando recursos na Economia Verde" 2015–2021, aplicação 2021→**2025 (PDF de 30/07/2026)** | `/pagina/3292/1103/pt-br/taxonomia-verde` | As planilhas ficam em `.../documentos/MSExcel/` |
+| **Relatório para a COP** | Compromissos e resultados dos bancos em finanças sustentáveis e clima. PT e EN | PDF | Anual (out–nov) | COP30 (31/10/2025) → **COP31 (04/11/2026)** | `/pagina/3428/1184/pt-br/evolucao-financas-sustentaveis` | `Relatório Febraban_COP{NN}[_inglês].pdf` |
+| **Gestão de riscos sociais, ambientais e climáticos** | Guia de Implementação **IFRS S1/S2** para IFs (31/07/2026) + apêndice técnico, riscos de desmatamento e cadeias livres de conversão (2026), roadmap de desmatamento (2025), **Roadmap TCFD-FSB** 2018–2023, ferramentas de risco climático (2021), capital natural (2017) | PDF | 2–4 por ano | 2017 → 2026 | `/pagina/3432/1190/...` e `/pagina/3439/1198/...` | Parcerias antigas: FGVces, CDP |
+| Emissões financiadas | Fatores de Emissão para Emissões Financiadas no Brasil (12/06/2026), guia de mensuração de GEE (2020), precificação de carbono (2017) | PDF | Irregular | 2017 → 2026 | `/pagina/3433/1191/...` | — |
+| Finanças sustentáveis (estudos) | Governança dos mercados regulados de carbono (2025), Guia de Dívida Sustentável (out/2023), energia solar (2018), green bonds e CRA (2015) | PDF | Irregular | 2015 → 2025 | `/pagina/3434/1192/...` | — |
+| Informativo ESG | Newsletter de sustentabilidade, cidadania financeira, autorregulação e consumidor | — | — | **Nenhuma edição pública listada** | `/pagina/3431/1189/pt-br/informativo-esg` | Provavelmente só por e-mail |
+| Política, atuação, grupos de trabalho, desenvolvimento setorial | Política de sustentabilidade; GTs só para associados; participação em IFC, UNEP FI/PRB | HTML | Estático | — | `/pagina/3429/1185/...`, `/pagina/3435/1193/...`, `/pagina/3436/1194/...` | Referência |
+| Fórum de Finanças Sustentáveis | Evento com Anbima e CNSeg (COP30, 12/11/2025) | Release | Anual | — | release 4372 | — |
+| Observatório (sustentabilidade, set/2021) e Censo da Diversidade | Ver §1 e §6G | — | — | — | — | — |
+
+## 6E. Inclusão e educação financeira
+
+| Item | Conteúdo | Formato | Periodicidade | Última | URL / feed | Notas |
+|---|---|---|---|---|---|---|
+| **Meu Bolso em Dia** | Portal gratuito (ACT BCB + FEBRABAN, 2021): ~702 matérias, 26 vídeos, 16 planilhas, 12 e-books, trilhas, mutirão de dívidas | HTML/vídeo/e-book | Contínua | lastmod 25/11/2026 | `https://meubolsoemdia.com.br/` · **sitemap com `<lastmod>`**: `https://meubolsoemdia.com.br/sitemap.xml` | robots: só `/busca?q=*` bloqueado. O espelho no portal (`/DetalheMeuBolso`) é bloqueado |
+| **I-SFB: Índice de Saúde Financeira do Brasileiro** + relatório anual "A Saúde Financeira do Brasileiro" | Índice criado com o BCB (2021); relatórios 2022→2025; manual metodológico; materiais em EN. Prêmio Felaban 2025 | PDF (Azure Blob) | Anual | **2025 (12/01/2026). Essa edição não está linkada no site**: foi achada pelo padrão de URL | `https://indice.febraban.org.br/` · `https://pefmbddiag.blob.core.windows.net/cdn/downloads/A_Saude_Financeira_do_Brasileiro_{AAAA}.pdf` | Sem robots.txt |
+| Guia de boas práticas de educação financeira no setor bancário | Guia setorial | PDF | Pontual | 03/11/2025 | `/pagina/3408/52/...` | — |
+| Avaliação de impacto do Meu Bolso em Dia | Toolkit de avaliação de impacto | PDF | Pontual | 27/05/2026 | `/pagina/3442/52/...` | — |
+| Observatório (educação financeira, jul/2025) | Ver §1 | — | — | — | — | — |
+| Assistente de IA de educação financeira | Lançado com Amazon e Flexa Cloud (release 4509, 21/10/2026) | Produto | — | — | — | Notícia, não publicação |
+| YouTube Meu Bolso em Dia | Vídeos (ativo) | Vídeo | Semanal | 24/11/2026 | feed `channel_id=UCYnDw_6Yi_xrYyN2LYE9oAw` | — |
+| Podcast "Dicas Meu Bolso em Dia" | No mesmo RSS do Febraban Podcast | Áudio | — | 04/11/2026 | anchor.fm (§6) | — |
+
+## 6F. Pagamentos, padrões técnicos e dados de referência
+
+| Item | Conteúdo | Formato | Última versão | URL | Notas |
+|---|---|---|---|---|---|
+| **Layouts FEBRABAN** | **CNAB240 v11.0** (15/09/2026), **Código de Barras v8** (12/05/2026), Débito Automático v9 (mar/2026), autorização de cancelamento, protesto centralizado v4.3, ICF | PDF | Set/2026 | `/pagina/3425/33/pt-br/layout-febraban` | Versão e data no nome do arquivo. Bom sinal de mudança de padrão interbancário |
+| Nova Plataforma da Cobrança (boletos) | Convenção da Cobrança (05/02/2021), convênio do RCO | PDF | 2021 | `/pagina/3150/1094/...` | A página antiga 3150/52 redireciona para a home |
+| DDA | Débito Direto Autorizado | PDF | — | `/pagina/3051/1088/pt-br/dda` | — |
+| Padronização de extratos | Literais padronizadas (XLSX) | **XLSX** | 2024 | `/pagina/3345/33/...` → `.../MSExcel/1_2_2024_final.xlsx` | Dataset |
+| Compe por Imagem | Manual operacional v7 (2020) | PDF | 2020 | `/pagina/3169/33/...` | — |
+| Códigos de Arrecadação | Tabela de códigos de convênios de arrecadação | HTML (~1,2 MB) | Contínua | `/CodigosPublicados` | Dataset de referência |
+| Sefaz-SP | Correspondências por município (IPVA/multas) | HTML | — | `/sefaz` | Utilitário |
+| **Feriados Bancários** | Calendário nacional e municipal | **JSON** | Anual | `https://feriadosbancarios.febraban.org.br/Home/ObterFeriadosFederais?ano=AAAA` | Sem robots.txt |
+| Pix, Open Finance e transações | Não há série própria. Os números vêm na Pesquisa de Tecnologia (§1), nos releases e no Fórum de Pagamentos (§6B) | — | — | — | — |
+
+## 6G. Pessoas e trabalho
+
+| Item | Conteúdo | Formato | Periodicidade | Última | URL |
+|---|---|---|---|---|---|
+| **Convenções Coletivas dos Bancários** (FENABAN) | Livros das CCTs 2018–20, 2020–22, 2022–24, 2024–26; tabela de reajustes; cartilha das normas coletivas | PDF | Bienal + reajuste anual | Reajuste 2026 (29/09/2026; vigência 01/09/2026–31/08/2028) | `/pagina/3402/9/pt-br/convencao-2025` (o slug ficou "2025"), livros em `/pagina/340{3..7}/1159/...`, cartilha em `/pagina/3404/9/...` |
+| Febraban Sindical: publicações | Pesquisa sobre Justiça Gratuita nas ações trabalhistas | PDF | Irregular | 27/05/2026 | `/pagina/3441/1200/pt-br/publicacoes-sindical` |
+| **Censo da Diversidade** | Censo do setor bancário (programa desde 2007); edição 2025 com site próprio | Site | Plurianual | 2025 | `https://censo.diversidade.org.br/` (robots permite tudo) |
+| Pesquisa de Aprendizagem Corporativa | Com a Deloitte (formulário) | PDF | Pontual | ago/2025 | §1 |
+| Certificações e cursos (Febraban Educação) | Crescimento das certificações aparece em releases (ex.: release 4430, mar/2026) | HTML | — | — | §5 |
+| Relatório de Transparência Salarial | Obrigação legal da FEBRABAN como empregadora (MTE) | PDF semestral | Semestral | 2º sem/2026 | `/pagina/3048/19/...` |
+| Iniciativas de igualdade, etarismo | Releases e guia de comunicação inclusiva (Febraban Educação, jul/2025) | HTML/PDF | Irregular | — | releases |
+
+## 6H. Eventos da FEBRABAN e o conteúdo que publicam
+
+Os eventos já estão no `INVENTARIO.md` (Febraban Tech, Febraban SEC). Aqui o foco é **onde fica o conteúdo publicado** de cada um. Regra geral: os eventos rodam na plataforma `febrabantech.febraban.org.br/eventos/<slug>` (SPA). A cobertura sai como notícia no portal Febraban Tech (`sitemapnews.xml`), em releases e no YouTube institucional. **Não localizei apresentações em PDF publicadas de nenhum evento.**
+
+| Evento | Quando | Conteúdo publicado | Onde |
+|---|---|---|---|
+| Febraban Tech | Ago (2026: 24–26/08; 2027: 24–26/08) | Notícias, vídeos, Arena Fintech, lançamento da Pesquisa de Tecnologia | §4 |
+| Febraban SEC (fraudes, ciber, segurança bancária) | Mar (3ª edição em 18–19/03/2026) | Cobertura no portal Febraban Tech, releases, YouTube. Transmissão para inscritos | releases 4428/4434 |
+| Congresso PLDFT + G-Risc (gestão de riscos) | Out–nov (16ª edição em 17–18/11/2026) | Cobertura (ex.: "PLDFT e GRisc recebem 3.200 visitas"), releases | `/temas/seguranca/...`; releases 4514/4521/4522 |
+| Semarc Nacional (relacionamento com o consumidor) | Nov/2026 | Site do evento, release | `https://febrabantech.febraban.org.br/eventos/semarcnacional2026` |
+| Fórum de Finanças Sustentáveis | Na COP (12/11/2025) | Release | release 4372 |
+| Summits da Febraban Educação | Irregular | Páginas de summit | `https://febrabaneducacao.com.br/summits/` |
+| Página antiga "Eventos" do portal | — | Calendários de 2015/2016 e um acervo de palestras com link quebrado (404) | `/eventos`. Sem uso |
 
 ---
 
@@ -147,6 +261,29 @@ Legenda de prioridade: **TB** = tecnologia-bancaria, **FB** = fraude-bancaria. A
 | 19 | noomiscast, YouTube @febrabantech, RA institucional | **Não consumir** | — | — | — | Parados |
 | 20 | Febraban Educação | Manual | — | B | B | Catálogo de cursos |
 
+A tabela acima traz as prioridades para os dois temas. A tabela abaixo dá a **prioridade para um watch bancário genérico** (campo `priority.geral` no JSON) de todos os itens, incluindo os das seções §6A–§6H.
+
+### 7.1 Prioridade geral (watch bancário genérico)
+
+| Prioridade geral | Itens (id no JSON) | Caminho de ingestão |
+|---|---|---|
+| **Alta** | `febraban-releases` · `febraban-notas-posicionamentos` · `febraban-publicacoes-indice` · `febraban-pesquisa-tecnologia-bancaria` · `febraban-estudo-tecnologias-emergentes` · `febraban-radar-tecnologias` · `febrabantech-portal-noticias` · `febraban-pesquisa-expectativas` | JSON de notícias (diário, filtros por termo), JSON `paginas/getitems` (semanal), page diff das listagens + PDF/texto, `sitemapnews.xml` (diário), HEAD do radar |
+| **Média** | Economia e crédito: `febraban-iseb`, `febraban-panorama-credito`, `febraban-pesquisa-especial-credito`, `febraban-estudo-spread`, `febraban-premio-anpec`. Regulação e autorregulação: `febraban-autorregulacao-normativos`, `febraban-autorregulacao-consignado`, `febraban-autorregulacao-relatorio`, `febraban-forum-pagamentos`. Consumidor: `febraban-relatorio-ouvidorias`, `febraban-observatorio`. ESG: `febraban-taxonomia-financas-sustentaveis`, `febraban-relatorio-cop`, `febraban-estudos-riscos-socioambientais`. Inclusão: `meu-bolso-em-dia`, `isfb-saude-financeira`. Pagamentos: `febraban-layouts-padroes`. Pessoas: `febraban-convencoes-coletivas`. Tecnologia e mídia: `febraban-cyberlab-estudos`, `febrabantech-evento-site`, `febraban-podcast`, `youtube-febraban-oficial`, `fin-noticias`. Eventos: `febraban-eventos-pldft-grisc`, `febraban-sec-evento` | Page diff mensal das listagens; padrões de URL previsíveis (Pesquisa Especial de Crédito, ISEB, I-SFB) permitem HEAD no período esperado; sitemaps (Meu Bolso em Dia, evento); RSS (podcast, Fin, YouTube) |
+| **Baixa** | Demais itens: estudos avulsos, guias pontuais, utilitários e datasets de referência (códigos de arrecadação, feriados, extratos), itens institucionais, canais parados, conteúdo restrito | Manual ou page diff trimestral; não consumir os parados ou restritos |
+
+**Padrões previsíveis úteis** (dá para checar com HEAD sem rastrear a listagem):
+- Pesquisa Especial de Crédito: `Pesquisa%20Especial%20Cr%C3%A9dito_{mês}_{AA}%20-%20vers%C3%A3o%20imprensa.pdf`
+- I-SFB: `A_Saude_Financeira_do_Brasileiro_{AAAA}.pdf` (a edição 2025 só foi achada assim)
+- Relatório COP: `Relat%C3%B3rio%20Febraban_COP{NN}.pdf`
+- Os demais (ISEB, Expectativas, Panorama) variam a grafia e pedem page diff.
+
+**Links quebrados encontrados** (para não tratar como "nova publicação" quando voltarem):
+- Guia de Compliance (404)
+- Recomendação SARB 001/2024 (404)
+- Primeiro PDF da listagem do Relatório da Autorregulação (404)
+- `/pagina/3150/52/...`, `/pagina/3317/1122/...` e `/pagina/3271/50/...` redirecionam para a home
+- Acervo de palestras de `/eventos` (404)
+
 **Detecção de arquivos novos (padrão comum).** O único padrão estável é o diretório `https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/`. Não existe índice dele (a raiz dá 403) e os nomes são livres. A forma confiável de descoberta é extrair dos HTMLs de listagem do portal (e dos releases) todos os links que começam com esse prefixo, normalizar (decodificar, Unicode NFC, minúsculas) e comparar com o que já foi visto. O `Last-Modified` dos PDFs é confiável como data de publicação.
 
 ## 8. Correções nas fontes já monitoradas (para decidir depois; não alterei nada)
@@ -159,3 +296,4 @@ Legenda de prioridade: **TB** = tecnologia-bancaria, **FB** = fraude-bancaria. A
 - As SPAs (`febrabantech.febraban.org.br`, `febrabantech.com`) não foram renderizadas. Ficaram sem verificação a programação detalhada, se os vídeos exigem login e se há PDFs de apresentações. Não tentei contornar o erro 500 do bundle JS nem descobrir APIs internas.
 - Baixei só 4 PDFs pequenos, para confirmar autoria e data, e o HTML do radar, para ver a estrutura. Os arquivos foram descartados em seguida.
 - O histórico da Pesquisa de Tecnologia Bancária antes de 2023 não está listado no portal. O início da série foi estimado pela numeração "34ª edição em 2026".
+- Na ampliação (§6A–§6H), as datas de "última edição" vêm do `Last-Modified` dos arquivos (HEAD) ou do rótulo da listagem. Não abri esses PDFs. As edições anteriores do Censo da Diversidade não foram verificadas uma a uma. A página de Indicadores do consignado e a lista de associados são renderizadas por JS e não foram lidas.
