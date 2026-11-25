@@ -585,3 +585,17 @@ mark { background: var(--accent-soft); color: inherit; border-radius: 3px; paddi
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* voice: microphone next to text fields, "Ouvir" on answers */
+.has-mic { position: relative; }
+.mic-btn { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px;
+  margin-left: 6px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink-2); cursor: pointer; }
+.mic-btn[data-state="rec"] { color: #fff; background: #c0392b; border-color: #c0392b; animation: mic-pulse 1.2s ease-in-out infinite; }
+.mic-btn[data-state="busy"] { opacity: .55; cursor: progress; }
+textarea + .mic-btn { vertical-align: top; }
+@keyframes mic-pulse { 50% { box-shadow: 0 0 0 6px rgba(192, 57, 43, .18); } }
+@media (prefers-reduced-motion: reduce) { .mic-btn[data-state="rec"] { animation: none; } }
+.speak-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 12px; margin: 4px 0 8px;
+  border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink-2); font: inherit; font-size: 14px; cursor: pointer; }
+.speak-btn.on { color: var(--accent, #b5532a); border-color: currentColor; }
+.speak-btn.busy { opacity: .6; cursor: progress; }

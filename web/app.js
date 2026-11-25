@@ -1258,6 +1258,146 @@
     }
   }
 
+  // ---------- voice: a microphone on every text field (/api/stt) and "Ouvir" on answers (/api/tts) ----------
+  // Recording works in any format the browser produces; it is decoded and re-encoded as WAV mono 16 kHz before
+  // upload, because the transcription provider does not read the iPhone's audio/mp4. Everything stays hidden in
+  // the offline bundle and when the endpoints are not configured.
+  const voice = { stt: false, tts: false, rec: null, audio: null };
+  const MIC_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/></svg>';
+  const STOP_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>';
+  const SPK_SVG = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>';
+
+  function encodeWav(samples, rate) {
+    const buf = new ArrayBuffer(44 + samples.length * 2);
+    const v = new DataView(buf);
+    const w = (o, str) => { for (let i = 0; i < str.length; i++) v.setUint8(o + i, str.charCodeAt(i)); };
+    w(0, "RIFF"); v.setUint32(4, 36 + samples.length * 2, true); w(8, "WAVE"); w(12, "fmt ");
+    v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true); v.setUint32(24, rate, true);
+    v.setUint32(28, rate * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, "data");
+    v.setUint32(40, samples.length * 2, true);
+    for (let i = 0; i < samples.length; i++) { const x = Math.max(-1, Math.min(1, samples[i])); v.setInt16(44 + i * 2, x < 0 ? x * 0x8000 : x * 0x7fff, true); }
+    return new Blob([buf], { type: "audio/wav" });
+  }
+
+  async function toWav16k(blob) {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    const ctx = new Ctx();
+    try {
+      const decoded = await ctx.decodeAudioData(await blob.arrayBuffer());
+      const off = new OfflineAudioContext(1, Math.ceil(decoded.duration * 16000), 16000);
+      const src = off.createBufferSource();
+      src.buffer = decoded; src.connect(off.destination); src.start();
+      return encodeWav((await off.startRendering()).getChannelData(0), 16000);
+    } finally { ctx.close && ctx.close(); }
+  }
+
+  async function transcribeBlob(blob) {
+    let body = blob;
+    try { body = await toWav16k(blob); } catch { /* webm/ogg go as recorded */ }
+    const type = (body.type || "audio/webm").split(";")[0];
+    const r = await fetch(`/api/stt?voter=${encodeURIComponent(voterId())}`, { method: "POST", headers: { "Content-Type": type }, body });
+    const out = await r.json().catch(() => ({}));
+    if (!r.ok || !out.ok) throw new Error(out.error || `HTTP ${r.status}`);
+    return out.text || "";
+  }
+
+  function setMic(btn, state) {
+    btn.dataset.state = state;
+    btn.innerHTML = state === "rec" ? STOP_SVG : MIC_SVG;
+    btn.setAttribute("aria-label", state === "rec" ? "Parar e transcrever" : state === "busy" ? "Transcrevendo…" : "Falar em vez de digitar");
+    btn.disabled = state === "busy";
+  }
+
+  async function toggleMic(btn, field) {
+    if (voice.rec && voice.rec.btn === btn) { voice.rec.recorder.stop(); return; }
+    if (voice.rec) voice.rec.recorder.stop();
+    let stream;
+    try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+    catch { btn.title = "Sem acesso ao microfone"; return; }
+    const recorder = new MediaRecorder(stream);
+    const chunks = [];
+    recorder.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+    recorder.onstop = async () => {
+      stream.getTracks().forEach((t) => t.stop());
+      clearTimeout(voice.rec && voice.rec.timer);
+      voice.rec = null;
+      setMic(btn, "busy");
+      try {
+        const text = await transcribeBlob(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
+        if (text) {
+          field.value = (field.value && !/\s$/.test(field.value) ? field.value + " " : field.value) + text;
+          field.dispatchEvent(new Event("input", { bubbles: true }));
+          field.dispatchEvent(new Event("change", { bubbles: true }));
+          field.focus();
+        }
+      } catch (e) { btn.title = `Não deu para transcrever: ${e.message}`; }
+      setMic(btn, "idle");
+    };
+    recorder.start();
+    voice.rec = { recorder, btn, timer: setTimeout(() => recorder.state === "recording" && recorder.stop(), 85000) };
+    setMic(btn, "rec");
+  }
+
+  const MIC_FIELDS = 'textarea, input[type="search"], input[type="text"], input:not([type])';
+  function attachMics(root) {
+    if (!voice.stt) return;
+    (root.querySelectorAll ? root : document).querySelectorAll(MIC_FIELDS).forEach((field) => {
+      if (field.dataset.mic || field.name === "name" || field.disabled || field.closest("[data-nomic]")) return;
+      field.dataset.mic = "1";
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "mic-btn";
+      setMic(btn, "idle");
+      btn.addEventListener("click", (e) => { e.preventDefault(); toggleMic(btn, field); });
+      field.insertAdjacentElement("afterend", btn);
+      field.parentElement && field.parentElement.classList.add("has-mic");
+    });
+  }
+
+  async function speak(btn, text) {
+    if (voice.audio) { voice.audio.pause(); const was = voice.audio.btn; voice.audio = null; if (was) was.classList.remove("on"); if (was === btn) return; }
+    btn.classList.add("on", "busy");
+    try {
+      const r = await fetch("/api/tts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, voter: voterId() }) });
+      if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || `HTTP ${r.status}`);
+      const a = new Audio(URL.createObjectURL(await r.blob()));
+      a.btn = btn; voice.audio = a;
+      a.onended = () => { btn.classList.remove("on"); voice.audio = null; };
+      btn.classList.remove("busy");
+      await a.play();
+    } catch (e) { btn.classList.remove("on", "busy"); btn.title = `Não deu para ler: ${e.message}`; }
+  }
+
+  function attachSpeakers(root) {
+    if (!voice.tts) return;
+    (root.querySelectorAll ? root : document).querySelectorAll("article.qa .a, [data-speak]").forEach((el) => {
+      if (el.dataset.spk) return;
+      el.dataset.spk = "1";
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "speak-btn";
+      btn.innerHTML = `${SPK_SVG}<span>Ouvir</span>`;
+      btn.setAttribute("aria-label", "Ouvir este texto");
+      btn.addEventListener("click", () => speak(btn, el.innerText));
+      el.insertAdjacentElement("beforebegin", btn);
+    });
+  }
+
+  function initVoice() {
+    const ok = location.protocol.startsWith("http") && window.isSecureContext !== false;
+    if (!ok) return;
+    const probe = (path) => fetch(path, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    Promise.all([probe("/api/stt"), probe("/api/tts")]).then(([s, t]) => {
+      voice.stt = !!s.enabled && !!(navigator.mediaDevices && window.MediaRecorder);
+      voice.tts = !!t.enabled;
+      if (!voice.stt && !voice.tts) return;
+      const scan = (n) => { attachMics(n); attachSpeakers(n); };
+      scan(document);
+      new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach((n) => n.nodeType === 1 && scan(n))))
+        .observe(document.body, { childList: true, subtree: true });
+    });
+  }
+
   // ---------- router ----------
   function route() {
     const raw = location.hash.replace(/^#\/?/, "");
@@ -1315,6 +1455,7 @@
       if (fbOn()) fbWire();
       window.addEventListener("hashchange", route);
       route();
+      initVoice();
     })
     .catch((e) => { app.innerHTML = `<div class="empty">Não foi possível carregar os dados (${esc(e.message)}).</div>`; });
 })();

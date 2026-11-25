@@ -172,3 +172,17 @@ test("answer format by intent: every reference question gets the expected one (n
     industry: "industry", code: "code", regulation: "regulation", project_fit: "project", skills: "default", training: "training", news: "default" };
   for (const q of expandQuestions(bank).filter((x) => x.intent !== "real")) assert.equal(intentOf(q.text), expected[q.intent], q.id);
 });
+
+test("voice: transcription falls back across models, rejects unsupported audio, speech text is clean", async () => {
+  const V = await import("../../server/voice.js");
+  const seen = [];
+  const r = await V.transcribe({ HF_TOKEN: "h" }, new Uint8Array(2000), "audio/webm;codecs=opus", async (url, init) => {
+    seen.push([url.split("/models/")[1], init.headers["Content-Type"]]);
+    return seen.length === 1 ? new Response(JSON.stringify({ error: "busy" }), { status: 503 }) : new Response(JSON.stringify({ text: " olá mundo " }));
+  });
+  assert.deepEqual(seen, [["openai/whisper-large-v3-turbo", "audio/webm"], ["openai/whisper-large-v3", "audio/webm"]]);
+  assert.equal(r.text, "olá mundo");
+  await assert.rejects(() => V.transcribe({ HF_TOKEN: "h" }, new Uint8Array(10), "audio/mp4"), /não suportado/);
+  assert.equal(V.speakable("**Resumo**: golpes [1] cresceram [2].\n- item https://x.y/z"), "Resumo: golpes cresceram.\nitem");
+  assert.deepEqual(V.sttModels({ STT_MODEL: "x/y" }), ["x/y", ...V.STT_MODELS]);
+});

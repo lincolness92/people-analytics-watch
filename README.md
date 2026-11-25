@@ -326,6 +326,19 @@ O destino dos traces:
 - **Validação:** a codificação protobuf é idêntica à do `server/trace.js` (há um teste que compara as duas), e o
   envio foi testado contra o Phoenix local.
 
+## Voz: falar em vez de digitar, e ouvir as respostas
+
+- **Entrada (todos os campos de texto do site):** um botão de microfone grava e transcreve. O navegador decodifica a
+  gravação e envia WAV mono 16 kHz, porque o provedor não lê o `audio/mp4` do iPhone. A transcrição vai para
+  `POST /api/stt`, que usa Whisper large-v3-turbo no Hugging Face Inference Providers, com o large-v3 de reserva.
+  Precisa só do `HF_TOKEN` que já existe. Opcional: `STT_MODEL`, para outros modelos na frente. O limite é de 120
+  transcrições por pessoa por dia e ~90 s por gravação.
+- **Saída (respostas do Pergunte):** o botão "Ouvir" aparece quando o Pages tem `ELEVENLABS_API_KEY` (secret).
+  Opcionais: `ELEVENLABS_VOICE_ID` (padrão: uma voz pronta) e `ELEVENLABS_MODEL` (padrão `eleven_flash_v2_5`,
+  multilíngue e de baixa latência). O texto vai sem marcas de citação nem markdown; o limite é de 60 leituras por
+  pessoa por dia.
+- O código fica em `server/voice.js`, `functions/api/stt.js` e `functions/api/tts.js`. No pacote offline, a voz não aparece.
+
 ## Ajustes comuns
 
 - **Ampliar ou estreitar o escopo**: edite `topics/<tema>/queries.json` (sintaxe booleana do OpenAlex).
