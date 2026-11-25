@@ -13573,5 +13573,504 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-24"
+},
+{
+"key": "doi:10.1002/hrm.70112",
+"title": "Confident and Well‐Connected: The Interplay of Line Managers' HR Self‐Efficacy, Brokerage, and HRM Implementation",
+"url": "https://doi.org/10.1002/hrm.70112",
+"venue": "Human Resource Management",
+"date": "2026-11-24",
+"authors": [
+"Budy Purnawanto",
+"Huadong Yang",
+"Salma Raheem",
+"Julia Brennecke"
+],
+"abstract": "HRM implementation, defined as line managers' execution of core HRM tasks, has been identified as a key challenge in realizing the competitive advantages associated with HRM. Integrating social cognitive and social network theories, we investigate the joint effect of line managers' HR self‐efficacy (i.e., their confidence in their ability to effectively perform HRM‐related tasks) and their positions as brokers (i.e., their role as intermediaries between otherwise disconnected contacts) in HR advice networks on HRM implementation and establish a link to team performance. Multilevel analyses were conducted using multisource survey data from 88 line managers, their 325 subordinates, and 69 of the line managers' direct superiors across six Indonesian firms. The findings reveal an inverted U‐shaped relationship between self‐efficacy and HRM implementation, with medium levels of self‐efficacy linked to more effective HRM implementation than either low or high levels. Moreover, line managers' positions as HR information brokers moderate the inverted U‐shaped relationship: The curve remains steeper at low levels of brokerage, but becomes shallower at high levels. Finally, HRM implementatio",
+"score": 7,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1108/rausp-12-2025-0285",
+"title": "Digital drains: the role of IT-related mental fatigue in the relationship between remote work stressors and psychological detachment",
+"url": "https://doi.org/10.1108/rausp-12-2025-0285",
+"venue": "RAUSP Management Journal",
+"date": "2026-11-25",
+"authors": [
+"陈效",
+"Yet Mee Lim",
+"Lee Yen Chaw",
+"Choi‐Meng Leong",
+"Chorng Yuan Fung"
+],
+"abstract": "Purpose This study aims to investigate the effects of information and communication technology (ICT) use during work hours, ICT use after work hours and multitasking on mental fatigue, as well as the impact of mental fatigue on employees’ psychological detachment while working at home. The moderating effect of physical isolation on the relationship between mental fatigue and psychological detachment is also investigated. Design/methodology/approach A self-administered questionnaire was used to collect data from employees in Malaysian firms across various industries; 324 questionnaires were collected and analyzed using partial least squares structural equation modeling. Findings The results indicated that ICT use during work hours, ICT use after work hours and multitasking lead to mental fatigue and subsequently contribute to psychological detachment. Physical isolation was not significant in moderating the relationship between mental fatigue and psychological detachment. Research limitations/implications Three limitations are identified. First, this study is industry-neutral and uses data from one country. Therefore, the results may not be generalized. Second, the study did not con",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://joshbersin.com/podcast/anthropic-admits-that-ai-doesnt-transform-work-without-people",
+"title": "Anthropic Admits That AI Doesn’t Transform Work Without People",
+"url": "https://joshbersin.com/podcast/anthropic-admits-that-ai-doesnt-transform-work-without-people/",
+"venue": "Josh Bersin (blog)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Whew. After endless speeches and articles about 50% of jobs being eliminated, Anthropic finally “figured out” what we’ve known for years. AI automation does not happen without carefully redesigning work and business processes. In other words, magically “turning on agents” does not cause businesses to improve. Here is their “research,” which is two years behind our own studies. Our new HR2030® blueprint explains this process in all areas of human capital. But at least they’re now getting it. And the big finding, as I discuss, is that people are needed and very valuable in this process. Note the following: “Across our interviews, we saw very few examples of domestic layoffs that were driven by AI automation. Although some companies reported hiring more due to AI, most companies reported hiring less due to AI.” Read our new book Superpowered: How AI Unlocks the Superpower of People, Leadership, and Teams , to really understand what’s happening. This book is written for you as a business person, HR leader, or professional. And if you want to stay current on all our research, get Galileo® , the AI Agent for everything HR.",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Josh Bersin"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/mnsc.2024.05184",
+"title": "Widely Used Measures of Overconfidence Are Confounded with Ability",
+"url": "https://doi.org/10.1287/mnsc.2024.05184",
+"venue": "Management Science",
+"date": "2026-11-24",
+"authors": [
+"Stephen A. Spiller"
+],
+"abstract": "Measures of overconfidence are used both to assess biases in people’s beliefs regarding their own abilities and to identify correlates of those biases. Proposed correlates of overconfidence include narcissism, social status, (low) task anxiety, savings, planning, and many more. Research on these correlates typically explicitly or implicitly claims that the associations with overconfidence are not attributable to ability (i.e., latent inputs enabling successful task performance, including inputs that vary across people, states, or contexts). I argue that several typical approaches used to measure overconfidence are not sufficient to support such claims. This argument follows from two underappreciated properties of these measures of overconfidence. First, performance is an imperfect measure of ability: accounting for performance does not sufficiently account for ability. Second, self-evaluations of performance should reflect ability in addition to performance: because performance is ambiguous, people should incorporate prior beliefs about their ability. These properties imply that multiple commonly used measures of overconfidence are confounded with ability. I support these analytica",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/mnsc.2024.08000",
+"title": "Determinants of Norm Compliance: Moral Similarity and Group Identification",
+"url": "https://doi.org/10.1287/mnsc.2024.08000",
+"venue": "Management Science",
+"date": "2026-11-24",
+"authors": [
+"Alexander Schneeberger",
+"Erin L. Krupka"
+],
+"abstract": "What determines whether someone complies with a social norm? The social identity approach offers a mechanism for norm compliance: A person who feels similar to a group identifies more with that group and, in turn, complies with the group’s norms. Using an experiment, we test whether similarity in values increases identification and adherence to a group rule. To do so, we varied the similarity/dissimilarity between the values of an individual and members of a social group and measured group identification and rule compliance. We find that moral similarity in progressivism increases group identification, and group identification can increase compliance with rules from the social group. However, our results also suggest that this relationship can be disrupted. Because of our design and empirically verified in our study, social norms do not differ between treatments. As a consequence, observed behavior changes are attributable to increased group norm sensitivity and not changes in group norms. We advance the study of social identity by testing a causal pathway between group identification, group norm sensitivity, and behavior change. Our contribution to the management literature is to ",
+"score": 7,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1177/0734371x261499942",
+"title": "From Mid-Level to Major Impact: Strengthening Women’s Leadership in Public Higher Education Institutions Through Strategic Human Resource Management for SDG Realization",
+"url": "https://doi.org/10.1177/0734371x261499942",
+"venue": "Review of Public Personnel Administration",
+"date": "2026-11-23",
+"authors": [
+"Juma Yusuf Mnzile",
+"Müyesser Ceylan"
+],
+"abstract": "Women remain underrepresented in higher education leadership despite sustained gender-equity efforts. This qualitative meta-synthesis examined how strategic human resource management (SHRM) supports women’s leadership in public higher education institutions by integrating evidence from 57 studies published between 2020 and 2025. Four themes were identified: SHRM as an enabler of women’s leadership; women’s leadership as an organizational capability; organizational and socio-cultural barriers; and strategic priorities for institutional action. The evidence indicates that women’s leadership is strengthened when equitable recruitment, leadership development, supportive organizational cultures, and accountability mechanisms operate as an integrated HR system. Persistent structural and socio-cultural barriers nevertheless continue to restrict advancement. Accordingly, this paper proposes an analytical framework linking SHRM, women’s leadership, SDG 4 (Quality Education), and SDG 5 (Gender Equality).",
+"score": 6,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.4324/9781003590903-3",
+"title": "Managing the multigenerational workforce in the Australian local government sector",
+"url": "https://doi.org/10.4324/9781003590903-3",
+"venue": "Routledge eBooks",
+"date": "2026-11-18",
+"authors": [
+"K Aluko",
+"Roslyn Larkin",
+"John Burgess"
+],
+"abstract": "This chapter examines how Australian local governments (ALGs) are responding to persistent skills shortages by implementing strategic human resource management (HRM) practices tailored to a multigenerational workforce. Drawing on 23 semi-structured interviews with senior council officers in 4 Australian states and on the analysis of council workforce documents, the chapter investigates how councils are navigating complex demographic and technological shifts across their workforces. While many councils, particularly in rural and regional areas, operate under resource constraints and legacy systems, the findings highlight emerging HRM practices that support knowledge transfer, retain critical capabilities, and foster intergenerational collaboration. However, progress is uneven, and implementation is often hindered by short-term funding cycles, compliance-driven cultures, and limited strategic HR capacity. The chapter concludes with policy and practice recommendations, emphasising the need for systemic reform to support adaptive workforce planning. It contributes to the book’s broader objective of advancing inclusive, context-specific approaches to the Future of Work and the effective",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.4337/9781035324330.00020",
+"title": "(Un)Fairness in the digital labour market: a socio-legal and comparative perspective",
+"url": "https://doi.org/10.4337/9781035324330.00020",
+"venue": "Edward Elgar Publishing eBooks",
+"date": "2026-11-19",
+"authors": [
+"Tammy Katsabian",
+"Antonio Aloisi"
+],
+"abstract": "Modern instances of discrimination in the digital labour market exhibit a sophisticated and elusive form, and they can be highly impactful in terms of the scale, scope and volume. Such discrimination impinges on equality paradigms, undermine users’ trust in technology and results in legal uncertainty for workers, providers and adopters alike. In this chapter, we use two case studies to illustrate our argument. The first involves using AI to manage work. This entails a set of practices whereby decisions are partly or fully delegated to automated systems, which is known as ‘algorithmic management’ (AM). A common example of this is an AI program being used to screen, assess and select job candidates and prospective employees. The second case study involves work that is performed via information communication technology (ICT), mainly in the case of remote work or work from home. In this case, ICT allows the worker to distance herself from the workplace and situates her in private surroundings. In this chapter, we examine the solutions that exist to overcome these difficulties in the United States and Europe, combining legislation meant to enshrine equality, unleash opportunities and re",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1177/10519815261507070",
+"title": "Machine learning decision system for analyzing digital eye strain factors Among Filipino remote workers",
+"url": "https://doi.org/10.1177/10519815261507070",
+"venue": "Work",
+"date": "2026-11-24",
+"authors": [
+"Rex Revian A. Guste",
+"Ardvin Kester S. Ong",
+"Maela Madel L. Cahigas",
+"Marloun P. Sejera"
+],
+"abstract": "Background The global shift to remote work necessitates a better understanding of the system-level factors that influence digital eye strain (DES) and functional impairment in screen-based professions. In the Philippines, where remote work is increasingly common, there has been little empirical research on the behavioral and ergonomic predictors of DES severity. Objectives The global shift to remote work or telework necessitates a better understanding of the system-level factors that influence digital eye strain (DES) or also known as asthenopia and functional impairment in screen-based professions. Methods A cross-sectional survey of 408 remote workers looked at nine latent constructs: task, exposure and behavior, psychophysical, equipment, environment, musculoskeletal strain, digital eye strain, emotional strain, and functional limitations. Fuzzy C-Means (FCM) clustering was used on standardized construct-level scores, with Principal Component Analysis (PCA)-seeded initialization and a grid search of cluster parameters. Results A highly structured two-cluster solution emerged (c = 2, m = 1.5, F P C = 0.8552) partitioning respondents into High-Strain (46.6 %) and Low-Strain (53.4 ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11390396/v1",
+"title": "Young People’s Perceptions of Artificial Intelligence and Digitalisation and the Role of Digital Skills and Psychological Resources for Labour Market Entry",
+"url": "https://doi.org/10.21203/rs.3.rs-11390396/v1",
+"venue": "Research Square",
+"date": "2026-11-24",
+"authors": [
+"Anthony Abrome",
+"Marco De Angelis",
+"Martina Benvenuti"
+],
+"abstract": "Artificial Intelligence (AI) and digitalisation are transforming the world of work, raising important questions regarding young people’s preparedness for labour market entry. The present study investigated young people’s perceptions of AI and digitalisation in the workforce, their perceived preparedness for labour market entry, and the digital and psychological resources they consider essential for navigating these changes. Adopting a qualitative design, participants were purposively sampled and comprised students and recent graduates aged 18–29 who were approaching the completion of their studies and preparing to enter the workforce. Data were collected through eight semi-structured interviews and nine focus groups, each comprising 8–10 participants. The study was guided by the Integrated Framework of Graduate Employability, integrating digital competencies (DigComp) and psychological resources from Psychological Capital and Career Adaptability as complementary factors. Data were analysed using a hybrid thematic analysis approach implemented in MAXQDA software. Findings revealed ambivalent perceptions of AI and digitalisation, with participants recognising potential efficiency gai",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1108/jmp-07-2025-0708",
+"title": "Navigating identity in platform work: sociotechnical tensions and institutional complexity",
+"url": "https://doi.org/10.1108/jmp-07-2025-0708",
+"venue": "Journal of Managerial Psychology",
+"date": "2026-11-24",
+"authors": [
+"Jieyu Hu",
+"Dejun Cheng",
+"Shijun Huang"
+],
+"abstract": "Purpose Drawing on the institutional logics and sensemaking perspectives within institutional theory, this study investigates how platform governance is associated with platform workers' professional identity, with a particular focus on the role of workplace depersonalization. This study also argues that these relationships are weaker when algorithmic dependence is lower and when algorithmic anthropomorphism is higher. Design/methodology/approach The authors conducted a three-wave field survey of 328 workers in real platform governance settings. Findings The findings show that commodified and atomized governance are positively associated with workplace depersonalization, which is in turn associated with lower professional identity among platform workers. Importantly, the negative indirect relationships between the two forms of platform governance and professional identity via workplace depersonalization are stronger when algorithmic anthropomorphism is low. However, only the negative indirect relationship between commodified governance and professional identity is stronger when algorithmic dependence is high. Originality/value This research contributes to the literature on professi",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/mnsc.2025.01507",
+"title": "Screening, Investment Incentives, and the Welfare Trade-Offs of Privacy",
+"url": "https://doi.org/10.1287/mnsc.2025.01507",
+"venue": "Management Science",
+"date": "2026-11-24",
+"authors": [
+"Anastasios Dosis",
+"Casey G. Rothschild"
+],
+"abstract": "This paper studies how information disclosure affects investment incentives and contracting efficiency. We analyze a class of principal-agent models in which information helps the principal screen the agent but also facilitates surplus appropriation, thereby weakening the agent’s incentive to invest before contracting. Efficient privacy regimes balance these two forces. Along the frontier of efficient information policies, more privacy is associated with stronger investment incentives and higher agent payoff. We characterize conditions under which full privacy, full disclosure, or intermediate privacy is efficient. The results provide guidance for intellectual property and innovation policy by identifying when additional privacy fosters or hinders economic efficiency and innovation. This paper was accepted by Alfonso Gambardella, business strategy. Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2025.01507 .",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/orsc.2024.19400",
+"title": "Legal Chameleons: Political Ideology, Institutional Histories, and Firms’ Management of Identity Cues",
+"url": "https://doi.org/10.1287/orsc.2024.19400",
+"venue": "Organization Science",
+"date": "2026-11-24",
+"authors": [
+"Yong Hyuck Kim",
+"Jose N. Uribe",
+"Maxim Sytch"
+],
+"abstract": "This study examines how foreign firms strategically manage the salience of foreignness when facing unfavorable domestic evaluators. Foreign firms do so by altering the ethnic composition of the agents representing them before the evaluators. We examine this question in the context of Asian firms’ selection of legal counsel in U.S. federal courts. Prior research suggests that foreign firms may anticipate less favorable evaluations in courts that have historically favored domestic over foreign firms and in those with conservative judges. We argue that, in such evaluative settings, Asian firms adjust the ethnic composition of their external legal teams to manage the salience of foreignness, and that such adjustments are especially likely in courts that combine judge conservatism with pro-domestic ruling histories. We test these arguments using data on U.S. patent litigation from 2000 to 2016 and validated measures of courts’ political ideology and pro-domestic ruling histories. We find that Asian firms reduce the proportion of Asian-origin lawyers and increase the proportion of White lawyers when litigating in conservative courts, particularly when these courts also have pro-domestic ",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1177/14705958261509850",
+"title": "National culture, gender, and work values: A comparative study of job expectations in Brazil and Peru",
+"url": "https://doi.org/10.1177/14705958261509850",
+"venue": "International Journal of Cross Cultural Management",
+"date": "2026-11-24",
+"authors": [
+"Dennis Barber",
+"Cody Logan Chullen",
+"William J. Rowe",
+"Tope Adeyemi‐Bello",
+"Flávia Cavazotte",
+"Stella Tippin"
+],
+"abstract": "This study examines how national culture and gender shape job expectations in South America by comparing the importance Brazilian and Peruvian participants assign to 25 intrinsic and extrinsic job characteristics. While previous research has examined cultural or gender differences separately, this study evaluates whether gender differences vary across cultural contexts, clarifying the joint influence of culture and gender on work values. Data were collected from 916 Brazilian and Peruvian participants who rated job characteristics on a five-point scale. Mean rankings, MANCOVA/ANCOVA tests, and post hoc comparisons assessed cultural, gender, and interaction effects while controlling for age and employment status. Spearman rank-order correlations evaluated similarity in value hierarchies, and intrinsic–extrinsic composites examined broader motivational patterns. Results revealed significant main effects for both national culture and gender, with culture explaining the largest share of variance. Brazilian participants placed greater importance on intrinsic characteristics such as accomplishment, intellectual stimulation, and development, whereas Peruvian participants emphasized struct",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.5281/zenodo.24502725",
+"title": "Algorithmic Bias and Human Oversight in Automated Resume Screening: Evidence and Implications for Recruitment in India",
+"url": "https://doi.org/10.5281/zenodo.24502725",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-24",
+"authors": [
+"Shivam Singh",
+"Shilpi Khandelwal"
+],
+"abstract": "Automated resume screening can reproduce and scale discrimination, and simply placing a human reviewer after the algorithm does not reliably stop it. This paper examines that problem for recruitment in India. Using a structured review of recent experimental, legal and regulatory sources, it shows that large language model (LLM) screeners have favoured white-associated names in 85% of test comparisons (Wilson & Caliskan, 2024), that a simulated GPT-3.5 shortlist selected dominant-caste names 84% of the time (Zaveri & Shah, 2025), and that human reviewers followed a severely biased AI about 90% of the time (Wilson et al., 2025). Indian law gives recruiters little direct guidance: the Digital Personal Data Protection (DPDP) framework is silent on whether job applicants fall within its employment exemption. The paper proposes a five-layer oversight framework (criteria, data, audit, review, accountability) that a small Indian recruitment consultancy can adopt without specialist data-science staff. It is a secondary-source study and reports no original measurements.",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.48550/arxiv.2611.28377",
+"title": "Using the Tool That Replaces You: Generative AI and the Adoption Bind among Bangladeshi Platform Freelancers",
+"url": "https://doi.org/10.48550/arxiv.2611.28377",
+"venue": "arXiv",
+"date": "2026-11-20",
+"authors": [
+"Naim Bin Hasan"
+],
+"abstract": "Platform studies show that generative AI has reduced demand for freelance writing and image work, and experiments show that it makes individual workers faster. This letter asks how these two findings look to workers who are both users of the technology and exposed to it. I analyze 30 interviews with Bangladeshi online freelancers, conducted in Bangla between May and August 2025. Twenty-one participants used generative AI in their own work, sixteen said that it was replacing freelance work, and thirteen said both. Eleven of the sixteen placed replacement on others: on beginners and workers who do not update their skills, on \"basic\" tasks, or on other sectors. Participants also described how prices fell as tasks became faster, and how clients cited AI to offer less. I propose the term adoption bind for this pattern: each worker adopts generative AI to stay on the safe side of the line, while the same tools, in the hands of competitors and clients, lower what the market pays for the work. The bind suggests that productivity gains measured for individuals can become price losses for workers as a group, and that these losses fall first on entry-level work.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.47772/ijriss.2026.101100137",
+"title": "Generative AI and the Future of Work in Technology Workers' Discourse: A Topic Modelling and Clustering Analysis of Hacker News Discussions From 2023 To 2026",
+"url": "https://doi.org/10.47772/ijriss.2026.101100137",
+"venue": "International Journal of Research and Innovation in Social Science",
+"date": "2026-11-21",
+"authors": [
+"Fazidah Wahit"
+],
+"abstract": "Generative artificial intelligence (AI) is reshaping the organisation of work, yet relatively little is known about how the workers closest to the technology interpret its consequences for their own occupations. This study examines how technology practitioners discuss the effects of generative AI on jobs, careers and hiring, and how this discourse changed between January 2023 and September 2026. A new corpus was assembled from Hacker News, a large online forum for software and technology professionals. Keyword retrieval was combined with a zero-shot relevance classifier, which yielded 34,270 comments written by 13,576 contributors with an estimated precision of 85.3% on a held-out random sample. Four topic models, namely LDA, NMF and two BERTopic variants, were compared on coherence, diversity and coverage, and non-negative matrix factorisation with 15 topics provided the best balance. Sentence embeddings were then clustered with k-means to identify broader discourse frames, and the monthly topic composition was segmented with contiguity-constrained hierarchical clustering to detect discourse phases. Six frames emerged, covering corporate layoffs and AI-washing, AI as a tool or a t",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.4324/9781003661054-7",
+"title": "Effective Onboarding Through Mentoring",
+"url": "https://doi.org/10.4324/9781003661054-7",
+"venue": "Routledge eBooks",
+"date": "2026-11-24",
+"authors": [
+"Ann Taylor",
+"Stevie Rocco"
+],
+"abstract": "Effective onboarding is critical to the engagement, retention, and success of instructional design professionals, yet many organizations rely on informal or fragmented approaches that leave new hires feeling disconnected and underutilized. This chapter presents a comprehensive, intentional onboarding model grounded in mentoring, organizational socialization, and community building, developed within the John A. Dutton Institute for Teaching and Learning Excellence at Penn State. Using a narrative vignette to illustrate common onboarding challenges, the authors describe a multi-layered approach that begins before Day 1 and continues through the early months of employment. Key elements include structured preboarding, written and digital onboarding resources, role-specific job manuals, relationship-building practices, and the assignment of a “Success Sponsor” who provides sustained, individualized mentoring and support. The chapter highlights how clearly articulated values, shared expectations, and transparent communication practices foster a sense of belonging and purpose, particularly within hybrid and remote work environments. While situated in the context of instructional design in",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11845791/v1",
+"title": "Short-Term Efficiency, Long-Term Cognitive Cost? A Systematic Literature Review of Large Language Model Use in Professional Work",
+"url": "https://doi.org/10.21203/rs.3.rs-11845791/v1",
+"venue": "Research Square",
+"date": "2026-11-24",
+"authors": [
+"Chetna Khandare"
+],
+"abstract": "Many professionals now use large language models (LLMs) at work, and experiments show that the tools make many tasks faster and improve the immediate output. The worry is that these gains may cost workers some of the skill, judgement and self-knowledge they would otherwise build or keep. We systematically reviewed empirical research on the cognitive and performance consequences of LLM use among workers and professionals, published between January 2020 and November 2026. Following the PRISMA 2020 guidelines, we identified 1,559 records in OpenAlex and Europe PMC and five further studies through citation searching. After screening, 157 studies remained. Two-thirds were published in 2026, and most come from software development, healthcare and general knowledge work. Randomised and field experiments consistently report short-term gains in speed, output and quality, typically largest for less experienced workers. These gains are task-dependent, and LLM-assisted professionals frequently fail to match the model working alone. Fewer than ten studies measured unaided performance, memory or skill after LLM use. Those that did reported reduced recall of AI-assisted work, impaired skill forma",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.5281/zenodo.24512481",
+"title": "Gender Wage Inequality in Bangladesh: A Historical and Comparative Microeconomic Analysis of Private Companies and NGOs in Dhaka",
+"url": "https://doi.org/10.5281/zenodo.24512481",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-24",
+"authors": [
+"Md Sidratul Muntaha Rakin",
+"Mohammad Shah Alam Chowdhury"
+],
+"abstract": "Although significant strides have been made in the country's overall educational attainment at the micro level in the last five decades (1976-2026) and more girls are entering the workforce, significant gender disparities in wages persist in Dhaka. Often, non-public employment in urban areas has been regarded as a uniform sector in the literature, with the institutional heterogeneity between privatised and maximising profit firms and mission oriented Non-Govemmental Organisation (NGOs) not being reflected on. This study makes a contribution by harboring the fifty years of Bangladesh Labor Force Survey with the stratified primary enterprise data and by providing a historical and comparative micro-economic analysis of wage gender gap in the pan Dhaka metropolitan area in private enterprises and NGOs. The empirical strategy was to combine the Heckman sample selection model for non-random labor market entry with Blinder–Oaxaca means decompositions and unconditional quantile regressions that are based on Recentred Influence Function (RIF). It finds that the mean gap between men's and women's wages is 0.264 log points, and that 63.6% can be attributed to unexplained structural discrimina",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.48550/arxiv.2611.28365",
+"title": "Who Gets Blamed for the Blackout? A Critical Incident Analysis of Clients, Reputation Systems, and Online Freelancers",
+"url": "https://doi.org/10.48550/arxiv.2611.28365",
+"venue": "arXiv",
+"date": "2026-11-20",
+"authors": [
+"Naim Bin Hasan",
+"Fahim Bin Hasan"
+],
+"abstract": "Online labor platforms such as Fiverr and Upwork judge freelancers by how fast they reply, whether they deliver on time, and what clients say about them. In the Global South, these signals depend on electricity and internet connections that workers do not control. This paper asks how infrastructure failures, such as power outages, internet failures, and government internet shutdowns, become lasting reputational penalties in the gig economy, and how freelancers prevent or repair them. We use the critical incident technique to analyze 149 incidents from 30 interviews with online freelancers in Bangladesh, including accounts of the July 2024 nationwide internet shutdown. Most breakdowns were absorbed without lasting harm. Of the 21 that became lasting penalties, 17 passed through clients. A client who could not see the power cut or the shutdown read the worker's silence as unreliability and left, canceled, or gave a bad rating. Platform reputation systems then stored that judgment without its context. We call this two-stage process client-mediated misattribution. Freelancers responded with four repair strategies: making the context visible, making the breakdown invisible, staying visi",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.4337/9781035324330.00017",
+"title": "The dark side of algorithmic management: platform affordances, labour process and workers’ skills in the case of Deliveroo",
+"url": "https://doi.org/10.4337/9781035324330.00017",
+"venue": "Edward Elgar Publishing eBooks",
+"date": "2026-11-19",
+"authors": [
+"Marco Marrone"
+],
+"abstract": "",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1108/jaoc-01-2026-0058",
+"title": "Artificial intelligence as recurring organizational change: accountability and management control challenges across AI waves",
+"url": "https://doi.org/10.1108/jaoc-01-2026-0058",
+"venue": "Journal of Accounting & Organizational Change",
+"date": "2026-11-25",
+"authors": [
+"Paula Cristina de Almeida Marques",
+"Marcelo de Santana Porte"
+],
+"abstract": "Purpose Artificial intelligence (AI) is increasingly embedded in organizational decision-making, raising questions about how decision authority, accountability and management control are allocated and maintained. This paper aims to examine why accountability and management control challenges may recur across different technological configurations. It proposes that such challenges can arise when changes in effective decision authority are not accompanied by corresponding clarification of organizational responsibility and opportunities for oversight and intervention. Design/methodology/approach The study adopts a conceptual and interpretive research design based on a historically informed analysis of organizational change. Drawing on literature from management control, governance and organizational studies, it compares four waves of AI-related organizational change: computational decision support as a precursor to organizational AI adoption, followed by expert systems, data-driven and algorithmic management and contemporary AI-enabled environments. The analysis develops a conceptual synthesis of recurring accountability questions across these configurations. Findings The analysis ide",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.2486/indhealth.2026-0239",
+"title": "Beyond individual perceptions of justice: contextualizing work engagement, burnout, and employee well-being",
+"url": "https://doi.org/10.2486/indhealth.2026-0239",
+"venue": "Industrial Health",
+"date": "2026-11-20",
+"authors": [
+"Esli Joy Fernando",
+"Genesis S. Jose",
+"Henrich Daraman",
+"Jayson Obedoza",
+"Joemar Acpal"
+],
+"abstract": "",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1007/s13198-026-03489-1",
+"title": "A multi-agent decision system based on deep reinforcement learning for dynamic human resource management",
+"url": "https://doi.org/10.1007/s13198-026-03489-1",
+"venue": "International Journal of Systems Assurance Engineering and Management",
+"date": "2026-11-24",
+"authors": [
+"Yin-Yin Huang",
+"Horng Jinh Chang",
+"T. Chen"
+],
+"abstract": "",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1016/j.ijhm.2026.104973",
+"title": "Between promise and practice: Intelligent automation and workplace inclusion in hospitality HRM",
+"url": "https://doi.org/10.1016/j.ijhm.2026.104973",
+"venue": "International Journal of Hospitality Management",
+"date": "2026-11-24",
+"authors": [
+"Ruby Le Hong Ngoc Luong",
+"Maria Golubovskaya",
+"Richard N. S. Robinson"
+],
+"abstract": "",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.4337/9781035324330.00009",
+"title": "A fissured and patched power: towards a comprehensive socio-technical approach to algorithmic management",
+"url": "https://doi.org/10.4337/9781035324330.00009",
+"venue": "Edward Elgar Publishing eBooks",
+"date": "2026-11-19",
+"authors": [
+"Francisca Gutiérrez Crocco"
+],
+"abstract": "",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
 }
 ]

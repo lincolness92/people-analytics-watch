@@ -5555,5 +5555,493 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-24"
+},
+{
+"key": "doi:10.1093/rfs/hhag101",
+"title": "Fintech Expansion",
+"url": "https://doi.org/10.1093/rfs/hhag101",
+"venue": "Review of Financial Studies",
+"date": "2026-11-24",
+"authors": [
+"Jing Huang"
+],
+"abstract": "I study credit market outcomes with different competing lending technologies: a fintech lender that learns from data and can seize on-platform sales, and a banking sector that relies on physical collateral. Despite flexible information acquisition technology, endogenous fintech learning is surprisingly coarse, with a single threshold that screens out low-quality borrowers. As fintech lending technology improves, better enforcement harms, while better information technology benefits traditional banking sector profits. Big data technology enables the fintech to leverage data from its early-stage operations in unbanked markets to develop predictive models that support expansion into wealthier markets. (JEL G21, L13, L52, O33, O36)",
+"score": 8,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/isre.2024.1314",
+"title": "Understanding the Prompting Effects of Chain-of-Thought on Human Collaboration with Generative AI",
+"url": "https://doi.org/10.1287/isre.2024.1314",
+"venue": "Information Systems Research",
+"date": "2026-11-24",
+"authors": [
+"Xusen Cheng",
+"Lu Gao",
+"Qiguang Yang",
+"Xin Robert Luo"
+],
+"abstract": "It is well established that Chain-of-Thought (CoT) reasoning improves model performance in Generative Artificial Intelligence (GenAI). Far less understood is whether presenting CoT reasoning in AI-enabled interfaces enhances users’ perceived trust in GenAI’s competence in performing tasks. Drawing on the Heuristic-Systematic Model, we develop a theoretical framework in which CoT presence and quality trigger either heuristic perceptions of transparency or systematic perceptions of diagnosticity and germane cognitive load, with distinct mechanisms across task-difficulty conditions. Across a series of online experiments, we identify two key findings. First, high-quality CoT consistently enhances perceived trust in GenAI’s ability to generate correct outputs, regardless of task difficulty. Notably, under high-difficulty conditions, users’ trust in GenAI is primarily driven by the greater germane cognitive load perceived from high-quality CoT, whereas under low-difficulty conditions, trust is primarily driven by perceived transparency or diagnosticity. Second, low-quality CoT reduces users’ competence trust in GenAI that generates incorrect outputs only under low-difficulty conditions a",
+"score": 6,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://neofeed.com.br/negocios/com-itau-asset-e-bv-pagaleve-levanta-fidc-de-r-250-milhoes-para-financiar-pix-parcelado",
+"title": "Com Itaú Asset e BV, Pagaleve levanta FIDC de R$ 250 milhões para financiar Pix parcelado",
+"url": "https://neofeed.com.br/negocios/com-itau-asset-e-bv-pagaleve-levanta-fidc-de-r-250-milhoes-para-financiar-pix-parcelado/",
+"venue": "NeoFeed",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "A Pagaleve, fintech de parcelamento via Pix, captou R$ 250 milhões em um novo fundo de investimento em direitos creditórios (FIDC). O fundo, que marcou a entrada da Itaú Asset como financiadora da casa, é o segundo da empresa com investidores externos. O banco BV, que coordenou a oferta, também entrou no fundo, com cerca […] O post Com Itaú Asset e BV, Pagaleve levanta FIDC de R$ 250 milhões para financiar Pix parcelado apareceu primeiro em NeoFeed .",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"NeoFeed"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.youtube.com/watch?v=J6IRjnoynds",
+"title": "The MoneyPot Live: Your AI Is Ready. Is Your Data? What Financial Services Needs to Get Right",
+"url": "https://www.youtube.com/watch?v=J6IRjnoynds",
+"venue": "Money20/20 USA (YouTube)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Recorded live at Money2020 USA, host Dhanum Nursigadoo sits down with Chad Primakow, AI and Data Leader at Everpure, to unpack what it really takes for banks and fintechs to move AI from pilot projects into trusted, real-world production. Drawing on his experience in financial services and data management, Chad breaks down why so many financial institutions underestimate their data challenges, from dark data and data rot to not having a clear picture of what data they have. The conversation covers: -Why more data isn’t always better, and what a sweetener in coffee has to do with it -Why AI pilots fail to scale, and the warning sign most teams miss -How AI agents change the risk equation, and what an agent won’t do unless you tell it to Ready to see where your own organization stands? Take the IDC AI Maturity Assessment to benchmark your data and AI readiness: https://www.datastorage-ai-maturityassessment.com/ Everpure: https://www.everpuredata.com/ Follow Chad: https://www.linkedin.com/in/chad-primakow-498bb2/ Follow Money20/20: YouTube: @Money2020Tv LinkedIn: https://www.linkedin.com/company/money2020/ Instagram: https://www.instagram.com/money20_20 Facebook: https://www.facebook.",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"Money20/20 USA"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://finovate.com/arva-ai-secures-20-million-to-bring-agentic-ai-to-critical-banking-operations",
+"title": "Arva AI Secures $20 Million to Bring Agentic AI to Critical Banking Operations",
+"url": "https://finovate.com/arva-ai-secures-20-million-to-bring-agentic-ai-to-critical-banking-operations/",
+"venue": "FinovateFall (notícias)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Agentic AI company Arva AI has raised $20 million in Series A funding in a round led by Arthur Ventures with continued participation from Y Combinator and Gradient Ventures. The company, which builds AI models and agents to automate decision-making for banks, fintechs, and financial services companies, will use the capital to expand Arva Research Read more... The post Arva AI Secures $20 Million to Bring Agentic AI to Critical Banking Operations appeared first on Finovate .",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [
+"FinovateFall"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/mnsc.2025.01507",
+"title": "Screening, Investment Incentives, and the Welfare Trade-Offs of Privacy",
+"url": "https://doi.org/10.1287/mnsc.2025.01507",
+"venue": "Management Science",
+"date": "2026-11-24",
+"authors": [
+"Anastasios Dosis",
+"Casey G. Rothschild"
+],
+"abstract": "This paper studies how information disclosure affects investment incentives and contracting efficiency. We analyze a class of principal-agent models in which information helps the principal screen the agent but also facilitates surplus appropriation, thereby weakening the agent’s incentive to invest before contracting. Efficient privacy regimes balance these two forces. Along the frontier of efficient information policies, more privacy is associated with stronger investment incentives and higher agent payoff. We characterize conditions under which full privacy, full disclosure, or intermediate privacy is efficient. The results provide guidance for intellectual property and innovation policy by identifying when additional privacy fosters or hinders economic efficiency and innovation. This paper was accepted by Alfonso Gambardella, business strategy. Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2025.01507 .",
+"score": 7,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://building.nu.com/continuity-is-engineered-not-given-how-i-learned-to-work-with-ai-agents-that-forget-everything",
+"title": "Continuity is engineered, not given: How I learned to work with AI agents that forget everything",
+"url": "https://building.nu.com/continuity-is-engineered-not-given-how-i-learned-to-work-with-ai-agents-that-forget-everything/",
+"venue": "Building Nubank (blog de engenharia/dados/IA)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Why every session with an AI agent is rebuilt from scratch, and the four rules I use to decide what the model sees, what it carries forward and what it never sees at all The post Continuity is engineered, not given: How I learned to work with AI agents that forget everything appeared first on Building Nubank .",
+"score": 7,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [
+"Nubank"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.americanbanker.com/news/payoneer-gets-conditional-occ-approval-for-stablecoin-bank",
+"title": "Payoneer gets conditional OCC approval for stablecoin bank",
+"url": "https://www.americanbanker.com/news/payoneer-gets-conditional-occ-approval-for-stablecoin-bank",
+"venue": "American Banker",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "The global payments firm plans to issue its own stablecoin for internal use once PAYO Digital Bank receives final approval to launch as a national trust bank.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://thefintechtimes.com/gitex-global-2026-autonomous-ai-agents-top-cybersecurity-risk-agenda",
+"title": "GITEX GLOBAL 2026: Autonomous AI Agents Top Cybersecurity Risk Agenda",
+"url": "https://thefintechtimes.com/gitex-global-2026-autonomous-ai-agents-top-cybersecurity-risk-agenda/",
+"venue": "The Fintech Times",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Cybersecurity innovators at GITEX GLOBAL 2026 warn that governing autonomous AI agents will be a defining enterprise risk in 2027 as AI-enabled attacks surge 89%. The post GITEX GLOBAL 2026: Autonomous AI Agents Top Cybersecurity Risk Agenda appeared first on The Fintech Times .",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/cap-one-pursues-payments-modernization/875673",
+"title": "Cap One pursues payments modernization",
+"url": "https://www.paymentsdive.com/news/cap-one-pursues-payments-modernization/875673/",
+"venue": "Payments Dive",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "The bank’s investments in real-time and cloud-based rails are letting it keep pace with technology advances, a top payments executive said.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1287/mnsc.2025.03354",
+"title": "Gatekeepers and Kingmakers: Do Superplatforms Distort Digital Competition?",
+"url": "https://doi.org/10.1287/mnsc.2025.03354",
+"venue": "Management Science",
+"date": "2026-11-24",
+"authors": [
+"Umit G. Gurun",
+"Zheng Liu",
+"Steven Chong Xiao"
+],
+"abstract": "The rising dominance of superplatforms raises concerns about conflicts of interest and externalities on innovation, because they act as both marketplace gatekeepers and strategic investors. Studying Google’s dual role via Google Ventures (GV) and the Android marketplace, we find Google-backed startups receive 115% more reviews, 12% higher ratings, and 77% fewer bug complaints than their iOS counterparts—despite no major app updates. These gains are consistent with selective review removal and platform promotion. Using a difference-in-differences approach with iOS versions as controls, we isolate treatment from selection effects. Our findings challenge platform neutrality and highlight subtle mechanisms of competitive distortion. This paper was accepted by D. J. Wu, information systems. Supplemental Material: The Online Appendix and data files are available at https://doi.org/10.1287/mnsc.2025.03354 .",
+"score": 7,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.letsmoney.com.br/cripto/sbi-smfg-solana-global-stablecoin-japao",
+"title": "SBI e SMFG lançam joint venture de stablecoin com a Solana",
+"url": "https://www.letsmoney.com.br/cripto/sbi-smfg-solana-global-stablecoin-japao/",
+"venue": "Let's Money",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Ex-SBI R3 Japan, a SBI Solana Global começa a operar e vai focar em pagamentos com stablecoin, inclusive de agentes de IA, tokenização e gestão on-chain.",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.americanbanker.com/news/bnpl-lender-afterpay-fined-2-7m-for-skipping-ability-to-repay-mandates",
+"title": "BNPL lender Afterpay fined $2.7M for skipping ability-to-repay mandates",
+"url": "https://www.americanbanker.com/news/bnpl-lender-afterpay-fined-2-7m-for-skipping-ability-to-repay-mandates",
+"venue": "American Banker",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "California fined buy now, pay later lender Afterpay for failing to follow standards that require lenders determine a borrower’s ability to repay a loan.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/california-fines-afterpay-27m/875775",
+"title": "California fines Afterpay $2.7M",
+"url": "https://www.paymentsdive.com/news/california-fines-afterpay-27m/875775/",
+"venue": "Payments Dive",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "The state imposed the penalty on Block’s buy now, pay later business after finding the company failed to assess customers’ ability to repay loans.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.letsmoney.com.br/ia/temu-mastercard-parceria-agent-pay-ia",
+"title": "Temu e Mastercard estudam compra sem digitar o cartão",
+"url": "https://www.letsmoney.com.br/ia/temu-mastercard-parceria-agent-pay-ia/",
+"venue": "Let's Money",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Memorando prevê avaliar o Click to Pay, compras por agentes de IA com o Agent Pay e estudo de capital de giro a vendedores locais em mais de 35 mercados.",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/24/11/2026/pix-aumento-rio-verao",
+"title": "Transações via Pix tem aumento de 71% no Rio de Janeiro, diz Cielo",
+"url": "https://www.mobiletime.com.br/noticias/24/11/2026/pix-aumento-rio-verao/",
+"venue": "Mobile Time",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Estudo compara os períodos de novembro de 2024 a março de 2025 e de novembro de 2025 a março de 2026 e identifica que a participação dos pagamentos via NFC no faturamento com cartões passou de 42,7% para 49,5%",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/24/11/2026/open-finance-para-pj",
+"title": "Open Finance para PJ precisa agregar mais valor, recomenda Pagar",
+"url": "https://www.mobiletime.com.br/noticias/24/11/2026/open-finance-para-pj/",
+"venue": "Mobile Time",
+"date": "2026-11-24",
+"authors": [],
+"abstract": "Empresa recomenda simplificação da jornada, agregação de dados externos e análise financeira por IA",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.64388/ire1725576",
+"title": "Impact of Unified Payments Interface (UPI) and Digital Payments on India's Economic Growth: Macroeconomic Channels, Financial Inclusion, and Structural Formalization",
+"url": "https://doi.org/10.64388/ire1725576",
+"venue": "Iconic Research and Engineering Journals",
+"date": "2026-11-24",
+"authors": [
+"Manjulata Sao"
+],
+"abstract": "The rapid proliferation of digital payment architectures, anchored by the Unified Payments Interface (UPI), has triggered a structural paradigm shift in the Indian economy. Evolving over a decade from its launch in 2016 by the National Payments Corporation of India (NPCI) into the world's largest real-time retail payment mechanism, UPI now processes nearly half of the globe's real-time digital transaction volume, crossing 241 billion annual transactions with an aggregate turnover exceeding ₹314 lakh crore (~US$ 3.8 trillion) in FY 2025-26. This paper investigates the empirical and theoretical transmission channels through which UPI and retail digital payments propel India's macroeconomic expansion and structural modernization. Grounded in monetary economics (velocity of money formulation), Transaction Cost Economics, and Financial Intermediation Theory, this study analyzes how digital payment public infrastructure (DPI) accelerates gross domestic product (GDP) growth. Specifically, the paper delineates four primary macroeconomic transmission mechanisms: (1) drastic reductions in transaction friction and cash-handling logistical costs, which historically consumed 1.5% to 2% of GDP; ",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.66838/ma.249",
+"title": "AI Adoption and Startup Valuation: An Empirical Analysis of Fintech and Financial Services Firms",
+"url": "https://doi.org/10.66838/ma.249",
+"venue": "Mathematics for Applications",
+"date": "2026-11-24",
+"authors": [
+"Suumit Bannkar",
+"Ashutosh Eknath Khedkar"
+],
+"abstract": "This paper investigates the relationship between artificial intelligence (AI) adoption and startup valuation in fintech and financial services firms using a sample of 287 companies with 897 funding rounds from January 2020 to June 2026. Employing OLS regression with firm fixed effects, we estimate that AI-adopting firms command valuation premiums of 38-48% (β = 0.405, t = 5.8, p < 0.001) compared to non-AI peers, even after controlling for funding stage, prior financing, company age, sector, and geography. The premium persists across all specifications and increases substantially during market downturns (β = 0.48 in 2022-2023 vs. β = 0.18 in 2020-2021), suggesting AI adoption serves as a quality signal when capital is constrained. Sectoral analysis reveals heterogeneous effects, with largest premiums in payments (+52%) and embedded finance (+48%), consistent with Resource-Based View theory predicting that AI provides competitive advantages where it creates differential product capabilities. Endogeneity concerns are addressed through instrumental variable analysis using exposure to AI-focused universities as an exogenous shock to AI talent availability, which yields similar estimate",
+"score": 6,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.56201/rjpst.vol.8.no8.2025.pg142.181",
+"title": "Self-Service Failure Recovery and Autonomous Operational Remediation in Multi-Tenant Financial Systems: A Conceptual Framework",
+"url": "https://doi.org/10.56201/rjpst.vol.8.no8.2025.pg142.181",
+"venue": "RESEARCH JOURNAL OF PURE SCIENCE AND TECHNOLOGY",
+"date": "2026-11-24",
+"authors": [
+"Emmanuel Chukwuma Okeke"
+],
+"abstract": "Multi-tenant financial platforms, including core banking as a service, payment processors, embedded finance providers and wealth management back offices, concentrate the operations of many regulated institutions onto shared infrastructure. When such platforms fail, the cost is measured not only in downtime but in misposted balances, duplicated payments, breached settlement windows and regulatory exposure for every tenant at once. Two operational paradigms have matured in parallel to address this: autonomous remediation, in which the platform detects and corrects faults without human intervention, and self-service recovery, in which tenants are given the tools to diagnose and resolve incidents affecting their own scope. Yet the literature treats these largely in isolation, and neither is well theorised for environments where financial integrity, tenant isolation and supervisory accountability are binding constraints. Using a conceptual research design grounded in an integrative synthesis of 252 sources, including 227 applied seed publications screened from a consolidated corpus of 1,056 peer works, this paper proposes SAFER-FS (Self-service and Autonomous Failure Engineering for Res",
+"score": 5,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "arxiv:2611.32389",
+"title": "AgentBank: Banking on Blockchain Agentic Payments",
+"url": "https://arxiv.org/abs/2611.32389",
+"venue": "arXiv (cs.CR, q-fin.GN)",
+"date": "2026-11-24",
+"authors": [
+"Yuexin Xiang",
+"Martin Perešíni",
+"Yuchen Lei",
+"Yuquan Li",
+"Yuanzhe Zhang",
+"Andreas Deppeler"
+],
+"abstract": "AI agents increasingly pay for data and computation through protocols such as x402 and AP2, but individually funded wallets idle and require asset transfers for every payment. We present AgentBank, a smart-contract banking layer that lets agents spend bank liabilities under owner-issued mandates and on-chain spending limits. Internal payments update account balances without transferring assets, while pooled backing funds are allocated between reserves and yield-bearing strategies. We bound losses from compromised agent keys and analyze how correlated demand affects reserve requirements. Experiments show that AgentBank reduces idle liquidity by 52-77% relative to per-agent wallets and lowers gas costs for batched internal payments. Using historical DeFi liquidity data, we evaluate how reserve policies balance treasury returns against payment availability during market stress. We further examine the risks of automated bank runs and evaluate mechanisms to mitigate them.",
+"score": 6,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.americanbanker.com/news/barclays-best-egg-unit-discloses-breach-of-792-000-records",
+"title": "Barclays’ Best Egg unit discloses breach of 792,000 records",
+"url": "https://www.americanbanker.com/news/barclays-best-egg-unit-discloses-breach-of-792-000-records",
+"venue": "American Banker",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "An intruder accessed Best Egg's Financial Health app, exposing SSNs and the account numbers people used to pay loans. A separate attack hit Barclays' card tool.",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.cbinsights.com/research/ai-neolabs-nvidia",
+"title": "Most AI neolabs won’t make it on their own. Why does Nvidia continue to back them?",
+"url": "https://www.cbinsights.com/research/ai-neolabs-nvidia/",
+"venue": "CB Insights Research",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Most AI neolabs — research-first startups like Poolside and AI21 Labs, typically founded by researchers from the biggest AI labs — won’t make it on their own. The big AI developers can match their research and outspend them on computing … The post Most AI neolabs won’t make it on their own. Why does Nvidia continue to back them? appeared first on CB Insights Research .",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [
+"CB Insights"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.paymentsdive.com/news/illinois-fights-for-interchange-law/875779",
+"title": "Illinois fights for interchange law",
+"url": "https://www.paymentsdive.com/news/illinois-fights-for-interchange-law/875779/",
+"venue": "Payments Dive",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "The state’s attorney general filed a brief in appellate court Monday stressing the invalidity of a federal move to stop the Illinois Interchange Fee Prohibition Act.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Payments Dive"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.ft.com/content/eb6f11e6-f16a-4a2c-92db-0e4731731018?syn-25a6b1a6=1",
+"title": "AI powers double-digit jump in ‘authorised’ fraud",
+"url": "https://www.ft.com/content/eb6f11e6-f16a-4a2c-92db-0e4731731018?syn-25a6b1a6=1",
+"venue": "FT — Banks",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "‘Industrialised nature’ of scams sees criminals extract £659mn from UK victims in first half of 2026",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Financial Times"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://convergenciadigital.com.br/governo/regulamentacao-do-redata-e-pl-do-marco-de-ia-relator-na-camara-cobra-agilidade-e-prioridade-do-governo",
+"title": "Regulamentação do Redata e PL do marco de IA: relator na Câmara cobra agilidade e prioridade do Governo",
+"url": "https://convergenciadigital.com.br/governo/regulamentacao-do-redata-e-pl-do-marco-de-ia-relator-na-camara-cobra-agilidade-e-prioridade-do-governo/",
+"venue": "Convergência Digital",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "Ao participar do Fórum dig.ia, que acontece em Brasília, o deputado Aguinaldo Ribeiro (PP/PB), disse que tem quatro semanas para tratar do marco legal da inteligência artificial. \"Mas o texto só vou apresentar à medida que houver espaço para votação. Temos o PL do Mercado Digitais para ser votado. O texto de IA requer requinte porque a regulação tem de ter longevidade. Tem de ter vontade do Governo e do Congresso\", afirmou.",
+"score": 6,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://convergenciadigital.com.br/governo/ciberseguranca-e-inteligencia-artificial-nao-existe-soberania-sem-orcamento",
+"title": "Cibersegurança e Inteligência Artificial: Não existe soberania sem orçamento",
+"url": "https://convergenciadigital.com.br/governo/ciberseguranca-e-inteligencia-artificial-nao-existe-soberania-sem-orcamento/",
+"venue": "Convergência Digital",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "A posição foi defendida pelo relator do PL do Marco Legal da Inteligência Artificial, Aguinaldo Ribeiro (PP/PB), em mesa redonda promovida sobre os temas pelo GSI.",
+"score": 5,
+"theme": "governance",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "web:https://www.youtube.com/watch?v=0pPagYsW5hw",
+"title": "BC te Explica #188 - Novas regras do BC para evitar o crédito no susto!",
+"url": "https://www.youtube.com/watch?v=0pPagYsW5hw",
+"venue": "LIFT Day (YouTube)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "TRÊS NOVAS REGRAS do BC vão te ajudar a evitar que um empréstimo feito no susto vire uma dívida que você não consegue controlar depois. Já ouviu falar de crédito no susto? Calma, que o BC te explica! Neste vídeo a gente te conta sobre três novas regras que o BC adotou para ajudar as pessoas a terem mais informações e mais tempo para decidir se pegam um empréstimo ou não. É para evitar o endividamento naquele momento que você, por exemplo, tem um impulso de comprar alguma coisa e percebe que não tem todo o dinheiro necessário. A primeira a medida é o controle sobre as ofertas. A ideia é que o cliente possa bloquear propagandas de empréstimo se quiser. Mas, se a pessoa decide contratar o empréstimo, entra em cena a segunda medida: o Painel de Dívidas Consolidadas. Ele permite enxergar o efeito da nova dívida sobre o orçamento. E a terceira medida cria regras para a oferta de crédito no momento em que você vai fazer um Pix para comprar alguma coisa. Sabe aquela propaganda de crédito que aparece neste momento? Agora, só se você autorizar previamente. #BCteExplica #paineldecredito #Pix #dividas #BancoCentral",
+"score": 5,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"LIFT Day"
+],
+"origin": "digest",
+"added": "2026-11-25"
 }
 ]

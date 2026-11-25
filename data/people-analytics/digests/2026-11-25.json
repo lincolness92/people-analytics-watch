@@ -1,0 +1,226 @@
+{
+ "date": "2026-11-25",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-18",
+  "to": "2026-11-25"
+ },
+ "stats": {
+  "candidates": 100,
+  "triaged": 100,
+  "selected": 2,
+  "tokens": {
+   "prompt_tokens": 20747,
+   "completion_tokens": 18774,
+   "cost_usd": 0.011344,
+   "calls": 4,
+   "failures": 0
+  }
+ },
+ "headline": "Semana de correções de rota: IA não transforma sem redesenho, e autoconfiança em RH não é linear",
+ "trend": "O período derruba dois atalhos populares na gestão de pessoas. Primeiro, a ideia de que mais confiança — ou mais IA ligada — gera mais resultado: o estudo com gestores de linha mostra U invertido entre autoconfiança e execução de RH, e a discussão Bersin/Anthropic reforça que agentes só entregam com redesenho de processos e de trabalho. Segundo, a medição de pessoas entra em revisão: medidas de excesso de confiança se confundem com habilidade, e efeitos de identificação de grupo vêm de maior sensibilidade a normas, não de normas novas. Na prática, isso empurra people analytics para mapear redes informais, redesenhar o trabalho antes de automatizar e tratar métricas de percepção com desconfiança metodológica.",
+ "items": [
+  {
+   "key": "doi:10.1002/hrm.70112",
+   "title": "Confident and Well-Connected: HR Self-Efficacy, Brokerage and HRM Implementation",
+   "original_title": "Confident and Well‐Connected: The Interplay of Line Managers' HR Self‐Efficacy, Brokerage, and HRM Implementation",
+   "url": "https://doi.org/10.1002/hrm.70112",
+   "venue": "Human Resource Management",
+   "date": "2026-11-24",
+   "authors": [
+    "Budy Purnawanto",
+    "Huadong Yang",
+    "Salma Raheem",
+    "Julia Brennecke"
+   ],
+   "institutions": [
+    "University of Liverpool",
+    "University of Doha for Science and Technology",
+    "Carl von Ossietzky Universität Oldenburg"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 7,
+   "theme": "leadership",
+   "region": "",
+   "summary": "Estudo multinível com 88 gestores de linha, 325 subordinados e 69 chefes diretos em seis empresas indonésias mostra relação em **U invertido** entre autoconfiança em tarefas de RH e execução efetiva de RH: níveis médios implementam melhor que níveis baixos ou altos. Atuar como *broker* na rede informal de conselhos de RH modera a curva — com alta intermediação, a curva achata e o excesso de certeza deixa de derrubar a execução — e a implementação de RH medeia o efeito conjunto sobre desempenho da equipe. Lição prática: antes de investir só em treinar autoconfiança, mapeie a rede de aconselhamento de RH e crie mecanismos que corrijam o excesso de certeza dos gestores mais confiantes."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2024.08000",
+   "title": "Determinants of Norm Compliance: Moral Similarity and Group Identification",
+   "original_title": "Determinants of Norm Compliance: Moral Similarity and Group Identification",
+   "url": "https://doi.org/10.1287/mnsc.2024.08000",
+   "venue": "Management Science",
+   "date": "2026-11-24",
+   "authors": [
+    "Alexander Schneeberger",
+    "Erin L. Krupka"
+   ],
+   "institutions": [
+    "University of Cologne",
+    "University of Michigan"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 7,
+   "score": 7,
+   "theme": "leadership",
+   "region": "",
+   "summary": "Experimento varia a similaridade de valores entre o indivíduo e os membros de um grupo e mede identificação e obediência a uma regra do grupo: similaridade moral em progressismo eleva a identificação, que por sua vez aumenta a conformidade — sem que as normas do grupo tenham mudado entre tratamentos. O efeito, portanto, vem de maior *sensibilidade* às normas do grupo, não de normas diferentes. Lição: investir em value alignment na seleção e no onboarding tem efeito causal sobre comportamento, mas é faca de dois gumes — amplifica as normas que o grupo já tem, boas ou ruins, então monitore quais comportamentos o time reforça."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1108/rausp-12-2025-0285",
+   "title": "Fadiga mental por TIC e distanciamento psicológico",
+   "original_title": "Digital drains: the role of IT-related mental fatigue in the relationship between remote work stressors and psychological detachment",
+   "url": "https://doi.org/10.1108/rausp-12-2025-0285",
+   "venue": "RAUSP Management Journal",
+   "date": "2026-11-25",
+   "authors": [
+    "陈效",
+    "Yet Mee Lim",
+    "Lee Yen Chaw",
+    "Choi‐Meng Leong",
+    "Chorng Yuan Fung"
+   ],
+   "institutions": [
+    "Shanghai Municipal Engineering Design Institute (Group) Co., Ltd (China)",
+    "UCSI University",
+    "Swinburne University of Technology Sarawak Campus"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Fadiga mental por uso de TIC medeia a ligação entre estressores do home office e baixo distanciamento psicológico; isolamento físico modera — monitore uso de ferramentas, não só horas."
+  },
+  {
+   "key": "web:https://joshbersin.com/podcast/anthropic-admits-that-ai-doesnt-transform-work-without-people",
+   "title": "Bersin: IA não transforma trabalho sem pessoas",
+   "original_title": "Anthropic Admits That AI Doesn’t Transform Work Without People",
+   "url": "https://joshbersin.com/podcast/anthropic-admits-that-ai-doesnt-transform-work-without-people/",
+   "venue": "Josh Bersin (blog)",
+   "date": "2026-11-25",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Josh Bersin",
+   "origin": "fonte",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Bersin ironiza a 'descoberta' da Anthropic: ligar agentes de IA não melhora negócios sem redesenho de processos e trabalho — produtividade vem de desenho, não de licença."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2024.05184",
+   "title": "Medidas de excesso de confiança confundidas com habilidade",
+   "original_title": "Widely Used Measures of Overconfidence Are Confounded with Ability",
+   "url": "https://doi.org/10.1287/mnsc.2024.05184",
+   "venue": "Management Science",
+   "date": "2026-11-24",
+   "authors": [
+    "Stephen A. Spiller"
+   ],
+   "institutions": [
+    "University of California, Los Angeles"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 13,
+   "score": 6,
+   "theme": "analytics",
+   "region": "",
+   "note": "Medidas usuais de overconfidence estão confundidas com habilidade real; cuidado ao usar autoavaliação de confiança em avaliação de potencial e decisões de promoção."
+  },
+  {
+   "key": "doi:10.1177/0734371x261499942",
+   "title": "SHRM e liderança feminina em universidades públicas",
+   "original_title": "From Mid-Level to Major Impact: Strengthening Women’s Leadership in Public Higher Education Institutions Through Strategic Human Resource Management for SDG Realization",
+   "url": "https://doi.org/10.1177/0734371x261499942",
+   "venue": "Review of Public Personnel Administration",
+   "date": "2026-11-23",
+   "authors": [
+    "Juma Yusuf Mnzile",
+    "Müyesser Ceylan"
+   ],
+   "institutions": [
+    "Anadolu University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "leadership",
+   "region": "",
+   "note": "Meta-síntese de 57 estudos (2020–2025) aponta SHRM como alavanca para liderança feminina em instituições públicas, mas barreiras organizacionais e socioculturais persistem."
+  },
+  {
+   "key": "doi:10.4337/9781035324330.00020",
+   "title": "(In)justiça no mercado de trabalho digital",
+   "original_title": "(Un)Fairness in the digital labour market: a socio-legal and comparative perspective",
+   "url": "https://doi.org/10.4337/9781035324330.00020",
+   "venue": "Edward Elgar Publishing eBooks",
+   "date": "2026-11-19",
+   "authors": [
+    "Tammy Katsabian",
+    "Antonio Aloisi"
+   ],
+   "institutions": [
+    "University of Toronto",
+    "College of Management Academic Studies",
+    "IE University",
+    "New York University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "governance",
+   "region": "",
+   "note": "Análise sociojurídica e comparada mostra discriminação algorítmica em escala e insegurança jurídica para trabalhadores, plataformas e empresas adotantes."
+  },
+  {
+   "key": "doi:10.1108/jmp-07-2025-0708",
+   "title": "Identidade no trabalho de plataforma",
+   "original_title": "Navigating identity in platform work: sociotechnical tensions and institutional complexity",
+   "url": "https://doi.org/10.1108/jmp-07-2025-0708",
+   "venue": "Journal of Managerial Psychology",
+   "date": "2026-11-24",
+   "authors": [
+    "Jieyu Hu",
+    "Dejun Cheng",
+    "Shijun Huang"
+   ],
+   "institutions": [
+    "Nanjing University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Survey em três ondas: governança de plataforma afeta identidade profissional via despersonalização, com efeitos mais fracos sob menor dependência algorítmica e maior antropomorfismo."
+  }
+ ]
+}

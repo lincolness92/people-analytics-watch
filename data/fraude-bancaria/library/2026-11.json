@@ -3335,5 +3335,168 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-24"
+},
+{
+"key": "doi:10.1108/jmlc-11-2025-0218",
+"title": "Money laundering, terrorist financing, and smuggling: emerging threats to Pakistan’s national security",
+"url": "https://doi.org/10.1108/jmlc-11-2025-0218",
+"venue": "Journal of Money Laundering Control",
+"date": "2026-11-25",
+"authors": [
+"Fayaz Hussain Tunio",
+"Shilpa Lohana",
+"Syed Faiqa Khanam",
+"Muhammad Abu Bakar",
+"Agha Amad Nabi"
+],
+"abstract": "Purpose This study aims to examine the institutional and regulatory factors shaping the implementation of Pakistan’s anti-money laundering and counter-terrorist financing (AML/CFT) framework, with specific attention to security risks allied with smuggling-related illicit financial flows. It develops a sequential-mechanism framework linking regulatory compliance, institutional weaknesses, interagency coordination and enforcement effectiveness to the potential intersection between smuggling, money laundering and terrorist financing. Design/methodology/approach This research uses legal document analysis as a risk-assessment method. It examines the legislative frameworks, policy instruments and official government reports to evaluate the effectiveness of Pakistan’s anti-money laundering (AML) and countering the financing of terrorism (CFT) regimes. Findings The analysis indicates that, although Pakistan has made improvements driven in part by Financial Action Task Force compliance requirements, significant deficiencies remain. These include weak institutional capacity, insufficient interagency coordination and inadequate oversight of high-risk sectors, particularly non-profit organizat",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.48550/arxiv.2611.29744",
+"title": "Who Sent It or How It Moved? Sender Shortcuts in Cryptocurrency Anti-Money-Laundering Benchmarks, Audited on Elliptic2 and Elliptic++",
+"url": "https://doi.org/10.48550/arxiv.2611.29744",
+"venue": "arXiv",
+"date": "2026-11-22",
+"authors": [
+"Mohammad Nasir Uddin"
+],
+"abstract": "Two public benchmarks dominate graph-based anti-money-laundering (AML) research on Bitcoin: the transaction-level Elliptic dataset, extended as Elliptic++, and the subgraph-level Elliptic2. In both, a label is assigned according to the entity that sends the funds. We ask whether models trained on these benchmarks learn how laundering moves or merely who sent the money, and we propose a diagnostic protocol to tell the two apart: a sender lookup baseline, a novelty baseline, a sender-disjoint split with a leakage check, and a decomposition of performance into sender, receiver and intrinsic signal. On Elliptic2 the task largely reduces to classifying the sender. Under the standard random split, a no-learning lookup of sender history reaches a PR-AUC of 0.954, against 0.975 for gradient boosting on 456 features; our reimplementation of RevClassify reproduces its reported 0.97 and falls to 0.126 without sender information. When senders are held out, performance drops to 0.746, and the subgraph's own structure, transactions and receivers fall from 0.619 to 0.186. On Elliptic++ the same protocol finds the shortcut negligible: sender history reaches only 0.340 against 0.986 for the full mo",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.3390/jrfm19120949",
+"title": "Shared Liability for Digital Fraud in an Emerging Economy: Evidence from Thailand",
+"url": "https://doi.org/10.3390/jrfm19120949",
+"venue": "Journal of risk and financial management",
+"date": "2026-11-24",
+"authors": [
+"Chanin Amornbuth",
+"Tanpat Kraiwanit",
+"Nyan Myat Min",
+"Rattaphong Sonsuphap",
+"Dhachakorn Thitiluck"
+],
+"abstract": "Technology-enabled financial fraud, including call center scams, has become a significant form of transnational crime operating through cross-border networks and digital infrastructure. This study analyses the personal and perceptual factors associated with self-reported financial loss from five types of digital fraud, including call center scams, together with the division of responsibility among state agencies, financial institutions, telecommunications providers, and users before, during, and after a fraud incident. A mixed-methods design was employed, applying binary logistic regression to questionnaire data from 1201 users of digital financial services and conducting in-depth interviews with 15 informants: 10 victims or persons with direct experience of fraud and 5 experts. Binary logistic regression analysis was used to examine the association between predictors and occurrence of fraud loss. Age and occupation were significantly associated with the occurrence of fraud loss. Sex, education, income, perceived security and perceived benefits were not significantly associated with the occurrence of fraud loss. The interviews show offenders relying on institutional credibility, fe",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.21203/rs.3.rs-11119310/v1",
+"title": "Risk-constrained human-in-the-loop repair of anti-money laundering policies: Temporal legal graphs, minimal revision, and finite-sample assurance",
+"url": "https://doi.org/10.21203/rs.3.rs-11119310/v1",
+"venue": "Research Square",
+"date": "2026-11-24",
+"authors": [
+"Joscha Krause",
+"Cathrine Aeckerle-Willems",
+"Gerti Sana",
+"Stéphane Cortina",
+"Yuejun Guo",
+"Orlando Amaral Cejas"
+],
+"abstract": "This paper addresses human-in-the-loop compliance automation for obliged entities when the anti-money laundering legal corpus is amended. We treat the updating of an entity's policy as a minimal repair problem over two graphs, a versioned legal graph and a clause-and-control policy graph. The semantic difference between legal versions yields an impact cone of affected obligations, and we search for a minimally disruptive set of policy edits that satisfies them. An agentic workflow drafts, criticizes, and verifies these edits, while a learned orchestration policy decides how much machine computation and which human expert to use on each, subject to a chosen ceiling on the probability of missing a material obligation. We show that under explicit delta completeness and locality properties of the encoding, the impact cone contains every conservatively applicable obligation whose encoded legal evaluation can change across the amendment. We separately quantify the failure probability when dependency edges are missing. Moreover, minimal repair is NP-hard, and its pure coverage restriction has a logarithmic inapproximability threshold unless P=NP. A greedy method attains a logarithmic guar",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "arxiv:2611.32957",
+"title": "\"I Do Intend to Deliver\": Will LLMs Run a Marketplace Advance-Fee Scam?",
+"url": "https://arxiv.org/abs/2611.32957",
+"venue": "arXiv (cs.SI, cs.AI)",
+"date": "2026-11-24",
+"authors": [
+"Megan Squire"
+],
+"abstract": "Online fraud is traditionally limited by the cost of the human labor needed to talk to potential victims. We ask whether hosted large language models will now supply that labor. We prompted ten off-the-shelf models to play the seller in the \"free item, just pay delivery\" advance-fee scam common on buy-and-sell sites, using a plain system prompt with no jailbreak. Each model played 30 conversations against each of four buyer personas, from credulous to guarded, with the same model playing the buyer (1,200 conversations). We label each conversation by what happened to the buyer's money, and validate the labels against two human coders. 737 conversations (61%) ended with the buyer paying in advance. Eight of the ten models played in almost every conversation, and running both sides cost about 2.5 cents per payment. Only the guarded buyer, who wanted a findable identity, resisted, and the most willing sellers got past it by inventing names and phone numbers. Sellers that recognized the scam still took the money in 133 conversations, usually reasoning about their own honesty rather than the buyer's risk. Several models protected the buyer without refusing, by conceding payment on delive",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.20944/preprints202611.2237.v1",
+"title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
+"url": "https://doi.org/10.20944/preprints202611.2237.v1",
+"venue": "Preprints.org",
+"date": "2026-11-23",
+"authors": [
+"Shaina Raza",
+"Mohamed Hafez",
+"Ahmed Radwan",
+"Khalid Elgazzar",
+"Kathryn Hume"
+],
+"abstract": "Audio-video (AV) deepfakes can fake the face, the voice, or both. Most benchmarks only ask whether a clip is real or fake, so they cannot show whether a detector relies on the picture, the voice, or encoding traces. We present MOZAIC, a paired benchmark with a 4-way label in which every source clip is released in all four combinations of real or fake video and real or fake audio so each modality contribution can be measured directly. Fakes cover inner-face swapping, whole-frame video diffusion and voice conversion. MOZAIC has 137,745 clips from 15,014 source pairs and four tasks: T1 AV authenticity, T2 manipulation type, T3 identity verification and T4 explanation. We evaluate 12 AV multimodal LLMs (MLLMs), train four detectors and fine-tune MLLMs with LoRA. Overall, the best MLLM reaches only 35.6% on the four-way T1 and catches far more video-only fakes than voice-only fakes (43.6% vs 7.5%). Trained detectors reach 98.4% on T1, and LoRA fine-tuning raises explanation scores (OmniVinci 4.17 to 7.40, Qwen2.5-Omni 4.42 to 6.98), but the best T1 detector falls to 78.3% when the face-swap generator is held out of training, so generalization and explanation remain open. We release the ",
+"score": 5,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1038/s41598-026-59422-w",
+"title": "An attribute-augmented spectral-temporal graph-contextual transformer for fraud and anomaly detection in financial networks",
+"url": "https://doi.org/10.1038/s41598-026-59422-w",
+"venue": "Scientific Reports",
+"date": "2026-11-24",
+"authors": [
+"Vinayak Gupta",
+"Biswa Mohan Sahoo",
+"Sanjai Prasada Rao Banoth",
+"Damalla Jyothi",
+"Arvind Dhaka",
+"Ashish Ranjan Mishra"
+],
+"abstract": "A growing concern in consumer financial applications is the necessity of protection in the face of challenging, dynamic cyber threats. This is primarily attributed to interaction networks between users and devices becoming high dimensional and imbalanced. The classic models of securing a computer system have proven to be inadequate to describe the complex relationships of coordinated attacks, and the evolving strategies of threat actors are incompatible with static graph approaches. In this paper, authors present an attribute-augmented Graph Neural Network based framework that uses adaptive embedding dimension and multi-hop neighborhood aggregation to achieve high accuracy at the edge-level classification of malicious transactions, called Graph-Contextual Transformer (GCT). The proposed GCT model is tested on the financial transaction system data set, and the AUC is 0.756. This beats the best baseline AUC (LightGBM) by around 2% and also achieves a very impressive 26.8% relative improvement for operational Precision@5000. To increase interpretability for compliance and regulatory audits, we additionally support visualization of the nodes using t-SNE and overlays of egonets decision",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
+},
+{
+"key": "doi:10.1016/j.engappai.2026.116804",
+"title": "Adversarially robust multi-graph neural networks for cryptocurrency fraud detection",
+"url": "https://doi.org/10.1016/j.engappai.2026.116804",
+"venue": "Engineering Applications of Artificial Intelligence",
+"date": "2026-11-24",
+"authors": [
+"Victor Kombou",
+"Qi Xia",
+"GAO Jianbin",
+"Hu Xia",
+"Junfeng Qi",
+"Qingxu Guan"
+],
+"abstract": "",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-25"
 }
 ]
