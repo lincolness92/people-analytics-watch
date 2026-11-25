@@ -288,7 +288,7 @@ Em 18/11/2026, para o DeepSeek-V4.1-Flash, os provedores mais baratos na HF fica
 entrada e US$ 0,42–0,60 de saída; a DeepSeek direta fora do pico cobrava 0,15/0,60, e no pico 0,30/1,20. Ela ganha
 quando os provedores da HF ficam mais caros ou falham. A DeepSeek não tem API de batch.
 
-## Observabilidade (traces do agente)
+## Observabilidade (traces do agente e do pipeline)
 
 Cada pergunta (aba Pergunte, `ask_archive` no MCP/REST, A2A) e cada chamada de ferramenta vira um trace
 OpenTelemetry com as convenções **OpenInference** (`server/trace.js`), com um span por etapa:
@@ -304,6 +304,27 @@ OpenTelemetry com as convenções **OpenInference** (`server/trace.js`), com um 
   `OTEL_EXPORTER_OTLP_HEADERS` (ex.: `Authorization=Bearer <chave>` ou `api_key=<chave>`), opcionais
   `PHOENIX_PROJECT_NAME` e `OTEL_EXPORTER_OTLP_PROTOCOL=http/json` (para backends que preferem JSON).
 - Testado contra o Phoenix 21 local: os 5 spans chegam com tipos, documentos, tokens e modelos.
+
+### Traces do pipeline (digest, Evolução, retrospectiva, regulação)
+
+Os comandos `run`, `evolve`, `annual`, `regulation`, `fulltext` e `new-topic` também geram traces
+(`src/pawatch/trace.py`, mesmas convenções). A estrutura de cada execução é:
+
+- um span AGENT por comando;
+- um span CHAIN por tema e etapa: `collect` (candidatos por origem), `triage` (histograma de notas), `write_digest`
+  e `regulation`;
+- um span LLM por chamada: mensagens, rota escolhida, tokens, custo e tentativas (com `finish_reason`).
+
+O destino dos traces:
+
+- **No repositório:** cada execução fica em `data/traces/<data>-<comando>.jsonl.gz`. O workflow já commita `data/`.
+  Os arquivos com mais de 60 dias saem da árvore, mas continuam no histórico do git.
+- **No backend:** o envio por OTLP acontece quando as variáveis `OTEL_EXPORTER_OTLP_*` estão no ambiente. No GitHub
+  Actions, isso exige criar os secrets e passá-los no `env` do workflow.
+- **Envio posterior:** `python -m pawatch traces` lista o que está guardado; `python -m pawatch traces --export
+  [--since AAAA-MM-DD]` manda tudo para o Phoenix de qualquer máquina que tenha as variáveis.
+- **Validação:** a codificação protobuf é idêntica à do `server/trace.js` (há um teste que compara as duas), e o
+  envio foi testado contra o Phoenix local.
 
 ## Ajustes comuns
 

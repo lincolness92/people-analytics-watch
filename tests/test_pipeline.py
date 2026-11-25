@@ -622,6 +622,61 @@ class LLMProviderTests(unittest.TestCase):
         self.assertGreater(llm.usage["cost_usd"], 0.001)
 
 
+class PipelineTraceTests(unittest.TestCase):
+    def test_protobuf_matches_the_js_encoder(self):
+        """Python and server/trace.js must produce the same OTLP bytes (the JS one was checked against Phoenix)."""
+        import shutil
+        import subprocess
+        from pawatch import trace
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node não instalado")
+        data = {"trace_id": "0af7651916cd43dd8448eb211c80319c", "spans": [
+            {"name": "run", "span_id": "b7ad6b7169203331", "parent_id": None, "start_ns": 1700000000000000000, "end_ns": 1700000001000000000,
+             "status": "ok", "attrs": {"openinference.span.kind": "AGENT", "n": 3, "x": 0.5, "flag": True, "s": "olá"}},
+            {"name": "llm", "span_id": "c7ad6b7169203332", "parent_id": "b7ad6b7169203331", "start_ns": 1700000000100000000,
+             "end_ns": 1700000000900000000, "status": "error: boom", "attrs": {"openinference.span.kind": "LLM"}}]}
+        res = {"service.name": "research-watch"}
+        py = trace.encode(data, res).hex()
+        root = Path(__file__).resolve().parents[1]
+        js_code = ("import * as T from '" + (root / "server" / "trace.js").as_uri() + "';"
+                   "const d = " + json.dumps(data) + ";"
+                   "const t = { traceId: d.trace_id, spans: d.spans.map((s) => ({ name: s.name, spanId: s.span_id, parentId: s.parent_id,"
+                   " start: BigInt(s.start_ns), end: BigInt(s.end_ns), attrs: s.attrs,"
+                   " status: s.status.startsWith('error') ? { code: 2, message: s.status.slice(7) } : { code: 1 } })) };"
+                   "console.log(Buffer.from(T.encodeTraces(t, " + json.dumps(res) + ")).toString('hex'));")
+        major = int(subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip().lstrip("v").split(".")[0])
+        flags = ["--experimental-detect-module"] if major < 23 else []
+        r = subprocess.run([node, *flags, "--input-type=module", "-e", js_code], capture_output=True, text=True, timeout=60)
+        self.assertEqual(r.returncode, 0, r.stderr[-1500:])
+        self.assertEqual(py, r.stdout.strip())
+
+    def test_llm_call_becomes_an_llm_span(self):
+        import os
+        from pawatch import llm as L, trace
+        os.environ["PAW_MODEL"] = "x/M:prov"
+        os.environ["HF_TOKEN"] = "hf"
+        orig = L.post_json
+        L.post_json = lambda url, body, headers=None, **kw: {"choices": [{"message": {"content": '{"ok": 1}'}, "finish_reason": "stop"}],
+                                                             "usage": {"prompt_tokens": 7, "completion_tokens": 3, "cost": 0.0002}}
+        trace._tracer = trace.Tracer("teste")
+        root = trace._tracer.start("teste", "AGENT")
+        try:
+            with trace.span("passo"):
+                self.assertEqual(L.LLM().json("s", "u"), {"ok": 1})
+        finally:
+            L.post_json = orig
+            t, trace._tracer = trace._tracer, None
+        names = [s.name for s in t.spans]
+        self.assertEqual(names, ["teste", "passo", "llm.json"])
+        llm_span = t.spans[2]
+        self.assertEqual(llm_span.parent_id, t.spans[1].span_id)
+        self.assertEqual(llm_span.attrs["llm.token_count.total"], 10)
+        self.assertEqual(llm_span.attrs["llm.model_name"], "x/M:prov")
+        self.assertAlmostEqual(llm_span.attrs["llm.cost.total"], 0.0002)
+        self.assertEqual(json.loads(t.to_json()["spans"][2]["attrs"]["llm.attempts"])[0]["route"], "x/M:prov")
+
+
 class ServerJsTests(unittest.TestCase):
     def test_node_suite(self):
         """The serving core (server/) and /api/ask adapter are JS; run their node:test suite when node exists."""

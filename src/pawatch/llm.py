@@ -28,6 +28,7 @@ import threading
 import time
 from datetime import datetime, timezone
 
+from . import trace
 from .http import get_json, get_text, post_json
 
 ROUTER = "https://router.huggingface.co/v1/chat/completions"
@@ -117,10 +118,11 @@ def parse_hf_models(data, wanted):
 def _env_file_value(path, name):
     path = os.path.expanduser(path)
     if os.path.exists(path):
-        for line in open(path, encoding="utf-8"):
-            k, _, value = line.strip().partition("=")
-            if k.strip().removeprefix("export ").strip() == name:
-                return value.strip().strip('"').strip("'")
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                k, _, value = line.strip().partition("=")
+                if k.strip().removeprefix("export ").strip() == name:
+                    return value.strip().strip('"').strip("'")
     return ""
 
 
@@ -228,7 +230,8 @@ class LLM:
         """Every route to try, in order: models by preference, each model's routes by estimated cost.
         Items: (route, attempts)."""
         ms = models()
-        book = price_book(self.hf_token, self.deepseek_key, [m for m in ms if not _pinned(m)])
+        wanted = [m for m in ms if not _pinned(m)]
+        book = price_book(self.hf_token, self.deepseek_key, wanted) if wanted else {"hf": {}, "ds_models": {}, "ds_prices": {}}
         out = []
         for m in ms:
             if _pinned(m):
@@ -284,6 +287,31 @@ class LLM:
         `expect_out` is the expected output length in tokens, for the price comparison (default min(max_tokens, 2000)).
         """
         parse = parse or parse_json
+        t = trace.current_tracer()
+        sp = t.start("llm.json", trace.KIND["LLM"], {
+            "llm.invocation_parameters": {"max_tokens": max_tokens, "temperature": temperature, "reasoning_effort": reasoning},
+            "llm.input_messages.0.message.role": "system", "llm.input_messages.0.message.content": system,
+            "llm.input_messages.1.message.role": "user", "llm.input_messages.1.message.content": user,
+            "input.value": user}) if t else None
+        attempts = []
+        try:
+            out = self._json(system, user, max_tokens, temperature, timeout, parse, reasoning, expect_out, attempts)
+        except Exception as e:
+            if sp:
+                sp.set("llm.attempts", attempts).error(e).finish()
+            raise
+        if sp:
+            last = attempts[-1] if attempts else {}
+            sp.set_many({"llm.model_name": self.used_model, "llm.provider.route": (self.used_model or "").split(":", 1)[0] if (self.used_model or "").startswith("deepseek:") else "huggingface:" + ((self.used_model or "").rsplit(":", 1)[-1] if ":" in (self.used_model or "") else "auto"),
+                         "llm.token_count.prompt": last.get("prompt_tokens"), "llm.token_count.completion": last.get("completion_tokens"),
+                         "llm.token_count.total": (last.get("prompt_tokens") or 0) + (last.get("completion_tokens") or 0),
+                         "llm.cost.total": round(sum(a.get("cost") or 0 for a in attempts), 6),
+                         "llm.fallbacks": sum(1 for a in attempts if not a.get("ok")), "llm.attempts": attempts,
+                         "output.value": json.dumps(out, ensure_ascii=False)[:trace.MAX_ATTR],
+                         "llm.output_messages.0.message.role": "assistant"}).finish()
+        return out
+
+    def _json(self, system, user, max_tokens, temperature, timeout, parse, reasoning, expect_out, attempts):
         est_in = (len(system) + len(user)) // 3 + 20
         est_out = expect_out or min(max_tokens, 2000)
         errors = []
@@ -300,6 +328,9 @@ class LLM:
                     if resp.get("error"):
                         raise RuntimeError(str(resp["error"])[:300])
                     usage = resp.get("usage") or {}
+                    attempts.append({"route": route, "ok": False, "prompt_tokens": usage.get("prompt_tokens"),
+                                          "completion_tokens": usage.get("completion_tokens"),
+                                          "finish_reason": (resp.get("choices") or [{}])[0].get("finish_reason")})
                     choice = resp["choices"][0]
                     try:
                         out = parse(choice["message"].get("content"))
@@ -307,12 +338,14 @@ class LLM:
                         if choice.get("finish_reason") == "length":  # budget spent (often on hidden reasoning): cut output
                             raise ValueError(f"saída cortada pelo limite de {max_tokens} tokens") from e
                         raise
-                    self._account(route, usage, True)
+                    attempts[-1].update(ok=True, cost=self._account(route, usage, True))
                     self.used_model = route
                     return out
                 except (RuntimeError, ValueError, KeyError, TypeError, json.JSONDecodeError) as e:
                     if usage is not None:  # the call was billed even if its output was unusable
-                        self._account(route, usage, False)
+                        attempts[-1].update(cost=self._account(route, usage, False), error=str(e)[:200])
+                    else:
+                        attempts.append({"route": route, "ok": False, "error": str(e)[:200]})
                     with self._lock:
                         self.demoted[route] = self.demoted.get(route, 0) + 1
                     errors.append(f"{route}: {e}")

@@ -8,7 +8,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import ROOT
+from . import ROOT, trace
 from .bundle import bundle
 from .collect import collect, norm_title
 from .http import post_json
@@ -45,20 +45,36 @@ def run_topic(topic, args):
 
     web_state_path = topic.data / "web_state.json"
     web_state = load_json(web_state_path, {})
-    cands = collect(cfg, watch, set(seen), today, log, sources=topic.sources(), web_state=web_state)
+    with trace.span("collect", "RETRIEVER", **{"topic": topic.slug, "lookback_days": cfg["lookback_days"]}) as sp:
+        cands = collect(cfg, watch, set(seen), today, log, sources=topic.sources(), web_state=web_state)
+        if sp:
+            by = {}
+            for c in cands:
+                by[c["origin"]] = by.get(c["origin"], 0) + 1
+            sp.set_many({"retrieval.candidates": len(cands), "retrieval.by_origin": by})
     sel = cfg["selection"]
     pool = prefilter(cands, sel["max_candidates_for_llm"], topic.meta["prefilter_keywords"])
     log(f"[{topic.slug}] enviando {len(pool)} candidatos para triagem")
 
     llm = LLM()
-    scores = triage(llm, pool, topic, log=log)
+    with trace.span("triage", "CHAIN", **{"topic": topic.slug, "triage.sent": len(pool)}) as sp:
+        scores = triage(llm, pool, topic, log=log)
+        if sp:
+            hist = {}
+            for s, *_ in scores.values():
+                hist[str(s)] = hist.get(str(s), 0) + 1
+            sp.set_many({"triage.scored": len(scores), "triage.histogram": hist})
     if not scores:
         log(f"[{topic.slug}] triagem não retornou nada — abortando sem gravar")
         return False
     from .library import add as add_to_library
     kept = add_to_library(topic, pool, scores, origin="digest", when=today.isoformat())
     log(f"[{topic.slug}] biblioteca: +{kept} papers com nota ≥ 5")
-    result = write_digest(llm, pool, scores, sel, topic) or {"headline": "", "trend": "", "items": [], "quick": []}
+    with trace.span("write_digest", "CHAIN", topic=topic.slug) as sp:
+        result = write_digest(llm, pool, scores, sel, topic) or {"headline": "", "trend": "", "items": [], "quick": []}
+        if sp:
+            sp.set_many({"digest.selected": len(result["items"]), "digest.quick": len(result["quick"]),
+                         "output.value": result.get("headline")})
 
     digest = {
         "date": today.isoformat(),
@@ -87,13 +103,15 @@ def cmd_run(args):
     results = {}
     for topic in pick(args.topic):
         try:
-            results[topic.slug] = run_topic(topic, args)
+            with trace.span(f"digest:{topic.slug}", "CHAIN", topic=topic.slug):
+                results[topic.slug] = run_topic(topic, args)
         except Exception as e:  # one broken topic must not block the others
             log(f"[{topic.slug}] falhou: {e!r}")
             results[topic.slug] = False
     for topic in pick(args.topic):  # regulation: incremental, cheap after the first run; never blocks the digest
         try:
-            update_regulation(topic)
+            with trace.span(f"regulation:{topic.slug}", "CHAIN", topic=topic.slug):
+                update_regulation(topic)
         except Exception as e:  # noqa: BLE001
             log(f"[{topic.slug}] regulação falhou: {e!r}")
     log(f"render: {render_all()}")
@@ -116,6 +134,25 @@ def cmd_regulation(args):
         r = update_regulation(topic, max_sheets=args.max_sheets)
         log(f"[{topic.slug}] regulação: {r}")
     log(f"render: {render_all()}")
+    return 0
+
+
+TRACED = {"run", "evolve", "annual", "regulation", "fulltext", "new-topic"}
+
+
+def cmd_traces(args):
+    """List stored pipeline traces, or send them to the OTLP backend (OTEL_EXPORTER_OTLP_* in the environment)."""
+    files = sorted(trace.TRACES.glob("*.jsonl.gz"))
+    if args.since:
+        files = [f for f in files if f.name[:10] >= args.since]
+    for f in files:
+        runs = trace.load(f)
+        if args.export:
+            log(f"{f.name}: {', '.join(trace.export(r) for r in runs)}")
+        else:
+            spans = sum(len(r["spans"]) for r in runs)
+            cost = sum(s["attrs"].get("llm.cost.total") or 0 for r in runs for s in r["spans"])
+            log(f"{f.name}: {len(runs)} execução(ões), {spans} spans, US$ {cost:.4f}")
     return 0
 
 
@@ -294,6 +331,10 @@ def main():
     rg.add_argument("--topic", help="slug do tema (padrão: todos)")
     rg.add_argument("--max-sheets", type=int, default=150, help="no máximo N fichas (texto completo + resumo) por tema")
     rg.set_defaults(fn=cmd_regulation)
+    tr = sub.add_parser("traces", help="traces do pipeline guardados em data/traces/: lista, ou --export para o backend OTLP (Phoenix)")
+    tr.add_argument("--export", action="store_true", help="envia ao OTEL_EXPORTER_OTLP_TRACES_ENDPOINT configurado")
+    tr.add_argument("--since", help="YYYY-MM-DD")
+    tr.set_defaults(fn=cmd_traces)
     tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
     tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
     tk.set_defaults(fn=cmd_api_token)
@@ -304,6 +345,13 @@ def main():
     args = p.parse_args()
     if getattr(args, "out", None) and not args.topic:
         p.error("--out exige --topic")
+    if args.cmd in TRACED:  # LLM work is traced: data/traces/ and, when configured, the OTLP backend
+        trace.start_run(args.cmd, **({"topic": args.topic} if getattr(args, "topic", None) else {}))
+        try:
+            code = args.fn(args)
+        finally:
+            trace.end_run(log)
+        sys.exit(code)
     sys.exit(args.fn(args))
 
 
