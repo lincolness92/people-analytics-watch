@@ -53,6 +53,11 @@ como anotações dos spans; avaliações automáticas no Phoenix (relevância da
 traces do pipeline em Python (triagem, redação) com o mesmo formato.
 
 ## Avaliação e laço de melhoria (25/11/2026)
+Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.
+Próximos pontos fracos: código (falta fonte: datasets e repositórios por método, validar ligação repo↔paper), onboarding
+(caiu de 83 para 70: mistura fontes de outros temas e trata fase da Evolução como marco → resposta canônica pré-computada
+a partir da Evolução e da retrospectiva) e estado da arte. Normas sem ficha (texto vazio na API) ficam fora do site.
+Revisar o scorer de papers com o mesmo laço (amostra julgada por um modelo forte, concordância com a triagem).
 ✅ Perguntas de referência por persona e intenção, rodada offline e juiz por rubrica (`evals/`). A nota foi de 78 para 94.
 Próximos, na ordem que as falhas pedem:
 1. **Fontes de regulação:** normativos do Bacen e do CMN, BIS/BCBS, FSB, FATF, EBA, ANPD e AI Act, como fonte própria de cada tema

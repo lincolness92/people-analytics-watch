@@ -38,6 +38,21 @@ O que falta agora é fonte, não síntese. Pedidos do juiz agrupados:
 | regulação | 15 |
 | habilidades e trilhas | 4 |
 
+### Juiz v2 (calibrado) — as notas que valem a partir daqui
+
+Calibramos o juiz contra um modelo mais forte em 10 casos (`evals/calibration/2026-11-25-fable.md`). O juiz v1 dava
+17 pontos a mais, em média, e não conferia citações. O v2 confere pelo menos 6 citações por resposta, dá nota à
+rubrica pelo que a resposta entrega e tem teto de nota para invenção. Diferença média para a referência: −3,8 (dois
+casos ainda passam de 15 pontos).
+
+| Rodada | Nota (juiz v2) | Citações sem apoio / parciais | O que mudou |
+|---|---|---|---|
+| v3 | 76 | 7% / 19% | — |
+| v4 | 82 | 5% / 14% | normas do Bacen e marcos internacionais no acervo; checagem de cobertura na 1ª frase; tipo de evidência; formato de indústria; "quem" sem falso disparo; fase da Evolução como documento próprio; trechos maiores, sem bibliografia; piso de pertinência |
+
+Por intenção na v4: regulação 55 → 85, projeto 93, plano 100, evolução 94; os fracos agora são código (54, falta
+fonte), onboarding (70, caiu de 83) e estado da arte (72).
+
 Lições da primeira rodada:
 
 - **O preço por token não conta a história toda.** Provedores diferentes ligam ou não o raciocínio interno por

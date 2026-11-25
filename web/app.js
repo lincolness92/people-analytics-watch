@@ -308,8 +308,8 @@
     const section = (title, xs) => xs.length ? `<h2 class="theme-h">${title} <span class="muted small">${xs.length}</span></h2>${xs.map(card).join("")}` : "";
     app.innerHTML = `
       <h1 class="day">Regulação</h1>
-      <p class="dek">Normas e padrões que tocam este tema, com o que exigem e as técnicas que afetam. Brasil: normativos do Banco Central e do CMN
-        triados e resumidos a partir do texto oficial; internacional: marcos selecionados pela curadoria.</p>
+      <p class="dek">Normas e padrões que tocam este tema, com o que exigem e as técnicas que afetam. Brasil: ${br.length} normativos do Banco Central e do CMN
+        triados e resumidos a partir do texto oficial; internacional: ${intl.length} marcos selecionados pela curadoria. Resumos feitos por IA: confira no texto oficial.</p>
       <input id="reg-q" class="reg-q" type="search" placeholder="Filtrar (ex.: autenticação, MED, nuvem)" value="${esc(filter || "")}">
       ${all.length ? section("🇧🇷 Brasil", br.filter(match)) + section("🌐 Internacional", intl.filter(match))
         : `<div class="empty">Sem normas mapeadas para este tema ainda.</div>`}`;
