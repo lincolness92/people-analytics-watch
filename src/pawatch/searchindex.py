@@ -12,7 +12,11 @@ import re
 import unicodedata
 from collections import Counter
 
-INDEX_VERSION = 1
+INDEX_VERSION = 2
+# watchlist sections → document kind (people, venues and institutions the curation follows)
+WATCH_KINDS = {"researchers": "pessoa de referência", "historical": "pessoa de referência (histórica)",
+               "journals": "revista ou evento de referência", "centers": "instituição de referência",
+               "practitioners": "praticante de referência"}
 DOC_TEXT_CHARS = 900  # what the agent shows the LLM per source
 
 STOP = set(("a o os as um uma uns umas de da do das dos em no na nos nas por para pra com sem sobre entre e ou que "
@@ -35,8 +39,12 @@ def _j(*parts):
     return " ".join("" if p is None else str(p) for p in parts)
 
 
-def build_docs(data, library=()):
-    """Mirror of corpus() in server/archive.js: every searchable unit of a topic's archive."""
+def build_docs(data, library=(), repos=()):
+    """Mirror of corpus() in server/archive.js: every searchable unit of a topic's archive.
+
+    `repos`: the code repositories linked to the topic's papers ({url, description, readme, paper_titles, language,
+    stars, license, own, pushed_at}), see render.topic_repos.
+    """
     themes = data.get("themes") or {}
     docs = []
     for d in data.get("digests") or []:
@@ -88,12 +96,26 @@ def build_docs(data, library=()):
                      "venue": p.get("venue"),
                      "text": _j(p.get("title"), p.get("abstract"), p.get("venue"), " ".join(p.get("authors") or []),
                                 themes.get(p.get("theme")))})
+    # Watchlist: who and what the curation follows (answers "who should I follow?")
+    for key, items in (data.get("watchlist") or {}).items():
+        for w in items if isinstance(items, list) else []:
+            docs.append({"kind": WATCH_KINDS.get(key, "referência"), "title": w.get("name"), "url": w.get("url"), "when": None,
+                         "venue": None,
+                         "text": _j(w.get("name"), w.get("institution"), w.get("org"), w.get("region"), w.get("area"), w.get("why"))})
+    # Code: repositories found in the papers (answers "is there an implementation?")
+    for r in repos:
+        name = "/".join(r["url"].rstrip("/").split("/")[-2:])
+        docs.append({"kind": "código" + (" dos autores" if r.get("own") else ""), "title": name, "url": r["url"],
+                     "when": (r.get("pushed_at") or "")[:10] or None, "venue": None,
+                     "text": _j(name, r.get("description"), " | ".join(r.get("paper_titles") or []), r.get("language"),
+                                f"{r.get('stars')} estrelas" if r.get("stars") is not None else None, r.get("license"),
+                                (r.get("readme") or "")[:1500])})
     return docs
 
 
-def build_index(data, library=()):
+def build_index(data, library=(), repos=()):
     """{version, n, avgdl, docs, len, postings{term: [doc, tf, doc, tf, ...]}} — BM25 stats precomputed."""
-    docs = build_docs(data, library)
+    docs = build_docs(data, library, repos)
     lens, postings = [], {}
     for i, d in enumerate(docs):
         toks = tokens(d["text"])

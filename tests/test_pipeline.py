@@ -385,14 +385,20 @@ class SearchIndexTests(unittest.TestCase):
                             "highlights": [{"title": "Fed AML", "url": "u4", "date": "2026-03-01T00:00", "why": "lavagem", "theme": "mules"}]}},
     }
     LIB = [{"title": "dup", "url": "u1", "abstract": "x"}, {"title": "Synthetic identities", "url": "u5", "abstract": "KYC onboarding fraud"}]
+    FIXTURE["watchlist"] = {"researchers": [{"name": "Bart Baesens", "institution": "KU Leuven", "area": "fraud analytics", "why": "referência"}],
+                            "centers": [{"name": "BCBS", "institution": "BIS", "url": "https://www.bis.org", "why": "Basileia"}]}
+    REPOS = [{"url": "https://github.com/a/care-gnn", "description": "CARE-GNN fraud detection", "paper_titles": ["Enhancing GNN fraud"],
+              "language": "Python", "stars": 300, "license": "MIT", "own": True, "pushed_at": "2025-01-02T00:00:00Z", "readme": "Run train.py"}]
 
     def test_tokens_and_docs_match_js(self):
         from pawatch.searchindex import build_docs, tokens
         samples = ["Detecção de Contas Laranjas", "AÇÃO rápida, money-mules e GNNs!", "the of and Pix São Paulo"]
-        js = self._node("console.log(JSON.stringify({t: P.s.map(A.tokens), d: A.corpus(P.data, P.lib)}))",
-                        {"s": samples, "data": self.FIXTURE, "lib": self.LIB})
+        js = self._node("console.log(JSON.stringify({t: P.s.map(A.tokens), d: A.corpus(P.data, P.lib, P.repos)}))",
+                        {"s": samples, "data": self.FIXTURE, "lib": self.LIB, "repos": self.REPOS})
         self.assertEqual(js["t"], [tokens(s) for s in samples])
-        py = [{k: d.get(k) for k in ("kind", "title", "url", "when", "text")} for d in build_docs(self.FIXTURE, self.LIB)]
+        py = [{k: d.get(k) for k in ("kind", "title", "url", "when", "text")} for d in build_docs(self.FIXTURE, self.LIB, self.REPOS)]
+        self.assertIn("pessoa de referência", [d["kind"] for d in py])
+        self.assertIn("código dos autores", [d["kind"] for d in py])
         self.assertEqual([{k: d.get(k) for k in ("kind", "title", "url", "when", "text")} for d in js["d"]], py)
 
     def test_index_ranking_matches_js_bm25(self):

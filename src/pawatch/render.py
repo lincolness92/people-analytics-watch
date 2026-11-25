@@ -128,6 +128,22 @@ def _landing(topics):
 """
 
 
+def topic_repos(slug):
+    """Code repositories linked to the topic's stored papers, with the titles of those papers (for the search index)."""
+    try:
+        index = json.loads((DATA / "papers" / "index.json").read_text(encoding="utf-8"))
+        repos = json.loads((DATA / "papers" / "repos.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    mine = {k for k, e in index.items() if slug in (e.get("topics") or [])}
+    out = []
+    for url, r in sorted(repos.items()):
+        keys = [k for k in r.get("papers") or [] if k in mine]
+        if keys and not r.get("archived"):
+            out.append({**r, "url": url, "paper_titles": [index[k].get("title") for k in keys if index[k].get("title")]})
+    return out
+
+
 def build_site(topics):
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -139,7 +155,7 @@ def build_site(topics):
         lib = load_library(t)
         (DIST / t.slug / "library.json").write_text(json.dumps(lib, ensure_ascii=False), encoding="utf-8")
         site = json.loads((DIST / t.slug / "data.json").read_text(encoding="utf-8"))
-        (DIST / t.slug / "search.json").write_text(json.dumps(build_index(site, lib), ensure_ascii=False, separators=(",", ":")),
+        (DIST / t.slug / "search.json").write_text(json.dumps(build_index(site, lib, topic_repos(t.slug)), ensure_ascii=False, separators=(",", ":")),
                                                    encoding="utf-8")
     shutil.copy(WEB / "style.css", DIST / "style.css")
     # shared full-text store (one file per paper, whatever the number of topics) + repository catalogue

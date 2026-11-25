@@ -64,18 +64,52 @@ export function parseTerms(text) {
   return terms.length >= 4 ? terms.slice(0, 24) : [];
 }
 
-function answerSystem(name, focus) {
+// What kind of question it is decides the shape of the answer (an onboarding panorama is not three paragraphs).
+// Deterministic on purpose: cheap, testable, same for every model. First match wins; "default" otherwise.
+const INTENTS = [
+  ["onboarding", /\b(entrando|chegando|cheguei|comecei|novo na|nova na|n[aã]o conhe[cç]o|me (conta|explica) (tudo|um pouco)|panorama|vis[aã]o geral|introdu[cç][aã]o)\b/i],
+  ["training", /\b(plano de (qualifica|capacita|estudo|forma|desenvolvimento)|trilha|curr[ií]culo|ementa|roteiro de estudo|qualifica[cç][aã]o)/i],
+  ["project", /\b(projeto|ideia de|faz sentido|vale a pena (fazer|investir)|devo (fazer|adotar|implementar))\b/i],
+  ["code", /\b(c[oó]digo|implementa[cç][aã]o|implementar|reposit[oó]rio|github|biblioteca|open source|c[oó]digo aberto)\b/i],
+  ["who", /\b(quem (s[aã]o|[eé]|devo|deveria|est[aá])|pessoas|pesquisador|grupos de pesquisa|institui[cç][oõ]es|refer[eê]ncias? (em|de|no|na)|acompanhar)\b/i],
+  ["evolution", /\b(evolu|hist[oó]ri|marcos|ao longo do tempo|como (chegamos|surgiu))/i],
+  ["evidence", /\b(ganho|resultado|evid[eê]ncia|funciona|medid[oa]|quanto|impacto|roi|retorno)\b/i],
+];
+export function intentOf(question) {
+  return (INTENTS.find(([, re]) => re.test(question)) || ["default"])[0];
+}
+
+const FORMATS = {
+  onboarding: `Formato: um panorama para quem está chegando, em seções curtas com títulos em **negrito** numa linha própria, nesta ordem: ` +
+    `**O problema**, **Como a área chegou até aqui** (fases e marcos com ano), **O estado da arte hoje** (métodos e o que foi medido), ` +
+    `**O que está em aberto**, **Tendências**, **Quem acompanhar** (pessoas e instituições das fontes), **Por onde começar** (leituras, código e dados das fontes). ` +
+    `Até ~700 palavras; listas com "- " quando ajudarem.`,
+  training: `Formato: um plano em etapas (ex.: semanas ou meses) com títulos em **negrito** numa linha própria; em cada etapa, ` +
+    `objetivo, leituras das fontes (cite [n]), prática (código, dados ou exercício) e como verificar o aprendizado. Cubra o período pedido inteiro. Até ~700 palavras.`,
+  project: `Formato: seções com títulos em **negrito** numa linha própria: **Veredito** (franco, em 2 frases), **O que já existe** (trabalhos e casos parecidos), ` +
+    `**Desenho sugerido pelo estado da arte**, **Riscos** (técnicos, de dados, regulatórios), **Próximos passos**. Até ~600 palavras.`,
+  code: `Formato: lista com "- " de implementações das fontes (as do tipo "código" trazem o repositório): nome com o link, a que paper corresponde, ` +
+    `se é dos autores, linguagem e licença quando houver; depois um parágrafo **Por onde começar**. Se as fontes não têm código, diga isso e indique os papers que descrevem o método.`,
+  who: `Formato: lista com "- " de pessoas, grupos e instituições das fontes (as do tipo "pessoa/instituição de referência" e os autores dos papers), ` +
+    `cada um com afiliação e por que importa (o trabalho de referência, citado). Separe pesquisa e prática quando der.`,
+  evolution: `Formato: fases em ordem cronológica, cada uma com título em **negrito** numa linha própria, os marcos (ano, trabalho, citado) e o que a fase resolveu; ` +
+    `feche com **Onde estamos agora**. Até ~600 palavras.`,
+  evidence: `Abra com o que foi medido (números, contra qual baseline, com que dados) e priorize casos de bancos e empresas com dados próprios; ` +
+    `deixe o contexto geral para o fim. Formato: 2 a 4 parágrafos curtos; pode usar **negrito** em termos-chave.`,
+  default: `Formato: 1 a 3 parágrafos curtos; pode usar **negrito** em termos-chave. Sem cabeçalhos.`,
+};
+
+function answerSystem(name, focus, intent = "default") {
   return `Você é o assistente do ${name}, um arquivo curado de pesquisa. Responda em PT-BR, de forma direta e concreta, ` +
     (focus ? `pensando em quem usa este arquivo: o que importa é ${focus}. ` : "") +
-    `Quando a pergunta for sobre ganhos, resultados ou evidência, abra com o que foi medido (números, contra qual baseline, ` +
-    `com que dados) e priorize casos de bancos e empresas com dados próprios; deixe o contexto geral para o fim. ` +
-    `usando SOMENTE as fontes numeradas fornecidas. Cite as fontes no texto como [1], [2] logo após cada afirmação. ` +
+    `Use SOMENTE as fontes numeradas fornecidas. Cite as fontes no texto como [1], [2] logo após cada afirmação. ` +
     `Não invente papers, números ou autores. Se as fontes não respondem bem à pergunta, diga isso claramente e diga o que elas cobrem. ` +
     `Fontes "paper triado" trazem o resumo original de papers que a curadoria avaliou mas não necessariamente destacou; ` +
     `"destaque", "marco" e "retrospectiva" já passaram por uma seleção mais rígida — prefira-os quando disserem o mesmo. ` +
     `Fontes "texto completo" são trechos do próprio paper (método, resultados, números): use-as para detalhes e cite-as. ` +
     `Fontes marcadas "· tema X" vêm do arquivo de outro tema: use-as quando completarem a resposta e diga de onde vêm. ` +
-    `Formato: 1 a 3 parágrafos curtos; pode usar **negrito** em termos-chave. Sem cabeçalhos, sem lista de referências no fim.`;
+    `Fontes "pessoa/instituição/revista de referência" vêm da lista de acompanhamento da curadoria; "código" são repositórios achados nos papers. ` +
+    `Sem lista de referências no fim. ${FORMATS[intent] || FORMATS.default}`;
 }
 
 /** Passages from the stored full text of the best-ranked papers (shared store, see archive.loadPapers). */
@@ -170,11 +204,13 @@ async function askInner({ archive, question, history, llm, papers, others, trace
   // 2) answer from the sources only
   const block = sources.map((s, i) =>
     `[${i + 1}] (${s.kind}${s.when ? `, ${s.when}` : ""}${s.venue ? `, ${s.venue}` : ""}) ${s.title}\n${s.text.slice(0, 900)}`).join("\n\n");
-  const messages = [{ role: "system", content: answerSystem(name, archive.data.topic?.focus) }];
+  const intent = intentOf(question);
+  root.set("agent.intent", intent);
+  const messages = [{ role: "system", content: answerSystem(name, archive.data.topic?.focus, intent) }];
   for (const h of history) messages.push({ role: "user", content: h.q }, { role: "assistant", content: h.a });
   messages.push({ role: "user", content: `Fontes:\n\n${block}\n\nPergunta: ${question}` });
   // ANSWER_TOKENS leaves room for the hidden reasoning some providers turn on by default; "low" makes every
   // provider reason the same small amount (a cut-off answer counts as a failed route, see server/llm.js).
   const { text: answer, model } = await tracedLLM(tracer, root, "answer", llm, messages, ANSWER_TOKENS, { reasoning: "low", expectOut: 1500 });
-  return { answer, model, terms: terms.map((t) => t.text), sources: sources.map((s, i) => ({ n: i + 1, kind: s.kind, title: s.title, url: s.url, when: s.when })) };
+  return { answer, model, intent, terms: terms.map((t) => t.text), sources: sources.map((s, i) => ({ n: i + 1, kind: s.kind, title: s.title, url: s.url, when: s.when })) };
 }

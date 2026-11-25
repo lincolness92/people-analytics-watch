@@ -52,6 +52,17 @@ Phoenix. Próximos: criar o espaço no Phoenix Cloud e pôr as variáveis no Pag
 como anotações dos spans; avaliações automáticas no Phoenix (relevância da busca, resposta fiel às fontes);
 traces do pipeline em Python (triagem, redação) com o mesmo formato.
 
+## Avaliação e laço de melhoria (25/11/2026)
+✅ Perguntas de referência por persona e intenção, rodada offline e juiz por rubrica (`evals/`). A nota foi de 78 para 94.
+Próximos, na ordem que as falhas pedem:
+1. **Fontes de regulação:** normativos do Bacen e do CMN, BIS/BCBS, FSB, FATF, EBA, ANPD e AI Act, como fonte própria de cada tema
+   bancário. Liga norma a técnica.
+2. **Casos da indústria:** relatórios de bancos e fintechs, blogs de engenharia, eventos (Febraban Tech) e imprensa de negócios.
+3. **Código e dados:** datasets públicos e repositórios por método, além dos que aparecem nos papers.
+4. **Calibrar o juiz** com uma amostra avaliada por um modelo mais forte. Tornar a rodada mensal e automática.
+5. **Respostas canônicas pré-computadas** (briefing de entrada, plano de qualificação, mapa de habilidades por tema) e
+   hierarquia de modelos (cache → pequeno → grande).
+
 ## Custo de LLM (18/11/2026)
 ✅ Custo por chamada registrado (digest, Evolução, retrospectiva, traces).
 ✅ Rota escolhida por preço a cada chamada: provedores da HF (`/v1/models`) e DeepSeek direta (página de preços, pico e

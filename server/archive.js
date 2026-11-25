@@ -80,8 +80,12 @@ export function rankIndex(index, terms, k = DEFAULT_K, keep = null, withScores =
     .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, k).map(([i, s]) => (withScores ? { ...index.docs[i], score: s } : index.docs[i]));
 }
 
-/** Every searchable unit of the archive, as {kind, title, url, when, venue, text}. */
-export function corpus(data, library = []) {
+const WATCH_KINDS = { researchers: "pessoa de referência", historical: "pessoa de referência (histórica)",
+  journals: "revista ou evento de referência", centers: "instituição de referência", practitioners: "praticante de referência" };
+const j = (...parts) => parts.map((p) => (p === null || p === undefined ? "" : String(p))).join(" ");
+
+/** Every searchable unit of the archive, as {kind, title, url, when, venue, text}. Mirror of build_docs (searchindex.py). */
+export function corpus(data, library = [], repos = []) {
   const docs = [];
   for (const d of data.digests || []) {
     for (const it of d.items || []) {
@@ -122,6 +126,20 @@ export function corpus(data, library = []) {
     seen.add(p.url);
     docs.push({ kind: "paper triado", title: p.title, url: p.url, when: p.date, venue: p.venue,
       text: [p.title, p.abstract, p.venue, (p.authors || []).join(" "), data.themes?.[p.theme]].join(" ") });
+  }
+  // Watchlist: who and what the curation follows
+  for (const [key, items] of Object.entries(data.watchlist || {})) {
+    for (const w of Array.isArray(items) ? items : []) {
+      docs.push({ kind: WATCH_KINDS[key] || "referência", title: w.name, url: w.url ?? null, when: null, venue: null,
+        text: j(w.name, w.institution, w.org, w.region, w.area, w.why) });
+    }
+  }
+  // Code: repositories found in the papers
+  for (const r of repos) {
+    const name = r.url.replace(/\/$/, "").split("/").slice(-2).join("/");
+    docs.push({ kind: "código" + (r.own ? " dos autores" : ""), title: name, url: r.url, when: (r.pushed_at || "").slice(0, 10) || null, venue: null,
+      text: j(name, r.description, (r.paper_titles || []).join(" | "), r.language, r.stars != null ? `${r.stars} estrelas` : null, r.license,
+        (r.readme || "").slice(0, 1500)) });
   }
   return docs;
 }

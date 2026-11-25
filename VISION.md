@@ -116,7 +116,7 @@ habilidades. A estrutura é a mesma.
 ## Fases
 
 1. **Medir (agora).** Perguntas de referência, avaliador, rodada de base com o modelo atual e com um pequeno, e
-   diagnóstico das falhas.
+   diagnóstico das falhas. *Primeira rodada feita em 25/11: a nota foi de 78 para 94; ver `evals/README.md`.*
 2. **Responder bem às perguntas previsíveis.** Respostas por intenção (formato certo para cada uma), briefings
    canônicos por tema e hierarquia de modelos.
 3. **Completar as fontes que as perguntas pedem.** Regulação, pessoas e instituições, indústria, código e

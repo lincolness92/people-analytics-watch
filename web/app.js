@@ -519,7 +519,15 @@
         ? `<a class="cite" href="${esc(safeUrl(src.url))}" target="_blank" rel="noopener" title="${esc(src.title)}">[${n}]</a>`
         : `<span class="cite">[${n}]</span>`;
     };
-    const body = md(h.a).split(/\n{2,}/).map((p) => `<p>${p.replace(/\[(\d{1,2})\]/g, (_, n) => cite(n))}</p>`).join("");
+    const withCites = (s) => s.replace(/\[(\d{1,2})\]/g, (_, n) => cite(n));
+    const block = (p) => {
+      const lines = p.split("\n").map((l) => l.trim()).filter(Boolean);
+      if (lines.length && lines.every((l) => /^[-*•] /.test(l))) return `<ul>${lines.map((l) => `<li>${withCites(l.slice(2))}</li>`).join("")}</ul>`;
+      return lines.map((l) => /^#{1,4} /.test(l) || /^<strong>[^<]+<\/strong>:?$/.test(l)
+        ? `<h4 class="qa-h">${withCites(l.replace(/^#{1,4} /, ""))}</h4>`
+        : /^[-*•] /.test(l) ? `<p class="qa-li">• ${withCites(l.slice(2))}</p>` : `<p>${withCites(l)}</p>`).join("");
+    };
+    const body = md(h.a).split(/\n{2,}/).map(block).join("");
     const used = new Set([...h.a.matchAll(/\[(\d{1,2})\]/g)].map((m) => +m[1]));
     const list = h.sources.filter((x) => used.has(x.n));
     return `<article class="qa">
