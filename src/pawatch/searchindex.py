@@ -17,7 +17,7 @@ INDEX_VERSION = 2
 WATCH_KINDS = {"researchers": "pessoa de referência", "historical": "pessoa de referência (histórica)",
                "journals": "revista ou evento de referência", "centers": "instituição de referência",
                "practitioners": "praticante de referência"}
-DOC_TEXT_CHARS = 900  # what the agent shows the LLM per source
+DOC_TEXT_CHARS = 1500  # what the agent can show the LLM per source (findings often sit at the end of abstracts)
 
 STOP = set(("a o os as um uma uns umas de da do das dos em no na nos nas por para pra com sem sobre entre e ou que "
             "qual quais quanto como onde quando porque se ser é são foi há ter tem mais menos muito muita isso isto esse essa este esta "
@@ -49,12 +49,12 @@ def build_docs(data, library=(), repos=()):
     docs = []
     for d in data.get("digests") or []:
         for it in d.get("items") or []:
-            docs.append({"kind": "paper", "title": it.get("title"), "url": it.get("url"), "when": d.get("date"),
+            docs.append({"kind": "notícia ou relatório" if it.get("origin") == "fonte" else "paper", "title": it.get("title"), "url": it.get("url"), "when": d.get("date"),
                          "venue": it.get("venue"),
                          "text": _j(it.get("title"), it.get("original_title"), it.get("summary"), it.get("venue"),
                                     " ".join(it.get("authors") or []), themes.get(it.get("theme")))})
         for q in d.get("quick") or []:
-            docs.append({"kind": "paper", "title": q.get("title"), "url": q.get("url"), "when": d.get("date"),
+            docs.append({"kind": "notícia ou relatório" if q.get("origin") == "fonte" else "paper", "title": q.get("title"), "url": q.get("url"), "when": d.get("date"),
                          "venue": q.get("venue"),
                          "text": _j(q.get("title"), q.get("original_title"), q.get("note"), q.get("venue"))})
         if d.get("trend"):
@@ -63,11 +63,14 @@ def build_docs(data, library=(), repos=()):
     ev = data.get("evolution")
     if ev:
         for e in ev.get("eras") or []:
+            if e.get("summary"):
+                docs.append({"kind": "fase da evolução", "title": e.get("title"), "url": None, "when": e.get("label") or None,
+                             "text": _j(e.get("title"), e.get("summary"))})
             for m in e.get("milestones") or []:
                 docs.append({"kind": "marco", "title": m.get("title"), "url": m.get("url"), "when": str(m.get("year") or ""),
                              "venue": m.get("venue"),
-                             "text": _j(m.get("title"), m.get("why"), " ".join(m.get("authors") or []), e.get("title"),
-                                        e.get("summary"), themes.get(m.get("theme")))})
+                             "text": _j(m.get("title"), m.get("why"), " ".join(m.get("authors") or []),
+                                        themes.get(m.get("theme")))})
         now = ev.get("now") or {}
         if now.get("summary"):
             docs.append({"kind": "evolução", "title": "Onde estamos agora", "url": None, "when": ev.get("generated"),
@@ -102,6 +105,14 @@ def build_docs(data, library=(), repos=()):
             docs.append({"kind": WATCH_KINDS.get(key, "referência"), "title": w.get("name"), "url": w.get("url"), "when": None,
                          "venue": None,
                          "text": _j(w.get("name"), w.get("institution"), w.get("org"), w.get("region"), w.get("area"), w.get("why"))})
+    # Regulation: norms and standards (answers "what does regulation require?")
+    for g in data.get("regulation") or []:
+        status = " (revogada)" if g.get("revoked") else ""
+        docs.append({"kind": f"norma · {g.get('regulator')}{status}", "title": g.get("title"), "url": g.get("url"),
+                     "when": g.get("date"), "venue": None,
+                     "text": _j(g.get("title"), g.get("subject"), g.get("summary"), " ".join(g.get("requires") or []),
+                                g.get("applies_to"), g.get("effective"), " ".join(g.get("techniques") or []),
+                                g.get("status_note"))})
     # Code: repositories found in the papers (answers "is there an implementation?")
     for r in repos:
         name = "/".join(r["url"].rstrip("/").split("/")[-2:])

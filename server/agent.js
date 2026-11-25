@@ -29,6 +29,15 @@ async function tracedLLM(tracer, parent, name, llm, messages, maxTokens, opts) {
   });
 }
 
+/** A source's text without its title repeated at the start (the title is printed just before it). */
+function bodyOf(s) {
+  let t = String(s.text || "");
+  for (const title of [s.title, s.original_title]) {
+    if (title && t.startsWith(title)) t = t.slice(title.length).trimStart();
+  }
+  return t;
+}
+
 /** OpenInference retrieval documents on a span. */
 function setDocs(span, docs) {
   docs.forEach((d, i) => span.setMany({ [`retrieval.documents.${i}.document.id`]: d.url || d.title,
@@ -38,7 +47,9 @@ function setDocs(span, docs) {
 
 const FULLTEXT_PAPERS = 8;   // hits whose stored full text is searched (passages then compete across papers)
 const FULLTEXT_CHUNKS = 6;   // passages added to the sources
-const OTHER_WEIGHT = 0.85;   // other topics' hits compete on score with the home topic's, slightly discounted
+const OTHER_WEIGHT = 0.75;   // other topics' hits compete on score with the home topic's, discounted
+const SCORE_FLOOR = 0.35;    // hits scoring under this fraction of the best one are left out (fewer, more pertinent sources)
+const SOURCE_CHARS = 1400;   // text per source shown to the LLM
 const MAX_OTHER = 8;         // at most this many sources from other topics
 const MAX_HITS = 20;
 export const ANSWER_TOKENS = 8000;
@@ -70,8 +81,10 @@ const INTENTS = [
   ["onboarding", /\b(entrando|chegando|cheguei|comecei|novo na|nova na|n[aã]o conhe[cç]o|me (conta|explica) (tudo|um pouco)|panorama|vis[aã]o geral|introdu[cç][aã]o)\b/i],
   ["training", /\b(plano de (qualifica|capacita|estudo|forma|desenvolvimento)|trilha|curr[ií]culo|ementa|roteiro de estudo|qualifica[cç][aã]o)/i],
   ["project", /\b(projeto|ideia de|faz sentido|vale a pena (fazer|investir)|devo (fazer|adotar|implementar))\b/i],
+  ["regulation", /\b(regula[cçt]|regulat[oó]ri|norma(s|tiv)|bacen|banco central|resolu[cç][aã]o|circular|lgpd|anpd|ai act|compliance|supervis[aã]o|legisla[cç][aã]o|lei\b)/i],
   ["code", /\b(c[oó]digo|implementa[cç][aã]o|implementar|reposit[oó]rio|github|biblioteca|open source|c[oó]digo aberto)\b/i],
-  ["who", /\b(quem (s[aã]o|[eé]|devo|deveria|est[aá])|pessoas|pesquisador|grupos de pesquisa|institui[cç][oõ]es|refer[eê]ncias? (em|de|no|na)|acompanhar)\b/i],
+  ["industry", /\b(empresas|bancos e fintechs|fintechs|casos concretos|o que (os|as) .{0,40}est[aã]o fazendo)\b/i],
+  ["who", /\b(quem (s[aã]o|[eé]|devo|deveria|est[aá])|pesquisador(es|as)? de refer[eê]ncia|grupos de pesquisa|quem acompanhar|(pessoas|institui[cç][oõ]es|grupos)[^.?]{0,40}\b(de refer[eê]ncia|acompanhar))/i],
   ["evolution", /\b(evolu|hist[oó]ri|marcos|ao longo do tempo|como (chegamos|surgiu))/i],
   ["evidence", /\b(ganho|resultado|evid[eê]ncia|funciona|medid[oa]|quanto|impacto|roi|retorno)\b/i],
 ];
@@ -89,11 +102,18 @@ const FORMATS = {
   project: `Formato: seções com títulos em **negrito** numa linha própria: **Veredito** (franco, em 2 frases), **O que já existe** (trabalhos e casos parecidos), ` +
     `**Desenho sugerido pelo estado da arte**, **Riscos** (técnicos, de dados, regulatórios), **Próximos passos**. Até ~600 palavras.`,
   code: `Formato: lista com "- " de implementações das fontes (as do tipo "código" trazem o repositório): nome com o link, a que paper corresponde, ` +
-    `se é dos autores, linguagem e licença quando houver; depois um parágrafo **Por onde começar**. Se as fontes não têm código, diga isso e indique os papers que descrevem o método.`,
-  who: `Formato: lista com "- " de pessoas, grupos e instituições das fontes (as do tipo "pessoa/instituição de referência" e os autores dos papers), ` +
-    `cada um com afiliação e por que importa (o trabalho de referência, citado). Separe pesquisa e prática quando der.`,
+    `se é dos autores, linguagem e licença quando houver; depois um parágrafo **Por onde começar**. Se as fontes não têm código, diga isso em uma frase ` +
+    `e indique no máximo 4 papers que descrevem o método e os dados que usam; não liste o acervo.`,
+  who: `Formato: lista com "- " de no máximo 8 pessoas, grupos e instituições das fontes (as do tipo "pessoa/instituição de referência" e os autores dos papers), ` +
+    `da mais importante para a menos; cada uma com afiliação (só quando a fonte traz) e por que importa (o trabalho de referência, citado). ` +
+    `Não liste todos os coautores de um paper; pessoa histórica vai em linha separada. Separe pesquisa e prática quando der. Não traga código.`,
+  industry: `Formato: lista com "- " de casos, cada um com empresa, país, o que fez, resultado ou escala (ou "sem resultado informado") e o ano da fonte; ` +
+    `separe **Brasil** e **Mundo** com títulos em negrito numa linha própria. Se não houver caso brasileiro ou resultado medido, diga isso na primeira linha.`,
   evolution: `Formato: fases em ordem cronológica, cada uma com título em **negrito** numa linha própria, os marcos (ano, trabalho, citado) e o que a fase resolveu; ` +
     `feche com **Onde estamos agora**. Até ~600 palavras.`,
+  regulation: `Formato: comece pelas normas das fontes do tipo "norma" — para cada uma, em lista com "- ": regulador, tipo e número, data, ` +
+    `se está revogada, o que exige (concreto) e a que técnica ou processo do tema se liga, citada. Separe **Brasil** e **Internacional** com títulos em negrito numa linha própria. ` +
+    `Feche com **O que isso exige de nós**: 2 a 4 pontos práticos. Se as fontes não trazem a norma que a pergunta pede, diga qual falta. Até ~600 palavras.`,
   evidence: `Abra com o que foi medido (números, contra qual baseline, com que dados) e priorize casos de bancos e empresas com dados próprios; ` +
     `deixe o contexto geral para o fim. Formato: 2 a 4 parágrafos curtos; pode usar **negrito** em termos-chave.`,
   default: `Formato: 1 a 3 parágrafos curtos; pode usar **negrito** em termos-chave. Sem cabeçalhos.`,
@@ -102,13 +122,21 @@ const FORMATS = {
 function answerSystem(name, focus, intent = "default") {
   return `Você é o assistente do ${name}, um arquivo curado de pesquisa. Responda em PT-BR, de forma direta e concreta, ` +
     (focus ? `pensando em quem usa este arquivo: o que importa é ${focus}. ` : "") +
-    `Use SOMENTE as fontes numeradas fornecidas. Cite as fontes no texto como [1], [2] logo após cada afirmação. ` +
+    `Use SOMENTE as fontes numeradas fornecidas. ` +
+    `Antes de escrever, verifique se as fontes tratam do núcleo da pergunta (a norma, o número, o caso, o repositório ou a pessoa pedida). Se não tratam, ` +
+    `a PRIMEIRA frase diz isso de forma específica ("as fontes não trazem nenhuma norma do Banco Central sobre X"); só depois diga o que elas cobrem. ` +
+    `Não substitua o que falta por assunto vizinho, nem diga que as fontes "cobrem bem" o que elas só mencionam. Uma fonte só entra se trata do assunto ` +
+    `da pergunta: é melhor uma seção curta do que encaixar fonte de outro assunto para completar o formato. ` +
+    `Diga o tipo de evidência: norma, estudo revisado, preprint ou paper triado, notícia ou relatório, ou leitura da curadoria (frases como "Lição:" são da curadoria). ` +
+    `Percentuais de retrospectivas contam publicações, não o fenômeno; resultado sem desenho de medição é alegação. ` +
+    `Não ligue fatos de fontes diferentes com conhecimento seu. Cite as fontes no texto como [1], [2] logo após cada afirmação. ` +
     `Não invente papers, números ou autores. Se as fontes não respondem bem à pergunta, diga isso claramente e diga o que elas cobrem. ` +
     `Fontes "paper triado" trazem o resumo original de papers que a curadoria avaliou mas não necessariamente destacou; ` +
     `"destaque", "marco" e "retrospectiva" já passaram por uma seleção mais rígida — prefira-os quando disserem o mesmo. ` +
     `Fontes "texto completo" são trechos do próprio paper (método, resultados, números): use-as para detalhes e cite-as. ` +
     `Fontes marcadas "· tema X" vêm do arquivo de outro tema: use-as quando completarem a resposta e diga de onde vêm. ` +
-    `Fontes "pessoa/instituição/revista de referência" vêm da lista de acompanhamento da curadoria; "código" são repositórios achados nos papers. ` +
+    `Fontes "pessoa/instituição/revista de referência" vêm da lista de acompanhamento da curadoria; "código" são repositórios achados nos papers; ` +
+    `"norma" são normas e padrões de reguladores (o texto é uma ficha feita a partir da norma). ` +
     `Sem lista de referências no fim. ${FORMATS[intent] || FORMATS.default}`;
 }
 
@@ -182,8 +210,10 @@ async function askInner({ archive, question, history, llm, papers, others, trace
   const seenUrls = new Set();
   let nOther = 0;
   const hits = [];
+  const best = Math.max(0, ...pool.map((h) => h.score));
   for (const h of pool.sort((a, b) => b.score - a.score)) {
     if (hits.length >= MAX_HITS) break;
+    if (h.score < SCORE_FLOOR * best) break;
     if (h.url && seenUrls.has(h.url)) continue;
     if (h.topic && nOther >= MAX_OTHER) continue;
     if (h.url) seenUrls.add(h.url);
@@ -203,7 +233,7 @@ async function askInner({ archive, question, history, llm, papers, others, trace
 
   // 2) answer from the sources only
   const block = sources.map((s, i) =>
-    `[${i + 1}] (${s.kind}${s.when ? `, ${s.when}` : ""}${s.venue ? `, ${s.venue}` : ""}) ${s.title}\n${s.text.slice(0, 900)}`).join("\n\n");
+    `[${i + 1}] (${s.kind}${s.when ? `, ${s.when}` : ""}${s.venue ? `, ${s.venue}` : ""}) ${s.title}\n${bodyOf(s).slice(0, SOURCE_CHARS)}`).join("\n\n");
   const intent = intentOf(question);
   root.set("agent.intent", intent);
   const messages = [{ role: "system", content: answerSystem(name, archive.data.topic?.focus, intent) }];

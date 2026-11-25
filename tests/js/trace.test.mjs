@@ -162,3 +162,13 @@ test("LLM client: a cut-off answer (finish_reason length) is a failed route; the
   assert.equal(r2.truncated, true);
   L._resetPriceBook();
 });
+
+test("answer format by intent: every reference question gets the expected one (no 'pessoas' → who)", async () => {
+  const { intentOf } = await import("../../server/agent.js");
+  const { expandQuestions } = await import("../../evals/run.mjs");
+  const { readFile } = await import("node:fs/promises");
+  const bank = JSON.parse(await readFile(new URL("../../evals/questions.json", import.meta.url), "utf8"));
+  const expected = { onboarding: "onboarding", sota: "evidence", evidence: "evidence", evolution: "evolution", trends: "default", who: "who",
+    industry: "industry", code: "code", regulation: "regulation", project_fit: "project", skills: "default", training: "training", news: "default" };
+  for (const q of expandQuestions(bank).filter((x) => x.intent !== "real")) assert.equal(intentOf(q.text), expected[q.intent], q.id);
+});

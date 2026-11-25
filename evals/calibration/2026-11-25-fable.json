@@ -1,0 +1,1992 @@
+{
+ "generated": "2026-11-25",
+ "grader": "claude-fable-5-2",
+ "method": "Leitura manual do source_block e da resposta de cada caso; nota pela mesma fórmula score() de evals/judge.mjs; nenhuma chamada a API ou LLM externo.",
+ "cases": [
+  {
+   "id": "fraude-bancaria:regulation",
+   "topic": "fraude-bancaria",
+   "intent": "regulation",
+   "persona": "gestor de risco ou compliance",
+   "deepseek_score": 84,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "nota": 1,
+      "obs": "Só nomeia a Resolução Conjunta BC/CMN 21/2026, que é de Open Finance e não de golpes no Pix; o marco indiano aparece só como 'desde 2017', sem o nome (Circular do RBI de 2017 e Directions de 2026 estão em [9]). Nenhuma norma de MED, devolução ou autenticação."
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "nota": 1,
+      "obs": "Bacen sim; Bank of Canada entra como pesquisa (não norma), CFPB só como base de reclamações e o RBI nem é nomeado. Não distingue regulador de pesquisador."
+     },
+     {
+      "item": "o que muda e o que exige",
+      "nota": 1,
+      "obs": "A direção (responsabilidade migra para o banco) está apoiada em [3][7]; mas as exigências listadas são de Open Finance e de um modelo teórico, não de MED/devolução/autenticação, que era a pergunta."
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "nota": 1,
+      "obs": "Liga a modelos explicáveis de ressarcimento; ignora autenticação por voz/fala sintética e consórcio federado, que estão em [3], e contas recebedoras/mulas [20]."
+     }
+    ],
+    "fundamentacao": 1,
+    "especificidade": 1,
+    "honestidade": 1,
+    "utilidade": 1,
+    "formato": 1,
+    "causa": "fontes",
+    "faltou": [
+     "Dizer logo no início que nenhuma fonte traz o conteúdo das normas do Pix sobre MED, devolução ou autenticação",
+     "Usar a fonte [5] (Revista da PGBC, marco jurídico-regulatório do Pix), a mais pertinente e não citada",
+     "Nomear os documentos indianos de [9] (Circular do RBI de 2017; Directions de 2026)",
+     "Tratar autenticação (voz, fala sintética, prova de vida) que está em [3]",
+     "Separar o que é norma, o que é pesquisa e o que é inferência da curadoria"
+    ],
+    "fontes_necessarias": [
+     "Regulamento do Pix e normas do BC sobre MED e devolução, com datas e prazos",
+     "Normas do BC sobre autenticação, limites e gestão de risco de fraude no Pix",
+     "Estatísticas do BC sobre golpes e devoluções",
+     "Regimes de reembolso de pagamento autorizado em outros países (texto das normas)",
+     "Texto completo do artigo [5]"
+    ],
+    "comentario": "Resposta fluente que preenche a falta de normas com material adjacente (Open Finance) e atribui ao paper do Bank of Canada uma leitura que é da curadoria. A ressalva final diz que as fontes 'cobrem bem' o MED, o que não é verdade: ele só é mencionado de passagem.",
+    "score": 50,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 2,
+     "claim": "O Banco Central é o regulador do Pix, do Open Finance e das regras de segurança e compartilhamento de dados de fraude",
+     "supported": true,
+     "note": "Literal em [2]."
+    },
+    {
+     "n": 4,
+     "claim": "O paper do Bank of Canada usa justamente o MED do Pix como exemplo de mandato de acesso e teto",
+     "supported": "partial",
+     "note": "A menção ao MED está na 'Lição' escrita pela curadoria, não é atribuída ao paper; e a resposta transforma o MED em 'teto', o que a fonte não explica."
+    },
+    {
+     "n": 4,
+     "claim": "Governança centralizada não implementa a alocação ótima porque exclui pagamentos pequenos via tarifas; a divisão ótima depende da curvatura relativa das tecnologias de prevenção",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 1,
+     "claim": "Resolução Conjunta BC/CMN 21/2026 exige atestação por auditor independente registrado na CVM e due diligence contínua",
+     "supported": true,
+     "note": "Literal em [1]; mas a norma é de Open Finance PJ, não de golpes no Pix (problema de pertinência, não de fidelidade)."
+    },
+    {
+     "n": 19,
+     "claim": "Open Finance chegou a 290 milhões de consentimentos; risco passa a ser qualidade e rastreabilidade do dado",
+     "supported": true,
+     "note": "Literal em [19]; fora do assunto da pergunta."
+    },
+    {
+     "n": 3,
+     "claim": "A responsabilidade está migrando para o banco e a área passa a ser medida por resultado financeiro, não só por AUC",
+     "supported": true,
+     "note": "Literal em [3]."
+    },
+    {
+     "n": 7,
+     "claim": "SCAM-XD prevê se uma reclamação no CFPB termina em alívio monetário",
+     "supported": true,
+     "note": "Bate com o resumo em [7]."
+    },
+    {
+     "n": 9,
+     "claim": "Na Índia, pagamento autenticado pelo cliente fica fora do regime de 'transação não autorizada' vigente desde 2017; a vítima arca com a perda",
+     "supported": true,
+     "note": "Bate com [9]; faltou nomear os documentos do RBI que a fonte traz."
+    },
+    {
+     "n": null,
+     "claim": "É exatamente a tensão que o MED tenta resolver no Pix",
+     "supported": false,
+     "note": "Sem citação e sem apoio: nenhuma fonte descreve o que o MED faz."
+    },
+    {
+     "n": 6,
+     "claim": "Produção sobre APP fraud subiu 75% e sobre pagamentos instantâneos 127%",
+     "supported": true,
+     "note": "Literal em [6] (é volume de pesquisa, e a resposta diz 'produção')."
+    },
+    {
+     "n": null,
+     "claim": "As fontes cobrem bem o eixo Bacen/Open Finance/MED",
+     "supported": false,
+     "note": "O MED só aparece como menção em [3] e [4]; nenhuma fonte o cobre."
+    }
+   ],
+   "deltas": {
+    "score": -34,
+    "rubrica_pct": -25,
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "o que muda e o que exige",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "especificidade": {
+     "deepseek": 1,
+     "fable": 1,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 11,
+    "supported": 8,
+    "partial": 1,
+    "unsupported": 2
+   }
+  },
+  {
+   "id": "tecnologia-bancaria:regulation",
+   "topic": "tecnologia-bancaria",
+   "intent": "regulation",
+   "persona": "gestor de risco ou compliance",
+   "deepseek_score": 78,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "nota": 0,
+      "obs": "Nenhuma norma sobre IA, risco de modelo, explicabilidade ou proteção de dados. A única norma nomeada (Res. Conjunta 21/2026) é de Open Finance. LIME e CB-LMs são papers, não normas."
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "nota": 1,
+      "obs": "Bacen, CVM e FATF aparecem de passagem; nenhum regulador internacional de IA; nada sobre o que cada um exige."
+     },
+     {
+      "item": "o que muda e o que exige",
+      "nota": 1,
+      "obs": "As exigências (dono, limite, evidência de controle, trilha de decisão) vêm de reportagem e de leitura da curadoria, não de regulação; 'o que muda na regulação' não é respondido."
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "nota": 1,
+      "obs": "Menciona LIME e trilha auditável, mas chama o LIME de 'base regulatória' e usa o estudo indiano para minimizar a opacidade, sem ligar técnica a exigência."
+     }
+    ],
+    "fundamentacao": 1,
+    "especificidade": 1,
+    "honestidade": 0,
+    "utilidade": 1,
+    "formato": 1,
+    "causa": "fontes",
+    "faltou": [
+     "Dizer que as fontes não contêm nenhuma norma ou documento de regulador sobre IA em bancos",
+     "Proteção de dados: nada foi dito e nada foi sinalizado como ausente",
+     "Separar pesquisa/reportagem de regulação",
+     "Dizer que [2] mede volume de pesquisa, não atividade regulatória",
+     "Indicar que [1], [9] e [10] vêm de outros temas"
+    ],
+    "fontes_necessarias": [
+     "Normas do CMN/BC sobre gestão de riscos e de risco de modelo, com datas",
+     "LGPD e orientações da ANPD sobre decisões automatizadas",
+     "AI Act e documentos de supervisores bancários internacionais sobre IA e risco de modelo",
+     "Posicionamentos do BC sobre IA no sistema financeiro"
+    ],
+    "comentario": "A resposta responde a uma pergunta sobre regulação sem nenhuma norma e sem avisar. Abre com uma tese ('a regulação deixou de mirar a adoção...') tirada de uma tendência de people analytics que não fala de regulação. Para um gestor de compliance, isso passa uma falsa sensação de cobertura.",
+    "score": 39,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": null,
+     "claim": "A regulação deixou de mirar a adoção de IA e passou a mirar suas consequências e a governança",
+     "supported": false,
+     "note": "Frase adaptada de [1] (tendência de People Analytics sobre 'IA no trabalho'), que não fala de regulação. Sem citação no texto."
+    },
+    {
+     "n": 2,
+     "claim": "Salto de 265% (3,7x) na gestão de risco de modelos enquanto a adoção de LLMs cresceu 148%",
+     "supported": "partial",
+     "note": "Os números estão em [2], mas são de uma retrospectiva de volume de publicações; a resposta os apresenta como 'o dado mais direto' sobre regulação."
+    },
+    {
+     "n": 19,
+     "claim": "Governança de IA é pré-condição de escala; amarrar cada modelo a dono, limite e evidência de controle",
+     "supported": true,
+     "note": "Literal em [19] (pesquisa do American Banker; não é regulação)."
+    },
+    {
+     "n": 4,
+     "claim": "CB-LMs sinalizam bancos centrais criando modelos especializados para regulação e supervisão",
+     "supported": true,
+     "note": "Bate com [4]; é uso de IA pelo supervisor, não regra para bancos."
+    },
+    {
+     "n": 3,
+     "claim": "Resolução Conjunta BC/CMN 21/2026 torna onboarding de parceiros e consentimento auditáveis",
+     "supported": true,
+     "note": "Literal em [3]; norma de Open Finance, não de IA."
+    },
+    {
+     "n": 6,
+     "claim": "A base regulatória vem de explicabilidade pós-hoc — o LIME virou referência para modelos regulados",
+     "supported": "partial",
+     "note": "[6] diz 'base de explicabilidade pós-hoc e confiança em modelos regulados'; 'base regulatória' é distorção."
+    },
+    {
+     "n": 14,
+     "claim": "Fintechs discriminam cerca de 40% menos que canais face a face; debate vai para auditoria algorítmica e defesa de necessidade de negócio",
+     "supported": true,
+     "note": "Literal em [14]."
+    },
+    {
+     "n": 17,
+     "claim": "Pegada digital iguala ou supera bureau scores, ampliando o escopo do que precisa ser auditado",
+     "supported": "partial",
+     "note": "A primeira parte está em [17]; 'ampliando o escopo do que precisa ser auditado' é acréscimo da resposta."
+    },
+    {
+     "n": 10,
+     "claim": "Sob Bacen e FATF, preservar ordem de triagem validada e manter trilha de decisão para o regulador",
+     "supported": true,
+     "note": "Literal em [10] (tendência do tema Fraude, sobre PLD); a resposta não diz que vem de outro tema."
+    },
+    {
+     "n": 9,
+     "claim": "O gargalo é conflito epistêmico, não opacidade",
+     "supported": "partial",
+     "note": "[9] diz isso sobre a adoção de predições em três bancos indianos; usar o achado numa resposta sobre explicabilidade regulatória sugere que opacidade não é o problema, o que a fonte não afirma para regulação."
+    }
+   ],
+   "deltas": {
+    "score": -39,
+    "rubrica_pct": -37,
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "deepseek": 1,
+      "fable": 0,
+      "delta": -1
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "o que muda e o que exige",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "honestidade": {
+     "deepseek": 1,
+     "fable": 0,
+     "delta": -1
+    },
+    "utilidade": {
+     "deepseek": 1,
+     "fable": 1,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 10,
+    "supported": 5,
+    "partial": 4,
+    "unsupported": 1
+   }
+  },
+  {
+   "id": "fraude-bancaria:onboarding",
+   "topic": "fraude-bancaria",
+   "intent": "onboarding",
+   "persona": "cientista de dados recém-chegado à equipe",
+   "deepseek_score": 97,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "panorama do problema e por que importa",
+      "nota": 2,
+      "obs": "Custo, adversário adaptativo, três dificuldades de modelagem e o quadro de 2026, tudo apoiado."
+     },
+     {
+      "item": "evolução histórica com marcos e datas",
+      "nota": 2,
+      "obs": "1997 a 2023 com ano e trabalho; faltou só a fase atual de modelos fundacionais como fase."
+     },
+     {
+      "item": "métodos que são o estado da arte hoje, com evidência",
+      "nota": 1,
+      "obs": "Nomeia os métodos, mas a única 'evidência' numérica vem de um capítulo de livro triado [4] com alegações não verificáveis, apresentadas como fato; diz que modelos adaptativos 'são o padrão' com base num paper conceitual triado [3]. Não avisa que as fontes não trazem comparação com baseline."
+     },
+     {
+      "item": "problemas em aberto e limitações",
+      "nota": 1,
+      "obs": "Camuflagem e concentração de fornecedores corretos; mas lista como 'em aberto' a modelagem de relações entre entidades, que as próprias fontes dão como resolvida pela fase de grafos [18]. Faltam drift, rótulo atrasado e validação de ganho."
+     },
+     {
+      "item": "tendências",
+      "nota": 2,
+      "obs": "Modelos fundacionais, grafos, aprendizado contínuo, federado; o item da Tecban (e-mails de atendimento) não é tendência de fraude."
+     },
+     {
+      "item": "pessoas, grupos e instituições de referência",
+      "nota": 1,
+      "obs": "Lista de autores de papers sem afiliação nem critério; recomenda 'acompanhar' Tom Fawcett, que a fonte marca como referência histórica."
+     },
+     {
+      "item": "o que estudar primeiro (leituras, código, dados)",
+      "nota": 1,
+      "obs": "Boa ordem de leitura; sem código nem dados (ausentes das fontes, e a resposta diz isso)."
+     }
+    ],
+    "fundamentacao": 1,
+    "especificidade": 2,
+    "honestidade": 1,
+    "utilidade": 2,
+    "formato": 2,
+    "causa": "sintese",
+    "faltou": [
+     "Avisar que as fontes não trazem números comparativos (método vs baseline) para o estado da arte",
+     "Qualificar as alegações de [4] e [3] como de fontes fracas",
+     "Problemas em aberto corretos: drift, rótulos atrasados, avaliação por custo, validação de modelos fundacionais",
+     "Código e conjuntos de dados (ausentes das fontes)",
+     "Afiliações e critério de quem acompanhar"
+    ],
+    "fontes_necessarias": [
+     "Papers com resultado medido contra baseline (texto completo de resultados)",
+     "Repositórios e conjuntos de dados públicos de fraude",
+     "Perfis de pesquisadores e grupos ativos, com afiliação",
+     "Normas e relatórios do BC sobre fraude"
+    ],
+    "comentario": "Bom panorama histórico e boa estrutura. Os problemas estão na seção de estado da arte (evidência fraca apresentada como fato), num 'problema em aberto' que as fontes dão por resolvido e num item de tendência fora do assunto. Quase todas as citações batem literalmente; o que falha é a pertinência e o peso dado a cada fonte.",
+    "score": 77,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 6,
+     "claim": "Fraude financeira custa centenas de bilhões por ano",
+     "supported": true,
+     "note": "Literal no resumo de [6]."
+    },
+    {
+     "n": 11,
+     "claim": "Concept drift, desbalanceamento e verification latency",
+     "supported": true,
+     "note": "Literal em [11]."
+    },
+    {
+     "n": 15,
+     "claim": "Money mule +224%, concept drift +164%, voice cloning +143%, instant payment +127%, ATO +119%",
+     "supported": true,
+     "note": "Literal em [15] (volume de pesquisa)."
+    },
+    {
+     "n": 9,
+     "claim": "1997: Fawcett e Provost formalizam custos assimétricos e rótulos atrasados",
+     "supported": true,
+     "note": "Literal em [9] e [10]."
+    },
+    {
+     "n": 3,
+     "claim": "Modelos adaptativos — RL, online learning, deep learning — são o padrão para ambientes dinâmicos",
+     "supported": "partial",
+     "note": "[3] é um paper conceitual triado, de tom promocional ('revolutionizing', 'unparalleled'); não sustenta 'são o padrão'."
+    },
+    {
+     "n": 4,
+     "claim": "Capital One e Swedbank usam GANs e reduziram a fraude pela metade; Allianz reduziu 40% dos falsos positivos com VAEs",
+     "supported": "partial",
+     "note": "O texto de [4] diz isso, mas é capítulo de livro triado, sem fonte primária nem desenho de medição; a resposta apresenta como caso comprovado."
+    },
+    {
+     "n": 12,
+     "claim": "Em aberto: modelagem explícita das relações entre entidades, que modelos tabulares só capturavam por proxies",
+     "supported": false,
+     "note": "[12]/[13] dizem que isso ficou em aberto na era de 2015–2016; [18] diz que a fase seguinte 'resolveu o problema de representar relações'. Não é problema em aberto hoje."
+    },
+    {
+     "n": 16,
+     "claim": "Tendência: automação de atendimento — Tecban cortou 60% dos e-mails",
+     "supported": "partial",
+     "note": "O fato está em [16], mas é atendimento ao cliente, não prevenção a fraude; uso fora do assunto."
+    },
+    {
+     "n": 7,
+     "claim": "Dependência de poucos provedores de tecnologia cria concentração",
+     "supported": true,
+     "note": "Literal em [7]."
+    },
+    {
+     "n": 1,
+     "claim": "Memória federada para consórcios antifraude sob LGPD, sem compartilhar dados brutos",
+     "supported": true,
+     "note": "Literal em [1]; fonte de outro tema, não sinalizada."
+    },
+    {
+     "n": 19,
+     "claim": "DISCO separa aprendizado de representação e controle de risco",
+     "supported": true,
+     "note": "Literal em [19]."
+    }
+   ],
+   "deltas": {
+    "score": -20,
+    "rubrica_pct": -22,
+    "rubrica": [
+     {
+      "item": "panorama do problema e por que importa",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "evolução histórica com marcos e datas",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "métodos que são o estado da arte hoje, com evidência",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "problemas em aberto e limitações",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "tendências",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "pessoas, grupos e instituições de referência",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "o que estudar primeiro (leituras, código, dados)",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "sintese"
+    }
+   },
+   "citation_summary": {
+    "checked": 11,
+    "supported": 7,
+    "partial": 3,
+    "unsupported": 1
+   }
+  },
+  {
+   "id": "tecnologia-bancaria:project_fit",
+   "topic": "tecnologia-bancaria",
+   "intent": "project_fit",
+   "persona": "gestor com uma ideia de projeto",
+   "deepseek_score": 90,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "avaliação franca da ideia",
+      "nota": 1,
+      "obs": "Veredito claro, mas mais confiante do que as fontes permitem: a evidência é de suporte ao cliente e de programadores, não de gerentes de relacionamento, e isso não é dito."
+     },
+     {
+      "item": "trabalhos e casos parecidos",
+      "nota": 1,
+      "obs": "Só análogos. O Fifth Third é chamado de 'caso bancário direto', mas é um chatbot para clientes. PLD e JevRisk entram como 'o que já existe' sem relação com preparar reuniões."
+     },
+     {
+      "item": "o que o estado da arte sugere para o desenho",
+      "nota": 2,
+      "obs": "Quatro orientações aproveitáveis (intenção, camada de contexto, medição por senioridade, tarefa aversiva), com fonte."
+     },
+     {
+      "item": "riscos (técnicos, regulatórios, de dados)",
+      "nota": 1,
+      "obs": "Sem privacidade e sigilo de dados de clientes nem alucinação sobre fatos do cliente; o 'risco de dados e crédito' com o Nubank é enchimento."
+     },
+     {
+      "item": "próximos passos",
+      "nota": 2,
+      "obs": "Piloto com métrica, árvore de intenções, trilha de auditoria, capacitação."
+     }
+    ],
+    "fundamentacao": 1,
+    "especificidade": 2,
+    "honestidade": 0,
+    "utilidade": 2,
+    "formato": 2,
+    "causa": "fontes",
+    "faltou": [
+     "Dizer que nenhuma fonte traz um assistente para gerentes de relacionamento",
+     "Riscos de dados de clientes (privacidade, sigilo) e de erro factual do modelo",
+     "Piloto com grupo de controle",
+     "Indicar que [4], [5], [10], [13] são de People Analytics e [1], [12] de Fraude"
+    ],
+    "fontes_necessarias": [
+     "Casos de bancos com assistentes para gerentes e assessores, com resultado medido",
+     "Normas e orientações sobre uso de dados de clientes em IA generativa",
+     "Estudos de produtividade com IA generativa em vendas e relacionamento"
+    ],
+    "comentario": "Estrutura útil e números corretos, mas o 'faz sentido' se apoia em extrapolação não declarada, e vários itens são fontes fora do assunto encaixadas à força (PLD, inadimplência do Nubank, freelancers).",
+    "score": 70,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 2,
+     "claim": "+15% de produtividade para agentes de suporte, maior entre menos experientes",
+     "supported": true,
+     "note": "Literal em [2]."
+    },
+    {
+     "n": 10,
+     "claim": "+26,08% em tarefas concluídas, 4.867 desenvolvedores, Microsoft, Accenture e uma Fortune 100",
+     "supported": true,
+     "note": "Literal em [10]; fonte de People Analytics, não sinalizada."
+    },
+    {
+     "n": 2,
+     "claim": "Ganhos maiores para menos experientes — 'exatamente o perfil de boa parte das equipes de relacionamento'",
+     "supported": false,
+     "note": "Nenhuma fonte descreve o perfil de senioridade de gerentes de relacionamento; e a transposição de suporte/programação para relacionamento não é declarada."
+    },
+    {
+     "n": 8,
+     "claim": "Caso bancário direto: Fifth Third reconstruiu o Jeanie como assistente orientado a intenção",
+     "supported": "partial",
+     "note": "Os fatos estão em [8], mas o Jeanie é um assistente para clientes; 'direto' é exagero."
+    },
+    {
+     "n": 8,
+     "claim": "Desenho de intenção, integração e governança são 'os três pontos onde projetos assim costumam morrer'",
+     "supported": false,
+     "note": "Nenhuma das fontes [8][5][13] diz que projetos morrem nesses pontos."
+    },
+    {
+     "n": 1,
+     "claim": "Deixar a decisão nos motores validados, cedendo à IA só com evidência fora da amostra",
+     "supported": "partial",
+     "note": "[1] diz isso sobre a ordem de triagem em PLD; transposto para outro contexto sem aviso."
+    },
+    {
+     "n": 4,
+     "claim": "Auditar saídas de IA é tarefa aversiva e precisa entrar nos critérios de alocação",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 15,
+     "claim": "Nubank: atraso 90+ subiu de 6,6% para 7,3%",
+     "supported": true,
+     "note": "Número literal em [15]; a ligação com o assistente ('sugere exposição sem métrica de parada') é invenção de pertinência."
+    },
+    {
+     "n": 17,
+     "claim": "Confiabilidade, avaliação de agentes e integração com legados ficaram em aberto",
+     "supported": true,
+     "note": "Está no texto da era anexado a [17] e [18]."
+    },
+    {
+     "n": 13,
+     "claim": "O gargalo do analytics em bancos é epistêmico",
+     "supported": "partial",
+     "note": "[13] diz 'o gargalo do people analytics é epistêmico', a partir de estudo em bancos indianos."
+    }
+   ],
+   "deltas": {
+    "score": -20,
+    "rubrica_pct": -20,
+    "rubrica": [
+     {
+      "item": "avaliação franca da ideia",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "trabalhos e casos parecidos",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "o que o estado da arte sugere para o desenho",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "riscos (técnicos, regulatórios, de dados)",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "próximos passos",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 1,
+     "fable": 0,
+     "delta": -1
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 10,
+    "supported": 5,
+    "partial": 3,
+    "unsupported": 2
+   }
+  },
+  {
+   "id": "fraude-bancaria:who",
+   "topic": "fraude-bancaria",
+   "intent": "who",
+   "persona": "diretor",
+   "deepseek_score": 100,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "pesquisadores nomeados com afiliação",
+      "nota": 1,
+      "obs": "Só 3 dos cerca de 25 nomes têm afiliação (Ao, Dou, Fawcett); o resto são listas de coautores copiadas das fontes."
+     },
+     {
+      "item": "grupos ou instituições",
+      "nota": 2,
+      "obs": "Universidades e eventos nomeados, com contagem."
+     },
+     {
+      "item": "empresas e praticantes",
+      "nota": 2,
+      "obs": "Visa, Capital One, Nvidia, Ant Group, Uber AI com contagem; Dou como praticante."
+     },
+     {
+      "item": "por que cada um importa (trabalho de referência)",
+      "nota": 1,
+      "obs": "Para as três pessoas de referência, sim; para empresas e universidades, só contagem de publicações; para coautores, só o resumo do paper."
+     }
+    ],
+    "fundamentacao": 1,
+    "especificidade": 2,
+    "honestidade": 2,
+    "utilidade": 1,
+    "formato": 2,
+    "causa": "sintese",
+    "faltou": [
+     "Priorização: um diretor quer 5 a 8 nomes, não 25",
+     "Corrigir a identificação de VUB com ULB",
+     "Distinguir pessoas de referência da curadoria de meros coautores"
+    ],
+    "fontes_necessarias": [
+     "Mais perfis de pesquisadores ativos com afiliação",
+     "Grupos de pesquisa nomeados e seus trabalhos",
+     "Praticantes de bancos e fintechs, inclusive no Brasil"
+    ],
+    "comentario": "Resposta honesta e fiel na maior parte, mas com um erro factual inventado (trata a Vrije Universiteit Brussel como a Université Libre de Bruxelles) e sem a priorização que a pergunta 'quem eu deveria acompanhar' pede.",
+    "score": 78,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 14,
+     "claim": "Xiang Ao, Chinese Academy of Sciences; PC-GNN (751 citações) e AUC-oriented GNN (155)",
+     "supported": true,
+     "note": "Literal em [14]."
+    },
+    {
+     "n": 15,
+     "claim": "Yingtong Dou, Visa (Reino Unido), 3 trabalhos no OpenAlex",
+     "supported": true,
+     "note": "Literal em [15]."
+    },
+    {
+     "n": 22,
+     "claim": "Dou é coautor de 'Alleviating the inconsistency problem...' (SIGIR 2021)",
+     "supported": true,
+     "note": "Está na lista de referências em [22] ('Z. Liu, Y. Dou, P. S. Yu...')."
+    },
+    {
+     "n": 18,
+     "claim": "Tom Fawcett; 'Adaptive Fraud Detection' (1997) e 'An introduction to ROC analysis' (2006)",
+     "supported": true,
+     "note": "Literal em [18]."
+    },
+    {
+     "n": 10,
+     "claim": "Maes, Tuyls, Vanschoenwinkel e Manderick — VUB, 2002",
+     "supported": true,
+     "note": "Literal em [10]."
+    },
+    {
+     "n": 10,
+     "claim": "A Université Libre de Bruxelles é a mesma casa do trabalho clássico de Maes et al.",
+     "supported": false,
+     "note": "[10] é da Vrije Universiteit Brussel (VUB); [11] lista a Université Libre de Bruxelles (ULB). São instituições diferentes; a ligação é inventada."
+    },
+    {
+     "n": 11,
+     "claim": "Nvidia (11), Capital One (10), Visa (10), Ant Group (7), Uber AI (5); Tongji (19), Antwerp (12), ULB (10), KU Leuven (10)",
+     "supported": true,
+     "note": "Literal em [11]."
+    },
+    {
+     "n": 11,
+     "claim": "Academia 495 de 670 (73,9%); Brasil não aparece",
+     "supported": true,
+     "note": "Literal em [11]."
+    },
+    {
+     "n": 7,
+     "claim": "Febraban SEC, São Paulo, 18–19 mar 2026",
+     "supported": true,
+     "note": "Literal em [7]."
+    },
+    {
+     "n": 5,
+     "claim": "FraudGNN-RL (IEEE Open Journal of the Computer Society, 2025) combina GNN com aprendizado por reforço",
+     "supported": true,
+     "note": "Literal em [5]."
+    }
+   ],
+   "deltas": {
+    "score": -22,
+    "rubrica_pct": -25,
+    "rubrica": [
+     {
+      "item": "pesquisadores nomeados com afiliação",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "grupos ou instituições",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "empresas e praticantes",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "por que cada um importa (trabalho de referência)",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "ok",
+     "fable": "sintese"
+    }
+   },
+   "citation_summary": {
+    "checked": 10,
+    "supported": 9,
+    "partial": 0,
+    "unsupported": 1
+   }
+  },
+  {
+   "id": "tecnologia-bancaria:code",
+   "topic": "tecnologia-bancaria",
+   "intent": "code",
+   "persona": "desenvolvedor",
+   "deepseek_score": 74,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "repositórios nomeados com link",
+      "nota": 0,
+      "obs": "Nenhum; as fontes não têm código e a resposta diz isso."
+     },
+     {
+      "item": "a que paper cada um corresponde",
+      "nota": 0,
+      "obs": "Sem repositório não há correspondência a fazer; listar papers não atende ao item."
+     },
+     {
+      "item": "dados para testar",
+      "nota": 2,
+      "obs": "Home Credit e Lending Club, a partir de [3] e [11] (sem link; 'públicas' é conhecimento de fora das fontes)."
+     },
+     {
+      "item": "passo a passo para começar",
+      "nota": 1,
+      "obs": "Ordem de leitura, não passos de implementação."
+     }
+    ],
+    "fundamentacao": 2,
+    "especificidade": 2,
+    "honestidade": 2,
+    "utilidade": 1,
+    "formato": 1,
+    "causa": "fontes",
+    "faltou": [
+     "Repositórios",
+     "Passos concretos de implementação",
+     "Resposta curta: sem código nas fontes, 12 papers listados (hipotecas, Iêmen) é enchimento"
+    ],
+    "fontes_necessarias": [
+     "Repositórios de código de credit scoring ligados aos papers do acervo",
+     "Documentação dos conjuntos de dados citados",
+     "Texto completo de método e resultados (os trechos recebidos eram listas de referências)"
+    ],
+    "comentario": "Honesta e fiel. Perde por não entregar o que a pergunta pede (causa: fontes) e por esconder isso atrás de uma lista longa de papers pouco pertinentes para um desenvolvedor.",
+    "score": 63,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 1,
+     "claim": "Khandani, Kim & Lo (2010): ML em risco de crédito ao consumidor com ganho preditivo",
+     "supported": true,
+     "note": "Literal em [1]."
+    },
+    {
+     "n": 7,
+     "claim": "Lessmann et al. (2015) atualizou benchmarks com múltiplos algoritmos e bases",
+     "supported": true,
+     "note": "Literal em [7]."
+    },
+    {
+     "n": 22,
+     "claim": "Os trechos [22][23] são a lista de referências desse paper",
+     "supported": true,
+     "note": "Correto, e a resposta descreve os trechos como o que são."
+    },
+    {
+     "n": 3,
+     "claim": "JevRisk avaliado com dados sintéticos do Scotiabank, Home Credit e Lending Club; empata ou supera GBDT/TabPFN com ~mil rótulos",
+     "supported": true,
+     "note": "Literal em [3]; 'bases públicas' não está na fonte."
+    },
+    {
+     "n": 11,
+     "claim": "Correlação entre nota do LendingClub e FICO caiu de ~80% (2007) para ~35% (2014–2015)",
+     "supported": true,
+     "note": "Literal em [11]."
+    },
+    {
+     "n": 19,
+     "claim": "Protocolo em estágios; testado em harness sintético de scorecard de crédito",
+     "supported": true,
+     "note": "Literal em [19]."
+    },
+    {
+     "n": 18,
+     "claim": "Painel de 42 agências de dois bancos iemenitas (2013–2024)",
+     "supported": true,
+     "note": "Literal em [18]; pouco pertinente para a pergunta."
+    },
+    {
+     "n": 5,
+     "claim": "ML em hipotecas pode aumentar disparidades entre grupos raciais",
+     "supported": true,
+     "note": "Literal em [5]."
+    }
+   ],
+   "deltas": {
+    "score": -11,
+    "rubrica_pct": -12,
+    "rubrica": [
+     {
+      "item": "repositórios nomeados com link",
+      "deepseek": 0,
+      "fable": 0,
+      "delta": 0
+     },
+     {
+      "item": "a que paper cada um corresponde",
+      "deepseek": 1,
+      "fable": 0,
+      "delta": -1
+     },
+     {
+      "item": "dados para testar",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "passo a passo para começar",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 1,
+     "fable": 1,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 8,
+    "supported": 8,
+    "partial": 0,
+    "unsupported": 0
+   }
+  },
+  {
+   "id": "people-analytics:evidence",
+   "topic": "people-analytics",
+   "intent": "evidence",
+   "persona": "gestor cético",
+   "deepseek_score": 100,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "números de ganho medido",
+      "nota": 0,
+      "obs": "Nenhum número de ganho; a resposta diz com clareza que as fontes não trazem. O mérito de dizer isso está em 'honestidade', não aqui."
+     },
+     {
+      "item": "baseline explícito",
+      "nota": 2,
+      "obs": "Aprendizado supervisionado puro em [2]; triagem humana em [19]; especialistas em [9]."
+     },
+     {
+      "item": "natureza dos dados (próprios, produção, públicos)",
+      "nota": 2,
+      "obs": "Distingue dados próprios de empresa (Fortune 500, Amazon), auditoria pareada e currículos com identidade aleatorizada."
+     },
+     {
+      "item": "casos de empresas ou bancos",
+      "nota": 2,
+      "obs": "Fortune 500 de serviços profissionais e Amazon (caso negativo)."
+     },
+     {
+      "item": "honestidade quando a evidência é fraca ou ausente",
+      "nota": 2,
+      "obs": "Explícita e logo no início."
+     }
+    ],
+    "fundamentacao": 2,
+    "especificidade": 2,
+    "honestidade": 2,
+    "utilidade": 2,
+    "formato": 2,
+    "causa": "fontes",
+    "faltou": [
+     "Tamanho do efeito de qualquer estudo",
+     "O ponto de [7]: a evidência mais forte é operacional (volume, carga do recrutador)",
+     "A direção do viés em [21]: notas maiores para mulheres e menores para homens negros"
+    ],
+    "fontes_necessarias": [
+     "Texto completo de resultados de 'Hiring as Exploration' e do estudo de Cowgill",
+     "Casos de empresas com medição contra triagem humana"
+    ],
+    "comentario": "A melhor resposta da amostra: todas as citações conferidas batem, abre com o que foi medido e diz o que falta. A nota não é 100 porque o primeiro item da rubrica (números de ganho) não foi entregue, por falta de fonte.",
+    "score": 92,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 2,
+     "claim": "Bandit contextual melhora a qualidade das contratações numa Fortune 500 de serviços profissionais, contra triagem só com aprendizado supervisionado",
+     "supported": true,
+     "note": "Literal em [2]; sem magnitude na fonte, e a resposta diz isso."
+    },
+    {
+     "n": 19,
+     "claim": "Cowgill: triagem algorítmica reduz erros versus triagem humana",
+     "supported": true,
+     "note": "Literal em [19]."
+    },
+    {
+     "n": 4,
+     "claim": "Amazon: notas de 1 a 5 estrelas; penalizava 'women's'; ferramenta descartada",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 18,
+     "claim": "Algoritmos só removem o viés se as decisões humanas forem suficientemente ruidosas",
+     "supported": true,
+     "note": "Literal em [18]."
+    },
+    {
+     "n": 12,
+     "claim": "Auditoria de ATS com 3.200 candidaturas pareadas, quatro setores, seis áreas metropolitanas",
+     "supported": true,
+     "note": "Literal em [12]; o resumo chega cortado antes dos achados."
+    },
+    {
+     "n": 21,
+     "claim": "~361.000 currículos; 1 a 2 pontos percentuais de diferença na probabilidade de contratação",
+     "supported": true,
+     "note": "Literal em [21][22]; faltou a direção do viés."
+    },
+    {
+     "n": 3,
+     "claim": "Seleção por ML +58% (3.207→5.076); people analytics +105% (411→842)",
+     "supported": true,
+     "note": "Literal em [3][5]; corretamente tratado como volume de pesquisa."
+    },
+    {
+     "n": 15,
+     "claim": "4 LLMs, 210 currículos, 14 cargos, 6 interfaces",
+     "supported": true,
+     "note": "Literal em [15]."
+    }
+   ],
+   "deltas": {
+    "score": -8,
+    "rubrica_pct": -20,
+    "rubrica": [
+     {
+      "item": "números de ganho medido",
+      "deepseek": 2,
+      "fable": 0,
+      "delta": -2
+     },
+     {
+      "item": "baseline explícito",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "natureza dos dados (próprios, produção, públicos)",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "casos de empresas ou bancos",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "honestidade quando a evidência é fraca ou ausente",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 8,
+    "supported": 8,
+    "partial": 0,
+    "unsupported": 0
+   }
+  },
+  {
+   "id": "tecnologia-bancaria:real5",
+   "topic": "tecnologia-bancaria",
+   "intent": "real",
+   "persona": "usuário real",
+   "deepseek_score": 100,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "responde diretamente ao que foi perguntado",
+      "nota": 2,
+      "obs": "Direto ao caso."
+     },
+     {
+      "item": "evidência concreta (números, casos, papers) quando houver",
+      "nota": 2,
+      "obs": "4,8% → 3,2% no 3T26; mecanismo; contraste com +1,8 AUC."
+     },
+     {
+      "item": "fontes pertinentes citadas",
+      "nota": 2,
+      "obs": "[4], [11], [12], as três que tratam do caso."
+     },
+     {
+      "item": "honestidade sobre o que o acervo não cobre",
+      "nota": 2,
+      "obs": "Diz que não há arquitetura nem custo, e que as três fontes repetem o mesmo dado."
+     }
+    ],
+    "fundamentacao": 2,
+    "especificidade": 2,
+    "honestidade": 2,
+    "utilidade": 2,
+    "formato": 2,
+    "causa": "ok",
+    "faltou": [],
+    "fontes_necessarias": [],
+    "comentario": "Curta, fiel e honesta. Único reparo menor: 'do que de modelagem preditiva de ponta' é acréscimo leve ao que [12] diz.",
+    "score": 100,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 4,
+     "claim": "Religamento automático na cobrança do consignado privado derrubou a formação de inadimplência de 4,8% para 3,2% no 3T26",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 11,
+     "claim": "O mesmo dado aparece em [11]",
+     "supported": true,
+     "note": "Literal em [11]."
+    },
+    {
+     "n": 12,
+     "claim": "O mesmo dado aparece em [12]",
+     "supported": true,
+     "note": "Literal em [12]."
+    },
+    {
+     "n": 4,
+     "claim": "Agir no início do atraso e localizar o devedor quando troca de emprego; exige dado de vínculo atualizado",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 4,
+     "claim": "A alavanca mais barata é automação de cobrança com dado de emprego quase em tempo real, não um novo modelo de score",
+     "supported": true,
+     "note": "Literal em [4]."
+    },
+    {
+     "n": 12,
+     "claim": "No Brasil o movimento é mais de risco, cobrança e infraestrutura",
+     "supported": true,
+     "note": "Literal em [12]; 'do que de modelagem preditiva de ponta' é acréscimo leve."
+    },
+    {
+     "n": 12,
+     "claim": "Modelos fundacionais de transações: +1,8 AUC no melhor caso, quase zero com muitos rótulos",
+     "supported": true,
+     "note": "Literal em [12]; 'ganho limitado' em [11]."
+    }
+   ],
+   "deltas": {
+    "score": 0,
+    "rubrica_pct": 0,
+    "rubrica": [
+     {
+      "item": "responde diretamente ao que foi perguntado",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "evidência concreta (números, casos, papers) quando houver",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "fontes pertinentes citadas",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     },
+     {
+      "item": "honestidade sobre o que o acervo não cobre",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "ok",
+     "fable": "ok"
+    }
+   },
+   "citation_summary": {
+    "checked": 7,
+    "supported": 7,
+    "partial": 0,
+    "unsupported": 0
+   }
+  },
+  {
+   "id": "people-analytics:industry",
+   "topic": "people-analytics",
+   "intent": "industry",
+   "persona": "diretor",
+   "deepseek_score": 73,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "casos nomeados de empresas",
+      "nota": 1,
+      "obs": "Google, Best Buy, P&G e Sysco (de um artigo de 2010); bancos indianos sem nome; nenhuma fintech."
+     },
+     {
+      "item": "Brasil e mundo",
+      "nota": 1,
+      "obs": "Mundo, parcialmente; Brasil sem nenhum caso (dito com clareza)."
+     },
+     {
+      "item": "resultado ou escala informados",
+      "nota": 0,
+      "obs": "Nenhum resultado nem escala de nenhum caso; '18 meses' é a duração do estudo."
+     },
+     {
+      "item": "fonte de cada caso",
+      "nota": 2,
+      "obs": "Cada caso com sua fonte."
+     }
+    ],
+    "fundamentacao": 2,
+    "especificidade": 1,
+    "honestidade": 2,
+    "utilidade": 1,
+    "formato": 2,
+    "causa": "fontes",
+    "faltou": [
+     "Casos brasileiros",
+     "Fintechs",
+     "Resultados ou escala",
+     "Dizer que o caso de Google/Best Buy/P&G/Sysco é de 2010"
+    ],
+    "fontes_necessarias": [
+     "Casos de empresas e bancos (inclusive brasileiros) com resultado informado",
+     "Relatórios de empresas e de consultorias sobre IA em RH",
+     "Notícias de indústria sobre fintechs"
+    ],
+    "comentario": "Fiel e honesta; fraca porque as fontes eram quase todas acadêmicas. Aqui o juiz DeepSeek e eu concordamos.",
+    "score": 68,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": 14,
+     "claim": "Google, Best Buy, Procter & Gamble e Sysco usam coleta e análise de dados; seis formas de usar dados de pessoas",
+     "supported": true,
+     "note": "Literal em [14]; a resposta não diz que é de 2010 numa pergunta sobre o que 'estão fazendo'."
+    },
+    {
+     "n": 5,
+     "claim": "Survey mapeia técnicas em três níveis: gestão de talento, da organização e mercado de trabalho",
+     "supported": true,
+     "note": "Literal em [21]."
+    },
+    {
+     "n": 9,
+     "claim": "Estudo de 18 meses em três grandes bancos indianos; conflito epistêmico; quatro práticas de ponte",
+     "supported": true,
+     "note": "Literal em [9]."
+    },
+    {
+     "n": 1,
+     "claim": "Bélgica: acordos coletivos e regulamentos de trabalho negociam gestão algorítmica",
+     "supported": true,
+     "note": "Literal em [1]."
+    },
+    {
+     "n": 8,
+     "claim": "XAI com debiasing adversarial testado no dataset de HR analytics da IBM",
+     "supported": true,
+     "note": "Literal em [8]."
+    },
+    {
+     "n": 19,
+     "claim": "Análise jurídica conclui que a legislação brasileira tem instrumentos aplicáveis",
+     "supported": true,
+     "note": "Bate com [19]."
+    },
+    {
+     "n": 18,
+     "claim": "A pauta passou de adoção para consequências e governança",
+     "supported": true,
+     "note": "Literal em [18]."
+    }
+   ],
+   "deltas": {
+    "score": -5,
+    "rubrica_pct": -13,
+    "rubrica": [
+     {
+      "item": "casos nomeados de empresas",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "Brasil e mundo",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "resultado ou escala informados",
+      "deepseek": 1,
+      "fable": 0,
+      "delta": -1
+     },
+     {
+      "item": "fonte de cada caso",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "especificidade": {
+     "deepseek": 1,
+     "fable": 1,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 1,
+     "fable": 1,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 7,
+    "supported": 7,
+    "partial": 0,
+    "unsupported": 0
+   }
+  },
+  {
+   "id": "people-analytics:regulation",
+   "topic": "people-analytics",
+   "intent": "regulation",
+   "persona": "gestor de risco ou compliance",
+   "deepseek_score": 90,
+   "your_judge": {
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "nota": 1,
+      "obs": "Resolução Conjunta BC/CMN 21/2026 (Open Finance) e artigos 9–15 e Anexo IV do AI Act, sem data; LGPD ausente das fontes, o que é dito."
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "nota": 1,
+      "obs": "Bacen e UE (pelo AI Act); nenhum outro."
+     },
+     {
+      "item": "o que muda e o que exige",
+      "nota": 1,
+      "obs": "As exigências práticas são boas; mas quase tudo em 'o que está mudando' é achado de pesquisa (viés, auditoria que expira), não mudança regulatória."
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "nota": 2,
+      "obs": "Auditoria versionada, teste de viés nos dois lados, auditoria de override, perguntas-guia do AI Act."
+     }
+    ],
+    "fundamentacao": 2,
+    "especificidade": 2,
+    "honestidade": 2,
+    "utilidade": 2,
+    "formato": 1,
+    "causa": "fontes",
+    "faltou": [
+     "LGPD e decisões automatizadas (ausente das fontes)",
+     "Datas e autoridades do AI Act",
+     "Cortar a seção 'Pessoas, grupos e instituições' (cerca de 40% do texto), que ninguém pediu"
+    ],
+    "fontes_necessarias": [
+     "LGPD e orientações da ANPD sobre decisões automatizadas",
+     "Texto e calendário do AI Act",
+     "Normas trabalhistas e posicionamentos de reguladores sobre IA em decisões de RH"
+    ],
+    "comentario": "Conteúdo honesto e bem apoiado, com abertura exemplar sobre o que as fontes cobrem. O defeito é de formato: a palavra 'pessoas' na pergunta acionou o formato de 'quem acompanhar', e a resposta ganhou uma lista de autores (inclusive Acemoglu e o Banco Central em 'Pesquisa') que não responde a nada. São 1.278 palavras.",
+    "score": 79,
+    "model": "claude-fable-5-2 (calibração manual)"
+   },
+   "citation_checks": [
+    {
+     "n": null,
+     "claim": "LGPD não é citada nominalmente em nenhuma fonte",
+     "supported": true,
+     "note": "Conferido no bloco de fontes."
+    },
+    {
+     "n": 5,
+     "claim": "AI Act: toolkit traduz Artigos 9–15 e Anexo IV em requisitos e perguntas-guia para recrutamento de alto risco com GPAI de terceiros",
+     "supported": true,
+     "note": "Literal em [5]."
+    },
+    {
+     "n": 9,
+     "claim": "Mesmo teste três vezes em 13 meses, 248.400 chamadas, cinco provedores; aviso de aposentadoria de zero a seis meses",
+     "supported": true,
+     "note": "Literal em [9]."
+    },
+    {
+     "n": 9,
+     "claim": "A regulação ainda não acompanha esse ciclo",
+     "supported": false,
+     "note": "Acréscimo sem apoio em [9]."
+    },
+    {
+     "n": 10,
+     "claim": "Regra do BC desloca a qualidade da informação para o centro da governança",
+     "supported": true,
+     "note": "Literal em [10]."
+    },
+    {
+     "n": 7,
+     "claim": "Feedback descritivo: efeito de 45% a 80% do tamanho de uma cota obrigatória",
+     "supported": true,
+     "note": "Literal em [7]."
+    },
+    {
+     "n": 19,
+     "claim": "Monitoramento por CCTV não é absolutamente proibido; base legal e proporcionalidade",
+     "supported": true,
+     "note": "Literal em [19] (a jurisdição não aparece no trecho, e a resposta não a inventa)."
+    },
+    {
+     "n": 12,
+     "claim": "Novatos com recomendação algorítmica própria superam especialistas",
+     "supported": true,
+     "note": "Literal em [12]."
+    },
+    {
+     "n": 20,
+     "claim": "Quatro obstáculos do data science em RH; raciocínio causal, experimentação e participação",
+     "supported": true,
+     "note": "Literal em [20]."
+    }
+   ],
+   "deltas": {
+    "score": -11,
+    "rubrica_pct": -12,
+    "rubrica": [
+     {
+      "item": "normas ou documentos nomeados com data",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "reguladores brasileiros e internacionais",
+      "deepseek": 1,
+      "fable": 1,
+      "delta": 0
+     },
+     {
+      "item": "o que muda e o que exige",
+      "deepseek": 2,
+      "fable": 1,
+      "delta": -1
+     },
+     {
+      "item": "como se encaixa nas técnicas propostas",
+      "deepseek": 2,
+      "fable": 2,
+      "delta": 0
+     }
+    ],
+    "fundamentacao": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "especificidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "honestidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "utilidade": {
+     "deepseek": 2,
+     "fable": 2,
+     "delta": 0
+    },
+    "formato": {
+     "deepseek": 2,
+     "fable": 1,
+     "delta": -1
+    },
+    "causa": {
+     "deepseek": "fontes",
+     "fable": "fontes"
+    }
+   },
+   "citation_summary": {
+    "checked": 9,
+    "supported": 8,
+    "partial": 0,
+    "unsupported": 1
+   }
+  }
+ ],
+ "summary": {
+  "run": "evals/runs/2026-11-25-v3-intencao-pessoas-codigo",
+  "n_cases": 10,
+  "deepseek_mean": 88.6,
+  "fable_mean": 71.6,
+  "mean_gap": -17,
+  "mean_abs_gap": 17,
+  "max_gap": -39,
+  "spearman": 0.81,
+  "pearson": 0.74,
+  "rubrica_pct": {
+   "deepseek": 82.1,
+   "fable": 63.5
+  },
+  "dimensions": {
+   "fundamentacao": {
+    "deepseek": 2,
+    "fable": 1.5,
+    "delta": -0.5
+   },
+   "especificidade": {
+    "deepseek": 1.8,
+    "fable": 1.7,
+    "delta": -0.1
+   },
+   "honestidade": {
+    "deepseek": 1.8,
+    "fable": 1.4,
+    "delta": -0.4
+   },
+   "utilidade": {
+    "deepseek": 1.7,
+    "fable": 1.5,
+    "delta": -0.2
+   },
+   "formato": {
+    "deepseek": 2,
+    "fable": 1.6,
+    "delta": -0.4
+   }
+  },
+  "rubric_items": {
+   "total": 45,
+   "fable_lower": 16,
+   "equal": 29,
+   "fable_higher": 0
+  },
+  "citations": {
+   "checked": 91,
+   "supported": 72,
+   "partial": 11,
+   "unsupported": 8
+  },
+  "full_run_judge_stats": {
+   "judged": 44,
+   "of": 46,
+   "not_judged": [
+    "tecnologia-bancaria:sota",
+    "tecnologia-bancaria:news"
+   ],
+   "distributions": {
+    "fundamentacao": {
+     "1": 2,
+     "2": 42
+    },
+    "especificidade": {
+     "1": 2,
+     "2": 42
+    },
+    "honestidade": {
+     "1": 6,
+     "2": 38
+    },
+    "utilidade": {
+     "1": 5,
+     "2": 39
+    },
+    "formato": {
+     "2": 44
+    }
+   },
+   "score_100": 21,
+   "causa_fontes": 18,
+   "causa_fontes_score_ge_90": 11
+  },
+  "headline": "O juiz DeepSeek está benevolente em cerca de 17 pontos nesta amostra (88,6 contra 71,6); a diferença nunca é positiva e cresce quando a resposta é fluente e as fontes não cobrem a pergunta. A ordem dos casos se mantém (Spearman 0,81).",
+  "sample_note": "10 de 46 casos, escolhidos para cobrir temas, intenções e notas altas e baixas; as afirmações conferidas não são amostra aleatória (incluem de propósito as duvidosas e as sem citação).",
+  "judge_biases": [
+   {
+    "bias": "Não confere citações: fundamentação 2 em 42 de 44 respostas",
+    "evidence": "Em pelo menos 5 dos 10 casos há afirmação sem apoio ou distorcida que o juiz não viu (VUB tratada como ULB; MED atribuído ao paper do Bank of Canada; LIME como 'base regulatória'; problema 'em aberto' que a fonte dá por resolvido; extrapolações sem fonte no project_fit)."
+   },
+   {
+    "bias": "Nota de rubrica pelo que 'as fontes permitem', não pelo que a resposta entrega",
+    "evidence": "Nota 2 em 'números de ganho medido' sem número algum; nota 1 em 'a que paper corresponde' sem repositório; 11 respostas com causa 'fontes' e nota 90 ou mais."
+   },
+   {
+    "bias": "Aceita material vizinho como resposta",
+    "evidence": "Nas duas regulações de banco a única norma é de Open Finance; o juiz deu 84 e 78 (Fable: 50 e 39)."
+   },
+   {
+    "bias": "Formato não discrimina (44 de 44 com nota 2) e as cinco dimensões estão no teto",
+    "evidence": "Formato 2 para resposta de 1.278 palavras com seção de pessoas não pedida."
+   },
+   {
+    "bias": "Tolerante com honestidade tardia ou ausente",
+    "evidence": "tecnologia-bancaria:regulation nunca avisa que não há norma nas fontes: juiz 1, Fable 0."
+   },
+   {
+    "bias": "O juiz cita normas de memória em fontes_necessarias",
+    "evidence": "Pede 'Resolução CMN 4.893 (gestão de risco de modelos)'; pelo que sei essa resolução trata de segurança cibernética e nuvem. Não conferido aqui (sem acesso externo)."
+   }
+  ],
+  "judge_harsh": "Nenhum caso relevante: em nenhum dos 10 casos e em nenhum dos 45 itens de rubrica a nota Fable ficou acima da do DeepSeek.",
+  "answer_failures": [
+   {
+    "failure": "Preenche a falta de fonte com assunto vizinho, sem avisar ou avisando só no fim",
+    "type": "sintese",
+    "cases": [
+     "fraude-bancaria:regulation",
+     "tecnologia-bancaria:regulation",
+     "tecnologia-bancaria:project_fit",
+     "fraude-bancaria:onboarding"
+    ]
+   },
+   {
+    "failure": "Encaixa fontes fora do assunto e não pesa a qualidade nem o tipo da fonte (norma, paper, reportagem, comentário da curadoria)",
+    "type": "sintese + recuperacao",
+    "cases": [
+     "fraude-bancaria:onboarding",
+     "tecnologia-bancaria:project_fit",
+     "tecnologia-bancaria:regulation"
+    ]
+   },
+   {
+    "failure": "Roteamento de formato: 'pessoas' aciona o formato 'quem'; regulação, indústria, tendências, habilidades e notícias não têm formato próprio",
+    "type": "formato",
+    "cases": [
+     "people-analytics:regulation",
+     "people-analytics:trends",
+     "people-analytics:skills",
+     "people-analytics:news"
+    ]
+   },
+   {
+    "failure": "Deixa de usar a fonte mais pertinente",
+    "type": "sintese",
+    "cases": [
+     "fraude-bancaria:regulation"
+    ]
+   },
+   {
+    "failure": "Liga fatos com conhecimento de fora das fontes",
+    "type": "sintese",
+    "cases": [
+     "fraude-bancaria:who",
+     "fraude-bancaria:regulation"
+    ]
+   },
+   {
+    "failure": "Núcleo da pergunta ausente do bloco de fontes (normas, repositórios, casos, números contra baseline)",
+    "type": "fontes",
+    "cases": [
+     "fraude-bancaria:regulation",
+     "tecnologia-bancaria:regulation",
+     "people-analytics:regulation",
+     "tecnologia-bancaria:code",
+     "people-analytics:industry",
+     "people-analytics:evidence"
+    ]
+   }
+  ],
+  "retrieval_findings": [
+   "O resumo da era é indexado dentro de cada marco (server/archive.js), o que faz marcos sem relação (BERT, GPT-3, RLHF, chain-of-thought) casarem com perguntas de regulação; o mesmo parágrafo veio 6 vezes no bloco de tecnologia-bancaria:regulation.",
+   "424 das 1.064 fontes da rodada chegam cortadas no limite de 900 caracteres, muitas antes dos achados; o título se repete até 3 vezes no início do texto.",
+   "Trechos de texto completo que são bibliografia ou apêndice matemático (pelo menos 7 de 98 por uma heurística simples).",
+   "Notícias rotuladas como 'paper'; repositórios de código ligados ao paper errado ou com nome truncado.",
+   "As três perguntas de regulação receberam uma única norma (Resolução Conjunta BC/CMN 21/2026, de Open Finance)."
+  ],
+  "recommendations": {
+   "judge": [
+    "Trocar o prompt do sistema pelo texto proposto no relatório (conferência de pelo menos 6 citações registrada em 'verificacoes'; rubrica por entrega; pertinência; âncoras por nota; formato com critérios; sem normas de memória)",
+    "Dois exemplos de calibração no prompt (tecnologia-bancaria:regulation = 39; tecnologia-bancaria:real5 = 100)",
+    "Tetos em score(): fundamentacao 0 limita a 50; honestidade 0 com causa 'fontes' limita a 60; gravar score_v1 e rubrica_pct ao lado",
+    "Falhar quando uma resposta fica sem julgamento (2 de 46 ficaram de fora)",
+    "Usar estes 10 casos como teste do juiz antes de rejulgar a rodada"
+   ],
+   "agent_prompt": [
+    "Checagem de cobertura: se o núcleo da pergunta não está nas fontes, a primeira frase diz isso",
+    "Só usar fonte que trata do assunto; dizer o tipo de evidência; não ligar fatos com conhecimento de fora",
+    "Corrigir o padrão de 'who' em INTENTS e testar o roteamento das 46 perguntas",
+    "Formatos próprios para regulação e indústria",
+    "Limitar 'who' a 8 nomes priorizados e 'code' sem código a 4 papers"
+   ],
+   "retrieval": [
+    "Tirar o resumo da era do texto indexado dos marcos",
+    "Não repetir o título; cortar em fim de frase; limite maior para resumos",
+    "Filtrar bibliografia e apêndices dos trechos de texto completo",
+    "Piso de pertinência em vez de sempre 20 fontes; desconto maior para outros temas",
+    "Rotular notícia, norma e paper",
+    "Incluir normas (BC, CMN, ANPD, AI Act) no acervo como tipo próprio",
+    "Validar a ligação repositório–paper"
+   ]
+  }
+ },
+ "reference_answers": {
+  "fraude-bancaria:onboarding": "**O problema**\n\nFraude financeira custa centenas de bilhões de dólares por ano a instituições e consumidores [6], e o adversário se adapta: o fraudador muda de tática quando o controle muda [14]. Para quem modela, três coisas tornam o problema diferente de uma classificação comum: fraudes são raríssimas perto das transações legítimas, o comportamento de clientes e fraudadores muda com o tempo (concept drift) e o rótulo chega tarde e só para a fração que alguém investigou [11]. Por isso acurácia é a métrica errada; avalia-se por custo e por tempo até a detecção [13][14].\n\n**Como a área chegou até aqui**\n\n- **Regras escritas à mão → aprendizado supervisionado (anos 1990).** O volume de transações inviabilizou as regras, e os falsos positivos bloqueavam clientes. Fawcett e Provost (1997) formalizaram custos assimétricos e rótulos atrasados e combinaram vários detectores, a origem do \"ensemble de sinais\" [9][10].\n- **Consolidação estatística (2002).** Bolton e Hand organizaram o campo em supervisão, não supervisão e detecção de outliers [14].\n- **Escala e revisões (2015–2017).** West e Bhattacharya (2015) firmaram a avaliação por custo [13]; Abdallah, Maarof e Zainal (2016) descreveram o sistema de ponta a ponta [12]; em 2017, a formulação \"realista\" com drift, desbalanceamento e atraso de verificação [11]. Ficava em aberto modelar relações entre cartão, dispositivo e comerciante [12].\n- **Grafos (2019–2023).** Semi-GNN (2019): atenção em grafo com poucos rótulos [18]; PC-GNN (2021): amostragem para desbalanceamento [5]; ASA-GNN (2023): filtra vizinhos ruidosos [17]. A fase resolveu a representação de relações e deixou em aberto a camuflagem deliberada [18].\n- **2026.** Corrida por modelos fundacionais de transações (PRAGMA), grafos contrastivos e aprendizado contínuo [15].\n\n**O estado da arte hoje**\n\n- Grafos para fraude em rede e colusão: Guardnet (2026) [2], além de Audit-HCL e variantes federadas citadas na retrospectiva [15].\n- Controle de risco separado do classificador: DISCO (2026) [19].\n- Modelos fundacionais bancários (PRAGMA) e detecção com agentes e memória de personas (PersonaAgent) [15].\n- Sinal entre instituições sem trocar dados brutos: memória federada [1] e aprendizado federado com computação segura [20] (ambos do arquivo de Tecnologia Bancária).\n\nAviso: estas fontes trazem só resumos e **não trazem nenhum número de ganho contra baseline** para esses métodos. Os únicos números de resultado (Capital One e Swedbank \"reduzindo a fraude pela metade\" com GANs; Allianz com 40% menos falsos positivos) vêm de um capítulo de livro triado, sem desenho de medição [4]; eu não os usaria como evidência.\n\n**O que está em aberto**\n\n- Camuflagem: o fraudador imita o titular e engana modelos de grafo [17][18].\n- Adaptação do adversário e degradação de modelos estáticos [9][14].\n- Rótulo atrasado e parcial [11].\n- Confiabilidade em produção além do classificador [19].\n- Dependência de poucos fornecedores de IA, apontada pelo BCE [7].\n\n**Tendências**\n\nEm 2026 (até 17/11) a pesquisa cresceu mais em money mule (+224%), concept drift e custo (+164%), clonagem de voz e troca de rosto (+143%), pagamento instantâneo (+127%) e tomada de conta (+119%) [15]. São volumes de publicação, não de fraude, mas mostram para onde a atenção foi: golpes em pagamento instantâneo e autorizado, deepfakes e contas de passagem. Do lado da defesa: modelos fundacionais, grafos, aprendizado contínuo [15] e colaboração entre bancos com preservação de privacidade [1][20].\n\n**Quem acompanhar**\n\n- Tom Fawcett e Foster Provost: referência histórica; Fawcett também escreveu a referência de análise ROC [10].\n- Bolton e Hand [14]; os autores do Semi-GNN (Daixin Wang e colegas) [18], do Guardnet [2] e do DISCO [19].\n- Instituições: Febraban SEC, evento brasileiro de fraudes bancárias [8]; BCE, para risco sistêmico de IA [7].\n- A academia responde por 73,9% dos trabalhos de 2026 [15]. As fontes não trazem afiliações nem grupos de pesquisa ativos.\n\n**Por onde começar**\n\n1. [9] e [14]: custo assimétrico, rótulo atrasado, adversário adaptativo.\n2. [11]: o problema como ele é em produção.\n3. [13] e [12]: avaliação por custo e arquitetura de ponta a ponta.\n4. [18], depois [5], [17] e [2]: a linha de grafos.\n5. [19] e o panorama de 2026 [15].\n\nCódigo e dados: estas fontes não trazem nenhum repositório nem conjunto de dados.",
+  "fraude-bancaria:regulation": "**Antes de tudo: o que estas fontes não têm.** Nenhuma fonte traz o conteúdo de norma do Pix sobre MED, devolução ou autenticação: nem prazos, nem limites, nem regra de quem paga, nem números de golpes ou de valores devolvidos. O MED aparece só como menção de passagem [3][4]. O que dá para tirar daqui é a direção do debate e como outros países tratam o problema. Leia o que segue como mapa, não como parecer de conformidade.\n\n**Brasil: o que as fontes trazem**\n\n- O Banco Central é o regulador do Pix, do Open Finance e das regras de segurança e de compartilhamento de dados de fraude [2].\n- A única norma nomeada é a **Resolução Conjunta BC/CMN 21/2026** (notícia do BC de 17/11/2026), e ela é de Open Finance, não de golpes: a instituição integradora passa a avaliar a capacidade da parceira e a obter atestação de auditor independente registrado na CVM; onboarding de parceiros e fluxos de consentimento ficam auditáveis, com due diligence contínua [1]. Toca a pergunta só de lado, por definir responsabilidades entre instituições e parceiras [11].\n- O texto mais próximo da pergunta é um artigo da **Revista da Procuradoria-Geral do Banco Central**, \"Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos\", que analisa o marco jurídico-regulatório do Pix e as resoluções BC/CMN sob a ótica de proteção ao consumidor [5]. O arquivo só traz uma linha de descrição; o conteúdo das normas não está aqui.\n\n**Fora do Brasil**\n\n- **Índia.** No golpe de \"digital arrest\" a própria vítima faz a transferência. Como o pagamento é autenticado pelo cliente, fica fora do regime de \"transação não autorizada\" que define a responsabilidade dos bancos desde a Circular do Reserve Bank of India de 2017, e a vítima costuma arcar com tudo. O artigo analisa também as *Responsible Business Conduct Third Amendment Directions, 2026* e defende um regime legal de reembolso [9]. É o mesmo nó dos golpes no Pix: pagamento autorizado sob engano.\n- **Canadá.** Um modelo teórico do Bank of Canada (pesquisa, não norma) compara controle de fraude centralizado e descentralizado em pagamentos instantâneos. O controle centralizado não chega à alocação ótima, porque as tarifas excluem pagamentos pequenos. No regime descentralizado, a divisão ótima de responsabilidade depende das tecnologias de prevenção de quem envia e de quem recebe, e pesa mais sobre o remetente quando o monitoramento do recebedor é menos flexível [4]. A curadoria tira daí que calibrar mandatos como o MED e a responsabilidade compartilhada importa tanto quanto o modelo de detecção [4].\n- **EUA.** Um paper triado (Research Square) parte da constatação de que a responsabilidade por perdas com golpes está migrando para os bancos e usa as reclamações ao CFPB para prever quais terminam em ressarcimento (SCAM-XD) [7].\n\n**O que está mudando**\n\n1. **A conta migra para o banco**, e a área passa a ser cobrada por resultado financeiro (ressarcimento), não só por AUC [3][7].\n2. **O ponto frágil é o pagamento autorizado.** A pesquisa sobre golpe de pagamento autorizado cresceu 75% (93 → 163 trabalhos) e sobre pagamento instantâneo 127% (77 → 175) em 2026 [6]. São contagens de publicações, não de golpes.\n3. **Autenticação por voz virou alvo**: detectar fala sintética passa a ser controle antifraude de central de atendimento, e a curadoria aponta prova de vida por voz e consórcio federado entre bancos como próximas frentes no Brasil [3].\n4. **Responsabilidade sobre terceiros** no Open Finance, com auditoria de parceiros [1][8].\n\n**O que isso sugere para nós** (inferência a partir das fontes; nenhuma delas lista obrigações)\n\n- Olhar o lado recebedor: a divisão de responsabilidade depende da capacidade de prevenção de quem recebe [4], e conta de passagem (money mule) foi o subtema que mais cresceu em 2026 (+224%) [20].\n- Preparar-se para ser medido por ressarcimento: registrar, em cada caso, tipo de golpe, meio de pagamento, se houve autorização, sinais de manipulação e resposta do banco. São as variáveis que o SCAM-XD usa [7].\n- Rever a autenticação por voz e incluir detecção de fala sintética [3].\n- Se houver parceiros de Open Finance: due diligence contínua e consentimento auditável [1].\n\n**O que buscar fora deste arquivo:** as normas do BC sobre MED e devolução (texto, datas, prazos), as regras de autenticação e de limites do Pix, as estatísticas de golpes e devoluções, e o texto completo de [5].",
+  "tecnologia-bancaria:project_fit": "**Veredito**\n\nA ideia é plausível, mas estas fontes não trazem nenhum caso de assistente para gerentes de relacionamento, em banco nenhum. O que existe é evidência por analogia: ganhos medidos de IA generativa em outros trabalhos de conhecimento e lições de desenho de um assistente bancário voltado a clientes. Vale um piloto pequeno com medição própria, não um programa.\n\n**O que já existe (por analogia)**\n\n- **Ganho medido em outras funções.** Atendentes de suporte com assistente generativo: +15% de produtividade, com ganho maior para os menos experientes [2]. Três experimentos de campo com 4.867 desenvolvedores (Microsoft, Accenture e uma Fortune 100): +26,08% de tarefas concluídas, também maior entre os menos experientes [10] (do arquivo de People Analytics). Nenhum dos dois mede preparação de reunião comercial; se o efeito se repete com gerentes é hipótese a testar.\n- **Um caso de banco, mas com clientes.** O Fifth Third está reconstruindo o chatbot Jeanie como assistente orientado a intenção e largou a plataforma de terceiros que copiava os silos internos. A lição que vale aqui: o que muda o resultado é o desenho por intenção e a integração de sistemas, não a troca de modelo [8].\n- **Peças técnicas.** GPT-4 como plataforma [20], FinGPT como modelo financeiro aberto [17], revisão de frameworks de agentes (LangGraph, CrewAI, AutoGen) com os desafios regulatórios [18], e o JevRisk, em que um modelo de linguagem lê indicadores e perfil do cliente para avaliar risco sem rótulos [12] (do arquivo de Fraude).\n\n**Desenho sugerido**\n\n1. Organizar pelo que o gerente quer fazer antes da reunião, não pela estrutura dos sistemas do banco [8].\n2. O assistente monta o dossiê; a decisão continua com o gerente. Quem decide com apoio de algoritmo precisa de meios de contestar, calibrar a confiança e ver de onde veio cada informação [5].\n3. Entregar no formato que o gerente já usa: em bancos indianos, modelos só entraram em produção quando traduzidos para os artefatos e critérios de quem decide [13].\n4. Medir como nos experimentos de campo: tarefas concluídas e tempo, por nível de experiência [2][10].\n5. Contar o custo de revisar a saída da IA: é tarefa aversiva e, se ficar de fora da conta, o engajamento cai [4].\n\n**Riscos**\n\n- **Técnicos.** Confiabilidade, avaliação de agentes e integração com sistemas legados seguem em aberto na literatura de IA generativa em finanças [2][17][18].\n- **De adoção.** Medo de substituição pesa: a IA só vira recurso quando a confiança supera a insegurança [5]. Onde a IA cobre a tarefa, a demanda por ela cai e só os mais qualificados se reposicionam [14], o que pede capacitação.\n- **Regulatórios.** As fontes citam compliance como questão em aberto [2][18] e a necessidade de trilha de decisão auditável em contexto de PLD [1], mas não trazem norma alguma aplicável a este uso.\n- **De dados.** Lacuna das fontes: nada sobre privacidade, sigilo ou uso de dados de clientes em modelos de terceiros, nem sobre erro factual do modelo a respeito do cliente. Para este projeto são os riscos principais e precisam de fonte de fora.\n\n**Próximos passos**\n\n1. Escolher duas ou três intenções (por exemplo, resumo do relacionamento e pendências do cliente) e desenhar a partir delas [8].\n2. Piloto com um grupo de gerentes e um grupo de comparação, medindo tempo de preparação e tarefas concluídas, por senioridade [2][10].\n3. Registrar o que o assistente mostrou e o que o gerente corrigiu, e abrir um canal de contestação [5].\n4. Antes de escalar, buscar o que falta aqui: casos de bancos com assistentes para gerentes e as regras de uso de dados de clientes.",
+  "tecnologia-bancaria:regulation": "**Antes de tudo: estas fontes não respondem à pergunta.** Não há aqui nenhuma norma, resolução ou documento de regulador sobre o uso de IA em bancos: nada do Banco Central sobre gestão de risco de modelos, nada sobre explicabilidade exigida, nada sobre LGPD ou proteção de dados aplicada a modelos, e nenhum regulador internacional de IA. Não dá para dizer, a partir deste material, o que a regulação exige nem o que está mudando nela. O que as fontes trazem são sinais indiretos, que separo pelo tipo de evidência.\n\n**O que há de norma (pouco, e de lado)**\n\n- **Resolução Conjunta BC/CMN 21/2026** (notícia do BC de 17/11/2026, do arquivo de Fraude). É de Open Finance: a instituição integradora avalia a capacidade da parceira, obtém atestação de auditor independente registrado na CVM e reforça consentimento, segurança e governança; onboarding de parceiros e fluxos de consentimento ficam auditáveis [3]. Interessa a quem alimenta modelos com dados compartilhados ou com serviços de parceiros. Não fala de IA.\n- Uma leitura da curadoria (arquivo de Fraude) sobre PLD em bancos \"sob Bacen e FATF\": manter a ordem de triagem já validada em produção, só ceder à IA com evidência fora da amostra, e manter trilha de decisão para o regulador [10]. É interpretação, não texto de norma.\n\n**Sinais de pesquisa e de indústria**\n\n- **Risco de modelos.** A pesquisa sobre gestão de risco de modelos cresceu 265% em 2025, enquanto a de adoção de LLMs cresceu 148% [2]. São contagens de publicações: mostram atenção ao tema, não regra nova. Uma pesquisa do American Banker, com o JPMorgan como caso, conclui que bancos com governança de IA mais estruturada medem melhor o retorno e escalam mais; a prática recomendada é dar a cada modelo dono, limite e evidência de controle [19].\n- **Explicabilidade.** O LIME (2016) é a base da explicação pós-hoc usada em modelos regulados [6]. A explicabilidade de modelos generativos aparece como questão em aberto [14]. Um estudo de 18 meses em três bancos indianos (arquivo de People Analytics) mostra que predições só entraram em produção quando traduzidas para os artefatos e rotinas do especialista de domínio, que é quem decide [9]: explicar para o regulador não basta se quem usa não consegue avaliar.\n- **Discriminação.** No crédito, fintechs discriminam cerca de 40% menos que canais presenciais, mas discriminam; o debate foi para auditoria algorítmica e para a defesa de \"necessidade de negócio\" [14]. Dados alternativos, como pegada digital, igualam ou superam bureaus de crédito [17].\n- **Proteção de dados.** Quase nada: consentimento no Open Finance [3] e a menção genérica de que fintech cria desafios de privacidade e regulação [18].\n- **O supervisor também usa IA.** Um destaque de 2026 propõe modelos de linguagem especializados para bancos centrais (CB-LMs), sinal de modelos próprios para regulação e supervisão [4].\n- A literatura registra como em aberto: governança de modelos, discriminação algorítmica [6] e \"regulação proporcional ao risco\" [14].\n\n**O que dá para fazer com isto** (boas práticas apoiadas nas fontes; não são obrigações tiradas de norma)\n\n- Inventário de modelos com dono, limite e evidência de controle por caso de uso [19].\n- Trilha de decisão e validação fora da amostra antes de trocar um processo validado por IA [10].\n- Teste periódico de disparidade em modelos de crédito, com a justificativa de negócio documentada [14].\n- Explicações no formato de quem decide, não só relatório técnico [6][9].\n- Consentimento e parceiros auditáveis quando o modelo usa dados de Open Finance [3].\n\n**O que buscar fora deste arquivo:** as normas do CMN e do BC sobre gestão de riscos e de modelos; a LGPD e as orientações sobre decisões automatizadas; o AI Act e os documentos de supervisores bancários internacionais sobre IA; qualquer posicionamento do BC sobre IA no sistema financeiro."
+ }
+}

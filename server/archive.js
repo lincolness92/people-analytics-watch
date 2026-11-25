@@ -89,11 +89,11 @@ export function corpus(data, library = [], repos = []) {
   const docs = [];
   for (const d of data.digests || []) {
     for (const it of d.items || []) {
-      docs.push({ kind: "paper", title: it.title, url: it.url, when: d.date, venue: it.venue,
+      docs.push({ kind: it.origin === "fonte" ? "notícia ou relatório" : "paper", title: it.title, url: it.url, when: d.date, venue: it.venue,
         text: [it.title, it.original_title, it.summary, it.venue, (it.authors || []).join(" "), data.themes?.[it.theme]].join(" ") });
     }
     for (const q of d.quick || []) {
-      docs.push({ kind: "paper", title: q.title, url: q.url, when: d.date, venue: q.venue,
+      docs.push({ kind: q.origin === "fonte" ? "notícia ou relatório" : "paper", title: q.title, url: q.url, when: d.date, venue: q.venue,
         text: [q.title, q.original_title, q.note, q.venue].join(" ") });
     }
     if (d.trend) docs.push({ kind: "tendência", title: `Tendência de ${d.date}`, url: null, when: d.date, text: d.trend });
@@ -101,9 +101,11 @@ export function corpus(data, library = [], repos = []) {
   const ev = data.evolution;
   if (ev) {
     for (const e of ev.eras || []) {
+      // the era is its own document: repeating its summary in every milestone let it outvote the milestones' own text
+      if (e.summary) docs.push({ kind: "fase da evolução", title: e.title, url: null, when: e.label || null, text: [e.title, e.summary].join(" ") });
       for (const m of e.milestones || []) {
         docs.push({ kind: "marco", title: m.title, url: m.url, when: String(m.year || ""), venue: m.venue,
-          text: [m.title, m.why, (m.authors || []).join(" "), e.title, e.summary, data.themes?.[m.theme]].join(" ") });
+          text: [m.title, m.why, (m.authors || []).join(" "), data.themes?.[m.theme]].join(" ") });
       }
     }
     if (ev.now?.summary) docs.push({ kind: "evolução", title: "Onde estamos agora", url: null, when: ev.generated,
@@ -133,6 +135,11 @@ export function corpus(data, library = [], repos = []) {
       docs.push({ kind: WATCH_KINDS[key] || "referência", title: w.name, url: w.url ?? null, when: null, venue: null,
         text: j(w.name, w.institution, w.org, w.region, w.area, w.why) });
     }
+  }
+  // Regulation: norms and standards
+  for (const g of data.regulation || []) {
+    docs.push({ kind: `norma · ${g.regulator}${g.revoked ? " (revogada)" : ""}`, title: g.title, url: g.url ?? null, when: g.date ?? null, venue: null,
+      text: j(g.title, g.subject, g.summary, (g.requires || []).join(" "), g.applies_to, g.effective, (g.techniques || []).join(" "), g.status_note) });
   }
   // Code: repositories found in the papers
   for (const r of repos) {
@@ -249,7 +256,10 @@ export function rankChunks(paper, terms, k = 6, size = 900, withScores = false) 
   // results and conclusions answer "what did they find"; related work and future work rarely do
   const weight = (name) => /result|experiment|evaluat|finding|conclu|discussion|abstract|resumo|performance|ablation/i.test(name) ? 1.3
     : /related work|background|literature|future work|limitation|trabalhos relacionados/i.test(name) ? 0.5 : 1;
-  return rank(chunks.map((c) => ({ ...c, kind: "trecho" })), terms, k * 4, true)
+  // reference lists and math appendices match query words but answer nothing
+  const junk = (t) => (t.match(/\(\d{4}[a-z]?\)\.|\bpp\.\s*\d|\bProc\.|\bvol\.\s*\d|\bdoi:|et al\.,? \(?\d{4}/gi) || []).length >= 4
+    || (t.replace(/[\p{L}\s]/gu, "").length / Math.max(1, t.length)) > 0.3;
+  return rank(chunks.filter((c) => !junk(c.text)).map((c) => ({ ...c, kind: "trecho" })), terms, k * 4, true)
     .map((c) => ({ ...c, score: c.score * weight(c.section) }))
     .sort((a, b) => b.score - a.score).slice(0, k).map(({ score, ...c }) => (withScores ? { ...c, score } : c));
 }

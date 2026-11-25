@@ -1,0 +1,70 @@
+{
+ "focus": "uso de dados, algoritmos e IA em decisões sobre pessoas: privacidade dos colaboradores, vieses e discriminação, transparência e revisão humana",
+ "bacen": null,
+ "landmarks": [
+  {
+   "regulator": "Brasil",
+   "title": "LGPD — Lei 13.709/2018 (dados de colaboradores e art. 20)",
+   "date": "2018-08-14",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+   "summary": "A LGPD se aplica aos dados de candidatos e colaboradores: exige base legal, finalidade e minimização; o art. 20 garante o direito de revisão de decisões tomadas só por tratamento automatizado e de saber os critérios usados.",
+   "theme": null,
+   "techniques": [
+    "anonimização",
+    "revisão humana de decisões",
+    "explicabilidade"
+   ]
+  },
+  {
+   "regulator": "União Europeia",
+   "title": "GDPR — Regulamento (UE) 2016/679 (art. 22: decisões automatizadas)",
+   "date": "2018-05-25",
+   "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+   "summary": "O art. 22 do GDPR dá às pessoas o direito de não se sujeitarem a decisões baseadas exclusivamente em tratamento automatizado com efeitos significativos, como contratação, salvo exceções com salvaguardas.",
+   "theme": null,
+   "techniques": [
+    "revisão humana",
+    "decisões algorítmicas em RH"
+   ]
+  },
+  {
+   "regulator": "União Europeia",
+   "title": "AI Act — IA no emprego é de alto risco",
+   "date": "2024-08-01",
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+   "summary": "No AI Act, sistemas de IA usados em recrutamento, seleção, promoção, desligamento, alocação de tarefas e monitoramento de trabalhadores são de alto risco (Anexo III); o reconhecimento de emoções no local de trabalho é proibido desde 2/2/2025. O calendário das obrigações de alto risco teve proposta de adiamento em nov/2025 — verificar a situação vigente.",
+   "theme": null,
+   "status_note": "calendário de alto risco sujeito a adiamento",
+   "techniques": [
+    "triagem de candidatos com IA",
+    "monitoramento de colaboradores",
+    "auditoria de viés"
+   ]
+  },
+  {
+   "regulator": "Cidade de Nova York (EUA)",
+   "title": "Local Law 144 — Automated Employment Decision Tools",
+   "date": "2023-07-05",
+   "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+   "summary": "Desde 5/7/2023, empregadores em Nova York que usam ferramentas automatizadas em contratação ou promoção precisam de auditoria anual de viés independente, publicar o resumo e avisar candidatos.",
+   "theme": null,
+   "techniques": [
+    "auditoria de viés",
+    "triagem de candidatos com IA"
+   ]
+  },
+  {
+   "regulator": "Congresso Nacional (Brasil)",
+   "title": "PL 2338/2023 — marco legal da inteligência artificial",
+   "date": "2024-12-10",
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233",
+   "summary": "Projeto de lei que regula a IA no Brasil com abordagem baseada em risco; o texto aprovado no Senado em dez/2024 trata usos em recrutamento e gestão de trabalhadores como de alto risco. Em tramitação na Câmara — verificar a situação atual.",
+   "theme": null,
+   "status_note": "em tramitação",
+   "techniques": [
+    "avaliação de impacto algorítmico",
+    "triagem de candidatos com IA"
+   ]
+  }
+ ]
+}

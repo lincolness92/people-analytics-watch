@@ -8,6 +8,7 @@ from datetime import date
 from . import DATA, DIST, ROOT, WEB
 from .annual import annual_markdown, latest_by_year
 from .library import load as load_library
+from .regulation import published as regulation_published
 from .searchindex import build_index
 from .evolution import evolution_markdown, latest as latest_evolution
 from .topic import all_topics
@@ -104,6 +105,7 @@ def site_data(topic, topics):
         "watchlist": topic.watchlist(),
         "evolution": latest_evolution(topic),
         "annual": latest_by_year(topic),
+        "regulation": regulation_published(topic),
     }
 
 

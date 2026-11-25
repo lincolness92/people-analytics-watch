@@ -1,0 +1,121 @@
+{
+ "focus": "uso de tecnologia e IA em bancos: gestão de risco de modelos e de IA, segurança cibernética, nuvem e terceiros, dados e Open Finance, pagamentos e infraestrutura",
+ "bacen": {
+  "since": "2017-01-01",
+  "types": [
+   "Resolução CMN",
+   "Resolução BCB",
+   "Resolução Conjunta",
+   "Instrução Normativa BCB",
+   "Circular",
+   "Carta Circular",
+   "Comunicado"
+  ],
+  "terms": [
+   "\"inteligência artificial\"",
+   "\"segurança cibernética\"",
+   "\"computação em nuvem\"",
+   "\"Open Finance\"",
+   "\"proteção de dados\"",
+   "\"ativos virtuais\"",
+   "\"gerenciamento de riscos\"",
+   "\"real digital\""
+  ]
+ },
+ "landmarks": [
+  {
+   "regulator": "União Europeia",
+   "title": "AI Act — Regulamento (UE) 2024/1689",
+   "date": "2024-08-01",
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+   "summary": "Lei europeia de IA, baseada em risco: em vigor desde 1/8/2024, com proibições aplicáveis desde 2/2/2025 e obrigações para modelos de uso geral desde 2/8/2025. Avaliação de crédito de pessoas físicas é uso de alto risco; o calendário das obrigações de alto risco (originalmente 2/8/2026) foi objeto de proposta de adiamento da Comissão em nov/2025 — verificar a situação vigente.",
+   "theme": null,
+   "status_note": "calendário de alto risco sujeito a adiamento",
+   "techniques": [
+    "gestão de risco de IA",
+    "explicabilidade",
+    "governança de dados",
+    "modelos de crédito"
+   ]
+  },
+  {
+   "regulator": "União Europeia",
+   "title": "DORA — Regulamento (UE) 2022/2554 (resiliência operacional digital)",
+   "date": "2025-01-17",
+   "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+   "summary": "Regras de resiliência operacional digital para o setor financeiro europeu, aplicáveis desde 17/1/2025: gestão de risco de TIC, notificação de incidentes, testes de resiliência e supervisão de provedores críticos de TIC (inclusive nuvem).",
+   "theme": null,
+   "techniques": [
+    "gestão de risco de TIC",
+    "nuvem e terceiros",
+    "testes de resiliência"
+   ]
+  },
+  {
+   "regulator": "NIST (EUA)",
+   "title": "AI Risk Management Framework 1.0 e perfil de IA generativa (NIST AI 600-1)",
+   "date": "2023-01-26",
+   "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+   "summary": "Arcabouço voluntário do NIST para gestão de riscos de IA (funções governar, mapear, medir e gerenciar), complementado em jul/2024 pelo perfil de IA generativa (NIST AI 600-1); referência prática para governança de modelos e LLMs.",
+   "theme": null,
+   "techniques": [
+    "governança de IA",
+    "avaliação de LLMs",
+    "gestão de risco de modelos"
+   ]
+  },
+  {
+   "regulator": "Comitê de Basileia (BCBS/BIS)",
+   "title": "Digitalisation of finance",
+   "date": "2024-05-01",
+   "url": "https://www.bis.org/bcbs/publ/d575.htm",
+   "summary": "Relatório do Comitê de Basileia sobre os riscos e as implicações supervisórias da digitalização das finanças, incluindo IA e machine learning, nuvem, APIs e novas formas de intermediação.",
+   "theme": null,
+   "techniques": [
+    "IA e machine learning",
+    "nuvem",
+    "APIs e Open Finance"
+   ]
+  },
+  {
+   "regulator": "FSB",
+   "title": "The financial stability implications of artificial intelligence",
+   "date": "2024-11-14",
+   "url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+   "summary": "Avaliação do Financial Stability Board sobre IA no sistema financeiro: concentração em poucos provedores, correlação de modelos, risco cibernético e de governança; recomenda melhorar o monitoramento e a capacidade das autoridades.",
+   "theme": null,
+   "techniques": [
+    "dependência de provedores de IA",
+    "risco de modelos",
+    "IA generativa"
+   ]
+  },
+  {
+   "regulator": "Congresso Nacional (Brasil)",
+   "title": "PL 2338/2023 — marco legal da inteligência artificial",
+   "date": "2024-12-10",
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233",
+   "summary": "Projeto de lei que regula o uso de IA no Brasil com abordagem baseada em risco; aprovado no Senado em dezembro de 2024 e enviado à Câmara dos Deputados — verificar a situação atual da tramitação.",
+   "theme": null,
+   "status_note": "em tramitação",
+   "techniques": [
+    "governança de IA",
+    "avaliação de impacto",
+    "sistemas de alto risco"
+   ]
+  },
+  {
+   "regulator": "Brasil",
+   "title": "LGPD — Lei 13.709/2018 (art. 20: revisão de decisões automatizadas)",
+   "date": "2018-08-14",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+   "summary": "Lei geral de proteção de dados. O art. 20 dá ao titular o direito de pedir revisão de decisões tomadas unicamente com base em tratamento automatizado (ex.: crédito) e de obter informações sobre os critérios usados.",
+   "theme": null,
+   "techniques": [
+    "explicabilidade",
+    "modelos de crédito",
+    "governança de dados"
+   ]
+  }
+ ]
+}

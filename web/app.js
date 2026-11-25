@@ -284,6 +284,40 @@
         </div>`).join("")}</div>` : `<div class="empty">Sem tendências ainda.</div>`}`;
   }
 
+  // ---------- regulation (norms and standards linked to the topic) ----------
+  function viewRegulation(filter) {
+    setTab("regulacao");
+    const all = DATA.regulation || [];
+    const br = all.filter((g) => g.source === "bacen");
+    const intl = all.filter((g) => g.source !== "bacen");
+    const q = (filter || "").toLowerCase();
+    const match = (g) => !q || [g.title, g.subject, g.summary, ...(g.techniques || []), ...(g.requires || [])].join(" ").toLowerCase().includes(q);
+    const card = (g) => `
+      <article class="item reg">
+        <div class="meta"><span>${esc(g.regulator || "")}</span>${g.date ? `<span>${esc(fmtDate(g.date.slice(0, 10)))}</span>` : ""}
+          ${g.revoked ? `<span class="badge lo">revogada</span>` : ""}${g.status_note ? `<span class="badge mid">${esc(g.status_note)}</span>` : ""}
+          ${g.score ? `<span class="score ${scoreClass(g.score)}">${g.score}</span>` : ""}</div>
+        <h3><a href="${esc(safeUrl(g.url))}" target="_blank" rel="noopener">${esc(g.title)}</a></h3>
+        ${g.subject && g.source === "bacen" ? `<p class="muted small">${esc(g.subject)}</p>` : ""}
+        <p class="summary">${md(g.summary || "")}</p>
+        ${(g.requires || []).length ? `<details><summary>O que exige</summary><ul>${g.requires.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+          ${g.applies_to ? `<p class="small"><strong>A quem se aplica:</strong> ${esc(g.applies_to)}</p>` : ""}
+          ${g.effective ? `<p class="small"><strong>Vigência:</strong> ${esc(g.effective)}</p>` : ""}</details>` : ""}
+        ${(g.techniques || []).length ? `<p class="tags">${g.techniques.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</p>` : ""}
+      </article>`;
+    const section = (title, xs) => xs.length ? `<h2 class="theme-h">${title} <span class="muted small">${xs.length}</span></h2>${xs.map(card).join("")}` : "";
+    app.innerHTML = `
+      <h1 class="day">Regulação</h1>
+      <p class="dek">Normas e padrões que tocam este tema, com o que exigem e as técnicas que afetam. Brasil: normativos do Banco Central e do CMN
+        triados e resumidos a partir do texto oficial; internacional: marcos selecionados pela curadoria.</p>
+      <input id="reg-q" class="reg-q" type="search" placeholder="Filtrar (ex.: autenticação, MED, nuvem)" value="${esc(filter || "")}">
+      ${all.length ? section("🇧🇷 Brasil", br.filter(match)) + section("🌐 Internacional", intl.filter(match))
+        : `<div class="empty">Sem normas mapeadas para este tema ainda.</div>`}`;
+    const inp = document.getElementById("reg-q");
+    inp.addEventListener("change", () => viewRegulation(inp.value));
+    inp.addEventListener("keyup", (e) => { if (e.key === "Enter") viewRegulation(inp.value); });
+  }
+
   function viewWatchlist() {
     setTab("watchlist");
     const wl = DATA.watchlist || {};
@@ -626,6 +660,7 @@
     else if (a === "arquivo") viewArchive();
     else if (a === "tendencias") viewTrends();
     else if (a === "watchlist") viewWatchlist();
+    else if (a === "regulacao") viewRegulation();
     else if (a === "evolucao") viewEvolution();
     else if (a === "anual") viewAnnual(b);
     else if (a === "pergunte") viewAsk();
@@ -640,6 +675,7 @@
       setupTopic(d);
       const n = d.digests.reduce((s, x) => s + x.items.length, 0);
       document.getElementById("foot-meta").textContent = `${d.digests.length} digests · ${n} papers · atualizado em ${fmtDate(d.generated)}`;
+      if (!(d.regulation || []).length) { const r = document.getElementById("tab-reg"); if (r) r.hidden = true; }
       if (fbOn()) fbWire();
       else { const t = document.getElementById("tab-ask"); if (t) t.hidden = true; }
       window.addEventListener("hashchange", route);

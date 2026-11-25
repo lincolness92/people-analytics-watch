@@ -46,6 +46,7 @@ DEEPSEEK_NAMES = {"deepseek-ai/DeepSeek-V4.1-Flash": "deepseek-flash"}
 LOW_BIT = re.compile(r"(fp|int|nf|q)4", re.I)  # fp4, mxfp4, int4, nf4, q4_k...
 MIN_UPTIME = 97.0
 MAX_ROUTES = 4      # cheapest routes tried per model before moving to the next model
+DEFAULT_REASONING = os.environ.get("PAW_REASONING", "low")  # same small reasoning budget on every provider
 BOOK_TTL = 3600     # seconds a fetched price book is reused
 
 
@@ -219,6 +220,7 @@ class LLM:
         self.used_model = None
         self.usage = {"prompt_tokens": 0, "completion_tokens": 0, "cost_usd": 0.0, "calls": 0, "failures": 0}
         self.routes = {}
+        self.demoted = {}  # route → failures in this process: a route that failed goes to the back of its model's queue
         self._lock = threading.Lock()
         self._logged = set()
 
@@ -238,6 +240,8 @@ class LLM:
                 print(f"llm: {m}: rotas por preço (US$/1M entrada/saída): "
                       + "; ".join(f"{r.split(':', 1)[0] if r.startswith('deepseek:') else r.rsplit(':', 1)[1]} {lab}" for r, _, lab in ranked[:10]),
                       file=sys.stderr)
+            # list price is not the whole story: a route that cut or failed earlier in this run goes last
+            ranked = sorted(ranked, key=lambda c: self.demoted.get(c[0], 0))
             out += [(r, 1) for r, _, _ in ranked[:MAX_ROUTES]]
             if self.hf_token and m not in book["hf"]:
                 out.append((m, 2))  # no HF price list for it: let the router choose the provider
@@ -270,11 +274,13 @@ class LLM:
                 self.routes[route] = self.routes.get(route, 0) + 1
         return cost
 
-    def json(self, system, user, max_tokens=6000, temperature=0.2, timeout=240, parse=None, reasoning=None, expect_out=None):
+    def json(self, system, user, max_tokens=6000, temperature=0.2, timeout=240, parse=None, reasoning=DEFAULT_REASONING, expect_out=None):
         """Ask for a JSON object through the cheapest working route.
 
         `parse` turns the raw text into the result (default: parse_json) and may salvage partial output.
-        `reasoning="none"` turns the models' hidden reasoning off (short mechanical steps).
+        `reasoning` sets reasoning_effort explicitly (default DEFAULT_REASONING): providers differ in whether hidden
+        reasoning is on by default, and one that reasons at length spends the whole budget and returns cut JSON.
+        "none" turns it off (short mechanical steps); None sends nothing (provider default).
         `expect_out` is the expected output length in tokens, for the price comparison (default min(max_tokens, 2000)).
         """
         parse = parse or parse_json
@@ -307,6 +313,8 @@ class LLM:
                 except (RuntimeError, ValueError, KeyError, TypeError, json.JSONDecodeError) as e:
                     if usage is not None:  # the call was billed even if its output was unusable
                         self._account(route, usage, False)
+                    with self._lock:
+                        self.demoted[route] = self.demoted.get(route, 0) + 1
                     errors.append(f"{route}: {e}")
                     print(f"llm: {route} falhou: {str(e)[:200]}", file=sys.stderr)
                     if "não definid" in str(e):

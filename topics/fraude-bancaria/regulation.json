@@ -1,0 +1,128 @@
+{
+ "focus": "prevenção, detecção e resposta a fraudes e golpes, PLD/CFT, segurança de pagamentos e autenticação em bancos e instituições de pagamento",
+ "bacen": {
+  "since": "2017-01-01",
+  "types": [
+   "Resolução CMN",
+   "Resolução BCB",
+   "Resolução Conjunta",
+   "Instrução Normativa BCB",
+   "Circular",
+   "Carta Circular",
+   "Comunicado"
+  ],
+  "terms": [
+   "fraude",
+   "golpe",
+   "\"Mecanismo Especial de Devolução\"",
+   "\"lavagem de dinheiro\"",
+   "\"segurança cibernética\"",
+   "autenticação"
+  ]
+ },
+ "landmarks": [
+  {
+   "regulator": "Payment Systems Regulator (Reino Unido)",
+   "title": "APP scams reimbursement requirement",
+   "date": "2024-10-07",
+   "url": "https://www.psr.org.uk/our-work/app-scams/",
+   "summary": "Desde 7/10/2024, provedores de pagamento no Reino Unido reembolsam vítimas de golpes de pagamento autorizado (APP) no Faster Payments, com o custo dividido meio a meio entre o banco que envia e o que recebe, até um teto por caso. É a principal referência internacional de responsabilização compartilhada por golpes.",
+   "theme": "scams",
+   "techniques": [
+    "detecção de contas recebedoras (mulas)",
+    "fricção e alertas no pagamento",
+    "compartilhamento de dados entre bancos"
+   ]
+  },
+  {
+   "regulator": "GAFI/FATF",
+   "title": "Recomendações do GAFI (padrões internacionais de PLD/CFT)",
+   "date": "2012-02-16",
+   "url": "https://www.fatf-gafi.org/en/topics/fatf-recommendations.html",
+   "summary": "As 40 Recomendações do GAFI são o padrão internacional de prevenção à lavagem de dinheiro e ao financiamento do terrorismo (abordagem baseada em risco, diligência de clientes, monitoramento e comunicação de operações suspeitas), atualizadas periodicamente.",
+   "theme": "mules_aml",
+   "techniques": [
+    "monitoramento de transações",
+    "KYC e diligência baseada em risco",
+    "detecção de lavagem"
+   ]
+  },
+  {
+   "regulator": "GAFI/FATF",
+   "title": "Illicit Financial Flows from Cyber-Enabled Fraud",
+   "date": "2023-11-01",
+   "url": "https://www.fatf-gafi.org/en/publications/Methodsandtrends/illicit-financial-flows-cyber-enabled-fraud.html",
+   "summary": "Relatório do GAFI sobre fraude cibernética (golpes de engenharia social, phishing, comprometimento de e-mail corporativo), o papel das contas de mulas e as lacunas de cooperação e recuperação de ativos entre países.",
+   "theme": "mules_aml",
+   "techniques": [
+    "detecção de mulas",
+    "cooperação entre instituições",
+    "recuperação de recursos"
+   ]
+  },
+  {
+   "regulator": "Comitê de Basileia (BCBS/BIS)",
+   "title": "Principles for operational resilience",
+   "date": "2021-03-31",
+   "url": "https://www.bis.org/bcbs/publ/d516.htm",
+   "summary": "Princípios do Comitê de Basileia para que bancos resistam, se adaptem e se recuperem de eventos operacionais severos, incluindo ciberataques e falhas de terceiros, com mapeamento de operações críticas e tolerância a interrupções.",
+   "theme": "regulation",
+   "techniques": [
+    "gestão de risco operacional",
+    "testes de cenário",
+    "gestão de terceiros"
+   ]
+  },
+  {
+   "regulator": "CPMI/BIS",
+   "title": "Reducing the risk of wholesale payments fraud related to endpoint security",
+   "date": "2018-05-08",
+   "url": "https://www.bis.org/cpmi/publ/d178.htm",
+   "summary": "Estratégia do CPMI em sete elementos para reduzir fraudes em pagamentos de atacado ligadas à segurança dos pontos de acesso (endpoints): governança, prevenção, detecção, resposta e cooperação entre participantes.",
+   "theme": "regulation",
+   "techniques": [
+    "detecção de pagamentos anômalos",
+    "segurança de endpoints",
+    "resposta a incidentes"
+   ]
+  },
+  {
+   "regulator": "NIST (EUA)",
+   "title": "SP 800-63-4 Digital Identity Guidelines",
+   "date": "2025-08-01",
+   "url": "https://pages.nist.gov/800-63-4/",
+   "summary": "Diretrizes do NIST para prova de identidade, autenticação e federação, com níveis de garantia e ênfase em autenticação resistente a phishing; referência técnica para onboarding digital e autenticação de clientes.",
+   "theme": "account_identity",
+   "techniques": [
+    "autenticação resistente a phishing",
+    "prova de identidade remota",
+    "biometria"
+   ]
+  },
+  {
+   "regulator": "PCI Security Standards Council",
+   "title": "PCI DSS v4.0.1",
+   "date": "2024-06-01",
+   "url": "https://www.pcisecuritystandards.org/document_library/",
+   "summary": "Padrão de segurança de dados da indústria de cartões; na versão 4, requisitos antes facultativos (como MFA ampliado e proteção de scripts em páginas de pagamento) passaram a ser obrigatórios em 31/3/2025.",
+   "theme": "cards",
+   "techniques": [
+    "segurança de dados de cartão",
+    "autenticação multifator",
+    "proteção de páginas de pagamento"
+   ]
+  },
+  {
+   "regulator": "União Europeia",
+   "title": "Regulamento (UE) 2024/1624 (regras únicas de PLD/CFT)",
+   "date": "2024-06-19",
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj",
+   "summary": "Regulamento que unifica as regras de PLD/CFT na UE (diligência, beneficiário final, limites a pagamentos em espécie), parte do pacote que criou a autoridade europeia AMLA; aplicação a partir de julho de 2027.",
+   "theme": "mules_aml",
+   "techniques": [
+    "KYC e beneficiário final",
+    "monitoramento de transações"
+   ]
+  }
+ ]
+}

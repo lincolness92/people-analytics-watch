@@ -91,12 +91,32 @@ def cmd_run(args):
         except Exception as e:  # one broken topic must not block the others
             log(f"[{topic.slug}] falhou: {e!r}")
             results[topic.slug] = False
+    for topic in pick(args.topic):  # regulation: incremental, cheap after the first run; never blocks the digest
+        try:
+            update_regulation(topic)
+        except Exception as e:  # noqa: BLE001
+            log(f"[{topic.slug}] regulação falhou: {e!r}")
     log(f"render: {render_all()}")
     failed = [s for s, ok in results.items() if not ok]
     if failed:
         log(f"temas com falha: {', '.join(failed)}")
     # Exit non-zero only when nothing worked, so the workflow still commits the topics that did.
     return 1 if failed and len(failed) == len(results) else 0
+
+
+def update_regulation(topic, max_sheets=150):
+    from . import regulation
+    if not (regulation.config(topic) or {}).get("bacen"):
+        return None
+    return regulation.run(topic, LLM(), log=log, max_sheets=max_sheets)
+
+
+def cmd_regulation(args):
+    for topic in pick(args.topic):
+        r = update_regulation(topic, max_sheets=args.max_sheets)
+        log(f"[{topic.slug}] regulação: {r}")
+    log(f"render: {render_all()}")
+    return 0
 
 
 def cmd_render(_args):
@@ -270,6 +290,10 @@ def main():
     ft.add_argument("--refresh", action="store_true", help="tenta de novo os que já foram verificados")
     ft.add_argument("--limit", type=int, help="no máximo N downloads nesta execução")
     ft.set_defaults(fn=cmd_fulltext)
+    rg = sub.add_parser("regulation", help="normas do Bacen por tema (triagem + ficha) e marcos internacionais; roda também no run")
+    rg.add_argument("--topic", help="slug do tema (padrão: todos)")
+    rg.add_argument("--max-sheets", type=int, default=150, help="no máximo N fichas (texto completo + resumo) por tema")
+    rg.set_defaults(fn=cmd_regulation)
     tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
     tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
     tk.set_defaults(fn=cmd_api_token)

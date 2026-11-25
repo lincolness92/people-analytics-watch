@@ -84,6 +84,7 @@ export const modelList = (env) => {
 };
 
 let BOOK = null; // { at, key, data } — per isolate
+const DEMOTED = new Map(); // route → failures in this isolate: a route that failed goes to the back of its model's queue
 
 async function getJSON(fetchImpl, url, headers, ms) {
   const r = await fetchImpl(url, { headers, signal: AbortSignal.timeout(ms) });
@@ -151,7 +152,8 @@ export function makeLLM(env, fetchImpl = fetch) {
     const plan = [];
     for (const m of models) {
       if (pinned(m)) { plan.push(m); continue; }
-      plan.push(...rankRoutes(book, m, estIn, estOut, env).slice(0, MAX_ROUTES).map((r) => r.route));
+      const ranked = rankRoutes(book, m, estIn, estOut, env).sort((a, b) => (DEMOTED.get(a.route) || 0) - (DEMOTED.get(b.route) || 0));
+      plan.push(...ranked.slice(0, MAX_ROUTES).map((r) => r.route));
       if (env.HF_TOKEN && !book.hf[m]) plan.push(m); // no HF price list: the router chooses the provider
     }
     let last, partial = null;
@@ -182,11 +184,12 @@ export function makeLLM(env, fetchImpl = fetch) {
         }
         if (r.ok && text && cut && (!partial || text.length > partial.text.length)) partial = { text, model: route, usage, cost };
         last = out.error?.message || out.error || (!r.ok ? `HTTP ${r.status}` : cut ? "resposta cortada (limite de tokens)" : "resposta vazia");
-        if (r.ok) { attempts.push({ model: route, ok: false, ms: Date.now() - t0, cost, error: last }); continue; }
+        if (r.ok) { attempts.push({ model: route, ok: false, ms: Date.now() - t0, cost, error: last }); DEMOTED.set(route, (DEMOTED.get(route) || 0) + 1); continue; }
       } catch (e) {
         last = e.message;
       }
       attempts.push({ model: route, ok: false, ms: Date.now() - t0, error: String(last).slice(0, 200) });
+      DEMOTED.set(route, (DEMOTED.get(route) || 0) + 1);
     }
     if (partial) return { ...partial, truncated: true, attempts };
     const err = new Error(`LLM indisponível (${String(last).slice(0, 120)})`);
@@ -196,4 +199,4 @@ export function makeLLM(env, fetchImpl = fetch) {
 }
 
 /** For tests: forget the cached price book. */
-export const _resetPriceBook = () => { BOOK = null; };
+export const _resetPriceBook = () => { BOOK = null; DEMOTED.clear(); };
