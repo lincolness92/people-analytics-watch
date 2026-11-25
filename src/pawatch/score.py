@@ -4,8 +4,20 @@ import json
 import re
 import sys
 
-DEFAULT_STRONG = ("experimento de campo/RCT, dados administrativos grandes, causalidade crível, "
-                  "venue de elite ou autor de referência")
+DEFAULT_STRONG = "experimento de campo/RCT, dados administrativos grandes, causalidade crível"
+ABSTRACT_CHARS = 1200   # triage sees this much of each abstract (450 hid the design and results; evals/scorer/)
+EVIDENCE = {"rct", "quasi", "admin", "bench", "survey", "quali", "review", "theory", "regulator", "news", "other"}
+LOW_TRUST = re.compile(r"zenodo|figshare|ebooks|research square|preprints\.org", re.I)
+RSS_FOOTER = re.compile(r"\s*The post .{0,200}? appeared first on .{0,120}?\.?\s*$", re.S)
+
+
+def final_score(r, q):
+    """Relevance and quality graded apart; the score caps at the weaker one + 2, so an elite-venue paper off the
+    topic or a weak survey on the topic cannot reach the digest."""
+    return max(0, min(10, min((r + q) // 2, min(r, q) + 2)))
+
+
+TRIAGE_PROMPT = "Avalie cada candidato em dois eixos SEPARADOS. Julgue só o que o texto recebido mostra: título e prestígio não contam como evidência.\n\n`r` — RELEVÂNCIA 0–10 para {rubric_focus}, para o público descrito acima:\n- 9–10: responde a uma decisão que esse público toma hoje.\n- 7–8: no tema, com lição prática ou metodológica clara.\n- 5–6: tema vizinho ou ângulo indireto.\n- 0–4: fora do tema ({off_topic}). Bater palavras-chave não basta: o objeto do estudo precisa ser do tema.\n\n`q` — QUALIDADE 0–10 da evidência mostrada:\n- 9–10: {rubric_strong}, com desenho e resultado numérico explícitos no texto.\n- 7–8: desenho crível com dados reais, ou benchmark novo e auditável, com resultado numérico.\n- 5–6: dados públicos ou simulados com avaliação honesta; revisão sistemática útil; caso real com números não verificáveis; modelo teórico em venue de elite.\n- 3–4: survey transversal de autorrelato (SEM/PLS-SEM, amostra de conveniência); estudo qualitativo pequeno; framework, arquitetura ou modelo conceitual sem validação; dataset sintético ou de brinquedo; anúncio de produto, parceria ou captação; teaser de uma ou duas frases.\n- 0–2: sem método, sem conteúdo, predatório ou gerado automaticamente.\n\n`e` — tipo de evidência, um de: rct, quasi, admin, bench, survey, quali, review, theory, regulator, news, other.\n(rct = experimento de campo ou RCT; quasi = quase-experimento ou identificação causal; admin = dados administrativos ou de produção em grande escala; bench = modelo ou benchmark em dados públicos ou sintéticos; regulator = norma ou relatório de regulador; news = notícia, post ou relatório de indústria.)\n\n`w` — razão em até 12 palavras, em português: o desenho e o que decide a nota.\n\nRegras:\n- `watch` (autor da watchlist) e `jr` (journal de elite) são critério de desempate: somam no máximo 1 ponto em `q`, e só quando o desenho aparece no texto. Não alteram `r`. Survey, ensaio ou revisão em journal de elite continua em `q` 3–6.\n- Itens com `fonte` vêm de fontes da watchlist ({source_kinds}): avalie o texto recebido, não a fonte. Norma, relatório ou caso com dados próprios, exigências novas ou arquitetura descrita pode ter `q` 7+. Teaser sem conteúdo fica em `q` ≤ 4. Divulgação de evento, vaga, nomeação, captação e marketing ficam em `r` ≤ 4 e `q` ≤ 3.\n- O abstract pode vir cortado. Se o desenho ou o resultado não aparecem, não presuma: `q` ≤ 5.\n- Use a escala inteira. Em 200 candidatos, o normal é ter no máximo uma dezena com `r` ≥ 7 e `q` ≥ 7 ao mesmo tempo.\n\nExemplos de calibração deste tópico:\n{rubric_anchors}\n\nAtribua um tema `t` entre: {themes}.{region_rule}\nResponda APENAS com JSON: {\"r\": [{\"i\": <id>, \"r\": <int>, \"q\": <int>, \"e\": \"<tipo>\", \"w\": \"<razão>\", \"t\": \"<tema>\"}, ...]} cobrindo todos os ids."
 
 
 def audience(topic):
@@ -13,6 +25,21 @@ def audience(topic):
 
 
 def triage_rules(topic):
+    """Two axes graded apart (r, q), evidence type and a short reason; the score is computed in code (final_score).
+    Calibrated against a stronger model on 140 labelled candidates: evals/scorer/2026-11-25-fable-report.md."""
+    m = topic.meta
+    themes = ", ".join(f"{k} ({v.split(' ', 1)[1]})" for k, v in topic.themes.items())
+    anchors = "\n".join(f"- {a}" for a in m.get("rubric_anchors") or []) or "- (sem exemplos)"
+    region = _region_rule(topic)
+    g = ', "g": "<região>"' if topic.meta.get("regions") else ""
+    return (TRIAGE_PROMPT.replace("{rubric_focus}", m["rubric_focus"]).replace("{off_topic}", m["off_topic"])
+            .replace("{rubric_strong}", m.get("rubric_strong", DEFAULT_STRONG))
+            .replace("{source_kinds}", m.get("source_kinds", "centros de pesquisa e praticantes"))
+            .replace("{rubric_anchors}", anchors).replace("{themes}", themes).replace("{region_rule}", region)
+            .replace('"t": "<tema>"}', '"t": "<tema>"' + g + '}'))
+
+
+def _old_triage_rules(topic):  # kept for reference until the new rubric has a few weeks of data
     m = topic.meta
     themes = ", ".join(f"{k} ({v.split(' ', 1)[1]})" for k, v in topic.themes.items())
     return f"""Dê uma nota 0–10 a cada paper combinando RELEVÂNCIA e QUALIDADE:
@@ -55,12 +82,19 @@ def prefilter(cands, limit, keywords):
     kw = re.compile(keywords, re.I)
 
     def rank(c):
-        text = f"{c['title']} {c['abstract'][:800]}"
-        return (
-            3 * bool(c["watch_authors"]) + 2 * c["watch_journal"] + 2 * bool(c.get("watch_source"))
-            + bool(c["abstract"])
-            + min(len(kw.findall(text)), 5) * 0.4 + min(c["cited_by"], 20) * 0.02
-        )
+        # distinct topic terms, the title weighing more; elite-journal and watchlist-source bonuses only count when
+        # the item is on the topic; a missing abstract is no penalty when the title matches; non-reviewed repos lose
+        title_terms = {m.lower() for m in kw.findall(c["title"] or "")}
+        body_terms = {m.lower() for m in kw.findall((c["abstract"] or "")[:1500])} - title_terms
+        on_topic = bool(title_terms or body_terms)
+        score = (3 * bool(c["watch_authors"])
+                 + (2 if on_topic else 0.5) * (c["watch_journal"] + bool(c.get("watch_source")))
+                 + (1 if c["abstract"] or len(title_terms) >= 2 else 0)
+                 + min(len(title_terms), 3) * 0.8 + min(len(body_terms), 8) * 0.25
+                 + min(c["cited_by"], 20) * 0.02
+                 - 0.5 * bool(LOW_TRUST.search(c.get("venue") or "")))
+        # ties: newer first, then curated origins before generic search
+        return (score, c.get("date") or "", c.get("origin") in ("arxiv", "fonte", "watchlist", "journal"))
 
     return sorted(cands, key=rank, reverse=True)[:limit]
 
@@ -80,7 +114,8 @@ def _brief(i, c, abstract_chars):
         d["reg"] = c["region"]
     if c["cited_by"]:
         d["cit"] = c["cited_by"]
-    d["abstract"] = (c["abstract"] or "(sem abstract)")[:abstract_chars]
+    a = RSS_FOOTER.sub("", c["abstract"] or "") or "(sem abstract)"
+    d["abstract"] = a[:abstract_chars] + ("…" if len(a) > abstract_chars else "")
     return d
 
 
@@ -88,7 +123,7 @@ def triage(llm, cands, topic, batch=35, log=lambda m: print(m, file=sys.stderr))
     scores = {}
     for start in range(0, len(cands), batch):
         chunk = cands[start:start + batch]
-        lines = "\n".join(json.dumps(_brief(start + j, c, 450), ensure_ascii=False)
+        lines = "\n".join(json.dumps(_brief(start + j, c, ABSTRACT_CHARS), ensure_ascii=False)
                           for j, c in enumerate(chunk))
         try:
             out = llm.json(audience(topic) + "\n\n" + triage_rules(topic), f"Candidatos (um JSON por linha):\n{lines}",
@@ -103,7 +138,14 @@ def triage(llm, cands, topic, batch=35, log=lambda m: print(m, file=sys.stderr))
                     theme = r.get("t") if r.get("t") in topic.themes else next(iter(topic.themes))
                     regions = topic.meta.get("regions") or {}
                     region = r.get("g") if r.get("g") in regions else (chunk[i - start].get("region") or "")
-                    scores[i] = (max(0, min(10, int(r.get("s", 0)))), theme, region)
+                    if "r" in r and "q" in r:
+                        rel, qual = max(0, min(10, int(r["r"]))), max(0, min(10, int(r["q"])))
+                        s = final_score(rel, qual)
+                        chunk[i - start]["triage"] = {"r": rel, "q": qual, "e": r.get("e") if r.get("e") in EVIDENCE else "other",
+                                                      "w": str(r.get("w") or "")[:120]}
+                    else:  # a model that answered in the old format
+                        s = max(0, min(10, int(r.get("s", 0))))
+                    scores[i] = (s, theme, region)
             except (KeyError, TypeError, ValueError):
                 continue
         log(f"triagem: {min(start + batch, len(cands))}/{len(cands)}")
@@ -133,6 +175,7 @@ def write_digest(llm, cands, scores, sel_cfg, topic):
             "institutions": c["institutions"], "watch_authors": c["watch_authors"],
             "watch_journal": c["watch_journal"], "watch_source": c.get("watch_source", ""),
             "origin": c["origin"], "cited_by": c["cited_by"],
+            **({"triage": c["triage"]} if c.get("triage") else {}),
         }
 
     written = {int(x["i"]): x for x in out.get("items", []) if str(x.get("i", "")).isdigit()}

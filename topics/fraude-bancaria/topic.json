@@ -15,7 +15,7 @@
   "headline_example": "semana forte em golpes via Pix e detecção em grafos",
   "trend_focus": "o que está mudando na prevenção a fraude e golpes em bancos",
   "source_kinds": "reguladores e organismos de padrão (BIS/Basileia, Bacen, Fed, FCA, ECB, FSB, PCI, NIST), associações e praticantes",
-  "prefilter_keywords": "fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat",
+  "prefilter_keywords": "fraud|scam|launder|money laundering|anti-money|\\baml\\b|mule|phishing|smishing|vishing|account takeover|credential|identity|synthetic|deepfake|voice clon|kyc|onboarding|authenticat|biometric|bank|banking|payment|card|pix|instant payment|transaction|chargeback|victim|social engineering|golpe|fraude|lavagem|financial crime|basel|regulat|voice|audio|spoof|sanction",
   "watchlist_labels": {
     "researchers": "Pesquisadores",
     "journals": "Journals & conferências",
@@ -32,5 +32,10 @@
     "mules_aml": "🕸️ Contas laranja, mulas & PLD/CFT",
     "cards": "💳 Cartões & e-commerce",
     "regulation": "⚖️ Regulação, Basileia & padrões"
-  }
+  },
+  "rubric_anchors": [
+    "Large Payments Model (arXiv): r 8, q 7 → 7. Modelo fundacional de pagamentos treinado em dados reais de um grande processador e em produção; sem números no resumo, por isso não chega a 9.",
+    "An Explainable ML Framework for Predicting Monetary Redress in Bank Fraud and Scam Complaints (Research Square): r 7, q 5 → 6. Tema no alvo e teste fora do tempo, mas dado público, preprint e ganho modesto.",
+    "Leakage-aware federated-style simulation for fraud risk prediction (Future Technology): r 5, q 2 → 3. PaySim sintético, F1 de 0,30 e o método anunciado nem é implementado."
+  ]
 }

@@ -19,7 +19,7 @@ def entry(c, score, theme, region, origin, when):
             "date": c.get("date") or "", "authors": (c.get("authors") or [])[:6],
             "abstract": (c.get("abstract") or "")[:1200], "score": score, "theme": theme, "region": region or "",
             "watch": c.get("watch_authors") or ([c["watch_source"]] if c.get("watch_source") else []),
-            "origin": origin, "added": when}
+            "origin": origin, "added": when, **({"triage": c["triage"]} if c.get("triage") else {})}
 
 
 def add(topic, cands, scores, origin, when=None):

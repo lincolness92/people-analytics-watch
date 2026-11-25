@@ -239,7 +239,12 @@ class TopicTests(unittest.TestCase):
                 self.assertIn(key, rules)
 
     def test_people_analytics_prompts_unchanged(self):
-        self.assertIn("implicação direta para RH/people analytics", triage_rules(PA))
+        rules = triage_rules(PA)  # the topic's focus, anchors and themes reach the triage prompt
+        self.assertIn("RELEVÂNCIA 0–10 para " + PA.meta["rubric_focus"], rules)
+        self.assertIn("Pay Range Transparency", rules)
+        self.assertIn('"q": <int>', rules)
+        from pawatch.score import final_score
+        self.assertEqual((final_score(3, 8), final_score(8, 3), final_score(9, 8)), (5, 5, 8))
         self.assertIn("(o que está mudando na prática de gestão de pessoas)", write_rules(PA))
 
 

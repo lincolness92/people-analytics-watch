@@ -1,0 +1,1719 @@
+{
+ "fraude-bancaria": {
+  "old": {
+   "n": 32,
+   "spearman": 0.802,
+   "mae": 0.97,
+   "bias": 0.59,
+   "digest_precision": 0.6,
+   "digest_recall": 0.75,
+   "digest_selected": 5,
+   "library_precision": 0.6,
+   "library_recall": 0.92
+  },
+  "new": {
+   "n": 30,
+   "spearman": 0.894,
+   "mae": 0.53,
+   "bias": 0.27,
+   "digest_precision": 0.57,
+   "digest_recall": 1.0,
+   "digest_selected": 7,
+   "library_precision": 0.87,
+   "library_recall": 1.0
+  },
+  "triage_usage": {
+   "prompt_tokens": 70768,
+   "completion_tokens": 25913,
+   "cost_usd": 0.022012,
+   "calls": 7,
+   "failures": 0
+  },
+  "wanted_sent_old": 9,
+  "wanted_sent_new": 9,
+  "wanted": 9,
+  "items": [
+   {
+    "title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+    "ref": 7,
+    "digest": "yes",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "bench",
+     "w": "Compara 27 métodos com dados proprietários, bootstrap pareado e ganho modesto"
+    }
+   },
+   {
+    "title": "Who Sent It or How It Moved? Sender Shortcuts in Cryptocurrency Anti-Money-Laundering Benc",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "bench",
+     "w": "Auditoria de atalho de remetente em benchmarks AML com números e splits."
+    }
+   },
+   {
+    "title": "Large Payments Model",
+    "ref": 8,
+    "digest": "yes",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 8,
+     "q": 7,
+     "e": "admin",
+     "w": "Modelo fundacional de pagamentos em produção; sem números no resumo"
+    }
+   },
+   {
+    "title": "Evaluating Ongoing Access Attacks on the Web",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "bench",
+     "w": "Simulação experimental de rotas de acesso em 20 serviços; mede persistência de ATO."
+    }
+   },
+   {
+    "title": "\"I Do Intend to Deliver\": Will LLMs Run a Marketplace Advance-Fee Scam?",
+    "ref": 7,
+    "digest": "yes",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "bench",
+     "w": "1.200 conversas LLM em golpe de taxa antecipada; 61% pagam, rótulos validados."
+    }
+   },
+   {
+    "title": "Maturity-Aware Dual-Timescale Replay for Delayed-Feedback Financial Fraud Screening",
+    "ref": 4,
+    "digest": "no",
+    "old": 5,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "bench",
+     "w": "Replay dual em stream sintético, F1 0.26 e ramo lento sem ganho"
+    }
+   },
+   {
+    "title": "FraudBench-NG: A NIBSS-Calibrated Synthetic Dataset and Generator for Nigerian Inter-Bank ",
+    "ref": 5,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 6,
+     "q": 4,
+     "e": "bench",
+     "w": "Benchmark sintético calibrado ao NIBSS, leakage-aware, mas simulado."
+    }
+   },
+   {
+    "title": "Graph-Based Financial Fraud Detection: A Property-Centric Survey of Static, Temporal, Cycl",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 6,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 6,
+     "e": "review",
+     "w": "Survey de 147 fontes em detecção de fraude por grafos; útil e sistemático"
+    }
+   },
+   {
+    "title": "JEV vs. LLMs: A Comparative Analysis for Phishing Email Detection",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 6,
+     "q": 4,
+     "e": "bench",
+     "w": "Comparação de phishing em 1500 e-mails; dataset pequeno, tom de produto"
+    }
+   },
+   {
+    "title": "VRLLM: Turning LLMs into Powerful Tabular Classifiers",
+    "ref": 7,
+    "digest": "yes",
+    "old": 5,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "admin",
+     "w": "LLM tabular treinado em bilhões de linhas e validado em produção na Visa."
+    }
+   },
+   {
+    "title": "An Explainable Machine Learning Framework with Large Language Model Features for Predictin",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 6,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "bench",
+     "w": "Prevê ressarcimento em reclamações de fraude; dado público CFPB e teste fora do tempo."
+    }
+   },
+   {
+    "title": "The Economics of Instant Payments: A Structured, Evidence-Graded Review of Financial Inclu",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": 5,
+    "new_triage": {
+     "r": 5,
+     "q": 5,
+     "e": "review",
+     "w": "Revisão graduada de pagamentos instantâneos; foco inclusão, não fraude."
+    }
+   },
+   {
+    "title": "Money laundering, terrorist financing, and smuggling: emerging threats to Pakistan’s natio",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 4,
+    "new_triage": {
+     "r": 4,
+     "q": 4,
+     "e": "quali",
+     "w": "Análise documental AML/CFT do Paquistão; foco nacional, não bancário."
+    }
+   },
+   {
+    "title": "AI agents leave tracks: Why behavior remains one of the best ways to spot them",
+    "ref": 4,
+    "digest": "no",
+    "old": 5,
+    "new": 3,
+    "new_triage": {
+     "r": 5,
+     "q": 2,
+     "e": "news",
+     "w": "Post BioCatch sobre comportamento de agentes de IA; teaser de uma frase."
+    }
+   },
+   {
+    "title": "Ethical CV: Deep-Fake Detection Via Biological Signals",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "FRAMEWORK GAIA-FIS: GOVERNANÇA DE IA PARA MITIGAÇÃO DE FRAUDES POR DEEPFAKES DE ÁUDIO E ID",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 3,
+     "e": "theory",
+     "w": "Framework de governança para deepfake de áudio e PL 2338; não validado."
+    }
+   },
+   {
+    "title": "Financial stability implications of AI adoption in the financial industry and the real eco",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": 5,
+    "new_triage": {
+     "r": 4,
+     "q": 6,
+     "e": "regulator",
+     "w": "Relatório ECB sobre adoção de IA e estabilidade; fraude citada de passagem."
+    }
+   },
+   {
+    "title": "Prevenção de Fraudes e Golpes Digitais em Meios de Pagamento Eletrônicos: mecanismos juríd",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 6,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "review",
+     "w": "Análise normativa Pix, MED e responsabilidade; sem dados, mas alvo regulatório brasileiro."
+    }
+   },
+   {
+    "title": "From Batch to Instant: A Reference Architecture and Process Model for Modernizing National",
+    "ref": 3,
+    "digest": "no",
+    "old": 6,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "theory",
+     "w": "Arquitetura conceitual de desembolso instantâneo; fraude só como requisito."
+    }
+   },
+   {
+    "title": "Leakage-aware federated-style simulation for fraud risk prediction in AI-enabled FinTech p",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 3,
+    "new_triage": {
+     "r": 5,
+     "q": 2,
+     "e": "bench",
+     "w": "PaySim sintético, método anunciado não implementado, ganho irrisório"
+    }
+   },
+   {
+    "title": "The Dark Side of AI: Fraud, Deception, and the Erosion of Trust",
+    "ref": 3,
+    "digest": "no",
+    "old": 4,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 2,
+     "e": "other",
+     "w": "Capítulo genérico sobre IA e engano; sem método nem dados."
+    }
+   },
+   {
+    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+    "ref": 3,
+    "digest": "no",
+    "old": 2,
+    "new": 2,
+    "new_triage": {
+     "r": 2,
+     "q": 2,
+     "e": "news",
+     "w": "Notícia de wire fraud em ransomware; sem elo bancário."
+    }
+   },
+   {
+    "title": "Modeling the Future of Finance: Digital Transformation, Fintech Innovations, Market Adapta",
+    "ref": 1,
+    "digest": "no",
+    "old": 2,
+    "new": 2,
+    "new_triage": {
+     "r": 2,
+     "q": 2,
+     "e": "review",
+     "w": "Panorama genérico de transformação digital financeira, sem fraude específica"
+    }
+   },
+   {
+    "title": "MaRCo@BIS: AI-agentic econometric analysis for central bankers",
+    "ref": 2,
+    "digest": "no",
+    "old": 3,
+    "new": 2,
+    "new_triage": {
+     "r": 2,
+     "q": 3,
+     "e": "theory",
+     "w": "Framework de econometria para bancos centrais; teaser sem fraude nem resultados."
+    }
+   },
+   {
+    "title": "Risk-Aware AI Deployment Architecture for Secure and Regulated Banking Environments",
+    "ref": 5,
+    "digest": "no",
+    "old": 3,
+    "new": 7,
+    "new_triage": {
+     "r": 8,
+     "q": 6,
+     "e": "admin",
+     "w": "Piloto anual em banco com AUC e FP AML explícitos; caso não verificável"
+    }
+   },
+   {
+    "title": "The Mediating Role of Digital Literacy Between Financial Literacy and Investment Scam Awar",
+    "ref": 3,
+    "digest": "no",
+    "old": 3,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "survey",
+     "w": "PLS-SEM com universitários; conscientização, não detecção."
+    }
+   },
+   {
+    "title": "Enhancing Forensic Accounting with Data Analytics: An Empirical Study of Financial Risk Mi",
+    "ref": 1,
+    "digest": "no",
+    "old": 2,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "AI-Driven Financial Fraud Auditing and Evidence Chain Construction in Smart Manufacturing",
+    "ref": 2,
+    "digest": "no",
+    "old": 3,
+    "new": 3,
+    "new_triage": {
+     "r": 3,
+     "q": 3,
+     "e": "theory",
+     "w": "Auditoria de fraude contábil industrial; fora do alvo bancário."
+    }
+   },
+   {
+    "title": "MODEL ADOPTION #5483: ADOPT — TG AUTO: BASE 44 ORDER: Analyse Video Content for E8 Insight",
+    "ref": 0,
+    "digest": "no",
+    "old": 1,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Temporal Graph Learning for Robust Detection of Coordinated Fraud in Dynamic Transaction N",
+    "ref": 4,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "bench",
+     "w": "Benchmark sintético de 4.800 contas para fraude coordenada; não é dado real."
+    }
+   },
+   {
+    "title": "Know Your Agent (KYA): Why KYC Wasn’t Built for AI Agents",
+    "ref": 4,
+    "digest": "no",
+    "old": 4,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 2,
+     "e": "news",
+     "w": "Post de fornecedor sobre KYA; conceito sem evidência nem método."
+    }
+   },
+   {
+    "title": "Generative AI in Financial Systems and Banking Forensics",
+    "ref": 3,
+    "digest": "no",
+    "old": 3,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "review",
+     "w": "Capítulo panorâmico sobre IA generativa e forense bancária; sem validação."
+    }
+   },
+   {
+    "title": "A Multi-Dimension EML Feature Framework and Multi-Model-Based Email Anomaly Detection Syst",
+    "ref": 4,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Geometry enhanced depth map super-resolution with multi-modal feature fusion",
+    "ref": 0,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "A Set-Theoretic Tuple Model with Level-Consistent Normalization and Non-Compensatory Aggre",
+    "ref": 2,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "CLEAR: Closed-loop error-aware restoration for unpaired all-in-one bad-weather removal",
+    "ref": 0,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Bilevel feature-weighted kernel SVM with relevance–redundancy regularization",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Cyber Financial Fraud in India Criminal Liability, Electronic Evidence and Victim Restitut",
+    "ref": 2,
+    "digest": "no",
+    "old": null,
+    "new": 3,
+    "new_triage": {
+     "r": 5,
+     "q": 2,
+     "e": "other",
+     "w": "Sem abstract, análise jurídica de fraude financeira cibernética"
+    }
+   },
+   {
+    "title": "V2X data transmission in intelligent transportation systems: A comprehensive survey on sus",
+    "ref": 0,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Cochleogram-based ResNet-18 Network with Attention Mechanism (CoReA) for fake speech detec",
+    "ref": 4,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   }
+  ]
+ },
+ "people-analytics": {
+  "old": {
+   "n": 42,
+   "spearman": 0.85,
+   "mae": 1.52,
+   "bias": 1.38,
+   "digest_precision": 0.33,
+   "digest_recall": 0.83,
+   "digest_selected": 15,
+   "library_precision": 0.63,
+   "library_recall": 0.95
+  },
+  "new": {
+   "n": 34,
+   "spearman": 0.887,
+   "mae": 0.85,
+   "bias": 0.62,
+   "digest_precision": 0.86,
+   "digest_recall": 1.0,
+   "digest_selected": 7,
+   "library_precision": 0.8,
+   "library_recall": 0.89
+  },
+  "triage_usage": {
+   "prompt_tokens": 81582,
+   "completion_tokens": 42874,
+   "cost_usd": 0.033016,
+   "calls": 8,
+   "failures": 1
+  },
+  "wanted_sent_old": 9,
+  "wanted_sent_new": 9,
+  "wanted": 9,
+  "items": [
+   {
+    "title": "The Search for Parental Leave and the Early-Career Gender Wage Gap",
+    "ref": 7,
+    "digest": "yes",
+    "old": 8,
+    "new": 7,
+    "new_triage": {
+     "r": 8,
+     "q": 6,
+     "e": "theory",
+     "w": "Modelo estrutural de busca de emprego; gap salarial e licença parental."
+    }
+   },
+   {
+    "title": "Who Will be Assigned Unreasonable Tasks by Supervisors: A Conjoint Survey Experiment",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "rct",
+     "w": "Experimento conjoint randomizado, 464 supervisores, 4640 perfis; resultado numérico claro."
+    }
+   },
+   {
+    "title": "Cognitive Ambidexterity: Balancing Algorithmic Efficiency and Contextual Judgement in AI-E",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 6,
+     "e": "quasi",
+     "w": "Mixed-methods com vinhetas experimentais; sem efeitos numéricos explícitos."
+    }
+   },
+   {
+    "title": "Deciphering the slow adoption of HR analytics: a comprehensive exploration of individual, ",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 5,
+    "new_triage": {
+     "r": 8,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey transversal PLS-SEM, 305 profissionais; adoção de HR analytics"
+    }
+   },
+   {
+    "title": "The Consequences of Pay Standing under Pay Range Transparency",
+    "ref": 8,
+    "digest": "yes",
+    "old": 8,
+    "new": 8,
+    "new_triage": {
+     "r": 9,
+     "q": 8,
+     "e": "quasi",
+     "w": "Quatro estudos incl. experimento natural; decisão atual de transparência salarial."
+    }
+   },
+   {
+    "title": "Toward an Integrative Model of Layoff Effects: A Strategic Human Capital Resources Framewo",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 8,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "review",
+     "w": "Revisão e framework integrativo de efeitos de demissões em massa"
+    }
+   },
+   {
+    "title": "When shifts matter for hybrid teams: The moderating role of location predictability.",
+    "ref": 8,
+    "digest": "yes",
+    "old": 7,
+    "new": 7,
+    "new_triage": {
+     "r": 8,
+     "q": 6,
+     "e": "survey",
+     "w": "Survey repetido de 164 equipes por 6 semanas; associação não causal."
+    }
+   },
+   {
+    "title": "Automation and Gender: Implications for Occupational Segregation and the Gender Skill Gap",
+    "ref": 8,
+    "digest": "yes",
+    "old": 8,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "quasi",
+     "w": "Quase-experimento com exposição local à automação; efeitos ocupacionais e de gênero."
+    }
+   },
+   {
+    "title": "Using AI to Guide Workers",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 2,
+     "e": "news",
+     "w": "Teaser de pesquisa sem desenho ou resultados."
+    }
+   },
+   {
+    "title": "A new equilibrium: COVID-19 lockdowns and WFH persistence",
+    "ref": 8,
+    "digest": "yes",
+    "old": 8,
+    "new": 8,
+    "new_triage": {
+     "r": 8,
+     "q": 8,
+     "e": "quasi",
+     "w": "Diff-in-diff com dados longitudinais; efeito de 43% em WFH."
+    }
+   },
+   {
+    "title": "Workplace gender discrimination: key insights, emerging trends, and future research direct",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "review",
+     "w": "Revisão bibliográfica com STM; framework conceitual, sem dados organizacionais."
+    }
+   },
+   {
+    "title": "Cultivating Team Psychological Safety: A Model Rooted in Conservation of Resources Theory",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 3,
+     "e": "theory",
+     "w": "Modelo teórico multinível; sem dados ou validação empírica."
+    }
+   },
+   {
+    "title": "Influence Without Authority: Bottom-Up Normalization of Organizational Corruption",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 4,
+     "e": "quali",
+     "w": "Estudo qualitativo de caso sobre normalização de corrupção."
+    }
+   },
+   {
+    "title": "The Five Stages of Becoming an AI-Native Organisation",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 4,
+     "e": "news",
+     "w": "Podcast com framework de estágios; exemplos empresariais sem dados verificáveis."
+    }
+   },
+   {
+    "title": "Confident and Well‐Connected: The Interplay of Line Managers' HR Self‐Efficacy, Brokerage,",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "survey",
+     "w": "Survey multinível multiorigem, 88 gestores; implementação de RH"
+    }
+   },
+   {
+    "title": "Employee Attrition Predictive Modeling Using CRISP-DM: A Supervised Learning and Workforce",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "From exclusive to inclusive? Exploring the barriers of i-deals for functionally diverse (F",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 4,
+     "e": "review",
+     "w": "Scoping review de i-deals e inclusão de trabalhadores funcionalmente diversos"
+    }
+   },
+   {
+    "title": "A call for rebellion: demanding justice in operations and supply chain management",
+    "ref": 2,
+    "digest": "no",
+    "old": 5,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "theory",
+     "w": "Ensaio provocativo de justiça em operações; sem evidência empírica"
+    }
+   },
+   {
+    "title": "Generative AI collaboration and expatriate career adaptability: a career construction pers",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey transversal com 361 expatriados; associações autorrelatadas, sem causalidade."
+    }
+   },
+   {
+    "title": "How remote work reshapes talent acquisition and innovation: evidence from U.S. listed firm",
+    "ref": 7,
+    "digest": "yes",
+    "old": 6,
+    "new": 7,
+    "new_triage": {
+     "r": 7,
+     "q": 7,
+     "e": "quasi",
+     "w": "Diferenças-em-diferenças com PSM em painel de firmas listadas."
+    }
+   },
+   {
+    "title": "People analytics in employee performance management: A bibliometric mapping and structured",
+    "ref": 5,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 4,
+     "e": "review",
+     "w": "Bibliometria mais revisão estruturada; síntese honesta sem dados primários"
+    }
+   },
+   {
+    "title": "‘Flying under the radar’: job crafting when menopause disrupts neurodivergent coping",
+    "ref": 4,
+    "digest": "no",
+    "old": 5,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "quali",
+     "w": "Qualitativo com 45 entrevistas; experiência de subgrupo específico."
+    }
+   },
+   {
+    "title": "The Rise of Multi-Agent AI in Strategic Human Resource Management: Exploring How Collabora",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "quali",
+     "w": "Entrevistas qualitativas com 20 profissionais; sem generalização causal."
+    }
+   },
+   {
+    "title": "How and when do green HRM practices foster organizational citizenship behavior for the env",
+    "ref": 3,
+    "digest": "no",
+    "old": 6,
+    "new": 4,
+    "new_triage": {
+     "r": 4,
+     "q": 5,
+     "e": "survey",
+     "w": "Survey multinível de GRH verde; tema periférico e autorrelato."
+    }
+   },
+   {
+    "title": "Institutional ambiguity and its dimensions in anti-enslavement arena",
+    "ref": 2,
+    "digest": "no",
+    "old": 6,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "AI Literacy and Ethical Voice in Algorithmic Hiring: The Mediating Role of Psychological S",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey transversal de autorrelato, 390 funcionários, mediação"
+    }
+   },
+   {
+    "title": "Working With Robots: How Robot Proportion in Human-Robot Teams and Robot Anthropomorphism ",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Understanding the Mediating Role of Talent Retention in SMEs' Sustainability Practices",
+    "ref": 3,
+    "digest": "no",
+    "old": 6,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "The power of perception: the impact of inclusivity policies and diversity climate on emplo",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 5,
+    "new_triage": {
+     "r": 6,
+     "q": 4,
+     "e": "survey",
+     "w": "Path analysis transversal, 361 respondentes universitários; mediação."
+    }
+   },
+   {
+    "title": "Where turnover contagion tips: Coworker network structure, job embeddedness, and retention",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Determinasi Retensi Karyawan Ditinjau dari Employee Engagement, Pengembangan Karir, dan Li",
+    "ref": 2,
+    "digest": "no",
+    "old": 3,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "When CSR signals fail: perceived quality as a credibility condition for consumer–brand ide",
+    "ref": 1,
+    "digest": "no",
+    "old": 1,
+    "new": 2,
+    "new_triage": {
+     "r": 1,
+     "q": 4,
+     "e": "survey",
+     "w": "PLS-SEM com 172 consumidores, fora do tema de RH."
+    }
+   },
+   {
+    "title": "The effects of HRM practices on organizational performance: The moderating role of workpla",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "survey",
+     "w": "PLS-SEM com 400 gestores; autorrelato transversal."
+    }
+   },
+   {
+    "title": "Demand for Research and the Composition of Scientific Response: Intellectual Distance, Res",
+    "ref": 3,
+    "digest": "no",
+    "old": 3,
+    "new": 5,
+    "new_triage": {
+     "r": 3,
+     "q": 7,
+     "e": "quasi",
+     "w": "Quase-experimento com mandato ZEV; foco em cientistas, não RH."
+    }
+   },
+   {
+    "title": "Predictive People Analytics Using Machine Learning-Based HR Metrics for Strategic Workforc",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "AI Powered Recruitment Portal Using Natural Language Processing and Machine Learning",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 2,
+     "e": "other",
+     "w": "Proposta de portal, revisão e arquitetura, sem avaliação empírica."
+    }
+   },
+   {
+    "title": "HOW JOB CHARACTERISTICS INFLUENCE THE MOTIVATION OF MILLENNIAL HOSPITALITY WORKERS IN BRAZ",
+    "ref": 3,
+    "digest": "no",
+    "old": 4,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Performance Appraisal Fairness, Perceived Organisational Support, Employee Engagement and ",
+    "ref": 5,
+    "digest": "no",
+    "old": 4,
+    "new": 6,
+    "new_triage": {
+     "r": 8,
+     "q": 4,
+     "e": "bench",
+     "w": "Framework conceitual não testado; auditoria de vazamento em dataset público."
+    }
+   },
+   {
+    "title": "Improving Employee Performance Based On Work From Home and Work Flexibility With Job Satis",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey PLS-SEM de 155 respondentes sobre WFH e flexibilidade."
+    }
+   },
+   {
+    "title": "Models for Sustainable Human Resource Management: Combining Ethics, CSR and Data-Driven HR",
+    "ref": 2,
+    "digest": "no",
+    "old": 3,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "theory",
+     "w": "Framework conceitual de HRM sustentável sem validação."
+    }
+   },
+   {
+    "title": "The impact of Generative Artificial Intelligence on employee green well-being: The mediati",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey transversal com PLS-SEM; autorrelato e conveniência."
+    }
+   },
+   {
+    "title": "HUMAN RESOURCE MANAGEMENT, EMPLOYEE WELFARE, AND INDUSTRIAL STABILITY IN NIGERIA: A QUALIT",
+    "ref": 2,
+    "digest": "no",
+    "old": 3,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "quali",
+     "w": "Qualitativo exploratório com entrevistas e grupos focais na Nigéria"
+    }
+   },
+   {
+    "title": "Dataset for: Inclusive Talent Management for Border-Region MSMEs: A PRISMA 2020 Systematic",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Challenges to Risk Management Implementation and Perceived Strategies for Optimising Safet",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Beyond Compliance: How Safety Management Practices Shape Workplace Safety Outcomes",
+    "ref": 3,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "\"Sindicalismo ante la Industria 4.0: Estrategias de adaptación y resistencia en España (19",
+    "ref": 3,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "AASHA Net AI: An Offline-First, Voice-Based Health Record Assistant for ASHA Workers Using",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Performance Assessment Tools and Employee Motivation in a South African Public Legislature",
+    "ref": 2,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Synergizing Quantum Computing and Blockchain for Secure Talent Management and Predictive F",
+    "ref": 0,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Asymmetric impact of bribes on labour investments: Evidence from Indian manufacturing firm",
+    "ref": 2,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   }
+  ]
+ },
+ "tecnologia-bancaria": {
+  "old": {
+   "n": 42,
+   "spearman": 0.86,
+   "mae": 1.45,
+   "bias": 1.31,
+   "digest_precision": 0.27,
+   "digest_recall": 1.0,
+   "digest_selected": 15,
+   "library_precision": 0.53,
+   "library_recall": 0.94
+  },
+  "new": {
+   "n": 29,
+   "spearman": 0.666,
+   "mae": 1.0,
+   "bias": 0.38,
+   "digest_precision": null,
+   "digest_recall": 0.0,
+   "digest_selected": 0,
+   "library_precision": 0.69,
+   "library_recall": 0.69
+  },
+  "triage_usage": {
+   "prompt_tokens": 63556,
+   "completion_tokens": 28848,
+   "cost_usd": 0.022112,
+   "calls": 7,
+   "failures": 0
+  },
+  "wanted_sent_old": 10,
+  "wanted_sent_new": 6,
+  "wanted": 10,
+  "items": [
+   {
+    "title": "Temu e Mastercard estudam compra sem digitar o cartão",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 4,
+    "new_triage": {
+     "r": 6,
+     "q": 3,
+     "e": "news",
+     "w": "Memorando Temu-Mastercard sobre Agent Pay; comércio agêntico relevante, teaser sem dados."
+    }
+   },
+   {
+    "title": "BBVA uses AI to better understand its customers and takes a step towards developing a foun",
+    "ref": 7,
+    "digest": "yes",
+    "old": 8,
+    "new": 6,
+    "new_triage": {
+     "r": 8,
+     "q": 5,
+     "e": "news",
+     "w": "Banco descreve modelo de interações de app rumo a fundacional, sem números"
+    }
+   },
+   {
+    "title": "Continuity is engineered, not given: How I learned to work with AI agents that forget ever",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 5,
+     "e": "other",
+     "w": "Regras de engenharia da Nubank para memória de agentes, sem números"
+    }
+   },
+   {
+    "title": "Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?",
+    "ref": 7,
+    "digest": "yes",
+    "old": 7,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Fintech Expansion",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 6,
+     "e": "theory",
+     "w": "Modelo teórico em venue de elite sobre tecnologia de crédito fintech"
+    }
+   },
+   {
+    "title": "Impact of Data Privacy Regulations on Recommender Systems Performance",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 6,
+     "q": 6,
+     "e": "bench",
+     "w": "Simulações em larga escala sobre privacidade e recomendadores, lição para personalização"
+    }
+   },
+   {
+    "title": "Gatekeepers and Kingmakers: Do Superplatforms Distort Digital Competition?",
+    "ref": 4,
+    "digest": "no",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 4,
+     "q": 8,
+     "e": "quasi",
+     "w": "Diff-in-diff de favoritismo de superplataformas; rigor alto, tema não bancário."
+    }
+   },
+   {
+    "title": "Telemetry Blindness in LLM Agents: A Controlled Measurement of Valid-Format Semantic Error",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Is low-carbon transition risk affecting the market and credit ratings equally? Evidence fo",
+    "ref": 3,
+    "digest": "no",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 5,
+     "q": 7,
+     "e": "quasi",
+     "w": "Risco de crédito e emissões, SUR com dados de empresas europeias"
+    }
+   },
+   {
+    "title": "Com Itaú Asset e BV, Pagaleve levanta FIDC de R$ 250 milhões para financiar Pix parcelado",
+    "ref": 4,
+    "digest": "no",
+    "old": 7,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "news",
+     "w": "Notícia de captação FIDC da Pagaleve, sem conteúdo de tecnologia"
+    }
+   },
+   {
+    "title": "Campaigns That Click: Unleashing the Power of Push Notifications on Mobile Apps",
+    "ref": 8,
+    "digest": "yes",
+    "old": 7,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "TrustBound: Mechanized Completeness for Payment Epochs Initiated by AI Agents",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 7,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 6,
+     "e": "bench",
+     "w": "Modelo Lean e testes de reconciliação de pagamentos por agentes"
+    }
+   },
+   {
+    "title": "Give your agents controlled access to analyze your data and move funds",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 8,
+    "new": 5,
+    "new_triage": {
+     "r": 8,
+     "q": 3,
+     "e": "news",
+     "w": "Agentes movendo fundos na Stripe, mas anúncio de produto sem dados"
+    }
+   },
+   {
+    "title": "Stripe evals: Measuring real-world coding agent performance",
+    "ref": 5,
+    "digest": "no",
+    "old": 7,
+    "new": 5,
+    "new_triage": {
+     "r": 6,
+     "q": 4,
+     "e": "news",
+     "w": "Stripe evals para medir agentes de código; post de engenharia sem números"
+    }
+   },
+   {
+    "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+    "ref": 7,
+    "digest": "yes",
+    "old": 7,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Human Capital Development in Emerging Economies: Education, Skills Formation, and the Foun",
+    "ref": 1,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "FinTech and European Bank Performance: A Machine-Learning Analysis of Greenwashing and Sus",
+    "ref": 4,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Arva AI Secures $20 Million to Bring Agentic AI to Critical Banking Operations",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 2,
+     "e": "news",
+     "w": "Anúncio de captação Série A sem conteúdo técnico de agentes"
+    }
+   },
+   {
+    "title": "1ª Edição – Guia de Boas Práticas para Instituições de Pagamento na Segurança Cibernética",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 4,
+     "e": "regulator",
+     "w": "Guia BC de segurança cibernética para instituições de pagamento; normativo sem dados."
+    }
+   },
+   {
+    "title": "The MoneyPot Live: Your AI Is Ready. Is Your Data? What Financial Services Needs to Get Ri",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 2,
+     "e": "news",
+     "w": "Podcast promocional sobre prontidão de dados, sem evidência"
+    }
+   },
+   {
+    "title": "Transações via Pix tem aumento de 71% no Rio de Janeiro, diz Cielo",
+    "ref": 5,
+    "digest": "no",
+    "old": 5,
+    "new": 6,
+    "new_triage": {
+     "r": 7,
+     "q": 6,
+     "e": "admin",
+     "w": "Dados Cielo de Pix e NFC; números de transações, mas notícia."
+    }
+   },
+   {
+    "title": "BNPL lender Afterpay fined $2.7M for skipping ability-to-repay mandates",
+    "ref": 4,
+    "digest": "no",
+    "old": 6,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "news",
+     "w": "Multa de US$2,7M à Afterpay por capacidade de pagamento; notícia curta"
+    }
+   },
+   {
+    "title": "Understanding the Prompting Effects of Chain-of-Thought on Human Collaboration with Genera",
+    "ref": 5,
+    "digest": "no",
+    "old": 6,
+    "new": 6,
+    "new_triage": {
+     "r": 5,
+     "q": 7,
+     "e": "rct",
+     "w": "Experimentos online sobre CoT e confiança, aplicável a UX de IA bancária"
+    }
+   },
+   {
+    "title": "Add-in DSE Brain: A Domain-Specific Expertise Architecture for Governing LLM Reasoning via",
+    "ref": 2,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 4,
+     "e": "theory",
+     "w": "Arquitetura neuro-simbólica on-prem para governar raciocínio de LLM em finanças"
+    }
+   },
+   {
+    "title": "Open Finance para PJ precisa agregar mais valor, recomenda Pagar",
+    "ref": 4,
+    "digest": "no",
+    "old": 5,
+    "new": 5,
+    "new_triage": {
+     "r": 7,
+     "q": 3,
+     "e": "news",
+     "w": "Recomendação sobre Open Finance PJ; notícia sem dados."
+    }
+   },
+   {
+    "title": "FinovateFall Best of Show winner Neural Payments on bringing payments to the masses",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 4,
+     "e": "news",
+     "w": "Descrição técnica de 'any to any' payments, mas é pitch de fornecedor"
+    }
+   },
+   {
+    "title": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
+    "ref": 6,
+    "digest": "maybe",
+    "old": 6,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 4,
+     "e": "news",
+     "w": "Balanço dos 6 anos do Pix com números de adoção"
+    }
+   },
+   {
+    "title": "Gating the Internet",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Analisis Komparatif Workforce Planning Berbasis Kapabilitas Pada Perbankan di Era AI",
+    "ref": 3,
+    "digest": "no",
+    "old": 5,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Fusion lança plataforma de agentes de IA para projetos SAP",
+    "ref": 2,
+    "digest": "no",
+    "old": 5,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 2,
+     "e": "news",
+     "w": "Anúncio de produto de agentes de IA para SAP, sem conteúdo técnico"
+    }
+   },
+   {
+    "title": "Recondução de Ana Carla Abrão à Presidência Executiva da Associação Open Finance Brasil",
+    "ref": 1,
+    "digest": "no",
+    "old": 2,
+    "new": 2,
+    "new_triage": {
+     "r": 3,
+     "q": 2,
+     "e": "news",
+     "w": "Recondução de dirigente associativo, sem conteúdo técnico"
+    }
+   },
+   {
+    "title": "What Do LLMs Use to Judge Synthesis Recipes? An Experimental Analysis on 240 Solid-State S",
+    "ref": 0,
+    "digest": "no",
+    "old": 0,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "The MoneyPot Live: In Conversation With Oliver Hughes, Head of International, TBC Bank Gro",
+    "ref": 5,
+    "digest": "no",
+    "old": 3,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 3,
+     "e": "news",
+     "w": "Entrevista sobre stack de voz e assistente Lola, sem números"
+    }
+   },
+   {
+    "title": "Connectors and Influencers",
+    "ref": 1,
+    "digest": "no",
+    "old": 2,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "The world believes in UK FinTech – we must ensure we do the same",
+    "ref": 2,
+    "digest": "no",
+    "old": 2,
+    "new": 2,
+    "new_triage": {
+     "r": 3,
+     "q": 2,
+     "e": "news",
+     "w": "Chamado de lobby do UK fintech, sem dados nem tecnologia"
+    }
+   },
+   {
+    "title": "Deal Engine at MPE 2027",
+    "ref": 0,
+    "digest": "no",
+    "old": 1,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "ADGM Real Estate: What Changed in H1 2026",
+    "ref": 0,
+    "digest": "no",
+    "old": 1,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Artificial intelligence and machine learning in Islamic banking: insights using lexicon an",
+    "ref": 2,
+    "digest": "no",
+    "old": 4,
+    "new": 4,
+    "new_triage": {
+     "r": 4,
+     "q": 4,
+     "e": "bench",
+     "w": "Análise de sentimento de IA em 71 bancos islâmicos; descritivo, sem decisão prática."
+    }
+   },
+   {
+    "title": "Diputado Diego Schalper aborda nuevos cobros en plataformas internacionales",
+    "ref": 2,
+    "digest": "no",
+    "old": 2,
+    "new": 3,
+    "new_triage": {
+     "r": 4,
+     "q": 3,
+     "e": "news",
+     "w": "Notícia legislativa chilena sobre taxas de intercâmbio, sem conteúdo técnico"
+    }
+   },
+   {
+    "title": "¡Así se vivió nuestro paso por EtMday 2026! 🔥🚀",
+    "ref": 0,
+    "digest": "no",
+    "old": 1,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "En vivo instalación - 19° Congreso SAFE",
+    "ref": 1,
+    "digest": "no",
+    "old": 2,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Exploring the DFS26 Exhibition Floor",
+    "ref": 0,
+    "digest": "no",
+    "old": 1,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Who Moved the Frontier? Paying Open Frontier Challenges with Free Identities",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Artificial Intelligence Literacy and Public Acceptance of AI Technologies among Adults in ",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": 2,
+    "new_triage": {
+     "r": 2,
+     "q": 3,
+     "e": "survey",
+     "w": "Survey transversal de aceitação de IA no Iraque, sem implicação bancária"
+    }
+   },
+   {
+    "title": "DATA LITERACY CRÍTICA NA CIÊNCIA DA INFORMAÇÃO: PERSPECTIVA FREIREANA",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Keep calm and bank on: Bank run risks and the role of public communication",
+    "ref": 3,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Beyond Adoption: A Critical Analysis of Fintech and Sustainable Performance in Pakistan's ",
+    "ref": 2,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Evaluating human-like chatbot interaction in customer service: integrating anthropomorphis",
+    "ref": 3,
+    "digest": "no",
+    "old": null,
+    "new": 4,
+    "new_triage": {
+     "r": 5,
+     "q": 4,
+     "e": "survey",
+     "w": "PLS-SEM de 213 usuários sobre chatbot humanizado; tema vizinho ao atendimento"
+    }
+   },
+   {
+    "title": "THE CONZETIAN PROTOCOL LANDSCAPE: Ecosystem Alignment, The Evidence Root Vacancy, and the ",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   },
+   {
+    "title": "Al Powered Personal Finance Tracker with Behavioral Analytics",
+    "ref": 1,
+    "digest": "no",
+    "old": null,
+    "new": null,
+    "new_triage": null
+   }
+  ]
+ },
+ "overall": {
+  "old": {
+   "n": 116,
+   "spearman": 0.823,
+   "mae": 1.34,
+   "bias": 1.14,
+   "digest_precision": 0.34,
+   "digest_recall": 0.86,
+   "digest_selected": 35,
+   "library_precision": 0.59,
+   "library_recall": 0.94
+  },
+  "new": {
+   "n": 93,
+   "spearman": 0.822,
+   "mae": 0.8,
+   "bias": 0.43,
+   "digest_precision": 0.71,
+   "digest_recall": 0.91,
+   "digest_selected": 14,
+   "library_precision": 0.79,
+   "library_recall": 0.86
+  }
+ }
+}

@@ -19,7 +19,7 @@
     "brasil": "🇧🇷 Brasil",
     "mundo": "🌍 Mundo"
   },
-  "prefilter_keywords": "bank|banking|banco|bancári|financial services|financial institution|fintech|neobank|digital bank|payment|pix|open banking|open finance|cbdc|drex|tokeni|deposit|lending|credit|llm|large language model|generative|genai|artificial intelligence|machine learning|agent|chatbot|assistant|cloud|core banking|mainframe|customer|digital|regulat|central bank|model risk|governance|agentic|agente|commerce|checkout|foundation model|transaction model|marketing|martech|personaliz|recommend|next best|collection|cobran|venture|cvc|experiment|a/b test|automation|automação|rpa|process mining|reskill|upskill|literacy|proficiên|conversational|voice",
+  "prefilter_keywords": "bank|banking|banco|bancári|financial services|financial institution|fintech|neobank|digital bank|payment|pix|open banking|open finance|cbdc|drex|tokeni|deposit|lending|credit|llm|large language model|generative|genai|artificial intelligence|machine learning|agent|chatbot|assistant|cloud|core banking|mainframe|customer|digital|regulat|central bank|model risk|governance|agentic|agente|commerce|checkout|foundation model|transaction model|marketing|martech|personaliz|recommend|next best|collection|cobran|venture|cvc|experiment|a/b test|automation|automação|rpa|process mining|reskill|upskill|literacy|proficiên|conversational|voice|\\bAI\\b|\\bIA\\b|inteligência artificial|crédito|pagamento|cartão|agêntic|modelo fundacional|sanction|compliance|model validation|transaction",
   "watchlist_labels": {
     "researchers": "Pesquisadores",
     "journals": "Journals & venues",
@@ -39,5 +39,10 @@
     "skills": "🎓 Proficiência analítica & reskilling",
     "payments": "⚡ Pagamentos, Pix, Open Finance & tokenização",
     "engineering": "🏗️ Core, nuvem & engenharia"
-  }
+  },
+  "rubric_anchors": [
+    "Campaigns That Click: Unleashing the Power of Push Notifications on Mobile Apps (Information Systems Research): r 7, q 9 → 8. Dois experimentos e 60 milhões de observações sobre uma alavanca que todo app de banco usa; não é sobre banco, por isso r 7.",
+    "Give your agents controlled access to analyze your data and move funds (Stripe Blog): r 8, q 3 → 5. Fintech de fronteira dando a agentes poder de mover fundos, mas é anúncio de produto de duas frases.",
+    "Com Itaú Asset e BV, Pagaleve levanta FIDC de R$ 250 milhões (NeoFeed): r 5, q 3 → 4. Notícia de captação sem conteúdo de tecnologia."
+  ]
 }
