@@ -69,6 +69,14 @@ body { font-weight: 400; }
 .brand { color: #FFFFFF; font-weight: 700; }
 .brand em { color: var(--bb-amarelo); font-style: normal; }
 .tabs a { color: #FFFFFF; font-weight: 600; }
+.topic-pill, .top .icon-btn { color: #FFFFFF; }
+.topic-pill .brand-text { font-weight: 700; }
+.topic-pill .brand-text em { color: var(--bb-amarelo); font-style: normal; }
+.topic-pill .chev { color: rgba(255, 255, 255, 0.8); }
+.topic-pill.switch { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.5); }
+.top .icon-btn:hover { background: rgba(255, 255, 255, 0.16); }
+.top .icon-btn:focus-visible, .topic-pill:focus-visible, .tabs a:focus-visible { outline: 3px solid var(--bb-amarelo); outline-offset: 2px; }
+.state .clamp, .takeaways b, .reg-t, .res-t, .qa .q { font-family: var(--sans); }
 .tabs a:hover { background: rgba(255, 255, 255, 0.16); }
 .tabs a.active { background: var(--bb-amarelo); color: var(--bb-azul-escuro); }
 
@@ -98,7 +106,5 @@ h1.day { font-weight: 700; color: var(--ink); letter-spacing: 0; }
 .theme-toggle:hover { background: rgba(255, 255, 255, 0.24); }
 .theme-toggle:focus-visible { outline: 3px solid var(--bb-amarelo); outline-offset: 2px; }
 @media (max-width: 640px) {
-  .top-inner { padding-top: 8px; padding-bottom: 6px; row-gap: 6px; }
-  .theme-toggle { order: 1; margin-left: auto; }
-  .tabs { order: 2; flex-basis: 100%; }
+  .theme-toggle { order: 1; min-height: 40px; }
 }

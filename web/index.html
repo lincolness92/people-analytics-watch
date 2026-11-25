@@ -2,42 +2,102 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Research Watch</title>
   <meta name="description" content="Digest de pesquisa state-of-the-art.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#app">Pular para o conteúdo</a>
   <header class="top">
     <div class="wrap top-inner">
-      <a class="brand" href="#/">
-        <span class="brand-mark" id="brand-mark" aria-hidden="true">📡</span>
+      <a class="brand" href="#/" aria-label="Início"><span class="brand-mark" id="brand-mark" aria-hidden="true">📡</span></a>
+      <button type="button" class="topic-pill" id="topic-pill">
         <span class="brand-text" id="brand-text">Research <em>Watch</em></span>
-      </a>
+        <svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
       <nav class="tabs" aria-label="Seções">
-        <a href="#/" data-tab="digest">Digest</a>
-        <a href="#/arquivo" data-tab="arquivo">Arquivo</a>
-        <a href="#/tendencias" data-tab="tendencias">Tendências</a>
-        <a href="#/evolucao" data-tab="evolucao">Evolução</a>
-        <a href="#/anual" data-tab="anual">Anual</a>
-        <a href="#/regulacao" data-tab="regulacao" id="tab-reg">Regulação</a>
-        <a href="#/watchlist" data-tab="watchlist">Watchlist</a>
-        <a href="#/pergunte" data-tab="pergunte" id="tab-ask">Pergunte</a>
+        <a href="#/" data-dest="inicio">Início</a>
+        <a href="#/novidades" data-dest="novidades">Novidades</a>
+        <a href="#/mapa" data-dest="mapa">Mapa</a>
+        <a href="#/pergunte" data-dest="pergunte">Pergunte</a>
+        <a href="#/mais" data-dest="mais">Mais</a>
       </nav>
-      <select id="topic-switch" class="topic-switch" aria-label="Trocar de tema" hidden></select>
+      <button type="button" class="icon-btn search-btn" data-open-search aria-label="Buscar no tema" title="Buscar (/)">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+      </button>
     </div>
   </header>
 
-  <main id="app" class="wrap" aria-live="polite">
+  <main id="app" class="wrap" aria-live="polite" tabindex="-1">
     <p class="muted">Carregando…</p>
   </main>
 
   <footer class="wrap foot">
     <span id="foot-meta"></span>
-    <span>Curadoria automática diária · OpenAlex + arXiv + fontes da watchlist · LLM de pesos abertos</span>
+    <span>Curadoria automática diária · OpenAlex + arXiv + fontes da watchlist · LLM de pesos abertos · <button type="button" class="link-btn" data-open-about>sobre</button></span>
   </footer>
+
+  <nav class="bottom-bar" aria-label="Navegação principal">
+    <a href="#/" data-dest="inicio">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></svg>
+      <span>Início</span>
+    </a>
+    <a href="#/novidades" data-dest="novidades">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5h11v14H7a2 2 0 0 1-2-2zM16 9h3v8a2 2 0 0 1-2 2h-1M8 9h5M8 12h5M8 15h3"/></svg>
+      <span>Novidades</span>
+    </a>
+    <a href="#/mapa" data-dest="mapa">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5 4 7v12l5-2 6 2 5-2V5l-5 2zM9 5v12M15 7v12"/></svg>
+      <span>Mapa</span>
+    </a>
+    <a href="#/pergunte" data-dest="pergunte">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-8l-5 4v-4H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM9 10h6"/></svg>
+      <span>Pergunte</span>
+    </a>
+    <a href="#/mais" data-dest="mais">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/></svg>
+      <span>Mais</span>
+    </a>
+  </nav>
+
+  <dialog class="sheet" id="sheet-search" aria-label="Buscar">
+    <form class="search-head" role="search">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+      <input id="search-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Buscar papers, marcos, normas, pessoas…" aria-label="Buscar">
+      <button type="button" class="icon-btn" data-close aria-label="Fechar a busca">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </form>
+    <div class="sheet-body">
+      <p class="muted small" id="search-status" role="status"></p>
+      <div id="search-results"></div>
+    </div>
+  </dialog>
+
+  <dialog class="sheet" id="sheet-topics" aria-labelledby="topics-h">
+    <div class="sheet-head">
+      <h2 id="topics-h" tabindex="-1">Trocar de tema</h2>
+      <button type="button" class="icon-btn" data-close aria-label="Fechar">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body"></div>
+  </dialog>
+
+  <dialog class="sheet" id="sheet-about" aria-labelledby="about-h">
+    <div class="sheet-head">
+      <h2 id="about-h" tabindex="-1">Sobre este site</h2>
+      <button type="button" class="icon-btn" data-close aria-label="Fechar">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body"></div>
+  </dialog>
 
   <script src="app.js"></script>
 </body>
