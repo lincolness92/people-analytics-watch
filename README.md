@@ -107,7 +107,7 @@ python3 -m http.server -d dist 8000   # ver o site local em http://localhost:800
 | `CLOUDFLARE_API_TOKEN` | secret | p/ site | token com permissão *Cloudflare Pages: Edit* |
 | `CLOUDFLARE_ACCOUNT_ID` | secret | p/ site | ID da conta Cloudflare |
 | `DISCORD_WEBHOOK_URL` | secret | não | entrega do digest no Discord |
-| `PAW_MODEL` | variable | não | modelo(s) HF, separados por vírgula (padrão: `deepseek-ai/DeepSeek-V4.1-Flash`, com fallback para Qwen3.5-122B e gpt-oss-120b) |
+| `PAW_MODEL` | variable | não | modelo(s) HF, separados por vírgula (padrão: `deepseek-ai/DeepSeek-V4.1-Flash`, com fallback para gpt-oss-120b; a rota de cada modelo é a mais barata publicada) |
 | `DEEPSEEK_API_KEY` | secret | não | plataforma da DeepSeek: entra na comparação de preço com os provedores da HF. Local: `~/.config/pawatch/deepseek.env` |
 | `SITE_PASSWORD` | secret | p/ site | senha única do site; o workflow copia para o Pages a cada deploy. Sem ela o site fica fechado |
 | `CF_PAGES_PROJECT` | variable | não | nome do projeto no Pages (padrão `people-analytics-watch`) |
