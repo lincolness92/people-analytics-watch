@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-19",
+  "to": "2026-11-26"
+ },
+ "stats": {
+  "candidates": 3,
+  "triaged": 3,
+  "selected": 0,
+  "tokens": {
+   "prompt_tokens": 2670,
+   "completion_tokens": 789,
+   "cost_usd": 0.000705,
+   "calls": 1,
+   "failures": 0
+  }
+ },
+ "headline": "",
+ "trend": "",
+ "items": [],
+ "quick": []
+}

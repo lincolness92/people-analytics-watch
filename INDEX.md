@@ -4,7 +4,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 📡 PEOPLE-ANALYTICS-WATCH
 
-10 digests em `digests/people-analytics/`.
+11 digests em `digests/people-analytics/`.
 
 ## 📊 People analytics & métricas (7)
 
@@ -28,8 +28,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-16 · [Meta-análise de 30 anos de medidas de SJT: clareza de construto vs. poder preditivo](https://doi.org/10.1037/apl0001442.supp) · 8/10
 - 2026-11-16 · [IA reforça estereótipos de gênero em descrições de vagas](https://doi.org/10.1111/gwao.70291) · 8/10
 
-## 🤖 IA & futuro do trabalho (16)
+## 🤖 IA & futuro do trabalho (17)
 
+- 2026-11-26 · [Will AI Replace Juniors? Task Complexity Reduces Automation Risk](https://arxiv.org/abs/2611.34099) · 8/10
 - 2026-11-24 · [AI-Assisted Programming and Labor Demand](https://arxiv.org/abs/2611.31083) · 9/10
 - 2026-11-24 · [Tradeoffs between objective outcomes and human enjoyment of work in human-AI task allocation](https://arxiv.org/abs/2611.31095) · 7/10
 - 2026-11-22 · [Cognitive Ambidexterity: julgamento contextual em decisões mediadas por IA](https://doi.org/10.1177/01492063261501111) · 8/10
@@ -84,8 +85,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-18 · [Efetividade dos direitos de informação algorítmica: lições da Espanha](https://doi.org/10.1177/20319525261489682) · 7/10
 - 2026-11-17 · [Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits](https://arxiv.org/abs/2611.20901) · 7/10
 
-## 🔥 Tendências (9)
+## 🔥 Tendências (10)
 
+- **2026-11-26** — A IA no trabalho deixa de ser binária: o que importa é a complexidade da tarefa e a necessidade de supervisão humana. Ao mesmo tempo, ferramentas de recrutamento avançam para memória procedural e arquitetura de cargos, enquanto a verificação de credenciais vira camada de governança. Para people analytics, a agenda é segmentar automação por tarefa, auditar decisões assistidas e integrar descrições funcionais e checagem de diplomas aos fluxos de talento.
 - **2026-11-25** — O período derruba dois atalhos populares na gestão de pessoas. Primeiro, a ideia de que mais confiança — ou mais IA ligada — gera mais resultado: o estudo com gestores de linha mostra U invertido entre autoconfiança e execução de RH, e a discussão Bersin/Anthropic reforça que agentes só entregam com redesenho de processos e de trabalho. Segundo, a medição de pessoas entra em revisão: medidas de excesso de confiança se confundem com habilidade, e efeitos de identificação de grupo vêm de maior sensibilidade a normas, não de normas novas. Na prática, isso empurra people analytics para mapear redes informais, redesenhar o trabalho antes de automatizar e tratar métricas de percepção com desconfiança metodológica.
 - **2026-11-24** — O período tem um eixo claro: a IA já está mexendo na *estrutura* do trabalho, não só na produtividade. A evidência mais forte é a queda de 29% na contratação júnior de tecnologia após adoção de assistentes de código, com a demanda migrando para perfis experientes — sinal de que a escada de entrada está sendo reconstruída e que people analytics precisa acompanhar contratação por senioridade, não só headcount. Ao mesmo tempo, o experimento de alocação de tarefas mostra que decisões de redesenho não podem ser puramente técnicas: o prazer esperado de quem executa pesa nas escolhas humanas e até nos LLMs. Fechando o quadro, a adoção lenta de HR analytics e a discussão sobre organizações AI-native indicam que o gargalo segue sendo cultura, governança e redesenho de papéis — exatamente onde a área pode capturar mais valor.
 - **2026-11-22** — O período desloca a discussão de IA no trabalho da adoção para a governança do julgamento: quem decide com o algoritmo precisa de mecanismos explícitos de contestação, calibração de confiança e transparência, como mostram tanto os quatro mecanismos de ambidestria cognitiva quanto o papel amortecedor da transparência de RH na avaliação algorítmica. Ao mesmo tempo, a IA generativa se consolida como recurso de carreira — eleva adaptabilidade de expatriados — mas só quando confiança supera insegurança, sinal de que medo de substituição é hoje uma variável de gestão, não um ruído. Para people analytics, isso empurra o portfólio de projetos para auditoria de modelos de avaliação, métricas de segurança psicológica e desenho de canais de voz, enquanto a lacuna de skills digitais (61,5% sem treino recente) segue limitando a própria transformação.
@@ -98,7 +100,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🛡️ BANK-FRAUD-WATCH
 
-9 digests em `digests/fraude-bancaria/`.
+10 digests em `digests/fraude-bancaria/`.
 
 ## 📊 Modelos, dados e métricas de fraude (3)
 
@@ -133,7 +135,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🏦 BANK-TECH-&-AI-WATCH
 
-9 digests em `digests/tecnologia-bancaria/`.
+10 digests em `digests/tecnologia-bancaria/`.
 
 ## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (6)
 
@@ -152,8 +154,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-18 · [BBVA avança rumo a modelo fundacional de comportamento do cliente](https://www.bbva.com/en/innovation/bbva-uses-ai-to-better-understand-its-customers-and-takes-a-step-towards-developing-a-foundation-model/) · 8/10
 - 2026-11-17 · [Quanto modelos fundacionais realmente adicionam ao gradient boosting em sequências financeiras?](https://arxiv.org/abs/2611.18914) · 8/10
 
-## 🛒 Comércio agêntico (10)
+## 🛒 Comércio agêntico (11)
 
+- 2026-11-26 · [Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?](https://doi.org/10.48550/arxiv.2611.28610) · 7/10
 - 2026-11-24 · [Pierre Computer: agente pessoal que executa tarefas e compras em outras plataformas](https://www.cloudwalk.io/newsroom/cloudwalk-launches-pierre-computer-a-personal-ai-agent-that-autonomously-performs-tasks-across-platforms) · 7/10
 - 2026-11-23 · [Airwallex lança plugin no ChatGPT para gerir caixa](https://www.letsmoney.com.br/ia/airwallex-plugin-chatgpt-caixa-cartoes/) · 7/10
 - 2026-11-20 · [Stripe dá a agentes acesso controlado para analisar dados e mover fundos](https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds) · 8/10
@@ -225,8 +228,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 - 2026-11-19 · [Stripe evals: medindo performance real de agentes de código](https://stripe.dev/blog/stripe-integration-evals-methodology) · 7/10
 
-## 🔥 Tendências (9)
+## 🔥 Tendências (10)
 
+- **2026-11-26** — O período mostra agentes de IA saindo do piloto para transacionar e decidir, mas com foco em controles de autoridade, orçamento e roteamento confiável. No mundo, benchmarks como o AMB expõem falhas de pagamento e fraudes, enquanto gates determinísticos e modelos de decisão calibrados surgem como infraestrutura de confiança. No Brasil, os papers selecionados não trazem casos locais; a lição para bancos é testar agentes com trilhos de autorização, limites e auditoria antes de escalar.
 - **2026-11-25** — No Brasil, o avanço é de trilhos e capital: o Nubank publica como engenheirar continuidade de agentes de IA, a Pagaleve levanta FIDC de R$ 250 milhões com Itaú Asset e BV para escalar o Pix parcelado, e a Cielo mostra Pix +71% no Rio com NFC perto de metade do faturamento em cartões. No mundo, a fronteira é a infraestrutura de pagamento agêntico — SBI/SMFG com stablecoin na Solana para agentes, Mastercard e Temu testando Agent Pay, e AgentBank propondo conta bancária on-chain com mandatos — enquanto a fraude autorizada se industrializa com IA (£659 milhões no Reino Unido) e superplataformas que são gatekeeper e investidor distorcem a competição. A leitura comum é que o valor migra do modelo preditivo isolado para a arquitetura de confiança, contexto e liquidação que sustenta agentes operando dinheiro de clientes.
 - **2026-11-24** — No Brasil, o período é de agente em produção e de custo caindo: a CloudWalk declara 99% de automação no atendimento e lança um agente pessoal que compra dentro de limite de gasto, enquanto iFood/Zoop multiplica o uso de IA generativa por 30 desde janeiro e reduz a conta em 51% migrando para modelos abertos — sinal de que a vantagem competitiva migrou do acesso ao modelo para a engenharia de custo e de limites de ação. Ao mesmo tempo, o Nubank mostra o outro lado: expansão intencional de risco com atraso 90+ subindo de 6,6% para 7,3%, e o BC proibindo oferta ativa de crédito à faixa de atenção qualificada. No mundo, a agenda virou controle: GuardRail propõe autorização de ação em runtime com Action Passport e auditoria encadeada, um teste pré-registrado mostra que LLMs abertos on-premise cortam falso positivo na triagem de sanções mas ainda falham no recall de match real, e uma safra de papers (Delegated Loyalty, Agent's Receipt, visibilidade de marca em comércio agêntico) começa a definir fidúcia, trilha de auditoria e mensuração para agentes que pagam — exatamente o vocabulário que falta na maioria dos programas brasileiros de IA agêntica.
 - **2026-11-23** — No Brasil, o Bradesco reacelera private equity e venture capital com cerca de R$ 400 milhões em aportes, enquanto fintechs levam transações para dentro do ChatGPT e o BC prepara exigências mais duras para fintechs, BaaS e PLD; o Pix avança no exterior por parcerias privadas, mas a conexão direta entre bancos centrais segue sem prazo. No mundo, a agenda vira governança de agentes: papers propõem contratos de delegação com limite, evidência e recuperação, métricas para separar ganho de automação do mérito do agente e risco zero-shot com LLM, além de 'know your agent' como resposta regulatória. A convergência é que agentes deixam de ser demo e entram em controles de identidade, compromisso, validação e risco, enquanto capital e contabilidade — VC, competição em mercados de capital e HTM — voltam à mesa como fatores de estabilidade e inovação.

@@ -1,0 +1,146 @@
+{
+ "date": "2026-11-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-19",
+  "to": "2026-11-26"
+ },
+ "stats": {
+  "candidates": 30,
+  "triaged": 30,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 11754,
+   "completion_tokens": 5376,
+   "cost_usd": 0.004518,
+   "calls": 2,
+   "failures": 0
+  }
+ },
+ "headline": "Semana de nuance: IA avança, mas tarefas complexas e credenciais exigem supervisão",
+ "trend": "A IA no trabalho deixa de ser binária: o que importa é a complexidade da tarefa e a necessidade de supervisão humana. Ao mesmo tempo, ferramentas de recrutamento avançam para memória procedural e arquitetura de cargos, enquanto a verificação de credenciais vira camada de governança. Para people analytics, a agenda é segmentar automação por tarefa, auditar decisões assistidas e integrar descrições funcionais e checagem de diplomas aos fluxos de talento.",
+ "items": [
+  {
+   "key": "arxiv:2611.34099",
+   "title": "Will AI Replace Juniors? Task Complexity Reduces Automation Risk",
+   "original_title": "Will AI Replace Juniors? How Task Complexity Reduces Automation Risk",
+   "url": "https://arxiv.org/abs/2611.34099",
+   "venue": "arXiv (econ.GN, cs.AI)",
+   "date": "2026-11-25",
+   "authors": [
+    "Vincent Rost",
+    "Fabian Stephany"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 8,
+    "e": "rct",
+    "w": "Experimento pré-registrado com 1.435 gestores, efeito numérico claro"
+   },
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Experimento pré-registrado com 1.435 gestores alemães mostra que tarefas complexas reduzem em **0,54 ponto** (escala de 5) a disposição de substituir contratação júnior por IA e aumentam em 0,15 ponto a importância da supervisão humana. Antes do tratamento, gestores já esperavam que a IA reduzisse contratações de juniores mais fortemente que de experientes. Lição prática: people analytics deve mapear complexidade de tarefas por função para prever risco de automação e proteger o pipeline júnior onde julgamento contextual importa."
+  }
+ ],
+ "quick": [
+  {
+   "key": "arxiv:2611.34576",
+   "title": "Procedure Inference as Memory",
+   "original_title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+   "url": "https://arxiv.org/abs/2611.34576",
+   "venue": "arXiv (cs.AI, cs.HC)",
+   "date": "2026-11-25",
+   "authors": [
+    "Praveen Kumar Bodigutla",
+    "Yizhi Zhang",
+    "Sai Vivek Kanaparthy",
+    "Arup De"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "arxiv",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "bench",
+    "w": "Sistema de memória para recrutadores, F1 reportado, avaliação própria"
+   },
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "note": "Memória episódica OKF e Procedure Memory aprendem procedimentos de recrutadores entre sessões, prometendo assistentes de contratação que mantêm preferências e decisões consistentes."
+  },
+  {
+   "key": "doi:10.46550/4ppa0a40",
+   "title": "Qualificador Ocupacional e Descritivos Funcionais",
+   "original_title": "QUALIFICADOR OCUPACIONAL E DESCRITIVO FUNCIONAL NAS EMPRESAS ANGOLANAS: METODOLOGIA DE CONSTRUÇÃO, ALINHAMENTO ESTRATÉGICO E INTEGRAÇÃO COM O RECRUTAMENTO, A AVALIAÇÃO DE DESEMPENHO, A FORMAÇÃO, A REMUNERAÇÃO E A GESTÃO DE CARREIRAS",
+   "url": "https://doi.org/10.46550/4ppa0a40",
+   "venue": "Missioneira",
+   "date": "2026-11-25",
+   "authors": [
+    "Zacarias Samba dos Santos"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "quali",
+    "w": "Metodologia documental aplicada a descritivos e qualificador ocupacional"
+   },
+   "score": 6,
+   "theme": "learning",
+   "region": "",
+   "note": "Qualificador ocupacional e descritivos funcionais precisam virar base técnica de recrutamento, avaliação, formação, remuneração e carreira, não documento arquivado."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.30419",
+   "title": "TamperCert: Detecting Text Tampering in Degree Certificates",
+   "original_title": "TamperCert: A Benchmark for Detecting Text Tampering in Degree Certificates",
+   "url": "https://doi.org/10.48550/arxiv.2611.30419",
+   "venue": "arXiv",
+   "date": "2026-11-23",
+   "authors": [
+    "ChiFung Kwan",
+    "Kangzhong Wang",
+    "Youqian Zhang",
+    "Weijie Chen",
+    "Jiaqi Gao",
+    "永坚 吴",
+    "Eugene Yujun Fu",
+    "Qingqing Ye",
+    "Haibo Hu"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 7,
+    "e": "bench",
+    "w": "Benchmark com 400 certificados reais e 13 detectores avaliados"
+   },
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "note": "TamperCert cria benchmark para detectar adulteração textual em diplomas, tema crítico para triagem de credenciais e prevenção de fraudes na contratação."
+  }
+ ]
+}

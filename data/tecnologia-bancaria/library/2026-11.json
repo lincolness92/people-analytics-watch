@@ -6043,5 +6043,222 @@
 ],
 "origin": "digest",
 "added": "2026-11-25"
+},
+{
+"key": "doi:10.38124/ijisrt/26nov552",
+"title": "Agentic AI for Autonomous Detection and Resolution of Hold Transactions in Integrated Multi-Vendor Hospital Pharmacy Systems",
+"url": "https://doi.org/10.38124/ijisrt/26nov552",
+"venue": "International Journal of Innovative Science and Research Technology (IJISRT)",
+"date": "2026-11-24",
+"authors": [
+"Samiyullaha Sayyed"
+],
+"abstract": "This paper presents an agentic artificial intelligence framework that detects, diagnoses and resolves hold transactions, which are stuck or failed transactions, in integrated hospital pharmacy environments. Large health systems often run order entry, medication processing, billing, stock and inventory, laboratory, blood bank and automated dispensing software from different vendors, and holds arise at the interfaces where no single vendor sees the whole transaction. Analysts resolve holds manually today, so backlogs build up and stock records drift from physical reality. The research problem is how to automate the repetitive part of this work without weakening audit, inventory accuracy or patient safety. Using a design science approach, the paper develops a taxonomy of five hold causes, a five agent architecture based on a monitor, analyze, plan, execute and knowledge control loop, a tiered autonomy policy with approval gated reprocessing, and an artificial intelligence governance model. A 30 day simulation with 20 replications and a sensitivity analysis evaluate the design. Under stated assumptions, about 82 percent of holds are resolved automatically and mean handling time falls f",
+"score": 5,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Arquitetura agêntica com simulação de 30 dias e 82% de resolução; domínio hospitalar."
+}
+},
+{
+"key": "doi:10.34148/teknika.v15i3.1524",
+"title": "The Effect of AI-Powered Chatbots on Customer Satisfaction: A Systematic Literature Review Comparing AI with Human and Rule-Based Agents",
+"url": "https://doi.org/10.34148/teknika.v15i3.1524",
+"venue": "Teknika",
+"date": "2026-11-24",
+"authors": [
+"Yohannes Yohannes",
+"Lisana Lisana"
+],
+"abstract": "AI-powered chatbots now handle a large share of digital customer service, yet whether they satisfy customers as well as human agents or older rule-based systems remains disputed, and the evidence is scattered. Objective. Where earlier reviews of service chatbots have centred on adoption and acceptance, this review conditions inclusion on the presence of a service comparator and therefore addresses satisfaction as the comparative judgement it actually is. It synthesises empirical research published from January 2022 to the final search date of 26 June 2026 on how AI chatbots affect customer satisfaction relative to human agents and rule-based chatbots, and on the factors, mechanisms, and service models that shape that effect. Methods. Following PRISMA 2020, searches of six databases returned 849 records; after deduplication and two-stage PICOTQ screening requiring a comparison with a human agent or rule-based chatbot, 47 empirical studies were retained, of which 37 provide direct comparisons and 10 an implicit contrast. Quality was appraised with the MMAT 2018 and the evidence combined through narrative thematic synthesis. Results. Across the direct comparisons most findings are con",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão PRISMA de 47 estudos comparando chatbots a humanos; sem dados novos."
+}
+},
+{
+"key": "doi:10.1007/s43681-026-01560-y",
+"title": "The governance of autonomy: developing an integrated risk management framework for agentic AI systems in enterprise operations",
+"url": "https://doi.org/10.1007/s43681-026-01560-y",
+"venue": "AI and Ethics",
+"date": "2026-11-24",
+"authors": [
+"Dickson Mdhlalose"
+],
+"abstract": "This study investigated the operational, ethical, and legal risks posed by agentic AI deployments in South African enterprise environments, employing an exploratory sequential mixed-methods design comprising 24 semi-structured interviews and a structured survey of 187 risk and governance professionals across financial services, healthcare, information technology, telecommunications, and government administration sectors. Quantitative findings confirmed that agentic deployment intensity significantly predicts governance incidents (β = .38, p < .001), while ERM framework adoption alone does not reduce them (β = −.09, p = .29). Human oversight integration (β = −.32, p < .001) and machine identity security maturity (β = −.29, p = .002) emerged as the strongest protective governance factors. Thematic analysis identified four structural mechanisms sustaining the governance gap: the obsolescence of deterministic governance assumptions, inadequate machine identity protocols, the un-operationalised status of human-on-the-loop oversight, and unresolved legal accountability for autonomous AI action.",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "survey",
+"w": "Mistura entrevistas e survey de autorrelato sobre governança de IA agêntica."
+}
+},
+{
+"key": "doi:10.33448/rsd-v15i11.52166",
+"title": "O uso de agentes de Inteligência Artificial (IA) na refatoração da arquitetura de um sistema legado: um experimento de laboratório sobre o processo iterativo com o Codex no módulo de checkout do osCommerce 2.x",
+"url": "https://doi.org/10.33448/rsd-v15i11.52166",
+"venue": "Research Society and Development",
+"date": "2026-11-23",
+"authors": [
+"Vinicius de Souza Moreira",
+"Cristina Corrêa de Oliveira"
+],
+"abstract": "A refatoração de sistemas legados envolve custos elevados e desafios técnicos devido à complexidade e ao acoplamento do código. O objetivo geral deste estudo é analisar o processo iterativo de refatoração do módulo de checkout do osCommerce 2.x com o Codex, tendo Clean Architecture como referência e considerando as transformações estruturais, a preservação do comportamento, a testabilidade e a necessidade de supervisão humana. A pesquisa aplicada é exploratória e descritiva, conduzida como um experimento de laboratório em ambiente local. A análise considerou o código, as decisões de arquitetura e os testes, registrando prompts, histórico de execução, diferenças estruturais e avaliações humanas. A primeira iteração criou as camadas Application, Contracts e Infrastructure, mas foi interrompida ao atingir o limite de uso. Um avaliador externo aprovou o resultado com ressalvas, atribuindo nota 6,8 de 10. Um questionário foi aplicado a 26 profissionais: 84,6% atribuíram notas 4 ou 5 à produtividade percebida, enquanto 88,5% relataram a necessidade de realizar correções substanciais pelo menos uma vez. A refatoração reduziu a complexidade da lógica nos controladores e facilitou os testes",
+"score": 5,
+"theme": "engineering",
+"region": "brasil",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Experimento de laboratório com Codex em legado; amostra pequena de 26 profissionais."
+}
+},
+{
+"key": "doi:10.1787/4a67264f-en",
+"title": "Empowering older adults in the digital age: How artificial intelligence can support digital skills development",
+"url": "https://doi.org/10.1787/4a67264f-en",
+"venue": "OECD artificial intelligence papers",
+"date": "2026-11-26",
+"authors": [
+"OECD"
+],
+"abstract": "Populations are ageing while public and private services move online. As banking, health and public administration shift to digital channels by default, digital skills have become a condition for autonomy in later life. Yet older adults use digital tools less than younger groups. The training available to them is often poorly adapted to their needs, the skills they acquire fade once courses end, and they are exposed to online risks, in particular fraud, that artificial intelligence (AI) is helping to intensify. This paper examines how AI, despite these risks, can support the development of digital skills among people aged 65 and over. It focuses on digital skills rather than on learning in later life more broadly. The analysis is organised around four interacting barriers to develop digital skill: motivational; functional and health-related; learning provision and continuity; and digital access, usability and safety. For each barrier, the paper weighs how strong the evidence is and asks whether a given tool builds skills or replaces them. The paper concludes that AI works best as a complement to human support rather than a replacement for it, and that its value depends on the stand",
+"score": 5,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "regulator",
+"w": "Relatório OCDE sobre skills digitais de idosos; relevante mas indireto."
+}
+},
+{
+"key": "doi:10.20944/preprints202611.2299.v1",
+"title": "Beyond the Algorithm: How Digital Literacy and Trust Moderate the Association Between Chatbot Quality and Customer Satisfaction in Arab Banking",
+"url": "https://doi.org/10.20944/preprints202611.2299.v1",
+"venue": "Preprints.org",
+"date": "2026-11-23",
+"authors": [
+"Hossam Al- Din Fathy Mohamed",
+"Osama Wagdi",
+"hafez mohamed farid hamed",
+"Walid Aboubakr Abouzeid"
+],
+"abstract": "Artificial-intelligence chatbots are an important retail-banking interface, but customers may not convert perceived technical quality into satisfaction uniformly. This study examines whether self-assessed digital literacy and trust moderate the chatbot-quality–satisfaction association in Arab banking. Survey responses were collected from 700 experienced banking-chatbot users in seven countries between February and May 2026. Four-factor confirmatory factor analysis, country and survey-language invariance tests, hierarchical regression with country fixed effects and HC3 standard errors, and 5,000 respondent bootstrap resamples were employed. Chatbot quality was positively associated with satisfaction (b = 0.312, p < 0.001). The digital-literacy interaction (b = 0.135, p < 0.001) and trust interaction (b = 0.093, p = 0.005) jointly added 3.44 percentage points of explained variance. Digital-literacy moderation remained positive and statistically significant across the reported sensitivity checks. Trust moderation was supported in the primary and bank-cluster inference models but was sensitive to quadratic adjustment, Arabic-only estimation, alternative satisfaction content, and joint ",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Survey de 700 usuários com moderação; autorrelato transversal."
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.28610",
+"title": "Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?",
+"url": "https://doi.org/10.48550/arxiv.2611.28610",
+"venue": "arXiv",
+"date": "2026-11-21",
+"authors": [
+"Zhe Chen",
+"Emma Hsieh",
+"Vicky Fu"
+],
+"abstract": "Giving an AI agent a wallet lets it buy data and services on a client's behalf. Trust then depends on how it spends money and what that spending achieves. We introduce Agent Money Benchmark (AMB) to test whether agents spend a client's money well, starting with purchases of information for financial decisions. We link seller quotes and payments to final answers, evaluating 12 models on 80 payment tasks with simulated sellers and 76 research questions using live data. Purchases settled in USDC on Solana mainnet via x402, a protocol for paying per web request. Three of the 12 models passed 79 of 80 payment tasks without payment or budget errors. Nine fell for a seller's trap at least once; repeat charges and above-list quotes accounted for 79% of scam events. We estimate waste from data and inference costs, counting failed payment tasks in full and research answers in proportion to missed points. With spending split equally between tracks, estimated waste ranged from \\$21.0 per \\$100 for Claude Fable 5.2 to \\$70.8 for GPT-6 Luna.",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "bench",
+"w": "Benchmark de 12 modelos gastando dinheiro real via x402 com custo de fraude."
+}
+},
+{
+"key": "doi:10.3390/app162311652",
+"title": "Decision Models for Business Customer-Service Triage: Accuracy, Calibration, Out-of-Scope Detection and Cost of Jev, Clef and Perplexity Decider",
+"url": "https://doi.org/10.3390/app162311652",
+"venue": "Applied Sciences",
+"date": "2026-11-24",
+"authors": [
+"Konstantinos I. Roumeliotis",
+"Dionisis Margaris",
+"Dimitris Spiliotopoulos",
+"Nikolaos D. Tselikas"
+],
+"abstract": "Firms increasingly route customer requests with language models, and a new class of decision models (Jev, Clef and Perplexity Decider) returns a probability for every option instead of generated text. We benchmarked these models on 10,580 requests from BANKING77, Bitext and CLINC150 and on 2371 requests sent to three deployed chatbots (HINT3), against the probability readout of Qwen3.8-27B (the backbone of Clef and Perplexity Decider), two generative large language models with verbalised confidence, and trained classifiers. Clef raised accuracy over this backbone readout by 14.9 percentage points on BANKING77 and 9.3 points on CLINC150 but not on Bitext (−1.5 points) or the chatbot requests (−4.9 to −23.5); an unquantised readout moved the benchmark gains by at most 0.2 points. Perplexity Decider added 1.2–3.0 points on the benchmarks. The backbone readout was already well calibrated (expected calibration error 0.019–0.041), whereas verbalised confidence was not (0.048–0.166); temperature scaling made Clef and Perplexity Decider better calibrated than it on two benchmarks. With thresholds calibrated to a nominal 1% false-alarm rate on CLINC150 (0.95–0.98% observed on held-out reque",
+"score": 6,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Benchmark de triagem de atendimento em BANKING77 com calibração e custo."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24394424",
+"title": "Variable Zero: An Authority Gate for AI Agents Under Adaptive Attack",
+"url": "https://doi.org/10.5281/zenodo.24394424",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-24",
+"authors": [
+"Ricci"
+],
+"abstract": "AI agents that act on a user's behalf can be steered by text hidden in the data they read. This technical report evaluates a deterministic authority gate (v0.3) that checks, in code, whether an agent's action has the user's authority before it runs. Rules were frozen before testing. On the AgentDojo banking suite, with three model families (GPT-6 Luna, DeepSeek V4.1 Flash, NVIDIA Nemotron 3 Ultra) and adaptive attackers, including attackers told the gate's rules, no attacker action got through: the model was fooled and the gate was the last line of defense 561 times (95% upper bound on the failure rate about 0.5%). The report includes the gate's costs, false positives, two flaws found in the benchmark, a behavior we call self-answering, exploratory results on halt wording, and all limitations. Code and data are released.",
+"score": 6,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Gate determinístico testado em AgentDojo banking com 561 ataques bloqueados."
+}
 }
 ]

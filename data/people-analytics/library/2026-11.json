@@ -14072,5 +14072,129 @@
 "watch": [],
 "origin": "digest",
 "added": "2026-11-25"
+},
+{
+"key": "arxiv:2611.34099",
+"title": "Will AI Replace Juniors? How Task Complexity Reduces Automation Risk",
+"url": "https://arxiv.org/abs/2611.34099",
+"venue": "arXiv (econ.GN, cs.AI)",
+"date": "2026-11-25",
+"authors": [
+"Vincent Rost",
+"Fabian Stephany"
+],
+"abstract": "How does task complexity shape firms' willingness to substitute entry-level labour with artificial intelligence (AI) tools? We study this question using a pre-registered survey experiment with managers from 1,435 German firms in the information economy and manufacturing industry. Managers are randomly assigned to consider a long lasting need for additional capacity involving either well-structured and standardised tasks, or more complex tasks that require professional judgement, contextual knowledge and independent problem-solving. Relative to standardised tasks, complex tasks reduce willingness to use AI rather than hire an entry-level employee by 0.54 points on a five-point scale and increase the importance attached to human oversight by 0.15 points. Further, pre-treatment responses indicate that managers expect the availability of AI applications to reduce hiring of both entry-level employees and experienced workers, but significantly more strongly for entry-level workers.",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 8,
+"e": "rct",
+"w": "Experimento pré-registrado com 1.435 gestores, efeito numérico claro"
+}
+},
+{
+"key": "arxiv:2611.34576",
+"title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+"url": "https://arxiv.org/abs/2611.34576",
+"venue": "arXiv (cs.AI, cs.HC)",
+"date": "2026-11-25",
+"authors": [
+"Praveen Kumar Bodigutla",
+"Yizhi Zhang",
+"Sai Vivek Kanaparthy",
+"Arup De"
+],
+"abstract": "Multi-session hiring assistants must infer evolving recruiter preferences and decision patterns across projects and time. We introduce Open Knowledge Format (OKF)-indexed episodic memory to organize interactions and retrieve related events through their lineage. We also introduce Procedure Memory, which learns reusable decision procedures from these episodes through prompted reflection or reinforcement learning. We compare these approaches with no memory, full-history context, and conversation search, and evaluate Jev-class models for index navigation and GPT-5.6 Luna as a lower-cost alternative to GPT-5.4. In our evaluation, OKF-indexed retrieval achieves low-priority preference F1 scores of 0.93-0.95 at medium and high preference overlap between hiring projects. It significantly outperforms full-history context and conversation search in both settings, and no memory at high overlap, while using 69% fewer context tokens than full history. Procedure Memory reduces conversational turns by up to 39% relative to no memory. Qualitative and long-horizon evaluations provide evidence of temporal reasoning, with RL-learned procedures achieving 60% on both correct abstention and exact-field",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Sistema de memória para recrutadores, F1 reportado, avaliação própria"
+}
+},
+{
+"key": "doi:10.46550/4ppa0a40",
+"title": "QUALIFICADOR OCUPACIONAL E DESCRITIVO FUNCIONAL NAS EMPRESAS ANGOLANAS: METODOLOGIA DE CONSTRUÇÃO, ALINHAMENTO ESTRATÉGICO E INTEGRAÇÃO COM O RECRUTAMENTO, A AVALIAÇÃO DE DESEMPENHO, A FORMAÇÃO, A REMUNERAÇÃO E A GESTÃO DE CARREIRAS",
+"url": "https://doi.org/10.46550/4ppa0a40",
+"venue": "Missioneira",
+"date": "2026-11-25",
+"authors": [
+"Zacarias Samba dos Santos"
+],
+"abstract": "Em muitas empresas angolanas, o Qualificador Ocupacional e os Descritivos Funcionais são elaborados para cumprir uma obrigação administrativa e permanecem arquivados, sem influência real nas decisões de recrutamento, avaliação, formação, remuneração ou carreira. Este artigo responde à questão de saber como construir um Qualificador Ocupacional e Descritivos Funcionais que deixem de ser documentos meramente administrativos e passem a constituir a base técnica dos principais processos de gestão de recursos humanos. O estudo, de natureza qualitativa e técnico-aplicada, combina a revisão da literatura sobre análise de funções, modelação de competências e gestão estratégica de pessoas com a análise documental da legislação angolana em vigor em 2026, nomeadamente a Lei Geral do Trabalho (Lei n.º 12/23), o Decreto Presidencial n.º 96/22, que aprova as instruções para a elaboração e aplicação do Qualificador Ocupacional, a Classificação de Profissões de Angola, o Catálogo de Profissões do Sector dos Recursos Minerais, Petróleo e Gás e o regime do Sistema Nacional de Qualificações. Propõe-se uma metodologia em sete fases, da preparação à revisão, um modelo de Descritivo Funcional com quinze",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "quali",
+"w": "Metodologia documental aplicada a descritivos e qualificador ocupacional"
+}
+},
+{
+"key": "doi:10.56346/h239q055",
+"title": "ADOPTION OF THE HUMAN RESOURCE BUSINESS PARTNER MODEL IN AFRICA: A SYSTEMATIC REVIEW OF PROGRESS, DRIVERS, BARRIERS, AND FUTURE DIRECTIONS",
+"url": "https://doi.org/10.56346/h239q055",
+"venue": "International Journal Semiarid",
+"date": "2026-11-23",
+"authors": [
+"Emmanuel Kwenga Sichilongo"
+],
+"abstract": "The Human Resource Business Partner (HRBP) model has become one of the most influential developments in human resource management since its introduction by David Ulrich in the 1990s. The model redefined the role of Human Resource (HR) professionals from administrative personnel managers to strategic partners contributing directly to organizational performance. While the HRBP model has been widely adopted in North America, Europe, and parts of Asia, evidence suggests that its adoption across African organizations remains uneven. This systematic review synthesizes existing literature on the extent to which HR practitioners in Africa are transitioning from traditional personnel administration to the HRBP model. Following PRISMA guidelines, studies published between 2005 and 2025 were systematically reviewed from peer-reviewed databases. The findings reveal that although awareness and acceptance of the HRBP concept have increased significantly across Africa, actual implementation remains at varying levels across sectors and countries. Key drivers include digital transformation, organizational restructuring, globalization, and executive expectations for strategic HR contributions. Major",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA sobre adoção do modelo HRBP na África"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.30419",
+"title": "TamperCert: A Benchmark for Detecting Text Tampering in Degree Certificates",
+"url": "https://doi.org/10.48550/arxiv.2611.30419",
+"venue": "arXiv",
+"date": "2026-11-23",
+"authors": [
+"ChiFung Kwan",
+"Kangzhong Wang",
+"Youqian Zhang",
+"Weijie Chen",
+"Jiaqi Gao",
+"永坚 吴"
+],
+"abstract": "Degree certificates play a critical role in high-stakes decisions such as university admission, immigration, and hiring. The issuing institution vouches for the holder, so a forged certificate may let its bearer pass these checks. Degree certificate forgery is increasingly prevalent. Yet, many assume that it is easy to spot. Reported cases show otherwise: in 2024, the business school of the University of Hong Kong found that about 30 master's students had enrolled with forged academic credentials. Few studies have looked at how to detect forged degree certificates, partly because public benchmarks are scarce. We present TamperCert, a benchmark built from 400 real degree certificates issued by 38 universities. Each certificate was subjected to 11 publicly available tampering methods to alter the holder's name and further processed with four additional post-processing techniques, resulting in over 20,000 forged images. We evaluate 13 detectors, a commercial multimodal large language model (MLLM), and detectors trained on TamperCert.Our findings reveal that no detector is reliable for every tampering method. Consequently, a determined forger may still evade detection. Moreover, the co",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "bench",
+"w": "Benchmark com 400 certificados reais e 13 detectores avaliados"
+}
 }
 ]
