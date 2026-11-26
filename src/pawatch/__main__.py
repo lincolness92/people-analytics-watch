@@ -8,7 +8,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import ROOT, trace
+from . import ROOT, trace, voicetrace
 from .bundle import bundle
 from .collect import collect, norm_title
 from .http import post_json
@@ -114,6 +114,8 @@ def cmd_run(args):
                 update_regulation(topic)
         except Exception as e:  # noqa: BLE001
             log(f"[{topic.slug}] regulação falhou: {e!r}")
+    if os.environ.get("ELEVENLABS_API_KEY") and os.environ.get("ELEVENLABS_AGENT_ID"):
+        log(f"voz: {voicetrace.sync(log=log)}")  # the voice agent's conversations, as traces
     log(f"render: {render_all()}")
     failed = [s for s, ok in results.items() if not ok]
     if failed:
@@ -153,6 +155,12 @@ def cmd_traces(args):
             spans = sum(len(r["spans"]) for r in runs)
             cost = sum(s["attrs"].get("llm.cost.total") or 0 for r in runs for s in r["spans"])
             log(f"{f.name}: {len(runs)} execução(ões), {spans} spans, US$ {cost:.4f}")
+    return 0
+
+
+def cmd_voice(_args):
+    """Pull the voice agent's finished conversations from ElevenLabs into data/traces/ (and the OTLP backend)."""
+    log(f"voz: {voicetrace.sync(log=log)}")
     return 0
 
 
@@ -335,6 +343,8 @@ def main():
     tr.add_argument("--export", action="store_true", help="envia ao OTEL_EXPORTER_OTLP_TRACES_ENDPOINT configurado")
     tr.add_argument("--since", help="YYYY-MM-DD")
     tr.set_defaults(fn=cmd_traces)
+    vz = sub.add_parser("voz", help="conversas do agente de voz (ElevenLabs) → data/traces/<data>-voz.jsonl.gz e backend OTLP")
+    vz.set_defaults(fn=cmd_voice)
     tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
     tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
     tk.set_defaults(fn=cmd_api_token)
