@@ -1,6 +1,7 @@
 # Roadmap
 
-Próximos passos combinados (17/11/2026). A ordem é a sugerida; nada aqui está feito ainda.
+Próximos passos combinados (atualizado em 26/11/2026). Os itens com ✅ estão feitos; o bloco "Próximos" no fim de
+"Feito em 25–26/11" é a fila atual.
 
 ## 1. Febraban Tech pelo YouTube (tema fraude bancária)
 - Acompanhar o que rolou na Febraban Tech a partir do canal oficial no YouTube.
@@ -58,12 +59,15 @@ traces do pipeline em Python (triagem, redação) com o mesmo formato.
   âncoras, 1200 caracteres): precisão do digest 0,34 → 0,71.
 - ✅ Traces do pipeline (data/traces/ + OTLP), além dos do agente.
 - ✅ Site, leva 1: navegação de app, Início, cartões v2, busca global, Pergunte v2, Sobre.
-- ✅ Voz: microfone em todos os campos (Whisper via HF); "Ouvir" pronto para a ElevenLabs.
+- ✅ Voz: microfone em todos os campos (Whisper via HF); "Ouvir" e conversa por voz com um agente da ElevenLabs
+  no Pergunte; conversas viram traces (`pawatch voz`).
 - ✅ Mapas de fontes: FEBRABAN (74 itens, `docs/sources/febraban.*`) e associações bancárias do mundo (121 organizações,
   659 publicações, 319 com RSS ou sitemap; `docs/sources/associacoes-bancarias.*`). Falta decidir como consumir.
 - ✅ Peça o seu Watch: pedido no site → issue → rotina do Claude (rascunho, revisão Fable, coleta, PR) → revisão humana.
-  Falta o `GITHUB_TOKEN` no Pages para ligar a criação automática.
-- ⏳ Redesenho do site: duas direções com o Fable e duas com o Opus, para escolher.
+  Primeiro teste de ponta a ponta: issue #1 → PR #2 (Credit Risk AI Watch), aguardando revisão. Falta o
+  `GITHUB_TOKEN` no Pages para o formulário do site abrir a issue sozinho.
+- ✅ Redesenho do site: quatro direções (Carta, Carteira, Sinal, Grifo) no ar em `/<tema>/designs/`; a Carta é o
+  padrão, com três peles (papel, grafite, oceano); o site clássico e as outras ficam a um clique (`?design=`).
 - Próximos: consumir as fontes mapeadas (prioridade alta primeiro); site leva 2 (sparklines, radar, páginas de
   técnica e de paper); onboarding canônico pré-computado; código e dados por método; validar ligação repo↔paper.
 
