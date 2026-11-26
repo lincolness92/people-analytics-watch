@@ -56,12 +56,14 @@ A inovação em 2026 continua concentrada na academia: de 600 trabalhos mapeados
 | algorithmic management / workplace surveillance | 578 | 1520* | +163% |
 | generative AI / large language model | 358 | 854* | +139% |
 | people analytics / HR analytics | 928 | 1759* | +90% |
+| personnel selection / machine learning | 5076 | 8017* | +58% |
 | management practices | 121 | 180* | +49% |
 | organizational network analysis / workplace collaboration | 64 | 93* | +45% |
 | performance management / performance appraisal | 2716 | 3866* | +42% |
 | skills-based hiring / skills taxonomy | 2835 | 4006* | +41% |
 | human resource management / strategic HRM | 10554 | 14359* | +36% |
 | talent management / talent acquisition | 3062 | 4044* | +32% |
+| diversity, equity / workplace inclusion | 916 | 1140* | +24% |
 | pay equity / gender pay gap | 1129 | 1389* | +23% |
 | gestão de pessoas / recursos humanos | 1960 | 2412* | +23% |
 | employee engagement / employee well-being | 35949 | 43335* | +21% |

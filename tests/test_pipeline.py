@@ -283,6 +283,22 @@ class AnnualTests(unittest.TestCase):
         self.assertEqual([x["archive"] for x in g], [1, 2, 0])
         self.assertEqual(g[0]["examples"][0]["title"], "mule herders")
 
+    def test_failed_searches_keep_previous_numbers(self):
+        from pawatch.annual import keep_failed
+        prev = {"growth": [{"query": "a", "change": 1.0}, {"query": "b", "change": 0.5}, {"query": "c", "change": 0.1}, {"query": "d", "change": 0.2}], "tag": "prev"}
+        mk = lambda failed, growth: {"growth": growth, "stats": {"failed_searches": failed, "searches": 4}, "tag": "new"}
+        out, note = keep_failed(mk(["b"], [{"query": "a", "change": 2.0, "archive": 3, "examples": []}] +
+                                   [{"query": q, "change": 0.0, "archive": 0, "examples": []} for q in "cd"]), prev)
+        self.assertEqual(out["tag"], "new")
+        self.assertEqual([g["query"] for g in out["growth"]], ["a", "b", "c", "d"])
+        self.assertTrue(out["growth"][1]["stale"])
+        out, note = keep_failed(mk(["b", "c"], [{"query": "a", "change": 2.0, "archive": 3, "examples": [{"title": "x"}]}]), prev)
+        self.assertEqual(out["tag"], "prev")
+        self.assertEqual(out["growth"][0]["archive"], 3)
+        self.assertIn("mantida", note)
+        out, _ = keep_failed(mk([], [{"query": "a"}]), prev)
+        self.assertEqual(out["tag"], "new")
+
     def test_clean_prose(self):
         from pawatch.annual import clean_prose
         self.assertEqual(clean_prose("Quatro destaques em pay_careers (i=19, i=131) e ai_work (i=2).", PA.themes),

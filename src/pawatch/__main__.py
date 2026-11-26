@@ -255,6 +255,11 @@ def run_annual(topic, year):
         from .library import add as add_to_library
         log(f"[{topic.slug}] biblioteca: +{add_to_library(topic, *lib, origin=f'anual {year}')} papers da retrospectiva")
     out = topic.data / "annual" / f"{year}.json"
+    from .annual import keep_failed
+    prev = json.loads(out.read_text(encoding="utf-8")) if out.exists() else None
+    d, note = keep_failed(d, prev)
+    if note:
+        log(f"[{topic.slug}] retrospectiva {year}: {note}")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"[{topic.slug}] retrospectiva {year}: {d['stats']['highlights']} destaques, {len(d['trends'])} tendências; "

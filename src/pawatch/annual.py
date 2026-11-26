@@ -57,6 +57,7 @@ class Annual:
         self.topic, self.year, self.log = topic, year, log
         self.today = today or date.today()
         self.calls, self.cost = 0, 0.0
+        self.failed = []  # searches that errored (e.g. OpenAlex daily budget): the caller keeps their previous numbers
 
     def _get(self, params):
         data = get_json(OPENALEX, params)
@@ -81,6 +82,7 @@ class Annual:
                 works = self.top(f"title_and_abstract.search:{q}", per_query)
             except RuntimeError as e:
                 self.log(f"anual: busca falhou ({q[:40]}…): {str(e)[:100]}")
+                self.failed.append(q)
                 continue
             growth.append({"label": _label(q), "query": q, "prev": prev, "cur": cur})
             raw += [(w, "busca", q) for w in works]
@@ -240,8 +242,29 @@ def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150, p
         "geography": geo,
         "_library": (pool, scores),  # popped by the caller: triaged papers go to the topic library
         "stats": {"works": len(cands), "triaged": len(scores), "highlights": len(highlights),
+                  "searches": len(growth) + len(a.failed), "failed_searches": a.failed,
                   "openalex_calls": a.calls, "openalex_cost": round(a.cost, 4), "tokens": llm.usage},
     }
+
+
+def keep_failed(new, prev, max_failed=0.25):
+    """Searches that failed this run must not vanish from the review. Returns (review to write, note):
+    with few failures the previous numbers of those searches are carried over (marked stale); with many,
+    the previous review is kept as it is (None when there is none, then the new one is written anyway)."""
+    failed = new["stats"].get("failed_searches") or []
+    if not failed:
+        return new, ""
+    total = new["stats"].get("searches") or len(new["growth"]) + len(failed)
+    if prev and len(failed) / max(1, total) > max_failed:
+        cov = {g["query"]: g for g in new["growth"]}  # the coverage of the searches that did run is still news
+        for g in prev.get("growth", []):
+            if g.get("query") in cov:
+                g["archive"], g["examples"] = cov[g["query"]]["archive"], cov[g["query"]]["examples"]
+        return prev, f"{len(failed)}/{total} buscas falharam: mantida a retrospectiva anterior (com a cobertura nova)"
+    old = {g["query"]: g for g in (prev or {}).get("growth", []) if g.get("query")}
+    carried = [dict(old[q], stale=True) for q in failed if q in old]
+    new["growth"] = sorted(new["growth"] + carried, key=lambda g: (g.get("change") is None, -(g.get("change") or 0)))
+    return new, f"{len(failed)} busca(s) falharam: {len(carried)} subtema(s) com os números da retrospectiva anterior"
 
 
 def latest_by_year(topic):

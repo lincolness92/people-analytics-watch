@@ -533,6 +533,15 @@
    "change": 0.9
   },
   {
+   "label": "personnel selection / machine learning",
+   "query": "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
+   "prev": 5076,
+   "cur": 7047,
+   "cur_full_year": 8017,
+   "change": 0.58,
+   "stale": true
+  },
+  {
    "label": "management practices",
    "query": "\"management practices\" AND (productivity OR firms) AND workers",
    "prev": 121,
@@ -693,6 +702,15 @@
    ],
    "cur_full_year": 4044,
    "change": 0.32
+  },
+  {
+   "label": "diversity, equity / workplace inclusion",
+   "query": "(\"diversity, equity\" OR DEI OR \"workplace inclusion\" OR \"workplace discrimination\") AND (employees OR hiring OR workplace)",
+   "prev": 916,
+   "cur": 1002,
+   "cur_full_year": 1140,
+   "change": 0.24,
+   "stale": true
   },
   {
    "label": "pay equity / gender pay gap",
@@ -1052,6 +1070,11 @@
    "cost_usd": 0.018615,
    "calls": 6,
    "failures": 0
-  }
+  },
+  "failed_searches": [
+   "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
+   "(\"diversity, equity\" OR DEI OR \"workplace inclusion\" OR \"workplace discrimination\") AND (employees OR hiring OR workplace)"
+  ],
+  "searches": 16
  }
 }
