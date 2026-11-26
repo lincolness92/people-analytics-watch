@@ -11,7 +11,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["web/**", "topics/**", "functions/**", "src/pawatch/render.py", ".github/workflows/daily.yml"]
+    paths: ["web/**", "topics/**", "functions/**", "server/**", "src/pawatch/render.py", ".github/workflows/daily.yml"]
 
 permissions:
   contents: write
