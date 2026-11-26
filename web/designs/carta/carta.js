@@ -386,7 +386,97 @@
     };
   }
 
-  const MODEL = { MES, dt, fmtD, fmtDY, fmtDM, fmtN, days, pct, addDays, todayIso, stripMark, sentences, whyOf, allItems, triage, digestsWithTrend, headlineOf, annualPair, untilOf, buildSeries, subName, termsOf, subStatus, matcher, takeaways, datesIn, parseDeadlines, deadlines, regSorted, radarModel, RINGS, RR, BAND, pol, subtopicFile, sinceCounts, firstVisitDate, nMilestones, works, topicSummary, crossSignals, askExamples, model };
+  /* ---- search: same tokens and BM25 as web/app.js (and src/pawatch/searchindex.py) ---- */
+  const STOP = new Set(("a o os as um uma uns umas de da do das dos em no na nos nas por para pra com sem sobre entre e ou que " +
+    "qual quais quanto como onde quando porque se ser é são foi há ter tem mais menos muito muita isso isto esse essa este esta " +
+    "eu você vocês nós ele ela eles elas me te lhe meu minha seu sua the of and or to in on for with by from at as is are was be " +
+    "what which how why when does do did can could should would about into than that this these those it its an any some").split(" "));
+  const fold = (s) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const tokens = (text) => fold(text).split(/[^a-z0-9]+/).filter((t) => t.length > 2 && !STOP.has(t))
+    .map((t) => (t.length > 4 && t.endsWith("s") ? t.slice(0, -1) : t));
+  /* offline fallback (no search.json): the same documents, built from data.json — port of web/app.js localIndex */
+  function localIndex(data) {
+    const j = (...p) => p.map((x) => (x == null ? "" : String(x))).join(" ");
+    const th = data.themes || {}, docs = [];
+    for (const d of data.digests || []) {
+      for (const it of d.items || []) docs.push({ kind: it.origin === "fonte" ? "notícia ou relatório" : "paper", title: it.title, url: it.url, when: d.date, venue: it.venue,
+        text: j(it.title, it.original_title, it.summary, it.venue, (it.authors || []).join(" "), th[it.theme]) });
+      for (const q of d.quick || []) docs.push({ kind: q.origin === "fonte" ? "notícia ou relatório" : "paper", title: q.title, url: q.url, when: d.date, venue: q.venue,
+        text: j(q.title, q.original_title, q.note, q.venue) });
+      if (d.trend) docs.push({ kind: "tendência", title: `Tendência de ${d.date}`, url: null, when: d.date, text: d.trend });
+    }
+    const ev = data.evolution;
+    if (ev) {
+      for (const e of ev.eras || []) {
+        if (e.summary) docs.push({ kind: "fase da evolução", title: e.title, url: null, when: e.label || null, text: j(e.title, e.summary) });
+        for (const m of e.milestones || []) docs.push({ kind: "marco", title: m.title, url: m.url, when: String(m.year || ""), venue: m.venue, text: j(m.title, m.why, (m.authors || []).join(" "), th[m.theme]) });
+      }
+      if (ev.now && ev.now.summary) docs.push({ kind: "evolução", title: "Onde estamos agora", url: null, when: ev.generated, text: [ev.now.summary, ...(ev.now.open_questions || [])].join(" ") });
+    }
+    for (const [y, a] of Object.entries(data.annual || {})) {
+      const label = `retrospectiva ${y}${a.partial ? " (parcial)" : ""}`;
+      if (a.overview) docs.push({ kind: label, title: `Panorama de ${y}`, url: null, when: y, text: a.overview });
+      for (const t of a.trends || []) docs.push({ kind: label, title: t.title, url: null, when: y, text: `${t.title}. ${t.text}` });
+      for (const h of a.highlights || []) docs.push({ kind: `destaque de ${y}`, title: h.title, url: h.url, when: (h.date || y).slice(0, 10), venue: h.venue, text: j(h.title, h.original_title, h.why, h.venue, (h.authors || []).join(" "), th[h.theme]) });
+    }
+    const WK = { researchers: "pessoa de referência", historical: "pessoa de referência (histórica)", journals: "revista ou evento de referência", centers: "instituição de referência", practitioners: "praticante de referência" };
+    for (const [k, xs] of Object.entries(data.watchlist || {})) for (const w of Array.isArray(xs) ? xs : []) docs.push({ kind: WK[k] || "referência", title: w.name, url: w.url || null, when: null, text: j(w.name, w.institution, w.org, w.region, w.area, w.why) });
+    for (const g of data.regulation || []) docs.push({ kind: `norma · ${g.regulator}${g.revoked ? " (revogada)" : ""}`, title: g.title, url: g.url, when: g.date,
+      text: j(g.title, g.subject, g.summary, (g.requires || []).join(" "), g.applies_to, g.effective, (g.techniques || []).join(" "), g.status_note) });
+    const len = [], postings = {};
+    docs.forEach((d, i) => {
+      const toks = tokens(d.text); len.push(toks.length);
+      const tf = {}; for (const t of toks) tf[t] = (tf[t] || 0) + 1;
+      for (const [t, f] of Object.entries(tf)) (postings[t] || (postings[t] = [])).push(i, f);
+    });
+    return { n: docs.length, avgdl: docs.length ? len.reduce((s, x) => s + x, 0) / docs.length : 1, docs, len, postings };
+  }
+  function searchIndex(ix, q, keys) {
+    const weights = new Map();
+    for (const t of tokens(q)) weights.set(t, 1);
+    /* search as you type: the last, still incomplete word also matches longer terms that start with it */
+    const lastRaw = /\s$/.test(q) ? "" : (fold(q).match(/([a-z0-9]+)$/) || ["", ""])[1];
+    if (lastRaw.length >= 3) {
+      let n = 0;
+      for (const k of keys || Object.keys(ix.postings)) if (k !== lastRaw && k.startsWith(lastRaw) && !weights.has(k)) { weights.set(k, 0.7); if (++n >= 40) break; }
+    }
+    const scores = new Map();
+    for (const [t, w] of weights) {
+      const p = ix.postings[t]; if (!p) continue;
+      const df = p.length / 2, idf = Math.log(1 + (ix.n - df + 0.5) / (df + 0.5));
+      for (let j = 0; j < p.length; j += 2) { const i = p[j], f = p[j + 1]; scores.set(i, (scores.get(i) || 0) + w * idf * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * ix.len[i] / ix.avgdl))); }
+    }
+    return { terms: [...weights.keys()], hits: [...scores.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, 80).map(([i, s]) => ({ ...ix.docs[i], score: s })) };
+  }
+  const SEARCH_GROUPS = [["paper", "Papers"], ["news", "Notícias e relatórios"], ["marco", "Marcos da evolução"], ["norma", "Normas e regulação"],
+    ["pessoa", "Pessoas de referência"], ["inst", "Instituições, revistas e fontes"], ["codigo", "Código"], ["destaque", "Destaques do ano"],
+    ["anual", "Retrospectivas"], ["tend", "Tendências dos digests"], ["evo", "Evolução"]];
+  function kindGroup(k) {
+    k = k || "";
+    if (k === "paper" || k === "paper triado") return "paper";
+    if (k === "notícia ou relatório") return "news";
+    if (k === "marco") return "marco";
+    if (k.startsWith("norma")) return "norma";
+    if (k.startsWith("pessoa")) return "pessoa";
+    if (k.startsWith("código")) return "codigo";
+    if (/^(revista|instituição|praticante|referência)/.test(k)) return "inst";
+    if (k.startsWith("destaque")) return "destaque";
+    if (k.startsWith("retrospectiva")) return "anual";
+    if (k === "tendência") return "tend";
+    return "evo";
+  }
+  /* where a hit opens inside the Carta (external url first, like the current site) */
+  function docLink(doc) {
+    const g = kindGroup(doc.kind);
+    if (doc.url) return { href: doc.url, ext: true };
+    if (g === "tend" && doc.when) return { href: `#/novidades/${String(doc.when).slice(0, 10)}` };
+    if (g === "anual" || g === "destaque") return { href: `#/anual/${String(doc.when || "").slice(0, 4)}` };
+    if (g === "norma") return { href: `#/regulacao?q=${encodeURIComponent(doc.title || "")}` };
+    if (g === "pessoa" || g === "inst") return { href: "#/pessoas" };
+    return { href: "#/evolucao" };
+  }
+
+  const MODEL = { MES, dt, fmtD, fmtDY, fmtDM, fmtN, days, pct, addDays, todayIso, stripMark, sentences, whyOf, allItems, triage, digestsWithTrend, headlineOf, annualPair, untilOf, buildSeries, subName, termsOf, subStatus, matcher, takeaways, datesIn, parseDeadlines, deadlines, regSorted, radarModel, RINGS, RR, BAND, pol, subtopicFile, sinceCounts, firstVisitDate, nMilestones, works, topicSummary, crossSignals, askExamples, model, tokens, localIndex, searchIndex, kindGroup, docLink, SEARCH_GROUPS };
   if (typeof module !== "undefined" && module.exports) module.exports = MODEL;
   if (typeof document === "undefined") return;
 
@@ -422,6 +512,8 @@
   const route = () => { const h = location.hash.replace(/^#\/?/, ""); const i = h.indexOf("?"); const p = i >= 0 ? h.slice(0, i) : h; return { parts: p.split("/").filter(Boolean), q: new URLSearchParams(i >= 0 ? h.slice(i + 1) : "") }; };
 
   const app = $("#app"), sheet = $("#sheet"), tip = $("#tip");
+  const ROOT = document.documentElement.hasAttribute("data-carta-root");
+  let TOPICS = [];
   let DATA = null, M = null, TODAY = todayIso(), lastVisit = "", SLUG = "", TH = {}, cleanup = null, current = "";
   const ORIGIN = { arxiv: "arXiv", watchlist: "Watchlist", busca: "Busca", fonte: "Fonte", journal: "Journal" };
   const IC = {
@@ -439,7 +531,7 @@
     down: '<svg viewBox="0 0 11 9" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 2c4 0 5 5 9 5"/></svg>',
   };
   const NAV = [["inicio", "#/", "Início"], ["novidades", "#/novidades", "Novidades"], ["mapa", "#/mapa", "Mapa"], ["pergunte", "#/pergunte", "Pergunte"], ["mais", "", "Mais"]];
-  const plate = (cls, title, code, body, extra = "") => `<section class="plate ${cls}"><div class="lg"><h2>${title}</h2><span class="mono code">${extra || code}</span></div>${body}</section>`;
+  const plate = (cls, title, code, body, extra = "") => `<section class="plate ${cls}"><div class="lg"><h2>${title}</h2><span class="mono code${extra ? "" : " pc"}">${extra || code}</span></div>${body}</section>`;
   const stIcon = (k) => (k === "acel" || k === "alta" || k === "cresce" ? IC.up : k === "esfria" ? IC.down : IC.flat);
   const isNew = (iso) => iso > lastVisit;
   const askOn = () => DATA && !DATA.offline && /^https?:$/.test(location.protocol);
@@ -543,7 +635,7 @@
   function itemCard(i, open) {
     const tks = Array.from({ length: 10 }, (_, k) => `<i class="${k < i.s ? "on" : ""}"></i>`).join("");
     const tags = `<span class="tag">${esc(TH[i.th] || i.th)}</span>${i.wa.length && i.o === "watchlist" ? "" : i.o ? `<span class="tag soft">${esc(ORIGIN[i.o] || i.o)}</span>` : ""}${i.wa.length ? `<span class="tag fill">Watchlist · ${esc(i.wa[0])}</span>` : ""}${isNew(i.dg) ? '<span class="tag new">Novo</span>' : ""}`;
-    const meta = `${esc(i.v)}${i.d ? " · " + fmtD(i.d) : ""}${i.au.length ? " · " + esc(i.au[0]) + (i.au.length > 1 ? " et al." : "") : ""}`;
+    const meta = `${esc(i.v)}${i.d ? " · " + (i.dg ? fmtD(i.d) : fmtDY(i.d)) : ""}${i.au.length ? " · " + esc(i.au[0]) + (i.au.length > 1 ? " et al." : "") : ""}${i.cited != null ? ` · ${fmtN(i.cited)} citações` : ""}`;
     if (i.kind === "quick") return `<article class="it q"><div class="sc" aria-label="Nota ${i.s} de 10"><b>${i.s}</b><small>NOTA</small></div><div>
       <div class="tags">${tags}<span class="tag soft">Nota rápida</span></div><h3><a href="${esc(safeUrl(i.u))}" target="_blank" rel="noopener">${esc(i.t)}</a></h3>${i.why ? `<p class="why">${md(i.why)}</p>` : ""}<p class="meta">${meta}</p></div></article>`;
     return `<article class="it ${open ? "open" : ""}"><div class="sc" aria-label="Nota ${i.s} de 10"><b>${i.s}</b><div class="tks" aria-hidden="true">${tks}</div><small>DE 10</small></div><div>
@@ -603,7 +695,7 @@
   }
   function sounding(rows) {
     return rows.map((s) => `<li><button class="r" data-open="li" data-tip="${s.y24 != null ? `2024: ${fmtN(s.y24)} · ` : ""}2025: ${fmtN(s.y25)} · 2026 ${ytdLabel()}: ${fmtN(s.ytd)} · projeção: ${fmtN(s.y26)}">
-      <span class="n">${esc(s.name)}</span><span class="t st ${s.st.k}">${stIcon(s.st.k)}${s.st.l}</span><span class="s">${spark(s)}</span><span class="v">${pct(s.ch)}<small>${fmtN(s.y26)}/ANO</small></span></button>
+      <span class="n">${esc(s.name)}</span><span class="t st ${s.st.k}">${stIcon(s.st.k)}${s.st.l}</span><span class="s">${spark(s)}</span><span class="v">${pct(s.ch)}<small>${fmtN(s.y26)}/ano</small></span></button>
       <div class="x"><div class="xg"><div><b>${fmtN(s.y24)}</b><span>2024</span></div><div><b>${fmtN(s.y25)}</b><span>2025</span></div><div><b>${fmtN(s.ytd)}</b><span>${esc(ytdLabel())}</span></div><div><b>${fmtN(s.y26)}</b><span>proj. 2026</span></div></div>
       ${pace(s)}<a class="go" href="#/subtema/${s.i}">Abrir ficha</a></div></li>`).join("");
   }
@@ -669,7 +761,8 @@
   /* ---------- feed ---------- */
   const FS = { themes: new Set(), origins: new Set(), min: 6, kind: "todos", day: null };
   let FLOOR = 6;
-  function viewFeed() {
+  function viewFeed(day) {
+    if (day && M.triage.some((t) => t.d === day)) FS.day = day;
     const tri = M.triage, items = M.items, maxC = Math.max(1, ...tri.map((t) => t.c)), totC = tri.reduce((a, t) => a + t.c, 0);
     const nF = items.filter((i) => i.kind === "full").length, nQ = items.length - nF;
     const active = () => FS.themes.size + FS.origins.size + (FS.min > FLOOR ? 1 : 0) + (FS.kind !== "todos" ? 1 : 0);
@@ -729,7 +822,7 @@
     const month = M.annual.a && M.annual.a.generated ? `${MES[dt(M.annual.a.generated).getMonth()]} ${dt(M.annual.a.generated).getFullYear()}` : "";
     app.innerHTML = `<h1 class="pg">Mapa</h1><p class="sub">${foc ? `Os subtemas de ${esc(foc)}: ` : ""}o anel mostra o ritmo de crescimento, o quadrante mostra o volume anual. Toque num subtema para ler os números e abrir a ficha.</p>
       <div class="tech"><div>${sel ? plate("", `Radar${month ? " · " + month : ""}`, "", radarBlock(sel, true), '<span class="mono">Calculado</span>') : `<p class="empty">Este tema ainda não tem retrospectiva anual com subtemas.</p>`}</div>
-      <aside>${eras.length ? plate("", "Evolução do campo", "B2", `<ol class="tl">${eras.map((e) => { const ms = e.milestones || [], nn = ms.filter((m) => m.new).length; return `<li><span class="d">${esc(e.label)}</span><span class="dot"></span><span><b>${esc(e.title)}</b><span class="n">${ms.length} ${ms.length === 1 ? "marco" : "marcos"}${nn ? ` · <span style="color:var(--mag)">${nn} ${nn === 1 ? "novo" : "novos"}</span>` : ""}</span></span></li>`; }).join("")}</ol><p class="note">${M.nMilestones} marcos em ${eras.length} eras. <a href="../../#/evolucao">A linha do tempo completa está no site atual</a>.</p>`) : ""}</aside></div>`;
+      <aside>${eras.length ? plate("", "Evolução do campo", "B2", `<ol class="tl">${eras.map((e) => { const ms = e.milestones || [], nn = ms.filter((m) => m.new).length; return `<li><span class="d">${esc(e.label)}</span><span class="dot"></span><span><b>${esc(e.title)}</b><span class="n">${ms.length} ${ms.length === 1 ? "marco" : "marcos"}${nn ? ` · <span style="color:var(--mag)">${nn} ${nn === 1 ? "novo" : "novos"}</span>` : ""}</span></span></li>`; }).join("")}</ol><p class="note">${M.nMilestones} marcos em ${eras.length} eras.</p><a class="go" href="#/evolucao">Abrir a Evolução</a>`) : ""}</aside></div>`;
     if (sel) bindRadar(app, sel, true);
   }
 
@@ -930,33 +1023,225 @@
     });
   }
 
-  /* ---------- topics landing ---------- */
-  const topicHref = (slug) => (slug === SLUG ? "#/" : `../../../${encodeURIComponent(slug)}/designs/carta/`);
+  /* ---------- regulation (in the Carta; same data and grouping as the current site's #/regulacao) ---------- */
+  const RS = { all: {} };
+  function regCard(g) {
+    const nx = parseDeadlines(g).filter((x) => x.d >= TODAY)[0], date = String(g.date || "").slice(0, 10);
+    const tags = `<span class="tag soft">${esc(g.regulator || "")}</span>${date ? `<span class="tag soft">${fmtDY(date)}</span>` : ""}${date > lastVisit ? '<span class="tag new">Nova</span>' : ""}${g.revoked ? '<span class="tag amber">Revogada</span>' : ""}${g.status_note ? `<span class="tag soft">${esc(g.status_note)}</span>` : ""}${nx ? `<span class="tag amber" data-tip="${esc(nx.l)}">Prazo ${fmtD(nx.d)} · D−${days(TODAY, nx.d)}</span>` : ""}`;
+    const det = (g.requires || []).length || g.applies_to || g.effective;
+    return `<article class="reg"><div class="tags">${tags}</div>
+      <h3>${g.url ? `<a href="${esc(safeUrl(g.url))}" target="_blank" rel="noopener">${esc(g.title)}</a>` : esc(g.title)}</h3>
+      ${g.subject && g.source === "bacen" ? `<p class="note">${esc(g.subject)}</p>` : ""}
+      <p class="rs">${md(g.summary || "")}</p>
+      ${det ? `<div class="rx">${(g.requires || []).length ? `<ul class="req">${g.requires.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}${g.applies_to ? `<p class="note"><b>A quem se aplica:</b> ${esc(g.applies_to)}</p>` : ""}${g.effective ? `<p class="note"><b>Vigência:</b> ${esc(g.effective)}</p>` : ""}</div><button class="lnk" data-open=".reg">O que exige</button>` : ""}
+      ${(g.techniques || []).length ? `<div class="tags tq">${g.techniques.slice(0, 8).map((t) => `<span class="tag soft">${esc(t)}</span>`).join("")}</div>` : ""}</article>`;
+  }
+  function viewReg(q0) {
+    const all = regSorted(DATA), br = all.filter((g) => g.source === "bacen"), intl = all.filter((g) => g.source !== "bacen");
+    let q = q0 || "", timer = 0;
+    app.innerHTML = `<h1 class="pg">Regulação</h1><p class="sub">Normas e padrões que tocam este tema, com o que exigem e as técnicas que afetam. Brasil: ${br.length} normativos do Banco Central e do CMN, resumidos a partir do texto oficial; internacional: ${intl.length} marcos selecionados pela curadoria. Resumos feitos por IA: confira no texto oficial.</p>
+      ${all.length ? `<div class="search-box"><input class="field" type="search" data-rq placeholder="Filtrar (ex.: autenticação, prazo, nuvem)" aria-label="Filtrar normas" value="${esc(q)}"></div><p class="mono fcount" data-rc></p><div data-rl></div>` : `<p class="empty">Sem normas mapeadas para este tema ainda.</p>`}`;
+    if (!all.length) return;
+    const match = (g) => { const f = fold(q.trim()); return !f || fold([g.title, g.subject, g.summary, g.regulator, ...(g.techniques || []), ...(g.requires || [])].join(" ")).includes(f); };
+    const section = (key, title, xs) => {
+      if (!xs.length) return "";
+      const open = RS.all[key] || q.trim(), shown = open ? xs : xs.slice(0, 12);
+      return plate("", title, "", shown.map(regCard).join("") + (shown.length < xs.length ? `<button class="lnk" data-rall="${key}">Mostrar as ${xs.length}</button>` : ""), `${xs.length} ${xs.length === 1 ? "norma" : "normas"}`);
+    };
+    const paint = () => {
+      const b = br.filter(match), i = intl.filter(match);
+      $("[data-rl]").innerHTML = section("br", "Brasil · Banco Central e CMN", b) + section("intl", "Internacional", i) || `<p class="empty">Nenhuma norma com “${esc(q)}”.</p>`;
+      $("[data-rc]").textContent = `${b.length + i.length} de ${all.length} normas`;
+    };
+    paint();
+    const inp = $("[data-rq]");
+    inp.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { q = inp.value; paint(); try { history.replaceState(null, "", "#/regulacao" + (q.trim() ? "?q=" + encodeURIComponent(q.trim()) : "")); } catch { /* fine */ } }, 140); });
+    const click = (e) => { const b = e.target.closest("[data-rall]"); if (b) { RS.all[b.dataset.rall] = true; paint(); } };
+    app.addEventListener("click", click); cleanup = () => app.removeEventListener("click", click);
+  }
+
+  /* ---------- evolution: eras, milestones, threads (port of the current site's #/evolucao) ---------- */
+  const ES = { theme: null };
+  const authorsShort = (a) => (!a || !a.length ? "" : a.length > 3 ? `${a.slice(0, 3).join(", ")} et al.` : a.join(", "));
+  function viewEvo() {
+    const ev = DATA.evolution;
+    if (!ev || !(ev.eras || []).length) { app.innerHTML = `<h1 class="pg">Evolução</h1><p class="empty">A linha do tempo do estado da arte ainda não foi gerada para este tema. Ela é montada uma vez por mês a partir da rede de citações.</p>`; return; }
+    const used = new Set(ev.eras.flatMap((e) => (e.milestones || []).map((m) => m.theme)));
+    const thread = ES.theme && (ev.threads || []).find((t) => t.theme === ES.theme);
+    const ch = ev.changes || {}, st = ev.stats || {};
+    const since = !ch.since ? "" : ch.since.length > 7 ? fmtDY(ch.since) : ch.since;
+    const ms = (m) => {
+      const meta = [m.venue || "", authorsShort(m.authors), m.cited_by ? `${fmtN(m.cited_by)} citações` : ""].filter(Boolean).map(esc).join(" · ");
+      return `<li><span class="d">${esc(m.year ?? "")}</span><span class="dot"></span><span><b>${m.url ? `<a href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">${esc(m.title)}</a>` : esc(m.title)}${m.new ? ' <span class="tag new">Novo</span>' : ""}</b>
+        <span class="n">${meta}</span>${m.why ? `<span class="n wy">${md(m.why)}</span>` : ""}${TH[m.theme] ? `<span class="tags"><span class="tag soft">${esc(TH[m.theme])}</span></span>` : ""}</span></li>`;
+    };
+    const eras = ev.eras.map((e) => {
+      const list = (e.milestones || []).filter((m) => !ES.theme || m.theme === ES.theme);
+      return plate("", esc(e.label), "", `<h3 class="era-t">${esc(e.title)}</h3>${e.summary ? `<p class="era-s">${md(e.summary)}</p>` : ""}${list.length ? `<ol class="tl ms">${list.map(ms).join("")}</ol>` : `<p class="note">Nenhum marco deste tema nesta época.</p>`}`, `${list.length} ${list.length === 1 ? "marco" : "marcos"}`);
+    }).join("");
+    const now = ev.now || {};
+    app.innerHTML = `<h1 class="pg">Evolução</h1>${ev.overview ? `<p class="sub">${md(ev.overview)}</p>` : ""}
+      <div class="ro"><div><span class="mono">Marcos</span><b>${fmtN(st.milestones != null ? st.milestones : M.nMilestones)}</b></div><div><span class="mono">Rede de obras</span><b>${fmtN(st.network)}</b></div><div><span class="mono">Eras</span><b>${ev.eras.length}</b></div><div><span class="mono">Gerado em</span><b>${ev.generated ? fmtDY(ev.generated) : "—"}</b></div></div>
+      ${(ch.added || []).length || (ch.removed || []).length || ch.note ? plate("", `O que mudou${since ? " desde " + esc(since) : ""}`, "", `${ch.note ? `<p class="rs">${md(ch.note)}</p>` : ""}<ul class="chg">${(ch.added || []).map((m) => `<li><b class="add">+</b> ${esc(m.title)} <span class="note">(${esc(m.year ?? "")})</span></li>`).join("")}${(ch.removed || []).map((m) => `<li><b class="del">−</b> ${esc(m.title)} <span class="note">(${esc(m.year ?? "")})</span></li>`).join("")}</ul>`, `+${(ch.added || []).length} / −${(ch.removed || []).length}`) : ""}
+      <div class="chips evo-chips" role="group" aria-label="Filtrar por tema"><button class="chip" data-evo="" aria-pressed="${!ES.theme}">Todos os temas</button>${Object.keys(TH).filter((k) => used.has(k)).map((k) => `<button class="chip" data-evo="${esc(k)}" aria-pressed="${ES.theme === k}">${esc(TH[k])}</button>`).join("")}</div>
+      ${thread ? plate("", "Como este tema evoluiu", "", `<p class="lead" style="font-size:18px">${md(thread.line)}</p>`) : ""}
+      ${eras}
+      ${now.summary ? plate("", "Onde estamos agora", "", `<p class="rs">${md(now.summary)}</p>${(now.open_questions || []).length ? `<ol class="oq all">${now.open_questions.map((q, i) => `<li><span class="mono">Q${i + 1}</span><span>${md(q)}</span></li>`).join("")}</ol>` : ""}`) : ""}`;
+    const click = (e) => { const c = e.target.closest("[data-evo]"); if (!c) return; ES.theme = c.dataset.evo || null; const y = scrollY; cleanup(); viewEvo(); scrollTo(0, y); };
+    app.addEventListener("click", click); cleanup = () => app.removeEventListener("click", click);
+  }
+
+  /* ---------- annual review (port of #/anual) ---------- */
+  const COUNTRY = { BR: "Brasil", US: "EUA", GB: "Reino Unido", CN: "China", DE: "Alemanha", FR: "França", IN: "Índia", CA: "Canadá", AU: "Austrália", NL: "Holanda", IT: "Itália", ES: "Espanha", CH: "Suíça", SG: "Singapura", HK: "Hong Kong", JP: "Japão", KR: "Coreia do Sul", BE: "Bélgica", SE: "Suécia", DK: "Dinamarca", IL: "Israel", TW: "Taiwan", PT: "Portugal" };
+  const country = (c) => COUNTRY[c] || c || "";
+  const hlItem = (h) => ({ t: h.title || "", ot: h.original_title && h.original_title !== h.title ? h.original_title : "", u: h.url || "", v: h.venue || "", d: (h.date || "").slice(0, 10), au: h.authors || [], s: Number(h.score) || 0, th: h.theme || "", o: "", wa: h.watch_authors || [], dg: "", kind: "quick", why: h.why || "", cited: h.cited_by });
+  function viewAnnual(year) {
+    const all = DATA.annual || {}, years = Object.keys(all).sort().reverse();
+    if (!years.length) { app.innerHTML = `<h1 class="pg">Retrospectiva</h1><p class="empty">A retrospectiva ainda não foi gerada para este tema. Ela é atualizada todo mês, junto com a Evolução.</p>`; return; }
+    const y = years.includes(year) ? year : years[0], a = all[y], latest = +y === M.annual.year, geo = a.geography || {}, st = a.stats || {};
+    const pc = (x) => `${Math.round((x || 0) * 100)}%`;
+    const list = (xs, f) => `<ol class="kvl">${xs.map((x, i) => `<li><span class="mono">${i + 1}</span><span>${f(x)}</span></li>`).join("")}</ol>`;
+    const byTheme = Object.keys(TH).map((k) => [k, (a.highlights || []).filter((h) => h.theme === k)]).filter(([, xs]) => xs.length);
+    const other = (a.highlights || []).filter((h) => !TH[h.theme]);
+    const growth = latest ? `<ul class="snd" data-snd>${sounding(M.series)}</ul>` : `<ul class="kv">${(a.growth || []).map((g) => `<li><b>${esc(subName(g.label))} <span class="tag soft" style="vertical-align:2px">${pct(g.change)}</span></b><span>${fmtN(g.prev)} → ${fmtN(g.cur_full_year != null ? g.cur_full_year : g.cur)} publicações</span></li>`).join("")}</ul>`;
+    app.innerHTML = `<div class="chips" role="group" aria-label="Ano" style="margin-top:18px">${years.map((k) => `<a class="chip" href="#/anual/${k}" aria-pressed="${k === y}">${k}${all[k].partial ? " · parcial" : ""}</a>`).join("")}</div>
+      <h1 class="pg">Retrospectiva ${esc(y)}</h1>${a.partial && a.generated ? `<p class="note">Parcial, até ${fmtDY(a.generated)}.</p>` : ""}
+      ${a.overview ? `<p class="sub" style="margin-top:8px">${md(a.overview)}</p>` : ""}
+      <div class="ro"><div><span class="mono">Obras do ano</span><b>${fmtN(st.works != null ? st.works : geo.works)}</b></div><div><span class="mono">Avaliadas</span><b>${fmtN(st.triaged)}</b></div><div><span class="mono">Destaques</span><b>${(a.highlights || []).length}</b></div><div><span class="mono">Subtemas</span><b>${(a.growth || []).length}</b></div></div>
+      ${(a.trends || []).length ? plate("", "Tendências do ano", "", `<ol class="tk-l">${(latest ? M.takeaways : a.trends.map((t) => ({ title: t.title, text: t.text, s: null }))).map((t, i) => `<li><span class="num">${i + 1}</span><div><button class="t" data-open="li"><h3>${esc(t.title || "")}</h3><p>${hiNum(t.text || "")}</p></button>${t.s ? `<div class="row2">${spark(t.s, 72, 24)}<span class="mono">${esc(t.s.name)} ${pct(t.s.ch)}</span></div>` : ""}</div></li>`).join("")}</ol>`) : ""}
+      ${geo.sectors || a.innovation ? plate("", "Onde a inovação acontece", "", `${a.innovation ? `<p class="rs">${md(a.innovation)}</p>` : ""}
+        ${(geo.sectors || []).length ? `<h3 class="grp-h">Quem publica</h3><div class="bars">${geo.sectors.map((s) => `<span>${esc(s.name)}</span><i><b style="width:${pc(s.share)}"></b></i><span class="v">${pc(s.share)}</span>`).join("")}</div><p class="note">% das ${fmtN(geo.works)} obras com ao menos um autor do setor.</p>` : ""}
+        <div class="geo">${(geo.institutions || []).length ? `<div><h3 class="grp-h">Instituições</h3>${list(geo.institutions.slice(0, 10), (i) => `${esc(i.name)} <span class="note">· ${esc(country(i.country))} · ${i.works}</span>`)}</div>` : ""}
+        ${(geo.countries || []).length ? `<div><h3 class="grp-h">Países</h3>${list(geo.countries.slice(0, 10), (c) => `${esc(country(c.code))} <span class="note">· ${c.works}</span>`)}</div>` : ""}
+        ${(geo.companies || []).length ? `<div><h3 class="grp-h">Empresas que publicam</h3>${list(geo.companies.slice(0, 10), (c) => `${esc(c.name)} <span class="note">· ${esc(country(c.country))} · ${c.works}</span>`)}</div>` : ""}</div>`) : ""}
+      ${(a.highlights || []).length ? plate("", "Destaques do ano", "", byTheme.map(([k, xs]) => `<h3 class="grp-h">${esc(TH[k])}</h3>${xs.map((h) => itemCard(hlItem(h))).join("")}`).join("") + (other.length ? `<h3 class="grp-h">Outros</h3>${other.map((h) => itemCard(hlItem(h))).join("")}` : ""), `${a.highlights.length}`) : ""}
+      ${(a.growth || []).length ? plate("", "Volume de publicações por subtema", "", `${growth}${a.partial ? `<p class="note">Ano em curso projetado para 12 meses; o OpenAlex indexa com atraso, então a variação recente tende a sair subestimada.</p>` : ""}`) : ""}`;
+  }
+
+  /* ---------- people & institutions (port of #/watchlist) ---------- */
+  function viewPeople() {
+    const wl = DATA.watchlist || {}, hits = {};
+    for (const g of DATA.digests || []) for (const it of [...(g.items || []), ...(g.quick || [])]) for (const n of [...(it.watch_authors || []), ...(it.watch_source ? [it.watch_source] : [])]) hits[n] = (hits[n] || 0) + 1;
+    const evoHits = {};
+    for (const e of (DATA.evolution || {}).eras || []) for (const m of e.milestones || []) for (const n of m.watch || []) evoHits[n] = (evoHits[n] || 0) + 1;
+    const L = Object.assign({ researchers: "Pesquisadores", journals: "Journals", centers: "Centros & laboratórios", practitioners: "Praticantes & fontes", historical: "Referências históricas" }, (DATA.topic || {}).watchlist_labels || {});
+    const people = wl.researchers || [], known = ["EUA", "Europa", "China/Ásia", "Brasil"];
+    const regions = [...known, ...new Set(people.map((p) => p.region || "Outros").filter((r) => !known.includes(r)))];
+    const person = (p) => {
+      const links = Object.entries(p.links || {}).filter(([, u]) => u).map(([k, u]) => `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(k)}</a>`);
+      if (p.openalex_id) links.push(`<a href="https://openalex.org/authors/${esc(p.openalex_id)}" target="_blank" rel="noopener">openalex</a>`);
+      return `<article class="ppl"><h3>${esc(p.name)}${p.status ? ` <span class="tag soft">${esc(p.status)}${p.since ? ` em ${esc(p.since)}` : ""}</span>` : ""}</h3>
+        ${p.institution ? `<p class="note">${esc(p.institution)}</p>` : ""}${p.area ? `<p class="pa">${esc(p.area)}</p>` : ""}${p.why ? `<p class="pw">${esc(p.why)}</p>` : ""}
+        ${hits[p.name] || evoHits[p.name] ? `<div class="tags">${hits[p.name] ? `<span class="tag new">${hits[p.name]} no arquivo</span>` : ""}${evoHits[p.name] ? `<span class="tag soft">${evoHits[p.name]} ${evoHits[p.name] === 1 ? "marco" : "marcos"} na Evolução</span>` : ""}</div>` : ""}
+        ${links.length ? `<p class="pl">${links.join("")}</p>` : ""}</article>`;
+    };
+    const simple = (title, arr, sub) => !arr || !arr.length ? "" : plate("", esc(title), "", `<ul class="kv">${arr.map((x) => `<li><b>${x.url ? `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.name)}</a>` : esc(x.name)}${hits[x.name] ? ` <span class="tag new" style="vertical-align:2px">${hits[x.name]} no arquivo</span>` : ""}</b><span>${sub && x[sub] ? esc(x[sub]) + " · " : ""}${esc(x.why || "")}</span></li>`).join("")}</ul>`, `${arr.length}`);
+    const nOrg = ["journals", "centers", "practitioners"].reduce((s, k) => s + ((wl[k] || []).length), 0);
+    app.innerHTML = `<h1 class="pg">Pessoas & instituições</h1><p class="sub">Referências monitoradas: ${people.length + (wl.historical || []).length} pessoas e ${nOrg} revistas, centros e fontes. Papers novos desses autores entram na triagem com bônus; posts, relatórios e normas das fontes ganham destaque.</p>
+      ${people.length ? plate("", esc(L.researchers), "", regions.map((r) => { const g = people.filter((p) => (p.region || "Outros") === r); return g.length ? `<h3 class="grp-h">${esc(r)} · ${g.length}</h3><div class="ppl-g">${g.map(person).join("")}</div>` : ""; }).join(""), `${people.length}`) : ""}
+      ${(wl.historical || []).length ? plate("", esc(L.historical), "", `<p class="note" style="margin-bottom:10px">Não são mais monitorados no dia a dia; as obras entram na <a href="#/evolucao">Evolução</a>.</p><div class="ppl-g">${wl.historical.map(person).join("")}</div>`, `${wl.historical.length}`) : ""}
+      ${simple(L.journals, wl.journals)}${simple(L.centers, wl.centers, "institution")}${simple(L.practitioners, wl.practitioners, "org")}
+      ${!people.length && !nOrg ? `<p class="empty">Sem watchlist neste tema.</p>` : ""}`;
+  }
+
+  /* ---------- search (../../search.json, BM25 like the current site) ---------- */
+  const SX = { index: null, loading: null, keys: null, expanded: new Set() };
+  function loadSearch() {
+    if (SX.index) return Promise.resolve(SX.index);
+    if (!SX.loading) SX.loading = (async () => {
+      if (!DATA.offline && /^https?:$/.test(location.protocol)) {
+        try { const r = await fetch("../../search.json"); if (r.ok) { const ix = await r.json(); if (ix && ix.postings && ix.docs) return ix; } } catch { /* local index below */ }
+      }
+      return localIndex(DATA);
+    })().then((ix) => { SX.index = ix; SX.keys = Object.keys(ix.postings); return ix; });
+    return SX.loading;
+  }
+  function snippet(doc, terms) {
+    let text = String(doc.text || "");
+    if (doc.title && text.startsWith(doc.title)) text = text.slice(doc.title.length);
+    text = text.replace(/\*+/g, "").replace(/\s+/g, " ").trim();
+    if (!text) return "";
+    const f = text.toLowerCase().replace(/[^\u0000-\u007f]/g, (c) => c.normalize("NFD").charAt(0));
+    let at = -1;
+    for (const t of terms) { const m = new RegExp(`(^|[^a-z0-9])${t.replace(/[^a-z0-9]/g, "")}`).exec(f); if (m && (at < 0 || m.index < at)) at = m.index + m[1].length; }
+    const start = at > 70 ? text.lastIndexOf(" ", at - 50) + 1 : 0, end = Math.min(text.length, start + 200);
+    const win = text.slice(start, end), fw = f.slice(start, end);
+    const alt = terms.map((t) => t.replace(/[^a-z0-9]/g, "")).filter(Boolean).join("|");
+    let out = "", last = 0, m;
+    if (alt) {
+      const re = new RegExp(`(^|[^a-z0-9])(${alt})[a-z0-9]*`, "g");
+      while ((m = re.exec(fw))) { const s = m.index + m[1].length, e = m.index + m[0].length; out += esc(win.slice(last, s)) + `<mark>${esc(win.slice(s, e))}</mark>`; last = e; if (m[0].length === 0) re.lastIndex++; }
+    }
+    out += esc(win.slice(last));
+    return `${start > 0 ? "…" : ""}${out}${end < text.length ? "…" : ""}`;
+  }
+  function viewSearch(q0) {
+    let q = q0 || "", timer = 0;
+    app.innerHTML = `<h1 class="pg">Busca</h1><p class="sub">Papers, marcos, normas, pessoas, código e retrospectivas deste tema, em português ou inglês.</p>
+      <div class="search-box"><input class="field big" type="search" data-sq placeholder="O que você procura?" aria-label="Buscar no arquivo" value="${esc(q)}" enterkeyhint="search"></div>
+      <p class="mono fcount" data-ss role="status">Carregando o índice…</p><div data-sr></div>`;
+    const inp = $("[data-sq]"), box = $("[data-sr]"), status = $("[data-ss]");
+    const digestDates = new Set((DATA.digests || []).map((d) => d.date));
+    const label = Object.fromEntries(SEARCH_GROUPS);
+    const paint = () => {
+      if (!SX.index) return;
+      if (!tokens(q).length && (fold(q).match(/([a-z0-9]+)$/) || ["", ""])[1].length < 3) {
+        status.textContent = "";
+        box.innerHTML = `<p class="note">Por exemplo:</p><div class="fopts" style="margin-top:8px">${Object.keys(TH).slice(0, 8).map((k) => `<button class="chip" data-suggest="${esc(TH[k])}">${esc(TH[k])}</button>`).join("")}</div>`;
+        return;
+      }
+      const { terms, hits } = searchIndex(SX.index, q, SX.keys);
+      status.textContent = hits.length ? `${hits.length >= 80 ? "80+" : hits.length} resultados` : "Nada encontrado. Tente outras palavras, em português ou inglês.";
+      const by = new Map();
+      for (const h of hits) { const g = kindGroup(h.kind); if (!by.has(g)) by.set(g, []); by.get(g).push(h); }
+      box.innerHTML = [...by.entries()].map(([g, xs]) => {
+        const shown = SX.expanded.has(g) ? xs : xs.slice(0, 5);
+        return plate("", esc(label[g] || g), "", `<ul class="res">${shown.map((h) => {
+          const Lk = docLink(h), inDigest = (h.kind === "paper" || h.kind === "notícia ou relatório") && digestDates.has(h.when);
+          const sub = [h.kind, h.when ? String(h.when).slice(0, 10) : "", h.venue || ""].filter(Boolean).map(esc).join(" · ");
+          return `<li><a class="res-t" href="${esc(Lk.ext ? safeUrl(Lk.href) : Lk.href)}"${Lk.ext ? ' target="_blank" rel="noopener"' : ""}>${esc(h.title || "(sem título)")}${Lk.ext ? " ↗" : ""}</a>
+            <p class="res-k">${sub}${inDigest ? ` · <a href="#/novidades/${esc(h.when)}">no digest</a>` : ""}</p><p class="res-s">${snippet(h, terms)}</p></li>`;
+        }).join("")}</ul>${xs.length > shown.length ? `<button class="lnk" data-expand="${g}">Ver mais ${xs.length - shown.length}</button>` : ""}`, `${xs.length}`);
+      }).join("");
+    };
+    loadSearch().then(paint).catch((e) => { status.textContent = `Não foi possível carregar a busca (${e.message}).`; });
+    const go = () => { q = inp.value; SX.expanded.clear(); paint(); try { history.replaceState(null, "", "#/busca" + (q.trim() ? "?q=" + encodeURIComponent(q.trim()) : "")); } catch { /* fine */ } };
+    inp.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(go, 150); });
+    const click = (e) => {
+      const s = e.target.closest("[data-suggest]"); if (s) { inp.value = s.dataset.suggest; go(); inp.focus(); }
+      const x = e.target.closest("[data-expand]"); if (x) { SX.expanded.add(x.dataset.expand); paint(); }
+    };
+    app.addEventListener("click", click); cleanup = () => app.removeEventListener("click", click);
+    if (!q) setTimeout(() => inp.focus(), 30);
+  }
+
+  /* ---------- topics landing (also the site root, in root mode) ---------- */
+  const topicHref = (slug) => (ROOT ? `${encodeURIComponent(slug)}/designs/carta/` : slug === SLUG ? "#/" : `../../../${encodeURIComponent(slug)}/designs/carta/`);
   const OTHER = {};
   function loadTopic(slug) {
-    if (slug === SLUG) return Promise.resolve(DATA);
-    if (!OTHER[slug]) OTHER[slug] = fetch(`../../../${encodeURIComponent(slug)}/data.json`, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch(() => null);
+    if (!ROOT && slug === SLUG) return Promise.resolve(DATA);
+    if (!OTHER[slug]) OTHER[slug] = fetch(`${ROOT ? "" : "../../../"}${encodeURIComponent(slug)}/data.json`, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch(() => null);
     return OTHER[slug];
   }
   function topicCard(t, i) {
     const tri = t.triage, max = Math.max(1, ...tri.map((x) => x.c)), last = t.last;
     const lastLbl = !last ? "" : last.d === TODAY ? "Hoje" : last.d === addDays(TODAY, -1) ? "Ontem" : `Em ${fmtD(last.d)}`;
-    const dl = t.nextDl, lr = t.lastReg, ts = t.top;
+    const dl = t.nextDl, lr = t.lastReg, ts = t.top, here = !ROOT && t.slug === SLUG;
     return plate("tp", "Tema " + (i + 1), "", `<h3>${esc(t.brand)} <i>${esc(t.em)}</i></h3><p class="hl">${esc(t.headline)}</p>
       ${tri.length ? `<div class="mini" role="img" aria-label="Candidatos lidos por dia nos últimos ${tri.length} digests" data-tip="Candidatos lidos por dia · ${fmtD(tri[0].d)} a ${fmtD(last.d)}">${tri.map((x, k) => `<i class="${k === tri.length - 1 ? "last" : ""}" style="height:${Math.max(4, x.c / max * 100).toFixed(0)}%"></i>`).join("")}</div>
       <p class="note">${lastLbl}: ${fmtN(last.c)} candidatos lidos, ${last.s} ${last.s === 1 ? "destaque" : "destaques"}.</p>` : ""}
       <div class="sig anim">${ts ? `<div><span class="mono">Subtema<br>em alta</span><span><b>${esc(ts.name)}</b><small>${fmtN(ts.y25)} → ${fmtN(ts.y26)} publicações/ano</small></span><span class="v">${pct(ts.ch)}</span></div>` : ""}
         ${dl || lr ? `<div><span class="mono">${dl ? "Próximo<br>prazo" : "Última<br>norma"}</span><span><b>${esc(dl ? dl.r.title : lr.title)}</b><small>${dl ? fmtDY(dl.d) + " · " + esc(dl.l) : fmtDY(lr.date)}</small></span>${dl ? `<span class="tag amber">D−${dl.left}</span>` : t.lrNew ? '<span class="tag new">Nova</span>' : "<span></span>"}</div>` : ""}
         <div><span class="mono">Arquivo</span><span><b>${t.nMilestones} marcos · ${t.nReg} normas</b><small>${t.works26 != null ? `${fmtN(t.works26)} trabalhos mapeados em ${t.year}` : "sem retrospectiva anual"}</small></span><span></span></div></div>
-      <div class="foot"><a class="go" href="${topicHref(t.slug)}">Abrir o tema</a>${t.slug === SLUG ? '<span class="tag soft">Você está aqui</span>' : ""}</div>`, t.nNew ? `<span class="tag new">${t.nNew} novos</span>` : "");
+      <div class="foot"><a class="go" href="${topicHref(t.slug)}">Abrir o tema</a>${here ? '<span class="tag soft">Você está aqui</span>' : ""}</div>`, t.nNew ? `<span class="tag new">${t.nNew} novos</span>` : "");
   }
   function viewTopics() {
-    const list = (DATA.topics && DATA.topics.length ? DATA.topics.slice() : [{ slug: SLUG, name: DATA.topic.name }]).sort((a, b) => (a.slug === SLUG ? -1 : b.slug === SLUG ? 1 : 0));
-    const crossNote = (n) => `<p class="note" style="margin-top:8px">Itens que entraram em mais de um Watch nos digests do arquivo${M.triage.length ? `, entre ${fmtD(M.triage[0].d)} e ${fmtD(M.triage[M.triage.length - 1].d)}` : ""}.${n ? "" : " Nenhum no período."}</p>`;
+    const src = ROOT ? TOPICS : DATA.topics && DATA.topics.length ? DATA.topics : [{ slug: SLUG, name: DATA.topic.name }];
+    const list = src.slice().sort((a, b) => (!ROOT && a.slug === SLUG ? -1 : !ROOT && b.slug === SLUG ? 1 : 0));
     app.innerHTML = `<h1 class="pg">Research Watch</h1><p class="sub">Memória viva do estado da arte, por tema: digests, evolução do campo, retrospectiva anual, regulação e um agente que responde com fontes.</p>
       <div class="topics enter" data-topics>${list.map((t, i) => plate("tp", "Tema " + (i + 1), "", `<h3>${esc(t.name)}</h3><p class="note">Carregando…</p>`)).join("")}</div>
       <div data-cross></div>
-      <a class="cta" href="../../#/criar"><span><span class="mono" style="opacity:.7">Outro assunto?</span><br><b>Peça um Watch para o seu tema</b></span><span class="go">Pedir</span></a>`;
+      <a class="cta" href="${ROOT ? `${encodeURIComponent((list[0] || {}).slug || "")}/#/criar` : "../../#/criar"}"><span><span class="mono" style="opacity:.75">Outro assunto?</span><br><b>Peça o seu Watch</b></span><span class="go">Pedir</span></a>`;
     const here = current;
     Promise.all(list.map((t) => loadTopic(t.slug).then((d) => ({ t, d })))).then((rows) => {
       if (current !== here) return;
@@ -964,11 +1249,28 @@
       const cards = rows.map((r, i) => (r.d ? topicCard(topicSummary(r.d, TODAY, store.get(lvKey(r.t.slug), null)), i)
         : plate("tp", "Tema " + (i + 1), "", `<h3>${esc(r.t.name)}</h3><p class="note">Não foi possível carregar os dados deste tema.</p><div class="foot"><a class="go" href="${topicHref(r.t.slug)}">Abrir o tema</a></div>`)));
       const box = $("[data-topics]"); if (box) box.innerHTML = cards.join("");
+      if (ROOT && ok.length) $("#status").innerHTML = statusRoot(ok.map((r) => r.d));
+      const dates = ok.flatMap((r) => triage(r.d).map((x) => x.d)).sort();
+      const note = (n) => `<p class="note" style="margin-top:8px">Itens que entraram em mais de um Watch nos digests do arquivo${dates.length ? `, entre ${fmtD(dates[0])} e ${fmtD(dates[dates.length - 1])}` : ""}.${n ? "" : " Nenhum no período."}</p>`;
       const cross = crossSignals(ok.map((r) => ({ slug: r.t.slug, brand: ((r.d.topic || {}).brand || {}).text || r.t.name, data: r.d }))).slice(0, 5);
       const cb = $("[data-cross]");
-      if (cb && ok.length > 1) cb.innerHTML = plate("", "Sinais que cruzam temas", "T4", cross.length ? `<ol class="cross">${cross.map((c, i) => `<li><span class="mono" style="color:var(--ink3);padding-top:4px">S${i + 1}</span><div><b>${c.u ? `<a href="${esc(safeUrl(c.u))}" target="_blank" rel="noopener">${esc(c.t)}</a>` : esc(c.t)}</b><div class="links">${c.at.map((x) => `<span>${esc(x.brand)} · ${x.kind === "full" ? "destaque" : "nota rápida"} em ${fmtD(x.dg)}${x.t !== c.t ? ` · “${esc(x.t)}”` : ""}</span>`).join("")}</div></div></li>`).join("")}</ol>${crossNote(1)}` : crossNote(0));
+      if (cb && ok.length > 1) cb.innerHTML = plate("", "Sinais que cruzam temas", "T4", cross.length ? `<ol class="cross">${cross.map((c, i) => `<li><span class="mono" style="color:var(--ink3);padding-top:4px">S${i + 1}</span><div><b>${c.u ? `<a href="${esc(safeUrl(c.u))}" target="_blank" rel="noopener">${esc(c.t)}</a>` : esc(c.t)}</b><div class="links">${c.at.map((x) => `<span>${esc(x.brand)} · ${x.kind === "full" ? "destaque" : "nota rápida"} em ${fmtD(x.dg)}${x.t !== c.t ? ` · “${esc(x.t)}”` : ""}</span>`).join("")}</div></div></li>`).join("")}</ol>${note(1)}` : note(0));
     });
   }
+
+  /* ---------- appearance: skin + light/dark ---------- */
+  const SKINS = [["papel", "Papel", "#F7F5F0", "#1D1B18", "#B4431F"], ["grafite", "Grafite", "#F6F7F9", "#111827", "#2557D6"], ["oceano", "Oceano", "#EEF4F6", "#0B2742", "#0A6B67"], ["carta", "Carta original", "#EDF3F4", "#0A2540", "#A30F68"]];
+  const curSkin = () => document.documentElement.getAttribute("data-skin") || "papel";
+  function setSkin(k) {
+    if (!SKINS.some((s) => s[0] === k)) return;
+    document.documentElement.setAttribute("data-skin", k);
+    try { localStorage.setItem("carta-skin", k); } catch { /* private mode */ }
+    const l = document.getElementById("skin-font"), F = window.CARTA_FONTS || {};
+    if (l && F[k]) l.href = F[k];
+    try { const u = new URL(location.href); if (u.searchParams.has("skin")) { u.searchParams.set("skin", k); history.replaceState(null, "", u.pathname + u.search + u.hash); } } catch { /* fine */ }
+  }
+  const appearance = () => `<p class="mono" style="color:var(--ink3);margin-top:18px">Aparência</p><div class="skins">${SKINS.map(([k, l, a, b, c]) => `<button data-skin-set="${k}" aria-pressed="${curSkin() === k}"><span class="sw" aria-hidden="true"><i style="background:${a}"></i><i style="background:${b}"></i><i style="background:${c}"></i></span>${l}</button>`).join("")}</div>
+    <p class="mono" style="color:var(--ink3);margin-top:16px">Claro ou escuro</p><div class="seg">${[["auto", "Sistema"], ["light", "Claro"], ["dark", "Escuro"]].map(([k, l]) => `<button data-theme-set="${k}" aria-pressed="${curTheme() === k}">${l}</button>`).join("")}</div>`;
 
   /* ---------- shell ---------- */
   function openSheet(title, html, onClick) {
@@ -977,31 +1279,51 @@
       if (e.target === sheet || e.target.closest("[data-close]")) { sheet.close(); return; }
       if (onClick) onClick(e);
       const th = e.target.closest("[data-theme-set]"); if (th) { setTheme(th.dataset.themeSet); $$("[data-theme-set]", sheet).forEach((x) => x.setAttribute("aria-pressed", String(x === th))); }
+      const sk = e.target.closest("[data-skin-set]"); if (sk) { setSkin(sk.dataset.skinSet); $$("[data-skin-set]", sheet).forEach((x) => x.setAttribute("aria-pressed", String(x === sk))); }
       if (e.target.closest("a[href^='#/']")) sheet.close();
     };
     if (!sheet.open) sheet.showModal();
   }
   function openMore() {
-    const site = (h, t, d) => `<li><a href="../../${h}"><span>${t}<small>${d}</small></span><span class="tag soft">Site atual</span></a></li>`;
-    const topics = DATA.topics || [], top = M.radar.blips[0], wl = (DATA.watchlist || {}).researchers || [];
-    openSheet("Mais", `<ul class="more-l"><li><a href="#/temas"><span>Trocar de tema<small>${esc(topics.map((t) => t.name.replace(/ Watch$/, "")).join(", "))}</small></span><span class="tag">${topics.length} ${topics.length === 1 ? "tema" : "temas"}</span></a></li>
-      ${top ? `<li><a href="#/subtema/${top.id}"><span>Ficha de subtema<small>${esc(top.s.name)}</small></span><span class="tag">${pct(top.s.ch)}</span></a></li>` : ""}
-      ${M.nReg ? site("#/regulacao", "Regulação", `${M.nReg} normas, com o que cada uma exige`) : ""}${M.nMilestones ? site("#/evolucao", "Evolução", `${M.nMilestones} marcos em ${((DATA.evolution || {}).eras || []).length} eras`) : ""}${M.annual.year ? site("#/anual", `Anual ${M.annual.year}`, M.until ? `Retrospectiva parcial até ${M.until}` : "Retrospectiva do ano") : ""}${wl.length ? site("#/pessoas", "Pessoas & instituições", `${wl.length} pesquisadores na watchlist`) : ""}
-      <li><a href="../../"><span>Voltar ao site atual<small>A versão em produção deste tema</small></span><span class="tag">Sair da Carta</span></a></li></ul>
-      <p class="mono" style="color:var(--ink3);margin-top:18px">Aparência</p><div class="seg">${[["auto", "Sistema"], ["light", "Claro"], ["dark", "Escuro"]].map(([k, l]) => `<button data-theme-set="${k}" aria-pressed="${curTheme() === k}">${l}</button>`).join("")}</div>`);
+    const row = (h, t, d, tag) => `<li><a href="${h}"><span>${t}<small>${d}</small></span>${tag ? `<span class="tag soft">${tag}</span>` : ""}</a></li>`;
+    const topics = DATA.topics || [], top = M.radar.blips[0], wl = DATA.watchlist || {};
+    const nPeople = (wl.researchers || []).length + (wl.historical || []).length, nOrg = ["journals", "centers", "practitioners"].reduce((s, k) => s + ((wl[k] || []).length), 0);
+    openSheet("Mais", `<ul class="more-l">
+      ${row("#/busca", "Busca", "Papers, marcos, normas, pessoas e código deste tema")}
+      ${M.nReg ? row("#/regulacao", "Regulação", `${M.nReg} normas, com o que cada uma exige`) : ""}
+      ${M.nMilestones ? row("#/evolucao", "Evolução", `${M.nMilestones} marcos em ${((DATA.evolution || {}).eras || []).length} eras`) : ""}
+      ${M.annual.year ? row("#/anual", `Retrospectiva ${M.annual.year}`, M.until ? `Parcial, até ${M.until}` : "Retrospectiva do ano") : ""}
+      ${nPeople + nOrg ? row("#/pessoas", "Pessoas & instituições", `${nPeople} pessoas, ${nOrg} revistas, centros e fontes`) : ""}
+      ${top ? row(`#/subtema/${top.id}`, "Ficha de subtema", esc(top.s.name), pct(top.s.ch)) : ""}
+      ${row("#/temas", "Trocar de tema", esc(topics.map((t) => t.name.replace(/ Watch$/, "")).join(", ")), `${topics.length} ${topics.length === 1 ? "tema" : "temas"}`)}
+      ${row("../../#/criar", "Peça o seu Watch", "Um tema novo, criado e revisado para você", "Site atual")}
+      ${row("../../", "Voltar ao site atual", "A versão em produção deste tema", "Sair da Carta")}</ul>${appearance()}`);
+  }
+  const back = () => `<a class="back" href="../../">Voltar ao site atual</a>`;
+  function statusRoot(datas) {
+    const first = encodeURIComponent((TOPICS[0] || {}).slug || "");
+    const gen = (datas || []).map((d) => d.generated).filter(Boolean).sort().pop();
+    return `<span><b>${fmtDY(TODAY)}</b></span><span>${TOPICS.length} temas monitorados</span>${gen ? `<span class="live">Digest diário · última coleta ${fmtD(gen)}</span>` : ""}<a class="back" href="${first}/">Site atual</a><a class="back" href="${first}/designs/">Outros designs</a>`;
   }
   function shell(cur) {
-    $("#tab").innerHTML = NAV.map(([k, h, l]) => h ? `<a href="${h}" ${k === cur ? 'aria-current="page"' : ""}>${IC[k]}<span>${l}</span></a>` : `<button data-more>${IC[k]}<span>${l}</span></button>`).join("");
-    $("#nav-d").innerHTML = NAV.map(([k, h, l]) => h ? `<a href="${h}" ${k === cur ? 'aria-current="page"' : ""}>${l}</a>` : `<a href="#" data-more>${l}</a>`).join("");
+    if (ROOT) {
+      $("#brand-t").textContent = "Research"; $("#brand-em").textContent = "Watch";
+      $("#status").innerHTML = statusRoot([]);
+      return;
+    }
+    $("#tab").innerHTML = NAV.map(([k, h, l]) => h ? `<a href="${h}" ${k === cur ? 'aria-current="page"' : ""}>${IC[k]}<span>${l}</span></a>` : `<button data-more ${k === cur ? 'aria-current="page"' : ""}>${IC[k]}<span>${l}</span></button>`).join("");
+    $("#nav-d").innerHTML = NAV.map(([k, h, l]) => h ? `<a href="${h}" ${k === cur ? 'aria-current="page"' : ""}>${l}</a>` : `<a href="#" data-more ${k === cur ? 'aria-current="page"' : ""}>${l}</a>`).join("");
     const landing = cur === "temas", b = (DATA.topic || {}).brand || {};
     $("#brand-t").textContent = landing ? "Research" : b.text || DATA.topic.name;
     $("#brand-em").textContent = landing ? "Watch" : b.em || "Watch";
-    const back = `<a class="back" href="../../">Voltar ao site atual</a>`;
-    $("#status").innerHTML = back + (landing
+    $("#status").innerHTML = back() + (landing
       ? `<span><b>${fmtDY(TODAY)}</b></span><span>${(DATA.topics || []).length} temas monitorados</span><span class="live">Digest diário · última coleta ${fmtD(DATA.generated)}</span>`
       : `<span><b>${fmtDY(TODAY)}</b></span><span class="live">Dados de ${fmtD(DATA.generated)}</span>${M.works26 != null ? `<span>${fmtN(M.works26)} trabalhos em ${M.annual.year}</span>` : ""}<span>${M.nMilestones} marcos</span><span>${M.nReg} normas</span>`);
   }
-  document.addEventListener("click", (e) => { if (e.target.closest("[data-more]")) { e.preventDefault(); if (DATA) openMore(); } });
+  document.addEventListener("click", (e) => {
+    if (e.target.closest("[data-more]")) { e.preventDefault(); if (DATA) openMore(); }
+    if (e.target.closest("#skin-b")) { e.preventDefault(); openSheet("Aparência", appearance()); }
+  });
   $("#theme-b").addEventListener("click", () => { const dark = curTheme() === "dark" || (curTheme() === "auto" && matchMedia("(prefers-color-scheme:dark)").matches); setTheme(dark ? "light" : "dark"); });
   document.addEventListener("pointermove", (e) => { const t = e.target.closest && e.target.closest("[data-tip]"); if (!t || e.pointerType === "touch") { tip.classList.remove("on"); return; } tip.textContent = t.dataset.tip; tip.style.left = Math.min(innerWidth - 130, Math.max(130, e.clientX)) + "px"; tip.style.top = e.clientY + "px"; tip.classList.add("on"); });
   function render() {
@@ -1009,20 +1331,34 @@
     document.body.classList.remove("has-composer");
     if (sheet.open) sheet.close();
     const r = route(), p = r.parts[0] || "";
-    if (p === "novidades") { current = "novidades"; shell("novidades"); viewFeed(); }
-    else if (p === "mapa") { current = "mapa"; shell("mapa"); viewMap(); }
-    else if (p === "subtema" || p === "tecnica") { current = "subtema"; shell("mapa"); viewSub(r.parts[1]); }
-    else if (p === "pergunte") { current = "pergunte"; shell("pergunte"); viewAsk(r.q); }
-    else if (p === "temas") { current = "temas"; shell("temas"); viewTopics(); }
-    else { current = "inicio"; shell("inicio"); viewHome(); }
+    const go = (name, tab, fn) => { current = name; shell(tab); fn(); };
+    if (p === "novidades" || p === "d") go("novidades", "novidades", () => viewFeed(r.parts[1]));
+    else if (p === "mapa") go("mapa", "mapa", viewMap);
+    else if (p === "subtema" || p === "tecnica") go("subtema", "mapa", () => viewSub(r.parts[1]));
+    else if (p === "pergunte") go("pergunte", "pergunte", () => viewAsk(r.q));
+    else if (p === "temas") go("temas", "temas", viewTopics);
+    else if (p === "regulacao") go("regulacao", "mais", () => viewReg(r.q.get("q")));
+    else if (p === "evolucao") go("evolucao", "mapa", viewEvo);
+    else if (p === "anual") go("anual", "mais", () => viewAnnual(r.parts[1]));
+    else if (p === "pessoas" || p === "watchlist") go("pessoas", "mais", viewPeople);
+    else if (p === "busca") go("busca", "mais", () => viewSearch(r.q.get("q")));
+    else go("inicio", "inicio", viewHome);
     if (!location.hash.startsWith("#dl")) scrollTo(0, 0);
     app.setAttribute("tabindex", "-1");
   }
   try { history.scrollRestoration = "manual"; } catch { /* older browsers */ }
 
-  fetch("../../data.json", { cache: "no-cache" })
-    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((d) => {
+  const getJSON = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  if (ROOT) {
+    /* site root: only the Temas screen, reading topics.json and each <slug>/data.json */
+    document.body.classList.add("root");
+    getJSON("topics.json").then((ts) => {
+      TOPICS = Array.isArray(ts) ? ts : [];
+      if (!TOPICS.length) throw new Error("sem temas");
+      current = "temas"; shell("temas"); viewTopics();
+    }).catch((e) => { app.innerHTML = `<p class="empty">Não foi possível carregar os temas (${esc(e.message)}).</p>`; });
+  } else {
+    getJSON("../../data.json").then((d) => {
       DATA = d; SLUG = (d.topic || {}).slug || ""; TODAY = todayIso();
       TH = {}; Object.entries(d.themes || {}).forEach(([k, v]) => { TH[k] = stripMark(v); });
       lastVisit = store.get(lvKey(SLUG), null) || firstVisitDate(d);
@@ -1035,6 +1371,6 @@
       });
       render();
       initVoice();
-    })
-    .catch((e) => { app.innerHTML = `<p class="empty">Não foi possível carregar os dados (${esc(e.message)}).</p>`; });
+    }).catch((e) => { app.innerHTML = `<p class="empty">Não foi possível carregar os dados (${esc(e.message)}).</p>`; });
+  }
 })(typeof window !== "undefined" ? window : globalThis);

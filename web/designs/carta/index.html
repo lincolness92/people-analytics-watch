@@ -7,12 +7,28 @@
 <title>Carta · Research Watch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="carta.css">
 <script>
-/* theme before first paint: ?theme= or the saved choice; [data-theme] overrides prefers-color-scheme */
-(function () { try { var t = new URLSearchParams(location.search).get("theme") || localStorage.getItem("carta-theme"); if (t && t !== "auto") document.documentElement.setAttribute("data-theme", t); } catch (e) { /* storage blocked */ } })();
+/* before first paint: skin (?skin= or the saved choice, default "papel"), light/dark (?theme= or saved), and the skin's fonts */
+window.CARTA_FONTS = {
+  papel: "https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap",
+  grafite: "https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap",
+  oceano: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400..700&display=swap",
+  carta: "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap"
+};
+(function () {
+  var sk = null, t = null, q = null;
+  try { q = new URLSearchParams(location.search); } catch (e) { /* very old browser */ }
+  try { sk = (q && q.get("skin")) || localStorage.getItem("carta-skin"); t = (q && q.get("theme")) || localStorage.getItem("carta-theme"); } catch (e) { /* storage blocked */ }
+  if (!sk || !window.CARTA_FONTS[sk]) sk = "papel";
+  try { if (q && q.get("skin") === sk) localStorage.setItem("carta-skin", sk); } catch (e) { /* storage blocked */ }
+  var h = document.documentElement;
+  h.setAttribute("data-skin", sk);
+  if (t && t !== "auto") h.setAttribute("data-theme", t);
+  var l = document.createElement("link"); l.rel = "stylesheet"; l.id = "skin-font"; l.href = window.CARTA_FONTS[sk];
+  document.head.appendChild(l);
+})();
 </script>
+<link rel="stylesheet" href="carta.css">
 </head>
 <body>
 <header class="top">
@@ -24,12 +40,14 @@
     </a>
     <nav aria-label="Seções" id="nav-d"></nav>
     <div class="tools">
+      <a class="ico-b" id="search-b" href="#/busca" aria-label="Buscar"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5"/></svg></a>
+      <button class="ico-b" id="skin-b" aria-label="Aparência"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 2.5a7.5 7.5 0 1 0 0 15c1.2 0 1.6-.8 1.3-1.7-.4-1 .2-2 1.3-2h1.6a3.3 3.3 0 0 0 3.3-3.3C17.5 6 14.1 2.5 10 2.5z"/><circle cx="6.3" cy="9" r="1" fill="currentColor"/><circle cx="9" cy="6" r="1" fill="currentColor"/><circle cx="12.8" cy="6.6" r="1" fill="currentColor"/></svg></button>
       <button class="ico-b" id="theme-b" aria-label="Alternar claro e escuro"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="10" r="6.5"/><path d="M10 3.5v13" /><path d="M10 3.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
     </div>
   </div>
   <div class="status"><div class="wrap mono" id="status"><a class="back" href="../../">Voltar ao site atual</a></div></div>
 </header>
-<main id="app" class="wrap"><p class="loading mono">Carregando a carta…</p></main>
+<main id="app" class="wrap"><p class="loading mono">Carregando…</p></main>
 <nav class="tab" id="tab" aria-label="Navegação principal"></nav>
 <dialog id="sheet" aria-label="Painel"></dialog>
 <div id="tip" role="tooltip"></div>

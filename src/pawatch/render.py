@@ -110,6 +110,23 @@ def site_data(topic, topics):
 
 
 def _landing(topics):
+    """Site root: the Carta design's "Temas" screen (web/designs/carta in root mode, assets copied to dist/carta/).
+    Falls back to a plain list of topics when the design folder is missing."""
+    carta = WEB / "designs" / "carta" / "index.html"
+    if carta.exists() and topics:
+        page = carta.read_text(encoding="utf-8")
+        first = html.escape(topics[0].slug)
+        links = "".join(f'<li><a href="{html.escape(t.slug)}/">{html.escape(t.name)}</a></li>' for t in topics)
+        for a, b in [('<html lang="pt-BR">', '<html lang="pt-BR" data-carta-root>'),
+                     ("<title>Carta · Research Watch</title>", "<title>Research Watch</title>"),
+                     ('href="carta.css"', 'href="carta/carta.css"'), ('src="carta.js"', 'src="carta/carta.js"'),
+                     ('<a class="back" href="../../">Voltar ao site atual</a>', f'<a class="back" href="{first}/">Site atual</a>'),
+                     ('<p class="loading mono">Carregando…</p>', f'<p class="loading mono">Carregando…</p><noscript><ul class="more-l">{links}</ul></noscript>')]:
+            if a not in page:
+                break
+            page = page.replace(a, b, 1)
+        else:
+            return page
     cards = []
     for t in topics:
         ds = t.digests()
@@ -160,6 +177,9 @@ def build_site(topics):
         (DIST / t.slug / "search.json").write_text(json.dumps(build_index(site, lib, topic_repos(t.slug)), ensure_ascii=False, separators=(",", ":")),
                                                    encoding="utf-8")
     shutil.copy(WEB / "style.css", DIST / "style.css")
+    # the root landing is the Carta design's "Temas" screen: its assets live at dist/carta/
+    if (WEB / "designs" / "carta").exists():
+        shutil.copytree(WEB / "designs" / "carta", DIST / "carta")
     # shared full-text store (one file per paper, whatever the number of topics) + repository catalogue
     papers = DATA / "papers"
     if papers.exists():
