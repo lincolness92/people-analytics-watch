@@ -117,9 +117,11 @@ habilidades. A estrutura é a mesma.
 
 1. **Medir (agora).** Perguntas de referência, avaliador, rodada de base com o modelo atual e com um pequeno, e
    diagnóstico das falhas. *Primeira rodada feita em 25/11: a nota foi de 78 para 94; ver `evals/README.md`.*
+   *26/11: juiz calibrado contra um modelo mais forte; scorer de papers também medido e revisto.*
 2. **Responder bem às perguntas previsíveis.** Respostas por intenção (formato certo para cada uma), briefings
    canônicos por tema e hierarquia de modelos.
-3. **Completar as fontes que as perguntas pedem.** Regulação, pessoas e instituições, indústria, código e
+3. **Completar as fontes que as perguntas pedem.** *Regulação do Bacen no ar (26/11); FEBRABAN e associações
+   bancárias mapeadas em `docs/sources/`.* Pessoas e instituições, indústria, código e
    notícias; comparar o OpenAlex com o arXiv direto e com o Firecrawl local.
 4. **Estruturar o conhecimento.** Grafo de entidades e afirmações, e fichas de evidência.
 5. **Abrir para outros.** Curadoria pelo dono do tema, criação de tema pedida por um gestor, assinaturas por e-mail

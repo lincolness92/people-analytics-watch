@@ -1,32 +1,59 @@
-# Handoff (atualizado em 17/11/2026, fim do dia)
+# Handoff (atualizado em 26/11/2026)
 
 Site: https://people-analytics-watch.pages.dev (senha única: secret `SITE_PASSWORD`).
-Temas em `topics/` (people analytics e fraude bancária). Detalhes no README; próximos passos no `ROADMAP.md`.
+Temas em `topics/`: people analytics, fraude bancária e tecnologia bancária. São casos de teste da plataforma, que
+é genérica. A visão está em `VISION.md`, os detalhes no README e os próximos passos no `ROADMAP.md`.
 
 ## No ar
-- Digest diário (workflow `daily digest`, 08:30 BRT): coleta, triagem, digest, commit e deploy no Cloudflare Pages.
-- Watchlist com links sociais (X, LinkedIn, Bluesky, Mastodon, newsletters) e feeds abertos como fontes
-  (posts sociais filtrados por palavras do tema, no máximo 4 por perfil). Seção "Referências históricas"
-  (falecidos/aposentados): fora do diário, dentro da Evolução.
-- Aba Evolução (workflow `evolution`, dia 1 de cada mês, incremental). Revisão manual em Actions → evolution:
-  `completa` (refaz seleção e texto com as notas do cache, ~2 min) ou `completa-rejulgando` (refaz a triagem, ~15 min).
-  Épocas recentes: 8 marcos, até 4 do mesmo tema; consolidadas: 7, até 3.
-- Feedback (👍/👎 e comentários) no Cloudflare KV `paw-feedback`, exportado para `data/<tema>/feedback.json`;
-  perguntas da aba Pergunte em `data/<tema>/questions.json`.
-- Aba Pergunte (`functions/api/ask.js`): responde só com o arquivo do tema, citando [n]; 20–40 s por resposta.
 
-## Pendente
-1. Testar no site, com a senha, um 👍 e uma pergunta na aba Pergunte. Se aparecer "armazenamento de feedback
-   não configurado" ou "IA não configurada", o binding do KV ou o secret `HF_TOKEN` no Pages não pegou
-   (ver passos "Feedback" e "Sync Pages secrets" no log do workflow).
-2. Apagar no dashboard da Cloudflare (Workers & Pages → people-analytics-watch → Deployments) os dois deploys
-   anteriores à senha, que continuam abertos: `7875faa1` e `9f0e5e61`.
-3. Opcional: 9ª vaga em 2023+ para o experimento de trabalho híbrido de Bloom et al. (Nature, 2024), que saiu
-   quando o Jagged Frontier voltou (`per_era_recent` em `src/pawatch/evolution.py`).
-4. Roadmap: Febraban Tech pelo YouTube (decidir: só vídeos novos ou também o acervo) e o tema risco de crédito.
+**Pipeline (GitHub Actions):**
+- **Digest diário, 08:30 BRT.** Coleta, scorer v2 (relevância × qualidade, nota calculada em código), digest,
+  normas do Bacen (incremental), traces em `data/traces/`, commit e deploy.
+- **Mensal, dia 1:** Evolução e retrospectivas.
+
+**Site (Cloudflare Pages):**
+- Navegação de app no celular: Início, Novidades, Mapa, Pergunte e Mais.
+- Busca global e aba Regulação.
+- Microfone em todo campo de texto (Whisper pelo HF).
+
+**Agente Pergunte:**
+- Formato de resposta por intenção.
+- Normas, pessoas, instituições e código na busca.
+- Checagem de cobertura na 1ª frase.
+- Rota de LLM pela menor tarifa publicada; resposta cortada conta como falha.
+- Traces no KV.
+
+**Avaliação:**
+- `evals/`: o agente marca 82 no juiz calibrado (`evals/README.md`); scorer medido em `evals/scorer/`.
+
+**Mapas de fontes:**
+- `docs/sources/febraban.*` (74 itens).
+- Associações bancárias do mundo: em andamento.
+
+## Pendente (do lado do Lincoln)
+1. Cloudflare Pages → Variables and Secrets:
+   - Phoenix: `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` e `OTEL_EXPORTER_OTLP_HEADERS`;
+   - opcional: `DEEPSEEK_API_KEY`;
+   - voz de saída: `ELEVENLABS_API_KEY` e `ELEVENLABS_VOICE_ID`.
+2. GitHub: os mesmos secrets de Phoenix e DeepSeek, passados no `env` dos workflows (exige o escopo `workflow`).
+3. API do X: quando houver, entra como fonte por tema.
+4. Revisar o `VISION.md` (rascunho).
+5. Testar no iPhone: o microfone (com o teclado aberto) e uma pergunta real no Pergunte do site novo.
+
+## Próximo (do lado do Claude)
+- Consumir as fontes mapeadas de prioridade alta (FEBRABAN e associações).
+- Site, leva 2: sparklines por subtema, radar "onde apostar", páginas de técnica e de paper.
+- Onboarding canônico pré-computado (a intenção mais fraca do agente depois da calibração).
+- Código e dados por método, e validar a ligação repositório ↔ paper.
 
 ## Observações
-- Prithwiraj Choudhury talvez tenha ido de HBS para a LSE em 2025 (watchlist ainda diz HBS).
-- Jia Hu e Ning Li têm homônimos misturados no OpenAlex; a triagem descarta o que é de outra área.
-- OpenAlex local: a cota anônima por IP acaba rápido; a chave fica em `~/.config/pawatch/openalex.env`
-  (lida automaticamente) ou no secret `OPENALEX_API_KEY` do GitHub.
+- **Normas sem texto na API:** algumas normas do Bacen vêm sem texto e ficam sem ficha (fora do site).
+- **Rota river:** essa rota da HF corta saídas longas mesmo com raciocínio "low". O cliente a rebaixa
+  automaticamente depois da primeira falha.
+- **Pré-filtro:** em janelas grandes (backfill), o pré-filtro de tecnologia bancária corta itens bons, porque as
+  fontes web enchem as 220 vagas. No dia a dia não acontece (16–170 candidatos por dia).
+- **OpenAlex:** a chave fica em `~/.config/pawatch/openalex.env` (local) ou no secret `OPENALEX_API_KEY`.
+- **DeepSeek local:** a chave fica em `~/.config/pawatch/deepseek.env`.
+- **Watchlist:**
+  - Prithwiraj Choudhury talvez tenha ido de HBS para a LSE em 2025 (a watchlist ainda diz HBS).
+  - Jia Hu e Ning Li têm homônimos misturados no OpenAlex; a triagem descarta o que é de outra área.

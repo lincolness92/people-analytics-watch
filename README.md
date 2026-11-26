@@ -1,9 +1,14 @@
 # research-watch (repo `people-analytics-watch`)
 
-Digests em PT-BR com a pesquisa state-of-the-art de **qualquer tema**, um pacote de configuração por
-tema em `topics/<slug>/`. Hoje: **People Analytics Watch** (gestão de pessoas, RH, futuro do trabalho)
-e **Bank Fraud Watch** (fraude bancária, pagamentos, PLD/CFT, Basileia, Bacen). Roda inteiro no
-GitHub Actions (sem servidor) e publica um site estático no Cloudflare Pages, com uma pasta por tema.
+Uma plataforma que mantém, para **qualquer tema**, a memória viva do estado da arte. Ela registra o que existe,
+o que funciona e com qual evidência, quem faz, o que mudou, para onde vai e o que a regulação diz. Pessoas e
+agentes consultam essa memória pelo site, pela caixinha Pergunte (com voz), por REST, MCP e A2A.
+
+Cada tema é um pacote de configuração em `topics/<slug>/`. Os temas atuais são casos de teste da plataforma:
+**People Analytics Watch**, **Bank Fraud Watch** e **Bank Tech & AI Watch**. A visão e as fases estão em
+`VISION.md`; o que vem a seguir, em `ROADMAP.md`.
+
+O pipeline roda no GitHub Actions; o site e as APIs, no Cloudflare Pages (Functions). Não há servidor próprio.
 
 ## Como funciona
 
@@ -14,9 +19,12 @@ GitHub Actions (sem servidor) e publica um site estático no Cloudflare Pages, c
   │            arXiv: categorias e termos do tema
   │            fontes web dos centros e praticantes (RSS, páginas de listagem, sitemap)
   ├─ dedupe    por DOI/título contra data/<tema>/seen.json
-  ├─ triagem   LLM de pesos abertos (HF Inference Providers) dá nota 0–10 + tema
+  ├─ triagem   LLM dá relevância e qualidade (0–10), tipo de evidência e motivo; a nota sai em código
+  │            (scorer v2, calibrado contra um modelo mais forte: evals/scorer/). Rota mais barata por preço publicado
   ├─ redação   LLM escreve resumo PT-BR dos selecionados, menções rápidas e tendência do dia
   ├─ grava     data/<tema>/digests/AAAA-MM-DD.json → digests/<tema>/AAAA-MM-DD.md + INDEX.md
+  ├─ regulação normas do Bacen novas ou revogadas (incremental) → data/<tema>/regulation.json
+  ├─ traces    cada execução em data/traces/ (e no Phoenix, se configurado)
   ├─ commita   no próprio repo
   ├─ Discord   (opcional, se DISCORD_WEBHOOK_URL existir)
   └─ deploy    dist/ (página inicial + dist/<tema>/) → Cloudflare Pages (se CLOUDFLARE_API_TOKEN existir)
@@ -30,8 +38,16 @@ GitHub Actions (sem servidor) e publica um site estático no Cloudflare Pages, c
 | `topics/<tema>/queries.json` | buscas do OpenAlex/arXiv, janela (`lookback_days`), limites de seleção |
 | `topics/<tema>/watchlist.json` | pesquisadores, journals, centros/reguladores e praticantes (com IDs OpenAlex) |
 | `topics/<tema>/sources.json` | feeds e páginas das fontes da watchlist (e quais não têm fonte viável) |
-| `src/pawatch/` | pipeline (stdlib pura, sem dependências): `collect`, `web`, `score`, `llm`, `render`, `bundle`, `topic`, `bootstrap` |
-| `web/` | site estático (HTML/CSS/JS), lê `data.json` |
+| `topics/<tema>/regulation.json` | termos de busca de normas no Bacen e marcos regulatórios internacionais do tema |
+| `src/pawatch/` | pipeline (stdlib pura, sem dependências): `collect`, `web`, `score`, `llm`, `regulation`, `trace`, `render`, `bundle`, `topic`, `bootstrap`, `evolution`, `annual`, `fulltext` |
+| `server/` | núcleo do lado do servidor (agente, busca, LLM por preço, voz, traces, OAuth); `functions/` são só adaptadores HTTP |
+| `web/` | site estático (HTML/CSS/JS puro), lê `data.json` e `search.json` |
+| `data/<tema>/regulation.json` | normas do Bacen triadas e com ficha (o que exige, a quem, vigência, técnicas) |
+| `data/papers/` | textos completos e catálogo de repositórios, compartilhados entre temas |
+| `data/traces/` | traces do pipeline (60 dias na árvore) |
+| `evals/` | perguntas de referência, rodadas, juiz calibrado, calibrações e avaliação do scorer |
+| `docs/design/`, `docs/sources/` | referências de design do site; mapas de fontes (FEBRABAN, associações bancárias) |
+| `VISION.md` | visão do projeto (rascunho em discussão) |
 | `data/<tema>/digests/*.json` | fonte da verdade de cada dia (estruturado) |
 | `data/<tema>/seen.json` | papers já avaliados (não voltam) |
 | `data/<tema>/web_state.json` | links já vistos nas páginas/sitemaps das fontes web |
@@ -52,6 +68,10 @@ python -m pawatch render                       # regera markdown, INDEX.md e dis
 python -m pawatch notify [--topic X]           # envia o digest de hoje ao Discord
 python -m pawatch bundle [--topic X] [--theme bb]  # HTML autocontido em share/ (bb = identidade BB)
 python -m pawatch new-topic "risco de crédito" # rascunho de um tema novo (veja abaixo)
+python -m pawatch regulation [--topic X]       # normas do Bacen (triagem + ficha); também roda dentro do run
+python -m pawatch traces [--export]            # traces guardados do pipeline; --export manda ao Phoenix
+node evals/run.mjs --label X && node evals/judge.mjs evals/runs/<data>-X.json   # avaliar o agente
+PYTHONPATH=src python evals/scorer_eval.py --labels evals/scorer/2026-11-25-fable-labels.json  # avaliar o scorer
 python -m unittest discover -s tests  # testes
 python3 -m http.server -d dist 8000   # ver o site local em http://localhost:8000
 ```
@@ -252,6 +272,44 @@ com `--full`). Custo: ~US$ 0,05–0,07 de OpenAlex e ~60–100 mil tokens por te
   da resposta; no catálogo de ferramentas (REST/MCP/A2A) entram `read_paper` (texto, uma seção, ou os trechos
   mais relevantes para uma pergunta) e `list_repos` (para um cliente com terminal, como o Claude Code, clonar e
   ler a implementação; o agente do site, que roda no Cloudflare, lê o README já baixado).
+
+## Site
+
+O site é pensado primeiro para o celular. No iPhone, o cabeçalho tem uma linha (o tema abre a lista de temas, a lupa
+abre a busca) e a barra inferior tem cinco destinos:
+
+- **Início:** o que mudou desde a sua última visita, o estado do campo, as conclusões do ano, os melhores itens
+  recentes, as últimas normas e perguntas de exemplo.
+- **Novidades:** o digest por período e o arquivo.
+- **Mapa:** Tendências, Evolução e Anual.
+- **Pergunte:** a caixinha de IA, com exemplos por tipo de pergunta.
+- **Mais:** Regulação, Pessoas & instituições, Arquivo e Sobre.
+
+A busca global usa o `search.json` (BM25) e agrupa os resultados por tipo. Todo campo de texto tem microfone (veja
+"Voz"). No desktop, os mesmos destinos ficam no topo. As referências e as próximas levas (sparklines por subtema,
+radar "onde apostar", páginas de técnica e de paper) estão em `docs/design/front-references.md`.
+
+## Regulação (aba "Regulação")
+
+- **Brasil:** normativos do Banco Central e do CMN, pelas APIs oficiais de busca e de texto completo, com os termos
+  de cada tema em `topics/<tema>/regulation.json`.
+  - As versões repetidas de manuais viram um item só.
+  - O LLM dá uma nota de relevância pelo assunto da norma. Para as relevantes, faz uma ficha a partir do texto
+    oficial: o que exige (com artigo), a quem se aplica, vigência e técnicas afetadas.
+  - A cada execução, revogações e cancelamentos são atualizados.
+- **Internacional:** marcos escolhidos pela curadoria, com links verificados. Onde a situação atual é incerta, o
+  item vem marcado "verificar".
+- **Onde aparece:** as normas entram na busca do agente (tipo "norma") e têm formato próprio de resposta. A
+  atualização roda dentro do `run` diário; o backfill inicial custou centavos.
+
+## Avaliação (laço de melhoria)
+
+As mudanças no agente e no scorer são medidas, não intuídas.
+
+- **Agente:** perguntas de referência por persona e intenção (`evals/questions.json`), uma rodada offline e um juiz
+  calibrado contra um modelo mais forte (`evals/judge.mjs`, que confere as citações). Histórico em `evals/README.md`.
+- **Scorer de papers:** uma amostra rotulada por um modelo mais forte (`evals/scorer/`), medida com
+  `evals/scorer_eval.py`. O scorer v2 levou a precisão do digest de 0,34 para 0,71.
 
 ## Custos de LLM: rota escolhida por preço
 

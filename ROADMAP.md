@@ -52,6 +52,17 @@ Phoenix. Próximos: criar o espaço no Phoenix Cloud e pôr as variáveis no Pag
 como anotações dos spans; avaliações automáticas no Phoenix (relevância da busca, resposta fiel às fontes);
 traces do pipeline em Python (triagem, redação) com o mesmo formato.
 
+## Feito em 25–26/11/2026
+- ✅ Regulação: normas do Bacen (triagem + ficha), marcos internacionais, aba no site, intenção própria no agente.
+- ✅ Avaliação: juiz v2 calibrado (Fable); agente 76 → 82 no juiz calibrado. Scorer v2 (relevância × qualidade,
+  âncoras, 1200 caracteres): precisão do digest 0,34 → 0,71.
+- ✅ Traces do pipeline (data/traces/ + OTLP), além dos do agente.
+- ✅ Site, leva 1: navegação de app, Início, cartões v2, busca global, Pergunte v2, Sobre.
+- ✅ Voz: microfone em todos os campos (Whisper via HF); "Ouvir" pronto para a ElevenLabs.
+- ✅ Mapas de fontes: FEBRABAN (74 itens, `docs/sources/febraban.*`); associações bancárias do mundo em andamento.
+- Próximos: consumir as fontes mapeadas (prioridade alta primeiro); site leva 2 (sparklines, radar, páginas de
+  técnica e de paper); onboarding canônico pré-computado; código e dados por método; validar ligação repo↔paper.
+
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.
 Próximos pontos fracos: código (falta fonte: datasets e repositórios por método, validar ligação repo↔paper), onboarding
@@ -113,5 +124,10 @@ saldo pago.
    validação de pesquisadores no `new-topic`.
 
 ## Pendências de configuração
+- ⏳ Cloudflare Pages (Settings → Variables and Secrets): `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` e
+  `OTEL_EXPORTER_OTLP_HEADERS` (Phoenix), `PHOENIX_PROJECT_NAME` (opcional), `DEEPSEEK_API_KEY` (opcional, entra na
+  comparação de preço do agente), `ELEVENLABS_API_KEY` e `ELEVENLABS_VOICE_ID` (voz de saída).
+- ⏳ GitHub Actions: para o pipeline mandar traces ao Phoenix e usar a DeepSeek direta, criar os secrets e passá-los
+  no `env` dos workflows (editar workflow exige o escopo `workflow`).
 - ✅ Chave do OpenAlex ativa, com saldo pré-pago (US$ 10 em 17/11).
 - ✅ Cloudflare Pages no ar, protegido por senha única (`SITE_PASSWORD`).
