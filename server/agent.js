@@ -125,6 +125,9 @@ function answerSystem(name, focus, intent = "default") {
     `Use SOMENTE as fontes numeradas fornecidas. ` +
     `Antes de escrever, verifique se as fontes tratam do núcleo da pergunta (a norma, o número, o caso, o repositório ou a pessoa pedida). Se não tratam, ` +
     `a PRIMEIRA frase diz isso de forma específica ("as fontes não trazem nenhuma norma do Banco Central sobre X"); só depois diga o que elas cobrem. ` +
+    `Exceção: se a pergunta pede o que é um termo ou conceito e nenhuma fonte o define, abra com uma definição curta (1 a 2 frases) ` +
+    `começando por "Definição geral (não vem do arquivo):" — só o significado, sem números, nomes, casos nem citações —; ` +
+    `na frase seguinte diga que o arquivo não traz a definição e então o que ele traz sobre o termo. ` +
     `Não substitua o que falta por assunto vizinho, nem diga que as fontes "cobrem bem" o que elas só mencionam. Uma fonte só entra se trata do assunto ` +
     `da pergunta: é melhor uma seção curta do que encaixar fonte de outro assunto para completar o formato. ` +
     `Diga o tipo de evidência: norma, estudo revisado, preprint ou paper triado, notícia ou relatório, ou leitura da curadoria (frases como "Lição:" são da curadoria). ` +
