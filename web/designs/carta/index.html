@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Carta · Research Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carta.css">
+<script>
+/* theme before first paint: ?theme= or the saved choice; [data-theme] overrides prefers-color-scheme */
+(function () { try { var t = new URLSearchParams(location.search).get("theme") || localStorage.getItem("carta-theme"); if (t && t !== "auto") document.documentElement.setAttribute("data-theme", t); } catch (e) { /* storage blocked */ } })();
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap row">
+    <a class="brand" href="#/temas" aria-label="Trocar de tema">
+      <svg width="26" height="26" viewBox="-13 -13 26 26" fill="none" stroke="currentColor" aria-hidden="true"><circle r="11.5" stroke-width="1.2"/><circle r="6.5" stroke-width=".9" stroke-dasharray="1.6 2"/><path d="M0 0 7.8 -8.4" stroke-width="1.4"/><circle r="1.7" fill="currentColor" stroke="none"/><circle cx="-4.5" cy="3.5" r="1.5" fill="var(--mag)" stroke="none"/></svg>
+      <span><b id="brand-t">Research</b> <i id="brand-em">Watch</i></span>
+      <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg>
+    </a>
+    <nav aria-label="Seções" id="nav-d"></nav>
+    <div class="tools">
+      <button class="ico-b" id="theme-b" aria-label="Alternar claro e escuro"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="10" r="6.5"/><path d="M10 3.5v13" /><path d="M10 3.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+    </div>
+  </div>
+  <div class="status"><div class="wrap mono" id="status"><a class="back" href="../../">Voltar ao site atual</a></div></div>
+</header>
+<main id="app" class="wrap"><p class="loading mono">Carregando a carta…</p></main>
+<nav class="tab" id="tab" aria-label="Navegação principal"></nav>
+<dialog id="sheet" aria-label="Painel"></dialog>
+<div id="tip" role="tooltip"></div>
+<script src="carta.js"></script>
+</body>
+</html>

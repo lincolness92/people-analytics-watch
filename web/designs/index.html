@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Novos designs</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root { --bg: #f7f5f0; --surface: #fff; --ink: #1d1b18; --muted: #6f695f; --line: #e4dfd5; --accent: #b4431f; color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #161513; --surface: #1f1d1a; --ink: #ece8e1; --muted: #9a948a; --line: #34312c; --accent: #e07a55; color-scheme: dark; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px 48px; }
+    h1 { font: 600 30px/1.15 "Iowan Old Style", Charter, Georgia, serif; margin: 8px 0 6px; }
+    p.dek { color: var(--muted); margin: 0 0 22px; }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    a.card { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; min-height: 44px; }
+    a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+    a.card b { font-size: 19px; display: block; }
+    a.card span { color: var(--muted); font-size: 15px; }
+    .back { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); margin-top: 22px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Novos designs</h1>
+    <p class="dek">Quatro propostas de interface com os dados reais deste tema e o Pergunte funcionando. Abra cada uma, navegue e compare com o site atual; cada uma tem um link de volta.</p>
+    <ul>
+      <li><a class="card" href="carta/"><b>Carta</b><span>O Watch como carta náutica: radar, placas com legenda, magenta para o que é novo.</span></a></li>
+      <li><a class="card" href="carteira/"><b>Carteira</b><span>Cartões e histórias: pilha de novidades, conclusões do ano em stories, prazos como tíquetes, linha do tempo deslizante.</span></a></li>
+      <li><a class="card" href="sinal/"><b>Sinal</b><span>Painel de sinais: subtemas por código e cor, radar de crescimento, barras por dia e prazos num eixo.</span></a></li>
+      <li><a class="card" href="grifo/"><b>Grifo</b><span>Leitura anotada: papel branco, um marca-texto por tema, caneta azul para links e vermelha para prazos.</span></a></li>
+    </ul>
+    <a class="back" href="../">← Voltar ao site atual</a>
+  </main>
+</body>
+</html>

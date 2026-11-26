@@ -821,6 +821,7 @@
         ${row("#/watchlist", ICON.people, "Pessoas & instituições", `${nPeople} pesquisadores, ${nOrg} revistas, centros e fontes`)}
         ${row("#/arquivo", ICON.archive, "Arquivo", `${nPapers} papers de ${DATA.digests.length} digests, com filtros`)}
         ${fbOn() ? row("#/criar", ICON.plus, "Peça o seu Watch", "Um tema novo, criado e revisado para você") : ""}
+        ${row("designs/", ICON.swap, "Novos designs (teste)", "Carta, Carteira, Sinal e Grifo, com os dados deste tema")}
         ${row("", ICON.info, "Sobre", "O que é o site, como citar, integrações", "data-open-about")}
         ${(DATA.topics || []).length > 1 ? row("", ICON.swap, "Trocar de tema", (DATA.topics || []).map((t) => esc(t.name)).join(" · "), "data-open-topics") : ""}
       </ul>`);
