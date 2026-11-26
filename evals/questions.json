@@ -100,6 +100,17 @@
       "evo_subtema": "people analytics como disciplina",
       "who_subtema": "people analytics",
       "industry_subtema": "people analytics e IA em RH"
+    },
+    "risco-credito-ia": {
+      "area": "modelagem de risco de crédito de varejo e cobrança",
+      "subtema": "modelos de probabilidade de default (PD) para concessão de crédito de varejo",
+      "tecnica": "O uso de modelos fundacionais treinados em dados transacionais, em vez de gradient boosting, na previsão de PD",
+      "regtema": "o uso de machine learning em modelos de crédito de varejo (validação e risco de modelo, explicabilidade e decisões automatizadas, IRB e perda esperada)",
+      "projeto": "um agente de IA generativa que conduz a renegociação de dívidas em atraso com clientes pessoa física pelo WhatsApp",
+      "code_tecnica": "modelos de sequência e fundacionais em transações bancárias para risco de crédito",
+      "evo_subtema": "credit scoring e behavior score, do scorecard logístico ao machine learning e aos modelos fundacionais",
+      "who_subtema": "credit scoring com machine learning",
+      "industry_subtema": "cobrança e renegociação com machine learning e IA generativa"
     }
   },
   "slot_map": {
@@ -115,6 +126,10 @@
     {"topic": "fraude-bancaria", "text": "Tem alguma referência sobre técnicas autosupervisionadas, como arquiteturas Transformer?"},
     {"topic": "tecnologia-bancaria", "text": "Me fale mais sobre o caso do inter reduzir a inadimplência"},
     {"topic": "tecnologia-bancaria", "text": "Em relação ao ganho da utilização de Modelos Fundacionais, oque as pesquisas apontam?"},
-    {"topic": "people-analytics", "text": "O que os papers dizem sobre recrutamento & seleção, e quais são as limitações?"}
+    {"topic": "people-analytics", "text": "O que os papers dizem sobre recrutamento & seleção, e quais são as limitações?"},
+    {"topic": "risco-credito-ia", "text": "Modelos fundacionais treinados em transações superam gradient boosting em PD? Com que ganho medido?"},
+    {"topic": "risco-credito-ia", "text": "O que funciona em cobrança com ML e IA generativa, com evidência de produção?"},
+    {"topic": "risco-credito-ia", "text": "Como a regulação brasileira e Basileia tratam modelos de ML em crédito (validação, explicabilidade)?"},
+    {"topic": "risco-credito-ia", "text": "Quem são as referências em credit scoring com ML hoje?"}
   ]
 }

@@ -1,7 +1,8 @@
 # Handoff (atualizado em 26/11/2026)
 
 Site: https://people-analytics-watch.pages.dev (senha única: secret `SITE_PASSWORD`).
-Temas em `topics/`: people analytics, fraude bancária e tecnologia bancária. São casos de teste da plataforma, que
+Temas em `topics/`: people analytics, fraude bancária, tecnologia bancária e risco de crédito com IA (`risco-credito-ia`,
+primeiro tema criado pela rotina "Peça o seu Watch", em PR para revisão). São casos de teste da plataforma, que
 é genérica. A visão está em `VISION.md`, os detalhes no README e os próximos passos no `ROADMAP.md`.
 
 ## No ar
@@ -57,6 +58,14 @@ O Claude lê o que foi marcado.
   automaticamente depois da primeira falha.
 - **Pré-filtro:** em janelas grandes (backfill), o pré-filtro de tecnologia bancária corta itens bons, porque as
   fontes web enchem as 220 vagas. No dia a dia não acontece (16–170 candidatos por dia).
+- **`new-topic` sem rascunho do LLM (26/11):** o DeepSeek V4.1 Flash cortou a saída no limite de 9000 tokens nas
+  quatro rotas, o Qwen 3.5 122B não tinha provedor habilitado na HF (já trocado na main) e o gpt-oss-120b não
+  respondeu em 25 min. O
+  rascunho do tema de crédito foi escrito à mão em `.draft.json`, que o `new-topic` reaproveita. Vale subir o
+  `max_tokens` do rascunho ou dividi-lo em duas chamadas.
+- **Normas do Bacen que escapam (26/11):** `bacen.types` de todos os temas não inclui o tipo "Resolução", que é como a
+  API classifica as resoluções do CMN até 2020 (ex.: 4.557/2017). Além disso, a triagem lê só a ementa, e normas
+  cuja ementa é "Altera a Resolução X" ficam com nota baixa (ex.: Res. BCB 610/2026, limites do rotativo).
 - **OpenAlex:** a chave fica em `~/.config/pawatch/openalex.env` (local) ou no secret `OPENALEX_API_KEY`.
 - **DeepSeek local:** a chave fica em `~/.config/pawatch/deepseek.env`.
 - **Watchlist:**

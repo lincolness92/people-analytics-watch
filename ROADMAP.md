@@ -28,8 +28,10 @@ governo, instituições, países). Ideias: comparar Brasil × mundo nos números
 (blogs de bancos, conferências) nos destaques do ano, hoje só entram papers.
 
 ## 4. Outros temas
-- **Risco de crédito**: incluir IFRS 9 / perda esperada (IASB), Basileia (BCBS) e Bacen (Resolução
-  CMN 4.966). `python -m pawatch new-topic "risco de crédito" --slug risco-credito`.
+- **Risco de crédito**: 26/11/2026, rascunho `topics/risco-credito-ia/` (Credit Risk AI Watch) criado pela rotina
+  "Peça o seu Watch" a partir da issue #1, com PR aberto para revisão humana. Inclui IFRS 9/perda esperada,
+  Basileia, SR 26-2 e as normas do Bacen por busca. Revisão e primeira coleta em `evals/topics/risco-credito-ia-review.md`.
+  Antes do merge: confirmar o escopo (LGD/EAD, IFRS 9 e PMEs como varejo) e conferir os marcos marcados "verificar".
 
 ## 6. Arquitetura para integrações (MCP, A2A, REST)
 Combinado em 18/11: núcleo de consulta único + adaptadores finos (ver README, "Arquitetura do lado do servidor").

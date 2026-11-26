@@ -1,0 +1,1436 @@
+[
+{
+"key": "web:https://libertystreeteconomics.newyorkfed.org/2026/11/how-market-position-shapes-credit-card-interest-rates",
+"title": "How Market Position Shapes Credit Card Interest Rates",
+"url": "https://libertystreeteconomics.newyorkfed.org/2026/11/how-market-position-shapes-credit-card-interest-rates/",
+"venue": "NY Fed — Liberty Street Economics",
+"date": "2026-11-04",
+"authors": [],
+"abstract": "Why is it that two borrowers who look much alike can be offered very different rates when applying for a credit card? In a recent paper , we address this question by examining how the rate offered changes when the lender’s funding cost falls. Data on 14 million newly issued cards show that when a lender's funding costs decline, the lender passes less of that decline on to the offer rate when it holds a large market share. That is, two borrowers with similar credit scores and incomes borrowing from the same lender can see noticeably different interest rates on the credit card they are applying for.",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [
+"Federal Reserve Bank of New York — Liberty Street Economics"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "admin",
+"w": "14 milhões de cartões; poder de mercado e repasse de custo, dados reais"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.01919",
+"title": "Deadly Disease, Fear, and Ostracism in the Credit Market",
+"url": "https://doi.org/10.1287/mnsc.2025.01919",
+"venue": "Management Science",
+"date": "2026-11-10",
+"authors": [
+"Sumit D. Agarwal",
+"Pengsheng Lin",
+"Yupeng Lin",
+"Ruichang Lu",
+"Xiaojun Zhang"
+],
+"abstract": "This paper exploits the 2014 U.S. Ebola outbreak as a natural experiment to examine how fear distorts mortgage credit allocation. We find a 3.8-percentage-point increase in mortgage denial rates for Black applicants during the outbreak, despite negligible infection risk. Approved Black borrowers have stronger credit profiles and lower default rates, yet are less likely to receive loan modifications when delinquent. These effects are absent in algorithm-driven FinTech lending and reverse quickly postoutbreak—patterns inconsistent with statistical discrimination. Robustness tests rule out alternative explanations related to political cycles, labor market impacts, applicant pool composition changes, and bank financial conditions. Consistent with diagnostic expectation theory, higher exposure to Ebola fear does not result in a significant learning effect during the COVID-19 pandemic. This paper was accepted by Bo Becker, finance. Funding: S. Agarwal acknowledges the financial support from the National Natural Science Foundation of China [Grant 72495154]. Y. Lin gratefully acknowledges financial support from the NUS Research Grant [Grants A-8001725 and A-8004426]. R. Lu and X. Zhang ack",
+"score": 6,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "quasi",
+"w": "Experimento natural Ebola; discriminação em hipotecas com números explícitos"
+}
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21310/noticia",
+"title": "BC reforça proteção ao consumidor com novas regras para oferta e contratação de crédito",
+"url": "https://www.bcb.gov.br/detalhenoticia/21310/noticia",
+"venue": "Banco Central do Brasil — notícias",
+"date": "2026-11-05",
+"authors": [],
+"abstract": "​O Banco Central (BC) aprovou três novas regras para ampliar a proteção dos consumidores nas relações de crédito. As medidas reforçam as responsabilidades das instituições na oferta e na concessão de empréstimos e financiamentos, aumentam a transparência antes da contratação e criam salvaguardas contra ofertas inadequadas ou abusivas. O objetivo é reduzir situações que possam favorecer o endividamento excessivo e contribuir para o bem-estar financeiro das famílias. “As medidas ampliam a capacidade de o consumidor tomar decisões informadas sobre o crédito. Com mais transparência sobre suas dívidas, custos e capacidade de pagamento, além de maior controle sobre as ofertas que recebe, o cidadão ganha instrumentos para avaliar melhor suas escolhas e reduzir riscos de endividamento excessivo”, afirmou Gilneu Vivan, Diretor de Regulação do BC. Uma das mudanças está na oferta ativa de crédito. A Resolução BCB 602 determina que as instituições ofereçam mecanismo claro para que o cliente possa bloquear propagandas e ofertas ativas. Para pessoas em situação de maior vulnerabilidade financeira ou risco de endividamento excessivo, a proteção será maior: a oferta dependerá de autorização prévia",
+"score": 8,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Banco Central do Brasil"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 7,
+"e": "regulator",
+"w": "Resolução BCB 602: bloqueio de oferta ativa e autorização prévia, exigência nova"
+}
+},
+{
+"key": "doi:10.1016/j.jfineco.2026.104398",
+"title": "Shadow banks on the rise: Evidence across market segments",
+"url": "https://doi.org/10.1016/j.jfineco.2026.104398",
+"venue": "Journal of Financial Economics",
+"date": "2026-11-05",
+"authors": [
+"Kim Fe Cramer",
+"Pulak Ghosh",
+"Nirupama Kulkarni",
+"Nishant Vats"
+],
+"abstract": "This paper examines the comparative advantages of shadow banks across market segments. Combining credit bureau data on retail loans in India with weather shocks as a proxy for credit demand, we show that Fintechs respond more in uncollateralized markets. In contrast, non-Fintech shadow banks exhibit stronger responsiveness in collateralized markets. Exploiting geographic heterogeneity in the adoption of digital payments, we identify technology as the key advantage for Fintechs. Leveraging four natural experiments, we document the significance of lower regulation for non-Fintech shadow banks. Our results suggest that the comparative advantage of shadow banks differs across market segments.",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 7,
+"e": "quasi",
+"w": "Bureau de crédito de varejo na Índia, choques climáticos, quatro experimentos naturais"
+}
+},
+{
+"key": "doi:10.9734/ajeba/2026/v26i112434",
+"title": "Open Finance and Alternative Data for SME Credit Assessment in Underserved Markets",
+"url": "https://doi.org/10.9734/ajeba/2026/v26i112434",
+"venue": "Asian Journal of Economics Business and Accounting",
+"date": "2026-11-16",
+"authors": [
+"Serifat Abimbola Oreoluwa",
+"Habeebat Olawepo Erubu",
+"Victor Agbeve"
+],
+"abstract": "Small and medium-sized enterprises (SMEs) frequently face credit constraints because collateral, audited accounts and formal borrowing histories provide incomplete or costly representations of their economic activity. Open banking, wider open-finance arrangements and alternative data promise to make transaction histories, payment flows, platform activity and administrative records usable in credit assessment. This critical narrative review evaluates when these information sources improve lending decisions, whether predictive gains translate into genuinely broader and more sustainable credit access, and which distributional and governance risks accompany data-intensive underwriting. Peer-reviewed empirical, theoretical and methodological literature published between 2006 and 24 August 2026 was examined, with earlier foundational work retained where necessary. The synthesis distinguishes evidence from small-business lending from consumer-credit extrapolations and separates improvements in model discrimination from causal effects on loan availability, pricing, repayment and enterprise performance. Recent studies from India, China, the United Kingdom and the United States provide credi",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão narrativa de Open Finance e dados alternativos para PMEs"
+}
+},
+{
+"key": "doi:10.62441/actainnovations.v64i.3305",
+"title": "CRITICAL REVIEW OF ASSET STAGING VULNERABILITIES IN EXPECTED CREDIT LOSS (ECL) FRAMEWORKS UNDER IFRS 9/TFRS 9",
+"url": "https://doi.org/10.62441/actainnovations.v64i.3305",
+"venue": "Acta Innovations",
+"date": "2026-10-28",
+"authors": [
+"Siriphet  Sundaravibhata"
+],
+"abstract": "The replacement of the incurred loss model with the Expected Credit Loss (ECL) model under IFRS 9, applied in Thailand as TFRS 9, was intended to solve the “Too Little, Too Late” recognition of credit losses exposed by the 2008 global financial crisis. However, the principle design of the standard places considerable weight on management decision, especially in allocating financial assets across the three impairment stages. This study carefully reviews the asset staging mechanism, the estimation of Probability of Default (PD) and Loss Given Default (LGD), and the governance arrangements. Moreover, staging functions as the “Master Switch” of the ECL model, which is the binary shift from a 12-month to a lifetime measurement horizon creates a cliff effect that makes staging criteria a natural target for earnings management. Therefore, the four vulnerability domains are synthesised, including assessment of significant increases in credit risk, troubled debt restructuring and cure periods, forward looking scenario weighting, and arising asset classes, such as electric vehicles (EV). In addition, this study examines the tension between Basel downturn LGD and IFRS 9 Point-In-Time LGD, pro",
+"score": 5,
+"theme": "expected_loss",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "review",
+"w": "Revisão crítica de staging ECL IFRS 9, sem dados novos nem validação"
+}
+},
+{
+"key": "doi:10.1057/s41261-026-00371-9",
+"title": "Bridging the AI governance gap: systematic weaknesses and targeted solutions in financial model risk management",
+"url": "https://doi.org/10.1057/s41261-026-00371-9",
+"venue": "Journal of Banking Regulation",
+"date": "2026-10-31",
+"authors": [
+"Patrick Spitzer",
+"Peter N. Posch"
+],
+"abstract": "Financial institutions increasingly deploy artificial intelligence (AI) models for critical decisions, yet traditional Model Risk Management (MRM) frameworks struggle to address AI-specific risks, including opacity, adaptive behaviour, and fairness, conduct, and accountability concerns. Based on a structured review of regulatory guidance, academic literature, and industry commentary, this study identifies twelve recurrent weaknesses in current AI model governance across MRM lifecycle domains, including governance and organisation, scope and model inventory, third-party models, model development and validation, deployment and monitoring, and change management. Key gaps include inadequate stakeholder identification due to the expanded scope of model use beyond traditional risk functions, insufficient AI-specific validation methods requiring hybrid outcome- and process-based approaches, and monitoring frameworks that are insufficiently adapted to dynamic AI models. We propose targeted governance enhancements aligned with emerging regulatory frameworks and supervisory guidance, including the EU AI Act, the European Central Bank’s Guide to internal models, and the United Kingdom Prudent",
+"score": 6,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão estruturada de lacunas de governança de modelos de IA, sem dados próprios"
+}
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21322/nota",
+"title": "BC divulga estudo sobre os canais de transmissão da política monetária por meio do crédito",
+"url": "https://www.bcb.gov.br/detalhenoticia/21322/nota",
+"venue": "Banco Central do Brasil — notas",
+"date": "2026-11-18",
+"authors": [],
+"abstract": "O Banco Central (BC) divulgou nesta quarta-feira (18/11) o estudo Transmissão da Política Monetária por meio do Crédito: evidência teórica e empírica, que analisa como a taxa Selic afeta as condições de financiamento da economia brasileira por meio do crédito bancário e do mercado de capitais. O trabalho combina revisão da literatura internacional, comparação entre países e novas estimativas para o Brasil referentes ao período de 2011 a 2025. Os resultados mostram que a transmissão da política monetária ocorre de forma heterogênea entre diferentes modalidades de crédito. Nas operações com recursos livres, especialmente no crédito rotativo e no crédito ao consumo sem garantia, o repasse das alterações da Selic para as taxas de juros é mais elevado. Já nas linhas com recursos direcionados, o repasse para as taxas de juros é menor, o que reduz a intensidade da transmissão por esse canal. Nesses casos, parte importante do ajuste ocorre por meio da quantidade de crédito concedida, com destaque para o crédito direcionado a pessoas jurídicas e para modalidades sujeitas a restrições nas taxas de juros, como o crédito consignado. O estudo também aponta que o mercado de capitais desempenha p",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Banco Central do Brasil"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "regulator",
+"w": "Estudo do BC sobre transmissão monetária via crédito, macro sem modelo de cliente"
+}
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+"title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas",
+"url": "https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+"venue": "Banco Central do Brasil — notícias",
+"date": "2026-11-10",
+"authors": [],
+"abstract": "O Conselho Monetário Nacional (CMN) e o Banco Central (BC) aprovaram, no último dia 22/10, novas regras para os contratos de parceria no Open Finance e mudanças voltadas a facilitar o compartilhamento de dados por clientes pessoas jurídicas. As alterações constam da Resolução Conjunta 21, de 22 de outubro de 2026, que modifica a regulamentação do ecossistema e busca dar mais clareza às responsabilidades das instituições e entidades envolvidas no tratamento das informações. Clique aqui​ para acessar a Resolução Conjunta BC/CMN 21/2026. “Com esse aperfeiçoamento, damos mais clareza às responsabilidades de cada participante e reforçamos as salvaguardas para o uso dos dados, ao mesmo tempo em que criamos condições para jornadas mais aderentes à realidade das empresas”, afirmou Gilneu Vivan, Diretor de Regulação do BC. Uma das mudanças é o refinamento do conceito de contrato de parceria. A norma passa a identificar como instituição integradora a participante do Open Finance que, com o consentimento do cliente, recebe dados e os transmite a uma entidade parceira. Também reforça requisitos de segurança, privacidade e governança. Antes de celebrar a parceria, a instituição integradora deve",
+"score": 6,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Banco Central do Brasil"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "regulator",
+"w": "Resolução Conjunta 21: parcerias e compartilhamento PJ no Open Finance"
+}
+},
+{
+"key": "doi:10.11648/j.mma.20261104.11",
+"title": "A Modelling Consumer Credit Risk Using Survival Analysis: A District-level Study from Badulla, Sri Lanka",
+"url": "https://doi.org/10.11648/j.mma.20261104.11",
+"venue": "Mathematical Modelling and Applications",
+"date": "2026-11-06",
+"authors": [
+"Rajapaksha Amithani",
+"Chathuri L. Jayasinghe",
+"Miuran Jayaweera"
+],
+"abstract": "Credit risk models in many rural lending settings are still largely static, focusing on whether default occurs rather than when it occurs. This study develops a time-to-event (survival) framework to analyze the timing and determinants of consumer-loan default in the Badulla District of Sri Lanka. Using microdata on consumer instalment loans originated between January 2015 and December 2020 (followed up to end-2020), loans were modelled in months from loan origination to first default (≥90 days past due), early full settlement, or right-censoring. Kaplan–Meier estimates and log-rank tests were used to describe overall loan survival and compare survival patterns across borrower and loan groups. Kaplan–Meier results show high early survival at 12 and 36 months (S (12) =0.943, S (36) =0.938) followed by a pronounced deterioration after four years, with survival falling from S (48) =0.923 to S (60) =0.343. A multiple Cox proportional hazards model was estimated using 1,168 loans. Education was a consistent determinant: compared with higher education, primary, secondary, and tertiary (non-degree) groups had significantly higher hazards of default. Higher interest rates and lower income c",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "admin",
+"w": "Sobrevivência em crédito ao consumo, 1.168 contratos reais, amostra pequena sem OOT"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24358933",
+"title": "Validating Mortgage Default Models Through a Regime Change: Evidence from 10.8 Million Freddie Mac Loans, 2020 to 2026",
+"url": "https://doi.org/10.5281/zenodo.24358933",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-18",
+"authors": [
+"Daniel (Zhenxiong) Yang"
+],
+"abstract": "Credit default models are usually validated on data from one stable period but used through regime changes. This paper validates default models on 10.8 million Freddie Mac mortgages with first payments from 2020 to mid-2024 and performance through June 2026, a period that spans COVID-19 forbearance, a refinancing boom and a rise in note rates from 2.8% to 7.3%. Default is 90 or more days of delinquency or a credit event within 24 months, excluding delinquency that began under forbearance. All data-dependent steps were fitted inside training folds, and models built on 2020 to 2022 loans were tested on a held-out sample and on all 1.23 million loans from 2023 and 2024. An ensemble of logistic regression and gradient boosting ranked risk best, with a ROC AUC of 0.807 in time (95% BCa interval 0.799 to 0.816) and 0.815 out of time (0.811 to 0.817), a small but significant gain over logistic regression. Repeated stratified cross-validation gave the most stable estimates, LOOCV was twice as biased and 400 times slower, and none of eight resampling methods improved ranking or cost. Predicted risk tracked a 2.6-fold rise in default rates because the riskier borrower mix was visible at orig",
+"score": 7,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "10,8 milhões de hipotecas Freddie Mac, validação fora do tempo com AUC e custo"
+}
+},
+{
+"key": "doi:10.1016/j.jempfin.2026.101786",
+"title": "Fintech lending platforms and labor market outcomes: Evidence from small-business loansi",
+"url": "https://doi.org/10.1016/j.jempfin.2026.101786",
+"venue": "Journal of Empirical Finance",
+"date": "2026-11-05",
+"authors": [
+"Zhangweiyi Ren",
+"Ralf Zurbruegg",
+"Chee Seng Cheong",
+"Ivan Obaydin"
+],
+"abstract": "This study examines how fintech lending platforms affect local labor market outcomes among small businesses. Using county-level data on Lending Club small-business loan activity from 2008 to 2020, we find that greater platform lending is associated with lower job creation, reduced employment, and depressed worker earnings among small businesses. To address endogeneity concerns, we exploit the staggered regulatory approval of Lending Club across U.S. states as a quasi-natural experiment and implement a stacked difference-in-differences design with entropy balancing. The results show that expanded access to Lending Club credit leads to significant declines in small-business labor market outcomes. Mechanism tests indicate that these adverse effects are not driven by borrower risk selection. Instead, they operate mainly through debt-trap behavior, whereby borrowers take on platform debt that their businesses struggle to service, and strategic debt restructuring, whereby borrowers use unsecured platform loans to refinance existing business debt rather than fund productive investment. Additional analyses show that the effects are robust to controls for Prosper approval and local house pr",
+"score": 5,
+"theme": "behavior_limits",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "quasi",
+"w": "DiD empilhado do Lending Club sobre mercado de trabalho, não risco de crédito"
+}
+},
+{
+"key": "doi:10.64388/ire1724568",
+"title": "Data-Driven Credit Risk and SME Portfolio Optimization: A Practical Framework for Regional and Community Financial Institutions: Evidence from U.S. SBA 7(a) Lending Data and Interpretable Portfolio Analytics",
+"url": "https://doi.org/10.64388/ire1724568",
+"venue": "Iconic Research and Engineering Journals",
+"date": "2026-11-04",
+"authors": [
+"Tadiwanashe Lennon Kasuwa",
+"Isheanesu Chiworeso",
+"James Sydney",
+"Mabasa Masunungure",
+"Munashe Naphtali Mupa"
+],
+"abstract": "This study develops and tests a practical credit-risk and portfolio-optimization framework for regional and community financial institutions using official U.S. Small Business Administration (SBA) 7(a) loan data. The empirical sample contains 463,775 loans approved between fiscal years 2010 and 2021 and subsequently observed as either paid in full or charged off. Descriptive analytics, portfolio heat maps and an interpretable logistic-regression model are combined to identify risk patterns that are directly relevant for origination, pricing, monitoring and portfolio steering. The observed charge-off rate in the resolved-loan sample is 7.17%. New or startup businesses (8.20%) and unsecured exposures (9.62%) underperform established firms (6.18%) and secured loans (6.21%). Loans with maturities of 60 months or less exhibit the highest observed charge-off rate (17.59%), while 241-360 month credits perform materially better (1.26%). Sectoral differences are economically meaningful: transportation and warehousing, accommodation and food services, retail trade and construction show above-average risk, whereas health care and social assistance is materially lower. The out-of-time model ac",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "admin",
+"w": "463 mil empréstimos SBA, logística interpretável com validação fora do tempo"
+}
+},
+{
+"key": "doi:10.5281/zenodo.23717474",
+"title": "How Correlated Are Bank Borrowers? Implied Vasicek Asset Correlations from US Charge-off Rates, 1935–2025, and a Comparison with Basel Values",
+"url": "https://doi.org/10.5281/zenodo.23717474",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-10-28",
+"authors": [
+"Manoj Kumar Aguru"
+],
+"abstract": "The Basel internal-ratings-based capital formula rests on the one-factor Vasicek model, in which a single parameter, the asset correlation, sets how much loan losses rise in bad years. I show that in this model the probit of the portfolio loss rate has variance ρ/(1−ρ), so the correlation can be read from the time series of loss rates, and I derive the downward bias of this estimator when the systematic factor is persistent. Applied to FRED charge-off rates for US commercial banks, 1985 to 2025, with loss given default of 100%, 60% and 45%, the implied correlations are 0.023 to 0.033 for credit cards, 0.067 to 0.081 for business loans, 0.205 to 0.277 for residential mortgages and 0.218 to 0.260 for commercial real estate. Correcting the persistence bias by parametric bootstrap raises them, for example from 0.067 to 0.080 for business loans. Mortgage estimates depend strongly on how years with net recoveries are treated (0.103 to 0.329). On FDIC data for 1935 to 2025, the implied correlation for all loans is 0.128, or 0.158 after bias correction, but only 0.036 (0.045) for 1984 to 2025. Credit cards fall below the Basel value of 0.04 for revolving retail, business loans fall below t",
+"score": 6,
+"theme": "expected_loss",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "admin",
+"w": "Correlações Vasicek implícitas de charge-offs FRED e comparação com Basileia"
+}
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21335/nota",
+"title": "CMN e BC aprimoram medidas para prevenir riscos associados ao endividamento",
+"url": "https://www.bcb.gov.br/detalhenoticia/21335/nota",
+"venue": "Banco Central do Brasil — notas",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "O Conselho Monetário Nacional (CMN) e o Banco Central (BC) aprovaram um conjunto de medidas para aprimorar a conduta e o tratamento prudencial dos riscos associados à concessão de crédito e ao endividamento, especialmente de pessoas físicas. As medidas reforçam a necessidade de as instituições identificarem, monitorarem e mitigarem o risco de crédito, em especial o risco associado ao nível de endividamento dos tomadores. As iniciativas buscam favorecer a concessão sustentável de crédito, fortalecer a disciplina de mercado e aprimorar o acompanhamento de indicadores relevantes para avaliações sobre o endividamento, os padrões de concessão e a solidez das instituições e de suas carteiras de crédito. As medidas também atuam no reforço dos critérios de originação de crédito, gerenciamento de riscos, mensuração do comprometimento financeiro das pessoas físicas e ampliação da transparência sobre o endividamento. Além disso, trazem mais segurança na contratação de operações de crédito e aumentam a proteção para clientes com dificuldade relevante de pagamento e para aqueles que recorrem com frequência ao crédito rotativo do cartão, uma das modalidades de crédito mais caras do mercado. Essa",
+"score": 7,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Banco Central do Brasil"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 6,
+"e": "regulator",
+"w": "Medidas Bacen/CMN sobre endividamento; sem números no texto"
+}
+},
+{
+"key": "web:https://www.federalreserve.gov/econres/feds/the-welfare-effects-of-bank-liquidity-and-capital-requirements.htm",
+"title": "FEDS Paper: The Welfare Effects of Bank Liquidity and Capital Requirements(Revised)",
+"url": "https://www.federalreserve.gov/econres/feds/the-welfare-effects-of-bank-liquidity-and-capital-requirements.htm",
+"venue": "Federal Reserve — FEDS papers",
+"date": "2026-11-23",
+"authors": [],
+"abstract": "Skander J. Van den Heuvel and Sergio Villalvazo The stringency of bank liquidity and capital requirements should depend on their social costs and benefits. Equilibrium asset returns yield two simple formulas that express the welfare cost of each requirement as a function of observable variables only. Based on U.S. data, the welfare cost of a 10% liquidity requirement is equivalent to a permanent loss in consumption of about 0.02%, a modest impact. Even using conservative measurements, the cost of a similarly sized increase in the capital requirement is roughly tenfold. Still, optimal policy relies on both requirements to mitigate moral hazard from deposit insurance and is close to Basel III levels.",
+"score": 5,
+"theme": "expected_loss",
+"region": "",
+"watch": [
+"Federal Reserve Board"
+],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "theory",
+"w": "Custo de bem-estar de capital/liquidez; macroprudencial"
+}
+},
+{
+"key": "doi:10.1080/01605682.2026.2744605",
+"title": "Interpretability methods for competing risks random survival forests",
+"url": "https://doi.org/10.1080/01605682.2026.2744605",
+"venue": "Journal of the Operational Research Society",
+"date": "2026-11-14",
+"authors": [
+"Sean Sexton",
+"Halina Frydman",
+"John Watkins",
+"S. Langbein"
+],
+"abstract": "Random survival forests for competing risks (CR-RSF) are nonparametric ensemble methods for predicting event-specific cumulative incidence functions when subjects face multiple competing events. However, limited interpretability methods have hindered their adoption in regulated industries such as financial services, where model transparency is essential for risk management and regulatory compliance. This paper extends three model-agnostic global interpretability methods to the competing risks setting: Permutation feature importance (PFI), partial dependence plots (PDP), and accumulated local effects (ALE). These methods have been developed for single-risk random survival forests (RSF) but, to our knowledge, have not previously been adapted to competing risks. Demonstrating them on a car lease dataset, we find that covariate effects are often event-specific and vary across the lease lifecycle, and that the common alternative of fitting separate single-risk models distorts the interpretability outputs themselves for predictors whose signal is shared across competing events. As a supporting contribution, we construct a valid dataset for the joint estimation of default and prepayment i",
+"score": 6,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Interpretabilidade em riscos concorrentes default/prepay; sem baseline numérico"
+}
+},
+{
+"key": "doi:10.1007/s11146-026-10086-3",
+"title": "Delegated Relief: What Servicers Say, and What Statutory Eligibility Is Worth in Mortgage Forbearance",
+"url": "https://doi.org/10.1007/s11146-026-10086-3",
+"venue": "The Journal of Real Estate Finance and Economics",
+"date": "2026-11-10",
+"authors": [
+"Arka Prava Bandyopadhyay"
+],
+"abstract": "Mortgage servicers decide who receives loss mitigation. The record of how they decide is rarely observable. This paper uses a servicer's own call-center transcripts, read by natural language processing, to recover what was actually said to 19{,}418 borrowers seeking pandemic relief, and pairs that record with the legal boundary the CARES Act drew through the servicer's book: forbearance was an entitlement for federally backed borrowers on attestation alone, and a discretionary decision for everyone else. Discretion turns out to have operated through documentation, verification, and referral rather than denial. Relief followed borrowers who called in; servicer-initiated calls track the foreclosure moratorium, not forbearance. Statutory eligibility raised forbearance by 3.6 percentage points (s.e.\\0.26) across 96{,}244 loan-months --- an estimate of what a documentation requirement costs in take-up, and a quantity directly at issue in current rulemaking to streamline loss mitigation. Racial differences are small and imprecisely signed on both sides of the boundary. A triple-difference estimate rules out differential gaps above roughly one and a half percentage points, though smaller ",
+"score": 7,
+"theme": "collections",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "Transcrições e triple-diff; elegibilidade eleva forbearance 3,6pp"
+}
+},
+{
+"key": "doi:10.3846/ijspm.2026.28909",
+"title": "Predicting mortgage loan defaults using transformer models",
+"url": "https://doi.org/10.3846/ijspm.2026.28909",
+"venue": "International Journal of Strategic Property Management",
+"date": "2026-11-19",
+"authors": [
+"Sangmin Lee",
+"Yeonjae Lee",
+"Seung-woo Shin"
+],
+"abstract": "We use the mortgage data provided by Freddie Mac in the U.S. The predictive power of transformer models was empirically verified while simultaneously exploring the potential for enhancing explanatory power through the following three research questions. First, is there a statistically significant difference in predictive power between the transformer and the panel logistic regression? Second, is there a difference in predictive performance between the variables at the time of loan origination and the current ones? Finally, does altering the input order of the independent variables affect the predictive performance? Our findings are as follows. First, compared with the traditional panel logistic regression model, the transformer demonstrated overwhelmingly superior predictive performance. Second, the absolute importance of updated current month variables in default prediction was statistically demonstrated. Last, the transformer model exhibited a dual nature: practical applicability in overall predictive performance with respect to the F1 score to changes in the order of input variables and the variability of marginal effects for individual variables. These findings contribute to st",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Transformer vs logística em Freddie Mac; sem validação fora do tempo"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.18914",
+"title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+"url": "https://doi.org/10.48550/arxiv.2611.18914",
+"venue": "arXiv",
+"date": "2026-11-13",
+"authors": [
+"Carlos Eduardo Martins Relvas",
+"Gustavo D. G. Bernardo"
+],
+"abstract": "Foundation models pretrained on raw transaction sequences are proposed for credit, fraud and churn modeling, with reported gains over gradient boosting, but the data and baselines behind these gains are rarely public. We measure how much the pretraining and adaptation recipes of these models add to a baseline of point-in-time window aggregates and LightGBM, and we propose TBS (Temporal Boosting-Sequence ensemble), which averages the ranks of a boosting model enriched with label-free event-transition features and of a pretrained sequence network fine-tuned jointly with the aggregates. On a synthetic credit-card dataset, the public MBD-mini banking dataset and two proprietary datasets of trade credit and B2B churn, we compare 27 methods at three label budgets with five seeds and paired bootstrap intervals, using sequence models of about 0.4 million parameters pretrained per dataset. Frozen self-supervised embeddings rarely improve the baseline, and a fine-tuned sequence network alone clears it in 9 of 21 target-budget cells. TBS clears it in 19 of 21 cells (18 after FDR adjustment), with a median gain of +1.8 AUC points, and the controls suggest that combining boosting with the pretr",
+"score": 7,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "bench",
+"w": "27 métodos, bootstrap, LightGBM; sintético/público e trade credit"
+}
+},
+{
+"key": "doi:10.1007/s44282-026-00647-5",
+"title": "Gender fairness in machine learning models for credit card default prediction",
+"url": "https://doi.org/10.1007/s44282-026-00647-5",
+"venue": "Discover Global Society",
+"date": "2026-11-16",
+"authors": [
+"Huthaifa Aljawazneh"
+],
+"abstract": "Recent studies have primarily focused on improving the predictive performance of models for credit card default prediction, whereas fairness across gender groups has received less attention. This study proposes a gender-aware framework for credit card default prediction to evaluate predictive performance and fairness across male and female borrowers. Five machine learning classifiers were evaluated on the full credit card default dataset and its male and female subsets. For each experimental scenario, three data balancing techniques were applied to address class imbalance. Classifier performance was assessed using five classification metrics, while gender fairness was evaluated using five fairness metrics. The results revealed differences in predictive performance between male and female borrowers; however, an additional equal-size sensitivity analysis indicated that the apparent female performance advantage was not consistently maintained after controlling for subgroup size and train–test split variability. The findings also highlight the trade-off between improving minority class prediction and limiting gender disparities in credit card default prediction.",
+"score": 5,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Equidade de gênero em dados UCI; métricas de fairness"
+}
+},
+{
+"key": "doi:10.1922/comdem.v3i8s.19226",
+"title": "Explainable AI in Small-Business Credit Scoring: A Systematic Literature Review of Transparency, Model Governance, and U.S. Fair-Lending Gaps in Hybrid-Cloud Environments",
+"url": "https://doi.org/10.1922/comdem.v3i8s.19226",
+"venue": "Computer and decision making.",
+"date": "2026-11-09",
+"authors": [
+"Amit Butail",
+"Anamika",
+"Kritika Rana"
+],
+"abstract": "Artificial intelligence (AI) is becoming more prevalent in small-business credit scoring, and the model must be accurate, explainable, fair, operationally accountable, and comply with U.S. lending regulations. This systematic literature review is a synthesis of the evidence pertaining to machine-learning credit assessment, explainable AI (XAI), algorithmic fairness, hybrid-cloud governance, and regulatory compliance. The review identified 287 records, with 55 studies included in the qualitative synthesis, according to PRISMA 2020 reporting principles. The synthesis differentiates 14 studies that provide direct evidence of SME credit from 41 complementary studies that cover more general credit and financial-governance contexts. Ensemble learning, gradient boosting, deep learning, transfer learning, SHAP, LIME and counterfactual explanations are explored in the literature. But it is important to note that there are differences in borrower populations, data sets, and modelling approaches that make direct comparisons difficult. Evidence of explanation fidelity, stability, subgroup fairness and cross-cloud accountability is still limited, especially in terms of decision reconstruction a",
+"score": 6,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA de XAI em crédito SME; sem dados novos, só lacunas."
+}
+},
+{
+"key": "doi:10.26794/2587-5671-2027-31-4-2223-2",
+"title": "Artificial Intelligence and Credit Scoring: Opportunities, Ethical Challenges, and Regulatory Implications",
+"url": "https://doi.org/10.26794/2587-5671-2027-31-4-2223-2",
+"venue": "Finance: Theory and Practice",
+"date": "2026-11-23",
+"authors": [
+"Ayesha Anwar",
+"Cristiana Cerqueira Leal",
+"Benilde Oliveira",
+"Tahar Tayachi"
+],
+"abstract": "The aim of this study is to examine how artificial intelligence (AI) is changing credit scoring and to assess the opportunities, ethical concerns, and regulatory challenges associated with its use. It traces the shift from traditional statistical models to AI-based approaches, reviews machine learning, neural networks, and deep learning techniques, and compares their main characteristics with conventional scoring methods. It also considers the safeguards needed for responsible adoption. The study draws on a narrative review of academic literature and regulatory documents, including the European Union’s Ethics Guidelines for Trustworthy AI and the AI Act, alongside a qualitative comparison of credit scoring approaches. The findings suggest that AI can help lenders capture nonlinear relationships, use alternative data, assess applications more quickly, and reach borrowers with limited credit histories. These benefits, however, depend on the quality of the data and how models are validated and used. The review highlights persistent concerns about algorithmic bias, the difficulty of explaining model decisions, data privacy, and regulatory compliance. More accurate predictions alone do ",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão narrativa de IA em scoring e regulação; sem dados nem método novo."
+}
+},
+{
+"key": "doi:10.9734/ajpas/2026/v28i12984",
+"title": "Statistical Modelling of Credit Riskiness of Bodaboda Credit Business in Kenya Using Survival Analysis",
+"url": "https://doi.org/10.9734/ajpas/2026/v28i12984",
+"venue": "Asian Journal of Probability and Statistics",
+"date": "2026-11-21",
+"authors": [
+"Dennis Mwenda Muchangi",
+"Daniel Mwangi",
+"Dennis Kariuki Muriithi"
+],
+"abstract": "Background: Motorcycle hire-purchase financing in Kenya exposes asset-financing providers to loan default risk that varies throughout repayment. Aims: To develop a Cox Proportional Hazards (Cox-PH) model to estimate the time-dependent credit riskiness of bodaboda asset financing businesses in Kenya Study Design: Survival Analysis Research Design. Place and Duration of Study: The study was carried out in Kenya. It involved secondary data from credit businesses dealing with Bodaboda. Data was used from the period between 2015 to 2023. Methodology: We analysed 850 bodaboda credit accounts using Kaplan-Meier estimation, log-rank tests, and a multivariable Cox-PH model fitted via Breslow-approximated partial likelihood, with age, gender, income level, employment status, credit score, loan amount, down-payment ratio, and interest rate as covariates. Results: Kaplan-Meier estimation revealed a median time-to-default of approximately 14.8 months, with the steepest decline in survival probability occurring between the fifth and twentieth month of the loan term. The multivariable Cox-PH model, fitted on nine covariates, achieved a statistically significant overall fit (LR χ² = 340.90, p < .0",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "admin",
+"w": "Cox-PH em 850 contas reais de financiamento de motos; sem out-of-time nem baseline ML."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24053429",
+"title": "The AI Auditability Dilemma: A Comparative Analysis of Retrieval-Augmented Generation and Fine-Tuning Large Language Models in Credit Risk Management",
+"url": "https://doi.org/10.5281/zenodo.24053429",
+"venue": "International Journal of Scientific Research in Artificial Intelligence and Machine Learning",
+"date": "2026-11-08",
+"authors": [
+"Olakunle Olaniyi"
+],
+"abstract": "The integration of Large Language Models (LLMs) into credit risk management offers transformative capabilities for parsing vast arrays of unstructured corporate financial data, market indices, and qualitative disclosures. However, applying generative AI to high-stakes lending decisions introduces a critical \"auditability dilemma\": balancing model performance and behavioral alignment against the strict traceability required by financial regulators. This paper presents a comparative analysis of the two dominant LLM adaptation strategies within credit risk mitigation: Parameter-Efficient Fine-Tuning (PEFT) and Retrieval-Augmented Generation (RAG). We evaluate both frameworks across four core dimensions essential to model risk management (MRM): factual accuracy (hallucination mitigation), data freshness, operational cost, and mathematical explainability. Our findings indicate that while fine-tuning effectively optimizes behavioral patterns, specialized financial terminology, and strict credit memo formatting, its reliance on parametric memory acts as a black box that fails strict regulatory audits and struggles with real-time macroeconomic shifts. Conversely, RAG provides an explicit, ",
+"score": 5,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Comparação conceitual RAG vs fine-tuning para auditabilidade; sem resultados numéricos."
+}
+},
+{
+"key": "doi:10.1922/comdem.v3i6s.19006",
+"title": "Artificial Intelligence–Driven Decision Intelligence in Banking and FinTech: Predictive Analytics for Financial Risk, Customer Behaviour, and Strategic Management",
+"url": "https://doi.org/10.1922/comdem.v3i6s.19006",
+"venue": "Computer and decision making.",
+"date": "2026-11-03",
+"authors": [
+"Vishweswar Sastry V.N",
+"Rajidi Rammohan Reddy",
+"Renushree H K",
+"Shailashree K",
+"Vishnu Govindan",
+"S Sathyakala"
+],
+"abstract": "The use of artificial intelligence (AI) in banking and FinTech is growing, and while many focus on predictive accuracy when deploying AI, more is needed to make it work. This study proposes an AI-powered decision-intelligence platform with the combined features of credit-default prediction, repayment-behaviour analytics, model explanation, and risk stratification. The UCI Default of Credit Card Clients data set was analyzed which consists of 30,000 customers and 23 predictors. Four classifiers – Logistic Regression, Random Forest, Extra Trees and HistGradientBoosting – were tested on leakage-safe stratified training and cross validation with a hold out test set, following the category cleaning and behaviour-oriented feature engineering process. Since the defaults accounted for 22.12% of the observations, average precision was chosen as the main model selection criterion. HistGradientBoosting was the best model in terms of cross-validated average precision (0.558) and PR-AUC (0.559) and ROC-AUC (0.782) on the held-out data. On the training-derived threshold, 0.225, sensitivity, specificity and F1-score were 63.83%, 78.47% and 0.533, respectively. Permutation importance found that th",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Dataset UCI repetido com HistGradientBoosting e métricas honestas; sem contribuição de método."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24053189",
+"title": "Reconciliation identities as acceptance tests of an expected credit loss allowance: detection limits on a public loan book, overlays kept apart, the convex region of scenario weighting and three provisioning regimes on one synthetic bank",
+"url": "https://doi.org/10.5281/zenodo.24053189",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-08",
+"authors": [
+"Felipe A. Santibáñez-Leal"
+],
+"abstract": "An expected credit loss allowance is published in tables that must reconcile, is moved by overlays and differs across regimes; published work gives no detection limit for the reconciliation and no test of the overlay rule. We test a protocol: the IFRS 7 identities as an acceptance test with a measured detection limit, overlays as separate lines, the region of the non-linearity of the weighted loss, and a bridge between three regimes. Twelve identities on a tolerance of one millionth of the gross amount, run on six dates of an SBA 7(a) loan book, name a planted defect from that size in 4,200 of 4,200 cases of seven classes; the stage arithmetic and a pooled row name 1,800. An absolute tolerance of 10^-6 units flags 4 of six clean tables. No identity sees an amount booked under another line or an overlay merged into the model loss. The weighted PD is never below the PD at the mean factor in 16,906 convex draws and is below it in 796 of 2,046 mixed draws. Three scenarios at one standard deviation understate the expected PD by a median 4.56%. One synthetic bank has an IFRS 9 total of 0.621 of B-1 in the base scenario over 10 seeds (95% interval 0.606 to 0.635), above it only in the com",
+"score": 7,
+"theme": "expected_loss",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "bench",
+"w": "Identidades IFRS 7 como teste de aceitação de ECL em carteira SBA 7(a) real, com limites de detecção numéricos."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24282031",
+"title": "Creditworthy Rejects: A Pre-registered Fair-Access Study of a Credit Scorecard, a Thin-File Model, and a Second-Look Policy That Failed Its Own Test",
+"url": "https://doi.org/10.5281/zenodo.24282031",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-16",
+"authors": [
+"Jesun Ahmad Ushno"
+],
+"abstract": "A credit cut-off does not only refuse people who would have defaulted. At any stated risk appetite it also refuses a measurable number of applicants who, in the event, repaid. This study counts them, prices the alternatives, and then tests a remedy against a pre-registered pass line it fails. On the UCI credit card portfolio (Taiwan, 2005; 30,000 accounts; held-out test set of 9,000), a gradient boosting scorecard (AUC 0.7810, 95 percent bootstrap CI 0.7693 to 0.7919) is cut at the point where the approved book's observed default rate equals the portfolio's performing-book rate of 12.00 percent. At that cut-off (PD 0.2293; 6,375 approved, 2,625 rejected), 1,399 of the 2,625 rejected applicants (53.3 percent, CI 48.2 to 77.6 percent) did not default: the creditworthy rejects. A model restricted to behavioural features, the thin-file situation of a newcomer with no bureau history, scores AUC 0.7687 against the full model's 0.7810, a gap of 0.0123 that confirms the pre-registered hypothesis that behavioural evidence alone carries most of the signal. A fairness audit at the same cut-off finds approval-rate gaps of 3.6 points by sex, 12.6 by age band, and 29.2 by education, with group s",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Estudo pré-registrado de rejeitados adimplentes com bootstrap e auditoria de equidade em UCI."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24104479",
+"title": "FinTrustX: Explainable, Threshold-Aware Credit Risk Assessment on the Home Credit Default Risk Dataset",
+"url": "https://doi.org/10.5281/zenodo.24104479",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-10",
+"authors": [
+"anurag Kashyap",
+"Hritik Sharma",
+"Rajveer"
+],
+"abstract": "Credit models usually get judged on one number, and that number hides most of what a lender cares about. This paper describes FinTrustX, an explainable credit-risk pipeline built on the Home Credit Default Risk data, and asks two questions: which of five model families discriminates best, and which decision threshold makes a model usable? We benchmark a decision tree, a random forest, XGBoost, CatBoost and a multilayer perceptron on 245 engineered features and 61,503 held-out applicants, 4,965 of whom defaulted (8.07%). XGBoost came out on top with ROC-AUC 0.779 and PR-AUC 0.275, about 3.4 times the no-skill baseline. The headline number is only half the story. At the conventional Rajveer Dept. of CSE (Cybersecurity) IILM University Greater Noida, India rajveer.cs27@iilm.edu FinTrustX is our attempt to build that whole path in one codebase, from raw applications to a ranked list of reasons. This paper reports what the pipeline does today, which is less than the platform name implies. Modelling, evaluation and the explanation step run. The serving layer, probability calibration and fairness audits are not finished. We keep our claims inside that boundary. The contributions are as fo",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Benchmark de cinco famílias no Home Credit; sem calibração nem auditoria concluídas."
+}
+},
+{
+"key": "doi:10.54254/2754-1169/2026.ab39428",
+"title": "Predicting the Status of Overdue Loans in the US Banking System: Evidence from the US Banking System's Call Reports",
+"url": "https://doi.org/10.54254/2754-1169/2026.ab39428",
+"venue": "Advances in Economics Management and Political Sciences",
+"date": "2026-11-24",
+"authors": [
+"Xinyi Feng",
+"Yike Gong",
+"Zhehong Liu"
+],
+"abstract": "The quarterly Call Reports of FFIEC will be used in this paper to forecast the two-quarter-later delinquency status of commercial and industrial loans, agricultural loans, multi-family residential loans, and credit card loan portfolios. There are 288,396 observations of test data from all loan types at 288 banks, and the sample event rate is 2.43%. LightGBM model AP is 0.13, which has exceeded both the original delinquency rate of 0.0759 and the logistic regression model's 0.10. The 95% confidence intervals for the AP relative to the two initial benchmarks are [0.04, 0.07] and [0.03, 0.04]. Modify the delinquency threshold and change the reporting deadline, and then LightGBM's AP consistently leads the ranking of the initial rate in all four loan sectors and different bank-size groups under ten random seeds. Weighting by loan balance increased the AP of LightGBM, and the ranking of the initial delinquency rate can help to identify more loans in the top ten percentile groups of the target event earlier. The last submission time in the FFIEC database was used to find the old data.",
+"score": 5,
+"theme": "behavior_limits",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "admin",
+"w": "LightGBM em Call Reports prevê inadimplência de carteiras no nível do banco, não do cliente."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24304545",
+"title": "The Model That Wins on AUC Is Not the Model That Saves the Bank Money: A Cost-Sensitive Re-Evaluation of Credit Default Prediction Classifiers",
+"url": "https://doi.org/10.5281/zenodo.24304545",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-17",
+"authors": [
+"Nezar Abdilah Prakasa"
+],
+"abstract": "Published benchmarks for credit-card default prediction almost universally rank classifiers by rank-based or threshold-free metrics such as AUC, F1, or accuracy, implicitly treating a missed default and a wrongly rejected good customer as equally costly errors. In practice, a bank's loss from an undetected default (loss given default on the full credit exposure) is an order of magnitude larger than its opportunity loss from rejecting a creditworthy applicant (one month of foregone interest margin), so a model ranking built on symmetric-cost metrics need not reflect which model actually minimizes the bank's expected loss. We revisit the UCI \"Default of Credit Card Clients\" benchmark (30,000 accounts, Taiwan, 2005) - a dataset underlying dozens of published single-split classifier comparisons - using a paired, Optuna-tuned, repeated stratified cross-validation protocol (5-fold x 6 repeats, 30 paired folds) across Logistic Regression, Random Forest, XGBoost, and LightGBM. Each model is evaluated twice: once under the conventional 0.5 decision threshold with AUC/F1/MCC, and once under a nested, leakage-free, cost-optimized decision threshold derived from an exposure-weighted cost matri",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "bench",
+"w": "Reavaliação custo-sensível em UCI com validação pareada e limiar otimizado por perda esperada."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11176012/v1",
+"title": "Adaptive Credit Risk Prediction Under Concept Drift Using Graph Neural Networks and Gradient Boosting",
+"url": "https://doi.org/10.21203/rs.3.rs-11176012/v1",
+"venue": "Research Square",
+"date": "2026-11-09",
+"authors": [
+"Nabeel Muhammed Kottayil",
+"Manisha Jailia"
+],
+"abstract": "Credit-risk models in retail banking face two persistent difficulties. Default risk depends not only on a borrower’s own attributes but also on systemic factors shared across related obligors—branch, sector, region, or relationship group—that conventional tabular models cannot represent. The relationship between borrower features and default is also non-stationary, drifting with macroeconomic conditions. We propose a hybrid framework that integrates a GraphSAGE encoder, learning borrower embeddings over a graph that links obligors by feature similarity and shared systemic membership, with a gradient-boosted classifier (XGBoost) that consumes both the embeddings and the underwriting features. A recency-weighted rolling-window mechanism keeps the classifier aligned with the prevailing regime, providing adaptivity under concept drift. Outputs are loan-level probabilities of default consistent with the IFRS 9 staging framework. On a sample, IFRS 9-structured benchmark constructed to contain both risk channels, the hybrid attains an AUC of 0.852, against 0.798 for boosted trees on underwriting features alone and 0.768 for the graph encoder alone, with corresponding gains in Kolmogorov–S",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "GNN mais boosting com janela adaptativa em benchmark sintético IFRS 9; AUC 0,852."
+}
+},
+{
+"key": "doi:10.1922/comdem.v3i8s.19169",
+"title": "Explainable Artificial Intelligence for Loan Default Prediction and Credit Approval Decision Support",
+"url": "https://doi.org/10.1922/comdem.v3i8s.19169",
+"venue": "Computer and decision making.",
+"date": "2026-11-08",
+"authors": [
+"Changarampatt Manoj"
+],
+"abstract": "This study aims to design and develop an XAI model for loan default prediction and credit approval decision support using a credit-risk dataset of 32,581 borrower records and 12 variables. After removing duplicate and implausible observations, 32,409 records were analyzed. Age, income, home ownership, employment length, loan purpose, loan grade, loan amount, interest rate, loan-to-income ratio, previous default history, and credit-history length were predictors, with the binary outcome being loan default. The models used were Logistic Regression, Decision Tree, Random Forest, XGBoost and Support Vector Machine, all of which were trained via an 80:20 stratified split and five-fold cross-validation. The model accuracy, precision, recall, specificity, F1-score, ROC-AUC and confusion matrices were used to evaluate the model performance. XGBoost had the best performance in terms of discrimination with an ROC-AUC of 0.948, recall of 81.45%, and F1 of 80.21%. Annual income, interest rate and loan-to-income ratio were the biggest factors affecting default according to SHAP analysis. Among borrowers, risk stratification also subdivided them into low-risk borrowers (3.12% observed default ra",
+"score": 5,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "XAI com SHAP em 32 mil registros; sem out-of-time nem calibração."
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.04747",
+"title": "TAPES: Task-Aligned Joint Predictive Pretraining for Transaction Event Sequences",
+"url": "https://doi.org/10.48550/arxiv.2611.04747",
+"venue": "arXiv",
+"date": "2026-11-03",
+"authors": [
+"Ruobing Zuo",
+"Weiyu Han",
+"Huilin He",
+"Haoyu Jiang",
+"Ze Zhao",
+"Jie Sheng"
+],
+"abstract": "Transaction event sequences support diverse prediction tasks in online commerce and digital financial services. The same transaction records can yield prediction targets with different semantics, including values, changes, and relations to past events. These targets impose different constraints on history representations, but their predictability alone does not establish the downstream utility of a target set. Moreover, target-wise prediction losses do not explicitly model conditional co-occurrence among targets. To address these challenges, we propose TAPES, a task-aligned joint predictive pretraining framework for transaction sequences. TAPES constructs a finite collection of candidate target sets from admissible field-operator combinations. It selects a target set according to the downstream utility of representations learned through short joint pretraining trials under matched budgets. It then reinitializes the encoder and pretrains it on the selected targets through a joint likelihood parameterized by a shared discrete latent variable, before downstream supervised adaptation. Experiments in a real-world transaction-risk setting and on multiple public financial benchmarks spann",
+"score": 7,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "bench",
+"w": "Pretraining de sequências transacionais da Ant em risco real e benchmarks públicos."
+}
+},
+{
+"key": "doi:10.48550/arxiv.2610.41988",
+"title": "ID2Pattern: Pretraining Generalizable Identity Behavior Patterns for Transaction Risk Foundation Models",
+"url": "https://doi.org/10.48550/arxiv.2610.41988",
+"venue": "arXiv",
+"date": "2026-10-30",
+"authors": [
+"Zhao Ze",
+"Haoyu Jiang",
+"Weiyu Han",
+"Ruobing Zuo",
+"Xiao Tan",
+"Shuai Chen"
+],
+"abstract": "Large-scale behavioral pretraining offers a promising route to generalizable representations in online payment systems. However, high-cardinality identity fields such as card, device, and account IDs, though rich in behavioral signals, remain underexploited. Their continually growing vocabularies and limited semantic meaning make existing vocabulary-based and semantics-based encodings ill-suited. Their generalizable signal lies not in specific values, but in the identity behavior patterns they exhibit across a transaction sequence. Building on this insight, we propose ID2Pattern, a pretraining framework that brings these patterns into transaction foundation models. ID2Pattern first encodes identity fields with a Local Anonymous ID (LAID) tokenizer, which captures how each identity appears and recurs within the sequence, independent of its specific value. It then pretrains a multi-scale pattern codebook on unlabeled sequences, which abstracts LAID sequences into discrete behavior patterns for downstream prediction. Experiments on an industrial dataset with over 100M sequences and six public datasets show that ID2Pattern consistently outperforms strong baselines, improving industrial",
+"score": 7,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "bench",
+"w": "Pretraining de padrões de identidade em 100M sequências industriais mais seis datasets públicos."
+}
+},
+{
+"key": "doi:10.55524/ijircst.2026.14.6.4",
+"title": "An AI-Based Framework for Credit Risk Assessment of Thin-File Microenterprises Using Alternative Financial Behavioral Data",
+"url": "https://doi.org/10.55524/ijircst.2026.14.6.4",
+"venue": "International Journal of Innovative Research in Computer Science & Technology",
+"date": "2026-11-16",
+"authors": [
+"Shivangi Srivastava",
+"Raj Bihari Lal Srivastava"
+],
+"abstract": "Microenterprises often have difficulty accessing formal finance due to limited credit history, incomplete financial records and lack of documented borrowing information. So, their financial situation and repayment ability may not be truly reflected by traditional credit evaluation methods. Opportunities in machine learning and artificial intelligence to improve credit risk assessment involve incorporating alternative financial and behavioral indicators. However, predictive models can make unreliable decisions when the information they have is incomplete, inconsistent, or insufficient. In this context, this paper proposes an uncertainty-aware AI framework for credit risk assessment of thin-file microenterprises with alternative financial behavioral indicators. The proposed framework consists of financial preprocessing of data, behavioral feature extraction, machine learning based risk prediction, uncertainty quantification, and human-in-the-loop decision support. The candidate prediction models considered are Logistic Regression, Random Forest and XGBoost. To benchmark the context, we consider a public dataset of credit-risk of SMEs from Bangladesh with 1,200 loan records and 27 str",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Framework thin-file com dataset público pequeno; resultados não aparecem"
+}
+},
+{
+"key": "doi:10.3390/bdcc10110388",
+"title": "From Prediction to Assignment: Capacity-Constrained Agent–Case Allocation in Large-Scale Debt Collection",
+"url": "https://doi.org/10.3390/bdcc10110388",
+"venue": "Big Data and Cognitive Computing",
+"date": "2026-11-13",
+"authors": [
+"Omar Serghini",
+"Salvatore Serrano",
+"Marco Lucio Scarpa",
+"Mirko Lucchese"
+],
+"abstract": "Post-default debt collection requires agencies to allocate delinquent cases across collectors under eligibility and workload constraints, yet most predictive research concentrates on credit scoring rather than on the assignment decision itself. This paper develops a prediction-to-assignment framework using 1.28 million longitudinal assignment episodes from utilities portfolios managed by a large European credit management company. A model selected on development data scores the feasible alternative agents at each historical decision point, reconstructed under strict temporal ordering. The resulting probabilities are used to evaluate capacity-constrained assignment policies, and the predicted differences between agents are tested against observed outcomes. Under the model’s scores, a conservative policy that prohibits score-decreasing reassignments raises mean predicted recovery probability by 2.37 percentage points under historical workloads. An observational contrast calibration, however, indicates that outcomes reflect the predicted agent differences at about 40% of their strength (slope 0.41); after calibration, the conservative policy gain is 0.96 points (95% period-bootstrap i",
+"score": 8,
+"theme": "collections",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 8,
+"e": "admin",
+"w": "1,28M episódios reais, ordenação temporal, calibração e bootstrap; decisão de alocação"
+}
+},
+{
+"key": "doi:10.58532/nbennurngbs2b5p1c1",
+"title": "CREDIT RISK MANAGEMENT THROUGH PREDICTIVE MACHINE LEARNING MODELS FOR STATE BANK OF INDIA",
+"url": "https://doi.org/10.58532/nbennurngbs2b5p1c1",
+"venue": "Iterative International Publishers eBooks",
+"date": "2026-11-01",
+"authors": [
+"Sarella. Vijaya Kumar",
+"Gudikandhula Narasimha Rao",
+"Veerendra Kumar Gogulamudi",
+"A. Sudhir Babu",
+"G. N. Visweswra Rao",
+"T. Kesava Rao"
+],
+"abstract": "You know, when it comes to credit risk assessment, it really plays a huge role in keeping the financial system stable. Lenders can figure out how likely a borrower is to default, and that helps them manage their loan portfolios better. But traditional methods like logistic regression and those old-school scoring models? They’ve been around forever, yet they kinda trip up when it comes to picking up those tricky non-linear relationships and the complex data we see today. Lately, with all the buzz around machine learning (ML), we've got some pretty exciting tools at our fingertips. Techniques like gradient boosting and hybrid stacking frameworks are shaking things up in a good way. This study's diving into how four different models, Logistic Regression (LR), Random Forest (RF), XGBoost, and a Heterogeneous Hybrid Stacking Model (HHMM), stack up against predicting credit default risks. We're looking at a real dataset of 20,000 borrowers, which is pretty solid, right? They used metrics like accuracy, sensitivity, specificity, and Area Under the Curve (AUC) to see how well these models perform. From the results, it turns out XGBoost is killing it with the highest accuracy at 90.5% and a",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "admin",
+"w": "20 mil tomadores reais, XGBoost vs baselines; sem validação temporal nem calibração"
+}
+},
+{
+"key": "doi:10.5089/9798229066518.001",
+"title": "Beyond Collateral: Alternative-Data Underwriting for SMEs in China and Its Relevance for Latin America and the Caribbean",
+"url": "https://doi.org/10.5089/9798229066518.001",
+"venue": "IMF Working Paper",
+"date": "2026-11-01",
+"authors": [
+"Yibin Mu"
+],
+"abstract": "This paper examines how lenders in China use transaction, payment, platform, supply-chain, and operational data to assess small and medium-sized enterprises (SMEs) with limited collateral or credit histories. Using a qualitative, institutional, and mechanism-based approach, it explains the underwriting channel, identifies the conditions needed for scale, and illustrates applications through MYbank’s “310” model, supply-chain lending to Haier and Mengniu distributors, and remote-sensing-based agricultural lending. The paper therefore assesses the enabling roles of credit information systems, digital infrastructure, financial intermediaries, and risk-sharing arrangements, as well as the channel’s limits and external validity across institutional settings, including heterogeneous Latin American and Caribbean economies.",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "quali",
+"w": "Estudo institucional qualitativo de underwriting alternativo para PMEs; sem dados"
+}
+},
+{
+"key": "oa:W7225071847",
+"title": "Uczenie maszynowe w procesie walidacji modeli IRB. Regulacyjne aspekty wykorzystania z perspektywy stanowisk EBA, ECB i KNF",
+"url": "https://ojs.bfg.pl/index.php/bb/article/view/903",
+"venue": "Safe Bank",
+"date": "2026-10-30",
+"authors": [
+"Krzysztof Iwanicki"
+],
+"abstract": "Credit risk is one of the fundamental risk categories inherent to banking activities. Identifying and measuring it is important for the safety of individual credit institutions and the stability of the entire financial sector. In this regard, IRB models play a significant role; they are a key element of the credit risk management system that allows banks to use internal estimates of risk parameters. This article analyzes the theoretical and regulatory basis for using artificial intelligence systems in the IRB model validation process. The article concludes that artificial intelligence systems can be used in the IRB model validation process, but their role should remain auxiliary.",
+"score": 5,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Análise de posições EBA/ECB/KNF sobre IA na validação IRB; sem dados"
+}
+},
+{
+"key": "doi:10.1016/j.jisa.2026.104684",
+"title": "FairLend: Privacy-preserving gender-fairness auditing for loan processing",
+"url": "https://doi.org/10.1016/j.jisa.2026.104684",
+"venue": "Journal of Information Security and Applications",
+"date": "2026-10-29",
+"authors": [
+"Mahender Kumar",
+"Gregory Epiphaniou",
+"Mark Hooper",
+"Carsten Maple"
+],
+"abstract": "Algorithmic credit-scoring systems may reproduce historical disparities while operating under strict borrower-data confidentiality requirements. Removing protected attributes such as gender from operational decision pipelines can reduce direct discriminatory use, but also makes group-disaggregated fairness auditing difficult. This paper presents FairLend , a privacy-preserving protected-attribute auditing framework for loan processing. FairLend separates the operational Loan Processing Unit (LPU) from an independent Fair Lending Auditor (FLA): the LPU processes authorised lending information without receiving gender in plaintext, while the FLA receives only encrypted aggregate group and outcome statistics. FairLend represents gender as a BFV-encrypted one-hot integer vector and aggregates protected-attribute statistics directly through ciphertext addition at multiplicative depth zero, yielding exact integer counts after decryption. Non-interactive zero-knowledge proofs (NIZKPs) support account-credential validity, credit-score authenticity, and application-component binding. A concrete Groth16 instantiation of the account-validity relation is implemented and benchmarked. Evaluation",
+"score": 5,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Auditoria de fairness com criptografia; avaliação cortada, sem carteira real"
+}
+},
+{
+"key": "doi:10.1922/comdem.v3i6s.19001",
+"title": "Beyond Accuracy: A Multi-Dimensional Explainability and Model-Risk Framework for AI-Based Credit Decisions in Banking",
+"url": "https://doi.org/10.1922/comdem.v3i6s.19001",
+"venue": "Computer and decision making.",
+"date": "2026-11-07",
+"authors": [
+"Anamika",
+"Amit Butail",
+"Kritika Rana"
+],
+"abstract": "Beyond predictive discrimination, selecting AI models for mortgage lending requires examining explainability, fairness, calibration, stability, and governance. This study proposes a Beyond-Accuracy, Interpretability and Model-Risk Scoring (BAIMRS) framework and analyzes recorded decisions for 9,360,942 applications in the 2025 Home Mortgage Disclosure Act (HMDA) data. These labels describe historical lender denials, not borrower default; public HMDA data do not include credit scores. Four algorithms (Logistic Regression, Random Forest, XGBoost, and LightGBM) were compared with a monotone LightGBM benchmark on a locked test cohort of 1,211,242 applications and three same-year institution holdouts. LightGBM had the highest ROC-AUC (0.8729) and precision-recall AUC (0.7696), narrowly ahead of XGBoost (0.8727, 0.7688); their paired AUC difference was 0.000179 (95% bootstrap interval -0.000149 to 0.000499). However, LightGBM AUC decreased to 0.7530 at Institution A and its calibration ECE10 reached 0.1129 at Institution C. Following correction of numeric-noise robustness tests, Random Forest and XGBoost had close nominal provisional technical means of 64.362 and 63.209, respectively; XG",
+"score": 7,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "admin",
+"w": "9,36M HMDA com holdouts, bootstrap e ECE; rótulos de negativa, não default"
+}
+},
+{
+"key": "doi:10.46880/jmika.vol10no2.pp635-644",
+"title": "Model Prediksi Risiko Kredit Macet Menggunakan XGBoost Dengan AI Explainer Berbasis SHAP",
+"url": "https://doi.org/10.46880/jmika.vol10no2.pp635-644",
+"venue": "METHOMIKA Jurnal Manajemen Informatika dan Komputerisasi Akuntansi",
+"date": "2026-10-31",
+"authors": [
+"Alvian Maulana Mansyur",
+"Putu Manik Prihatini",
+"Gde Brahupadhya Subiksa"
+],
+"abstract": "Credit is a financial instrument that carries the risk of default when borrowers are unable to fulfill their repayment obligations. This risk may lead to financial losses for lending institutions, making accurate credit risk prediction essential. This study aims to develop a credit risk prediction model using Extreme Gradient Boosting (XGBoost) and point out its predictions using an AI explainer based on SHapley Additive exPlanations (SHAP). The dataset was obtained from the internal database of a fintech company in Indonesia and consisted of 116,250 records with 19 attributes. The research stages included Exploratory Data Analysis (EDA), missing value and outlier handling, data splitting, model training, evaluation, and result interpretation. The XGBoost model achieved an accuracy of 92%. For the Less Current class, the model obtained a precision of 0.91, a recall of 0.97, and an F1-score of 0.94. For the current class, the model achieved a precision of 0.86, a recall of 0.62, and an F1-score of 0.72. For the Default class, the model obtained a precision of 0.97, a recall of 0.91, and an F1-score of 0.94. SHAP analysis as an AI explainer revealed that the income and side_income fe",
+"score": 6,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "admin",
+"w": "116 mil registros internos de fintech, XGBoost+SHAP; sem OOT nem calibração"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.10972",
+"title": "JUBILEE: A Benchmark Environment for Off-Policy Evaluation in Debt Collections",
+"url": "https://doi.org/10.48550/arxiv.2611.10972",
+"venue": "arXiv",
+"date": "2026-11-07",
+"authors": [
+"Diego Silva Prado",
+"Tiago Amaral Penteado de Jesus",
+"Bruno Caldas de Souza",
+"Cristiano Bevitori Maffia de Oliveira"
+],
+"abstract": "Off-policy evaluation (OPE) estimates the value a candidate decision policy would achieve, using only data logged by the policy already in production. In debt collections, unrecorded factors can influence both actions and outcomes. This paper presents JUBILEE, a benchmark environment built around a debt-collections simulator that generates million-loan panels with competing risks, rare recovery events, and hidden factors driving both outcomes and assignment. The evaluation includes an 80-run comparison of tabular and gradient-boosted estimators under two synthetic outcome mechanisms and a 190-run parameter grid. Independent policy simulations provide reference values with estimated Monte Carlo uncertainty for a synthetic reward score and for simulated cash. With hidden factors influencing action assignment, several tabular methods agree closely while underestimating the field-visit policy's score, an error that also appears with boosted models. Intervals from tabular doubly robust estimation usually contain the reference without hidden assignment dependence but mostly miss it when that dependence is present. Estimates from randomized decisions do not show the same large error, alth",
+"score": 7,
+"theme": "collections",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "bench",
+"w": "Simulador sintético de milhões de empréstimos para OPE em cobrança; sem dados reais"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.27094",
+"title": "Separating Automation Gains from Agent Contributions in AI-Assisted Model Validation",
+"url": "https://doi.org/10.48550/arxiv.2611.27094",
+"venue": "arXiv",
+"date": "2026-11-20",
+"authors": [
+"M. Ahmadi Achachlouei"
+],
+"abstract": "LLM agents are being proposed for bank model validation, yet evaluations that compare agent-assisted work with manual practice credit the agent with gains that come from digitized evidence and deterministic tests. We propose a staged architecture in which an LLM-free controlled workflow (P1) is both the fallback and the control arm for individually authorized agent tasks (P2), and an attribution protocol that credits an agent only for faults P1 does not already report. The protocol charges decoy false alarms, unnecessary actions and endorsed developer assertions, counts invalid outputs as misses, folds newly automatable findings back into P1 with discovery credit, and fixes safety bounds and a break-even cost gate in advance. On a synthetic credit-scorecard harness, five scripted reference policies show why this matters: naive case accuracy (4/6) and pooled detection (3/5) tie four flawed policies, whereas the protocol separates all five and credits only the reference policy with detection beyond P1. One fold-back round raises a P1-parroting policy's naive scores without any change to the policy. A regression matrix of sixteen mutants covers nine ways in which earlier versions of t",
+"score": 6,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Protocolo de atribuição para agentes LLM na validação; harness sintético de scorecard"
+}
+},
+{
+"key": "doi:10.55892/jrg.v9i21.4124",
+"title": "Análise comparativa entre modelos de machine learning e redes neurais para a predição de risco de crédito",
+"url": "https://doi.org/10.55892/jrg.v9i21.4124",
+"venue": "Revista JRG de Estudos Acadêmicos",
+"date": "2026-11-16",
+"authors": [
+"Matheus Christian da Cunha Dourado"
+],
+"abstract": "A concessão de crédito exige modelos preditivos precisos, mas o desbalanceamento inerente aos dados financeiros impõe desafios significativos, frequentemente conduzindo algoritmos ao Paradoxo da Acurácia, onde a classe minoritária de inadimplentes é ignorada. Adicionalmente, a complexidade de modelos avançados gera opacidade decisória, contrariando normativas de transparência regulatória como a Lei Geral de Proteção de Dados (LGPD). Este artigo tem como objetivo analisar comparativamente o desempenho preditivo e o grau de explicabilidade de algoritmos de aprendizado de máquina (Random Forest e XGBoost) e Redes Neurais Artificiais (Multilayer Perceptron - MLP) na classificação de risco de crédito. A pesquisa, de natureza quantitativa e experimental, utilizou uma base de dados pública com 307.511 registros. O pré-processamento envolveu One-Hot Encoding, normalização estatística e balanceamento via Synthetic Minority Over-sampling Technique (SMOTE). O treinamento empregou validação cruzada e otimização de hiperparâmetros via GridSearchCV, priorizando a métrica de revocação (recall). A transparência algorítmica foi garantida pela aplicação dos métodos SHapley Additive exPlanations (SHA",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Comparação RF/XGBoost/MLP com SHAP em base pública; sem OOT nem calibração"
+}
+},
+{
+"key": "doi:10.21511/bbs.21(4).2026.19",
+"title": "Classifying credit card customer attrition using explainable artificial intelligence",
+"url": "https://doi.org/10.21511/bbs.21(4).2026.19",
+"venue": "Banks and Bank Systems",
+"date": "2026-11-12",
+"authors": [
+"Hasan Durmuş",
+"Murat URFALIOĞLU"
+],
+"abstract": "Type of the article: Research ArticleAbstractManaging customer retention across retail credit-card portfolios remains imperative for containing revenue attrition and safeguarding banking profitability. This empirical study benchmarks five supervised classification architectures to identify observed credit-card customer attrition and investigates the internal attribution mechanisms of the top-performing model using explainable artificial intelligence. Utilizing the BankChurners benchmark comprising 10,127 records across 37 encoded inputs under an unresampled 75:25 stratified split alongside training-only repeated five-fold cross-validation, we evaluated model discriminatory efficacy across threshold-dependent and ranking-based metrics. Gradient Boosting demonstrated the strongest empirical performance on the held-out test split (accuracy = 0.960; weighted F1 = 0.959; ROC–AUC = 0.986; average precision = 0.949), detecting 332 of the 407 observed churners (recall = 0.816; precision = 0.925; F1 = 0.867) alongside 75 false negatives and 27 false alarms, whilst Random Forest yielded comparable ranking capacity (ROC–AUC = 0.984; average precision = 0.934) but lower minority-class sensitiv",
+"score": 5,
+"theme": "behavior_limits",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Churn de cartão em benchmark público com XAI; retenção, não PD"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.13069",
+"title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+"url": "https://doi.org/10.48550/arxiv.2611.13069",
+"venue": "arXiv",
+"date": "2026-11-09",
+"authors": [
+"Mattias Kvist",
+"Erik Lidman Hillbom",
+"Edoardo de Cal",
+"Davis Siemens",
+"Adam Fredriksson",
+"Rickard Brüel Gabrielsson"
+],
+"abstract": "Banks now train foundation models on ordered sequences of customer events such as transactions, app sessions, and authorizations. Deployed, such a model predicts forward in time, often for customers and merchants absent from training, yet each is evaluated on private data, so no two can be compared. Public benchmarks for such sequences rarely test a period the model has not seen; recommendation studies usually hold out each user's last events instead. We present INTENT (INTEraction, Novelty, and Transfer evaluation for next-action prediction), a public benchmark that scores a model in seven cells defined by whether the user, the period, and the target item appeared in training. An audit of 59 public dataset families retains five datasets; the most common defect is the lack of a calendar timestamp that orders events. No date lies within the time span of all five datasets, so each is split at its own cutoff, chosen by one rule fixed before any model is evaluated. Summed over the datasets, every cell holds at least 111,769 users. In reference results the cell determines the best model: a transformer leads on seen items after the cutoff but scores zero on new items, a variant that embe",
+"score": 7,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "bench",
+"w": "Benchmark público de sequências de eventos com células OOT e cold-start auditadas"
+}
+},
+{
+"key": "doi:10.20944/preprints202610.3138.v1",
+"title": "A Plug-and-Play Explainable AI Framework in Credit Score Assessment",
+"url": "https://doi.org/10.20944/preprints202610.3138.v1",
+"venue": "Preprints.org",
+"date": "2026-10-30",
+"authors": [
+"Gulmira Khussainova",
+"Dinara Kozhamzharova",
+"Aliya Turegeldinova",
+"Bakytzhan B. Amralinova"
+],
+"abstract": "Credit scoring is fundamental in enabling institutions to distinguish between creditworthy and high-risk borrowers. Thus, robust credit scoring models are essential for effective financial risk management. Artificial intelligence and machine learning have significantly improved the precision of credit decision support systems, however, these models often operate as black boxes, concealing the underlying logic of credit denials or approvals. To address this challenge and meet the demand for financial transparency, explainable AI (XAI) has emerged as a crucial mechanism for generating decisions that are interpretable to both financial institutions and clients. This paper researched contemporary decision support systems (DSS) used in credit risk assessment and proposes a modular, plug-and-play framework with integrated explainability. Six requirements were derived for a robust system design based on a review of existing XAI frameworks. The framework consists of five interconnected components such as data ingestion layer, feature processing module, a supervised predictive model, an explanation layer, and a decision endpoint. Existing studies often focus on individual predictive models ",
+"score": 5,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Framework plug-and-play de XAI para score; revisão sem validação empírica"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2610.38445",
+"title": "DES-JEPA: Learning a Shared Vocabulary for High-Dimensional Discrete Event Sequences",
+"url": "https://doi.org/10.48550/arxiv.2610.38445",
+"venue": "arXiv",
+"date": "2026-10-28",
+"authors": [
+"Hugo Math",
+"Maximilian Forstenhäusler",
+"Christos Anagnostopoulos"
+],
+"abstract": "Temporal foundation models such as Chronos and TimesFM generalize across domains through a shared numerical observation space. In contrast, discrete event sequences (DESs), including operational event logs or patient clinical-event trajectories, have domain-specific event vocabularies whose labels lack a consistent correspondence across domains. Beyond this lack of consistency, the number of distinct events in real-world settings is high enough to challenge both classical temporal point process modeling and current in-context foundation inference models such as FIM-PP. Critically, current foundation models for DESs are limited to a small, fixed number of event types, restricting their applicability to realistic, high-dimensional event streams. To address this, we propose two complementary modules: (i) DES-JEPA, a joint-embedding predictive architecture that learns a shared discrete vocabulary from synthetic stochastic processes with unaligned event vocabularies; and (ii) DES-PFN, a discrete event sequence prior-fitted network that reuses the learned vocabulary for in-context next-event prediction. Without task-specific fine-tuning, this framework achieves competitive zero-shot perf",
+"score": 5,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Fundação para sequências de eventos discretos; só sintético, sem números de crédito"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.08298",
+"title": "Rethinking Distribution Shifts: Empirical Analysis and Modeling for Tabular Data",
+"url": "https://doi.org/10.1287/mnsc.2024.08298",
+"venue": "Management Science",
+"date": "2026-11-13",
+"authors": [
+"Tianyu Wang",
+"Jiashuo Liu",
+"Peng Cui",
+"Hongseok Namkoong"
+],
+"abstract": "Different distribution shifts require different interventions, and algorithms must be grounded in the specific shifts they address. However, methodological development for robust algorithms typically relies on structural assumptions that lack empirical validation. Advocating for an empirically grounded data-driven approach to algorithm development, we build an empirical testbed comprising natural shifts across 8 tabular data sets, 172 distribution pairs over 45 methods, and 90,000 method configurations encompassing empirical risk minimization and distributionally robust optimization (DRO) methods. We find that Y|X-shifts are most prevalent in our testbed, in stark contrast to the heavy focus on X (covariate)-shifts in the machine learning literature, and that the performance of robust algorithms is no better than that of vanilla methods. To understand why, we conduct an in-depth empirical analysis of DRO methods and find that underlooked implementation details—such as the choice of underlying model class (e.g., LightGBM) and hyperparameter selection—have a bigger impact on performance than the ambiguity set or its radius. We illustrate via case studies how a data-driven understandi",
+"score": 6,
+"theme": "model_risk",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "bench",
+"w": "Testbed de 8 tabelas e 45 métodos sobre distribution shift, sem carteira de crédito"
+}
+},
+{
+"key": "doi:10.58766/rpgbcb.v20i1.1345",
+"title": "Crédito Algorítmico e Cidadania Financeira: parâmetros institucionais para o uso de inteligência artificial na concessão de crédito",
+"url": "https://doi.org/10.58766/rpgbcb.v20i1.1345",
+"venue": "Revista da Procuradoria-Geral do Banco Central",
+"date": "2026-11-11",
+"authors": [
+"Tayná dos Passos Carneiro"
+],
+"abstract": "A concessão de crédito deixa progressivamente de ser mediada por informações cadastrais e histórico bancário tradicional para ser mediada por inferências algorítmicas. O deslocamento é ambivalente. A mesma infraestrutura informacional que permite avaliar perfis historicamente ilegíveis para os modelos tradicionais, e nessa medida ampliar o acesso, também amplia a capacidade de segmentar, precificar e excluir. O artigo sustenta que o problema central do crédito algorítmico não está no uso da inteligência artificial em si, e sim na ausência de estruturas institucionais capazes de tornar suas decisões auditáveis, inteligíveis, contestáveis e imputáveis. Quanto ao método, o trabalho adota abordagem jurídico-dogmática e jurídicoinstitucional, apoiada em revisão bibliográfica interdisciplinar, em análise da normativa brasileira aplicável e no exame funcional de referências regulatórias estrangeiras e multilaterais. A partir da noção de cidadania financeira adotada pelo Banco Central do Brasil e da literatura sobre cidadania algorítmica, propõe-se deslocar o eixo regulatório da explicabilidade para a contestabilidade efetiva, e apresenta-se um arranjo de seis parâmetros institucionais: go",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "other",
+"w": "Ensaio jurídico-institucional brasileiro sobre contestabilidade do crédito algorítmico"
+}
+},
+{
+"key": "doi:10.35760/ik.2026.v31i1.779",
+"title": "Analisis Komparasi Model Gradient Boosting Berbasis Shap Dalam Pengembangan Innovative Credit Scoring Untuk Optimalisasi Inklusi Keuangan",
+"url": "https://doi.org/10.35760/ik.2026.v31i1.779",
+"venue": "Jurnal Ilmiah Informatika Komputer",
+"date": "2026-11-06",
+"authors": [
+"Pangeran Maharesi Dunia",
+"Edi Minaji Pribadi",
+"Sundari"
+],
+"abstract": "Inklusi keuangan di Indonesia terhambat oleh populasi unbanked dan underbanked tanpa riwayat kredit di SLIK OJK, di tengah aturan ketat batas TWP90 5%. Penelitian ini mengembangkan model innovative credit scoring dengan membandingkan tiga algoritma gradient boosted decision trees (GBDT), XGBoost, LightGBM, dan CatBoost menggunakan data alternatif Home Credit (307.511 baris). Berpedoman pada CRISP-DM, metodologi ini menangani ketidakseimbangan data melalui class weighting, mengoptimalkan hyperparameter via Optuna TPE, mengevaluasi kurva ROC/PR dan uji DeLong, serta mengurai interpretabilitas model dengan SHAP TreeExplainer. Hasil eksperimen menunjukkan XGBoost mencapai AUC-ROC tertinggi 0,7702 (PR-AUC = 0,2608), diikuti LightGBM (0,7693) dan CatBoost (0,7691). Uji DeLong mengonfirmasi perbedaan performa ini tidak signifikan secara statistik (p-value >0,05). LightGBM terbukti paling cepat dengan waktu latih 4,3 detik (4 kali lebih cepat dari XGBoost). Analisis SHAP berhasil membongkar sifat black-box model dan memvalidasi fitur rekayasa CREDIT_TERM serta EXT_SOURCE_MEAN sebagai prediktor utama. Temuan ini menyediakan arsitektur pembelajaran mesin transparan yang selaras dengan prinsi",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Comparação GBDT com SHAP em Home Credit público, AUC 0,77 e DeLong"
+}
+},
+{
+"key": "doi:10.3390/computers15110765",
+"title": "Counterfactual Audit of Ethnic-Origin Bias and Architectural Mitigation in Generative AI Assistants for Debt Collection in Savings and Credit Cooperatives",
+"url": "https://doi.org/10.3390/computers15110765",
+"venue": "Computers",
+"date": "2026-11-01",
+"authors": [
+"Edgar Hernán Changoluisa Lasluisa",
+"María Belén Changoluisa Lasluisa",
+"Pablo David Alemán Gualpa",
+"Pablo Marcel Recalde Varela",
+"Paúl Francisco Baldeón Egas"
+],
+"abstract": "Debt-collection automation requires assessment of differential treatment between equivalent profiles. This pre-deployment counterfactual audit evaluates tone severity and empathy in generative AI outputs for Ecuador’s Popular and Solidarity Financial Sector. Five models generated 2400 responses under unmitigated and fairness-instruction conditions (A/B), plus 400 surname-masked control tasks (C), across 40 synthetic scenarios and three surname pairs. None of the 12 primary contrasts remained statistically significant after Holm correction. This does not establish absence of bias, and the 40-scenario sample may limit detection of small effects. Results for instruction-based mitigation apply only to the tested Protocol V4 template; alternative formulations were not evaluated. Masking prevented surname exposure in all 400 control tasks without establishing general fairness or identical generated text. The primary human analysis used seven complete raters and 630 paired-item evaluations; three additional raters contributed 29 partial evaluations excluded from that analysis. Inter-rater agreement was near zero and judge–human alignment was weak, limiting interpretation of automated scor",
+"score": 6,
+"theme": "collections",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Auditoria contrafactual de viés étnico em IA generativa de cobrança, cenários sintéticos"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24304567",
+"title": "The Threshold, Not the Algorithm: Decomposing the Monetary Value of Model Selection versus Decision-Threshold Calibration in Credit Scoring",
+"url": "https://doi.org/10.5281/zenodo.24304567",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-17",
+"authors": [
+"Nezar Abdilah Prakasa"
+],
+"abstract": "Cost-sensitive re-evaluations of credit-scoring models typically report savings as a percentage of exposure, a form that is scientifically sound but difficult for a risk or finance team to act on directly. This paper converts the same class of evaluation into currency and asks a more operational question: of the total money a lender leaves on the table, how much is recoverable by choosing a better algorithm, and how much by simply setting a better decision threshold. Using a paired, Optuna-tuned, repeated stratified cross-validation re-evaluation of four classifiers (Logistic Regression, Random Forest, XGBoost, LightGBM) on the UCI Default of Credit Card Clients benchmark (6,000-account holdout, NT$1.01 billion in credit exposure, all figures in New Taiwan Dollar, NT$, the currency of the source dataset), current practice - selecting the AUC-best model (LightGBM) and applying the conventional 0.5 decision threshold - carries an expected loss of NT$99.48 million. A cost-aware alternative - selecting the cost-best model (Random Forest) at a nested, cost-optimized threshold - carries an expected loss of NT$12.16 million: a saving of NT$87.32 million (87.8%), or NT$14,554 per account. ",
+"score": 5,
+"theme": "pd_origination",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Decompõe ganho monetário entre algoritmo e limiar em benchmark público de cartão"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.15814",
+"title": "Large Payments Model",
+"url": "https://doi.org/10.48550/arxiv.2611.15814",
+"venue": "arXiv",
+"date": "2026-11-11",
+"authors": [
+"Natraj Raman",
+"Abhenandhan Manoharan",
+"Vishwasreddy Thuniki",
+"Dhvani Kansara",
+"Anirudh Som",
+"Hassan Firouzi"
+],
+"abstract": "Payment applications such as fraud detection, authorization prediction, and payment optimization draw on overlapping transaction information. This motivates a reusable payments intelligence layer that shares learned representations and predictive signals, rather than developing predictive models independently for each task. Realizing this shared capability requires handling heterogeneous transaction fields, high-cardinality identifiers, lifecycle-dependent attributes, long histories, and rare outcomes while meeting latency and cost constraints. We present Large Payments Model (LPM), a domain-specific foundation model designed for operational use and trained from scratch on large-scale structured transaction data to learn reusable representations for payment prediction tasks. LPM employs field-specific encodings and lifecycle-aware self-supervision in two complementary architectures: the Independent variant uses hybrid masking and supports efficient per-transaction inference, while the Sequence variant incorporates entity-linked histories through compact latent representations for richer temporal context. Optional distillation enables resource-constrained deployment. We pretrain LPM",
+"score": 5,
+"theme": "transactional_fm",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "bench",
+"w": "Modelo fundacional em transações de pagamento, mas sem resultados numéricos no resumo."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11440110/v1",
+"title": "Explaining and Mitigating Proxy Fairness in LLM-based Credit Risk Decisions",
+"url": "https://doi.org/10.21203/rs.3.rs-11440110/v1",
+"venue": "Research Square",
+"date": "2026-11-24",
+"authors": [
+"Huyen Giang Thi Thu",
+"Thang Doan Viet",
+"Giang Nguyen Van Long",
+"Ha-Bang Ban"
+],
+"abstract": "Large language models (LLMs) are increasingly explored as credit scorers, where decisions must be explainable and non-discriminatory. Removing the protected attribute does not prevent discrimination, because correlated features can act as proxies, and aggregate fairness metrics do not reveal which features carry the disparity. We propose VAYNE, a framework that diagnoses and mitigates proxy discrimination in LLM-based credit decisions using only query access. VAYNE combines each feature's proxy capacity, its mutual information with the protected attribute, with its proxy use, the change in the model's score when the feature is withheld, into a proxy risk score and a proxy path graph that guide two interventions, proxy masking and proxy filtering. We benchmark three LLMs on three credit datasets and audit the selected scorer. Without examples, the LLMs are close to chance, but a few in-context examples bring them into the accuracy range of traditional credit-scoring models. The audited scorer responds to sex when it is stated, and with sex withheld, its proxy structure ranges from a single dominant feature to a redundant cluster of features. The VAYNE-guided interventions attain the",
+"score": 6,
+"theme": "explainability_fairness",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "bench",
+"w": "Diagnóstico de proxy em LLM de crédito; datasets públicos, resultado parcial."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11530197/v1",
+"title": "Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems",
+"url": "https://doi.org/10.21203/rs.3.rs-11530197/v1",
+"venue": "Research Square",
+"date": "2026-10-30",
+"authors": [
+"Akshay Sharma",
+"Gaurav Sharma"
+],
+"abstract": "Automated credit-line decisions shape access to liquidity for millions of consumers and are subject to fair-lending law. We study proactive credit-line increase (CLI) as a responsible-AI problem in which economic optimization, algorithmic fairness, explainability, and governance are designed together. We formalize CLI as incremental-profit maximization under a portfolio expected-loss budget and explicit fairness tolerances, and reduce it to a calibrated, auditable threshold policy with group-level recalibration that controls disparate impact without altering the validated model. Because account-level credit data cannot be shared, we evaluate on a released synthetic portfolio of 60,000 accounts. On a time-held-out fold, gradient boosting and a logistic baseline discriminate almost equally (AUC 0.762 vs. 0.758) and perform alike at a matched approval rate, while isotonic calibration of the boosted scores reduces expected calibration error from 0.194 to 0.006. The model is equally accurate across protected groups, yet a single threshold produces disparate impact (demographic-parity gap 0.084, disparate-impact ratio 0.85); group-wise recalibration under the same loss budget reduces the",
+"score": 7,
+"theme": "behavior_limits",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 5,
+"e": "bench",
+"w": "Aumento de limite com fair lending; carteira sintética de 60 mil contas."
+}
+}
+]

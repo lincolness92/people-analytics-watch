@@ -1,0 +1,602 @@
+{
+  "researchers": [
+    {
+      "name": "Stefan Lessmann",
+      "institution": "Humboldt-Universität zu Berlin",
+      "region": "Europa",
+      "area": "Benchmarks de ML em credit scoring",
+      "why": "Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research (EJOR, 2015), referência de comparação de algoritmos em credit scoring.",
+      "openalex_id": "A5057226223",
+      "openalex_note": "sugerido e confirmado (21 trabalhos no tema); h-index 41, 240 trabalhos — conferir homônimos",
+      "links": {},
+      "alt_openalex_ids": [
+        "A5120407920"
+      ]
+    },
+    {
+      "name": "Bart Baesens",
+      "institution": "KU Leuven / University of Southampton",
+      "region": "Europa",
+      "area": "Credit risk analytics, scoring orientado a lucro",
+      "why": "Coautor de Benchmarking state-of-the-art classification algorithms for credit scoring (EJOR 2015) e do livro Credit Risk Analytics (2016).",
+      "openalex_id": "A5081225515",
+      "openalex_note": "sugerido e confirmado (103 trabalhos no tema); h-index 78, 617 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Jonathan Crook",
+      "institution": "University of Edinburgh",
+      "region": "Europa",
+      "area": "Risco de crédito ao consumidor, survival e macro",
+      "why": "Recent developments in consumer credit risk assessment (EJOR, 2007); diretor do Credit Research Centre de Edimburgo.",
+      "openalex_id": "A5061614980",
+      "openalex_note": "sugerido e confirmado (68 trabalhos no tema); h-index 35, 168 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Galina Andreeva",
+      "institution": "University of Edinburgh",
+      "region": "Europa",
+      "area": "Credit scoring, PMEs e equidade",
+      "why": "Pesquisa em credit scoring, scoring de pequenas empresas e equidade em crédito no Credit Research Centre.",
+      "openalex_id": "A5044732298",
+      "openalex_note": "sugerido e confirmado (29 trabalhos no tema); h-index 18, 54 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Raffaella Calabrese",
+      "institution": "University of Edinburgh",
+      "region": "Europa",
+      "area": "PD e LGD de varejo e PMEs",
+      "why": "Interpretable machine learning for imbalanced credit scoring datasets (2023) e Enhancing credit scoring with alternative data (2020).",
+      "openalex_id": "A5018237014",
+      "openalex_note": "sugerido e confirmado (30 trabalhos no tema); h-index 26, 111 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Cristián Bravo",
+      "institution": "Western University (Canadá)",
+      "region": "Outros",
+      "area": "Deep learning e dados alternativos em crédito",
+      "why": "Deep learning e dados alternativos em credit scoring; coautor de Development and application of consumer credit scoring models using profit-based classification measures (EJOR, 2014).",
+      "openalex_id": "A5011142751",
+      "openalex_note": "sugerido e confirmado (35 trabalhos no tema); h-index 22, 85 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "María Óskarsdóttir",
+      "institution": "Reykjavík University",
+      "region": "Outros",
+      "area": "Dados alternativos e redes em credit scoring",
+      "why": "The value of big data for credit scoring: Enhancing financial inclusion using mobile phone data and social network analytics (Applied Soft Computing, 2019).",
+      "openalex_id": "A5089062610",
+      "openalex_note": "sugerido e confirmado (10 trabalhos no tema); h-index 22, 119 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Nikita Kozodoi",
+      "institution": "Amazon (antes Humboldt-Universität zu Berlin)",
+      "region": "Europa",
+      "area": "Equidade e reject inference em credit scoring",
+      "why": "Fairness in credit scoring: Assessment, implementation and profit implications (EJOR, 2022).",
+      "openalex_id": "A5076673005",
+      "openalex_note": "sugerido e confirmado (7 trabalhos no tema); h-index 7, 22 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Tony Bellotti",
+      "institution": "University of Nottingham Ningbo China",
+      "region": "China/Ásia",
+      "area": "Survival, LGD e estresse de carteiras de varejo",
+      "why": "Credit scoring with macroeconomic variables using survival analysis (JORS, 2009) e modelos de LGD.",
+      "openalex_id": "A5035490114",
+      "openalex_note": "sugerido e confirmado (25 trabalhos no tema); h-index 23, 105 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Paolo Giudici",
+      "institution": "University of Pavia",
+      "region": "Europa",
+      "area": "ML explicável em risco de crédito",
+      "why": "Explainable Machine Learning in Credit Risk Management (Computational Economics, 2021).",
+      "openalex_id": "A5051364218",
+      "openalex_note": "sugerido e confirmado (55 trabalhos no tema); h-index 56, 399 trabalhos — conferir homônimos; OpenAlex aponta Padova, mas a afiliação conhecida é Pavia",
+      "links": {}
+    },
+    {
+      "name": "Francisco Louzada",
+      "institution": "Universidade de São Paulo",
+      "region": "Brasil",
+      "area": "Métodos estatísticos em credit scoring (Brasil)",
+      "why": "Classification methods applied to credit scoring: Systematic review and overall comparison (Surveys in Operations Research and Management Science, 2016).",
+      "openalex_id": "A5005931446",
+      "openalex_note": "sugerido e confirmado (13 trabalhos no tema); h-index 38, 382 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Sebastián Maldonado",
+      "institution": "Universidad de Chile",
+      "region": "Outros",
+      "area": "Seleção de variáveis orientada a lucro",
+      "why": "Seleção de variáveis orientada a lucro em credit scoring (ex.: Integrated framework for profit-based feature selection and SVM classification in credit scoring, DSS 2017).",
+      "openalex_id": "A5007513550",
+      "openalex_note": "sugerido e confirmado (13 trabalhos no tema); h-index 36, 126 trabalhos — conferir homônimos; OpenAlex aponta Universidad de la República (Uruguai), mas a afiliação conhecida é a Universidad de Chile",
+      "links": {}
+    },
+    {
+      "name": "Johannes Kriebel",
+      "institution": "Universität Hamburg",
+      "region": "Europa",
+      "area": "Texto e deep learning em previsão de default",
+      "why": "Credit default prediction from user-generated text in peer-to-peer lending using deep learning (EJOR, 2022).",
+      "openalex_id": "A5062057844",
+      "openalex_note": "sugerido e confirmado (5 trabalhos no tema); h-index 10, 21 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Christophe Mues",
+      "institution": "University of Southampton",
+      "region": "Europa",
+      "area": "Credit scoring, GNN e modelos de LGD",
+      "why": "Muito citado nas buscas do tema: Attention-based dynamic multilayer graph neural networks for loan default prediction (75 cit.); The value of text for small business default prediction: A Deep Learning approach (162 cit.)",
+      "openalex_id": "A5060698272",
+      "openalex_note": "achado pelas citações; h-index 29, 130 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Christophe Hurlin",
+      "institution": "Université d'Orléans",
+      "region": "Europa",
+      "area": "Validação e calibração de modelos de PD",
+      "why": "Machine Learning or Econometrics for Credit Scoring: Let's Get the Best of Both Worlds (609 citações no OpenAlex) e The Fairness of Credit Scoring Models.",
+      "openalex_id": "A5046957272",
+      "openalex_note": "achado pelas citações; h-index 35, 235 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Viani Biatat Djeundje",
+      "institution": "University of Edinburgh",
+      "region": "Europa",
+      "area": "Dados alternativos em credit scoring",
+      "why": "Muito citado nas buscas do tema: Enhancing credit scoring with alternative data (225 cit.); The devil in the details: Dynamic Prediction of loan portfolio profitability with macroeconomic drivers through multi-state modelling (4 cit.)",
+      "openalex_id": "A5063241143",
+      "openalex_note": "achado pelas citações; h-index 8, 22 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Mee Chi So",
+      "institution": "University of Southampton",
+      "region": "Europa",
+      "area": "Cobrança e otimização de operações de recuperação",
+      "why": "Modelling repayment patterns in the collections process for unsecured consumer debt (2015) e Debtor level collection operations using Bayesian dynamic programming (2019).",
+      "openalex_id": "A5047681406",
+      "openalex_note": "achado pelas citações; h-index 10, 42 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Alejandro Correa-Bahnsen",
+      "institution": "",
+      "region": "Outros",
+      "area": "Credit scoring sensível a custo e super-apps",
+      "why": "Muito citado nas buscas do tema: Super-app behavioral patterns in credit risk models: Financial, statistical and regulatory implications (97 cit.); Optimizing credit limit adjustments under adversarial goals using reinforcement learning (21 cit.)",
+      "openalex_id": "A5066640802",
+      "openalex_note": "achado pelas citações; h-index 4, 6 trabalhos — conferir homônimos; perfil principal dominado por fraude em cartão; instituição atual não verificada",
+      "links": {},
+      "alt_openalex_ids": [
+        "A5078471733"
+      ]
+    },
+    {
+      "name": "Feng Shen",
+      "institution": "Southwestern University of Finance and Economics",
+      "region": "China/Ásia",
+      "area": "Reject inference",
+      "why": "Muito citado nas buscas do tema: Three-stage reject inference learning framework for credit scoring using unsupervised transfer learning and three-way decision theory (133 cit.); Three-stage reject inference learning framework for credit scoring using unsupervised transfer learning and three-way decision theory (133 cit.)",
+      "openalex_id": "A5101877322",
+      "openalex_note": "achado pelas citações; h-index 15, 31 trabalhos — conferir homônimos; no limite do escopo: trabalhos de 2026 são de bonds corporativos",
+      "links": {}
+    },
+    {
+      "name": "Christophe Pérignon",
+      "institution": "HEC Paris",
+      "region": "Europa",
+      "area": "Desempenho e explicabilidade de modelos de crédito",
+      "why": "Muito citado nas buscas do tema: Measuring the Driving Forces of Predictive Performance: Application to Credit Scoring (16 cit.); The Fairness of Credit Scoring Models (121 cit.)",
+      "openalex_id": "A5110741158",
+      "openalex_note": "achado pelas citações; h-index 12, 27 trabalhos — conferir homônimos",
+      "links": {},
+      "alt_openalex_ids": [
+        "A5111672040",
+        "A5121166378"
+      ]
+    },
+    {
+      "name": "Harald Scheule",
+      "institution": "University of Technology Sydney",
+      "region": "Outros",
+      "area": "LGD, provisões e risco de crédito hipotecário",
+      "why": "Coautor de Credit Risk Analytics: Measurement Techniques, Applications, and Examples (2016) e de The impact of loan loss provisioning on bank capital requirements (2018).",
+      "openalex_id": "A5061354725",
+      "openalex_note": "achado pelas citações; h-index 19, 163 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Billie S. Anderson",
+      "institution": "Southern New Hampshire University",
+      "region": "EUA",
+      "area": "Reject inference",
+      "why": "Muito citado nas buscas do tema: Using Bayesian networks to perform reject inference (45 cit.); A Monte Carlo simulation framework for reject inference (10 cit.)",
+      "openalex_id": "A5020969578",
+      "openalex_note": "achado pelas citações; h-index 7, 33 trabalhos — conferir homônimos",
+      "links": {}
+    },
+    {
+      "name": "Andreas Fuster",
+      "institution": "EPFL / Swiss Finance Institute",
+      "region": "Europa",
+      "area": "Equidade e efeitos do ML no mercado de crédito",
+      "why": "Predictably Unequal? The Effects of Machine Learning on Credit Markets (Journal of Finance, 2022) e FinTech Lending.",
+      "openalex_id": "A5026121976",
+      "openalex_note": "conferido à mão no OpenAlex (62 trabalhos com 'credit'); h-index 36; OpenAlex aponta University of Zurich",
+      "links": {}
+    },
+    {
+      "name": "Tarun Ramadorai",
+      "institution": "Imperial College London",
+      "region": "Europa",
+      "area": "Finanças das famílias e ML em crédito",
+      "why": "Coautor de Predictably Unequal? The Effects of Machine Learning on Credit Markets (Journal of Finance, 2022).",
+      "openalex_id": "A5042695170",
+      "openalex_note": "conferido à mão no OpenAlex (35 trabalhos com 'credit'); h-index 37",
+      "links": {}
+    },
+    {
+      "name": "Laura Blattner",
+      "institution": "Stanford University",
+      "region": "EUA",
+      "area": "Dados, ruído e desigualdade no crédito ao consumidor",
+      "why": "How Costly is Noise? Data and Disparities in Consumer Credit (com Scott Nelson).",
+      "openalex_id": "A5010473765",
+      "openalex_note": "conferido à mão no OpenAlex (7 trabalhos com 'credit'); h-index 9",
+      "links": {}
+    },
+    {
+      "name": "Talia B. Gillis",
+      "institution": "Columbia University",
+      "region": "EUA",
+      "area": "Discriminação algorítmica e fair lending",
+      "why": "The Input Fallacy (Minnesota Law Review, 2022) e Operationalizing the Search for Less Discriminatory Alternatives in Fair Lending.",
+      "openalex_id": "A5079596685",
+      "openalex_note": "conferido à mão no OpenAlex (13 trabalhos com 'credit'); h-index 11; há um segundo perfil A5125628137",
+      "links": {}
+    },
+    {
+      "name": "Dmitrii Babaev",
+      "institution": "Sber AI Lab",
+      "region": "Outros",
+      "area": "Modelos em sequências de transações bancárias",
+      "why": "E.T.-RNN: Applying Deep Learning to Credit Loan Applications (KDD 2019) e CoLES: Contrastive Learning for Event Sequences with Self-Supervision (SIGMOD 2022).",
+      "openalex_id": "A5039163054",
+      "openalex_note": "conferido à mão no OpenAlex; h-index 6; OpenAlex aponta Yandex School of Data Analysis",
+      "links": {}
+    },
+    {
+      "name": "Naveed Chehrazi",
+      "institution": "Washington University in St. Louis",
+      "region": "EUA",
+      "area": "Otimização de cobrança de cartões",
+      "why": "Dynamic Credit-Collections Optimization (Management Science, 2019) e Dynamic Valuation of Delinquent Credit-Card Accounts.",
+      "openalex_id": "A5082576697",
+      "openalex_note": "conferido; h-index 8, 15 trabalhos; também publica sobre estoques",
+      "links": {}
+    },
+    {
+      "name": "Christine Laudenbach",
+      "institution": "Goethe University Frankfurt / SAFE",
+      "region": "Europa",
+      "area": "Experimentos em cobrança e crédito ao consumidor",
+      "why": "Personal Communication in an Automated World: Evidence from Loan Repayments (Journal of Finance, 2024) e Leveraging BNPL Data in Consumer Banking (2025).",
+      "openalex_id": "A5063735471",
+      "openalex_note": "conferido; h-index 13, 42 trabalhos",
+      "links": {}
+    },
+    {
+      "name": "Rinaldo Artes",
+      "institution": "Insper",
+      "region": "Brasil",
+      "area": "Credit scoring e recuperação de crédito no Brasil",
+      "why": "Spatial dependence in credit risk and its improvement in credit scoring; The role of loan forbearance in the recovery of financi... (2026); Estimating credit and profit scoring of a Brazilian credit union (2019).",
+      "openalex_id": "A5047598029",
+      "openalex_note": "conferido; h-index 23, 87 trabalhos; também publica em bioestatística",
+      "links": {}
+    },
+    {
+      "name": "Herbert Kimura",
+      "institution": "Universidade de Brasília",
+      "region": "Brasil",
+      "area": "ML em risco de crédito no Brasil",
+      "why": "Machine learning models for credit analysis improvements: Predicting low-income families' default (Applied Soft Computing, 2019) e Machine learning predictivity applied to consumer creditworthiness (2020).",
+      "openalex_id": "A5090500337",
+      "openalex_note": "conferido; h-index 36, 212 trabalhos; generalista de finanças",
+      "links": {},
+      "alt_openalex_ids": [
+        "A5112787166"
+      ]
+    },
+    {
+      "name": "Flávio Barboza",
+      "institution": "Universidade Federal de Uberlândia",
+      "region": "Brasil",
+      "area": "ML em crédito e equidade no Brasil",
+      "why": "Coautor dos dois trabalhos acima e de Towards Fair AI: Mitigating Bias in Credit Decisions — A Systematic Literature Review.",
+      "openalex_id": "A5052752987",
+      "openalex_note": "conferido; h-index 14, 58 trabalhos",
+      "links": {}
+    },
+    {
+      "name": "Sérgio Mikio Koyama",
+      "institution": "Banco Central do Brasil",
+      "region": "Brasil",
+      "area": "Crédito e risco de crédito no Brasil (pesquisa do BCB)",
+      "why": "Credit Risk Measurement and the Regulation of Bank Capital and Provision Requirements e estudos de elasticidade da demanda de crédito livre.",
+      "openalex_id": "A5004535304",
+      "openalex_note": "conferido; h-index 7, 19 trabalhos",
+      "links": {}
+    },
+    {
+      "name": "Ivan Kireev",
+      "institution": "Sber AI Lab",
+      "region": "Outros",
+      "area": "Modelos de sequências de eventos bancários",
+      "why": "CoLES: Contrastive Learning for Event Sequences with Self-Supervision (SIGMOD 2022), LLM4ES e Multimodal Banking Dataset (2025).",
+      "openalex_id": "A5015195285",
+      "openalex_note": "conferido; h-index 8, 11 trabalhos; OpenAlex sem instituição",
+      "links": {}
+    },
+    {
+      "name": "Chin-Chia Michael Yeh",
+      "institution": "Visa Research",
+      "region": "EUA",
+      "area": "Modelos fundacionais de transações",
+      "why": "TransactionGPT (arXiv, 2025) e TREASURE: A Transformer-Based Foundation Model for High-Volume Transaction Understanding (KDD 2026).",
+      "openalex_id": "A5011045620",
+      "openalex_note": "conferido; h-index 28, 101 trabalhos; publica também ML genérico",
+      "links": {}
+    },
+    {
+      "name": "Wouter Verbeke",
+      "institution": "KU Leuven",
+      "region": "Europa",
+      "area": "Modelos orientados a lucro e inferência causal em decisões de crédito",
+      "why": "Profit-driven analytics e explicabilidade em pesquisa operacional (Explainable AI for Operational Research, EJOR 2023).",
+      "openalex_id": "A5075484247",
+      "openalex_note": "conferido; h-index 37, 190 trabalhos; OpenAlex aponta também LIRIS",
+      "links": {}
+    },
+    {
+      "name": "Joseph L. Breeden",
+      "institution": "Deep Future Analytics",
+      "region": "EUA",
+      "area": "Risco de modelo, safras e perda esperada",
+      "why": "A survey of machine learning in credit risk e Multihorizon discrete time survival models.",
+      "openalex_id": "A5031699638",
+      "openalex_note": "conferido; h-index 13, 80 trabalhos; OpenAlex aponta Santa Fe Community College; perfil mistura trabalhos de física",
+      "links": {}
+    }
+  ],
+  "journals": [
+    {
+      "name": "European Journal of Operational Research",
+      "openalex_source_id": "S103321696",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Journal of Banking & Finance",
+      "openalex_source_id": "S2876017",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Journal of the Operational Research Society",
+      "openalex_source_id": "S169988927",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Decision Support Systems",
+      "openalex_source_id": "S11479521",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "International Journal of Forecasting",
+      "openalex_source_id": "S39841227",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Management Science",
+      "openalex_source_id": "S33323087",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "The Journal of Finance",
+      "openalex_source_id": "S5353659",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Review of Financial Studies",
+      "openalex_source_id": "S170137484",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Journal of Financial Economics",
+      "openalex_source_id": "S149240962",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Journal of Financial Intermediation",
+      "openalex_source_id": "S5984737",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "Journal of money credit and banking",
+      "openalex_source_id": "S2058785",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "openalex_source_id": "S4363608767",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "ACM International Conference on AI in Finance (ICAIF)",
+      "openalex_source_id": "S7407087532",
+      "why": "Sugerido pelo rascunho; ID e h-index conferidos no OpenAlex."
+    },
+    {
+      "name": "The Journal of Credit Risk",
+      "openalex_source_id": "S60036207",
+      "why": "Periódico especializado do tema (sugerido na revisão; h-index abaixo do corte automático de 40)."
+    },
+    {
+      "name": "The Journal of Risk Model Validation",
+      "openalex_source_id": "S2765036361",
+      "why": "Periódico especializado do tema (sugerido na revisão; h-index abaixo do corte automático de 40)."
+    },
+    {
+      "name": "Journal of Banking Regulation",
+      "openalex_source_id": "S185277049",
+      "why": "Periódico especializado do tema (sugerido na revisão; h-index abaixo do corte automático de 40)."
+    }
+  ],
+  "centers": [
+    {
+      "name": "Credit Research Centre (University of Edinburgh)",
+      "url": "https://crc.business-school.ed.ac.uk/",
+      "why": "Centro de referência em credit scoring; organiza a conferência Credit Scoring and Credit Control.",
+      "institution": "University of Edinburgh Business School"
+    },
+    {
+      "name": "Banco Central do Brasil",
+      "url": "https://www.bcb.gov.br/",
+      "why": "Regulador: gerenciamento de riscos (Res. CMN 4.557), perda esperada (Res. CMN 4.966), Relatório de Economia Bancária e Relatório de Estabilidade Financeira.",
+      "institution": "Bacen"
+    },
+    {
+      "name": "Basel Committee on Banking Supervision (BCBS)",
+      "url": "https://www.bis.org/committees/bcbs/overview",
+      "why": "Padrões de Basileia para risco de crédito, IRB e perda esperada.",
+      "institution": "BIS"
+    },
+    {
+      "name": "Bank for International Settlements (BIS)",
+      "url": "https://www.bis.org/",
+      "why": "Working papers e FSI Insights sobre IA, crédito e fintech.",
+      "institution": "BIS"
+    },
+    {
+      "name": "Financial Stability Institute (FSI/BIS)",
+      "url": "https://www.bis.org/about/fsi/overview",
+      "why": "FSI Insights sobre regulação de IA e modelos no setor financeiro.",
+      "institution": "BIS"
+    },
+    {
+      "name": "European Banking Authority (EBA)",
+      "url": "https://www.eba.europa.eu/",
+      "why": "Diretrizes de estimativa de PD/LGD, concessão e monitoramento de crédito, e relatório sobre ML em modelos IRB.",
+      "institution": "EBA"
+    },
+    {
+      "name": "Prudential Regulation Authority (Bank of England)",
+      "url": "https://www.bankofengland.co.uk/prudential-regulation",
+      "why": "SS1/23, princípios de gestão de risco de modelos para bancos.",
+      "institution": "Bank of England"
+    },
+    {
+      "name": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/",
+      "why": "SR 26-2 (2026, substitui a SR 11-7) sobre gestão de risco de modelos e pesquisa em crédito ao consumidor.",
+      "institution": "Fed"
+    },
+    {
+      "name": "Consumer Financial Protection Bureau (CFPB)",
+      "url": "https://www.consumerfinance.gov/",
+      "why": "Regras de aviso de recusa com modelos complexos e pesquisa sobre crédito ao consumidor e cobrança.",
+      "institution": "CFPB"
+    },
+    {
+      "name": "FinRegLab",
+      "url": "https://finreglab.org/",
+      "why": "Pesquisa empírica sobre ML e dados de fluxo de caixa em concessão de crédito, explicabilidade e equidade.",
+      "institution": "FinRegLab"
+    },
+    {
+      "name": "Federal Reserve Bank of Philadelphia — Consumer Finance Institute",
+      "url": "https://www.philadelphiafed.org/consumer-finance",
+      "why": "Pesquisa sobre crédito ao consumidor, cartões e fintech lending.",
+      "institution": "Philadelphia Fed"
+    },
+    {
+      "name": "Credit Scoring and Credit Control Conference",
+      "url": "https://crc.business-school.ed.ac.uk/conference-2027",
+      "why": "Principal conferência de credit scoring (bienal, Edimburgo).",
+      "institution": "University of Edinburgh"
+    },
+    {
+      "name": "Financial Stability Board (FSB)",
+      "url": "https://www.fsb.org/",
+      "why": "Relatórios sobre IA e estabilidade financeira (The Financial Stability Implications of Artificial Intelligence, 14/11/2024).",
+      "institution": "FSB"
+    },
+    {
+      "name": "Federal Reserve Bank of New York — Liberty Street Economics",
+      "url": "https://libertystreeteconomics.newyorkfed.org/",
+      "why": "Análises do NY Fed sobre dívida das famílias, inadimplência e crédito ao consumidor.",
+      "institution": "NY Fed"
+    },
+    {
+      "name": "National Bureau of Economic Research (NBER)",
+      "url": "https://www.nber.org/",
+      "why": "Working papers de finanças das famílias e crédito ao consumidor, incluindo experimentos em cobrança.",
+      "institution": "NBER"
+    }
+  ],
+  "practitioners": [
+    {
+      "name": "Federação Brasileira de Bancos (Febraban)",
+      "url": "https://portal.febraban.org.br/",
+      "why": "Autorregulação, pesquisas de crédito e Febraban Tech.",
+      "org": "Febraban"
+    },
+    {
+      "name": "Serasa Experian",
+      "url": "https://www.serasaexperian.com.br/",
+      "why": "Bureau de crédito; indicadores de inadimplência e scores no Brasil.",
+      "org": "Serasa Experian"
+    },
+    {
+      "name": "FICO",
+      "url": "https://www.fico.com/blogs",
+      "why": "Scores de crédito e blog sobre ML explicável em crédito.",
+      "org": "FICO"
+    },
+    {
+      "name": "Nubank Engineering",
+      "url": "https://building.nu.com/",
+      "why": "Blog de engenharia e ciência de dados, incluindo modelos fundacionais em transações para crédito.",
+      "org": "Nubank"
+    }
+  ],
+  "historical": [
+    {
+      "name": "Lyn C. Thomas",
+      "institution": "University of Southampton (antes University of Edinburgh, Credit Research Centre)",
+      "region": "Europa",
+      "area": "Credit scoring e modelagem de risco de crédito",
+      "why": "Fundador do Credit Research Centre de Edimburgo e autor de 'Credit Scoring and Its Applications' e 'A survey of credit and behavioural scoring' (IJF 2000), marco da pontuação de crédito estatística.",
+      "status": "falecido",
+      "since": 2016,
+      "openalex_id": "A5008990681",
+      "alt_openalex_ids": [],
+      "links": {},
+      "evidence": "https://www.southampton.ac.uk/cormsis/news/2017/04/lyn-thomas-impact-award.page — University of Southampton: faleceu em 14/07/2016."
+    }
+  ]
+}

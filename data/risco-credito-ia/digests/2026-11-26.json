@@ -1,0 +1,573 @@
+{
+ "date": "2026-11-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:inference-net",
+ "period": {
+  "from": "2026-10-27",
+  "to": "2026-11-26"
+ },
+ "stats": {
+  "candidates": 473,
+  "triaged": 220,
+  "selected": 12,
+  "tokens": {
+   "prompt_tokens": 92722,
+   "completion_tokens": 49017,
+   "cost_usd": 0.036662,
+   "calls": 9,
+   "failures": 1
+  }
+ },
+ "headline": "Semana de avanços regulatórios no crédito e validação de modelos sob mudança de regime",
+ "trend": "O período é marcado por um avanço regulatório significativo no Brasil, com novas regras do BC e CMN para proteção do consumidor e prevenção do endividamento excessivo, que impactam diretamente a originação e a cobrança. Ao mesmo tempo, a pesquisa em risco de crédito avança na validação de modelos sob mudanças de regime, na avaliação de explicabilidade e equidade, e no uso de modelos fundacionais para sequências transacionais, embora com ganhos condicionais e necessidade de calibração. Na cobrança, a alocação de casos e a avaliação off-policy ganham destaque, com ênfase em restrições operacionais e dependências ocultas. A tendência é que a modelagem de risco incorpore cada vez mais requisitos de governança, calibração e generalização, alinhando-se às exigências regulatórias e à busca por eficiência operacional.",
+ "items": [
+  {
+   "key": "doi:10.3390/bdcc10110388",
+   "title": "From Prediction to Assignment: Capacity-Constrained Agent–Case Allocation in Large-Scale Debt Collection",
+   "original_title": "From Prediction to Assignment: Capacity-Constrained Agent–Case Allocation in Large-Scale Debt Collection",
+   "url": "https://doi.org/10.3390/bdcc10110388",
+   "venue": "Big Data and Cognitive Computing",
+   "date": "2026-11-13",
+   "authors": [
+    "Omar Serghini",
+    "Salvatore Serrano",
+    "Marco Lucio Scarpa",
+    "Mirko Lucchese"
+   ],
+   "institutions": [
+    "University of Messina",
+    "Università Cattolica del Sacro Cuore"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 8,
+    "e": "admin",
+    "w": "1,28M episódios reais, ordenação temporal, calibração e bootstrap; decisão de alocação"
+   },
+   "score": 8,
+   "theme": "collections",
+   "region": "",
+   "summary": "O estudo propõe um framework de predição-para-alocação usando 1,28 milhão de episódios de cobrança, combinando um modelo de recuperação com restrições de capacidade e elegibilidade. Uma política conservadora que proíbe realocações com queda de score aumenta a probabilidade média de recuperação em 2,37 p.p., mas após calibração observacional o ganho cai para 0,96 p.p., indicando que scores não calibrados superestimam o valor. **A lição é que a alocação de casos baseada em modelo pode agregar valor**, mas requer calibração rigorosa e consideração de restrições operacionais para evitar falsas expectativas."
+  },
+  {
+   "key": "doi:10.1007/s11146-026-10086-3",
+   "title": "Delegated Relief: What Servicers Say, and What Statutory Eligibility Is Worth in Mortgage Forbearance",
+   "original_title": "Delegated Relief: What Servicers Say, and What Statutory Eligibility Is Worth in Mortgage Forbearance",
+   "url": "https://doi.org/10.1007/s11146-026-10086-3",
+   "venue": "The Journal of Real Estate Finance and Economics",
+   "date": "2026-11-10",
+   "authors": [
+    "Arka Prava Bandyopadhyay"
+   ],
+   "institutions": [
+    "New York University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 2,
+   "triage": {
+    "r": 7,
+    "q": 8,
+    "e": "admin",
+    "w": "Transcrições e triple-diff; elegibilidade eleva forbearance 3,6pp"
+   },
+   "score": 7,
+   "theme": "collections",
+   "region": "",
+   "summary": "Usa transcrições de call center processadas por NLP para analisar 19.418 tomadores que buscaram alívio pandêmico. A elegibilidade estatutária aumentou a concessão de forbearance em 3,6 p.p., e a discricionariedade operou via documentação, verificação e encaminhamento, não negação. **A lição é que exigências documentais podem ser uma barreira uniforme à tomada de alívio**, e a análise de interações com clientes pode revelar barreiras operacionais em cobrança e renegociação."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.10972",
+   "title": "JUBILEE: A Benchmark Environment for Off-Policy Evaluation in Debt Collections",
+   "original_title": "JUBILEE: A Benchmark Environment for Off-Policy Evaluation in Debt Collections",
+   "url": "https://doi.org/10.48550/arxiv.2611.10972",
+   "venue": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Diego Silva Prado",
+    "Tiago Amaral Penteado de Jesus",
+    "Bruno Caldas de Souza",
+    "Cristiano Bevitori Maffia de Oliveira"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 1,
+   "triage": {
+    "r": 8,
+    "q": 6,
+    "e": "bench",
+    "w": "Simulador sintético de milhões de empréstimos para OPE em cobrança; sem dados reais"
+   },
+   "score": 7,
+   "theme": "collections",
+   "region": "",
+   "summary": "Apresenta o benchmark JUBILEE para avaliação off-policy em cobrança, com um simulador de milhões de empréstimos e riscos concorrentes. Com fatores ocultos influenciando a atribuição, métodos tabulares subestimam o valor da política de visitas, e intervalos de confiança de estimadores duplamente robustos frequentemente não contêm a referência; a política de visitas é última sob score e primeira sob caixa simulado. **A lição é que a avaliação off-policy em cobrança deve considerar dependência oculta na atribuição** e escolher a métrica de valor alinhada ao objetivo de negócio (recuperação vs. caixa)."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.18914",
+   "title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+   "original_title": "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences?",
+   "url": "https://doi.org/10.48550/arxiv.2611.18914",
+   "venue": "arXiv",
+   "date": "2026-11-13",
+   "authors": [
+    "Carlos Eduardo Martins Relvas",
+    "Gustavo D. G. Bernardo"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 7,
+    "e": "bench",
+    "w": "27 métodos, bootstrap, LightGBM; sintético/público e trade credit"
+   },
+   "score": 7,
+   "theme": "transactional_fm",
+   "region": "",
+   "summary": "Compara 27 métodos em datasets sintéticos e proprietários para medir o ganho de modelos fundacionais sobre LightGBM com agregações de janela. O ensemble TBS supera o baseline em 19 de 21 células, com ganho mediano de +1,8 pontos de AUC, mas os ganhos diminuem com mais labels e dados tabulares ricos. **A lição é que modelos fundacionais de sequência podem agregar valor**, mas o ganho não é garantido e depende do volume de rótulos e da riqueza dos dados tabulares."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.04747",
+   "title": "TAPES: Task-Aligned Joint Predictive Pretraining for Transaction Event Sequences",
+   "original_title": "TAPES: Task-Aligned Joint Predictive Pretraining for Transaction Event Sequences",
+   "url": "https://doi.org/10.48550/arxiv.2611.04747",
+   "venue": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Ruobing Zuo",
+    "Weiyu Han",
+    "Huilin He",
+    "Haoyu Jiang",
+    "Ze Zhao",
+    "Jie Sheng",
+    "Xiao Tan",
+    "Shuai Chen",
+    "Tianyi Zhang"
+   ],
+   "institutions": [
+    "Ant Group (China)",
+    "East China Normal University",
+    "Tongji University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 1,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "bench",
+    "w": "Pretraining de sequências transacionais da Ant em risco real e benchmarks públicos."
+   },
+   "score": 7,
+   "theme": "transactional_fm",
+   "region": "",
+   "summary": "Propõe um framework de pré-treinamento conjunto alinhado a tarefas para sequências de transações, selecionando um conjunto de alvos com base na utilidade downstream. Experimentos em risco transacional real e benchmarks financeiros mostram superioridade sobre baselines, com ablações confirmando as contribuições da seleção de alvos e da modelagem conjunta. **A lição é que o pré-treinamento em sequências transacionais deve alinhar objetivos preditivos à tarefa downstream** para melhorar representações e desempenho em risco de crédito e fraude."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2610.41988",
+   "title": "ID2Pattern: Pretraining Generalizable Identity Behavior Patterns for Transaction Risk Foundation Models",
+   "original_title": "ID2Pattern: Pretraining Generalizable Identity Behavior Patterns for Transaction Risk Foundation Models",
+   "url": "https://doi.org/10.48550/arxiv.2610.41988",
+   "venue": "arXiv",
+   "date": "2026-10-30",
+   "authors": [
+    "Zhao Ze",
+    "Haoyu Jiang",
+    "Weiyu Han",
+    "Ruobing Zuo",
+    "Xiao Tan",
+    "Shuai Chen",
+    "Tianyi Zhang"
+   ],
+   "institutions": [
+    "East China Normal University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 1,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "bench",
+    "w": "Pretraining de padrões de identidade em 100M sequências industriais mais seis datasets públicos."
+   },
+   "score": 7,
+   "theme": "transactional_fm",
+   "region": "",
+   "summary": "Propõe um framework de pré-treinamento que codifica campos de identidade de alta cardinalidade (cartão, dispositivo, conta) em padrões comportamentais generalizáveis via tokenizador LAID e codebook multi-escala. Em um dataset industrial com mais de 100M sequências e seis datasets públicos, supera baselines em 4,13% e 8,83% em média, mantendo eficácia mesmo com identidades não vistas no treino. **A lição é que capturar padrões de comportamento de identidades, em vez de valores específicos, melhora a generalização** em modelos fundacionais para risco transacional, especialmente para novos usuários e mercados."
+  },
+  {
+   "key": "doi:10.48550/arxiv.2611.13069",
+   "title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+   "original_title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+   "url": "https://doi.org/10.48550/arxiv.2611.13069",
+   "venue": "arXiv",
+   "date": "2026-11-09",
+   "authors": [
+    "Mattias Kvist",
+    "Erik Lidman Hillbom",
+    "Edoardo de Cal",
+    "Davis Siemens",
+    "Adam Fredriksson",
+    "Rickard Brüel Gabrielsson"
+   ],
+   "institutions": [
+    "KTH Royal Institute of Technology",
+    "Massachusetts Institute of Technology"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "bench",
+    "w": "Benchmark público de sequências de eventos com células OOT e cold-start auditadas"
+   },
+   "score": 7,
+   "theme": "transactional_fm",
+   "region": "",
+   "summary": "Propõe o benchmark INTENT para avaliar modelos fundacionais em sequências de eventos de usuário, com sete células definidas por novidade de usuário, período e item. Uma auditoria de 59 famílias de datasets retém cinco, e resultados de referência mostram que um transformer lidera em itens vistos após o cutoff, mas zera em itens novos, enquanto repetir o último item lidera em novos em quatro de cinco datasets. **A lição é que a avaliação de modelos de sequência para risco deve testar generalização fora da amostra e no tempo**, e controles simples podem superar modelos complexos em cenários de cold-start."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24358933",
+   "title": "Validating Mortgage Default Models Through a Regime Change: Evidence from 10.8 Million Freddie Mac Loans, 2020 to 2026",
+   "original_title": "Validating Mortgage Default Models Through a Regime Change: Evidence from 10.8 Million Freddie Mac Loans, 2020 to 2026",
+   "url": "https://doi.org/10.5281/zenodo.24358933",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-18",
+   "authors": [
+    "Daniel (Zhenxiong) Yang"
+   ],
+   "institutions": [
+    "University of the Cumberlands"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 8,
+    "e": "admin",
+    "w": "10,8 milhões de hipotecas Freddie Mac, validação fora do tempo com AUC e custo"
+   },
+   "score": 7,
+   "theme": "model_risk",
+   "region": "",
+   "summary": "Validação de modelos de default em 10,8 milhões de hipotecas Freddie Mac durante mudanças de regime (COVID, boom de refinanciamento, alta de juros). Um ensemble de regressão logística e gradient boosting teve o melhor ranking (AUC 0,807 em tempo e 0,815 fora do tempo), mas um cutoff fixo sinalizou 24% dos empréstimos posteriores em vez de 5%, e cerca de 40% dos sinalizados foram instáveis em reamostragens. **A lição é que a validação deve considerar estabilidade populacional, limiares baseados em capacidade e modelos de riscos concorrentes** (default e pré-pagamento)."
+  },
+  {
+   "key": "doi:10.1922/comdem.v3i6s.19001",
+   "title": "Beyond Accuracy: A Multi-Dimensional Explainability and Model-Risk Framework for AI-Based Credit Decisions in Banking",
+   "original_title": "Beyond Accuracy: A Multi-Dimensional Explainability and Model-Risk Framework for AI-Based Credit Decisions in Banking",
+   "url": "https://doi.org/10.1922/comdem.v3i6s.19001",
+   "venue": "Computer and decision making.",
+   "date": "2026-11-07",
+   "authors": [
+    "Anamika",
+    "Amit Butail",
+    "Kritika Rana"
+   ],
+   "institutions": [
+    "Shoolini University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "admin",
+    "w": "9,36M HMDA com holdouts, bootstrap e ECE; rótulos de negativa, não default"
+   },
+   "score": 7,
+   "theme": "model_risk",
+   "region": "",
+   "summary": "Propõe o framework BAIMRS para avaliar explicabilidade, equidade, calibração, estabilidade e governança em modelos de crédito, aplicado a 9,36 milhões de aplicações HMDA. O LightGBM teve a maior AUC (0,8729), mas a calibração ECE10 chegou a 0,1129 em uma instituição e os gaps de paridade demográfica foram substanciais, com rankings de implantação indisponíveis por evidências de governança incompletas. **A lição é que a seleção de modelos de crédito deve ir além da acurácia**, incorporando métricas de calibração, equidade e governança, e a estabilidade entre instituições é crítica."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24053189",
+   "title": "Reconciliation identities as acceptance tests of an expected credit loss allowance",
+   "original_title": "Reconciliation identities as acceptance tests of an expected credit loss allowance: detection limits on a public loan book, overlays kept apart, the convex region of scenario weighting and three provisioning regimes on one synthetic bank",
+   "url": "https://doi.org/10.5281/zenodo.24053189",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-08",
+   "authors": [
+    "Felipe A. Santibáñez-Leal"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 16,
+   "triage": {
+    "r": 8,
+    "q": 7,
+    "e": "bench",
+    "w": "Identidades IFRS 7 como teste de aceitação de ECL em carteira SBA 7(a) real, com limites de detecção numéricos."
+   },
+   "score": 7,
+   "theme": "expected_loss",
+   "region": "",
+   "summary": "Propõe um protocolo de testes de aceitação para provisão de perda esperada (IFRS 9) usando identidades de reconciliação, com limite de detecção medido. As identidades detectam um defeito plantado em 4.200 de 4.200 casos, mas não veem valores alocados em outra linha ou overlay fundido ao modelo; o ponderador de PD subestima a PD esperada em 4,56% em três cenários a um desvio-padrão. **A lição é que testes de reconciliação e separação de overlays são essenciais para validar provisões**, e cenários de estresse devem considerar não-linearidades no ponderador de PD."
+  },
+  {
+   "key": "web:https://www.bcb.gov.br/detalhenoticia/21310/noticia",
+   "title": "BC reforça proteção ao consumidor com novas regras para oferta e contratação de crédito",
+   "original_title": "BC reforça proteção ao consumidor com novas regras para oferta e contratação de crédito",
+   "url": "https://www.bcb.gov.br/detalhenoticia/21310/noticia",
+   "venue": "Banco Central do Brasil — notícias",
+   "date": "2026-11-05",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Banco Central do Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 7,
+    "e": "regulator",
+    "w": "Resolução BCB 602: bloqueio de oferta ativa e autorização prévia, exigência nova"
+   },
+   "score": 8,
+   "theme": "regulation",
+   "region": "",
+   "summary": "O BC aprovou três novas regras para ampliar a proteção do consumidor nas relações de crédito, com destaque para a Resolução BCB 602, que exige mecanismo claro para o cliente bloquear ofertas ativas e, para clientes em maior vulnerabilidade financeira, a oferta dependerá de autorização prévia, específica e inequívoca, visando renegociações ou portabilidade sem liberação de novos recursos. **A medida impacta diretamente estratégias de concessão e cobrança**, exigindo que modelos de risco e sistemas de oferta incorporem salvaguardas para evitar endividamento excessivo. A lição prática é que a modelagem de risco e as ações de cobrança precisam se adaptar a um ambiente regulatório mais protetivo, especialmente para públicos vulneráveis."
+  },
+  {
+   "key": "web:https://www.bcb.gov.br/detalhenoticia/21335/nota",
+   "title": "CMN e BC aprimoram medidas para prevenir riscos associados ao endividamento",
+   "original_title": "CMN e BC aprimoram medidas para prevenir riscos associados ao endividamento",
+   "url": "https://www.bcb.gov.br/detalhenoticia/21335/nota",
+   "venue": "Banco Central do Brasil — notas",
+   "date": "2026-11-25",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Banco Central do Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 6,
+    "e": "regulator",
+    "w": "Medidas Bacen/CMN sobre endividamento; sem números no texto"
+   },
+   "score": 7,
+   "theme": "regulation",
+   "region": "",
+   "summary": "O CMN e o BC aprovaram um conjunto de medidas para aprimorar a conduta e o tratamento prudencial dos riscos associados à concessão de crédito e ao endividamento, especialmente de pessoas físicas. As medidas reforçam a identificação, monitoramento e mitigação do risco de crédito, com foco no nível de endividamento e na proteção de clientes com dificuldade de pagamento e usuários frequentes do rotativo do cartão. **A lição é que as instituições precisam aprimorar critérios de originação, gestão de riscos e transparência sobre endividamento**, alinhando-se às novas exigências regulatórias."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.21203/rs.3.rs-11530197/v1",
+   "title": "Responsible Credit-Line Increase",
+   "original_title": "Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems",
+   "url": "https://doi.org/10.21203/rs.3.rs-11530197/v1",
+   "venue": "Research Square",
+   "date": "2026-10-30",
+   "authors": [
+    "Akshay Sharma",
+    "Gaurav Sharma"
+   ],
+   "institutions": [
+    "Salesforce (United States)",
+    "Institute of Electrical and Electronics Engineers"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 5,
+    "e": "bench",
+    "w": "Aumento de limite com fair lending; carteira sintética de 60 mil contas."
+   },
+   "score": 7,
+   "theme": "behavior_limits",
+   "region": "",
+   "note": "Propõe framework para aumento de limite de crédito que integra otimização de lucro, orçamento de perda esperada e tolerâncias de equidade, com política de threshold calibrada e auditável."
+  },
+  {
+   "key": "web:https://libertystreeteconomics.newyorkfed.org/2026/11/how-market-position-shapes-credit-card-interest-rates",
+   "title": "How Market Position Shapes Credit Card Interest Rates",
+   "original_title": "How Market Position Shapes Credit Card Interest Rates",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/how-market-position-shapes-credit-card-interest-rates/",
+   "venue": "NY Fed — Liberty Street Economics",
+   "date": "2026-11-04",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Federal Reserve Bank of New York — Liberty Street Economics",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 7,
+    "e": "admin",
+    "w": "14 milhões de cartões; poder de mercado e repasse de custo, dados reais"
+   },
+   "score": 6,
+   "theme": "pd_origination",
+   "region": "",
+   "note": "Bancos com maior participação de mercado repassam menos a queda no custo de funding para as taxas de cartão, mostrando poder de mercado na precificação."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2025.01919",
+   "title": "Deadly Disease, Fear, and Ostracism in the Credit Market",
+   "original_title": "Deadly Disease, Fear, and Ostracism in the Credit Market",
+   "url": "https://doi.org/10.1287/mnsc.2025.01919",
+   "venue": "Management Science",
+   "date": "2026-11-10",
+   "authors": [
+    "Sumit D. Agarwal",
+    "Pengsheng Lin",
+    "Yupeng Lin",
+    "Ruichang Lu",
+    "Xiaojun Zhang"
+   ],
+   "institutions": [
+    "National University of Singapore",
+    "Tsinghua University",
+    "Peking University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 1,
+   "triage": {
+    "r": 6,
+    "q": 7,
+    "e": "quasi",
+    "w": "Experimento natural Ebola; discriminação em hipotecas com números explícitos"
+   },
+   "score": 6,
+   "theme": "explainability_fairness",
+   "region": "",
+   "note": "Surto de Ebola aumentou negativas de hipoteca para negros em 3,8 p.p. e reduziu modificações, mas efeito ausente em fintechs algorítmicas."
+  },
+  {
+   "key": "doi:10.1016/j.jfineco.2026.104398",
+   "title": "Shadow banks on the rise",
+   "original_title": "Shadow banks on the rise: Evidence across market segments",
+   "url": "https://doi.org/10.1016/j.jfineco.2026.104398",
+   "venue": "Journal of Financial Economics",
+   "date": "2026-11-05",
+   "authors": [
+    "Kim Fe Cramer",
+    "Pulak Ghosh",
+    "Nirupama Kulkarni",
+    "Nishant Vats"
+   ],
+   "institutions": [
+    "London School of Economics and Political Science",
+    "Indian Institute of Management Bangalore",
+    "Reserve Bank of India",
+    "Washington University in St. Louis"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 16,
+   "triage": {
+    "r": 5,
+    "q": 7,
+    "e": "quasi",
+    "w": "Bureau de crédito de varejo na Índia, choques climáticos, quatro experimentos naturais"
+   },
+   "score": 6,
+   "theme": "pd_origination",
+   "region": "",
+   "note": "Fintechs respondem mais em mercados sem garantia, enquanto shadow banks não-fintech são mais responsivos em mercados com garantia, indicando vantagem tecnológica das fintechs."
+  },
+  {
+   "key": "doi:10.1057/s41261-026-00371-9",
+   "title": "Bridging the AI governance gap",
+   "original_title": "Bridging the AI governance gap: systematic weaknesses and targeted solutions in financial model risk management",
+   "url": "https://doi.org/10.1057/s41261-026-00371-9",
+   "venue": "Journal of Banking Regulation",
+   "date": "2026-10-31",
+   "authors": [
+    "Patrick Spitzer",
+    "Peter N. Posch"
+   ],
+   "institutions": [
+    "TU Dortmund University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 2,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "review",
+    "w": "Revisão estruturada de lacunas de governança de modelos de IA, sem dados próprios"
+   },
+   "score": 6,
+   "theme": "model_risk",
+   "region": "",
+   "note": "Revisão identifica 12 fraquezas recorrentes na governança de modelos de IA em instituições financeiras, propondo soluções para gestão de risco de modelos."
+  },
+  {
+   "key": "web:https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+   "title": "Novas regras para Open Finance PJ",
+   "original_title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas",
+   "url": "https://www.bcb.gov.br/detalhenoticia/21313/noticia",
+   "venue": "Banco Central do Brasil — notícias",
+   "date": "2026-11-10",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Banco Central do Brasil",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 6,
+    "e": "regulator",
+    "w": "Resolução Conjunta 21: parcerias e compartilhamento PJ no Open Finance"
+   },
+   "score": 6,
+   "theme": "regulation",
+   "region": "",
+   "note": "CMN e BC aprovam regras para contratos de parceria no Open Finance e facilitam compartilhamento de dados por clientes PJ, com mais clareza de responsabilidades."
+  }
+ ]
+}

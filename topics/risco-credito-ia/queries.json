@@ -1,0 +1,48 @@
+{
+  "lookback_days": 7,
+  "openalex": {
+    "types": [
+      "article",
+      "preprint",
+      "review",
+      "book-chapter",
+      "report"
+    ],
+    "per_query": 50,
+    "queries": [
+      "(\"credit scoring\" OR \"credit score\" OR \"credit scorecard\") AND (\"machine learning\" OR \"deep learning\" OR \"gradient boosting\" OR XGBoost OR \"neural network\")",
+      "(\"probability of default\" OR \"default prediction\" OR \"loan default\") AND (consumer OR retail OR \"credit card\" OR mortgage OR \"personal loan\" OR household)",
+      "(\"credit card\" OR \"revolving credit\" OR overdraft OR \"credit line\") AND (delinquency OR \"early warning\" OR \"behavioral scoring\" OR \"behavioural scoring\" OR \"behavior score\" OR utilization OR \"account management\" OR \"roll rate\") AND (model OR prediction OR \"machine learning\" OR scoring)",
+      "(\"debt collection\" OR \"debt collections\" OR \"collection agency\" OR \"debt collectors\" OR \"delinquent accounts\" OR \"delinquent borrowers\" OR \"past-due\" OR \"loan recovery\" OR \"debt recovery\") AND (bank OR credit OR loan OR borrower OR consumer OR debtor)",
+      "(\"loan restructuring\" OR \"loan modification\" OR \"debt restructuring\" OR forbearance OR \"debt relief\") AND (consumer OR household OR mortgage OR borrowers OR \"credit card\")",
+      "(\"transaction data\" OR \"transactional data\" OR \"event sequences\" OR \"banking transactions\" OR \"account transactions\") AND (\"credit risk\" OR \"credit scoring\" OR default)",
+      "(\"foundation model\" OR transformer OR \"self-supervised\" OR \"large language model\" OR \"large language models\") AND (\"credit risk\" OR \"credit scoring\" OR \"loan default\" OR \"probability of default\")",
+      "(explainable OR explainability OR SHAP OR interpretability OR interpretable) AND (\"credit scoring\" OR \"credit risk\" OR \"credit decisions\")",
+      "(fairness OR discrimination OR \"disparate impact\" OR \"algorithmic bias\") AND (\"credit scoring\" OR \"consumer lending\" OR \"credit decisions\" OR \"credit markets\")",
+      "(\"model risk management\" OR \"model validation\" OR \"model governance\" OR \"SR 11-7\" OR \"challenger model\") AND (bank OR banks OR banking OR credit) AND (\"machine learning\" OR \"artificial intelligence\" OR \"credit risk\" OR \"probability of default\" OR scoring)",
+      "(\"IFRS 9\" OR \"expected credit loss\" OR \"expected credit losses\" OR CECL) AND (model OR modelling OR modeling OR \"machine learning\")",
+      "(\"loss given default\" OR \"exposure at default\" OR \"credit conversion factor\" OR (\"recovery rate\" AND (loan OR loans OR mortgage OR \"credit card\" OR \"non-performing\"))) AND (retail OR consumer OR mortgage OR \"credit card\" OR \"machine learning\" OR model OR bank)",
+      "(\"credit limit\" OR \"credit line\" OR \"credit limits\") AND (consumer OR \"credit card\" OR borrowers) AND (optimization OR model OR experiment OR causal)",
+      "(\"reject inference\" OR \"sample selection bias\" OR \"selection bias\") AND (\"credit scoring\" OR \"credit risk\" OR lending)",
+      "(\"alternative data\" OR \"mobile phone data\" OR \"open banking\" OR \"cash flow data\") AND (\"credit scoring\" OR \"credit risk\" OR lending OR underwriting)",
+      "(\"internal ratings-based\" OR \"IRB approach\" OR \"IRB models\" OR \"IRB model\" OR \"risk-weighted assets\" OR \"output floor\") AND (\"probability of default\" OR \"loss given default\" OR \"PD model\" OR \"internal models\" OR \"model validation\" OR \"machine learning\" OR retail OR mortgage)",
+      "(\"survival analysis\" OR \"time to default\" OR \"survival model\" OR \"survival models\") AND (\"credit risk\" OR \"credit scoring\" OR \"consumer credit\" OR mortgage OR \"loan default\")",
+      "(\"credit card\" OR \"consumer credit\" OR \"personal loans\" OR \"consumer loans\") AND (default OR delinquency OR repayment) AND (\"randomized\" OR \"field experiment\" OR \"natural experiment\")",
+      "(\"foundation model\" OR \"foundation models\" OR \"self-supervised\" OR pretraining OR \"pre-trained\" OR \"representation learning\" OR transformer) AND (\"transaction data\" OR \"transactional data\" OR \"banking transactions\" OR \"financial transactions\" OR \"payment transactions\" OR \"transaction sequences\" OR \"event sequences\")",
+      "(\"large language model\" OR \"large language models\" OR LLM OR chatbot OR \"generative AI\" OR \"conversational agent\" OR \"voice agent\") AND (\"debt collection\" OR \"debt collections\" OR \"debt negotiation\" OR \"debt recovery\" OR \"delinquent\" OR \"loan repayment\" OR \"debt restructuring\")",
+      "(\"risco de crédito\" OR \"inadimplência\" OR \"escore de crédito\" OR \"concessão de crédito\" OR \"cobrança de dívidas\" OR \"renegociação de dívidas\" OR superendividamento OR \"cadastro positivo\") AND (modelo OR \"aprendizado de máquina\" OR \"machine learning\" OR \"inteligência artificial\" OR regulação OR bancos)",
+      "(calibration OR \"concept drift\" OR \"population drift\" OR \"dataset shift\" OR \"model monitoring\" OR \"population stability\") AND (\"credit scoring\" OR \"credit risk\" OR \"probability of default\" OR \"loan default\")",
+      "(repayment OR delinquency OR collections OR arrears) AND (reminder OR reminders OR nudge OR nudges OR \"text messages\" OR \"field experiment\" OR \"randomized controlled trial\") AND (loan OR loans OR \"credit card\" OR borrowers OR debt)"
+    ]
+  },
+  "arxiv": {
+    "max_results": 150,
+    "query": "(cat:q-fin.RM OR cat:q-fin.ST OR cat:q-fin.GN OR cat:q-fin.CP OR cat:cs.LG OR cat:cs.AI OR cat:cs.CL OR cat:cs.CE OR cat:stat.ML OR cat:stat.AP OR cat:cs.CY OR cat:econ.GN) AND (abs:\"credit scoring\" OR abs:\"credit risk\" OR abs:\"probability of default\" OR abs:\"loan default\" OR abs:\"default prediction\" OR abs:\"debt collection\" OR abs:\"debt collections\" OR abs:\"credit card default\" OR abs:\"consumer credit\" OR abs:\"loss given default\" OR abs:\"behavioral scoring\" OR abs:\"expected credit loss\" OR abs:\"credit limit\" OR abs:\"reject inference\" OR abs:\"credit underwriting\" OR abs:\"loan repayment\" OR abs:\"consumer lending\" OR abs:\"creditworthiness\" OR (abs:\"foundation model\" AND abs:transaction) OR (abs:\"event sequences\" AND (abs:banking OR abs:financial)) OR (abs:\"transaction\" AND abs:\"self-supervised\" AND abs:bank))"
+  },
+  "selection": {
+    "max_candidates_for_llm": 220,
+    "min_score": 7,
+    "max_selected": 12,
+    "max_quick_mentions": 6
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "focus": "modelos de risco de crédito de varejo e cobrança em bancos: gerenciamento de risco de crédito e de modelos, perda esperada e provisões, capital (Basileia/IRB), concessão responsável, cobrança, renegociação e superendividamento, cadastro positivo, explicabilidade e decisões automatizadas",
+  "bacen": {
+    "since": "2017-01-01",
+    "types": [
+      "Resolução CMN",
+      "Resolução BCB",
+      "Resolução Conjunta",
+      "Instrução Normativa BCB",
+      "Circular",
+      "Carta Circular",
+      "Comunicado"
+    ],
+    "terms": [
+      "\"risco de crédito\"",
+      "\"perda esperada\"",
+      "\"gerenciamento de riscos\"",
+      "\"abordagem IRB\"",
+      "inadimplência",
+      "renegociação",
+      "\"histórico de crédito\"",
+      "superendividamento",
+      "\"cartão de crédito\"",
+      "\"ativos problemáticos\"",
+      "endividamento",
+      "\"crédito rotativo\"",
+      "\"concessão de crédito\"",
+      "\"sistemas internos de classificação\"",
+      "\"provisão para perdas\""
+    ]
+  },
+  "landmarks": [
+    {
+      "regulator": "Comitê de Basileia (BCBS/BIS)",
+      "title": "Basel III: Finalising post-crisis reforms",
+      "date": "2017-12-07",
+      "url": "https://www.bis.org/bcbs/publ/d424.htm",
+      "summary": "Revisão final de Basileia III: nova abordagem padronizada de risco de crédito, restrições ao uso de modelos internos (IRB), pisos de PD, LGD e EAD e o output floor de 72,5% sobre os ativos ponderados pela abordagem padronizada.",
+      "theme": "regulation",
+      "techniques": [
+        "modelos IRB de PD, LGD e EAD",
+        "pisos de parâmetros",
+        "abordagem padronizada"
+      ]
+    },
+    {
+      "regulator": "Comitê de Basileia (BCBS/BIS)",
+      "title": "Guidance on credit risk and accounting for expected credit losses",
+      "date": "2015-12-18",
+      "url": "https://www.bis.org/bcbs/publ/d350.htm",
+      "summary": "Orientação supervisora sobre práticas de risco de crédito ligadas à perda esperada contábil: 11 princípios sobre governança, metodologia, validação de modelos, julgamento de crédito e informação prospectiva.",
+      "theme": "expected_loss",
+      "techniques": [
+        "validação de modelos de perda esperada",
+        "informação prospectiva",
+        "governança de provisões"
+      ]
+    },
+    {
+      "regulator": "Comitê de Basileia (BCBS/BIS)",
+      "title": "BCBS 239 — Principles for effective risk data aggregation and risk reporting",
+      "date": "2013-01-09",
+      "url": "https://www.bis.org/publ/bcbs239.htm",
+      "summary": "Princípios de agregação de dados de risco e de relatórios de risco: governança, arquitetura de dados, exatidão, completude e tempestividade. Base para a qualidade dos dados que alimentam os modelos de crédito.",
+      "theme": "model_risk",
+      "techniques": [
+        "qualidade e linhagem de dados",
+        "governança de dados de risco"
+      ]
+    },
+    {
+      "regulator": "IASB/IFRS Foundation",
+      "title": "IFRS 9 Financial Instruments",
+      "date": "2014-07-24",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/",
+      "summary": "Norma contábil internacional de instrumentos financeiros, com modelo de perda esperada em três estágios. Em vigor desde 2018 e referência da Resolução CMN 4.966.",
+      "theme": "expected_loss",
+      "techniques": [
+        "perda esperada",
+        "PD lifetime",
+        "estágios de risco"
+      ]
+    },
+    {
+      "regulator": "Federal Reserve / OCC (EUA)",
+      "title": "SR 11-7 — Supervisory Guidance on Model Risk Management",
+      "date": "2011-04-04",
+      "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm",
+      "summary": "Orientação supervisora que foi a referência mundial em gestão de risco de modelos de 2011 a 2026: desenvolvimento, uso, validação independente (solidez conceitual, monitoramento contínuo, análise de resultados), governança e inventário. Substituída em 17/4/2026 pela SR 26-2.",
+      "theme": "model_risk",
+      "techniques": [
+        "validação independente",
+        "monitoramento de modelos",
+        "inventário e governança"
+      ]
+    },
+    {
+      "regulator": "Prudential Regulation Authority (Reino Unido)",
+      "title": "SS1/23 — Model risk management principles for banks",
+      "date": "2023-05-17",
+      "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss",
+      "summary": "Cinco princípios de gestão de risco de modelos para bancos do Reino Unido, em vigor desde 17/5/2024, que tratam explicitamente de modelos de ML e IA: identificação e classificação, governança, desenvolvimento, validação independente e mitigantes.",
+      "theme": "model_risk",
+      "techniques": [
+        "validação de modelos de ML",
+        "classificação por materialidade",
+        "explicabilidade"
+      ]
+    },
+    {
+      "regulator": "European Banking Authority (EBA)",
+      "title": "Follow-up report on the use of machine learning for internal ratings-based models",
+      "date": "2023-08-04",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-follow-report-use-machine-learning-internal",
+      "summary": "Relatório da EBA sobre o uso de ML em modelos IRB: onde os bancos usam (seleção de variáveis, tratamento de dados, modelos desafiantes), desafios de explicabilidade e validação, e recomendações práticas para cumprir os requisitos prudenciais.",
+      "theme": "model_risk",
+      "techniques": [
+        "ML em modelos IRB",
+        "explicabilidade",
+        "validação"
+      ]
+    },
+    {
+      "regulator": "European Banking Authority (EBA)",
+      "title": "Guidelines on loan origination and monitoring (EBA/GL/2020/06)",
+      "date": "2020-05-29",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/credit-risk/guidelines-on-loan-origination-and-monitoring",
+      "summary": "Diretrizes de concessão e monitoramento de crédito, aplicáveis desde 30/6/2021, com seção sobre modelos automatizados de decisão de crédito: os bancos devem entender, documentar e validar esses modelos, inclusive os de ML.",
+      "theme": "pd_origination",
+      "techniques": [
+        "modelos automatizados de concessão",
+        "avaliação de capacidade de pagamento",
+        "monitoramento da carteira"
+      ]
+    },
+    {
+      "regulator": "União Europeia",
+      "title": "AI Act — Regulamento (UE) 2024/1689 (avaliação de crédito como uso de alto risco)",
+      "date": "2024-08-01",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "summary": "Sistemas de IA para avaliar a capacidade de crédito ou o score de crédito de pessoas físicas são de alto risco (Anexo III), com exigências de gestão de risco, qualidade de dados, documentação, supervisão humana e transparência; a detecção de fraude fica fora dessa categoria. As obrigações dos sistemas de alto risco valem a partir de 2/12/2027, data adiada pelo AI Omnibus (antes, 2/8/2026).",
+      "theme": "regulation",
+      "techniques": [
+        "credit scoring de pessoas físicas",
+        "gestão de risco de IA",
+        "supervisão humana"
+      ]
+    },
+    {
+      "regulator": "Consumer Financial Protection Bureau (EUA)",
+      "title": "Circular 2022-03 — Adverse action notification requirements and complex algorithms",
+      "date": "2022-05-26",
+      "url": "https://www.consumerfinance.gov/compliance/circulars/circular-2022-03-adverse-action-notification-requirements-in-connection-with-credit-decisions-based-on-complex-algorithms/",
+      "summary": "O CFPB afirmou que credores que usam algoritmos complexos ou caixa-preta continuam obrigados a dar razões específicas e precisas ao recusar crédito (ECOA/Regulation B). Referência para explicabilidade de modelos de concessão. Verificar a situação atual: o CFPB revogou várias orientações em 2025.",
+      "theme": "explainability_fairness",
+      "techniques": [
+        "razões de recusa",
+        "explicabilidade de modelos de concessão"
+      ]
+    },
+    {
+      "regulator": "BIS — Financial Stability Institute",
+      "title": "FSI Insights 63 — Regulating AI in the financial sector: recent developments and main challenges",
+      "date": "2024-12-12",
+      "url": "https://www.bis.org/fsi/publ/insights63.htm",
+      "summary": "Panorama de como reguladores tratam IA no setor financeiro, com foco em governança, explicabilidade, gestão de risco de modelos e uso de IA em crédito e seguros.",
+      "theme": "regulation",
+      "techniques": [
+        "governança de IA",
+        "explicabilidade",
+        "gestão de risco de modelos"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "LGPD — Lei 13.709/2018 (art. 20: revisão de decisões automatizadas)",
+      "date": "2018-08-14",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "summary": "O art. 20 dá ao titular o direito de pedir revisão de decisões tomadas unicamente com base em tratamento automatizado, como a concessão de crédito, e de obter informações sobre os critérios usados; a LGPD também prevê a proteção do crédito como base legal de tratamento (art. 7º, X).",
+      "theme": "explainability_fairness",
+      "techniques": [
+        "explicabilidade",
+        "revisão de decisão automatizada",
+        "bases legais para dados de crédito"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Lei Complementar 166/2019 — Cadastro Positivo com adesão automática",
+      "date": "2019-04-08",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp166.htm",
+      "summary": "Tornou automática a inclusão de pessoas e empresas no Cadastro Positivo (histórico de pagamentos em bureaus de crédito), com direito de saída. Ampliou os dados disponíveis para modelos de concessão e behavior score no Brasil.",
+      "theme": "pd_origination",
+      "techniques": [
+        "dados positivos de bureau",
+        "scores de crédito"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Lei 14.181/2021 — Lei do Superendividamento",
+      "date": "2021-07-01",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "summary": "Alterou o Código de Defesa do Consumidor para prevenir e tratar o superendividamento: concessão responsável, informação prévia ao consumidor, proibição de assédio na oferta de crédito e repactuação de dívidas em bloco com preservação do mínimo existencial. Afeta concessão, cobrança e renegociação.",
+      "theme": "collections",
+      "techniques": [
+        "concessão responsável",
+        "renegociação e repactuação",
+        "cobrança"
+      ]
+    },
+    {
+      "regulator": "Federal Reserve / OCC / FDIC (EUA)",
+      "title": "SR 26-2 — Revised Guidance on Model Risk Management",
+      "date": "2026-04-17",
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+      "summary": "Orientação conjunta das três agências que substitui a SR 11-7 (2011) e a SR 21-8 (2021). Atualiza os princípios de gestão de risco de modelos e enfatiza uma abordagem baseada em risco, proporcional ao perfil de risco de modelo, ao porte e à complexidade da instituição; mais relevante para organizações com mais de US$ 30 bilhões em ativos.",
+      "theme": "model_risk",
+      "techniques": [
+        "validação independente",
+        "abordagem baseada em risco",
+        "governança de modelos"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Lei 15.252/2025 — direitos da pessoa natural usuária de serviços financeiros",
+      "date": "2025-11-04",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15252.htm",
+      "summary": "Cria os direitos à portabilidade salarial automática, ao débito automático entre instituições, à informação e à contratação de crédito em modalidade especial com juros reduzidos; regulamentada pela Resolução CMN 5.299, de 4/5/2026, e base das Resoluções BCB 601 e 602.",
+      "theme": "regulation",
+      "techniques": [
+        "portabilidade salarial",
+        "crédito com juros reduzidos"
+      ]
+    },
+    {
+      "regulator": "Comitê de Basileia (BCBS/BIS)",
+      "title": "Principles for the management of credit risk (revisão de 2025)",
+      "date": "2025-04-30",
+      "url": "https://www.bis.org/bcbs/publ/d595.htm",
+      "summary": "Revisão dos princípios de gestão de risco de crédito do Comitê de Basileia (versão original de 2000): ambiente de risco de crédito, concessão com critérios sólidos, administração, mensuração e monitoramento da carteira e controles.",
+      "theme": "regulation",
+      "techniques": [
+        "concessão de crédito",
+        "monitoramento da carteira",
+        "governança de risco de crédito"
+      ]
+    },
+    {
+      "regulator": "Comitê de Basileia (BCBS/BIS)",
+      "title": "Newsletter on artificial intelligence and machine learning",
+      "date": "2022-03-16",
+      "url": "https://www.bis.org/publ/bcbs_nl27.htm",
+      "summary": "Visão do Comitê de Basileia sobre IA e ML em bancos: explicabilidade, governança, qualidade de dados e gestão de risco de modelos como os pontos de atenção da supervisão.",
+      "theme": "model_risk",
+      "techniques": [
+        "explicabilidade",
+        "governança de ML",
+        "risco de modelo"
+      ]
+    },
+    {
+      "regulator": "Financial Stability Board",
+      "title": "The Financial Stability Implications of Artificial Intelligence",
+      "date": "2024-11-14",
+      "url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+      "summary": "Relatório do FSB sobre os usos de IA no setor financeiro, incluindo concessão de crédito, e as vulnerabilidades associadas (dependência de terceiros, correlação de modelos, risco de modelo e governança de dados).",
+      "theme": "regulation",
+      "techniques": [
+        "IA em concessão de crédito",
+        "risco de modelo",
+        "dependência de terceiros"
+      ]
+    },
+    {
+      "regulator": "Tribunal de Justiça da União Europeia",
+      "title": "Acórdão SCHUFA (C-634/21): score de crédito como decisão automatizada",
+      "date": "2023-12-07",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62021CJ0634",
+      "summary": "O tribunal decidiu que o cálculo de um score de crédito por um bureau é decisão automatizada (art. 22 do GDPR) quando o credor depende dele de forma determinante para conceder ou negar crédito. Paralelo direto com o art. 20 da LGPD.",
+      "theme": "explainability_fairness",
+      "techniques": [
+        "decisão automatizada",
+        "scores de bureau",
+        "explicabilidade"
+      ]
+    },
+    {
+      "regulator": "União Europeia",
+      "title": "Diretiva (UE) 2023/2225 — crédito ao consumidor (CCD2)",
+      "date": "2023-10-18",
+      "url": "https://eur-lex.europa.eu/eli/dir/2023/2225/oj",
+      "summary": "Nova diretiva de crédito ao consumidor: avaliação de solvência baseada em informação relevante e precisa, limites ao uso de dados especiais, direito do consumidor a intervenção humana e a explicação quando a avaliação usa tratamento automatizado. Transposição pelos Estados-membros em curso — verificar o calendário.",
+      "theme": "explainability_fairness",
+      "techniques": [
+        "avaliação de solvência",
+        "intervenção humana",
+        "explicação de decisões"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Lei 12.414/2011 — Cadastro Positivo",
+      "date": "2011-06-09",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "summary": "Disciplina os bancos de dados com informações de adimplemento (histórico de crédito) para formação de score; alterada pela Lei Complementar 166/2019, que tornou a adesão automática.",
+      "theme": "pd_origination",
+      "techniques": [
+        "dados positivos de bureau",
+        "scores de crédito"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Lei 14.690/2023 — Desenrola Brasil e limite de juros do rotativo",
+      "date": "2023-10-03",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm",
+      "summary": "Instituiu o programa de renegociação de dívidas Desenrola Brasil e limitou os juros e encargos do rotativo e do parcelado do cartão de crédito a 100% do valor original da dívida, regulamentado pelo CMN.",
+      "theme": "collections",
+      "techniques": [
+        "renegociação em massa",
+        "crédito rotativo"
+      ]
+    },
+    {
+      "regulator": "Brasil",
+      "title": "Código de Defesa do Consumidor — Lei 8.078/1990 (art. 42: cobrança de dívidas)",
+      "date": "1990-09-11",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "summary": "O art. 42 proíbe expor o consumidor inadimplente a ridículo ou submetê-lo a constrangimento ou ameaça na cobrança, e prevê devolução em dobro do que for cobrado indevidamente. Limita estratégias de cobrança, inclusive as automatizadas.",
+      "theme": "collections",
+      "techniques": [
+        "cobrança",
+        "contato com devedores"
+      ]
+    },
+    {
+      "regulator": "Câmara dos Deputados (Brasil)",
+      "title": "PL 2338/2023 — marco legal da inteligência artificial",
+      "date": "2024-12-10",
+      "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+      "summary": "Projeto que regula a IA no Brasil com abordagem baseada em risco; aprovado no Senado em dezembro de 2024 e em tramitação na Câmara dos Deputados — verificar a situação atual. O texto do Senado inclui a avaliação de capacidade de endividamento e de crédito entre os usos de alto risco — verificar no texto em tramitação.",
+      "theme": "regulation",
+      "techniques": [
+        "IA de alto risco",
+        "avaliação de crédito"
+      ]
+    },
+    {
+      "regulator": "Conselho Monetário Nacional (Brasil)",
+      "title": "Resolução CMN 4.557/2017 — estrutura de gerenciamento de riscos e de capital",
+      "date": "2017-02-23",
+      "url": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4557",
+      "summary": "Norma-base do gerenciamento de riscos das instituições: define risco de crédito (art. 21), os requisitos do gerenciamento do risco de crédito (art. 23) e os ativos problemáticos (art. 24). Alterada pela Resolução CMN 5.349, de 25/11/2026.",
+      "theme": "model_risk",
+      "techniques": [
+        "gerenciamento do risco de crédito",
+        "ativos problemáticos",
+        "apetite por risco (RAS)"
+      ]
+    },
+    {
+      "regulator": "Banco Central do Brasil",
+      "title": "Resolução BCB 352/2023 — instrumentos financeiros e provisão para perdas esperadas",
+      "date": "2023-11-23",
+      "url": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o+BCB&numero=352",
+      "summary": "Conceitos e critérios contábeis de instrumentos financeiros; operacionaliza a constituição de provisão para perdas esperadas associadas ao risco de crédito da Resolução CMN 4.966, com segregação dos ativos em carteiras (a Carteira 5 é citada na Resolução CMN 5.350). Esclarecida pela Instrução Normativa BCB 560, de 6/12/2024.",
+      "theme": "expected_loss",
+      "techniques": [
+        "provisão por perda esperada",
+        "carteiras de provisionamento"
+      ]
+    },
+    {
+      "regulator": "Banco Central do Brasil",
+      "title": "Resolução BCB 610/2026 — limite de crédito de quem usa o rotativo com frequência",
+      "date": "2026-11-25",
+      "url": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o+BCB&numero=610",
+      "summary": "Altera a Resolução BCB 96: o emissor de instrumento pós-pago deve não aumentar e reduzir gradualmente o limite de crédito do titular que financiou pelo rotativo três ou mais faturas nos últimos seis meses, até que pague seis faturas consecutivas integralmente ou liquide o saldo financiado; exige comunicação prévia e uso de dados do SCR e do Open Finance. Aprovada em sessão de 24/11/2026; em vigor em 1/1/2027 (art. 6º-C) e 1/7/2027 (demais).",
+      "theme": "behavior_limits",
+      "techniques": [
+        "gestão de limites de cartão",
+        "crédito rotativo"
+      ]
+    }
+  ]
+}
