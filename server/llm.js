@@ -14,7 +14,7 @@ const HF_MODELS = "https://router.huggingface.co/v1/models";
 const DEEPSEEK = "https://api.deepseek.com/chat/completions";
 const DEEPSEEK_MODELS = "https://api.deepseek.com/models";
 const DEEPSEEK_PRICING = "https://api-docs.deepseek.com/quick_start/pricing.md";
-export const DEFAULT_MODELS = ["deepseek-ai/DeepSeek-V4.1-Flash", "Qwen/Qwen3.5-122B-A10B"];
+export const DEFAULT_MODELS = ["deepseek-ai/DeepSeek-V4.1-Flash", "openai/gpt-oss-120b"]; // Qwen3.5-122B dropped 26/11/2026: refused by the router
 
 // Stand-ins: US$ per 1M tokens at PEAK (off-peak is half): [input cache hit, input cache miss, output] — Nov 2026.
 const DEEPSEEK_PRICES = { "deepseek-flash": [0.006, 0.30, 1.20], "deepseek-v4-pro": [0.044, 1.32, 3.96] };

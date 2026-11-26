@@ -36,7 +36,7 @@ HF_MODELS = "https://router.huggingface.co/v1/models"
 DEEPSEEK = "https://api.deepseek.com/chat/completions"
 DEEPSEEK_MODELS = "https://api.deepseek.com/models"
 DEEPSEEK_PRICING = "https://api-docs.deepseek.com/quick_start/pricing.md"
-DEFAULT_MODELS = ["deepseek-ai/DeepSeek-V4.1-Flash", "Qwen/Qwen3.5-122B-A10B", "openai/gpt-oss-120b"]
+DEFAULT_MODELS = ["deepseek-ai/DeepSeek-V4.1-Flash", "openai/gpt-oss-120b"]  # Qwen3.5-122B dropped 26/11/2026: listed by HF but refused by the router
 
 # Stand-ins when the pricing page or /models cannot be read. US$ per 1M tokens at PEAK (off-peak is half):
 # (input cache hit, input cache miss, output). api-docs.deepseek.com, Nov 2026.

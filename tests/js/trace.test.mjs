@@ -129,7 +129,7 @@ test("LLM client: routes ranked by published prices, cheapest first, next on fai
   });
   const r = await llm([{ role: "user", content: "oi" }], 50);
   assert.equal(seen.length, 2);
-  assert.equal(r.model, seen[1][0]);
+  assert.ok(r.model === seen[1][0] || r.model === `deepseek:${seen[1][0]}`); // route vs API model name (DeepSeek wins off-peak)
   assert.ok(r.cost > 0);
   assert.equal(r.attempts[0].ok, false);
   assert.ok(!seen.some(([m]) => m.endsWith(":tiny4")));
