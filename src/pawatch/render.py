@@ -120,7 +120,7 @@ def _landing(topics):
         for a, b in [('<html lang="pt-BR">', '<html lang="pt-BR" data-carta-root>'),
                      ("<title>Carta · Research Watch</title>", "<title>Research Watch</title>"),
                      ('href="carta.css"', 'href="carta/carta.css"'), ('src="carta.js"', 'src="carta/carta.js"'),
-                     ('<a class="back" href="../../">Voltar ao site atual</a>', f'<a class="back" href="{first}/">Site atual</a>'),
+                     ('<button type="button" class="back" data-design>Trocar de design</button>', f'<a class="back" href="{first}/?design=classico">Site clássico</a>'),
                      ('<p class="loading mono">Carregando…</p>', f'<p class="loading mono">Carregando…</p><noscript><ul class="more-l">{links}</ul></noscript>')]:
             if a not in page:
                 break

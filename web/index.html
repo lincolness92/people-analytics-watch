@@ -9,6 +9,20 @@
   <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <script>
+    // Default design: Carta. ?design=<key> switches and is remembered (localStorage "rw-design"); "classico" is this
+    // page. #/criar exists only here. A local copy (file:) stays here too.
+    (function () {
+      var KEYS = { carta: 1, classico: 1, carteira: 1, sinal: 1, grifo: 1 };
+      var d = null;
+      try { d = new URLSearchParams(location.search).get("design"); } catch (e) { d = null; }
+      if (d && KEYS[d]) { try { localStorage.setItem("rw-design", d); } catch (e) { /* private mode: this visit only */ } }
+      else { d = null; try { d = localStorage.getItem("rw-design"); } catch (e) { d = null; } }
+      if (!d || !KEYS[d]) d = "carta";
+      if (d === "classico" || /^#\/criar/.test(location.hash) || !/^https?:$/.test(location.protocol)) return;
+      location.replace("designs/" + d + "/" + location.hash);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>

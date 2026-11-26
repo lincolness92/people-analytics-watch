@@ -399,7 +399,7 @@ if (typeof document !== "undefined") (function () {
     if (parts.length) s += ` em ${plural(c.digests, "digest", "digests")}`;
     const more = [];
     if (c.ms) more.push(`<a class="k c-b" href="#/evolucao">${plural(c.ms, "marco novo", "marcos novos")}</a> na Evolução`);
-    if (c.regs) more.push(`<a class="k c-n" href="../../#/regulacao">${plural(c.regs, "norma nova", "normas novas")}</a>`);
+    if (c.regs) more.push(`<a class="k c-n" href="../carta/#/regulacao">${plural(c.regs, "norma nova", "normas novas")}</a>`);
     const all = [s, ...more].filter(Boolean);
     const body = all.length > 1 ? all.slice(0, -1).join(", ") + (dlPart ? ", " : " e ") + all[all.length - 1] : all[0];
     return `<div class="since sweep"><p>Desde <b>${fmtD(VISIT.at)}</b>, sua última visita: ${body}${dlPart}.</p>
@@ -445,7 +445,7 @@ if (typeof document !== "undefined") (function () {
         <ol class="dl sweep" style="margin-top:18px">${dl.map((d) => { const past = d.left < 0, D = dt(d.d); return `<li><div class="date">${String(D.getDate()).padStart(2, "0")}<small>${MES[D.getMonth()]} ${D.getFullYear()}</small></div><div>
           <p class="in ${past ? "past" : ""}">${past ? `há ${Math.abs(d.left)} ${Math.abs(d.left) === 1 ? "dia" : "dias"}` : circ(inDays(d.left), true)}</p><h3>${d.r.u !== "#" ? `<a href="${esc(d.r.u)}" target="_blank" rel="noopener" style="text-decoration:none">${esc(d.r.t)}</a>` : esc(d.r.t)}</h3><p class="clamp" style="--n:4"><b style="font-family:var(--d);font-size:15px;color:var(--ink)">${esc(d.l)}.</b> ${esc(d.r.sum)}</p>
           ${d.r.req.length ? `<ul class="req">${d.r.req.slice(0, 3).map((q) => `<li>${esc(q)}</li>`).join("")}</ul><button class="lk" data-open="li" data-hide="1">O que a norma exige</button>` : ""}</div></li>`; }).join("")}</ol>
-        <p class="small" style="margin-top:10px">${F.nReg} normas no arquivo; datas lidas do texto de cada uma. <a class="pen" href="../../#/regulacao">Ver todas no site atual</a></p>
+        <p class="small" style="margin-top:10px">${F.nReg} normas no arquivo; datas lidas do texto de cada uma. <a class="pen" href="../carta/#/regulacao">Ver todas no Carta</a></p>
       </section>`);
     }
     if (best.length) {
@@ -486,7 +486,7 @@ if (typeof document !== "undefined") (function () {
       if (e.target.closest("[data-lv]")) { markRead(); render(); }
     };
   }
-  const foot = () => `<footer class="foot small"><span>${esc(F.name)} · dados de ${fmtDY(F.generated)}</span><a class="pen" href="../../">Voltar ao site atual</a></footer>`;
+  const foot = () => `<footer class="foot small"><span>${esc(F.name)} · dados de ${fmtDY(F.generated)}</span><a class="pen" href="../">Trocar de design</a></footer>`;
 
   /* ---------- novidades ---------- */
   const scores = () => F.items.map((i) => i.s);
@@ -834,10 +834,10 @@ if (typeof document !== "undefined") (function () {
     openSheet("Mais", `<ul class="ml" style="margin-top:10px">
       ${F.topics.length > 1 ? row("#/temas", "Trocar de tema", esc(names)) : ""}
       ${row("#/evolucao", "Evolução", F.evolution ? `${F.nMilestones} marcos em ${plural(F.evolution.eras.length, "era", "eras")}` : "ainda não gerada")}
-      ${F.nReg ? row("../../#/regulacao", "Regulação", `${F.nReg} normas, com o que cada uma exige · no site atual`, true) : ""}
-      ${A ? row(`../../#/anual/${A.year}`, "Anual " + A.year, (A.partial ? "Retrospectiva parcial até " + A.until : "Retrospectiva do ano") + " · no site atual", true) : ""}
-      ${row("../../#/pessoas", "Pessoas & instituições", (F.people ? `${F.people} pesquisadores na watchlist` : "Watchlist do tema") + " · no site atual", true)}
-      ${row("../../", "Voltar ao site atual", "O Research Watch de sempre, com tudo", true)}</ul>
+      ${F.nReg ? row("../carta/#/regulacao", "Regulação", `${F.nReg} normas, com o que cada uma exige · no Carta`, true) : ""}
+      ${A ? row(`../carta/#/anual/${A.year}`, "Anual " + A.year, (A.partial ? "Retrospectiva parcial até " + A.until : "Retrospectiva do ano") + " · no Carta", true) : ""}
+      ${row("../carta/#/pessoas", "Pessoas & instituições", (F.people ? `${F.people} pesquisadores na watchlist` : "Watchlist do tema") + " · no Carta", true)}
+      ${row("../", "Trocar de design", "Carta, clássico e os outros", true)}</ul>
       <h3 class="kick" style="margin:24px 0 10px"><span>Aparência</span></h3><div class="tog" style="grid-template-columns:repeat(3,1fr);margin:0;display:grid">${[["auto", "Sistema"], ["light", "Claro"], ["dark", "Escuro"]].map(([k, l]) => `<button data-theme-set="${k}" aria-pressed="${curTheme() === k}">${l}</button>`).join("")}</div>`);
   }
   const NAV = [["inicio", "#/", "Início"], ["novidades", "#/novidades", "Novidades"], ["mapa", "#/evolucao", "Mapa"], ["pergunte", "#/pergunte", "Pergunte"], ["mais", "", "Mais"]];
@@ -875,5 +875,5 @@ if (typeof document !== "undefined") (function () {
       render();
       initVoice();
     })
-    .catch((e) => { app.innerHTML = `<p class="empty">Não foi possível carregar os dados (${esc(e.message)}). <a class="pen" href="../../">Voltar ao site atual</a></p>`; });
+    .catch((e) => { app.innerHTML = `<p class="empty">Não foi possível carregar os dados (${esc(e.message)}). <a class="pen" href="../../?design=classico">Abrir o site clássico</a></p>`; });
 })();

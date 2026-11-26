@@ -509,7 +509,7 @@
   }
   const curTheme = () => document.documentElement.getAttribute("data-theme") || "auto";
   const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const route = () => { const h = location.hash.replace(/^#\/?/, ""); const i = h.indexOf("?"); const p = i >= 0 ? h.slice(0, i) : h; return { parts: p.split("/").filter(Boolean), q: new URLSearchParams(i >= 0 ? h.slice(i + 1) : "") }; };
+  const route = () => { const h = location.hash.replace(/^#\/?/, ""); const i = h.indexOf("?"); const p = i >= 0 ? h.slice(0, i) : h; return { parts: p.split("/").filter(Boolean).map((x) => { try { return decodeURIComponent(x); } catch { return x; } }), q: new URLSearchParams(i >= 0 ? h.slice(i + 1) : "") }; };
 
   const app = $("#app"), sheet = $("#sheet"), tip = $("#tip");
   const ROOT = document.documentElement.hasAttribute("data-carta-root");
@@ -525,6 +525,7 @@
     mic: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="2.5" width="6" height="9.5" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v3"/></svg>',
     stop: '<svg width="18" height="18" viewBox="0 0 18 18"><rect x="4" y="4" width="10" height="10" fill="currentColor"/></svg>',
     send: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10h13M11 5l5 5-5 5"/></svg>',
+    speaker: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2.5 7v4h3l4 3.2V3.8L5.5 7z"/><path d="M12.2 6.3a3.5 3.5 0 0 1 0 5.4M14.3 4.2a6.5 6.5 0 0 1 0 9.6"/></svg>',
     close: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m4 4 10 10M14 4 4 14"/></svg>',
     up: '<svg viewBox="0 0 11 9" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 8 5 3l2 2 3-4"/></svg>',
     flat: '<svg viewBox="0 0 11 9" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h9"/></svg>',
@@ -857,7 +858,7 @@
 
   /* ---------- ask (POST /api/ask, same contract as web/app.js) ---------- */
   const askState = { history: [], busy: false, pending: "", draft: "", err: "", fresh: -1 };
-  const voice = { stt: false, rec: null };
+  const voice = { stt: false, tts: false, agent: false, rec: null, audio: null };
   function renderTurn(h, ti) {
     const used = new Set([...String(h.a).matchAll(/\[(\d{1,2})\]/g)].map((m) => +m[1]));
     const list = (h.sources || []).filter((x) => used.has(x.n)).sort((a, b) => a.n - b.n);
@@ -876,7 +877,8 @@
       ${list.length ? `<p class="mono" style="color:var(--ink3)">${list.length} ${list.length === 1 ? "fonte" : "fontes"} · ${Object.entries(kinds).map(([k, n]) => `${n} ${esc(k)}`).join(", ")}</p>
       <div class="srcs" role="list" aria-label="Fontes">${list.map((s) => `<button class="src ${/norm|regul|lei/i.test(s.kind || "") ? "norma" : ""}" role="listitem" data-s="${s.n}" data-t="${ti}"><span class="n">${s.n}</span><b>${esc(s.title)}</b><span>${esc(s.kind || "")}${s.when ? " · " + esc(String(s.when).slice(0, 10)) : ""}</span></button>`).join("")}</div>` : ""}
       ${lead ? `<div class="verdict"><span class="mono">Resposta</span>${wc(b0[0])}</div>` : ""}
-      <div class="ans" data-ans>${blocks.slice(lead ? 1 : 0).map(html).join("")}</div></section>`;
+      <div class="ans" data-ans>${blocks.slice(lead ? 1 : 0).map(html).join("")}</div>
+      <div class="turn-act"><button type="button" class="btn speak" data-speak="${ti}" aria-pressed="false" aria-label="Ouvir esta resposta"${voice.tts ? "" : " hidden"}>${IC.speaker}<span>Ouvir</span></button>${fbBar("resposta", h.q, h.q)}</div></section>`;
   }
   function composer() {
     return `<div class="composer" id="composer"><div class="hint mono"><span id="ask-msg" role="status">${esc(askState.err || (askState.busy ? "Consultando o arquivo…" : askState.history.length ? "Seguimentos usam a conversa acima." : "Leva uns 20 a 40 segundos."))}</span>${askState.history.length && !askState.busy ? `<button type="button" data-reset>Nova conversa</button>` : ""}</div>
@@ -892,12 +894,15 @@
     const intro = `<h1 class="pg">Pergunte</h1><p class="sub">Respostas com fontes numeradas, tiradas só do arquivo deste tema: ${M.triage.length} digests, ${M.nMilestones} marcos da Evolução${M.nReg ? `, ${M.nReg} normas` : ""}, retrospectivas e a biblioteca de papers. Fale ou escreva.</p>`;
     const exs = plate("", "Exemplos por intenção", "D1", `<ul class="ex">${M.examples.map((x, i) => `<li><a href="#/pergunte" data-ex="${i}"><span class="mono">${esc(x.k)}</span><b>${esc(x.q)}</b></a></li>`).join("")}</ul>`);
     app.innerHTML = `<div class="ask">${has ? `<p class="crumb mono"><a href="#/pergunte" data-reset>Pergunte</a><span>/</span><span>Conversa</span></p>` : intro}
-      ${on ? "" : `<div class="notice">As respostas só funcionam no site publicado. Nesta cópia, os exemplos mostram o que dá para perguntar.</div>`}
+      ${on ? `<div class="talk-slot" id="talk-slot"></div>` : `<div class="notice">As respostas só funcionam no site publicado. Nesta cópia, os exemplos mostram o que dá para perguntar.</div>`}
       ${askState.history.map(renderTurn).join("")}
       ${askState.busy ? `<section class="turn"><h2 class="q-h">${esc(askState.pending)}</h2><div class="pending" aria-live="polite">${"<i></i>".repeat(10)}<span class="mono">Consultando o arquivo · leva uns 20 a 40 segundos</span></div></section>` : ""}
       ${has ? "" : exs}</div>${on ? composer() : ""}`;
     if (askState.fresh >= 0) { animateTurn($(`[data-turn="${askState.fresh}"]`)); askState.fresh = -1; }
+    const submit = (e) => fbSubmit(e);
     const click = (e) => {
+      if (e.target.closest("[data-fb-vote], [data-fb-open]")) { fbClick(e); return; }
+      const sp = e.target.closest("[data-speak]"); if (sp) { const h = askState.history[+sp.dataset.speak]; if (h) speak(sp, speechText(h.a)); return; }
       const ex = e.target.closest("[data-ex]");
       if (ex) { e.preventDefault(); const x = M.examples[+ex.dataset.ex]; askState.draft = x.q; const ta = $("#composer textarea"); if (ta) { ta.value = x.q; grow(ta); ta.focus(); } return; }
       if (e.target.closest("[data-reset]")) { e.preventDefault(); if (askState.busy) return; askState.history = []; askState.err = ""; askState.draft = ""; viewAsk(); return; }
@@ -909,7 +914,9 @@
       if (s || matchMedia("(max-width:719px)").matches) openSheet("Fonte " + n, `<p class="mono" style="color:var(--ink3)">${esc(src.kind || "fonte")}${src.when ? " · " + esc(src.when) : ""}</p><h3 style="font:650 20px/1.25 var(--f);margin:8px 0 16px">${esc(src.title)}</h3>
         ${src.url ? `<a class="btn pri" href="${esc(safeUrl(src.url))}" target="_blank" rel="noopener">Abrir a fonte</a>` : `<p class="note">Fonte sem link público no arquivo.</p>`}`);
     };
-    app.addEventListener("click", click); cleanup = () => app.removeEventListener("click", click);
+    app.addEventListener("click", click); app.addEventListener("submit", submit);
+    cleanup = () => { app.removeEventListener("click", click); app.removeEventListener("submit", submit); };
+    talkSlot();
     if (on) bindComposer();
     const ta = $("#composer textarea");
     if (autoGo && on && !askState.busy && (askState.draft || "").trim().length >= 5) sendAsk(askState.draft.trim());
@@ -1016,11 +1023,195 @@
     setOn(true);
   }
   function initVoice() {
-    if (!askOn() || window.isSecureContext === false || !(navigator.mediaDevices && window.MediaRecorder)) return;
-    fetch("/api/stt", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})).then((s) => {
+    if (!askOn() || window.isSecureContext === false) return;
+    const probe = (path) => fetch(path, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    if (navigator.mediaDevices && window.MediaRecorder) probe("/api/stt").then((s) => {
       voice.stt = !!(s && s.enabled);
       if (voice.stt && current === "pergunte") { const f = $("#composer form"), m = $("#composer .mic"); if (f) f.classList.remove("nomic"); if (m) m.hidden = false; }
     });
+    probe("/api/tts").then((t) => { voice.tts = !!(t && t.enabled); if (voice.tts) $$("[data-speak]").forEach((b) => { b.hidden = false; }); });
+    probe("/api/voice-session").then((v) => { voice.agent = !!(v && v.enabled) && !!(navigator.mediaDevices && window.RTCPeerConnection); talkSlot(); });
+  }
+
+  /* ---------- "Ouvir": an answer read aloud (/api/tts → audio/mpeg), same toggle/stop behaviour as web/app.js speak() ---------- */
+  const speechText = (a) => String(a || "").replace(/\s?\[\d{1,2}\]/g, "").replace(/\*\*?/g, "").replace(/^#{1,4}\s+/gm, "").replace(/^[-*•]\s+/gm, "").trim();
+  async function speak(btn, text) {
+    if (voice.audio) { voice.audio.pause(); const was = voice.audio.btn; voice.audio = null; if (was) { was.classList.remove("on"); was.setAttribute("aria-pressed", "false"); } if (was === btn) return; }
+    btn.classList.add("on", "busy"); btn.setAttribute("aria-pressed", "true");
+    try {
+      const r = await fetch("/api/tts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, voter: voterId() }) });
+      if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || `HTTP ${r.status}`);
+      const a = new Audio(URL.createObjectURL(await r.blob()));
+      a.btn = btn; voice.audio = a;
+      a.onended = () => { btn.classList.remove("on"); btn.setAttribute("aria-pressed", "false"); voice.audio = null; };
+      btn.classList.remove("busy");
+      await a.play();
+    } catch (e) { btn.classList.remove("on", "busy"); btn.setAttribute("aria-pressed", "false"); btn.title = `Não deu para ler: ${e.message}`; }
+  }
+  function stopSpeech() { if (voice.audio) { voice.audio.pause(); const b = voice.audio.btn; voice.audio = null; if (b) b.classList.remove("on"); } }
+
+  /* ---------- feedback on answers: same /api/feedback payload and paw_votes store as web/app.js fbBar("resposta", q, q) ---------- */
+  const fbKey = (kind, ref) => `${DATA.topic.slug}|${kind}|${ref}`;
+  const THUMB = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 7.2 7.6 2.5c.9 0 1.6.8 1.4 1.7L8.6 6.4h3.6c.9 0 1.5.8 1.3 1.7l-.9 4.4c-.1.7-.7 1.1-1.3 1.1H5zM2.5 7.2H5v6.4H2.5z"/></svg>';
+  function fbBar(kind, ref, title) {
+    if (!askOn() || !ref) return "";
+    const v = store.get("paw_votes", {})[fbKey(kind, ref)];
+    return `<div class="fb" data-kind="${esc(kind)}" data-ref="${esc(ref)}" data-title="${esc(title || "")}">
+      <button type="button" class="fb-btn" data-fb-vote="up" aria-pressed="${v === "up"}" title="Útil" aria-label="Útil">${THUMB}</button>
+      <button type="button" class="fb-btn dn" data-fb-vote="down" aria-pressed="${v === "down"}" title="Não ajudou" aria-label="Não ajudou">${THUMB}</button>
+      <button type="button" class="lnk" data-fb-open>Comentar</button><span class="fb-msg note" role="status"></span>
+      <form class="fb-form" hidden><textarea name="comment" maxlength="2000" rows="3" placeholder="O que achou? Está certo, faltou algo, é útil para o seu dia a dia?"></textarea>
+        <div class="fb-row"><input name="name" maxlength="60" placeholder="Seu nome (opcional)" value="${esc(store.get("paw_name", ""))}"><button type="submit" class="btn pri">Enviar</button></div></form></div>`;
+  }
+  async function fbSend(el, payload) {
+    const msg = $(".fb-msg", el);
+    try {
+      const r = await fetch("/api/feedback", { method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+        body: JSON.stringify({ topic: DATA.topic.slug, kind: el.dataset.kind, ref: el.dataset.ref, title: el.dataset.title, voter: voterId(), ...payload }) });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) throw new Error(out.error || r.status);
+      if (msg) msg.textContent = payload.comment ? "Obrigado! Comentário enviado." : "Obrigado!";
+      return true;
+    } catch (e) { if (msg) msg.textContent = `Não foi possível enviar (${e.message}).`; return false; }
+  }
+  async function fbClick(e) {
+    const btn = e.target.closest("[data-fb-vote], [data-fb-open]"); if (!btn) return false;
+    const el = btn.closest(".fb");
+    if (btn.hasAttribute("data-fb-open")) { const f = $(".fb-form", el); f.hidden = !f.hidden; if (!f.hidden) $("textarea", f).focus(); return true; }
+    const votes = store.get("paw_votes", {}), k = fbKey(el.dataset.kind, el.dataset.ref);
+    const vote = votes[k] === btn.dataset.fbVote ? "none" : btn.dataset.fbVote; /* clicking again undoes */
+    if (await fbSend(el, { vote, name: store.get("paw_name", "") || null })) {
+      if (vote === "none") delete votes[k]; else votes[k] = vote;
+      store.set("paw_votes", votes);
+      $$("[data-fb-vote]", el).forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.fbVote === vote)));
+    }
+    return true;
+  }
+  async function fbSubmit(e) {
+    const form = e.target.closest(".fb-form"); if (!form) return;
+    e.preventDefault();
+    const el = form.closest(".fb"), comment = form.comment.value.trim(), name = form.name.value.trim();
+    if (!comment) { form.comment.focus(); return; }
+    store.set("paw_name", name);
+    const b = $("button", form); b.disabled = true;
+    if (await fbSend(el, { comment, name: name || null })) { form.comment.value = ""; form.hidden = true; }
+    b.disabled = false;
+  }
+
+  /* ---------- "Conversar por voz": real-time talk with the ElevenLabs agent (/api/voice-session), ported from web/app.js.
+     For anything about the archive the agent calls the client tool consultar_acervo: the browser asks /api/ask, keeps the
+     written answer (with sources) in the Pergunte history and hands the agent the text to summarise aloud. ---------- */
+  const EL_CLIENT = "https://cdn.jsdelivr.net/npm/@elevenlabs/client@1.35.0/+esm";
+  const TALK_STATES = { connecting: "Conectando…", listening: "Ouvindo você", speaking: "Falando", thinking: "Consultando o arquivo…", ended: "Conversa encerrada" };
+  const talk = { conv: null, state: "ended", muted: false, added: 0 };
+  const fmtLong = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
+  function talkSlot() {
+    const slot = $("#talk-slot"); if (!slot) return;
+    slot.innerHTML = voice.agent ? `<button type="button" class="btn pri talk-btn" id="talk-open">${IC.mic}<span>Conversar por voz</span></button><span class="note">Fale e escute; o assistente consulta o arquivo quando precisa.</span>` : "";
+    const b = $("#talk-open"); if (b) b.addEventListener("click", startTalk);
+  }
+  function talkDialog() {
+    let dlg = $("#talk"); if (dlg) return dlg;
+    dlg = document.createElement("dialog");
+    dlg.id = "talk"; dlg.className = "talk"; dlg.setAttribute("aria-labelledby", "talk-h");
+    dlg.innerHTML = `<div class="sh"><div class="sh-h"><h2 id="talk-h" tabindex="-1">Conversa por voz</h2><button class="ico-b" data-close aria-label="Encerrar e fechar">${IC.close}</button></div>
+      <div class="talk-orb" aria-hidden="true"><i></i><b></b></div>
+      <p class="talk-state" id="talk-state" role="status"></p>
+      <ol class="talk-log" id="talk-log" aria-live="polite"></ol>
+      <div class="talk-actions"><button type="button" class="btn" id="talk-mute" aria-pressed="false">Silenciar microfone</button><button type="button" class="btn pri" id="talk-end">Encerrar</button></div></div>`;
+    document.body.appendChild(dlg);
+    dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.closest("[data-close]") || e.target.closest("#talk-end")) dlg.close(); });
+    dlg.addEventListener("close", endTalk);
+    $("#talk-mute", dlg).addEventListener("click", (e) => {
+      talk.muted = !talk.muted;
+      if (talk.conv) talk.conv.setMicMuted(talk.muted);
+      e.currentTarget.setAttribute("aria-pressed", String(talk.muted));
+      e.currentTarget.textContent = talk.muted ? "Ativar microfone" : "Silenciar microfone";
+    });
+    return dlg;
+  }
+  function setTalk(state, note) {
+    talk.state = state;
+    const dlg = $("#talk"); if (!dlg) return;
+    dlg.dataset.state = state;
+    $("#talk-state", dlg).textContent = note || TALK_STATES[state] || "";
+  }
+  /* expressive voices mark delivery inline ("[slow] Deixa eu ver… [normal] Olha"): kept in the traces, not shown */
+  const stripAudioTags = (s) => String(s || "").replace(/\s*\[[a-zà-ú][a-zà-ú _-]{0,30}\]\s*/gi, " ").replace(/\s{2,}/g, " ").trim();
+  function logTalk(who, raw) {
+    const log = $("#talk-log"), text = who === "agent" ? stripAudioTags(raw) : String(raw || "").trim();
+    if (!log || !text) return;
+    const li = document.createElement("li");
+    li.className = `talk-${who}`; li.textContent = text;
+    log.appendChild(li); li.scrollIntoView({ block: "nearest" });
+  }
+  async function askForAgent({ pergunta } = {}) {
+    const q = String(pergunta || "").trim().slice(0, 600);
+    if (q.length < 5) return "A pergunta ficou curta demais para consultar o arquivo; peça para a pessoa detalhar.";
+    setTalk("thinking");
+    try {
+      const r = await fetch("/api/ask", {
+        method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+        body: JSON.stringify({ topic: DATA.topic.slug, question: q, voter: voterId(), name: store.get("paw_name", "") || null,
+          history: askState.history.slice(-2).map((h) => ({ q: h.q, a: h.a })) }),
+      });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) return `O arquivo não respondeu (${out.error || r.status}). Diga isso à pessoa com franqueza.`;
+      askState.history.push({ q, a: out.answer, sources: out.sources || [] });
+      talk.added++;
+      const used = new Set([...out.answer.matchAll(/\[(\d{1,2})\]/g)].map((m) => +m[1]));
+      const srcs = (out.sources || []).filter((s) => used.has(s.n)).map((s) => `${s.title} (${s.kind}${s.when ? `, ${String(s.when).slice(0, 10)}` : ""})`);
+      return `Resposta escrita do analista do arquivo. Resuma em fala, sem números de citação nem listas:\n`
+        + `${out.answer.replace(/\s?\[\d{1,2}\]/g, "")}\n\nFontes citadas: ${srcs.join("; ") || "nenhuma"}`;
+    } catch (e) {
+      return `Falha ao consultar o arquivo (${e.message}). Diga isso à pessoa.`;
+    } finally {
+      if (talk.conv) setTalk("listening");
+    }
+  }
+  async function startTalk() {
+    const dlg = talkDialog();
+    $("#talk-log", dlg).innerHTML = "";
+    talk.added = 0; talk.muted = false;
+    const mute = $("#talk-mute", dlg); mute.setAttribute("aria-pressed", "false"); mute.textContent = "Silenciar microfone";
+    stopSpeech();
+    setTalk("connecting");
+    if (!dlg.open) dlg.showModal();
+    try {
+      /* ask for the microphone straight from the tap (iOS), then release it: the SDK opens its own stream */
+      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mic.getTracks().forEach((t) => t.stop());
+      const r = await fetch("/api/voice-session", { method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin", body: JSON.stringify({ voter: voterId() }) });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) throw new Error(out.error || `HTTP ${r.status}`);
+      const { Conversation } = await import(EL_CLIENT);
+      if (!dlg.open) return;
+      const d0 = (DATA.digests || [])[0] || {};
+      const conv = await Conversation.startSession({
+        conversationToken: out.token,
+        connectionType: "webrtc",
+        dynamicVariables: { tema: DATA.topic.name, foco: DATA.topic.focus || DATA.topic.description || "", manchete: d0.headline || "", data: fmtLong(todayIso()) },
+        clientTools: { consultar_acervo: askForAgent },
+        onModeChange: ({ mode }) => { if (talk.state !== "thinking") setTalk(mode); },
+        onMessage: (m) => logTalk(m.role === "user" || m.source === "user" ? "user" : "agent", m.message),
+        onDisconnect: () => { talk.conv = null; setTalk("ended"); },
+        onError: (msg) => setTalk("ended", `Erro na conversa: ${msg}`),
+      });
+      talk.conv = conv;
+      if (!dlg.open) { endTalk(); return; }
+      setTalk("listening");
+    } catch (e) {
+      const denied = e && (e.name === "NotAllowedError" || e.name === "SecurityError");
+      setTalk("ended", denied ? "Sem acesso ao microfone. Libere nas configurações do navegador e tente de novo." : `Não deu para conectar (${e.message}).`);
+    }
+  }
+  function endTalk() {
+    const c = talk.conv;
+    talk.conv = null;
+    if (c) c.endSession().catch(() => {});
+    if (talk.state !== "ended") setTalk("ended");
+    /* the written answers (with sources) the agent fetched are now in the Pergunte history */
+    if (talk.added && current === "pergunte") { talk.added = 0; viewAskSafe(); }
   }
 
   /* ---------- regulation (in the Carta; same data and grouping as the current site's #/regulacao) ---------- */
@@ -1216,7 +1407,7 @@
   }
 
   /* ---------- topics landing (also the site root, in root mode) ---------- */
-  const topicHref = (slug) => (ROOT ? `${encodeURIComponent(slug)}/designs/carta/` : slug === SLUG ? "#/" : `../../../${encodeURIComponent(slug)}/designs/carta/`);
+  const topicHref = (slug) => (ROOT ? `${encodeURIComponent(slug)}/` : slug === SLUG ? "#/" : `../../../${encodeURIComponent(slug)}/designs/carta/`);
   const OTHER = {};
   function loadTopic(slug) {
     if (!ROOT && slug === SLUG) return Promise.resolve(DATA);
@@ -1269,7 +1460,13 @@
     if (l && F[k]) l.href = F[k];
     try { const u = new URL(location.href); if (u.searchParams.has("skin")) { u.searchParams.set("skin", k); history.replaceState(null, "", u.pathname + u.search + u.hash); } } catch { /* fine */ }
   }
-  const appearance = () => `<p class="mono" style="color:var(--ink3);margin-top:18px">Aparência</p><div class="skins">${SKINS.map(([k, l, a, b, c]) => `<button data-skin-set="${k}" aria-pressed="${curSkin() === k}"><span class="sw" aria-hidden="true"><i style="background:${a}"></i><i style="background:${b}"></i><i style="background:${c}"></i></span>${l}</button>`).join("")}</div>
+  /* designs of the site: each link goes through /<slug>/?design=<key>, which saves the preference and redirects */
+  const DESIGNS = [["carta", "Carta", "Este design"], ["classico", "Clássico", "O site anterior"], ["carteira", "Carteira", ""], ["sinal", "Sinal", ""], ["grifo", "Grifo", ""]];
+  const designBase = () => (ROOT ? `${encodeURIComponent((TOPICS[0] || {}).slug || "")}/` : "../../");
+  const designs = () => `<p class="mono" style="color:var(--ink3);margin-top:18px" id="design-h">Design</p><ul class="more-l designs">${DESIGNS.map(([k, l, d]) => k === "carta"
+      ? `<li><span class="row" aria-current="true"><span>${l}<small>${d}</small></span><span class="tag new">Atual</span></span></li>`
+      : `<li><a href="${designBase()}?design=${k}"><span>${l}${d ? `<small>${d}</small>` : ""}</span><span class="tag soft">Trocar</span></a></li>`).join("")}</ul>`;
+  const appearance = () => `<p class="mono" style="color:var(--ink3);margin-top:18px">Estilo</p><div class="skins">${SKINS.map(([k, l, a, b, c]) => `<button data-skin-set="${k}" aria-pressed="${curSkin() === k}"><span class="sw" aria-hidden="true"><i style="background:${a}"></i><i style="background:${b}"></i><i style="background:${c}"></i></span>${l}</button>`).join("")}</div>
     <p class="mono" style="color:var(--ink3);margin-top:16px">Claro ou escuro</p><div class="seg">${[["auto", "Sistema"], ["light", "Claro"], ["dark", "Escuro"]].map(([k, l]) => `<button data-theme-set="${k}" aria-pressed="${curTheme() === k}">${l}</button>`).join("")}</div>`;
 
   /* ---------- shell ---------- */
@@ -1296,14 +1493,14 @@
       ${nPeople + nOrg ? row("#/pessoas", "Pessoas & instituições", `${nPeople} pessoas, ${nOrg} revistas, centros e fontes`) : ""}
       ${top ? row(`#/subtema/${top.id}`, "Ficha de subtema", esc(top.s.name), pct(top.s.ch)) : ""}
       ${row("#/temas", "Trocar de tema", esc(topics.map((t) => t.name.replace(/ Watch$/, "")).join(", ")), `${topics.length} ${topics.length === 1 ? "tema" : "temas"}`)}
-      ${row("../../#/criar", "Peça o seu Watch", "Um tema novo, criado e revisado para você", "Site atual")}
-      ${row("../../", "Voltar ao site atual", "A versão em produção deste tema", "Sair da Carta")}</ul>${appearance()}`);
+      ${row("../../#/criar", "Peça o seu Watch", "Um tema novo, criado e revisado para você", "Site clássico")}
+      <li><button type="button" class="row" data-design><span>Trocar de design<small>Clássico, Carteira, Sinal ou Grifo</small></span><span class="tag soft">5 designs</span></button></li></ul>${appearance()}${designs()}`);
   }
-  const back = () => `<a class="back" href="../../">Voltar ao site atual</a>`;
+  const back = () => `<button type="button" class="back" data-design>Trocar de design</button>`;
   function statusRoot(datas) {
     const first = encodeURIComponent((TOPICS[0] || {}).slug || "");
     const gen = (datas || []).map((d) => d.generated).filter(Boolean).sort().pop();
-    return `<span><b>${fmtDY(TODAY)}</b></span><span>${TOPICS.length} temas monitorados</span>${gen ? `<span class="live">Digest diário · última coleta ${fmtD(gen)}</span>` : ""}<a class="back" href="${first}/">Site atual</a><a class="back" href="${first}/designs/">Outros designs</a>`;
+    return `<span><b>${fmtDY(TODAY)}</b></span><span>${TOPICS.length} temas monitorados</span>${gen ? `<span class="live">Digest diário · última coleta ${fmtD(gen)}</span>` : ""}<a class="back" href="${first}/?design=classico">Site clássico</a><a class="back" href="${first}/designs/">Outros designs</a>`;
   }
   function shell(cur) {
     if (ROOT) {
@@ -1322,7 +1519,8 @@
   }
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-more]")) { e.preventDefault(); if (DATA) openMore(); }
-    if (e.target.closest("#skin-b")) { e.preventDefault(); openSheet("Aparência", appearance()); }
+    if (e.target.closest("#skin-b")) { e.preventDefault(); openSheet("Aparência", appearance() + designs()); }
+    if (e.target.closest("[data-design]")) { e.preventDefault(); openSheet("Aparência", appearance() + designs()); const h = $("#design-h"); if (h) h.scrollIntoView({ block: "start" }); }
   });
   $("#theme-b").addEventListener("click", () => { const dark = curTheme() === "dark" || (curTheme() === "auto" && matchMedia("(prefers-color-scheme:dark)").matches); setTheme(dark ? "light" : "dark"); });
   document.addEventListener("pointermove", (e) => { const t = e.target.closest && e.target.closest("[data-tip]"); if (!t || e.pointerType === "touch") { tip.classList.remove("on"); return; } tip.textContent = t.dataset.tip; tip.style.left = Math.min(innerWidth - 130, Math.max(130, e.clientX)) + "px"; tip.style.top = e.clientY + "px"; tip.classList.add("on"); });
@@ -1330,9 +1528,11 @@
     if (cleanup) { cleanup(); cleanup = null; }
     document.body.classList.remove("has-composer");
     if (sheet.open) sheet.close();
+    const tk = $("#talk"); if (tk && tk.open) tk.close();
     const r = route(), p = r.parts[0] || "";
     const go = (name, tab, fn) => { current = name; shell(tab); fn(); };
-    if (p === "novidades" || p === "d") go("novidades", "novidades", () => viewFeed(r.parts[1]));
+    if (p === "criar") { location.replace("../../#/criar"); return; } /* classic-only route: the redirect leaves it in the classic app */
+    if (p === "novidades" || p === "d" || p === "arquivo" || p === "tendencias") go("novidades", "novidades", () => viewFeed(r.parts[1]));
     else if (p === "mapa") go("mapa", "mapa", viewMap);
     else if (p === "subtema" || p === "tecnica") go("subtema", "mapa", () => viewSub(r.parts[1]));
     else if (p === "pergunte") go("pergunte", "pergunte", () => viewAsk(r.q));

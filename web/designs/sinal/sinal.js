@@ -422,7 +422,7 @@ function vHome() {
   const tile3 = soon.length
     ? `<a class="ro hot" href="#deadlines"><span class="v num">${dayDiff(soon[0].date)}<small>dias</small></span><span class="k">até o próximo prazo regulatório</span>${ICON.ne}</a>`
     : M.regs.length
-      ? `<a class="ro" href="../../#/regulacao"><span class="v num" data-count="${M.regs.length}">0</span><span class="k">normas no acervo</span>${ICON.ne}</a>`
+      ? `<a class="ro" href="../carta/#/regulacao"><span class="v num" data-count="${M.regs.length}">0</span><span class="k">normas no acervo</span>${ICON.ne}</a>`
       : `<a class="ro" href="#/mapa"><span class="v num" data-count="${an ? an.highlights.length : 0}">0</span><span class="k">destaques de ${an ? an.year : "do ano"}</span>${ICON.ne}</a>`;
   const subsOn = an && an.growth.length;
   const dlOn = M.deadlines.length || M.regs.length;
@@ -477,7 +477,7 @@ function vHome() {
     </section>` : ""}
     ${dlOn ? `
     <section class="mod rv" id="deadlines" aria-labelledby="h-dl">
-      <div class="mod-h"><span class="ch">${ch()}</span><h2 id="h-dl">Prazos regulatórios</h2><span class="r"><a href="../../#/regulacao">${M.regs.length} ${M.regs.length === 1 ? "norma" : "normas"} →</a></span></div>
+      <div class="mod-h"><span class="ch">${ch()}</span><h2 id="h-dl">Prazos regulatórios</h2><span class="r"><a href="../carta/#/regulacao">${M.regs.length} ${M.regs.length === 1 ? "norma" : "normas"} →</a></span></div>
       ${M.deadlines.length ? `<div class="panel dl">${deadlineAxis()}${M.deadlines.map((x) => { const n = dayDiff(x.date); return `
         <div class="dlrow ${n <= 30 ? "soon" : ""}"><div class="cd"><b>${n}</b><span>${n === 1 ? "dia" : "dias"}<br>${dd(x.date)}</span></div><div class="w"><span class="lab">${esc(x.norm)}</span>${esc(x.what)}</div></div>`; }).join("")}</div>
       <p class="lab" style="margin:6px 0 0;text-transform:none;letter-spacing:0">Datas futuras citadas na vigência de cada norma.</p>` : ""}
@@ -661,7 +661,7 @@ function vMap() {
     ${M.radar.length ? `<section class="mod rv"><div class="mod-h"><span class="ch">R1</span><h2>Radar</h2><span class="sketch">derivado do OpenAlex</span></div>${radarBlock()}${radarNote()}</section>` : ""}
     ${ev ? `<section class="mod rv"><div class="mod-h"><span class="ch">R2</span><h2>Eras do campo</h2><span class="r">${ev.eras.length} eras · ${ev.nMs} marcos</span></div>
       <div class="panel" style="padding:14px 14px 4px"><div class="tl">${ev.eras.map((e, i) => `<div class="tl-i ${i === ev.eras.length - 1 ? "hl" : ""}"><span class="y">${esc(eraShort(e.label))}</span><b>${esc(e.title)}</b><p>${md(splitFirst(e.summary)[0])}</p><span class="lab">${e.ms.length} marcos${e.hasNew ? ' · <span style="color:var(--signal)">novo marco</span>' : ""}</span></div>`).join("")}</div></div>
-      <a class="go" href="../../#/evolucao">Ver todos os marcos no site atual →</a></section>` : ""}
+      <a class="go" href="../carta/#/evolucao">Ver todos os marcos no Carta →</a></section>` : ""}
     ${!M.radar.length && !ev ? `<div class="panel empty">Ainda não há retrospectiva nem Evolução para este tema.</div>` : ""}`;
 }
 
@@ -882,11 +882,11 @@ function vMore() {
   return `<section class="ph rv"><div class="lab"><span>Mais</span></div><h1>Tudo do tema</h1></section>
   <div class="panel more-list rv" style="margin-top:16px">
     ${ev ? row("#/mapa", I('<path d="M3 12h4l3-7 4 14 3-7h4" stroke-linejoin="round"/>'), "Evolução", `${ev.eras.length} eras, ${ev.nMs} marcos${ev.firstYear ? ` desde ${ev.firstYear}` : ""}`) : ""}
-    ${an ? row(`../../#/anual/${an.year}`, I('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), `Retrospectiva ${an.year}`, `${plural(an.trends.length, "conclusão", "conclusões")}, ${plural(an.highlights.length, "destaque", "destaques")}, ${an.growth.length} subtemas · no site atual`) : ""}
-    ${M.regs.length ? row("../../#/regulacao", I('<path d="M12 3v18M5 7h14M5 7l-2 5h4zM19 7l-2 5h4z"/>'), "Regulação", `${M.regs.length} normas e padrões, com o que exigem · no site atual`) : ""}
-    ${ppl || jr || ce ? row("../../#/watchlist", I('<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .8 3 2.8 3 6"/>'), "Pessoas & instituições", `${[ppl ? `${ppl} pesquisadores` : "", jr ? `${jr} revistas` : "", ce ? `${ce} centros` : ""].filter(Boolean).join(", ")} · no site atual`) : ""}
+    ${an ? row(`../carta/#/anual/${an.year}`, I('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), `Retrospectiva ${an.year}`, `${plural(an.trends.length, "conclusão", "conclusões")}, ${plural(an.highlights.length, "destaque", "destaques")}, ${an.growth.length} subtemas · no Carta`) : ""}
+    ${M.regs.length ? row("../carta/#/regulacao", I('<path d="M12 3v18M5 7h14M5 7l-2 5h4zM19 7l-2 5h4z"/>'), "Regulação", `${M.regs.length} normas e padrões, com o que exigem · no Carta`) : ""}
+    ${ppl || jr || ce ? row("../carta/#/pessoas", I('<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .8 3 2.8 3 6"/>'), "Pessoas & instituições", `${[ppl ? `${ppl} pesquisadores` : "", jr ? `${jr} revistas` : "", ce ? `${ce} centros` : ""].filter(Boolean).join(", ")} · no Carta`) : ""}
     ${row("#/temas", I('<rect x="3" y="4" width="7" height="7"/><rect x="14" y="4" width="7" height="7"/><rect x="3" y="15" width="7" height="5"/><rect x="14" y="15" width="7" height="5"/>'), "Todos os temas", M.topics.map((t) => t.name).join(", "))}
-    ${row("../../", I('<path d="M20 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>'), "Voltar ao site atual", "O Research Watch no desenho de hoje")}
+    ${row("../", I('<path d="M20 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>'), "Trocar de design", "Carta, clássico e os outros")}
   </div>
   <section class="mod rv"><div class="mod-h"><h2>Aparência</h2></div><span class="seg" id="thSeg"><span class="ind"></span><button data-s="auto" aria-pressed="${theme() === "auto"}">Automático</button><button data-s="light" aria-pressed="${theme() === "light"}">Claro</button><button data-s="dark" aria-pressed="${theme() === "dark"}">Escuro</button></span></section>`;
 }

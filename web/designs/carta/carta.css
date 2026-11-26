@@ -474,8 +474,8 @@ dialog[open]{animation:up .28s cubic-bezier(.2,.8,.2,1)}
 
 /* ============ live-data port: additions to the prototype ============ */
 .tag{max-width:100%;overflow:hidden;text-overflow:ellipsis}
-.status a.back{color:var(--ink2);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.status a.back:hover{color:var(--ink)}
+.status .back{color:var(--ink2);text-decoration:underline;text-underline-offset:3px;white-space:nowrap;font:inherit;letter-spacing:inherit;text-transform:inherit}
+.status .back:hover{color:var(--ink)}
 .tape{grid-template-columns:repeat(var(--n,9),1fr)}
 .composer form.nomic{grid-template-columns:minmax(0,1fr) 46px}
 .composer .mic[hidden]{display:none}
@@ -607,3 +607,42 @@ body.root{padding-bottom:40px}
 /* papel and grafite: no chart reference codes (A1, B2…) next to the titles */
 :root:not([data-skin]) .plate>.lg .pc,[data-skin="papel"] .plate>.lg .pc,[data-skin="grafite"] .plate>.lg .pc{display:none}
 .snd .v small{text-transform:var(--ltt)}
+
+/* ============ voice, feedback and design switcher ============ */
+.more-l button.row{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:50px;width:100%;text-align:left;font-weight:600}
+.more-l small{display:block}
+.designs span.row[aria-current]{color:var(--ink)}
+.talk-slot:not(:empty){display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:16px}
+.talk-btn svg{width:18px;height:18px}
+.turn-act{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:16px;padding-top:10px;border-top:1px solid var(--rule)}
+.btn.speak{min-height:40px;padding:0 12px}
+.btn.speak.on{background:var(--mag-soft);border-color:var(--mag);color:var(--mag)}
+.btn.speak.busy{opacity:.6}
+.fb{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.fb-btn{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--rule2);border-radius:var(--rc);color:var(--ink2)}
+.fb-btn.dn svg{transform:rotate(180deg)}
+.fb-btn[aria-pressed="true"]{background:var(--sel-bg);border-color:var(--sel-bg);color:var(--sel-fg)}
+.fb .lnk{min-height:40px}
+.fb-form{flex-basis:100%;margin-top:4px}
+.fb-form textarea,.fb-form input{width:100%;border:1px solid var(--rule2);border-radius:var(--rs);background:var(--panel);color:var(--ink);font:400 15px/1.45 var(--f);padding:9px 11px}
+.fb-row{display:flex;gap:8px;margin-top:8px}
+.fb-row input{flex:1;min-width:0}
+dialog.talk .sh{display:flex;flex-direction:column;align-items:stretch;min-height:60vh}
+.talk-orb{position:relative;width:120px;height:120px;margin:18px auto 6px}
+.talk-orb i,.talk-orb b{position:absolute;inset:0;border-radius:50%}
+.talk-orb i{background:radial-gradient(circle at 35% 35%,var(--mag-soft),var(--water) 70%);border:2px solid var(--mag)}
+.talk-orb b{border:1.5px dashed var(--mag);opacity:0;inset:-10px}
+dialog.talk[data-state="connecting"] .talk-orb i{animation:pulse 1.6s ease-in-out infinite}
+dialog.talk[data-state="listening"] .talk-orb i{animation:orb 2.4s ease-in-out infinite}
+dialog.talk[data-state="speaking"] .talk-orb i{animation:orb .7s ease-in-out infinite;background:var(--mag)}
+dialog.talk[data-state="thinking"] .talk-orb b{opacity:1;animation:spin 2.4s linear infinite}
+dialog.talk[data-state="ended"] .talk-orb i{border-color:var(--rule2);background:var(--water)}
+@keyframes orb{50%{transform:scale(1.07)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.talk-state{text-align:center;font-weight:600;color:var(--ink);margin:8px 0 12px}
+.talk-log{flex:1;overflow:auto;max-height:38vh;border-top:1px solid var(--rule);padding-top:6px}
+.talk-log li{padding:7px 10px;margin:6px 0;border-radius:var(--rs);font-size:15px;line-height:1.45;max-width:88%}
+.talk-log .talk-user{margin-left:auto;background:var(--water);color:var(--ink)}
+.talk-log .talk-agent{background:var(--panel);border:1px solid var(--rule);color:var(--ink2)}
+.talk-actions{display:flex;gap:8px;justify-content:center;margin-top:14px}
+#talk-h:focus{outline:none}

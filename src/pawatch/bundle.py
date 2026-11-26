@@ -35,6 +35,8 @@ def bundle(slug, theme=None):
     if FETCH not in js:
         raise RuntimeError("app.js mudou: não achei o fetch de data.json para embutir os dados")
     js = js.replace(FETCH, 'Promise.resolve(JSON.parse(document.getElementById("pa-data").textContent))')
+    # the design redirect (index.html's first script) makes no sense in a single offline file
+    html = re.sub(r"\s*<script>\s*// Default design: Carta\..*?</script>", "", html, count=1, flags=re.S)
     for old, new in [
         ('<link rel="stylesheet" href="style.css">', f"<style>\n{css}</style>"),
         ('<script src="app.js"></script>',

@@ -441,7 +441,7 @@ function vHome() {
       <div class="gkey"><span><i></i>${an.year}${an.partial && an.until ? ` até ${an.until}` : ""}</span>${an.partial ? '<span><i class="h"></i>projeção do ano</span>' : ""}<span><i class="m"></i>nível de ${an.year - 1}</span></div>
     </section>` : ""}
     ${V.deadlines.length ? `<section class="sec rv span" id="prazos" aria-labelledby="h-dl">
-      <div class="sec-h"><div><h2 id="h-dl">Prazos regulatórios</h2><p>O que vence e o que a norma trata</p></div><a class="more" href="../../#/regulacao">${V.nreg} normas ${ICON.arr}</a></div>
+      <div class="sec-h"><div><h2 id="h-dl">Prazos regulatórios</h2><p>O que vence e o que a norma trata</p></div><a class="more" href="../carta/#/regulacao">${V.nreg} normas ${ICON.arr}</a></div>
       <div class="tickets">${V.deadlines.slice(0, 4).map(x => `
         <div class="tkt ${x.days <= 30 ? "soon" : ""}"><div class="stub"><small>vence em</small><b>${x.days}</b><small>${x.days === 1 ? "dia" : "dias"}</small></div>
           <div class="body"><div class="n"><span>${esc(x.norm)}</span><span class="muted tnum">${dmy(x.date)}${yy(x.date)}</span></div><p>${esc(x.what)}</p><p class="cl" title="${esc(x.clause)}">${esc(x.clause)}</p>${barcode(x.norm)}</div></div>`).join("")}</div>
@@ -910,11 +910,11 @@ function vMore() {
   return `<section class="hero rv"><span class="eyebrow">Mais</span><h1 style="font-size:44px">Tudo do tema</h1></section>
   <div class="lst rv" style="margin-top:18px">
     ${ev ? row("#/evolucao", 6, I('<path d="M3 12h4l3-7 4 14 3-7h4" stroke-linejoin="round"/>'), "Evolução", `${ev.eras.length} eras e ${ev.nMs} marcos${ev.minYear ? ` desde ${ev.minYear}` : ""}`) : ""}
-    ${an ? row(`../../#/anual/${an.year}`, 0, I('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), `Retrospectiva ${an.year}`, `${an.trends.length} conclusões, ${an.nHighlights} destaques, ${an.nGrowth} subtemas · no site atual`) : ""}
-    ${V.nreg ? row("../../#/regulacao", 7, I('<path d="M12 3v18M5 7h14M5 7l-2 5h4zM19 7l-2 5h4z"/>'), "Regulação", `${V.nreg} normas, com o que exigem e quando · no site atual`) : ""}
-    ${wl ? row("../../#/pessoas", 5, I('<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/>'), "Pessoas & instituições", `${wl} · no site atual`) : ""}
+    ${an ? row(`../carta/#/anual/${an.year}`, 0, I('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), `Retrospectiva ${an.year}`, `${an.trends.length} conclusões, ${an.nHighlights} destaques, ${an.nGrowth} subtemas · no Carta`) : ""}
+    ${V.nreg ? row("../carta/#/regulacao", 7, I('<path d="M12 3v18M5 7h14M5 7l-2 5h4zM19 7l-2 5h4z"/>'), "Regulação", `${V.nreg} normas, com o que exigem e quando · no Carta`) : ""}
+    ${wl ? row("../carta/#/pessoas", 5, I('<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/>'), "Pessoas & instituições", `${wl} · no Carta`) : ""}
     ${row("#/temas", 2, I('<rect x="3" y="6" width="18" height="12" rx="3"/><path d="M3 10h18"/>'), "Todos os temas", `Sua carteira com ${Math.max(1, V.topics.length)} ${V.topics.length === 1 ? "tema" : "temas"}`)}
-    ${row("../../", 3, ICON.back, "Voltar ao site atual", "O Research Watch no formato de sempre")}
+    ${row("../", 3, ICON.back, "Trocar de design", "Carta, clássico e os outros")}
   </div>
   <section class="sec rv"><div class="sec-h"><h2>Aparência</h2></div><div class="seg3" id="th">${[["auto","Automático"],["light","Claro"],["dark","Escuro"]].map(([k, l]) => `<button data-t="${k}" aria-pressed="${theme() === k}">${l}</button>`).join("")}</div></section>`;
 }
@@ -977,5 +977,5 @@ fetch("../../data.json", { cache: "no-cache" })
     route();
     probeVoice();
   })
-  .catch(e => { app.innerHTML = `<div class="statement" style="margin-top:24px"><p>Não foi possível carregar os dados (${esc(e.message)}).</p><p><a href="../../">Voltar ao site atual</a></p></div>`; });
+  .catch(e => { app.innerHTML = `<div class="statement" style="margin-top:24px"><p>Não foi possível carregar os dados (${esc(e.message)}).</p><p><a href="../../?design=classico">Abrir o site clássico</a></p></div>`; });
 })();
