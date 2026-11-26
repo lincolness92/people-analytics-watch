@@ -1519,8 +1519,12 @@
     dlg.querySelector("#talk-state").textContent = note || TALK_STATES[state] || "";
   }
 
-  function logTalk(who, text) {
+  // expressive voices mark delivery inline ("[slow] Deixa eu ver… [normal] Olha"): kept in the traces, not shown
+  const stripAudioTags = (s) => String(s || "").replace(/\s*\[[a-zà-ú][a-zà-ú _-]{0,30}\]\s*/gi, " ").replace(/\s{2,}/g, " ").trim();
+
+  function logTalk(who, raw) {
     const log = document.getElementById("talk-log");
+    const text = who === "agent" ? stripAudioTags(raw) : String(raw || "").trim();
     if (!log || !text) return;
     const li = document.createElement("li");
     li.className = `talk-${who}`;
