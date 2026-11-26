@@ -59,7 +59,8 @@ traces do pipeline em Python (triagem, redação) com o mesmo formato.
 - ✅ Traces do pipeline (data/traces/ + OTLP), além dos do agente.
 - ✅ Site, leva 1: navegação de app, Início, cartões v2, busca global, Pergunte v2, Sobre.
 - ✅ Voz: microfone em todos os campos (Whisper via HF); "Ouvir" pronto para a ElevenLabs.
-- ✅ Mapas de fontes: FEBRABAN (74 itens, `docs/sources/febraban.*`); associações bancárias do mundo em andamento.
+- ✅ Mapas de fontes: FEBRABAN (74 itens, `docs/sources/febraban.*`) e associações bancárias do mundo (121 organizações,
+  659 publicações, 319 com RSS ou sitemap; `docs/sources/associacoes-bancarias.*`). Falta decidir como consumir.
 - Próximos: consumir as fontes mapeadas (prioridade alta primeiro); site leva 2 (sparklines, radar, páginas de
   técnica e de paper); onboarding canônico pré-computado; código e dados por método; validar ligação repo↔paper.
 

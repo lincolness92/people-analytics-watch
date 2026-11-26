@@ -46,7 +46,7 @@ O pipeline roda no GitHub Actions; o site e as APIs, no Cloudflare Pages (Functi
 | `data/papers/` | textos completos e catálogo de repositórios, compartilhados entre temas |
 | `data/traces/` | traces do pipeline (60 dias na árvore) |
 | `evals/` | perguntas de referência, rodadas, juiz calibrado, calibrações e avaliação do scorer |
-| `docs/design/`, `docs/sources/` | referências de design do site; mapas de fontes (FEBRABAN, associações bancárias) |
+| `docs/design/`, `docs/sources/` | referências de design do site; mapas de fontes: FEBRABAN (74 itens) e associações bancárias do mundo (121 organizações, 659 publicações) |
 | `VISION.md` | visão do projeto (rascunho em discussão) |
 | `data/<tema>/digests/*.json` | fonte da verdade de cada dia (estruturado) |
 | `data/<tema>/seen.json` | papers já avaliados (não voltam) |

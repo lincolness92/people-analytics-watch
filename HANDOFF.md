@@ -28,7 +28,7 @@ Temas em `topics/`: people analytics, fraude bancária e tecnologia bancária. S
 
 **Mapas de fontes:**
 - `docs/sources/febraban.*` (74 itens).
-- Associações bancárias do mundo: em andamento.
+- `docs/sources/associacoes-bancarias.*`: 121 organizações e 659 publicações; falta decidir como consumir.
 
 ## Pendente (do lado do Lincoln)
 1. Cloudflare Pages → Variables and Secrets:
