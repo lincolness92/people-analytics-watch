@@ -3,7 +3,7 @@
 //   POST {text, voter} → audio/mpeg
 import { speakable, spendDaily, synthesize } from "../../server/voice.js";
 
-const DAILY_LIMIT = 60;
+const DAILY_LIMIT = 10;
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });
 
