@@ -3525,5 +3525,1218 @@
 "e": "bench",
 "w": "Ajuste focado em decisão e custo assimétrico para fraude; sem resultados numéricos no resumo."
 }
+},
+{
+"key": "doi:10.1016/j.cose.2026.104950",
+"title": "The evolution of investment cyber scams: vulnerability and victim blaming in the cryptocurrency era",
+"url": "https://doi.org/10.1016/j.cose.2026.104950",
+"venue": "Computers & Security",
+"date": "2026-04-29",
+"authors": [
+"Monica Therese Whitty",
+"Amin Sakzad"
+],
+"abstract": "Investment cyber scams are an increasingly significant cybersecurity threat, which remains insufficiently understood. Drawing on a nationally representative sample of Australian adults ( n = 2019), this study explored the prevalence, evolution, and predictors of investment cyber scam victimisation between 2015 and 2025. Over the past decade, 2.6% (approximately 550, 000) of Australian adults reported falling victim to such scams, a figure surpassing official reports and indicating underreporting. These findings likely reflect trends in other nations. The research considered the Digital Divide theory (which refers to disparities between individuals and groups’ access and effective use of digital technologies) as a possible explanation for scam vulnerability. Contrary to expectations, greater cryptocurrency knowledge and investment experience were linked to higher risk, with men more likely to be victims. This suggests that expertise may create an illusion of invulnerability, rather than protect against scams. Exposure and optimism bias are, therefore, more important predictors. The study also tracked changes in scam tactics over time, noting the rise of cryptocurrency-based scams, p",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [
+"Monica Therese Whitty"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "survey",
+"w": "Survey nacional australiano sobre golpes de investimento; autorrelato."
+}
+},
+{
+"key": "doi:10.1109/tdsc.2026.3673847",
+"title": "Fraud-RLA: A Reinforcement Learning Adversarial Attack Against Credit Card Fraud Detection",
+"url": "https://doi.org/10.1109/tdsc.2026.3673847",
+"venue": "IEEE Transactions on Dependable and Secure Computing",
+"date": "2026-03-13",
+"authors": [
+"Daniele Lunghi",
+"Yannick Molinghen",
+"Alkis Simitsis",
+"Tom Lenaerts",
+"Gianluca Bontempi"
+],
+"abstract": "Adversarial attacks pose a significant threat to data-driven systems, and researchers have devoted considerable effort to studying them. Despite its economic relevance, credit card fraud detection has received comparatively little attention. To address this gap, we propose a novel threat model that highlights the limitations of existing attacks and motivates new approaches. We introduce Fraud-RLA, an adversarial attack against credit card Fraud Detection Systems that leverages Reinforcement Learning to evade detection. Fraud-RLA is designed to maximize the amount stolen by optimizing the exploration-exploitation trade-off while requiring substantially less prior knowledge than competing methods. Our experiments on a realistic Fraud Detection System show that Fraud-RLA is effective, even under the severe limitations imposed by our threat model.",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [
+"Gianluca Bontempi"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "bench",
+"w": "Ataque RL adversário a detector de cartão; sem números."
+}
+},
+{
+"key": "doi:10.1257/jep.20261513",
+"title": "Systemic Cyber Risk: Linking Measurement, Market Incentives, and Policy",
+"url": "https://doi.org/10.1257/jep.20261513",
+"venue": "The Journal of Economic Perspectives",
+"date": "2026-11-01",
+"authors": [
+"Susan Carleton Athey",
+"Neil Gandal",
+"Tyler W. Moore"
+],
+"abstract": "Many firms and sectors within the global economy heavily depend on a common set of critical technology products and software services, thereby consolidating risk across a small number of potential failure points. The widespread reliance on a limited set of products and services has given rise to many single points of system vulnerability. Such concentration of risk amplifies the potential fallout from security breaches, especially since attackers have strong incentives to attack such products and services. Despite the abundance of tools available to organizations and consumers for safeguarding their data against loss or compromise, advancements in individual defense measures have been more than counterbalanced by an increased susceptibility to systemic events. In this paper, we apply economic principles to the rising danger of systemic cyber risks. The paper is organized around four central economic lessons and uses case studies, new data, and policy discussion to develop and support them.",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Tyler Moore"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "review",
+"w": "Risco cibernético sistêmico e política; tema adjacente, dados novos."
+}
+},
+{
+"key": "doi:10.1016/j.ijlcj.2026.100825",
+"title": "Evolutionary fraud, the global scamming ecosystem and a typology of actors",
+"url": "https://doi.org/10.1016/j.ijlcj.2026.100825",
+"venue": "International journal of law, crime and justice",
+"date": "2026-02-25",
+"authors": [
+"Mark Button",
+"Suleman Ibrahim Lazarus",
+"Branislav Hock",
+"Paul Michael Gilmour",
+"Durgesh Pandey",
+"James Bugbilla Sabia"
+],
+"abstract": "This study examines the adaptive nature of the global scamming ecosystem, focusing on developing a novel typology based on the size and organizational structure of scam operations. Through a combination of qualitative and case study analysis, the research categorizes scammers into five distinct groups, namely, “Demons,” “Gorgons,” “Ogres,” “Behemoths,” and “Mega Behemoths,” ranging from lone actors to large-scale enterprises with intricate hierarchies and international reach. The findings highlight how organizational size, specialisation, and corrupt actors' involvement contribute to scam operations' effectiveness and resilience. Findings also illustrate the adaptive processes observed in legitimate business practices, including role specialisation and hierarchical organization strategic planning. The paper also notes the evolutionary processes creating more effective scams and means of delivering them. The study provides a foundational understanding of these dynamics, offering a framework for targeted, flexible strategies and robust international cooperation. Findings also highlight the importance of continued interdisciplinary collaboration to address these evolving threats.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [
+"Mark Button"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "Tipologia qualitativa de operações globais de golpe; sem números."
+}
+},
+{
+"key": "doi:10.1038/s41598-026-60997-7",
+"title": "Continual graph learning under strategic adversarial drift in dynamic networks",
+"url": "https://doi.org/10.1038/s41598-026-60997-7",
+"venue": "Scientific Reports",
+"date": "2026-07-30",
+"authors": [
+"Huijie Fan",
+"Yanan Jiao",
+"Mengdie Wang",
+"Jiaying Chen",
+"Shiyu Yang"
+],
+"abstract": "Financial transaction networks face a persistent threat from strategic adversarial drift, in which sophisticated actors manipulate graph structure to bypass detection. Conventional temporal graph neural networks tend to fail in this setting because they forget historical patterns when retrained and generalise poorly to novel structural perturbations. We address this gap with Game Theoretic Anticipatory Continual Graph Learning (GT-ACGL), a framework that casts fraud detection as a continuous Stackelberg game between a defender and an adaptive adversary. The framework combines three components: a bilevel anticipatory optimisation step that trains the defender against simulated future attacks, an Adversarial Motif Memory that retains topologically significant historical patterns without redundancy, and a predictive smoothing module that preserves temporal fidelity during high throughput batched training. We evaluate the approach on three large dynamic graph datasets. On the financial benchmark, Elliptic Temporal, GT-ACGL improves F1 by 11.0 percentage points over the strongest baseline under adaptive attack, with smaller but consistent gains on two behavioural interaction benchmarks.",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Grafo contínuo contra drift adversário; ganho F1 em Elliptic."
+}
+},
+{
+"key": "doi:10.1111/jfir.70069",
+"title": "Breaking the stablecoin buck: The attenuating impact of security breach shocks at cryptocurrency exchanges",
+"url": "https://doi.org/10.1111/jfir.70069",
+"venue": "The Journal of Financial Research",
+"date": "2026-07-05",
+"authors": [
+"Andrew Morin",
+"Tyler W. Moore",
+"Eric Olson"
+],
+"abstract": "Cryptocurrency markets rely on stablecoins maintaining their peg to fiat currencies like the US dollar. Customers trade between these stablecoins and their counterparts on exchanges that operate like banks without consumer protections to mitigate run risk. We investigate whether exchange breaches break the peg of Tether, the leading stablecoin. Using an event study, we find that shocks are associated with a break in Tether's peg but return quickly to its par value. By contrast, we find no effect on the price of Bitcoin. We also observe diminishing effects over time, consistent with a maturing market and the adaptive market hypothesis.",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [
+"Tyler Moore"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "quasi",
+"w": "Event study de breaches e peg de stablecoin; cripto-investimento."
+}
+},
+{
+"key": "doi:10.1038/s41598-026-58938-5",
+"title": "Dynamic heterogeneous graph contrastive learning for uncovering collusive financial fraud",
+"url": "https://doi.org/10.1038/s41598-026-58938-5",
+"venue": "Scientific Reports",
+"date": "2026-06-24",
+"authors": [
+"Yanan Jiao",
+"Huijie Fan",
+"Xinran Yue",
+"Wenjie Ping",
+"Tiejiang Sun",
+"Jin Wang"
+],
+"abstract": "Detecting collusion rings in modern banking requires modeling the evolving structural interactions among heterogeneous entities (customers, accounts, and devices) rather than isolated transaction features. Most graph-based fraud detectors assume abundant labels, yet confirmed fraud labels in anti-money laundering (AML) settings routinely arrive months after the fact. We introduce Audit-HCL, a dynamic heterogeneous graph neural network framework that uses dual-view contrastive learning to operate effectively under this label scarcity. Audit-HCL represents the transaction ecosystem as a temporal sequence of heterogeneous graph snapshots, encodes them through a metapath-guided heterogeneous attention encoder, and tracks evolving node behavior with a GRU-based temporal dynamics module. A cross-view contrastive objective aligns structural and temporal perspectives for legitimate nodes while separating anomalous ones, guided by an anomaly-aware negative sampling strategy. Experiments on two public benchmarks (Elliptic and IBM AML-Synthetic) show that Audit-HCL outperforms fourteen baselines by 3.2% in AUC-ROC and 6.8% in F1-score, with the gains over the strongest competitors confirmed b",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Grafo heterogêneo para conluio; benchmarks Elliptic e AML."
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.04819",
+"title": "Reconstructing Fraudulent Strategies in Online Payments via Interpretable Inverse Reinforcement Learning",
+"url": "https://doi.org/10.48550/arxiv.2611.04819",
+"venue": "arXiv",
+"date": "2026-11-03",
+"authors": [
+"Huilin He",
+"Weiyu Han",
+"Linbo Shao",
+"Ruobing Zuo",
+"Xiao Tan",
+"Shuai Chen"
+],
+"abstract": "Payment fraud causes financial losses and undermines users' trust in web payment services. Although fraud detection is a critical defense for payment security, complex and diverse fraudulent behaviors can still evade detection. Generating fraud samples for data augmentation can broaden detectors' coverage of different fraud patterns. However, existing methods matching the distribution of transaction attributes alone do not ensure that generated sequences preserve the sequential relationships among transaction choices, payment feedback, and subsequent behavioral adjustments. To this end, we propose PaySeqGen, an interpretable inverse reinforcement learning framework that reconstructs fraud behavior policies from fraudsters' observed payment trajectories. We design a mechanism for constructing candidate actions to support plausible payment sequence generation while enabling exploration. The framework also learns interpretable behavioral rewards that capture fraudsters' preferences across different transaction contexts. By alternating between reward learning and policy optimization, the framework reconstructs policies that generate new fraud sequences for detector augmentation and lea",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [
+"Dawei Cheng"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "bench",
+"w": "IRL reconstrói trajetórias de fraude em pagamentos; sem números."
+}
+},
+{
+"key": "doi:10.1145/3735971",
+"title": "PonziHunter: Hunting Ethereum Ponzi Contract via Static Analysis and Contrastive Learning on the Bytecode Level",
+"url": "https://doi.org/10.1145/3735971",
+"venue": "ACM Transactions on Software Engineering and Methodology",
+"date": "2026-01-21",
+"authors": [
+"J. Chen",
+"Jieli Liu",
+"Jianlin Wu",
+"Dan Lin",
+"Jiajing Wu",
+"Zibin Zheng"
+],
+"abstract": "In recent years, blockchain technology has developed rapidly and received widespread attention. However, its pseudonymous and decentralized nature has also attracted many criminal activities. Ponzi schemes, a kind of classic financial scam, also hide their true face in smart contracts, causing massive financial losses to blockchain users. Although several methods have been proposed to detect Ponzi contracts, there are still limitations in broad applicability, semantics understanding, and adversarial robustness. In this article, we propose PonziHunter, an intelligent framework for hunting Ponzi contracts on Ethereum. To tackle the problem of broad applicability, we train a detection model that does not require expert experience based on publicly available on-chain bytecode and off-chain contract labels. To tackle the problem of semantics understanding, we employ cross-function control flows and state variable dependencies to understand the logic of Ponzi contracts. Specifically, we decompile bytecodes into higher-order representations to analyze control flows and state variable dependencies and model the information as graph data. By combining the idea of code slicing, we identify t",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [
+"Jiajing Wu"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "bench",
+"w": "Detecção de contratos Ponzi em Ethereum; cripto, método validado."
+}
+},
+{
+"key": "doi:10.1016/j.jeconc.2026.100213",
+"title": "Practitioner perspectives on what works in preventing fraud against older adults",
+"url": "https://doi.org/10.1016/j.jeconc.2026.100213",
+"venue": "Journal of Economic Criminology",
+"date": "2026-03-22",
+"authors": [
+"Mark Button",
+"Vasileios Karagiannopoulos",
+"David Shepherd",
+"Annie Kirby",
+"Julak Lee",
+"Joon Bae Suh"
+],
+"abstract": "Fraud is one of the most common crimes experienced by older adults in the UK and compared to younger generations, has disproportionate impact. It is becoming an increasingly critical public policy issue. However, there has been very little research evaluating what works in fraud prevention. This paper provides a unique insight into what works in preventing scams against the elderly population. Using both interviews (n=17) and a survey (n=334) to collect the perceptions of experts, the research rates the effectiveness of prevention methods organised into a taxonomy of four strategic themes: digital technology interventions, education, third-party control, and partnerships. Based on the experts’ perceptions, the most effective methods are digital technologies that block scam communications, interventions by trained bank and care professionals, high specificity education, and coordinated partnerships to deliver prevention strategies. As well as actionable insights, the paper offers recommendations for further research.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [
+"Mark Button"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Percepção de especialistas sobre prevenção a golpes em idosos; sem métricas de impacto"
+}
+},
+{
+"key": "doi:10.1109/tcss.2025.3623272",
+"title": "Exposing Disguises and Tracing Illicit Flows: Dual-View Graph Representation Learning for Money Laundering Detection",
+"url": "https://doi.org/10.1109/tcss.2025.3623272",
+"venue": "IEEE Transactions on Computational Social Systems",
+"date": "2026-01-16",
+"authors": [
+"Z.G. Li",
+"Xinyu Yin",
+"Mingjian Guang",
+"Changjun Jiang"
+],
+"abstract": "Money laundering is the process of hiding the origin of illicit funds to make them appear legitimate, thereby threatening the integrity of financial systems. To detect money laundering activities, graph neural networks (GNNs) have been widely adopted to model complex relational structures in transaction networks. However, a closer inspection of real-world money laundering cases reveals that launderers deliberately establish connections with multiple licit accounts to mask their illicit attributes. Such disguising behavior introduces network heterogeneity, which contradicts the fundamental assumption of homophily for most GNNs. Additionally, money launderers further conceal their activities by obscuring illicit fund flows through multihop transaction paths. This strategy poses a significant challenge for GNNs, as their limited receptive fields struggle to capture such long-range dependencies. To address these challenges, we propose a dual-view graph representation learning method, named DC-LCG, to detect money laundering. DC-LCG employs complementary local and contextual views to expose disguises and trace illicit flows, respectively. The local view implements a soft-label-guided dy",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [
+"Changjun Jiang"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "bench",
+"w": "GNN dual-view para lavagem; sem números no abstract"
+}
+},
+{
+"key": "doi:10.1145/3768587",
+"title": "Accurate, Generalizable, and Practical Behavioral Models to Identify Impending User Exposure to Malicious Websites",
+"url": "https://doi.org/10.1145/3768587",
+"venue": "ACM Transactions on the Web",
+"date": "2026-02-18",
+"authors": [
+"Jin-Dong Dong",
+"Kyle Crichton",
+"Akira Yamada",
+"Yukiko Sawaya",
+"Lorrie Faith Cranor",
+"Nicolas Christin"
+],
+"abstract": "To keep users safe online, current protections frequently employ blocklists of known malware and phishing websites. However, such defenses suffer from an inherent gap between malicious content creation and its detection, leaving a window where users are left vulnerable. To address this limitation, earlier research has shown that one could use individual user web browsing behavior to identify imminent exposure to malicious content. While existing methods frequently rely on temporal proximity (e.g., aggregating browsing patterns over the recent past), they do not leverage temporal ordering in user browsing, which results in suboptimal performance and is, in practice, inadequate given the low base rates of malware incidence. We introduce network and browser-level features (e.g., page rank, tab browsing time) and a temporal model that captures user behavior through a time-series representation. This not only improves classification performance by a significant margin (between 93% and 145% F1-score improvements) over previous models, but also maintains strong robustness across completely disparate sets of users. More importantly, our method shows strong resilience to concept drift, as p",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [
+"Nicolas Christin"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "Modelo comportamental para exposição a sites maliciosos; phishing, elo indireto"
+}
+},
+{
+"key": "doi:10.13140/rg.2.2.18414.16966",
+"title": "Return to sender: Mapping the online economy of refund fraud",
+"url": "https://doi.org/10.13140/rg.2.2.18414.16966",
+"venue": "University of Surrey Open Research repository",
+"date": "2026-01-01",
+"authors": [
+"Mark Button",
+"Cassandra Cross",
+"Matthew Edwards",
+"Jack Mark Whittaker"
+],
+"abstract": "Introduction and contextRetail crime has traditionally focused on shoplifting, but the shift to online shopping has given rise to refund fraud -a rapidly growing yet understudied problem.Refund fraud which involves deceiving retailers to secure refunds without returning goods or to obtain goods without payment.While in-store refund fraud has been well researched, the online form remains largely neglected, despite its substantial economic impact.Recent estimates suggest refund fraud costs the US retail industry $103 billion annually (Deloitte, 2024).If similar rates applied to the UK, the cost could range from £317 million to £5.76 billion, with a median estimate of £2.3 billion.These figures underscore the urgency of addressing this issue. Key statistics• 494,267 posts analysed across 3,000 threads/channels on cybercrime forums and Telegram.• 23,439 unique user accounts identified, with 2,636 accounts showing substantial engagement (10+ posts).• Estimated hidden activity suggests 60,000-90,000 individuals may be involved in organised refund fraud.• Claimed refunds ranged from $15 to $200,000, with a mean of $2,419 and a median of $1,032.• Amazon was the most targeted retailer, foll",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [
+"Cassandra Cross",
+"Mark Button"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "admin",
+"w": "Economia de refund fraud em fóruns; e-commerce, não banco"
+}
+},
+{
+"key": "doi:10.21428/cb6ab371.5a9be5c6",
+"title": "The consequences of spotlight effects in criminal network analysis: A simulation study",
+"url": "https://doi.org/10.21428/cb6ab371.5a9be5c6",
+"venue": "CrimRxiv",
+"date": "2026-10-20",
+"authors": [
+"Benjamin Palfreeman-Watt",
+"David Buil‐Gil",
+"Tomáš Diviák",
+"Nicolás Trajtenberg-Pareja"
+],
+"abstract": "Objectives: Assess how spotlight effects driven by investigative attention toward selected individuals and their ties biases network statistics and centrality rankings. Methods: 1,800 networks varying in size, average degree, and degree centralisation were generated. Across 375 observation regimes, we systematically varied spotlight proportion, degree-biased selection, and observation probabilities for spotlit and non-spotlit ties. Outcomes included sampling coverage, centralisation, clustering, rank correlation, top-10% recall, and rank displacement. Results: Perfect observation of highly connected nodes left 32% of ties missing in highly centralised networks when peripheral ties were missing. Clustering was commonly underestimated, while centralisation was generally underestimated in medium- and highly centralised networks. Overall rankings were stable, but spotlight effects could substantially impact top 10% recall and individual node ranking. Conclusions: Spotlight effects are metric-and mechanism-dependent. Investigative metadata can be used to inform likely bias directions on a metric-by-metric basis.",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [
+"David Buil‐Gil"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Simulação de viés de rede criminal; metodologia útil a mulas"
+}
+},
+{
+"key": "doi:10.1057/s41284-026-00578-5",
+"title": "Gullibility, loneliness, exploitation or just bad luck? Exploring older adults’ perceptions of fraud risks, protections and victimhood",
+"url": "https://doi.org/10.1057/s41284-026-00578-5",
+"venue": "Security Journal",
+"date": "2026-10-15",
+"authors": [
+"Elisabeth Carter",
+"Vasileios Karagiannopoulos",
+"Annie Kirby",
+"Mark Button"
+],
+"abstract": "Exploring older adult victimisation of cybercrimes, perceptions of risk and protections using semi-structured interviews and a mixed interactional analytic approach, this paper assesses the implications of isolation, technical knowledge and trusted sources of protection advice. It explores perceptions of personal responsibility, fraud risk, fraud protections, the interconnected and dichotomous narratives of blame and empathy relating to victimhood, and how judgement rests on whether victimhood is perceived as acceptable (just bad luck) or not (gullibility). It highlights the importance social isolation and cognitive decline has in relation to older adults’ fraud victimhood, underscored by participants’ perceptions that youth, education and intelligence are key to resilience against threats.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [
+"Mark Button"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "quali",
+"w": "Entrevistas sobre vitimização de idosos em golpes; pequeno e qualitativo"
+}
+},
+{
+"key": "doi:10.1108/jmlc-12-2025-0241",
+"title": "Exploring the extent of international money laundering using cryptocurrency: a systematic scoping review of gaps in research on Southeast Asia’s scam economy",
+"url": "https://doi.org/10.1108/jmlc-12-2025-0241",
+"venue": "Journal of Money Laundering Control",
+"date": "2026-04-24",
+"authors": [
+"Brandon Christopher Dulisse",
+"Jean Denis",
+"Nathan T. Connealy"
+],
+"abstract": "Purpose This systematic scoping review aims to map the peer-reviewed evidence on cryptocurrency-enabled money laundering to highlight significant gaps in knowledge, particularly regarding its role in the rapid expansion of Southeast Asia’s scam economy. It focuses on scam compounds, money mule networks and anti-money laundering/counter-terrorist financing strategies to inform policy responses. Design/methodology/approach Following systematic scoping review guidelines, 7,669 records from five databases (2009–2025) were screened, yielding 25 peer-reviewed studies. Dual-reviewer screening, standardized extraction and thematic synthesis were used, with quality appraisal emphasizing methodological rigor and theoretical depth. Findings Four themes emerged: (1) industrial scam ecosystems in Southeast Asia are linked to crypto-enabled wealth transfer and laundering, though peer-reviewed evidence on these specific regional operations remains limited; (2) offender rationales favor low-risk, high-reward techniques like mixing, privacy coins and high-volume, low-amount transfers; (3) blockchain forensics enable tracing and evidence gathering, but are challenged by evolving privacy tools; and (",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Scoping review de lavagem cripto e economia de golpes no sudeste asiático"
+}
+},
+{
+"key": "doi:10.1016/j.eswa.2026.133278",
+"title": "Heterophily outlier temporal aware graph neural network for online fraud detection",
+"url": "https://doi.org/10.1016/j.eswa.2026.133278",
+"venue": "Expert Systems with Applications",
+"date": "2026-06-12",
+"authors": [
+"Hiba Akli",
+"Sofiane Hamrioui",
+"Igor Stéphan"
+],
+"abstract": "Online fraud detection poses increasing challenges as malicious actors continuously adapt their tactics to evade recognition. Conventional detection systems, whether rule-based or machine learning–driven, process transactions in isolation and fail to capture the interdependent, dynamic, and adversarial nature of fraud. Graph Neural Networks (GNNs) have shown promise in modeling such relational data, yet most existing models assume homophily, neglect temporal evolution, and rely heavily on supervision or graph restructuring, therefore limiting their robustness in real-world fraud scenarios characterized by heterophily, class imbalance, and camouflage. To address these issues, we propose HOT-GNN, a Heterophily Outlier Temporal-aware Graph Neural Network designed to detect complex and camouflaged fraud patterns in heterogeneous, evolving graphs. HOT-GNN introduces a Hybrid Outlier-aware Similarity (HOS) mechanism that quantifies structural, semantic, and anomaly alignment to distinguish genuine from deceptive relations. It further employs a decoupled multi-view message-passing framework to separately aggregate information from homophilic and heterophilic neighbors, preventing noise pr",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "GNN heterofílica temporal para fraude; método claro, sem números"
+}
+},
+{
+"key": "doi:10.1108/jmlc-10-2025-0179",
+"title": "External commercial borrowings and trade-based money laundering: a forensic risk analysis with evidence from India",
+"url": "https://doi.org/10.1108/jmlc-10-2025-0179",
+"venue": "Journal of Money Laundering Control",
+"date": "2026-01-26",
+"authors": [
+"Rishu Singh",
+"Haresh Barot"
+],
+"abstract": "Purpose This paper examines the potential misuse of external commercial borrowings (ECBs) as channels for trade-based money laundering (TBML), using India as a case study. While ECBs are an essential source of foreign capital, especially in developing economies, their intersection with TBML risks remains largely unexplored in academic and regulatory discourse. Design/methodology/approach The study uses a policy and data-based analytical approach. It reviews Reserve Bank of India (RBI) circulars, Foreign Exchange Management Act (FEMA) regulations and international anti-money laundering (AML) guidelines to identify areas where current safeguards may be inadequate. A simple four-layer forensic risk framework is then applied to RBI’s published ECB data to highlight combinations of lender type, sector and loan maturity that tend to show higher exposure to TBML-related risks. In this context, forensic refers to a structured, evidence-based method of risk detection rather than an investigative audit. Findings The analysis reveals that ECBs involving related-party lenders or funds routed through opaque jurisdictions are more likely to conceal trade-linked laundering activity. These pattern",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "admin",
+"w": "Análise forense de ECB como canal de TBML com dados do RBI"
+}
+},
+{
+"key": "doi:10.3390/app16041931",
+"title": "A Review of Artificial Intelligence for Financial Fraud Detection",
+"url": "https://doi.org/10.3390/app16041931",
+"venue": "Applied Sciences",
+"date": "2026-02-14",
+"authors": [
+"Haiquan Yang",
+"Zarina Shukur",
+"Shahnorbanun Sahran"
+],
+"abstract": "Financial fraud has expanded rapidly with the growth of the digital economy, evolving from conventional transactional misconduct to more complex and data-intensive forms. Traditional rule-based detection methods are increasingly inadequate for addressing the scale, heterogeneity, and dynamic behavior of modern fraud. In this context, artificial intelligence (AI) has become a core tool in financial fraud detection research. This review systematically surveys AI-based financial fraud detection studies published between 2015 and 2025. It summarizes representative machine learning and deep learning approaches, including tree-based models, neural networks, and graph-based methods, and examines their applications in major fraud scenarios such as credit card fraud, loan fraud, and anti-money laundering. In addition, emerging research on cryptocurrency- and blockchain-related fraud is reviewed, highlighting the distinct challenges posed by decentralized transaction environments. Through a comparative analysis of methods, datasets, and evaluation practices, this review identifies persistent issues in the literature, including severe class imbalance, concept drift, limited access to labeled ",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão ampla de IA para fraude; sem dados novos"
+}
+},
+{
+"key": "doi:10.3390/technologies14010054",
+"title": "Why ROC-AUC Is Misleading for Highly Imbalanced Data: In-Depth Evaluation of MCC, F2-Score, H-Measure, and AUC-Based Metrics Across Diverse Classifiers",
+"url": "https://doi.org/10.3390/technologies14010054",
+"venue": "Technologies",
+"date": "2026-01-10",
+"authors": [
+"Mehdi Imani",
+"Majid Joudaki",
+"Ayoub Bagheri",
+"Hamid Reza Arabnia"
+],
+"abstract": "This study re-evaluates ROC-AUC for binary classification under severe class imbalance (<3% positives). Despite its widespread use, ROC-AUC can mask operationally salient differences among classifiers when the costs of false positives and false negatives are asymmetric. Using three benchmarks, credit-card fraud detection (0.17%), yeast protein localization (1.35%), and ozone level detection (2.9%), we compare ROC-AUC with Matthews Correlation Coefficient, F2-score, H-measure, and PR-AUC. Our empirical analyses span 20 classifier–sampler configurations per dataset, combined with four classifiers (Logistic Regression, Random Forest, XGBoost, and CatBoost) and four oversampling methods plus a no-resampling baseline (no resampling, SMOTE, Borderline-SMOTE, SVM-SMOTE, ADASYN). ROC-AUC exhibits pronounced ceiling effects, yielding high scores even for underperforming models. In contrast, MCC and F2 align more closely with deployment-relevant costs and achieve the highest Kendall’s τ rank concordance across datasets; PR-AUC provides threshold-independent ranking, and H-measure integrates cost sensitivity. We quantify uncertainty and differences using stratified bootstrap confidence interv",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "bench",
+"w": "Métricas sob desbalanceamento em fraude de cartão; 20 configurações, bootstrap"
+}
+},
+{
+"key": "doi:10.1109/jiot.2026.3653434",
+"title": "Deep Learning Approaches for Anti-Money Laundering on Mobile Transactions: Review, Framework, and Directions",
+"url": "https://doi.org/10.1109/jiot.2026.3653434",
+"venue": "IEEE Internet of Things Journal",
+"date": "2026-01-12",
+"authors": [
+"Jiani Fan",
+"Lwin Khin Shar",
+"Ruichen Zhang",
+"Ziyao Liu",
+"Wenzhuo Yang",
+"Dusit Tao Niyato"
+],
+"abstract": "Money laundering is a financial crime that obscures the origin of illicit funds, necessitating the development and enforcement of anti-money laundering (AML) policies by governments and organizations. The proliferation of mobile payment platforms and smart IoT devices has significantly complicated AML investigations. As payment networks become more interconnected, there is an increasing need for efficient real-time detection to process large volumes of transaction data on heterogeneous payment systems by different operators such as digital currencies, cryptocurrencies and account-based payments. Most of these mobile payment networks are supported by connected devices, many of which are considered loT devices in the FinTech space that constantly generate data. Furthermore, the growing complexity and unpredictability of transaction patterns across these networks contribute to a higher incidence of false positives. While machine learning solutions have the potential to enhance detection efficiency, their application in AML faces unique challenges, such as addressing privacy concerns tied to sensitive financial data and managing the real-world constraint of limited data availability du",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão de deep learning para AML em pagamentos móveis; sem dados novos"
+}
+},
+{
+"key": "doi:10.1007/s10618-025-01181-9",
+"title": "Guardnet: an imbalance-aware graph neural network for fraud detection",
+"url": "https://doi.org/10.1007/s10618-025-01181-9",
+"venue": "Data Mining and Knowledge Discovery",
+"date": "2026-01-23",
+"authors": [
+"Yuhao Chen",
+"Fanwei Zhu",
+"Zengwei Zheng",
+"Jianhua Ma",
+"Binbin Zhou"
+],
+"abstract": "",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "GNN para fraude em journal forte, mas abstract ausente"
+}
+},
+{
+"key": "doi:10.70917/ijcisim-2026-4211",
+"title": "AI driven regulatory compliance monitoring platform for financial transactions",
+"url": "https://doi.org/10.70917/ijcisim-2026-4211",
+"venue": "International Journal of Computer Information Systems and Industrial Management Applications",
+"date": "2026-08-04",
+"authors": [
+"Sathish Kaniganahalli Ramareddy"
+],
+"abstract": "With the increasing transaction volume, emerging fraud, complex money laundering schemes and a growing number of regulatory requirements, financial institutions have to deal with ever-increasing compliance pressures while dealing with legacy rule-based systems that create too many false positives and do not work in real-time and privacy-conscious or decentralized environments. To fill this void in integrated AI solutions, the authors introduce a novel solution a hybrid regulatory compliance monitoring platform that combines supervised ensemble models for detecting suspicious transactions, federated learning for privacy-preserving risk assessment, double-debiased machine learning for causal analysis and blockchain-based smart contracts for immutability, data integrity and auditability. The platform has 93.5% accuracy and 92.8% F1 score in transaction monitoring, with up to 4.8% systemic risk reduction with improved performance in tail risks and low latency of 3.7 seconds. These results are significantly better than the rule-based baselines and stand-alone ML methods and also are robust against heterogeneity tests and datasets. The platform’s ability to integrate centralized banking ",
+"score": 5,
+"theme": "regulation",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Plataforma híbrida de compliance com métricas não verificáveis"
+}
+},
+{
+"key": "doi:10.1007/s10618-026-01192-0",
+"title": "Hybrid federated continual graph contrastive learning for evolving money laundering threats",
+"url": "https://doi.org/10.1007/s10618-026-01192-0",
+"venue": "Data Mining and Knowledge Discovery",
+"date": "2026-02-25",
+"authors": [
+"Zarka Bashir",
+"Mridula Verma",
+"C. Krishna Mohan"
+],
+"abstract": "",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Aprendizado federado contínuo para AML em journal forte, sem abstract"
+}
+},
+{
+"key": "doi:10.3390/a19050354",
+"title": "A Survey of Machine Learning and Deep Learning for Financial Fraud Detection: Architectures, Data Modalities, and Real-World Deployment Challenges",
+"url": "https://doi.org/10.3390/a19050354",
+"venue": "Algorithms",
+"date": "2026-05-02",
+"authors": [
+"Spiros Thivaios",
+"Georgios Kostopoulos",
+"Antonia Stefani",
+"Sotiris B. Kotsiantis"
+],
+"abstract": "Financial fraud has become a critical challenge for modern financial systems due to the rapid growth of digital transactions, online banking services, and electronic payment platforms. Traditional rule-based fraud detection systems are increasingly inadequate in addressing the evolving and adaptive strategies employed by fraudsters. Consequently, Machine Learning (ML) and Deep Learning (DL) techniques have emerged as powerful tools for detecting fraudulent activities in large-scale financial datasets. This paper presents a comprehensive survey of ML/DL approaches for financial fraud detection. The survey systematically reviews existing research across multiple methodological paradigms, including classical supervised learning, anomaly detection, graph-based methods, deep neural networks, multimodal architectures, and cost-sensitive learning frameworks. Particular emphasis is placed on emerging techniques such as graph neural networks, transformer-based architectures, and federated learning approaches designed to address privacy and scalability challenges. In addition to reviewing model architectures, this work analyzes key challenges inherent to fraud detection systems, including ex",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Survey abrangente de ML/DL para fraude; sem dados primários"
+}
+},
+{
+"key": "doi:10.67887/pd2601202004",
+"title": "Implementing AI-Driven Decision Support Systems in Data Management",
+"url": "https://doi.org/10.67887/pd2601202004",
+"venue": "Precision Journal of Information Technology & Scientific Innovation",
+"date": "2026-05-04",
+"authors": [
+"Yazeed Alsuhaibany",
+"Shabir Ahmad"
+],
+"abstract": "Introduction: The rapid growth of digital financial transactions has increased exposure to fraud and highlighted the limitations of traditional decision support systems (DSS). Rule-based and scorecard-driven approaches struggle to operate effectively under conditions of extreme class imbalance, evolving fraud patterns, and regulatory requirements for transparency and auditability. This study aimed to design and evaluate an AI-driven DSS for credit card fraud detection that integrated machine learning, class-imbalance mitigation, explainability, and cost-sensitive decision logic to support operational fraud analysis. Method: The study used the publicly available Kaggle Credit Card Fraud dataset comprising 284,807 transactions, of which 0.17% were fraudulent. A stratified 80/20 split yielded a hold-out test set of 4,000 transactions, including 7 fraud cases. Class imbalance was addressed using the Synthetic Minority Oversampling Technique (SMOTE) applied exclusively within training folds. Logistic Regression, Random Forest, and XGBoost models were trained and evaluated. Given the extreme imbalance, Precision–Recall Area Under the Curve (PR–AUC) was treated as the primary evaluation m",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "DSS com Kaggle, SMOTE e PR-AUC; dado público e honesto"
+}
+},
+{
+"key": "doi:10.54097/c8364y03",
+"title": "Adaptive Temporal Graph Neural Networks for Real-Time Financial Fraud Detection under Concept Drift",
+"url": "https://doi.org/10.54097/c8364y03",
+"venue": "Highlights in Business Economics and Management",
+"date": "2026-09-10",
+"authors": [
+"Xinran Yue",
+"Jingyun Yang",
+"RuFeng Zhu",
+"Qi’ao Xu"
+],
+"abstract": "Financial fraud detectors operate in a non-stationary environment in which illicit actors adapt, class prevalence changes, and labels arrive after investigation. This paper proposes ATGNN-SP, a drift-gated stable-plastic temporal graph neural network for real-time-compatible fraud scoring. Each directed transaction snapshot is converted into a 133-dimensional representation by a two-hop simplified graph convolution that separately propagates incoming, outgoing, second-order, and cross-direction information. A frozen stable multilayer perceptron preserves the initial concept, while a plastic copy is updated only when delayed prequential log loss exceeds a validation-derived control limit. Recent snapshots provide rapid adaptation and an anchor replay buffer limits forgetting. Experiments are executed on the real Elliptic Bitcoin transaction graph using a strict chronological protocol: time steps 1-29 for initial training, 30-34 for validation, and 35-49 for predict-then-update testing. Across three seeds, ATGNN-SP reaches F1 0.2649+/-0.0092 and average precision 0.2624+/-0.0193, improving the static graph MLP by 4.27% and 5.43% relative, respectively. A graph-aware gradient-boosting",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "bench",
+"w": "GNN temporal sob concept drift em grafo Bitcoin; ganhos modestos"
+}
+},
+{
+"key": "doi:10.1016/j.dss.2026.114717",
+"title": "DISCO: Decoupling representation learning and risk control for reliable credit card fraud detection",
+"url": "https://doi.org/10.1016/j.dss.2026.114717",
+"venue": "Decision Support Systems",
+"date": "2026-06-22",
+"authors": [
+"Ruonan Zhu",
+"Xinru Zhang",
+"Tao Wang",
+"Jingxiao Liao",
+"Sai‐Ho Chung",
+"Xiaoge Zhang"
+],
+"abstract": "",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Fraude de cartão em Decision Support Systems, mas sem abstract"
+}
+},
+{
+"key": "doi:10.71451/istaer2603",
+"title": "Cross-Border Trade Fraud Detection via Integrated Heterogeneous Graph Neural Network and XGBoost",
+"url": "https://doi.org/10.71451/istaer2603",
+"venue": "International Scientific Technical and Economic Research",
+"date": "2026-01-19",
+"authors": [
+"Xi Zeng"
+],
+"abstract": "Because cross-border trade fraud involves multiple types of entities, multiple business relationships and complex interactive structures, it exhibits high heterogeneity and strong concealment, which has brought significant challenges to the traditional risk identification methods. Aiming at the problem that existing methods struggle to balance the ability of structural modeling and classification performance, this paper proposes a cross-border trade fraud detection framework based on heterogeneous graph neural network (HGNN) and gradient lifting tree model XGBoost. Firstly, the cross-border trade system is modeled as a heterogeneous graph of multi type entities and multi relationship interactions, and HGNN is used to learn the high-order structural semantic representation of entities in complex trade networks; Then, the graph embedding features and statistical features are input into XGBoost to achieve high-precision classification of fraud. The experimental results on the real cross-border trade data set show that the AUC of the proposed model on the test set reaches 0.966, which is 18.7% and 3.4% higher than using XGBoost and HGNN alone, and significantly improves the recall rate",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "HGNN+XGBoost em dados reais de comércio, AUC 0,966 sem custo assimétrico nem out-of-time"
+}
+},
+{
+"key": "doi:10.1016/j.iref.2026.104916",
+"title": "Prediction of bank transaction fraud using TabNet—an adaptive deep learning architecture",
+"url": "https://doi.org/10.1016/j.iref.2026.104916",
+"venue": "International Review of Economics & Finance",
+"date": "2026-01-16",
+"authors": [
+"B S Prashanth",
+"Manoj Kumar M V",
+"Ariful Hoque",
+"Nasser A. Saif Almuraqab",
+"Immanuel Azaad Moonesar",
+"Udo Braendle"
+],
+"abstract": "The development of online banking has brought about an increase in fraudulent operations, which is a major problem for banks. This study delves into the urgent requirement for interpretable, scalable, and top-notch fraud detection systems by using TabNet, an adaptable deep learning framework, on a Kaggle dataset consisting of actual bank transactions in India. Maximizing operational risk management by improving the accuracy of transaction anomaly detection and ensuring regulatory compliance through transparent models is the goal. We utilize a supervised learning pipeline that incorporates the Synthetic Minority Over-sampling Technique (SMOTE) to ensure that classes are balanced. Subsequently, we conduct thorough exploratory data analysis (EDA) to identify patterns of fraud, both during specific times and across behaviors. On this dataset, five different deep learning architectures are tested: DNN, GRU, LSTM, CNN1D, and TabNet. Assessment of predictive performance was carried out using a 3-fold cross-validation framework. With a ROC-AUC of 0.9739 and an accuracy of 97.39%, TabNet considerably outperformed the competition. The method of sparse feature selection used improved interpre",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "TabNet em dados Kaggle reais, ROC-AUC 0,9739, mas público e sem custo assimétrico"
+}
+},
+{
+"key": "doi:10.1038/s41598-026-42891-4",
+"title": "Enhancing credit card fraud detection with a hybrid approach using machine and deep learning",
+"url": "https://doi.org/10.1038/s41598-026-42891-4",
+"venue": "Scientific Reports",
+"date": "2026-03-27",
+"authors": [
+"Nagwa Gamal",
+"Eman M. G. Younis",
+"Waleed M. Makram"
+],
+"abstract": "Credit card fraud is an important concern for banks, financial institutions and consumers, resulting in substantial financial losses annually. Traditional fraud detection systems are based on predefined rules, but as fraudsters develop more sophisticated techniques, these methods become less effective. Machine learning (ML) and deep learning (DL) offer powerful solutions to enhance the accuracy and efficiency of credit card fraud detection. However, a major challenge in credit card fraud detection is the highly imbalanced nature of transaction data, where fraudulent transactions are rare compared to legitimate ones. To address data imbalance, techniques such as Synthetic Minority Over-sampling Technique (SMOTE) and Mahalanobis distance Synthetic Minority Oversampling Technique-Edited Nearest Neighbors (SMOTE-ENN) hybrid sampling are applied to balance the dataset and improve model performance. The study evaluates various ML models and deep learning models for fraud detection and further evaluate learning dynamics, computational cost, and interpretability through SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations). Comprehensive error anal",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Híbrido ML/DL para cartões com SHAP/LIME, mas sem resultados numéricos no abstract"
+}
+},
+{
+"key": "doi:10.1177/10575677261485546",
+"title": "A Five-Tier Framework for Understanding Cyber-Slavery and Institutional Misclassification: Evidence from 29,466 Cases in Southeast Asia",
+"url": "https://doi.org/10.1177/10575677261485546",
+"venue": "International Criminal Justice Review",
+"date": "2026-09-08",
+"authors": [
+"G. Sarkar",
+"Suleman Ibrahim Lazarus",
+"Sandeep  Kumar Shukla",
+"John Akerele"
+],
+"abstract": "Cyber-slavery converges human trafficking and transnational cybercrime by coercing trafficked individuals into cyber-enabled fraud through confinement, violence, surveillance, and control. This study uses a hybrid qualitative and administrative data design. It combines a systematic narrative review with preanonymized law-enforcement metadata on 29,466 Indian nationals identified as probable cyber-slavery cases in Southeast Asia between 2022 and 2024. From these sources, we develop a five-tier victimization framework that conceptualizes cyber-slavery as a layered sociotechnical process with probabilistic transitions a exploitation and its aftermath. Tiers 1-3 capture recruitment, coercion, and sustained exploitation. Tiers 4-5 capture postexploitation harms, including reintegration barriers, criminalization, and persistent incriminating digital traces. Cases show substantial male predominance (21,182 males; 8,283 females) and concentration among those aged 20-39. The wider cybercrime ecosystem included 633,000 Indian SIM cards and 376,000 mule accounts. Thailand emerged as a major transit hub, accounting for 20,450 cases. Prolonged exposure to coercive cybercrime environments may al",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "admin",
+"w": "29.466 casos e 376 mil contas mulas; metadados policiais mas desenho qualitativo híbrido"
+}
+},
+{
+"key": "doi:10.3390/technologies14070451",
+"title": "Behavioral Biometric Continuous Authentication for Mobile Devices with an Intelligent Personal Agent: A Systematic Review",
+"url": "https://doi.org/10.3390/technologies14070451",
+"venue": "Technologies",
+"date": "2026-07-22",
+"authors": [
+"Madi Gali",
+"Aray M. Kassenkhan",
+"Yersain Chinibayev",
+"A. M. Abshukirova",
+"V.V. Serbin"
+],
+"abstract": "Static, one-time authentication mechanisms such as passwords and PINs are increasingly inadequate for protecting mobile devices throughout an active session. Behavioral biometric continuous authentication (BBCA) addresses this gap by passively monitoring user-specific interaction patterns—keystroke dynamics, touch and swipe gestures, gait, and motion—to verify identity on an ongoing basis. This systematic review synthesizes 80 studies selected via a PRISMA-compliant protocol from IEEE Xplore, ACM Digital Library, Scopus, ScienceDirect, Web of Science, and SpringerLink (2017–2025). We examine behavioral and multimodal biometric modalities, machine learning approaches ranging from classical classifiers to deep sequence and transformer architectures, and their integration with intelligent personal agents, wearable devices, and IoT/edge infrastructures. Security analyses cover spoofing, adversarial and generative attacks, mimicry, and model-level threats including membership inference and reconstruction. Privacy-preserving mechanisms—cancelable biometrics, Bloom filter encodings, zero-knowledge proof protocols, federated learning, and blockchain-based identity management—are evaluated ",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão PRISMA de autenticação biométrica contínua; útil mas sem dados primários"
+}
+},
+{
+"key": "doi:10.1093/rcfs/cfag003",
+"title": "AI and Operational Losses: Evidence from U.S. Bank Holding Companies",
+"url": "https://doi.org/10.1093/rcfs/cfag003",
+"venue": "The Review of Corporate Finance Studies",
+"date": "2026-02-17",
+"authors": [
+"Ping McLemore",
+"Atanas Mihov"
+],
+"abstract": "This study demonstrates that banking organizations with higher artificial intelligence (AI) investments are exposed to more operational risk. Using comprehensive supervisory data on operational losses from large U.S. bank holding companies (BHCs) combined with detailed company-level data on AI-skilled human capital, we show that BHCs with more AI investments suffer higher operational losses per dollar of total assets. The impact of AI investments on operational losses significantly varies by loss type and is driven by external fraud, client-related issues, and system failures. These losses stem not only from small, frequent incidents but also from severe, tail-risk events. The risk-enhancing effect of AI is more pronounced for BHCs with weaker risk management practices. Our findings have important implications for banking performance, risk, and supervision. (JEL D22, G21, J23, J24, O33)",
+"score": 7,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "Dados supervisoros de perdas operacionais de BHCs; IA eleva fraude externa, venue de elite"
+}
+},
+{
+"key": "doi:10.1177/02697580251414141",
+"title": "A scoping review of online romance scams: Conceptual construction and comparative analysis",
+"url": "https://doi.org/10.1177/02697580251414141",
+"venue": "International Review of Victimology",
+"date": "2026-01-23",
+"authors": [
+"Fangzhou Wang"
+],
+"abstract": "This scoping review synthesizes findings from 62 empirical studies to develop a typology of online romance scams, distinguishing between advance fee romance scams (AFRS) and investment-based romance scams (InvRS). The analysis reveals that while both rely on early-stage emotional manipulation and trust building, they diverge markedly in operational mechanisms and technological sophistication. AFRS typically use fabricated crises and prolonged emotional grooming to elicit repeated payments, whereas InvRS, including pig-butchering schemes, employ fraudulent investment platforms, often centered on cryptocurrency, to induce escalating financial commitments. By systematically reviewing studies published between January 2024 and October 2025 across both English and Chinese language sources, this work provides the most comprehensive comparative synthesis to date. The inclusion of 62 studies allows for cross regional and cross linguistic insights into offender networks, victim vulnerabilities, and prevention strategies, addressing a critical gap in prior literature that has treated romance scams as a single homogeneous phenomenon. The findings reveal the industrialization and diversificati",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Scoping review de 62 estudos sobre romance e pig butchering; taxonomia sem dados novos"
+}
+},
+{
+"key": "doi:10.1177/10575677261416902",
+"title": "‘Funds Left Delaware in the Morning’: Online Fraud Networks and Money Laundering Operations",
+"url": "https://doi.org/10.1177/10575677261416902",
+"venue": "International Criminal Justice Review",
+"date": "2026-04-16",
+"authors": [
+"Suleman Ibrahim Lazarus"
+],
+"abstract": "This article examines United States v. Lawal as forensic ethnography. It reads courtroom transcripts, cooperating witness testimony, and exhibits as cultural artefacts that disclose the symbolic, strategic, and infrastructural logics of hybrid online fraud. The analysis draws on Federal Bureau of Investigation (FBI) testimony, money mule accounts, and prosecutorial framing to explore how romance fraud and Business Email Compromise (BEC) schemes converge through shared infrastructures and distributed role allocation. The analysis produced several themes. Here, I foreground three that carry the article’s central analytic weight. (1) Hybrid cybercrimes exceed typological boundaries and challenge law enforcement classifications. (2) Cybercriminal identity operates as functionally modular, distributed across multiple actors, accounts, and personas, which enables operational flexibility and risk dispersion. (3) Laundering infrastructures, though sophisticated, remain fragile, reflecting both aspirational and precarious logics of transnational capital flows. The analysis also reveals how offenders linguistically reframed victims as “clients” or “my partner's clients”. They deployed commer",
+"score": 5,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "quali",
+"w": "Etnografia forense de processo judicial sobre mulas, romance e BEC; caso único"
+}
+},
+{
+"key": "doi:10.1093/cybsec/tyag003",
+"title": "Fake it till you make it: the psychological and communication tactics behind “Pig Butchering” scams",
+"url": "https://doi.org/10.1093/cybsec/tyag003",
+"venue": "Journal of Cybersecurity",
+"date": "2026-01-31",
+"authors": [
+"Ayşe Nur Asyalı",
+"Muriel Frank",
+"Pol Hölzmer"
+],
+"abstract": "“Pig butchering” represents a sophisticated form of cyber-enabled social engineering that combines elements of romance and investment scams. Although existing literature focuses on victims’ experiences, there is a lack of understanding regarding how scammers are trained to implement these strategies. To this end, we analysed a unique data source, scam manuals (i.e. documents guiding scam operations), to uncover the psychological and communication theories that inform their use. Our findings reveal that scammers systematically exploit interpersonal communication, relationship, and motivational tactics to gain victims’ trust and commitment, and to manipulate their self-growth needs. We propose a unified stage model that maps and links psychological and communication theories across the scam stages. We discuss how our model contributes to the broader cybersecurity literature by informing the design of more targeted prevention and intervention strategies that address the human vulnerabilities exploited in advanced cyber-enabled crime.",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "quali",
+"w": "Análise de manuais reais de golpistas pig butchering; fonte rara, qualitativa sem números"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2605.22333",
+"title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+"url": "https://doi.org/10.48550/arxiv.2605.22333",
+"venue": "arXiv",
+"date": "2026-05-21",
+"authors": [
+"Huijun Zhou",
+"Xiaohan Zhang",
+"Haozhe Zhang",
+"Haoyang Zhang",
+"Mi Zhang",
+"Min Yang"
+],
+"abstract": "The Model Context Protocol (MCP) is emerging as a common interface connecting large language models (LLMs) with external services. Remote deployments are becoming increasingly important as agents connect to user-linked online services, such as social, productivity, and financial services. In such deployments, the authentication boundary between MCP clients and remote servers becomes security-critical, yet remains underexplored. We present the first measurement study of authentication security in real-world remote MCP servers. We identify 7,973 live remote MCP servers, finding that 40.55% expose tools without authentication. Among authenticated servers, OAuth is the dominant authorization mechanism for reaching remote services, and OAuth deployments in the MCP ecosystem commonly exhibit three characteristics: open client environments, dynamic client registration, and delegated authorization. These characteristics distinguish MCP deployments from traditional OAuth and introduce new attack surfaces. Guided by this observation, we derive a taxonomy of authentication flaws comprising three MCP-specific categories and conventional OAuth misconfigurations, for a total of four categories a",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "Medição de 7.973 servidores MCP, 40,5% sem auth; autenticação de agentes, não fraude bancária"
+}
+},
+{
+"key": "doi:10.3390/risks14040096",
+"title": "Regulating the Crypto-Laundering Chain: A Comparative Study of Scam Compounds and Money Mule Mechanisms Within Criminal Networks",
+"url": "https://doi.org/10.3390/risks14040096",
+"venue": "Risks",
+"date": "2026-04-21",
+"authors": [
+"Gioia Arnone"
+],
+"abstract": "This paper examines how scam compounds, money mules and crypto-assets operate as interdependent elements of contemporary money-laundering chains. It assesses whether existing anti-money laundering (AML) and crypto-asset regulatory frameworks are capable of disrupting these chains holistically, rather than addressing individual components in isolation, with particular reference to scam-compound activity in Southeast Asia. The study adopts a qualitative comparative case-study methodology grounded in legal and regulatory analysis. Four empirically grounded cases are examined: two Southeast Asian scam-compound enforcement cases (Cambodia and Myanmar) and two European crypto-asset seizure cases (Ireland and Italy). Judicial decisions, enforcement actions and regulatory instruments are analysed through a chain-based analytical framework aligned with Financial Action Task Force (FATF) standards, the EU Markets in Crypto-Assets Regulation (MiCA) and the Anti-Money Laundering Authority (AMLA) framework. The analysis reveals a structural divergence in enforcement strategies: Southeast Asian responses increasingly prioritise network- and infrastructure-level disruption of scam compounds, wher",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "quali",
+"w": "Estudo comparativo de compostos de scam, mulas e cripto sob FATF/MiCA; qualitativo"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2608.18136",
+"title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+"url": "https://doi.org/10.48550/arxiv.2608.18136",
+"venue": "arXiv",
+"date": "2026-08-02",
+"authors": [
+"Dheeraj Mohandas Pai",
+"Lu Xian"
+],
+"abstract": "Conversational agents now act for end users through tools while holding access to customer databases and internal policy documents that a caller can reach through dialogue alone. Banking is the clearest case: the same agent that answers a question can also change contact details, reset a PIN, or move money, so ordinary customer service is inseparable from authorization, fraud detection, and policy compliance. Existing financial-fraud benchmarks classify static transactions or messages, and general agent-safety benchmarks target prompt injection or generic harmful use; none test whether a policy-grounded banking agent safely acts when a caller manipulates identity, authorization, and trust over a conversation. We introduce FraudBench, an executable benchmark built on the $τ^2$-bench dual-control framework and the $τ$-Knowledge banking environment. Both the agent and the simulated caller act through tools over shared, mutable account state, and the agent may grant the caller access to selected tools; the environment exposes a 698-document internal policy corpus that the agent must retrieve from. FraudBench contains 150 authored adversarial scenarios; a frozen public set of 107 (90 ac",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Benchmark executável de agente bancário contra fraude adaptativa; 150 cenários sintéticos"
+}
+},
+{
+"key": "doi:10.1007/s12117-026-09624-5",
+"title": "A crime script of Australian money mules",
+"url": "https://doi.org/10.1007/s12117-026-09624-5",
+"venue": "Trends in Organized Crime",
+"date": "2026-11-05",
+"authors": [
+"Elena Morgenthaler",
+"Benoît Leclerc",
+"Jacqueline M. Drew"
+],
+"abstract": "Money mules are critical facilitators in the laundering of illicit goods and commodities, yet their operational behaviours remain underexplored in the Australian context. This study developed a crime script of money mules through a content analysis of Australian court cases. By examining procedural elements across 25 crime events, the research identified four overarching stages in money mule operations. These included recruitment, preparation, transactions, and rewards. Findings highlighted three primary script tracks through which money mules move illicit proceeds: physical items, decentralised finance (cryptocurrencies) and centralised finance (cash and bank transactions). This research contributes new knowledge about the modus operandi of money mules. The study findings provide the basis on which to develop important recommendations for more targeted and effective crime prevention strategies aimed at addressing a key facilitator of money laundering crimes. These strategies include increasing public awareness of money mule activities, improving financial literacy, and implementing technological safeguards. The study also identifies the range of relevant stakeholders and highlight",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "quali",
+"w": "Crime script de mulas australianas via 25 casos judiciais; qualitativo, pouca base"
+}
+},
+{
+"key": "doi:10.1007/s10610-026-09663-2",
+"title": "Examining Financial Trails of Online Frauds and Money Laundering Choices of Cybercriminals",
+"url": "https://doi.org/10.1007/s10610-026-09663-2",
+"venue": "European Journal on Criminal Policy and Research",
+"date": "2026-03-13",
+"authors": [
+"Luuk Bekkers",
+"Thom Snaphaan",
+"Rutger Leukfeldt"
+],
+"abstract": "While many cybercrimes are financially motivated, the financial aspects of cybercrime remain insufficiently understood. The aim of this study is to provide greater insight into the financial trails of online fraud and the choices of cybercriminals in the concealment of illicit proceeds. To do so, we utilize data from 15 completed police investigations into cybercriminal networks in the Netherlands and apply financial crime scripting as an analytical framework. Analysis revealed that online fraudsters use various resources to steal money from victims without being detected, including online bank accounts, cryptocurrency wallets and direct cash withdrawals. They rely heavily on the use of money mules in the financial trail. Furthermore, we observed that offenders are capable of changing and improving methods over time, but also remain fairly stable in their money laundering choices. Once the money is obtained, cybercriminals primarily seem to spend it on lifestyle, such as luxury hotels and expensive clothing. Others also invest in legitimate businesses and real estate. In the context of these findings, we discuss the implications for policy and practice, and outline directions for f",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "admin",
+"w": "Financial crime scripting em 15 investigações policiais holandesas sobre trilhas de fraude"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2601.05578",
+"title": "Reinforcement Learning of Large Language Models for Interpretable Credit Card Fraud Detection",
+"url": "https://doi.org/10.48550/arxiv.2601.05578",
+"venue": "arXiv",
+"date": "2026-01-09",
+"authors": [
+"Cooper Lin",
+"Yanting Zhang",
+"Maohao Ran",
+"Wei Xue",
+"Hongwei Fan",
+"Yibo Xu"
+],
+"abstract": "E-commerce platforms and payment solution providers face increasingly sophisticated fraud schemes, ranging from identity theft and account takeovers to complex money laundering operations that exploit the speed and anonymity of digital transactions. However, despite their theoretical promise, the application of Large Language Models (LLMs) to fraud detection in real-world financial contexts remains largely unexploited, and their practical effectiveness in handling domain-specific e-commerce transaction data has yet to be empirically validated. To bridge this gap between conventional machine learning limitations and the untapped potential of LLMs in fraud detection, this paper proposes a novel approach that employs Reinforcement Learning (RL) to post-train lightweight language models specifically for fraud detection tasks using only raw transaction data. We utilize the Group Sequence Policy Optimization (GSPO) algorithm combined with a rule-based reward system to fine-tune language models of various sizes on a real-life transaction dataset provided by a Chinese global payment solution company. Through this reinforcement learning framework, the language models are encouraged to explo",
+"score": 6,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "RL pós-treina LLM em dados reais de processadora chinesa; sem resultados no abstract"
+}
+},
+{
+"key": "doi:10.1080/08946566.2026.2690996",
+"title": "From swipe to swindle: a narrative review of research on older adult victims of romance fraud",
+"url": "https://doi.org/10.1080/08946566.2026.2690996",
+"venue": "Journal of Elder Abuse & Neglect",
+"date": "2026-06-23",
+"authors": [
+"Taylor Pope",
+"Christopher Han-Fai Seto"
+],
+"abstract": "Romance fraud, an offense in which victims are manipulated for financial gain through fabricated romantic relationships, has grown recently alongside new digital platforms that facilitate online romantic connections. At particular risk are older adults, who tend to be more socially isolated and less familiar with digital safety behaviors. Guided by gerontological and criminological theory, we present a narrative review of research on how romance fraud impacts older adults. The review includes empirical studies on romance scams impacting older adults (N = 8). We find that older adults targeted by romance scams are often navigating social isolation, widowhood, or emotional vulnerability, and, while not always the most frequently victimized, they face unique risks and consequences. This review highlights key risk factors of romance fraud victimization and offers insights to enhance digital safeguards for older adults. Future directions for research, as well as implications for policy and practice, are discussed.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão narrativa de romance fraud contra idosos com apenas 8 estudos"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2605.12243",
+"title": "PreScam: A Benchmark for Predicting Scam Progression from Early Conversations",
+"url": "https://doi.org/10.48550/arxiv.2605.12243",
+"venue": "arXiv",
+"date": "2026-05-12",
+"authors": [
+"Weixiang Sun",
+"Shang Ma",
+"Yiyang Li",
+"Tianyi Ma",
+"Zehong Wang",
+"Colby Nelson"
+],
+"abstract": "Conversational scams, such as romance and investment scams, are emerging as a major form of online fraud. Unlike one-shot scam lures such as fake lottery or unpaid toll messages, they unfold through multi-turn conversations in which scammers gradually manipulate victims using evolving psychological techniques. However, existing research mainly focuses on static scam detection or synthetic scams, leaving open whether language models can understand how real-world scams progress over time. We introduce PreScam, a benchmark for modeling scam progression from early conversations. Built from user-submitted scam reports, PreScam filters and structures 177,989 raw reports into 11,573 conversational scam instances spanning 20 scam categories. Each instance is hierarchically structured according to the scam lifecycle defined by the proposed scam kill chain, and further annotated at the turn level with scammer psychological actions and victim responses. We benchmark models on two tasks: real-time termination prediction, which estimates whether a conversation is approaching the termination stage, and scammer action prediction, which forecasts the scammer's subsequent actions. Results show a cl",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "bench",
+"w": "Benchmark com 11.573 conversas reais de golpe e tarefas de progressão preditiva."
+}
+},
+{
+"key": "doi:10.1186/s40854-026-00921-0",
+"title": "Sovchain: novel mutual authentication scheme for self-sovereign identity management using blockchain for open banking",
+"url": "https://doi.org/10.1186/s40854-026-00921-0",
+"venue": "Financial Innovation",
+"date": "2026-04-14",
+"authors": [
+"Dawood Behbehani",
+"Nikos Komninos",
+"Muttukrishnan Rajarajan"
+],
+"abstract": "A significant limitation of Financial-Grade API (FAPI) 2.0 is its inability to verify the true origin of the authenticator used during the authentication process, because it focuses solely on validating the parameters of the request rather than verifying the identity of the sender. To enhance FAPI 2.0 security, we propose SovChain, an approach that embeds machine learning into the pre-authentication phase of self-sovereign identity (SSI) systems, enabling proactive risk assessment before any credential is accepted or validated. By addressing a clear gap in the literature, the absence of a mechanism for early threat detection within SSI, the findings of this study contribute to the development of a more trustworthy open banking ecosystem. SovChain was designed with Hyperledger smart contracts, tested on the TON Internet of Things dataset, and validated using AVISPA for formal security. Simulation experiments evaluated registration and authentication flows, support vector machine classification, communication overhead, and throughput under varying participant loads. SovChain achieved 98.2% accuracy with a 97.7% F1 score. By embedding proactive risk assessment into SSI, SovChain demon",
+"score": 5,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Autenticação SSI com ML testada em dataset IoT, não financeiro; acurácia 98,2%."
+}
 }
 ]

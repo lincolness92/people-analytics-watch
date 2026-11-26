@@ -6260,5 +6260,1501 @@
 "e": "bench",
 "w": "Gate determinístico testado em AgentDojo banking com 561 ataques bloqueados."
 }
+},
+{
+"key": "doi:10.48550/arxiv.2604.22750",
+"title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+"url": "https://doi.org/10.48550/arxiv.2604.22750",
+"venue": "arXiv",
+"date": "2026-04-24",
+"authors": [
+"Longju Bai",
+"Zhemin Huang",
+"Xingyao Wang",
+"Jiao Sun",
+"Rada F. Mihalcea",
+"Erik Brynjolfsson"
+],
+"abstract": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage before task execution? In this paper, we present the first systematic study of token consumption patterns in agentic coding tasks. We analyze trajectories from eight frontier LLMs on SWE-bench Verified and evaluate models' ability to predict their own token costs before task execution. We find that: (1) agentic tasks are uniquely expensive, consuming 1000x more tokens than code reasoning and code chat, with input tokens rather than output tokens driving the overall cost; (2) token usage is highly variable and inherently stochastic: runs on the same task can differ by up to 30x in total tokens, and higher token usage does not translate into higher accuracy; instead, accuracy often peaks at intermediate cost and saturates at higher costs; (3) models vary substantially in token efficiency: on the same tasks, Kimi-K2 and Claude-Sonnet-4.5, on ",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "bench",
+"w": "Estudo sistemático de custo de tokens de agentes; tarefas de código, não bancos"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.02874",
+"title": "Privacy Regulation and Fintech Lending",
+"url": "https://doi.org/10.1287/mnsc.2025.02874",
+"venue": "Management Science",
+"date": "2026-04-27",
+"authors": [
+"Sebastian Doerr",
+"Leonardo Gambacorta",
+"Luigi Guiso",
+"Marina Sánchez del Villar"
+],
+"abstract": "Consumers dislike sharing data with fintechs, but greater access to data can improve loan market outcomes through better screening. We study how the California Consumer Privacy Act (CCPA), which grants users control over and mitigates concerns about sharing their data, affects fintech lending. After the CCPA’s introduction, fintechs’ loan rates decline relative to those of other lenders. In addition, rate dispersion across fintech loans increases, fintechs deny more applications, and they make greater use of nontraditional credit scoring models, whereas their default rates decline by more than those of other lenders. These results are consistent with an improved screening process enabled by additional data. Mortgage originations by fintechs also increase, suggesting that well-designed privacy regulation may enhance financial inclusion. This paper was accepted by Bo Becker, finance. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2025.02874 .",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "quasi",
+"w": "CCPA e crédito fintech; dados administrativos e efeito causal em screening"
+}
+},
+{
+"key": "doi:10.1093/rfs/hhag087",
+"title": "Affordable Housing, Unaffordable Credit? Concentration and High-Cost Lending for Manufactured Homes",
+"url": "https://doi.org/10.1093/rfs/hhag087",
+"venue": "Review of Financial Studies",
+"date": "2026-09-24",
+"authors": [
+"Sebastian Doerr",
+"Andreas Fuster"
+],
+"abstract": "This paper shows that high market concentration in the U.S. manufactured home loan market allows lenders to charge markedly higher interest rates than in the mortgage market for site-built homes. Borrowers in counties with higher lender concentration face significantly higher rates, and evidence from bunching at a regulatory rate threshold, an instrumental variable analysis, and a difference-in-differences analysis suggests a causal link. Integrated lenders, which play an outsized role in this market, charge particularly high rates, and we provide evidence suggesting that these lenders exploit their market power over borrowers. We discuss factors that may explain limited lender entry.",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Andreas Fuster"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 8,
+"e": "quasi",
+"w": "Concentração e crédito caro; identificação causal, mas sem tecnologia ou IA"
+}
+},
+{
+"key": "doi:10.3386/w34991",
+"title": "Private Credit, Balance Sheets and Financial Stability",
+"url": "https://doi.org/10.3386/w34991",
+"venue": "National Bureau of Economic Research",
+"date": "2026-03-01",
+"authors": [
+"Gregor Matvos",
+"Tomasz Piskorski",
+"Amit Seru"
+],
+"abstract": "Private credit has become an important source of business financing, raising questions about financial stability. We examine these questions using comprehensive fund- and asset-level data on private credit funds, the dominant form of private credit. Four facts emerge. First, private credit funds are primarily equity financed, with equity accounting for 65–80 percent of assets, compared with about 10 percent for US banks. Second, they engage in little maturity transformation: Fund lives span eight to twelve years, while underlying loans typically mature within two to four years. Third, portfolios are diversified across industries, geographies, and credit strategies. Fourth, equity investors have earned average net annualized returns of about 10 percent after fees, with equity cushions historically absorbing losses before creditors. These findings suggest that private credit funds do not currently replicate balance-sheet structures associated with banking fragility. We conclude by discussing potential vulnerabilities related to liquidity provision, valuation contagion, and loss transmission through investor balance sheets.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Amit Seru",
+"Tomasz Piskorski"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "admin",
+"w": "Dados fundo a fundo de private credit; estabilidade, não tech bancária"
+}
+},
+{
+"key": "doi:10.3386/w35385",
+"title": "The Fragility of Semi-Liquid Private Credit Funds",
+"url": "https://doi.org/10.3386/w35385",
+"venue": "National Bureau of Economic Research",
+"date": "2026-06-01",
+"authors": [
+"Chuck Fang",
+"Itay Goldstein",
+"Yao Zeng"
+],
+"abstract": "We study fragility in semi-liquid private credit funds, which have expanded rapidly and now manage over $300 billion in assets.These funds perform liquidity transformation by holding far more illiquid loans than traditional loan mutual funds while allowing investors to redeem at NAV through quarterly repurchase offers, typically capped at 5% of shares outstanding.We show that cash buffers and contractual loan repayments are insufficient to fund repeated 5% quarterly redemptions; inflows decline precisely when outflows rise; and net outflows are met with sales of illiquid loans, external borrowing, and delayed payments through repurchases payable.As a result, strategic complementarity arises, because redemptions impose liquidation and leverage costs on the remaining investors.We show that loan liquidation, leverage increase, and NAV inflation play an important role in amplifying the current episodes of run-like redemptions.Overall, our evidence suggests that quarterly gates and redemption caps do not eliminate run-like fragility in semi-liquid private credit funds, raising cautions about expanding retail access to private credit markets.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Itay Goldstein"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "admin",
+"w": "Fragilidade de fundos de private credit semi-líquidos; tema de estabilidade"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.04496",
+"title": "The Road to Stock Market Participation",
+"url": "https://doi.org/10.1287/mnsc.2024.04496",
+"venue": "Management Science",
+"date": "2026-04-08",
+"authors": [
+"Sumit D. Agarwal",
+"Meghana Ayyagari",
+"Yuxi Cheng",
+"Pulak Ghosh"
+],
+"abstract": "This paper examines how infrastructure development affects stock market participation in India using trading data from more than 13 million individuals. Using the phased rollout of a national road construction program as a natural experiment, we find that new road connections lead to significant increases in both trading activity and the number of investors. These effects are driven primarily by new market entrants and are most pronounced in rural and intermediately developed regions as well as among male and middle-aged investors. Two main mechanisms explain these patterns. First is an information channel: improved connectivity reduces information frictions, facilitates portfolio diversification, and encourages investment in geographically distant firms. Second is a financial inclusion channel: road construction spurs new bank branch openings—especially by state-owned banks—expanding access to financial services and enabling portfolio reallocation from savings and consumption to equity markets. We find limited evidence for a third possible channel, risk sharing, whereby participation rises with road connectivity in regions with high income volatility. Whereas initial investor retu",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [
+"Sumit Agarwal"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "admin",
+"w": "Estradas e participação no mercado; 13 milhões de investidores, fora do tema"
+}
+},
+{
+"key": "doi:10.2867/1772538",
+"title": "AI adoption, productivity and employment: Evidence from European firms",
+"url": "https://doi.org/10.2867/1772538",
+"venue": "Econstor (Econstor)",
+"date": "2026-01-01",
+"authors": [
+"Iñaki Aldasoro",
+"Leonardo Gambacorta",
+"Rozália Pál",
+"Debora Revoltella",
+"Christoph Weiss",
+"Marcin Wolski"
+],
+"abstract": "This paper provides new evidence on how the adoption of artificial intelligence (AI) affects productivity and employment in Europe. Using matched EIBIS-ORBIS data on more than 12,000 non-financial firms in the European Union (EU) and United States (US), we instrument the adoption of AI by EU firms by assigning the adoption rates of US peers to isolate exogenous technological exposure. Our results show that AI adoption increases the level of labor productivity by 4%. Productivity gains are due to capital deepening, as we find no adverse effects on firm-level employment. This suggests that AI increases worker output rather than replacing labor in the short run, though longer-term effects remain uncertain. However, productivity benefits of AI adoption are unevenly distributed and concentrate in medium and large firms. Moreover, AI-adopting firms are more innovative and their workers earn higher wages. Our analysis also highlights the critical role of complementary investments in software and data or workforce training to fully unlock the productivity gains of AI adoption.",
+"score": 8,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "quasi",
+"w": "Adoção de IA eleva produtividade 4%; variável instrumental, 12 mil firmas"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.01919",
+"title": "Deadly Disease, Fear, and Ostracism in the Credit Market",
+"url": "https://doi.org/10.1287/mnsc.2025.01919",
+"venue": "Management Science",
+"date": "2026-11-10",
+"authors": [
+"Sumit D. Agarwal",
+"Pengsheng Lin",
+"Yupeng Lin",
+"Ruichang Lu",
+"Xiaojun Zhang"
+],
+"abstract": "This paper exploits the 2014 U.S. Ebola outbreak as a natural experiment to examine how fear distorts mortgage credit allocation. We find a 3.8-percentage-point increase in mortgage denial rates for Black applicants during the outbreak, despite negligible infection risk. Approved Black borrowers have stronger credit profiles and lower default rates, yet are less likely to receive loan modifications when delinquent. These effects are absent in algorithm-driven FinTech lending and reverse quickly postoutbreak—patterns inconsistent with statistical discrimination. Robustness tests rule out alternative explanations related to political cycles, labor market impacts, applicant pool composition changes, and bank financial conditions. Consistent with diagnostic expectation theory, higher exposure to Ebola fear does not result in a significant learning effect during the COVID-19 pandemic. This paper was accepted by Bo Becker, finance. Funding: S. Agarwal acknowledges the financial support from the National Natural Science Foundation of China [Grant 72495154]. Y. Lin gratefully acknowledges financial support from the NUS Research Grant [Grants A-8001725 and A-8004426]. R. Lu and X. Zhang ack",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Sumit Agarwal"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "quasi",
+"w": "Medo e discriminação em crédito; contraste com fintech algorítmica"
+}
+},
+{
+"key": "doi:10.3386/w35987",
+"title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+"url": "https://doi.org/10.3386/w35987",
+"venue": "National Bureau of Economic Research",
+"date": "2026-11-01",
+"authors": [
+"Jennifer Wang",
+"Andreas Alexander Haupt",
+"Isaac A. Robinson",
+"Phil Lewis",
+"Erik Brynjolfsson",
+"Diyi Yang"
+],
+"abstract": "Understanding how AI is reshaping work requires an accurate account of the tasks workers perform.Workers are often the first to see how their jobs are changing, as new responsibilities and tools often appear in everyday work before these changes reach formal descriptions.Interviews with workers can help capture these emerging changes in job tasks.Yet existing methods support standardized ratings across workers, while open-ended conversations with workers remain costly to collect and synthesize at scale.We introduce the Stanford Task Network (TaskNet), an occupational taxonomy grounded directly in workers' accounts of their everyday work.To construct TaskNet, we develop a mixed-initiative system that induces task inventories directly from workers.The system conducts interviews, standardizes reports into individual task lists, and aggregates these lists into occupational task inventories.Applied to six occupations spanning a range of education requirements and AI exposure, our system interviews 132 workers and produces 202 task statements from 2726 reports, all of which were accepted by O*NET Center analysts, compared to roughly 65%of workers' write-in task suggestions collected thro",
+"score": 5,
+"theme": "skills",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "quali",
+"w": "Entrevistas com trabalhadores geram inventário de tarefas; amostra pequena"
+}
+},
+{
+"key": "doi:10.3386/w35067",
+"title": "Who Pays for Payments?",
+"url": "https://doi.org/10.3386/w35067",
+"venue": "National Bureau of Economic Research",
+"date": "2026-04-01",
+"authors": [
+"Mark Egan",
+"Gregor Matvos",
+"Amit Seru",
+"Lulu Wang",
+"Vincent Wenxiong Yao"
+],
+"abstract": "We use novel data on the composition and cost of payments across U.S. merchants to quantify consumer redistribution in the payment system.Cards charge interchange fees to merchants to fund consumer rewards.When merchants raise prices for all consumers in response to these costs, users of low-cost payment methods (e.g., cash and debit) cross-subsidize high-reward credit card users who shop at the same merchant.This standard mechanism implicitly assumes that consumers using different payment methods shop at the same merchants and that merchants face similar fees.We show instead that incidence depends on the joint distribution of payment choices across merchants.We document two key forces that shape redistribution.First, consumer sorting-where consumers who use different payment methods shop at different merchants-limits the exposure of cash and debit users to the effects of high interchange fees.Second, interchange fees vary across merchants; where users of different payment methods overlap, such as at large grocery stores, fees are lower due to sector discounts and private negotiations.We embed these forces in a sufficient-statistics framework that maps observed heterogeneity direct",
+"score": 7,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Amit Seru"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 8,
+"e": "admin",
+"w": "Dados de custo de pagamentos e intercâmbio; arcabouço de estatísticas suficientes"
+}
+},
+{
+"key": "doi:10.3386/w34895",
+"title": "Minimum Wages and Rise of the Robots",
+"url": "https://doi.org/10.3386/w34895",
+"venue": "National Bureau of Economic Research",
+"date": "2026-02-01",
+"authors": [
+"Erik Brynjolfsson",
+"J. Frank Li",
+"Javier Miranda",
+"Robert Seamans",
+"Andrew Wang"
+],
+"abstract": "This paper studies how minimum wage policy affects firms' adoption of automation technologies.Using both state-level measures of robot exposure and novel plant-level data on industrial robot imports linked to U.S. Census microdata from 1992-2021, we show that increases in minimum wages raise the likelihood of robot adoption in manufacturing.Our preferred identification exploits discontinuities at state borders, comparing otherwise similar firms exposed to different wage floors.Across specifications, a 10 percent increase in the minimum wage increases robot adoption by roughly 8 percent relative to the mean.",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 8,
+"e": "quasi",
+"w": "Salário mínimo eleva adoção de robôs 8%; automação industrial, não bancária"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.06807",
+"title": "Bank Run, Interrupted: Modeling Deposit Withdrawals with Generative AI",
+"url": "https://doi.org/10.1287/mnsc.2024.06807",
+"venue": "Management Science",
+"date": "2026-07-06",
+"authors": [
+"Sophia Kazinnik"
+],
+"abstract": "I study depositor behavior in panic-driven bank runs using an LLM-based survey simulation. I build a representative population of synthetic agents by assigning demographic attributes, expose them to a viral panic post, and randomize bank communication interventions. I validate model responses against human benchmarks and then generate systematic message variants that vary tone, strength, and content within the validated design space. I then include the estimated withdrawal propensities into a contagion model, which maps network nodes to depositor personas and propagates withdrawals through a single layer proximity network. Direct, personalized bank communications with strong reassurances and explicit survival clauses substantially reduce withdrawal intent. This framework offers an efficient, inexpensive method for testing crisis messages and projecting how runs may unfold under alternative communication strategies. This paper was accepted by Kay Giesecke, finance. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.06807 .",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "bench",
+"w": "Agentes sintéticos simulam corrida bancária e testam mensagens; validado"
+}
+},
+{
+"key": "doi:10.3386/w34940",
+"title": "Market Feedback about Emerging Technologies",
+"url": "https://doi.org/10.3386/w34940",
+"venue": "National Bureau of Economic Research",
+"date": "2026-03-01",
+"authors": [
+"Sean Cao",
+"Itay Goldstein",
+"Jie He",
+"Yabo Zhao"
+],
+"abstract": "How do firms make decisions on investments in emerging technologies?We find that firms adjust AI/green investments in response to market reactions to announcements of such emergingtechnology investment plans.Through a battery of tests, we show that this pattern is more likely due to active managerial learning from the market than alternative explanations such as a passive reflection of underlying fundamentals that drive both market reactions and corporate actions.Firms are more likely to act on feedback about emerging technologies than about other investments, particularly when market participants have more expertise in these areas and when firms face greater uncertainty.",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [
+"Itay Goldstein"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 7,
+"e": "admin",
+"w": "Firmas ajustam investimento em IA ao feedback de mercado; indireto"
+}
+},
+{
+"key": "doi:10.3386/w34865",
+"title": "What Drives Money Competition: Comparative Advantage in Payments versus Reserves",
+"url": "https://doi.org/10.3386/w34865",
+"venue": "National Bureau of Economic Research",
+"date": "2026-02-01",
+"authors": [
+"Itay Goldstein",
+"Ming Yang",
+"Yao Zeng"
+],
+"abstract": "We study competition between monies that provide separate payment and non-payment (e.g., storeof-value) functions.Our central insight is that payment adoption is governed not by absolute payment superiority, but by comparative advantage between payment and non-payment roles.A money that is \"too good\" as a store of value may circulate less as a payment instrument, even if it is technologically superior, because agents prefer to hoard it rather than spend it.The model delivers equilibria in which monies either specialize into distinct roles or coexist as payment instruments with one emerging as dominant.These mechanisms provide a unified microfoundation for classic monetary phenomena such as Gresham's law and the big problem of small change, and offer a new perspective on modern debates over stablecoins and central bank digital currencies (CBDCs).Contrary to the common view that interest-bearing digital currencies necessarily threaten bank deposits, we show that higher yields can weaken payment adoption by raising the opportunity cost of spending.As a result, traditional bank deposits may coexist with, and even retain dominance over, technologically superior digital alternatives.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Itay Goldstein"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "theory",
+"w": "Modelo de competição entre moedas; implica coexistência de depósitos e CBDC"
+}
+},
+{
+"key": "doi:10.1016/j.jfs.2026.101585",
+"title": "CB-LMs: language models for central banking",
+"url": "https://doi.org/10.1016/j.jfs.2026.101585",
+"venue": "Journal of Financial Stability",
+"date": "2026-08-29",
+"authors": [
+"Leonardo Gambacorta",
+"Byeungchun Kwon",
+"Taejin Park",
+"Pietro Patelli",
+"Xingyu Sonya Zhu"
+],
+"abstract": "",
+"score": 5,
+"theme": "foundation_models",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "other",
+"w": "Modelos de linguagem para banco central; sem abstract nem método"
+}
+},
+{
+"key": "doi:10.1016/j.iref.2026.105665",
+"title": "Stablecoins: Fundamentals, emerging issues, and open challenges",
+"url": "https://doi.org/10.1016/j.iref.2026.105665",
+"venue": "International Review of Economics & Finance",
+"date": "2026-08-02",
+"authors": [
+"Ahmed Mahrous",
+"Maurantonio Caprolu",
+"Roberto Di Pietro"
+],
+"abstract": "Stablecoins, with a capitalization exceeding 200 billion USD as of January 2025, have shown significant growth. This exceptional success has attracted the attention of traditional financial institutions, with an increasing number of governments exploring the potential of Central Bank Digital Currencies (CBDCs). Although academia has recognized the importance of stablecoins, research in this area remains fragmented, incomplete, and sometimes contradictory. In this paper, we aim to address the cited gap with a structured literature analysis, correlating recent contributions to present a picture of the complex economic, technical, and regulatory aspects of stablecoins. To achieve this, we formulate the main research questions and categorize scientific contributions accordingly, identifying main results, data sources, methodologies, and open research questions. Unlike prior reviews that use narrower source bases or focus mainly on stabilization mechanisms, this review synthesizes 209 Scopus- and Google Scholar-indexed papers across economic, technical, and policy strands, organized around 26 research questions The research questions we address in this survey paper cover several topics,",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão estruturada de 209 papers sobre stablecoins; sem dados novos"
+}
+},
+{
+"key": "doi:10.1080/13563467.2026.2737132",
+"title": "The geoeconomics of wholesale central bank digital currencies: great power rivalry",
+"url": "https://doi.org/10.1080/13563467.2026.2737132",
+"venue": "New Political Economy",
+"date": "2026-10-01",
+"authors": [
+"Lucia Quaglia",
+"Amy Verdun"
+],
+"abstract": "Wholesale central bank digital currencies (wCBDCs) are digital forms of central bank money designed for high-value transactions among financial institutions and corporations. The main jurisdictions have moved along this ‘road’ to wCBDCs at different start-times and at different speeds: China has been a first mover, also setting up a mini-lateral arrangement; the European Union (EU) has been a second mover, mostly focusing on the intra-EU dimension so far; and the United States (US) has been a late mover and quite reluctant to travel along the path. What explains this variation? This paper argues that geoeconomic dynamics, especially the quest for autonomy concerning critical financial infrastructures and currency statecraft, are central to understanding the uneven development of wCBDCs. Empirical evidence is drawn from public documents, media coverage, and 20 elite interviews across jurisdictions. The paper contributes to the literature on the weaponisation of finance and international currency rivalry, demonstrating that wCBDCs are utilised to mitigate vulnerabilities and expand monetary influence.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "quali",
+"w": "Geoeconomia de wCBDC; 20 entrevistas de elite, sem dados quantitativos"
+}
+},
+{
+"key": "doi:10.4337/9781035306213.00035",
+"title": "Cryptocurrencies and decentralised finance: functions and financial stability implications",
+"url": "https://doi.org/10.4337/9781035306213.00035",
+"venue": "Edward Elgar Publishing eBooks",
+"date": "2026-05-07",
+"authors": [
+"Matteo Aquilina",
+"Giulio Cornelli",
+"Jon Frost",
+"Leonardo Gambacorta"
+],
+"abstract": "Cryptocurrencies and decentralised finance (DeFi) aim to replicate many of the economic functions of traditional finance (TradFi), but their distinctive features introduce new financial stability risks. We analyse these features, and examine key developments, such as smart contracts, decentralised exchanges (DEXs), stablecoins and new forms of central bank money. Our findings suggest that while the underlying economic drivers are not different than in TradFi, DeFi poses significant challenges, including new forms of information asymmetries, market inefficiencies and the risk of cryptoisation in emerging markets. We propose tailored regulatory interventions, such as embedding rules within smart contracts and strengthening the oversight of stablecoins, to manage financial stability risks. Finally, we provide a framework for prudential regulation that can mitigate risks while fostering innovation in the rapidly evolving crypto ecosystem.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Análise de DeFi e estabilidade com proposta regulatória; sem dados próprios"
+}
+},
+{
+"key": "doi:10.1111/1475-679x.70090",
+"title": "Book Value Risk Management of Banks: Limited Hedging, HTM Accounting, and Rising Interest Rates",
+"url": "https://doi.org/10.1111/1475-679x.70090",
+"venue": "Journal of Accounting Research",
+"date": "2026-09-29",
+"authors": [
+"João Granja",
+"Erica Xuewei Jiang",
+"Gregor Matvos",
+"Tomasz Piskorski",
+"Amit Seru"
+],
+"abstract": "We document that as interest rates rose in 2022, banks largely left long‐duration assets exposed to interest rate risk while shielding the accounting value of their balance sheets. Call report and Securities and Exchange Commission (SEC) data show that only about 6% of U.S. banking assets were hedged with derivatives, and even the heaviest users hedged only a small share of their portfolios. Rather than hedge market‐value risk, banks relied on held‐to‐maturity (HTM) accounting to shield book capital, reclassifying about $700 billion of securities as HTM during the tightening period, more than twice the amount reclassified beforehand. Cross‐sectionally, banks with lower capitalization, more fragile uninsured funding, and greater long‐duration asset exposure were less likely to expand hedging during tightening and more likely to rely on HTM accounting. More vulnerable banks, especially those overseen by less stringent state regulators, were also more likely to shift into HTM. We develop a stylized model showing how higher interest rate risk, through its effects on bank solvency, run risk, and regulatory capital, shapes banks’ incentives to hedge, recapitalize, or rely on HTM accounti",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Amit Seru",
+"Tomasz Piskorski"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 8,
+"e": "admin",
+"w": "Bancos evitam hedge e usam HTM; dados de call report e SEC"
+}
+},
+{
+"key": "doi:10.1257/pandp.20261033",
+"title": "The Adoption of Industrial AI in America",
+"url": "https://doi.org/10.1257/pandp.20261033",
+"venue": "AEA Papers and Proceedings",
+"date": "2026-05-01",
+"authors": [
+"Kristina McElheran",
+"Mu-Jeung Yang",
+"Zachary Kroff",
+"Erik Brynjolfsson"
+],
+"abstract": "Using a mandatory, purpose-designed Census Bureau survey of approximately 28,500 establishments, we provide new evidence on industrial AI adoption in US manufacturing. Despite widespread digitization, only 22.8 percent of plants report any AI use as of 2021; intensity-weighted adoption is far lower. Adoption correlates with more-recent digital infrastructure—cloud computing and predictive analytics—rather than legacy on-premises IT or descriptive analytics. Structured production-process management and size are significant predictors. Cost and lack of applicable use case are the most cited barriers, followed by expertise. Prior productivity does not predict use, pointing to organizational readiness as a key barrier to AI diffusion.",
+"score": 7,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 8,
+"e": "admin",
+"w": "Censo obrigatório 28.500 estabelecimentos; adoção e barreiras de IA"
+}
+},
+{
+"key": "doi:10.1186/s40854-025-00848-y",
+"title": "Digital assets: risks, regulations, mitigation",
+"url": "https://doi.org/10.1186/s40854-025-00848-y",
+"venue": "Financial Innovation",
+"date": "2026-02-09",
+"authors": [
+"Huei-Wen Teng",
+"Wolfgang Karl Härdle",
+"Joerg Robert Osterrieder",
+"Daniel Traian Pele",
+"Lennart John Baals",
+"Vassilios G. Papavassiliou"
+],
+"abstract": "Digital assets (DAs) such as cryptocurrencies, tokenized securities, stablecoins, non-fungible tokens (NFTs), and central bank digital currencies, are transforming financial markets with new business models, investment opportunities, and transaction efficiencies. Underpinned by blockchain, distributed ledger technology, and smart contracts, digital innovations are reshaping the financial ecosystem. However, their rapid growth introduces substantial risks, including fraud, market manipulation, cybersecurity threats, and regulatory uncertainty. This position paper offers an interdisciplinary and empirically grounded analysis of the DA landscape. We define and classify major asset types, trace their evolution from speculative instruments to functional tools, and assess current adoption trends. Additional technological developments (e.g., decentralized finance and NFT expansion) are examined for their role in accelerating this transformation. We also analyze the global regulatory landscape, highlighting jurisdictional differences, classification challenges, and emerging governance frameworks. To address key risks, we derive mitigation strategies via quantitative analysis and case-based",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Position paper sobre cripto e tokenização, sem desenho empírico novo"
+}
+},
+{
+"key": "doi:10.1016/j.jfs.2026.101579",
+"title": "Mutual funds and climate news",
+"url": "https://doi.org/10.1016/j.jfs.2026.101579",
+"venue": "Journal of Financial Stability",
+"date": "2026-08-05",
+"authors": [
+"Giulio Cornelli",
+"Leonardo Gambacorta",
+"Tommaso Oliviero",
+"Koji Takahashi"
+],
+"abstract": "With rising public attention to climate change, the proliferation of green mutual funds reflects expectations that they will contribute to a sustainable economic transition. This paper investigates the effects of climate news on mutual fund flows and portfolio allocation decisions. Using detailed flow- and holding-level data, we observe that heightened climate news results in significantly larger capital inflows into green funds than into their non-green counterparts. Furthermore, we show that, in response to climate news, green funds decrease their exposure to high-polluting firms relative to low-polluting firms more than non-green funds do. These results suggest that increasing public attention boosts capital reallocation towards green funds and that, in turn, potentially fosters investment relocation towards more environmentally friendly companies.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "admin",
+"w": "Dados de fluxo e carteira; fundos verdes, não tecnologia bancária"
+}
+},
+{
+"key": "doi:10.1016/j.econlet.2026.113374",
+"title": "LLM time machines: Valuing digital goods over time",
+"url": "https://doi.org/10.1016/j.econlet.2026.113374",
+"venue": "Economics Letters",
+"date": "2026-11-17",
+"authors": [
+"Avinash Collis",
+"Felix Eggers",
+"Erik Brynjolfsson"
+],
+"abstract": "Digital goods generate substantial consumer welfare, but their valuations are difficult to estimate because many are free to consumers. We investigate whether large language models (LLMs) can reconstruct these valuations over time using incentive-compatible binary choice experiments. We benchmark predictions against eight waves of representative US survey data collected between 2016 and 2024. Calibrating GPT-4-Turbo on one year, we find that it approximates the magnitude and temporal patterns of median human valuations in other years. Newer models do not necessarily improve predictions, tending to favor monetary compensation. Our findings suggest opportunities and limitations for longitudinal valuations using LLMs.",
+"score": 5,
+"theme": "foundation_models",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 7,
+"e": "bench",
+"w": "LLM calibrado reconstrói valorações; oito ondas de survey"
+}
+},
+{
+"key": "doi:10.1093/rof/rfag046",
+"title": "Competing digital money",
+"url": "https://doi.org/10.1093/rof/rfag046",
+"venue": "Review of Finance",
+"date": "2026-10-10",
+"authors": [
+"Jon Frost",
+"Jean-Charles mname Rochet",
+"Hyun Song Shin",
+"Marianne Verdier"
+],
+"abstract": "We study competition between two payment instruments: bank deposits and digital platform tokens. Using a Hotelling model that integrates the theory of two-sided markets and payment economics, we assess how this competition is affected by a public payment infrastructure that makes private payment instruments interoperable. We show that interoperability, whether implemented as a fast payment system or a central bank digital currency, may eliminate payment access exclusion and increase trade volumes and social welfare, but at the cost of some disintermediation. When new payment service providers (PSPs) enter and compete for consumers, they soften competition for merchants: incumbent intermediaries then charge merchants higher fees and earn higher profits. This contrasts with the entry of PSPs on the merchant side, which instead disciplines incumbent fees.",
+"score": 7,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"Hyun Song Shin"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "theory",
+"w": "Modelo Hotelling sobre interoperabilidade Pix/CBDC e desintermediação"
+}
+},
+{
+"key": "doi:10.65864/cede76uvum",
+"title": "The Response of Debtors to Rate Changes",
+"url": "https://doi.org/10.65864/cede76uvum",
+"venue": "CESifo",
+"date": "2026-01-20",
+"authors": [
+"Andreas Fuster",
+"Virginia Gianinazzi",
+"Andreas Hackethal",
+"Philip Schnorpfeil",
+"Michael Weber"
+],
+"abstract": "How borrowers respond to future changes in the interest rate on their debt matters for the transmission of monetary policy and for household financial stability. Combining bank data, a letter RCT, and a survey, we study this question in the context of the German mortgage market, where since 2022 borrowers have faced high interest rates when their rate fixation period ends. We find that borrower actions substantially reduce the impact of higher rates on monthly payments. Survey responses corroborate high informedness and a strong propensity to prepare for rate changes. The letter intervention does not affect rate beliefs but increases awareness of available options and refinancing among borrowers close to expiration of their rate fixation.",
+"score": 7,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Andreas Fuster"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 8,
+"e": "rct",
+"w": "Dados bancários mais RCT de cartas sobre resposta a juros"
+}
+},
+{
+"key": "doi:10.1016/j.regsciurbeco.2026.104267",
+"title": "Online consumption and sustained air pollution exposure: Evidence from a quasi-experiment in China",
+"url": "https://doi.org/10.1016/j.regsciurbeco.2026.104267",
+"venue": "Regional Science and Urban Economics",
+"date": "2026-08-06",
+"authors": [
+"Sumit D. Agarwal",
+"Long Wang",
+"Yang Yang"
+],
+"abstract": "This study examines how air pollution affects household consumption in the digital economy. Using a proprietary dataset constructed from more than 500 million online transactions across 291 Chinese cities from 2017 to 2019, we study how online spending changes when pollution rises. To identify causal effects, we exploit quasi-exogenous variation in air quality generated by China’s winter heating policy and implement a difference-in-differences design comparing northern and southern cities around the heating period. We find that pollution increases online spending on health-related products and necessities and reduces spending on non-essential goods. The response is concentrated in the heating period itself, with little evidence of stockpiling before or delayed adjustment afterward. Item-level evidence shows that the increase in spending operates mainly through higher quantities purchased rather than higher payment per item. Additional evidence from Baidu search activity suggests that the spending response is associated with greater attention to pollution risks and protective products, as well as worse mood.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Sumit Agarwal"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "quasi",
+"w": "500 milhões de transações; poluição e consumo, fora do tema"
+}
+},
+{
+"key": "doi:10.1093/rof/rfag026",
+"title": "Trading in your golden years: the effects of early pension withdrawal on individual investments",
+"url": "https://doi.org/10.1093/rof/rfag026",
+"venue": "Review of Finance",
+"date": "2026-07-21",
+"authors": [
+"Sumit D. Agarwal",
+"Allaudeen Hameed",
+"Yuanyuan Pan",
+"Chek Ann Tan"
+],
+"abstract": "We examine the causal effects of a policy allowing early withdrawal of pension funds on individuals’ investment behavior. Upon turning 55, eligible individuals may withdraw a portion of their pension savings. Using detailed brokerage data, we find that this liquidity access triggers increased trading of 9–33 percent, especially in riskier, leveraged assets, without improving investment performance. The resulting increase in trading costs and portfolio volatility, particularly among males and lower-income investors, ultimately diminishes retirement wealth.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Sumit Agarwal"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "quasi",
+"w": "Dados de corretora sobre saque previdenciário; finanças pessoais"
+}
+},
+{
+"key": "doi:10.1016/j.jfs.2026.101543",
+"title": "Generative AI and labour productivity: A quasi experiment on coding",
+"url": "https://doi.org/10.1016/j.jfs.2026.101543",
+"venue": "Journal of Financial Stability",
+"date": "2026-04-23",
+"authors": [
+"Leonardo Gambacorta",
+"Han Qiu",
+"Shuo Shan",
+"Daniel M. Rees"
+],
+"abstract": "",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "quasi",
+"w": "Quase-experimento de produtividade com GenAI em código, sem abstract"
+}
+},
+{
+"key": "doi:10.1038/s41467-026-78686-4",
+"title": "Real-time economic disruption and recovery from Atlantic hurricanes across the US",
+"url": "https://doi.org/10.1038/s41467-026-78686-4",
+"venue": "Nature Communications",
+"date": "2026-10-17",
+"authors": [
+"Sumit D. Agarwal",
+"Smarajit Paul Choudhury",
+"Mingxuan Fan",
+"Leora F. Klapper"
+],
+"abstract": "Climate projections indicate substantial increases in hurricane activity under continued warming, yet how local economies adjust to hurricanes in real time remains poorly understood. Using daily transaction data from 7,987 US ZIP codes exposed to 21 Atlantic hurricanes between 2017 and 2024, we examine aggregate merchant sales and consumer spending to quantify disruption and test for substitution across locations and channels. Hurricanes cause losses equivalent to about two days of typical sales, with limited offsetting substitution and recovery to pre-hurricane levels within ten days. Economic disruption increases with physical damage, evacuation restrictions, and infrastructure outages, while storm category alone is a poor predictor of short-run economic impacts. Disruption and recovery patterns also vary across industries, merchant types, and sales channels. These findings provide real-time evidence on how local economies adjust to hurricanes and help identify the conditions under which short-run economic disruption is most severe.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Sumit Agarwal"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "admin",
+"w": "Transações diárias em 7.987 ZIP codes; furacões, não bancos"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2607.28617",
+"title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+"url": "https://doi.org/10.48550/arxiv.2607.28617",
+"venue": "arXiv",
+"date": "2026-07-30",
+"authors": [
+"Xiangning Lin",
+"Shenzhe Zhu",
+"Shu Yang",
+"Zhenyu Zhang",
+"Haoqian Zhang",
+"Yipeng Zhao"
+],
+"abstract": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intelligence System Prompt Assurance (AISPA), a user-centric framework for systematically auditing system prompts in AI systems. AISPA examines specific parts of a system prompt and evaluates them along eight dimensions that matter to users. We then use this framework to review 3,249 instructions from system prompts in 88 commercial AI products, classifying each instruction as either protective (of users) or problematic. Our audit surfaces four core findings. First, system prompt design varies substantially across products and developers, with some organizations averaging over 60 protective instructions per product while others average fewer than 5. Second, protective instructions are widely adopted but shallow in scope: 98.9% of products contain at least one, yet only 24% cover all eight dimensions of the AISPA taxonomy. Third, system pr",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "bench",
+"w": "Auditoria de 3.249 instruções de system prompts em 88 produtos"
+}
+},
+{
+"key": "doi:10.1080/00036846.2026.2676115",
+"title": "Embracing GenAI: a cross-country comparison",
+"url": "https://doi.org/10.1080/00036846.2026.2676115",
+"venue": "Applied Economics",
+"date": "2026-05-22",
+"authors": [
+"David Loschiavo",
+"Olivier Armantier",
+"Antonio Dalla Zuanna",
+"Leonardo Gambacorta",
+"Mirko Moscatelli",
+"Ilaria Supino"
+],
+"abstract": "Using data from nationally representative surveys, we study household-level adoption of Generative Artificial Intelligence (GenAI) in two contrasting economies, the U.S. and Italy. We find that GenAI usage is significantly higher in the U.S. for both occasional and regular use. A Blinder – Oaxaca decomposition shows that this gap is explained almost entirely by differences in demographic composition – particularly age and education – rather than country-specific factors. Furthermore, we find that households in both countries report broad scepticism about GenAI’s impact and trustworthiness, with significant cross-country differences in expectations and trust related to data protection.",
+"score": 5,
+"theme": "skills",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "survey",
+"w": "Surveys representativos EUA-Itália sobre adoção de GenAI"
+}
+},
+{
+"key": "doi:10.2139/ssrn.6098842",
+"title": "Making Suptech Work: Evidence on the Key Drivers of Adoption",
+"url": "https://doi.org/10.2139/ssrn.6098842",
+"venue": "SSRN Electronic Journal",
+"date": "2026-01-01",
+"authors": [
+"Leonardo Gambacorta",
+"Nico Lauridsen",
+"Jermy Y. Prenio",
+"Samir Kiuhan"
+],
+"abstract": "",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Suptech e adoção; sem abstract, desenho não visível"
+}
+},
+{
+"key": "doi:10.2139/ssrn.6722988",
+"title": "Disciplining digital risk: evidence from cyber stress tests",
+"url": "https://doi.org/10.2139/ssrn.6722988",
+"venue": "SSRN Electronic Journal",
+"date": "2026-01-01",
+"authors": [
+"Nordine Abidi",
+"Leonardo Gambacorta",
+"Christoffer Kok",
+"Leonardo Madio",
+"Ixart Miquel-Flores",
+"Alberto Partida"
+],
+"abstract": "",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"Leonardo Gambacorta"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "other",
+"w": "Testes de estresse cibernético para bancos; sem abstract, desenho não visível."
+}
+},
+{
+"key": "doi:10.1080/13504851.2026.2634858",
+"title": "Does the e-CNY pilot boost consumption upgrading? Evidence from China’s city-level quasi-experiment",
+"url": "https://doi.org/10.1080/13504851.2026.2634858",
+"venue": "Applied Economics Letters",
+"date": "2026-02-24",
+"authors": [
+"Song Jiang",
+"Xiaoqin Yuan"
+],
+"abstract": "This study provides city-level empirical analysis that retail Central Bank Digital Currencies (CBDCs) are associated with consumption upgrading across multiple dimensions. Using a staggered Difference-in-Differences (DID) framework and panel data from 274 Chinese prefectural cities (2012–2023), it finds China’s e-CNY pilot expands consumption scale, optimizes consumption structure, and elevates consumption quality. Regional economic development mediates these positive effects, while excessive fiscal subsidies weaken them and greater financial technology depth strengthens them. The results offer insights for designing programmable CBDCs to boost consumption-led economic growth without fiscal monetization risks.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "quasi",
+"w": "DID escalonado em 274 cidades sobre e-CNY e consumo; dados públicos."
+}
+},
+{
+"key": "doi:10.55670/fpll.futech.5.2.2",
+"title": "Edge-AI microservice orchestration for private, real-time generative FinTech applications",
+"url": "https://doi.org/10.55670/fpll.futech.5.2.2",
+"venue": "Future Technology",
+"date": "2026-05-15",
+"authors": [
+"Kishore Subramanya Hebbar",
+"Vishal Sharma",
+"Jaykumar Ambadas Maheshkar"
+],
+"abstract": "The financial services industry faces mounting pressures to deliver real-time, personalized services while safeguarding sensitive user data under tight regulatory environments. Yet, prevailing AI systems in FinTech remain largely cloud dependent, which introduces latency bottlenecks, privacy exposure, and compliance risk. Meanwhile, industry analyses suggest that Edge AI is rapidly becoming a foundational shift, with predictions that 60% of AI deployments will run partially on device by 2029. However, existing edge AI research often focuses on inference optimization, not full-stack orchestration of financial microservices, and therefore, lacks the integrated, decision-oriented intelligence that is required to operate wholly on the device. In this work, we present an architecture for on-device microservice orchestration of generative AI tailored for FinTech use cases. Our system modularizes AI tasks, such as local LLM inference, fraud detection, biometric authentication, and credit scoring, into services coordinated via lightweight orchestrators (e.g. WASMEdge, Open Horizon). Unlike prior approaches, our system coordinates these services using lightweight WebAssembly-based runtimes,",
+"score": 5,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Arquitetura de orquestração Edge-AI para FinTech; sem validação numérica."
+}
+},
+{
+"key": "doi:10.1016/j.iref.2026.104916",
+"title": "Prediction of bank transaction fraud using TabNet—an adaptive deep learning architecture",
+"url": "https://doi.org/10.1016/j.iref.2026.104916",
+"venue": "International Review of Economics & Finance",
+"date": "2026-01-16",
+"authors": [
+"B S Prashanth",
+"Manoj Kumar M V",
+"Ariful Hoque",
+"Nasser A. Saif Almuraqab",
+"Immanuel Azaad Moonesar",
+"Udo Braendle"
+],
+"abstract": "The development of online banking has brought about an increase in fraudulent operations, which is a major problem for banks. This study delves into the urgent requirement for interpretable, scalable, and top-notch fraud detection systems by using TabNet, an adaptable deep learning framework, on a Kaggle dataset consisting of actual bank transactions in India. Maximizing operational risk management by improving the accuracy of transaction anomaly detection and ensuring regulatory compliance through transparent models is the goal. We utilize a supervised learning pipeline that incorporates the Synthetic Minority Over-sampling Technique (SMOTE) to ensure that classes are balanced. Subsequently, we conduct thorough exploratory data analysis (EDA) to identify patterns of fraud, both during specific times and across behaviors. On this dataset, five different deep learning architectures are tested: DNN, GRU, LSTM, CNN1D, and TabNet. Assessment of predictive performance was carried out using a 3-fold cross-validation framework. With a ROC-AUC of 0.9739 and an accuracy of 97.39%, TabNet considerably outperformed the competition. The method of sparse feature selection used improved interpre",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Comparação de arquiteturas de fraude em dataset público, avaliação honesta e replicável"
+}
+},
+{
+"key": "doi:10.1016/j.finr.2026.100125",
+"title": "A review of credit risk assessment in banking — From deterministic models to probabilistic AI",
+"url": "https://doi.org/10.1016/j.finr.2026.100125",
+"venue": "Finance Research Open",
+"date": "2026-05-16",
+"authors": [
+"André Engan",
+"Lars Ole Hjelkrem",
+"Morten Risstad"
+],
+"abstract": "This paper examines the literature on applications of artificial intelligence (AI) and machine learning (ML) in assessing credit risk in banks, specifically focusing on probabilistic AI. We uncover unresolved issues and prevalent technical challenges by identifying the predominant AI and ML models employed. Furthermore, we explore potential approaches to address these challenges. The review reveals that research is increasingly exploring AI and ML models for credit risk modeling, often providing more accurate risk predictions than traditional models. Apparently, there is a predominant reliance on traditional deterministic models, highlighting an underutilization of probabilistic models that effectively handle inherent uncertainties in credit risk estimates. Furthermore, we observe that challenges such as overfitting, model interpretability, and regulatory compliance remain prevalent. This suggests significant potential for improving accuracy, reliability, and trustworthiness by increasing applications of probabilistic and generative AI, in combination with explainable AI (XAI).",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de IA em risco de crédito, útil mas sem dados próprios"
+}
+},
+{
+"key": "doi:10.1007/s10796-026-10762-y",
+"title": "Governance under Algorithmic Opacity: How Financial Firms Construct Accountability and Control around AI in Risk Disclosures",
+"url": "https://doi.org/10.1007/s10796-026-10762-y",
+"venue": "Information Systems Frontiers",
+"date": "2026-06-17",
+"authors": [
+"Eleni Lioliou",
+"Maria May Seitanidi",
+"Lea Stadtler"
+],
+"abstract": "As artificial intelligence (AI) systems reshape financial decision-making, firms face increasing pressure to assure regulators and investors that they remain in control of new technologies that are inherently opaque and difficult to predict. This study examines how financial institutions construct accountability around AI through mandatory risk disclosures. Using a three-year panel of 10-K filings from 73 publicly listed S&P financial firms, we combine keyword-based extraction with supervised machine learning to classify disclosure language along a continuum of AI accountability framing. This continuum ranges from locating accountability within the firm’s own governance structures, to situating it within external institutional rules and to dispersing it through technological unpredictability and partial autonomy. Our study advances research on responsible AI governance by showing that AI accountability is not only engineered through formal controls but also constructed discursively, as firms use accountability framings to locate and shape the boundaries of control under conditions of algorithmic opacity. Complementing accounts of AI unpredictability as a sociotechnical condition, o",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "admin",
+"w": "Painel de 10-K de 73 firmas financeiras classificado por ML, accountability de IA"
+}
+},
+{
+"key": "doi:10.63575/cia.2026.40110",
+"title": "Fairness-Accuracy Trade-offs in AI Credit Scoring: A Comparative Evaluation of Reweighting and Resampling Strategies Under Multiple Fairness Constraints",
+"url": "https://doi.org/10.63575/cia.2026.40110",
+"venue": "Journal of Computing Innovations and Applications",
+"date": "2026-02-04",
+"authors": [
+"Ziyi Wang",
+"Jiawen Lai"
+],
+"abstract": "The proliferation of artificial intelligence in financial risk assessment has introduced significant concerns regarding algorithmic fairness, particularly in credit scoring systems where biased predictions can disproportionately affect protected demographic groups. This study presents a comparative evaluation of two predominant pre-processing debiasing strategies—reweighting and resampling—applied to AI-based credit scoring algorithms. Using two publicly available benchmark datasets (the UCI German Credit dataset and the UCI Default of Credit Card Clients dataset), we systematically assess the accuracy-fairness trade-offs under three widely adopted fairness constraints: statistical parity, equal opportunity, and equalized odds. Experimental results across three baseline classifiers (Logistic Regression, Random Forest, and XGBoost) indicate that reweighting achieves a more favorable balance between predictive accuracy and fairness when evaluated under equal opportunity and equalized odds constraints, while resampling demonstrates stronger performance in reducing statistical parity differences. The magnitude of accuracy degradation varies substantially depending on the choice of fair",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Compara reweighting e resampling em bases públicas de crédito sob restrições de fairness"
+}
+},
+{
+"key": "doi:10.1080/08839514.2026.2676353",
+"title": "Explainable Artificial Intelligence in the Banking Sector: A Systematic Literature Review",
+"url": "https://doi.org/10.1080/08839514.2026.2676353",
+"venue": "Applied Artificial Intelligence",
+"date": "2026-05-21",
+"authors": [
+"Ntombikayise Betreace Tuge",
+"Nkosikhona Theoren Msweli"
+],
+"abstract": "This systematic literature review investigates the critical implementation gap between the technical promise of Explainable Artificial Intelligence (XAI) and its operational deployment within the banking sector. While the existing literature extensively documents XAI’s potential to enhance transparency, regulatory compliance, and trust, significant barriers prevent its effective integration into banking workflows. Adhering to the PRISMA 2020 methodology, this review synthesizes 78 peer-reviewed studies and industry reports (2021–2025) to analyze why XAI adoption remains challenging despite recognized necessity. Our findings reveal that technical challenges, particularly the accuracy-interpretability trade-off and the “explaining the explanation” problem, are compounded by more fundamental organizational and cultural barriers. These include resistance to change, misalignment between technical teams and business units, and a lack of standardized evaluation frameworks. Crucially, we identify that successful XAI implementation requires addressing socio-technical tensions through interdisciplinary collaboration, context-aware explanation design, and human-centric governance frameworks. ",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão PRISMA de XAI em bancos, diagnóstico de barreiras sem dados primários"
+}
+},
+{
+"key": "doi:10.1093/rof/rfag015",
+"title": "Behavioral messages and debt repayment",
+"url": "https://doi.org/10.1093/rof/rfag015",
+"venue": "Review of Finance",
+"date": "2026-04-22",
+"authors": [
+"Giorgia Barboni",
+"Juan-Camilo Cárdenas",
+"Nicolás de Roux"
+],
+"abstract": "We conduct a randomized experiment involving 7,063 late-paying clients of a large Colombian bank to compare the effects of text messages that leverage different behavioral motives on loan delinquency. Our results show that receiving a message decreases the likelihood of borrowers being late by 4 percent. The effects are more pronounced and persistent when messages leverage social norms. Using machine learning tools, we find that the effects are higher among borrowers with higher credit scores and unsecured loans. A second experiment shows that this type of message is ineffective in preventing on-time borrowers from falling into loan delinquency.",
+"score": 8,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 9,
+"e": "rct",
+"w": "RCT com 7.063 inadimplentes de banco colombiano; normas sociais reduzem atraso"
+}
+},
+{
+"key": "doi:10.1108/itp-01-2025-0008",
+"title": "What future for AI chatbots in banking: from current challenges to mirages?",
+"url": "https://doi.org/10.1108/itp-01-2025-0008",
+"venue": "Information Technology and People",
+"date": "2026-01-01",
+"authors": [
+"Raphaël Lissillour",
+"Jean‐Michel Sahut"
+],
+"abstract": "Purpose Technological advancement is a crucial driver of value creation and enhanced user experience in the banking industry. This study aims to better understand the challenges of AI chatbots in banking and assess whether they herald a customer service revolution. Design/methodology/approach We analysed qualitative data collected in 2024 from three Chinese banks that implemented AI-powered chatbots. Using purposive sampling, 22 customers and managers were interviewed through semi-structured interviews guided by constructs from UTAUT2. Findings The analysis identifies five types of awe associated with chatbot use, technological, functional, conversational, service and security awe. These emotional responses are largely absent from IS literature, despite their potential to positively or negatively shape adoption. Our results suggest that while chatbots excel in routine transactions, they lack empathy and flexibility in complex cases. Functional richness and anthropomorphic features often trigger awe, which may foster engagement but also fear or discomfort. Research limitations/implications The study is exploratory and based on a limited sample. Future work should triangulate with ad",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "quali",
+"w": "22 entrevistas em três bancos chineses sobre chatbots, achados exploratórios"
+}
+},
+{
+"key": "doi:10.3390/ijfs14050122",
+"title": "Designing Retail Central Bank Digital Currencies: A Systematic Literature Review of Trade-Offs Between Security, Privacy, and Financial Stability",
+"url": "https://doi.org/10.3390/ijfs14050122",
+"venue": "International Journal of Financial Studies",
+"date": "2026-05-07",
+"authors": [
+"Jwa Emma Said",
+"Jan Lánský"
+],
+"abstract": "This paper proposes a CBDC design trilemma, the claim that central banks cannot simultaneously maximize privacy, financial stability, and regulatory compliance when designing retail central bank digital currencies and finds the existing literature consistent with this proposition. Through a systematic review of 140 peer-reviewed articles (Web of Science SCIE/SSCI indexes, 2014–2026, supplemented by Scopus and SSRN), evidence is synthesized across four thematic dimensions: design frameworks and architecture, financial stability and banking risk, privacy and security trade-offs, and user adoption and institutional quality. Cross-tabulation of coded data supports all three pairwise tensions: privacy-enhancing designs weaken AML/CFT enforcement, anonymous holdings amplify bank-run risk, and stringent prudential safeguards constrain transaction monitoring. The literature converges on two-tier, hybrid architectures with tiered privacy as the dominant compromise a “zone of feasible design”, that sacrifices full optimality on each vertex. Nine research gaps are identified, most critically the scarcity of empirical evidence from live deployments, the neglect of wholesale CBDC, and insuffici",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de 140 artigos propõe trilema de design de CBDC, sem empiria"
+}
+},
+{
+"key": "doi:10.1007/s10796-026-10742-2",
+"title": "An Explainable AI Multi-Agent Recommender System for Financial Document Access Control",
+"url": "https://doi.org/10.1007/s10796-026-10742-2",
+"venue": "Information Systems Frontiers",
+"date": "2026-04-24",
+"authors": [
+"Kanellos Stylianou Toudas",
+"Konstantinos I. Roumeliotis",
+"Dimitrios Κ. Nasiopoulos",
+"George Georgakopoulos"
+],
+"abstract": "Financial institutions require robust document access control mechanisms that balance security with transparency and explainability. Traditional classification systems often operate as black boxes, failing to provide justifications for access-control decisions. This work presents a novel explainable AI multi-agent recommender system for financial document sensitivity classification that addresses critical ethical concerns in AI-powered decision-making. We fine-tuned three state-of-the-art models—FinBERT, BERT-base-uncased, and GPT-4.1-mini—on a custom-labeled Financial PhraseBank dataset with four sensitivity levels: Public, Internal, Confidential, and Restricted. These fine-tuned models serve as specialized AI agents within a multi-agent architecture orchestrated by GPT-5.1, a large reasoning model operating in zero-shot mode. The orchestrator synthesizes agent predictions and generates natural language recommendations that justify classification decisions. Our agentic AI multi-agent recommender system achieves 83.71% overall accuracy, comparable to individual models (82.80%-84.93%), while providing interpretable explanations for each decision. Critically, agent agreement analysis",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Sistema multiagente XAI para controle de acesso a documentos financeiros, 83,7% acurácia"
+}
+},
+{
+"key": "doi:10.3390/fintech5030060",
+"title": "Explainable Artificial Intelligence in Financial Fraud Detection: A Systematic Review and FinTech-Oriented ADO–TCCM Meta-Framework for Trust, Governance, and Transparency",
+"url": "https://doi.org/10.3390/fintech5030060",
+"venue": "FinTech",
+"date": "2026-07-08",
+"authors": [
+"Devansh Gupta",
+"Priyanka Chugh",
+"Kiran Sood",
+"Simon Grima"
+],
+"abstract": "Artificial intelligence (AI)-driven fraud detection systems in FinTech ecosystems increasingly face a governance tension between high predictive accuracy and limited regulatory transparency, a gap that existing reviews have not addressed through an integrated behavioural, technical, and institutional lens. This study synthesises 99 Scopus-indexed, ABDC-ranked journal articles (2015–2026) using PRISMA 2020 and the SPAR-4-SLR protocol, integrating the Theory of Planned Behaviour (TPB) within an Antecedents–Decisions–Outcomes (ADO) framework to examine organisational adoption of explainable AI (XAI) in financial fraud detection. Three antecedent clusters are identified: attitudinal (algorithmic complexity, model opacity, data imbalance), normative (regulatory compliance, ethical expectations), and control-based (technical self-efficacy, organisational readiness)—which drive decision mechanisms including post hoc interpretability tools (SHapley Additive exPlanations [SHAP], Local Interpretable Model-Agnostic Explanations [LIME]), ethical governance protocols, and human-in-the-loop oversight. These produce outcomes across precision (reduced false positives, improved decision accuracy), ",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão PRISMA de XAI em fraude com meta-framework, sem evidência primária"
+}
+},
+{
+"key": "doi:10.59576/sr.1179",
+"title": "Stablecoins vs. Tokenized Deposits: The Narrow Banking Debate Revisited",
+"url": "https://doi.org/10.59576/sr.1179",
+"venue": "Staff reports",
+"date": "2026-02-01",
+"authors": [
+"Xuesong Huang",
+"Todd Keister"
+],
+"abstract": "We study how the type of money used in blockchain-based trade affects interest rates, investment, and welfare. Stablecoins in our model are backed by safe assets, while banks issue deposits (both traditional and tokenized) to fund a portfolio of safe and risky assets. Deposit insurance creates a risk-shifting incentive for banks, and regulation increases banks’ costs. If regulatory costs are large and risk-shifting is limited, we show that allowing only tokenized deposits to be used in crypto trade raises welfare by expanding bank credit. If regulation is lighter and the risk-shifting incentive is strong, in contrast, allowing only stablecoins is desirable despite crowding out credit. In between these cases, allowing stablecoins and tokenized deposits to compete is optimal. The tradeoffs between these policies are reminiscent of both historical and recent debates over the desirability of narrow banking.",
+"score": 6,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "theory",
+"w": "Modelo de stablecoins versus depósitos tokenizados em staff report, sem empiria"
+}
+},
+{
+"key": "doi:10.2139/ssrn.6926438",
+"title": "Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture",
+"url": "https://doi.org/10.2139/ssrn.6926438",
+"venue": "SSRN Electronic Journal",
+"date": "2026-06-15",
+"authors": [
+"Audrey Rah",
+"Sven Hahues"
+],
+"abstract": "Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a Monte Carlo robustness assessment, a framework coverage matrix, a Governance Priority Score (GPS)-based demonstration, and a public-document relevance assessment. The primary contribution is an integrated governance decision-support architecture that uses the Enterprise AI Platform Taxonomy (EAPT) to estimate platform burden, the Enterprise AI Risk Taxonomy (EART) to organize governance-risk exposure, the Enterprise AI Governance Maturity Model (EAGM) to represent organizational readiness, and the Integrated Agentic AI Governance Framework (IAGF) to identify agentic AI oversight requirements within a unified workflow. These components are operationally connected through GPS, which links platform bur",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Arquitetura de governança de GenAI e agentes em design-science, sem validação de campo"
+}
+},
+{
+"key": "doi:10.1145/3794859",
+"title": "Adaptive Real-Time Financial Fraud Detection with Explainable AI Tools",
+"url": "https://doi.org/10.1145/3794859",
+"venue": "Digital Threats Research and Practice",
+"date": "2026-03-16",
+"authors": [
+"Gaetano Alessi",
+"Mariagrazia Fugini"
+],
+"abstract": "Financial crime is increasingly facilitated by technology and globalization, demanding advanced IT tools for detection. The Fraud Detection System proposed in this article is devised to operate under pragmatic operational constraints inherent to financial institutions, such as extreme class imbalance, due to the rarity of fraudulent events, or the continuously evolving fraud patterns (concept drift) driven by adversarial adaptation, and, most significant, the stochastic delays in obtaining verified feedback, crucial for model supervision. This research develops financial transaction monitoring in a data stream context; it details a developed streaming Machine Learning (ML) pipeline, designed with a lightweight yet powerful Data Stream Management System (DSMS) for real-time feature engineering, and a multi-stage analytical engine that orchestrates diverse detection logic. This engine integrates deterministic rules with adaptive ML models and is coupled with a dynamic decision threshold management system to optimize the precision–recall tradeoff under operational pressures. A core contribution is the systematic, empirical comparison of diverse adaptive learning strategies, ranging fr",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "bench",
+"w": "Pipeline de streaming para fraude com comparação empírica de estratégias adaptativas"
+}
+},
+{
+"key": "doi:10.1016/j.dim.2026.100122",
+"title": "Exploring the nexus of governance and AI ethics: Using systematic literature review for future direction",
+"url": "https://doi.org/10.1016/j.dim.2026.100122",
+"venue": "Data and Information Management",
+"date": "2026-03-04",
+"authors": [
+"Maryam Ikram",
+"Waqas Mehmood",
+"Syed Muhammad Umer Saleem",
+"Shamsiah Banu Mohamad Hanefar"
+],
+"abstract": "Artificial Intelligence (AI) is transforming everyday life across various fields such as healthcare, space exploration, banking and finance. The rapid advancement of AI has drawn increasing attention to its potential societal impacts and has raised important ethical concerns. In recent years, governments, national organisations and international bodies have introduced several ethical standards. These principles provide foundational guidelines to shape ethical development, implementation and governance of artificial intelligence. This study seeks to provide academics with a thorough literature review that emphasises how governance mechanisms and AI ethics have highlighted areas for potential assessment and investigations. This study employed PRISMA review methodology alongside a meta-literature analysis to examine relevant studies indexed in the Scopus database, including years 2011 to 2024. The results provide significant insights into present condition of governance and AI ethics, while highlighting potential avenues for future study to develop stronger and contextually relevant frameworks for global AI governance.",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA sobre governança e ética em IA; sem dados novos."
+}
+},
+{
+"key": "doi:10.1093/cmlj/kmag012",
+"title": "The contest between central bank digital currencies, stablecoins, and tokenized deposits: Which will likely win, and why?",
+"url": "https://doi.org/10.1093/cmlj/kmag012",
+"venue": "Capital Markets Law Journal",
+"date": "2026-04-01",
+"authors": [
+"Ross P. Buckley"
+],
+"abstract": "International payments are arguably the least efficient part of most financial systems and are thus ripe for disruption. Before 2025, central bank digital currencies (CBDCs) appeared to be the most likely vehicle for such disruption, given monetary systems are best built on the settlement finality of central bank money. This changed in 2025 with the support of the Trump Administration for stablecoins. There is now a contest between stablecoins, CBDCs and tokenized bank deposits to underpin international payments in the future. This article analyses the three different architectures and argues that tokenized deposits are the most likely to prevail longer term.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Análise jurídica comparando arquiteturas de CBDC, stablecoin e depósito tokenizado; sem números."
+}
+},
+{
+"key": "doi:10.63125/mfv3c059",
+"title": "Explainable Machine Learning for Loan-Delinquency Prediction in U.S. Community Banks: A Quantitative Study Using Gradient Boosting and SHAP",
+"url": "https://doi.org/10.63125/mfv3c059",
+"venue": "",
+"date": "2026-01-01",
+"authors": [
+"Md Hasinur Rahman"
+],
+"abstract": "Community banks hold a large share of U.S. small-business and local consumer credit, yet their loan portfolios are small, their delinquency events rare, and their supervisory obligations to explain credit decisions exacting. This study asks whether gradient-boosted decision trees can improve 12-month delinquency prediction over a transparent logistic regression in such a setting, and whether Shapley additive explanations (SHAP) can make the resulting model auditable under model-risk and fair-lending expectations. Because loan-level data from community banks are not publicly available, the study constructs a fully documented synthetic panel of 24 banks, about 39,000 loans and 218,573 quarterly loan snapshots (2018Q1–2023Q2) whose generating equations encode non-linear score effects, affordability thresholds, loan-type-specific collateral effects, a county-unemployment shock and deposit-relationship signals, with a 12-month 90-days-past-due label. Logistic regression, random forest, XGBoost, LightGBM and a monotone-constrained LightGBM were tuned on a validation period and evaluated out of time after a four-quarter label gap. The monotone LightGBM achieved the best discrimination (AU",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Painel sintético documentado de 24 bancos; SHAP para risco de modelo, mas dados não reais."
+}
+},
+{
+"key": "doi:10.1287/msom.2024.1459",
+"title": "Artificial Intelligence, Emotional Labor, and Service Operations",
+"url": "https://doi.org/10.1287/msom.2024.1459",
+"venue": "Manufacturing & Service Operations Management",
+"date": "2026-05-07",
+"authors": [
+"Zheng Fang",
+"Yuqian Chang",
+"Xueming Luo",
+"Qingsheng Wu",
+"Jaakko Aspara"
+],
+"abstract": "Problem definition: Emotional labor is increasingly demanded in service operations, placing tremendous psychological strain on human employees and posing challenges to scalability and sustainability. Our study scrutinizes whether artificial intelligence (AI) service bots may tackle these challenges by examining how and when AI’s engagement in emotional labor enhances economic performance in service operations. Methodology/results: We provide causal evidence from a pair of randomized field experiments conducted in partnership with a firm for loan collection service. Results suggest that, compared with human employees, undisclosed AI service agents display the required emotions (both positive and negative) more accurately. However, AI’s advantage of higher emotion display accuracy does not always guarantee better economic performance. For AI to collect more payments from borrowers than human workers, the displayed emotion must be contextually appropriate. Specifically, AI substantially outperforms human workers in debt collection by 49%–94% when the emotion display instructions are suitable for the collection task (i.e., displaying positive emotions to borrowers with minor delinquenc",
+"score": 8,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 9,
+"e": "rct",
+"w": "Dois experimentos de campo em cobrança; IA supera humanos em 49–94% conforme emoção."
+}
+},
+{
+"key": "doi:10.17323/j.jcfr.2073-0438.20.2.2026.5-18",
+"title": "Differential Predictors of Financial Distress in Listed Versus Unlisted Indian Firms: A Machine Learning Approach",
+"url": "https://doi.org/10.17323/j.jcfr.2073-0438.20.2.2026.5-18",
+"venue": "Journal of Corporate Finance Research / Корпоративные Финансы",
+"date": "2026-07-01",
+"authors": [
+"Kumar Bijoy",
+"Sanjay Sehgal",
+"Аджай Джайсвал"
+],
+"abstract": "This study identifies the key determinants of financial distress and evaluates alternative prediction models for both listed and unlisted firms in India. It uses financial data from 1,473 NSE-listed and 472 unlisted Indian firms (2010–2023). Six firm characteristics – profitability, liquidity, solvency, capital structure, operating efficiency, and size – are measured using financial ratios, with market performance additionally included for listed firms. Feature selection identifies the best ratio per characteristic. Classical logit and multiple machine learning models are compared for distress prediction. It is found that leverage, firm size, and capital structure are significant predictors for both firm types. However, optimal measures differ: listed firms are better captured by ROA, working capital to total assets, and sales to total assets, whereas net profit margin, current ratio, and debt collection period perform better for unlisted firms. Machine learning models outperform the logit model, with Random Forest emerging as the best predictor. The study is among the first to simultaneously cover both listed and unlisted Indian firms and to apply machine learning for identifying ",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "Compara logit e ML para distress em firmas indianas; achado genérico, pouco bancário."
+}
+},
+{
+"key": "doi:10.1016/j.finr.2026.100126",
+"title": "Intelligent decision support for debt collection using predictive learning and multi-criteria optimization",
+"url": "https://doi.org/10.1016/j.finr.2026.100126",
+"venue": "Finance Research Open",
+"date": "2026-05-07",
+"authors": [
+"Pantelis Z. Lappas",
+"Stylianos Xanthopoulos"
+],
+"abstract": "An efficient debt collection process should aim not only to recover maximum amounts but also to minimize operational costs. This paper proposes a novel approach to optimizing debt collection, by integrating Machine Learning (ML), Fuzzy Logic, and Multi-Criteria Decision Analysis (MCDA). Our framework consists of three layers: Rule Extraction, Prediction, and Optimization. The Rule Extraction layer employs unsupervised learning to identify customer segments (e.g., self-cured, lazy payers, and delinquents), thus enabling tailored strategies for each group. The Prediction layer uses supervised learning to forecast customer behavior, refining outreach methods. The Optimization layer uses these insights to balance costs with recovery rates. A key feature of our approach is the use of Fuzzy Logic to interpret ML outputs and create comprehensive risk profiles. Additionally, MCDA refines decision-making by considering both financial goals and practical constraints. We demonstrate the framework’s effectiveness using anonymized mortgage loan data provided by a debt collection agency managing portfolios on behalf of a commercial bank. Our solution approach addresses challenges like predicting",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "admin",
+"w": "Framework ML+ fuzzy+ MCDA em dados reais de agência de cobrança; resultados pouco numéricos."
+}
+},
+{
+"key": "doi:10.1186/s40537-025-01351-y",
+"title": "Building an effective chatbot for optimizing the debt collection process through large language models",
+"url": "https://doi.org/10.1186/s40537-025-01351-y",
+"venue": "Journal Of Big Data",
+"date": "2026-01-11",
+"authors": [
+"Keerthana Sivamayilvelan",
+"R Elakkiya",
+"V. Subramaniyaswamy",
+"Santhi Balachandran",
+"Ketan V. Kotecha",
+"Ambarish Kulkarni"
+],
+"abstract": "Chatbots serve as a valuable tool for enhancing customer interactions. The traditional debt collection process is time-consuming and requires significant human effort. In this research, we have assessed the effectiveness of proposed chatbot systems in optimizing the debt collection process. Additionally, this study examined the customer risk category based on payment history using Deep Reinforcement Learning. This research developed a chatbot using prompt engineering and handled the hallucinated response using Parameter Efficient Fine-Tuning techniques (PEFT). Based on the customer risk category, the proposed model offers flexible payment options via the chatbot model. Crafted a customized prompt that consists of sample debt collection interactions, rules, and regulations of the debt collection procedure. When used for prolonged periods, the model may occasionally produce irrelevant responses. In order to address this issue, we have created a customized dataset that captures the preferred human response associated with the irrelevant response. This customized dataset was trained using PEFT to generate the relevant response. A comparative analysis was made between GPT 3.5 and Llama ",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Chatbot LLM com PEFT e DRL para cobrança; comparação GPT-3.5 vs Llama sem métricas claras."
+}
+},
+{
+"key": "doi:10.22399/ijcesen.4923",
+"title": "AI-Enabled Network-Level Credit Risk Navigator (NCRN): Risk Propagation Paths for Systemic Vulnerability in Digital Lending Platforms",
+"url": "https://doi.org/10.22399/ijcesen.4923",
+"venue": "International Journal of Computational and Experimental Science and Engineering",
+"date": "2026-02-15",
+"authors": [
+"Praveen Kumar Sabbineni"
+],
+"abstract": "Digital lending platforms have achieved remarkable success in borrower-level risk assessment through sophisticated machine learning models, yet traditional portfolio monitoring remains fundamentally reactive and overlooks systemic vulnerabilities that emerge from network-level interdependencies. Current credit risk frameworks treat borrowers as independent entities and rely on lagging aggregate indicators, creating critical blind spots in detecting correlated defaults and systemic risk propagation. The Network-Level Credit Risk Navigator (NCRN) addresses these limitations by modeling digital lending ecosystems as dynamic, heterogeneous networks where borrowers, lenders, products, and economic factors form complex webs of interdependency. NCRN integrates graph neural networks for learning network-aware representations, contagion simulation engines for modeling distress propagation, and anomaly detection systems for identifying emerging vulnerabilities. The framework introduces Risk Propagation Paths as directed routes through the network that quantify specific transmission mechanisms for financial distress under various stress scenarios. Through comprehensive validation using synthe",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Framework GNN de risco sistêmico em crédito; validação apenas sintética."
+}
 }
 ]

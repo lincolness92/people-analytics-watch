@@ -14196,5 +14196,2015 @@
 "e": "bench",
 "w": "Benchmark com 400 certificados reais e 13 detectores avaliados"
 }
+},
+{
+"key": "doi:10.1177/10591478261474243",
+"title": "Artificial intelligence and its impact on creativity and diversity: An empirical study of large language model-generated product ideas",
+"url": "https://doi.org/10.1177/10591478261474243",
+"venue": "Production and Operations Management",
+"date": "2026-07-22",
+"authors": [
+"Christian Terwiesch",
+"Lennart Meincke",
+"Karan Girotra",
+"Ethan Mollick",
+"Gideon Nave",
+"Karl T. Ulrich"
+],
+"abstract": "This research examines how well large language models (LLMs) generate new product ideas, focusing on new products for college students priced under $50. Through a series of studies, we identify key strengths and weaknesses of using LLMs for product innovation. Our first study shows that LLM-generated product ideas have higher average quality than human ideas (based on purchase intent) and are 7 times more likely to rank in the top 10%. Our second study demonstrates that this artificial intelligence (AI)-induced creativity boost is not explained by the LLM's more persuasive pitching skills. Our third and fourth studies identify an interesting weakness of using LLMs for brainstorming, showing that AI-generated ideas are less novel (at the idea level) and less diverse (at the set level). In our fifth study, we investigate the generalizability of these findings by analyzing prior LLM-based creativity studies, finding consistently lower idea diversity across all of them. Our sixth and seventh studies investigate the efficacy of various techniques to mitigate this diversity loss. Specifically, we compare different LLMs (different vendors and different versions) and find that the more rec",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Ethan Mollick"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "bench",
+"w": "Sete estudos com LLM sobre ideias de produto; criatividade, não decisão de RH"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.06740",
+"title": "AI-Driven Human Task Substitution: Evidence from Google Translate and ChatGPT",
+"url": "https://doi.org/10.1287/mnsc.2024.06740",
+"venue": "Management Science",
+"date": "2026-10-14",
+"authors": [
+"Erdem Dogukan Yilmaz",
+"Ivana Naumovska",
+"Vikas A. Aggarwal"
+],
+"abstract": "We examine how different generations of artificial intelligence (AI) substitute for human knowledge worker tasks, leveraging two sequential natural experiments in the translation industry. We study the introduction of Google Neural Machine Translation (GNMT), a predictive, task-specific AI, as well as ChatGPT, a broad, general-purpose generative AI, in a major online labor market. Distinguishing between analytical tasks (regular translations) and intuitive tasks (transcreations, which require creative and cultural adaptation), we estimate difference-in-differences models on transaction-level data from 2016 to 2017 and 2022 to 2023. We find that GNMT reduced the demand for analytical tasks by economically meaningful magnitudes, while having no detectable effect on intuitive tasks. By contrast, ChatGPT produced substantially larger and more uniform reductions for both analytical and intuitive tasks, indicating a marked expansion in the scope and magnitude of AI substitution. By comparing these two technological shocks within the same labor market, we show that conclusions about which types of human work are resilient to automation do not straightforwardly generalize from predictive t",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "quasi",
+"w": "Dois experimentos naturais, diferenças-em-diferenças em dados transacionais de tradução"
+}
+},
+{
+"key": "doi:10.1287/orsc.2025.20702",
+"title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+"url": "https://doi.org/10.1287/orsc.2025.20702",
+"venue": "Organization Science",
+"date": "2026-06-12",
+"authors": [
+"Fabrizio Dell’Acqua",
+"Charles Ayoubi",
+"Hila Lifshitz‐Assaf",
+"Raffaella Sadun",
+"Ethan Mollick",
+"Lilach Mollick"
+],
+"abstract": "We examine how artificial intelligence (AI) impacts three core pillars of collaboration—performance enhancement, expertise integration, and social engagement—through a preregistered field experiment with 791 professionals at Procter & Gamble, a global consumer packaged goods company. Working on real product innovation challenges, professionals were randomly assigned to work either with or without AI, and either individually or with another professional in new product development teams. Our findings show that (1) AI significantly enhances performance: individuals with AI matched the performance of teams without AI, suggesting that AI can effectively replicate certain benefits of human collaboration. Moreover, (2) AI helps bridge functional silos: without AI, research and development professionals tended to suggest more technical solutions, whereas commercial professionals leaned toward commercially oriented proposals. Professionals using AI produced more balanced solutions, regardless of their professional background. (3) AI’s language-based interface prompted more positive self-reported emotional responses among participants, suggesting it can fulfill part of the social and motivat",
+"score": 8,
+"theme": "leadership",
+"region": "",
+"watch": [
+"Ethan Mollick",
+"Karim R. Lakhani",
+"Raffaella Sadun"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "rct",
+"w": "Experimento de campo pré-registrado, 791 profissionais P&G; colaboração e times"
+}
+},
+{
+"key": "doi:10.1093/pnasnexus/pgag353",
+"title": "Designing human and generative AI collaboration: Trade-offs in productivity, satisfaction, and creative diversity",
+"url": "https://doi.org/10.1093/pnasnexus/pgag353",
+"venue": "PNAS Nexus",
+"date": "2026-10-30",
+"authors": [
+"Kartik Hosanagar",
+"Daehwan Ahn"
+],
+"abstract": "Rapid advances in generative AI have raised hopes for major productivity gains but recent research has also raised concerns about declining worker satisfaction and reduced creative diversity. While prior research has documented each of these effects individually, it remains unclear how collaboration design shapes the costs that accompany AI-enabled productivity gains. We address this question through a human-subjects experiment on a 1,000-word creative writing task, comparing three human-AI collaboration designs. Completion time was similar across the three designs but quality, satisfaction, and diversity differed across them. The Human Confirmation design, in which AI led ideation, outlining, drafting, and editing while humans primarily confirmed or rejected output, showed the clearest downsides: lower quality and satisfaction, and lower aggregate genre and semantic diversity. By contrast, designs that preserved human involvement in preproduction or throughout the writing process avoided the clearest quality and satisfaction losses without requiring longer overall completion times. Preserving active human involvement in preproduction was also associated with lower aggregate simila",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "rct",
+"w": "Experimento com humanos comparando desenhos de colaboração IA; resultados sem números"
+}
+},
+{
+"key": "doi:10.3386/w34910",
+"title": "AI, Human Cognition and Knowledge Collapse",
+"url": "https://doi.org/10.3386/w34910",
+"venue": "National Bureau of Economic Research",
+"date": "2026-02-01",
+"authors": [
+"Daron Acemoğlu",
+"Dingwen Kong",
+"Asuman Ozdaglar"
+],
+"abstract": "We study how generative AI, and in particular agentic AI, shapes human learning incentives and the long-run evolution of society's information ecosystem.We build a dynamic model of learning and decision-making in which successful decisions require combining shared, community-level general knowledge with individual-level, context-specific knowledge; these two inputs are complements.Learning exhibits economies of scope: costly human effort jointly produces a private signal about their own context and a \"thin\" public signal that accumulates into the community's stock of general knowledge, generating a learning externality.Agentic AI delivers context-specific recommendations that substitute for human effort.By contrast, a richer stock of general knowledge complements human effort by raising its marginal return.The model highlights a sharp dynamic tension: while agentic AI can improve contemporaneous decision quality, it can also erode learning incentives that sustain long-run collective knowledge.When human effort is sufficiently elastic and agentic recommendations exceed an accuracy threshold, the economy can tip into a knowledgecollapse steady state in which general knowledge vanishe",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Daron Acemoglu"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "theory",
+"w": "Modelo dinâmico de aprendizado e colapso de conhecimento; sem teste empírico"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2604.22750",
+"title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+"url": "https://doi.org/10.48550/arxiv.2604.22750",
+"venue": "arXiv",
+"date": "2026-04-24",
+"authors": [
+"Longju Bai",
+"Zhemin Huang",
+"Xingyao Wang",
+"Jiao Sun",
+"Rada F. Mihalcea",
+"Erik Brynjolfsson"
+],
+"abstract": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage before task execution? In this paper, we present the first systematic study of token consumption patterns in agentic coding tasks. We analyze trajectories from eight frontier LLMs on SWE-bench Verified and evaluate models' ability to predict their own token costs before task execution. We find that: (1) agentic tasks are uniquely expensive, consuming 1000x more tokens than code reasoning and code chat, with input tokens rather than output tokens driving the overall cost; (2) token usage is highly variable and inherently stochastic: runs on the same task can differ by up to 30x in total tokens, and higher token usage does not translate into higher accuracy; instead, accuracy often peaks at intermediate cost and saturates at higher costs; (3) models vary substantially in token efficiency: on the same tasks, Kimi-K2 and Claude-Sonnet-4.5, on ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "Análise de consumo de tokens em tarefas de código; custo, não pessoas"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.01063",
+"title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+"url": "https://doi.org/10.1287/mnsc.2025.01063",
+"venue": "Management Science",
+"date": "2026-11-25",
+"authors": [
+"Antonio Roldán-Monés"
+],
+"abstract": "Research on Generative AI (GenAI) and work reports both productivity-compressing and inequality-expanding effects, leaving open a central question for organizations: Who benefits from GenAI and on which specific tasks? I address this question through a randomized controlled trial in competitive university debating, where participants are randomly assigned access to GenAI. Although most previous experimental work examines the impact of GenAI on written activities and across individuals, this setting allows me to study the impact of GenAI on a knowledge-intensive spoken activity and to identify heterogeneous effects across subtasks. I find that GenAI expands performance inequality in this setting. Consistent with recent theories on GenAI and work, results show that high-ability participants experience significantly larger gains from GenAI usage than their lower-ability counterparts in judgment-intensive subtasks, whereas lower-ability individuals only improve their performance in less expert components of debating, where GenAI can be used as a substitute. If these inequality-expanding effects generalize to similar spoken settings where complex ideas must be internalized and explained",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "rct",
+"w": "RCT em debate universitário; GenAI amplia desigualdade, efeitos heterogêneos"
+}
+},
+{
+"key": "doi:10.1038/s41562-026-02566-6",
+"title": "Generative AI and the temporary upskilling of knowledge workers",
+"url": "https://doi.org/10.1038/s41562-026-02566-6",
+"venue": "Nature Human Behaviour",
+"date": "2026-10-26",
+"authors": [
+"Emma Wiles",
+"Lisa Krayer",
+"Mohamed Abbadi",
+"Urvi Awasthi",
+"Ryan Kennedy",
+"Pamela Mishkin"
+],
+"abstract": "",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "other",
+"w": "Upskilling temporário por IA; sem abstract, desenho não verificável"
+}
+},
+{
+"key": "doi:10.3386/w35720",
+"title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+"url": "https://doi.org/10.3386/w35720",
+"venue": "National Bureau of Economic Research",
+"date": "2026-09-01",
+"authors": [
+"David Autor",
+"Tanya Rodchenko",
+"Josh Martin",
+"Zanna Iscenko",
+"Scott Strand",
+"David Pearl"
+],
+"abstract": "AI assistance in expertise-intensive work presents a tension between performance and learning: AI tools may raise the quality of the work a professional delivers while stunting the expertise they would otherwise develop in producing it.In a pre-registered three-month randomized controlled trial, we gave 133 practicing patent lawyers at eleven U.S. intellectual property law firms access to a custom AI patent drafting assistant and measured both their performance while using AI and their professional judgment afterward without it.All work was scored by blinded expert patent attorneys.AI access raised the quality of work delivered on benchmark patent drafting tasks at 10 days (0.34 SD, p = 0.03) and 90 days (0.38 SD, p = 0.01), with larger gains among junior lawyers.After three months, all subjects redlined an existing patent application without AI, a core task of patent practice that requires expert judgment.Treated lawyers outperformed controls by 0.32 SD (p = 0.04), but this advantage was concentrated entirely among senior lawyers (0.45 SD, p = 0.02).Junior lawyers showed no average gain.Their scores instead bifurcated, with sharply fewer mediocre scores offset by more poor and mor",
+"score": 9,
+"theme": "learning",
+"region": "",
+"watch": [
+"David Autor"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 9,
+"e": "rct",
+"w": "RCT pré-registrado de três meses, 133 advogados; desempenho sobe, expertise bifurca"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2606.15708",
+"title": "Artificial Intelligence Index Report 2026",
+"url": "https://doi.org/10.48550/arxiv.2606.15708",
+"venue": "arXiv",
+"date": "2026-04-14",
+"authors": [
+"Sha Sajadieh",
+"Loredana Fattorini",
+"Raymond Perrault",
+"Yolanda Gil",
+"Vanessa Parli",
+"Lapo Santarlasci"
+],
+"abstract": "Welcome to the ninth edition of the AI Index report. As AI continues to advance rapidly, the question becomes whether the systems built around it can keep up. Governance frameworks, evaluation methods, education systems, and the data infrastructure needed to track AI's impact are struggling to match the pace of the technology itself. That gap between what AI can do and how prepared we are to manage it runs through every chapter of this year's report. New in this edition, the report tracks how AI is being tested more ambitiously across reasoning, safety, and real-world task execution, and why those measurements are increasingly difficult to rely on. It also features new estimates of generative AI's economic value alongside emerging evidence of its labor market effects, an analytical framework on AI sovereignty, and a science chapter developed in collaboration with Schmidt Sciences. For the first time, the report features standalone chapters on AI in science and AI in medicine, reflecting AI's growing impact across these two domains.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "bench",
+"w": "Relatório anual AI Index; dados agregados e benchmarks, visão de mercado"
+}
+},
+{
+"key": "doi:10.3386/w34854",
+"title": "Building Pro-Worker Artificial Intelligence",
+"url": "https://doi.org/10.3386/w34854",
+"venue": "National Bureau of Economic Research",
+"date": "2026-02-01",
+"authors": [
+"Daron Acemoğlu",
+"David Autor",
+"Simon Johnson"
+],
+"abstract": "This paper defines pro-worker technologies, including Artificial Intelligence, as technologies that make human skills and expertise more valuable by expanding worker capabilities.Our conceptual framework distinguishes among five categories of technological change: laboraugmenting, capital-augmenting, automating, expertise-leveling, and new task-creating.Only the last category is unambiguously pro-worker, generating demand for novel human expertise rather than commodifying it.We illustrate these distinctions through hypothetical and real-world examples spanning aviation maintenance, electrical services, custodial work, education, patent examination, and gig delivery.While AI's capacity to automate work is substantial, we argue that its potential to serve as a collaborator, by extending human judgment, enabling new tasks, and accelerating skill acquisition, is equally transformative and currently underexploited.We identify market failures, including misaligned firm and developer incentives, path dependence, and a pervasive pro-automation ideology, that may lead to underinvestment in pro-worker AI.We consider nine policy directions that would change incentives, including targeted inve",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Daron Acemoglu",
+"David Autor"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "theory",
+"w": "Framework conceitual de IA pró-trabalhador; sem validação empírica"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.07027",
+"title": "Does AI Cheapen Talk? Theory and Evidence from Global Entrepreneurship and Hiring",
+"url": "https://doi.org/10.1287/mnsc.2024.07027",
+"venue": "Management Science",
+"date": "2026-04-27",
+"authors": [
+"Bo Cowgill",
+"Pablo Hernández‐Lagos",
+"Nataliya Langburd Wright"
+],
+"abstract": "Screening human capital based on signals such as job applications or entrepreneurial pitches is crucial for organizations. Signals are often informative insofar as they require differential knowledge and effort to produce. Generative AI (GAI) complicates screening by lowering the cost of producing impressive signals. We model the informational effects of GAI, showing that applicants’ access to GAI can increase—and also decrease—an evaluator’s screening mistakes. This result depends on how GAI affects experts’ signals compared with nonexperts’. Using experiments in hiring and start-up investing, we estimate that senders’ access to GAI (ChatGPT) lowers screening accuracy by 4%–9% for employers and start-up investors. Consistent with our model, senders’ access to GAI also improves screening accuracy in some settings, in our case, among senders from non–English-speaking countries. These results show that GAI can profoundly shape screening accuracy. This paper was accepted by Anindya Ghose, information systems. Funding: We are grateful for the Columbia Business School Digital Future Initiative Grant for helping fund this project. B. Cowgill thanks the Kauffman Foundation Emerging Schola",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [
+"Bo Cowgill"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "rct",
+"w": "Modelo mais experimentos de triagem; GenAI reduz acurácia de seleção em 4-9%"
+}
+},
+{
+"key": "doi:10.1920/wp.ifs.1999.9912",
+"title": "Getting the unemployed back to work: the role of targeted wage subsidies",
+"url": "https://doi.org/10.1920/wp.ifs.1999.9912",
+"venue": "",
+"date": "2026-03-11",
+"authors": [
+"Bell Bell",
+"Richard W. Blundell",
+"John Michael Van Reenen"
+],
+"abstract": "This paper examines alternative approaches to wage subsidy programmes.It does this in the context of a recent active labour market reform for the young unemployed in Britain.This \"New Deal\" reform and the characteristics of the target group are examined in detail.We discuss theoretical considerations, survey the existing empirical evidence and propose two strategies for evaluation.The …rst suggests an ex-post 'trend adjusted di¤erence in di¤erence' estimator.The second, relates to a model based ex-ante evaluation.We present the conditions for each to provide a reliable evaluation and …t some of the crucial parameters using data from the British Labour Force Survey.We stress that the success of this type of labour market programmes hinge on dynamic aspects of the youth labour market, in particular the pay-o¤ to experience and training.",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [
+"John Van Reenen"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "quasi",
+"w": "Proposta de avaliação de subsídios salariais com dados LFS; desenho ex-ante"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2606.26959",
+"title": "The Shift to Agentic AI: Evidence from Codex",
+"url": "https://doi.org/10.48550/arxiv.2606.26959",
+"venue": "arXiv",
+"date": "2026-06-25",
+"authors": [
+"Drew Johnston",
+"David Holtz",
+"Alex Martin Richmond",
+"Christopher Ong",
+"Prasanna B. Tambe",
+"Aaron Chatterji"
+],
+"abstract": "We analyze usage data from OpenAI's Codex tool to present large-scale evidence of how agentic AI technology, which can take actions on a user's behalf, changes how people work. We use an automated, privacy-protecting pipeline to contrast usage across three populations: external personal-account users, external organizational-account users, and workers within OpenAI. We find that agentic AI usage is growing rapidly: the number of active users has grown more than fivefold in the first half of 2026, with the most rapid increase occurring outside the initial audience of software developers. Uptake is uneven: within OpenAI, Codex usage is nearly universal and has largely replaced business usage of ChatGPT. We document a similar shift to agentic tooling outside OpenAI, particularly within organizations, although external adoption remains lower and more uneven. In addition to headline usage figures, we observe measures of sophistication, and find that a growing number of users have used Codex to change their workflows substantially. More than 10% of users manage three or more concurrent Codex agents at some point each week and that 26.6% use skills, which allow users to share instructions",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Prasanna Tambe"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "admin",
+"w": "Dados de uso do Codex em larga escala; adoção de IA agêntica cresce rápido"
+}
+},
+{
+"key": "doi:10.1920/wp.ifs.1999.9927",
+"title": "Has technology hurt less skilled workers? A survey of the micro-econometric evidence",
+"url": "https://doi.org/10.1920/wp.ifs.1999.9927",
+"venue": "",
+"date": "2026-03-11",
+"authors": [
+"Lucy Chennells",
+"John Michael Van Reenen"
+],
+"abstract": "There is a growing concern in advanced countries that the position of less skilled workers has deteriorated, either through their ability to secure jobs and/or their ability to earn a decent wage. Some have linked this decline to modern computing technologies. This paper surveys the evidence on the effects of technical change on skills, wages and employment by examining the micro-econometric evidence (we take this to include studies at the industry, firm, plant and individual levels). We focus on over 70 empirical studies that have used direct measures of technology (rather than associating technology with a residual time trend). We first point to three basic methodological problems relating to endogeneity, fixed effects and measurement. Our survey comes to the following tentative conclusions: (i) there is a strong effect of technology on skills in the cross section which appears reasonably robust to various econometric problems; (ii) there is a strong effect of diffusion of technologies on wages in the cross section which is not robust to endogeneity and fixed effects; (iii) at the firm level product innovations appear to raise employment growth, but there is no clear evidence of ",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [
+"John Van Reenen"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "review",
+"w": "Survey de evidência microeconométrica sobre tecnologia, skills e salários"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2023.04127",
+"title": "Collaborative Work Management Technologies and Managerial Intensity in U.S. Corporations: An Examination",
+"url": "https://doi.org/10.1287/mnsc.2023.04127",
+"venue": "Management Science",
+"date": "2026-03-20",
+"authors": [
+"Piyush Gulati",
+"Arianna Marchetti",
+"Phanish Puranam"
+],
+"abstract": "Do digital technologies reinforce managerial hierarchies or, instead, make them less relevant? We propose that the answer to this question depends on the nature of the technology: specifically, its relative impact on managers’ capacity to supervise and on subordinates’ need for supervision. Applying this framework to collaborative work management (CWM) technologies that facilitate real-time collaboration, communication, and task coordination, we predict that the adoption of such technologies should reduce managerial intensity and increase decentralization in organizations. To test this prediction, we use a difference-in-differences design on a novel data set built from over 26 million job listings (Lightcast) and over 20 million social profiles (Revelio) matched to 3,017 U.S. public firms in Compustat, which we track over the period from 2010 to 2019. We find that over the observation window, CWM technology adopters show a 3% reduction in managerial intensity and a 5%–7% increase in nonmanagerial skills linked to decentralization in their job postings in the years following adoption. The pattern of results is robust to a battery of validations, alternative measures, and specificati",
+"score": 8,
+"theme": "leadership",
+"region": "",
+"watch": [
+"Phanish Puranam"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "admin",
+"w": "DiD com 26M vagas e 20M perfis; tecnologias colaborativas reduzem intensidade gerencial"
+}
+},
+{
+"key": "doi:10.1007/s11301-025-00580-y",
+"title": "Artificial Intelligence (AI) in human resource management (HRM): a systematic review of its dual impact on diversity, equity, and inclusion (DEI)",
+"url": "https://doi.org/10.1007/s11301-025-00580-y",
+"venue": "Management Review Quarterly",
+"date": "2026-01-08",
+"authors": [
+"Rawia Fuad Naoum",
+"Tamás Szakadáti",
+"Gábor Balogh"
+],
+"abstract": "Artificial Intelligence (AI) is transforming human resource management (HRM), introducing new efficiencies in recruitment, evaluation, and decision-making. However, its effect on diversity, equity, and inclusion (DEI) remains debated. This systematic literature review (SLR) compiles findings from 43 peer-reviewed articles published between 2016 and 2024 to critically assess AI’s dual role in HRM as both a potential promoter of fairness and a source of embedded bias. Rooted in ethical principles like fairness and accountability, organizational viewpoints such as HRM implementation challenges and best practices, and technological factors including algorithmic transparency and data quality, this review highlights four main themes: (1) AI’s ability to improve standardization, objectivity, and accessibility in HR processes; (2) risks related to algorithms and data that could perpetuate systemic bias and lessen accountability; (3) the human, data, and algorithmic origins of these issues; and (4) strategies for mitigation including participatory design, explainability, human oversight, and ethical governance. Despite growing interest in AI integration within HRM, previous studies have mos",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de 43 artigos sobre IA em RH e vieses em DEI"
+}
+},
+{
+"key": "doi:10.1920/wp.ifs.2001.0120",
+"title": "Evaluating the employment impact of a mandatory job search assistance program",
+"url": "https://doi.org/10.1920/wp.ifs.2001.0120",
+"venue": "",
+"date": "2026-03-11",
+"authors": [
+"Richard W. Blundell",
+"Mónica Costa Dias",
+"Costas Meghir",
+"John Michael Van Reenen"
+],
+"abstract": "This paper is an evaluation of the British labor market program the New Deal for the Young Unemployed using administrative panel data on individuals between 1982 and 1999. This mandatory program involves extensive job assistance followed by various other options, including wage subsidies. We exploit the differential timing of the introduction of the program across regions as well as age-related eligibility rules to identify the program effect. Estimates of the employment effects of the mandatory job search assistance part of the program are presented using a variety of estimation techniques exploring combined difference in differences and matching procedures. Our key finding is that unemployed men are now 20% more likely to gain jobs than prior to the New Deal.",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [
+"John Van Reenen"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "quasi",
+"w": "DiD e matching com painel administrativo; 20% mais emprego"
+}
+},
+{
+"key": "doi:10.1037/apl0001318",
+"title": "What do assessment center ratings reflect? Consistency and heterogeneity in variance composition across multiple samples.",
+"url": "https://doi.org/10.1037/apl0001318",
+"venue": "Journal of Applied Psychology",
+"date": "2026-03-01",
+"authors": [
+"Pia V. Ingold",
+"Anna Luca Heimann",
+"Bettina Waller",
+"Simon Mats Breil",
+"Paul R. Sackett"
+],
+"abstract": "The question of what assessment centers' measure has remained a controversial topic in research for decades, with a recent increase in studies that (a) use generalizability theory and (b) acknowledge the effects of aggregating postexercise dimension ratings into higher level assessment center scores. Building on these developments, we used Bayesian generalizability theory and random-effects meta-analyses to examine the variance explained by assessment center components such as assessees, exercises, dimensions, assessors, their interactions, and the interrater reliability of AC ratings in 19 different assessment center samples from various organizations (N = 4,963 assessees with 272,528 observations). This provides the first meta-analytic estimates of these effects, as well as insight into the extent to which findings from previous studies generalize to assessment center samples that differ in measurement design, industry, and purpose, and how heterogeneous these effects are across samples. Results were consistent with previous trends in the ranking of variance explained by key AC components (with assessee main effects and assessee-exercise effects being the largest variance compone",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [
+"Paul R. Sackett"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "review",
+"w": "Meta-análise bayesiana de 19 amostras de assessment centers, N~5 mil"
+}
+},
+{
+"key": "doi:10.1016/j.hrmr.2026.101147",
+"title": "Reframing people analytics value creation: Balancing organizational performance and common good HRM values",
+"url": "https://doi.org/10.1016/j.hrmr.2026.101147",
+"venue": "Human Resource Management Review",
+"date": "2026-04-02",
+"authors": [
+"Steven McCartney",
+"Dana Minbaeva",
+"Sadhbh Crean",
+"Amy Fahy"
+],
+"abstract": "Existing literature often frames people analytics value creation through an inside-out lens, emphasizing how people analytics can optimize workforce processes and improve organizational performance through data-driven decision-making. However, this perspective overlooks the growing importance of HRM practices adopting an outside-in approach to address common good HRM values and broader societal challenges, as outlined by the United Nations Sustainable Development Goals. This paper bridges these two perspectives by mobilizing Chadwick's theoretical depiction of human capital rents to reconceptualize people analytics value creation as a dual orientation that simultaneously addresses value capture, linked to organizational performance outcomes, and human capital value in use, aligned with common good HRM values. To advance this reconceptualization, we introduce a novel people analytics value creation continuum illustrating how people analytics value is maximized when both orientations are addressed simultaneously, while also critically examining the inefficiencies and trade-offs that hinder optimal people analytics value creation. In doing so, this study advances existing theory in pe",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [
+"Dana Minbaeva"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "theory",
+"w": "Reconceituação teórica de valor em people analytics, sem validação"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2022.02622",
+"title": "Building Careers in Project-Based Organizations: Breadth, Fit, and the Path to Advancement",
+"url": "https://doi.org/10.1287/mnsc.2022.02622",
+"venue": "Management Science",
+"date": "2026-02-24",
+"authors": [
+"Federica De Stefano",
+"Matthew James Bidwell"
+],
+"abstract": "Project-based organizations allow employees in ostensibly similar roles to acquire very different experiences by working on different kinds of projects. We study how people build careers in these contexts, examining when employees choose to diversify their experience—both in terms of project content and collaborators—and how the resulting diversification affects their career advancement. Using longitudinal project data from a services organization, our results suggest that employees initially explore different kinds of work by moving across project types, but then go on to find their fit in a particular area. This process is quicker for high-performing employees and for those with longer tenure and more diverse collaborator networks. We also find that promotion rates and compensation are lower for employees who worked on a broader portfolio of content types and collaborators in the most recent year, but higher for employees who had worked on broader project portfolios in prior years. This paper was accepted by Lamar Pierce, organizations. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.02622 .",
+"score": 7,
+"theme": "pay_careers",
+"region": "",
+"watch": [
+"Matthew Bidwell"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "admin",
+"w": "Dados longitudinais de projetos e promoções em organização de serviços"
+}
+},
+{
+"key": "doi:10.5465/amj.2024.0338",
+"title": "Dynamic Demands versus Durable Skills: Career Dilemmas in Pharmaceutical R&D",
+"url": "https://doi.org/10.5465/amj.2024.0338",
+"venue": "Academy of Management Journal",
+"date": "2026-03-13",
+"authors": [
+"Shinjinee Chattopadhyay",
+"Shinjae Won",
+"Matthew James Bidwell"
+],
+"abstract": "Skill demands evolve over the course of individuals’ careers, as new roles demand different kinds of skills from previous jobs. Yet, skill portfolios can be slow to change. We posit that this tension between dynamic job demands and durable skills creates career dilemmas for building the right portfolio of skills for long-term success. Studying a group of scientists in the pharmaceuticals industry, we argue and find that while specialization helps scientists to advance faster initially, it holds scientists back once they reach managerial ranks where coordination skills are required. Within managerial ranks, scientists with broader experience will advance faster since their experience will develop broader knowledge and more diverse social capital, which in turn will help them build coordination skills. While we find some evidence that employees try to adapt to these changing needs over their careers, such efforts to adapt are insufficient. Instead, we find that the level of specialization acquired while working as a scientist continues to influence promotion rates after people are promoted into management. We thus show that a skill portfolio built to help advancement at one stage of ",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [
+"Matthew Bidwell"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "admin",
+"w": "Dados de cientistas farmacêuticos; especialização versus coordenação na carreira"
+}
+},
+{
+"key": "doi:10.1162/rest.a.1866",
+"title": "Return to Office and the Tenure Distribution",
+"url": "https://doi.org/10.1162/rest.a.1866",
+"venue": "The Review of Economics and Statistics",
+"date": "2026-09-08",
+"authors": [
+"David Van Dijcke",
+"Florian F. Gunsilius",
+"Austin L. Wright"
+],
+"abstract": "Debates over return-to-office mandates have intensified since the COVID-19 pandemic ended, though their economic implications remain poorly understood. Using large-scale resume data, we analyze how these policies affect employee tenure and seniority at three large U.S. tech companies: Microsoft, SpaceX, and Apple. Employing a distributional synthetic controls framework, we estimate a reduction in tenure and seniority at firms returning to the office. We extend the framework with a functional bootstrap procedure and prove its validity for constructing uniform confidence bands. Return-to-office mandates appear to drive senior employees away, posing a risk to firm productivity and innovation.",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "quasi",
+"w": "Controles sintéticos distribucionais com currículos de três big techs"
+}
+},
+{
+"key": "doi:10.1037/apl0001360",
+"title": "The implications of pay range transparency on job application preferences and negotiations.",
+"url": "https://doi.org/10.1037/apl0001360",
+"venue": "Journal of Applied Psychology",
+"date": "2026-11-01",
+"authors": [
+"Alice J. Lee",
+"Tae‐Youn Park",
+"Sungyong Chang"
+],
+"abstract": "Pay range transparency laws, which require employers to disclose salary ranges in job postings, have gained traction as a strategy for narrowing the gender pay gap by strengthening workers' access to pay information. However, these policies often give employers considerable latitude in setting how wide or narrow those ranges are, raising questions about whether certain implementations might inadvertently sustain-or even exacerbate-existing wage disparities. Our research addresses this issue by examining how the width of disclosed pay ranges influences women's and men's job application and negotiation behaviors and whether providing more clarity around typical salary outcomes can mitigate these unintended consequences. Across four studies-encompassing a large archival data set (Study 1), surveys and field experiments with prospective and actual job seekers (Studies 2 and 3), and an experimental intervention (Study 4)-we consistently find that women exhibit a stronger preference for jobs with narrower pay ranges than men, largely driven by women's higher risk aversion. Moreover, choosing narrower pay ranges is associated with less assertive negotiation behaviors, suggesting a path th",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 8,
+"e": "rct",
+"w": "Quatro estudos com experimentos de campo sobre transparência salarial"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2608.12236",
+"title": "How Organizations Use AI: Evidence from ChatGPT",
+"url": "https://doi.org/10.48550/arxiv.2608.12236",
+"venue": "arXiv",
+"date": "2026-08-12",
+"authors": [
+"Aaron Chatterji",
+"David Holtz",
+"Neel Rakholia",
+"Prasanna B. Tambe",
+"Gawesha Weeratunga"
+],
+"abstract": "We study how organizations use frontier generative AI by linking ChatGPT Enterprise account records to usage, worker roles, task classifications, and public-company financial data through March 2026. These linked data enable a privacy-preserving analysis of adoption, worker roles, and message-level tasks at scale: for instance, the worker-level sample we analyze at the six-month adoption horizon includes over 1,500 organizations and over 17 million messages. We document four facts about enterprise AI adoption and use. First, ChatGPT Enterprise usage has grown rapidly due to a combination of new firm adoption and growing intensity among existing adopters. Second, U.S.-based public company adoption is concentrated among larger, more valuable, and more R&D- and SG&A-intensive firms. Third, active use within adopting firms spans job functions and seniority levels, with especially high usage intensity among early-career workers. Fourth, ChatGPT Enterprise usage encompasses a broad range of knowledge work tasks, including writing, technical work, communication, and information synthesis. In aggregate, these results suggest that firms differ widely in the speed, breadth and purpose of the",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Prasanna Tambe"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "admin",
+"w": "17 milhões de mensagens ligadas a 1.500 organizações; adoção de IA"
+}
+},
+{
+"key": "doi:10.1093/restud/rdag057",
+"title": "Spatial Implications of Telecommuting",
+"url": "https://doi.org/10.1093/restud/rdag057",
+"venue": "The Review of Economic Studies",
+"date": "2026-06-11",
+"authors": [
+"Matthew J. Delventhal",
+"А. И. Пархоменко"
+],
+"abstract": "We build a quantitative spatial model in which some workers can substitute on-site effort with work done from home. Ability and propensity to telecommute vary by education and industry. We quantify our framework to match the distribution of jobs and residents across 4,502 U.S. locations. Then, we simulate permanent increases in the attractiveness and productivity of telework that lead to greater adoption of hybrid and fully remote work. To validate our model, we show that our results are positively correlated with local changes in residents, jobs, and housing costs since 2019. The rise of telework results in a rich non-monotonic pattern of reallocations of residents and jobs within and across cities. Workers who can telecommute experience welfare gains, and those who cannot suffer losses. Broader access to jobs reduces wage inequality across residential locations, and heralds a partial reversal in the spatial concentration of talent and spending power known as the “Great Divergence”.",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "bench",
+"w": "Modelo espacial quantitativo calibrado para telework; ângulo macro"
+}
+},
+{
+"key": "doi:10.1093/qje/qjag006",
+"title": "Automation and Rent Dissipation: Implications for Wages, Inequality, and Productivity",
+"url": "https://doi.org/10.1093/qje/qjag006",
+"venue": "The Quarterly Journal of Economics",
+"date": "2026-01-30",
+"authors": [
+"Daron Acemoğlu",
+"Pascual Restrepo"
+],
+"abstract": "This article studies the effects of automation in a task-based economy in which some jobs pay workers rents—wages above workers' outside options. We show that automation targets high-rent tasks, dissipating rents, amplifying wage losses, and reducing within-group wage dispersion in exposed groups. This form of rent dissipation is inefficient and offsets the productivity gains from automation. Using U.S. data from 1980 to 2016, we find evidence of sizable rent dissipation and reduced within-group wage dispersion due to automation. Automation accounts for 52% of the increase in between-group inequality since 1980, with rent dissipation explaining one-fifth of this total. Our estimates imply that inefficient rent dissipation has offset 60%–90% of the productivity gains from automation over this period.",
+"score": 7,
+"theme": "pay_careers",
+"region": "",
+"watch": [
+"Daron Acemoglu"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "Dados dos EUA 1980-2016; automação, rendas e desigualdade salarial"
+}
+},
+{
+"key": "doi:10.1073/pnas.2535868123",
+"title": "Persuading large language models to comply with objectionable requests",
+"url": "https://doi.org/10.1073/pnas.2535868123",
+"venue": "Proceedings of the National Academy of Sciences",
+"date": "2026-05-19",
+"authors": [
+"Lennart Meincke",
+"Dan Shapiro",
+"Angela Lee Duckworth",
+"Ethan Mollick",
+"Lilach Mollick",
+"Christophe Van den Bulte"
+],
+"abstract": "Are large language models (LLMs) susceptible to the same persuasive appeals as humans? We tested whether classic persuasion principles (authority, commitment, liking, reciprocity, scarcity, social proof, and unity) could induce three widely used LLMs (GPT-5 mini, Claude Haiku 4.5, and Gemini 3 Flash) to comply with requests to assist with the synthesis of regulated substances. Across 126,000 conversations, persuasion principles increased compliance from 35.3% (at baseline) to 51.3% (using any principle). Although LLMs are not human, these findings underscore their parahuman (i.e., humanlike) nature and reveal the risk of manipulation by malicious users seeking to circumvent safety guardrails.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Ethan Mollick"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "rct",
+"w": "126 mil conversas testando persuasão em LLMs; segurança de IA"
+}
+},
+{
+"key": "doi:10.1177/2755323x261427048",
+"title": "AI-Powered Lawyering: AI Reasoning Models, Retrieval Augmented Generation, and the Future of Legal Practice",
+"url": "https://doi.org/10.1177/2755323x261427048",
+"venue": "Journal of law & empirical analysis.",
+"date": "2026-04-09",
+"authors": [
+"Daniel B. Schwarcz",
+"Sam Manning",
+"J.C. Prescott",
+"Patrick Barry",
+"David R. Cleveland",
+"Beverly Rich"
+],
+"abstract": "Generative AI is set to transform the legal profession, though its most promising uses and ultimate effects are still unclear. While AI models like GPT-4 improve efficiency, they can also “hallucinate” and may undermine legal judgment, particularly in complex tasks typically handled by skilled lawyers. This article examines two emerging AI innovations that may mitigate these concerns: Retrieval Augmented Generation (RAG), which grounds AI-powered analysis in legal sources, and AI reasoning models, which structure complex reasoning before generating output. We conduct the first randomized controlled trial assessing these technologies, assigning upper-level law students to complete legal tasks using a RAG-powered legal AI tool (Vincent AI, 2024), an AI reasoning model (OpenAI’s o1-preview), or no AI. We find that both AI tools significantly enhance legal work quality, a marked contrast with previous research examining older large language models like GPT-4. Moreover, these newer models appear to maintain the efficiency benefits associated with older AI technologies. Our findings also show that these AI tools significantly boost productivity in five out of six tested legal tasks, with",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "rct",
+"w": "RCT com estudantes de direito comparando ferramentas de IA"
+}
+},
+{
+"key": "doi:10.1093/qje/qjag040",
+"title": "Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses",
+"url": "https://doi.org/10.1093/qje/qjag040",
+"venue": "The Quarterly Journal of Economics",
+"date": "2026-07-18",
+"authors": [
+"Bo Cowgill",
+"Brandon Freiberg",
+"Evan Penniman Starr"
+],
+"abstract": "We study worker noncompete clauses in a large field experiment with two finance firms. Across ~14,000 job offers to freelance recruiters on short-term contracts, we randomize wages and the presence, salience, and duration of noncompetes (all contracts also included a nondisclosure agreement). Removing a noncompete increases mobility between competing employers by 36%–52% and raises workers’ total earnings from the two firms by 12%–17%. We find no evidence—rejecting even small effects—that removing noncompetes generates secret leakage. We also find no evidence that workers choose noncompete jobs for higher pay. Many workers appear unaware of noncompetes before firms’ post-employment communication. The results align with a model of inattention and uncertainty about enforcement.",
+"score": 8,
+"theme": "hiring",
+"region": "",
+"watch": [
+"Bo Cowgill"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 9,
+"e": "rct",
+"w": "Experimento de campo com 14 mil ofertas sobre cláusulas de noncompete"
+}
+},
+{
+"key": "doi:10.1002/hrm.70061",
+"title": "The Disquiet of Quiet Quitting: Definitional Clarity, Theoretical Pathways, and Future Research",
+"url": "https://doi.org/10.1002/hrm.70061",
+"venue": "Human Resource Management",
+"date": "2026-02-18",
+"authors": [
+"Σόλων Μαγρίζος",
+"Lauren E. Aydinliyim",
+"Dorothea Roumpi",
+"Caitlin M. Porter",
+"J. G. Phillips",
+"John E. Delery"
+],
+"abstract": "Quiet quitting (QQ) has emerged as a prominent topic in both popular press and academic research, reflecting shifts in employees' engagement, effort allocation, and responses to contemporary work pressures. This review synthesizes findings from 11 papers published in a recent Special Issue on The Disquiet of Quiet Quitting. We integrate conceptual, empirical, and methodological insights from these papers and other recent literature to clarify what QQ is and what it is not. We highlight the multidimensional nature of QQ, distinguishing deliberate and passive forms, reactive versus value‐driven motivations, and variations in scope and behavioral expression. We then propose a 2 × 2 typology of quiet quitters (Protesters, Faders, Boundary Setters, and Indifferent Drifters) constructed along two key dimensions, intentionality and motivational basis, to capture the heterogeneity of behaviors and underlying motives. Finally, we discuss implications for theory, measurement, and practice, emphasizing how QQ signals broader dynamics in employment relationships, including fairness, well‐being, and sustainable engagement, and we identify directions for future research, including longitudinal, ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "review",
+"w": "Revisão conceitual de 11 artigos sobre quiet quitting e tipologia"
+}
+},
+{
+"key": "doi:10.3386/w35401",
+"title": "Baby Busts and Growth Booms: Demographic Change and the Macroeconomy",
+"url": "https://doi.org/10.3386/w35401",
+"venue": "National Bureau of Economic Research",
+"date": "2026-07-01",
+"authors": [
+"Daron Acemoğlu",
+"David Autor",
+"Keelan Beirne",
+"Andrew J Scott"
+],
+"abstract": "The secular decline in birth rates across the globe over the past seven decades has slowed population growth, raised average ages, and reshaped labor markets and the macroeconomy.Contrary to the widespread expectation that these trends hamper economic growth, we find lower birth rates are associated with higher growth in GDP per working-age adult across countries and higher wage growth across US commuting zones, with no negative impact on aggregate GDP or earnings.These patterns are not explained by educational upgrading, rising female labor force participation, the declining importance of agriculture, or neoclassical-Solow mechanisms.We argue that they reflect the endogenous, labor-saving response of technology to the scarcity of younger workers.Consistent with this interpretation, countries and regions with lower birth rates exhibit more labor-saving patents and growing high-tech activity.There is also higher TFP growth across countries and industries.Exploiting cross-country variation in WWII military and civilian deaths, we find that declines in younger population, rather than population size per se, drive our results.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Daron Acemoglu",
+"David Autor"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 7,
+"e": "quasi",
+"w": "Queda de natalidade e crescimento; identificação com mortes na 2ª Guerra"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.07017",
+"title": "How Do Different Remote Work Arrangements Impact Employee Job Satisfaction and Retention?",
+"url": "https://doi.org/10.1287/mnsc.2024.07017",
+"venue": "Management Science",
+"date": "2026-02-13",
+"authors": [
+"Christos Andreas Makridis",
+"Jason D. Schloetzer"
+],
+"abstract": "We study how working remotely impacts employee job satisfaction and retention using unique data on the remote work arrangements of nearly 165,000 employees. Our findings show that the positive association between working remotely more frequently and job satisfaction diminishes substantially after controlling for employee compensation, occupation, demographics, and workplace characteristics (e.g., feeling appreciated at work). Moreover, remote work is associated with a higher intention to leave the firm after considering these other factors. This suggests that workplace characteristics beyond remote work have a more consequential association with job satisfaction and retention than remote work itself. Using variation in job tasks and worker–manager relationships, we find that working remotely more frequently confers higher job satisfaction for employees in low-coordination roles or those who perceive their direct supervisors unfavorably. The findings suggest that remote work plays a more limited role in shaping job satisfaction and retention relative to broader workplace characteristics, and that its value depends on how well work arrangements are matched to employees’ strengths, co",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "admin",
+"w": "Dados de 165 mil empregados sobre remoto, satisfação e retenção"
+}
+},
+{
+"key": "doi:10.1016/j.chbr.2026.100941",
+"title": "Technostress and employee well-being: A systematic review of empirical evidence",
+"url": "https://doi.org/10.1016/j.chbr.2026.100941",
+"venue": "Computers in Human Behavior Reports",
+"date": "2026-01-22",
+"authors": [
+"Ezgi Mansuroğlu",
+"Andrew Paul Smith"
+],
+"abstract": "As technology continues to reshape industries, understanding the effects of technostress on employee well-being becomes imperative. While research on technostress has grown substantially in recent years, existing studies are often fragmented in scope and limited in cross-contextual depth. In this systematic review, we synthesized the findings of 201 (after the double screening) peer-reviewed empirical studies, primarily retrieved from the PubMed, Scopus, and Web of Science databases, to map technostress along the four analytical dimensions: its core components, its impact on well-being, key mediating and moderating variables, and contextual variations. Our findings demonstrated that the relationship between technostress and employee well-being has been most frequently studied in Germany, Italy, and India, with education and healthcare emerging as the most commonly examined sectors. Furthermore, techno-overload and techno-invasion were the most reported technostressors linked to adverse well-being indicators across the studies. Our analysis revealed an underrepresentation of cross-national and cross-cultural comparisons in the existing literature. Drawing on these insights, this rev",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "review",
+"w": "Revisão sistemática de 201 estudos sobre tecnostresse e bem-estar"
+}
+},
+{
+"key": "doi:10.3389/fpubh.2026.1857108",
+"title": "Impact of artificial intelligence and work digitalization on mental health and occupational well-being: a scoping review",
+"url": "https://doi.org/10.3389/fpubh.2026.1857108",
+"venue": "Frontiers in Public Health",
+"date": "2026-06-01",
+"authors": [
+"Óscar Rabasa-Martín",
+"Begoña Martínez‐Jarreta"
+],
+"abstract": "Background: The rapid expansion of artificial intelligence (AI) and work digitalization is transforming occupational environments, introducing new psychosocial risks while also creating potential opportunities for improving workplace well-being. However, current evidence remains fragmented and heterogeneous. Objective: This scoping review aimed to map and synthesize the existing scientific and grey literature on the impact of AI and work digitalization on mental health, well-being, and psychosocial risks among adult workers. Methods: A scoping review was conducted following the Arksey and O'Malley framework and reported according to PRISMA-ScR guidelines. A comprehensive search was performed across multiple databases (PubMed, Scopus, Web of Science, ScienceDirect, Scielo, LILACS, Dialnet, and Google Scholar) and grey literature sources from international occupational health organizations. Studies published between 2016 and 2026 in English and Spanish were included. A total of 43 sources (23 scientific articles and 20 grey literature documents) were analyzed using thematic synthesis. The review explicitly distinguishes between AI-specific occupational exposures and broader digitaliz",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Scoping review de 43 fontes sobre IA e saúde mental ocupacional"
+}
+},
+{
+"key": "doi:10.20955/wp.2026.003",
+"title": "Mind the Gap: AI Adoption in Europe and the US",
+"url": "https://doi.org/10.20955/wp.2026.003",
+"venue": "",
+"date": "2026-01-01",
+"authors": [
+"Alexander Bick",
+"Jonas Jessen",
+"Nicola Fuchs‐Schündeln",
+"Adam Blandin",
+"David J Deming"
+],
+"abstract": "This paper combines international evidence from worker and firm surveys conducted in 2025 and 2026 to document large gaps in AI adoption, both between the US and Europe and across European countries. Cross-country differences in worker demographics and firm composition account for an important share of these gaps. AI adoption, within and across countries, is also closely linked to firm personnel management practices and whether firms actively encourage AI use by workers. Micro-level evidence suggests that AI generates meaningful time savings for many workers. At the macro level, in recent years industries with higher AI adoption rates have experienced faster productivity growth. While we do not establish causality, this relationship is statistically significant and similar in magnitude in Europe and the US. We do not find clear evidence that industry-level AI adoption is associated with employment changes. We discuss limitations of existing data and outline priorities for future data collection to better assess the productivity and labor market effects of AI.",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"David J. Deming"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "survey",
+"w": "Surveys internacionais de adoção de IA; correlações sem causalidade"
+}
+},
+{
+"key": "doi:10.1162/rest_a_01384",
+"title": "The Anatomy of a Hospital System Merger: The Patient Did Not Respond Well to Treatment",
+"url": "https://doi.org/10.1162/rest_a_01384",
+"venue": "The Review of Economics and Statistics",
+"date": "2026-01-01",
+"authors": [
+"Martin Gaynor",
+"Adam Sacarny",
+"Raffaella Sadun",
+"Chad Syverson",
+"Shruthi Venkatesh"
+],
+"abstract": "Despite the continuing U.S. hospital merger wave, it remains unclear how mergers change, or fail to change, hospital behavior and performance. We open the black box of hospital practices through a megamerger between two for-profit chains. Benchmarking the merger's effects against the acquirer's stated aims, we show they achieved some of their goals, harmonizing electronic medical records and sending managers to target hospitals. Postacquisition managerial processes were similar across the merged chain. However, these interventions failed to drive detectable gains in performance. Our findings demonstrate the importance of organizations for merger research in health care and the economy more generally.",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [
+"Raffaella Sadun"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "admin",
+"w": "Megafusão hospitalar e práticas gerenciais; tema indireto"
+}
+},
+{
+"key": "doi:10.1257/pandp.20261033",
+"title": "The Adoption of Industrial AI in America",
+"url": "https://doi.org/10.1257/pandp.20261033",
+"venue": "AEA Papers and Proceedings",
+"date": "2026-05-01",
+"authors": [
+"Kristina McElheran",
+"Mu-Jeung Yang",
+"Zachary Kroff",
+"Erik Brynjolfsson"
+],
+"abstract": "Using a mandatory, purpose-designed Census Bureau survey of approximately 28,500 establishments, we provide new evidence on industrial AI adoption in US manufacturing. Despite widespread digitization, only 22.8 percent of plants report any AI use as of 2021; intensity-weighted adoption is far lower. Adoption correlates with more-recent digital infrastructure—cloud computing and predictive analytics—rather than legacy on-premises IT or descriptive analytics. Structured production-process management and size are significant predictors. Cost and lack of applicable use case are the most cited barriers, followed by expertise. Prior productivity does not predict use, pointing to organizational readiness as a key barrier to AI diffusion.",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "survey",
+"w": "Censo de 28,5 mil estabelecimentos sobre adoção de IA industrial"
+}
+},
+{
+"key": "doi:10.3386/w35546",
+"title": "Time Travel on Professional Profiles",
+"url": "https://doi.org/10.3386/w35546",
+"venue": "National Bureau of Economic Research",
+"date": "2026-07-01",
+"authors": [
+"Nicholas Bloom",
+"Gideon Moore",
+"Lisa Simon",
+"Caelan Wilkie-Rogers"
+],
+"abstract": "Economists increasingly use professional profile data to reconstruct employment histories and measure skill supply.We show that these records are not fixed historical snapshots, but mutable accounts that workers revise over time.Using monthly vintages of Revelio Labs data from 2020-2026, we document that 19.7 percent of established U.S. LinkedIn users retroactively edit the title or description of a job they have already left.These \"time-travel\" edits are closely tied to labor market transitions: around such edits, workers are much more likely to change employers as compared to later-editing users.This mutability can bias historical measures of skills, but it also reveals workers' beliefs about which skills are in demand.Retroactive edits show sharp post-2022 increases in AI-related language and recent reductions in work-from-home and DEI language.Finally, LLM-associated writing markers surge after ChatGPT, especially among less-educated groups and MBAs from lower-ranked programs, revealing heterogeneous AI-assisted profile editing.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [
+"Nicholas Bloom"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "admin",
+"w": "Vintages mensais de Revelio; edições retroativas revelam demanda de skills"
+}
+},
+{
+"key": "doi:10.1146/annurev-economics-092325-041649",
+"title": "What Makes New Work Different from More Work?",
+"url": "https://doi.org/10.1146/annurev-economics-092325-041649",
+"venue": "Annual Review of Economics",
+"date": "2026-05-26",
+"authors": [
+"David Autor",
+"Caroline Chin",
+"Anna Salomons",
+"Bryan Seegmiller"
+],
+"abstract": "We study the role of expertise in new work—novel occupational roles that emerge as technological and economic conditions evolve—using newly available 1940 and 1950 Census Complete Count files and confidential American Community Survey data from 2011 to 2023. We show that new work is systematically distinct from simply more work in existing occupations in four respects. First, it attracts workers with distinct characteristics: New work is disproportionately performed by younger and more educated workers, even within detailed occupation-industry cells. Second, new work commands economically significant wage premiums that persist beyond workers’ initial entry into new work, consistent with returns to scarce, specialized expertise rather than temporary market disequilibrium. Third, these premiums decline across vintages as expertise diffuses, with “newer” new work commanding larger premiums than older new work. Fourth, the emergence of new work can be traced to specific demand shocks in particular locations and time periods, suggesting that expertise formation responds systematically to economic opportunities. These findings suggest that new work serves as a countervailing force to aut",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"David Autor"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "Census e ACS completos; prêmios salariais e difusão de expertise"
+}
+},
+{
+"key": "doi:10.1371/journal.pone.0340642",
+"title": "The national survey of academic researchers: New facts and data",
+"url": "https://doi.org/10.1371/journal.pone.0340642",
+"venue": "PLoS ONE",
+"date": "2026-02-19",
+"authors": [
+"Kyle Roy Myers",
+"Wei Yang Tham",
+"Jerry G. Thursby",
+"Marie Thursby",
+"Nina Cohodes",
+"Karim R. Lakhani"
+],
+"abstract": "We introduce a new survey of professors at roughly 150 of the most research-intensive institutions of higher education in the US. We document seven new features of how research-active professors are compensated, how they spend their time, and how they perceive their research pursuits, which we organize under three themes. Earnings and inequality: (1) there is more inequality in earnings within fields than there is across fields; (2) institutions, ranks, tasks, and sources of earnings can account for roughly half of the total variation in earnings; (3) there is significant variation across fields in the correlations between earnings and different kinds of research output, but these account for a small amount of earnings variation. Research productivity and inputs: (4) measuring professors' productivity in terms of output-per-year versus output-per-research-hour can yield substantial differences; (5) professors' beliefs about the riskiness of their research are best predicted by their fundraising intensity, their risk aversion in their personal lives, and the degree to which their research involves generating new hypotheses. Research output choices: (6) older and younger professors h",
+"score": 5,
+"theme": "pay_careers",
+"region": "",
+"watch": [
+"Karim R. Lakhani"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "survey",
+"w": "Survey novo com fatos descritivos, mas mercado acadêmico distante do RH corporativo"
+}
+},
+{
+"key": "doi:10.1038/s41467-026-78689-1",
+"title": "Evidence and measures of the digital usage divide from 40 million Windows devices",
+"url": "https://doi.org/10.1038/s41467-026-78689-1",
+"venue": "Nature Communications",
+"date": "2026-11-09",
+"authors": [
+"Mayana Pereira",
+"Shane Greenstein",
+"Raffaella Sadun",
+"Prasanna B. Tambe",
+"Lucia Ronchi Darre",
+"Tammy Glazer"
+],
+"abstract": "Digital infrastructure is crucial for economic opportunities, social inclusion, and civic participation, but benefits remain unevenly distributed. Existing measures, such as computer ownership and broadband adoption, do not capture the depth and variety of digital use. We develop measures using Microsoft telemetry collected during operating system updates from 40 million Windows devices in U.S. households. These measures provide greater coverage and granularity than existing commercial or government surveys. Device representations at the ZIP-code level reveal substantial variation in usage, including an urban-rural divide and disparities within narrowly defined Metropolitan Statistical Areas. Income and education correlate with these differences. These effects are large and suggest that digital usage gaps extend beyond the local availability of essential IT infrastructure. The findings call for interventions that complement infrastructure access with support for technology use and skills development. The resulting indices are publicly available to support future research on digital inequality.",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [
+"Prasanna Tambe",
+"Raffaella Sadun"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "admin",
+"w": "Telemetria de 40 mi de dispositivos mede divisão de uso e skills digitais"
+}
+},
+{
+"key": "doi:10.3386/w35987",
+"title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+"url": "https://doi.org/10.3386/w35987",
+"venue": "National Bureau of Economic Research",
+"date": "2026-11-01",
+"authors": [
+"Jennifer Wang",
+"Andreas Alexander Haupt",
+"Isaac A. Robinson",
+"Phil Lewis",
+"Erik Brynjolfsson",
+"Diyi Yang"
+],
+"abstract": "Understanding how AI is reshaping work requires an accurate account of the tasks workers perform.Workers are often the first to see how their jobs are changing, as new responsibilities and tools often appear in everyday work before these changes reach formal descriptions.Interviews with workers can help capture these emerging changes in job tasks.Yet existing methods support standardized ratings across workers, while open-ended conversations with workers remain costly to collect and synthesize at scale.We introduce the Stanford Task Network (TaskNet), an occupational taxonomy grounded directly in workers' accounts of their everyday work.To construct TaskNet, we develop a mixed-initiative system that induces task inventories directly from workers.The system conducts interviews, standardizes reports into individual task lists, and aggregates these lists into occupational task inventories.Applied to six occupations spanning a range of education requirements and AI exposure, our system interviews 132 workers and produces 202 task statements from 2726 reports, all of which were accepted by O*NET Center analysts, compared to roughly 65%of workers' write-in task suggestions collected thro",
+"score": 7,
+"theme": "learning",
+"region": "",
+"watch": [
+"Erik Brynjolfsson"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "bench",
+"w": "Inventário de tarefas de 132 entrevistas aceito por analistas O*NET"
+}
+},
+{
+"key": "doi:10.1016/j.labeco.2026.102970",
+"title": "An engine of (pay) growth? Productivity and wages in the UK auto industry",
+"url": "https://doi.org/10.1016/j.labeco.2026.102970",
+"venue": "Labour Economics",
+"date": "2026-10-09",
+"authors": [
+"Agnes Norris Keiller",
+"Tim Obermeier",
+"Andreas Teichgraeber",
+"John Michael Van Reenen"
+],
+"abstract": "To what extent do identical workers in an industry benefit from productivity growth in the same industry? We study this question in the context of the UK auto industry which experienced a thirteen-fold increase in output per worker between 1980 and 2018. Over the same period, auto workers saw substantially stronger hourly wage growth than workers in other manufacturing industries. Controlling for unobserved worker heterogeneity, the auto wage premium over other manufacturing workers doubled from 8% in the 1980s to 17% in the 2010s, while the manufacturing premium over the rest of the economy remained roughly stable at 5%. Interpreted through the lens of a rent sharing model, we estimate that 63% of the increase in the raw firm-level auto wage premium can be accounted for by strong productivity growth. In contrast, differential bargaining power between auto workers cannot account for these changes.",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [
+"John Van Reenen"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 7,
+"e": "admin",
+"w": "Dados administrativos e modelo de rent sharing; nível indústria, não RH"
+}
+},
+{
+"key": "doi:10.1016/j.hrmr.2026.101151",
+"title": "Humanistic human resource management for digital transformation: Addressing the challenges of AI advancement in the workplace",
+"url": "https://doi.org/10.1016/j.hrmr.2026.101151",
+"venue": "Human Resource Management Review",
+"date": "2026-04-25",
+"authors": [
+"Binhua (Eva) Huang",
+"Haiying Kang",
+"Elana Zur",
+"Lindie Hanyu Liang"
+],
+"abstract": "The rise of generative AI, such as ChatGPT, is transforming workplaces, society, and the environment. While these technologies enhance efficiency and competitiveness, they also threaten fundamental aspects of human dignity, such as privacy, autonomy, and fairness, and they pose risks to employee well-being and societal sustainability. Human resource management (HRM) plays a central role in guiding organizations through AI-driven transformations, balancing digital advancement with the protection of human centric values. However, current Sustainable HRM models are insufficient to address the unique challenges posed by generative AI. This paper introduces the Humanistic HRM model, which comprises three dimensions: dignity-facilitating HRM, well-being-enhancing HRM, and common-good-enabling HRM. This model aims to align technological progress with human-centered values, ensuring AI serves humanity rather than undermines it. Our study extends existing HRM theories by proposing a novel framework that integrates individual and societal concerns, with a particular emphasis on sustainability and ethical governance in AI-driven digital transformation. The Humanistic HRM model provides practi",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "theory",
+"w": "Framework conceitual humanista de HRM para IA, sem validação empírica"
+}
+},
+{
+"key": "doi:10.1371/journal.pone.0341315",
+"title": "Graduate grade inflation at a U.S. research-intensive university: A 22-year longitudinal analysis",
+"url": "https://doi.org/10.1371/journal.pone.0341315",
+"venue": "PLoS ONE",
+"date": "2026-03-25",
+"authors": [
+"Vivien Lee",
+"Nathan R. Kuncel",
+"Paul R. Sackett"
+],
+"abstract": "The phenomenon of grade inflation has been studied extensively at high school and undergraduate levels, yet little is known about its occurrence in graduate education. This study bridges this gap by examining graduate grade inflation using data from one U.S. research intensive university, covering two decades of admissions across 75 master's programs (N = 24,815) and 78 doctoral programs (N = 15,701). Relying on both linear and ordinal multilevel models, we investigated the presence of grade inflation and potential variations by degree level and individual academic programs at the program level. Our findings provide preliminary evidence for the presence of graduate grade inflation and suggest that the magnitudes differ across individual academic programs. There is also evidence showing that the trend of grade inflation significantly differed across master's and doctoral programs. This apparent inflation undermines the signaling value of grades for employers and admission decisions in the labor market and academic selection, as well as for research, feedback, and learning purposes. Future research should replicate our findings using multi-institutional samples and examine drivers of",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [
+"Paul R. Sackett"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "admin",
+"w": "Dados longitudinais de 22 anos, mas sobre notas acadêmicas, não RH"
+}
+},
+{
+"key": "doi:10.1145/3771553",
+"title": "LLMs as Mediators: Can They Diagnose Conflicts Accurately?",
+"url": "https://doi.org/10.1145/3771553",
+"venue": "ACM Journal on Computing and Sustainable Societies",
+"date": "2026-03-14",
+"authors": [
+"Özgecan Koçak",
+"Phanish Puranam",
+"Afşar Yegin"
+],
+"abstract": "Conflict mediation requires reliably distinguishing the sources of disagreement as stemming from differences in beliefs about what is true (causality) vs. differences in what is valued (morality). The consequences of misdiagnosis -such as deadlock or escalation of conflict- can be significant, particularly in contexts related to sustainability and ethical management. Contributing to the rapidly developing literature on the use of Large Language Models (LLMs) to mediate contentious human discussions, we develop a conflict diagnosis competence test for LLMs to assess if they can differentiate disagreements rooted in causal and moral disagreements. We use a vignette study to apply the test to OpenAI’s GPT-3.5 and GPT-4. We find that both LLMs have similar semantic understandings of the distinction between causal and evaluative (moral) sources of disagreement as humans and can reliably distinguish between them, with GPT-4 performing better than GPT-3.5. However, compared to humans, both models exhibit a tendency to overestimate the extent of causal disagreement and underestimate the extent of moral disagreement in situations that feature moral misalignment. We conclude by discussing th",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Phanish Puranam"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "Vignettes testam GPT em diagnosticar conflitos; mediação, não RH"
+}
+},
+{
+"key": "doi:10.1093/qje/qjag004",
+"title": "How Do You Identify a Good Manager?",
+"url": "https://doi.org/10.1093/qje/qjag004",
+"venue": "The Quarterly Journal of Economics",
+"date": "2026-01-21",
+"authors": [
+"Ben Weidmann",
+"Joe Vecci",
+"Farah Said",
+"Sonia R. Bhalotra",
+"Achyuta R. Adhvaryu",
+"Anant Nyshadham"
+],
+"abstract": "We introduce and validate a novel approach to identifying good managers. In a preregistered lab experiment, we causally identify managerial contributions by randomly assigning managers to teams and controlling for individual skill. We find that manager contributions are crucial for team success, and that people who self-select into management roles perform worse than randomly assigned managers. Managerial performance is strongly predicted by economic decision-making skill but not by demographic characteristics. Two validation studies support our experimental results. Participants who succeed in the lab receive more real-world promotions and, in a separate study of retail store managers, skill measures strongly predict store sales. A one standard deviation increase in manager quality increases annual per store sales by US$4.1 million (25% increase). Selecting managers on skills rather than demographic characteristics or the desire to lead could substantially improve organizational performance.",
+"score": 8,
+"theme": "leadership",
+"region": "",
+"watch": [
+"David J. Deming"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 8,
+"e": "rct",
+"w": "Experimento pré-registrado mais validações; skill prevê vendas da loja"
+}
+},
+{
+"key": "doi:10.1093/qje/qjag027",
+"title": "The Power of Proximity to Coworkers",
+"url": "https://doi.org/10.1093/qje/qjag027",
+"venue": "The Quarterly Journal of Economics",
+"date": "2026-05-12",
+"authors": [
+"Natalia Emanuel",
+"Emma Harrington",
+"Amanda Pallais"
+],
+"abstract": "How does proximity to coworkers affect training and productivity? We study software engineers at a Fortune 500 firm from 2019 to 2024, leveraging two shocks to proximity: the office closures in 2020 and the subsequent return-to-office mandates in 2022 and 2023. In both cases, co-located teams experienced bigger changes in proximity than distributed ones, facilitating difference-in-differences designs. We find that sitting near teammates increases coding feedback by 18.3% and improves code quality. Gains are concentrated among less-tenured and younger employees, who are building human capital. However, there is a trade-off: experienced engineers write less code when sitting near teammates. In national U.S. data, we find evidence that the rise of remote work has had scarring effects on young college graduates. In remotable jobs, young graduates’ unemployment rate increased relative to older graduates’ post-pandemic (2022–2024) compared to pre-pandemic (2017–2019), a pattern we do not observe in non-remotable jobs.",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "quasi",
+"w": "DiD com engenheiros de software; proximidade afeta feedback e qualidade"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2604.05172",
+"title": "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces",
+"url": "https://doi.org/10.48550/arxiv.2604.05172",
+"venue": "arXiv",
+"date": "2026-04-06",
+"authors": [
+"Xiangyi Li",
+"Kyoung Whan Choe",
+"Yimin Liu",
+"Xiaokun Chen",
+"C. Tao",
+"Bingran You"
+],
+"abstract": "Large language model (LLM) agents are increasingly deployed to automate productivity tasks (e.g., email, scheduling, document management), but evaluating them on live services is risky due to potentially irreversible changes. Existing benchmarks rely on simplified environments and fail to capture realistic, stateful, multi-service workflows. We introduce ClawsBench, a benchmark for evaluating and improving LLM agents in realistic productivity settings. It includes five high-fidelity mock services (Gmail, Slack, Google Calendar, Google Docs, Google Drive) with full state management and deterministic snapshot/restore, along with 44 structured tasks covering single-service, cross-service, and safety-critical scenarios. We decompose agent scaffolding into two independent levers (domain skills that inject API knowledge via progressive disclosure, and a meta prompt that coordinates behavior across services) and vary both to measure their separate and combined effects. Experiments across 6 models, 4 agent harnesses, and 33 conditions show that with full scaffolding, agents achieve task success rates of 39-64% but exhibit unsafe action rates of 7-33%. On OpenClaw, the top five models fall ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "Benchmark de agentes de produtividade em serviços simulados"
+}
+},
+{
+"key": "doi:10.1038/s41598-026-73957-y",
+"title": "AI in HRM: a unified model of AI capabilities and process efficiency for enhanced HRM effectiveness",
+"url": "https://doi.org/10.1038/s41598-026-73957-y",
+"venue": "Scientific Reports",
+"date": "2026-11-01",
+"authors": [
+"Aida Ahmed Zahrani"
+],
+"abstract": "Artificial intelligence (AI) is increasingly transforming human resource management (HRM) by supporting recruitment, training, performance management, workforce planning, talent analytics, and employee engagement. Nevertheless, limited evidence explains how different AI-enabled HRM practices contribute to process efficiency, decision-making, workforce agility, and overall HRM effectiveness. This study examined six AI-enabled HRM capabilities through an integrated Resource-Based View and Dynamic Capabilities Theory framework. The proposed model included AI in Recruitment and Selection, Training and Development, Performance Management, Strategic HR Planning, Talent Analytics and Retention, and Employee Engagement and Wellbeing. HR Process Efficiency, Decision-Making Accuracy, and Workforce Agility and Innovation were examined as organizational mechanisms contributing to Enhanced HRM Effectiveness. Data were collected through a cross-sectional survey of 256 h professionals from public-sector, private-sector, and higher-education settings in Saudi Arabia and analysed using partial least squares structural equation modelling. The findings showed that recruitment and performance-manageme",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "survey",
+"w": "Survey transversal PLS-SEM com 256 profissionais de RH"
+}
+},
+{
+"key": "doi:10.1111/1748-8583.70044",
+"title": "Mitigating Disability Bias in Hiring: The Role of Inclusion‐Focused Generative AI in Complex HR Decisions",
+"url": "https://doi.org/10.1111/1748-8583.70044",
+"venue": "Human Resource Management Journal",
+"date": "2026-03-11",
+"authors": [
+"Miles Min-Huei Yang"
+],
+"abstract": "This research investigates how inclusion‐focused generative AI (GAI), designed with diversity, fairness, and inclusion principles, mitigates disability bias in hiring—particularly under complex, cognitively demanding conditions. Drawing on Construal Level Theory, two experiments with HR professionals (N = 117; 238) compared standard, inclusion‐focused, and control conditions. Inclusion‐focused GAI significantly reduced bias by emphasizing job‐relevant competencies and lowering psychological distance. The study introduces a fairness‐oriented AI design that advances accountability and inclusion in HR systems, offering implications for equitable hiring, bias auditing, and the strategic use of ethical AI in talent acquisition.",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "rct",
+"w": "Dois experimentos com profissionais de RH reduzem viés de deficiência"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.05622",
+"title": "The Real Effects of Fair Workweek Laws on Work Schedules: Evidence from Los Angeles",
+"url": "https://doi.org/10.1287/mnsc.2024.05622",
+"venue": "Management Science",
+"date": "2026-06-10",
+"authors": [
+"Caleb Kwon",
+"Ananth Raman"
+],
+"abstract": "Fair Workweek Laws (FWLs) aim to improve the predictability and stability of employee work schedules. They do so by requiring employers to provide work schedules with sufficient advance notice or to compensate workers when such notice is not provided. Despite the growing number of U.S. jurisdictions with active FWLs (currently more than 10), there is little empirical evidence of their effects on work schedules. This paper examines the impact of Los Angeles’s FWL on the predictability and stability of work schedules, using administrative data from seven independent retail chains operating in Los Angeles, CA. We find that Los Angeles’s FWL increased the predictability of work schedules: shift-level advance notice increased by 8.6% in the log specification, and the levels specification implies an increase of 1.31 days per shift. Furthermore, the share of shifts scheduled with less than 14 days’ notice decreased from 49.9% to 34.8%. However, we find that the law did not improve several commonly used measures of schedule stability, such as consistency in shift start times and hours worked. Our analysis also does not find evidence to support several commonly raised concerns about FWLs, i",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "quasi",
+"w": "Dados administrativos de 7 redes; lei aumentou previsibilidade de escalas"
+}
+},
+{
+"key": "doi:10.5089/9798229028196.006",
+"title": "Bridging Skill Gaps for the Future: New Jobs Creation in the AI Age",
+"url": "https://doi.org/10.5089/9798229028196.006",
+"venue": "IMF staff discussion note",
+"date": "2026-01-01",
+"authors": [
+"Florence Jaumotte",
+"Jaden Kim",
+"David Köll",
+"Elmer Li",
+"Longji Li",
+"Giovanni Melina"
+],
+"abstract": "The demand and supply of new skills—especially in IT and AI—are reshaping labor markets, impacting wages and hiring. About one in ten job vacancies in advanced economies demands at least one new skill, often appearing first in the United States. The incidence is about half in emerging economies. These skills boost average wages and employment but deepen polarization, mostly benefitting high- and—through higher consumption of services—low-skilled workers, and potentially contributing to the shrinking of the middle class. Vacancies demanding AI skills post higher wages, but the diffusion of such skills is linked to lower employment in occupations with high exposure and low complementarity with AI, posing challenges for the youth. A Skill Imbalance Index reveals wide cross-country differences. Economies facing strong demand should prioritize education and reskilling, while those facing strong supply should foster firms’ absorption through innovation and access to credit.",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "regulator",
+"w": "Nota do FMI com índice de desequilíbrio de skills e vacâncias"
+}
+},
+{
+"key": "doi:10.1016/j.hrmr.2026.101150",
+"title": "The evolution of HR governance: A systematic review and integrative framework for future research",
+"url": "https://doi.org/10.1016/j.hrmr.2026.101150",
+"venue": "Human Resource Management Review",
+"date": "2026-04-20",
+"authors": [
+"Ali Pirannejad",
+"Abbas Nargesian",
+"Parisa Dehghani"
+],
+"abstract": "Human resource (HR) governance has become an increasingly salient domain of inquiry, yet scholarship on the topic remains fragmented across disciplines and perspectives. To consolidate and advance understanding, this paper presents a systematic review of 43 peer-reviewed studies published between 2003 and 2025. The review shows that HR governance consistently converges on four interdependent governance dimensions—accountability, transparency, compliance, and strategic alignment—but that these have been theorized and operationalized unevenly across contexts, levels, and methods. Tracing the development of the field, we identify five dominant orientations in its intellectual evolution: early normative and compliance debates, institutionalization and legitimacy through governance codes, theoretical consolidation and conceptual clarification, disruption through digitalization, and, most recently, the emergence of an ecosystem perspective. Building on these insights, the paper develops an integrative framework that positions HR governance as a multi-dimensional and interdependent governance system located at the intersection of corporate governance and strategic HRM. The framework clari",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de 43 estudos; framework de governança de RH"
+}
+},
+{
+"key": "doi:10.1080/09585192.2026.2650420",
+"title": "Work–life balance in the digital era: configuring demands and resources at work",
+"url": "https://doi.org/10.1080/09585192.2026.2650420",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-01-19",
+"authors": [
+"Amadeja Lamovšek",
+"Ivan Radević",
+"Matej Černe",
+"Aleš Popovič",
+"Shaima' Salem Mohammed",
+"Carlos Marques DaSilva"
+],
+"abstract": "Work–life balance (WLB) now rivals salary and career advancement as a top employee priority, yet organizations continue to struggle with designing work that enables both performance and balance. This challenge has intensified with distributed work arrangements, where employees face distinct demands across on-site, hybrid, and remote contexts. Drawing on the Job Demands–Resources (JD-R) theory, we examine how combinations of job design and ICT characteristics jointly shape WLB. Using a two-step fuzzy-set qualitative comparative analysis (fsQCA) across two national samples (France, N = 605; Montenegro, N = 1,535), we identify multiple configurational pathways that foster high WLB. Study 1 inductively derives work and technology design configurations, while Study 2 tests their robustness in a different cultural context. Enriched work design supports WLB across forms of work (FoW), though the optimal mix of job and ICT characteristics differs. Notably, IT presenteeism appears necessary for hybrid workers. Job and technological complexity act as interchangeable demands, interdependence and feedback show asymmetric effects, and techno-overload consistently undermines balance. We advance ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "survey",
+"w": "fsQCA configuracional em duas amostras; sem identificação causal"
+}
+},
+{
+"key": "doi:10.2139/ssrn.6028034",
+"title": "GenAI Adoption Increases the Density of Knowledge and Collaboration Networks: Evidence from a Field Experiment",
+"url": "https://doi.org/10.2139/ssrn.6028034",
+"venue": "SSRN Electronic Journal",
+"date": "2026-01-01",
+"authors": [
+"Ralf Buechsenschuss",
+"Irmela Koch‐Bayram",
+"Torsten Biemann",
+"Phanish Puranam"
+],
+"abstract": "",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [
+"Phanish Puranam"
+],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "rct",
+"w": "Experimento de campo anunciado, mas sem abstract nem resultados"
+}
+},
+{
+"key": "doi:10.2308/ajpt-2024-069",
+"title": "Audit Firm Employee Turnover: Implications for Audit Quality",
+"url": "https://doi.org/10.2308/ajpt-2024-069",
+"venue": "Auditing A Journal of Practice & Theory",
+"date": "2026-06-01",
+"authors": [
+"Linde Kerckhofs",
+"Christophe Van Linden",
+"Marie‐Laure Vandenhaute",
+"Aleksandra B. Zimmerman"
+],
+"abstract": "SUMMARY Using data from Belgian audit firm human capital disclosures that provide direct measures of employee turnover, voluntary departures, and dismissals, we examine the association between audit firm-level employee turnover and audit quality. First, we confirm that turnover is negatively associated with audit quality in a setting dominated by private firms, corroborating recent U.S. evidence from listed companies. Second, we find that voluntary and abnormal turnover are associated with lower audit quality, whereas dismissals are not. Third, the negative association between turnover and audit quality is more pronounced in firms with lower partner staffing leverage and lower employee replacement. Our study contributes to research and practice by demonstrating that (1) the negative association between turnover and audit quality generalizes to private company audits, (2) voluntary and abnormal turnover are associated with lower audit quality, and (3) firms can mitigate employee turnover through higher staffing leverage and higher employee replacement rates. Data Availability: The data are available from the sources we identify in the paper. JEL Classifications: M42.",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "admin",
+"w": "Divulgações de capital humano; turnover voluntário ligado a menor qualidade"
+}
+},
+{
+"key": "doi:10.62379/jbem.v3i1.1898",
+"title": "Analisis Peramalan Kebutuhan SDM dalam Mendukung Perencanaan SDM Strategis: Literature Review",
+"url": "https://doi.org/10.62379/jbem.v3i1.1898",
+"venue": "Journal of Business Economics and Management",
+"date": "2026-09-29",
+"authors": [
+"Novita Aulia",
+"Hawa Kurotaayun",
+"Elvan Rizky",
+"Ria Aulia"
+],
+"abstract": "Human resource (HR) demand forecasting is a foundational stage in strategic HR planning, yet studies that systematically link HR demand forecasting with strategic HR planning remain scattered. This study aims to review the literature on the definition of HR demand analysis, forecasting techniques, its relationship with strategic business plans, and its role in supporting strategic HR planning. This study uses a qualitative-descriptive literature review method, drawing on national and international journal articles and HR management textbooks obtained through academic databases such as Google Scholar, Scopus, and PubMed Central. The results show that HR demand forecasting, covering both qualitative techniques (managerial judgment, Delphi method) and quantitative techniques (regression, time series, neural networks), functions as a derivative of business strategy and as a prerequisite for HR supply forecasting, recruitment, training, and succession planning. Integrating HR demand forecasting with strategic planning enables organizations to build a solid HR foundation, remain responsive to changes in the business environment, and strengthen the HR function as a strategic partner to to",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão descritiva de previsão de demanda de RH; sem dados próprios."
+}
+},
+{
+"key": "doi:10.1038/s41598-026-36424-2",
+"title": "Integrating machine learning and explainable AI for employee attrition prediction in HR analytics",
+"url": "https://doi.org/10.1038/s41598-026-36424-2",
+"venue": "Scientific Reports",
+"date": "2026-02-12",
+"authors": [
+"Maytha AL-Ali",
+"Majed M. Alwateer",
+"Shatha Abed Alsaedi",
+"Hossam Magdy Balaha",
+"Mahmoud Badawy",
+"Mostafa A. Elhosseini"
+],
+"abstract": "Employee attrition poses significant challenges to organizations, impacting productivity, morale, and financial stability. Predicting attrition and understanding its underlying drivers are critical for implementing effective retention strategies. In this study, we propose a comprehensive framework that utilizes advanced machine learning techniques to predict employee attrition and job change likelihood. The framework integrates robust preprocessing pipelines, state-of-the-art predictive models, and explainability tools such as SHAP (SHapley Additive exPlanations) to ensure transparency and fairness in HR analytics. By addressing key challenges such as class imbalance, feature selection, and model interpretability, our approach provides actionable insights for proactive talent management. We evaluate the framework on multiple datasets (including the IBM HR Analytics Employee Attrition & Performance dataset and the HR Analytics: Job Change of Data Scientists dataset), achieving near-optimal performance metrics across diverse scenarios. Notably, the Adaptive Boosting (AB) and Histogram Gradient Boosting (HGB) models demonstrate superior performance, with high Precision, Recall, F1-sco",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "ML e SHAP sobre datasets públicos IBM/Kaggle, sem dados próprios."
+}
+},
+{
+"key": "doi:10.3389/frai.2026.1718244",
+"title": "Artificial intelligence in human resource management: models for recruitment, training, performance, compensation, and retention",
+"url": "https://doi.org/10.3389/frai.2026.1718244",
+"venue": "Frontiers in Artificial Intelligence",
+"date": "2026-02-06",
+"authors": [
+"Meysam Safshekan",
+"Ardalan Feili",
+"Ali Shojaeifard",
+"Shahryar Sorooshian"
+],
+"abstract": "Introduction: In the era of rapid technological advancement, artificial intelligence (AI) has emerged as a transformative force across various industries, including human resource management (HRM). This study examines the application of AI in HRM systems, with a focus on recruitment, hiring, training, performance management, compensation, and human capital retention. Methods: This study adopts a qualitative research approach. Experts in artificial intelligence and human resource management were identified, and data were collected through qualitative methods. The data were analyzed using thematic analysis. Results: The findings reveal the introduction of AI application models across various HRM systems. These models demonstrate how AI enhances efficiency and effectiveness in key HR functions. Discussion: The results highlight the transformative potential of AI in HRM by enabling data-driven decision-making and improving workforce planning. This research provides valuable insights for human resource professionals seeking to leverage AI to enhance organizational performance across industries.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 3,
+"e": "quali",
+"w": "Entrevistas com especialistas e análise temática; modelos sem validação empírica."
+}
+},
+{
+"key": "doi:10.1109/access.2026.3692578",
+"title": "FairPromote: Explainable and Fairness-Aware Talent Promotion Prediction via Adversarial Debiasing and SHAP-Based Interpretation",
+"url": "https://doi.org/10.1109/access.2026.3692578",
+"venue": "IEEE Access",
+"date": "2026-01-01",
+"authors": [
+"Zimeng Wang",
+"J. C. Yang",
+"Wenbin Shang",
+"Jianbo Ding"
+],
+"abstract": "Talent promotion decisions are critical for organizational success, yet traditional prediction models often suffer from opacity and inherited biases embedded in historical data. These black-box systems not only lack transparency but also perpetuate discriminatory patterns related to sensitive attributes such as gender and geographic location, undermining organizational fairness and employee trust. Moreover, existing evaluation metrics struggle to quantify the unstructured contributions of senior management, leading to poor generalization in complex personnel decisions. To address these challenges, we proposeFairPromote, a novel framework that integrates SHAP (SHapley Additive exPlanations) values with adversarial debiasing techniques within an ensemble learning architecture. Our approach simultaneously achieves high prediction accuracy while automatically identifying and mitigating the negative impact of sensitive attributes on promotion decisions. The framework employs a dual-objective optimization strategy: a primary predictor maximizes promotion prediction performance, while an adversarial discriminator minimizes the ability to infer sensitive attributes from learned representat",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "bench",
+"w": "Framework de promoção justa com SHAP; abstract sem resultados numéricos."
+}
+},
+{
+"key": "doi:10.23919/jsc.2026.0012",
+"title": "The Gender Pay Gap in China: Insights from a Discrimination Perspective",
+"url": "https://doi.org/10.23919/jsc.2026.0012",
+"venue": "Journal of Social Computing",
+"date": "2026-06-01",
+"authors": [
+"Wei Bai",
+"Yan-Li Lee",
+"Jingyi Liao",
+"Lusi Wu",
+"Mei Xie",
+"Tao Zhou"
+],
+"abstract": "Equal pay is an essential component of gender equality, one of the Sustainable Development Goals of the United Nations. Using resume data of over ten million Chinese online job seekers in 2015, we study the current gender pay gap in China. The results show that on average women only earned 71.57\\% of what men earned in China. The gender pay gap exists across all age groups and educational levels. Contrary to the commonly held view that developments in education, economy, and a more open culture would reduce the gender pay gap, the fusion analysis of resume data and socio-economic data presents that they have not helped reach the gender pay equality in China. China seems to be stuck in a place where traditional methods cannot make further progress. Our analysis further shows that 81.47\\% of the variance in the gender pay gap can be potentially attributed to discrimination. In particular, compared with the unmarried, both the gender pay gap itself and proportion potentially attributed to discrimination of the married are larger, indicating that married women suffer greater inequality and more discrimination than unmarried ones. Taken together, we suggest that more research attention ",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 9,
+"q": 7,
+"e": "admin",
+"w": "Dez milhões de currículos chineses; decomposição do gap salarial de gênero."
+}
+},
+{
+"key": "doi:10.3389/fsoc.2026.1743445",
+"title": "Algorithmic management in the global gig economy: an interdisciplinary systematic literature review and critical discourse analysis",
+"url": "https://doi.org/10.3389/fsoc.2026.1743445",
+"venue": "Frontiers in Sociology",
+"date": "2026-04-15",
+"authors": [
+"Bianca Ifeoma Chigbu"
+],
+"abstract": "Algorithmic management-the delegation of managerial functions to algorithmic systems has become a defining feature of work in the global gig and platform economy. This article presents a systematic literature review (SLR) of 103 scholarly sources, complemented by a targeted critical discourse analysis (CDA) to examine how algorithmic management operates across diverse regions and is discursively framed. While gig work engages millions of workers worldwide, scholarly attention has centered disproportionately on Western contexts. I develop an interdisciplinary research framework that integrates sociology, labor studies, digital economy, and law to analyze the implications of algorithmic management for labor practices, worker autonomy, and regulation. The study asks: (1) what dominant themes and findings emerge in the literature across regions and contexts; (2) how these themes are discursively framed in scholarly and policy texts; and (3) what research gaps and policy implications emerge from this synthesis. The SLR reveals several prevalent themes: the tension between promised flexibility and algorithmic control, worker resistance and agency, biases and fairness in algorithmic syste",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de 103 fontes sobre gestão algorítmica; sem dados primários."
+}
+},
+{
+"key": "doi:10.1007/s12599-025-00981-z",
+"title": "Algorithmic Management in Traditional Organizations: Implications for Workers’ Efficiency and Work Relationships",
+"url": "https://doi.org/10.1007/s12599-025-00981-z",
+"venue": "Business & Information Systems Engineering",
+"date": "2026-01-29",
+"authors": [
+"Amelie Lena Schmid",
+"Manuel Wiesche"
+],
+"abstract": "Traditional organizations increasingly utilize algorithmic management (AM) to manage their permanent workers. While existing research has extensively explored AM within platform organizations, there is a need to understand its application in traditional work environments, given workers’ close connection to the organization and the existing work relationships. Moreover, current AM research primarily focuses on possible negative effects for workers, with limited recognition of its beneficial impact within organizations. The paper addresses these aspects by investigating the impact of AM on traditional organizations, examining the role of socio-technical characteristics in enhancing workers’ efficiency. Conducting mixed-methods research within an international automotive supplier, an archival dataset comprising 12,743 manufacturing errors is analyzed, complemented by 15 semi-structured interviews with affected workers and managers. The results give objective evidence that AM significantly improves efficiency within traditional organizations. In addition, the interviews reveal that human managers maintain a supportive role in this hybrid organizational setting, while established work r",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "admin",
+"w": "12.743 erros de produção mais 15 entrevistas; evidência objetiva de eficiência."
+}
+},
+{
+"key": "doi:10.3390/computers15030185",
+"title": "Employee Attrition Prediction: An Explanatory and Statistically Robust Ensemble Learning Model",
+"url": "https://doi.org/10.3390/computers15030185",
+"venue": "Computers",
+"date": "2026-03-12",
+"authors": [
+"Ghalia Nassreddine",
+"Jamil Hammoud",
+"Obada Al-Khatib",
+"Mohamad Al Majzoub"
+],
+"abstract": "Organizational productivity and workforce management are highly affected by employee attrition. Thus, an employee attrition prediction system may allow human resource management to enhance the workplace by minimizing attrition. This study proposes a new and interpretable ensemble learning framework for employee attrition prediction. The model integrates SHapley Additive exPlanations (SHAP)-based feature selection, Optuna hyperparameter optimization, and dual explainability using SHAP and Local Interpretable Model-agnostic Explanations (LIME). Random oversampling (ROS) is used to address class imbalance. The proposed framework allows for both global and local interpretability, enabling actionable insights into retention drivers. It was assessed using two benchmark datasets: the Kaggle HR Analytics dataset (14,999 records) and the IBM HR dataset (1470 records). The results revealed that the most impactful factors on employee attrition are promotion history, tenure, job satisfaction, workload, average monthly hours, overtime, and financial incentives. Furthermore, the proposed model achieved exceptional performance on both datasets. On the Kaggle dataset, it reached an accuracy of 98.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "Ensemble com SHAP/LIME em datasets públicos Kaggle e IBM."
+}
+},
+{
+"key": "doi:10.1017/s0022109026102919",
+"title": "Do Product Market Threats Discipline Corporate Misconduct?",
+"url": "https://doi.org/10.1017/s0022109026102919",
+"venue": "Journal of Financial and Quantitative Analysis",
+"date": "2026-04-30",
+"authors": [
+"Jie Chen",
+"Xunhua Su",
+"Xuan Tian",
+"Bin Xu",
+"Xiaoyu Zhang"
+],
+"abstract": "We examine the efficacy of product market discipline as a deterrent to corporate misconduct. Firms that are subject to greater competitive threats in the product market are less likely to commit violations and pay lower penalties. Stakeholders react negatively to various types of violations, with product market competition amplifying these stakeholder reactions. In response, firms under competitive pressure are more likely to incorporate ESG-related incentives into executive compensation, demonstrate better worker safety practices, invest in green innovation, and use credible auditors. Our findings suggest that product market competition deters misconduct by increasing the expected costs associated with violations.",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "admin",
+"w": "Finanças: concorrência e má conduta; segurança do trabalhador é secundária."
+}
+},
+{
+"key": "doi:10.2308/tar-2024-0327",
+"title": "Disclosure Spillovers Through ESG Ratings",
+"url": "https://doi.org/10.2308/tar-2024-0327",
+"venue": "The Accounting Review",
+"date": "2026-07-30",
+"authors": [
+"Tanja Keeve"
+],
+"abstract": "I examine how mandatory ESG disclosure regulations transmit to unregulated firms through ESG rating agencies’ peer benchmarking. Using the United Kingdom’s 2017 gender pay gap (GPG) disclosure mandate with its expected positive rating consequences for regulated U.K. firms, I show that unregulated firms with similar Refinitiv ESG ratings are significantly more likely to voluntarily disclose GPG information after the mandate. The effect is more pronounced when peers are defined by ESG rating similarity rather than market capitalization and is not driven by industry affiliation alone. Consistent with ESG ratings creating competitive pressures, spillovers are strongest when U.K. peers were initially lower ranked and when unregulated firms can report relatively better GPG performance. Further analyses show that these spillovers extend to other social disclosures and generalize to the European Union’s Non-Financial Reporting Directive. Overall, the paper highlights how ESG rating structures extend the reach of disclosure regulations beyond their formal scope. Data Availability: Data are available from the public sources cited in the text. JEL Classifications: M14; M48; D70.",
+"score": 7,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "quasi",
+"w": "Mandato britânico de disclosure salarial; spillovers via ratings ESG."
+}
+},
+{
+"key": "doi:10.1016/j.techsoc.2026.103394",
+"title": "Algorithmic management practices, trust, and gig-worker continuance: A mixed-methods study of platform work",
+"url": "https://doi.org/10.1016/j.techsoc.2026.103394",
+"venue": "Technology in Society",
+"date": "2026-05-09",
+"authors": [
+"Sohaib Mustafa",
+"Sari Mansour"
+],
+"abstract": ": The gig economy’s reliance on algorithmic management systems necessitates understanding how distinct practices influence worker retention. This study examines how five algorithmic practices (compensation, goal setting, monitoring, performance rating, and scheduling) shape gig workers’ intention to continue as gig workers, mediated by trust in the platform. Grounded in social exchange theory and algorithmic management theory, the research employs an explanatory-sequential design, drawing on survey data from 790 gig workers across China, Pakistan, Turkey, and Australia, and conducting in‐depth interviews with 40 participants (10 from each country). Quantitative results reveal that performance rating and scheduling significantly enhance trust, while compensation has no direct effect. Trust mediates the effects of goal setting, monitoring and control, performance rating, and scheduling on platform-anchored continuance intention, while the additional mediation assessment indicates complementary/partial mediation rather than a trust-only pathway. Qualitative insights corroborate these findings, highlighting transparency in goal setting and flexible scheduling as key trust drivers, whil",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "survey",
+"w": "Survey com 790 gig workers mais 40 entrevistas; autorrelato mediacional."
+}
+},
+{
+"key": "doi:10.1080/23311975.2025.2612411",
+"title": "Research trends, theoretical foundations and key determinants of employee well-being: a systematic and bibliometric review (2005–2025)",
+"url": "https://doi.org/10.1080/23311975.2025.2612411",
+"venue": "Cogent Business & Management",
+"date": "2026-01-13",
+"authors": [
+"Mahadharu Ashifaati Ashfan",
+"Tri Wulida Afrianty",
+"Hamidah Nayati Utami",
+"Arik Prasetya"
+],
+"abstract": "Employee well-being (EWB) has become a vital emphasis in organizational research, driven by heightened awareness of mental health, workplace sustainability and resilience. Current research is fragmented, lacking a complete synthesis over time and robust theoretical cohesiveness. This study utilizes a systematic literature review (SLR) and bibliometric analysis of 313 Scopus-indexed publications from 2005 to 2025 to address this gap. We employed Biblioshiny (R-package Bibliometrix) to analyze research trends, identify influential authors and sources and visualize collaboration networks among countries and institutions. Research identifies the antecedents of EWB as belonging to individual factors (e.g. mindfulness and personality), group factors (e.g. social support and teamwork), leader factors (e.g. transformational leadership, family supportive supervisor behavior), and organization factors (e.g. job design and organizational culture). The Job Demands–Resources (JD-R) model and Conservation of Resources (COR) theory dominate the field, although they insufficiently tackle the challenges arising from the digital revolution and cross-cultural diversity. This study enriches the litera",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática e bibliométrica de 313 estudos sobre bem-estar no trabalho."
+}
+},
+{
+"key": "doi:10.1080/24750158.2026.2694614",
+"title": "Privacy Challenges of AI-Enabled Monitoring in the Workplace",
+"url": "https://doi.org/10.1080/24750158.2026.2694614",
+"venue": "Journal of the Australian Library and Information Association",
+"date": "2026-07-03",
+"authors": [
+"Rachelle Bosua",
+"Nina Evans"
+],
+"abstract": "New forms of hybrid and remote work have precipitated the need for closer monitoring of employees in their work environments. Hence, the global increase in the use of AI-enabled surveillance and monitoring of workers. The surveillance and monitoring literature indicates a limited understanding of how employees perceive workplace monitoring in an increasingly data-driven world of monitoring and data collection. Our research question is: How do employees perceive AI-enabled monitoring in contemporary workplaces from a privacy perspective? Drawing on a multi-method qualitative case study, we explored how monitoring is practiced and experienced by employees in a large Dutch financial organisation. Our study reveals a general acceptance of employee monitoring to foster learning and career development. Employees agree that monitoring is essential for more effective management of the workforce. However, they expressed frustration and privacy concerns, questioning the accuracy of data collection and use. We present five propositions that need to be considered to prepare employees for future workplace monitoring: more transparency related to being monitored, a deeper understanding of monito",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "quali",
+"w": "Estudo de caso qualitativo sobre percepção de monitoramento por IA."
+}
+},
+{
+"key": "doi:10.3389/frai.2026.1793296",
+"title": "Artificial intelligence and data analytics in human talent management",
+"url": "https://doi.org/10.3389/frai.2026.1793296",
+"venue": "Frontiers in Artificial Intelligence",
+"date": "2026-05-15",
+"authors": [
+"Diana Alexandra Sarmiento Orna",
+"Mariuxi Fernanda Apolo-Silva",
+"Álvaro Paúl Solís Naranjo",
+"Ely Borja Salinas",
+"Eduardo Espinoza-Solís",
+"Dennis Alfredo Peralta-Gamboa"
+],
+"abstract": "Introduction: Digital transformation has reshaped human talent management, with Artificial Intelligence (AI) and Data Analytics emerging as key tools for optimizing recruitment, retention, performance evaluation, and employee development. Despite growing interest, the literature remains fragmented across technical, managerial, and ethical perspectives. This study provides an integrated bibliometric and qualitative analysis of research on AI and Data Analytics in human talent management from 2015 to 2025, aiming to map evolution, thematic trends, methodological developments, and research gaps. Methods: A mixed-methods approach combined bibliometric analysis with qualitative synthesis. A structured search in Scopus and Web of Science retrieved 137 records using Boolean operators combining AI/machine learning terms with People/HR Analytics and talent management concepts. After removing duplicates and irrelevant studies based on predefined inclusion criteria (peer-reviewed articles and reviews in English or Spanish), a final dataset of 82 documents was analyzed. Bibliometric techniques in R (v4.4.2) and VOSviewer (v1.6.20) examined scientific productivity, citation patterns, collaborat",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "review",
+"w": "Bibliometria e síntese de 82 estudos; tema central, sem dado primário."
+}
+},
+{
+"key": "doi:10.1080/23311975.2026.2643963",
+"title": "Corporate green culture: a review and agenda for the future",
+"url": "https://doi.org/10.1080/23311975.2026.2643963",
+"venue": "Cogent Business & Management",
+"date": "2026-03-16",
+"authors": [
+"Ashwini Shetty",
+"Navin Kumar Koodamara"
+],
+"abstract": "This study examines the field of human resource development (HRD) functionalities related to the evolution of green organizational culture (GOC), its determinants, and implications for HRD, aiming to fill the gap in scattered and more outcome-focused literature. The primary objective is to generalize the empirical data on how GOC is conceptualized, developed, and maintained through HRD-related processes, including training, leadership development, organizational learning, and green behavior in employees. Within the PRISMA framework, a systematic literature review and bibliometric analysis of peer-reviewed journal articles identified in the Scopus database up to 2024 (2000–2024) were conducted. After thorough screening and satisfying the eligibility criteria, 35 empirical studies were included in the analysis. Bibliometric techniques were employed to examine trends in publications, journals, and authors of significant impact, as well as the collaboration networks and the evolution of topics of interest, utilizing Bibliometrix (R). The findings indicate that academic output has increased significantly since 2021, with over 70% of publications occurring in the past four years. The the",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de cultura verde e HRD; ângulo indireto."
+}
+},
+{
+"key": "doi:10.1038/s41598-026-52766-3",
+"title": "How enterprise social media use affects employee well-being",
+"url": "https://doi.org/10.1038/s41598-026-52766-3",
+"venue": "Scientific Reports",
+"date": "2026-05-21",
+"authors": [
+"Da Eun Song",
+"Seongcheol Kim"
+],
+"abstract": "The widespread adoption of enterprise social media (ESM) in hybrid and remote work settings has transformed workplace collaboration by enabling seamless connectivity and real-time interaction. Yet it also requires employees to remain continuously responsive and digitally present. These conditions increase communication overload and blur work-personal boundaries, reflecting the phenomenon of techno-invasion. Such disruptions may heighten psychological strain and diminish well-being. Guided by the Job Demands-Resources (JD-R) model, this study examines how distinct ESM-induced job demands-communication overload and boundary management stress-are associated with employee exhaustion and well-being. We collected survey data from 200 Korean office workers (mean age = 44.38, range = 27-64; 56% male) using validated self-report scales and analyzed the data using partial least squares structural equation modeling (PLS-SEM). The results indicate that intensified ESM use is linked to greater communication overload and boundary management stress, which are also associated with increased exhaustion and reduced well-being. By elucidating how ESM-driven connectivity can undermine employee well-be",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "survey",
+"w": "PLS-SEM transversal com 200 respondentes; bem-estar e mídia social corporativa."
+}
+},
+{
+"key": "doi:10.3389/fcomm.2026.1907640",
+"title": "A visual audit of diversity imagery across fortune 500 firms",
+"url": "https://doi.org/10.3389/fcomm.2026.1907640",
+"venue": "Frontiers in Communication",
+"date": "2026-09-23",
+"authors": [
+"John Edward Fiset",
+"Anika Nawar"
+],
+"abstract": "Introduction Organizations increasingly rely on visual communication to shape perceptions of organizational attractiveness, yet little is known about how corporate imagery functions as a diversity signal. Drawing on employer image theory and institutional perspectives on symbolic compliance, this study examines how Fortune 500 companies visually construct inclusivity through photographs displayed on their diversity, equity, and inclusion (DEI) webpages. Methods We analyzed 387 images from 340 Fortune 500 firms for demographic representation, identity cues, and visual themes. Reverse image searches using Google Image Search and TinEye were used to distinguish original photographs from stock imagery and identify images used across organizations. Results Corporate imagery primarily featured adult, light-skinned, and female individuals. Twenty percent of all images were confirmed as stock photography, with approximately three percent identified as exact duplicates sourced from major commercial providers and used across different companies. Stock imagery appeared more frequently in depictions of workplace collaboration, whereas original employee photography was more common in celebratio",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "anual 2026",
+"added": "2026-11-26",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "admin",
+"w": "Auditoria de 387 imagens de 340 empresas; sinal de diversidade, números reais."
+}
 }
 ]

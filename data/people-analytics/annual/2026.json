@@ -1,35 +1,35 @@
 {
  "year": 2026,
  "partial": true,
- "generated": "2026-11-17",
- "model": "deepseek-ai/DeepSeek-V4.1-Flash",
- "overview": "2026 foi o ano em que a IA generativa deixou de ser promessa e passou a ser medida dentro das empresas: o volume de publicações em IA generativa/LLM cresceu +140% (2,4x) e o de gestão algorítmica e vigilância no trabalho +158% (2,6x), enquanto people analytics/HR analytics avançou +103% (2,0x). A evidência mais forte veio de experimentos de campo em larga escala rodados com BCG, Microsoft, Accenture, P&G e escritórios de patentes, e não de surveys. O resultado dominante é a heterogeneidade: a IA melhora o desempenho em algumas tarefas e o piora em outras, ajuda juniores mais que seniores e pode elevar a qualidade entregue ao custo do aprendizado. Em paralelo, temas clássicos de retenção, proximidade física, equidade e seleção voltaram ao centro, agora sob a régua da IA. O saldo é uma agenda de people analytics mais experimental, mais cética e mais dependente de dados internos bem instrumentados.",
+ "generated": "2026-11-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:river",
+ "overview": "2026 foi o ano em que a IA no trabalho deixou de ser promessa e virou evidência experimental de campo: experimentos randomizados com centenas ou milhares de profissionais em consultoria, software, patentes e bens de consumo mostraram ganhos reais de produtividade, mas também efeitos desiguais e riscos para o desenvolvimento de expertise. Em paralelo, a literatura sobre gestão algorítmica e vigilância no trabalho explodiu (+163%, 2.6x), sinalizando que a governança do uso de dados de pessoas virou tema central. A agenda de equidade ganhou força com evidências de que avaliações subjetivas de 'potencial' explicam metade do gap de promoção de gênero, e a transparência de faixas salariais entrou no radar de RH. No Brasil, a produção acadêmica aparece (20 trabalhos), mas nenhuma empresa brasileira figura entre as organizações que publicam, o que deixa o país como consumidor, não produtor, de evidência aplicada.",
  "trends": [
   {
-   "title": "IA generativa vira o eixo da agenda de people analytics",
-   "text": "As publicações em IA generativa/LLM saltaram de 354 para 849 (+140%, 2,4x) e as de gestão algorítmica e vigilância no trabalho de 571 para 1.475 (+158%, 2,6x); people analytics/HR analytics cresceu +103% (2,0x). Os destaques apontam na mesma direção: o experimento com 758 consultores da BCG (\"A fronteira tecnológica irregular\"), os três experimentos de campo com 4.867 desenvolvedores (+26,08% de tarefas concluídas) e o estudo com mais de 1.500 organizações e 17 milhões de mensagens do ChatGPT Enterprise."
+   "title": "IA generativa vira objeto de experimento de campo em escala",
+   "text": "O subtema generative AI / large language model cresceu +139% (2.4x) de 2025 para 2026, com 7 papers avaliados no arquivo. Os destaques vão de 758 knowledge workers na BCG (fronteira tecnológica 'jagged') a 4.867 desenvolvedores na Microsoft, Accenture e uma Fortune 100, com aumento de 26,08% em tarefas concluídas, e 791 profissionais da Procter & Gamble no experimento do 'cybernetic teammate'. O padrão é claro: o efeito da IA é heterogêneo por tarefa e por nível de experiência, não uniformemente positivo."
   },
   {
-   "title": "A empresa real virou laboratório de experimentos",
-   "text": "Os achados mais fortes do ano vêm de RCTs rodados dentro de organizações: BCG (758 profissionais), Microsoft, Accenture e uma Fortune 100 (4.867 desenvolvedores), P&G (791 profissionais) e 11 escritórios de propriedade intelectual (133 advogados de patentes). Entre as empresas que publicam, Microsoft e Boston Consulting Group lideram com 9 trabalhos cada, seguidas por Gradient (7) e Procter & Gamble (4). Isso muda o padrão de evidência disponível para decisões de RH: efeitos medidos em fluxos de trabalho reais, não em cenários de laboratório."
+   "title": "Gestão algorítmica e vigilância no trabalho disparam",
+   "text": "Algorithmic management / workplace surveillance foi o subtema de maior crescimento relativo do ano: +163% (2.6x), com 5 papers no arquivo. O avanço acompanha a evidência de que tecnologias de coordenação e monitoramento alteram hierarquias e intensidade gerencial, como no estudo com mais de 26 milhões de anúncios de vagas sobre tecnologias de gestão colaborativa. Para quem lidera people analytics, é o tema onde risco reputacional e regulatório crescem mais rápido."
   },
   {
-   "title": "O paradoxo da expertise: mais performance, menos aprendizado",
-   "text": "Três destaques convergem para o mesmo risco. O RCT de três meses com 133 advogados de patentes mostrou que a IA eleva a qualidade do trabalho entregue, mas levanta a questão do julgamento profissional sem ela; \"IA generativa e o upskilling temporário de knowledge workers\" sugere que os ganhos de habilidade podem ser transitórios; e \"IA, cognição humana e colapso do conhecimento\" modela como a IA agêntica pode erodir o estoque de conhecimento geral da comunidade ao substituir o esforço de aprendizado."
+   "title": "Equidade: do gap salarial ao viés na avaliação de 'potencial'",
+   "text": "Pay equity / gender pay gap cresceu +23% (1.2x), com 5 papers avaliados. O destaque mais acionável é o estudo com 29.809 funcionários de uma grande rede de varejo, mostrando que notas mais baixas de 'potencial' para mulheres explicam cerca de metade do gap de promoção, mesmo com desempenho superior. Somam-se a evidência sobre largura das faixas salariais divulgadas e a análise de mais de dez milhões de currículos na China, onde mulheres ganhavam 71,57% do rendimento masculino."
   },
   {
-   "title": "Retenção, proximidade e o recuo do remoto integral",
-   "text": "O volume em trabalho remoto/híbrido cresceu +18% (1,2x), turnover/retenção +20% (1,2x) e engajamento/bem-estar +20% (1,2x). Os destaques explicam o porquê: sentar perto dos colegas aumenta o feedback de código em 18,3%, com ganhos concentrados em profissionais menos experientes; mandatos de retorno ao escritório em Microsoft, SpaceX e Apple reduzem tenure e senioridade; e o estudo com quase 165.000 funcionários mostra que a associação positiva do remoto com satisfação encolhe após controles e vem acompanhada de maior intenção de deixar a empresa."
+   "title": "Híbrido e retorno ao escritório entram na fase de evidência causal",
+   "text": "Remote work / hybrid work cresceu +18% (1.2x), com 6 papers no arquivo. O experimento de campo sobre trabalho híbrido mostra que cerca de dois dias presenciais por semana concentram o melhor equilíbrio entre satisfação, equilíbrio de vida e isolamento, sem perda de avaliação de desempenho. Do outro lado, dados de Microsoft, SpaceX e Apple indicam que mandatos de retorno ao escritório reduzem tempo de casa e senioridade, empurrando talentos experientes para fora."
   },
   {
-   "title": "Equidade e seleção sob nova régua",
-   "text": "Personnel selection/ML cresceu +58% (1,6x), skills-based hiring +40% (1,4x) e pay equity/gender pay gap +22% (1,2x). Os destaques trazem mecanismos concretos: avaliações subjetivas de \"potencial\" explicam cerca de metade do gap de promoção de gênero em 29.809 funcionários; a automação responde por 52% do aumento da desigualdade entre grupos nos EUA desde 1980; remover cláusulas de não competição em cerca de 14.000 ofertas elevou a mobilidade em 36%–52% e os ganhos em 12%–17%; e o acesso a IA generativa reduziu a precisão de triagem em 4%–9%."
+   "title": "People analytics se profissionaliza e se aproxima de skills e performance",
+   "text": "People analytics / HR analytics cresceu +90% (1.9x), com 6 papers no arquivo, e skills-based hiring / skills taxonomy avançou +41% (1.4x), com 3 papers. Performance management / performance appraisal subiu +42% (1.4x), refletindo a pressão por medir contribuição individual e de times com mais rigor. A combinação indica que a função está migrando de relatórios descritivos para desenho de sistemas de decisão sobre pessoas."
   }
  ],
- "innovation": "A inovação segue concentrada na academia: 574 dos 669 trabalhos (85,8%) vêm de instituições acadêmicas, contra 22 (3,3%) de empresas e 18 (2,7%) de governo e reguladores. As instituições que mais publicam são National Bureau of Economic Research (37), Stanford University (29), Massachusetts Institute of Technology (23), University of Pennsylvania (17) e Harvard University (15), com peso britânico relevante (Centre for Economic Policy Research e London School of Economics, 13 cada; King's College London e University College London, 12 cada). Por país, os EUA lideram com 175 trabalhos, seguidos de Reino Unido (84), China (61), Indonésia (47) e Alemanha (45); o Brasil aparece, com 25 trabalhos, empatado com a Austrália. Entre as empresas, Microsoft e Boston Consulting Group (9 cada), Gradient (7), Procter & Gamble (4) e OpenAI (1) indicam que a fronteira se move em parcerias academia–empresa, não em laboratórios corporativos isolados.",
+ "innovation": "A inovação em 2026 continua concentrada na academia: de 600 trabalhos mapeados, 510 (85%) vêm de universidades, contra 21 (3,5%) de empresas, 13 (2,2%) de governo e reguladores e 40 (6,7%) de centros de pesquisa. O topo da produção é dominado por instituições dos EUA e do Reino Unido — National Bureau of Economic Research (34), Stanford (26), MIT (20), Harvard (16), CEPR (15) —, com EUA (143), Reino Unido (74) e China (53) na liderança por país. Entre empresas, quem publica são majoritariamente multinacionais que rodam os próprios experimentos: Microsoft (9), Boston Consulting Group (9), Gradient (7) e Procter & Gamble (4). O Brasil aparece no mapa, com 20 trabalhos, mas nenhuma empresa ou instituição brasileira figura entre as mais produtivas — o país consome a fronteira, mas ainda não a produz em escala.",
  "highlights": [
   {
-   "title": "A fronteira tecnológica irregular da IA",
+   "title": "A fronteira tecnológica 'jagged' da IA",
    "original_title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
    "url": "https://doi.org/10.1287/orsc.2025.21838",
    "venue": "Organization Science",
@@ -55,15 +55,15 @@
     "Ethan Mollick",
     "Karim R. Lakhani"
    ],
-   "score": 10,
+   "score": 9,
    "theme": "ai_work",
    "region": "",
-   "cited_by": 1667,
-   "velocity": 208.38,
-   "why": "Experimento pré-registrado com 758 knowledge workers da BCG mostrou que a assistência de IA melhora o desempenho em algumas tarefas e piora em outras dentro do mesmo fluxo de trabalho. É a base para desenhar políticas de uso de IA por tarefa, e não por cargo."
+   "cited_by": 1653,
+   "velocity": 206.62,
+   "why": "Experimento pré-registrado com 758 knowledge workers na BCG mostrou que a IA melhora o desempenho em algumas tarefas e piora em outras dentro do mesmo fluxo de trabalho. É a evidência mais citada do ano (1.653 citações) e a base para desenhar políticas de uso de IA por tipo de tarefa, não por cargo."
   },
   {
-   "title": "Efeitos da IA generativa no trabalho de alta qualificação",
+   "title": "IA generativa e produtividade de desenvolvedores",
    "original_title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
    "url": "https://doi.org/10.1287/mnsc.2025.00535",
    "venue": "Management Science",
@@ -83,15 +83,41 @@
     "University of Pennsylvania"
    ],
    "watch_authors": [],
-   "score": 10,
+   "score": 9,
    "theme": "ai_work",
    "region": "",
-   "cited_by": 348,
-   "velocity": 38.67,
-   "why": "Três experimentos de campo com 4.867 desenvolvedores na Microsoft, Accenture e uma Fortune 100 encontraram aumento de 26,08% nas tarefas concluídas com o assistente de código. Os ganhos foram maiores entre os desenvolvedores menos experientes, o que reposiciona a discussão de senioridade e produtividade."
+   "cited_by": 375,
+   "velocity": 41.67,
+   "why": "Três experimentos de campo com 4.867 desenvolvedores na Microsoft, Accenture e uma Fortune 100 mostram aumento de 26,08% em tarefas concluídas, com ganhos maiores entre profissionais menos experientes. Dá um número defensável para business cases de copilotos de código."
   },
   {
-   "title": "\"Potencial\" e a lacuna de gênero em promoções",
+   "title": "IA acelera a entrega, mas pode erodir expertise",
+   "original_title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+   "url": "https://doi.org/10.3386/w35720",
+   "venue": "National Bureau of Economic Research",
+   "date": "2026-09-01",
+   "authors": [
+    "David Autor",
+    "Tanya Rodchenko",
+    "Josh Martin",
+    "Zanna Iscenko",
+    "Scott Strand",
+    "David Pearl",
+    "Melissa Ferere"
+   ],
+   "institutions": [],
+   "watch_authors": [
+    "David Autor"
+   ],
+   "score": 9,
+   "theme": "learning",
+   "region": "",
+   "cited_by": 15,
+   "velocity": 7.5,
+   "why": "Ensaio randomizado de três meses com 133 advogados de patentes mostrou que a IA elevou a qualidade do trabalho entregue, mas levantou a questão do julgamento profissional sem apoio da ferramenta. Coloca o trade-off performance × aprendizagem no centro da agenda de skills."
+  },
+  {
+   "title": "'Potencial' e o gap de promoção de gênero",
    "original_title": "“Potential” and the Gender Promotion Gap",
    "url": "https://doi.org/10.1257/aer.20220831",
    "venue": "American Economic Review",
@@ -110,44 +136,37 @@
    "watch_authors": [
     "Danielle Li"
    ],
-   "score": 10,
+   "score": 9,
    "theme": "pay_careers",
    "region": "",
-   "cited_by": 76,
-   "velocity": 7.6,
-   "why": "Com 29.809 funcionários em trilha de gestão, o estudo mostra que mulheres recebem notas de \"potencial\" menores apesar de notas de desempenho maiores, e que isso explica cerca de metade do gap de promoção. As mulheres ainda superam os colegas depois, o que derruba a hipótese de que a avaliação seria uma previsão acurada."
+   "cited_by": 68,
+   "velocity": 6.8,
+   "why": "Com 29.809 funcionários em trilha gerencial, o estudo mostra que mulheres recebem notas de potencial menores apesar de desempenho superior, e isso explica cerca de metade do gap de promoção. Aponta diretamente para revisar como se avalia potencial em comitês de sucessão."
   },
   {
-   "title": "IA generativa e o upskilling temporário de knowledge workers",
-   "original_title": "Generative AI and the temporary upskilling of knowledge workers",
-   "url": "https://doi.org/10.1038/s41562-026-02566-6",
-   "venue": "Nature Human Behaviour",
-   "date": "2026-10-26",
+   "title": "Substituição de tarefas humanas por IA",
+   "original_title": "AI-Driven Human Task Substitution: Evidence from Google Translate and ChatGPT",
+   "url": "https://doi.org/10.1287/mnsc.2024.06740",
+   "venue": "Management Science",
+   "date": "2026-10-14",
    "authors": [
-    "Emma Wiles",
-    "Lisa Krayer",
-    "Mohamed Abbadi",
-    "Urvi Awasthi",
-    "Ryan Kennedy",
-    "Pamela Mishkin",
-    "Dan Sack",
-    "François Candelon"
+    "Erdem Dogukan Yilmaz",
+    "Ivana Naumovska",
+    "Vikas A. Aggarwal"
    ],
    "institutions": [
-    "Boston University",
-    "Boston Consulting Group (United States)",
-    "OpenAI (United States)"
+    "INSEAD"
    ],
    "watch_authors": [],
-   "score": 9,
-   "theme": "learning",
+   "score": 8,
+   "theme": "ai_work",
    "region": "",
-   "cited_by": 17,
-   "velocity": 17.0,
-   "why": "Publicado na Nature Human Behaviour por pesquisadores de Boston University, BCG e OpenAI, o estudo aponta que o ganho de habilidade proporcionado pela IA generativa pode ser temporário. É um alerta direto para programas de upskilling que assumem efeitos permanentes."
+   "cited_by": 30,
+   "velocity": 30.0,
+   "why": "Compara duas gerações de IA no mercado de tradução e mostra que a IA preditiva reduziu demanda por tarefas analíticas, enquanto a IA generativa de propósito geral afetou também tarefas criativas. Ajuda a antecipar quais papéis são mais expostos em cada onda tecnológica."
   },
   {
-   "title": "O colega de equipe cibernético",
+   "title": "O colega cibernético: IA e trabalho em time",
    "original_title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
    "url": "https://doi.org/10.1287/orsc.2025.20702",
    "venue": "Organization Science",
@@ -174,15 +193,15 @@
     "Karim R. Lakhani",
     "Raffaella Sadun"
    ],
-   "score": 9,
-   "theme": "ai_work",
+   "score": 8,
+   "theme": "leadership",
    "region": "",
-   "cited_by": 60,
-   "velocity": 12.0,
-   "why": "Experimento de campo pré-registrado com 791 profissionais da P&G em desafios reais de inovação de produto mostrou que indivíduos com IA igualaram o desempenho de equipes sem IA. Isso força a revisão de desenhos de time, colaboração e integração de expertise."
+   "cited_by": 70,
+   "velocity": 14.0,
+   "why": "Experimento de campo com 791 profissionais da Procter & Gamble mostrou que indivíduos com IA igualaram o desempenho de times sem IA. Redefine o desenho de squads e a economia de colaboração em inovação de produto."
   },
   {
-   "title": "O poder da proximidade dos colegas",
+   "title": "O poder da proximidade física no trabalho",
    "original_title": "The Power of Proximity to Coworkers",
    "url": "https://doi.org/10.1093/qje/qjag027",
    "venue": "The Quarterly Journal of Economics",
@@ -199,118 +218,67 @@
     "Harvard University"
    ],
    "watch_authors": [],
-   "score": 9,
-   "theme": "engagement",
-   "region": "",
-   "cited_by": 39,
-   "velocity": 6.5,
-   "why": "Usando os fechamentos de 2020 e os mandatos de retorno de 2022–2023 em uma Fortune 500, o estudo mostra que sentar perto dos colegas aumenta o feedback de código em 18,3% e melhora a qualidade do código. Os ganhos se concentram em profissionais mais jovens e com menos tempo de casa, mas engenheiros experientes escrevem menos código."
-  },
-  {
-   "title": "A IA melhora ou erode a expertise?",
-   "original_title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
-   "url": "https://doi.org/10.3386/w35720",
-   "venue": "National Bureau of Economic Research",
-   "date": "2026-09-01",
-   "authors": [
-    "David Autor",
-    "Tanya Rodchenko",
-    "Josh Martin",
-    "Zanna Iscenko",
-    "Scott Strand",
-    "David Pearl",
-    "Melissa Ferere"
-   ],
-   "institutions": [],
-   "watch_authors": [
-    "David Autor"
-   ],
-   "score": 9,
-   "theme": "learning",
-   "region": "",
-   "cited_by": 12,
-   "velocity": 6.0,
-   "why": "RCT de três meses com 133 advogados de patentes em 11 escritórios dos EUA mediu tanto o desempenho com IA quanto o julgamento profissional sem ela, com avaliação cega por especialistas. A IA elevou a qualidade do trabalho entregue, mas expôs a tensão entre performance imediata e formação de expertise."
-  },
-  {
-   "title": "Como as organizações usam IA: evidências do ChatGPT",
-   "original_title": "How Organizations Use AI: Evidence from ChatGPT",
-   "url": "https://doi.org/10.48550/arxiv.2608.12236",
-   "venue": "arXiv (Cornell University)",
-   "date": "2026-08-12",
-   "authors": [
-    "Aaron Chatterji",
-    "David Holtz",
-    "Neel Rakholia",
-    "Prasanna B. Tambe",
-    "Gawesha Weeratunga"
-   ],
-   "institutions": [
-    "Columbia University",
-    "University of Pennsylvania"
-   ],
-   "watch_authors": [
-    "Prasanna Tambe"
-   ],
-   "score": 9,
+   "score": 8,
    "theme": "ai_work",
    "region": "",
-   "cited_by": 11,
-   "velocity": 3.67,
-   "why": "Ao vincular registros do ChatGPT Enterprise a funções, tarefas e dados financeiros, o estudo analisa mais de 1.500 organizações e mais de 17 milhões de mensagens no horizonte de seis meses de adoção. Entrega quatro fatos sobre adoção empresarial, incluindo o crescimento por novas empresas e por maior intensidade das já adotantes."
+   "cited_by": 38,
+   "velocity": 6.33,
+   "why": "Usando dados de engenheiros de software de 2019 a 2024, o estudo mostra que sentar perto dos colegas aumenta feedback de código em 18,3% e melhora qualidade, com ganhos concentrados em profissionais júnior. Dá base empírica para políticas de presença que priorizam formação de capital humano."
   },
   {
-   "title": "A IA barateia o discurso?",
-   "original_title": "Does AI Cheapen Talk? Theory and Evidence from Global Entrepreneurship and Hiring",
-   "url": "https://doi.org/10.1287/mnsc.2024.07027",
-   "venue": "Management Science",
-   "date": "2026-04-27",
+   "title": "Transparência de faixas salariais e negociação",
+   "original_title": "The implications of pay range transparency on job application preferences and negotiations.",
+   "url": "https://doi.org/10.1037/apl0001360",
+   "venue": "Journal of Applied Psychology",
+   "date": "2026-11-01",
    "authors": [
-    "Bo Cowgill",
-    "Pablo Hernández‐Lagos",
-    "Nataliya Langburd Wright"
+    "Alice J. Lee",
+    "Tae‐Youn Park",
+    "Sungyong Chang"
    ],
    "institutions": [
-    "University of Toronto",
-    "Yeshiva University",
-    "Columbia University"
+    "Cornell University",
+    "New York State School of Industrial and Labor Relations",
+    "Sungkyunkwan University"
    ],
-   "watch_authors": [
-    "Bo Cowgill"
-   ],
-   "score": 9,
-   "theme": "hiring",
-   "region": "",
-   "cited_by": 18,
-   "velocity": 2.57,
-   "why": "Modelo e experimentos em contratação e investimento em startups mostram que o acesso a IA generativa pode reduzir a precisão da triagem em 4%–9% para empregadores. O achado ataca diretamente a lógica de seleção baseada em sinais custosos de produzir, como candidaturas e pitches."
-  },
-  {
-   "title": "Automação e dissipação de rendas",
-   "original_title": "Automation and Rent Dissipation: Implications for Wages, Inequality, and Productivity",
-   "url": "https://doi.org/10.1093/qje/qjag006",
-   "venue": "The Quarterly Journal of Economics",
-   "date": "2026-01-30",
-   "authors": [
-    "Daron Acemoğlu",
-    "Pascual Restrepo"
-   ],
-   "institutions": [
-    "Massachusetts Institute of Technology",
-    "Yale University"
-   ],
-   "watch_authors": [
-    "Daron Acemoglu"
-   ],
-   "score": 9,
+   "watch_authors": [],
+   "score": 8,
    "theme": "pay_careers",
    "region": "",
-   "cited_by": 24,
-   "velocity": 2.4,
-   "why": "O artigo mostra que a automação mira tarefas com rendas acima da opção externa do trabalhador, dissipando essas rendas e amplificando perdas salariais. Nos dados dos EUA de 1980 a 2016, a automação responde por 52% do aumento da desigualdade entre grupos, com a dissipação de rendas explicando um quinto desse total."
+   "cited_by": 6,
+   "velocity": 6.0,
+   "why": "Examina como a largura das faixas divulgadas afeta decisão de candidatura e negociação de mulheres e homens. Mostra que a implementação da lei importa tanto quanto a lei — faixas muito amplas podem preservar disparidades."
   },
   {
-   "title": "Cláusulas e efeitos: não competição",
+   "title": "Gap salarial de gênero na China",
+   "original_title": "The Gender Pay Gap in China: Insights from a Discrimination Perspective",
+   "url": "https://doi.org/10.23919/jsc.2026.0012",
+   "venue": "Journal of Social Computing",
+   "date": "2026-06-01",
+   "authors": [
+    "Wei Bai",
+    "Yan-Li Lee",
+    "Jingyi Liao",
+    "Lusi Wu",
+    "Mei Xie",
+    "Tao Zhou"
+   ],
+   "institutions": [
+    "Tsinghua University",
+    "Xihua University",
+    "Nanyang Technological University",
+    "University of Electronic Science and Technology of China"
+   ],
+   "watch_authors": [],
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "cited_by": 15,
+   "velocity": 3.0,
+   "why": "Com mais de dez milhões de currículos, o estudo encontra mulheres ganhando 71,57% do rendimento masculino, em todas as faixas etárias e níveis educacionais. Amplia a evidência de equidade para além do contexto anglo-saxão."
+  },
+  {
+   "title": "Cláusulas de não concorrência sob teste",
    "original_title": "Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses",
    "url": "https://doi.org/10.1093/qje/qjag040",
    "venue": "The Quarterly Journal of Economics",
@@ -328,19 +296,45 @@
    "watch_authors": [
     "Bo Cowgill"
    ],
-   "score": 9,
-   "theme": "pay_careers",
+   "score": 8,
+   "theme": "hiring",
    "region": "",
-   "cited_by": 8,
-   "velocity": 2.0,
-   "why": "Experimento de campo com cerca de 14.000 ofertas de trabalho a recrutadores freelancer mostrou que remover a cláusula de não competição aumenta a mobilidade entre empregadores concorrentes em 36%–52% e eleva os ganhos totais em 12%–17%. Não houve evidência de vazamento de segredos, e muitos trabalhadores sequer sabiam da cláusula."
+   "cited_by": 9,
+   "velocity": 2.25,
+   "why": "Experimento de campo com cerca de 14.000 ofertas em duas firmas financeiras mostra que remover não concorrências aumenta mobilidade entre empregadores em 36%–52% e eleva ganhos totais em 12%–17%, sem vazamento de segredos. Insumo direto para políticas de retenção e contratos."
   },
   {
-   "title": "Como identificar um bom gestor?",
+   "title": "Tecnologias de gestão colaborativa e intensidade gerencial",
+   "original_title": "Collaborative Work Management Technologies and Managerial Intensity in U.S. Corporations: An Examination",
+   "url": "https://doi.org/10.1287/mnsc.2023.04127",
+   "venue": "Management Science",
+   "date": "2026-03-20",
+   "authors": [
+    "Piyush Gulati",
+    "Arianna Marchetti",
+    "Phanish Puranam"
+   ],
+   "institutions": [
+    "University College London",
+    "Singapore Management University",
+    "INSEAD"
+   ],
+   "watch_authors": [
+    "Phanish Puranam"
+   ],
+   "score": 8,
+   "theme": "leadership",
+   "region": "",
+   "cited_by": 9,
+   "velocity": 1.12,
+   "why": "Usando mais de 26 milhões de anúncios de vagas, o estudo mostra que tecnologias de coordenação em tempo real reduzem a intensidade gerencial e descentralizam decisões. Questiona o pressuposto de que digitalização reforça hierarquias."
+  },
+  {
+   "title": "Como identificar um bom gestor",
    "original_title": "How Do You Identify a Good Manager?",
    "url": "https://doi.org/10.1093/qje/qjag004",
    "venue": "The Quarterly Journal of Economics",
-   "date": "2026-01-20",
+   "date": "2026-01-21",
    "authors": [
     "Ben Weidmann",
     "Joe Vecci",
@@ -362,15 +356,45 @@
    "watch_authors": [
     "David J. Deming"
    ],
-   "score": 9,
+   "score": 8,
    "theme": "leadership",
    "region": "",
    "cited_by": 6,
    "velocity": 0.6,
-   "why": "Experimento de laboratório pré-registrado isola causalmente a contribuição gerencial ao alocar gestores aleatoriamente para equipes e controlar habilidade individual. A contribuição do gestor é decisiva para o sucesso do time, é prevista por habilidade de decisão econômica e não por demografia, e quem se autosseleciona para gestão tem desempenho pior que gestores aleatórios."
+   "why": "Experimento de laboratório pré-registrado isola a contribuição causal do gestor e mostra que quem se autosseleciona para gestão tem desempenho pior que gestores alocados aleatoriamente. Sugere repensar critérios de promoção para liderança."
   },
   {
-   "title": "Retorno ao escritório e a distribuição de tenure",
+   "title": "Híbrido é o melhor dos dois mundos?",
+   "original_title": "Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment",
+   "url": "https://doi.org/10.1162/rest_a_01428",
+   "venue": "The Review of Economics and Statistics",
+   "date": "2026-07-01",
+   "authors": [
+    "Prithwiraj Choudhury",
+    "Christos Andreas Makridis",
+    "Tarun Khanna",
+    "Kyle Schirmann"
+   ],
+   "institutions": [
+    "Harvard University",
+    "London School of Economics and Political Science",
+    "University of Nicosia",
+    "Arizona State University",
+    "Stanford University",
+    "Columbia University"
+   ],
+   "watch_authors": [
+    "Prithwiraj Choudhury"
+   ],
+   "score": 7,
+   "theme": "engagement",
+   "region": "",
+   "cited_by": 210,
+   "velocity": 52.5,
+   "why": "Experimento de campo mostra que cerca de dois dias presenciais por semana maximizam equilíbrio de vida, satisfação e conexão com colegas, sem diferença em avaliação de desempenho. É a referência mais citada para calibrar políticas de presença."
+  },
+  {
+   "title": "Retorno ao escritório e distribuição de tempo de casa",
    "original_title": "Return to Office and the Tenure Distribution",
    "url": "https://doi.org/10.1162/rest.a.1866",
    "venue": "The Review of Economics and Statistics",
@@ -386,282 +410,506 @@
     "University of Chicago"
    ],
    "watch_authors": [],
-   "score": 8,
+   "score": 7,
    "theme": "engagement",
    "region": "",
-   "cited_by": 21,
-   "velocity": 10.5,
-   "why": "Com dados de currículos em larga escala de Microsoft, SpaceX e Apple, o estudo estima redução de tenure e senioridade nas empresas que voltaram ao escritório. O efeito parece expulsar profissionais seniores, com risco para produtividade e inovação."
+   "cited_by": 20,
+   "velocity": 10.0,
+   "why": "Com dados de currículos de Microsoft, SpaceX e Apple, o estudo estima redução de tempo de casa e senioridade após mandatos de retorno ao escritório, com saída desproporcional de profissionais seniores. Alerta para o custo de inovação dessas políticas."
   },
   {
-   "title": "IA, cognição humana e colapso do conhecimento",
-   "original_title": "AI, Human Cognition and Knowledge Collapse",
-   "url": "https://doi.org/10.3386/w34910",
-   "venue": "National Bureau of Economic Research",
-   "date": "2026-02-01",
+   "title": "Impacto do programa obrigatório de busca de emprego",
+   "original_title": "Evaluating the employment impact of a mandatory job search assistance program",
+   "url": "https://doi.org/10.1920/wp.ifs.2001.0120",
+   "venue": "",
+   "date": "2026-03-11",
    "authors": [
-    "Daron Acemoğlu",
-    "Dingwen Kong",
-    "Asuman Ozdaglar"
+    "Richard W. Blundell",
+    "Mónica Costa Dias",
+    "Costas Meghir",
+    "John Michael Van Reenen"
    ],
    "institutions": [
-    "National Bureau of Economic Research",
-    "Centre for Economic Policy Research",
-    "Massachusetts Institute of Technology"
+    "Institute for Fiscal Studies",
+    "Centro de Estudios Monetarios y Financieros"
    ],
    "watch_authors": [
-    "Daron Acemoglu"
+    "John Van Reenen"
    ],
-   "score": 8,
-   "theme": "learning",
-   "region": "",
-   "cited_by": 93,
-   "velocity": 10.33,
-   "why": "Modelo dinâmico de aprendizado e decisão mostra que a IA agêntica substitui o esforço humano que gera simultaneamente sinal privado e conhecimento público, enfraquecendo a externalidade de aprendizado. É o alerta conceitual mais forte do ano sobre o custo de longo prazo da delegação cognitiva."
-  },
-  {
-   "title": "Como diferentes arranjos de trabalho remoto afetam satisfação e retenção",
-   "original_title": "How Do Different Remote Work Arrangements Impact Employee Job Satisfaction and Retention?",
-   "url": "https://doi.org/10.1287/mnsc.2024.07017",
-   "venue": "Management Science",
-   "date": "2026-02-13",
-   "authors": [
-    "Christos Andreas Makridis",
-    "Jason D. Schloetzer"
-   ],
-   "institutions": [
-    "University of Nicosia",
-    "Arizona State University",
-    "Georgetown University"
-   ],
-   "watch_authors": [],
-   "score": 8,
-   "theme": "engagement",
+   "score": 7,
+   "theme": "hiring",
    "region": "",
    "cited_by": 38,
-   "velocity": 4.22,
-   "why": "Com dados de arranjos de trabalho remoto de quase 165.000 funcionários, o estudo mostra que a associação positiva entre remoto e satisfação diminui substancialmente após controlar por remuneração, ocupação, demografia e características do ambiente de trabalho. O remoto também aparece associado a maior intenção de deixar a empresa."
+   "velocity": 4.75,
+   "why": "Avaliação do New Deal for the Young Unemployed britânico com dados administrativos longitudinais mede efeitos de assistência obrigatória à recolocação. Relevante para políticas públicas de emprego e para programas corporativos de outplacement."
   }
  ],
  "growth": [
   {
    "label": "algorithmic management / workplace surveillance",
    "query": "\"algorithmic management\" OR \"workplace surveillance\" OR \"employee monitoring\"",
-   "prev": 571,
-   "cur": 1297,
-   "cur_full_year": 1475,
-   "change": 1.58
+   "prev": 578,
+   "cur": 1373,
+   "archive": 5,
+   "examples": [
+    {
+     "title": "Algorithmic management in the global gig economy: an interdisciplinary systematic literature review and critical discourse analysis",
+     "url": "https://doi.org/10.3389/fsoc.2026.1743445",
+     "score": 6,
+     "date": "2026-04-15"
+    },
+    {
+     "title": "Algorithmic Management in Traditional Organizations: Implications for Workers’ Efficiency and Work Relationships",
+     "url": "https://doi.org/10.1007/s12599-025-00981-z",
+     "score": 6,
+     "date": "2026-01-29"
+    },
+    {
+     "title": "Algorithmic management practices, trust, and gig-worker continuance: A mixed-methods study of platform work",
+     "url": "https://doi.org/10.1016/j.techsoc.2026.103394",
+     "score": 6,
+     "date": "2026-05-09"
+    }
+   ],
+   "cur_full_year": 1520,
+   "change": 1.63
   },
   {
    "label": "generative AI / large language model",
    "query": "(\"generative AI\" OR \"large language model\" OR ChatGPT OR copilot) AND (workers OR employees OR workplace OR productivity) AND (experiment OR field OR \"randomized\" OR \"quasi-experimental\" OR staggered OR rollout OR \"difference-in-differences\")",
-   "prev": 354,
-   "cur": 746,
-   "cur_full_year": 849,
-   "change": 1.4
+   "prev": 358,
+   "cur": 771,
+   "archive": 7,
+   "examples": [
+    {
+     "title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
+     "url": "https://doi.org/10.1287/mnsc.2025.00535",
+     "score": 9,
+     "date": "2026-02-27"
+    },
+    {
+     "title": "AI-Driven Human Task Substitution: Evidence from Google Translate and ChatGPT",
+     "url": "https://doi.org/10.1287/mnsc.2024.06740",
+     "score": 8,
+     "date": "2026-10-14"
+    },
+    {
+     "title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+     "url": "https://doi.org/10.1287/mnsc.2025.01063",
+     "score": 7,
+     "date": "2026-11-25"
+    }
+   ],
+   "cur_full_year": 854,
+   "change": 1.39
   },
   {
    "label": "people analytics / HR analytics",
    "query": "\"people analytics\" OR \"HR analytics\" OR \"workforce analytics\" OR \"talent analytics\"",
-   "prev": 842,
-   "cur": 1504,
-   "cur_full_year": 1711,
-   "change": 1.03
-  },
-  {
-   "label": "personnel selection / machine learning",
-   "query": "(hiring OR recruitment OR \"personnel selection\") AND (algorithm OR \"machine learning\" OR \"artificial intelligence\" OR \"large language model\")",
-   "prev": 5076,
-   "cur": 7047,
-   "cur_full_year": 8017,
-   "change": 0.58
+   "prev": 928,
+   "cur": 1589,
+   "archive": 6,
+   "examples": [
+    {
+     "title": "Integrating machine learning and explainable AI for employee attrition prediction in HR analytics",
+     "url": "https://doi.org/10.1038/s41598-026-36424-2",
+     "score": 6,
+     "date": "2026-02-12"
+    },
+    {
+     "title": "FairPromote: Explainable and Fairness-Aware Talent Promotion Prediction via Adversarial Debiasing and SHAP-Based Interpretation",
+     "url": "https://doi.org/10.1109/access.2026.3692578",
+     "score": 6,
+     "date": "2026-01-01"
+    },
+    {
+     "title": "Employee Attrition Prediction: An Explanatory and Statistically Robust Ensemble Learning Model",
+     "url": "https://doi.org/10.3390/computers15030185",
+     "score": 6,
+     "date": "2026-03-12"
+    }
+   ],
+   "cur_full_year": 1759,
+   "change": 0.9
   },
   {
    "label": "management practices",
    "query": "\"management practices\" AND (productivity OR firms) AND workers",
-   "prev": 120,
-   "cur": 157,
-   "cur_full_year": 179,
+   "prev": 121,
+   "cur": 163,
+   "archive": 2,
+   "examples": [
+    {
+     "title": "Mind the Gap: AI Adoption in Europe and the U.S.",
+     "url": "https://doi.org/10.3386/w34995",
+     "score": 6,
+     "date": "2026-03-01"
+    },
+    {
+     "title": "Mind the Gap: AI Adoption in Europe and the US",
+     "url": "https://doi.org/10.20955/wp.2026.003",
+     "score": 6,
+     "date": "2026-01-01"
+    }
+   ],
+   "cur_full_year": 180,
    "change": 0.49
-  },
-  {
-   "label": "performance management / performance appraisal",
-   "query": "(\"performance management\" OR \"performance appraisal\") AND (employees OR workers OR organizations)",
-   "prev": 2650,
-   "cur": 3338,
-   "cur_full_year": 3797,
-   "change": 0.43
   },
   {
    "label": "organizational network analysis / workplace collaboration",
    "query": "\"organizational network analysis\" OR ((\"workplace collaboration\" OR \"collaboration network\") AND employees)",
-   "prev": 65,
-   "cur": 81,
-   "cur_full_year": 92,
+   "prev": 64,
+   "cur": 84,
+   "archive": 6,
+   "examples": [
+    {
+     "title": "Research trends, theoretical foundations and key determinants of employee well-being: a systematic and bibliometric review (2005–2025)",
+     "url": "https://doi.org/10.1080/23311975.2025.2612411",
+     "score": 6,
+     "date": "2026-01-13"
+    },
+    {
+     "title": "Artificial intelligence and data analytics in human talent management",
+     "url": "https://doi.org/10.3389/frai.2026.1793296",
+     "score": 6,
+     "date": "2026-05-15"
+    },
+    {
+     "title": "A visual audit of diversity imagery across fortune 500 firms",
+     "url": "https://doi.org/10.3389/fcomm.2026.1907640",
+     "score": 6,
+     "date": "2026-09-23"
+    }
+   ],
+   "cur_full_year": 93,
+   "change": 0.45
+  },
+  {
+   "label": "performance management / performance appraisal",
+   "query": "(\"performance management\" OR \"performance appraisal\") AND (employees OR workers OR organizations)",
+   "prev": 2716,
+   "cur": 3492,
+   "archive": 2,
+   "examples": [
+    {
+     "title": "AI in HRM: a unified model of AI capabilities and process efficiency for enhanced HRM effectiveness",
+     "url": "https://doi.org/10.1038/s41598-026-73957-y",
+     "score": 5,
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Artificial intelligence in human resource management: models for recruitment, training, performance, compensation, and retention",
+     "url": "https://doi.org/10.3389/frai.2026.1718244",
+     "score": 5,
+     "date": "2026-02-06"
+    }
+   ],
+   "cur_full_year": 3866,
    "change": 0.42
   },
   {
    "label": "skills-based hiring / skills taxonomy",
    "query": "upskilling OR reskilling OR \"skills-based hiring\" OR \"skills taxonomy\" OR \"internal mobility\"",
-   "prev": 2827,
-   "cur": 3470,
-   "cur_full_year": 3948,
-   "change": 0.4
+   "prev": 2835,
+   "cur": 3618,
+   "archive": 3,
+   "examples": [
+    {
+     "title": "“Generate” the Future of Work Through AI: Empirical Evidence from Online Labor Markets",
+     "url": "https://doi.org/10.1287/isre.2023.0461",
+     "score": 7,
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Generative AI and the temporary upskilling of knowledge workers",
+     "url": "https://doi.org/10.1038/s41562-026-02566-6",
+     "score": 6,
+     "date": "2026-10-26"
+    },
+    {
+     "title": "Bridging Skill Gaps for the Future: New Jobs Creation in the AI Age",
+     "url": "https://doi.org/10.5089/9798229028196.006",
+     "score": 6,
+     "date": "2026-01-01"
+    }
+   ],
+   "cur_full_year": 4006,
+   "change": 0.41
   },
   {
    "label": "human resource management / strategic HRM",
    "query": "\"human resource management\" OR \"strategic HRM\" OR \"HRM practices\"",
-   "prev": 10359,
-   "cur": 12339,
-   "cur_full_year": 14037,
+   "prev": 10554,
+   "cur": 12969,
+   "archive": 4,
+   "examples": [
+    {
+     "title": "Artificial Intelligence (AI) in human resource management (HRM): a systematic review of its dual impact on diversity, equity, and inclusion (DEI)",
+     "url": "https://doi.org/10.1007/s11301-025-00580-y",
+     "score": 6,
+     "date": "2026-01-08"
+    },
+    {
+     "title": "Employee Attrition Prediction: An Explanatory and Statistically Robust Ensemble Learning Model",
+     "url": "https://doi.org/10.3390/computers15030185",
+     "score": 6,
+     "date": "2026-03-12"
+    },
+    {
+     "title": "Artificial intelligence in human resource management: models for recruitment, training, performance, compensation, and retention",
+     "url": "https://doi.org/10.3389/frai.2026.1718244",
+     "score": 5,
+     "date": "2026-02-06"
+    }
+   ],
+   "cur_full_year": 14359,
    "change": 0.36
   },
   {
    "label": "talent management / talent acquisition",
    "query": "\"talent management\" OR \"talent acquisition\" OR \"succession planning\"",
-   "prev": 3031,
-   "cur": 3493,
-   "cur_full_year": 3974,
-   "change": 0.31
-  },
-  {
-   "label": "diversity, equity / workplace inclusion",
-   "query": "(\"diversity, equity\" OR DEI OR \"workplace inclusion\" OR \"workplace discrimination\") AND (employees OR hiring OR workplace)",
-   "prev": 916,
-   "cur": 1002,
-   "cur_full_year": 1140,
-   "change": 0.24
+   "prev": 3062,
+   "cur": 3653,
+   "archive": 3,
+   "examples": [
+    {
+     "title": "Mitigating Disability Bias in Hiring: The Role of Inclusion‐Focused Generative AI in Complex HR Decisions",
+     "url": "https://doi.org/10.1111/1748-8583.70044",
+     "score": 7,
+     "date": "2026-03-11"
+    },
+    {
+     "title": "Integrating machine learning and explainable AI for employee attrition prediction in HR analytics",
+     "url": "https://doi.org/10.1038/s41598-026-36424-2",
+     "score": 6,
+     "date": "2026-02-12"
+    },
+    {
+     "title": "Analisis Peramalan Kebutuhan SDM dalam Mendukung Perencanaan SDM Strategis: Literature Review",
+     "url": "https://doi.org/10.62379/jbem.v3i1.1898",
+     "score": 5,
+     "date": "2026-09-29"
+    }
+   ],
+   "cur_full_year": 4044,
+   "change": 0.32
   },
   {
    "label": "pay equity / gender pay gap",
    "query": "(\"pay equity\" OR \"gender pay gap\" OR \"pay transparency\" OR \"executive compensation\" OR \"employee compensation\")",
-   "prev": 1114,
-   "cur": 1196,
-   "cur_full_year": 1361,
-   "change": 0.22
-  },
-  {
-   "label": "employee turnover / employee retention",
-   "query": "\"employee turnover\" OR \"employee retention\" OR \"quit intention\" OR \"voluntary turnover\"",
-   "prev": 3147,
-   "cur": 3313,
-   "cur_full_year": 3769,
-   "change": 0.2
-  },
-  {
-   "label": "employee engagement / employee well-being",
-   "query": "\"employee engagement\" OR \"employee well-being\" OR burnout OR \"job satisfaction\"",
-   "prev": 35658,
-   "cur": 37574,
-   "cur_full_year": 42745,
-   "change": 0.2
+   "prev": 1129,
+   "cur": 1255,
+   "archive": 5,
+   "examples": [
+    {
+     "title": "The implications of pay range transparency on job application preferences and negotiations.",
+     "url": "https://doi.org/10.1037/apl0001360",
+     "score": 8,
+     "date": "2026-11-01"
+    },
+    {
+     "title": "The Gender Pay Gap in China: Insights from a Discrimination Perspective",
+     "url": "https://doi.org/10.23919/jsc.2026.0012",
+     "score": 8,
+     "date": "2026-06-01"
+    },
+    {
+     "title": "How Do Different Remote Work Arrangements Impact Employee Job Satisfaction and Retention?",
+     "url": "https://doi.org/10.1287/mnsc.2024.07017",
+     "score": 7,
+     "date": "2026-02-13"
+    }
+   ],
+   "cur_full_year": 1389,
+   "change": 0.23
   },
   {
    "label": "gestão de pessoas / recursos humanos",
    "query": "\"gestão de pessoas\" OR \"recursos humanos\" OR \"gestão de talentos\" OR \"rotatividade\"",
-   "prev": 1996,
-   "cur": 2087,
-   "cur_full_year": 2374,
+   "prev": 1960,
+   "cur": 2179,
+   "archive": 0,
+   "examples": [],
+   "cur_full_year": 2412,
+   "change": 0.23
+  },
+  {
+   "label": "employee engagement / employee well-being",
+   "query": "\"employee engagement\" OR \"employee well-being\" OR burnout OR \"job satisfaction\"",
+   "prev": 35949,
+   "cur": 39141,
+   "archive": 5,
+   "examples": [
+    {
+     "title": "Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment",
+     "url": "https://doi.org/10.1162/rest_a_01428",
+     "score": 7,
+     "date": "2026-07-01"
+    },
+    {
+     "title": "How Do Different Remote Work Arrangements Impact Employee Job Satisfaction and Retention?",
+     "url": "https://doi.org/10.1287/mnsc.2024.07017",
+     "score": 7,
+     "date": "2026-02-13"
+    },
+    {
+     "title": "Technostress and employee well-being: A systematic review of empirical evidence",
+     "url": "https://doi.org/10.1016/j.chbr.2026.100941",
+     "score": 6,
+     "date": "2026-01-22"
+    }
+   ],
+   "cur_full_year": 43335,
+   "change": 0.21
+  },
+  {
+   "label": "employee turnover / employee retention",
+   "query": "\"employee turnover\" OR \"employee retention\" OR \"quit intention\" OR \"voluntary turnover\"",
+   "prev": 3197,
+   "cur": 3447,
+   "archive": 3,
+   "examples": [
+    {
+     "title": "The Real Effects of Fair Workweek Laws on Work Schedules: Evidence from Los Angeles",
+     "url": "https://doi.org/10.1287/mnsc.2024.05622",
+     "score": 7,
+     "date": "2026-06-10"
+    },
+    {
+     "title": "Audit Firm Employee Turnover: Implications for Audit Quality",
+     "url": "https://doi.org/10.2308/ajpt-2024-069",
+     "score": 6,
+     "date": "2026-06-01"
+    },
+    {
+     "title": "Integrating machine learning and explainable AI for employee attrition prediction in HR analytics",
+     "url": "https://doi.org/10.1038/s41598-026-36424-2",
+     "score": 6,
+     "date": "2026-02-12"
+    }
+   ],
+   "cur_full_year": 3816,
    "change": 0.19
   },
   {
    "label": "remote work / hybrid work",
    "query": "\"remote work\" OR \"hybrid work\" OR \"work from home\" OR \"return to office\"",
-   "prev": 4051,
-   "cur": 4217,
-   "cur_full_year": 4797,
+   "prev": 4105,
+   "cur": 4389,
+   "archive": 6,
+   "examples": [
+    {
+     "title": "The Power of Proximity to Coworkers",
+     "url": "https://doi.org/10.1093/qje/qjag027",
+     "score": 8,
+     "date": "2026-05-12"
+    },
+    {
+     "title": "Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment",
+     "url": "https://doi.org/10.1162/rest_a_01428",
+     "score": 7,
+     "date": "2026-07-01"
+    },
+    {
+     "title": "Return to Office and the Tenure Distribution",
+     "url": "https://doi.org/10.1162/rest.a.1866",
+     "score": 7,
+     "date": "2026-09-08"
+    }
+   ],
+   "cur_full_year": 4859,
    "change": 0.18
   }
  ],
  "geography": {
-  "works": 669,
+  "works": 600,
   "sectors": [
    {
     "name": "Academia",
-    "works": 574,
-    "share": 0.858
+    "works": 510,
+    "share": 0.85
    },
    {
     "name": "Sem fins lucrativos",
-    "works": 61,
-    "share": 0.091
+    "works": 54,
+    "share": 0.09
    },
    {
     "name": "Centros de pesquisa",
-    "works": 45,
+    "works": 40,
     "share": 0.067
    },
    {
-    "name": "Saúde",
-    "works": 31,
-    "share": 0.046
-   },
-   {
     "name": "Empresas",
-    "works": 22,
-    "share": 0.033
-   },
-   {
-    "name": "Governo e reguladores",
-    "works": 18,
-    "share": 0.027
+    "works": 21,
+    "share": 0.035
    },
    {
     "name": "Outros",
-    "works": 18,
-    "share": 0.027
+    "works": 20,
+    "share": 0.033
+   },
+   {
+    "name": "Saúde",
+    "works": 19,
+    "share": 0.032
+   },
+   {
+    "name": "Governo e reguladores",
+    "works": 13,
+    "share": 0.022
    }
   ],
   "institutions": [
    {
     "name": "National Bureau of Economic Research",
-    "works": 37,
+    "works": 34,
     "country": "US"
    },
    {
     "name": "Stanford University",
-    "works": 29,
+    "works": 26,
     "country": "US"
    },
    {
     "name": "Massachusetts Institute of Technology",
-    "works": 23,
-    "country": "US"
-   },
-   {
-    "name": "University of Pennsylvania",
-    "works": 17,
+    "works": 20,
     "country": "US"
    },
    {
     "name": "Harvard University",
-    "works": 15,
+    "works": 16,
     "country": "US"
    },
    {
     "name": "Centre for Economic Policy Research",
-    "works": 13,
+    "works": 15,
     "country": "GB"
+   },
+   {
+    "name": "University of Pennsylvania",
+    "works": 14,
+    "country": "US"
    },
    {
     "name": "London School of Economics and Political Science",
-    "works": 13,
-    "country": "GB"
-   },
-   {
-    "name": "King's College London",
-    "works": 12,
+    "works": 11,
     "country": "GB"
    },
    {
     "name": "University College London",
-    "works": 12,
+    "works": 10,
     "country": "GB"
    },
    {
-    "name": "University of Toronto",
+    "name": "King's College London",
+    "works": 10,
+    "country": "GB"
+   },
+   {
+    "name": "Universitas Pamulang",
     "works": 9,
-    "country": "CA"
+    "country": "ID"
    },
    {
     "name": "Columbia University",
@@ -669,74 +917,74 @@
     "country": "US"
    },
    {
-    "name": "INSEAD",
+    "name": "Institute for Fiscal Studies",
     "works": 9,
+    "country": "GB"
+   },
+   {
+    "name": "INSEAD",
+    "works": 8,
     "country": "SG"
    },
    {
-    "name": "IZA - Institute of Labor Economics",
-    "works": 8,
-    "country": "DE"
-   },
-   {
-    "name": "Princeton University",
-    "works": 7,
-    "country": "US"
-   },
-   {
     "name": "University of Chicago",
-    "works": 7,
+    "works": 8,
     "country": "US"
+   },
+   {
+    "name": "University of Toronto",
+    "works": 7,
+    "country": "CA"
    }
   ],
   "countries": [
    {
     "code": "US",
-    "works": 175
+    "works": 143
    },
    {
     "code": "GB",
-    "works": 84
+    "works": 74
    },
    {
     "code": "CN",
-    "works": 61
+    "works": 53
    },
    {
     "code": "ID",
-    "works": 47
+    "works": 46
    },
    {
     "code": "DE",
-    "works": 45
+    "works": 37
    },
    {
     "code": "IN",
-    "works": 36
+    "works": 31
+   },
+   {
+    "code": "MY",
+    "works": 24
    },
    {
     "code": "CA",
-    "works": 27
+    "works": 23
    },
    {
-    "code": "IT",
-    "works": 26
+    "code": "PK",
+    "works": 22
    },
    {
     "code": "AU",
-    "works": 25
+    "works": 22
+   },
+   {
+    "code": "IT",
+    "works": 21
    },
    {
     "code": "BR",
-    "works": 25
-   },
-   {
-    "code": "FR",
-    "works": 22
-   },
-   {
-    "code": "ES",
-    "works": 22
+    "works": 20
    }
   ],
   "companies": [
@@ -781,26 +1029,29 @@
     "country": "GB"
    },
    {
-    "name": "Flagship Pioneering (United States)",
+    "name": "OpenAI (United States)",
     "works": 1,
     "country": "US"
    },
    {
-    "name": "OpenAI (United States)",
+    "name": "Ant Group (China)",
     "works": 1,
-    "country": "US"
+    "country": "CN"
    }
   ]
  },
  "stats": {
-  "works": 653,
+  "works": 588,
   "triaged": 150,
   "highlights": 15,
-  "openalex_calls": 49,
-  "openalex_cost": 0.0481,
+  "openalex_calls": 47,
+  "openalex_cost": 0.0461,
   "tokens": {
-   "prompt_tokens": 41119,
-   "completion_tokens": 34678
+   "prompt_tokens": 56545,
+   "completion_tokens": 22477,
+   "cost_usd": 0.018615,
+   "calls": 6,
+   "failures": 0
   }
  }
 }
