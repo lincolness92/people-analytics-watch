@@ -31,6 +31,9 @@ Temas em `topics/`: people analytics, fraude bancária e tecnologia bancária. S
 - `docs/sources/associacoes-bancarias.*`: 121 organizações e 659 publicações; falta decidir como consumir.
 
 ## Pendente (do lado do Lincoln)
+Lista viva, com passo a passo e marcação de feito: https://claude.ai/artifact/5V9oVVZwsDumq41RGR37xi (privada).
+O Claude lê o que foi marcado.
+
 1. Cloudflare Pages → Variables and Secrets:
    - Phoenix: `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` e `OTEL_EXPORTER_OTLP_HEADERS`;
    - opcional: `DEEPSEEK_API_KEY`;
