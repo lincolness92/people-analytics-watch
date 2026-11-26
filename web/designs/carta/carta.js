@@ -169,7 +169,8 @@
       const tq = termsOf(g);
       /* a label that is itself a boolean query (no curated name) is matched with the whole query: every AND group */
       const strict = /\sAND\s/.test(g.label);
-      const s = { l: g.label, name: subName(g.label), terms: tq.terms, groups: strict ? tq.groups : [tq.terms], y24, y25, ytd, y26, ch, ch25 };
+      const s = { l: g.label, name: subName(g.label), terms: tq.terms, groups: strict ? tq.groups : [tq.terms], y24, y25, ytd, y26, ch, ch25,
+        arch: g.archive, ex: Array.isArray(g.examples) ? g.examples : [] };
       s.st = subStatus(s);
       s.pts = [y24, y25, y26];
       return s;
@@ -376,9 +377,24 @@
     ];
   }
 
+  /* A subtopic is shown only when the archive has something on it: papers the retrospective kept (growth.archive)
+     or any digest item, highlight, milestone or norm citing its terms. A count with nothing behind it is not news. */
+  function knownSeries(d, items) {
+    const all = buildSeries(d);
+    all.forEach((s) => {
+      const F = subtopicFile(d, s, items);
+      s.nF = F.items.length + F.highlights.length + F.milestones.length + F.regs.length;
+      s.known = (s.arch || 0) > 0 || s.ex.length > 0 || s.nF > 0;
+    });
+    const shown = all.filter((s) => s.known);
+    shown.forEach((s, i) => { s.i = i + 1; });
+    return { shown, hidden: all.filter((s) => !s.known) };
+  }
+
   function model(d, today, lastVisit) {
-    const items = allItems(d), series = buildSeries(d), ap = annualPair(d);
+    const items = allItems(d), ap = annualPair(d), ks = knownSeries(d, items), series = ks.shown;
     return {
+      hiddenSubs: ks.hidden,
       d, today, items, series, triage: triage(d), annual: ap, until: untilOf(ap.a),
       takeaways: takeaways(d, series), deadlines: deadlines(d, today), radar: radarModel(series),
       since: sinceCounts(d, items, lastVisit), nMilestones: nMilestones(d), nReg: (d.regulation || []).length, works26: works(d),
@@ -832,7 +848,7 @@
     const b = blipBy(id) || M.radar.blips[0];
     if (!b) { app.innerHTML = `<p class="empty">Sem subtemas neste tema.</p>`; return; }
     const s = b.s, q = M.radar.quads[b.q], F = subtopicFile(DATA, s, M.items);
-    const any = F.items.length + F.highlights.length + F.milestones.length + F.regs.length + F.oq.length;
+    const any = F.items.length + F.highlights.length + F.milestones.length + F.regs.length + F.oq.length + s.ex.length;
     const askQ = `O que o arquivo sabe sobre ${s.name}?`;
     app.innerHTML = `<p class="crumb mono"><a href="#/mapa">Mapa</a><span>/</span><span>Radar</span><span>/</span><span>${String(b.id).padStart(2, "0")}</span></p>
       <div class="tech"><div>
@@ -842,6 +858,7 @@
           <div class="anim"><span class="mono">Publicações</span><b>${pct(s.ch)}</b>${spark(s, 120, 28)}</div></div>
         <p class="note" style="margin-top:6px">${esc(numbers(s))} publicações/ano no OpenAlex.</p>
         ${plate("", "Por que está no anel " + RINGS[b.ring].l, "C1", `<p class="lead" style="font-size:18px">${esc(paceText(s))} ${esc(RINGS[b.ring].d)}</p>`)}
+        ${s.ex.length ? plate("", "No arquivo · papers do subtema avaliados na retrospectiva", "", `<ul class="kv">${s.ex.map((x) => `<li><b><a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="tag soft" style="vertical-align:2px">nota ${esc(x.score)}</span></b><span>${x.date ? fmtDY(x.date) : ""}</span></li>`).join("")}</ul><p class="note">${fmtN(s.arch)} ${s.arch === 1 ? "paper deste subtema entrou" : "papers deste subtema entraram"} no arquivo do Pergunte nesta retrospectiva.</p>`, `${fmtN(s.arch)}`) : ""}
         ${F.items.length ? plate("", "No arquivo · itens que citam o subtema", "C2", F.items.slice(0, 8).map((i) => itemCard(i)).join(""), `${F.items.length} ${F.items.length === 1 ? "item" : "itens"}`) : ""}
         ${F.highlights.length ? plate("", "Destaques das retrospectivas", "C3", `<ul class="kv">${F.highlights.slice(0, 6).map((h) => `<li><b><a href="${esc(safeUrl(h.url))}" target="_blank" rel="noopener">${esc(h.title)}</a> <span class="tag soft" style="vertical-align:2px">${esc(h.year)}</span></b><span>${esc(h.venue || "")}${h.date ? " · " + fmtDY(h.date) : ""}${h.why ? ". " + esc(h.why) : ""}</span></li>`).join("")}</ul>`) : ""}
         ${F.milestones.length ? plate("", "Marcos da Evolução", "C4", `<ol class="tl">${F.milestones.slice(0, 8).map((m) => `<li><span class="d">${esc(m.year || m.era || "")}</span><span class="dot"></span><span><b>${esc(m.title)}</b><span class="n">${esc(String(m.why || "").split(". ")[0])}</span></span></li>`).join("")}</ol>`) : ""}
@@ -1294,7 +1311,8 @@
     const list = (xs, f) => `<ol class="kvl">${xs.map((x, i) => `<li><span class="mono">${i + 1}</span><span>${f(x)}</span></li>`).join("")}</ol>`;
     const byTheme = Object.keys(TH).map((k) => [k, (a.highlights || []).filter((h) => h.theme === k)]).filter(([, xs]) => xs.length);
     const other = (a.highlights || []).filter((h) => !TH[h.theme]);
-    const growth = latest ? `<ul class="snd" data-snd>${sounding(M.series)}</ul>` : `<ul class="kv">${(a.growth || []).map((g) => `<li><b>${esc(subName(g.label))} <span class="tag soft" style="vertical-align:2px">${pct(g.change)}</span></b><span>${fmtN(g.prev)} → ${fmtN(g.cur_full_year != null ? g.cur_full_year : g.cur)} publicações</span></li>`).join("")}</ul>`;
+    const hid = latest && M.hiddenSubs.length ? `<p class="note">Fora da lista por ainda não terem nenhum paper no arquivo: ${M.hiddenSubs.map((x) => `${esc(x.name)} (${pct(x.ch)})`).join(", ")}. A contagem existe no OpenAlex, mas o arquivo não tem o que mostrar sobre eles.</p>` : "";
+    const growth = latest ? `<ul class="snd" data-snd>${sounding(M.series)}</ul>${hid}` : `<ul class="kv">${(a.growth || []).map((g) => `<li><b>${esc(subName(g.label))} <span class="tag soft" style="vertical-align:2px">${pct(g.change)}</span></b><span>${fmtN(g.prev)} → ${fmtN(g.cur_full_year != null ? g.cur_full_year : g.cur)} publicações</span></li>`).join("")}</ul>`;
     app.innerHTML = `<div class="chips" role="group" aria-label="Ano" style="margin-top:18px">${years.map((k) => `<a class="chip" href="#/anual/${k}" aria-pressed="${k === y}">${k}${all[k].partial ? " · parcial" : ""}</a>`).join("")}</div>
       <h1 class="pg">Retrospectiva ${esc(y)}</h1>${a.partial && a.generated ? `<p class="note">Parcial, até ${fmtDY(a.generated)}.</p>` : ""}
       ${a.overview ? `<p class="sub" style="margin-top:8px">${md(a.overview)}</p>` : ""}

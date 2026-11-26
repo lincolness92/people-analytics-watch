@@ -268,6 +268,21 @@ class AnnualTests(unittest.TestCase):
         self.assertEqual({s["name"]: s["works"] for s in g["sectors"]}, {"Academia": 1, "Empresas": 1})
         self.assertEqual(g["companies"], [{"name": "Visa", "works": 1, "country": "US"}])
 
+    def test_pool_reserves_each_search_and_coverage_counts_kept_papers(self):
+        from pawatch.annual import coverage, pick_pool
+        mk = lambda t, v: {"title": t, "url": f"https://x/{t}", "velocity": v, "watch_authors": [], "watch_journal": False, "abstract": "a"}
+        big = [mk(f"aml {i}", 20) for i in range(10)]          # the topic's most cited works, all from one search
+        small = [mk("mule herders", 1), mk("mule accounts", 0.5)]  # a niche search, few citations
+        cands = big + small
+        qs = {c["title"]: {"aml"} for c in big} | {c["title"]: {"mule"} for c in small}
+        pool = pick_pool(cands, lambda c: qs[c["title"]], pool_size=4, per_query=2)
+        self.assertEqual({c["title"] for c in pool} & {"mule herders", "mule accounts"}, {"mule herders", "mule accounts"})
+        self.assertEqual(len(pool), 4)
+        scores = {i: (7 if c["title"] == "mule herders" else 3 if "mule" in c["title"] else 8, "t") for i, c in enumerate(pool)}
+        g = coverage([{"query": "mule"}, {"query": "aml"}, {"query": "vazio"}], pool, scores, lambda c: qs[c["title"]])
+        self.assertEqual([x["archive"] for x in g], [1, 2, 0])
+        self.assertEqual(g[0]["examples"][0]["title"], "mule herders")
+
     def test_clean_prose(self):
         from pawatch.annual import clean_prose
         self.assertEqual(clean_prose("Quatro destaques em pay_careers (i=19, i=131) e ai_work (i=2).", PA.themes),

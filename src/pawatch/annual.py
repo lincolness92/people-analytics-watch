@@ -13,7 +13,8 @@ import re
 from collections import Counter, defaultdict
 from datetime import date
 
-from .collect import SELECT, annotate_and_dedupe, from_openalex
+from .collect import SELECT, annotate_and_dedupe, from_openalex, norm_title
+from .library import LIB_MIN
 from .http import get_json
 from .score import _brief, audience, triage
 
@@ -82,12 +83,12 @@ class Annual:
                 self.log(f"anual: busca falhou ({q[:40]}…): {str(e)[:100]}")
                 continue
             growth.append({"label": _label(q), "query": q, "prev": prev, "cur": cur})
-            raw += [(w, "busca") for w in works]
+            raw += [(w, "busca", q) for w in works]
         watch = self.topic.watchlist()
         ids = [r["openalex_id"] for r in watch.get("researchers", []) if r.get("openalex_id")]
         for i in range(0, len(ids), 50):
             try:
-                raw += [(w, "watchlist") for w in self.top(f"authorships.author.id:{'|'.join(ids[i:i + 50])}", 100)]
+                raw += [(w, "watchlist", None) for w in self.top(f"authorships.author.id:{'|'.join(ids[i:i + 50])}", 100)]
             except RuntimeError as e:
                 self.log(f"anual: watchlist falhou: {str(e)[:100]}")
         return growth, raw, watch
@@ -96,7 +97,7 @@ class Annual:
         """Who publishes the year's works on the topic: sectors, institutions, countries, companies."""
         seen, sectors, insts, countries, companies = set(), Counter(), Counter(), Counter(), Counter()
         inst_country = {}
-        for w, _ in raw:
+        for w, *_ in raw:
             if w["id"] in seen:
                 continue
             seen.add(w["id"])
@@ -126,29 +127,66 @@ class Annual:
         }
 
 
+def _rank(c):
+    return 3 * bool(c["watch_authors"]) + 2 * c["watch_journal"] + bool(c["abstract"]) + min(c["velocity"], 20) * 0.5
+
+
+def pick_pool(cands, queries_of, pool_size, per_query):
+    """The triage pool: the best `per_query` works of every search first (so a small subtopic still gets papers
+    judged, not only the topic's most cited ones), then the best of the rest up to `pool_size`."""
+    ranked = sorted(range(len(cands)), key=lambda i: _rank(cands[i]), reverse=True)
+    taken, per = [], Counter()
+    for i in ranked:
+        qs = queries_of(cands[i])
+        if any(per[q] < per_query for q in qs):
+            taken.append(i)
+            for q in qs:
+                per[q] += 1
+    chosen = set(taken)
+    taken += [i for i in ranked if i not in chosen][:max(0, pool_size - len(taken))]
+    return [cands[i] for i in sorted(taken, key=lambda i: _rank(cands[i]), reverse=True)]
+
+
+def coverage(growth, pool, scores, queries_of, examples=3):
+    """For each subtopic: how many of its works the triage kept for the archive (score >= LIB_MIN), and the best few."""
+    for g in growth:
+        kept = [i for i, s in scores.items() if s[0] >= LIB_MIN and g["query"] in queries_of(pool[i])]
+        kept.sort(key=lambda i: (-scores[i][0], -pool[i]["velocity"]))
+        g["archive"] = len(kept)
+        g["examples"] = [{"title": pool[i]["title"], "url": pool[i]["url"], "score": scores[i][0],
+                          "date": pool[i].get("pub") or pool[i].get("date") or ""} for i in kept[:examples]]
+    return growth
+
+
 WRITE = """Escreva a retrospectiva anual do tema para o ano {year}{partial}. Use SÓ os dados abaixo (destaques do
 ano já triados, o volume de publicações por subtema neste ano e no anterior, e quem publicou). Devolva APENAS JSON:
 - "overview": parágrafo de 3–5 frases em PT-BR: o que definiu o ano no tema.{regions}
 - "trends": 3 a 5 tendências {{"title": frase curta, "text": 2–3 frases citando números do crescimento ou papers dos destaques}}.
   Ao citar crescimento, use exatamente `variacao_percentual` ou `multiplicador` (ex.: 130→957 é +636%, ou 7,4x); nunca confunda os dois.
   Uma tendência só existe se os dados mostram (crescimento de volume, vários destaques na mesma direção).
+  Só cite um subtema (aqui, no overview ou no innovation) se `papers_no_arquivo` > 0: subtema sem nenhum paper avaliado
+  não tem o que mostrar a quem lê.
 - "innovation": parágrafo de 2–4 frases: onde a inovação está acontecendo (academia × empresas × governo, instituições,
   países, empresas que publicam), com números do bloco "quem publica". Se o Brasil aparece, diga; se não aparece, diga também.
 - "highlights": para cada destaque, {{"i": id, "title": título curto PT-BR ou original, "why": 1–2 frases: o que trouxe de novo e por que importa}}.
 Não invente papers, números, instituições ou empresas. Cite papers pelo título curto, nunca pelo id."""
 
 
-def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150):
+def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150, per_query=8):
     today = today or date.today()
     a = Annual(topic, year, log, today)
     growth, raw, watch = a.gather()
-    cands = annotate_and_dedupe([dict(from_openalex(w, origin), pub=w.get("publication_date") or "") for w, origin in raw],
+    cands = annotate_and_dedupe([dict(from_openalex(w, origin), pub=w.get("publication_date") or "") for w, origin, _ in raw],
                                 watch, set())
+    by_title = defaultdict(set)  # dedupe merges by title, so the searches a work came from are joined the same way
+    for w, _, q in raw:
+        t = (w.get("display_name") or w.get("title") or "").strip()
+        if q and t:
+            by_title[norm_title(t)].add(q)
+    queries_of = lambda c: by_title.get(norm_title(c["title"]), set())
     for c in cands:
         c["velocity"] = round(c["cited_by"] / _months_since(c.get("pub") or c["date"], today), 2)
-    cands.sort(key=lambda c: (3 * bool(c["watch_authors"]) + 2 * c["watch_journal"] + bool(c["abstract"])
-                              + min(c["velocity"], 20) * 0.5), reverse=True)
-    pool = cands[:pool_size]
+    pool = pick_pool(cands, queries_of, pool_size, per_query)
     log(f"anual {year}: {len(raw)} obras brutas, {len(cands)} únicas, {len(pool)} para triagem; OpenAlex {a.calls} chamadas, ≈ ${a.cost:.3f}")
     scores = triage(llm, pool, topic, log=log)
     ranked = sorted(scores, key=lambda i: (-scores[i][0], -pool[i]["velocity"]))
@@ -162,6 +200,7 @@ def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150):
         if len(picked) >= max_highlights:
             break
     geo = a.geography(raw)
+    coverage(growth, pool, scores, queries_of)
     partial = year == today.year
     for g in growth:  # project the current year to 12 months so the comparison is fair (OpenAlex lags a bit)
         g["cur_full_year"] = round(g["cur"] * 12 / max(1, today.month - 1 + today.day / 31)) if partial else g["cur"]
@@ -173,7 +212,8 @@ def build(topic, year, llm, log, today=None, max_highlights=15, pool_size=150):
         "crescimento_por_subtema": [{"subtema": g["label"], f"{year - 1}": g["prev"],
                                      f"{year}{' (projetado p/ 12 meses)' if partial else ''}": g["cur_full_year"],
                                      "variacao_percentual": f"{g['change']:+.0%}" if g["change"] is not None else "n/d",
-                                     "multiplicador": f"{g['cur_full_year'] / g['prev']:.1f}x" if g["prev"] else "n/d"}
+                                     "multiplicador": f"{g['cur_full_year'] / g['prev']:.1f}x" if g["prev"] else "n/d",
+                                     "papers_no_arquivo": g["archive"]}
                                     for g in growth],
         "quem_publica": geo,
     }

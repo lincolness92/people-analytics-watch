@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "incremental (revisa a anterior) · completa (refaz seleção e texto, reaproveita notas) · completa-rejulgando (refaz também a triagem)"
+        description: "incremental (revisa a anterior) · completa (refaz seleção e texto, reaproveita notas) · completa-rejulgando (refaz também a triagem) · só-retrospectiva (refaz só a retrospectiva do ano atual)"
         type: choice
-        options: ["incremental", "completa", "completa-rejulgando"]
+        options: ["incremental", "completa", "completa-rejulgando", "só-retrospectiva"]
         default: "incremental"
       topic:
         description: "Só este tema (slug em topics/); vazio = todos"
@@ -52,7 +52,7 @@ jobs:
           [ "$MODE" = "completa" ] && args="$args --full"
           [ "$MODE" = "completa-rejulgando" ] && args="$args --rejudge"
           [ -n "$TOPIC" ] && args="$args --topic $TOPIC"
-          python -m pawatch evolve $args
+          if [ "$MODE" = "só-retrospectiva" ]; then python -m pawatch annual --year "$(date -u +%Y)" $args; else python -m pawatch evolve $args; fi
 
       - name: Feedback (Cloudflare KV → data/<tema>/feedback.json + wrangler.toml)
         if: always() && env.CLOUDFLARE_API_TOKEN != ''
