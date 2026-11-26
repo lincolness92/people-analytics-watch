@@ -951,7 +951,7 @@
     paint(`
       <h1 class="day">Pergunte ao arquivo</h1>
       <p class="dek">A IA responde usando só o arquivo deste tema (digests, Evolução, retrospectivas, a biblioteca de papers triados, pessoas, normas e código) e cita cada fonte. Se o arquivo não cobre o assunto, ela diz.</p>
-      ${on ? "" : `<div class="notice">As respostas só funcionam no site publicado. Nesta cópia, os exemplos abaixo mostram o que dá para perguntar.</div>`}
+      ${on ? `<div class="talk-slot" id="talk-slot"></div>` : `<div class="notice">As respostas só funcionam no site publicado. Nesta cópia, os exemplos abaixo mostram o que dá para perguntar.</div>`}
       ${has ? `<details class="ex-more"><summary>Exemplos de perguntas</summary>${exHtml}</details>` : `<h2 class="theme-h">${on ? "Comece por um exemplo" : "O que dá para perguntar"}</h2>${exHtml}`}
       <div id="qa-list">${askState.history.map(renderAnswer).join("")}${askState.pending ? `<article class="qa pending"><div class="q">${esc(askState.pending)}</div><p class="muted">Consultando o arquivo… leva uns 20 a 40 segundos.</p></article>` : ""}</div>
       <form id="ask-form" class="ask-form ask-dock"${on ? "" : " hidden"}>
@@ -965,6 +965,7 @@
           <button type="submit" class="ask-send" aria-label="Perguntar"${on && !askState.busy ? "" : " disabled"}>${ICON.send}</button>
         </div>
       </form>`);
+    talkSlot();
     const form = document.getElementById("ask-form");
     const ta = form.q;
     const submit = () => (form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event("submit", { cancelable: true })));
@@ -1338,7 +1339,7 @@
   // Recording works in any format the browser produces; it is decoded and re-encoded as WAV mono 16 kHz before
   // upload, because the transcription provider does not read the iPhone's audio/mp4. Everything stays hidden in
   // the offline bundle and when the endpoints are not configured.
-  const voice = { stt: false, tts: false, rec: null, audio: null };
+  const voice = { stt: false, tts: false, agent: false, rec: null, audio: null };
   const MIC_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/></svg>';
   const STOP_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>';
   const SPK_SVG = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>';
@@ -1459,10 +1460,158 @@
     });
   }
 
+  // ---------- voice conversation with the ElevenLabs agent (/api/voice-session) ----------
+  // Real-time talk in the assistant's voice. For anything about the archive the agent calls consultar_acervo, a client
+  // tool: the browser asks /api/ask with the site cookie, keeps the written answer (with sources) in the Pergunte
+  // history and hands the agent the text to summarise aloud. The SDK loads only when a conversation starts.
+  const EL_CLIENT = "https://cdn.jsdelivr.net/npm/@elevenlabs/client@1.35.0/+esm";
+  const TALK_STATES = { connecting: "Conectando…", listening: "Ouvindo você", speaking: "Falando", thinking: "Consultando o arquivo…", ended: "Conversa encerrada" };
+  const talk = { conv: null, state: "ended", muted: false, added: 0 };
+
+  function talkSlot() {
+    const slot = document.getElementById("talk-slot");
+    if (!slot) return;
+    slot.innerHTML = voice.agent ? `<button type="button" class="talk-btn" id="talk-open">${MIC_SVG}<span>Conversar por voz</span></button>
+      <span class="muted small">Fale e escute; o assistente consulta o arquivo quando precisa.</span>` : "";
+    const b = document.getElementById("talk-open");
+    if (b) b.addEventListener("click", startTalk);
+  }
+
+  function talkDialog() {
+    let dlg = document.getElementById("sheet-talk");
+    if (dlg) return dlg;
+    dlg = document.createElement("dialog");
+    dlg.className = "sheet talk";
+    dlg.id = "sheet-talk";
+    dlg.setAttribute("aria-labelledby", "talk-h");
+    dlg.innerHTML = `<div class="sheet-head"><h2 id="talk-h" tabindex="-1">Conversa por voz</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Encerrar e fechar">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="sheet-body">
+        <div class="talk-orb" aria-hidden="true"><i></i></div>
+        <p class="talk-state" id="talk-state" role="status"></p>
+        <ol class="talk-log" id="talk-log" aria-live="polite"></ol>
+        <div class="talk-actions">
+          <button type="button" class="btn ghost" id="talk-mute" aria-pressed="false">Silenciar microfone</button>
+          <button type="button" class="btn" id="talk-end">Encerrar</button>
+        </div>
+      </div>`;
+    document.body.appendChild(dlg);
+    dlg.addEventListener("click", (e) => {
+      if (e.target === dlg || e.target.closest("[data-close]") || e.target.closest("#talk-end")) dlg.close();
+    });
+    dlg.addEventListener("close", endTalk);
+    dlg.querySelector("#talk-mute").addEventListener("click", (e) => {
+      talk.muted = !talk.muted;
+      if (talk.conv) talk.conv.setMicMuted(talk.muted);
+      e.currentTarget.setAttribute("aria-pressed", String(talk.muted));
+      e.currentTarget.textContent = talk.muted ? "Ativar microfone" : "Silenciar microfone";
+    });
+    return dlg;
+  }
+
+  function setTalk(state, note) {
+    talk.state = state;
+    const dlg = document.getElementById("sheet-talk");
+    if (!dlg) return;
+    dlg.dataset.state = state;
+    dlg.querySelector("#talk-state").textContent = note || TALK_STATES[state] || "";
+  }
+
+  function logTalk(who, text) {
+    const log = document.getElementById("talk-log");
+    if (!log || !text) return;
+    const li = document.createElement("li");
+    li.className = `talk-${who}`;
+    li.textContent = text;
+    log.appendChild(li);
+    li.scrollIntoView({ block: "nearest" });
+  }
+
+  async function askForAgent({ pergunta } = {}) {
+    const q = String(pergunta || "").trim().slice(0, 600);
+    if (q.length < 5) return "A pergunta ficou curta demais para consultar o arquivo; peça para a pessoa detalhar.";
+    setTalk("thinking");
+    try {
+      const r = await fetch("/api/ask", {
+        method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+        body: JSON.stringify({ topic: DATA.topic.slug, question: q, voter: voterId(), name: store.get("paw_name", "") || null,
+          history: askState.history.slice(-2).map((h) => ({ q: h.q, a: h.a })) }),
+      });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) return `O arquivo não respondeu (${out.error || r.status}). Diga isso à pessoa com franqueza.`;
+      askState.history.push({ q, a: out.answer, sources: out.sources || [] });
+      talk.added++;
+      const used = new Set([...out.answer.matchAll(/\[(\d{1,2})\]/g)].map((m) => +m[1]));
+      const srcs = (out.sources || []).filter((s) => used.has(s.n))
+        .map((s) => `${s.title} (${s.kind}${s.when ? `, ${String(s.when).slice(0, 10)}` : ""})`);
+      return `Resposta escrita do analista do arquivo. Resuma em fala, sem números de citação nem listas:\n`
+        + `${out.answer.replace(/\s?\[\d{1,2}\]/g, "")}\n\nFontes citadas: ${srcs.join("; ") || "nenhuma"}`;
+    } catch (e) {
+      return `Falha ao consultar o arquivo (${e.message}). Diga isso à pessoa.`;
+    } finally {
+      if (talk.conv) setTalk("listening");
+    }
+  }
+
+  async function startTalk() {
+    const dlg = talkDialog();
+    dlg.querySelector("#talk-log").innerHTML = "";
+    talk.added = 0;
+    talk.muted = false;
+    const mute = dlg.querySelector("#talk-mute");
+    mute.setAttribute("aria-pressed", "false");
+    mute.textContent = "Silenciar microfone";
+    setTalk("connecting");
+    openSheet("sheet-talk");
+    try {
+      // ask for the microphone straight from the tap (iOS), then release it: the SDK opens its own stream
+      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mic.getTracks().forEach((t) => t.stop());
+      const r = await fetch("/api/voice-session", { method: "POST", headers: { "Content-Type": "application/json" },
+        credentials: "same-origin", body: JSON.stringify({ voter: voterId() }) });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok || !out.ok) throw new Error(out.error || `HTTP ${r.status}`);
+      const { Conversation } = await import(EL_CLIENT);
+      if (!dlg.open) return;
+      const d0 = (DATA.digests || [])[0] || {};
+      const conv = await Conversation.startSession({
+        conversationToken: out.token,
+        connectionType: "webrtc",
+        dynamicVariables: { tema: DATA.topic.name, foco: DATA.topic.focus || DATA.topic.description || "", manchete: d0.headline || "",
+          data: fmtDate(todayIso()) },
+        clientTools: { consultar_acervo: askForAgent },
+        onModeChange: ({ mode }) => { if (talk.state !== "thinking") setTalk(mode); },
+        onMessage: (m) => logTalk(m.role === "user" || m.source === "user" ? "user" : "agent", m.message),
+        onDisconnect: () => { talk.conv = null; setTalk("ended"); },
+        onError: (msg) => setTalk("ended", `Erro na conversa: ${msg}`),
+      });
+      talk.conv = conv;
+      if (!dlg.open) { endTalk(); return; }
+      setTalk("listening");
+    } catch (e) {
+      const denied = e && (e.name === "NotAllowedError" || e.name === "SecurityError");
+      setTalk("ended", denied ? "Sem acesso ao microfone. Libere nas configurações do navegador e tente de novo." : `Não deu para conectar (${e.message}).`);
+    }
+  }
+
+  function endTalk() {
+    const c = talk.conv;
+    talk.conv = null;
+    if (c) c.endSession().catch(() => {});
+    if (talk.state !== "ended") setTalk("ended");
+    // the written answers (with sources) the agent fetched are now in the Pergunte history
+    if (talk.added && current === "pergunte") { talk.added = 0; viewAsk(); }
+  }
+
   function initVoice() {
     const ok = location.protocol.startsWith("http") && window.isSecureContext !== false;
     if (!ok) return;
     const probe = (path) => fetch(path, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    probe("/api/voice-session").then((v) => {
+      voice.agent = !!v.enabled && !!(navigator.mediaDevices && window.RTCPeerConnection);
+      talkSlot();
+    });
     Promise.all([probe("/api/stt"), probe("/api/tts")]).then(([s, t]) => {
       voice.stt = !!s.enabled && !!(navigator.mediaDevices && window.MediaRecorder);
       voice.tts = !!t.enabled;

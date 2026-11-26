@@ -5,9 +5,11 @@
 // STT: the browser records (any format), decodes and sends WAV mono 16 kHz (the hf-inference provider does not
 // read the iPhone's audio/mp4); webm/ogg/flac also work. Models in STT_MODEL (comma-separated), default
 // whisper-large-v3-turbo (fast, multilingual) then whisper-large-v3.
-// TTS: ELEVENLABS_API_KEY (secret); optional ELEVENLABS_VOICE_ID and ELEVENLABS_MODEL (default eleven_multilingual_v2,
-// the most natural for cloned voices; eleven_v3 is more expressive, eleven_flash_v2_5 cheaper but flat). Voice settings
+// TTS: ELEVENLABS_API_KEY (secret); optional ELEVENLABS_VOICE_ID and ELEVENLABS_MODEL (default eleven_v4, ElevenLabs'
+// highest-quality model and the most faithful to cloned voices; eleven_flash_v2_5 is cheaper but flat). Voice settings
 // are not sent, so the voice's own saved settings apply, as on elevenlabs.io.
+// Voice conversation: ELEVENLABS_AGENT_ID (an ElevenLabs agent with authentication on); /api/voice-session hands the
+// browser a short-lived WebRTC token, so the API key never leaves the server.
 
 export const STT_MODELS = ["openai/whisper-large-v3-turbo", "openai/whisper-large-v3"];
 const HF_ASR = (model) => `https://router.huggingface.co/hf-inference/models/${model}`;
@@ -57,12 +59,12 @@ export function speakable(text) {
     .join("\n").slice(0, TTS_MAX_CHARS);
 }
 
-export const TTS_DEFAULT_MODEL = "eleven_multilingual_v2";
+export const TTS_DEFAULT_MODEL = "eleven_v4";
 
 /** Request body: the model, and the language for the models that take one (multilingual_v2 detects it). */
 export function ttsBody(env, text) {
   const model = env.ELEVENLABS_MODEL || TTS_DEFAULT_MODEL;
-  return { text, model_id: model, apply_text_normalization: "auto", ...(/v2_5|v3/.test(model) ? { language_code: "pt" } : {}) };
+  return { text, model_id: model, apply_text_normalization: "auto", ...(/v2_5|v3|v4/.test(model) ? { language_code: "pt" } : {}) };
 }
 
 /** Text to speech with ElevenLabs. Returns a Response with audio/mpeg (or throws). */
@@ -78,6 +80,15 @@ export async function synthesize(env, text, fetchImpl = fetch) {
     throw Object.assign(new Error(`voz indisponível (HTTP ${r.status}: ${detail.slice(0, 120)})`), { status: 502 });
   }
   return r;
+}
+
+/** A conversation token for the voice agent (WebRTC). Throws when ElevenLabs refuses. */
+export async function conversationToken(env, fetchImpl = fetch) {
+  const url = `https://api.elevenlabs.io/v1/convai/conversation/token?agent_id=${encodeURIComponent(env.ELEVENLABS_AGENT_ID)}`;
+  const r = await fetchImpl(url, { headers: { "xi-api-key": env.ELEVENLABS_API_KEY }, signal: AbortSignal.timeout(15000) });
+  const out = await r.json().catch(() => ({}));
+  if (!r.ok || !out.token) throw Object.assign(new Error(`conversa indisponível (HTTP ${r.status})`), { status: 502 });
+  return out.token;
 }
 
 /** Daily per-person limit in KV (same scheme as the questions). Returns null when allowed, or an error string. */

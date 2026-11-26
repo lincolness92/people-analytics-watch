@@ -600,6 +600,31 @@ textarea + .mic-btn { vertical-align: top; }
 .speak-btn.on { color: var(--accent, #b5532a); border-color: currentColor; }
 .speak-btn.busy { opacity: .6; cursor: progress; }
 
+/* voice conversation (ElevenLabs agent) */
+.talk-slot:empty { display: none; }
+.talk-slot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 4px 0 18px; }
+.talk-btn { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 6px 18px 6px 14px; border: 0; border-radius: 999px;
+  background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+.talk-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+dialog.sheet.talk .sheet-body { display: flex; flex-direction: column; align-items: stretch; min-height: 0; }
+.talk-orb { display: grid; place-items: center; height: 132px; flex: none; }
+.talk-orb i { width: 84px; height: 84px; border-radius: 50%; background: var(--accent-soft); border: 2px solid var(--accent); transition: transform .3s, background .3s; }
+dialog.talk[data-state="listening"] .talk-orb i { animation: talk-breathe 2.4s ease-in-out infinite; }
+dialog.talk[data-state="speaking"] .talk-orb i { background: var(--accent); animation: talk-pulse .7s ease-in-out infinite alternate; }
+dialog.talk[data-state="thinking"] .talk-orb i { border-style: dashed; animation: talk-spin 2.2s linear infinite; }
+dialog.talk[data-state="connecting"] .talk-orb i { opacity: .55; }
+dialog.talk[data-state="ended"] .talk-orb i { opacity: .35; transform: scale(.8); }
+@keyframes talk-breathe { 50% { transform: scale(1.08); } }
+@keyframes talk-pulse { to { transform: scale(1.18); } }
+@keyframes talk-spin { to { transform: rotate(360deg); } }
+.talk-state { text-align: center; font-weight: 600; color: var(--ink-2); margin: 0 0 12px; }
+.talk-log { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; overflow-y: auto; max-height: 38vh; }
+.talk-log li { padding: 8px 12px; border-radius: 14px; font-size: 15px; line-height: 1.45; max-width: 88%; }
+.talk-log .talk-agent { background: var(--chip); justify-self: start; }
+.talk-log .talk-user { background: var(--accent-soft); justify-self: end; }
+.talk-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 16px; padding-bottom: env(safe-area-inset-bottom); }
+@media (prefers-reduced-motion: reduce) { dialog.talk .talk-orb i { animation: none !important; } }
+
 /* "Peça o seu Watch" */
 .req-form { display: grid; gap: 6px; margin: 8px 0 24px; }
 .req-form label { font-size: 14px; font-weight: 600; margin-top: 8px; }

@@ -185,8 +185,17 @@ test("voice: transcription falls back across models, rejects unsupported audio, 
   await assert.rejects(() => V.transcribe({ HF_TOKEN: "h" }, new Uint8Array(10), "audio/mp4"), /não suportado/);
   assert.equal(V.speakable("**Resumo**: golpes [1] cresceram [2].\n- item https://x.y/z"), "Resumo: golpes cresceram.\nitem.");
   assert.equal(V.speakable("## Principais achados\n• Golpes via Pix\nO que muda:"), "Principais achados.\nGolpes via Pix.\nO que muda.");
-  assert.equal(V.ttsBody({}, "oi").model_id, "eleven_multilingual_v2");
-  assert.equal(V.ttsBody({}, "oi").language_code, undefined);
+  assert.equal(V.ttsBody({}, "oi").model_id, "eleven_v4");
+  assert.equal(V.ttsBody({}, "oi").language_code, "pt");
+  assert.equal(V.ttsBody({ ELEVENLABS_MODEL: "eleven_multilingual_v2" }, "oi").language_code, undefined);
   assert.equal(V.ttsBody({ ELEVENLABS_MODEL: "eleven_v3" }, "oi").language_code, "pt");
   assert.deepEqual(V.sttModels({ STT_MODEL: "x/y" }), ["x/y", ...V.STT_MODELS]);
+  const asked = [];
+  const tok = await V.conversationToken({ ELEVENLABS_API_KEY: "k", ELEVENLABS_AGENT_ID: "agent_1" }, async (url, init) => {
+    asked.push([url, init.headers["xi-api-key"]]);
+    return new Response(JSON.stringify({ token: "t0k" }));
+  });
+  assert.equal(tok, "t0k");
+  assert.deepEqual(asked, [["https://api.elevenlabs.io/v1/convai/conversation/token?agent_id=agent_1", "k"]]);
+  await assert.rejects(() => V.conversationToken({ ELEVENLABS_AGENT_ID: "a" }, async () => new Response("{}", { status: 401 })), /HTTP 401/);
 });
