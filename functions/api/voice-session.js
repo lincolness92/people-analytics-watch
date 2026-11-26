@@ -4,7 +4,7 @@
 //   POST {voter} → {ok, token}
 import { conversationToken, spendDaily } from "../../server/voice.js";
 
-const DAILY_LIMIT = 20; // conversations per person per day
+const DAILY_LIMIT = 5; // conversations per person per day
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });
 
