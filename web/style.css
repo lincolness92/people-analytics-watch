@@ -599,3 +599,24 @@ textarea + .mic-btn { vertical-align: top; }
   border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink-2); font: inherit; font-size: 14px; cursor: pointer; }
 .speak-btn.on { color: var(--accent, #b5532a); border-color: currentColor; }
 .speak-btn.busy { opacity: .6; cursor: progress; }
+
+/* "Peça o seu Watch" */
+.req-form { display: grid; gap: 6px; margin: 8px 0 24px; }
+.req-form label { font-size: 14px; font-weight: 600; margin-top: 8px; }
+.req-form input, .req-form textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: inherit; background: transparent;
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.req-send { margin-top: 14px; min-height: 44px; border: 0; border-radius: 999px; background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+.req-send:disabled { opacity: .6; cursor: progress; }
+.req-msg { min-height: 20px; font-size: 14px; color: var(--ink-2); }
+.req-card { border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.req-card header { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.req-card h3 { margin: 0; font-size: 17px; }
+.req-badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.req-track { display: flex; gap: 4px; list-style: none; padding: 0; margin: 12px 0; font-size: 12px; }
+.req-track li { flex: 1; padding-top: 6px; border-top: 3px solid var(--line); color: var(--ink-2); }
+.req-track li.done { border-color: var(--accent); }
+.req-track li.now { border-color: var(--accent); color: var(--ink); font-weight: 600; }
+.req-steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.req-steps time { font-size: 12px; color: var(--ink-2); }
+.req-steps p { margin: 2px 0 0; font-size: 14px; }
+.req-refused { color: var(--ink-2); font-weight: 600; }

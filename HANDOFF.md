@@ -39,10 +39,11 @@ O Claude lê o que foi marcado.
    - opcional: `DEEPSEEK_API_KEY`;
    - voz de saída: `ELEVENLABS_API_KEY` e `ELEVENLABS_VOICE_ID`.
 2. GitHub: os mesmos secrets de Phoenix e DeepSeek, passados no `env` dos workflows (exige o escopo `workflow`).
-3. API do X: quando houver, entra como fonte por tema.
-4. Revisar a visão no documento editável https://claude.ai/artifact/JqYuvBZ5gnQkaVAgTZSXXd (decisões em aberto: nome,
+3. `GITHUB_TOKEN` no Pages (fine-grained, Issues read/write neste repositório), para ligar o "Peça o seu Watch".
+4. API do X: quando houver, entra como fonte por tema.
+5. Revisar a visão no documento editável https://claude.ai/artifact/JqYuvBZ5gnQkaVAgTZSXXd (decisões em aberto: nome,
    acesso por pessoa, token para o Claude acessar a aplicação, fontes, vídeos, próximo tema). Aprovado, vai para o `VISION.md`.
-5. Testar no iPhone: o microfone (com o teclado aberto) e uma pergunta real no Pergunte do site novo.
+6. Testar no iPhone: o microfone (com o teclado aberto) e uma pergunta real no Pergunte do site novo.
 
 ## Próximo (do lado do Claude)
 - Consumir as fontes mapeadas de prioridade alta (FEBRABAN e associações).

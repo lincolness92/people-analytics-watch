@@ -384,6 +384,24 @@ O destino dos traces:
 - **Validação:** a codificação protobuf é idêntica à do `server/trace.js` (há um teste que compara as duas), e o
   envio foi testado contra o Phoenix local.
 
+## Peça o seu Watch (criação de tema pelo site)
+
+Em **Mais → Peça o seu Watch**, a pessoa informa o tema, o escopo, as perguntas que quer responder, as fontes que já
+acompanha e o público. Daí em diante o fluxo é automático:
+
+1. **Pedido:** `POST /api/topic-request` abre uma issue no GitHub com a etiqueta `pedido-de-tema` e o pedido num
+   bloco JSON. Precisa do secret `GITHUB_TOKEN` no Pages: um token fine-grained com Issues de leitura e escrita neste
+   repositório. Sem ele, o pedido fica guardado no KV para processamento manual.
+2. **Disparo:** a etiqueta dispara a rotina do Claude "Research Watch: novo tema pedido no site", por um gatilho do
+   GitHub. Ela gera o rascunho (`new-topic`) e pede uma revisão independente a outro modelo (Fable). Depois cria as
+   perguntas de referência, roda uma primeira coleta de 30 dias e abre um PR para revisão humana. Ela não faz merge.
+3. **Andamento:** cada etapa vira um comentário na issue. O status é o último comentário que começa por
+   `**Status: …**` (recebido, em criação, em revisão, no ar, recusado). A página do site mostra esse andamento a
+   quem pediu.
+4. **Publicação:** depois da revisão e do merge, quem revisou comenta `**Status: no ar**`.
+
+Limite: 3 pedidos por pessoa por dia.
+
 ## Voz: falar em vez de digitar, e ouvir as respostas
 
 - **Entrada (todos os campos de texto do site):** um botão de microfone grava e transcreve. O navegador decodifica a

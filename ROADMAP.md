@@ -61,6 +61,9 @@ traces do pipeline em Python (triagem, redação) com o mesmo formato.
 - ✅ Voz: microfone em todos os campos (Whisper via HF); "Ouvir" pronto para a ElevenLabs.
 - ✅ Mapas de fontes: FEBRABAN (74 itens, `docs/sources/febraban.*`) e associações bancárias do mundo (121 organizações,
   659 publicações, 319 com RSS ou sitemap; `docs/sources/associacoes-bancarias.*`). Falta decidir como consumir.
+- ✅ Peça o seu Watch: pedido no site → issue → rotina do Claude (rascunho, revisão Fable, coleta, PR) → revisão humana.
+  Falta o `GITHUB_TOKEN` no Pages para ligar a criação automática.
+- ⏳ Redesenho do site: duas direções com o Fable e duas com o Opus, para escolher.
 - Próximos: consumir as fontes mapeadas (prioridade alta primeiro); site leva 2 (sparklines, radar, páginas de
   técnica e de paper); onboarding canônico pré-computado; código e dados por método; validar ligação repo↔paper.
 
@@ -128,6 +131,7 @@ saldo pago.
 - ⏳ Cloudflare Pages (Settings → Variables and Secrets): `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` e
   `OTEL_EXPORTER_OTLP_HEADERS` (Phoenix), `PHOENIX_PROJECT_NAME` (opcional), `DEEPSEEK_API_KEY` (opcional, entra na
   comparação de preço do agente), `ELEVENLABS_API_KEY` e `ELEVENLABS_VOICE_ID` (voz de saída).
+- ⏳ Cloudflare Pages: `GITHUB_TOKEN` (fine-grained, Issues read/write neste repositório) para o "Peça o seu Watch".
 - ⏳ GitHub Actions: para o pipeline mandar traces ao Phoenix e usar a DeepSeek direta, criar os secrets e passá-los
   no `env` dos workflows (editar workflow exige o escopo `workflow`).
 - ✅ Chave do OpenAlex ativa, com saldo pré-pago (US$ 10 em 17/11).

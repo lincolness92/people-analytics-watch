@@ -61,6 +61,7 @@
   const svg = (d, extra = "") => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"${extra}>${d}</svg>`;
   const ICON = {
     arrow: svg('<path d="M5 12h14M13 6l6 6-6 6"/>'),
+    plus: svg('<path d="M12 5v14M5 12h14"/>'),
     send: svg('<path d="M12 19V5M6 11l6-6 6 6"/>'),
     ext: svg('<path d="M14 5h5v5M19 5l-8 8M17 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4"/>'),
     reg: svg('<path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0zM8 21h8"/>'),
@@ -819,9 +820,84 @@
         ${nReg ? row("#/regulacao", ICON.reg, "Regulação", `${nReg} normas e padrões ligados ao tema`) : ""}
         ${row("#/watchlist", ICON.people, "Pessoas & instituições", `${nPeople} pesquisadores, ${nOrg} revistas, centros e fontes`)}
         ${row("#/arquivo", ICON.archive, "Arquivo", `${nPapers} papers de ${DATA.digests.length} digests, com filtros`)}
+        ${fbOn() ? row("#/criar", ICON.plus, "Peça o seu Watch", "Um tema novo, criado e revisado para você") : ""}
         ${row("", ICON.info, "Sobre", "O que é o site, como citar, integrações", "data-open-about")}
         ${(DATA.topics || []).length > 1 ? row("", ICON.swap, "Trocar de tema", (DATA.topics || []).map((t) => esc(t.name)).join(" · "), "data-open-topics") : ""}
       </ul>`);
+  }
+
+  // ---------- "Peça o seu Watch": request a new topic (POST /api/topic-request) ----------
+  // The request opens a GitHub issue that starts the creation routine (draft, independent review, first
+  // collection, pull request for human review); its progress comes back from the issue's comments.
+  const REQ_STATUS = { "recebido": "Recebido", "em criação": "Em criação", "em revisão": "Em revisão", "no ar": "No ar", "recusado": "Recusado" };
+  const REQ_STEPS = ["recebido", "em criação", "em revisão", "no ar"];
+
+  function requestCard(r) {
+    const idx = REQ_STEPS.indexOf(r.status);
+    const track = r.status === "recusado" ? `<p class="req-refused">Recusado</p>` : `<ol class="req-track">${REQ_STEPS.map((s, i) =>
+      `<li class="${i < idx ? "done" : i === idx ? "now" : ""}">${REQ_STATUS[s]}</li>`).join("")}</ol>`;
+    const steps = (r.steps || []).slice(-6).map((s) => `<li><time>${esc(fmtDate(String(s.at).slice(0, 10)))}</time><p>${md(s.text)}</p></li>`).join("");
+    return `<article class="req-card">
+      <header><h3>${esc(r.title)}</h3><span class="req-badge">${esc(REQ_STATUS[r.status] || r.status)}</span></header>
+      ${track}
+      ${steps ? `<ul class="req-steps">${steps}</ul>` : `<p class="muted small">O andamento aparece aqui conforme a criação avança.</p>`}
+      ${r.error ? `<p class="muted small">${esc(r.error)}</p>` : ""}
+    </article>`;
+  }
+
+  async function loadRequests() {
+    const box = document.getElementById("req-list");
+    if (!box) return;
+    try {
+      const r = await fetch(`/api/topic-request?voter=${encodeURIComponent(voterId())}`, { cache: "no-store" });
+      const out = await r.json();
+      box.innerHTML = (out.requests || []).length ? out.requests.map(requestCard).join("") : `<p class="muted">Você ainda não pediu nenhum tema.</p>`;
+    } catch { box.innerHTML = `<p class="muted">Não deu para carregar seus pedidos agora.</p>`; }
+  }
+
+  function viewRequest() {
+    setTab("mais");
+    if (!fbOn()) { paint(`<h1 class="day">Peça o seu Watch</h1><div class="empty">Disponível só no site publicado.</div>`); return; }
+    paint(`
+      <h1 class="day">Peça o seu Watch</h1>
+      <p class="dek">Diga o tema e o que você quer saber. A criação é automática: montamos as buscas, as fontes e as pessoas de referência,
+        uma segunda IA revisa, rodamos a primeira coleta e uma pessoa aprova antes de o tema ir ao ar. Você acompanha tudo aqui.</p>
+      <form id="req-form" class="req-form" novalidate>
+        <label for="req-nome">Tema</label>
+        <input id="req-nome" name="nome" type="text" maxlength="80" required placeholder="ex.: risco de crédito com IA">
+        <label for="req-escopo">O que entra e o que fica de fora</label>
+        <textarea id="req-escopo" name="escopo" rows="4" maxlength="1500" required placeholder="ex.: modelos de PD e cobrança com machine learning em bancos; fora: crédito corporativo"></textarea>
+        <label for="req-perguntas">Perguntas que o tema deve responder (uma por linha)</label>
+        <textarea id="req-perguntas" name="perguntas" rows="4" maxlength="1800" placeholder="ex.: modelos fundacionais funcionam melhor que gradient boosting em PD?"></textarea>
+        <label for="req-fontes">Fontes que você já acompanha (opcional)</label>
+        <textarea id="req-fontes" name="fontes" rows="2" maxlength="1000" placeholder="sites, revistas, pesquisadores, eventos"></textarea>
+        <label for="req-publico">Para quem é (opcional)</label>
+        <input id="req-publico" name="publico" type="text" maxlength="200" placeholder="ex.: equipe de modelagem de risco">
+        <label for="req-name">Seu nome (opcional)</label>
+        <input id="req-name" name="name" type="text" maxlength="60" value="${esc(store.get("paw_name", ""))}">
+        <button class="req-send" type="submit">Pedir este tema</button>
+        <p class="req-msg" id="req-msg" aria-live="polite"></p>
+      </form>
+      <h2 class="theme-h">Seus pedidos</h2>
+      <div id="req-list"><p class="muted">Carregando…</p></div>`);
+    const form = document.getElementById("req-form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const msg = document.getElementById("req-msg");
+      const btn = form.querySelector("button[type=submit]");
+      btn.disabled = true; msg.textContent = "Enviando…";
+      try {
+        if (fd.get("name")) store.set("paw_name", String(fd.get("name")));
+        const r = await fetch("/api/topic-request", { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...Object.fromEntries(fd), voter: voterId() }) });
+        const out = await r.json();
+        if (!out.ok) throw new Error(out.error || `HTTP ${r.status}`);
+        msg.textContent = out.note; form.reset(); loadRequests();
+      } catch (err) { msg.textContent = `Não foi possível enviar: ${err.message}`; }
+      btn.disabled = false;
+    });
+    loadRequests();
   }
 
   // ---------- ask the archive (POST /api/ask) ----------
@@ -1416,6 +1492,7 @@
     else if (a === "anual") viewAnnual(b);
     else if (a === "pergunte") viewAsk(params);
     else if (a === "mais") viewMore();
+    else if (a === "criar") viewRequest();
     else if (a === "sobre") { viewMore(); openAbout(); }
     else if (a === "busca") { viewHome(); openSearch(params.get("q") || ""); }
     else viewHome();
