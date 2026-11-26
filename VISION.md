@@ -1,5 +1,8 @@
 # Visão — Research Watch
 
+> A versão em edição está em https://claude.ai/artifact/JqYuvBZ5gnQkaVAgTZSXXd (documento editável, com as
+> decisões em aberto). Este arquivo recebe o texto quando aprovado.
+>
 > Rascunho de 25/11/2026, a partir da conversa entre o Lincoln e o Claude. Está aberto para discussão e ainda não
 > foi fechado. Os três temas atuais (People Analytics, Fraude Bancária, Tecnologia Bancária) são casos de teste da
 > plataforma, não o produto.
