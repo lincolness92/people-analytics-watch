@@ -183,6 +183,10 @@ test("voice: transcription falls back across models, rejects unsupported audio, 
   assert.deepEqual(seen, [["openai/whisper-large-v3-turbo", "audio/webm"], ["openai/whisper-large-v3", "audio/webm"]]);
   assert.equal(r.text, "olá mundo");
   await assert.rejects(() => V.transcribe({ HF_TOKEN: "h" }, new Uint8Array(10), "audio/mp4"), /não suportado/);
-  assert.equal(V.speakable("**Resumo**: golpes [1] cresceram [2].\n- item https://x.y/z"), "Resumo: golpes cresceram.\nitem");
+  assert.equal(V.speakable("**Resumo**: golpes [1] cresceram [2].\n- item https://x.y/z"), "Resumo: golpes cresceram.\nitem.");
+  assert.equal(V.speakable("## Principais achados\n• Golpes via Pix\nO que muda:"), "Principais achados.\nGolpes via Pix.\nO que muda.");
+  assert.equal(V.ttsBody({}, "oi").model_id, "eleven_multilingual_v2");
+  assert.equal(V.ttsBody({}, "oi").language_code, undefined);
+  assert.equal(V.ttsBody({ ELEVENLABS_MODEL: "eleven_v3" }, "oi").language_code, "pt");
   assert.deepEqual(V.sttModels({ STT_MODEL: "x/y" }), ["x/y", ...V.STT_MODELS]);
 });
