@@ -7756,5 +7756,1012 @@
 "e": "bench",
 "w": "Framework GNN de risco sistêmico em crédito; validação apenas sintética."
 }
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+"title": "Fórum Pix projeta avanços para 2027",
+"url": "https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+"venue": "LIFT Day (notícias)",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "O Banco Central do Brasil (BC) promoveu nesta quinta-feira (26/11) a 29ª Reunião Plenária do Fórum Pix. O encontro cumpre o papel de prestar contas à sociedade e ao mercado financeiro, apresentando um balanço das iniciativas de 2026 e detalhando as diretrizes da agenda evolutiva do arranjo de pagamentos para o próximo ano. “O Fórum Pix se consolida como um espaço fundamental de diálogo com o mercado e a sociedade. Em 2027, o foco do BC é dar continuidade à agenda evolutiva com o aprimoramento de serviços e o reforço da segurança, garantindo que o Pix siga como uma ferramenta inovadora, eficiente e segura para todos os cidadãos”, destacou Breno Lobo, Coordenador do Fórum Pix e Chefe Adjunto do Departamento de Competição e de Estrutura do Mercado Financeiro do BC. Retrospectiva 2026: balanço do ano Durante a reunião, o BC destacou as principais entregas do ano. Entre os avanços regulatórios e operacionais, figuram o aprimoramento do Mecanismo Especial de Devolução (MED 2.0); novos requisitos para dar mais clareza à contestação na jornada de autoatendimento do MED; o Pix Automático em contas-salário; a regulamentação da cobrança híbrida; e os novos procedimentos relacionados à prevenç",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"LIFT Day"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "regulator",
+"w": "BC detalha agenda Pix 2027, MED 2.0 e cobrança híbrida; sem métricas"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.01063",
+"title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+"url": "https://doi.org/10.1287/mnsc.2025.01063",
+"venue": "Management Science",
+"date": "2026-11-25",
+"authors": [
+"Antonio Roldán-Monés"
+],
+"abstract": "Research on Generative AI (GenAI) and work reports both productivity-compressing and inequality-expanding effects, leaving open a central question for organizations: Who benefits from GenAI and on which specific tasks? I address this question through a randomized controlled trial in competitive university debating, where participants are randomly assigned access to GenAI. Although most previous experimental work examines the impact of GenAI on written activities and across individuals, this setting allows me to study the impact of GenAI on a knowledge-intensive spoken activity and to identify heterogeneous effects across subtasks. I find that GenAI expands performance inequality in this setting. Consistent with recent theories on GenAI and work, results show that high-ability participants experience significantly larger gains from GenAI usage than their lower-ability counterparts in judgment-intensive subtasks, whereas lower-ability individuals only improve their performance in less expert components of debating, where GenAI can be used as a substitute. If these inequality-expanding effects generalize to similar spoken settings where complex ideas must be internalized and explained",
+"score": 7,
+"theme": "skills",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 9,
+"e": "rct",
+"w": "RCT em debate mostra GenAI ampliando desigualdade; lição de reskilling"
+}
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/26/11/2026/visa-esforcos-agenticos",
+"title": "Visa foca seus esforços em pagamentos agênticos, diz diretor",
+"url": "https://www.mobiletime.com.br/noticias/26/11/2026/visa-esforcos-agenticos/",
+"venue": "Mobile Time",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "A companhia apresentou nesta quinta-feira, 26, os primeiros casos no Brasil com pagamentos agênticos ao lado de empresas como Santander, Banco do Brasil e Getnet",
+"score": 5,
+"theme": "agentic_commerce",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 3,
+"e": "news",
+"w": "Visa com Santander e BB em pagamentos agênticos; anúncio sem detalhe"
+}
+},
+{
+"key": "web:https://www.ft.com/content/cf30cef5-0e35-4ebd-a456-797dbd1ad132?syn-25a6b1a6=1",
+"title": "BoE to cut capital requirements for banks as it warns of AI risks",
+"url": "https://www.ft.com/content/cf30cef5-0e35-4ebd-a456-797dbd1ad132?syn-25a6b1a6=1",
+"venue": "FT — Banks",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "Central bank tells lenders they will need to keep pace with the growing scale and sophistication of cyber threats",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [
+"Financial Times"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "regulator",
+"w": "BoE corta capital e alerta risco de IA; norma sem dados próprios"
+}
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/27/11/2026/settle",
+"title": "Settle: startup cria agentes de IA para editais de compras governamentais",
+"url": "https://www.mobiletime.com.br/noticias/27/11/2026/settle/",
+"venue": "Mobile Time",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "Solução varre 6 mil editais diariamente dos governos federal, estaduais e municipais, além de autarquias e empresas públicas. Vivo é uma das primeiras clientes",
+"score": 5,
+"theme": "automation",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "news",
+"w": "Agentes varrem 6 mil editais/dia com Vivo cliente; sem métricas de resultado"
+}
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/26/11/2026/picpay-agentes-para-pj",
+"title": "PicPay lançará mais dois agentes de IA para seus clientes PJ",
+"url": "https://www.mobiletime.com.br/noticias/26/11/2026/picpay-agentes-para-pj/",
+"venue": "Mobile Time",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "O agente de gerente financeiro será lançado ainda neste ano e o voltado a agendamentos chegará no começo de 2027",
+"score": 5,
+"theme": "agentic_bank",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "news",
+"w": "PicPay anuncia dois agentes PJ; roadmap sem dados de produção"
+}
+},
+{
+"key": "web:https://convergenciadigital.com.br/mercado/bradesco-reduz-de-80-para-5-dias-o-tempo-de-entrega-de-infraestrutura-atento-ao-uso-de-agentes-ia",
+"title": "Bradesco reduz de 80 para 5 dias o tempo de entrega de infraestrutura atento ao uso de agentes IA",
+"url": "https://convergenciadigital.com.br/mercado/bradesco-reduz-de-80-para-5-dias-o-tempo-de-entrega-de-infraestrutura-atento-ao-uso-de-agentes-ia/",
+"venue": "Convergência Digital",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "O projeto transformou entregas fragmentadas em um modelo de autoatendimento governado e escalável, conforme explicou Yuri Kadluba, gerente de TI do Bradesco, e Fernando de Araujo, especialista em Engenharia de Plataforma do Bradesco, em evento da IBM.",
+"score": 7,
+"theme": "engineering",
+"region": "brasil",
+"watch": [
+"Convergência Digital"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "news",
+"w": "Bradesco corta entrega de infra de 80 para 5 dias com autoatendimento governado"
+}
+},
+{
+"key": "doi:10.1186/s40854-026-00998-7",
+"title": "A systematic review on fairness in LLM applications for financial services",
+"url": "https://doi.org/10.1186/s40854-026-00998-7",
+"venue": "Financial Innovation",
+"date": "2026-11-26",
+"authors": [
+"Saurabh Aggarwal",
+"Joyjit Chattoraj",
+"Ranjan Satapathy",
+"Farooq Husain",
+"Jun Xu",
+"Thorsten Neumann"
+],
+"abstract": "",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática de fairness em LLMs financeiros; sem abstract"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.03142",
+"title": "Reducing Risk Through Trade Credit: Theory and Evidence from Dual-Channel Suppliers",
+"url": "https://doi.org/10.1287/mnsc.2025.03142",
+"venue": "Management Science",
+"date": "2026-11-26",
+"authors": [
+"Jie Ning",
+"Sammi Yu Tang",
+"Jing Wu",
+"Jiaqi Zhu"
+],
+"abstract": "Trade credit is traditionally viewed as increasing supplier risk, because delayed payments expose suppliers to buyer uncertainties. Using a stylized game-theoretic model, we show that this conventional wisdom can be overturned when a supplier is dual channel: operating a direct channel that sells to end customers in addition to an indirect channel that sells to an industry peer who serves the same market. Compared with zero trade credit provision where the supplier requires cash on delivery (COD), we observe empirically that high trade credit provision can lead to lower risk for the dual-channel supplier. We propose a possible mechanism for this risk mitigation effect—pooling: When the market overlap between the supplier and its peer buyer is sufficiently high, the random split of the overlapping market creates negative association between the supplier’s direct channel sales and the buyer’s trade credit payment. Trade credit does not always mitigate risk for dual-channel suppliers. If the supplier’s debt level is high, our theory predicts that trade credit exacerbates risk. We find empirical evidence consistent with our theoretical predictions using data on U.S. manufacturing firms",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 8,
+"e": "theory",
+"w": "Modelo teórico e evidência empírica sobre trade credit; pouco de IA"
+}
+},
+{
+"key": "doi:10.20944/preprints202611.2539.v1",
+"title": "Agentic AI in Payments and Financial Transactions: A Survey of Architectures, Safeguards and Open Problems",
+"url": "https://doi.org/10.20944/preprints202611.2539.v1",
+"venue": "Preprints.org",
+"date": "2026-11-25",
+"authors": [
+"Chiedozie Shedrack",
+"Aji¹·²"
+],
+"abstract": "AI agents powered by large language models are beginning to initiate, authorize, and execute financial transactions on behalf of users and institutions. Between 2024 and 2026 the industry shipped the first payment infrastructure purpose-built for this shift: Google's Agent Payments Protocol (AP2), Coinbase's x402, Visa Intelligent Commerce, and Mastercard Agent Pay, while central banks began experimenting with agentic systems inside wholesale payment infrastructures. Yet the academic literature has not synthesized this transition: existing surveys cover LLM agents generally and financial applications of LLMs broadly, but none examine the specific problem of agents that move money. This survey provides a structured review of agentic AI in payments and financial transactions. We analyze 54 primary works spanning agent architectures, production payment protocols, central-bank research, agent identity frameworks, adversarial security literature, and liability scholarship. We propose a four-axis taxonomy (autonomy level, transaction authority, guarantee mechanism, and failure surface) and use it to map every surveyed system. We find that transaction-integrity guarantees such as idempote",
+"score": 7,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "review",
+"w": "Survey de 54 obras sobre agentes que movem dinheiro; taxonomia útil, preprint"
+}
+},
+{
+"key": "web:https://thefintechtimes.com/iris-handles-70-of-greek-instant-payments-as-europa-links-expand",
+"title": "IRIS Handles 70% of Greek Instant Payments as EuroPA Links Expand",
+"url": "https://thefintechtimes.com/iris-handles-70-of-greek-instant-payments-as-europa-links-expand/",
+"venue": "The Fintech Times",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "Greece's IRIS network processed 126.4m transactions worth €10.9bn in 2025, and is now connected to three European A2A schemes via EuroPA. The post IRIS Handles 70% of Greek Instant Payments as EuroPA Links Expand appeared first on The Fintech Times .",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"The Fintech Times"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "news",
+"w": "IRIS grego com 126,4 mi transações e €10,9 bi; dados de rede"
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11377221/v1",
+"title": "The AI Assurance Gap (AAG): A Framework for Measuring Security Review Deficits in AI-Assisted Software Development within Regulated Financial Institutions",
+"url": "https://doi.org/10.21203/rs.3.rs-11377221/v1",
+"venue": "Research Square",
+"date": "2026-11-25",
+"authors": [
+"Sadham Hussain Razzak"
+],
+"abstract": "Generative artificial intelligence (GenAI) is increasingly used to generate, transform, test, document, and configure software, increasing development throughput while changing the workload presented to security assurance functions. In regulated financial institutions, the critical governance question is whether security review, validation, and accountability can scale with AI-assisted change. This paper introduces the AI Assurance Gap (AAG), a conceptual framework for measuring the deficit between risk-weighted security assurance demand and effective assurance capacity. The framework defines an AAG Ratio, AAG Deficit, AAG Coverage, Assurance Backlog, and Assurance Latency. Assurance demand is normalized using change volume, technical complexity, business criticality, and exposure, while capacity is based on observed control throughput rather than nominal staffing. A synthetic fintech scenario illustrates how persistent demand above capacity can accumulate assurance debt even when automated testing remains active. The framework is mapped to contemporary AI, cybersecurity, software-development, and financial-sector governance instruments. AAG is intentionally positioned as a domain-",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Framework conceitual de assurance gap com cenário sintético"
+}
+},
+{
+"key": "web:https://finsidersbrasil.com.br/regulamentacao/bc-diz-que-nao-quer-encolher-credito-mas-mudar-concessao-a-clientes-endividados",
+"title": "BC diz que não quer encolher crédito, mas mudar concessão a clientes endividados",
+"url": "https://finsidersbrasil.com.br/regulamentacao/bc-diz-que-nao-quer-encolher-credito-mas-mudar-concessao-a-clientes-endividados/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "Coletiva do BC sobre as medidas que tratam dos riscos associados ao endividamento de famílias e empresas | Imagem: Raphael Ribeiro/Banco Central Diretor afirma que objetivo das medidas é fazer os bancos emprestarem com mais critério a quem já está endividado, sem perseguir a queda do volume de crédito",
+"score": 5,
+"theme": "risk_credit",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "regulator",
+"w": "Coletiva do BC sobre critério de crédito a endividados, sem desenho empírico"
+}
+},
+{
+"key": "web:https://www.letsmoney.com.br/noticias/abecs-pagamento-aproximacao-564-bilhoes-3t26",
+"title": "Pagamento por aproximação cresce 16,1% e soma R$ 564,3 bi",
+"url": "https://www.letsmoney.com.br/noticias/abecs-pagamento-aproximacao-564-bilhoes-3t26/",
+"venue": "Let's Money",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "Alta foi de 16,1% sobre o 3º trimestre de 2025, diz a Abecs. A tecnologia já está em 78% das compras presenciais com cartão, e 74% dos brasileiros a usam.",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Let's Money"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "admin",
+"w": "Dados Abecs de aproximação: +16,1%, R$564,3bi, 78% das compras"
+}
+},
+{
+"key": "web:https://www.mobiletime.com.br/noticias/27/11/2026/ia-nomad-funcionarios",
+"title": "IA é usada por 90% dos funcionários da Nomad no dia a dia",
+"url": "https://www.mobiletime.com.br/noticias/27/11/2026/ia-nomad-funcionarios/",
+"venue": "Mobile Time",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "A fintech brasileira conta com um marketplace interno que possui 19 plugins e 50 skills (MCPs) que podem ser reutilizados em outras áreas internas",
+"score": 6,
+"theme": "automation",
+"region": "brasil",
+"watch": [
+"Mobile Time"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "news",
+"w": "Caso Nomad: 90% dos funcionários, 19 plugins e 50 MCPs, sem verificação"
+}
+},
+{
+"key": "web:https://www.americanbanker.com/news/can-credit-cards-still-be-profitable-if-rates-are-capped-yes",
+"title": "Can credit cards still be profitable if rates are capped? Yes",
+"url": "https://www.americanbanker.com/news/can-credit-cards-still-be-profitable-if-rates-are-capped-yes",
+"venue": "American Banker",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "Researchers say high credit-card margins provide ample cushion to make up for lost revenue in reducing rewards and credit limits, but banking groups say those very measures could harm small businesses that rely on credit cards for business capital.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [
+"American Banker"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "news",
+"w": "Pesquisa sobre teto de juros em cartões, sem números explícitos no texto"
+}
+},
+{
+"key": "web:https://www.youtube.com/shorts/N-2FetTlXiA",
+"title": "Onde o uso do cartão mais cresceu no 3º trimestre de 2026?",
+"url": "https://www.youtube.com/shorts/N-2FetTlXiA",
+"venue": "CMEP – Congresso de Meios Eletrônicos de Pagamento (YouTube)",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "A utilização de meios eletrônicos de pagamento se expandiu em diferentes setores da economia brasileira. No comércio, o destaque foi o segmento de eletrônicos e eletrodomésticos (+16,2% em relação ao 3T25), seguido por comércio e serviços em geral, e por móveis e construção. Nos serviços, o turismo lidera o ranking (+15,1%), com seguros e educação básica também em alta. Assista ao vídeo para conferir os números e acompanhe mais novidades no canal @abecsoficial.",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"CMEP – Congresso de Meios Eletrônicos de Pagamento"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "news",
+"w": "Números Abecs por setor no 3T26, dados agregados sem metodologia"
+}
+},
+{
+"key": "doi:10.1016/j.jbankfin.2026.107871",
+"title": "Bank CEO turnover: The role of shareholders",
+"url": "https://doi.org/10.1016/j.jbankfin.2026.107871",
+"venue": "Journal of Banking & Finance",
+"date": "2026-11-24",
+"authors": [
+"Oskar Kowalewski",
+"Dorota Skała"
+],
+"abstract": "This study examines whether the identity of the controlling shareholder affects chief executive officer (CEO) turnover in banking. Using a hand-collected panel covering all commercial banks in Poland from 1994 to 2024, we document substantial ownership-based differences in CEO turnover. Foreign-owned banks are generally less likely to replace CEOs than domestic private banks, and this association persists after controlling for profitability and bank risk. Severe short-term underperformance raises the likelihood of dismissal, but state-controlled banks, which exhibit higher CEO turnover overall, tie dismissal less closely to underperformance. CEOs’ own political and regulatory connections are unrelated to forced turnover, whereas the state-ownership differential in CEO turnover narrows before regular parliamentary elections and widens substantially afterward, consistent with political influence operating at the ownership level rather than through individual CEOs. Overall, we show that the identity of the controlling shareholder is associated with both the incidence and performance sensitivity of CEO turnover, and the main ownership patterns are robust across a variety of tests.",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 8,
+"e": "admin",
+"w": "Painel manual 1994-2024 de bancos poloneses sobre rotatividade de CEO"
+}
+},
+{
+"key": "doi:10.63108/ijlmh.13342",
+"title": "Regulation of Artificial Intelligence in Commercial Use: A Comparative Analysis of India and the European Union AI Act",
+"url": "https://doi.org/10.63108/ijlmh.13342",
+"venue": "International Journal of Law Management & Humanities",
+"date": "2026-11-26",
+"authors": [
+"Zeeshan Akhtar Khan"
+],
+"abstract": "Artificial intelligence now sits inside the decision-making machinery of banking, insurance, recruitment, healthcare, and retail, yet the law governing its commercial use differs sharply across jurisdictions. This article offers a comparative doctrinal analysis of two contrasting models: the European Union’s Artificial Intelligence Act of 2024, the world’s first binding horizontal AI law, and India’s deliberately statute-light framework, anchored since November 2025 in the India AI Governance Guidelines, the DPDP Act 2023 and its 2025 Rules, and sectoral instruments. Using the functional method of comparative law, it assesses both regimes across regulatory philosophy, scope, risk classification, transparency, enforcement, liability, and business impact. Two findings are central. First, the European model has come under strain: the 2025 withdrawal of the proposed AI Liability Directive leaves the EU without harmonised fault-based liability rules for AI. Second, India’s absolute-liability doctrine in M.C. Mehta v. Union of India offers a foundation for an AI liability regime the EU currently lacks. The article proposes a contextualised thin statute: a three-tier risk classification, ",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Análise doutrinária comparada EU AI Act vs Índia, relevante para governança"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24531258",
+"title": "From Digital Finance to Intelligent Finance: The Role of AI in Transforming India'S Financial Ecosystem",
+"url": "https://doi.org/10.5281/zenodo.24531258",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-25",
+"authors": [
+"Sreekanth Sreedharan",
+"Dhanalakshmi (Associate Professor)",
+"Srija R"
+],
+"abstract": "India built its payment, identity and data-sharing rails first and is now placing artificial intelligence (AI) on top of them. This paper asks what happens when cheap, interoperable public infrastructure meets machine learning, and where machine decisions should stop and human judgement take over. It is a structured desk review of 2016–2026 sources: peer-reviewed studies, Reserve Bank of India (RBI) reports and directions, government releases, industry data (NPCI, Sahamati, Tracxn) and assessments by the FSB, BIS and IMF, coded into four themes: infrastructure, intelligence, risk and governance. The rails are now large enough to feed AI at scale. UPI handled 24,162 crore transactions worth ₹314 lakh crore in FY2025-26, and the Account Aggregator network facilitated ₹1.07 trillion of loans in FY2024-25. Adoption is still thin: only 20.8% of regulated entities surveyed by the RBI’s FREE-AI committee used AI, although 67% wanted to. Risk is rising. Reported bank-fraud value roughly tripled to ₹36,014 crore in FY2024-25 while case numbers fell, and the RBI now ranks AI-enabled cyber attacks as the leading near-term threat. The paper proposes the Rails–Reasoning–Guardrails (3R) framewor",
+"score": 6,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "review",
+"w": "Desk review com dados RBI, UPI e fraude; framework 3R sem validação"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.08930",
+"title": "Machine Learning Vast Dynamic Conditional Covariance Matrices: The Spirit of “Divide and Conquer”",
+"url": "https://doi.org/10.1287/mnsc.2024.08930",
+"venue": "Management Science",
+"date": "2026-11-25",
+"authors": [
+"Zhoufan Zhu",
+"Ke Zhu"
+],
+"abstract": "Large-scale portfolio selection requires accurate forecasts of high-dimensional dynamic conditional covariance matrices (CCMs). This task is challenging because the number of covariance elements grows quickly with the number of assets, whereas the available time-series observations are limited and noisy. In this paper, we propose a novel graph-based quantiled (GRAND) CCM estimator in the spirit of “divide and conquer.” By extracting information from the extensive asset features, the GRAND method leverages a new graph-based deep learning network, called the self-grouping autoencoder (SGA), to learn the conditional quantiles of returns. Using those learned conditional quantiles, the GRAND method further learns (co)variances of CCM element-wisely via the quantiled conditional moment (QCM) method, and finally, it makes the resulting assembled CCM estimator positive semidefinite through a projection. Because of the use of the SGA network and the QCM method in an element-wise way, the GRAND method is blessing dimensionality in learning the CCM of a large-scale portfolio, while keeping the computation manageable and maintaining causal semantics. From an extensive empirical analysis of the",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "bench",
+"w": "Estimador GRAND de covariância condicional em Management Science, aplicável a risco"
+}
+},
+{
+"key": "web:https://thepaymentsassociation.org/article/helping-shape-the-future-of-uk-retail-payments",
+"title": "Helping shape the future of UK retail payments",
+"url": "https://thepaymentsassociation.org/article/helping-shape-the-future-of-uk-retail-payments/",
+"venue": "PAY360 (notícias)",
+"date": "2026-11-25",
+"authors": [],
+"abstract": "RPIB published retail payments design findings as Pay.UK backs modular architecture, resilience, and a phased transition ahead of a spring 2027 blueprint.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [
+"PAY360"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "regulator",
+"w": "Achados de design de pagamentos de varejo do Pay.UK, arquitetura modular"
+}
+},
+{
+"key": "doi:10.1017/fas.2026.10058",
+"title": "Digital public infrastructures and central banks’ infrastructural power: The Pix payment system in Brazil",
+"url": "https://doi.org/10.1017/fas.2026.10058",
+"venue": "Finance and Society",
+"date": "2026-11-26",
+"authors": [
+"Giselle Datz",
+"Maria Antonieta Del Tedesco Lins"
+],
+"abstract": "Digital public infrastructures (DPIs) are transforming how governments interact with society in digital spaces. We examine how central banks design, operate, and regulate retail digital payment systems through the case of Brazil’s Pix, a payment infrastructure conceived, implemented, operated, and regulated by the Brazilian Central Bank (BCB). Advancing the concept of central bank infrastructural power, we argue that the BCB exercised this power through three complementary mechanisms: the design of Pix’s technical architecture, the reorganization of competition in the payments market, and the integration of the system into public institutions and everyday economic activity. Together, these mechanisms strengthened the BCB’s policy autonomy and centrality within Brazil’s financial system while fostering a more competitive and widely adopted digital payments ecosystem. More broadly, we contribute to the cross-disciplinary literature on financial infrastructures by showing that, particularly in the digital era, public authority is exercised not only through regulation but also through the construction of DPIs that reconfigure state-market relations and generate new forms of interdepend",
+"score": 6,
+"theme": "payments",
+"region": "brasil",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "theory",
+"w": "Análise acadêmica do Pix como infraestrutura pública e poder do BCB"
+}
+},
+{
+"key": "doi:10.68481/hx9sn4",
+"title": "One Act, Three Answers: Attribution of AI Agent Conduct Across Commerce, Copyright, and Crime",
+"url": "https://doi.org/10.68481/hx9sn4",
+"venue": "",
+"date": "2026-11-25",
+"authors": [
+"Travis Gilly"
+],
+"abstract": "A person instructs an AI agent, and the agent acts. The question whose act that is now has three answers. A retailer blocking a consumer shopping agent treats the agent as an unauthorized stranger, separate from the customer who sent it. The Copyright Office treats the expression an AI system produces on a person's instructions as determined by the machine, so that a person who specifies a work and corrects it by revising her instructions owns none of its expression. Federal prosecutors and the Ninth Circuit treat the act as the user's: the person at the prompt produced the image, and the user, aided by the agent, accessed the computer. The law already has a settled rule for this question. Federal and state electronic commerce statutes bind a person to contracts that her electronic agents form without any human review, so long as the agent's action is legally attributable to her. Federal criminal law punishes as a principal anyone who willfully causes an act through an innocent agent or instrumentality. A federal court of appeals has held that a shopping agent is a tool and that the user is the one who accesses. Measured against that rule, the agent ban and the registration practic",
+"score": 5,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Análise jurídica de atribuição de atos de agentes; sem dados empíricos."
+}
+},
+{
+"key": "doi:10.1177/09735984261505391",
+"title": "Alternative Payment Systems in BRICS Nations: Financial Sovereignty, De-dollarization, and the Reconfiguration of Global Financial Governance",
+"url": "https://doi.org/10.1177/09735984261505391",
+"venue": "Jadavpur Journal of International Relations",
+"date": "2026-11-25",
+"authors": [
+"Sailen Das"
+],
+"abstract": "This article explores how alternative payment systems in BRICS (Brazil, Russia, India, China, and South Africa) countries are contributing to the reconfiguration of the global financial architecture. Employing a comparative analytical framework and secondary data, it examines five representative cases: China’s digital yuan, or e-CNY; India’s Unified Payments Interface; Brazil’s Pix; Russia’s SPFS and Mir payment systems; and South Africa’s mobile money ecosystem. The analysis compares these initiatives across four dimensions: digital payment infrastructure, financial sovereignty, cross-border payment integration, and implications for global financial governance. The study investigates whether these innovations enhance economic autonomy, promote financial inclusion, and reduce dependence on Western-dominated institutions such as the Society for Worldwide Interbank Financial Telecommunication and the International Monetary Fund. The findings suggest that BRICS countries are strengthening financial resilience and supporting a gradual transition toward a more multipolar monetary order. The article concludes with policy recommendations for greater digital financial cooperation among BRI",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Comparação secundária de sistemas de pagamento BRICS; sem dados primários."
+}
+},
+{
+"key": "doi:10.13135/2704-9906/12522",
+"title": "Artificial Intelligence and ESG Disclosure in Banking: Enhancing Accountability and SDG Alignment through Hybrid Evaluation Models",
+"url": "https://doi.org/10.13135/2704-9906/12522",
+"venue": "European Journal of Social Impact and Circular Economy",
+"date": "2026-11-24",
+"authors": [
+"Alberto Manzari",
+"Anna Maria Calce",
+"Grazia Maria Alessandra LENA",
+"Giovanna Del Giudice"
+],
+"abstract": "The 2030 Agenda for Sustainable Development emphasises the central role of financial institutions in advancing the SDGs through transparent and reliable Environmental, Social, and Governance (ESG) disclosure. In this context, Artificial Intelligence (AI) is increasingly applied to sustainability reporting, promising improvements in efficiency, accuracy and comparability. However, questions remain about AI’s ability to capture qualitative and context-dependent aspects of ESG performance, particularly in the social domain. This study compares ESG scores generated by AI systems with those assigned through human-led content analysis of sustainability reports covering 46 European banking entities. Using Pearson correlation across the three ESG pillars, the results reveal moderate alignment in environmental factors and strong alignment in governance, where data are structured and standardised. The overall ChatGPT ESG score was positively correlated with the human-assigned environmental (r = 0.38) and governance (r = 0.55) scores, negatively correlated with the human-assigned social score (r = −0.23), and weakly correlated with the human-assigned overall ESG score (r = 0.25). The findings",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "bench",
+"w": "Compara scores ESG de IA e humanos em 46 bancos europeus."
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.09109",
+"title": "Online Job Selection: Reward Rate vs. Remaining Value",
+"url": "https://doi.org/10.1287/mnsc.2024.09109",
+"venue": "Management Science",
+"date": "2026-11-25",
+"authors": [
+"Mohammad Reza Aminian",
+"Will Ma",
+"Linwei Xin"
+],
+"abstract": "High-throughput systems, such as cloud spot markets, adaptive large language model inference, and order consolidation in logistics, operate under capacity constraints. In these settings, decision makers must allocate fixed resources among a stream of requests with heterogeneous reward rates and service durations. A critical tension arises when capacity is saturated; the system must decide whether to continue serving an active job to harvest its remaining value or to preempt it in favor of a new arrival. This trade-off is especially subtle when a new job offers a lower immediate reward rate but a longer service duration, potentially outweighing a high-rate job near completion. To address this challenge, we introduce a general and parsimonious online allocation framework for capacity-constrained resources, where preemption is nonresumable and yields partial rewards. This abstraction captures the essential dynamics of modern resource management problems, including but not limited to those discussed earlier. We derive intuitive index-based policies and provide constant-factor competitive-ratio guarantees for their performance without requiring any forecasts of future demand. In particu",
+"score": 6,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 8,
+"e": "theory",
+"w": "Teoria de alocação online em Management Science; aplicação bancária indireta."
+}
+},
+{
+"key": "doi:10.1111/joes.70193",
+"title": "When Algorithms Meet Shariah: Mapping the Knowledge Landscape of Artificial Intelligence in Islamic Finance",
+"url": "https://doi.org/10.1111/joes.70193",
+"venue": "Journal of Economic Surveys",
+"date": "2026-11-25",
+"authors": [
+"S. M. Riha Parvin",
+"Sabeena Ameer",
+"Sajida Begam",
+"Mohammed Ashiq",
+"Niyaz Panakaje"
+],
+"abstract": "The research aims to consolidate and synthesize the fragmented literature concerning artificial intelligence (AI) in Islamic finance. In addition, the paper lays out a roadmap for future studies by identifying key antecedents, decisions, and outcomes associated with the adoption of AI in Islamic finance. The study used bibliometric analysis and a systematic literature review from 64 research studies related to the application of AI in Islamic finance. The review followed the PRISMA protocol to identify and screen articles from the Scopus and Web of Science databases. The selected studies were analyzed according to the theory‐context‐method (TCM) and antecedent‐decision‐outcome (ADO) framework, further exploring the integrated framework for future research. The review identifies a fragmented but rapidly evolving knowledge base dominated by Islamic banking, governance, and AI‐enabled financial services. By integrating the TCM and ADO frameworks, the study develops a holistic AI adoption ecosystem and four stakeholder‐centric (i.e., financial institutions, Regulatory authorities, customers, and Society) research frameworks that explain how strategic drivers, governance capabilities, c",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão bibliométrica de IA em finanças islâmicas; sem caso próprio."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11449249/v1",
+"title": "SafeComm-RAG: Safe and Communication-Efficient Multi-Agent Reinforcement Learning for Local LLM Based RAG Assistant",
+"url": "https://doi.org/10.21203/rs.3.rs-11449249/v1",
+"venue": "Research Square",
+"date": "2026-11-25",
+"authors": [
+"Mohammad Reza Rezaee",
+"Babak Heidari",
+"Morteza Rezaei",
+"Nor Asilah Wati Abdul Hamid",
+"Abdul Wahab Hanifi",
+"Farhad Mortezapour Shiri"
+],
+"abstract": "Local retrieval-augmented generation (RAG) Large Language Model (LLM) based assistants must decide not only what to retrieve, but also when retrieval is needed, how components should com- municate, and whether an action is permitted. We present SafeComm-RAG, a local controller with Retriever, Safety/Authorization, and Executor roles trained by multi-agent reinforcement learning under centralized training and decentralized execution. Each role selects a task action and a separate SEND/SILENT communication action, while a deterministic capability shield retains final authority over restricted operations. Training combines a competence-preserving warm start (C1), feasibility- aware communication pressure (C2), and counterfactual communication calibration with rollback (C3). On a shared 10,000-scenario benchmark over seven training seeds, C3 achieved 97.66 ± 0.22% task success, no observed executed safety violations, and 0.688 ± 0.131 communications per episode. It used 54.28% less communication than a selective heuristic and 77.07% less than always communicating. Ablations show that C1 is needed for competence and C3 cuts communication by 54.26% relative to no- C3 with almost unchange",
+"score": 6,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "bench",
+"w": "Benchmark de RAG multiagente com 10 mil cenários e métricas."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24556975",
+"title": "Payment and Financial Data in SaaS: Tokenize and Stay Out of Scope",
+"url": "https://doi.org/10.5281/zenodo.24556975",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-26",
+"authors": [
+"Jason Newell"
+],
+"abstract": "PCI DSS is a contract, not a statute, and the cheapest time to tokenize is before the first card is stored. The financial rules arrive by customer contract. A SaaS company that never lets a card number touch its systems keeps most of PCI DSS outside its walls. Sending customers to a hosted payment page lets an eligible merchant validate with the shortest self-assessment questionnaire, SAQ A, once it meets every eligibility criterion; a processor's iframe alone does not qualify. Taking card numbers into its own servers means validating against nearly the whole standard. PCI DSS is a contract standard set by the card brands and enforced through the acquiring bank. It is not a statute, though Nevada, Minnesota and Washington write parts of it into law. The standard bars storing the card security code, full track data or PIN after authorization. The card number has to be unreadable wherever it is stored, and all access to the cardholder data environment needs multi-factor authentication. Customer financial data falls under GLBA and the financial regulators. The FTC Safeguards Rule covers non-bank financial institutions: lenders, payment and money services, tax preparers and many fintec",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "other",
+"w": "Guia prático de tokenização e PCI DSS; sem dados originais."
+}
+},
+{
+"key": "doi:10.1186/s43093-026-01047-6",
+"title": "Machine learning models in FinTech for sustainable innovation: a comprehensive empirical evaluation with the S.A.F.E. framework",
+"url": "https://doi.org/10.1186/s43093-026-01047-6",
+"venue": "Future Business Journal",
+"date": "2026-11-25",
+"authors": [
+"Girish Paliwal",
+"Pragya Paliwal"
+],
+"abstract": "Recent FinTech credit and risk systems demonstrate a marked tendency to utilize machine learning methodologies; still, conventional evaluation benchmarks focus almost exclusively on predictive accuracy. This narrow focus gives rise to a challenging problem. The present study focuses on the fact that the AI Act and the Fair Credit Reporting Act penalize operational carbon footprints, systemic demographic bias and opaque decision logic. In order to address this evident gap in the literature, an evaluation of algorithmic trade-offs is conducted using the four-pillar S.A.F.E. framework (Sustainability, Accuracy, Fairness, Explainability) across three operational domains. The following subjects will be explored the detection of credit fraud; the corporate ESG rating; and geospatial physical climate risk. We benchmark five diverse architectures an Explainable Stacking Ensemble, Enhanced Random Forest, XGBoost, a Feedforward Neural Network, and a simulated Quantum SVM across 160,000 synthetic records calibrated to Lending Club, MSCI ESG, and NOAA distributions. Nonparametric Friedman tests confirm significant performance divergence among the models (chi-square = 18.24, df = 4, p = 0.0011)",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Benchmark de cinco modelos em 160 mil registros sintéticos calibrados."
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.04791",
+"title": "Scalable Just-in-Time Price Elasticity Estimation",
+"url": "https://doi.org/10.1287/mnsc.2024.04791",
+"venue": "Management Science",
+"date": "2026-11-25",
+"authors": [
+"Jingbo Wang",
+"Yufeng Huang"
+],
+"abstract": "This paper presents a scalable, nonparametric approach to estimating point-wise price elasticities designed for real-time pricing decisions. A key challenge in these settings is correcting for price endogeneity while remaining computationally efficient. We address this by leveraging nonparametric control functions to decompose the identification of causal elasticities into a sequence of scalable intermediate prediction tasks. We implement this framework with bootstrap averaged (bagged) nearest neighbors, which admits a closed-form representation that enables scalable, real-time implementation. We establish uniform consistency of our estimator and show in Monte Carlo simulations that it robustly recovers local elasticities across a diverse range of data-generating processes. We demonstrate the method’s practical usefulness by applying it to the New York City ride-sharing market, recovering substantial spatial-temporal heterogeneity in price elasticity and updating citywide elasticity estimates in less than one minute, which provide a “just-in-time” input for algorithmic pricing systems. This paper was accepted by Raphael Thomadsen, marketing. Funding: J. Wang acknowledges financial ",
+"score": 6,
+"theme": "martech",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 8,
+"e": "bench",
+"w": "Método não paramétrico de elasticidade em tempo real; aplicação ride-sharing."
+}
+},
+{
+"key": "doi:10.1016/j.jbankfin.2026.107867",
+"title": "Corporate bond ETFs, bond liquidity, and ETF trading volume",
+"url": "https://doi.org/10.1016/j.jbankfin.2026.107867",
+"venue": "Journal of Banking & Finance",
+"date": "2026-11-23",
+"authors": [
+"Thomas Marta"
+],
+"abstract": "This paper examines the impact of corporate bond ETFs on the liquidity of their underlying bonds. To address identification challenges, including ETF self-selection and index effects, I combine panel regressions in levels and changes with subsample analyses across rating and liquidity segments, as well as periods of market stress. I complement these with a novel quasi-natural experiment based on an ETF index switch. The findings show that ETF ownership enhances bond liquidity. The evidence is consistent with ETF trading volume serving as an enabling condition for these liquidity gains, supporting channels such as ETF short selling and ETF-based arbitrage.",
+"score": 5,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "quasi",
+"w": "Estudo em Journal of Banking & Finance sobre ETFs e liquidez de bonds."
+}
+},
+{
+"key": "doi:10.4038/jbs.v13i1.121",
+"title": "Impact of Digital Transformation on Net Interest Margin: Evidence from Licensed Commercial Banks in Sri Lanka",
+"url": "https://doi.org/10.4038/jbs.v13i1.121",
+"venue": "Journal of Business Studies",
+"date": "2026-11-25",
+"authors": [
+"Lingesiya Kengatharan",
+"M. N. N. Farveen"
+],
+"abstract": "This study examines the impact of digital transformation on the financial performance of Licensed Commercial Banks in Sri Lanka, with Net Interest Margin (NIM) as the key performance indicator. A quantitative explanatory research design is adopted using panel data from 23 licensed commercial banks over the period 2020–2024. The study employs Pooled Ordinary Least Squares, Fixed Effects, and Random Effects models to analyse the relationship between multiple dimensions of digital transformation—digital penetration ratio, digital capital expenditure ratio, digital contact point ratio, digital transaction growth ratio, and IT investment ratio—and NIM. The results of the random effects model reveal that selected dimensions of digital transformation significantly enhance NIM. In particular, digital capital expenditure, digital contact points and digital penetration have significant positive effects on NIM. However, digital transaction growth and IT investment are found to be statistically insignificant. This study contributes to the limited empirical literature on digital transformation in emerging economies by disaggregating digital transformation into multiple measurable dimensions rat",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "admin",
+"w": "Painel de 23 bancos 2020-2024; dimensões de transformação digital vs NIM"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24536139",
+"title": "Operational Human Oversight for Lexa and Future AI Agents",
+"url": "https://doi.org/10.5281/zenodo.24536139",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-25",
+"authors": [
+"Lei Gao",
+"Oleksii Lomonosov"
+],
+"abstract": "This joint analytical note examines human oversight in Lexa, the Ukrainian Ministry of Justice’s public service information assistant, and in prospective AI agents that send official replies. A practitioner-supplied summary of a pilot recording 1,112 conversations describes two anonymised cases: Lexa did not provide an official route for submitting a suggestion to a civil registration office and could not verify the origin of a payment demand. A separate walkthrough of 30 questions in one conversation found that Lexa acknowledged limits to its knowledge of office arrangements and frequently suggested contacting free legal aid. These observations suggest assessing whether recommended contacts can verify the information residents need. For prospective agents, we propose approval tied to a specific version of a reply and its intended recipient; changes to either require renewed approval.",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "quali",
+"w": "Piloto de 1.112 conversas; dois casos de oversight de agente público"
+}
+},
+{
+"key": "doi:10.64388/ire1725838",
+"title": "Resilient Cloud Computing Architectures for Mission-Critical Financial Systems in Saudi Arabia: Integrating Oracle Cloud Infrastructure, Multi-Domain High Availability, Automated Failover and Business Continuity under Vision 2030",
+"url": "https://doi.org/10.64388/ire1725838",
+"venue": "Iconic Research and Engineering Journals",
+"date": "2026-11-26",
+"authors": [
+"Mohammad Thousif Rahman"
+],
+"abstract": "Saudi financial institutions require uninterrupted transaction processing despite software defects, regional service disruption, cyberattack and electricity-system disturbances. This critical review evaluates how Oracle Cloud Infrastructure (OCI) can support business continuity through fault domains, availability domains, independent regional recovery, automated failover and verifiable data restoration. The evidence base comprises thirty DOI-identifiable publications from 2020–2025, interpreted alongside official Saudi regulatory and provider documentation. A structured thematic synthesis distinguishes empirically supported reliability mechanisms from vendor capabilities and design recommendations. The proposed reference architecture combines distributed application replicas, controlled database replication, dependency-aware recovery orchestration, immutable backups and independently protected management paths. It treats recovery-time and recovery-point objectives as measurable outcomes rather than configuration labels. The review shows that geographical redundancy does not ensure operational resilience when identity services, transaction integrity, telecommunications, power supply",
+"score": 5,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão de resiliência em nuvem para bancos; arquitetura sem resultados próprios"
+}
+},
+{
+"key": "oa:W7240123430",
+"title": "Capturing Return on Investment From Artificial Intelligence: Evidence, Mechanisms, and Organizational Conditions",
+"url": "https://journal.rais.education/index.php/raiss/article/view/372",
+"venue": "RAIS Journal for Social Sciences",
+"date": "2026-11-25",
+"authors": [
+"Lawrence Ejime Iweriebor",
+"Asabe Dawudu"
+],
+"abstract": "Interest in artificial intelligence (AI) as a source of business value has outpaced the evidence on what AI investments return. This structured review examined peer-reviewed research on the return on investment (ROI) of AI in organizational settings, how that value was generated, and which organizational conditions accompanied it. A semantic search in the Elicit search engine identified nine studies that met initial screening criteria, and four remained after appraisal for peer review, relevance to AI, empirical grounding, and duplication. None reported an independently audited ROI from a completed deployment, and the largest figures came from models and simulations. A hospital ROI calculator estimated a five-year return of 451 percent for an AI radiology platform, and the best neural network models lowered simulated risk-weighted asset density by 2 to 27 percentage points relative to logistic regression at all but one of six large banks in France. Across the studies, reported value was associated with regulatory fit, business-led use-case selection, data readiness, workforce skills, and disciplined measurement. The evidence base was too small and heterogeneous to estimate typical ",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "review",
+"w": "Revisão estruturada de ROI de IA; nenhum retorno auditado, só simulações"
+}
+},
+{
+"key": "doi:10.1108/ijmf-06-2026-0422",
+"title": "Influence of digital orientation, digital intensity and digital maturity on bank profitability and efficiency in selected Asia Pacific countries",
+"url": "https://doi.org/10.1108/ijmf-06-2026-0422",
+"venue": "International Journal of Managerial Finance",
+"date": "2026-11-27",
+"authors": [
+"Yit Hao Chew",
+"Yee Peng Chow"
+],
+"abstract": "Purpose The purpose of the paper is to examine the relationship between digital transformation (DT), measured by digital orientation (DO), digital intensity (DI) and digital maturity (DM), and bank profitability and efficiency. Design/methodology/approach This study employs the fixed effects model on listed banks from 11 Asia Pacific countries for the period 2010 to 2024. Findings This paper finds that while both DO and DM have a positive relationship with bank profitability, no association exists between DI and bank profitability. The results also reveal that all three measures of DT, i.e. DO, DI and DM, have a negative relationship with the cost-to-income ratio, indicating that banks become more cost-efficient due to DT. Originality/value Despite numerous studies being performed on the effect of DT on bank performance, the majority of these studies did not consider the individual effects of DO, DI and DM. By investigating these distinct measures of DT, this study broadens the literature by providing a transparent comparison of alternative DT-related disclosure-based indicators and how they are associated with bank profitability and efficiency in a multi-country context.",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "admin",
+"w": "Efeitos fixos em bancos de 11 países 2010-2024; maturidade digital e eficiência"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24534151",
+"title": "AI Safety for Sandboxed AI Agents: Why Containment, Proxy Admission and Credential Brokering Do Not Prove That a Specific Action Is Still Authorized When It Takes Effect, and How Execution-Finality Controls Close That Gap Across Credential Mediation, Process Lineage, Network Egress and Distributed Multi-Agent Authority",
+"url": "https://doi.org/10.5281/zenodo.24534151",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-25",
+"authors": [
+"Sangam Das"
+],
+"abstract": "Description: THE PROBLEM IN PLAIN WORDSAn AI agent can be locked inside a sandbox, watched by a proxy, and handed only short-lived credentials, and it can still cause a harmful real-world effect: send the payment, delete the records, call the external API. The sandbox decided where the agent may run. The proxy decided that a network connection may open. Neither decided whether this particular action, with these particular parameters, against this particular target, is still authorized at the moment it takes effect. CLEAR CONCEPTComputing or requesting an action is not authority to carry it out. Authority for a specific real-world effect should be checked at the point where the effect happens, bound to that exact operation, and consumed once. PROBLEM SPACE Sandbox confinement limits where code runs, but privileged host-side connectors, tool servers and hooks can sit outside that boundary. Credential brokers and token exchange hand an agent a capability that is often broader, longer-lived or more reusable than the single action intended (confused-deputy, replay and token-passthrough risk). Process lineage and sub-agent spawning let an action be issued by a child process or delegated ",
+"score": 5,
+"theme": "agentic_bank",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Nota conceitual sobre autorização de ações de agentes; sem validação empírica"
+}
+},
+{
+"key": "doi:10.1177/09721509261494422",
+"title": "Predicting Small and Medium-sized Enterprise Financial Distress in Africa and the Rest of the World: Evidence from Econometric and Machine Learning Models",
+"url": "https://doi.org/10.1177/09721509261494422",
+"venue": "Global Business Review",
+"date": "2026-11-24",
+"authors": [
+"Yudhvir Seetharam",
+"Chimwemwe Chipeta",
+"Kingstone Nyakurukwa",
+"Ganesh Mani",
+"Patrick McSharry",
+"Edith Talina Luhanga"
+],
+"abstract": "This study compares predictors of small and medium enterprises’ financial distress in Africa versus the rest of the world using a large World Bank Enterprise Survey sample augmented with global sentiment and uncertainty indices. It benchmarks traditional econometric models against machine learning classifiers and interprets results using Shapley Additive Explanations to identify context-specific patterns. Three findings distinguish Africa: (a) female workforce composition and unskilled labour indicators are linked to lower predicted distress, consistent with gender-specific hiring patterns in labour-intensive small and medium enterprises, while female top management is not a statistically significant predictor; (b) informal competition increases predicted distress in Africa but is associated with lower predicted distress elsewhere; and (c) the data are consistent with a ‘grease the wheels’ mechanism in Africa, where informal payments are associated with lower predicted distress, plausibly by reducing administrative delays through payments to government officials. Overall, the hybrid modelling approach highlights that distress predictors are context-dependent and points to policy-re",
+"score": 6,
+"theme": "risk_credit",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 6,
+"e": "bench",
+"w": "World Bank Enterprise Survey com ML e SHAP; predição de distress em PMEs"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.04971",
+"title": "Inferential Theory for Pricing Errors with Latent Factors and Firm Characteristics",
+"url": "https://doi.org/10.1287/mnsc.2025.04971",
+"venue": "Management Science",
+"date": "2026-11-26",
+"authors": [
+"Jungjun Choi",
+"Ming Yuan"
+],
+"abstract": "We study factor models that combine latent factors with firm characteristics and propose a new framework for modeling, estimating, and inferring pricing errors. Following Zhang (2024), our approach decomposes mispricing into two distinct components: inside alpha, explained by firm characteristics but orthogonal to factor exposures, and outside alpha, orthogonal to both factors and characteristics. Our model generalizes those developed recently such as Kelly et al. (2019) and Zhang (2024), resolving issues of orthogonality, basis dependence, and unit sensitivity. Methodologically, we develop estimators grounded in low-rank methods with explicit debiasing, providing closed-form solutions and a rigorous inferential theory that accommodates a growing number of characteristics and relaxes standard assumptions on sample dimensions. Empirically, using U.S. stock returns from 2000 to 2019, we document strong evidence of both inside and outside alphas, with the former showing industry-level comovements and the latter reflecting idiosyncratic shocks beyond firm fundamentals. Our framework thus unifies statistical and characteristic-based approaches to factor modeling, offering both theoretic",
+"score": 5,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "theory",
+"w": "Teoria inferencial de erros de precificação em Management Science; fora do tema IA"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.04758",
+"title": "Correcting the Unobserved Textual Confounding Factors in Regression by BERT and Partially Linear Regression",
+"url": "https://doi.org/10.1287/mnsc.2024.04758",
+"venue": "Management Science",
+"date": "2026-11-26",
+"authors": [
+"Mengke Qiao",
+"Ke‐Wei Huang"
+],
+"abstract": "In the last decade, there has been a surge of text-mining applications in the information systems literature. In these applications, researchers typically construct independent variables from documents by various text-mining techniques. The most prominent example could be using online review sentiments to investigate online word-of-mouth issues. Typically, most documents contain information richer than the independent variable, and researchers may construct control variables from the same documents to alleviate endogeneity issues. However, researchers need to manually craft these variables, and this process may not guarantee that all the important confounding factors are extracted and included in the regression model with a correct functional form. If useful textual information is overlooked and a valid identification strategy is not available, the omitted variable bias may occur. To solve this challenge, we propose a novel model that utilizes text embedding based on the state-of-the-art neural network language model (i.e., bidirectional encoder representations from transformers (BERT)) to automatically create a new control variable vector for controlling latent confounding factors",
+"score": 5,
+"theme": "governance",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "theory",
+"w": "Método BERT para controle de confundidores textuais; útil mas sem aplicação bancária"
+}
 }
 ]

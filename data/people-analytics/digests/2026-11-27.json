@@ -1,0 +1,473 @@
+{
+ "date": "2026-11-27",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:river",
+ "period": {
+  "from": "2026-11-20",
+  "to": "2026-11-27"
+ },
+ "stats": {
+  "candidates": 166,
+  "triaged": 166,
+  "selected": 8,
+  "tokens": {
+   "prompt_tokens": 58974,
+   "completion_tokens": 27819,
+   "cost_usd": 0.021475,
+   "calls": 6,
+   "failures": 0
+  }
+ },
+ "headline": "Semana de evidências robustas sobre IA generativa, equidade e governança de pessoas",
+ "trend": "A IA generativa avança no trabalho, mas os efeitos são desiguais: pode ampliar gaps de habilidade, deprimir salários em polos tecnológicos e expandir tarefas, enquanto assistentes aumentam velocidade mas exigem verificação. Governança de dados e equidade salarial ganham centralidade, com pressão para auditorias internas de etnia e uso ético de IA no recrutamento. Práticas de gestão precisam combinar adoção tecnológica com suporte contínuo a grupos sub-representados e monitoramento de bem-estar.",
+ "items": [
+  {
+   "key": "doi:10.1287/orsc.2024.19538",
+   "title": "Democratic Organizing and Contemporary Managerial Talent Markets",
+   "original_title": "Democratic Organizing and Contemporary Managerial Talent Markets: Internal Promotion or External Hiring?",
+   "url": "https://doi.org/10.1287/orsc.2024.19538",
+   "venue": "Organization Science",
+   "date": "2026-11-26",
+   "authors": [
+    "Aleksandra Gregorič",
+    "Takao Kato",
+    "Casper B. L. Larsen"
+   ],
+   "institutions": [
+    "Copenhagen Business School",
+    "Colgate University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 8,
+    "e": "admin",
+    "w": "Dados empregador-empregado dinamarqueses 2001-2017, liga governança a promoção interna."
+   },
+   "score": 8,
+   "theme": "hiring",
+   "region": "",
+   "summary": "Dados longitudinais empregador-empregado de empresas dinamarquesas (2001-2017) mostram que firmas com representação de trabalhadores no conselho (WBR) preenchem cargos de gestão por **promoção interna** com mais frequência do que por contratação externa. O efeito é maior quando representantes têm mais experiência interna e quando mais gestores têm pares no conselho. Lição: governança que dá voz aos trabalhadores fortalece o mercado interno de trabalho e reduz dependência de contratações externas."
+  },
+  {
+   "key": "doi:10.1177/01492063261506258",
+   "title": "Breaking Gender Norms: A Dynamic Perspective on Entering Gender-Atypical Occupations",
+   "original_title": "Breaking Gender Norms: A Dynamic Perspective on Entering Gender-Atypical Occupations",
+   "url": "https://doi.org/10.1177/01492063261506258",
+   "venue": "Journal of Management",
+   "date": "2026-11-25",
+   "authors": [
+    "Sophie Johanna Moser",
+    "Florian Kunze"
+   ],
+   "institutions": [
+    "University of Konstanz"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 7,
+    "e": "survey",
+    "w": "Painel de 673 newcomers em 88 ocupações por 12 semanas, medidas repetidas."
+   },
+   "score": 7,
+   "theme": "hiring",
+   "region": "",
+   "summary": "Estudo longitudinal de 12 semanas com 673 recém-chegados em 88 ocupações mostra que quem entra em ocupações **atípicas para o gênero** sofre aumento progressivo de eventos negativos, mais forte para homens em áreas femininas. Essa trajetória reduz domínio da tarefa e eleva intenção de saída. Lição: programas de integração para minorias de gênero precisam de suporte contínuo nas primeiras semanas, não só onboarding inicial."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11606065/v1",
+   "title": "Uneven Generative AI Exposure and Skill Premiums in New Job Opportunities",
+   "original_title": "Uneven Generative AI Exposure and Skill Premiums in New Job Opportunities: Early Evidence from Beijing",
+   "url": "https://doi.org/10.21203/rs.3.rs-11606065/v1",
+   "venue": "Research Square",
+   "date": "2026-11-25",
+   "authors": [
+    "Xiliu He",
+    "Haoxiang Zhao",
+    "Mingyi Ma",
+    "Edward Wenchuan Lai",
+    "Kôei Enomoto",
+    "Anni Hu",
+    "Jiatong Li",
+    "Lingyun Chu",
+    "Yuan Lai"
+   ],
+   "institutions": [
+    "Tsinghua University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 8,
+    "e": "admin",
+    "w": "5,7 milhões de vagas e DiD sobre exposição a GenAI em Pequim."
+   },
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Com 5,7 milhões de anúncios de emprego em Pequim, um índice de exposição à IA generativa por bairro (cinco LLMs) revela que o choque do ChatGPT concentrou talento qualificado nos distritos centrais, mas os salários anunciados estagnaram. Cada 0,1 ponto adicional de exposição reduziu salários em 10,9% após o choque, configurando uma **armadilha de alta qualificação**. Lição: people analytics deve monitorar equidade salarial e retenção em polos tecnológicos, onde IA pode deprimir salários mesmo atraindo talento."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2025.01063",
+   "title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+   "original_title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+   "url": "https://doi.org/10.1287/mnsc.2025.01063",
+   "venue": "Management Science",
+   "date": "2026-11-25",
+   "authors": [
+    "Antonio Roldán-Monés"
+   ],
+   "institutions": [
+    "IE University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 12,
+   "triage": {
+    "r": 7,
+    "q": 8,
+    "e": "rct",
+    "w": "RCT de acesso a GenAI em debate; efeitos heterogêneos por habilidade."
+   },
+   "score": 7,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "RCT em competição universitária de debate com acesso aleatório à IA generativa mostra que a IA **ampliou a desigualdade de desempenho**: participantes de maior habilidade ganharam mais em subtarefas de julgamento, enquanto os de menor habilidade só melhoraram em partes menos especializadas. Lição: ao adotar IA generativa, monitore efeitos heterogêneos por nível de habilidade e ofereça treinamento focado em tarefas complexas para evitar ampliar gaps."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24525442",
+   "title": "Fast, Valued, and Trusted with Reservations: Employee Perceptions of Microsoft 365 Copilot",
+   "original_title": "Fast, Valued, and Trusted with Reservations: Employee Perceptions of Microsoft 365 Copilot in Administrative and Knowledge Work at a Large Non-Profit Welfare Organization",
+   "url": "https://doi.org/10.5281/zenodo.24525442",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-25",
+   "authors": [
+    "Alexander Loth",
+    "David Wester",
+    "Hannah Cha",
+    "Marc‐Oliver Pahl"
+   ],
+   "institutions": [
+    "Microsoft (United States)",
+    "Frankfurt University of Applied Sciences",
+    "Stanford University",
+    "IMT Atlantique"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 6,
+    "e": "survey",
+    "w": "survey pós-implantação de Copilot, N=311; descritivo"
+   },
+   "score": 7,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Survey com 311 funcionários de uma grande organização alemã sem fins lucrativos após implantação do Microsoft 365 Copilot mostra 85% de **ganho de velocidade** e satisfação, mas só 37% confiam totalmente; 57% sempre verificam saídas e 18% abrem fontes citadas. Lição: adoção de IA assistiva exige treinamento em verificação e mitigação de viés de automação, além de governança de dependência de fornecedor."
+  },
+  {
+   "key": "doi:10.1111/peps.70049",
+   "title": "Maintaining Effort Amid Shared Adversity: How Hyperinflation Alters the Motivational Influence of Economic Hardship",
+   "original_title": "Maintaining Effort Amid Shared Adversity: How Hyperinflation Alters the Motivational Influence of Economic Hardship",
+   "url": "https://doi.org/10.1111/peps.70049",
+   "venue": "Personnel Psychology",
+   "date": "2026-11-25",
+   "authors": [
+    "John M. Schaubroeck",
+    "Ann C. Peng",
+    "Cyrus Khalvati",
+    "Özgür Demirtaş"
+   ],
+   "institutions": [
+    "University of Missouri",
+    "Kayseri Üniversitesi"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 8,
+    "e": "rct",
+    "w": "Estudo de campo em hiperinflação mais dois experimentos manipulados."
+   },
+   "score": 7,
+   "theme": "engagement",
+   "region": "",
+   "summary": "Estudo 1 em organizações de saúde turcas durante 9 semanas de hiperinflação, mais dois experimentos, mostra que em contexto de **adversidade compartilhada** a piora econômica não reduziu esforço; trabalhadores com alta tomada de perspectiva aumentaram esforço e desempenho. Lição: crises coletivas podem mobilizar motivação, mas gestores devem cultivar empatia e propósito para sustentar engajamento."
+  },
+  {
+   "key": "oa:W7239913228",
+   "title": "Accounting for Firms in the Ethnic Wage Gaps Across the Earnings Distribution",
+   "original_title": "Accounting for Firms in the Ethnic Wage Gaps Across the Earnings Distribution",
+   "url": "https://openaccess.city.ac.uk/id/eprint/38733/",
+   "venue": "City Research Online (City University London)",
+   "date": "2026-11-21",
+   "authors": [
+    "Alex Bryson",
+    "Van Phan",
+    "Carl Singleton",
+    "John Forth",
+    "Felix Ritchie",
+    "Lucy Stokes",
+    "Damian Whittard"
+   ],
+   "institutions": [
+    "University of the West of England",
+    "City, University of London",
+    "City St George's, University of London",
+    "University of Stirling",
+    "University College London"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 9,
+    "q": 8,
+    "e": "admin",
+    "w": "Payroll ligado ao censo; gap étnico intra-firma, acionável."
+   },
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "summary": "Dados de folha de pagamento vinculados ao censo da Inglaterra e País de Gales mostram que gaps salariais étnicos não explicados são substanciais e ocorrem predominantemente **dentro das empresas**, não entre elas, especialmente entre altos salários. Os padrões variam por gênero e grupo étnico. Lição: relatórios de equidade salarial devem incluir etnia e auditorias internas por nível hierárquico, não apenas gênero."
+  },
+  {
+   "key": "doi:10.1080/09585192.2026.2766391",
+   "title": "Can training and development enhance both economic and ESG performance?",
+   "original_title": "Can training and development enhance both economic and ESG performance? A cross-institutional analysis of European firms",
+   "url": "https://doi.org/10.1080/09585192.2026.2766391",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-26",
+   "authors": [
+    "Alberto Bayo‐Moriones",
+    "María Cristina del Río Solano",
+    "Francisco José López Arceiz"
+   ],
+   "institutions": [
+    "Universidad Pública de Navarra (UPNA)"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "admin",
+    "w": "2.394 empresas listadas europeias 2005-2024, liga treinamento a ESG."
+   },
+   "score": 7,
+   "theme": "learning",
+   "region": "",
+   "summary": "Análise de 2.394 empresas europeias listadas em 27 países (2005-2024) mostra que treinamento e desenvolvimento (T&D) tem efeito **consistente e positivo** em desempenho ESG, mas impacto econômico misto, dependendo do desenho das iniciativas. Contexto institucional modera: modelos continental e liberal se beneficiam mais. Lição: para justificar T&D, alinhe programas a métricas ESG e adapte ao contexto local."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1108/edi-03-2026-0251",
+   "title": "Clima de diversidade e rotatividade LGB",
+   "original_title": "Diversity climate, job embeddedness and turnover: comparing heterosexual and lesbian, gay and bisexual employees",
+   "url": "https://doi.org/10.1108/edi-03-2026-0251",
+   "venue": "Equality Diversity and Inclusion An International Journal",
+   "date": "2026-11-27",
+   "authors": [
+    "Michael Donald Caligiuri",
+    "Linda Klebe Treviño",
+    "Phillip M. Jolly"
+   ],
+   "institutions": [
+    "California State Polytechnic University",
+    "Pennsylvania State University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "survey",
+    "w": "Dois tempos com turnover real medido um ano depois, 493 casos."
+   },
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Clima de diversidade afeta rotatividade de forma desigual: para funcionários LGB, vínculos organizacionais e comunitários medeiam a retenção."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11818440/v1",
+   "title": "IA que salva tempo mas cria mais trabalho",
+   "original_title": "When AI Saves Time but Creates More Work: Digital Task Expansion and Employee Well-Being",
+   "url": "https://doi.org/10.21203/rs.3.rs-11818440/v1",
+   "venue": "Research Square",
+   "date": "2026-11-25",
+   "authors": [
+    "Sarfaraz Abdullah"
+   ],
+   "institutions": [
+    "University of Rajshahi"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "review",
+    "w": "Síntese de experimentos e painel Gallup; análise secundária de tabelas."
+   },
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "IA generativa pode expandir tarefas (verificação, reparo, aprendizado) e aumentar carga de trabalho, contrariando promessa de economia de tempo."
+  },
+  {
+   "key": "doi:10.1080/00036846.2026.2768399",
+   "title": "Transformação digital e terceirização",
+   "original_title": "Digital transformation and labour outsourcing: evidence on firm boundary choices",
+   "url": "https://doi.org/10.1080/00036846.2026.2768399",
+   "venue": "Applied Economics",
+   "date": "2026-11-26",
+   "authors": [
+    "Yongping Ruan",
+    "Yixuan Gao",
+    "Kai Zheng"
+   ],
+   "institutions": [
+    "East China University of Science and Technology"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 5,
+    "q": 7,
+    "e": "admin",
+    "w": "41.843 firmas-ano com IV histórico; outsourcing de trabalho."
+   },
+   "score": 6,
+   "theme": "ai_work",
+   "region": "",
+   "note": "Transformação digital reduz terceirização de mão de obra: empresas chinesas com maior digitalização reportam menos gastos com outsourcing."
+  },
+  {
+   "key": "doi:10.63108/ijlmh.13342",
+   "title": "Regulação de IA: UE vs. Índia",
+   "original_title": "Regulation of Artificial Intelligence in Commercial Use: A Comparative Analysis of India and the European Union AI Act",
+   "url": "https://doi.org/10.63108/ijlmh.13342",
+   "venue": "International Journal of Law Management & Humanities",
+   "date": "2026-11-26",
+   "authors": [
+    "Zeeshan Akhtar Khan"
+   ],
+   "institutions": [
+    "Aligarh Muslim University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "regulator",
+    "w": "Análise doutrinária comparada EU AI Act versus Índia."
+   },
+   "score": 6,
+   "theme": "governance",
+   "region": "",
+   "note": "UE adota lei vinculante de IA; Índia opta por framework leve. Para RH, compliance varia drasticamente conforme jurisdição."
+  },
+  {
+   "key": "doi:10.69849/nh5xzq11",
+   "title": "IA no recrutamento: caso Amazon",
+   "original_title": "Inteligência artificial no recrutamento e seleção: desafios éticos e legais a partir do caso Amazon",
+   "url": "https://doi.org/10.69849/nh5xzq11",
+   "venue": "Revista fisio&terapia.",
+   "date": "2026-11-26",
+   "authors": [
+    "Jorge Guilherme da Silva Bomfim",
+    "Expedito dos Santos Santana"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 4,
+    "e": "quali",
+    "w": "estudo de caso qualitativo do caso Amazon; fontes públicas"
+   },
+   "score": 6,
+   "theme": "hiring",
+   "region": "",
+   "note": "Caso Amazon de IA no recrutamento expõe riscos de viés algorítmico e reforça necessidade de auditoria e governança ética no Brasil."
+  },
+  {
+   "key": "doi:10.1007/s10926-026-10468-7",
+   "title": "Acomodações para advogados com deficiência",
+   "original_title": "Formal and Informal Accommodation Pathways Among U.S. Lawyers With and Without Disabilities",
+   "url": "https://doi.org/10.1007/s10926-026-10468-7",
+   "venue": "Journal of Occupational Rehabilitation",
+   "date": "2026-11-25",
+   "authors": [
+    "Fitore Hyseni",
+    "Erblin Shehu",
+    "Peter Blanck"
+   ],
+   "institutions": [
+    "Syracuse University",
+    "SUNY Cortland"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "survey",
+    "w": "survey nacional sobre acomodações; associações descritivas"
+   },
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Advogados com deficiência pedem mais acomodações, mas ainda enfrentam barreiras informais; supervisor imediato é contato-chave para inclusão."
+  }
+ ]
+}

@@ -4738,5 +4738,269 @@
 "e": "bench",
 "w": "Autenticação SSI com ML testada em dataset IoT, não financeiro; acurácia 98,2%."
 }
+},
+{
+"key": "web:https://www.fca.org.uk/news/press-releases/check-firm-you-invest-fca-warns-ai-scams-rise",
+"title": "Check the firm before you invest, FCA warns, as AI scams rise",
+"url": "https://www.fca.org.uk/news/press-releases/check-firm-you-invest-fca-warns-ai-scams-rise",
+"venue": "FCA (Reino Unido)",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "A third (33%) of UK adults say they have seen an investment promotion in the past year that they believe used artificial intelligence (AI), new research from the FCA shows. Reports of investment fraud to Report Fraud that mention suspected use of AI have risen by nearly 400% in a year, up from 193 in 2024/25 to 956 in 2025/26. Investment fraud victims lost an average of £28,188 in 2025/26.Most people feel confident they could spot an AI investment scam, but that confidence is lower when a well-known person is involved. Almost two-thirds (62%) of adults say they could identify an investment scam that used AI. But less than half (49%) think they could tell whether a video or voice recording of a well-known person had been generated or altered by AI.Martin Lewis was the person most often named by those who thought they had seen a fake promotion featuring a well-known person.Under-35s are the most confident and the most exposed. Around three-quarters (74%) say they could identify an AI investment scam, and more than half (56%) believe they have seen an AI-generated investment promotion in the past year. Despite this, fewer than 4 in 10 (38%) would check whether a firm is FCA-authorised",
+"score": 7,
+"theme": "scams",
+"region": "",
+"watch": [
+"Financial Conduct Authority (FCA)"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "regulator",
+"w": "Relatório FCA com dados próprios: +400% golpes de IA, perda média £28k"
+}
+},
+{
+"key": "web:https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+"title": "Fórum Pix projeta avanços para 2027",
+"url": "https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+"venue": "Banco Central do Brasil — notícias",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "O Banco Central do Brasil (BC) promoveu nesta quinta-feira (26/11) a 29ª Reunião Plenária do Fórum Pix. O encontro cumpre o papel de prestar contas à sociedade e ao mercado financeiro, apresentando um balanço das iniciativas de 2026 e detalhando as diretrizes da agenda evolutiva do arranjo de pagamentos para o próximo ano. “O Fórum Pix se consolida como um espaço fundamental de diálogo com o mercado e a sociedade. Em 2027, o foco do BC é dar continuidade à agenda evolutiva com o aprimoramento de serviços e o reforço da segurança, garantindo que o Pix siga como uma ferramenta inovadora, eficiente e segura para todos os cidadãos”, destacou Breno Lobo, Coordenador do Fórum Pix e Chefe Adjunto do Departamento de Competição e de Estrutura do Mercado Financeiro do BC. Retrospectiva 2026: balanço do ano Durante a reunião, o BC destacou as principais entregas do ano. Entre os avanços regulatórios e operacionais, figuram o aprimoramento do Mecanismo Especial de Devolução (MED 2.0); novos requisitos para dar mais clareza à contestação na jornada de autoatendimento do MED; o Pix Automático em contas-salário; a regulamentação da cobrança híbrida; e os novos procedimentos relacionados à prevenç",
+"score": 5,
+"theme": "instant_payments",
+"region": "",
+"watch": [
+"Banco Central do Brasil"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "news",
+"w": "Balanço e agenda Pix/MED 2.0 sem números nem desenho"
+}
+},
+{
+"key": "web:https://www.biocatch.com/blog/fraud-losses-in-the-u.k.-are-accelerating",
+"title": "Fraud losses in the U.K. are accelerating",
+"url": "https://www.biocatch.com/blog/fraud-losses-in-the-u.k.-are-accelerating",
+"venue": "BioCatch",
+"date": "2026-11-26",
+"authors": [],
+"abstract": "UK Finance reports accountholders at British banks lost £659.5 million to fraud in the first half of 2026, up 8% on the first half of 2025. UK Finance reports accountholders at British banks lost £659.5 million to fraud in the first half of 2026, up 8% on the first half of 2025. A year earlier, losses had risen by 3%, so the rate of growth is increasing.",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [
+"BioCatch"
+],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "news",
+"w": "Cita perdas UK Finance, mas texto curto e sem método"
+}
+},
+{
+"key": "doi:10.3390/app162311668",
+"title": "A Study on AI-Based Multimodal Authentication Methods to Prevent Deepfakes",
+"url": "https://doi.org/10.3390/app162311668",
+"venue": "Applied Sciences",
+"date": "2026-11-24",
+"authors": [
+"Jinho Han"
+],
+"abstract": "Today, anyone can easily produce deepfakes (video, image, and audio data generated using AI algorithms) due to the rapid advancements of AI technology. If deepfake technology renders online and offline identity verification impossible, existing authentication systems—built through massive investment—will become obsolete; therefore, research to address the risks associated with deepfake technology is urgently needed. This study proposes an AI-based multimodal authentication method to tackle this issue. The proposed method utilizes facial images as biometric features and spoken sentences as knowledge-based information. Additionally, it uses olfactory characteristics, such as fruit scents, to authenticate users. The model employed in this study is based on a feature-level multimodal authentication architecture that extracts information regarding faces, voices, and odors using CLS embeddings from pretrained Transformers; it then aligns these data into a common 128-dimensional space and, using weighted integration, combines them to generate a unified user authentication feature. Experimental results demonstrate the feasibility of verifying identity using these three modalities. Notably,",
+"score": 5,
+"theme": "genai_deepfakes",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Autenticação multimodal anti-deepfake, viabilidade sem métricas robustas"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24535121",
+"title": "Guardian Registry: A Cross-Bank Registry of Customer Payment Controls and Trusted-Person Approvals Against Coached Payment Fraud",
+"url": "https://doi.org/10.5281/zenodo.24535121",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-25",
+"authors": [
+"Venkata Sai Sujan Mitta"
+],
+"abstract": "In coached payment fraud, a scammer keeps the victim on a call, often posing as the police, a bank or a relative, and talks them into sending the money themselves. Because the account holder authorises every payment, per-bank fraud scores and one-time passwords do little to stop it. In November 2026 the Reserve Bank of India (RBI) published draft directions requiring banks to offer three controls: customer-set payment limits, a \"Stop Switch\" that pauses outgoing debits, and a voluntary trusted person who approves large transfers. If each bank builds these controls separately, a person with three bank accounts must set them up three times, and a scammer needs to talk them into loosening only one. We present Guardian Registry, a shared registry that holds one set of protection rules and one set of guardians for each person. Every participating bank consults it before moving money. The central design choice is an asymmetry: stricter rules take effect at once, while looser rules, switching payments back on and removing a guardian wait 24 hours, during which any guardian can veto them. Loosening is exactly the step a scammer coaches. The registry adds risk windows after a SIM change, de",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "theory",
+"w": "Registry anti-golpe de pagamento autorizado, desenho sem validação"
+}
+},
+{
+"key": "doi:10.66879/jdte.2026.98",
+"title": "Data-Driven Explainable Credit Card Fraud Detection Using Fraud-Aware Feature Engineering, Tuned Gradient Boosting, and Decision-Threshold Calibration",
+"url": "https://doi.org/10.66879/jdte.2026.98",
+"venue": "",
+"date": "2026-11-25",
+"authors": [
+"Sidra Munahil",
+"Alishba Urooj",
+"Houn Siv Eng",
+"Aqib Shah"
+],
+"abstract": "The rapid growth of digital payments has increased exposure to credit card fraud, yet building reliable fraud detectors remains difficult because fraudulent transactions are rare, fraud patterns are non-linear, high-performing models are opaque, and the default decision threshold of 0.5 ignores the unequal costs of missed fraud and false alarms. This study presents an explainable and cost-aware fraud detection framework that integrates fraud-aware feature engineering, imbalance-aware learning, tuned gradient boosting, probability and decision-threshold calibration, and SHapley Additive exPlanations (SHAP). Eleven raw attributes were expanded into 40 behavioral, temporal and risk-interaction features; class weighting and the Synthetic Minority Oversampling Technique (SMOTE) were applied to the training data; and seven classifiers, including Extreme Gradient Boosting (XGBoost), Light Gradient Boosting Machine (LightGBM), CatBoost and a stacking ensemble, were compared using the area under the precision-recall curve (AUPRC) as the primary criterion. The framework was evaluated on a publicly available synthetic dataset of 10,000 transactions with a fraud rate of 1.51%, using a stratifi",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "bench",
+"w": "Calibração de limiar custo-sensível, mas dataset sintético 10k"
+}
+},
+{
+"key": "doi:10.1016/j.eswa.2026.135203",
+"title": "Facial quality metrics as bias indicator for border management systems",
+"url": "https://doi.org/10.1016/j.eswa.2026.135203",
+"venue": "Expert Systems with Applications",
+"date": "2026-11-21",
+"authors": [
+"Roberto Gallardo-Cava",
+"David Ortega-delCampo",
+"Paula Monrobel-Ugidos",
+"Cristina Conde",
+"Enrique Cabello"
+],
+"abstract": "Open Source Face Image Quality (OFIQ) is the reference open-source implementation of the ISO/IEC 29794-5 standard and is widely used as a preprocessing step in facial recognition systems, where images are filtered based on biometric quality. Despite its importance in practice, the role of these quality metrics in shaping demographic fairness has not been thoroughly studied. In this work, potential demographic disparities in the quality scores produced by OFIQ are analyzed using publicly available datasets (CFD, TUFTS, and FRLL), together with a reproducible evaluation protocol based on ICAO-based reference labels. An operational quality threshold is defined through equal error rate (EER) analysis, and both performance and fairness are evaluated using a set of biometric and disparity metrics. The results show consistent differences across demographic groups. In particular, female subjects tend to be rejected more often even when their images meet the required quality conditions, leading to higher quality false negative rates (QFNR). A similar pattern appears across ethnic groups. Lower mean quality values are observed for the Black demographic group than for the White and East Asian",
+"score": 6,
+"theme": "account_identity",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 7,
+"e": "bench",
+"w": "Métricas de qualidade facial e viés demográfico, datasets reais e protocolo"
+}
+},
+{
+"key": "doi:10.29328/journal.jairi.1001031",
+"title": "Characterizing and Detecting Money Laundering Activities on the Bitcoin Network",
+"url": "https://doi.org/10.29328/journal.jairi.1001031",
+"venue": "Journal of Artificial Intelligence Research and Innovation",
+"date": "2026-11-20",
+"authors": [
+"Yining Hu",
+"Suranga Seneviratne",
+"Kanchana Thilakarathna",
+"Kensuke Fukuda",
+"Aruna Prasad Seneviratne"
+],
+"abstract": "Bitcoin is by far the most popular cryptocurrency solution enabling peer-to-peer payments. Despite some studies highlighting that the network does not provide full anonymity, it is still being heavily used for a wide variety of dubious financial activities such as money laundering, Ponzi schemes, and ransomware payments. In this paper, we explore the landscape of potential money laundering activities occurring across the Bitcoin network. Using data collected over three years, we create transaction graphs and provide an in-depth analysis of various graph characteristics to differentiate money laundering transactions from regular transactions. We found that the main difference between laundering and regular transactions lies in their output values and neighbourhood information. Then, we propose and evaluate a set of classifiers based on four types of graph features: immediate neighbours, curated features, DeepWalk embeddings, and Node2Vec embeddings to classify money laundering and regular transactions. Results show that the Node2Vec-based classifier outperforms other classifiers in binary classification, reaching an average accuracy of 92.29% and an F1-measure of 0.93, with high rob",
+"score": 6,
+"theme": "mules_aml",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "bench",
+"w": "Grafo de lavagem em Bitcoin, 3 anos de dados, F1 0,93"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24556975",
+"title": "Payment and Financial Data in SaaS: Tokenize and Stay Out of Scope",
+"url": "https://doi.org/10.5281/zenodo.24556975",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-26",
+"authors": [
+"Jason Newell"
+],
+"abstract": "PCI DSS is a contract, not a statute, and the cheapest time to tokenize is before the first card is stored. The financial rules arrive by customer contract. A SaaS company that never lets a card number touch its systems keeps most of PCI DSS outside its walls. Sending customers to a hosted payment page lets an eligible merchant validate with the shortest self-assessment questionnaire, SAQ A, once it meets every eligibility criterion; a processor's iframe alone does not qualify. Taking card numbers into its own servers means validating against nearly the whole standard. PCI DSS is a contract standard set by the card brands and enforced through the acquiring bank. It is not a statute, though Nevada, Minnesota and Washington write parts of it into law. The standard bars storing the card security code, full track data or PIN after authorization. The card number has to be unreadable wherever it is stored, and all access to the cardholder data environment needs multi-factor authentication. Customer financial data falls under GLBA and the financial regulators. The FTC Safeguards Rule covers non-bank financial institutions: lenders, payment and money services, tax preparers and many fintec",
+"score": 5,
+"theme": "cards",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "other",
+"w": "Tokenização e escopo PCI DSS, guia prático sem dados"
+}
+},
+{
+"key": "doi:10.1080/01639625.2026.2765299",
+"title": "Fused Trust and Parallel Systems: How Offenders Construct Digital Financial Fraud",
+"url": "https://doi.org/10.1080/01639625.2026.2765299",
+"venue": "Deviant Behavior",
+"date": "2026-11-25",
+"authors": [
+"Jiang Mingjun"
+],
+"abstract": "The harm of digital financial fraud is structurally escalating. This paper traces its morphological evolution and proposes “fused trust”: an enclosed cognitive schema in which offenders dismantle victims’ willingness to seek external verification by binding process-based, characteristic-based, and institution-based trust within a single scenario. Analyzing China’s Shuibei gold fraud and Ding Yifeng cases, the study finds a governance gap of two natures: a technological generation gap that procurement can narrow and an institutional time lag requiring changed incentive structures. The core challenge is shifting identification logic from verifying information authenticity to evaluating the consistency of trust structures.",
+"score": 5,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "quali",
+"w": "Caso qualitativo de fraude financeira digital na China"
+}
+},
+{
+"key": "doi:10.7759/s44404-026-00393-6",
+"title": "From Screen Scraping Towards Consumer-Driven Banking: Policy Reframing and the Institutionalisation of Financial Data Sharing in Canada",
+"url": "https://doi.org/10.7759/s44404-026-00393-6",
+"venue": "Cureus Journal of Business and Economics.",
+"date": "2026-11-25",
+"authors": [
+"Ishaan Srivastava"
+],
+"abstract": "Canada's consumer-driven banking framework has evolved through changing policy objectives, governance arrangements, legislation, and proposed regulation. This study examines how federal policy framing and the institutional governance of consumer financial-data sharing developed between February 2018 and the September 16, 2026 corpus freeze date. Using longitudinal qualitative content analysis informed by interpretive policy analysis, the study examines official federal documents through a seven-dimensional coding framework. The findings identify a shift from framing open banking primarily as an opportunity for innovation and competition towards recognising the security, privacy, and liability risks associated with existing screen-scraping practices. Subsequent policy development translated consumer empowerment into formal governance mechanisms involving consent, accreditation, liability, security, and supervision. This process accompanied the progressive institutionalisation of public regulatory authority, culminating in the 2026 statutory assignment of consumer-driven banking responsibilities to the Bank of Canada. However, formal institutionalisation preceded operational implemen",
+"score": 5,
+"theme": "instant_payments",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "quali",
+"w": "Análise documental de open banking no Canadá, sem fraude direta"
+}
 }
 ]

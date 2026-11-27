@@ -1,0 +1,344 @@
+{
+ "date": "2026-11-27",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-20",
+  "to": "2026-11-27"
+ },
+ "stats": {
+  "candidates": 155,
+  "triaged": 155,
+  "selected": 3,
+  "tokens": {
+   "prompt_tokens": 47310,
+   "completion_tokens": 21196,
+   "cost_usd": 0.016296,
+   "calls": 6,
+   "failures": 0
+  }
+ },
+ "headline": "semana de agentes de pagamento, plataforma self-service e evidência sobre desigualdade de GenAI",
+ "trend": "No Brasil, a semana mostra bancos e fintechs industrializando a base: Bradesco reduz entrega de infraestrutura de 80 para 5 dias com autoatendimento governado, Nomad leva IA a 90% dos funcionários e o BC projeta a agenda do Pix para 2027, enquanto pagamentos por aproximação crescem 16,1%. No mundo, a fronteira é o comércio agêntico: protocolos e surveys indicam que agentes já iniciam transações, mas garantias de liquidação, identidade e responsabilidade ainda são convenção, não estrutura. A evidência sobre GenAI reforça que ganhos não são uniformes e tendem a ampliar vantagem de perfis mais qualificados, o que exige redesenho de tarefas e reskilling. A mensagem para lideranças é preparar plataforma, governança e mandatos verificáveis antes de escalar agentes que movem dinheiro.",
+ "items": [
+  {
+   "key": "doi:10.20944/preprints202611.2539.v1",
+   "title": "Agentic AI em pagamentos: arquiteturas, salvaguardas e problemas abertos",
+   "original_title": "Agentic AI in Payments and Financial Transactions: A Survey of Architectures, Safeguards and Open Problems",
+   "url": "https://doi.org/10.20944/preprints202611.2539.v1",
+   "venue": "Preprints.org",
+   "date": "2026-11-25",
+   "authors": [
+    "Chiedozie Shedrack",
+    "Aji¹·²"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 6,
+    "e": "review",
+    "w": "Survey de 54 obras sobre agentes que movem dinheiro; taxonomia útil, preprint"
+   },
+   "score": 7,
+   "theme": "agentic_commerce",
+   "region": "mundo",
+   "summary": "Survey analisa 54 trabalhos e mapeia protocolos como AP2, x402, Visa Intelligent Commerce e Mastercard Agent Pay, além de experimentos de bancos centrais, numa taxonomia de autonomia, autoridade de transação, garantia e superfície de falha. O achado central é que idempotência, finalidade de liquidação e reconciliação ainda dependem de **convenção**, não de estrutura, e que mandatos verificáveis por máquina, identidade de agentes e alocação de responsabilidade seguem imaturos. Para bancos, escalar agentes que movem dinheiro exige resolver isso antes do go-live."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2025.01063",
+   "title": "GenAI aumenta desigualdade em debate universitário",
+   "original_title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+   "url": "https://doi.org/10.1287/mnsc.2025.01063",
+   "venue": "Management Science",
+   "date": "2026-11-25",
+   "authors": [
+    "Antonio Roldán-Monés"
+   ],
+   "institutions": [
+    "IE University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 12,
+   "triage": {
+    "r": 6,
+    "q": 9,
+    "e": "rct",
+    "w": "RCT em debate mostra GenAI ampliando desigualdade; lição de reskilling"
+   },
+   "score": 7,
+   "theme": "skills",
+   "region": "mundo",
+   "summary": "RCT em competição universitária de debate randomizou acesso a GenAI e mostrou que os ganhos não são uniformes: participantes de **alta habilidade** avançam muito mais em subtarefas de julgamento, enquanto os de baixa habilidade só melhoram em partes menos especializadas, onde a IA atua como substituta. Para bancos, copilotos de IA podem ampliar o gap entre analistas seniores e juniores se as tarefas e o treinamento não forem redesenhados para internalizar e explicar ideias complexas, não apenas escrever."
+  },
+  {
+   "key": "web:https://convergenciadigital.com.br/mercado/bradesco-reduz-de-80-para-5-dias-o-tempo-de-entrega-de-infraestrutura-atento-ao-uso-de-agentes-ia",
+   "title": "Bradesco corta entrega de infraestrutura de 80 para 5 dias",
+   "original_title": "Bradesco reduz de 80 para 5 dias o tempo de entrega de infraestrutura atento ao uso de agentes IA",
+   "url": "https://convergenciadigital.com.br/mercado/bradesco-reduz-de-80-para-5-dias-o-tempo-de-entrega-de-infraestrutura-atento-ao-uso-de-agentes-ia/",
+   "venue": "Convergência Digital",
+   "date": "2026-11-27",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Convergência Digital",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 6,
+    "e": "news",
+    "w": "Bradesco corta entrega de infra de 80 para 5 dias com autoatendimento governado"
+   },
+   "score": 7,
+   "theme": "engineering",
+   "region": "brasil",
+   "summary": "O Bradesco transformou entregas fragmentadas de infraestrutura em um modelo de autoatendimento governado e escalável, reduzindo o prazo de 80 para 5 dias, já atento ao uso de agentes de IA. A lição prática é que velocidade de agentes e squads depende de plataforma interna self-service com guardrails, catálogo e automação de provisionamento, não de exceções manuais."
+  }
+ ],
+ "quick": [
+  {
+   "key": "web:https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+   "title": "Fórum Pix projeta avanços para 2027",
+   "original_title": "Fórum Pix projeta avanços para 2027",
+   "url": "https://www.bcb.gov.br/detalhenoticia/21337/noticia",
+   "venue": "LIFT Day (notícias)",
+   "date": "2026-11-26",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "LIFT Day",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "regulator",
+    "w": "BC detalha agenda Pix 2027, MED 2.0 e cobrança híbrida; sem métricas"
+   },
+   "score": 6,
+   "theme": "payments",
+   "region": "brasil",
+   "note": "BC faz balanço de 2026 e prioriza agenda evolutiva do Pix para 2027, sinalizando roadmap regulatório contínuo para pagamentos instantâneos."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2025.03142",
+   "title": "Crédito comercial e risco em fornecedores dual-channel",
+   "original_title": "Reducing Risk Through Trade Credit: Theory and Evidence from Dual-Channel Suppliers",
+   "url": "https://doi.org/10.1287/mnsc.2025.03142",
+   "venue": "Management Science",
+   "date": "2026-11-26",
+   "authors": [
+    "Jie Ning",
+    "Sammi Yu Tang",
+    "Jing Wu",
+    "Jiaqi Zhu"
+   ],
+   "institutions": [
+    "Case Western Reserve University",
+    "University of Miami",
+    "Chinese University of Hong Kong",
+    "Tilburg University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 2,
+   "triage": {
+    "r": 4,
+    "q": 8,
+    "e": "theory",
+    "w": "Modelo teórico e evidência empírica sobre trade credit; pouco de IA"
+   },
+   "score": 6,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "note": "Crédito comercial pode reduzir risco do fornecedor com canal duplo, contrariando visão tradicional; útil para risco de crédito em cadeias."
+  },
+  {
+   "key": "web:https://www.letsmoney.com.br/noticias/abecs-pagamento-aproximacao-564-bilhoes-3t26",
+   "title": "Pagamento por aproximação cresce 16,1% e soma R$ 564,3 bi",
+   "original_title": "Pagamento por aproximação cresce 16,1% e soma R$ 564,3 bi",
+   "url": "https://www.letsmoney.com.br/noticias/abecs-pagamento-aproximacao-564-bilhoes-3t26/",
+   "venue": "Let's Money",
+   "date": "2026-11-27",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Let's Money",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 6,
+    "e": "admin",
+    "w": "Dados Abecs de aproximação: +16,1%, R$564,3bi, 78% das compras"
+   },
+   "score": 6,
+   "theme": "payments",
+   "region": "brasil",
+   "note": "Compras presenciais por aproximação somam R$ 564,3 bi no 3T, +16,1% a/a, e já representam 78% das compras com cartão."
+  },
+  {
+   "key": "web:https://www.mobiletime.com.br/noticias/27/11/2026/ia-nomad-funcionarios",
+   "title": "Nomad: IA usada por 90% dos funcionários",
+   "original_title": "IA é usada por 90% dos funcionários da Nomad no dia a dia",
+   "url": "https://www.mobiletime.com.br/noticias/27/11/2026/ia-nomad-funcionarios/",
+   "venue": "Mobile Time",
+   "date": "2026-11-27",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Mobile Time",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "news",
+    "w": "Caso Nomad: 90% dos funcionários, 19 plugins e 50 MCPs, sem verificação"
+   },
+   "score": 6,
+   "theme": "automation",
+   "region": "brasil",
+   "note": "Fintech Nomad tem 90% dos funcionários usando IA via marketplace interno com 19 plugins e 50 skills reutilizáveis."
+  },
+  {
+   "key": "doi:10.1016/j.jbankfin.2026.107871",
+   "title": "Turnover de CEO bancário e acionistas",
+   "original_title": "Bank CEO turnover: The role of shareholders",
+   "url": "https://doi.org/10.1016/j.jbankfin.2026.107871",
+   "venue": "Journal of Banking & Finance",
+   "date": "2026-11-24",
+   "authors": [
+    "Oskar Kowalewski",
+    "Dorota Skała"
+   ],
+   "institutions": [
+    "Centre National de la Recherche Scientifique",
+    "Université de Lille",
+    "Instytut Nauk Ekonomicznych",
+    "Institut d'Economie Scientifique Et de Gestion",
+    "Lille Économie Management",
+    "Polish Academy of Sciences"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 4,
+    "q": 8,
+    "e": "admin",
+    "w": "Painel manual 1994-2024 de bancos poloneses sobre rotatividade de CEO"
+   },
+   "score": 6,
+   "theme": "governance",
+   "region": "mundo",
+   "note": "Bancos estrangeiros na Polônia trocam menos CEOs que bancos privados domésticos; governança e desempenho moldam a substituição."
+  },
+  {
+   "key": "doi:10.5281/zenodo.24531258",
+   "title": "Da finança digital à finança inteligente na Índia",
+   "original_title": "From Digital Finance to Intelligent Finance: The Role of AI in Transforming India'S Financial Ecosystem",
+   "url": "https://doi.org/10.5281/zenodo.24531258",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-25",
+   "authors": [
+    "Sreekanth Sreedharan",
+    "Dhanalakshmi (Associate Professor)",
+    "Srija R"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "review",
+    "w": "Desk review com dados RBI, UPI e fraude; framework 3R sem validação"
+   },
+   "score": 6,
+   "theme": "governance",
+   "region": "mundo",
+   "note": "Índia empilha IA sobre trilhos públicos de pagamento, identidade e dados, e debate onde a decisão automática deve parar."
+  },
+  {
+   "key": "doi:10.1287/mnsc.2024.08930",
+   "title": "Covariâncias dinâmicas massivas com machine learning",
+   "original_title": "Machine Learning Vast Dynamic Conditional Covariance Matrices: The Spirit of “Divide and Conquer”",
+   "url": "https://doi.org/10.1287/mnsc.2024.08930",
+   "venue": "Management Science",
+   "date": "2026-11-25",
+   "authors": [
+    "Zhoufan Zhu",
+    "Ke Zhu"
+   ],
+   "institutions": [
+    "Xiamen University",
+    "University of Hong Kong"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 5,
+    "q": 8,
+    "e": "bench",
+    "w": "Estimador GRAND de covariância condicional em Management Science, aplicável a risco"
+   },
+   "score": 6,
+   "theme": "risk_credit",
+   "region": "mundo",
+   "note": "Método GRAND divide e conquista para estimar covariâncias dinâmicas de alta dimensão, melhorando seleção de portfólio."
+  },
+  {
+   "key": "doi:10.1017/fas.2026.10058",
+   "title": "Pix e o poder infraestrutural do banco central",
+   "original_title": "Digital public infrastructures and central banks’ infrastructural power: The Pix payment system in Brazil",
+   "url": "https://doi.org/10.1017/fas.2026.10058",
+   "venue": "Finance and Society",
+   "date": "2026-11-26",
+   "authors": [
+    "Giselle Datz",
+    "Maria Antonieta Del Tedesco Lins"
+   ],
+   "institutions": [
+    "Virginia Tech",
+    "Universidade de São Paulo"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "theory",
+    "w": "Análise acadêmica do Pix como infraestrutura pública e poder do BCB"
+   },
+   "score": 6,
+   "theme": "payments",
+   "region": "brasil",
+   "note": "Pix mostra poder infraestrutural do BC via design, operação e regulação; modelo de DPI que bancos precisam acompanhar."
+  }
+ ]
+}

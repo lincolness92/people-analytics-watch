@@ -1,0 +1,148 @@
+{
+ "date": "2026-11-27",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-20",
+  "to": "2026-11-27"
+ },
+ "stats": {
+  "candidates": 81,
+  "triaged": 81,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 21056,
+   "completion_tokens": 13382,
+   "cost_usd": 0.009082,
+   "calls": 4,
+   "failures": 0
+  }
+ },
+ "headline": "FCA alerta para golpes de investimento com IA; controles cross-bank e viés biométrico em pauta",
+ "trend": "O período mostra avanço de golpes com IA e deepfakes, exigindo verificação de autorização e educação do cliente. Soluções cross-bank, como o registro de controles de pagamento, ganham tração para fraudes coachadas. Ao mesmo tempo, a qualidade biométrica revela viés demográfico, e o monitoramento de cripto se consolida como frente de PLD/CFT. A prevenção migra para detecção colaborativa e camadas de identidade mais justas e auditáveis.",
+ "items": [
+  {
+   "key": "web:https://www.fca.org.uk/news/press-releases/check-firm-you-invest-fca-warns-ai-scams-rise",
+   "title": "FCA warns: check firm before investing as AI scams rise",
+   "original_title": "Check the firm before you invest, FCA warns, as AI scams rise",
+   "url": "https://www.fca.org.uk/news/press-releases/check-firm-you-invest-fca-warns-ai-scams-rise",
+   "venue": "FCA (Reino Unido)",
+   "date": "2026-11-26",
+   "authors": [],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "Financial Conduct Authority (FCA)",
+   "origin": "fonte",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "regulator",
+    "w": "Relatório FCA com dados próprios: +400% golpes de IA, perda média £28k"
+   },
+   "score": 7,
+   "theme": "scams",
+   "region": "",
+   "summary": "Pesquisa da FCA mostra que um terço dos adultos do Reino Unido viu promoções de investimento com suspeita de uso de IA no último ano; denúncias de fraude com IA cresceram quase 400% (de 193 para 956), com perda média de £28.188 por vítima. A confiança em identificar golpes cai quando figuras conhecidas são usadas em deepfakes (apenas 49% acham que conseguem detectar), e menos de 40% dos jovens checam autorização da FCA antes de investir. Lição: bancos devem reforçar educação e monitoramento de anúncios com IA, especialmente para públicos jovens e vítimas de falsa autoridade."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.5281/zenodo.24535121",
+   "title": "Guardian Registry: Cross-Bank Payment Controls Against Coached Fraud",
+   "original_title": "Guardian Registry: A Cross-Bank Registry of Customer Payment Controls and Trusted-Person Approvals Against Coached Payment Fraud",
+   "url": "https://doi.org/10.5281/zenodo.24535121",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "date": "2026-11-25",
+   "authors": [
+    "Venkata Sai Sujan Mitta"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 4,
+    "e": "theory",
+    "w": "Registry anti-golpe de pagamento autorizado, desenho sem validação"
+   },
+   "score": 6,
+   "theme": "scams",
+   "region": "",
+   "note": "RBI propõe limites, botão de parada e aprovador confiável; registro cross-bank pode frear golpes em que a vítima autoriza o pagamento."
+  },
+  {
+   "key": "doi:10.1016/j.eswa.2026.135203",
+   "title": "Facial quality metrics as bias indicator",
+   "original_title": "Facial quality metrics as bias indicator for border management systems",
+   "url": "https://doi.org/10.1016/j.eswa.2026.135203",
+   "venue": "Expert Systems with Applications",
+   "date": "2026-11-21",
+   "authors": [
+    "Roberto Gallardo-Cava",
+    "David Ortega-delCampo",
+    "Paula Monrobel-Ugidos",
+    "Cristina Conde",
+    "Enrique Cabello"
+   ],
+   "institutions": [
+    "Universidad Rey Juan Carlos"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 5,
+    "q": 7,
+    "e": "bench",
+    "w": "Métricas de qualidade facial e viés demográfico, datasets reais e protocolo"
+   },
+   "score": 6,
+   "theme": "account_identity",
+   "region": "",
+   "note": "Métricas de qualidade facial (OFIQ) mostram disparidades demográficas, alertando para viés em biometria de KYC e fronteiras."
+  },
+  {
+   "key": "doi:10.29328/journal.jairi.1001031",
+   "title": "Detecting Money Laundering on Bitcoin Network",
+   "original_title": "Characterizing and Detecting Money Laundering Activities on the Bitcoin Network",
+   "url": "https://doi.org/10.29328/journal.jairi.1001031",
+   "venue": "Journal of Artificial Intelligence Research and Innovation",
+   "date": "2026-11-20",
+   "authors": [
+    "Yining Hu",
+    "Suranga Seneviratne",
+    "Kanchana Thilakarathna",
+    "Kensuke Fukuda",
+    "Aruna Prasad Seneviratne"
+   ],
+   "institutions": [
+    "Commonwealth Scientific and Industrial Research Organisation",
+    "UNSW Sydney",
+    "Data61",
+    "The University of Sydney",
+    "National Institute of Informatics"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 93,
+   "triage": {
+    "r": 6,
+    "q": 7,
+    "e": "bench",
+    "w": "Grafo de lavagem em Bitcoin, 3 anos de dados, F1 0,93"
+   },
+   "score": 6,
+   "theme": "mules_aml",
+   "region": "",
+   "note": "Análise de 3 anos de transações Bitcoin identifica padrões de lavagem; bancos devem integrar monitoramento de cripto ao PLD/CFT."
+  }
+ ]
+}

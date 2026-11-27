@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": {
   "bcb:Resolução CMN:5349": {
    "id": "bcb:Resolução CMN:5349",
@@ -7473,6 +7473,7 @@
   "bcb:Carta Circular:3841": 2,
   "bcb:Comunicado:31085": 3,
   "bcb:Circular:3838": 5,
-  "bcb:Comunicado:30516": 2
+  "bcb:Comunicado:30516": 2,
+  "bcb:Comunicado:46372": 0
  }
 }

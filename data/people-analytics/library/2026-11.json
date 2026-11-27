@@ -16206,5 +16206,1194 @@
 "e": "admin",
 "w": "Auditoria de 387 imagens de 340 empresas; sinal de diversidade, números reais."
 }
+},
+{
+"key": "doi:10.1287/orsc.2024.19538",
+"title": "Democratic Organizing and Contemporary Managerial Talent Markets: Internal Promotion or External Hiring?",
+"url": "https://doi.org/10.1287/orsc.2024.19538",
+"venue": "Organization Science",
+"date": "2026-11-26",
+"authors": [
+"Aleksandra Gregorič",
+"Takao Kato",
+"Casper B. L. Larsen"
+],
+"abstract": "We develop and empirically examine a theoretical framework explaining the relationship between democratic organizing and firms’ propensity to staff management positions through internal promotion rather than external hiring. Conventionally, the advantages of promoting through internal labor markets (ILM) have rested on the assumption that workers value intra-firm careers and anticipate remaining with the same employer for a longer term. These advantages may prove harder to attain in contemporary labor markets, given that declining tenure and workers’ growing preference for inter-firm careers possibly reduce the information advantage of ILM and undermine internal candidate retention. We propose that firms with more democratic organizing are less susceptible to these ILM challenges, enjoy higher benefits from recruiting internally and are thus more likely to fill management positions through internal promotion. Using longitudinal employer-employee linked data for Danish firms from 2001 to 2017, we find that firms with worker board representation (WBR), one form of more democratic organizing, are more likely than firms without WBR to fill management positions through internal promotio",
+"score": 8,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "admin",
+"w": "Dados empregador-empregado dinamarqueses 2001-2017, liga governança a promoção interna."
+}
+},
+{
+"key": "doi:10.1080/09585192.2026.2765771",
+"title": "From office corridors to digital feeds: how hybrid work reconfigures social media use in talent management",
+"url": "https://doi.org/10.1080/09585192.2026.2765771",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-26",
+"authors": [
+"Isabel Barbosa",
+"Elizabeth Real de Oliveira"
+],
+"abstract": "Hybrid and remote work have transformed how organizations manage talent, shifting developmental and relational HR practices from physical spaces to digital and social-media-enabled environments. Yet research still concentrates mainly on social media for recruitment and employer branding, offering limited insight into its role in ongoing talent management processes such as feedback, recognition, learning, and internal mobility. Drawing on McFarland and Ployhart’s (Citation2015) view of social media as an organizational context, this multi-case qualitative study examines how hybrid and remote organizations incorporate social media platforms into recognition, feedback, development, and internal mobility practices, and how employees and managers experience the resulting visibility and boundary tensions. Using 48 semi-structured interviews, digital ethnography, and document analysis across four knowledge-intensive firms, the study employs abductive thematic analysis, triangulating interview accounts with platform observation and organizational documents to develop within- and cross-case insights. Findings identify three organizational configurations through which social media becomes em",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "Estudo multicaso qualitativo, 48 entrevistas; sem números de resultado."
+}
+},
+{
+"key": "doi:10.1080/09585192.2026.2766391",
+"title": "Can training and development enhance both economic and ESG performance? A cross-institutional analysis of European firms",
+"url": "https://doi.org/10.1080/09585192.2026.2766391",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-26",
+"authors": [
+"Alberto Bayo‐Moriones",
+"María Cristina del Río Solano",
+"Francisco José López Arceiz"
+],
+"abstract": "Amid growing stakeholder pressure for both economic performance and sustainability, understanding how training and development (T&D) influences these dual objectives has become relevant for modern companies. This study examines the impact of T&D on both economic and Environmental, Social and Governance (ESG) performance, considering the moderating role of institutional context. Using data from 2,394 European public listed companies across 27 countries between 2005 and 2024, the findings reveal a nuanced relationship between T&D and performance. While the impact of T&D on economic performance is mixed, depending on the type and design of initiatives, its effect on ESG performance is consistently positive, indicating that T&D contributes to sustainability objectives. Institutional context plays a moderating role, with firms in continental and liberal models benefiting most from T&D. This study advances the literature by integrating contextual variables and dual performance metrics, while also offering practical insights for managers, who should design context-specific T&D strategies to align with both economic and sustainability goals, enhancing long-term organisational success.",
+"score": 7,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "admin",
+"w": "2.394 empresas listadas europeias 2005-2024, liga treinamento a ESG."
+}
+},
+{
+"key": "doi:10.1177/01492063261506258",
+"title": "Breaking Gender Norms: A Dynamic Perspective on Entering Gender-Atypical Occupations",
+"url": "https://doi.org/10.1177/01492063261506258",
+"venue": "Journal of Management",
+"date": "2026-11-25",
+"authors": [
+"Sophie Johanna Moser",
+"Florian Kunze"
+],
+"abstract": "Occupational gender segregation remains a defining feature of labor markets worldwide, and efforts to recruit individuals into gender-atypical occupations often fail because newcomers drop out shortly after entry. Understanding what drives this early attrition requires examining the day-to-day experiences of newcomers whose gender is underrepresented in their occupation, especially during the critical first weeks of organizational socialization. Integrating role congruity theory with a dynamic work-events perspective, we propose that gender-atypical newcomers experience an intensifying trajectory of perceived negative work events over time, and that this intensifying trajectory undermines their task mastery and heightens their turnover intention. Results from a longitudinal field study applying a repeated-measures design to 673 newcomers across 88 occupations over 12 weeks support these predictions. Newcomers working in gender-atypical occupations experienced a significant increase in negative work events over time, with this effect being significantly stronger for men in female-dominated occupations than for women in male-dominated occupations. Furthermore, steeper negative work e",
+"score": 7,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "survey",
+"w": "Painel de 673 newcomers em 88 ocupações por 12 semanas, medidas repetidas."
+}
+},
+{
+"key": "doi:10.3390/bs16122260",
+"title": "Career Adaptability, Perceived Usefulness of Generative AI, and Innovative Work Behavior: The Conditional Role of Occupational Future Time Perspective and Psychological Safety",
+"url": "https://doi.org/10.3390/bs16122260",
+"venue": "Behavioral Sciences",
+"date": "2026-11-26",
+"authors": [
+"Socheon Yoon",
+"Kwang Tae Kim"
+],
+"abstract": "Employees differ in whether they use generative artificial intelligence (AI) in new ways. Drawing on career construction theory, we ask whether occupational future time perspective (OFTP), usually treated as a resource, favors engagement with it regardless of psychological safety, and whether career adaptability relates to innovative work behavior through usefulness appraisals. We tested these questions with a two-wave survey of 525 employees in South Korea, adjusting each outcome for its baseline. OFTP was negatively associated with perceived usefulness under low psychological safety and nearly unrelated under high safety, so its indirect association with innovative work behavior was negative under low safety. Career adaptability was associated with innovative work behavior through perceived usefulness, although perceived ease of use shared this mediating role. The moderation depended on concurrent measurement of safety and was reproduced by job autonomy, so we treat it as tentative. An expansive occupational future does not uniformly favor AI engagement: where employees do not feel safe to experiment, it goes with less favorable appraisals. Building career adaptability alongside ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "survey",
+"w": "Survey de dois tempos, 525 empregados, autorrelato e mediação."
+}
+},
+{
+"key": "doi:10.1108/edi-03-2026-0251",
+"title": "Diversity climate, job embeddedness and turnover: comparing heterosexual and lesbian, gay and bisexual employees",
+"url": "https://doi.org/10.1108/edi-03-2026-0251",
+"venue": "Equality Diversity and Inclusion An International Journal",
+"date": "2026-11-27",
+"authors": [
+"Michael Donald Caligiuri",
+"Linda Klebe Treviño",
+"Phillip M. Jolly"
+],
+"abstract": "Purpose Research consistently links diversity climate to employee retention, but it implicitly assumes resource equivalence: that a given level of diversity climate produces the same attachment across employees. This study integrates conservation of resources (COR) and job embeddedness theories. It treats diversity climate as an identity-contingent resource and asks whether diversity climate affects actual turnover through organizational and community embeddedness. It also asks whether these pathways are stronger for lesbian, gay and bisexual (LGB) employees than for heterosexual employees. Design/methodology/approach The study used a two-wave field design and recruited 493 full-time US employees through Prolific. The sample was stratified to include LGB and heterosexual men and women. We measured sexual orientation, diversity climate, organizational embeddedness and community embeddedness at Time 1. We recorded actual voluntary turnover about one year later. Mediation and conditional indirect effects were tested with PROCESS Models 4 and 7, using bootstrapped confidence intervals and relevant controls. Findings Diversity climate was positively associated with both organizational a",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "survey",
+"w": "Dois tempos com turnover real medido um ano depois, 493 casos."
+}
+},
+{
+"key": "doi:10.61194/ijmb.v4i4.947",
+"title": "Artificial Intelligence and HR Analytics in Strategic Human Resource Management: A Systematic Review of Workforce Agility",
+"url": "https://doi.org/10.61194/ijmb.v4i4.947",
+"venue": "Sinergi International Journal of Management and Business",
+"date": "2026-11-25",
+"authors": [
+"Arus Reka Prasetia",
+"Rofi Rofaida",
+"Syamsul Hadi Senen"
+],
+"abstract": "This article presents a systematic literature review (SLR) that maps and synthesizes scholarly evidence on the role of artificial intelligence (AI) and human resource analytics (HR analytics) in strategic human resource management (SHRM) to strengthen workforce agility in a global context. The review followed the PRISMA 2020 principles through a structured search of the Scopus database covering publications from 2015 to 2025. The selection process included title and abstract screening, eligibility assessment, and study quality appraisal, resulting in 18 articles that met the inclusion criteria from 108 identified documents. Data were systematically extracted from abstracts and metadata and then analyzed using thematic synthesis to address RQ1–RQ4, including the mapping of technologies, SHRM practices, mechanisms, and agility-related outcomes. The findings indicate that AI and HR analytics tend to contribute to workforce agility through data-driven HR decision making, the strengthening of analytical capability, faster organizational responses, and competency development that supports adaptability. However, their effects depend on human readiness, data and AI governance, and human-ce",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "review",
+"w": "Revisão sistemática de 18 artigos; síntese temática sem dados novos."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11818440/v1",
+"title": "When AI Saves Time but Creates More Work: Digital Task Expansion and Employee Well-Being",
+"url": "https://doi.org/10.21203/rs.3.rs-11818440/v1",
+"venue": "Research Square",
+"date": "2026-11-25",
+"authors": [
+"Sarfaraz Abdullah"
+],
+"abstract": "Generative AI is sold as a time-saving technology, yet a growing body of workplace evidence describes people who use it and end up with more to do. This paper examines that contradiction through the idea of digital task expansion: the net growth in the tasks, scope and pace of a job that follows AI adoption, arising through verification and repair, learning and tool management, wider job scope and rising output expectations. It assembles published experiments, national surveys, a register-linked Danish study, an eight-month ethnography and the Gallup workforce panel (n = 21,648 in August 2026), and it applies secondary statistical analysis to the published tables. Time savings measured in the three positive controlled studies (12% to 40%) are roughly five times those measured in population surveys (2.8% to 5.4%), and one randomized trial found experienced developers 19% slower. Among frequent users in the Gallup data, time falls sharply for information gathering (net balance − 44 points) and writing (− 40) but not for reviewing and correcting work (− 2, 95% CI − 4.2 to 0.2) or learning new tools (+ 3, 1.0 to 5.0). Frequent users had nearly three times the odds of saying output expe",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Síntese de experimentos e painel Gallup; análise secundária de tabelas."
+}
+},
+{
+"key": "doi:10.1111/peps.70049",
+"title": "Maintaining Effort Amid Shared Adversity: How Hyperinflation Alters the Motivational Influence of Economic Hardship",
+"url": "https://doi.org/10.1111/peps.70049",
+"venue": "Personnel Psychology",
+"date": "2026-11-25",
+"authors": [
+"John M. Schaubroeck",
+"Ann C. Peng",
+"Cyrus Khalvati",
+"Özgür Demirtaş"
+],
+"abstract": "Research suggests employees generally respond to economic hardship by exerting less effort and performing more poorly at work. We argue that economic hardship can facilitate the salience of socially valued role expectations and thereby help maintain work effort when it occurs during societally shared economic adversity, specifically hyperinflation. We first test hypotheses in Turkish healthcare organizations over nine weeks of skyrocketing inflation (Study 1). There was a positive but non‐significant effect of worsened economic hardship on increased work effort. We also found a significant interaction effect indicating that employees with high perspective taking responded to intensified economic hardship by increasing their effort, which was linked to higher job performance. Studies 2 and 3 experimentally manipulated worsening economic hardship and hyperinflation. Worsened (vs. unchanged) economic hardship did not reduce work effort, directly (Study 2) or indirectly through self‐transcendence (Study 3), in the hyperinflation condition, but it hampered effort in the no hyperinflation condition. Additionally, higher perspective taking enabled individuals to maintain their self‐transc",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 8,
+"e": "rct",
+"w": "Estudo de campo em hiperinflação mais dois experimentos manipulados."
+}
+},
+{
+"key": "doi:10.66074/c8m2b6l1r7c4",
+"title": "A Systematic Literature Review of Human-AI Collaboration in Hiring Decisions: Measuring Its Impact on Recruitment Outcomes",
+"url": "https://doi.org/10.66074/c8m2b6l1r7c4",
+"venue": "International Journal of Transformative Multidisciplinary Studies",
+"date": "2026-11-24",
+"authors": [
+"Rudrose May Bondalo",
+"Joy Cogtas",
+"Richard Doloque",
+"Marleonie Bauyot"
+],
+"abstract": "This systematic literature review synthesized empirical evidence on human–artificial intelligence (AI) collaboration and AI-assisted recruitment practices, focusing on recruitment efficiency, applicant perceptions, and the role of human judgment in hiring decisions. Guided by the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA 2020), the review identified 303 records from Google Scholar, SciSpace, and PubMed, of which five empirical studies published in 2025 met the eligibility criteria and were included in the narrative synthesis. The findings revealed that AI-assisted recruitment offers potential benefits in streamlining applicant screening, reducing recruitment costs, and improving operational efficiency. One study reported an approximately 40% reduction in time-to-hire and a 27–30% decrease in cost-per-hire, although these improvements were specific to AI-enabled recruitment and could not be attributed exclusively to human–AI collaboration. The reviewed studies also highlighted the importance of transparency, procedural fairness, applicant trust, and human oversight in addressing ethical and operational concerns associated with automated hiring decisi",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "review",
+"w": "Revisão PRISMA com só cinco estudos; números de custo-time-to-hire."
+}
+},
+{
+"key": "doi:10.62823/jmme/16.04.9724",
+"title": "Strategical Reskilling in the Human -AI Economy: A Multidimensional Framework for Workforce Adaption",
+"url": "https://doi.org/10.62823/jmme/16.04.9724",
+"venue": "Journal of Modern Management & Entrepreneurship",
+"date": "2026-11-27",
+"authors": [
+"Tanvi Patil",
+"Rupali Dilip Taru"
+],
+"abstract": "The rapid integration of artificial intelligence into the global economy necessitates a fundamental paradigm shift in workforce development. Drawing upon empirical findings from the OECD AI Surveys of Employers and Workers and frameworks on labor market exposure, this paper proposes a Multidimensional Framework for Workforce Adaptation to guide strategic reskilling in the Human-AI economy. While data indicates that AI heavily elevates demand for high-skilled roles, cognitive agility, and data interpretation, it simultaneously exposes critical skills gaps as a primary barrier to organizational adoption. Addressing the limitations of traditional, linear training models, the proposed framework integrates cognitive agility, socio-emotional intelligence, technical literacy, and employer-backed lifelong learning ecosystems into a cohesive operational architecture. This study adopts a mixed-methods, design-based research methodology, combining secondary empirical data analysis with conceptual framework building. To map the transition from technological displacement to Human-AI Collaboration, the methodology follows a three-stage architectural pipeline: diagnostic gap analysis, multidimens",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "theory",
+"w": "Framework conceitual de reskilling; design-based sem validação empírica própria."
+}
+},
+{
+"key": "doi:10.69023/rs8bky20",
+"title": "AI-ENABLED TALENT ACQUISITION: OPPORTUNITIES, CHALLENGES, AND ADOPTION STRATEGIES IN GUJARAT'S SERVICE INDUSTRIES",
+"url": "https://doi.org/10.69023/rs8bky20",
+"venue": "EPH - International Journal of Business & Management Science",
+"date": "2026-11-25",
+"authors": [
+"Preeti Nair",
+"Vasim Iqbalbhai Malek"
+],
+"abstract": "Artificial intelligence is a chance to streamline the recruitment process, but predictive accuracy is not sufficient to guarantee transparent, reliable, and responsible hiring choices. This paper invents an interpretable machine learning model into recruitment decision support and analyzes the predictive accuracy, explanatory significance, and strength. Statistical testing, leakage-aware preprocessing, and three classifiers were used to analyze a publicly available Kaggle dataset of 1500 synthetic candidate records, which included Logistic Regression, Random Forest, and XGBoost. Classification measures, probability calibration, permutation features importance, and simulated missing-data noise were used to evaluate models. XGBoost was chosen with the help of training-only cross-validation and test accuracy, F1-score and ROC-AUC were 93.00, 87.57, and 0.9311 respectively. The most significant predictor was recruitment strategy, which had a permutation importance of 0.2414 in the decrease of ROC-AUC. The accuracy decreased to 88.00 when the percentage of data below 10% missingness was additionally missing, showing that the accuracy depends on the quality of the data. These results sug",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "bench",
+"w": "Classificadores em dataset Kaggle sintético de 1500 candidatos."
+}
+},
+{
+"key": "doi:10.1093/indlaw/dwag043",
+"title": "The Doppelgänger’s Tribunal: Employee Digital Twins, Possible-World Labour, and the Jurisprudence of Adverse Simulation",
+"url": "https://doi.org/10.1093/indlaw/dwag043",
+"venue": "Industrial Law Journal",
+"date": "2026-11-24",
+"authors": [
+"Zihang Lan"
+],
+"abstract": "This article develops an anticipatory labour-law framework for adverse reliance on employee digital twins. Its central concern is benchmark conversion: worker data are turned into a private standard of how the worker ought to perform. A prescriptive twin supplies an individualised benchmark—the proprietary reasonable you—and adverse reliance on that benchmark produces counterfactual subordination. The analysis combines functional assessment, doctrinal analysis and conceptual theory-building across European Union regulation and UK dismissal, equality and data-protection law. Documented monitoring, algorithmic management and workforce-level labour twinning ground the trajectory towards individual prescriptive twins. Existing regimes address data, classification, decision support and system risk, while benchmark conversion raises a further question about the authority of the resulting performance norm. The proposed doctrine of adverse simulation makes simulated profiles contestable evidence, separates simulated from legal capacity, gives contextual rebuttal an evidential form, and subjects specified high-risk uses and benchmark design to purpose limits and collective governance. It id",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Doutrina jurídica sobre digital twins; teoria sem dados empíricos."
+}
+},
+{
+"key": "oa:W7239939306",
+"title": "PREPARING BANK EMPLOYEES FOR AI ADOPTION: AN INTEGRATIVE LITERATURE REVIEW AND CONCEPTUAL FRAMEWORK",
+"url": "https://innoist.uz/index.php/ist/article/view/1872",
+"venue": "Innovations in Science and Technologies",
+"date": "2026-11-24",
+"authors": [
+"Nozima Makhmudova",
+"Arun Bajracharya",
+"Muzaffar Makhmudov"
+],
+"abstract": "The growing organizational interest in artificial intelligence creates workforce challenges before its widespread deployment within commercial banking institutions. Bank employees may be expected to acquire new competencies while future task responsibilities, learning arrangements, and opportunities to apply those competencies remain uncertain during the early stages of organizational preparation. This article examines how commercial banks can prepare employees for AI adoption through an integrative review of banking, employment, and workforcedevelopment publications, supported by selected theoretical and empirical literature on organizational change and employee learning. The review identifies convergence around digital competencies, continuous learning, managerial support, and workforce redeployment as interconnected priorities for effective workforce preparation. However, the selected literature provides uneven explanations of how these organizational arrangements influence preparation before implementation across individual employees and interdependent work units. Drawing on task-based accounts of technological change, organizational readiness theory, and training-motivation re",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão integrativa sobre preparo de bancários para IA; conceitual."
+}
+},
+{
+"key": "doi:10.1287/mnsc.2025.04559",
+"title": "Echoes of Discord: The Effects of Global Conflicts and Disputes on Entrepreneurship",
+"url": "https://doi.org/10.1287/mnsc.2025.04559",
+"venue": "Management Science",
+"date": "2026-11-26",
+"authors": [
+"Astrid Marinoni"
+],
+"abstract": "Mixed-nationality founding teams bring together heterogeneous, hard-to-replicate bundles of human capital and country-specific ties through their cross-national networks, providing a distinctive foundation for building successful ventures. Yet these connections may be vulnerable to nonmarket shocks. This study examines whether geopolitical conflicts and disputes between the countries of origin of immigrant founders affect the formation of new ventures. Leveraging data on the founders of start-ups established in Great Britain and global information on conflicts and disputes, I find that such tensions reduce the likelihood that nationals of hostile countries cofound firms together. The evidence is more consistent with social mechanisms and, particularly, the erosion of interpersonal relationships than with diminished access to cross-country resources or the loss of entrepreneurial opportunities. Start-ups of both low and high quality are affected, including in sectors that depend heavily on skilled human capital, such as high-tech and business services. The negative effect is substantially attenuated for nationality pairs that are heavily colocated across local areas and for founders",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 3,
+"q": 8,
+"e": "quasi",
+"w": "Dados administrativos de startups e conflitos; foco empreendedorismo."
+}
+},
+{
+"key": "doi:10.51583/ijltemas.2026.151100039",
+"title": "Assessing the Impact of Algorithmic Screening on Time-toProductivity and Quality of Hire: A Simulation-Based Analysis",
+"url": "https://doi.org/10.51583/ijltemas.2026.151100039",
+"venue": "International Journal of Latest Technology in Engineering Management & Applied Science",
+"date": "2026-11-25",
+"authors": [
+"Femi Ayoola Akinwumi",
+"Olumoye Mosud"
+],
+"abstract": "Organizations increasingly screen job applicants with algorithmic tools, yet the evidence on what this does to how fast new hires become productive, and to the quality of those hires, remains thin. This study sets out a four-stage analysis that compares an algorithmically screened cohort with a traditionally screened cohort on two outcomes, time-to-productivity and a composite quality-of-hire index. Working from a simulated dataset of 1,000 hires built to resemble real hiring records, the analysis cleans the data and profiles it, constructs the two outcome measures, tests for group differences, and models the time until each hire reaches full productivity. Algorithmic screening was associated with a shorter time-to-productivity, 58.54 days against 67.10 days, a difference of 8.55 days (95% CI 6.16 to 10.95), t = 7.01, p < .001, with a small-to-moderate effect size (Cohen's d = 0.45). The quality-of-hire index was higher for the algorithmic cohort, 57.22 against 50.24 on a 0 to 100 scale, t = 11.40, p < .001, d = 0.72. A Cox proportional-hazards model, adjusting for role and prior experience, gave a hazard ratio of 1.68 (95% CI 1.47 to 1.92, p < .001) for reaching full productivity ",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "bench",
+"w": "Triagem algorítmica em dataset simulado de 1000 contratações."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11606065/v1",
+"title": "Uneven Generative AI Exposure and Skill Premiums in New Job Opportunities: Early Evidence from Beijing",
+"url": "https://doi.org/10.21203/rs.3.rs-11606065/v1",
+"venue": "Research Square",
+"date": "2026-11-25",
+"authors": [
+"Xiliu He",
+"Haoxiang Zhao",
+"Mingyi Ma",
+"Edward Wenchuan Lai",
+"Kôei Enomoto",
+"Anni Hu"
+],
+"abstract": "Generative artificial intelligence (GenAI) is the first automation wave to reach high-cognitive tasks at scale, yet its effects on intra-urban labor markets remain unknown. Using 5.7 million job postings from Beijing, we build a neighborhood-level GenAI exposure index via five large language models and examine its spatial, structural, and causal mechanisms. GenAI exposure concentrates in core districts: the ChatGPT shock did not disperse high-skill job opportunities but unfolded within, and transmitted through, Beijing’s existing core–periphery hierarchy. High-exposure neighborhoods attracted a rising share of high-skilled workers while advertised wages stagnated—a “high-skill trap” driven by task de-skilling and labor-market crowding. Difference-in-differences estimates support a causal interpretation: each 0.1-point higher neighborhood GenAI exposure corresponds to an additional 10.9% decline in advertised wages after the shock. These findings extend skill-biased technological change into the GenAI era and inform inclusive AI governance in global technology hubs.",
+"score": 8,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 8,
+"e": "admin",
+"w": "5,7 milhões de vagas e DiD sobre exposição a GenAI em Pequim."
+}
+},
+{
+"key": "doi:10.1108/ijotb-02-2026-0042",
+"title": "An integrative framework of trust-building competencies for e-leaders in virtual teams",
+"url": "https://doi.org/10.1108/ijotb-02-2026-0042",
+"venue": "International Journal of Organization Theory and Behavior",
+"date": "2026-11-27",
+"authors": [
+"Anna Lašáková",
+"Frauke Kempner",
+"Lukáš Copuš"
+],
+"abstract": "Purpose As digitalisation and dispersed work arrangements become increasingly widespread, organisations face a pressing need to identify e-leadership approaches suited to technology-mediated leader–follower relationships. Because employees' trust in their leaders is considered essential for maintaining cooperation and workplace relationships, this study investigates the specific e-leaders’ competencies that are associated with followers' trust in e-leaders in virtual work settings. Design/methodology/approach Four focus groups were conducted and their transcripts were analysed using qualitative content analysis. An iterative inductive coding process resulted in the delineation of individual competencies organised into a multilevel trust-relevant e-leadership competency framework. Findings The framework comprises 43 competencies organised into seven competency fields – professional competencies, communication, digital & media competencies, e-behaviour, diversity competencies, credibility and endurance – and three overarching categories labelled as coordination-and-clarity, relational-behavioural logic and reliability-over-time. The findings suggest that followers' trust is associate",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "quali",
+"w": "Quatro grupos focais geram framework, sem validação nem números."
+}
+},
+{
+"key": "doi:10.59324/ejmeb.2026.3(6).10",
+"title": "Environmental Management Practices and Sustainable Human Resource Management in Vietnam: Descriptive Evidence from the 2023 World Bank Enterprise Survey",
+"url": "https://doi.org/10.59324/ejmeb.2026.3(6).10",
+"venue": "European journal of management, economics and business.",
+"date": "2026-11-23",
+"authors": [
+"Huynh Minh Sang"
+],
+"abstract": "This study describes how widely Vietnamese firms adopt environmental management practices (EMP) and two observable expressions of sustainable human resource management, namely formal employee training and a female top manager, and explores how the two sets of practices are related. The analysis uses establishment-level data from the 2023 World Bank Enterprise Survey of Vietnam (1,028 firms) and combines survey-weighted descriptive statistics with exploratory logistic regressions that include region and industry fixed effects. Environmental management remains limited: an estimated 81.3% of firms in the population neither monitor greenhouse-gas emissions nor manage energy consumption, and only 8.7% provide formal training. EMP is concentrated among large, exporting, foreign-invested manufacturers, the same segment in which female top managers are least common (7.8% against 22.1% in wholly domestic firms). After firm characteristics are controlled for, the EMP coefficient is positive for training (p = .103) and negative for female top management (p = .067). Both p-values fall below .05 when standard errors are clustered by industry instead of by sampling stratum, so the inferential co",
+"score": 5,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "admin",
+"w": "1.028 firmas do WBES, mas descritivo e correlações frágeis."
+}
+},
+{
+"key": "oa:W7239913228",
+"title": "Accounting for Firms in the Ethnic Wage Gaps Across the Earnings Distribution",
+"url": "https://openaccess.city.ac.uk/id/eprint/38733/",
+"venue": "City Research Online (City University London)",
+"date": "2026-11-21",
+"authors": [
+"Alex Bryson",
+"Van Phan",
+"Carl Singleton",
+"John Forth",
+"Felix Ritchie",
+"Lucy Stokes"
+],
+"abstract": "Most studies of ethnic wage gaps rely on household survey data. As such, they are unable to examine the degree to which wage gaps arise within or between firms. We contribute to the literature using high-quality employer-employee payroll data on jobs, hours, and earnings, linked with the personal and family characteristics of workers from the population census for England and Wales. We reveal substantial unexplained wage gaps disadvantaging ethnic minority groups among both women and men. These disparities occur predominantly within firms rather than between them and are especially pronounced among higher earners. The patterns vary significantly by gender and by ethnic minority group compared to white workers. Since most of the wage disadvantage for ethnic minorities is within-firm, our results suggest that the UK's recent legislative reforms on firm-level gender pay gap reporting should be expanded to encompass ethnicity pay gaps.",
+"score": 8,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 9,
+"q": 8,
+"e": "admin",
+"w": "Payroll ligado ao censo; gap étnico intra-firma, acionável."
+}
+},
+{
+"key": "doi:10.4018/979-8-3373-9584-5.ch008",
+"title": "Human Capital Under Algorithmic Management Trust, Emotional Distress, and AI Use in Data-Intensive Marketing Contexts",
+"url": "https://doi.org/10.4018/979-8-3373-9584-5.ch008",
+"venue": "Advances in computational intelligence and robotics book series",
+"date": "2026-11-25",
+"authors": [
+"Saloome Showkat Shah"
+],
+"abstract": "This study examines how algorithmic management relates to human capital outcomes in AI-enabled marketing and the mediating roles of trust in AI and emotional strain. Drawing on Algorithmic Management Theory and a socio-technical perspective, survey data from 386 marketing professionals were analysed with covariance-based structural equation modelling. Algorithmic management was positively associated with trust in AI and emotional strain. Trust was positively and significantly associated with skill development, knowledge utilization, and capability sustainability, whereas emotional strain had a negative but statistically nonsignificant association with human capital outcomes. Mediation analysis identified a significant positive indirect association through trust, while the indirect association through emotional strain was nonsignificant. Findings show that algorithmic management can simultaneously promote cognitive acceptance and generate psychological strain, positioning trust in AI as the principal mechanism linking algorithmic management with sustainable human capital development.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "survey",
+"w": "CB-SEM transversal com 386 profissionais; sem causalidade."
+}
+},
+{
+"key": "doi:10.5604/01.3001.0056.0073",
+"title": "WORKING FROM HOME AS AN INSUFFICIENT CONDITION: DIGITAL SKILLS, CHILDCARE, AND WOMEN’S EMPLOYMENT IN THE EUROPEAN UNION",
+"url": "https://doi.org/10.5604/01.3001.0056.0073",
+"venue": "Polityka Społeczna",
+"date": "2026-11-26",
+"authors": [
+"Beata Woźniak-Jęchorek"
+],
+"abstract": "This article examines whether, and under what conditions, working from home (WFH) serves as an instrument to increase women's employment across European Union Member States. WFH is treated as a specific subtype of remote work confined to the worker's place of residence. The study addresses three questions: (1) how the diffusion of WFH among women evolved between 2016 and 2025 and whether Member States converged in this respect; (2) whether a larger increase in WFH was associated with a stronger improvement in the conversion of labour force participation into employment; and (3) whether WFH mediates the effects of women's digital skills and of the absence of formal childcare on their employment. The results indicate that the diffusion of home-based work underwent relative convergence alongside absolute divergence, and was not associated with any improvement in the conversion of women's labour force participation into employment. Its association with employment operates mainly as an indirect one - opened by above-basic digital skills and constrained by the absence of institutional childcare.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "bench",
+"w": "Dados agregados da UE, descritivo; mediação por skills e creche."
+}
+},
+{
+"key": "doi:10.1177/00380385261489200",
+"title": "Can working from home advance the gender revolution?",
+"url": "https://doi.org/10.1177/00380385261489200",
+"venue": "Sociology",
+"date": "2026-11-26",
+"authors": [
+"Brendan Churchill",
+"Leah Ruppanner"
+],
+"abstract": "Working from home provides a critical test case for the second half of the gender revolution: whether bringing paid work into the home increases men’s involvement in care and produces more equitable domestic arrangements. Drawing on 18 waves of the HILDA Survey (2005–2022), this article uses Mundlak hybrid models to examine associations between working from home and mothers’ and fathers’ unpaid labour, time pressure, satisfaction with partner and task divisions, and perceived fairness in childcare and housework, distinguishing within-person changes from between-person differences. Working from home is associated with more housework for mothers and fathers and increased care time for fathers, while mothers who work from home remain embedded in higher-care arrangements. It is also associated with greater time pressure, particularly for fathers, while women with greater overall exposure report greater unfairness in childcare and housework, suggesting that working from home may increase fathers’ involvement without transforming unequal domestic arrangements.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 6,
+"e": "admin",
+"w": "18 ondas do HILDA com modelos híbridos; trabalho doméstico."
+}
+},
+{
+"key": "doi:10.1080/00036846.2026.2768399",
+"title": "Digital transformation and labour outsourcing: evidence on firm boundary choices",
+"url": "https://doi.org/10.1080/00036846.2026.2768399",
+"venue": "Applied Economics",
+"date": "2026-11-26",
+"authors": [
+"Yongping Ruan",
+"Yixuan Gao",
+"Kai Zheng"
+],
+"abstract": "This study examines whether corporate digital transformation alters firms’ reliance on labour outsourcing. Using 41,843 firm-year observations for Chinese non-financial A-share listed firms from 2012 to 2025, we examine both the probability of reporting labour outsourcing expenditures and the ratio of outsourcing expenditures to employee compensation. We find that greater digital transformation is associated with a significantly lower probability of reporting labour outsourcing expenditures and a lower outsourcing expenditure ratio. The findings are robust to propensity-score matching, alternative measures of digital transformation, tests addressing strategic disclosure, and longer-lag specifications. We also examine endogeneity using a historical-telecommunications instrumental variable. Mechanism analyses indicate that digital transformation is associated with greater asset specificity and lower supply–demand volatility, consistent with transaction-cost and operational-flexibility mechanisms. The negative relationship is stronger among non-state-owned firms, labour-intensive firms, less financially constrained firms, firms facing greater product-market competition, and firms loca",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 7,
+"e": "admin",
+"w": "41.843 firmas-ano com IV histórico; outsourcing de trabalho."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-1",
+"title": "The Importance of Regression in People Analytics",
+"url": "https://doi.org/10.1201/9781003663102-1",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Regression models are families of inferential statistical techniques that play an extremely important role in people analytics and in many other disciplines, because they are particularly well suited to explaining outcomes of interest such as performance, promotion or employee engagement. In this chapter, the role and importance of regression in people analytics is described through differentiating between inferential models and predictive models and describing the aims of each, outlining the situations in which it is more appropriate to use inferential models such as regression. The chapter provides a formal definition for the concept of inferential modeling and describes and discusses the different types of models available for common use cases. Some elementary concepts related to statistical inference are also introduced in this chapter, such as sampling of populations and random error.",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "theory",
+"w": "Capítulo didático sobre regressão em people analytics, sem dados."
+}
+},
+{
+"key": "doi:10.47392/irjaeh.2026.0755",
+"title": "Deploying Production AI Agents in Enterprise Workflows: Observability, Grounding, and Measured Business Outcomes",
+"url": "https://doi.org/10.47392/irjaeh.2026.0755",
+"venue": "International Research Journal on Advanced Engineering Hub (IRJAEH)",
+"date": "2026-11-25",
+"authors": [
+"Rahul Mittal"
+],
+"abstract": "LLM agents have evolved from demonstrations to enterprise applications in customer support, software engineering, document processing, and more. But more than benchmark accuracy is required to determine their production value. An agent could choose to use tools, access evidence, alter records, and/or repeat actions, and failures could be due to stale sources, weak authorization, non-convergent planning, duplicated writes, incomplete audit trails, or misleading measurement of outcomes. The paper suggests a five-layered architecture consisting of the following: Workflow plane, Bounded agent runtime, Grounding and knowledge layer, Observability and governance plane, Outcome-measurement control loop. It also creates a seven-level taxonomy of telemetry: sessions, planning steps, tool calls, retrieval, outputs, human interventions and population drift. Grounding is considered as an admission control: material assertions are required to be backed up by legitimate and up-to-date evidence or abstention and escalation. The business value is measured using controlled comparison, task stratification, quality review, intervention accounting and joint reporting of performance/cost. Field experim",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "quasi",
+"w": "Arquitetura e experimentos de campo relatados, resultados cortados."
+}
+},
+{
+"key": "doi:10.1108/er-06-2026-0911",
+"title": "Everyone has talent, but not all talents are equal: meritocracy and privilege in Brazilian talent management",
+"url": "https://doi.org/10.1108/er-06-2026-0911",
+"venue": "Employee Relations",
+"date": "2026-11-27",
+"authors": [
+"Raiane Soares Gonçalves",
+"Beverly Geesin"
+],
+"abstract": "Purpose This study explores how senior human resource (HR) leaders in Brazil conceptualize talent and contributes contextual knowledge from the Global South. Design/methodology/approach A qualitative, interpretive approach was adopted, grounded in subjectivist ontology. Nine semi-structured interviews were conducted with senior HR leaders (CHRO, VP HR, HR Director level) operating in Brazil. Data were analysed using Braun and Clarke's reflexive thematic analysis framework. Findings Two dominant and coexisting talent constructs were identified: an inclusive, meritocratic construct (“everyone has talent”) and an elite, innate construct (“the real talent”). Both are entangled with discourses of meritocracy that obscure structural inequality. While espousing objective criteria, talent identification is shown to be shaped by subjectivity, favouritism and social privilege, reflecting Brazil's extreme inequality. Originality/value This study provides rare empirical evidence of talent assumptions in Brazil, the largest economy in Latin America. By centring Global South voices and connecting talent management discourses to coloniality, structural racism and the narcissistic pact of whitenes",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "Nove entrevistas com CHROs brasileiros sobre talento e meritocracia."
+}
+},
+{
+"key": "doi:10.63108/ijlmh.13342",
+"title": "Regulation of Artificial Intelligence in Commercial Use: A Comparative Analysis of India and the European Union AI Act",
+"url": "https://doi.org/10.63108/ijlmh.13342",
+"venue": "International Journal of Law Management & Humanities",
+"date": "2026-11-26",
+"authors": [
+"Zeeshan Akhtar Khan"
+],
+"abstract": "Artificial intelligence now sits inside the decision-making machinery of banking, insurance, recruitment, healthcare, and retail, yet the law governing its commercial use differs sharply across jurisdictions. This article offers a comparative doctrinal analysis of two contrasting models: the European Union’s Artificial Intelligence Act of 2024, the world’s first binding horizontal AI law, and India’s deliberately statute-light framework, anchored since November 2025 in the India AI Governance Guidelines, the DPDP Act 2023 and its 2025 Rules, and sectoral instruments. Using the functional method of comparative law, it assesses both regimes across regulatory philosophy, scope, risk classification, transparency, enforcement, liability, and business impact. Two findings are central. First, the European model has come under strain: the 2025 withdrawal of the proposed AI Liability Directive leaves the EU without harmonised fault-based liability rules for AI. Second, India’s absolute-liability doctrine in M.C. Mehta v. Union of India offers a foundation for an AI liability regime the EU currently lacks. The article proposes a contextualised thin statute: a three-tier risk classification, ",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "regulator",
+"w": "Análise doutrinária comparada EU AI Act versus Índia."
+}
+},
+{
+"key": "doi:10.3390/populations2040027",
+"title": "Who Moves for Natural Amenities? Remote Work, Education, Income, and Amenity-Driven Interstate Migration in the United States, 2021–2024",
+"url": "https://doi.org/10.3390/populations2040027",
+"venue": "Populations",
+"date": "2026-11-25",
+"authors": [
+"Debarati Chakraborty-Reddy"
+],
+"abstract": "Post-pandemic accounts of United States migration often emphasize movement away from dense and expensive places, but this framing leaves unclear what kinds of destinations migrants select and which migrants are most able to reach them. The unit of analysis of this study is individual American Community Survey (ACS) Public Use Microdata Sample (PUMS) movers. The main dependent variable is whether an employed interstate mover lands in a High or Very High amenity destination, defined by destination-state quintiles of the USDA Natural Amenity Index; a secondary outcome is whether the mover moves upward on the amenity ladder relative to the origin state. The focal explanatory variable is the mover’s own remote-work status, measured by whether the person worked from home in the ACS commute-to-work item. Education, income, age, and employment status are examined as axes of heterogeneity. Natural Amenity sorting is broad but stratified: High-amenity states gain movers across nearly all groups, but the Very High tier is selective, a net gainer only among remote workers, college-educated movers, high-income movers, young adults, and older workers. Flow-level gravity models show that amenitie",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "admin",
+"w": "ACS PUMS de migrantes; remoto e amenidades, pouco RH."
+}
+},
+{
+"key": "doi:10.51473/rcmos.v1i2.2026.3263",
+"title": "Síndrome de burnout em enfermeiros emergencistas: uma revisão integrativa da literatura",
+"url": "https://doi.org/10.51473/rcmos.v1i2.2026.3263",
+"venue": "RCMOS - Revista Científica Multidisciplinar O Saber",
+"date": "2026-11-25",
+"authors": [
+"Cíntia Pereira da Silva",
+"Álex Andrei Oliveira dos Santos",
+"Rangel Fernandes de Souza"
+],
+"abstract": "A Síndrome de Burnout é um fenômeno ocupacional relacionado ao estresse crônico no trabalho e caracteriza-se por esgotamento, distanciamento mental das atividades profissionais e redução da eficácia profissional. Entre os profissionais de enfermagem, a Síndrome de Burnout apresenta alta prevalência, estando relacionada às características e às condições do trabalho. Essa ocorrência pode apresentar maior intensidade nos serviços de urgência e emergência, onde os profissionais estão expostos constantemente a situações de sofrimento, pressão, necessidade de decisões rápidas, atendimento a pacientes graves e contato frequentecom situações de risco de morte. Além dos fatores relacionados à assistência, condições como sobrecarga de trabalho, déficit de profissionais, falta de recursos, dificuldades de comunicação e relações interpessoais também podem contribuir para o desenvolvimento do Burnout. NoDistrito Federal, estudos apontam dificuldades relacionadas às condições e organização do trabalho, incluindo problemas estruturais, escassez de recursos humanos e materiais e questões de valorização profissional. O atendimento pré-hospitalar móvel também apresenta características específicas, c",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "revisão integrativa de burnout em enfermagem; sem dados primários"
+}
+},
+{
+"key": "doi:10.48550/arxiv.2611.31860",
+"title": "The Effect of Remote Working on Regional Waste: Evidence from South Korea",
+"url": "https://doi.org/10.48550/arxiv.2611.31860",
+"venue": "arXiv",
+"date": "2026-11-24",
+"authors": [
+"Hyoungchul Kim",
+"Hee-Seung Yang"
+],
+"abstract": "Remote working, or work-from-home (WFH), has become common around the world. However, its broader effects on social welfare, including waste generation, remain understudied. This study examines the impact of remote work on regional waste production in South Korea, using the COVID-19 pandemic as a natural experiment. Overall household waste changed little, but regions with greater WFH eligibility saw increases in plastic and textile waste and a decrease in food waste. These findings suggest that remote work may change consumption patterns and daily routines. Understanding these effects can help inform sustainable work practices and waste management as remote work becomes more widespread.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 7,
+"e": "quasi",
+"w": "quase-experimento com pandemia; foco em resíduos, não pessoas"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24525442",
+"title": "Fast, Valued, and Trusted with Reservations: Employee Perceptions of Microsoft 365 Copilot in Administrative and Knowledge Work at a Large Non-Profit Welfare Organization",
+"url": "https://doi.org/10.5281/zenodo.24525442",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-25",
+"authors": [
+"Alexander Loth",
+"David Wester",
+"Hannah Cha",
+"Marc‐Oliver Pahl"
+],
+"abstract": "Enterprise generative AI assistants are being rolled out at scale, yet little is known about how employees in non-profit organizations use them, how far they trust them, and whether they verify what these assistants produce. We report a descriptive field study: an employee survey on a Microsoft 365 Copilot deployment at a large German non-profit welfare organization (N = 311 of 1,093 invited employees; 288 answered all substantive blocks). Respondents work predominantly in administrative and staff functions, so the findings describe administrative and knowledge work rather than the organization as a whole. Respondents report strong perceived speed gains (85% agree at least somewhat that Copilot helps them complete tasks faster) and high overall satisfaction (85%), while trust is more differentiated: 68% rate Copilot as competent, and 37% at least somewhat agree that they trust it in general. Most respondents verify outputs before reuse (57% always), while fewer routinely open the cited sources (18% always). Self-rated knowledge of LLM hallucinations is low for 39% of respondents, while 69% report being at least fairly aware of misinformation risks when using LLMs. Dependence on a s",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "survey",
+"w": "survey pós-implantação de Copilot, N=311; descritivo"
+}
+},
+{
+"key": "doi:10.69849/nh5xzq11",
+"title": "Inteligência artificial no recrutamento e seleção: desafios éticos e legais a partir do caso Amazon",
+"url": "https://doi.org/10.69849/nh5xzq11",
+"venue": "Revista fisio&terapia.",
+"date": "2026-11-26",
+"authors": [
+"Jorge Guilherme da Silva Bomfim",
+"Expedito dos Santos Santana"
+],
+"abstract": "This research analyzes the ethical and legal challenges related to the use of Artificial Intelligence in recruitment and selection processes, based on the case of the experimental tool developed by Amazon. The objective is to understand the problems highlighted by this episode and identify lessons that may contribute to the more responsible use of these technologies in Brazilian organizations. To this end, the study adopted a qualitative approach, combining a literature review with a case study based on publicly available sources. The analysis drew on academic literature, news coverage of the case, and Brazilian legislation. The results showed that the use of historical data and inadequate criteria may contribute to the reproduction of algorithmic biases and negatively affect the evaluation of certain candidates. Challenges related to system transparency, human oversight, and organizational responsibility were also identified. It is concluded that the adoption of Artificial Intelligence in recruitment and selection processes requires planning, continuous monitoring, and attention to personal data protection and equal opportunities, so that technology serves as a support tool for hu",
+"score": 6,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "quali",
+"w": "estudo de caso qualitativo do caso Amazon; fontes públicas"
+}
+},
+{
+"key": "doi:10.1108/jocm-12-2024-0806",
+"title": "The role of artificial intelligence in change management: ethical and organizational culture implications",
+"url": "https://doi.org/10.1108/jocm-12-2024-0806",
+"venue": "Journal of Organizational Change Management",
+"date": "2026-11-26",
+"authors": [
+"David Edgar",
+"Roberto Biloslavo",
+"Matteo Rizzo"
+],
+"abstract": "Purpose This paper examines the accelerating integration of artificial intelligence (AI) into organizational change management (OCM). It explores AI's dual role as both a powerful facilitator of change and a continuous disruptor itself, focusing specifically on the ethical and cultural challenges it introduces to traditional operational and decision-making frameworks. Design/methodology/approach Employing a narrative literature review approach, this study synthesizes 47 peer-reviewed journal articles, conference proceedings, relevant practitioner papers and book chapters published since 2010. The review systematically analyzes the literature on the integration, impact and long-term consequences of applying AI in OCM contexts. Findings The review underscores AI's transformative capacity to reshape OCM from a traditional, linear process into a dynamic, continuous “meta-change” formalized here as an integrative process linking AI's technological properties to three generative mechanisms, two governing elements and OCM outcomes expressed as four theoretical propositions. While AI enhances change efficiency, it also introduces significant cultural and ethical hurdles, including algorith",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "revisão narrativa de 47 artigos; sem dados primários"
+}
+},
+{
+"key": "doi:10.1201/9781003663102-16",
+"title": "Further Exercises for Practice",
+"url": "https://doi.org/10.1201/9781003663102-16",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "This chapter introduces a series of five typical problems in people analytics with data sets provided, with the aim of providing practice in choosing and applying the methods covered in the book. Examples relate to compensation, recruiting, performance, promotion and learning. Context is provided for each example along with a description and link to the data set. A series of discussion questions are presented to encourage up front consideration of the method and approach for each problem. Then a series of data exercises are listed to gently guide in the analytical approach. The methods intended to be used on these exercises range from simple statistical hypothesis testing, to elementary regression methods to more advanced methods such as mixed models and Cox proportional hazard models. The material in this chapter is particularly suitable as project work or homework for appropriate courses in statistics, regression or people analytics.",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "other",
+"w": "capítulo de exercícios de people analytics; sem evidência empírica"
+}
+},
+{
+"key": "doi:10.1007/s10926-026-10468-7",
+"title": "Formal and Informal Accommodation Pathways Among U.S. Lawyers With and Without Disabilities",
+"url": "https://doi.org/10.1007/s10926-026-10468-7",
+"venue": "Journal of Occupational Rehabilitation",
+"date": "2026-11-25",
+"authors": [
+"Fitore Hyseni",
+"Erblin Shehu",
+"Peter Blanck"
+],
+"abstract": "This study is part of a larger program of research that uses original cross-sectional and repeated cross-sectional data collected prior to and after the COVID-19 pandemic from a national survey of lawyers with and without disabilities. Overall, the results indicate that lawyers with disabilities are significantly more likely to request workplace accommodations than those without disabilities. For both groups, the immediate supervisor is the most common contact, but lawyers with disabilities are more likely to use human resources as their second channel, whereas those without disabilities more commonly approach another supervisor. The findings also provide marginal evidence that lawyers with disabilities are more likely to have their accommodation requests granted. Repeated cross-sectional comparisons indicate that while accommodation types have expanded, likely reflecting pandemic-era normalization of flexible or remote work arrangements, formal procedures have weakened between data collection waves. The findings contribute to a growing literature on workplace accommodation pathways in professional settings and highlight the need for research and practice to focus not only on wheth",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "survey",
+"w": "survey nacional sobre acomodações; associações descritivas"
+}
+},
+{
+"key": "doi:10.1017/elr.2026.10085",
+"title": "Precarity and possibility in platform-based ride-hailing work: Evidence from drivers in Iran",
+"url": "https://doi.org/10.1017/elr.2026.10085",
+"venue": "The Economic and Labour Relations Review",
+"date": "2026-11-25",
+"authors": [
+"nafiseh salehnia",
+"Taghi Ebrahimi Salari",
+"Mohammad Mahdi Pourabbas"
+],
+"abstract": "Ride-hailing platforms are reshaping urban labour markets across the Global South. However, driver experience remains under-examined in settings marked by informality and weak labour regulation. This article analyses platform-based driving in Iran using 25 semi-structured interviews with drivers in Mashhad and 231 app-store reviews. We combine thematic analysis with sentiment analysis and co-occurrence mapping to identify four interlocking domains that shape working conditions: economic and institutional pressures, technological control and instability, socio-cultural tensions, and limited opportunities. Drivers describe acute income insecurity driven by low fares, high operating costs, commissions, and the absence of social protection. Opaque algorithmic decisions and recurrent technical failures further erode agency and predictability, while passenger disrespect and stigma intensify emotional strain. Although flexibility and supplemental earnings are valued, they are experienced as fragile and contingent. Overall, 69% of evaluative statements are negative, indicating widespread dissatisfaction and reinforcing a pattern of hybrid precarity. The findings point to priorities for lab",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "qualitativo com 25 entrevistas e reviews; sem causalidade"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24437928",
+"title": "Beyond Human Management: Reconstructing the Ontological Foundations of Organizations in the Age of Artificial Intelligence",
+"url": "https://doi.org/10.5281/zenodo.24437928",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-22",
+"authors": [
+"Ficka Vitriya"
+],
+"abstract": "The spread of artificial intelligence (AI) and algorithmic management (AM) into core managerial functions has unsettled long-standing assumptions about organizational governance and managerial authority. Objective: This conceptual paper asks whether organizations still need human management structures when algorithms take over coordination, evaluation, and parts of strategic decision-making, and what this implies for the ontological foundations of the firm. Method: The paper follows a theory-synthesis design for conceptual articles. It draws on 45 purposively selected sources: classical works in organization theory, economics, and philosophy, as well as recent studies, preprints, legal texts, and policy documents (2018 to 2026) on algorithmic management, human-AI interaction, and socio-technical design. The literature is read through three lenses (posthumanist ontology, digital epistemology, and the axiology of organizational justice), and the argument is illustrated with published cases from rapid-delivery logistics, HR recruitment and appraisal, and executive AI leadership. Results: Algorithmic coordination raises processing speed and operational efficiency. The reviewed literatu",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "síntese conceitual sobre gestão algorítmica; sem validação empírica"
+}
+},
+{
+"key": "doi:10.1287/mnsc.2024.04758",
+"title": "Correcting the Unobserved Textual Confounding Factors in Regression by BERT and Partially Linear Regression",
+"url": "https://doi.org/10.1287/mnsc.2024.04758",
+"venue": "Management Science",
+"date": "2026-11-26",
+"authors": [
+"Mengke Qiao",
+"Ke‐Wei Huang"
+],
+"abstract": "In the last decade, there has been a surge of text-mining applications in the information systems literature. In these applications, researchers typically construct independent variables from documents by various text-mining techniques. The most prominent example could be using online review sentiments to investigate online word-of-mouth issues. Typically, most documents contain information richer than the independent variable, and researchers may construct control variables from the same documents to alleviate endogeneity issues. However, researchers need to manually craft these variables, and this process may not guarantee that all the important confounding factors are extracted and included in the regression model with a correct functional form. If useful textual information is overlooked and a valid identification strategy is not available, the omitted variable bias may occur. To solve this challenge, we propose a novel model that utilizes text embedding based on the state-of-the-art neural network language model (i.e., bidirectional encoder representations from transformers (BERT)) to automatically create a new control variable vector for controlling latent confounding factors",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 5,
+"q": 7,
+"e": "theory",
+"w": "método BERT para confundidores textuais; útil para análise de texto"
+}
+},
+{
+"key": "doi:10.7717/peerj-cs.4160",
+"title": "FedFORGET: a relational classification-based method for machine unlearning in federated learning environments",
+"url": "https://doi.org/10.7717/peerj-cs.4160",
+"venue": "PeerJ Computer Science",
+"date": "2026-11-25",
+"authors": [
+"Büşra Büyüktanır",
+"Gozde Karatas Baydoğmus",
+"Kazım Yıldız"
+],
+"abstract": "Federated learning (FL) is a distributed learning approach that protects privacy by processing data on the client side without transferring it to a central server. However, the effective implementation of the right to be forgotten, as defined under bullet 17 of the European Union General Data Protection Regulation and bullet 7 of the Turkish Personal Data Protection Law, within FL architectures remains a significant research problem. A significant portion of current approaches require retraining due to the intertwined structure of client contributions within the global model, leading to high computational costs and scalability issues. This study proposes the Federated Forget (FedFORGET) architecture, a new machine forgetting method based on relational classification that does not require retraining for federated learning environments. In the proposed method, each client generates labeled association rules using the Classification Based on Associations algorithm on its own local data. The global model is created by combining these rules on the server side using the Federated Classification Based on Association (FedCBA) algorithm. In the event of a forget request, only the rules belo",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 4,
+"q": 6,
+"e": "bench",
+"w": "método de machine unlearning federado; privacidade e esquecimento"
+}
+},
+{
+"key": "doi:10.4102/ajopa.v8i0.202",
+"title": "A validation study of an experimental ChatGPT-designed personnel selection assessment instrument in the SIRIUS-23 space mission isolation experiment",
+"url": "https://doi.org/10.4102/ajopa.v8i0.202",
+"venue": "African Journal of Psychological Assessment",
+"date": "2026-11-27",
+"authors": [
+"Corna Olivier",
+"Gopika Ramkilawon"
+],
+"abstract": "Personnel selection for isolated and confined extreme (ICE) environments, such as space, polar, and deep-sea missions, requires reliable psychological assessments to evaluate adaptability, resilience, and teamwork under prolonged confinement. Traditional human-administered assessments, while effective, can introduce unconscious biases. Generative artificial intelligence (GenAI) offers a data-driven alternative to potentially reduce bias. This study evaluates the validity of an experimental, large language model-designed personality assessment (LLM-D) by comparing its results to a validated instrument, the Isolated and Confined Extreme Environment Questionnaire (ICE-Q). The six crew members of the SIRIUS-23 isolation experiment completed the LLM-D pre-mission and the ICE-Q during the mission. The LLM-D evaluated key psychological traits using a structured scoring system. Post-isolation, participants completed a self-reporting questionnaire (SRQ) for triangulation. Responses were scored by ChatGPT and two psychometrists. A multi-faceted statistical approach evaluated differences and agreement between ratings and instruments. Findings indicate that the experimental LLM-D, in its curre",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "survey",
+"w": "validação com 6 tripulantes; sem poder estatístico"
+}
+},
+{
+"key": "doi:10.1201/9781003663102-10",
+"title": "Survival Analysis for Modeling Singular Events Over Time",
+"url": "https://doi.org/10.1201/9781003663102-10",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "In standard regression techniques, there is no time component. However, many outcomes in people analytics and in other fields can happen at different times over a period of study. Promotion or attrition can occur at different times for different individuals. Subscription sign-up or cancellation can occur at differing points for different customers. This chapter covers the common elements of survival analysis, which considers the time to event as well as the event itself in explaining the outcome of interest. Using an example of employee attrition, the chapter covers Kaplan-Meier estimates of survival rates and survival curves as a way of establishing prima facie relevance of a variable to the outcome. Cox proportional hazard models are studied as a way of performing multivariate regression on a time to event outcome. The underlying assumptions behind Cox models are reviewed and methods for checking these assumptions are presented. Frailty models are then briefly studied as a method for conducting regression on a population where there are differing background risks of an event occurring.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "theory",
+"w": "Capítulo metodológico de sobrevivência aplicado a attrition; sem dados novos."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-5",
+"title": "Binomial Logistic Regression for Binary Outcomes",
+"url": "https://doi.org/10.1201/9781003663102-5",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Binary outcomes are commonplace in people analytics and many other fields. Promotion and attrition are examples of binary outcomes in the workplace, and often other forms of outcomes are converted to binary through the use of cutoffs. This chapter deals with modeling the likelihood of a binary event using binomial logistic regression. It introduces the logistic function as an approximation of a probability distribution, and proceeds to demonstrate how this gives rise to a highly interpretable model based on the concept of odds. Using an example related to the promotion of salespeople, the chapter goes through the steps of fitting a binomial logistic regression model, measuring its fit with the data, interpreting the coefficients as log odds and converting these to odds ratios. The concepts of model parsimony and simplification are introduced. More complex topics such as determining goodness of fit and performing diagnostics on these models are also touched upon in this chapter, which also sets a foundation for studying other log-likelihood models covered in later chapters.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "theory",
+"w": "Capítulo didático de regressão logística com exemplo de promoção; sem validação."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-8",
+"title": "Poisson, Quasi-Poisson and Negative Binomial Regression for Count Outcomes",
+"url": "https://doi.org/10.1201/9781003663102-8",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Count outcomes are common in people analytics. These outcomes are discrete, non-negative integers that often require specialized statistical approaches. This chapter introduces the foundational techniques for modeling such data. The chapter begins by deriving the Poisson regression model and applying it to a practical example involving employee absences. Significant attention is given to the design, implementation, and interpretation of the model. Central to this discussion is the \"equidispersion\" assumption—the requirement that the mean and variance of the outcome are equal. The chapter demonstrates how to test for equidispersion and explains why violating this assumption can lead to misleading results from Poisson models. The quasi-Poisson and negative binomial models are introduced as alternatives for handling overdispersed count data. The chapter goes on to cover the use of offsets to model rates of occurrence rather than raw counts. Finally, zero-inflated models are explored as an option for handling count data with excess zeros due to structural reasons.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "theory",
+"w": "Capítulo de Poisson/negativa binomial com exemplo de ausências; sem dados novos."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-7",
+"title": "Proportional Odds Logistic Regression for Ordered Category Outcomes",
+"url": "https://doi.org/10.1201/9781003663102-7",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Ordered category or ordinal outcomes are arguably the most common outcomes in people analytics. Most measurement scales have an ordinal form, such as performance ratings, survey responses, academic grades and ranked preference voting systems. This chapter covers the most common regression technique for modeling and explaining ordinal outcomes: proportional odds logistic regression. A simple, easily interpretable model is derived and then applied to an example related to the levels of discipline of players in soccer games. As in previous chapters, time is spent on the design, simplification and interpretation of this model and on assessing its fit and goodness-of-fit. Importantly, the chapter also covers the key assumption that underlies the proportional odds model and shows ways to determine whether or not that assumption is violated for any given data set. The chapter also briefly reviews alternative approaches to modeling ordinal outcomes when the proportional odds assumption is violated.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "theory",
+"w": "Capítulo de regressão ordinal para ratings; didático, sem validação."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-15",
+"title": "Causal Inference - Moving from Association to Causation",
+"url": "https://doi.org/10.1201/9781003663102-15",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Establishing causality is the \"holy grail\" of people analytics, moving beyond identifying associations and correlations to understand whether a specific intervention actually caused a change in outcomes. This chapter introduces the theoretical and practical frameworks necessary to transition from explanatory modeling to causal inference. It emphasizes that while regression can identify associations, additional structural assumptions and design considerations are required to claim evidence of a causal effect. The chapter begins by introducing the Rubin Causal Model and the concept of \"potential outcomes,\" which provides the mathematical basis for defining a causal effect. It then explains how structural causal models can be used to identify and mitigate confounding variables and selection bias, which often plague observational data. Using a practical example around a recruiting selection process, the chapter covers hands-on techniques for causal discovery and estimation, including Directed Acyclic Graphs (DAGs) and the backdoor criterion. By the end of the chapter, readers will understand the rigorous requirements for causal claims and how to design analytical studies that provide m",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 8,
+"q": 5,
+"e": "theory",
+"w": "Capítulo de inferência causal com DAGs e exemplo de seleção; conceitual."
+}
+},
+{
+"key": "oa:W7240117580",
+"title": "Pengaruh Implementasi Kebijakan Work From Home dan Pemanfaatan Teknologi Informasi terhadap Produktivitas Kerja Karyawan Perkantoran di DKI Jakarta Pasca COVID-19",
+"url": "https://journals.upi-yai.ac.id/index.php/IKRAITH-EKONOMIKA/article/view/8097",
+"venue": "IKRAITH-EKONOMIKA",
+"date": "2026-11-24",
+"authors": [
+"Muhammad Iqbal Ramadhan",
+"Harries Madiistriyatno",
+"Sri Wahyuningsih"
+],
+"abstract": "Penelitian ini menunjukkan bahwa implementasi kebijakan Work From Home (WFH)berpengaruh positif dan signifikan terhadap produktivitas kerja karyawan perkantoran di DKIJakarta pasca COVID-19, dibuktikan koefisien regresi 0,458, t hitung 9,773, dan signifikansi 0,000(< 0,05). Pemanfaatan teknologi informasi juga berpengaruh positif dan signifikan, dibuktikankoefisien regresi 0,534, t hitung 10,755, dan signifikansi 0,000 (< 0,05). Secara simultan,implementasi kebijakan WFH dan pemanfaatan teknologi informasi berpengaruh positif dansignifikan terhadap produktivitas kerja, dibuktikan F hitung 390,320 pada signifikansi 0,000 (<0,05). Koefisien determinasi (R Square) 0,889 menandakan kedua variabel mampu menjelaskanproduktivitas kerja karyawan sebesar 88,9%, sedangkan 11,1% sisanya dipengaruhi faktor lain diluar penelitian.",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "survey",
+"w": "Survey transversal com regressão sobre WFH e produtividade; autorrelato."
+}
+},
+{
+"key": "doi:10.1016/j.buildenv.2026.115623",
+"title": "Rethinking thermal comfort ranges for low-energy Australian dwellings: sleep, leisure and work-from-home",
+"url": "https://doi.org/10.1016/j.buildenv.2026.115623",
+"venue": "Building and Environment",
+"date": "2026-11-23",
+"authors": [
+"Maíra André",
+"Thomas Parkinson",
+"Jing Xiong",
+"Ricardo Forgiarini Rupp",
+"Mahsan Sadeghi",
+"Dong Chen"
+],
+"abstract": "A warming climate is placing greater emphasis on dwellings maintaining acceptable thermal conditions while remaining resilient to energy constraints. This requirement becomes more urgent with the growing adoption of working from home (WFH), which expands time spent at home. This study establishes temperature ranges for designing comfortable homes for diverse residential activities, such as sleep, leisure, and WFH, while minimising reliance on air-conditioning. Field data were collected from 94 dwellings across the three most populous Australian climate zones. Continuous indoor environmental monitoring was combined with 3,036 thermal perception votes from bedrooms, living rooms, and home offices using natural ventilation and low-energy conditioning systems. A multilevel Bayesian ordinal model identified an overall comfort range of 18-29°C, with a lower limit of 11°C in bedrooms during sleep and a range of 19-31°C in home offices. These limits were exceeded for a few hours across spaces, with the highest exceedance being 4% in home offices, predominantly due to temperatures below the lower threshold. This indicates that the environments already comply with the established limits; alt",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 3,
+"q": 7,
+"e": "bench",
+"w": "Monitoramento de 94 domicílios e 3.036 votos térmicos; ângulo WFH indireto."
+}
+},
+{
+"key": "doi:10.1201/9781003663102-12",
+"title": "Bayesian Inference - A Modern Alternative to Classical Statistical Methods",
+"url": "https://doi.org/10.1201/9781003663102-12",
+"venue": "Chapman & Hall/CRC eBooks",
+"date": "2026-11-25",
+"authors": [
+"Keith McNulty"
+],
+"abstract": "Bayesian inference is a modern and increasingly popular alternative to classical frequentist statistics in the field of people analytics. By integrating existing beliefs with observed data and framing outcomes in terms of probability distributions, Bayesian inference offers a more flexible framework for small-scale or highly nuanced research. This chapter introduces the fundamental mechanics of Bayesian inference, beginning with an intuitive explanation of Bayes’ Theorem and how it is used to update beliefs as new data becomes available. Through a walkthrough example, the chapter demonstrates how to move from defining a prior distribution to calculating a posterior distribution, and how to continuously update the posterior as new data becomes available. The chapter then introduces a Bayesian framework for hypothesis testing, covering the Bayes Factor and its applications to the classical hypothesis tests covered in earlier chapters. The chapter also addresses the computational requirements of Bayesian methods and provides a foundation for more advanced Bayesian regression modeling in later chapters.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-27",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "theory",
+"w": "Capítulo introdutório de inferência bayesiana para people analytics; conceitual."
+}
 }
 ]
