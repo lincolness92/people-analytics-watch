@@ -71,6 +71,16 @@ traces do pipeline em Python (triagem, redação) com o mesmo formato.
 - Próximos: consumir as fontes mapeadas (prioridade alta primeiro); site leva 2 (sparklines, radar, páginas de
   técnica e de paper); onboarding canônico pré-computado; código e dados por método; validar ligação repo↔paper.
 
+## Inteligência sobre instituições financeiras (proposta de 28/11/2026, em mapeamento)
+Ideias do Lincoln, detalhadas no documento da visão: leis e regulação ampliada; ligação com ontologias formais
+(ou a nossa, onde faltar); armazenamento, visualizador e processamento eficientes (Rust onde valer); finanças
+públicas de bancos e IFs (Brasil primeiro, depois os principais do mundo), cada empresa do conglomerado;
+mercados, geografia, produtos; cadeias de suprimentos e fatores externos (clima, agro, macro) ligados aos fatos
+relevantes; oportunidades e propostas com premissas, cenários, custos, ROI e prazo; metodologias de
+precificação e ganho; reprodução de papers e testes de hipótese.
+⏳ Três mapeamentos em andamento (fontes, extração, viabilidade, recomendação): `docs/sources/leis-ontologias-formatos.*`,
+`docs/sources/financas-instituicoes.*`, `docs/sources/fatores-externos-e-propostas.*`.
+
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.
 Próximos pontos fracos: código (falta fonte: datasets e repositórios por método, validar ligação repo↔paper), onboarding
