@@ -78,8 +78,14 @@ públicas de bancos e IFs (Brasil primeiro, depois os principais do mundo), cada
 mercados, geografia, produtos; cadeias de suprimentos e fatores externos (clima, agro, macro) ligados aos fatos
 relevantes; oportunidades e propostas com premissas, cenários, custos, ROI e prazo; metodologias de
 precificação e ganho; reprodução de papers e testes de hipótese.
-⏳ Três mapeamentos em andamento (fontes, extração, viabilidade, recomendação): `docs/sources/leis-ontologias-formatos.*`,
-`docs/sources/financas-instituicoes.*`, `docs/sources/fatores-externos-e-propostas.*`.
+✅ Três mapeamentos concluídos: `docs/sources/financas-instituicoes.*` (52 fontes; Pilar 3 do BCB via DASFN, IF.data,
+CVM IPE e FRE, Open Finance, SEC), `docs/sources/fatores-externos-e-propostas.*` (52 fontes; BCB, IBGE, MAPA, clima;
+métodos e modelo de proposta) e `docs/sources/leis-ontologias-formatos.*` (normas.leg.br, base legal das normas,
+ontologias, armazenamento).
+Recomendação (no documento da visão): piloto vertical em crédito rural antes de ir em largura. Fases: 0 base comum
+(cadastro mestre, modelo de afirmações em SQLite, ~3 dias); 1 piloto rural (~2 semanas); 2 lei ↔ norma (~1,5 semana);
+3 os 10 maiores bancos (~2 semanas); 4 mundo (~2–3 semanas). Decisões pendentes: Parquet/DuckDB, contato da SEC,
+licenças (ODbL, AGPL), confirmar o piloto.
 
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.

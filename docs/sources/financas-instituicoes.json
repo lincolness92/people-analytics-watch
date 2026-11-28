@@ -1,0 +1,2213 @@
+{
+  "title": "Finanças, estrutura, mercados e produtos de instituições financeiras: inventário de fontes públicas",
+  "generated": "2026-11-28",
+  "doc": "docs/sources/financas-instituicoes.md",
+  "related": [
+    "docs/sources/febraban.md",
+    "docs/sources/associacoes-bancarias.md",
+    "docs/sources/leis-ontologias-formatos.md",
+    "docs/sources/fatores-externos-e-propostas.md"
+  ],
+  "method": "Leitura do repositório e chamadas de teste pequenas (curl, User-Agent do projeto; 'ResearchWatch/0.1' na SEC). Downloads só de arquivos de amostra (o maior: 15,7 MB do IF.data). Nada foi contornado.",
+  "fields": {
+    "block": "prudencial_contabil | estrutura | geografia_mercado | produtos_precos | fatos_relevantes | precos_acoes | agregado_setorial | vocabulario",
+    "access": "api | bulk | scrape | manual (e combinações)",
+    "effort_days": "estimativa de dias para o primeiro coletor útil",
+    "value": "alta | média | baixa para o Research Watch (perguntas sobre bancos)",
+    "phase": "fase da recomendação (0–5); null = não recomendado agora",
+    "access_test": "resultado da chamada de teste em 2026-11-28"
+  },
+  "count": 52,
+  "identifiers": [
+    {
+      "id": "cnpj",
+      "name": "CNPJ (8 dígitos base / 14 completo)",
+      "issuer": "Receita Federal",
+      "where": [
+        "BCB (todas as bases)",
+        "CVM",
+        "Receita",
+        "GLEIF registeredAs",
+        "Open Finance"
+      ],
+      "note": "Chave principal no Brasil. O BCB usa o CNPJ-base de 8 dígitos; o BB é 00000000."
+    },
+    {
+      "id": "ifdata_code",
+      "name": "Código IF.data / conglomerado (C00xxxxx)",
+      "issuer": "BCB",
+      "where": [
+        "IF.data",
+        "balancetes (COD_CONGL)",
+        "ranking de reclamações (nome)"
+      ],
+      "note": "Prudencial e financeiro têm códigos diferentes (Itaú: C0080099 prudencial, C0010069 financeiro)."
+    },
+    {
+      "id": "ispb",
+      "name": "ISPB",
+      "issuer": "BCB",
+      "where": [
+        "Pix",
+        "SPB/STR"
+      ],
+      "note": "Casar com CNPJ pela lista de participantes do STR."
+    },
+    {
+      "id": "compe",
+      "name": "Código COMPE (número do banco)",
+      "issuer": "BCB",
+      "where": [
+        "agências",
+        "Open Finance"
+      ],
+      "note": ""
+    },
+    {
+      "id": "cvm",
+      "name": "Código CVM",
+      "issuer": "CVM",
+      "where": [
+        "DFP/ITR/FRE/IPE",
+        "B3 (codeCVM)"
+      ],
+      "note": ""
+    },
+    {
+      "id": "ticker_isin",
+      "name": "Ticker e ISIN",
+      "issuer": "B3 / bolsas",
+      "where": [
+        "COTAHIST",
+        "B3 APIs",
+        "SEC tickers"
+      ],
+      "note": ""
+    },
+    {
+      "id": "lei",
+      "name": "LEI (ISO 17442)",
+      "issuer": "GLEIF",
+      "where": [
+        "GLEIF",
+        "EBA",
+        "ESMA",
+        "SEC (parcial)"
+      ],
+      "note": "Chave global; CNPJ no campo registeredAs."
+    },
+    {
+      "id": "sec_cik",
+      "name": "CIK",
+      "issuer": "SEC",
+      "where": [
+        "EDGAR"
+      ],
+      "note": ""
+    },
+    {
+      "id": "rssd_cert",
+      "name": "RSSD (Fed) e CERT (FDIC)",
+      "issuer": "Fed / FDIC",
+      "where": [
+        "FDIC",
+        "FFIEC"
+      ],
+      "note": "Bancos americanos."
+    }
+  ],
+  "institutions": {
+    "brasil": {
+      "source": "IF.data, conglomerados prudenciais e instituições independentes, data-base 06/2026 (gerado em 18–20/08/2026); valores em R$ bilhões; lucro líquido do 1º semestre de 2026. LEI pela API da GLEIF; CIK pela API da SEC.",
+      "list": [
+        {
+          "rank": 1,
+          "name": "Itaú Unibanco",
+          "ifdata_conglomerado": "C0080099",
+          "ifdata_code": "1000080099",
+          "segment": "S1",
+          "leader_cnpj": "60.872.504/0001-23",
+          "cvm": "19348",
+          "tickers": [
+            "ITUB3",
+            "ITUB4",
+            "ITUB (NYSE)"
+          ],
+          "lei": "5493002W2IVG62O3ZJ94",
+          "sec_cik": "1132597",
+          "total_assets_brl_bi": 2846.4,
+          "equity_brl_bi": 249.8,
+          "net_income_1s26_brl_bi": 24.7,
+          "ir": "CVM IPE e SEC 6-K (site de RI 403)"
+        },
+        {
+          "rank": 2,
+          "name": "Banco do Brasil",
+          "ifdata_conglomerado": "C0080329",
+          "ifdata_code": "1000080329",
+          "segment": "S1",
+          "leader_cnpj": "00.000.000/0001-91",
+          "cvm": "1023",
+          "tickers": [
+            "BBAS3"
+          ],
+          "lei": "QE0Q0253K88YAGNPE356",
+          "sec_cik": null,
+          "total_assets_brl_bi": 2583.6,
+          "equity_brl_bi": 181.8,
+          "net_income_1s26_brl_bi": 6.6,
+          "ir": "https://ri.bb.com.br/"
+        },
+        {
+          "rank": 3,
+          "name": "Caixa Econômica Federal",
+          "ifdata_conglomerado": "C0080738",
+          "ifdata_code": "1000080738",
+          "segment": "S1",
+          "leader_cnpj": "00.360.305/0001-04",
+          "cvm": null,
+          "tickers": [],
+          "lei": "254900EX2KZ57WQ1PL07",
+          "sec_cik": null,
+          "total_assets_brl_bi": 2386.0,
+          "equity_brl_bi": 118.8,
+          "net_income_1s26_brl_bi": 6.6,
+          "ir": "https://ri.caixa.gov.br/",
+          "note": "Não é companhia aberta; Caixa Seguridade é listada."
+        },
+        {
+          "rank": 4,
+          "name": "Bradesco",
+          "ifdata_conglomerado": "C0080075",
+          "ifdata_code": "1000080075",
+          "segment": "S1",
+          "leader_cnpj": "60.746.948/0001-12",
+          "cvm": "906",
+          "tickers": [
+            "BBDC3",
+            "BBDC4",
+            "BBD/BBDO (NYSE)"
+          ],
+          "lei": "549300CTUU1RFXHQJE44",
+          "sec_cik": "1160330",
+          "total_assets_brl_bi": 2015.2,
+          "equity_brl_bi": 185.2,
+          "net_income_1s26_brl_bi": 12.1,
+          "ir": "https://www.bradescori.com.br/"
+        },
+        {
+          "rank": 5,
+          "name": "Santander Brasil",
+          "ifdata_conglomerado": "C0080185",
+          "ifdata_code": "1000080185",
+          "segment": "S1",
+          "leader_cnpj": "90.400.888/0001-42",
+          "cvm": "20532",
+          "tickers": [
+            "SANB3",
+            "SANB4",
+            "SANB11",
+            "BSBR (NYSE)"
+          ],
+          "lei": "549300D1H731B30TSI43",
+          "sec_cik": "1471055",
+          "total_assets_brl_bi": 1314.9,
+          "equity_brl_bi": 106.7,
+          "net_income_1s26_brl_bi": 7.7,
+          "ir": "CVM IPE e SEC 6-K (site de RI 403)",
+          "note": "IPE de 2026 traz fatos relevantes sobre OPA (jul, set e nov/2026)."
+        },
+        {
+          "rank": 6,
+          "name": "BNDES",
+          "ifdata_conglomerado": "C0081847",
+          "ifdata_code": "1000081847",
+          "segment": "S2",
+          "leader_cnpj": null,
+          "cvm": null,
+          "tickers": [],
+          "lei": null,
+          "sec_cik": null,
+          "total_assets_brl_bi": 1058.0,
+          "equity_brl_bi": 180.5,
+          "net_income_1s26_brl_bi": 11.0,
+          "ir": null,
+          "note": "Banco de desenvolvimento; fora do recorte de 'bancos de varejo', mas entra no ranking por ativo."
+        },
+        {
+          "rank": 7,
+          "name": "BTG Pactual",
+          "ifdata_conglomerado": "C0080336",
+          "ifdata_code": "1000080336",
+          "segment": "S1",
+          "leader_cnpj": "30.306.294/0001-45",
+          "cvm": "22616",
+          "tickers": [
+            "BPAC3",
+            "BPAC5",
+            "BPAC11"
+          ],
+          "lei": "ZXLTQRYIK6IJH3R0IK66",
+          "sec_cik": null,
+          "total_assets_brl_bi": 858.4,
+          "equity_brl_bi": 84.3,
+          "net_income_1s26_brl_bi": 9.5,
+          "ir": "https://ri.btgpactual.com/"
+        },
+        {
+          "rank": 8,
+          "name": "Nubank (Nu Pagamentos – prudencial)",
+          "ifdata_conglomerado": "C0084693",
+          "ifdata_code": "1000084693",
+          "segment": "S2",
+          "leader_cnpj": "18.236.120/0001-58",
+          "cvm": null,
+          "tickers": [
+            "NU (NYSE)",
+            "ROXO34 (BDR)"
+          ],
+          "lei": "25490039HH2GPH6TUN09 (Nu Pagamentos)",
+          "sec_cik": "1691493 (Nu Holdings Ltd., Cayman)",
+          "total_assets_brl_bi": 363.3,
+          "equity_brl_bi": 23.3,
+          "net_income_1s26_brl_bi": 4.1,
+          "ir": "https://nu.com/en/investors",
+          "note": "A holding (Nu Holdings) reporta em IFRS na SEC (151 conceitos ifrs-full); o conglomerado brasileiro aparece no IF.data."
+        },
+        {
+          "rank": 9,
+          "name": "XP",
+          "ifdata_conglomerado": "C0082475",
+          "ifdata_code": "1000082475",
+          "segment": "S2",
+          "leader_cnpj": null,
+          "cvm": null,
+          "tickers": [
+            "XP (Nasdaq)"
+          ],
+          "lei": "5493008KDA8NBZRJST80 (XP Inc.)",
+          "sec_cik": "1787425",
+          "total_assets_brl_bi": 305.3,
+          "equity_brl_bi": 12.5,
+          "net_income_1s26_brl_bi": 0.4,
+          "ir": null
+        },
+        {
+          "rank": 10,
+          "name": "Safra",
+          "ifdata_conglomerado": "C0080109",
+          "ifdata_code": "1000080109",
+          "segment": "S2",
+          "leader_cnpj": null,
+          "cvm": null,
+          "tickers": [],
+          "lei": null,
+          "sec_cik": null,
+          "total_assets_brl_bi": 273.6,
+          "equity_brl_bi": 18.7,
+          "net_income_1s26_brl_bi": 1.9,
+          "ir": null
+        },
+        {
+          "rank": null,
+          "name": "Sistema Sicoob (277 entidades com 'SICOOB' no nome, incl. Banco Sicoob)",
+          "ifdata_conglomerado": "C0080879 (Banco Sicoob – prudencial)",
+          "segment": "S2 (banco); S3–S5 (cooperativas)",
+          "leader_cnpj": "02.038.232/0001-64 (Banco Cooperativo Sicoob)",
+          "cvm": null,
+          "tickers": [],
+          "lei": "254900YR7GLPBCLLMT79 (Banco Sicoob)",
+          "sec_cik": null,
+          "total_assets_brl_bi_soma_bruta": 729.5,
+          "ir": "https://www.sicoob.com.br/web/sicoob/relatorios",
+          "note": "Sistema = soma das cooperativas + banco; a soma bruta tem dupla contagem (depósitos interfinanceiros). O banco sozinho: ativo R$ 223,4 bi."
+        },
+        {
+          "rank": null,
+          "name": "Sistema Sicredi (106 entidades com 'SICREDI' no nome, incl. Banco Sicredi)",
+          "ifdata_conglomerado": "C0080745 (Banco Cooperativo Sicredi – prudencial)",
+          "segment": "S2 (banco); S3–S5 (cooperativas)",
+          "leader_cnpj": "01.181.521/0001-55 (Banco Cooperativo Sicredi)",
+          "cvm": null,
+          "tickers": [],
+          "lei": "213800I3REPPXE1XZ437 (Banco Sicredi)",
+          "sec_cik": null,
+          "total_assets_brl_bi_soma_bruta": 656.9,
+          "ir": "https://www.sicredi.com.br/site/sobre-nos/relatorios/",
+          "note": "Mesma ressalva de dupla contagem. O banco sozinho: ativo R$ 235,3 bi. Sicredi publica DF combinada do sistema (PDF)."
+        },
+        {
+          "rank": null,
+          "name": "Inter",
+          "ifdata_conglomerado": "C0080996",
+          "ifdata_code": "1000080996",
+          "segment": "S3",
+          "leader_cnpj": "00.416.968/0001-01 (Banco Inter)",
+          "cvm": null,
+          "tickers": [
+            "INTR (Nasdaq)",
+            "INBR32 (BDR)"
+          ],
+          "lei": "254900WOPB382XD4D411 (Banco Inter)",
+          "sec_cik": "1864163 (Inter & Co, Inc.)",
+          "total_assets_brl_bi": 101.3,
+          "ir": "https://investors.inter.co/",
+          "note": "Fora do top 10 por ativo (ver C6 R$ 170,6 bi, Banrisul R$ 172,6 bi, Mercado Pago R$ 125,0 bi), mas pedido no escopo."
+        }
+      ]
+    },
+    "global": {
+      "source": "FSB, 2026 List of G-SIBs (P251126.pdf), verificado em 2026-11-28",
+      "buckets": {
+        "4 (2,5%)": [
+          "JP Morgan Chase"
+        ],
+        "3 (2,0%)": [
+          "Bank of America",
+          "BNP Paribas",
+          "Citigroup",
+          "HSBC",
+          "Industrial and Commercial Bank of China"
+        ],
+        "2 (1,5%)": [
+          "Agricultural Bank of China",
+          "Bank of China",
+          "Barclays",
+          "China Construction Bank",
+          "Goldman Sachs",
+          "Groupe Crédit Agricole",
+          "UBS"
+        ],
+        "1 (1,0%)": [
+          "Bank of Communications",
+          "Bank of New York Mellon",
+          "Deutsche Bank",
+          "Groupe BPCE",
+          "ING",
+          "Mizuho FG",
+          "Morgan Stanley",
+          "MUFG",
+          "Royal Bank of Canada",
+          "Santander",
+          "Société Générale",
+          "Standard Chartered",
+          "State Street",
+          "Sumitomo Mitsui FG",
+          "Toronto Dominion",
+          "Wells Fargo"
+        ]
+      },
+      "changes_vs_2025": "BNP Paribas subiu do bucket 2 para o 3; MUFG desceu do 2 para o 1.",
+      "sec_cik_verified": {
+        "JPMorgan Chase": "19617 (10-K/10-Q/8-K)",
+        "Bank of America": "70858",
+        "Citigroup": "831001",
+        "Wells Fargo": "72971",
+        "Goldman Sachs": "886982",
+        "Morgan Stanley": "895421",
+        "BNY": "1390777",
+        "State Street": "93751",
+        "HSBC": "1089113 (20-F/6-K)",
+        "Barclays": "312069",
+        "UBS": "1610520",
+        "Banco Santander": "891478",
+        "Deutsche Bank": "1159508",
+        "ING": "1039765",
+        "MUFG": "67088",
+        "SMFG": "1022837",
+        "Mizuho": "1335730",
+        "Royal Bank of Canada": "1000275 (40-F)",
+        "Toronto-Dominion": "947263 (40-F)"
+      },
+      "without_sec": [
+        "BNP Paribas",
+        "Crédit Agricole",
+        "BPCE",
+        "Société Générale",
+        "Standard Chartered",
+        "ICBC",
+        "Agricultural Bank of China",
+        "Bank of China",
+        "China Construction Bank",
+        "Bank of Communications"
+      ],
+      "without_sec_route": "UE: Pilar 3/P3DH e relatórios anuais (ESEF/iXBRL em filings.xbrl.org); China: HKEXnews (relatórios anuais e Pilar 3 em PDF); Standard Chartered: site e National Storage Mechanism do Reino Unido."
+    }
+  },
+  "sources": [
+    {
+      "id": "bcb-ifdata-web",
+      "name": "IF.data: arquivos JSON do site (www3.bcb.gov.br/ifdata)",
+      "block": "prudencial_contabil",
+      "publisher": "BCB/Desig",
+      "scope": "BR",
+      "description": "Relatórios trimestrais por instituição: Resumo (ativo total, carteira de crédito, TVM, passivo exigível, captações, PL, lucro líquido, Basileia, imobilização, nº de agências e postos), Ativo, Passivo, DRE, Informações de Capital, Segmentação (S1–S5) e oito relatórios de carteira de crédito (PF/PJ por modalidade e prazo, CNAE, porte, indexador, região geográfica, quantidade de clientes e operações, carteiras de instrumentos financeiros). Três visões: conglomerado prudencial (1009), conglomerado financeiro (1005) e instituição individual (1006).",
+      "coverage": "Todas as instituições autorizadas em operação normal (1.398 conglomerados prudenciais/independentes e 1.622 individuais em 06/2026). Contábil desde 03/2000; prudencial desde 03/2014; capital desde 03/2015; crédito (SCR) desde 06/2012.",
+      "format": "JSON (cadastro*.json com colunas c0..c37; dados*.json com pares id/valor; info*.json dicionário de campos; trel*.json definição de cada relatório)",
+      "access": "bulk (arquivos JSON por data-base) + scrape leve do índice",
+      "endpoint": [
+        "https://www3.bcb.gov.br/ifdata/rest/relatorios (índice 03/2000–12/2024)",
+        "https://www3.bcb.gov.br/ifdata/rest/relatorios2025a2030 (índice 03/2025 em diante)",
+        "https://www3.bcb.gov.br/ifdata/rest/arquivos?nomeArquivo=ifdata_2025_2030/AAAAMM/{cadastro,dados,info,trel}AAAAMM_N.json"
+      ],
+      "frequency": "trimestral; até 60 dias após mar/jun/set e 90 dias após dez; reprocessamento anual em abril",
+      "identifiers": [
+        "código IF.data (c0: CNPJ-base para individuais; 10000xxxxx para conglomerados)",
+        "código do conglomerado prudencial (C00xxxxx, c15)",
+        "código do conglomerado financeiro (C00xxxxx, c14)",
+        "CNPJ-base da líder (c33)",
+        "segmento S1–S5"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Ler o índice, baixar por data-base o cadastro do tipo (1009/1005/1006), o info (nomes dos campos) e o dados_N indicado pelo campo 'a' do info; casar o 'lid' das colunas do trel com o 'i' do dados. Valores em R$ (o site exibe em R$ mil). Atenção à quebra de série em 03/2025 (Cosif 2025, IN BCB 426 a 433): novos ids de campo e um índice separado.",
+      "effort_days": 2.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: índice 2025–2030 200 (1,6 MB; datas 202503..202606); cadastro202606_1009 200 (742 KB, 1.398 entidades); dados202606_1 200 (15,7 MB). Ranking por ativo total montado a partir dele (ver §3 do .md).",
+      "notes": "Fonte primária para o 'top 10' e para séries por conglomerado. O dado de 09/2026 deve sair até 30/11/2026."
+    },
+    {
+      "id": "bcb-ifdata-olinda",
+      "name": "IF.data: API OData (Olinda)",
+      "block": "prudencial_contabil",
+      "publisher": "BCB/Desig",
+      "scope": "BR",
+      "description": "Mesma informação do IF.data via OData: ListaDeRelatorio, IfDataCadastro(AnoMes), IfDataValores(AnoMes, TipoInstituicao, Relatorio).",
+      "coverage": "Igual ao IF.data.",
+      "format": "JSON/CSV/XML (OData v4)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/IFDATA/versao/v1/odata/"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "CodInst",
+        "CodConglomeradoPrudencial",
+        "CodConglomeradoFinanceiro",
+        "CnpjInstituicaoLider"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Seria o caminho mais limpo, mas hoje só ListaDeRelatorio responde. Manter um teste de saúde semanal e migrar quando voltar.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 1,
+      "access_test": "2026-11-28: ListaDeRelatorio 200 (16 relatórios); IfDataCadastro e IfDataValores 500 'Erro desconhecido' para 202606, 202603, 202512, 202406 e 202212, com qualquer sintaxe de parâmetro. Usar o bcb-ifdata-web.",
+      "notes": "O levantamento de fatores externos (fatores-externos-e-propostas.md) registrou o mesmo 500 como 'parâmetro a acertar'; não é o parâmetro, o serviço está quebrado."
+    },
+    {
+      "id": "bcb-balancetes",
+      "name": "Balancetes e balanços (Cosif): documentos 4010, 4016, 4040, 4046, 4060, 4066",
+      "block": "prudencial_contabil",
+      "publisher": "BCB/Desig",
+      "scope": "BR",
+      "description": "Saldos de todas as contas Cosif até o nível 4 por instituição: balancete individual (4010/4016), consolidado do conglomerado financeiro (4040/4046) e consolidado prudencial (4060/4066). Desde 2025 com o novo elenco de contas (códigos de 10 dígitos) e coluna TAXONOMIA.",
+      "coverage": "Todas as instituições que enviam Cosif; arquivos mensais por grupo (Bancos, Sociedades, Cooperativas, Conglomerados prudenciais...). Histórico longo (anos 1990 em diante).",
+      "format": "CSV em ZIP (latin-1, separador ';', vírgula decimal; 3 linhas de cabeçalho antes do #header)",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.bcb.gov.br/content/estabilidadefinanceira/cosif/Bancos/AAAAMMBANCOS.csv.zip",
+        "https://www.bcb.gov.br/content/estabilidadefinanceira/cosif/Conglomerados-prudenciais/AAAAMMBLOPRUDENCIAL.csv.zip",
+        "https://www.bcb.gov.br/content/estabilidadefinanceira/cosif/Sociedades/AAAAMMSOCIEDADES.csv.zip",
+        "https://www4.bcb.gov.br/fis/cosif/cont/balan/individualizados/AAAAMM/4010/AAAAMM-4010-<CNPJ8>.ZIP (por instituição)"
+      ],
+      "frequency": "mensal, publicado em lotes trimestrais (Comunicado 44.132/2025: jan–mar em 31/mai, abr–jun em 31/ago, jul–set em 30/nov, out–dez em 31/mar)",
+      "identifiers": [
+        "CNPJ-base",
+        "COD_CONGL (C00xxxxx)",
+        "conta Cosif",
+        "documento Cadoc"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Download mensal do ZIP por grupo, leitura do CSV, filtro pelos CNPJ/conglomerados de interesse. Base para métricas que o IF.data não publica (contas detalhadas, provisões por conta).",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: 202606BANCOS.csv.zip 200 (1,55 MB, Last-Modified 23/11/2026); 202606BLOPRUDENCIAL.csv.zip 200 (1,73 MB; 85.705 linhas; Itaú prudencial PL 4066 = R$ 249,8 bi); 202606SOCIEDADES 200; 202609BANCOS 404 (ainda não publicado). As URLs antigas www4.bcb.gov.br/fis/cosif/cont/balan/bancos/ dão 404; a do CKAN para 'Cooperativas'/'Conglomerados-financeiros' com esse padrão de nome também deu 404 (nome a descobrir na página).",
+      "notes": "O 4010 individual de 202606 para o Itaú Unibanco S.A. deu 404 no padrão do CKAN; o de 202601 do BB existe. Verificar o calendário antes de tratar 404 como falha."
+    },
+    {
+      "id": "bcb-cosif-plano",
+      "name": "Cosif: plano de contas e manual",
+      "block": "vocabulario",
+      "publisher": "BCB/Denor",
+      "scope": "BR",
+      "description": "Elenco de contas (código, nome, função, atributos por tipo de instituição) e manual com normas básicas e documentos. Versão 2025 e histórico 2024.",
+      "coverage": "Plano vigente e histórico.",
+      "format": "CSV em ZIP, PDF, aplicação web de manuais",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.bcb.gov.br/content/estabilidadefinanceira/cosif/plano-de-contas/PlanoContasCOSIF.csv.zip",
+        "https://www.bcb.gov.br/content/estabilidadefinanceira/cosif/ManualCosif/completo_contas.pdf",
+        "https://manuais.bcb.gov.br/app/manual/cosif/publico"
+      ],
+      "frequency": "quando muda a norma",
+      "identifiers": [
+        "código de conta Cosif (10 dígitos desde 2025)"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Carregar o CSV uma vez como vocabulário (código, nome, hierarquia) e mapear as contas de topo para conceitos IFRS e KPIs.",
+      "effort_days": 0.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: PlanoContasCOSIF.csv.zip 200 (54 KB, Last-Modified 23/11/2026).",
+      "notes": "A conversão para SKOS está proposta em leis-ontologias-formatos.md."
+    },
+    {
+      "id": "bcb-dasfn-pilar3",
+      "name": "DASFN: Pilar 3 como API (dados abertos das instituições do SFN)",
+      "block": "prudencial_contabil",
+      "publisher": "BCB (catálogo) + cada instituição (dados)",
+      "scope": "BR",
+      "description": "Catálogo do BCB que aponta, para cada instituição, as URLs das tabelas do Pilar 3 publicadas como JSON: KM1 (métricas-chave: capital, RWA, índices, alavancagem, LCR, NSFR), OV1, CC1/CC2/CCA, CR1–CR5, CCR, SEC, MR, IRRBB, LIQ1/LIQ2, LR1/LR2, LI1/LI2/LIA (escopo de consolidação), REM, GSIB1, OR, entre outras (60 tabelas).",
+      "coverage": "247 instituições com 'pilar3' no catálogo (9.944 recursos); entre elas BB, Bradesco, Santander, Caixa, BTG, Itaú Unibanco S.A., Nu, Inter, Sicredi e Sicoob. Séries desde 2020; layout v2 desde 2025-4 em alguns emissores.",
+      "format": "JSON por tabela e período (layout padronizado pelo BCB; campos t, t_1... t_4 para os cinco últimos períodos)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/DASFN/versao/v1/odata/Recursos?$filter=Api eq 'pilar3'&$format=json",
+        "ex.: https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/v2/2026-2",
+        "ex.: https://ri.btgpactual.com/api/dadosabertos/pillar3/km1/v2/2026-2"
+      ],
+      "frequency": "trimestral (KM1, OV1, LIQ1...), semestral ou anual conforme a tabela",
+      "identifiers": [
+        "CnpjInstituicao (14 dígitos)",
+        "código da tabela BCBS (km1, ov1...)",
+        "período AAAA-T"
+      ],
+      "license": "dados abertos por determinação do BCB (Res. BCB 54/2020 e normas de dados abertos); o conteúdo é da instituição",
+      "extraction": "Ler o catálogo do DASFN (2,5 MB, um GET), filtrar as instituições-alvo e a tabela; buscar só o período novo. A KM1 sozinha dá Basileia, CET1, alavancagem, LCR e NSFR comparáveis entre bancos e com o padrão internacional (mesmo código BCBS usado na Europa).",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: catálogo 200 (10.478 recursos, 513 CNPJs; APIs pilar3, canais_atendimento, taxas_cartoes, pix_saque). BTG km1/v2/2026-2 200 (3,9 KB); BB km1/v2/2026-2 200 (4,0 KB); BB km1/2026-2 (layout v1) 422 'Arquivo não existe no catálogo'.",
+      "notes": "A melhor descoberta deste levantamento: substitui a leitura de PDFs de GRSAC/Pilar 3 para os indicadores de capital e liquidez. A Itaú Unibanco Holding não aparece com esse nome; o catálogo lista o Itaú Unibanco S.A. Unidades diferem por emissor (BB em R$ mil, BTG em R$ milhões): normalizar."
+    },
+    {
+      "id": "bcb-sgs",
+      "name": "SGS: Sistema Gerenciador de Séries Temporais",
+      "block": "agregado_setorial",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Milhares de séries: juros, crédito, inadimplência, spread, agregados monetários, indicadores do SFN. Agregadas (sistema), não por instituição.",
+      "coverage": "Sistema financeiro; séries longas.",
+      "format": "JSON/CSV",
+      "access": "api",
+      "endpoint": [
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?formato=json&dataInicial=dd/mm/aaaa"
+      ],
+      "frequency": "diária a mensal",
+      "identifiers": [
+        "código SGS"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Coletor incremental por lista curada de códigos (contexto setorial para os KPIs dos bancos).",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 1,
+      "access_test": "2026-11-28: série 432 (Selic meta) 200; devolve valores até 09/12/2026 (a série projeta o valor vigente).",
+      "notes": "Já previsto no levantamento de fatores externos; aqui só como denominador de participação de mercado."
+    },
+    {
+      "id": "bcb-ref",
+      "name": "Relatório de Estabilidade Financeira (REF)",
+      "block": "agregado_setorial",
+      "publisher": "BCB/Comef",
+      "scope": "BR",
+      "description": "Semestral: rentabilidade, crédito, capital, liquidez, testes de estresse, riscos do SFN; anexos com planilhas de dados dos gráficos.",
+      "coverage": "Sistema e segmentos (S1, S2...), não por instituição nomeada.",
+      "format": "PDF + XLSX",
+      "access": "scrape (página Angular; conteúdo via API do site)",
+      "endpoint": [
+        "https://www.bcb.gov.br/publicacoes/ref",
+        "https://www.bcb.gov.br/api/paginasite/sitebcb/publicacoes/ref"
+      ],
+      "frequency": "semestral (maio e novembro)",
+      "identifiers": [
+        "edição AAAA/S"
+      ],
+      "license": "domínio público / ODbL",
+      "extraction": "Monitorar a página pela API do site; baixar PDF e planilhas da edição nova; extrair texto para o tema (contexto, não KPI por banco).",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 2,
+      "access_test": "2026-11-28: API da página 200 (765 B, só o título; a lista de edições é montada por outro serviço que não foi mapeado).",
+      "notes": ""
+    },
+    {
+      "id": "bcb-reb",
+      "name": "Relatório de Economia Bancária (REB)",
+      "block": "agregado_setorial",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Concentração bancária (IHH, RC4), spread, custo de crédito, eficiência. Edição de 2023 é a última.",
+      "coverage": "Até o ano de 2023.",
+      "format": "PDF",
+      "access": "manual",
+      "endpoint": [
+        "https://www.bcb.gov.br/publicacoes/relatorioeconomiabancaria"
+      ],
+      "frequency": "descontinuado",
+      "identifiers": [
+        "ano"
+      ],
+      "license": "domínio público",
+      "extraction": "Só histórico. Concentração e participação de mercado passam a ser calculadas por nós a partir do IF.data/ESTBAN; parte dos temas migrou para o REF.",
+      "effort_days": 0,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: página diz 'Publicação descontinuada' (Resolução BCB nº 460, de 25/3/2025); a edição referente a 2023 é a última.",
+      "notes": ""
+    },
+    {
+      "id": "bcb-ranking-reclamacoes",
+      "name": "Ranking de Instituições por Índice de Reclamações",
+      "block": "produtos_precos",
+      "publisher": "BCB/Deati",
+      "scope": "BR",
+      "description": "Por instituição ou conglomerado: índice de reclamações, reclamações reguladas procedentes, outras, total, nº de clientes (CCS e SCR). Rankings separados para Top 15 e demais; consórcios à parte.",
+      "coverage": "Bancos, financeiras e IPs; mensal até 2015, trimestral e semestral depois; desde 2014.",
+      "format": "CSV (latin-1, ';') + JSON de índice",
+      "access": "api (arquivo por período)",
+      "endpoint": [
+        "https://www3.bcb.gov.br/rdrweb/rest/ext/ranking (lista de períodos)",
+        "https://www3.bcb.gov.br/rdrweb/rest/ext/ranking/arquivo?ano=AAAA&periodicidade=TRIMESTRAL&periodo=T&tipo=Bancos+e+financeiras"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "CNPJ IF (às vezes vazio para conglomerado)",
+        "nome do conglomerado"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Baixar o CSV do trimestre novo; casar nome de conglomerado com o código IF.data por tabela de equivalência (o CNPJ vem vazio para conglomerados).",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 2,
+      "access_test": "2026-11-28: índice 200 (6,6 KB, 2014→2026); arquivo 2026 T2 200 (28,5 KB).",
+      "notes": ""
+    },
+    {
+      "id": "bcb-ranking-ouvidorias",
+      "name": "Ranking de Qualidade de Ouvidorias",
+      "block": "produtos_precos",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Nota de qualidade das ouvidorias por instituição.",
+      "coverage": "Instituições com ouvidoria; desde 2017.",
+      "format": "CSV/JSON",
+      "access": "bulk",
+      "endpoint": [
+        "https://dadosabertos.bcb.gov.br/dataset/ranking-de-qualidade-de-ouvidorias"
+      ],
+      "frequency": "semestral",
+      "identifiers": [
+        "CNPJ"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Igual ao ranking de reclamações.",
+      "effort_days": 0.5,
+      "value": "baixa",
+      "phase": 2,
+      "access_test": "2026-11-28: pacote no CKAN (modificado 11/09/2026); arquivo não baixado.",
+      "notes": ""
+    },
+    {
+      "id": "bcb-taxas-juros",
+      "name": "Taxas de juros por instituição e modalidade",
+      "block": "produtos_precos",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Taxa média (a.m. e a.a.) e posição no ranking por modalidade (crédito pessoal, consignado, cheque especial, cartão rotativo, imobiliário, veículos, capital de giro...) e por instituição.",
+      "coverage": "Instituições que operam cada modalidade; mensal (TaxasJurosMensalPorMes) e diária por período de 5 dias úteis.",
+      "format": "JSON/CSV (OData)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/taxaJuros/versao/v2/odata/TaxasJurosMensalPorMes",
+        "https://olinda.bcb.gov.br/olinda/servico/taxaJuros/versao/v2/odata/TaxasJurosDiariaPorInicioPeriodo"
+      ],
+      "frequency": "mensal e semanal",
+      "identifiers": [
+        "cnpj8",
+        "nome da IF",
+        "modalidade"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Coletor mensal filtrado por cnpj8 das instituições-alvo; guardar posição e taxa. Bom para 'preço do produto' por banco.",
+      "effort_days": 0.5,
+      "value": "alta",
+      "phase": 2,
+      "access_test": "2026-11-28: TaxasJurosMensalPorMes 200 (Set-2026, financiamento imobiliário prefixado: 1º Caixa 10,94% a.a., 2º Banco XP 14,57% a.a.).",
+      "notes": ""
+    },
+    {
+      "id": "bcb-tarifas",
+      "name": "Tarifas bancárias por instituição",
+      "block": "produtos_precos",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Valor máximo de cada serviço tarifado (cadastro, cartão, saque, TED, pacotes...) por instituição, PF e PJ; grupos consolidados.",
+      "coverage": "Instituições que informam tarifas.",
+      "format": "JSON (OData)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/Informes_ListaTarifasPorInstituicaoFinanceira/versao/v1/odata/ListaTarifasPorInstituicaoFinanceira(PessoaFisicaOuJuridica=@P,CNPJ=@C)?@P='F'&@C='<CNPJ8>'",
+        "https://olinda.bcb.gov.br/olinda/servico/Informes_ListaValoresDeServicoBancario/versao/v1/odata/ (valores médios; não testado)"
+      ],
+      "frequency": "quando a IF altera",
+      "identifiers": [
+        "CNPJ8",
+        "código do serviço"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Uma chamada por instituição e tipo de pessoa, mensal; diff por DataVigencia.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 2,
+      "access_test": "2026-11-28: GruposConsolidados 200; tarifas PF do BB (CNPJ 00000000) 200 (ex.: cadastro R$ 30,00 desde 2018-07-29; 2ª via de cartão de débito R$ 0,00 desde 2025-09-04). Resposta em ~4 s.",
+      "notes": ""
+    },
+    {
+      "id": "bcb-instituicoes-funcionamento",
+      "name": "Relação de instituições em funcionamento (Unicad)",
+      "block": "estrutura",
+      "publisher": "BCB/Desig",
+      "scope": "BR",
+      "description": "Sedes de bancos comerciais, múltiplos e Caixa; cooperativas; sociedades; consórcios; domínios verificados; tomadores de serviço BaaS. Endereço, segmento, carteira comercial, site.",
+      "coverage": "Todas as autorizadas, posição corrente.",
+      "format": "JSON (OData) + planilhas no site",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/SedesBancoComMultCE",
+        ".../SedesCooperativas",
+        ".../SedesSociedades",
+        ".../DominiosVerificados",
+        ".../TomadoresDeServicosBaas"
+      ],
+      "frequency": "mensal",
+      "identifiers": [
+        "CNPJ8"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Snapshot mensal; base do cadastro mestre de instituições (nome oficial, segmento, município).",
+      "effort_days": 0.5,
+      "value": "alta",
+      "phase": 0,
+      "access_test": "2026-11-28: SedesBancoComMultCE 200 (ex.: Banco Itaú Veículos S.A., CNPJ 61190658).",
+      "notes": "DominiosVerificados e TomadoresDeServicosBaas são úteis também para o tema de fraude."
+    },
+    {
+      "id": "bcb-bcbase",
+      "name": "BcBase: dados cadastrais de entidades supervisionadas",
+      "block": "estrutura",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Cadastro de entidades supervisionadas e cooperativas: código Bacen, Sisbacen, natureza jurídica, tipo de entidade, situação, esfera pública, classe/tipo/categoria de cooperativa.",
+      "coverage": "Todas as supervisionadas.",
+      "format": "JSON (OData)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/BcBase/versao/v2/odata/EntidadesSupervisionadas(dataBase=@d)",
+        "https://olinda.bcb.gov.br/olinda/servico/BcBase/versao/v2/odata/Cooperativas(dataBase=@d)"
+      ],
+      "frequency": "mensal",
+      "identifiers": [
+        "codigoCNPJ8",
+        "codigoCNPJ14",
+        "codigoIdentificadorBacen",
+        "codigoSisbacen"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Seria o cadastro mestre (inclui classe da cooperativa: singular, central, confederação, o que ajuda a montar Sicredi e Sicoob como sistemas). Precisa acertar o formato de dataBase.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 0,
+      "access_test": "2026-11-28: serviço e $metadata 200; EntidadesSupervisionadas(dataBase='2026-11-01') 500. Não resolvido.",
+      "notes": ""
+    },
+    {
+      "id": "bcb-pix-dados-abertos",
+      "name": "Pix: estatísticas por participante e por município",
+      "block": "geografia_mercado",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Chaves Pix por participante (ISPB), natureza e tipo de chave; transações por município; estatísticas de transações; estatísticas de fraudes (MED); CNAE e porte do recebedor.",
+      "coverage": "Todos os participantes do Pix; mensal desde 2020.",
+      "format": "JSON (OData)",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/ChavesPix(Data=@Data)",
+        ".../TransacoesPixPorMunicipio",
+        ".../EstatisticasFraudesPix"
+      ],
+      "frequency": "mensal",
+      "identifiers": [
+        "ISPB",
+        "código IBGE do município"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Chaves por ISPB como proxy de base de clientes ativos (bancos digitais); transações por município para pegada regional.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 4,
+      "access_test": "2026-11-28: ChavesPix(Data='2026-10-31') 200.",
+      "notes": "ISPB precisa de tabela de equivalência com CNPJ (a lista de participantes do STR/SPI tem os dois)."
+    },
+    {
+      "id": "bcb-estban",
+      "name": "ESTBAN: estatística bancária por município e por agência (documento 4500)",
+      "block": "geografia_mercado",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Saldos dos principais verbetes do balancete (disponibilidades, crédito por tipo, depósitos à vista, poupança, a prazo, etc.) por instituição × município e por agência. Base para participação de mercado regional em crédito e depósitos.",
+      "coverage": "Bancos comerciais, múltiplos e Caixa com agências; mensal; série desde 1988 (município).",
+      "format": "CSV em ZIP (latin-1, ';', 2 linhas de cabeçalho)",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.bcb.gov.br/content/estatisticas/estatistica_bancaria_estban/municipio/AAAAMM_ESTBAN.csv.zip",
+        "https://www.bcb.gov.br/content/estatisticas/estatistica_bancaria_estban/agencia/AAAAMM_ESTBAN_AG.csv.zip"
+      ],
+      "frequency": "mensal, com a mesma defasagem trimestral dos balancetes",
+      "identifiers": [
+        "CNPJ-base",
+        "código do município (CODMUN do BCB) + UF",
+        "agência (no arquivo por agência)"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Download mensal; cruzar CODMUN com IBGE (tabela de equivalência do BCB); calcular participação por município, UF e região; não cobre cooperativas nem bancos sem agência (digitais).",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 4,
+      "access_test": "2026-11-28: 202606 município 200 (883 KB; 7.951 linhas; gerado em 01/09/2026); 202606 agência 200 (1,4 MB); 202512 200; 202609 404 (ainda não publicado). URLs antigas em www4.bcb.gov.br/fis/cosif/cont/estban/ dão 404.",
+      "notes": "Bancos digitais (Nu, Inter) quase não aparecem: para eles, usar Pix e IF.data por região."
+    },
+    {
+      "id": "bcb-agencias-postos",
+      "name": "Agências, postos de atendimento, postos eletrônicos e correspondentes",
+      "block": "geografia_mercado",
+      "publisher": "BCB",
+      "scope": "BR",
+      "description": "Endereço completo, CEP, município IBGE e data de início de cada agência; o mesmo para postos (PA), postos eletrônicos (PAE) e correspondentes no país.",
+      "coverage": "Todas as supervisionadas; posição corrente (sem histórico na API; snapshots mensais nos arquivos).",
+      "format": "JSON (OData) + arquivos no CKAN",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/Informes_Agencias/versao/v1/odata/Agencias",
+        "https://dadosabertos.bcb.gov.br/dataset/postos-de-atendimento",
+        "https://dadosabertos.bcb.gov.br/dataset/postos-de-atendimento-eletronico",
+        "https://dadosabertos.bcb.gov.br/dataset/correspondentes"
+      ],
+      "frequency": "mensal",
+      "identifiers": [
+        "CnpjBase + CnpjSequencial + CnpjDv (CNPJ da agência)",
+        "CodigoCompe",
+        "MunicipioIbge"
+      ],
+      "license": "ODbL (Open Data Commons), conforme o catálogo dadosabertos.bcb.gov.br",
+      "extraction": "Snapshot mensal com $filter por CnpjBase; diff para aberturas e fechamentos de agências (um fato relevante 'silencioso').",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 4,
+      "access_test": "2026-11-28: Agencias?$top=1 200 (Banrisul, agência União, Porto Alegre, posição 26/11/2026). $count devolveu 403: contar no cliente.",
+      "notes": "ATMs da rede compartilhada (Banco24Horas) não estão aqui; vêm do Open Finance (shared-automated-teller-machines)."
+    },
+    {
+      "id": "ofb-diretorio",
+      "name": "Open Finance Brasil: diretório de participantes",
+      "block": "produtos_precos",
+      "publisher": "Open Finance Brasil (estrutura de governança)",
+      "scope": "BR",
+      "description": "Lista de participantes com marcas, CNPJ e, para cada servidor de autorização, os recursos de API e seus endpoints de descoberta (inclusive as APIs abertas de produtos e canais).",
+      "coverage": "105 organizações no diretório em 28/11/2026.",
+      "format": "JSON",
+      "access": "api",
+      "endpoint": [
+        "https://data.directory.openbankingbrasil.org.br/participants"
+      ],
+      "frequency": "contínua",
+      "identifiers": [
+        "RegistrationNumber (CNPJ)",
+        "OrganisationId",
+        "ApiFamilyType"
+      ],
+      "license": "público, sem autenticação",
+      "extraction": "Um GET diário; extrair os endpoints das famílias opendata-* e channels_* das instituições-alvo; guardar a versão.",
+      "effort_days": 0.5,
+      "value": "alta",
+      "phase": 2,
+      "access_test": "2026-11-28: 200 (4,5 MB, 105 organizações). Famílias mais comuns: channels (electronic/phone/branches/banking-agents), opendata-accounts, -loans, -creditcards, -investments, -insurance, -financings, -invoicefinancings, -unarranged, -exchange, -pension, -capitalization, -acquiring-services.",
+      "notes": ""
+    },
+    {
+      "id": "ofb-dados-abertos",
+      "name": "Open Finance Brasil: APIs abertas de produtos, tarifas, taxas e canais (antiga fase 1)",
+      "block": "produtos_precos",
+      "publisher": "cada instituição participante",
+      "scope": "BR",
+      "description": "Por instituição: contas PF/PJ (tarifas, serviços, rendimento), empréstimos e financiamentos (taxas mínima/máxima por faixa, garantias), cartões (anuidade, juros), cheque especial, antecipação de recebíveis, investimentos (renda fixa bancária, fundos, títulos), seguros, previdência, câmbio (VET), credenciamento; canais (agências, canais eletrônicos e telefônicos, correspondentes, ATMs compartilhados).",
+      "coverage": "Participantes obrigatórios e voluntários (S1/S2 e outros); posição corrente.",
+      "format": "JSON paginado (padrão OFB)",
+      "access": "api",
+      "endpoint": [
+        "ex.: https://opendata.api.bb.com.br/open-banking/opendata-loans/v1/personal-loans",
+        "ex.: https://opendata.api.nubank.com.br/open-banking/opendata-accounts/v1/personal-accounts",
+        "ex.: https://openbanking.api.santander.com.br/open-banking/channels/v2/branches"
+      ],
+      "frequency": "contínua (a instituição atualiza quando muda o produto)",
+      "identifiers": [
+        "participant.cnpjNumber",
+        "brand",
+        "tipo de produto (enum OFB)"
+      ],
+      "license": "público, sem autenticação (regulação conjunta BCB/CMN do Open Finance)",
+      "extraction": "Coletor semanal por família e instituição, com paginação; normalizar enums; validar valores (há taxas zeradas) e cruzar com as taxas médias do BCB.",
+      "effort_days": 2.5,
+      "value": "alta",
+      "phase": 2,
+      "access_test": "2026-11-28: BB personal-loans 200 (consignado com todas as taxas 0,000000, ou seja, dado de baixa qualidade); Nubank personal-accounts 200 (conta pré-paga, rendimento 100% DI, saque em ATM R$ 6,50).",
+      "notes": "Qualidade desigual entre instituições: tratar como 'declarado pela instituição', nunca como preço efetivo."
+    },
+    {
+      "id": "bcb-dasfn-outros",
+      "name": "DASFN: canais de atendimento, taxas de cartões e pontos de Pix Saque/Troco",
+      "block": "produtos_precos",
+      "publisher": "BCB (catálogo) + instituições",
+      "scope": "BR",
+      "description": "Mesmo catálogo do Pilar 3, com três outras APIs: canais_atendimento (agências), taxas_cartoes (taxas de cartões de crédito por período, com /itens/ultimo) e pix_saque.",
+      "coverage": "422 recursos de canais, 93 de taxas de cartões, 19 de Pix Saque (inclui BB, Caixa, Itaú, Bradesco, Nubank, Inter).",
+      "format": "JSON",
+      "access": "api",
+      "endpoint": [
+        "https://olinda.bcb.gov.br/olinda/servico/DASFN/versao/v1/odata/Recursos?$filter=Api eq 'taxas_cartoes'",
+        "ex.: https://api.itau.com.br/dadosabertos/taxasCartoes/taxas/itens/ultimo"
+      ],
+      "frequency": "mensal (taxas de cartões)",
+      "identifiers": [
+        "CnpjInstituicao"
+      ],
+      "license": "dados abertos das instituições",
+      "extraction": "Ler o catálogo e chamar /itens/ultimo das instituições-alvo mensalmente.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 2,
+      "access_test": "2026-11-28: catálogo 200; endpoints de taxas_cartoes listados para Caixa, BB, Nubank, Itaú e Bradesco (não chamados).",
+      "notes": ""
+    },
+    {
+      "id": "cvm-cadastro",
+      "name": "CVM: cadastro de companhias abertas",
+      "block": "estrutura",
+      "publisher": "CVM",
+      "scope": "BR",
+      "description": "Código CVM, CNPJ, denominação, situação, setor, tipo de mercado, controle acionário, auditor.",
+      "coverage": "Todas as companhias registradas (21 bancos ativos no setor 'Bancos').",
+      "format": "CSV (latin-1, ';')",
+      "access": "bulk",
+      "endpoint": [
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "CD_CVM",
+        "CNPJ_CIA"
+      ],
+      "license": "dados abertos CVM (ODbL, conforme o portal)",
+      "extraction": "Download diário (1 MB); base da equivalência CNPJ ↔ código CVM.",
+      "effort_days": 0.3,
+      "value": "alta",
+      "phase": 0,
+      "access_test": "2026-11-28: 200 (1 MB, atualizado 27/11/2026). Ex.: Itaú Unibanco Holding CVM 19348; BB 1023; Bradesco 906; Santander Brasil 20532; BTG Pactual 22616.",
+      "notes": ""
+    },
+    {
+      "id": "cvm-dfp-itr",
+      "name": "CVM: DFP e ITR (demonstrações padronizadas)",
+      "block": "prudencial_contabil",
+      "publisher": "CVM",
+      "scope": "BR",
+      "description": "Balanço, DRE, DFC, DMPL, DVA (individual e consolidado) linha a linha, mais composição do capital e pareceres; um CSV por demonstração. Para bancos, o consolidado segue IFRS (CVM) e o individual segue Cosif.",
+      "coverage": "Companhias abertas; DFP desde 2010, ITR desde 2011.",
+      "format": "CSV em ZIP (anual por exercício)",
+      "access": "bulk",
+      "endpoint": [
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS/dfp_cia_aberta_AAAA.zip",
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/itr_cia_aberta_AAAA.zip"
+      ],
+      "frequency": "o ZIP do ano é regravado (vimos todos com data de 22/11/2026)",
+      "identifiers": [
+        "CD_CVM",
+        "CNPJ_CIA",
+        "CD_CONTA (plano CVM de demonstrações, não Cosif)",
+        "VERSAO"
+      ],
+      "license": "dados abertos CVM (ODbL, conforme o portal)",
+      "extraction": "Baixar os ZIPs do ano corrente e do anterior quando mudarem (ETag/Last-Modified), filtrar CD_CVM dos bancos, ficar com a última VERSAO. Para bancos, os CSVs só trazem as contas de topo; o detalhe está nas notas explicativas (PDF).",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: listagens 200. dfp_2025 12 MB, dfp_2026 238 KB, itr_2025 30 MB, itr_2026 28 MB, todos com data de 22/11/2026. Não baixados.",
+      "notes": "Não há XBRL nos dados abertos da CVM; o formato é CSV derivado do ENET."
+    },
+    {
+      "id": "cvm-fre",
+      "name": "CVM: Formulário de Referência (FRE)",
+      "block": "estrutura",
+      "publisher": "CVM",
+      "scope": "BR",
+      "description": "Dezenas de tabelas (50 arquivos de metadados): posição acionária e classes de ações (quem controla), participação em sociedades (controladas e coligadas com CNPJ), grupo econômico e reestruturações, transações com partes relacionadas, administradores, remuneração, capital social, riscos.",
+      "coverage": "Companhias abertas; desde 2010.",
+      "format": "CSV em ZIP (anual)",
+      "access": "bulk",
+      "endpoint": [
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FRE/DADOS/fre_cia_aberta_AAAA.zip",
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FRE/META/meta_fre_cia_aberta.zip"
+      ],
+      "frequency": "anual, com reapresentações",
+      "identifiers": [
+        "CNPJ_Companhia",
+        "Codigo_CVM",
+        "ID_Documento",
+        "CNPJ da participada"
+      ],
+      "license": "dados abertos CVM (ODbL, conforme o portal)",
+      "extraction": "Ler fre_cia_aberta_participacao_sociedade (controladas e coligadas) e posicao_acionaria (controladores) para montar a árvore societária declarada; grupo_economico_reestruturacao para eventos.",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 3,
+      "access_test": "2026-11-28: listagem 200 (fre_2026 8 MB); meta_fre_cia_aberta.zip 200 (50 arquivos, entre eles participacao_sociedade, posicao_acionaria, grupo_economico_reestruturacao, transacao_parte_relacionada).",
+      "notes": ""
+    },
+    {
+      "id": "cvm-ipe",
+      "name": "CVM: IPE (informações periódicas e eventuais): fatos relevantes, comunicados, releases, ratings",
+      "block": "fatos_relevantes",
+      "publisher": "CVM",
+      "scope": "BR",
+      "description": "Índice de todos os documentos eventuais enviados pelo ENET: categoria, tipo, espécie, assunto, data de entrega, protocolo e link de download do PDF no RAD. Inclui Fato Relevante, Comunicado ao Mercado, Press-release de resultados, Apresentações a analistas, Relatório de Agência de Rating, Calendário de eventos, Aviso aos acionistas.",
+      "coverage": "Todas as companhias abertas; ano a ano.",
+      "format": "CSV em ZIP (anual) + PDF no RAD",
+      "access": "bulk + download de PDF",
+      "endpoint": [
+        "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_AAAA.zip",
+        "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=...&numSequencia=...&numVersao=..."
+      ],
+      "frequency": "o ZIP do ano é regravado (diário ou quase)",
+      "identifiers": [
+        "Codigo_CVM",
+        "CNPJ_Companhia",
+        "Protocolo_Entrega",
+        "Versao"
+      ],
+      "license": "dados abertos CVM (ODbL, conforme o portal)",
+      "extraction": "Baixar o ZIP do ano (2 MB) diariamente, diff por Protocolo_Entrega, filtrar Codigo_CVM das instituições-alvo; para os itens novos, baixar o PDF do RAD e extrair texto. É a via legal e estável para releases e fatos relevantes de bancos cujo site de RI bloqueia robôs (Itaú, Santander).",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "2026-11-28: ipe_2026 200 (2 MB; 41.625 linhas; 2.255 Fatos Relevantes no ano). Fatos relevantes de 2026: BB 11, Bradesco 8, Itaú 8, Santander Brasil 6, BTG 3. Link do RAD 200 devolve PDF (%PDF-1.7) apesar do content-type text/html.",
+      "notes": "Base do classificador de fatos relevantes (§6 do .md)."
+    },
+    {
+      "id": "cvm-rad-enet",
+      "name": "CVM: RAD/ENET (consulta externa de documentos)",
+      "block": "fatos_relevantes",
+      "publisher": "CVM",
+      "scope": "BR",
+      "description": "Interface de consulta de todos os documentos (DFP, ITR, FRE, IPE) por companhia, com visualização HTML das demonstrações e notas explicativas.",
+      "coverage": "Todas as companhias abertas.",
+      "format": "HTML/PDF",
+      "access": "scrape (só quando o IPE/DFP não bastar)",
+      "endpoint": [
+        "https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx"
+      ],
+      "frequency": "contínua",
+      "identifiers": [
+        "código CVM",
+        "protocolo"
+      ],
+      "license": "público; sem API documentada",
+      "extraction": "Evitar scraping da consulta; usar os links de download do IPE. Exceção: notas explicativas das DFs, que estão no PDF do documento.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": null,
+      "access_test": "2026-11-28: download por protocolo 200 (PDF).",
+      "notes": ""
+    },
+    {
+      "id": "b3-cotahist",
+      "name": "B3: séries históricas de cotações (COTAHIST)",
+      "block": "precos_acoes",
+      "publisher": "B3",
+      "scope": "BR",
+      "description": "Cotação diária de todos os papéis à vista (abertura, máxima, mínima, fechamento, média, volume, negócios) desde 1986.",
+      "coverage": "Todos os ativos negociados na B3.",
+      "format": "TXT de largura fixa em ZIP (anual, mensal, diário)",
+      "access": "bulk",
+      "endpoint": [
+        "https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_AAAAA.ZIP",
+        "https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_DDDMMAAAA.ZIP"
+      ],
+      "frequency": "diária (arquivo D publicado na madrugada seguinte)",
+      "identifiers": [
+        "ticker (CODNEG)",
+        "ISIN",
+        "código BDI"
+      ],
+      "license": "download gratuito; redistribuição de market data sujeita às regras da B3",
+      "extraction": "Baixar o arquivo diário (≈ 450 KB) e filtrar os tickers dos bancos (ITUB3/4, BBAS3, BBDC3/4, SANB3/4/11, BPAC3/5/11, BRSR6, ABCB4, BMGB4, BDRs ROXO34 (Nu) e INBR32 (Inter)). Histórico: um ZIP anual por vez.",
+      "effort_days": 1,
+      "value": "alta",
+      "phase": 5,
+      "access_test": "2026-11-28: COTAHIST_A2026.ZIP 200 (98 MB, Last-Modified 27/11/2026 23:33); COTAHIST_D26112026.ZIP 200 (445 KB). Só HEAD.",
+      "notes": "Fonte oficial e gratuita de preço para ações brasileiras; para dados intradiários ou redistribuição, licenciar."
+    },
+    {
+      "id": "b3-empresas-listadas",
+      "name": "B3: APIs do site de empresas listadas (proventos, eventos, capital)",
+      "block": "fatos_relevantes",
+      "publisher": "B3",
+      "scope": "BR",
+      "description": "Busca de emissores (com código CVM e CNPJ), dados complementares (capital social, quantidade de ações ON/PN, segmento de listagem, proventos em dinheiro com datas 'com', subscrições, bonificações), e composição de índices (IBOV, IFNC...).",
+      "coverage": "Emissores listados.",
+      "format": "JSON (parâmetros em base64 na URL)",
+      "access": "api não documentada",
+      "endpoint": [
+        "https://sistemaswebb3-listados.b3.com.br/listedCompaniesProxy/CompanyCall/GetInitialCompanies/<base64>",
+        "https://sistemaswebb3-listados.b3.com.br/listedCompaniesProxy/CompanyCall/GetListedSupplementCompany/<base64 {issuingCompany, language}>",
+        "https://sistemaswebb3-listados.b3.com.br/indexProxy/indexCall/GetPortfolioDay/<base64 {index, pageNumber, pageSize}>"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "issuingCompany (ITUB)",
+        "codeCVM",
+        "CNPJ",
+        "ISIN"
+      ],
+      "license": "uso do site público; API não documentada, pode mudar",
+      "extraction": "Chamada semanal por emissor; guardar proventos e mudanças de capital; composição do IFNC/IBOV mensal.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 5,
+      "access_test": "2026-11-28: GetInitialCompanies 'itau' 200 (8 registros, inclusive emissores de dívida como Itaucard e Itaú Veículos); GetListedSupplementCompany ITUB 200 (capital R$ 136,9 bi; 11.026.869.192 ações; JCP mensal); GetPortfolioDay IBOV 200 (76 papéis, carteira de 27/11/26).",
+      "notes": "A busca por emissor também revela entidades do grupo que emitem dívida, útil para a estrutura."
+    },
+    {
+      "id": "ri-sites",
+      "name": "Sites de relações com investidores (RI) dos bancos",
+      "block": "fatos_relevantes",
+      "publisher": "cada banco",
+      "scope": "BR",
+      "description": "Releases de resultados, apresentações, planilhas de séries históricas (o formato mais útil), relatórios de gerenciamento de riscos (Pilar 3/GRSAC em PDF), ratings, guidance, calendário.",
+      "coverage": "Bancos listados e grandes não listados (Caixa, Sicredi, Sicoob publicam relatórios e DFs).",
+      "format": "PDF, XLSX, HTML",
+      "access": "scrape",
+      "endpoint": [
+        "https://ri.bb.com.br/informacoes-financeiras/central-de-resultados/",
+        "https://ri.bb.com.br/informacoes-financeiras/relatorio-de-gerenciamento-de-riscos/",
+        "https://www.bradescori.com.br/",
+        "https://ri.btgpactual.com/",
+        "https://ri.caixa.gov.br/informacoes-financeiras/gerenciamento-de-riscos-e-capital/",
+        "https://nu.com/en/investors",
+        "https://investors.inter.co/",
+        "https://www.sicredi.com.br/site/sobre-nos/relatorios/",
+        "https://www.sicoob.com.br/web/sicoob/relatorios"
+      ],
+      "frequency": "trimestral (resultados), com picos em fevereiro, maio, agosto e novembro",
+      "identifiers": [
+        "URL",
+        "trimestre"
+      ],
+      "license": "conteúdo protegido por direito autoral; uso para pesquisa interna com link de volta",
+      "extraction": "Page diff trimestral das centrais de resultados; baixar a planilha de séries quando existir (dispensa PDF); PDFs só para o que não estiver em CVM IPE ou DASFN.",
+      "effort_days": 2,
+      "value": "média",
+      "phase": 4,
+      "access_test": "2026-11-28: BB 200; Bradesco 200; BTG 200; Caixa (ri.caixa.gov.br) 200; Nu 200; Inter 200; Sicredi 200; Sicoob 200. Itaú (www.itau.com.br/relacoes-com-investidores) 403 e ri.itau.com.br sem resposta; Santander (www.santander.com.br/ri, ri.santander.com.br) 403. Nada contornado.",
+      "notes": "Itaú e Santander: usar CVM IPE (releases e apresentações são enviados à CVM) e SEC 6-K."
+    },
+    {
+      "id": "febraban-abbc",
+      "name": "FEBRABAN e ABBC: dados agregados do setor",
+      "block": "agregado_setorial",
+      "publisher": "FEBRABAN / ABBC",
+      "scope": "BR",
+      "description": "Pesquisa de Tecnologia Bancária, Panorama de crédito, Pesquisa Especial de Crédito, Estudo do Spread (FEBRABAN); análises setoriais de crédito e leitura de bancos médios (ABBC).",
+      "coverage": "Setor; não por instituição.",
+      "format": "PDF/HTML/RSS",
+      "access": "scrape/RSS",
+      "endpoint": [
+        "docs/sources/febraban.md",
+        "docs/sources/associacoes-bancarias.md"
+      ],
+      "frequency": "semanal a anual",
+      "identifiers": [
+        "edição"
+      ],
+      "license": "conteúdo das associações",
+      "extraction": "Já mapeado nesses dois documentos; aqui só como contexto e denominador.",
+      "effort_days": 0,
+      "value": "média",
+      "phase": null,
+      "access_test": "Ver febraban.md (25/11/2026) e associacoes-bancarias.md.",
+      "notes": ""
+    },
+    {
+      "id": "receita-cnpj",
+      "name": "Receita Federal: CNPJ dados abertos (Empresas, Estabelecimentos, Sócios)",
+      "block": "estrutura",
+      "publisher": "Receita Federal / SERPRO",
+      "scope": "BR",
+      "description": "Todas as pessoas jurídicas: razão social, natureza jurídica, capital, porte; estabelecimentos (endereço, CNAE, situação); sócios (QSA: nome, CNPJ/CPF mascarado, qualificação, data de entrada). Para sociedades anônimas o QSA traz administradores, não acionistas; para limitadas traz os sócios (inclusive PJ).",
+      "coverage": "Brasil inteiro; snapshot mensal.",
+      "format": "CSV em ZIP (37 arquivos; Socios ≈ 700 MB, Estabelecimentos ≈ 5,5 GB)",
+      "access": "bulk (WebDAV público do Nextcloud)",
+      "endpoint": [
+        "https://arquivos.receitafederal.gov.br/index.php/s/YggdBLfdninEJX9 (compartilhamento 'CNPJ')",
+        "WebDAV: PROPFIND https://arquivos.receitafederal.gov.br/public.php/webdav/AAAA-MM/ (usuário = token do compartilhamento)"
+      ],
+      "frequency": "mensal (2026-11 gerado em 16/11/2026)",
+      "identifiers": [
+        "CNPJ básico (8)",
+        "CNPJ completo",
+        "CNPJ/CPF do sócio (CPF mascarado)"
+      ],
+      "license": "dados públicos (Lei de Acesso à Informação); CPF mascarado; LGPD aplicável a pessoas físicas",
+      "extraction": "Para a árvore do conglomerado: carregar Socios*.zip e Empresas*.zip num DuckDB, filtrar sócios PJ cujo CNPJ básico pertence ao grupo e iterar (filhas das filhas). Pesado (≈ 1 GB comprimido só para Empresas + Sócios), mas é a única fonte completa de controladas não financeiras.",
+      "effort_days": 3,
+      "value": "alta",
+      "phase": 3,
+      "access_test": "2026-11-28: PROPFIND 207; pastas mensais até 2026-11 (Empresas0 581 MB, Socios0 256 MB, Estabelecimentos0 2,3 GB). A URL antiga /dados/cnpj/dados_abertos_cnpj/ dá 404. Nada baixado.",
+      "notes": "Limitação forte: para S.A. (todos os grandes bancos), o QSA não mostra o acionista controlador. Combinar com FRE e GLEIF."
+    },
+    {
+      "id": "cnpj-apis-unitarias",
+      "name": "APIs de consulta unitária de CNPJ (BrasilAPI, minhareceita.org)",
+      "block": "estrutura",
+      "publisher": "projetos de código aberto sobre os dados da Receita",
+      "scope": "BR",
+      "description": "Ficha de um CNPJ com QSA, CNAE, natureza jurídica, endereço.",
+      "coverage": "Qualquer CNPJ.",
+      "format": "JSON",
+      "access": "api",
+      "endpoint": [
+        "https://brasilapi.com.br/api/cnpj/v1/{cnpj}",
+        "https://minhareceita.org/{cnpj}"
+      ],
+      "frequency": "segue o snapshot mensal da Receita",
+      "identifiers": [
+        "CNPJ"
+      ],
+      "license": "projetos abertos; uso moderado, sem SLA",
+      "extraction": "Só para checagem pontual e para o cadastro mestre das ~200 entidades-alvo; não para varredura.",
+      "effort_days": 0.3,
+      "value": "média",
+      "phase": 0,
+      "access_test": "2026-11-28: BrasilAPI Itaú Unibanco Holding 200 (64 entradas no QSA, todas administradores); minhareceita Itaú Unibanco S.A. 200 (138 entradas).",
+      "notes": "Mostra na prática a limitação do QSA para S.A."
+    },
+    {
+      "id": "gleif-lei",
+      "name": "GLEIF: LEI nível 1 e relações nível 2 (pai direto e final)",
+      "block": "estrutura",
+      "publisher": "GLEIF",
+      "scope": "global",
+      "description": "Identidade da pessoa jurídica (nome, jurisdição, número de registro = CNPJ no Brasil) e relações de consolidação contábil (direct/ultimate parent e children), com exceções de reporte.",
+      "coverage": "Mundial; quem tem LEI (obrigatório para quem negocia derivativos/títulos em vários mercados).",
+      "format": "JSON:API; Golden Copy diária (CSV/XML/JSON)",
+      "access": "api + bulk",
+      "endpoint": [
+        "https://api.gleif.org/api/v1/lei-records?filter[entity.registeredAs]=<CNPJ formatado>",
+        "https://api.gleif.org/api/v1/lei-records/{LEI}/direct-children",
+        "https://api.gleif.org/api/v1/lei-records/{LEI}/ultimate-children"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "LEI (ISO 17442)",
+        "registeredAs (CNPJ)",
+        "BIC/ISIN por mapeamento"
+      ],
+      "license": "CC0",
+      "extraction": "Resolver CNPJ → LEI das líderes; puxar ultimate-children; usar como esqueleto internacional do grupo (subsidiárias no exterior).",
+      "effort_days": 1,
+      "value": "alta",
+      "phase": 0,
+      "access_test": "2026-11-28: Itaú Unibanco Holding = 5493002W2IVG62O3ZJ94 (registeredAs 60.872.504/0001-23); 8 filhas diretas (Itaú Unibanco S.A., Banco Itaú Chile, Itaú BBA International plc, Hipercard...) e 20 filhas finais; pai direto com exceção 'NATURAL_PERSONS'. LEIs das demais líderes resolvidos por CNPJ (ver §3).",
+      "notes": "Cobertura parcial: 20 filhas finais para um grupo com centenas de entidades. Bom para o exterior, fraco para controladas locais."
+    },
+    {
+      "id": "juntas-comerciais",
+      "name": "Juntas Comerciais (JUCESP, JUCERJA...) e REDESIM",
+      "block": "estrutura",
+      "publisher": "Juntas estaduais",
+      "scope": "BR",
+      "description": "Atos societários registrados (atas, alterações, eleição de administradores), ficha cadastral completa.",
+      "coverage": "Empresas por estado.",
+      "format": "PDF/HTML (certidões)",
+      "access": "manual",
+      "endpoint": [
+        "https://www.jucesponline.sp.gov.br/"
+      ],
+      "frequency": "contínua",
+      "identifiers": [
+        "NIRE",
+        "CNPJ"
+      ],
+      "license": "certidões em geral pagas; consulta com CAPTCHA",
+      "extraction": "Não automatizar. Para bancos listados, atas e reestruturações chegam pela CVM (IPE: Assembleia, Reunião da Administração).",
+      "effort_days": 0,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "Não testado (CAPTCHA e cobrança conhecidos; fora do escopo de coleta legal e automatizável).",
+      "notes": ""
+    },
+    {
+      "id": "sec-edgar-submissions",
+      "name": "SEC EDGAR: submissions API (lista de filings por empresa)",
+      "block": "fatos_relevantes",
+      "publisher": "SEC",
+      "scope": "US/global",
+      "description": "Todos os filings de um emissor (10-K, 10-Q, 8-K para americanos; 20-F, 6-K para estrangeiros; 40-F para canadenses) com datas, accession number e documento principal.",
+      "coverage": "Todos os registrados na SEC, inclusive Itaú, Bradesco, Santander Brasil, Nu, Inter&Co, XP e a maioria dos G-SIBs.",
+      "format": "JSON",
+      "access": "api",
+      "endpoint": [
+        "https://data.sec.gov/submissions/CIK##########.json"
+      ],
+      "frequency": "tempo real (minutos após o filing)",
+      "identifiers": [
+        "CIK",
+        "ticker",
+        "accession number"
+      ],
+      "license": "domínio público; política de acesso justo (≤ 10 req/s, User-Agent declarado)",
+      "extraction": "Polling diário por CIK; para 6-K/8-K novos, baixar o documento principal e classificar como fato relevante; 20-F/10-K anuais para segmentos e riscos.",
+      "effort_days": 1,
+      "value": "alta",
+      "phase": 5,
+      "access_test": "2026-11-28: data.sec.gov 200 com User-Agent genérico (Itaú 1132597, Bradesco 1160330, Santander Brasil 1471055, Nu 1691493, XP 1787425, JPMorgan 19617 e mais 17 G-SIBs). www.sec.gov/files/company_tickers.json 403 com User-Agent genérico: a SEC exige User-Agent com contato, a configurar com dado do usuário. Inter&Co = CIK 1864163 (busca efts).",
+      "notes": "Os bancos brasileiros com ADR publicam aqui, em inglês, o mesmo conteúdo dos releases (6-K)."
+    },
+    {
+      "id": "sec-xbrl-companyfacts",
+      "name": "SEC EDGAR: XBRL companyfacts, companyconcept e frames",
+      "block": "prudencial_contabil",
+      "publisher": "SEC",
+      "scope": "US/global",
+      "description": "Todos os fatos XBRL já reportados por um emissor, por conceito e período (us-gaap para americanos; ifrs-full para estrangeiros em IFRS); 'frames' dá um conceito para todos os emissores num período.",
+      "coverage": "Emissores com XBRL (desde ~2009).",
+      "format": "JSON",
+      "access": "api",
+      "endpoint": [
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json",
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK##########/us-gaap/Assets.json",
+        "https://data.sec.gov/api/xbrl/frames/us-gaap/Assets/USD/CY2025Q4I.json"
+      ],
+      "frequency": "a cada filing",
+      "identifiers": [
+        "CIK",
+        "taxonomia:conceito",
+        "accn",
+        "frame (CY2026Q3I)"
+      ],
+      "license": "domínio público",
+      "extraction": "Coletor por CIK dos bancos-alvo; mapear conceitos ifrs-full/us-gaap para o dicionário de KPIs. Bancos americanos: dados trimestrais completos; estrangeiros: só o anual (20-F) e o que for marcado.",
+      "effort_days": 1.5,
+      "value": "alta",
+      "phase": 5,
+      "access_test": "2026-11-28: JPMorgan Assets 200 (último 2026-09-30: US$ 5,09 tri, 10-Q de 03/11/2026); Itaú companyfacts 200 (968 KB; 336 conceitos ifrs-full e 339 us-gaap); Nu companyfacts 200 (151 conceitos ifrs-full); frame Assets CY2025Q4I 200 (833 KB).",
+      "notes": ""
+    },
+    {
+      "id": "fdic-bankfind",
+      "name": "FDIC BankFind Suite API (instituições, financials, histórico, agências)",
+      "block": "prudencial_contabil",
+      "publisher": "FDIC",
+      "scope": "US",
+      "description": "Por banco segurado (não holding): mais de 1.000 variáveis do call report já padronizadas (ativo, depósitos, lucro, ROE, ROA, NPL, Tier 1), estrutura (holding RSSD), histórico de eventos (fusões), agências com geolocalização (SOD).",
+      "coverage": "Todos os bancos segurados pela FDIC; desde 1934 (financials desde 1992).",
+      "format": "JSON/CSV",
+      "access": "api",
+      "endpoint": [
+        "https://api.fdic.gov/banks/institutions",
+        "https://api.fdic.gov/banks/financials",
+        "https://api.fdic.gov/banks/history",
+        "https://api.fdic.gov/banks/locations",
+        "https://api.fdic.gov/banks/sod"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "CERT",
+        "FED_RSSD",
+        "RSSDHCR (holding)"
+      ],
+      "license": "domínio público (governo dos EUA)",
+      "extraction": "Consultas por CERT com fields= e sort_by=REPDTE; o domínio banks.data.fdic.gov redireciona (301) para api.fdic.gov.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 5,
+      "access_test": "2026-11-28: financials CERT 628 (JPMorgan Chase Bank, N.A.) 200 (171 trimestres; 2026-09-30: ativo US$ 4,17 tri, ROE 17,64%); institutions 200 (holding RSSD 1039502).",
+      "notes": ""
+    },
+    {
+      "id": "ffiec-cdr",
+      "name": "FFIEC CDR: call reports (FFIEC 031/041/051) e UBPR",
+      "block": "prudencial_contabil",
+      "publisher": "FFIEC",
+      "scope": "US",
+      "description": "Call report completo de cada banco (todas as schedules, códigos MDRM) e o UBPR (indicadores).",
+      "coverage": "Bancos americanos; desde 2001 no CDR.",
+      "format": "TXT/XBRL em ZIP; SOAP/REST",
+      "access": "bulk + api (com conta)",
+      "endpoint": [
+        "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+        "REST: https://ffieccdr.azure-api.us/public/... (token gratuito)"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "IDRSSD",
+        "código MDRM"
+      ],
+      "license": "domínio público",
+      "extraction": "Só se a FDIC não bastar (detalhe de schedule). Bulk por trimestre via página; a REST pede cadastro (gratuito).",
+      "effort_days": 1,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: página de bulk 200 (formulário ASP.NET); REST sem token 401.",
+      "notes": ""
+    },
+    {
+      "id": "ffiec-nic-fry9c",
+      "name": "FFIEC NIC: FR Y-9C (holdings) e estrutura organizacional",
+      "block": "estrutura",
+      "publisher": "Federal Reserve / FFIEC",
+      "scope": "US",
+      "description": "Demonstrações consolidadas das holdings (FR Y-9C), relações de controle entre entidades (estrutura completa de grupos americanos, com RSSD).",
+      "coverage": "Holdings com mais de US$ 3 bi; histórico longo.",
+      "format": "CSV/XML/PDF",
+      "access": "bulk (atrás de CAPTCHA)",
+      "endpoint": [
+        "https://www.ffiec.gov/npw/FinancialReport/FinancialDataDownload",
+        "https://www.chicagofed.org/banking/financial-institution-reports/bhc-data (histórico até 2021)"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "RSSD"
+      ],
+      "license": "domínio público",
+      "extraction": "Download manual trimestral dos arquivos de relações e do Y-9C; sem automação enquanto houver CAPTCHA. Alternativa: 10-Q/10-K via SEC para as holdings listadas.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": null,
+      "access_test": "2026-11-28: ffiec.gov/npw 403 'CAPTCHA Error' (download e relatório); Chicago Fed 200 (histórico).",
+      "notes": ""
+    },
+    {
+      "id": "fed-lbr",
+      "name": "Federal Reserve: Large Commercial Banks (lista trimestral)",
+      "block": "agregado_setorial",
+      "publisher": "Federal Reserve",
+      "scope": "US",
+      "description": "Ranking dos bancos comerciais americanos por ativo consolidado, com RSSD e holding.",
+      "coverage": "Bancos com mais de US$ 300 mi.",
+      "format": "HTML/CSV",
+      "access": "scrape leve",
+      "endpoint": [
+        "https://www.federalreserve.gov/releases/lbr/current/"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "RSSD"
+      ],
+      "license": "domínio público",
+      "extraction": "Snapshot trimestral para o ranking de bancos americanos.",
+      "effort_days": 0.3,
+      "value": "baixa",
+      "phase": 5,
+      "access_test": "2026-11-28: 200 (1,6 MB).",
+      "notes": ""
+    },
+    {
+      "id": "ecb-sup",
+      "name": "BCE: Supervisory Banking Statistics (SUP) e Consolidated Banking Data (CBD2)",
+      "block": "agregado_setorial",
+      "publisher": "BCE / SSM",
+      "scope": "EU",
+      "description": "Indicadores agregados dos bancos significativos (capital, NPL, ROE, custo/receita, liquidez) por país e por modelo de negócio; CBD2 com dados consolidados do sistema bancário da UE.",
+      "coverage": "Zona do euro e UE; agregados, não por banco.",
+      "format": "SDMX (CSV/JSON/XML)",
+      "access": "api",
+      "endpoint": [
+        "https://data-api.ecb.europa.eu/service/data/SUP",
+        "https://data-api.ecb.europa.eu/service/data/CBD2"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "chave SDMX (SUP.Q.B01...)"
+      ],
+      "license": "reuso permitido com citação da fonte (BCE)",
+      "extraction": "Selecionar séries por chave; denominador e benchmark europeu para os KPIs.",
+      "effort_days": 0.5,
+      "value": "média",
+      "phase": 5,
+      "access_test": "2026-11-28: dataflow SUP 200; SUP serieskeysonly 200 (28.344 séries); CBD2 serieskeysonly 200 (66.139 séries).",
+      "notes": "Para dados por banco na UE, usar EBA e Pilar 3."
+    },
+    {
+      "id": "eba-transparency",
+      "name": "EBA: EU-wide Transparency Exercise (última edição 2025)",
+      "block": "prudencial_contabil",
+      "publisher": "EBA",
+      "scope": "EU",
+      "description": "Banco a banco (≈ 120 bancos de 26 países): capital, RWA, alavancagem, crédito por setor (NACE), NPE, risco soberano, risco de mercado, rentabilidade.",
+      "coverage": "Datas-base 09/2024 a 06/2025 na edição de 2025; série desde 2013.",
+      "format": "CSV (full database) + XLSX + Power BI",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.eba.europa.eu/risk-and-data-analysis/risk-analysis/eu-wide-transparency-exercise",
+        "https://www.eba.europa.eu/assets/TE2025/Full_database/883401/tr_cre.csv"
+      ],
+      "frequency": "descontinuado em jun/2025 (última publicação em dez/2025)",
+      "identifiers": [
+        "LEI",
+        "código EBA do banco"
+      ],
+      "license": "reuso com citação (EBA)",
+      "extraction": "Carga única do histórico para benchmark europeu; não esperar atualização.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 5,
+      "access_test": "2026-11-28: página 200 diz 'discontinued starting from June 2025... users are invited to use Pillar 3 data made available through the EBA Pillar 3 Data Hub'; tr_cre.csv HEAD 200 (123 MB).",
+      "notes": ""
+    },
+    {
+      "id": "eba-p3dh",
+      "name": "EBA Pillar 3 Data Hub (P3DH) no EDAP",
+      "block": "prudencial_contabil",
+      "publisher": "EBA",
+      "scope": "EU",
+      "description": "Divulgações de Pilar 3 padronizadas (templates EU KM1, OV1, CR1...) de todas as instituições grandes e demais na consolidação mais alta, centralizadas pela EBA.",
+      "coverage": "Instituições da UE/EEE (primeira implementação: grandes instituições e grandes subsidiárias).",
+      "format": "web (relatórios) + arquivos; API não confirmada",
+      "access": "scrape/manual por ora",
+      "endpoint": [
+        "https://www.eba.europa.eu/risk-and-data-analysis/pillar-3-data-hub",
+        "https://edap-public.eba.europa.eu/"
+      ],
+      "frequency": "trimestral/semestral/anual por template",
+      "identifiers": [
+        "LEI",
+        "código do template (EU KM1...)"
+      ],
+      "license": "reuso com citação (EBA)",
+      "extraction": "Investigar o EDAP (redireciona para uma seleção de 'tenant'); se houver exportação aberta, é o substituto do transparency exercise e conversa com o DASFN brasileiro (mesmos códigos BCBS).",
+      "effort_days": 2,
+      "value": "alta",
+      "phase": 5,
+      "access_test": "2026-11-28: página do P3DH 200; edap-public.eba.europa.eu responde 302 para /account/tenant/2 (acesso anônimo não confirmado).",
+      "notes": ""
+    },
+    {
+      "id": "pilar3-global",
+      "name": "Relatórios de Pilar 3 dos bancos globais (PDF/XLSX nos sites)",
+      "block": "prudencial_contabil",
+      "publisher": "cada banco",
+      "scope": "global",
+      "description": "Templates BCBS (KM1, OV1, CC1, LR1, LIQ1, GSIB1...) em PDF e muitas vezes XLSX, nos sites de RI.",
+      "coverage": "G-SIBs e bancos listados.",
+      "format": "PDF/XLSX",
+      "access": "scrape",
+      "endpoint": [
+        "(por banco; ex.: seção 'Pillar 3' de cada RI)"
+      ],
+      "frequency": "trimestral/semestral",
+      "identifiers": [
+        "LEI",
+        "template BCBS"
+      ],
+      "license": "conteúdo do banco",
+      "extraction": "Preferir XLSX; extrair a KM1 com o mesmo esquema do DASFN para comparar Brasil × mundo. Para a UE, preferir o P3DH quando abrir.",
+      "effort_days": 3,
+      "value": "média",
+      "phase": 5,
+      "access_test": "Não testado banco a banco.",
+      "notes": ""
+    },
+    {
+      "id": "fsb-gsib",
+      "name": "FSB/BCBS: lista de G-SIBs e indicadores do exercício",
+      "block": "agregado_setorial",
+      "publisher": "FSB / BCBS",
+      "scope": "global",
+      "description": "Lista anual dos bancos sistemicamente importantes globais, por bucket de sobrecapital; o BCBS publica os 13 indicadores de alto nível da amostra.",
+      "coverage": "29 G-SIBs em 2026; amostra BCBS ≈ 75 bancos.",
+      "format": "HTML + PDF (FSB); XLSX (BCBS)",
+      "access": "manual/scrape leve",
+      "endpoint": [
+        "https://www.fsb.org/2026/11/2026-list-of-global-systemically-important-banks-g-sibs/",
+        "https://www.fsb.org/uploads/P251126.pdf"
+      ],
+      "frequency": "anual (novembro)",
+      "identifiers": [
+        "nome do banco (casar com LEI)"
+      ],
+      "license": "público",
+      "extraction": "Carga anual: define o universo 'top bancos globais' do Watch.",
+      "effort_days": 0.2,
+      "value": "alta",
+      "phase": 0,
+      "access_test": "2026-11-28: página e PDF 200. Lista de 2026: 29 bancos; BNP Paribas subiu do bucket 2 para o 3 e MUFG desceu do 2 para o 1 (ver §3.2).",
+      "notes": ""
+    },
+    {
+      "id": "bis-cbs",
+      "name": "BIS: Consolidated Banking Statistics",
+      "block": "agregado_setorial",
+      "publisher": "BIS",
+      "scope": "global",
+      "description": "Exposições internacionais dos sistemas bancários por nacionalidade do banco e país de contraparte.",
+      "coverage": "≈ 30 países reportantes; agregados.",
+      "format": "SDMX/CSV",
+      "access": "api",
+      "endpoint": [
+        "https://data.bis.org/topics/CBS"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "país",
+        "chave SDMX"
+      ],
+      "license": "reuso com citação (BIS)",
+      "extraction": "Contexto de exposição internacional (ex.: bancos espanhóis no Brasil).",
+      "effort_days": 0.5,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: portal 200.",
+      "notes": ""
+    },
+    {
+      "id": "edinet",
+      "name": "EDINET (FSA do Japão): relatórios de valores mobiliários",
+      "block": "prudencial_contabil",
+      "publisher": "FSA Japão",
+      "scope": "JP",
+      "description": "Relatórios anuais e trimestrais em XBRL dos bancos japoneses (MUFG, SMFG, Mizuho).",
+      "coverage": "Emissores japoneses.",
+      "format": "XBRL/PDF",
+      "access": "api (chave gratuita)",
+      "endpoint": [
+        "https://api.edinet-fsa.go.jp/api/v2/documents.json?date=AAAA-MM-DD&type=1"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "código EDINET"
+      ],
+      "license": "uso livre com cadastro",
+      "extraction": "Desnecessário no início: os três bancos japoneses entregam 20-F na SEC.",
+      "effort_days": 0.5,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: 401 sem chave (esperado).",
+      "notes": ""
+    },
+    {
+      "id": "precos-yahoo",
+      "name": "Yahoo Finance (endpoint não oficial de gráficos)",
+      "block": "precos_acoes",
+      "publisher": "Yahoo",
+      "scope": "global",
+      "description": "Preços diários e intradiários de ações e ADRs, inclusive .SA.",
+      "coverage": "Global.",
+      "format": "JSON",
+      "access": "api não oficial",
+      "endpoint": [
+        "https://query1.finance.yahoo.com/v8/finance/chart/ITUB4.SA?range=5d&interval=1d"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "ticker Yahoo (ITUB4.SA, JPM)"
+      ],
+      "license": "termos do Yahoo proíbem uso automatizado e redistribuição; sem SLA",
+      "extraction": "Só para protótipo e para tickers fora da B3; em produção, preferir B3 COTAHIST (Brasil), SEC/sites oficiais e um fornecedor licenciado.",
+      "effort_days": 0.3,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: 200 (ITUB4.SA, 5 dias).",
+      "notes": ""
+    },
+    {
+      "id": "precos-stooq",
+      "name": "Stooq (CSV de preços)",
+      "block": "precos_acoes",
+      "publisher": "Stooq",
+      "scope": "global",
+      "description": "CSV diário de ações globais.",
+      "coverage": "Global.",
+      "format": "CSV",
+      "access": "bulk",
+      "endpoint": [
+        "https://stooq.com/q/d/l/?s=jpm.us&i=d"
+      ],
+      "frequency": "diária",
+      "identifiers": [
+        "ticker Stooq"
+      ],
+      "license": "uso pessoal",
+      "extraction": "Hoje inviável sem navegador.",
+      "effort_days": 0,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "2026-11-28: 200 com página de verificação JavaScript em vez do CSV (jpm.us e itub4.br).",
+      "notes": ""
+    },
+    {
+      "id": "vocab-bcbs-templates",
+      "name": "Templates de divulgação do BCBS (Pilar 3: KM1, OV1, CC1, LR1, LIQ1, NSFR...)",
+      "block": "vocabulario",
+      "publisher": "BCBS",
+      "scope": "global",
+      "description": "Códigos e linhas padronizados internacionalmente; o DASFN brasileiro e o P3DH europeu usam os mesmos códigos.",
+      "coverage": "Global.",
+      "format": "especificação (Basel Framework, DIS)",
+      "access": "manual",
+      "endpoint": [
+        "https://www.bis.org/basel_framework/standard/DIS.htm"
+      ],
+      "frequency": "quando o BCBS revisa",
+      "identifiers": [
+        "código de template e linha (km1_1 = CET1)"
+      ],
+      "license": "público",
+      "extraction": "Usar como vocabulário canônico de KPIs prudenciais (capital, RWA, alavancagem, liquidez).",
+      "effort_days": 0.5,
+      "value": "alta",
+      "phase": 1,
+      "access_test": "Referência; não testado como API.",
+      "notes": ""
+    },
+    {
+      "id": "vocab-ifrs-usgaap",
+      "name": "Taxonomias XBRL: IFRS Accounting Taxonomy e US GAAP",
+      "block": "vocabulario",
+      "publisher": "IFRS Foundation / FASB",
+      "scope": "global",
+      "description": "Conceitos contábeis padronizados (ifrs-full:Assets, InterestIncome...; us-gaap:InterestIncomeExpenseNet...).",
+      "coverage": "Global.",
+      "format": "XBRL (XSD + linkbases)",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.ifrs.org/issued-standards/ifrs-taxonomy/"
+      ],
+      "frequency": "anual",
+      "identifiers": [
+        "nome do elemento"
+      ],
+      "license": "IFRS: termos da IFRS Foundation; US GAAP: público",
+      "extraction": "Mapear os ~40 KPIs do dicionário para elementos IFRS/US GAAP (para ler companyfacts da SEC).",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 4,
+      "access_test": "2026-11-28: página IFRS 200.",
+      "notes": "Detalhes de formato em leis-ontologias-formatos.md."
+    },
+    {
+      "id": "vocab-fibo",
+      "name": "FIBO (Financial Industry Business Ontology)",
+      "block": "vocabulario",
+      "publisher": "EDM Council",
+      "scope": "global",
+      "description": "Ontologia de entidades, papéis, controle societário, produtos e contratos financeiros.",
+      "coverage": "Global.",
+      "format": "OWL/RDF",
+      "access": "bulk",
+      "endpoint": [
+        "https://spec.edmcouncil.org/fibo/",
+        "https://github.com/edmcouncil/fibo"
+      ],
+      "frequency": "trimestral",
+      "identifiers": [
+        "IRI"
+      ],
+      "license": "MIT",
+      "extraction": "Mapear (não importar) ~30 classes: banco, conglomerado, controle, produtos de crédito/depósito.",
+      "effort_days": 1,
+      "value": "média",
+      "phase": 4,
+      "access_test": "2026-11-28: spec.edmcouncil.org 403 ao nosso User-Agent; API do GitHub 403 (limite anônimo). O levantamento de leis e ontologias já cobre a decisão.",
+      "notes": ""
+    },
+    {
+      "id": "vocab-ffiec-mdrm-eba-dpm",
+      "name": "MDRM (FFIEC/Fed) e EBA DPM (FINREP/COREP)",
+      "block": "vocabulario",
+      "publisher": "Federal Reserve / EBA",
+      "scope": "US/EU",
+      "description": "Dicionários de itens dos relatórios regulatórios americanos e europeus.",
+      "coverage": "US/EU.",
+      "format": "CSV/XLSX/DB",
+      "access": "bulk",
+      "endpoint": [
+        "https://www.federalreserve.gov/apps/mdrm/",
+        "https://www.eba.europa.eu/risk-and-data-analysis/reporting/dpm-data-dictionary"
+      ],
+      "frequency": "a cada versão",
+      "identifiers": [
+        "código MDRM",
+        "código DPM"
+      ],
+      "license": "público",
+      "extraction": "Só se formos além do FDIC/EBA agregados.",
+      "effort_days": 0.5,
+      "value": "baixa",
+      "phase": null,
+      "access_test": "Não testado.",
+      "notes": ""
+    }
+  ],
+  "verified_calls": [
+    {
+      "source": "SGS série 432",
+      "call": "GET api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/2",
+      "result": "200, 77 B",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "IF.data OData ListaDeRelatorio",
+      "call": "GET olinda.../IFDATA/versao/v1/odata/ListaDeRelatorio()",
+      "result": "200, 16 relatórios",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "IF.data OData IfDataCadastro/IfDataValores",
+      "call": "várias datas-base e sintaxes",
+      "result": "500 'Erro desconhecido' em todas",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "IF.data web índice 2025+",
+      "call": "GET www3.bcb.gov.br/ifdata/rest/relatorios2025a2030",
+      "result": "200, 1,6 MB, 202503..202606",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "IF.data web cadastro prudencial 06/2026",
+      "call": "GET .../rest/arquivos?nomeArquivo=ifdata_2025_2030/202606/cadastro202606_1009.json",
+      "result": "200, 742 KB, 1.398 entidades",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "IF.data web dados 06/2026",
+      "call": "GET .../dados202606_1.json",
+      "result": "200, 15,7 MB; ranking por ativo total",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Balancete prudencial 06/2026",
+      "call": "GET bcb.gov.br/content/estabilidadefinanceira/cosif/Conglomerados-prudenciais/202606BLOPRUDENCIAL.csv.zip",
+      "result": "200, 1,7 MB, 85.705 linhas",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Balancete bancos 09/2026",
+      "call": "HEAD .../Bancos/202609BANCOS.csv.zip",
+      "result": "404 (publicação prevista para 30/11)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "ESTBAN município 06/2026",
+      "call": "GET bcb.gov.br/content/estatisticas/estatistica_bancaria_estban/municipio/202606_ESTBAN.csv.zip",
+      "result": "200, 883 KB, 7.951 linhas",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Plano de contas Cosif",
+      "call": "HEAD .../cosif/plano-de-contas/PlanoContasCOSIF.csv.zip",
+      "result": "200, 54 KB",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "DASFN catálogo",
+      "call": "GET olinda.../DASFN/versao/v1/odata/Recursos?$top=20000",
+      "result": "200, 10.478 recursos, 247 instituições com Pilar 3",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Pilar 3 KM1 BTG 2026-2",
+      "call": "GET ri.btgpactual.com/api/dadosabertos/pillar3/km1/v2/2026-2",
+      "result": "200, 3,9 KB",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Pilar 3 KM1 BB 2026-2",
+      "call": "GET api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/v2/2026-2",
+      "result": "200, 4,0 KB (layout v1 do mesmo período: 422)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Taxas de juros por IF",
+      "call": "GET olinda.../taxaJuros/versao/v2/odata/TaxasJurosMensalPorMes?$top=2&$orderby=Mes desc",
+      "result": "200, Set-2026",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Tarifas BB PF",
+      "call": "GET olinda.../ListaTarifasPorInstituicaoFinanceira(PessoaFisicaOuJuridica='F',CNPJ='00000000')",
+      "result": "200 (~4 s)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Agências",
+      "call": "GET olinda.../Informes_Agencias/versao/v1/odata/Agencias?$top=1",
+      "result": "200; $count 403",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Ranking de reclamações 2026 T2",
+      "call": "GET www3.bcb.gov.br/rdrweb/rest/ext/ranking/arquivo?ano=2026&periodicidade=TRIMESTRAL&periodo=2&tipo=Bancos+e+financeiras",
+      "result": "200, 28,5 KB CSV",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Instituições em funcionamento",
+      "call": "GET olinda.../Instituicoes_em_funcionamento/versao/v1/odata/SedesBancoComMultCE?$top=1",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "BcBase entidades supervisionadas",
+      "call": "GET olinda.../BcBase/versao/v2/odata/EntidadesSupervisionadas(dataBase='2026-11-01')",
+      "result": "500",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Pix chaves por participante",
+      "call": "GET olinda.../Pix_DadosAbertos/versao/v1/odata/ChavesPix(Data='2026-10-31')",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "CKAN BCB",
+      "call": "GET dadosabertos.bcb.gov.br/api/3/action/package_search?q=...",
+      "result": "200; licença ODbL; 591 pacotes 'ir-<CNPJ>' do SFN",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "CVM cadastro",
+      "call": "GET dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv",
+      "result": "200, 1 MB",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "CVM IPE 2026",
+      "call": "GET dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_2026.zip",
+      "result": "200, 2 MB, 41.625 documentos",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "CVM RAD download",
+      "call": "GET rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?...",
+      "result": "200, PDF",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "CVM FRE metadados",
+      "call": "GET dados.cvm.gov.br/.../FRE/META/meta_fre_cia_aberta.zip",
+      "result": "200, 50 tabelas",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "B3 COTAHIST",
+      "call": "HEAD bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A2026.ZIP e _D26112026.ZIP",
+      "result": "200 (98 MB e 445 KB)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "B3 empresas e índices",
+      "call": "GET sistemaswebb3-listados.b3.com.br/... (GetInitialCompanies, GetListedSupplementCompany, GetPortfolioDay)",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Open Finance diretório",
+      "call": "GET data.directory.openbankingbrasil.org.br/participants",
+      "result": "200, 4,5 MB, 105 organizações",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Open Finance BB empréstimos",
+      "call": "GET opendata.api.bb.com.br/open-banking/opendata-loans/v1/personal-loans?page-size=1",
+      "result": "200 (taxas zeradas)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Open Finance Nubank contas",
+      "call": "GET opendata.api.nubank.com.br/open-banking/opendata-accounts/v1/personal-accounts",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "GLEIF Itaú",
+      "call": "GET api.gleif.org/api/v1/lei-records?filter[entity.legalName]=...; /direct-children; /ultimate-children",
+      "result": "200; 8 filhas diretas, 20 finais",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Receita CNPJ (WebDAV)",
+      "call": "PROPFIND arquivos.receitafederal.gov.br/public.php/webdav/2026-11/",
+      "result": "207; 37 arquivos",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "BrasilAPI / minhareceita",
+      "call": "GET brasilapi.com.br/api/cnpj/v1/60872504000123; minhareceita.org/60701190000104",
+      "result": "200; QSA só com administradores",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "SEC data.sec.gov",
+      "call": "GET submissions e companyfacts/companyconcept/frames",
+      "result": "200 com User-Agent genérico",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "SEC www.sec.gov",
+      "call": "GET www.sec.gov/files/company_tickers.json",
+      "result": "403 (exige User-Agent com contato)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "FDIC BankFind",
+      "call": "GET api.fdic.gov/banks/financials?filters=CERT:628",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "FFIEC NIC",
+      "call": "GET ffiec.gov/npw/FinancialReport/...",
+      "result": "403 CAPTCHA",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "FFIEC CDR REST",
+      "call": "GET ffieccdr.azure-api.us/public/RetrieveReportingPeriods",
+      "result": "401 sem token",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "BCE SUP/CBD2",
+      "call": "GET data-api.ecb.europa.eu/service/data/SUP?detail=serieskeysonly",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "EBA transparency",
+      "call": "GET página + HEAD tr_cre.csv",
+      "result": "200; exercício descontinuado em jun/2025",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "EBA EDAP",
+      "call": "GET edap-public.eba.europa.eu/...",
+      "result": "302 para seleção de tenant",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "FSB G-SIB 2026",
+      "call": "GET fsb.org/2026/11/... e uploads/P251126.pdf",
+      "result": "200",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Yahoo chart",
+      "call": "GET query1.finance.yahoo.com/v8/finance/chart/ITUB4.SA",
+      "result": "200 (não oficial)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Stooq",
+      "call": "GET stooq.com/q/d/l/?s=jpm.us&i=d",
+      "result": "200 com desafio JavaScript (sem CSV)",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "EDINET",
+      "call": "GET api.edinet-fsa.go.jp/api/v2/documents.json",
+      "result": "401 sem chave",
+      "date": "2026-11-28"
+    },
+    {
+      "source": "Sites de RI",
+      "call": "GET das páginas iniciais",
+      "result": "BB, Bradesco, BTG, Caixa, Nu, Inter, Sicredi, Sicoob 200; Itaú e Santander 403",
+      "date": "2026-11-28"
+    }
+  ],
+  "phases": [
+    {
+      "phase": 0,
+      "name": "Cadastro mestre e chaves",
+      "days": 1.5,
+      "items": [
+        "tabela de instituições-alvo (top 10 BR + sistemas cooperativos + Inter + 29 G-SIBs) com CNPJ, código IF.data, CVM, ticker, LEI, CIK",
+        "snapshot mensal de Instituições em funcionamento e CVM cadastro",
+        "lista G-SIB anual"
+      ]
+    },
+    {
+      "phase": 1,
+      "name": "Números prudenciais e contábeis do Brasil",
+      "days": 5,
+      "items": [
+        "coletor IF.data web (Resumo, Capital, Segmentação, DRE, crédito por região/modalidade) com tratamento da quebra 2025",
+        "balancetes prudenciais 4060/4066 mensais",
+        "DASFN Pilar 3 (KM1, OV1, LIQ1, LR1) das instituições-alvo",
+        "CVM DFP/ITR (contas de topo)",
+        "CVM IPE diário (releases, fatos relevantes, ratings)",
+        "dicionário de KPIs v0 (Cosif + BCBS)"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Produtos, preços e reputação",
+      "days": 4,
+      "items": [
+        "taxas de juros por IF (mensal)",
+        "tarifas por IF",
+        "Open Finance: diretório + opendata-* das instituições-alvo (semanal)",
+        "DASFN taxas de cartões",
+        "ranking de reclamações e ouvidorias"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Estrutura dos conglomerados",
+      "days": 4,
+      "items": [
+        "IF.data cadastro 1006 (entidades autorizadas por conglomerado)",
+        "CVM FRE (participações e controladores)",
+        "GLEIF nível 2",
+        "Receita CNPJ (Sócios + Empresas) em DuckDB para as controladas não financeiras",
+        "grafo de entidades com fonte de cada aresta; repetir fase 1 por entidade autorizada (balancete 4010)"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "Geografia e extração de releases",
+      "days": 6,
+      "items": [
+        "ESTBAN município/agência e agências (participação regional)",
+        "Pix por participante e município",
+        "pipeline de PDF/XLSX de releases (CVM IPE + RI): texto por página, tabelas, extração por LLM com esquema e evidência, reconciliação com IF.data/KM1/DFP",
+        "classificador de fatos relevantes"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Bancos globais",
+      "days": 4,
+      "items": [
+        "SEC submissions + companyfacts (EUA, Japão, Reino Unido, Suíça, Espanha, Holanda, Alemanha, Canadá, ADRs brasileiros)",
+        "FDIC BankFind para as subsidiárias bancárias americanas",
+        "EBA transparency 2025 (carga única) e investigação do P3DH",
+        "Pilar 3 dos G-SIBs sem SEC (UE e China) por XLSX/PDF",
+        "preços: B3 COTAHIST; fora do Brasil, fornecedor licenciado ou SEC/sites"
+      ]
+    }
+  ],
+  "total_days": 24.5
+}

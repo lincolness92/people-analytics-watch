@@ -1,0 +1,1560 @@
+{
+  "title": "Fatores externos e propostas: inventário de fontes",
+  "generated": "2026-11-28",
+  "doc": "docs/sources/fatores-externos-e-propostas.md",
+  "fields": {
+    "effort_days": "dias-pessoa para ter a fonte ingerida numa tabela utilizável (sem modelagem)",
+    "access_test": "resultado de uma chamada pequena feita em 28/11/2026 com User-Agent genérico",
+    "bank_metrics": "métrica do banco ou do sistema que a fonte ajuda a explicar"
+  },
+  "count": 52,
+  "sources": [
+    {
+      "id": "bcb-sgs",
+      "name": "BCB SGS - Sistema Gerenciador de Séries Temporais",
+      "kind": "dado",
+      "category": "resultados-sistema",
+      "publisher": "Banco Central do Brasil",
+      "description": "Milhares de séries: juros, crédito (saldo, concessões, taxa, spread, inadimplência por modalidade e PF/PJ, recursos livres/direcionados), câmbio, preços, atividade.",
+      "coverage": "Brasil (algumas por UF/região); séries desde os anos 1980-2000",
+      "granularity": {
+        "spatial": "Brasil; poucas por UF",
+        "temporal": "diária/mensal"
+      },
+      "format": "JSON/CSV",
+      "api": "REST https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?formato=json&dataInicial=&dataFinal= (janela máx. de 10 anos por chamada em séries diárias)",
+      "access": "aberto, sem chave",
+      "license": "dados abertos do BCB (uso livre com citação)",
+      "extraction": "chamada por código; catálogo de códigos via CKAN dadosabertos.bcb.gov.br (package_search)",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "inadimplência rural PF/PJ (21148, 21146, 21136)",
+        "saldo rural (20609, 20597)",
+        "custo de funding (Selic 432, CDI)",
+        "spread e taxa por modalidade",
+        "inadimplência total (21082)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21148/dados/ultimos/3?formato=json",
+        "result": "200; inadimplência PF crédito rural total (21148) = 9,59% em out/2026 (0,80% em out/2022); rural PF taxas de mercado (21146) = 17,21%; saldo PF rural (20609) = R$ 550,5 bi; Selic meta (432) = 13,75%"
+      },
+      "notes": null
+    },
+    {
+      "id": "bcb-scr-data",
+      "name": "SCR.data - Painel de Operações de Crédito",
+      "kind": "dado",
+      "category": "resultados-sistema",
+      "publisher": "Banco Central do Brasil",
+      "description": "Carteira ativa, carteira inadimplida (arrastada) e ativo problemático, agregados a partir do SCR (todas as operações), com cortes por segmento de IF, PF/PJ, modalidade, UF, CNAE (PJ), ocupação (PF), porte/renda, origem de recursos e indexador.",
+      "coverage": "Brasil, desde 2012",
+      "granularity": {
+        "spatial": "UF",
+        "temporal": "mensal (defasagem ~60 dias)"
+      },
+      "format": "CSV (zip por ano)",
+      "api": "download via CKAN dataset scr_data; sem API de consulta",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "baixar o zip anual e filtrar modalidade 'Rural e agroindustrial' x UF x CNAE",
+      "effort_days": 2,
+      "bank_metrics": [
+        "inadimplência rural por UF (alvo de painéis regionais)",
+        "ativo problemático por setor CNAE",
+        "carteira por UF para pesos de exposição do sistema"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dadosabertos.bcb.gov.br/api/3/action/package_show?id=scr_data",
+        "result": "200; metadados, tutorial e metodologia; versão 2 dos dados mensais listada"
+      },
+      "notes": "Não traz o banco individual: serve de 'mercado' para comparar com o banco e como variável dependente regional."
+    },
+    {
+      "id": "bcb-ifdata",
+      "name": "IF.data",
+      "kind": "dado",
+      "category": "resultados-banco",
+      "publisher": "Banco Central do Brasil",
+      "description": "Balanço, DRE, capital, segmentação e carteira de crédito por instituição/conglomerado: por nível de risco (AA-H), região geográfica, modalidade e prazo, indexador, quantidade de clientes.",
+      "coverage": "todas as IFs, desde 2000",
+      "granularity": {
+        "spatial": "instituição; carteira por região (5 regiões)",
+        "temporal": "trimestral"
+      },
+      "format": "JSON/CSV",
+      "api": "OData https://olinda.bcb.gov.br/olinda/servico/IFDATA/versao/v1/odata/ (ListaDeRelatorio, IfDataCadastro, IfDataValores)",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "OData com parâmetros AnoMes/TipoInstituicao/Relatorio; guardar por trimestre",
+      "effort_days": 1.5,
+      "bank_metrics": [
+        "carteira rural do banco por nível de risco",
+        "provisão e resultado de intermediação",
+        "carteira por região (exposição regional do banco vs. sistema)",
+        "capital (RWA, Basileia) para RAROC"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/IFDATA/versao/v1/odata/ListaDeRelatorio()?$format=json",
+        "result": "200 em ListaDeRelatorio (14+ relatórios); IfDataCadastro(AnoMes=202506) devolveu 500 'Erro desconhecido' — formato do parâmetro a acertar"
+      },
+      "notes": null
+    },
+    {
+      "id": "bcb-estban",
+      "name": "ESTBAN - Estatística Bancária por Município",
+      "kind": "dado",
+      "category": "resultados-banco",
+      "publisher": "Banco Central do Brasil",
+      "description": "Saldos de verbetes contábeis (COSIF) por banco e município: operações de crédito, financiamentos rurais e agroindustriais, depósitos, provisões, etc. É a única fonte pública que localiza a carteira de um banco por município.",
+      "coverage": "bancos comerciais e múltiplos com carteira comercial, desde 1988",
+      "granularity": {
+        "spatial": "município x instituição (também por agência)",
+        "temporal": "mensal"
+      },
+      "format": "CSV em ZIP",
+      "api": "download de arquivo mensal; a página nova do BCB é uma SPA",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "localizar a URL de arquivos na página nova; filtrar CNPJ do banco e verbetes de crédito rural",
+      "effort_days": 2,
+      "bank_metrics": [
+        "exposição do banco por município (peso para cruzar com safra/clima)",
+        "saldo de financiamentos rurais por município",
+        "proxy municipal de provisão"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.bcb.gov.br/estatisticas/estatisticabancariamunicipios",
+        "result": "página 200 (SPA); a URL antiga www4.bcb.gov.br/fis/cosif/cont/estban/municipio/AAAAMM_ESTBAN.ZIP devolveu 404 — achar o novo caminho"
+      },
+      "notes": "Peça-chave para o elo entidade → exposição → fator no nível municipal."
+    },
+    {
+      "id": "bcb-sicor",
+      "name": "SICOR - Matriz de Dados do Crédito Rural",
+      "kind": "dado",
+      "category": "resultados-sistema",
+      "publisher": "Banco Central do Brasil",
+      "description": "Contratações de crédito rural (custeio, investimento, comercialização, industrialização): valor, quantidade, área, produto, programa (Pronaf, Pronamp...), fonte de recursos, tipo de seguro (Proagro, privado), município, segmento de IF.",
+      "coverage": "Brasil, desde 2013",
+      "granularity": {
+        "spatial": "município x produto; IF por segmento (não nominal no OData)",
+        "temporal": "mensal (emissão)"
+      },
+      "format": "JSON/CSV",
+      "api": "OData https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/odata/ (CusteioMunicipioProduto, InvestMunicipioProduto, SegmentoIF...)",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "OData com $filter por UF/ano/produto (consultas sem filtro estouram o tempo)",
+      "effort_days": 1.5,
+      "bank_metrics": [
+        "volume contratado de custeio por cultura e município (exposição nova da safra)",
+        "participação com seguro/Proagro",
+        "fonte de recursos (equalizado/LCA/livre) para FTP"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/odata/CusteioRegiaoUFProduto?$top=3&$format=json&$filter=nomeUF eq 'RS'",
+        "result": "200 com filtro (sem filtro: timeout de 25 s); lista de 20+ entidades no serviço"
+      },
+      "notes": null
+    },
+    {
+      "id": "bcb-focus",
+      "name": "Relatório Focus - expectativas de mercado",
+      "kind": "dado",
+      "category": "macro",
+      "publisher": "Banco Central do Brasil",
+      "description": "Expectativas de ~100 instituições para IPCA, Selic, PIB, câmbio, balança, etc.; mediana, média, desvio, mín., máx.",
+      "coverage": "Brasil, desde 2001",
+      "granularity": {
+        "spatial": "Brasil",
+        "temporal": "semanal/diária (por data de coleta)"
+      },
+      "format": "JSON/CSV",
+      "api": "OData https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ (ExpectativasMercadoAnuais, Mensais, Selic, Top5...)",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "OData; guardar safras (vintages) para nowcasting em tempo real",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "cenário base e choques para projeção de margem e custo do crédito",
+        "surpresa de expectativa para estudos de evento"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$top=2&$format=json",
+        "result": "200; 40 respondentes para exportações 2026 em 19/11/2026"
+      },
+      "notes": null
+    },
+    {
+      "id": "bcb-normativos",
+      "name": "Busca de normativos do BCB/CMN",
+      "kind": "dado",
+      "category": "regulacao",
+      "publisher": "Banco Central do Brasil",
+      "description": "Resoluções CMN/BCB, circulares e cartas; inclui o MCR (Manual de Crédito Rural) e as regras de impedimentos sociais, ambientais e climáticos.",
+      "coverage": "desde os anos 1990",
+      "granularity": {
+        "spatial": "n/a",
+        "temporal": "evento"
+      },
+      "format": "JSON (texto HTML)",
+      "api": "api/search/app/normativos/buscanormativos e api/conteudo/app/normativos/exibenormativo (já usados em src/pawatch/regulation.py)",
+      "access": "aberto",
+      "license": "público",
+      "extraction": "já integrado no pipeline (regulation.py)",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "mudanças de regra que alteram elegibilidade, provisão (Res. CMN 4.966/21) ou renegociação rural"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolução CMN&p2=5081",
+        "result": "200; Res. CMN 5.081 (29/06/2023, impedimentos sociais, ambientais e climáticos no crédito rural) e 5.193 (19/12/2024, altera a Seção 9 do Cap. 2 do MCR) confirmadas"
+      },
+      "notes": null
+    },
+    {
+      "id": "cvm-ipe",
+      "name": "CVM Dados Abertos - IPE (fatos relevantes, comunicados, releases)",
+      "kind": "evento",
+      "category": "eventos-empresa",
+      "publisher": "CVM",
+      "description": "Índice de todos os documentos eventuais das companhias abertas: fato relevante, comunicado ao mercado, aviso aos acionistas, apresentações, com data de entrega e link de download no RAD.",
+      "coverage": "todas as companhias abertas, desde 2003",
+      "granularity": {
+        "spatial": "companhia",
+        "temporal": "evento (data e hora de entrega)"
+      },
+      "format": "CSV em ZIP anual + PDF no RAD",
+      "api": "download https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_AAAA.zip; PDF via rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx",
+      "access": "aberto",
+      "license": "dados abertos (licença ODbL no portal da CVM)",
+      "extraction": "baixar o índice anual (≈2 MB), filtrar CNPJ e categoria; pdftotext do documento",
+      "effort_days": 1,
+      "bank_metrics": [
+        "datas de evento para estudo de evento",
+        "texto de projeções (guidance) e suas revisões"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_2026.zip",
+        "result": "200; 1,9 MB; 41.625 documentos em 2026, 2.255 fatos relevantes; BB (CNPJ 00.000.000/0001-91) com 11 fatos relevantes, incl. 'Projeções 2026 - revisadas' (11/11/2026); PDF baixado e lido"
+      },
+      "notes": null
+    },
+    {
+      "id": "cvm-itr-dfp",
+      "name": "CVM Dados Abertos - ITR/DFP (demonstrações financeiras)",
+      "kind": "dado",
+      "category": "resultados-banco",
+      "publisher": "CVM",
+      "description": "Demonstrações trimestrais e anuais padronizadas (BP, DRE, DFC, DVA) das companhias abertas, incluindo os bancos listados.",
+      "coverage": "desde 2010",
+      "granularity": {
+        "spatial": "companhia",
+        "temporal": "trimestral/anual"
+      },
+      "format": "CSV em ZIP",
+      "api": "download em dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR e DFP",
+      "access": "aberto",
+      "license": "dados abertos da CVM",
+      "extraction": "zip anual; filtrar CNPJ",
+      "effort_days": 1,
+      "bank_metrics": [
+        "lucro, PDD, margem financeira (variáveis dependentes)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/",
+        "result": "não testado em separado (mesmo servidor do IPE, 200)"
+      },
+      "notes": null
+    },
+    {
+      "id": "ri-bancos",
+      "name": "Sites de RI dos bancos (Análise do Desempenho, séries históricas, guidance)",
+      "kind": "dado",
+      "category": "resultados-banco",
+      "publisher": "bancos (ex.: ri.bb.com.br)",
+      "description": "Relatórios trimestrais com a carteira agro por linha (custeio, investimento, CPR), inadimplência >90 dias por segmento, PDD, custo do crédito, guidance e premissas.",
+      "coverage": "por banco, ~10+ anos",
+      "granularity": {
+        "spatial": "banco; às vezes região/produto",
+        "temporal": "trimestral"
+      },
+      "format": "PDF, XLSX (séries históricas)",
+      "api": "sem API; páginas e planilhas",
+      "access": "público",
+      "license": "uso informativo (direitos do banco)",
+      "extraction": "page diff da central de resultados + baixar XLSX de séries históricas",
+      "effort_days": 2,
+      "bank_metrics": [
+        "inadimplência agro do banco",
+        "custo do crédito",
+        "guidance (expectativa da própria gestão)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://ri.bb.com.br/",
+        "result": "200"
+      },
+      "notes": null
+    },
+    {
+      "id": "b3-precos",
+      "name": "B3 - cotações históricas (COTAHIST) e derivativos",
+      "kind": "dado",
+      "category": "mercado",
+      "publisher": "B3",
+      "description": "Cotações diárias de ações (COTAHIST, arquivos diários/mensais/anuais) e histórico de derivativos, incluindo futuros agrícolas (boi gordo BGI, milho CCM, soja CME-referenciada SJC, café ICF, etanol).",
+      "coverage": "desde 1986 (ações)",
+      "granularity": {
+        "spatial": "ativo",
+        "temporal": "diária"
+      },
+      "format": "TXT de largura fixa em ZIP; páginas de histórico",
+      "api": "download de arquivo; Market Data comercial (UP2DATA) para uso em produção",
+      "access": "público para arquivos históricos; dados em tempo real são pagos",
+      "license": "termos de uso da B3 (redistribuição restrita)",
+      "extraction": "arquivo anual COTAHIST (≈ 90 MB/ano, só sob demanda) ou diário",
+      "effort_days": 1.5,
+      "bank_metrics": [
+        "retorno anormal da ação do banco em torno de eventos",
+        "curva de preço futuro de milho/boi para cenários de receita do produtor"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/derivativos/",
+        "result": "200 (HTML)"
+      },
+      "notes": null
+    },
+    {
+      "id": "yahoo-chart",
+      "name": "Yahoo Finance chart API (não oficial)",
+      "kind": "dado",
+      "category": "mercado",
+      "publisher": "Yahoo",
+      "description": "Preços diários ajustados de ações e índices (BBAS3.SA, ^BVSP).",
+      "coverage": "global",
+      "granularity": {
+        "spatial": "ativo",
+        "temporal": "diária"
+      },
+      "format": "JSON",
+      "api": "não documentada: query1.finance.yahoo.com/v8/finance/chart/{ticker}",
+      "access": "público, sem garantia",
+      "license": "termos do Yahoo: uso pessoal; não usar em produção",
+      "extraction": "uma chamada por ativo",
+      "effort_days": 0.2,
+      "bank_metrics": [
+        "protótipo de estudo de evento"
+      ],
+      "priority": "baixa (só protótipo)",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BBAS3.SA?range=1y&interval=1d",
+        "result": "200; 248 pregões de 27/11/2025 a 27/11/2026 usados no exemplo de estudo de evento"
+      },
+      "notes": null
+    },
+    {
+      "id": "conab-safras",
+      "name": "CONAB - Acompanhamento da Safra de Grãos e séries históricas",
+      "kind": "dado",
+      "category": "agro-safra",
+      "publisher": "CONAB",
+      "description": "Levantamentos mensais de área, produtividade e produção por cultura e UF (grãos, café, cana), calendário de plantio e colheita, progresso semanal de plantio/colheita, custos de produção por região, preços mínimos.",
+      "coverage": "Brasil, séries desde 1976/77",
+      "granularity": {
+        "spatial": "UF (algumas por região/município nos custos)",
+        "temporal": "mensal (12 levantamentos por safra) + semanal (progresso)"
+      },
+      "format": "PDF, XLSX, TXT (portal de informações)",
+      "api": "sem API formal; downloads em portaldeinformacoes.conab.gov.br/downloads/arquivos/*.txt",
+      "access": "aberto",
+      "license": "dados públicos (gov.br)",
+      "extraction": "baixar os TXT de série histórica e as planilhas de cada levantamento; diff mensal",
+      "effort_days": 2,
+      "bank_metrics": [
+        "quebra de safra estimada por UF vs. inadimplência rural regional",
+        "custo de produção vs. receita (margem do produtor) para PD",
+        "calendário para alinhar vencimentos de custeio"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://portaldeinformacoes.conab.gov.br/downloads/arquivos/SerieHistoricaGraos.txt",
+        "result": "falhou na verificação do certificado TLS do servidor (não contornado); página gov.br/conab de safras 200"
+      },
+      "notes": null
+    },
+    {
+      "id": "ibge-lspa",
+      "name": "IBGE LSPA - Levantamento Sistemático da Produção Agrícola (SIDRA t.6588)",
+      "kind": "dado",
+      "category": "agro-safra",
+      "publisher": "IBGE",
+      "description": "Estimativa mensal de área plantada, colhida, produção e rendimento para a safra corrente, por cultura e UF.",
+      "coverage": "Brasil, desde 1974 (SIDRA desde 2006 aprox.)",
+      "granularity": {
+        "spatial": "UF (e Brasil)",
+        "temporal": "mensal"
+      },
+      "format": "JSON/CSV/XLSX",
+      "api": "API SIDRA https://apisidra.ibge.gov.br/values/t/6588/... e servicodados.ibge.gov.br/api/v3/agregados",
+      "access": "aberto",
+      "license": "dados públicos IBGE (citar a fonte)",
+      "extraction": "chamada por tabela/variável/período/produto",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "revisão da estimativa de produção (surpresa de safra) por UF"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://apisidra.ibge.gov.br/values/t/6588/n1/all/v/35/p/last%201/c48/39443",
+        "result": "200; soja, estimativa de out/2026 = 174.987.245 t (Brasil)"
+      },
+      "notes": null
+    },
+    {
+      "id": "ibge-pam",
+      "name": "IBGE PAM - Produção Agrícola Municipal (SIDRA t.5457)",
+      "kind": "dado",
+      "category": "agro-safra",
+      "publisher": "IBGE",
+      "description": "Área plantada/colhida, produção, rendimento e valor da produção por município e cultura (lavouras temporárias e permanentes).",
+      "coverage": "Brasil, desde 1974",
+      "granularity": {
+        "spatial": "município x cultura",
+        "temporal": "anual (defasagem ~10 meses)"
+      },
+      "format": "JSON/CSV",
+      "api": "API SIDRA (t.5457, n6 = município)",
+      "access": "aberto",
+      "license": "dados públicos IBGE",
+      "extraction": "uma chamada por UF/ano/cultura (limite de ~100 mil valores por chamada)",
+      "effort_days": 1,
+      "bank_metrics": [
+        "mapa de 'o que se planta onde' (peso de cada cultura na economia do município)",
+        "choque de rendimento municipal vs. inadimplência"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://apisidra.ibge.gov.br/values/t/5457/n6/4314902/v/214/p/last%201/c782/40124",
+        "result": "200 (município de teste: Porto Alegre)"
+      },
+      "notes": null
+    },
+    {
+      "id": "ibge-ppm-censo",
+      "name": "IBGE PPM (pecuária municipal) e Censo Agropecuário 2017",
+      "kind": "dado",
+      "category": "agro-safra",
+      "publisher": "IBGE",
+      "description": "Rebanhos e produção animal por município (anual) e estrutura fundiária, uso de crédito, irrigação e tamanho de estabelecimento (Censo).",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "município",
+        "temporal": "anual / censitário"
+      },
+      "format": "JSON/CSV",
+      "api": "API SIDRA",
+      "access": "aberto",
+      "license": "dados públicos IBGE",
+      "extraction": "API SIDRA",
+      "effort_days": 1,
+      "bank_metrics": [
+        "exposição a pecuária por município",
+        "perfil de tomador (porte) para segmentar PD"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://servicodados.ibge.gov.br/api/v3/agregados/5457/metadados",
+        "result": "200 (metadados de agregado)"
+      },
+      "notes": null
+    },
+    {
+      "id": "mapa-zarc",
+      "name": "MAPA - ZARC (Zoneamento Agrícola de Risco Climático): tábua de risco e cultivares",
+      "kind": "dado",
+      "category": "agro-risco",
+      "publisher": "MAPA / Embrapa",
+      "description": "Para cada município, cultura, tipo de solo e ciclo, as janelas de plantio de 10 dias com risco de perda de 20%, 30% ou 40%. É pré-requisito do Proagro e da subvenção ao seguro.",
+      "coverage": "Brasil, ~40 culturas",
+      "granularity": {
+        "spatial": "município x cultura x solo x decêndio",
+        "temporal": "anual (portarias por safra)"
+      },
+      "format": "CSV",
+      "api": "CKAN dados.agricultura.gov.br (datasets tabua-de-risco-zoneamento-agricola-de-risco-climatico, siszarc-...)",
+      "access": "aberto",
+      "license": "Creative Commons Attribution",
+      "extraction": "baixar CSVs por safra",
+      "effort_days": 1.5,
+      "bank_metrics": [
+        "risco climático ex ante da operação (plantio fora da janela, nível de risco)",
+        "variável de pricing e de elegibilidade"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dados.agricultura.gov.br/api/3/action/package_search?q=zarc&rows=3",
+        "result": "200; 2 datasets ZARC com licença CC-BY e CSVs"
+      },
+      "notes": null
+    },
+    {
+      "id": "mapa-sisser",
+      "name": "MAPA - SISSER / Atlas do Seguro Rural (PSR)",
+      "kind": "dado",
+      "category": "agro-risco",
+      "publisher": "MAPA",
+      "description": "Apólices subvencionadas: cultura, município, área, importância segurada, prêmio, subvenção, sinistros e indenizações.",
+      "coverage": "Brasil, desde 2006",
+      "granularity": {
+        "spatial": "município x cultura x apólice",
+        "temporal": "anual/mensal"
+      },
+      "format": "CSV",
+      "api": "CKAN dados.agricultura.gov.br (sisser3)",
+      "access": "aberto",
+      "license": "Creative Commons Attribution",
+      "extraction": "baixar CSVs",
+      "effort_days": 1,
+      "bank_metrics": [
+        "sinistralidade por município/cultura como proxy de perda observada",
+        "cobertura de seguro da carteira (mitigante de LGD)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dados.agricultura.gov.br/api/3/action/package_search?q=seguro rural OR proagro OR sisser&rows=5",
+        "result": "200; dataset sisser3 com licença CC-BY"
+      },
+      "notes": null
+    },
+    {
+      "id": "susep-ses",
+      "name": "SUSEP SES - estatísticas de seguros (ramo rural)",
+      "kind": "dado",
+      "category": "agro-risco",
+      "publisher": "SUSEP",
+      "description": "Prêmios, sinistros e sinistralidade por ramo e seguradora, inclusive rural (agrícola, pecuário, penhor rural).",
+      "coverage": "Brasil, desde 2001",
+      "granularity": {
+        "spatial": "seguradora x UF",
+        "temporal": "mensal"
+      },
+      "format": "páginas + download de bases (ZIP)",
+      "api": "sem API",
+      "access": "aberto",
+      "license": "público",
+      "extraction": "baixar a base completa do SES",
+      "effort_days": 1,
+      "bank_metrics": [
+        "sinistralidade rural agregada",
+        "ciclo de perdas no agro"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www2.susep.gov.br/menuestatistica/SES/principal.aspx",
+        "result": "200"
+      },
+      "notes": null
+    },
+    {
+      "id": "embrapa-agroapi",
+      "name": "Embrapa AgroAPI (ClimAPI, SATVeg, Agritec, AgroTermos...)",
+      "kind": "dado",
+      "category": "agro-risco",
+      "publisher": "Embrapa",
+      "description": "APIs de clima e previsão (ClimAPI), séries NDVI/EVI MODIS por ponto/polígono (SATVeg), zoneamento e produtividade (Agritec), vocabulário agro (AgroTermos).",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "ponto/polígono",
+        "temporal": "diária a 16 dias (NDVI)"
+      },
+      "format": "JSON",
+      "api": "REST com OAuth2 (cadastro na loja de APIs)",
+      "access": "cadastro; planos gratuitos com cota",
+      "license": "termos da Embrapa",
+      "extraction": "registrar app; chamadas por coordenada do imóvel/município",
+      "effort_days": 2,
+      "bank_metrics": [
+        "anomalia de vegetação (NDVI) durante a safra como sinal precoce de perda"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.agroapi.cnptia.embrapa.br/portal/",
+        "result": "200 (portal; chamadas exigem token)"
+      },
+      "notes": null
+    },
+    {
+      "id": "cepea-indicadores",
+      "name": "CEPEA/ESALQ - indicadores de preços agropecuários",
+      "kind": "dado",
+      "category": "agro-precos",
+      "publisher": "CEPEA/ESALQ-USP",
+      "description": "Indicadores diários de preço ao produtor/porto: soja (Paranaguá e PR), milho, boi gordo, bezerro, café, algodão, açúcar, etanol, leite, trigo, arroz, suínos, frango, ovos.",
+      "coverage": "Brasil, séries desde os anos 1990-2000",
+      "granularity": {
+        "spatial": "praça (porto, estado)",
+        "temporal": "diária"
+      },
+      "format": "HTML + XLS para download",
+      "api": "sem API; páginas por indicador com exportação",
+      "access": "aberto",
+      "license": "reprodução permitida com citação; uso comercial em larga escala pede contato",
+      "extraction": "raspagem leve da página do indicador ou exportação XLS (uma por dia)",
+      "effort_days": 1,
+      "bank_metrics": [
+        "receita do produtor e capacidade de pagamento (preço na colheita vs. preço no plantio)",
+        "valor da garantia (penhor de safra, CPR)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.cepea.esalq.usp.br/br/indicador/soja.aspx",
+        "result": "200; soja Paranaguá R$ 166,81/saca em 27/11/2026 (+4,99% no mês)"
+      },
+      "notes": null
+    },
+    {
+      "id": "usda-wasde-psd",
+      "name": "USDA WASDE e FAS PSD Online",
+      "kind": "dado",
+      "category": "agro-precos",
+      "publisher": "USDA",
+      "description": "Balanços globais de oferta e demanda por commodity e país (produção, consumo, estoques), mensais; base PSD com histórico desde 1960.",
+      "coverage": "global",
+      "granularity": {
+        "spatial": "país x commodity",
+        "temporal": "mensal"
+      },
+      "format": "PDF, CSV/XML (WASDE), JSON (PSD API)",
+      "api": "PSD: REST com API key; WASDE: arquivos por relatório",
+      "access": "aberto (PSD pede chave)",
+      "license": "domínio público (governo dos EUA)",
+      "extraction": "um download por relatório mensal; PSD via API com chave",
+      "effort_days": 1,
+      "bank_metrics": [
+        "choque global de estoque/preço que antecipa preço local",
+        "cenários de preço para o produtor"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://apps.fas.usda.gov/PSDOnlineDataServices/api/CommodityData/GetCommodities",
+        "result": "PSD: 'Bad API Key' (precisa de chave); página WASDE: 403 para o nosso User-Agent (CDN)"
+      },
+      "notes": null
+    },
+    {
+      "id": "wb-pinksheet",
+      "name": "World Bank Commodity Price Data (Pink Sheet)",
+      "kind": "dado",
+      "category": "agro-insumos",
+      "publisher": "Banco Mundial",
+      "description": "Preços internacionais mensais de ~70 commodities: fertilizantes (ureia, DAP, TSP, cloreto de potássio, rocha fosfática), grãos, energia, metais.",
+      "coverage": "global, desde 1960",
+      "granularity": {
+        "spatial": "mundial",
+        "temporal": "mensal"
+      },
+      "format": "XLSX",
+      "api": "arquivo único (CMO-Historical-Data-Monthly.xlsx); também via API de indicadores",
+      "access": "aberto",
+      "license": "CC BY 4.0",
+      "extraction": "um download por mês (≈ 0,8 MB)",
+      "effort_days": 0.3,
+      "bank_metrics": [
+        "custo de insumo do produtor (relação de troca soja/fertilizante)",
+        "cenário de margem para custeio"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/related/CMO-Historical-Data-Monthly.xlsx",
+        "result": "200; 778 KB"
+      },
+      "notes": null
+    },
+    {
+      "id": "comexstat",
+      "name": "Comex Stat - exportações e importações por NCM, país e UF/município",
+      "kind": "dado",
+      "category": "agro-insumos",
+      "publisher": "MDIC/SECEX",
+      "description": "Valor FOB, quilograma e quantidade por NCM, país de origem/destino, UF e município do importador/exportador, via e porto. Dá o preço implícito (US$/t) e a origem dos fertilizantes (capítulo 31) e defensivos (3808).",
+      "coverage": "Brasil, desde 1997",
+      "granularity": {
+        "spatial": "NCM x país x UF/município",
+        "temporal": "mensal"
+      },
+      "format": "JSON/CSV",
+      "api": "REST https://api-comexstat.mdic.gov.br (general, cities, tables)",
+      "access": "aberto",
+      "license": "dados abertos do governo federal",
+      "extraction": "consultas agregadas por NCM 3102-3105 x país x mês",
+      "effort_days": 1,
+      "bank_metrics": [
+        "preço e origem de fertilizantes (risco de oferta: Rússia, Canadá, China, Marrocos...)",
+        "exportação agro por município (renda local)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api-comexstat.mdic.gov.br/general/dates/updated",
+        "result": "500 com erro interno do servidor (falha de autenticação do banco de dados deles) em duas tentativas — indisponibilidade temporária; testar de novo"
+      },
+      "notes": null
+    },
+    {
+      "id": "anda-fertilizantes",
+      "name": "ANDA - entregas de fertilizantes",
+      "kind": "dado",
+      "category": "agro-insumos",
+      "publisher": "ANDA",
+      "description": "Entregas mensais de fertilizantes ao mercado por UF, produção nacional e importação.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "UF",
+        "temporal": "mensal"
+      },
+      "format": "PDF/página (detalhe para associados)",
+      "api": "sem API",
+      "access": "parcialmente público",
+      "license": "termos da associação",
+      "extraction": "page diff dos boletins públicos",
+      "effort_days": 1,
+      "bank_metrics": [
+        "demanda de insumo como proxy de área e tecnologia da safra"
+      ],
+      "priority": "baixa",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "inmet-estacoes",
+      "name": "INMET - estações meteorológicas (API e dados históricos)",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "INMET",
+      "description": "Dados horários de ~600 estações automáticas e convencionais: chuva, temperatura, umidade, vento, radiação; normais climatológicas.",
+      "coverage": "Brasil, desde 2000 (automáticas) e 1961 (convencionais)",
+      "granularity": {
+        "spatial": "estação (ponto)",
+        "temporal": "horária/diária"
+      },
+      "format": "JSON (API), CSV em ZIP anual",
+      "api": "REST apitempo.inmet.gov.br (lista de estações aberta; dados exigem token pedido ao INMET) + portal.inmet.gov.br/dadoshistoricos",
+      "access": "aberto; token para a API de dados",
+      "license": "dados públicos",
+      "extraction": "ZIP anual para histórico; API com token para o corrente; interpolar para município",
+      "effort_days": 2,
+      "bank_metrics": [
+        "déficit de chuva e calor no ciclo da cultura por município (via estação mais próxima ou interpolação)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://apitempo.inmet.gov.br/estacoes/T",
+        "result": "200 na lista (665 estações automáticas); dados de estação sem token: 204 (sem conteúdo)"
+      },
+      "notes": null
+    },
+    {
+      "id": "chirps",
+      "name": "CHIRPS v3.0 - precipitação por satélite + estações",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "UCSB Climate Hazards Center",
+      "description": "Grade de precipitação quase global (0,05°) desde 1981, diária/pentadal/mensal; base padrão para índices de seca (SPI) e seguros paramétricos.",
+      "coverage": "50°S-50°N, desde 1981",
+      "granularity": {
+        "spatial": "grade 0,05° (~5 km)",
+        "temporal": "diária/pentadal/mensal"
+      },
+      "format": "GeoTIFF/NetCDF",
+      "api": "HTTP/FTP de diretórios",
+      "access": "aberto",
+      "license": "domínio público / CC (citar o CHC)",
+      "extraction": "baixar mensais e agregar por município (zonal stats)",
+      "effort_days": 2,
+      "bank_metrics": [
+        "anomalia de chuva e SPI por município e mês (fator de risco climático)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/",
+        "result": "200 no diretório v3.0 (o caminho CHIRPS-2.0/global_monthly devolveu 404: mudou)"
+      },
+      "notes": null
+    },
+    {
+      "id": "era5-copernicus",
+      "name": "ERA5 / ERA5-Land (Copernicus Climate Data Store)",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "ECMWF / Copernicus",
+      "description": "Reanálise horária de temperatura, chuva, umidade do solo, evapotranspiração, desde 1950; ERA5-Land a ~9 km.",
+      "coverage": "global, desde 1950",
+      "granularity": {
+        "spatial": "grade 0,1° (ERA5-Land) / 0,25°",
+        "temporal": "horária/mensal"
+      },
+      "format": "NetCDF/GRIB",
+      "api": "CDS API (cdsapi) com conta e chave",
+      "access": "cadastro gratuito",
+      "license": "CC BY 4.0",
+      "extraction": "pedir recortes do Brasil por variável/mês; agregar por município",
+      "effort_days": 3,
+      "bank_metrics": [
+        "umidade do solo e calor extremo no florescimento (melhor que chuva sozinha)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-land",
+        "result": "200 no catálogo (download exige conta)"
+      },
+      "notes": null
+    },
+    {
+      "id": "noaa-enso",
+      "name": "NOAA CPC - índices ENSO (ONI) e previsões",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "NOAA",
+      "description": "Índice Oceânico Niño (ONI) trimestral móvel desde 1950, previsões probabilísticas de El Niño/La Niña.",
+      "coverage": "global",
+      "granularity": {
+        "spatial": "índice",
+        "temporal": "mensal"
+      },
+      "format": "TXT/ASCII",
+      "api": "arquivo fixo oni.ascii.txt",
+      "access": "aberto",
+      "license": "domínio público",
+      "extraction": "um download por mês",
+      "effort_days": 0.2,
+      "bank_metrics": [
+        "regime climático da safra (La Niña → seca no Sul; El Niño → seca no Norte/Nordeste e chuva no Sul) como fator de cenário"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+        "result": "200; ONI ASO/2026 = +2,46 (El Niño forte em curso)"
+      },
+      "notes": null
+    },
+    {
+      "id": "cemaden",
+      "name": "CEMADEN - pluviômetros, umidade do solo e alertas",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "CEMADEN/MCTI",
+      "description": "Rede de pluviômetros e sensores de umidade do solo, monitoramento de secas e impactos na agricultura, alertas de desastres.",
+      "coverage": "Brasil (municípios monitorados)",
+      "granularity": {
+        "spatial": "estação/município",
+        "temporal": "10 min a mensal"
+      },
+      "format": "CSV/mapas",
+      "api": "mapa interativo e downloads; sem API documentada estável",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "download por UF/período; boletins mensais de seca",
+      "effort_days": 2,
+      "bank_metrics": [
+        "seca agrícola e desastres por município"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.gov.br/cemaden/pt-br",
+        "result": "200 (site)"
+      },
+      "notes": null
+    },
+    {
+      "id": "ana-monitor-secas",
+      "name": "Monitor de Secas (ANA)",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "ANA e parceiros",
+      "description": "Mapa mensal de severidade de seca (S0-S4) por região, com impactos de curto e longo prazo.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "polígonos (municípios via sobreposição)",
+        "temporal": "mensal"
+      },
+      "format": "Shapefile/GeoJSON, mapas",
+      "api": "aplicação web (SPA); downloads de shapefile",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "baixar o shape mensal e cruzar com municípios",
+      "effort_days": 1,
+      "bank_metrics": [
+        "severidade de seca como variável de tratamento em painel regional"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://monitordesecas.ana.gov.br/",
+        "result": "200 (casca da SPA)"
+      },
+      "notes": null
+    },
+    {
+      "id": "s2id-desastres",
+      "name": "S2iD / Atlas Digital de Desastres (decretos de emergência)",
+      "kind": "dado",
+      "category": "clima",
+      "publisher": "MIDR/Defesa Civil",
+      "description": "Reconhecimentos federais de situação de emergência e calamidade por município e tipo (estiagem, enchente...), com danos e prejuízos.",
+      "coverage": "Brasil, desde 1991",
+      "granularity": {
+        "spatial": "município",
+        "temporal": "evento"
+      },
+      "format": "CSV/XLSX",
+      "api": "downloads do S2iD/Atlas",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "baixar planilhas anuais",
+      "effort_days": 1,
+      "bank_metrics": [
+        "choque de desastre por município (DiD); gatilho de prorrogação de dívida rural"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "inpe-prodes-deter",
+      "name": "INPE TerraBrasilis - PRODES e DETER",
+      "kind": "dado",
+      "category": "ambiental",
+      "publisher": "INPE",
+      "description": "PRODES: desmatamento anual por bioma (Amazônia, Cerrado, demais). DETER: alertas quase diários de desmatamento e degradação na Amazônia e Cerrado.",
+      "coverage": "biomas brasileiros",
+      "granularity": {
+        "spatial": "polígono",
+        "temporal": "anual (PRODES) / diária (DETER)"
+      },
+      "format": "Shapefile/GeoJSON, WFS/WMS",
+      "api": "GeoServer WFS/WMS terrabrasilis.dpi.inpe.br/geoserver/ows",
+      "access": "aberto",
+      "license": "dados abertos do INPE (citar a fonte)",
+      "extraction": "WFS por camada e recorte; intersectar com CAR/municípios",
+      "effort_days": 2,
+      "bank_metrics": [
+        "exposição da carteira a desmatamento recente (impedimentos do MCR 2-9)",
+        "risco reputacional e de elegibilidade"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://terrabrasilis.dpi.inpe.br/geoserver/ows?service=WFS&request=GetCapabilities",
+        "result": "200; 93 camadas (PRODES por bioma, bordas, etc.)"
+      },
+      "notes": null
+    },
+    {
+      "id": "mapbiomas",
+      "name": "MapBiomas (cobertura e uso da terra, Alerta, Fogo, Água)",
+      "kind": "dado",
+      "category": "ambiental",
+      "publisher": "MapBiomas",
+      "description": "Mapas anuais de cobertura e uso da terra desde 1985 (30 m), estatísticas por município; MapBiomas Alerta valida alertas com laudo e cruza com CAR.",
+      "coverage": "Brasil, desde 1985",
+      "granularity": {
+        "spatial": "pixel 30 m; município; imóvel (Alerta)",
+        "temporal": "anual (Alerta: contínuo)"
+      },
+      "format": "GeoTIFF (GEE), XLSX de estatísticas, API GraphQL (Alerta)",
+      "api": "estatísticas para download; API do Alerta com cadastro",
+      "access": "aberto/cadastro",
+      "license": "CC BY 4.0",
+      "extraction": "XLSX municipais; API do Alerta para imóveis",
+      "effort_days": 2,
+      "bank_metrics": [
+        "área de soja/pasto por município (confirma 'o que se planta onde')",
+        "alertas validados por imóvel para triagem socioambiental"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://brasil.mapbiomas.org/estatisticas/",
+        "result": "200 (página de estatísticas)"
+      },
+      "notes": null
+    },
+    {
+      "id": "sicar-car",
+      "name": "SICAR - Cadastro Ambiental Rural",
+      "kind": "dado",
+      "category": "ambiental",
+      "publisher": "Serviço Florestal Brasileiro / MGI",
+      "description": "Perímetro e situação do imóvel rural (ativo, pendente, suspenso, cancelado), APP e reserva legal declaradas.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "imóvel (polígono)",
+        "temporal": "contínua"
+      },
+      "format": "Shapefile por município",
+      "api": "consulta pública com captcha; sem API aberta",
+      "access": "aberto com fricção (captcha)",
+      "license": "dados públicos",
+      "extraction": "download manual por município; no banco, usar a integração oficial do SICOR/BCB",
+      "effort_days": 3,
+      "bank_metrics": [
+        "situação do CAR (impedimento de crédito)",
+        "sobreposição com terras indígenas, UCs, embargos"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://consultapublica.car.gov.br/publico/imoveis/index",
+        "result": "falhou: laço de redirecionamento (50 redirects) sem navegador/cookies"
+      },
+      "notes": null
+    },
+    {
+      "id": "ibama-embargos",
+      "name": "IBAMA - áreas embargadas e autos de infração",
+      "kind": "dado",
+      "category": "ambiental",
+      "publisher": "IBAMA",
+      "description": "Termos de embargo com CPF/CNPJ, município, polígono e data; autos de infração.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "imóvel/polígono; CPF/CNPJ",
+        "temporal": "contínua"
+      },
+      "format": "CSV, Shapefile",
+      "api": "CKAN dadosabertos.ibama.gov.br",
+      "access": "aberto",
+      "license": "dados abertos",
+      "extraction": "download periódico do dataset",
+      "effort_days": 1,
+      "bank_metrics": [
+        "impedimento de crédito rural (embargo) e risco de conformidade"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo",
+        "result": "200"
+      },
+      "notes": null
+    },
+    {
+      "id": "lista-suja-trabalho",
+      "name": "Cadastro de Empregadores (trabalho análogo à escravidão)",
+      "kind": "dado",
+      "category": "ambiental",
+      "publisher": "MTE",
+      "description": "Lista semestral de empregadores autuados; impedimento social para crédito rural.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "CPF/CNPJ",
+        "temporal": "semestral"
+      },
+      "format": "PDF/XLSX",
+      "api": "download",
+      "access": "aberto",
+      "license": "público",
+      "extraction": "download e parse",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "impedimento social (MCR 2-9)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "ibge-macro",
+      "name": "IBGE - PIB trimestral, PNAD Contínua, IPCA, PMC, PMS, PIM",
+      "kind": "dado",
+      "category": "macro",
+      "publisher": "IBGE",
+      "description": "Contas nacionais trimestrais (PIB agro), desemprego e renda (PNAD), inflação, varejo (PMC), serviços (PMS), indústria (PIM).",
+      "coverage": "Brasil; UF para PNAD, PMC, PIM",
+      "granularity": {
+        "spatial": "Brasil/UF",
+        "temporal": "mensal/trimestral"
+      },
+      "format": "JSON/CSV",
+      "api": "API SIDRA",
+      "access": "aberto",
+      "license": "dados públicos IBGE",
+      "extraction": "API SIDRA",
+      "effort_days": 1,
+      "bank_metrics": [
+        "renda e emprego (PD de PF)",
+        "varejo (crédito a empresas e cartão)"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://apisidra.ibge.gov.br/",
+        "result": "200 (mesma API do LSPA)"
+      },
+      "notes": null
+    },
+    {
+      "id": "ipeadata",
+      "name": "Ipeadata",
+      "kind": "dado",
+      "category": "macro",
+      "publisher": "IPEA",
+      "description": "Agregador de milhares de séries macro, regionais e sociais (algumas municipais), com metadados.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "Brasil/UF/município",
+        "temporal": "várias"
+      },
+      "format": "JSON",
+      "api": "OData4 http://www.ipeadata.gov.br/api/odata4/",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "OData por código de série",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "séries regionais e históricas longas para painéis"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "http://www.ipeadata.gov.br/api/odata4/Metadados('BM12_TJOVER12')",
+        "result": "200"
+      },
+      "notes": null
+    },
+    {
+      "id": "fred",
+      "name": "FRED / ALFRED",
+      "kind": "dado",
+      "category": "macro",
+      "publisher": "Federal Reserve Bank of St. Louis",
+      "description": "Séries macro dos EUA e globais; ALFRED guarda as safras (vintages) para backtest em tempo real.",
+      "coverage": "global",
+      "granularity": {
+        "spatial": "país",
+        "temporal": "várias"
+      },
+      "format": "JSON/CSV",
+      "api": "REST com API key gratuita",
+      "access": "aberto com chave",
+      "license": "termos do FRED (citar; algumas séries de terceiros com restrição)",
+      "extraction": "API com chave",
+      "effort_days": 0.3,
+      "bank_metrics": [
+        "juros e dólar globais, apetite a risco"
+      ],
+      "priority": "baixa",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api.stlouisfed.org/fred/series?series_id=GDP&file_type=json",
+        "result": "400 sem chave (esperado); fredgraph.csv: erro HTTP/2 e timeout"
+      },
+      "notes": null
+    },
+    {
+      "id": "imf-wb",
+      "name": "FMI (SDMX) e Banco Mundial (API de indicadores)",
+      "kind": "dado",
+      "category": "macro",
+      "publisher": "FMI / Banco Mundial",
+      "description": "WEO, IFS, PCPS (preços de commodities) e indicadores de desenvolvimento.",
+      "coverage": "global",
+      "granularity": {
+        "spatial": "país",
+        "temporal": "mensal/anual"
+      },
+      "format": "SDMX/JSON",
+      "api": "api.imf.org (SDMX 2.1) e api.worldbank.org/v2",
+      "access": "aberto",
+      "license": "termos do FMI; CC BY 4.0 (Banco Mundial)",
+      "extraction": "API",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "cenário global e de commodities"
+      ],
+      "priority": "baixa",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api.worldbank.org/v2/country/BR/indicator/NY.GDP.MKTP.KD.ZG?format=json",
+        "result": "200 (Banco Mundial: PIB BR 2025 = 2,29%); 200 no dataflow do FMI"
+      },
+      "notes": null
+    },
+    {
+      "id": "fipezap",
+      "name": "Índice FipeZap (venda e locação residencial e comercial)",
+      "kind": "dado",
+      "category": "setor-imobiliario",
+      "publisher": "FIPE / Zap",
+      "description": "Preço médio do m² anunciado em ~50 cidades; venda e aluguel.",
+      "coverage": "50+ cidades",
+      "granularity": {
+        "spatial": "cidade",
+        "temporal": "mensal"
+      },
+      "format": "XLSX/PDF",
+      "api": "sem API; planilha mensal",
+      "access": "aberto",
+      "license": "reprodução com citação",
+      "extraction": "download mensal da planilha",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "LTV e valor de garantia no imobiliário",
+        "demanda por financiamento"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.fipe.org.br/pt-br/indices/fipezap/",
+        "result": "200"
+      },
+      "notes": null
+    },
+    {
+      "id": "abecip-sbpe",
+      "name": "ABECIP - financiamento imobiliário (SBPE) e poupança",
+      "kind": "dado",
+      "category": "setor-imobiliario",
+      "publisher": "ABECIP",
+      "description": "Concessões mensais de financiamento imobiliário com recursos da poupança (unidades e valor), captação líquida da poupança.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "Brasil/UF",
+        "temporal": "mensal"
+      },
+      "format": "PDF/XLSX",
+      "api": "sem API",
+      "access": "aberto",
+      "license": "reprodução com citação",
+      "extraction": "page diff do site (o caminho antigo de estatísticas mudou)",
+      "effort_days": 1,
+      "bank_metrics": [
+        "originação imobiliária e funding (FTP do imobiliário)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.abecip.org.br/",
+        "result": "200 na home; /imobiliario/dados-estatisticos 404"
+      },
+      "notes": null
+    },
+    {
+      "id": "ivgr-bcb",
+      "name": "IVG-R e séries imobiliárias do BCB",
+      "kind": "dado",
+      "category": "setor-imobiliario",
+      "publisher": "Banco Central do Brasil",
+      "description": "Índice de valores de garantia de imóveis residenciais financiados (baseado em laudos) e séries de crédito imobiliário.",
+      "coverage": "Brasil/RMs",
+      "granularity": {
+        "spatial": "Brasil",
+        "temporal": "mensal"
+      },
+      "format": "JSON",
+      "api": "SGS",
+      "access": "aberto",
+      "license": "dados abertos do BCB",
+      "extraction": "SGS",
+      "effort_days": 0.2,
+      "bank_metrics": [
+        "valor de garantia (LGD do imobiliário)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "via SGS (testado 200 para outras séries)"
+      },
+      "notes": null
+    },
+    {
+      "id": "fenabrave-anfavea",
+      "name": "Fenabrave (emplacamentos) e Anfavea (produção, vendas, exportação)",
+      "kind": "dado",
+      "category": "setor-veiculos",
+      "publisher": "Fenabrave / Anfavea",
+      "description": "Emplacamentos mensais por segmento, marca e UF (Fenabrave); produção, licenciamento e exportação (Anfavea, séries em Excel). Inclui máquinas agrícolas (Anfavea).",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "UF (Fenabrave)",
+        "temporal": "mensal"
+      },
+      "format": "PDF (Fenabrave), XLSX (Anfavea)",
+      "api": "sem API",
+      "access": "aberto",
+      "license": "reprodução com citação",
+      "extraction": "download mensal; Anfavea tem página de edições em Excel",
+      "effort_days": 1,
+      "bank_metrics": [
+        "demanda de CDC veículos",
+        "vendas de máquinas agrícolas (investimento rural, Moderfrota)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://anfavea.com.br/site/edicoes-em-excel/",
+        "result": "Anfavea 200; Fenabrave: timeout de conexão"
+      },
+      "notes": null
+    },
+    {
+      "id": "b3-sng-veiculos",
+      "name": "B3 - financiamentos de veículos (SNG)",
+      "kind": "dado",
+      "category": "setor-veiculos",
+      "publisher": "B3",
+      "description": "Número de veículos financiados por mês (autos, motos, pesados), a partir do Sistema Nacional de Gravames.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "Brasil/UF",
+        "temporal": "mensal"
+      },
+      "format": "release/PDF",
+      "api": "sem API",
+      "access": "aberto",
+      "license": "termos da B3",
+      "extraction": "page diff dos releases",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "originação de CDC veículos"
+      ],
+      "priority": "baixa",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "caged-rais",
+      "name": "Novo CAGED e RAIS (PDET/MTE)",
+      "kind": "dado",
+      "category": "emprego-renda",
+      "publisher": "MTE",
+      "description": "Admissões, desligamentos e saldo de emprego formal por município, CNAE e salário (CAGED mensal; RAIS anual).",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "município x CNAE",
+        "temporal": "mensal/anual"
+      },
+      "format": "TXT em 7z (microdados FTP), painéis",
+      "api": "FTP ftp.mtps.gov.br/pdet/microdados",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "baixar microdados mensais (centenas de MB/ano: só sob demanda) ou usar agregados",
+      "effort_days": 2,
+      "bank_metrics": [
+        "emprego local (PD de PF e consignado privado)",
+        "emprego agro por município"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged",
+        "result": "404 (página mudou de caminho); FTP não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "inss-consignado",
+      "name": "INSS/Dataprev e CNPS - benefícios e teto de juros do consignado",
+      "kind": "dado",
+      "category": "emprego-renda",
+      "publisher": "INSS / MPS",
+      "description": "Quantidade e valor de benefícios por município (Boletim Estatístico da Previdência) e teto de juros do consignado definido pelo CNPS.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "município",
+        "temporal": "mensal"
+      },
+      "format": "XLSX/PDF",
+      "api": "sem API",
+      "access": "aberto",
+      "license": "dados públicos",
+      "extraction": "download do boletim e acompanhamento das resoluções do CNPS",
+      "effort_days": 1,
+      "bank_metrics": [
+        "teto de preço do consignado INSS (restrição no pricing)",
+        "base de clientes potenciais por município"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "serasa-cnc",
+      "name": "Serasa Experian (inadimplência, recuperações judiciais) e CNC PEIC",
+      "kind": "dado",
+      "category": "varejo-consumo",
+      "publisher": "Serasa / CNC",
+      "description": "Indicadores mensais de inadimplência do consumidor e de pedidos de recuperação judicial e falência (incl. produtor rural); endividamento das famílias (PEIC).",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "Brasil/UF/setor",
+        "temporal": "mensal"
+      },
+      "format": "release/página",
+      "api": "sem API",
+      "access": "aberto (releases)",
+      "license": "uso com citação",
+      "extraction": "page diff dos releases",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "recuperações judiciais no agro (antecedente de perda)",
+        "endividamento das famílias"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": null,
+        "result": "não testado"
+      },
+      "notes": null
+    },
+    {
+      "id": "datajud",
+      "name": "CNJ Datajud - API pública de processos",
+      "kind": "dado",
+      "category": "judicial",
+      "publisher": "CNJ",
+      "description": "Metadados de processos de todos os tribunais (classe, assunto, movimentos, órgão), incluindo recuperação judicial e falência; permite contar RJs de produtores rurais por comarca.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "tribunal/comarca/processo",
+        "temporal": "contínua"
+      },
+      "format": "JSON (Elasticsearch)",
+      "api": "REST api-publica.datajud.cnj.jus.br/api_publica_{tribunal}/_search com APIKey pública divulgada pelo CNJ",
+      "access": "aberto com chave pública",
+      "license": "termos do CNJ; sem dados sensíveis",
+      "extraction": "consultas por classe (RJ) e assunto, agregadas por mês/comarca",
+      "effort_days": 2,
+      "bank_metrics": [
+        "fluxo de RJs rurais por região como antecedente de inadimplência e de LGD"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api-publica.datajud.cnj.jus.br/",
+        "result": "401 sem a chave (esperado)"
+      },
+      "notes": null
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT DOC 2.0 e GKG",
+      "kind": "dado",
+      "category": "noticias",
+      "publisher": "GDELT Project",
+      "description": "Busca em notícias online do mundo (inclusive em português) com tom, temas, entidades e geolocalização; séries de volume e tom.",
+      "coverage": "global, desde 2015 (DOC: últimos ~3 meses na API)",
+      "granularity": {
+        "spatial": "artigo; país/local mencionado",
+        "temporal": "15 min"
+      },
+      "format": "JSON/CSV",
+      "api": "REST api.gdeltproject.org/api/v2/doc/doc; GKG em BigQuery",
+      "access": "aberto",
+      "license": "uso livre com citação",
+      "extraction": "uma consulta a cada 5 s; guardar contagens e tons",
+      "effort_days": 1,
+      "bank_metrics": [
+        "volume e tom de notícias sobre agro/banco como variável de atenção",
+        "detecção de eventos (seca, RJ, operação policial)"
+      ],
+      "priority": "média",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=\"Banco do Brasil\" sourcecountry:brazil&mode=artlist&format=json&maxrecords=3",
+        "result": "429 em duas tentativas: limite de 1 consulta a cada 5 s (o servidor pede para usar o dataset de ngrams em volume)"
+      },
+      "notes": null
+    },
+    {
+      "id": "rss-imprensa",
+      "name": "RSS de imprensa econômica e agro (Agência Brasil, InfoMoney, Valor, Notícias Agrícolas, Canal Rural)",
+      "kind": "dado",
+      "category": "noticias",
+      "publisher": "vários",
+      "description": "Manchetes e resumos em tempo real; Agência Brasil com licença aberta.",
+      "coverage": "Brasil",
+      "granularity": {
+        "spatial": "artigo",
+        "temporal": "contínua"
+      },
+      "format": "RSS/XML",
+      "api": "feeds RSS (o pipeline já consome RSS em src/pawatch/web.py)",
+      "access": "aberto (manchete); texto completo pode ter paywall",
+      "license": "Agência Brasil CC BY 4.0; demais: só título/link/resumo",
+      "extraction": "feeds no sources.json de um tema",
+      "effort_days": 0.5,
+      "bank_metrics": [
+        "eventos e narrativa para o digest; gatilhos de alerta"
+      ],
+      "priority": "alta",
+      "access_test": {
+        "date": "2026-11-28",
+        "url": "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml",
+        "result": "200 (Agência Brasil); InfoMoney /feed/ 200"
+      },
+      "notes": null
+    }
+  ]
+}
