@@ -1,0 +1,337 @@
+{
+ "date": "2026-11-28",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-21",
+  "to": "2026-11-28"
+ },
+ "stats": {
+  "candidates": 85,
+  "triaged": 85,
+  "selected": 4,
+  "tokens": {
+   "prompt_tokens": 32116,
+   "completion_tokens": 17484,
+   "cost_usd": 0.013792,
+   "calls": 4,
+   "failures": 0
+  }
+ },
+ "headline": "semana de governança, transparência e verificabilidade em práticas de pessoas",
+ "trend": "O período conecta promoção, bem-estar, flexibilidade e remuneração sob uma mesma exigência: **verificabilidade**. Regras ocultas de promoção e gastos de bem-estar sem orçamento/reporte corroem justiça e confiança; a difusão do remoto reduziu seu prêmio subjetivo, enquanto flexibilidade de horário ainda pode proteger desempenho de quem tem pior saúde. Para people analytics, a agenda prática é medir equidade, explicar modelos de IA e transformar dados de bem-estar, retenção e remuneração em governança auditável.",
+ "items": [
+  {
+   "key": "doi:10.1177/23294965261509512",
+   "title": "De benefício a norma: difusão do remoto e divergência de satisfação e pay",
+   "original_title": "From Perk to Norm: The Diffusion of Remote Work and the Divergence of Its Satisfaction and Pay",
+   "url": "https://doi.org/10.1177/23294965261509512",
+   "venue": "Social Currents",
+   "date": "2026-11-27",
+   "authors": [
+    "Waris Ahmed Faizi"
+   ],
+   "institutions": [
+    "Virginia Tech"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "survey",
+    "w": "Seis ondas GSS, regressão ordinal com controles; teletrabalho."
+   },
+   "score": 8,
+   "theme": "ai_work",
+   "region": "",
+   "summary": "Com seis ondas da GSS (2002–2022) e modelos ordinais/SEM, o estudo mostra que o prêmio de satisfação do trabalho remoto caiu a quase zero em 2022, enquanto o prêmio de autonomia enfraqueceu e a vantagem salarial se manteve ou cresceu. O remoto passou a sinalizar **vantagem econômica** mais que recompensa subjetiva. Lição: ao virar norma, o benefício perde valor percebido; monitore satisfação e remuneração separadamente."
+  },
+  {
+   "key": "doi:10.3390/su182312101",
+   "title": "Flexibilidade no trabalho, saúde e desempenho subjetivo no Japão",
+   "original_title": "Workplace Flexibility, Health Status, and Subjective Work Performance: Evidence from Japanese Panel Data",
+   "url": "https://doi.org/10.3390/su182312101",
+   "venue": "Sustainability",
+   "date": "2026-11-27",
+   "authors": [
+    "Shotaro Watanabe"
+   ],
+   "institutions": [
+    "Ritsumeikan Asia Pacific University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 7,
+    "e": "survey",
+    "w": "Painel nacional japonês, 7678 observações, logit ordenado."
+   },
+   "score": 7,
+   "theme": "engagement",
+   "region": "",
+   "summary": "Painel japonês (7.678 pessoas-ano, 3.259 trabalhadores, 2019–2021) com logit ordenado mostra que flexibilidade de horário eleva em 10,2 p.p. a probabilidade de alto desempenho subjetivo entre trabalhadores com saúde ruim, contra 2,5 p.p. entre os demais (diferença de 7,7 p.p.; p=0,035). Mas a interação fica negativa em 2022–2024 e insignificante no pooled, e remoto é impreciso. Lição: flexibilidade de horário pode apoiar saúde e desempenho, mas exige monitoramento temporal."
+  },
+  {
+   "key": "doi:10.1080/09585192.2026.2766399",
+   "title": "Regras ocultas de promoção e reações dos empregados",
+   "original_title": "Promotion hidden rules and employees’ reactions: The role of procedural justice, ownership, and psychological legitimacy",
+   "url": "https://doi.org/10.1080/09585192.2026.2766399",
+   "venue": "The International Journal of Human Resource Management",
+   "date": "2026-11-27",
+   "authors": [
+    "Xueling Fan",
+    "Jun Liu",
+    "Ye Li",
+    "Chao Liu",
+    "Li Zhu"
+   ],
+   "institutions": [
+    "Nanjing University",
+    "Wuhan University of Technology",
+    "University of Aberdeen",
+    "Beijing Technology and Business University",
+    "Peking University"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 7,
+    "e": "survey",
+    "w": "Medida validada, survey de 453 + experimento de cenário."
+   },
+   "score": 8,
+   "theme": "pay_careers",
+   "region": "",
+   "summary": "Pilotos e dois estudos (N=453 empregados, 40 organizações na China; experimento de cenário) mostram que **regras ocultas de promoção** reduzem justiça processual e elevam intenção de saída, sem afetar desempenho. O efeito é mais forte em quem vê baixa legitimidade psicológica e em empresas estrangeiras vs. estatais. Lição: people analytics deve mapear critérios informais de promoção e testar transparência como alavanca de retenção."
+  },
+  {
+   "key": "doi:10.21203/rs.3.rs-11533547/v1",
+   "title": "Além do ping-pong: teste de governança para gastos com bem-estar",
+   "original_title": "Beyond the Ping-Pong Table: A Governance Test for Employee Well-Being Spending",
+   "url": "https://doi.org/10.21203/rs.3.rs-11533547/v1",
+   "venue": "Research Square",
+   "date": "2026-11-27",
+   "authors": [
+    "Shay Tsaban",
+    "Aviv Ruffel"
+   ],
+   "institutions": [
+    "Peres Academic Center",
+    "The Max Stern Yezreel Valley College"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 6,
+    "e": "admin",
+    "w": "Modelo de sinalização mais sonda de 2.629 disclosures de capital humano."
+   },
+   "score": 8,
+   "theme": "governance",
+   "region": "",
+   "summary": "O framework BCR (orçado, controlado, reportado) argumenta que gasto em bem-estar só sinaliza compromisso se não puder ser retirado sem observação. Em 2.629 divulgações de capital humano em 10-Ks do S&P 500 (2020–2025), 76% trazem alegação de bem-estar, só 1,0% anexam valor e quase não há assurance. Lição: RH e people analytics devem exigir linha orçamentária, controle interno e reporte externo verificável."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.1002/hrm.70109",
+   "title": "Retenção em scale-ups",
+   "original_title": "Growing Together or Growing Apart? The Role of Person‐Company Fit, Professional Links, and Stock‐Options Sacrifice for Employee Retention in Scale‐Ups",
+   "url": "https://doi.org/10.1002/hrm.70109",
+   "venue": "Human Resource Management",
+   "date": "2026-11-26",
+   "authors": [
+    "Petrit Ademi",
+    "Silvia Stroe"
+   ],
+   "institutions": [
+    "University of St.Gallen"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 5,
+    "e": "quasi",
+    "w": "Experimento de decisão e entrevistas; sem magnitude explícita."
+   },
+   "score": 6,
+   "theme": "engagement",
+   "region": "",
+   "note": "Em scale-ups, retenção depende de fit pessoa-empresa e vínculos profissionais; sacrifício de stock options pesa na decisão de continuar."
+  },
+  {
+   "key": "oa:W7240465799",
+   "title": "Reskilling digital e desempenho",
+   "original_title": "DOES RESKILLING PAY OFF? A SYSTEMATIC REVIEW OF THE ASSOCIATIONAL EVIDENCE ON DIGITAL COMPETENCE AND EMPLOYEE PERFORMANCE",
+   "url": "https://jurnalbundaratu.org/journal/index.php/cintanusantarajournal/article/view/327",
+   "venue": "Jurnal Cinta Nusantara (JCN)",
+   "date": "2026-11-25",
+   "authors": [
+    "- Sagari Tazya",
+    "- Irham Azmi Latifurrahman",
+    "- Nabila Yasfa Azahra",
+    "Edi Suryadi",
+    "Rasto Rasto"
+   ],
+   "institutions": [
+    "Indonesia University of Education"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "review",
+    "w": "Revisão sistemática PRISMA, 58 estudos, com avaliação de qualidade."
+   },
+   "score": 6,
+   "theme": "learning",
+   "region": "",
+   "note": "Revisão sistemática associa competência digital a desempenho, mas a qualidade da evidência ainda limita conclusões causais sobre reskilling."
+  },
+  {
+   "key": "doi:10.1017/dap.2026.10114",
+   "title": "Dados salariais por gênero na Polônia",
+   "original_title": "From fragmentation to coherence: gender wage data collection in Poland and the Pay Transparency Directive",
+   "url": "https://doi.org/10.1017/dap.2026.10114",
+   "venue": "Data & Policy",
+   "date": "2026-11-27",
+   "authors": [
+    "Alicja Wejdner-Cichy",
+    "Iga Magda"
+   ],
+   "institutions": [
+    "SGH Warsaw School of Economics",
+    "Institute for Structural Research"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "regulator",
+    "w": "Análise da Diretiva de Transparência e dados administrativos poloneses."
+   },
+   "score": 6,
+   "theme": "pay_careers",
+   "region": "",
+   "note": "Polônia fragmentada na coleta de dados salariais por gênero; diretiva de transparência exige dados desagregados e comparáveis."
+  },
+  {
+   "key": "doi:10.22495/clgrv8i4p15",
+   "title": "Equidade salarial no setor público árabe",
+   "original_title": "Gender pay gap and legislative omission: The failure of equal remuneration frameworks in Arab public administration",
+   "url": "https://doi.org/10.22495/clgrv8i4p15",
+   "venue": "Corporate Law & Governance Review",
+   "date": "2026-11-27",
+   "authors": [
+    "Raghda Raafat",
+    "Montassar Elouardi",
+    "Fouad Al Shaibi",
+    "Khaled Aljasmi"
+   ],
+   "institutions": [
+    "Umm al-Qura University",
+    "Ajman University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "regulator",
+    "w": "Análise legal comparativa de seis jurisdições; lacuna legislativa."
+   },
+   "score": 6,
+   "theme": "pay_careers",
+   "region": "",
+   "note": "Falha de equidade salarial no setor público árabe é de desenho legal: instrumentos não alcançam os mecanismos reais da desigualdade."
+  },
+  {
+   "key": "doi:10.1080/13504851.2026.2771501",
+   "title": "Risco de pares e pay-for-performance",
+   "original_title": "Does peers’ risk factor disclosure affect CEO pay-for-performance sensitivity?",
+   "url": "https://doi.org/10.1080/13504851.2026.2771501",
+   "venue": "Applied Economics Letters",
+   "date": "2026-11-26",
+   "authors": [
+    "Heung-Jae Jeon",
+    "Kyeongheum Ra"
+   ],
+   "institutions": [
+    "Incheon National University",
+    "Yonsei University"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 6,
+    "q": 7,
+    "e": "admin",
+    "w": "Arquivo 10-K 2006-2023 ligando disclosure de pares a PPS do CEO."
+   },
+   "score": 6,
+   "theme": "pay_careers",
+   "region": "",
+   "note": "Divulgação de risco por pares fortalece sensibilidade do pay-for-performance, dando ao conselho informação externa sobre ambiente de risco."
+  },
+  {
+   "key": "doi:10.6084/m9.figshare.35144830",
+   "title": "IA explicável em people analytics",
+   "original_title": "Mapping the Landscape of Explainable AI in People Analytics: A Systematic Literature Review for Ethical Management",
+   "url": "https://doi.org/10.6084/m9.figshare.35144830",
+   "venue": "Figshare",
+   "date": "2026-11-27",
+   "authors": [
+    "Jerónimo Paiva"
+   ],
+   "institutions": [],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 8,
+    "q": 4,
+    "e": "review",
+    "w": "Dataset descritivo de revisão sistemática sobre XAI em people analytics."
+   },
+   "score": 6,
+   "theme": "analytics",
+   "region": "",
+   "note": "Dataset mapeia alvos, algoritmos e aplicações de IA explicável em people analytics, útil para governança ética e auditoria de modelos."
+  }
+ ]
+}

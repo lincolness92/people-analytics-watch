@@ -5002,5 +5002,132 @@
 "e": "quali",
 "w": "Análise documental de open banking no Canadá, sem fraude direta"
 }
+},
+{
+"key": "doi:10.51583/ijltemas.2026.151100069",
+"title": "An Explainable Adaptive Federated Deep Learning Framework for Financial Fraud Detection in Nigerian Digital Banking Systems",
+"url": "https://doi.org/10.51583/ijltemas.2026.151100069",
+"venue": "International Journal of Latest Technology in Engineering Management & Applied Science",
+"date": "2026-11-27",
+"authors": [
+"Jidere Ann Obiageli",
+"Nlemadim Anuli Lynda",
+"Anyanwu Onyekachi Julian",
+"Ogijo Hannah",
+"Onyike Gerald Obinna."
+],
+"abstract": "The increasing adoption of digital financial services has created a growing demand for fraud. The shift toward digital banking across emerging markets has intensified the need for robust fraud detection that respects customer privacy and adapts to fluid criminal tactics. Traditional centralized models force banks to pool sensitive transaction logs, creating major data governance and security liabilities. While federated learning offers a decentralized alternative, standard aggregation techniques stumble when participating institutions face divergent transaction volumes, severe class imbalances, and shifting fraud distributions. This paper introduces an explainable, adaptive federated deep learning framework tailored for Nigerian digital banking environments. Using the PaySim mobile-money benchmark (6.36 million transactions; 0.129% fraud prevalence), our exploratory analysis reveals sharp class skews, particularly within TRANSFER (0.768% fraud rate) and CASH_OUT categories, alongside significant temporal drift peaking at a 4.29% fraud rate in later intervals. Building on these insights, the proposed architecture combines adaptive client weighting, drift monitoring, explainable AI, ",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "bench",
+"w": "PaySim sintético, sem resultados; framework federado"
+}
+},
+{
+"key": "doi:10.64064/1658-6336.1034",
+"title": "A Systematic Evaluation of Synthetic vs Real-World Data for Machine Learning: A Multi-Model Performance Analysis",
+"url": "https://doi.org/10.64064/1658-6336.1034",
+"venue": "Journal of King Abdulaziz University-Computing and Information Technology Sciences",
+"date": "2026-11-26",
+"authors": [
+"Hussain Afzaal",
+"Fawwad Hassan Jaskani",
+"Fahad Ali"
+],
+"abstract": "This paper presents a systematic empirical evaluation of synthetic versus real-world data for training machine learning models in financial fraud detection, a domain characterized by severe class imbalance and stringent privacy constraints. Using two large-scale credit card transaction datasets of 284,807 and 568,630 records alongside their synthetic analogs, we benchmark five algorithms under identical preprocessing and hyperparameter conditions: Logistic Regression, Random Forest, XGBoost, Support Vector Machine, and Multilayer Perceptron. On the severely imbalanced Dataset 1 (0.172% fraud rate), balanced synthetic training increased the fraud-detection F1-score of Logistic Regression from 0.11 to 0.98, of SVM from 0.51 to 0.99, and brought all ensemble and neural methods to F1 = 1.00 with AUC exceeding 0.9999. On the balanced Dataset 2, synthetic and real data yielded statistically indistinguishable performance across all five models (AUC difference less than 0.01%), demonstrating that the synthetic generation procedure preserves the essential statistical structure of the original distribution. Critically, the performance gains on Dataset 1 are attributable to the class-balancin",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "compara dados sintéticos e reais em cartão; resultados numéricos, dados públicos"
+}
+},
+{
+"key": "doi:10.1142/s1793962326500881",
+"title": "Real-Time Financial Management and Risk Forecasting Using Hybrid Transformer–GRU Neural Networks and Big Data Analytics",
+"url": "https://doi.org/10.1142/s1793962326500881",
+"venue": "Advances in Complex Systems",
+"date": "2026-11-25",
+"authors": [
+"Wanying Peng",
+"Yupu Zhao"
+],
+"abstract": "Digital payment growth has increased the need for credit card fraud detection. This study proposes a hybrid Transformer–Gated Recurrent Unit (GRU) framework integrated with Particle Swarm Optimization (PSO) for transaction risk classification. Transformer encoder captures contextual relationships within transaction sequences, while the GRU models brief temporal dependencies. PSO supports feature selection and hyperparameter optimization. Data preprocessing and sliding window sequencing facilitate temporal pattern learning. Experiments used a credit card fraud dataset containing 284,807 transactions, divided into training and testing subsets, with validation during model development. The proposed model achieved 97.59% accuracy, 95.57% precision, 99.80% recall, and a 97.64% F1 score. The reported ROC AUC was 0.9892, and the Kolmogorov Smirnov statistic was 0.956. These results indicate strong discrimination between fraudulent and legitimate transactions on the evaluated dataset. Evaluation included cross validation, parameter sensitivity analysis, and robustness assessment under varying transaction distributions. The findings demonstrate promising predictive performance and support i",
+"score": 6,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "bench",
+"w": "modelo híbrido em dataset público de cartão; métricas altas sem custo assimétrico"
+}
+},
+{
+"key": "doi:10.1186/s40854-026-00998-7",
+"title": "A systematic review on fairness in LLM applications for financial services",
+"url": "https://doi.org/10.1186/s40854-026-00998-7",
+"venue": "Financial Innovation",
+"date": "2026-11-26",
+"authors": [
+"Saurabh Aggarwal",
+"Joyjit Chattoraj",
+"Ranjan Satapathy",
+"Farooq Husain",
+"Jun Xu",
+"Thorsten Neumann"
+],
+"abstract": "The rapid proliferation of Large Language Models (LLMs) in high-stakes financial services demands a rigorous evolution in fairness auditing. The study reviews global AI fairness regulations in financial services established by regulatory authorities, examines the implementation challenges faced by financial institutions, and surveys state-of-the-art research addressing these challenges. This study presents a systematic review of the field and organizes the available evidence through a tri-dimensional landscape that maps sensitive variables (demographic, socioeconomic, and geopolitical) across five LLM downstream tasks (question-answering, text summarization, machine translation, classification, and recommendation systems) and five financial service domains (customer service, credit assessment and underwriting, fraud detection, regulatory compliance and risk reporting, and wealth management). While conventional fairness metrics such as Average Odds Difference remain relevant, emerging studies have explored complementary measures, including SAFE and ISIP, to assess subtle fairness violations and inconsistencies in financial LLM outputs. The synthesis identifies remaining research gap",
+"score": 5,
+"theme": "fraud_analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "revisão sistemática; fraude é um domínio entre cinco"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24578322",
+"title": "Malicious APK distribution through Telegram in Uzbekistan: campaigns, countermeasures and gaps",
+"url": "https://doi.org/10.5281/zenodo.24578322",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Mavzuna Bakhriddinova Uktam kizi"
+],
+"abstract": "In the first nine months of 2026 the Central Bank of Uzbekistan attributed 18,830 fraud cases and 79.3 billion soums of losses to malicious software installed on mobile devices, the largest loss among the identified fraud types, and a further 2,808 cases to Telegram account takeovers. The sources we reviewed (a vendor report and police cases) show that Android installation files (APKs) sent through Telegram are a main way such software is spread. This paper analyses the threat from public sources only: vendor reports, official statements, statistics and media. We reduce the campaigns of 2025 and 2026 to a common infection chain (lure, delivery, installation, takeover, cash-out), map the countermeasures announced by the authorities to the steps of this chain, and identify the steps without protection. The main gaps are that most measures need the user to start the check, while the attack arrives from a trusted contact's stolen account; that the public coverage of the chat-cleaning bot is unclear for private forwarding; and that the advice \"do not open APK files\" is defeated by lures with double extensions. We propose five measures, including a privacy-preserving warning at the momen",
+"score": 6,
+"theme": "scams",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "admin",
+"w": "estatísticas oficiais e fontes públicas; cadeia de infecção e lacunas"
+}
 }
 ]

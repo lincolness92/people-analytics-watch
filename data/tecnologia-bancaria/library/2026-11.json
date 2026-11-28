@@ -8763,5 +8763,172 @@
 "e": "theory",
 "w": "Método BERT para controle de confundidores textuais; útil mas sem aplicação bancária"
 }
+},
+{
+"key": "doi:10.1287/mnsc.2025.03691",
+"title": "Does FinTech Innovation Improve Traditional Banks’ Operating Efficiency and Risk? Empirical Evidence from Patent Filings",
+"url": "https://doi.org/10.1287/mnsc.2025.03691",
+"venue": "Management Science",
+"date": "2026-11-27",
+"authors": [
+"Libing Fang",
+"Xindan Li",
+"Avanidhar Subrahmanyam",
+"Ke Zhang"
+],
+"abstract": "We empirically examine the link between bank-specific innovations in financial technology (FinTech) and traditional banks’ fundamentals. We propose a new measure for FinTech innovation as the textual similarity of banks’ patent filings to standard FinTech policy documents. We show that FinTech innovation implies enhanced efficiency, profitability, and operating capacity (e.g., cost management, funding and lending activity). FinTech also ameliorates banks’ risk measures, including overall risk (Z-score), the liquidity, and nonperforming loan ratios. Our heterogeneity analysis suggests that banks with stronger managerial capacity and higher labor intensity derive moderately greater benefits from FinTech innovations. Further analysis reveals that FinTech-driven lending expansions focus on unsecured and low-risk loans, with technological specializations in cloud computing. We also find supportive evidence that expanding innovation in artificial intelligence and blockchain can yield performance gains to commercial banks. This paper was accepted by Kay Giesecke, finance. Funding: X. Li acknowledges support by the National Natural Science Foundation of China [Grants 72495151 and 72342024]",
+"score": 7,
+"theme": "innovation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 8,
+"e": "admin",
+"w": "Patentes como medida de inovação, dados administrativos, journal de elite"
+}
+},
+{
+"key": "doi:10.47392/irjaeh.2026.0763",
+"title": "Intelligent Core Banking Transformation: Building Scalable, Resilient, and AI-Ready Digital Banking Ecosystems",
+"url": "https://doi.org/10.47392/irjaeh.2026.0763",
+"venue": "International Research Journal on Advanced Engineering Hub (IRJAEH)",
+"date": "2026-11-27",
+"authors": [
+"Chaganty Vijay Kumar"
+],
+"abstract": "Core banking systems serve as the official record for almost all regulated financial institutions, and in the case of most large banks the system used for this purpose is still based on a monolithic, outdated platform—often COBOL running on a mainframe—rather than being replaced, the system being wrapped in a series of point-to-point integrations. Modernization is not a choice: real-time payment networks based on ISO 20022, open-banking APIs, and customer expectations shaped by digital-native fintech companies have all moved beyond the capabilities of a batch-processing core, and the generative and agentic AI capabilities currently transforming all the other areas of the business cannot safely be incorporated into a core that itself cannot provide clean, governed, real-time data and actions from the outset. Nevertheless, core banking transformation has one of the poorest records for delivery of any type of enterprise technology project: industry analyses show that only about 30% of such transformations successfully complete the full migration of both the ledger and the product range, that cost overruns of up to 100% and delays in the timeline of 50 to 100% are common, and that even",
+"score": 5,
+"theme": "engineering",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "theory",
+"w": "Arquitetura conceitual de core, sem dados nem validação"
+}
+},
+{
+"key": "doi:10.3390/data11120320",
+"title": "An LLM-Augmented Digital Twin for Integrated Fuzzy Multi-Objective Optimization of Invoice Financing and Working Capital in Supply Chains",
+"url": "https://doi.org/10.3390/data11120320",
+"venue": "Data",
+"date": "2026-11-27",
+"authors": [
+"Hamed Nozari",
+"Zornitsa B. Yordanova"
+],
+"abstract": "Supply chain finance management in dynamic and uncertain environments requires coordination among cash flows, contractual obligations, working capital, and operational needs. This study proposes an integrated framework combining large language models (LLMs), digital twin technology, and fuzzy multi-objective optimization for invoice financing and working capital management. Validated financial and contractual information is integrated with a dynamic representation of suppliers, buyers, and financial institutions to optimize the allocation of Reverse Factoring, Dynamic Discounting, and regular payments. The framework simultaneously minimizes financing costs, liquidity shortages, working capital exposure, and unfulfilled operational obligations while ensuring financial decision feasibility. Event-driven reoptimization enables adaptive adjustments to changing financial and operational conditions. Evaluation using real-world data from an international supply chain finance company and multiple stress scenarios demonstrates that the Optimized Hybrid Policy reduces end-of-horizon liquidity shortages by 60.8% compared with regular payments, while the integrated framework achieves 98.6% val",
+"score": 6,
+"theme": "automation",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "bench",
+"w": "Dados reais de empresa de supply chain finance, resultado simulado"
+}
+},
+{
+"key": "web:https://finsidersbrasil.com.br/criptoativos/cvm-inicia-testes-de-tokenizacao-com-11-propostas",
+"title": "CVM começa testes de tokenização e pode estender prazo até fevereiro",
+"url": "https://finsidersbrasil.com.br/criptoativos/cvm-inicia-testes-de-tokenizacao-com-11-propostas/",
+"venue": "Finsiders Brasil",
+"date": "2026-11-27",
+"authors": [],
+"abstract": "Bruno Gomes, superintendente de Securitização e Agronegócio da CVM | Imagem: Amanda Meneses/Finsiders Brasil Autarquia recebeu 11 propostas, com mais de 60 participantes do mercado, e pretende manter grupo de trabalho mesmo após o fim dos experimentos",
+"score": 5,
+"theme": "payments",
+"region": "brasil",
+"watch": [
+"Finsiders Brasil"
+],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "regulator",
+"w": "CVM inicia testes de tokenização, anúncio sem dados"
+}
+},
+{
+"key": "doi:10.36563/avfy6e48",
+"title": "CONSUMER EXPERIENCE AND E-SERVICE QUALITY IN DIGITAL PAYMENTS: LATENT DIRICHLET ALLOCATION TOPIC MODELING OF DANA E-WALLET REVIEWS",
+"url": "https://doi.org/10.36563/avfy6e48",
+"venue": "INTERNATIONAL SEMINAR",
+"date": "2026-11-26",
+"authors": [
+"Farida Islamiah",
+"Muhamad Ikbal Thola"
+],
+"abstract": "The DANA digital wallet serves hundreds of millions of accounts in Indonesia, so its service quality affects a large volume of daily transactions. This study aims to identify the main topics in DANA user reviews on Google Play, interpret them through the E-S-QUAL and E-RecS QUAL dimensions of electronic service quality, and test whether ratings differ across topics. The data consist of 4,000 Indonesian-language reviews posted between April and October After near-identical template reviews were filtered out and the text was preprocessed in Indonesian (slang normalization, stopword removal, and Sastrawi stemming), 3,979 reviews were modeled with Latent Dirichlet Allocation in the Gensim library. The number of topics was selected using c_v and u_mass coherence and topic diversity across three random seeds. The selected model contains ten topics with a c_v coherence of 0.417. The largest topic is transaction and system disruptions (24.3%), followed by the DANA Cicil installment feature (15.7%) and deducted balances and refunds (13.3%). The customer service and chatbot topic has the lowest mean rating (1.71), whereas DANA Cicil has the highest (3.01). Ratings differ significantly across",
+"score": 5,
+"theme": "conversational",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "bench",
+"w": "LDA sobre 3.979 reviews reais de e-wallet, dados públicos"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24581825",
+"title": "Three Tokens, One Euro? Digital Euro, Stablecoins and Tokenised Deposits between Private Law and EU Regulation",
+"url": "https://doi.org/10.5281/zenodo.24581825",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-26",
+"authors": [
+"Rosa Giovanna Barresi",
+"Filippo Zatti"
+],
+"abstract": "Slides of the joint presentation given at the VI Italian–Norwegian Conference, organised by the Italian–Norwegian Institute of Research for Law and Economics (INRILE) and the UNIDROIT Nordic Law Centre (Rome, UNIDROIT, 26 November 2026). The presentation argues that tokenisation does not create new money: it changes the ledger on which money circulates. Part I (Barresi) sets out the public benchmark: the digital euro as public money with private distribution, its holding limits and waterfall mechanism, the tension between settlement finality and refund duties, and the comparison with e-money tokens under MiCAR. Part II (Zatti) examines tokenised deposits: what their classification as deposits settles and leaves open, the bearer and non-bearer models, the boundary with e-money tokens, the role of control under the UNIDROIT Principles, and the Eurosystem's Pontes as a case of all-or-none settlement across two ledgers. The conclusion asks whether the singleness of money is secured by private law or by access to central bank infrastructure. Authorship of the slides: slides 1–2 and 16–17, joint (Barresi and Zatti); Part I, slides 3–9, Barresi; Part II, slides 10–15, Zatti.",
+"score": 5,
+"theme": "payments",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "theory",
+"w": "Slides jurídicos sobre euro digital e depósitos tokenizados"
+}
+},
+{
+"key": "doi:10.5281/zenodo.24581200",
+"title": "AgentTrust: Behavioural Trust Establishment in Open Agent Marketplaces with Causal Inference and Game-Theoretic Adversary Modelling",
+"url": "https://doi.org/10.5281/zenodo.24581200",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Ezekiel Ologunde"
+],
+"abstract": "Open agent marketplaces---ecosystems where autonomous AI agents discover one another, negotiate prices, contract for tasks, and exchange payment without centralised intermediation---have moved from research speculation to deployment surface in 2024--2026 with the emergence of agent-to-agent (A2A) protocol specifications, MCP agent-tool extensions, and commercial agent-marketplace platforms. The trust problem in this regime is structurally different from human-marketplace reputation: identity is cheap (agents can be spawned by the millions for trivial cost), behaviour is the only reliable signal, and the agents being scored are adaptive optimisers that will strategise against any deterministic scoring rule. Traditional reputation systems (rating averages, Bayesian rating, eBay-style feedback) collapse under these conditions: sybil attacks inflate reputations through fake-identity creation, collusion rings produce fraudulent positive feedback at scale, and strategic agents perform honestly during reputation accumulation only to defect when the exploitation payoff exceeds the reputation cost. This paper presents , a behavioural-trust framework that combines graph-neural-network reputa",
+"score": 5,
+"theme": "agentic_commerce",
+"region": "mundo",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "theory",
+"w": "Framework de confiança em mercado agêntico, sem resultados"
+}
 }
 ]

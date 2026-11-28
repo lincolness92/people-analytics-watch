@@ -17395,5 +17395,858 @@
 "e": "theory",
 "w": "Capítulo introdutório de inferência bayesiana para people analytics; conceitual."
 }
+},
+{
+"key": "doi:10.1080/09585192.2026.2766399",
+"title": "Promotion hidden rules and employees’ reactions: The role of procedural justice, ownership, and psychological legitimacy",
+"url": "https://doi.org/10.1080/09585192.2026.2766399",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-27",
+"authors": [
+"Xueling Fan",
+"Jun Liu",
+"Ye Li",
+"Chao Liu",
+"Li Zhu"
+],
+"abstract": "Formal promotion rules do not always fully explain how promotions unfold in organizations. We conceptualize promotion hidden rules (PHRs) and draw on procedural justice theory to theorize their effects on employees’ perceptions of procedural justice and subsequent turnover intentions and job performance. We conducted a series of pilot studies and two main studies to test the proposed relationships. Across pilot studies, we developed and validated a measure of PHRs. Study 1, with a sample of 453 employees from 40 organizations in China, verified the indirect effects of PHRs on turnover intentions but not on job performance via procedural justice. Additionally, we theorize how the psychological legitimacy of hidden rules and organizational ownership moderate the negative effect of PHRs on procedural justice. The results of Study 1 revealed that PHRs have stronger negative effects on procedural justice for employees with lower psychological legitimacy and those in foreign-owned enterprises compared to state-owned enterprises, resulting in increased turnover intentions only. Study 2, a scenario-based experiment, supported the effects of PHRs on employees’ turnover intentions and job pe",
+"score": 7,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 7,
+"e": "survey",
+"w": "Medida validada, survey de 453 + experimento de cenário."
+}
+},
+{
+"key": "doi:10.1002/hrm.70109",
+"title": "Growing Together or Growing Apart? The Role of Person‐Company Fit, Professional Links, and Stock‐Options Sacrifice for Employee Retention in Scale‐Ups",
+"url": "https://doi.org/10.1002/hrm.70109",
+"venue": "Human Resource Management",
+"date": "2026-11-26",
+"authors": [
+"Petrit Ademi",
+"Silvia Stroe"
+],
+"abstract": "The scale‐up phase redefines the organizational structures, activities, and role expectations that characterized the start‐up setting early venture employees originally chose to join, thereby introducing distinctive challenges and opportunities for employee retention. This study builds on job embeddedness theory and conservation of resources theory to study employment‐continuation decisions in scale‐ups. Drawing on a decision‐making experiment and interviews with scale‐up employees, we investigate the effects of person‐company fit, professional links, and stock‐options sacrifice on employees' willingness to stay at a scale‐up. Our results show that scale‐up employees assess the resource utility of these dimensions differently depending on their individual preferences. Our study thereby advances an employee‐centric understanding of retention in scale‐ups, where staying depends on whether employees continue to find value in a venture that no longer resembles the one they joined. From a practical standpoint, this research offers important guidance for developing human resource strategies in scale‐ups, which represent a key challenge after growth‐driven professionalization has occurred",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "quasi",
+"w": "Experimento de decisão e entrevistas; sem magnitude explícita."
+}
+},
+{
+"key": "doi:10.1080/09585192.2026.2766390",
+"title": "How do organizations manage external workers? A comparative study among Australian and Belgian companies",
+"url": "https://doi.org/10.1080/09585192.2026.2766390",
+"venue": "The International Journal of Human Resource Management",
+"date": "2026-11-27",
+"authors": [
+"Frédéric Naedenoen",
+" McKeown_Tui",
+"François Pichault"
+],
+"abstract": "This study delves into the management of external workers within Australian and Belgian companies. The research scrutinizes the influence of institutional contexts on Total Workforce Management (TWM) practices. Drawing on responses from 326 HR managers in both countries, our quantitative research examines formalization and HR centralization as organizational governance mechanisms in TWM and their relationships with four TWM practices: differentiation, infrastructure sharing, socialization and organizational compliance. Findings reveal pronounced differences between Australian and Belgian companies, primarily due to the contrasting regulatory frameworks associated with Australia’s liberal market economy and Belgium’s coordinated market economy. Australian firms exhibit higher formalization in TWM practices compared to their Belgian counterparts. High formalization is associated with stronger differentiation and lower socialization, while its influence on infrastructure sharing and organizational compliance appears more complex and context-dependent. Unexpectedly, the results also show that formalization is negatively related to HR centralization, suggesting that highly formalized or",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Survey de 326 gestores de RH; comparativo institucional, sem causalidade."
+}
+},
+{
+"key": "doi:10.1080/15332845.2026.2767489",
+"title": "The influence of employer attractiveness on talent acquisition and retention: The moderator effect of gender in quick service restaurants (QSRs)",
+"url": "https://doi.org/10.1080/15332845.2026.2767489",
+"venue": "Journal of Human Resources in Hospitality & Tourism",
+"date": "2026-11-27",
+"authors": [
+"Remon Samir Fouad"
+],
+"abstract": "This study explores how employer attractiveness shapes talent attraction and retention (TAR) in quick service restaurants (QSRs), with gender examined as a moderating factor. Using employer branding and social exchange theories, five dimensions Economic, Safety, Application, Development, and Social Value were assessed using data from 484 employees. Results showed that Economic, Safety, Development, and Social Value significantly enhanced TAR, while Application Value did not. Gender moderated the effects of Economic and Social Value, with stronger influences among males. The findings highlight the need for gender-responsive employer branding that balances economic, social, and developmental support within QSR workplaces.",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Survey de 484 funcionários; branding de empregador, autorrelato."
+}
+},
+{
+"key": "doi:10.36713/epra32238",
+"title": "DIGITAL TRANSFORMATION AND AI , ITS IMPACT ON EMPLOYEE WELL-BEING AND ENGAGEMENT: EVIDENCE FROM EMPIRICAL STUDIES",
+"url": "https://doi.org/10.36713/epra32238",
+"venue": "EPRA International Journal of Multidisciplinary Research (IJMR)",
+"date": "2026-11-27",
+"authors": [
+"Neelima. C.S",
+"Athira . K.M"
+],
+"abstract": "Digital transformation has become one of the defining forces reshaping contemporary workplaces, altering not only how organizations create value but also how employees experience their day-to-day work. This paper reviews empirical evidence on the relationship between digital transformation and two closely linked outcomes: employee well-being and employee engagement. Drawing on quantitative surveys, qualitative case studies, and mixed-method investigations conducted across manufacturing, healthcare, education, hospitality, and corporate service settings, the review is organized around the Job Demands-Resources model and Conservation of Resources theory. The evidence suggests that digital transformation carries a dual character: it can function as a resource that enables autonomy, flexibility, and meaningful engagement, while simultaneously acting as a demand that produces techno stress, work exhaustion, and disengagement when introduced without adequate support. Mediating mechanisms such as digital self-efficacy, supervisor support, work-life balance, and participative change management appear to determine which of these pathways dominates. The paper concludes with practical implica",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "review",
+"w": "Revisão narrativa de evidências; sem síntese sistemática."
+}
+},
+{
+"key": "doi:10.1177/00333549261508840",
+"title": "Evaluating Health Professional Burnout and Job Satisfaction Using the US Surgeon General’s Framework for Workplace Mental Health and Well-Being",
+"url": "https://doi.org/10.1177/00333549261508840",
+"venue": "Public Health Reports",
+"date": "2026-11-27",
+"authors": [
+"Debora Goetz Goldberg",
+"Sravya Vunnam",
+"Rathish Moorthy",
+"Panagiota Kitsantas"
+],
+"abstract": "OBJECTIVES: Burnout among US physicians, nurses, and other health professionals is a major issue. We assessed associations between health professional burnout and job satisfaction with workplace factors represented in the US Surgeon General's Framework for Workplace Mental Health and Well-Being. METHODS: Health professionals (N = 588) from across the United States participated in a survey conducted from 2022 through 2024. We used the National Institute for Occupational Safety and Health Worker Well-Being Questionnaire to measure health professionals' perceptions of their workplace environment. We used the US Surgeon General's Framework for Workplace Mental Health and Well-Being as an analytical framework for examining relationships between burnout and job satisfaction and framework domains. Data analysis included descriptive statistics, bivariate analysis, factor analysis, and logistic regression. RESULTS: Higher levels of protection from harm (adjusted odds ratio [AOR] = 0.71; 95% CI, 0.65-0.78; P < .001) and opportunity for growth (AOR = 2.10; 95% CI, 1.30-3.50; P = .003) significantly reduced the likelihood of burnout. Health professionals who were not satisfied with their oppor",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "survey",
+"w": "Transversal, 588 respondentes, regressão logística; autorrelato."
+}
+},
+{
+"key": "doi:10.3390/su182312108",
+"title": "Beyond Collaboration: Managerial Coordination and Hybrid Work Preferences in the Context of Sustainable Organization Management",
+"url": "https://doi.org/10.3390/su182312108",
+"venue": "Sustainability",
+"date": "2026-11-27",
+"authors": [
+"Cătălina Radu",
+"Judith Kis",
+"Sorina Ioana Mișu",
+"Manuela Tuncă"
+],
+"abstract": "This study examines how managerial perceptions are associated with preferences for hybrid work arrangements. Based on survey data from 122 managers working in the Romanian insurance sector, the study combines analysis of the higher-order structure of office-related perceptions, correlation analysis, hierarchical regression, and cluster analysis to investigate organizational factors associated with hybrid work attitudes. Results indicate that managers’ evaluations of office-based work are strongly interconnected, reflecting a broader perception of office effectiveness. Hierarchical regression analysis showed that perceived office advantages for managerial coordination explained additional variance in managers’ hybrid work preferences beyond perceived office performance, collaboration, and the perceived benefits of hybrid work (ΔR2 = 0.052, p = 0.003). In the final model, these coordination perceptions were negatively associated with a preference for hybrid work, whereas perceived hybrid work benefits showed a positive association. Neither perceived office performance nor collaboration contributed significantly once managerial coordination was taken into account. Cluster analysis ide",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Survey de 122 gestores; regressão hierárquica, amostra pequena."
+}
+},
+{
+"key": "oa:W7240465799",
+"title": "DOES RESKILLING PAY OFF? A SYSTEMATIC REVIEW OF THE ASSOCIATIONAL EVIDENCE ON DIGITAL COMPETENCE AND EMPLOYEE PERFORMANCE",
+"url": "https://jurnalbundaratu.org/journal/index.php/cintanusantarajournal/article/view/327",
+"venue": "Jurnal Cinta Nusantara (JCN)",
+"date": "2026-11-25",
+"authors": [
+"- Sagari Tazya",
+"- Irham Azmi Latifurrahman",
+"- Nabila Yasfa Azahra",
+"Edi Suryadi",
+"Rasto Rasto"
+],
+"abstract": "Organisations have invested in reskilling and upskilling as digital transformation reshapes jobs, yet it remains unclear how firmly digital competence and human resource development are linked to performance. This systematic literature review synthesised the empirical evidence on that link and appraised its quality. Following the 2020 Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement and the Scientific Procedures and Rationales for Systematic Literature Reviews protocol, we searched Scopus for English-language journal articles published in 2019–2026, included 58 studies, appraised them with the Mixed Methods Appraisal Tool 2018, and synthesised findings by vote counting and narrative synthesis. Digital competence was mostly general digital literacy (46 studies) measured without a standard instrument, and 28 studies contained no human resource development intervention. Of 25 studies with performance-related outcomes, 18 reported positive and seven mixed associations; none reported null or negative ones. Vote counting records direction, not magnitude, and publication bias and heterogeneity limit confidence in this pattern: 21 studies relied on perceived out",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "review",
+"w": "Revisão sistemática PRISMA, 58 estudos, com avaliação de qualidade."
+}
+},
+{
+"key": "doi:10.36096/ijbes.v8i7.1672",
+"title": "Redistributing Human Resource Management through Algorithmic Management among Ride-Hailing Drivers in Zimbabwe",
+"url": "https://doi.org/10.36096/ijbes.v8i7.1672",
+"venue": "International Journal of Business Ecosystem and Strategy (2687-2293)",
+"date": "2026-11-27",
+"authors": [
+"Henry Masungo",
+"Owen Zivanai Mukwawaya",
+"Emmanuel Mutambara"
+],
+"abstract": "Digital labour platforms increasingly embed human resource management (HRM) functions within digital infrastructures that coordinate work, generate performance information and regulate access to work. This paper examines how platform-mediated algorithmic management redistributes HRM functions and how this redistribution is experienced by ride-hailing drivers in Harare, Zimbabwe. Drawing on an interpretivist qualitative case study of 18 drivers and seven key informants, the study uses semi-structured interviews, a focus-group discussion with six drivers drawn from the interview sample, and key-informant interviews. Reflexive thematic analysis generated six themes: digital recruitment and transactional onboarding; customer ratings as distributed performance management; rating pressure and behavioural self-regulation; deactivation as digital discipline; formal independence and operational dependence; and stress under algorithmic and economic uncertainty. The findings show that platformisation does not simply replace human supervision with algorithmic control. Rather, HRM functions are redistributed across platform operators, digital systems, customers and workers. Customers were descr",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "Qualitativo com 18 motoristas; gestão algorítmica sem números."
+}
+},
+{
+"key": "oa:W7240428156",
+"title": "The Intention Exit Gap in Government Employee Turnover: A Systematic Literature Review and Future Research Agenda for Indonesia’s Civil Service",
+"url": "https://ecbis.net/index.php/go/article/view/601",
+"venue": "Economics and Business Journal (ECBIS)",
+"date": "2026-11-22",
+"authors": [
+"Muhaidir Ikram",
+"Mufidatul Azmi"
+],
+"abstract": "Government employee turnover has been widely studied, yet substantially more is known about employees’ withdrawal and retention cognitions than about how those cognitions translate into subsequent employment behavior. This systematic literature review synthesizes 28 empirical studies published between 2009 and August 2026 on turnover and retention among civilian government employees. Following PRISMA 2020, studies were identified through Scopus and Google Scholar using Publish or Perish and synthesized using the Theory–Context–Characteristics–Methodology (TCCM) framework. The findings show that 22 studies (78.6%) primarily examined cognition-based outcomes, whereas only four (14.3%) directly examined realized employment outcomes. Psychological and organizational mechanisms predominantly explain the formation of withdrawal cognition, while institutional, contractual, and labor-market conditions become more salient in studies of realized mobility, retention, and exit. The review identifies an intention–exit gap and develops a multistage framework distinguishing antecedents, psychological mechanisms, withdrawal and retention cognition, intermediate withdrawal processes, and realized e",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA de 28 estudos sobre rotatividade."
+}
+},
+{
+"key": "doi:10.1177/23294965261509512",
+"title": "From Perk to Norm: The Diffusion of Remote Work and the Divergence of Its Satisfaction and Pay",
+"url": "https://doi.org/10.1177/23294965261509512",
+"venue": "Social Currents",
+"date": "2026-11-27",
+"authors": [
+"Waris Ahmed Faizi"
+],
+"abstract": "Working from home was once a scarce privilege; since 2020, it has become ordinary. Does a work arrangement stay as attractive when it becomes much more widely available? I answer this question with six Quality of Working Life waves of the U.S. General Social Survey (2002–2022), using survey-weighted ordinal regression and structural equation modeling. Before the pandemic, workers who worked from home more often reported higher job satisfaction and more autonomy at work, net of controls. In 2022, after remote work had spread, the job-satisfaction premium of remote work had fallen to near zero and the autonomy premium had weakened, while its associations with workplace dignity and trust, health, and social engagement showed no significant change. The association with pay moved the other way: the earnings advantage of remote workers held and, if anything, grew. Remote work thus came to signal economic advantage more than subjective reward. The job-satisfaction result persists among respondents interviewed in person, with occupation and industry controls, and in an employee-only sample, with no pre-2022 trend or placebo break. The findings suggest that the subjective value of a job ame",
+"score": 7,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "survey",
+"w": "Seis ondas GSS, regressão ordinal com controles; teletrabalho."
+}
+},
+{
+"key": "doi:10.3389/forgp.2026.1963652",
+"title": "The mediating role of intrinsic job motivation in the relationship between perceived job autonomy and turnover intention among administrative university employees in Norway: findings from 2020 to 2023",
+"url": "https://doi.org/10.3389/forgp.2026.1963652",
+"venue": "Frontiers in Organizational Psychology",
+"date": "2026-11-27",
+"authors": [
+"Erik Grasaas",
+"Miroslav Radojcic",
+"Ole Gerhard Sørensen"
+],
+"abstract": "Background Previous research has demonstrated a heterogeneity of associations between perceived job autonomy and Turnover Intention (TI), often implying underlying mechanisms. This study addresses this gap by providing novel insight into the mediating role of intrinsic job motivation in the relationship between job autonomy and TI among administrative university staff from the COVID-19 outbreak to the post-pandemic period. Thus, the objective of this study is to (1) describe job autonomy, intrinsic job motivation and TI from 2020 to 2023 among administrative employees and to (2) explore the mediating role of intrinsic job motivation in the relationship between perceived job autonomy and TI. Methods Annual cross-sectional aggregated data from the ARK-questionnaire, collected between 2020 and 2023, were administered. In total, 11,496 administrative employees participated during this period. The survey was electronically distributed by email. All procedures and questions had received approval from the Norwegian Agency for Shared Services in Education and Research (SIKT). Mediation analyses were conducted in SPSS version 30 for Mac, using PROCESS macro by Hayes. Results Across the peri",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "survey",
+"w": "11.496 respondentes agregados; mediação em cortes transversais."
+}
+},
+{
+"key": "doi:10.1017/dap.2026.10114",
+"title": "From fragmentation to coherence: gender wage data collection in Poland and the Pay Transparency Directive",
+"url": "https://doi.org/10.1017/dap.2026.10114",
+"venue": "Data & Policy",
+"date": "2026-11-27",
+"authors": [
+"Alicja Wejdner-Cichy",
+"Iga Magda"
+],
+"abstract": "Effective policy design depends on the availability of detailed, disaggregated data. Despite growing recognition of the need for intersectional data, including gender data, significant gaps remain globally and within the European Union. At the EU level, insufficient comparability across and within Member States persists, with key challenges including a lack of coherent data collection, insufficient resources for equality bodies and research institutes, and limited use of existing data. This article examines the implementation of the EU Pay Transparency Directive in Poland, where comprehensive gender wage gap reporting remains absent. Statistics Poland started publishing monthly unadjusted wage gender gaps only recently, while adjusted estimates accounting for factors such as education, experience, and occupational position are not regularly available, limiting the ability to diagnose pay inequality accurately. The Directive’s implementation presents an opportunity for Poland to improve gender wage data collection. This article analyses two approaches: a model based primarily on employer-conducted pay analyses, and an alternative that makes greater use of existing administrative dat",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "regulator",
+"w": "Análise da Diretiva de Transparência e dados administrativos poloneses."
+}
+},
+{
+"key": "doi:10.36096/ijbes.v8i7.1635",
+"title": "Bridging the Talent Acquisition Gap: A Status–Importance Analysis of Organisational Recruitment Practices",
+"url": "https://doi.org/10.36096/ijbes.v8i7.1635",
+"venue": "International Journal of Business Ecosystem and Strategy (2687-2293)",
+"date": "2026-11-27",
+"authors": [
+"Owen Zivanai Mukwawaya",
+"Solly Matshonisa Seeletse",
+"Emmanuel Mutambara"
+],
+"abstract": "Talent acquisition (TA) is gradually viewed as a strategic organisational capability covering talent attraction, employer branding, recruitment mechanisms, hiring quality, and newcomer productivity. This study investigates alignment between perceived organisational capability and the perceived strategic importance of five TA practices. This study used quantitative, cross-sectional survey design. Data were collected from 400 completed questionnaires assessing the current status and importance of attracting top talent, employment branding, new-hire productivity, employee referral programmes, and hiring effectiveness and quality of hire. It involved descriptive statistics and status–importance gap analysis, calculating gaps as importance minus status. All responses were retained after data screening. The largest perceived gap occurred for hiring effectiveness and quality of hire, with a status mean of 2.24 and an importance mean of 4.40, producing a gap of 2.16. Attracting top talent ranked second, with a gap of 1.60, followed by employment branding (1.01), employee referrals (0.89), and new-hire productivity (0.60). The overall five-practice gap was approximately 1.25 points. This in",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Survey de 400; análise de lacuna status-importância."
+}
+},
+{
+"key": "doi:10.3390/su182312101",
+"title": "Workplace Flexibility, Health Status, and Subjective Work Performance: Evidence from Japanese Panel Data",
+"url": "https://doi.org/10.3390/su182312101",
+"venue": "Sustainability",
+"date": "2026-11-27",
+"authors": [
+"Shotaro Watanabe"
+],
+"abstract": "Workplace flexibility may have different implications for work performance depending on its form and workers’ circumstances. Using nationally representative panel data from the Japan Household Panel Survey and Keio Household Panel Survey (JHPS/KHPS), this study examines whether schedule- and location-based flexibility are associated with subjective work performance and whether these associations vary by health status. The baseline analysis uses 7678 person-year observations from 3259 workers aged 20–64 in 2019–2021 and estimates random-effects ordered logit models. Poor self-rated health is consistently associated with lower subjective work performance. Schedule-Based Flexibility (SBF) shows the clearest positive baseline pattern: it is associated with a 10.2 percentage-point increase in the probability of high subjective work performance (SWP ≥ 7) among workers reporting poor health, compared with 2.5 percentage points among those not reporting poor health; the difference in average marginal effects is 7.7 percentage points (p = 0.035). However, the SBF × poor-health interaction turns negative in 2022–2024 and is statistically insignificant in the pooled 2019–2024 analysis, indica",
+"score": 7,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 7,
+"e": "survey",
+"w": "Painel nacional japonês, 7678 observações, logit ordenado."
+}
+},
+{
+"key": "doi:10.22495/clgrv8i4p15",
+"title": "Gender pay gap and legislative omission: The failure of equal remuneration frameworks in Arab public administration",
+"url": "https://doi.org/10.22495/clgrv8i4p15",
+"venue": "Corporate Law & Governance Review",
+"date": "2026-11-27",
+"authors": [
+"Raghda Raafat",
+"Montassar Elouardi",
+"Fouad Al Shaibi",
+"Khaled Aljasmi"
+],
+"abstract": "Equal pay frameworks in Arab public administration persist in formal adequacy while failing in substantive effect. This paper argues that the failure is one of design rather than enforcement: the legal instruments deployed cannot reach the dominant mechanisms through which wage inequality operates. Drawing on a comparative legal analysis of six jurisdictions—the United Arab Emirates (UAE), Saudi Arabia, Jordan, Egypt, Qatar, and Bahrain—and applying the legislative omission doctrine developed in constitutional law (Aboelazm, 2024), the paper identifies three structural deficiencies. The “same work” comparator cannot address inequality produced by occupational segregation. The absence of mandatory pay transparency renders discriminatory pay-setting invisible to complainants and enforcement bodies alike. Complaint-driven enforcement is institutionally incapable of producing systemic correction under Arab public employment conditions. Three legislative reforms are proposed—the “equal value” standard, mandatory transparency reporting, and proactive audit obligations—each demonstrated to be effective in comparable jurisdictions. The paper introduces the legislative omission framework as",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "regulator",
+"w": "Análise legal comparativa de seis jurisdições; lacuna legislativa."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24585327",
+"title": "The Capacity to Replace: Artificial Intelligence, Job Loss and the Bargaining Power of Workers",
+"url": "https://doi.org/10.5281/zenodo.24585327",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Alexandra Cary"
+],
+"abstract": "The Capacity to Replace: Artificial Intelligence, Job Loss and the Bargaining Power of Workers is a conceptual research paper in the On Human Modeling series examining how the availability of artificial intelligence changes employment decisions, economic dependence, and the terms under which people sell their work. The paper distinguishes technical replaceability from actual displacement and identifies how a buyer's willingness to try an alternative can alter bargaining leverage before the alternative's effectiveness has been established. The analysis begins with Argentine voice actor Alejandro Graue, whose recurring dubbing work was diverted to a synthetic voice in 2023. Audience complaints led to the removal of the AI-voiced episodes, but his assignments did not resume and the channel subsequently stopped publishing. A second case examines Chinese microdrama actor Xu Peng, who reported two canceled productions in 2026 and subsequently declined shorter, lower-paid assignments. The cases distinguish lost work from successful substitution and examine the economic consequences of refusing unfavorable terms. Studies of online freelance contracts, earnings, and job postings extend the ",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "theory",
+"w": "Ensaio conceitual com dois casos anedóticos, sem identificação causal."
+}
+},
+{
+"key": "doi:10.31234/osf.io/en9y5",
+"title": "Workplace Inclusion Measures for Neurodivergent Teachers: A Scoping Review",
+"url": "https://doi.org/10.31234/osf.io/en9y5",
+"venue": "PsyArXiv (OSF Preprints)",
+"date": "2026-11-27",
+"authors": [
+"Jessica Spiegler",
+"Norah Richards",
+"Anna Melissa Romualdez",
+"Elizabeth Pellicano"
+],
+"abstract": "Inclusive school practices, especially for students who are neurodivergent and have special educational needs, have received important attention in recent years. Yet, little is known about the inclusion of those tasked with upholding these practices for students, the teachers themselves. Disabled teachers perceive their firsthand experiences as fostering inclusive schools. There is a growing body of literature reporting on workplace experiences of neurodivergent teachers, such as those who are autistic, ADHD, and dyslexic, yet the systems and cultures that support their workplace inclusion have not been addressed. This study aimed to review what is known about the supports and structures that foster or prevent workplace inclusion for neurodivergent educators. In total, thirty-nine studies about teachers and pre-service teachers who are autistic, ADHD, and have specific learning disabilities such as dyslexia were included in this review. We analysed these deductively, drawing upon critical social theory, and inductively, to present a thematic synthesis of the systems and cultures that contribute to the employment inclusion and exclusion of neurodivergent teachers. Teachers often use",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Scoping review de 39 estudos sobre inclusão no trabalho docente."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24587769",
+"title": "BEYOND AUTOMATION: A CANDIDATE-CENTRED FRAMEWORK FOR RESPONSIBLE ARTIFICIAL INTELLIGENCE I RECRUITMENT – INTEGRATING FAIRNESS, TRANSPARENCY, TRUST AND HUMAN OVERSIGHT",
+"url": "https://doi.org/10.5281/zenodo.24587769",
+"venue": "JME",
+"date": "2026-11-27",
+"authors": [
+"Journal of Management Excellence"
+],
+"abstract": "The growing use of Artificial Intelligence (AI) in recruitment is changing how employers identify, assess and select prospective employees. AI applications can process large applicant pools, support résumé screening and assist with preliminary assessments. At the same time, their use raises questions about unequal treatment, the explainability of decisions, the handling of personal information and the extent to which applicants can rely on automated recommendations. This paper develops a candidate-centred conceptual framework for the responsible use of AI in recruitment. Informed by organisational justice theory, trust in automation and responsible AI principles, the framework brings together five governance dimensions: algorithmic fairness, decision transparency, responsible data practices, meaningful human oversight, and candidate participation with access to redress. It proposes that these practices shape applicants’ perceptions of recruitment justice and trust, which may subsequently influence their willingness to accept AI-assisted recruitment. Organisational accountability and continuous monitoring are presented as cross-cutting conditions that support the effective implement",
+"score": 5,
+"theme": "hiring",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 3,
+"e": "theory",
+"w": "Framework conceitual de IA responsável em recrutamento, sem validação empírica."
+}
+},
+{
+"key": "doi:10.36096/ijbes.v8i7.1422",
+"title": "A Socio-Technical Analysis of Remote Work in a Public Sector Client Services Institution: Evidence from South Africa",
+"url": "https://doi.org/10.36096/ijbes.v8i7.1422",
+"venue": "International Journal of Business Ecosystem and Strategy (2687-2293)",
+"date": "2026-11-27",
+"authors": [
+"Mamoloko Florah Rachidi",
+"Hope Ralehlaka",
+"Owen Zivanai Mukwawaya"
+],
+"abstract": "The purpose of this study was to investigate the benefits and challenges of working from home in a public sector organization, which functions mainly through direct service to clients in a rural province of South Africa. The need to understand how employees navigate this change is crucial to improving future work models. This study explores the lived experiences of employees in a South African government department, examining the dynamics of working from home. The study is underpinned by the Socio-Technical Systems (STS) Theory, which provides a lens to examine how employees interact with technology in the context of remote work. The study was conducted using a qualitative exploratory approach. Data were collected through in-depth interviews with both employees who worked from home during the COVID-19 pandemic and those who had opted to work from the office. Thematic data analysis was used to identify common themes. The study results have highlighted the benefits, which include savings on time and cost, flexibility and opportunities to interact with family, while the challenges included difficulty maintaining work-life balance, poorer quality of work skills. The study concludes tha",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "quali",
+"w": "Entrevistas qualitativas sobre trabalho remoto no setor público sul-africano."
+}
+},
+{
+"key": "doi:10.1080/13504851.2026.2771501",
+"title": "Does peers’ risk factor disclosure affect CEO pay-for-performance sensitivity?",
+"url": "https://doi.org/10.1080/13504851.2026.2771501",
+"venue": "Applied Economics Letters",
+"date": "2026-11-26",
+"authors": [
+"Heung-Jae Jeon",
+"Kyeongheum Ra"
+],
+"abstract": "This study examines whether peer firms’ accounting-related risk disclosures influence executive incentive contracting. Using U.S. Form 10-K filings from 2006 to 2023, we construct a measure of peer firms’ accounting-related risk disclosure based on Item 1A and examine its relation with CEO pay-for-performance sensitivity. We find that greater peer risk disclosure is associated with stronger PPS. We argue that peer risk disclosures provide boards with external information about the risk environment facing comparable firms, thereby increasing the perceived importance of aligning managerial incentives with firm performance. Consistent with this mechanism, the relation is more pronounced when agency conflicts are more severe and when firms operate in poorer information environments. Our findings contribute to the disclosure and executive compensation literatures by documenting an information spillover from peer firms’ risk disclosures to focal firms’ contracting decisions.",
+"score": 6,
+"theme": "pay_careers",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 7,
+"e": "admin",
+"w": "Arquivo 10-K 2006-2023 ligando disclosure de pares a PPS do CEO."
+}
+},
+{
+"key": "doi:10.6084/m9.figshare.35144830",
+"title": "Mapping the Landscape of Explainable AI in People Analytics: A Systematic Literature Review for Ethical Management",
+"url": "https://doi.org/10.6084/m9.figshare.35144830",
+"venue": "Figshare",
+"date": "2026-11-27",
+"authors": [
+"Jerónimo Paiva"
+],
+"abstract": "This dataset supports the systematic literature review \"Mapping the Landscape of Explainable AI in People Analytics.\" It contains three worksheets:Sheet1 – Descriptive statistics: publication counts by country (with percentages) and by year (2022–2026). Sheet2 – Coding matrix of the included studies, recording for each study the primary prediction target, algorithm(s) used, sample/data source, and HR applicability. Sheet3 – Algorithm frequency analysis, with counts and percentages both per individual algorithm (e.g., SHAP, Random Forest, XGBoost, LIME) and by aggregated algorithm category (tree-based, deep learning, regression, etc.). The data were extracted from peer-reviewed studies identified through the PRISMA-guided search described in the accompanying article. Note: country and year totals should be checked against the final included sample, as some cells contain unresolved formulas or blank percentages.",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "review",
+"w": "Dataset descritivo de revisão sistemática sobre XAI em people analytics."
+}
+},
+{
+"key": "doi:10.70577/cieninter.v4i4.181",
+"title": "Cultura organizacional e intención de rotación del personal: implicaciones para la retención del talento en empresas ecuatorianas",
+"url": "https://doi.org/10.70577/cieninter.v4i4.181",
+"venue": "Ciencia Interdisciplinaria Internacional",
+"date": "2026-11-27",
+"authors": [
+"Michael Alberto Trujillo Barre"
+],
+"abstract": "La retención del talento constituye un desafío estratégico para las empresas ecuatorianas, que operan en un mercado laboral en el que el empleo adecuado alcanzó el 37,1 % al cierre de 2025. El objetivo de este estudio fue analizar las percepciones de cultura organizacional y la intención de rotación del personal en empresas ecuatorianas, con el fin de identificar prioridades de gestión para la retención. Se adoptó un enfoque mixto con diseño convergente, no experimental, transversal y de alcance descriptivo. Se aplicó un cuestionario de 13 ítems en escala de 1 a 5 —siete sobre cultura organizacional y seis sobre compromiso, permanencia e intención de salida, adaptados de la Turnover Intention Scale (TIS-6)— a trabajadores de empresas ecuatorianas, y se realizaron entrevistas semiestructuradas que se examinaron mediante análisis temático. Los indicadores culturales oscilaron entre 3,35 y 3,80 (M = 3,63; 65,6 % del máximo posible): la valoración de la opinión fue la dimensión mejor puntuada y el reconocimiento, la más baja. Los indicadores de permanencia superaron el punto medio de la escala (M = 3,78), con el compromiso con los objetivos como valor más alto (3,96), mientras que los ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 4,
+"e": "survey",
+"w": "Misto convergente transversal no Equador; cultura e intenção de saída."
+}
+},
+{
+"key": "doi:10.23900/ra.v24i124.130",
+"title": "SAÚDE MENTAL, RISCOS PSICOSSOCIAIS E QUALIDADE DE VIDA NO TRABALHO EM UNIDADES DE TERAPIA INTENSIVA: GESTÃO DE PESSOAS, DESAFIOS OCUPACIONAIS E ESTRATÉGIAS PARA A PROMOÇÃO DO BEM-ESTAR",
+"url": "https://doi.org/10.23900/ra.v24i124.130",
+"venue": "Aposta",
+"date": "2026-11-27",
+"authors": [
+"Maria Amelia dos Santos Peres",
+"Marco Antonio da Luz Neris",
+"Francinaide Campos Verdolin",
+"Luiz de Figueiredo Almeida",
+"Hilton Giovani Neves",
+"Lucas Antunes Souto Sposito"
+],
+"abstract": "O estudo teve por objetivo investigar as inter-relações entre os fatores de risco psicossocial, a saúde mental e a qualidade de vida no trabalho de profissionais atuantes em Unidades de Terapia Intensiva, com ênfase nas implicações das condições ocupacionais e no papel da gestão de pessoas na promoção da saúde do trabalhador. Para tanto, adotou-se como delineamento metodológico a revisão de escopo, estruturada segundo a estratégia PCC e as recomendações do PRISMA-ScR, mediante levantamento de produções científicas nas bases SciELO, LILACS, PubMed e Google Acadêmico. A síntese das evidências demonstrou que a intensificação das demandas laborais, a inadequação do dimensionamento de pessoal, a extensão das jornadas de trabalho, a fragilidade das relações interpessoais, a restrição da autonomia profissional e a precariedade do suporte institucional constituem fatores associados ao comprometimento da saúde psíquica, manifestado por quadros de exaustão emocional, sofrimento moral e síndrome de burnout. Em contrapartida, a capacidade de resiliência, o fortalecimento das relações socioprofissionais e a adoção de medidas organizacionais de proteção configuraram-se como elementos relevantes ",
+"score": 5,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 5,
+"q": 5,
+"e": "review",
+"w": "Revisão de escopo PRISMA-ScR sobre riscos psicossociais em UTI."
+}
+},
+{
+"key": "doi:10.36948/ijfmr.2026.v08i06.92873",
+"title": "Right to Disconnect: Working Time, Mental Health and the Constitutional Case for Switching Off",
+"url": "https://doi.org/10.36948/ijfmr.2026.v08i06.92873",
+"venue": "International Journal For Multidisciplinary Research",
+"date": "2026-11-27",
+"authors": [
+"Manvi Badyal",
+"Vinod Kumar"
+],
+"abstract": "Smartphones, messaging platforms and remote work have made it possible for an employer to reach an employee at almost any hour. In India this has happened while the law on working time has stayed tied to the idea of a worker who is either at the workplace or away from it. This paper examines whether Indian law protects an employee's freedom not to respond to work communication outside working hours, and whether it should. The four Labour Codes, in force from 21 November 2025, are studied together with the constitutional jurisprudence on Article 21 and the Mental Healthcare Act, 2017. The texts of two private members' Bills are then examined clause by clause: the Right to Disconnect Bill, 2025 in the Lok Sabha and the Kerala Right to Disconnect Bill, 2025. Developments in France, Portugal, Spain, Belgium, Ireland, Australia and the European Union are used for comparison. It is argued that the existing hours-based framework does not register digital availability as work, that Article 21 supplies a strong normative basis for a statutory right but does not itself create one, and that a reasonableness-based model with a clear anti-retaliation rule would suit Indian conditions better tha",
+"score": 6,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 6,
+"e": "regulator",
+"w": "Análise jurídica dos Labour Codes indianos e direito à desconexão."
+}
+},
+{
+"key": "doi:10.21203/rs.3.rs-11533547/v1",
+"title": "Beyond the Ping-Pong Table: A Governance Test for Employee Well-Being Spending",
+"url": "https://doi.org/10.21203/rs.3.rs-11533547/v1",
+"venue": "Research Square",
+"date": "2026-11-27",
+"authors": [
+"Shay Tsaban",
+"Aviv Ruffel"
+],
+"abstract": "Firms present a stocked kitchen and a funded parental-leave scheme as the same kind of evidence that they invest in their people. This paper argues that well-being spending tells outsiders something about a firm’s commitment only when the firm cannot withdraw it unnoticed. Three ordinary accounting practices decide whether that is so: the spending is a distinct budget line, it passes the internal-control review applied to other material expenditure, and it is reported externally in a form outsiders can verify. We develop this Budgeted-Controlled-Reported (BCR) framework from signaling, agency, and institutional theory. A stylised repeated-signaling model shows that, for a firm that reports every year, the observability of withdrawal can substitute for the cost of the signal: a cheap but verifiable programme can separate committed from uncommitted firms, while an expensive but unverifiable one need not. A plausibility probe of 2,629 human capital disclosures in the 10-K filings of S&P 500 firms for fiscal years 2020 to 2025 finds that 76 percent contain a well-being claim, only 1.0 percent attach a figure to the programme itself, and assurance is almost absent. Most claims persist f",
+"score": 7,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 6,
+"e": "admin",
+"w": "Modelo de sinalização mais sonda de 2.629 disclosures de capital humano."
+}
+},
+{
+"key": "doi:10.33367/ijhss.v7i4.10058",
+"title": "Apakah Kepuasan Kerja Secara Konsisten Memprediksi Niat Keluar Karyawan dalam Berbagai Konteks? Sebuah Tinjauan Literatur Sistematis",
+"url": "https://doi.org/10.33367/ijhss.v7i4.10058",
+"venue": "Indonesian Journal of Humanities and Social Sciences",
+"date": "2026-11-21",
+"authors": [
+"Reza Ananta",
+"Olievia"
+],
+"abstract": "Employee turnover remains one of the most significant organizational challenges, and meta-analytic evidence consistently reports a negative relationship between job satisfaction and turnover intentions. Recent syntheses acknowledge that inconsistent findings and contextual variability limit generalizability, so the conditions under which the relationship holds have not been formulated systematically. This systematic literature review asks how consistently job satisfaction predicts turnover intention across various employee contexts and how this relationship varies across contexts. A Scopus search following the PRISMA 2020 guidelines yielded 865 articles; 835 were excluded during the title and abstract screening, leaving 30 articles for full-text retrieval. Fifteen cross-sectional studies were assessed using the JBI critical appraisal tool for analytical cross-sectional and synthesized narratively. The findings indicate that negative relationships tend to be consistent but conditional. Contradictory findings emerged within the same sector, and variations in the relationship appeared according to workforce composition and mediating mechanisms rather than occupational sector. The stre",
+"score": 6,
+"theme": "engagement",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA de 15 estudos transversais sobre intenção de saída."
+}
+},
+{
+"key": "doi:10.1002/job.70139",
+"title": "Growing, but Not Necessarily Showing: Pregnancy in Remote Versus In‐Person Contexts",
+"url": "https://doi.org/10.1002/job.70139",
+"venue": "Journal of Organizational Behavior",
+"date": "2026-11-26",
+"authors": [
+"Aashna M. Waiwood",
+"Tammy D. Allen",
+"Alyssa Lezcano",
+"Joseph Regina"
+],
+"abstract": "Pregnancy is a stigmatized state in the workplace, and research has increasingly documented the unique experience of being pregnant at work, including difficulties with pregnancy disclosure. Theory and research seemingly take as a given that women's pregnancies are visible or that they become visible. Moreover, visibility appears crucial to explaining pregnancy‐related experiences, behaviors, and treatment. However, working remotely alters the presumed inevitability of visibility. Based on qualitative and quantitative data, we explore how working remotely corresponds with women's disclosure and postdisclosure pregnancy‐related perceptions, decisions, and experiences. Findings demonstrate that time working remotely is associated with greater perceptions of disclosure control, disclosure to a narrower network, delayed disclosure timing, and reduced need to disclose for transparency purposes. In the postdisclosure period, time working remotely is related to reduced conspicuousness of the “unseemly” pregnant body and its symptoms, or fewer physical “reminders,” of one's pregnancy and pregnancy‐related behaviors, corresponding with reduced awareness, addressing, and comments (often inva",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 6,
+"q": 5,
+"e": "survey",
+"w": "Dados qualitativos e quantitativos sobre gravidez em trabalho remoto."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24592079",
+"title": "Digitalização da gestão de pessoas e bases de dados de recursos humanos em Angola: arquitectura, qualidade dos dados, análise e lições de outros contextos",
+"url": "https://doi.org/10.5281/zenodo.24592079",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Zacarias Samba dos Santos"
+],
+"abstract": "Este artigo analisa a digitalização da gestão de pessoas e a construção de basesde dados de recursos humanos nas organizações angolanas, abrangendo aarquitectura da informação, a qualidade dos dados, a segurança, a análise dedados e as lições de outros contextos. Parte-se do problema de que muitasorganizações mantêm a informação sobre os trabalhadores em pastas de papele em ficheiros dispersos, com registos duplicados, incompletos e inconsistentesentre o processamento salarial e os restantes processos, o que gera erros, perdade tempo, riscos legais e incapacidade de produzir indicadores. Assume-secomo hipótese que a digitalização gera valor quando os processos sãoredesenhados antes de serem digitalizados, quando existe um modelo de dadosúnico centrado no trabalhador, com identificador único, dicionário e donos dosdados, quando a migração é acompanhada de limpeza e reconciliação, quando asegurança e a protecção de dados são concebidas desde o início e quando osdados são usados para análise e decisão. A pesquisa adopta abordagemqualitativa, teórica e aplicada, com revisão bibliográfica sobre gestãoelectrónica de recursos humanos, sucesso de sistemas de informação, qualidadede dados e",
+"score": 6,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "theory",
+"w": "Arquitetura de dados de RH em Angola; análise teórica sem dados primários."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24592278",
+"title": "Inteligência artificial na gestão de pessoas em Angola: impactos, benefícios, riscos e roteiro de implementação responsável",
+"url": "https://doi.org/10.5281/zenodo.24592278",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Zacarias Samba dos Santos"
+],
+"abstract": "Este artigo analisa a introdução da inteligência artificial (IA) na gestão depessoas nas organizações angolanas, respondendo a três perguntas: queimpactos produz, que benefícios pode gerar e como deve ser implementadapasso a passo. Parte-se do problema de que muitas organizações começam ausar ferramentas de IA de forma informal, sem estratégia, sem regras sobredados pessoais e sem avaliar riscos como o enviesamento em decisões derecrutamento, o que pode gerar ganhos aparentes de produtividadeacompanhados de riscos jurídicos, éticos e reputacionais. Assume-se comohipótese que a IA gera valor sustentável em gestão de pessoas quando éintroduzida a partir de problemas concretos, com dados de qualidade e baselegal, priorizando casos de uso de alto valor e baixo risco, com supervisãohumana nas decisões que afectam pessoas, avaliação de impacto e um programade literacia e de gestão da mudança. A pesquisa adopta abordagem qualitativa,teórica e aplicada, com revisão bibliográfica sobre aceitação de tecnologia,gestão algorítmica e evidência experimental sobre IA generativa, análisedocumental do enquadramento angolano (Lei n.º 22/11, Livro Branco dasTecnologias de Informação e Comunicação 202",
+"score": 5,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "theory",
+"w": "Roteiro conceitual de IA em gestão de pessoas em Angola; sem avaliação empírica."
+}
+},
+{
+"key": "doi:10.61286/e-rms.v4i.484",
+"title": "Gestión estratégica del personal y planificación de la capacitación en el sector sanitario: una revisión sistemática",
+"url": "https://doi.org/10.61286/e-rms.v4i.484",
+"venue": "e-Revista Multidisciplinaria del Saber",
+"date": "2026-11-27",
+"authors": [
+"Cintia Karen Larrea Mantilla"
+],
+"abstract": "El presente estudio tuvo como objetivo analizar la influencia de la gestión estratégica de recursos humanos en la planificación de las necesidades de capacitación en el sector sanitario, mediante una revisión sistemática de la literatura científica. Se siguieron las directrices PRISMA 2020 y la búsqueda se realizó en la base de datos Scopus, con documentos en inglés y en español publicados entre 2020 y 2026, en el área de Ciencias Sociales y de acceso abierto. Tras la identificación de 634 registros y la aplicación de los criterios de selección, se incluyeron 30 estudios. El análisis temático de contenido permitió organizarlos en cinco categorías: planificación y migración de la fuerza laboral; equidad, diversidad y antirracismo en recursos humanos; bienestar, salud mental y satisfacción laboral; liderazgo y prácticas estratégicas de recursos humanos; e innovación educativa y desarrollo de competencias. Los resultados muestran que la capacitación no depende solo de competencias técnicas, sino de factores organizacionales, psicosociales y estructurales: la movilidad del personal, las desigualdades en el acceso a oportunidades, el bienestar de los trabajadores, el estilo de liderazgo",
+"score": 6,
+"theme": "learning",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 5,
+"e": "review",
+"w": "Revisão sistemática PRISMA de 30 estudos; planejamento de capacitação e RH."
+}
+},
+{
+"key": "doi:10.51891/rease.v12i11.33591",
+"title": "O TELETRABALHO E O DIREITO À DESCONEXÃO: DESAFIOS DA JORNADA DE TRABALHO NA ERA DIGITAL",
+"url": "https://doi.org/10.51891/rease.v12i11.33591",
+"venue": "Revista Ibero-Americana de Humanidades, Ciências e Educação",
+"date": "2026-11-27",
+"authors": [
+"Anna Thereza Magnavita de Castro",
+"Ícaro de S. Duarte"
+],
+"abstract": "O avanço das tecnologias digitais e a expansão do teletrabalho modificaram significativamente as relações trabalhistas, proporcionando novas formas de organização das atividades profissionais e maior flexibilidade quanto ao local e à execução do trabalho. Entretanto, a permanente disponibilidade proporcionada pelos recursos tecnológicos também trouxe desafios relacionados à delimitação da jornada, à preservação dos períodos de descanso e à separação entre a vida profissional e privada. Nesse contexto, o presente estudo teve como objetivo analisar o teletrabalho e o direito à desconexão no ordenamento jurídico brasileiro, considerando os desafios relacionados à delimitação da jornada de trabalho na era digital e à necessidade de proteção do descanso, da saúde e da vida privada do trabalhador. Para tanto, foi realizada uma revisão integrativa da literatura, de abordagem qualitativa e caráter descritivo e exploratório, mediante levantamento de produções científicas e documentos jurídicos relacionados ao teletrabalho, à jornada de trabalho, à hiperconectividade e ao direito à desconexão. Os resultados demonstraram que, embora o ordenamento jurídico brasileiro tenha avançado na regulame",
+"score": 5,
+"theme": "governance",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "review",
+"w": "Revisão integrativa jurídica; direito à desconexão no teletrabalho, sem dados primários."
+}
+},
+{
+"key": "doi:10.1016/j.sbr.2026.100336",
+"title": "Control, autonomy, and transparency in algorithmic management research: a keyword-based mapping of gig economy studies",
+"url": "https://doi.org/10.1016/j.sbr.2026.100336",
+"venue": "Strategic Business Research",
+"date": "2026-11-22",
+"authors": [
+"Gürhan Yanık",
+"Ahmet Ayaz"
+],
+"abstract": "",
+"score": 6,
+"theme": "ai_work",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 4,
+"e": "review",
+"w": "Mapeamento bibliométrico por palavras-chave; sem abstract, evidência limitada."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24591683",
+"title": "Gestão das funções críticas nas organizações angolanas: identificação, vulnerabilidade e caminhos para assegurar a continuidade",
+"url": "https://doi.org/10.5281/zenodo.24591683",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Zacarias Samba dos Santos"
+],
+"abstract": "Este artigo analisa a gestão das funções críticas nas organizações angolanas epropõe caminhos práticos para superar os principais desafios que a dificultam. Funções críticas são as posições cujo desempenho tem impactodesproporcionado nos resultados e cuja perda, ou vacatura prolongada,compromete a continuidade das operações. Parte-se do problema de que muitasorganizações angolanas não sabem quais são as suas funções críticas,dependem de expatriados ou de titulares únicos, não têm sucessorespreparados e perdem conhecimento quando os titulares saem ou se reformam. Assume-se como hipótese que a continuidade e o desempenho aumentamquando as funções críticas são identificadas com critérios explícitos, priorizadassegundo o impacto e a vulnerabilidade, protegidas por planos de sucessão,transferência de conhecimento e retenção diferenciada, e acompanhadas porum comité de talentos com indicadores. A pesquisa adopta abordagemqualitativa, teórica e aplicada, com revisão bibliográfica sobre arquitectura derecursos humanos, gestão de talentos, sucessão e gestão do conhecimento,análise documental da legislação angolana, em particular do DecretoPresidencial n.º 271/20, do Decreto-Lei n.º 17/09, d",
+"score": 5,
+"theme": "leadership",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 7,
+"q": 4,
+"e": "quali",
+"w": "Estudo qualitativo teórico-documental; funções críticas e sucessão, sem dados empíricos."
+}
+},
+{
+"key": "doi:10.5281/zenodo.24578353",
+"title": "Data-Driven Decision-Making in Human Resource Management: Emerging Trends and Challenges – A Perspective Study",
+"url": "https://doi.org/10.5281/zenodo.24578353",
+"venue": "Zenodo (CERN European Organization for Nuclear Research)",
+"date": "2026-11-27",
+"authors": [
+"Sarita Gupta"
+],
+"abstract": "",
+"score": 5,
+"theme": "analytics",
+"region": "",
+"watch": [],
+"origin": "digest",
+"added": "2026-11-28",
+"triage": {
+"r": 8,
+"q": 3,
+"e": "theory",
+"w": "Estudo de perspectiva sem abstract; tema central, evidência não demonstrada."
+}
 }
 ]

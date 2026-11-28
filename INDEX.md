@@ -4,7 +4,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 📡 PEOPLE-ANALYTICS-WATCH
 
-12 digests em `digests/people-analytics/`.
+13 digests em `digests/people-analytics/`.
 
 ## 📊 People analytics & métricas (7)
 
@@ -30,8 +30,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-16 · [Meta-análise de 30 anos de medidas de SJT: clareza de construto vs. poder preditivo](https://doi.org/10.1037/apl0001442.supp) · 8/10
 - 2026-11-16 · [IA reforça estereótipos de gênero em descrições de vagas](https://doi.org/10.1111/gwao.70291) · 8/10
 
-## 🤖 IA & futuro do trabalho (20)
+## 🤖 IA & futuro do trabalho (21)
 
+- 2026-11-28 · [De benefício a norma: difusão do remoto e divergência de satisfação e pay](https://doi.org/10.1177/23294965261509512) · 8/10
 - 2026-11-27 · [Uneven Generative AI Exposure and Skill Premiums in New Job Opportunities](https://doi.org/10.21203/rs.3.rs-11606065/v1) · 8/10
 - 2026-11-27 · [When GenAI Increases Inequality: Evidence from a University Debating Competition](https://doi.org/10.1287/mnsc.2025.01063) · 7/10
 - 2026-11-27 · [Fast, Valued, and Trusted with Reservations: Employee Perceptions of Microsoft 365 Copilot](https://doi.org/10.5281/zenodo.24525442) · 7/10
@@ -53,8 +54,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-16 · [Automação e desigualdade de renda na Europa](https://doi.org/10.1177/00197939261498019) · 8/10
 - 2026-11-16 · [Gestão algorítmica como desenho de trabalho ambivalente](https://doi.org/10.21203/rs.3.rs-11446329/v1) · 7/10
 
-## 💡 Engajamento, retenção & bem-estar (10)
+## 💡 Engajamento, retenção & bem-estar (11)
 
+- 2026-11-28 · [Flexibilidade no trabalho, saúde e desempenho subjetivo no Japão](https://doi.org/10.3390/su182312101) · 7/10
 - 2026-11-27 · [Maintaining Effort Amid Shared Adversity: How Hyperinflation Alters the Motivational Influence of Economic Hardship](https://doi.org/10.1111/peps.70049) · 7/10
 - 2026-11-21 · [Por que gestão do tempo gera bem-estar (e desempenho)](https://doi.org/10.1177/01492063261499657) · 7/10
 - 2026-11-20 · [Assimetria negativa em redes sociais de empregados: meta-análise](https://doi.org/10.1177/01492063261495910) · 7/10
@@ -77,8 +79,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-16 · [Intervenções contra viés de ameaça em gestores](https://doi.org/10.1037/apl0001436) · 8/10
 - 2026-11-16 · [Segurança psicológica: emergência ou miragem](https://doi.org/10.1287/orsc.2024.19549) · 8/10
 
-## 💰 Remuneração, carreira & equidade (5)
+## 💰 Remuneração, carreira & equidade (6)
 
+- 2026-11-28 · [Regras ocultas de promoção e reações dos empregados](https://doi.org/10.1080/09585192.2026.2766399) · 8/10
 - 2026-11-27 · [Accounting for Firms in the Ethnic Wage Gaps Across the Earnings Distribution](https://openaccess.city.ac.uk/id/eprint/38733/) · 8/10
 - 2026-11-19 · [Consequências da posição salarial sob transparência de faixas](https://doi.org/10.5465/amj.2024.1009) · 8/10
 - 2026-11-18 · [Busca por licença parental e o gap salarial de gênero no início de carreira](https://doi.org/10.1086/744978) · 8/10
@@ -89,15 +92,17 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 - 2026-11-27 · [Can training and development enhance both economic and ESG performance?](https://doi.org/10.1080/09585192.2026.2766391) · 7/10
 
-## ⚖️ Ética, governança & regulação (4)
+## ⚖️ Ética, governança & regulação (5)
 
+- 2026-11-28 · [Além do ping-pong: teste de governança para gastos com bem-estar](https://doi.org/10.21203/rs.3.rs-11533547/v1) · 8/10
 - 2026-11-21 · [Diálogo social e negociação coletiva sobre gestão algorítmica na Bélgica](https://lirias.kuleuven.be/handle/20.500.12942/797510) · 6/10
 - 2026-11-18 · [Do salvaguarda à justificativa de vigilância: o direito de ser informado na Corte Europeia](https://doi.org/10.1177/20319525261498423) · 7/10
 - 2026-11-18 · [Efetividade dos direitos de informação algorítmica: lições da Espanha](https://doi.org/10.1177/20319525261489682) · 7/10
 - 2026-11-17 · [Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits](https://arxiv.org/abs/2611.20901) · 7/10
 
-## 🔥 Tendências (11)
+## 🔥 Tendências (12)
 
+- **2026-11-28** — O período conecta promoção, bem-estar, flexibilidade e remuneração sob uma mesma exigência: **verificabilidade**. Regras ocultas de promoção e gastos de bem-estar sem orçamento/reporte corroem justiça e confiança; a difusão do remoto reduziu seu prêmio subjetivo, enquanto flexibilidade de horário ainda pode proteger desempenho de quem tem pior saúde. Para people analytics, a agenda prática é medir equidade, explicar modelos de IA e transformar dados de bem-estar, retenção e remuneração em governança auditável.
 - **2026-11-27** — A IA generativa avança no trabalho, mas os efeitos são desiguais: pode ampliar gaps de habilidade, deprimir salários em polos tecnológicos e expandir tarefas, enquanto assistentes aumentam velocidade mas exigem verificação. Governança de dados e equidade salarial ganham centralidade, com pressão para auditorias internas de etnia e uso ético de IA no recrutamento. Práticas de gestão precisam combinar adoção tecnológica com suporte contínuo a grupos sub-representados e monitoramento de bem-estar.
 - **2026-11-26** — A IA no trabalho deixa de ser binária: o que importa é a complexidade da tarefa e a necessidade de supervisão humana. Ao mesmo tempo, ferramentas de recrutamento avançam para memória procedural e arquitetura de cargos, enquanto a verificação de credenciais vira camada de governança. Para people analytics, a agenda é segmentar automação por tarefa, auditar decisões assistidas e integrar descrições funcionais e checagem de diplomas aos fluxos de talento.
 - **2026-11-25** — O período derruba dois atalhos populares na gestão de pessoas. Primeiro, a ideia de que mais confiança — ou mais IA ligada — gera mais resultado: o estudo com gestores de linha mostra U invertido entre autoconfiança e execução de RH, e a discussão Bersin/Anthropic reforça que agentes só entregam com redesenho de processos e de trabalho. Segundo, a medição de pessoas entra em revisão: medidas de excesso de confiança se confundem com habilidade, e efeitos de identificação de grupo vêm de maior sensibilidade a normas, não de normas novas. Na prática, isso empurra people analytics para mapear redes informais, redesenhar o trabalho antes de automatizar e tratar métricas de percepção com desconfiança metodológica.
@@ -112,7 +117,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🛡️ BANK-FRAUD-WATCH
 
-11 digests em `digests/fraude-bancaria/`.
+12 digests em `digests/fraude-bancaria/`.
 
 ## 📊 Modelos, dados e métricas de fraude (3)
 
@@ -149,7 +154,7 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 
 # 🏦 BANK-TECH-&-AI-WATCH
 
-11 digests em `digests/tecnologia-bancaria/`.
+12 digests em `digests/tecnologia-bancaria/`.
 
 ## 🤖 Banco agêntico: agentes de IA para PF, PJ e agro (6)
 
@@ -223,8 +228,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-19 · [RehearsalBench: IA prevê (mal) o impacto de mudanças na operação](https://arxiv.org/abs/2611.22480) · 7/10
 - 2026-11-18 · [CommBank opera escudo de cinco agentes de IA contra ciberameaças](https://www.commbank.com.au/articles/newsroom/2026/11/commbank-agentic-shield-ai-cyber-defence.html) · 7/10
 
-## 🧪 Inovação, experimentação & venture capital corporativo (3)
+## 🧪 Inovação, experimentação & venture capital corporativo (4)
 
+- 2026-11-28 · [Does FinTech Innovation Improve Traditional Banks’ Operating Efficiency and Risk?](https://doi.org/10.1287/mnsc.2025.03691) · 7/10
 - 2026-11-25 · [Gatekeepers and Kingmakers: Do Superplatforms Distort Digital Competition?](https://doi.org/10.1287/mnsc.2025.03354) · 7/10
 - 2026-11-23 · [Bradesco retoma private equity e venture capital e soma R$ 400 milhões](https://neofeed.com.br/startups/bradesco-volta-ao-jogo-do-private-equity-e-venture-capital-e-ja-soma-r-400-milhoes-em-aportes/) · 7/10
 - 2026-11-23 · [Competition in capital markets and its contribution to growth and innovation](https://doi.org/10.1787/8c126c4f-en) · 7/10
@@ -245,8 +251,9 @@ Gerado automaticamente por `python -m pawatch render` a partir de `data/<tema>/d
 - 2026-11-27 · [Bradesco corta entrega de infraestrutura de 80 para 5 dias](https://convergenciadigital.com.br/mercado/bradesco-reduz-de-80-para-5-dias-o-tempo-de-entrega-de-infraestrutura-atento-ao-uso-de-agentes-ia/) · 7/10
 - 2026-11-19 · [Stripe evals: medindo performance real de agentes de código](https://stripe.dev/blog/stripe-integration-evals-methodology) · 7/10
 
-## 🔥 Tendências (11)
+## 🔥 Tendências (12)
 
+- **2026-11-28** — No mundo, a fronteira do período combina medição de inovação por patentes — com ganhos concretos de eficiência e risco em bancos tradicionais, especialmente em IA e blockchain — e aplicação de LLMs a gêmeos digitais para finanças de cadeia. Isso sugere que a IA deixa de ser só interface e passa a redesenhar processos de crédito, risco e capital de giro com métricas de inovação mais rigorosas. No Brasil, não há evidência relevante nos papers selecionados; a agenda local segue dependente de adaptar esses achados a Pix, Open Finance e Drex.
 - **2026-11-27** — No Brasil, a semana mostra bancos e fintechs industrializando a base: Bradesco reduz entrega de infraestrutura de 80 para 5 dias com autoatendimento governado, Nomad leva IA a 90% dos funcionários e o BC projeta a agenda do Pix para 2027, enquanto pagamentos por aproximação crescem 16,1%. No mundo, a fronteira é o comércio agêntico: protocolos e surveys indicam que agentes já iniciam transações, mas garantias de liquidação, identidade e responsabilidade ainda são convenção, não estrutura. A evidência sobre GenAI reforça que ganhos não são uniformes e tendem a ampliar vantagem de perfis mais qualificados, o que exige redesenho de tarefas e reskilling. A mensagem para lideranças é preparar plataforma, governança e mandatos verificáveis antes de escalar agentes que movem dinheiro.
 - **2026-11-26** — O período mostra agentes de IA saindo do piloto para transacionar e decidir, mas com foco em controles de autoridade, orçamento e roteamento confiável. No mundo, benchmarks como o AMB expõem falhas de pagamento e fraudes, enquanto gates determinísticos e modelos de decisão calibrados surgem como infraestrutura de confiança. No Brasil, os papers selecionados não trazem casos locais; a lição para bancos é testar agentes com trilhos de autorização, limites e auditoria antes de escalar.
 - **2026-11-25** — No Brasil, o avanço é de trilhos e capital: o Nubank publica como engenheirar continuidade de agentes de IA, a Pagaleve levanta FIDC de R$ 250 milhões com Itaú Asset e BV para escalar o Pix parcelado, e a Cielo mostra Pix +71% no Rio com NFC perto de metade do faturamento em cartões. No mundo, a fronteira é a infraestrutura de pagamento agêntico — SBI/SMFG com stablecoin na Solana para agentes, Mastercard e Temu testando Agent Pay, e AgentBank propondo conta bancária on-chain com mandatos — enquanto a fraude autorizada se industrializa com IA (£659 milhões no Reino Unido) e superplataformas que são gatekeeper e investidor distorcem a competição. A leitura comum é que o valor migra do modelo preditivo isolado para a arquitetura de confiança, contexto e liquidação que sustenta agentes operando dinheiro de clientes.

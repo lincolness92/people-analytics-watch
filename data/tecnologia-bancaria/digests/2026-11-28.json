@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-28",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash:deepinfra",
+ "period": {
+  "from": "2026-11-21",
+  "to": "2026-11-28"
+ },
+ "stats": {
+  "candidates": 31,
+  "triaged": 31,
+  "selected": 1,
+  "tokens": {
+   "prompt_tokens": 11004,
+   "completion_tokens": 4241,
+   "cost_usd": 0.003538,
+   "calls": 2,
+   "failures": 0
+  }
+ },
+ "headline": "Período global em inovação fintech mensurada por patentes e LLMs aplicados a finanças de cadeia",
+ "trend": "No mundo, a fronteira do período combina medição de inovação por patentes — com ganhos concretos de eficiência e risco em bancos tradicionais, especialmente em IA e blockchain — e aplicação de LLMs a gêmeos digitais para finanças de cadeia. Isso sugere que a IA deixa de ser só interface e passa a redesenhar processos de crédito, risco e capital de giro com métricas de inovação mais rigorosas. No Brasil, não há evidência relevante nos papers selecionados; a agenda local segue dependente de adaptar esses achados a Pix, Open Finance e Drex.",
+ "items": [
+  {
+   "key": "doi:10.1287/mnsc.2025.03691",
+   "title": "Does FinTech Innovation Improve Traditional Banks’ Operating Efficiency and Risk?",
+   "original_title": "Does FinTech Innovation Improve Traditional Banks’ Operating Efficiency and Risk? Empirical Evidence from Patent Filings",
+   "url": "https://doi.org/10.1287/mnsc.2025.03691",
+   "venue": "Management Science",
+   "date": "2026-11-27",
+   "authors": [
+    "Libing Fang",
+    "Xindan Li",
+    "Avanidhar Subrahmanyam",
+    "Ke Zhang"
+   ],
+   "institutions": [
+    "Nanjing University",
+    "University of California, Los Angeles",
+    "Financial Research Network"
+   ],
+   "watch_authors": [],
+   "watch_journal": true,
+   "watch_source": "",
+   "origin": "journal",
+   "cited_by": 10,
+   "triage": {
+    "r": 7,
+    "q": 8,
+    "e": "admin",
+    "w": "Patentes como medida de inovação, dados administrativos, journal de elite"
+   },
+   "score": 7,
+   "theme": "innovation",
+   "region": "mundo",
+   "summary": "Usando similaridade textual de patentes bancárias com documentos de política fintech, o estudo mostra que **inovação fintech** eleva eficiência, lucratividade e capacidade operacional, além de melhorar risco geral (Z-score), liquidez e inadimplência. Bancos com maior capacidade gerencial e intensidade de trabalho capturam ganhos moderadamente maiores; expansões de crédito associadas focam em empréstimos sem garantia e de baixo risco, com especializações em nuvem, IA e blockchain. Para líderes de tecnologia e IA, a lição é tratar patentes e especialização técnica como indicadores antecedentes de desempenho e risco, não apenas de marketing."
+  }
+ ],
+ "quick": [
+  {
+   "key": "doi:10.3390/data11120320",
+   "title": "LLM-Augmented Digital Twin for Invoice Financing",
+   "original_title": "An LLM-Augmented Digital Twin for Integrated Fuzzy Multi-Objective Optimization of Invoice Financing and Working Capital in Supply Chains",
+   "url": "https://doi.org/10.3390/data11120320",
+   "venue": "Data",
+   "date": "2026-11-27",
+   "authors": [
+    "Hamed Nozari",
+    "Zornitsa B. Yordanova"
+   ],
+   "institutions": [
+    "University of National and World Economy"
+   ],
+   "watch_authors": [],
+   "watch_journal": false,
+   "watch_source": "",
+   "origin": "busca",
+   "cited_by": 0,
+   "triage": {
+    "r": 7,
+    "q": 6,
+    "e": "bench",
+    "w": "Dados reais de empresa de supply chain finance, resultado simulado"
+   },
+   "score": 6,
+   "theme": "automation",
+   "region": "mundo",
+   "note": "Framework combina LLMs, gêmeo digital e otimização fuzzy para financiamento de faturas e capital de giro, prometendo decisões mais coordenadas em cadeias."
+  }
+ ]
+}
