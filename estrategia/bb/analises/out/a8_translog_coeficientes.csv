@@ -1,0 +1,70 @@
+segmento,termo,coef,erro_padrao_cluster
+bancos (b1+b2),const,5.7922,1.77546
+bancos (b1+b2),lnq,0.59749,0.14704
+bancos (b1+b2),lnq2,0.01658,0.00613
+bancos (b1+b2),lnw1,0.47215,0.23367
+bancos (b1+b2),lnw2,0.13678,0.2068
+bancos (b1+b2),lnw1_2,0.15624,0.02623
+bancos (b1+b2),lnw2_2,0.01632,0.01273
+bancos (b1+b2),lnw1w2,-0.0938,0.01865
+bancos (b1+b2),lnq_lnw1,-0.00474,0.01062
+bancos (b1+b2),lnq_lnw2,0.00449,0.00966
+bancos (b1+b2),ano_2017,-0.01819,0.01905
+bancos (b1+b2),ano_2018,-0.03243,0.01894
+bancos (b1+b2),ano_2019,-0.01247,0.0199
+bancos (b1+b2),ano_2020,0.02203,0.02255
+bancos (b1+b2),ano_2021,0.03011,0.02295
+bancos (b1+b2),ano_2022,0.0316,0.02248
+bancos (b1+b2),ano_2023,0.02803,0.02762
+bancos (b1+b2),ano_2024,0.00722,0.02976
+bancos (b1+b2),ano_2025,0.06833,0.02395
+bancos (b1+b2),ano_2026,0.07188,0.02471
+bancos (b1+b2),_n_obs,913,
+bancos (b1+b2),_n_instituicoes,134,
+bancos (b1+b2),_r2,0.9907,
+cooperativas (b3),const,-0.0685,1.5677
+cooperativas (b3),lnq,1.13157,0.16142
+cooperativas (b3),lnq2,-0.00762,0.00833
+cooperativas (b3),lnw1,-0.14223,0.26197
+cooperativas (b3),lnw2,-0.56903,0.42318
+cooperativas (b3),lnw1_2,0.01656,0.03855
+cooperativas (b3),lnw2_2,0.42029,0.09463
+cooperativas (b3),lnw1w2,-0.10441,0.04973
+cooperativas (b3),lnq_lnw1,0.02523,0.01418
+cooperativas (b3),lnq_lnw2,0.04624,0.02212
+cooperativas (b3),ano_2017,-0.05852,0.00586
+cooperativas (b3),ano_2018,-0.09022,0.01006
+cooperativas (b3),ano_2019,-0.09421,0.01128
+cooperativas (b3),ano_2020,-0.06569,0.02116
+cooperativas (b3),ano_2021,-0.0662,0.01312
+cooperativas (b3),ano_2022,0.01398,0.00928
+cooperativas (b3),ano_2023,0.03677,0.01017
+cooperativas (b3),ano_2024,0.01208,0.01108
+cooperativas (b3),ano_2025,0.05966,0.01185
+cooperativas (b3),ano_2026,0.07441,0.01232
+cooperativas (b3),_n_obs,4371,
+cooperativas (b3),_n_instituicoes,543,
+cooperativas (b3),_r2,0.9904,
+não bancários (n1+n4),const,15.4484,9.51906
+não bancários (n1+n4),lnq,-0.22154,0.86195
+não bancários (n1+n4),lnq2,0.04984,0.03889
+não bancários (n1+n4),lnw1,0.92002,0.28668
+não bancários (n1+n4),lnw2,0.69944,0.43945
+não bancários (n1+n4),lnw1_2,0.13592,0.01635
+não bancários (n1+n4),lnw2_2,0.04209,0.01772
+não bancários (n1+n4),lnw1w2,0.00423,0.01504
+não bancários (n1+n4),lnq_lnw1,-0.02838,0.01319
+não bancários (n1+n4),lnq_lnw2,-0.02376,0.02079
+não bancários (n1+n4),ano_2017,-0.00796,0.03535
+não bancários (n1+n4),ano_2018,-0.02471,0.05382
+não bancários (n1+n4),ano_2019,0.02044,0.0688
+não bancários (n1+n4),ano_2020,0.04,0.0826
+não bancários (n1+n4),ano_2021,-0.00312,0.09063
+não bancários (n1+n4),ano_2022,0.04245,0.08281
+não bancários (n1+n4),ano_2023,0.00804,0.09426
+não bancários (n1+n4),ano_2024,0.00961,0.09303
+não bancários (n1+n4),ano_2025,0.02736,0.08578
+não bancários (n1+n4),ano_2026,0.07871,0.09562
+não bancários (n1+n4),_n_obs,356,
+não bancários (n1+n4),_n_instituicoes,80,
+não bancários (n1+n4),_r2,0.9516,

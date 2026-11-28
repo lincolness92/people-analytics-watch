@@ -1,0 +1,29 @@
+inst_id,nome,trimestres,defasagens,sem_2020,beta_dss,erro_padrao_hc1,beta_contemporaneo,r2
+bb,Banco do Brasil,27,3,True,0.94,0.28,1.61,0.33
+itau,Itaú Unibanco,27,3,True,0.94,0.36,1.83,0.23
+bradesco,Bradesco,27,3,True,0.86,0.08,1.0,0.75
+santander,Santander Brasil,27,3,True,1.06,0.49,2.06,0.25
+caixa,Caixa Econômica Federal,27,3,True,0.74,0.07,0.73,0.89
+nubank,Nubank,23,3,True,1.0,0.18,1.45,0.65
+inter,Inter,27,3,True,0.67,0.1,0.62,0.78
+c6,C6 Bank,27,3,True,0.41,0.41,0.67,0.23
+btg,BTG Pactual,27,3,True,0.82,0.92,0.45,0.16
+sicredi,Sistema Sicredi,27,3,True,1.0,0.06,0.85,0.96
+sicoob,Sistema Sicoob,27,3,True,1.13,0.05,1.06,0.98
+_singulares,"Cooperativas singulares (b3S, soma)",27,3,True,0.77,0.01,0.69,1.0
+_privados3,Itaú + Bradesco + Santander,27,3,True,0.94,0.24,1.59,0.33
+_sistema,Sistema (todas as entidades 1005),27,3,True,0.91,0.14,1.34,0.5
+bb,Banco do Brasil,31,3,False,0.98,0.26,1.59,0.33
+itau,Itaú Unibanco,31,3,False,1.0,0.33,1.76,0.18
+bradesco,Bradesco,31,3,False,0.87,0.07,0.99,0.76
+santander,Santander Brasil,31,3,False,1.12,0.51,1.99,0.16
+caixa,Caixa Econômica Federal,31,3,False,0.75,0.07,0.73,0.89
+nubank,Nubank,27,3,False,0.69,0.22,1.5,0.45
+inter,Inter,31,3,False,0.67,0.09,0.63,0.79
+c6,C6 Bank,31,3,False,0.42,0.35,0.74,0.23
+btg,BTG Pactual,31,3,False,0.75,0.88,0.4,0.16
+sicredi,Sistema Sicredi,31,3,False,0.99,0.05,0.85,0.96
+sicoob,Sistema Sicoob,31,3,False,1.13,0.05,1.05,0.98
+_singulares,"Cooperativas singulares (b3S, soma)",31,3,False,0.77,0.01,0.69,1.0
+_privados3,Itaú + Bradesco + Santander,31,3,False,0.98,0.23,1.54,0.25
+_sistema,Sistema (todas as entidades 1005),31,3,False,0.94,0.13,1.31,0.44

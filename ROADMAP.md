@@ -105,6 +105,9 @@ conferidos em fonte primária (CVM IPE, SGS, camada `data/ifs`), conselho de 5 c
 Qwen3.8 2,4T, Kimi K3) em rodadas R1–R5: 127 premissas, 254 críticas cegas, 127 réplicas, 3 juízes e agregação por código
 (US$ 4,41 nas cadeiras abertas). Análises 1–6 (quem ganhou cada p.p., inadimplência rural ajustada ao mix, municípios,
 passivo em p.p. do CDI, varejo com taxas por banco, dez anos de resultado) e laboratório rural (`labs/rural/`).
+Depois: Atena G01 (garantia executável: refuta frágil, cobertura de 30%) e S01 (revisão de safra não antecipa a
+inadimplência: refuta firme), com pré-registro leve; diagnóstico de concorrência (IHH, RC4, Lerner, beta de depósitos;
+confere com o REB 2023 do BCB).
 Próximos: pré-registro dos limiares (H2), testes das premissas de maior prioridade, Astra e Gemini como cadeiras,
 calibração humana dos juízes, propostas no modelo de `04-proximos-passos.md`.
 ✅ Pesquisas de estado da arte (`docs/research/`): Radar Febraban × mundo (45 temas, 10 ausentes do radar), retorno de

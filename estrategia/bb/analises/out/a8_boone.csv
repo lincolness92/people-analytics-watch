@@ -1,0 +1,33 @@
+segmento,ano,cosif,boone_roa,boone_roa_ep,n_roa_positivo,boone_participacao,boone_participacao_ep,n
+bancos (b1+b2),2016,cosif_antigo,-0.069,0.285,64,-0.302,0.394,67
+bancos (b1+b2),2017,cosif_antigo,-0.164,0.4,67,-0.197,0.441,76
+bancos (b1+b2),2018,cosif_antigo,0.407,0.428,72,-0.684,0.444,79
+bancos (b1+b2),2019,cosif_antigo,0.053,0.276,74,-0.93,0.366,80
+bancos (b1+b2),2020,cosif_antigo,0.229,0.262,69,-0.859,0.432,81
+bancos (b1+b2),2021,cosif_antigo,0.556,0.277,82,-1.45,0.417,88
+bancos (b1+b2),2022,cosif_antigo,-0.056,0.241,74,-0.788,0.359,86
+bancos (b1+b2),2023,cosif_antigo,0.02,0.364,75,-0.525,0.435,91
+bancos (b1+b2),2024,cosif_antigo,0.846,0.453,82,-1.089,0.483,95
+bancos (b1+b2),2025,cosif2025,-0.002,0.293,70,-1.641,0.501,84
+bancos (b1+b2),2026,cosif2025,0.395,0.647,68,-1.23,0.493,86
+cooperativas (b3),2016,cosif_antigo,-2.267,0.804,257,-0.361,0.282,261
+cooperativas (b3),2017,cosif_antigo,-1.116,0.196,302,-0.886,0.254,306
+cooperativas (b3),2018,cosif_antigo,-0.917,0.371,327,-1.233,0.224,334
+cooperativas (b3),2019,cosif_antigo,-0.881,0.21,354,-1.745,0.202,364
+cooperativas (b3),2020,cosif_antigo,-0.821,0.149,320,-2.132,0.202,323
+cooperativas (b3),2021,cosif_antigo,-1.271,0.153,425,-2.316,0.196,427
+cooperativas (b3),2022,cosif_antigo,-2.183,0.213,444,-2.198,0.298,457
+cooperativas (b3),2023,cosif_antigo,-2.587,0.284,451,-2.517,0.354,470
+cooperativas (b3),2024,cosif_antigo,-2.388,0.266,458,-2.584,0.38,481
+cooperativas (b3),2025,cosif2025,-2.091,0.208,448,-2.498,0.493,473
+cooperativas (b3),2026,cosif2025,-4.014,1.103,407,-3.329,0.472,475
+não bancários (n1+n4),2017,cosif_antigo,0.196,0.394,15,-0.22,0.251,15
+não bancários (n1+n4),2018,cosif_antigo,0.647,0.322,16,-0.564,0.34,18
+não bancários (n1+n4),2019,cosif_antigo,0.093,0.665,20,-0.91,0.428,23
+não bancários (n1+n4),2020,cosif_antigo,0.77,0.251,17,-0.882,0.379,25
+não bancários (n1+n4),2021,cosif_antigo,0.36,0.161,26,-1.033,0.338,32
+não bancários (n1+n4),2022,cosif_antigo,-0.028,0.257,27,-0.906,0.327,38
+não bancários (n1+n4),2023,cosif_antigo,0.007,0.267,32,-0.949,0.332,42
+não bancários (n1+n4),2024,cosif_antigo,0.244,0.239,36,-0.842,0.313,47
+não bancários (n1+n4),2025,cosif2025,-0.485,0.421,36,-0.397,0.449,49
+não bancários (n1+n4),2026,cosif2025,-0.42,0.315,41,-0.078,0.464,53

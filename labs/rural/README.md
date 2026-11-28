@@ -14,6 +14,8 @@ Nada aqui usa informação interna de banco.
 | `collect_series.py` | SGS 21148, 21146, 21147, 21136, 4189; preços DERAL/Seab-PR de soja, milho e boi (Ipeadata) | `data/rural/series_nacionais.csv` |
 | `collect_clima.py` | NASA POWER mensal (chuva e Tmax), grade de 0,5°, por UF, ponderado pelo crédito rural do município | `data/rural/clima_uf_mensal.csv` |
 | `nowcast.py` | Protótipo de monitor: nowcast e previsão da inadimplência rural >90 dias por UF | `resultados/nowcast_*.{csv,json}` |
+| `g01_garantias.py` | Análise 7, premissa G01: CAR (WFS, agregado por município e módulos fiscais) × valor contratado no SICOR fora do Pronaf | `data/rural/car_municipio_resumo.csv`, `sicor_contratado_uf_programa.csv`; `raw/car/`, `raw/car_municipio_mf.csv.gz`, `raw/sicor_contratado_municipio.csv.gz`; `resultados/g01_*` |
+| `s01_safra.py` | Análise 7, premissa S01: surpresa de safra do IBGE LSPA (SIDRA 6588) contra a ponte e o clima do `nowcast.py` | `data/rural/lspa_uf_mensal.csv`; `raw/lspa/`; `resultados/s01_*` |
 
 A Análise 2 (BB, cooperativas, Caixa e sistema, ajustada ao mix) está em
 `estrategia/bb/analises/a2_inad_rural_mix.py` e `a2.md`.
@@ -28,6 +30,10 @@ python3 labs/rural/collect_sicor.py process --jobs 3   # ~40 min, ~4 GB de RAM
 python3 labs/rural/collect_series.py
 python3 labs/rural/collect_clima.py                # depois do SICOR, para usar os pesos municipais
 python3 labs/rural/nowcast.py                      # ~3 min
+python3 labs/rural/g01_garantias.py car --jobs 3   # ~75 min; só agregados por município (~2 MB)
+python3 labs/rural/g01_garantias.py sicor          # ~3 min, ~1 GB de RAM (lê os microdados já baixados)
+python3 labs/rural/g01_garantias.py analisar       # segundos; baixa a PAM 2025 (1,6 MB) na 1ª vez
+python3 labs/rural/s01_safra.py                    # ~8 min; baixa o LSPA (4 MB) na 1ª vez
 ```
 
 `data/rural/raw/` fica fora do git (`.gitignore`). Os coletores são incrementais pelo tamanho do arquivo remoto.
@@ -45,6 +51,14 @@ python3 labs/rural/nowcast.py                      # ~3 min
 - **World Bank Pink Sheet**: o arquivo do link conhecido parou em 12/2025. Trocado pelos preços recebidos pelo
   produtor no PR (Seab-PR/DERAL, via Ipeadata), até 10/2026.
 - **IPEA, IBGE, BCB**: todos responderam. Nenhum host bloqueado.
+- **SICOR, complemento, por valor contratado** (Análise 7): cobre 29,6% do valor fora do Pronaf das safras 2020/21 a
+  2025/26 (BB 25,1%) e só **0,7% do crédito de fonte não controlada**. No Pronaf, 77–78%. O buraco é o crédito de
+  mercado do grande produtor.
+- **SICAR, WFS** (`geoserver.car.gov.br/geoserver/sicar/wfs`): CSV com `propertyName` dá erro do servidor em algumas
+  UFs; GeoJSON sem geometria funciona. `startIndex` fundo custa ~100 s por página (BA, 600 mil); a paginação por chave
+  (`cql_filter=cod_imovel>'…'` + `sortBy`) custa ~10 s. 8.581.836 registros em 28/11/2026, ~75 min com 3 processos.
+- **IBGE LSPA, SIDRA 6588**: cada mês é a estimativa daquele mês (o caminho muda; não é série reescrita). Serve como
+  safra de dados, sem prova formal. 4 MB para todas as UFs, 2006-09 a 2026-10.
 
 ## O protótipo de monitor (`nowcast.py`)
 
@@ -101,6 +115,18 @@ erros fora da amostra desde 2021. Como esses erros vieram de um período de alta
 | TO | 14,91% | 16,6% (16,3–16,8) | 16,6% (16,2–17,5) | 16,6% (16,0–20,0) |
 
 A previsão de 12 meses é, na prática, "fica onde está, com risco para cima". Isso é o que o dado sustenta hoje.
+
+## Análise 7: Atena, premissas G01 e S01 (`g01_garantias.py`, `s01_safra.py`)
+
+Pré-registro leve em `resultados/a7_preregistro.json` (28/11/2026 07:20 UTC, antes de baixar CAR e LSPA). Texto
+completo: `estrategia/bb/analises/a7_atena_g01_s01.md`.
+
+- **G01, refuta (frágil).** 47,1% do valor fora do Pronaf com município (SICOR, safras 2020/21 a 2025/26) está em
+  município onde ≥ 70% da área do CAR ativo é de imóvel com ≥ 4 módulos fiscais (limiar de refutação: < 50%). BB:
+  53,7%, inconclusivo. Limites de cobertura: 13,9% a 84,3%. MS, MT, GO, PI e PA passam; MG, PR, RS e SC falham.
+- **S01, refuta.** A revisão do LSPA por UF não reduz o erro da previsão da inadimplência >90 dias: −0,3% a +0,3%
+  sobre o clima (M1) e +12,8% (h = 6) e +83,1% (h = 9) de erro contra a ponte nacional, com IC acima de zero. O
+  modelo enxuto (ponte + só safra) também piora (+6,5% e +8,2%).
 
 ## Limites
 

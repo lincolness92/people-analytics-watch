@@ -18,7 +18,11 @@ data/ifs/raw/
 data/ifs/ifs.sqlite*
 
 # crédito rural (labs/rural): downloads brutos do SCR.data, SICOR, SGS e clima ficam locais
+# (inclui raw/car/, raw/lspa/, raw/pam/ e os agregados grandes da Análise 7: car_municipio_mf, sicor_contratado_municipio)
 data/rural/raw/
+data/rural/raw/car/
+data/rural/raw/lspa/
+data/rural/raw/pam/
 
 # downloads das análises do BB (SGS, Olinda): brutos refeitos pelos scripts
 estrategia/bb/analises/raw/

@@ -1,0 +1,37 @@
+{
+ "registrado_em": "2026-11-28T07:20:44Z",
+ "nota": "Pré-registro leve: escrito antes de baixar o CAR e o LSPA e antes de rodar qualquer estimativa de G01 ou S01. Limiares copiados de docs/sources/atena-sensores-garantias.md §6 (versão de 28/11/2026). As definições operacionais abaixo também foram fixadas antes. Nomes de campo podem ser ajustados ao esquema real do WFS e do SIDRA, sem mudar o conceito; qualquer ajuste fica anotado em a7_atena_g01_s01.md.",
+ "G01": {
+  "enunciado": "Nas UFs e municípios com mais crédito rural fora do Pronaf, a maior parte da área está em imóveis com 4 ou mais módulos fiscais, fora da proteção da pequena propriedade (STF Tema 961). Logo, a garantia de imóvel pode ser executada na maior parte da exposição.",
+  "metrica_do_documento": "parcela da área do CAR ativo em imóveis com m_fiscal ≥ 4, por município, ponderada pelo valor contratado no SICOR fora do Pronaf",
+  "confirma_se": "≥ 70% do valor fora do Pronaf está em municípios onde ≥ 70% da área do CAR é de imóveis com 4 ou mais módulos fiscais",
+  "refuta_se": "< 50% do valor fora do Pronaf cumpre essa condição",
+  "senao": "inconclusivo",
+  "operacional": {
+   "car": "SICAR WFS, uma camada por UF, foto de 11/2026. Imóvel rural (tipo IRU); situação ativo. Por município: área total e área dos imóveis com m_fiscal ≥ 4. Só contagens e áreas agregadas; nada de nome, CPF ou código do imóvel guardado.",
+   "sicor": "valor contratado (VL_PARC_CREDITO) das operações com emissão de 01/07/2020 a 30/06/2026 (safras 2020/21 a 2025/26), programa diferente de Pronaf (0001); município pelo complemento (CD_IBGE_MUNICIPIO).",
+   "metrica_decisiva": "M = valor fora do Pronaf em municípios com parcela ≥ 0,70 ÷ valor fora do Pronaf com município conhecido e presente no CAR. Sistema inteiro (todas as IFs).",
+   "leituras_secundarias": "M para o BB; M para fonte não controlada (taxa de mercado); M por UF; média da parcela ponderada pelo valor; limites de cobertura (pior e melhor caso supondo que o valor sem município cai todo em município que falha ou que passa); variante com CAR ativo + pendente.",
+   "regra": "confirma se M ≥ 0,70; refuta se M < 0,50; inconclusivo entre os dois. Se os limites de cobertura cruzarem um limiar, a leitura diz isso."
+  }
+ },
+ "S01": {
+  "enunciado": "A surpresa de safra por UF (revisões do LSPA e da Conab frente à 1ª estimativa) antecipa em 2 a 3 trimestres a alta da inadimplência rural da UF, além do que o clima (degrau 2) já explica.",
+  "metrica_do_documento": "erro absoluto médio da previsão de inadimplência rural por UF, fora da amostra, origem móvel",
+  "comparacao_do_documento": "clima (degrau 2) × clima + surpresa de safra; ingênuo sazonal como piso",
+  "confirma_se": "redução do erro ≥ 10% nos horizontes de 2 e 3 trimestres",
+  "refuta_se": "redução < 3%",
+  "senao": "inconclusivo",
+  "operacional": {
+   "alvo_e_calendario": "o mesmo de labs/rural/nowcast.py: inadimplência >90 dias do rural por UF (SCR.data), origem T no dia da publicação do SCR de T (fim de T+2), variáveis até T+1, origens de 2017-12 em diante, janela que cresce, λ do ridge escolhido como no nowcast.py.",
+   "horizontes": "decisivos h = 6 e h = 9 meses (2 e 3 trimestres); também reportados h = 3 e h = 12.",
+   "safra": "IBGE LSPA, SIDRA 6588, produção por UF. Na origem T usa só o levantamento do mês T+1 (publicado por volta do dia 15 de T+2, antes do SCR de T). Variáveis: (1) rev_ano = ln(estimativa de T+1 para o ano Y ÷ 1ª estimativa do ano Y), para o total de cereais, leguminosas e oleaginosas; (2) rev_ant = ln(última estimativa do ano Y−1 ÷ 1ª estimativa do ano Y−1), total; (3) var_esp = ln(estimativa de T+1 para Y ÷ última estimativa de Y−1), total; (4) rev_ano da soja. UF sem LSPA na data: variável = 0, anotado.",
+   "safras_de_dados": "cada mês da tabela 6588 é a estimativa publicada naquele mês; se for assim, o teste usa a safra disponível na data. Se o IBGE tiver reescrito meses antigos, dizer e tratar o resultado como otimista.",
+   "modelos": "CLIMA = M1 do nowcast.py (degraus 1 e 2). CLIMA+S = M1 + as 4 variáveis de safra. PONTE = ponte nacional do nowcast.py. PONTE+C = PONTE + ridge no resíduo (y[T+h] − PONTE) com as variáveis do M1. PONTE+C+S = PONTE+C + as 4 variáveis de safra. SN como piso.",
+   "comparacao_A_literal": "redução A(h) = 1 − MAE(CLIMA+S) ÷ MAE(CLIMA).",
+   "comparacao_B_decisiva": "redução B(h) = 1 − MAE(PONTE+C+S) ÷ min(MAE(PONTE), MAE(PONTE+C)). A barra é a ponte nacional, o melhor modelo do monitor; o monitor só sobe o degrau 3 se a safra ganhar dele.",
+   "metrica": "MAE em p.p., média simples das 27 UFs (como no nowcast.py); IC 95% da diferença de MAE por bootstrap em blocos de 12 origens.",
+   "regra": "confirma se B ≥ 10% em h = 6 e em h = 9 e o IC da diferença de MAE contra a barra fica abaixo de zero nos dois; refuta se B < 3% em h = 6 e em h = 9; inconclusivo nos outros casos. A comparação A é reportada como no documento, mas não decide: se A confirmar e B refutar, a leitura é 'refuta para o monitor'."
+  }
+ }
+}

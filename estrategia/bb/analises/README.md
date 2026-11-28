@@ -1,8 +1,8 @@
 # Análises do diagnóstico do BB (dados públicos)
 
 Primeira rodada de 28/11/2026 das análises 1, 3, 4 e 5 de [`04-proximos-passos.md`](../04-proximos-passos.md) §4,
-revisada no mesmo dia com o CDI (A4) e as taxas de juros por instituição (A5), mais a Análise 6 (dez anos de resultado,
-para [`05-panoramas.md`](../05-panoramas.md) §3). A
+revisada no mesmo dia com o CDI (A4) e as taxas de juros por instituição (A5), mais as Análises 6 (dez anos de resultado)
+e 8 (concorrência por mercado), as duas para [`05-panoramas.md`](../05-panoramas.md) §3. A
 Análise 2 (inadimplência rural ajustada ao mix) depende de SCR.data e SICOR e está com outro fluxo.
 
 Tudo aqui é **preliminar e sem pré-registro**: as regras de leitura são as do §4, mas os limiares não foram fixados
@@ -12,8 +12,9 @@ com data antes de rodar. Só dado público. Nenhum número interno do BB.
 
 Da raiz do repositório, só Python 3 (stdlib; use `python3` se `python` não existir). Lê `data/ifs/` (inclusive os brutos em cache e a base local, aberta só
 para leitura) e grava em `estrategia/bb/analises/out/`. A4 e A5 baixam, uma vez, o CDI (SGS 4391) e as taxas de juros
-do BCB (Olinda `taxaJuros/v2`, ~3 min na primeira vez) para `estrategia/bb/analises/raw/`, que fica fora do git; nas
-rodadas seguintes usam o cache.
+do BCB (Olinda `taxaJuros/v2`, ~3 min na primeira vez); a A8 baixa o GFDD (FRED e API do Banco Mundial) e os betas
+de Drechsler–Savov–Schnabl. Tudo vai para `estrategia/bb/analises/raw/`, que fica fora do git; nas rodadas seguintes
+usam o cache.
 
 ```
 python estrategia/bb/analises/a1_quem_ganhou.py       # ~30 s (bootstrap do teste de quebra)
@@ -21,6 +22,7 @@ python estrategia/bb/analises/a3_contestabilidade.py  # ~3 s
 python estrategia/bb/analises/a4_passivo.py           # ~25 s
 python estrategia/bb/analises/a5_varejo_pf.py         # ~40 s (+3 min na 1ª vez: taxajuros.py)
 python estrategia/bb/analises/a6_resultado_10anos.py  # ~2 s
+python estrategia/bb/analises/a8_concorrencia.py      # ~45 s (+ ~15 s na 1ª vez: GFDD e betas de DSS para raw/)
 ```
 
 `_comum.py` tem a leitura das séries, os grupos de concorrentes e a extração de campos do IF.data que a camada ainda
@@ -36,6 +38,8 @@ funções de leitura de `src/pawatch/ifs/` sem alterar nada lá.
 | 4. Passivo e custo implícito de captação | [a4.md](a4.md) | [a4_passivo.py](a4_passivo.py) | P22, P06, P24, P25 |
 | 5. Varejo PF: volume, risco e preço | [a5.md](a5.md) | [a5_varejo_pf.py](a5_varejo_pf.py), [taxajuros.py](taxajuros.py) | P14, P15, P16, P17, P18, P30 |
 | 6. Dez anos de resultado (panorama §3) | [a6.md](a6.md) | [a6_resultado_10anos.py](a6_resultado_10anos.py) | descritiva |
+| 7. Atena: garantias e surpresa de safra (pré-registro leve) | [a7_atena_g01_s01.md](a7_atena_g01_s01.md) | [g01_garantias.py](../../../labs/rural/g01_garantias.py), [s01_safra.py](../../../labs/rural/s01_safra.py) | G01, S01 |
+| 8. Concorrência por mercado: HHI, Lerner, beta, mapa mercado × concorrente (panorama §3) | [a8.md](a8.md) | [a8_concorrencia.py](a8_concorrencia.py), [_concorrencia.py](_concorrencia.py) | P22, P06, P14, P13, P30, P31 |
 
 ## Manchetes
 
@@ -73,6 +77,22 @@ perdeu 6,1 p.p. em 2023–2026 (P30). O atraso do consignado no sistema quase do
 em 2025 e 7,1% no 1º semestre de 2026 anualizado: 12º de 13 em ROE e 8º em lucro. Em dez anos, quem mais subiu no lucro
 foi Nubank (de prejuízo a R$ 24,0 bi em 2025), BTG, Itaú (R$ 19,1 → 51,1 bi) e as cooperativas (R$ 3,5 → 15,2 bi).
 
+**Análise 8.** A concentração caiu em 36 de 40 séries do IF.data entre 03/2016 e 06/2026. O crédito PF + PJ foi de
+1.203 para 949 pontos de HHI. Só habitação, rural, infraestrutura, PJ habitacional, poupança e LCI seguem
+elevados (faixas do BCB). A conta bate com o REB 2023 do BCB: IHHn do crédito 0,0976 × 0,0990 publicado em 12/2023;
+RC4 dos mercados relevantes a até 1,9 p.p.
+
+O Lerner mediano dos bancos (translog no painel do IF.data) foi de 0,28–0,31 (2017–2021) para 0,18–0,21 (2022–2026).
+Isso está na faixa do GFDD do Banco Mundial para o Brasil (0,21–0,31 em 2010–2014; a série acaba em 2014, sem ano
+em comum). O BB fica em 0,18–0,23 desde 2017, na mediana dos bancos desde 2023. O Nubank fica em 0,34–0,42. O
+Boone do GFDD (por ROA) não reproduz.
+
+Na alta de 2021–2023, o beta de captação do BB foi de 0,74 (privados 0,71, Itaú 0,62). Sem as compromissadas, foi
+de 0,57, o 2º menor entre os grandes: o custo maior do BB (A4) é mix, não preço do depósito. Os betas dos EUA (DSS)
+são 0,35–0,39. No mapa mercado × concorrente, a hipótese mais frequente é "atacar canal" (16 de 37 mercados, contra
+digitais e cooperativas). "Comprar" e "atacar preço" não aparecem: não há alvo privado de 3% ou mais nos mercados
+concentrados, e o BB não está acima da mediana de preço.
+
 ## Problemas de dado encontrados (para a camada `data/ifs/`; nada foi corrigido aqui)
 
 | # | Onde | O quê | Efeito nas análises |
@@ -97,10 +117,15 @@ foi Nubank (de prejuízo a R$ 24,0 bi em 2025), BTG, Itaú (R$ 19,1 → 51,1 bi)
 | 18 | IF.data, tarifas na Cosif 2025 | A linha de tarifas muda de (d2) para (m): o sistema cai de R$ 56,4 bi (2024) para R$ 42,5 bi (2025); o Nubank fica sem tarifas desde 2025 | Tarifas comparáveis só dentro de cada regime |
 | 19 | IF.data, Basileia dos sistemas | `indice_basileia` de Sicoob e Sicredi em `values.csv` é a soma dos índices das cooperativas (ex.: 6.689% para o Sicoob em 06/2026) | Deixado vazio na Análise 6; a camada deveria não somar índices |
 | 20 | taxaJuros (BCB), cooperativas | Só o Banco Sicoob e o Banco Sicredi reportam; as singulares não. Banco Sicoob com taxas implausíveis no pessoal não consignado (2,2% a.a. em 2023) | Taxas "cooperativas" não representam os sistemas |
+| 21 | IF.data, cooperativas na Cosif 2025 | A renda da centralização financeira da singular foi para "Outras Receitas (t)": singulares de R$ 2,3–3,0 bi por semestre (2024) para R$ 12,6–17,2 bi (2025) | A8 soma outras receitas na receita das cooperativas, nos dois regimes |
+| 22 | IF.data, bancos cooperativos e IPs na Cosif 2025 | Banco Sicredi com receita de 5,5% e custo de 10,0% do ativo (2025); Mercado Pago e PagBank com Lerner negativo desde 2025 | Sistemas medidos só pelas singulares; IPs em 2025–2026 não lidas |
+| 23 | IF.data, linha (b1) na Cosif antiga | Inclui variação cambial das captações externas; o hedge fica em derivativos (a4) e câmbio (a5, b4). Sem eles na receita, o Lerner de 2020 e 2024 cai pela metade, e o beta do corte de 2023–2024 fica negativo nos bancos com captação externa | A8 soma derivativos e câmbio na receita; o corte de 2023–2024 não é lido |
+| 24 | Benchmarks externos | GFDD: Lerner, Boone e H do Brasil só até 2014, e fora da API do Banco Mundial (cópia no FRED). O REB foi descontinuado em 2025 (Res. BCB 460) e publica o Lerner só em gráfico. O PDF do Guia H do CADE não abriu em 28/11/2026 | Conferência de nível sem ano em comum; faixas do CADE de fonte secundária |
 
 ## O que mais falta (fontes públicas)
 
 CDI e taxas de juros já baixados aqui (levar para a camada `data/ifs/`); volume concedido por instituição e modalidade
 (para ponderar as taxas); SCR.data;
 SICOR; cadastro de agências e postos com datas; pontos de atendimento de cooperativas (Unicad); IBGE municipal;
-balancetes Cosif para despesa por instrumento; IF.data de 2014–2015.
+balancetes Cosif para despesa por instrumento (beta de depósito sem compromissadas por premissa); IF.data de
+2014–2015 (sobreposição com o GFDD); volume concedido por instituição (elasticidade da participação ao preço).

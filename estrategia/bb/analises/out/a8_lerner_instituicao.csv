@@ -1,0 +1,179 @@
+inst_id,nome,ano,cosif,entidades,segmentos,ativo_medio_bi,lerner,preco_pct,custo_marginal_pct,custo_medio_pct,elasticidade_custo,preco_captacao_w1_pct,roa_pct,percentil_no_segmento
+banrisul,Banrisul,2016,cosif_antigo,1,bancos (b1+b2),66.6,0.237,17.26,13.17,13.11,1.004,10.92,0.99,51
+banrisul,Banrisul,2017,cosif_antigo,1,bancos (b1+b2),70.0,0.256,15.69,11.68,11.61,1.006,8.69,1.5,43
+banrisul,Banrisul,2018,cosif_antigo,1,bancos (b1+b2),74.2,0.293,14.45,10.21,10.13,1.008,6.81,1.41,59
+banrisul,Banrisul,2019,cosif_antigo,1,bancos (b1+b2),78.8,0.306,13.06,9.06,8.98,1.01,5.78,1.71,54
+banrisul,Banrisul,2020,cosif_antigo,1,bancos (b1+b2),86.4,0.291,10.92,7.75,7.66,1.012,4.6,0.84,54
+banrisul,Banrisul,2021,cosif_antigo,1,bancos (b1+b2),98.1,0.215,9.38,7.36,7.27,1.013,4.88,0.97,35
+banrisul,Banrisul,2022,cosif_antigo,1,bancos (b1+b2),108.4,0.061,12.77,12.0,11.87,1.011,10.74,0.66,21
+banrisul,Banrisul,2023,cosif_antigo,1,bancos (b1+b2),117.3,0.15,14.18,12.05,11.91,1.012,11.04,0.74,36
+banrisul,Banrisul,2024,cosif_antigo,1,bancos (b1+b2),134.4,0.158,13.58,11.43,11.27,1.014,9.93,0.68,33
+banrisul,Banrisul,2025,cosif2025,1,bancos (b1+b2),154.7,0.047,13.56,12.92,12.73,1.015,11.49,1.04,15
+banrisul,Banrisul,2026,cosif2025,1,bancos (b1+b2),166.8,0.02,13.16,12.9,12.69,1.017,11.42,0.66,13
+bb,Banco do Brasil,2016,cosif_antigo,1,bancos (b1+b2),1422.8,0.115,13.28,11.75,11.17,1.052,10.75,0.58,30
+bb,Banco do Brasil,2017,cosif_antigo,1,bancos (b1+b2),1402.0,0.152,11.45,9.71,9.23,1.053,8.5,0.8,20
+bb,Banco do Brasil,2018,cosif_antigo,1,bancos (b1+b2),1425.2,0.186,10.79,8.78,8.33,1.054,7.45,0.9,32
+bb,Banco do Brasil,2019,cosif_antigo,1,bancos (b1+b2),1490.1,0.201,10.01,8.0,7.58,1.055,6.54,1.22,25
+bb,Banco do Brasil,2020,cosif_antigo,1,bancos (b1+b2),1643.7,0.19,8.77,7.1,6.72,1.057,6.04,0.78,36
+bb,Banco do Brasil,2021,cosif_antigo,1,bancos (b1+b2),1850.8,0.232,8.3,6.38,6.02,1.059,5.29,1.07,39
+bb,Banco do Brasil,2022,cosif_antigo,1,bancos (b1+b2),2031.3,0.184,12.8,10.45,9.88,1.057,10.29,1.54,45
+bb,Banco do Brasil,2023,cosif_antigo,1,bancos (b1+b2),2113.2,0.197,13.94,11.2,10.59,1.057,10.9,1.64,49
+bb,Banco do Brasil,2024,cosif_antigo,1,bancos (b1+b2),2324.8,0.18,15.96,13.08,12.37,1.058,13.4,1.55,48
+bb,Banco do Brasil,2025,cosif2025,1,bancos (b1+b2),2452.8,0.211,10.24,8.08,7.61,1.062,7.3,0.76,52
+bb,Banco do Brasil,2026,cosif2025,1,bancos (b1+b2),2548.0,0.207,10.96,8.7,8.19,1.062,8.05,0.51,51
+bnb,Banco do Nordeste,2016,cosif_antigo,1,bancos (b1+b2),43.6,0.191,17.75,14.37,14.43,0.996,20.84,1.68,45
+bnb,Banco do Nordeste,2017,cosif_antigo,1,bancos (b1+b2),50.3,0.176,15.35,12.65,12.67,0.998,19.9,1.36,26
+bnb,Banco do Nordeste,2018,cosif_antigo,1,bancos (b1+b2),57.2,0.169,13.37,11.12,11.11,1.0,17.9,1.27,32
+bnb,Banco do Nordeste,2019,cosif_antigo,1,bancos (b1+b2),59.3,0.284,13.85,9.91,9.9,1.002,15.02,2.93,42
+bnb,Banco do Nordeste,2020,cosif_antigo,1,bancos (b1+b2),59.3,0.23,11.46,8.83,8.79,1.005,8.34,1.72,42
+bnb,Banco do Nordeste,2021,cosif_antigo,1,bancos (b1+b2),61.5,0.267,12.64,9.27,9.22,1.006,8.25,2.63,45
+bnb,Banco do Nordeste,2022,cosif_antigo,1,bancos (b1+b2),63.1,0.21,17.84,14.1,14.08,1.002,22.6,3.2,52
+bnb,Banco do Nordeste,2023,cosif_antigo,1,bancos (b1+b2),65.3,0.209,18.04,14.27,14.23,1.002,22.27,3.21,53
+bnb,Banco do Nordeste,2024,cosif_antigo,1,bancos (b1+b2),68.3,0.205,17.82,14.16,14.1,1.004,19.14,3.43,58
+bnb,Banco do Nordeste,2025,cosif2025,1,bancos (b1+b2),71.9,0.409,19.85,11.73,11.64,1.008,11.02,4.29,93
+bnb,Banco do Nordeste,2026,cosif2025,1,bancos (b1+b2),76.7,0.408,19.43,11.5,11.41,1.008,11.54,2.76,92
+bradesco,Bradesco,2016,cosif_antigo,1,bancos (b1+b2),1006.0,0.266,16.84,12.35,11.8,1.046,11.4,1.5,61
+bradesco,Bradesco,2017,cosif_antigo,1,bancos (b1+b2),1073.0,0.229,14.0,10.79,10.28,1.049,8.87,1.37,38
+bradesco,Bradesco,2018,cosif_antigo,1,bancos (b1+b2),1090.1,0.22,11.88,9.26,8.82,1.05,7.24,1.76,34
+bradesco,Bradesco,2019,cosif_antigo,1,bancos (b1+b2),1146.3,0.253,11.56,8.64,8.21,1.052,6.36,1.98,39
+bradesco,Bradesco,2020,cosif_antigo,1,bancos (b1+b2),1295.3,0.059,8.89,8.37,7.95,1.053,6.69,1.28,19
+bradesco,Bradesco,2021,cosif_antigo,1,bancos (b1+b2),1415.0,0.291,9.74,6.91,6.55,1.055,5.15,1.58,49
+bradesco,Bradesco,2022,cosif_antigo,1,bancos (b1+b2),1517.7,0.169,13.06,10.85,10.31,1.053,10.26,1.36,41
+bradesco,Bradesco,2023,cosif_antigo,1,bancos (b1+b2),1582.5,0.142,13.8,11.84,11.24,1.053,11.27,0.96,33
+bradesco,Bradesco,2024,cosif_antigo,1,bancos (b1+b2),1689.8,0.163,14.55,12.18,11.56,1.054,11.75,1.13,40
+bradesco,Bradesco,2025,cosif2025,1,bancos (b1+b2),1796.4,0.107,10.93,9.75,9.23,1.057,8.53,1.39,27
+bradesco,Bradesco,2026,cosif2025,1,bancos (b1+b2),2002.1,0.169,10.56,8.78,8.29,1.058,7.62,1.21,34
+btg,BTG Pactual,2016,cosif_antigo,1,bancos (b1+b2),186.6,0.239,7.66,5.83,5.74,1.015,8.48,1.83,52
+btg,BTG Pactual,2017,cosif_antigo,1,bancos (b1+b2),142.7,-0.127,6.42,7.23,7.18,1.007,12.79,1.45,5
+btg,BTG Pactual,2018,cosif_antigo,1,bancos (b1+b2),168.5,-0.402,5.17,7.25,7.18,1.009,13.08,0.76,0
+btg,BTG Pactual,2019,cosif_antigo,1,bancos (b1+b2),185.2,0.379,9.56,5.94,5.87,1.012,10.22,2.03,76
+btg,BTG Pactual,2020,cosif_antigo,1,bancos (b1+b2),247.6,0.088,5.09,4.64,4.56,1.019,6.37,1.35,23
+btg,BTG Pactual,2021,cosif_antigo,1,bancos (b1+b2),341.1,0.235,9.79,7.49,7.29,1.027,7.27,1.85,39
+btg,BTG Pactual,2022,cosif_antigo,1,bancos (b1+b2),415.3,0.066,15.32,14.3,13.94,1.026,16.66,1.89,22
+btg,BTG Pactual,2023,cosif_antigo,1,bancos (b1+b2),479.0,0.232,15.44,11.85,11.52,1.029,13.7,2.07,58
+btg,BTG Pactual,2024,cosif_antigo,1,bancos (b1+b2),593.1,0.16,12.75,10.71,10.37,1.033,12.35,1.99,36
+btg,BTG Pactual,2025,cosif2025,1,bancos (b1+b2),663.0,0.115,11.25,9.96,9.61,1.036,11.05,2.41,30
+btg,BTG Pactual,2026,cosif2025,1,bancos (b1+b2),822.8,0.072,11.15,10.36,9.95,1.04,11.1,2.3,21
+c6,C6 Bank,2020,cosif_antigo,1,bancos (b1+b2),4.1,-1.649,7.58,20.08,20.77,0.967,3.45,-15.43,1
+c6,C6 Bank,2021,cosif_antigo,1,bancos (b1+b2),16.4,0.053,14.79,14.01,14.25,0.983,6.42,-4.65,16
+c6,C6 Bank,2022,cosif_antigo,1,bancos (b1+b2),35.1,0.196,17.09,13.73,13.82,0.993,9.5,-6.84,48
+c6,C6 Bank,2023,cosif_antigo,1,bancos (b1+b2),56.8,0.264,17.44,12.84,12.85,0.999,10.69,-1.6,77
+c6,C6 Bank,2024,cosif_antigo,1,bancos (b1+b2),90.6,0.311,17.99,12.4,12.35,1.004,13.24,2.51,82
+c6,C6 Bank,2025,cosif2025,1,bancos (b1+b2),128.6,0.198,18.03,14.45,14.35,1.007,17.12,1.91,45
+c6,C6 Bank,2026,cosif2025,1,bancos (b1+b2),157.2,0.244,17.02,12.86,12.72,1.011,14.6,1.6,59
+caixa,Caixa Econômica Federal,2016,cosif_antigo,1,bancos (b1+b2),1236.0,0.137,13.69,11.81,11.24,1.051,10.08,0.3,34
+caixa,Caixa Econômica Federal,2017,cosif_antigo,1,bancos (b1+b2),1269.5,0.229,12.48,9.62,9.14,1.053,7.74,0.98,38
+caixa,Caixa Econômica Federal,2018,cosif_antigo,1,bancos (b1+b2),1270.7,0.29,10.87,7.72,7.32,1.054,5.75,0.69,57
+caixa,Caixa Econômica Federal,2019,cosif_antigo,1,bancos (b1+b2),1293.0,0.344,10.9,7.15,6.78,1.054,5.27,1.44,65
+caixa,Caixa Econômica Federal,2020,cosif_antigo,1,bancos (b1+b2),1391.9,0.257,7.7,5.72,5.41,1.057,3.7,0.91,44
+caixa,Caixa Econômica Federal,2022,cosif_antigo,1,bancos (b1+b2),1514.0,0.172,11.86,9.82,9.31,1.055,8.43,0.62,43
+caixa,Caixa Econômica Federal,2023,cosif_antigo,1,bancos (b1+b2),1705.2,0.182,12.58,10.29,9.74,1.056,9.01,0.65,46
+caixa,Caixa Econômica Federal,2024,cosif_antigo,1,bancos (b1+b2),1924.4,0.165,11.19,9.34,8.83,1.059,7.79,0.66,43
+caixa,Caixa Econômica Federal,2025,cosif2025,1,bancos (b1+b2),2122.9,0.067,11.32,10.57,9.98,1.059,9.08,0.69,24
+caixa,Caixa Econômica Federal,2026,cosif2025,1,bancos (b1+b2),2304.3,0.086,11.58,10.59,9.99,1.06,9.2,0.57,23
+inter,Inter,2016,cosif_antigo,1,bancos (b1+b2),3.0,0.27,21.2,15.48,16.29,0.951,12.84,0.86,64
+inter,Inter,2017,cosif_antigo,1,bancos (b1+b2),3.4,0.252,16.88,12.62,13.22,0.955,9.36,1.4,41
+inter,Inter,2018,cosif_antigo,1,bancos (b1+b2),4.5,0.277,15.05,10.88,11.31,0.962,6.21,1.5,51
+inter,Inter,2019,cosif_antigo,1,bancos (b1+b2),7.5,0.252,12.91,9.66,9.95,0.971,4.68,1.05,36
+inter,Inter,2020,cosif_antigo,1,bancos (b1+b2),13.8,0.144,8.17,6.99,7.11,0.984,1.84,-0.05,33
+inter,Inter,2021,cosif_antigo,1,bancos (b1+b2),28.1,0.24,9.09,6.91,6.96,0.993,2.98,0.12,41
+inter,Inter,2022,cosif_antigo,1,bancos (b1+b2),41.0,0.217,12.12,9.49,9.53,0.996,7.05,-0.22,55
+inter,Inter,2023,cosif_antigo,1,bancos (b1+b2),51.2,0.293,13.71,9.7,9.72,0.998,7.85,0.38,85
+inter,Inter,2024,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),66.8,0.313,12.95,8.79,8.82,0.999,6.84,0.82,
+inter,Inter,2025,cosif2025,1,bancos (b1+b2),84.9,0.271,14.57,10.61,10.57,1.004,9.55,1.24,73
+inter,Inter,2026,cosif2025,1,bancos (b1+b2),98.4,0.286,15.06,10.75,10.68,1.006,9.8,1.45,72
+itau,Itaú Unibanco,2016,cosif_antigo,1,bancos (b1+b2),1294.9,0.294,14.85,10.48,9.98,1.05,10.5,1.47,72
+itau,Itaú Unibanco,2017,cosif_antigo,1,bancos (b1+b2),1349.5,0.308,12.66,8.76,8.32,1.052,7.96,1.56,50
+itau,Itaú Unibanco,2018,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),1485.9,0.241,11.13,8.44,8.0,1.055,7.63,1.53,
+itau,Itaú Unibanco,2019,cosif_antigo,1,bancos (b1+b2),1527.3,0.354,11.25,7.27,6.89,1.055,6.24,1.76,70
+itau,Itaú Unibanco,2020,cosif_antigo,1,bancos (b1+b2),1855.0,0.089,8.31,7.58,7.17,1.057,7.18,0.87,26
+itau,Itaú Unibanco,2021,cosif_antigo,1,bancos (b1+b2),1948.0,0.35,9.16,5.95,5.62,1.059,4.94,1.41,67
+itau,Itaú Unibanco,2022,cosif_antigo,1,bancos (b1+b2),2118.0,0.277,11.76,8.5,8.03,1.058,8.29,1.45,72
+itau,Itaú Unibanco,2023,cosif_antigo,1,bancos (b1+b2),2367.7,0.226,12.4,9.6,9.06,1.059,9.65,1.42,54
+itau,Itaú Unibanco,2024,cosif_antigo,1,bancos (b1+b2),2624.7,0.161,14.98,12.57,11.87,1.059,13.58,1.47,39
+itau,Itaú Unibanco,2025,cosif2025,1,bancos (b1+b2),2664.1,0.216,9.95,7.8,7.34,1.062,6.94,1.74,55
+itau,Itaú Unibanco,2026,cosif2025,1,bancos (b1+b2),2806.5,0.235,9.63,7.36,6.92,1.063,6.37,1.71,55
+mercado-pago,Mercado Pago,2022,cosif_antigo,1,não bancários (n1+n4),17.6,0.82,69.35,12.46,11.46,1.087,0.11,3.84,97
+mercado-pago,Mercado Pago,2023,cosif_antigo,1,não bancários (n1+n4),26.2,0.848,55.57,8.44,7.77,1.085,0.21,1.74,98
+mercado-pago,Mercado Pago,2024,cosif_antigo,1,não bancários (n1+n4),9.0,0.72,40.83,11.43,14.2,0.805,14.15,-6.8,94
+mercado-pago,Mercado Pago,2025,cosif2025,1,não bancários (n1+n4),74.6,0.179,15.46,12.69,12.19,1.041,11.69,0.39,35
+mercado-pago,Mercado Pago,2026,cosif2025,1,não bancários (n1+n4),96.6,-0.356,9.88,13.4,12.76,1.05,11.82,-0.39,15
+nubank,Nubank,2018,cosif_antigo,1,não bancários (n1+n4),7.5,0.193,9.05,7.3,7.91,0.924,4.99,-1.34,6
+nubank,Nubank,2019,cosif_antigo,1,não bancários (n1+n4),15.4,0.021,9.67,9.47,8.97,1.056,0.37,-2.02,9
+nubank,Nubank,2020,cosif_antigo,1,não bancários (n1+n4),22.1,0.083,10.72,9.82,9.64,1.019,1.84,-1.09,4
+nubank,Nubank,2021,cosif_antigo,2,não bancários (n1+n4),73.4,0.28,12.22,8.02,8.0,0.984,4.17,0.96,19
+nubank,Nubank,2022,cosif_antigo,2,não bancários (n1+n4),129.7,0.335,17.65,11.13,10.91,1.022,9.7,1.86,32
+nubank,Nubank,2023,cosif_antigo,2,não bancários (n1+n4),188.4,0.336,18.66,10.03,9.63,1.045,9.26,5.13,26
+nubank,Nubank,2024,cosif_antigo,2,não bancários (n1+n4),242.6,0.358,21.73,10.08,9.49,1.066,8.69,7.69,26
+nubank,Nubank,2025,cosif2025,2,não bancários (n1+n4),303.5,0.342,21.34,11.61,10.92,1.082,11.46,7.9,47
+nubank,Nubank,2026,cosif2025,1,não bancários (n1+n4),257.0,0.416,26.97,15.76,14.49,1.088,11.14,3.26,55
+pagbank,PagBank (PagSeguro),2017,cosif_antigo,1,bancos (b1+b2),1.9,0.359,26.23,16.8,17.67,0.951,7.63,3.05,67
+pagbank,PagBank (PagSeguro),2019,cosif_antigo,1,não bancários (n1+n4),14.0,0.715,27.71,7.9,7.49,1.055,0.39,10.72,87
+pagbank,PagBank (PagSeguro),2020,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),22.2,0.518,21.71,8.27,7.87,1.044,1.28,5.83,
+pagbank,PagBank (PagSeguro),2021,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),30.1,0.531,24.8,10.65,9.69,1.082,3.79,3.94,
+pagbank,PagBank (PagSeguro),2022,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),42.7,0.531,31.45,10.97,10.62,1.032,9.29,2.48,
+pagbank,PagBank (PagSeguro),2023,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),56.2,0.49,26.46,10.54,10.35,1.017,9.13,2.1,
+pagbank,PagBank (PagSeguro),2024,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),91.2,0.349,18.28,10.63,10.39,1.019,8.8,1.17,
+pagbank,PagBank (PagSeguro),2025,cosif2025,2,bancos (b1+b2); não bancários (n1+n4),115.3,-0.386,10.0,12.9,12.64,1.019,12.24,0.75,
+pagbank,PagBank (PagSeguro),2026,cosif2025,2,bancos (b1+b2); não bancários (n1+n4),123.4,-0.443,9.05,11.92,11.63,1.023,10.7,0.86,
+picpay,PicPay,2016,cosif_antigo,1,bancos (b1+b2),7.6,0.025,15.67,15.28,15.78,0.968,12.42,0.57,19
+picpay,PicPay,2017,cosif_antigo,1,bancos (b1+b2),8.3,0.068,15.15,14.12,14.54,0.971,9.73,0.02,11
+picpay,PicPay,2018,cosif_antigo,1,bancos (b1+b2),9.3,0.076,13.15,12.15,12.48,0.974,7.68,0.03,18
+picpay,PicPay,2019,cosif_antigo,1,bancos (b1+b2),11.8,0.25,16.2,12.15,12.43,0.977,7.2,0.15,34
+picpay,PicPay,2020,cosif_antigo,1,bancos (b1+b2),14.2,-0.026,11.07,11.36,11.58,0.981,5.72,-1.75,10
+picpay,PicPay,2021,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),24.4,0.116,16.64,14.98,14.91,0.998,5.53,-4.39,
+picpay,PicPay,2022,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),37.7,0.279,21.9,15.87,16.1,0.986,9.39,-6.42,
+picpay,PicPay,2023,cosif_antigo,1,bancos (b1+b2),34.4,0.145,19.35,16.53,16.72,0.989,12.73,-4.42,34
+picpay,PicPay,2025,cosif2025,2,bancos (b1+b2); não bancários (n1+n4),43.3,0.359,22.88,14.67,15.06,0.979,12.66,2.26,
+picpay,PicPay,2026,cosif2025,2,bancos (b1+b2); não bancários (n1+n4),56.1,0.384,23.38,14.5,14.56,0.995,12.33,1.27,
+safra,Safra,2016,cosif_antigo,1,bancos (b1+b2),142.1,0.12,15.74,13.85,13.69,1.012,14.16,1.19,33
+safra,Safra,2017,cosif_antigo,1,bancos (b1+b2),148.7,0.093,12.46,11.3,11.14,1.015,10.34,1.29,12
+safra,Safra,2018,cosif_antigo,1,bancos (b1+b2),161.4,0.071,10.46,9.72,9.55,1.018,8.14,1.33,15
+safra,Safra,2019,cosif_antigo,1,bancos (b1+b2),173.1,0.11,10.29,9.16,8.99,1.019,7.4,1.28,14
+safra,Safra,2020,cosif_antigo,1,bancos (b1+b2),195.0,-0.017,7.6,7.73,7.56,1.022,5.96,1.04,10
+safra,Safra,2021,cosif_antigo,1,bancos (b1+b2),229.6,0.115,9.05,8.01,7.82,1.024,6.35,0.94,19
+safra,Safra,2022,cosif_antigo,1,bancos (b1+b2),240.3,0.065,14.81,13.85,13.55,1.022,13.58,0.92,21
+safra,Safra,2023,cosif_antigo,1,bancos (b1+b2),260.3,0.112,13.96,12.4,12.12,1.022,12.81,1.25,26
+safra,Safra,2024,cosif_antigo,1,bancos (b1+b2),298.8,0.049,17.96,17.09,16.7,1.023,18.95,1.11,12
+safra,Safra,2025,cosif2025,1,bancos (b1+b2),279.1,0.089,13.78,12.55,12.26,1.024,12.81,1.57,24
+safra,Safra,2026,cosif2025,1,bancos (b1+b2),283.7,0.167,12.55,10.45,10.2,1.025,10.16,1.35,33
+santander,Santander Brasil,2016,cosif_antigo,1,bancos (b1+b2),676.4,0.299,16.04,11.24,10.83,1.038,12.37,0.84,73
+santander,Santander Brasil,2017,cosif_antigo,1,bancos (b1+b2),686.1,0.329,13.44,9.02,8.67,1.04,8.76,1.21,57
+santander,Santander Brasil,2018,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),754.9,0.315,11.81,8.09,7.78,1.039,8.02,1.72,
+santander,Santander Brasil,2019,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),841.0,0.393,11.55,6.98,6.7,1.041,7.04,1.8,
+santander,Santander Brasil,2020,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),1004.0,0.225,9.21,7.13,6.83,1.043,7.74,1.42,
+santander,Santander Brasil,2021,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),1038.3,0.392,10.33,6.01,5.75,1.044,5.44,1.51,
+santander,Santander Brasil,2022,cosif_antigo,3,bancos (b1+b2); não bancários (n1+n4),1079.6,0.279,12.35,8.71,8.35,1.041,9.38,1.24,
+santander,Santander Brasil,2023,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),1194.0,0.218,12.6,9.67,9.26,1.042,10.53,0.83,
+santander,Santander Brasil,2024,cosif_antigo,2,bancos (b1+b2); não bancários (n1+n4),1329.9,0.14,12.69,10.7,10.24,1.043,12.22,1.05,
+santander,Santander Brasil,2025,cosif2025,1,bancos (b1+b2),1285.5,0.263,14.03,10.34,9.88,1.046,10.57,1.23,73
+santander,Santander Brasil,2026,cosif2025,1,bancos (b1+b2),1302.1,0.342,15.53,10.22,9.76,1.047,10.36,1.16,84
+sicoob,Sistema Sicoob,2016,cosif_antigo,109,cooperativas (b3),32.5,0.305,19.8,13.62,13.35,1.021,11.25,3.14,46
+sicoob,Sistema Sicoob,2017,cosif_antigo,130,cooperativas (b3),43.8,0.339,18.43,12.08,11.94,1.013,8.86,3.1,49
+sicoob,Sistema Sicoob,2018,cosif_antigo,149,cooperativas (b3),54.0,0.38,16.45,10.09,10.07,1.004,6.02,3.14,51
+sicoob,Sistema Sicoob,2019,cosif_antigo,163,cooperativas (b3),64.4,0.392,16.31,9.82,9.85,0.998,5.56,2.96,54
+sicoob,Sistema Sicoob,2020,cosif_antigo,143,cooperativas (b3),68.9,0.455,13.54,7.35,7.45,0.988,2.99,2.82,64
+sicoob,Sistema Sicoob,2021,cosif_antigo,203,cooperativas (b3),116.7,0.411,13.04,7.63,7.68,0.995,4.03,2.88,62
+sicoob,Sistema Sicoob,2022,cosif_antigo,209,cooperativas (b3),153.7,0.33,17.72,11.82,11.62,1.017,10.07,3.23,58
+sicoob,Sistema Sicoob,2023,cosif_antigo,220,cooperativas (b3),195.1,0.339,18.7,12.28,12.02,1.022,11.06,3.04,57
+sicoob,Sistema Sicoob,2024,cosif_antigo,230,cooperativas (b3),238.5,0.367,17.67,11.12,10.91,1.02,9.51,2.55,61
+sicoob,Sistema Sicoob,2025,cosif2025,228,cooperativas (b3),278.3,0.287,18.41,13.1,12.79,1.024,12.09,2.8,59
+sicoob,Sistema Sicoob,2026,cosif2025,231,cooperativas (b3),315.3,0.279,18.04,12.96,12.65,1.025,12.04,2.08,53
+sicredi,Sistema Sicredi,2016,cosif_antigo,76,cooperativas (b3),45.3,0.367,21.62,13.67,13.22,1.037,11.61,3.68,72
+sicredi,Sistema Sicredi,2017,cosif_antigo,89,cooperativas (b3),58.9,0.386,19.83,12.15,11.89,1.024,9.3,3.88,72
+sicredi,Sistema Sicredi,2018,cosif_antigo,89,cooperativas (b3),69.0,0.43,18.06,10.28,10.16,1.014,6.59,3.81,76
+sicredi,Sistema Sicredi,2019,cosif_antigo,92,cooperativas (b3),84.2,0.459,17.36,9.39,9.43,0.999,6.03,3.59,80
+sicredi,Sistema Sicredi,2020,cosif_antigo,79,cooperativas (b3),99.9,0.481,13.8,7.17,7.28,0.985,3.76,2.86,77
+sicredi,Sistema Sicredi,2021,cosif_antigo,90,cooperativas (b3),145.9,0.449,13.13,7.23,7.3,0.991,4.82,3.0,78
+sicredi,Sistema Sicredi,2022,cosif_antigo,93,cooperativas (b3),199.2,0.359,17.55,11.24,11.1,1.013,11.99,2.91,74
+sicredi,Sistema Sicredi,2023,cosif_antigo,94,cooperativas (b3),253.8,0.358,18.43,11.82,11.63,1.017,13.53,2.68,70
+sicredi,Sistema Sicredi,2024,cosif_antigo,95,cooperativas (b3),308.1,0.376,17.64,10.99,10.83,1.015,12.19,2.16,66
+sicredi,Sistema Sicredi,2025,cosif2025,93,cooperativas (b3),357.5,0.318,18.4,12.52,12.37,1.013,14.39,2.12,75
+sicredi,Sistema Sicredi,2026,cosif2025,94,cooperativas (b3),399.1,0.328,18.02,12.12,11.97,1.012,13.56,1.52,79
+xp,XP,2020,cosif_antigo,1,bancos (b1+b2),47.5,0.223,14.24,11.06,11.02,1.004,3.13,0.83,37
+xp,XP,2021,cosif_antigo,1,bancos (b1+b2),78.6,0.165,13.98,11.67,11.56,1.009,5.6,0.28,27
+xp,XP,2022,cosif_antigo,1,bancos (b1+b2),119.5,0.058,16.27,15.33,15.18,1.01,13.78,-0.27,20
+xp,XP,2023,cosif_antigo,1,bancos (b1+b2),160.1,0.097,15.25,13.77,13.58,1.014,13.76,0.24,24
+xp,XP,2024,cosif_antigo,1,bancos (b1+b2),236.5,0.093,12.38,11.23,11.01,1.02,11.37,0.38,21
+xp,XP,2025,cosif2025,1,bancos (b1+b2),297.8,0.009,11.36,11.26,11.01,1.023,11.63,0.29,14
+xp,XP,2026,cosif2025,1,bancos (b1+b2),327.1,-0.018,11.81,12.02,11.74,1.024,12.31,0.22,8

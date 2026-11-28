@@ -1,0 +1,251 @@
+{
+ "source": "SICAR (Serviço Florestal Brasileiro), WFS público",
+ "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+ "built_at": "2026-11-28T08:43:29+00:00",
+ "nota": "só agregados por município; nenhum dado por imóvel guardado",
+ "ufs": {
+  "AC": {
+   "layer": "sicar_imoveis_ac",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:44:20+00:00",
+   "number_matched": 63349,
+   "linhas_lidas": 63349,
+   "imoveis_distintos": 63349,
+   "duplicatas": 0
+  },
+  "AL": {
+   "layer": "sicar_imoveis_al",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:29:40+00:00",
+   "number_matched": 144002,
+   "linhas_lidas": 144002,
+   "imoveis_distintos": 144002,
+   "duplicatas": 0
+  },
+  "AM": {
+   "layer": "sicar_imoveis_am",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:28:20+00:00",
+   "number_matched": 99075,
+   "linhas_lidas": 99075,
+   "imoveis_distintos": 99075,
+   "duplicatas": 0
+  },
+  "AP": {
+   "layer": "sicar_imoveis_ap",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:28:29+00:00",
+   "number_matched": 17835,
+   "linhas_lidas": 17835,
+   "imoveis_distintos": 17835,
+   "duplicatas": 0
+  },
+  "BA": {
+   "layer": "sicar_imoveis_ba",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:16:03+00:00",
+   "number_matched": 1335596,
+   "linhas_lidas": 1335596,
+   "imoveis_distintos": 1335596,
+   "duplicatas": 0
+  },
+  "CE": {
+   "layer": "sicar_imoveis_ce",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:48:50+00:00",
+   "number_matched": 410736,
+   "linhas_lidas": 410736,
+   "imoveis_distintos": 410736,
+   "duplicatas": 0
+  },
+  "DF": {
+   "layer": "sicar_imoveis_df",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:26:28+00:00",
+   "number_matched": 21049,
+   "linhas_lidas": 21049,
+   "imoveis_distintos": 21049,
+   "duplicatas": 0
+  },
+  "ES": {
+   "layer": "sicar_imoveis_es",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:45:48+00:00",
+   "number_matched": 131103,
+   "linhas_lidas": 131103,
+   "imoveis_distintos": 131103,
+   "duplicatas": 0
+  },
+  "GO": {
+   "layer": "sicar_imoveis_go",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:51:08+00:00",
+   "number_matched": 245642,
+   "linhas_lidas": 245642,
+   "imoveis_distintos": 245642,
+   "duplicatas": 0
+  },
+  "MA": {
+   "layer": "sicar_imoveis_ma",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:53:56+00:00",
+   "number_matched": 419814,
+   "linhas_lidas": 419814,
+   "imoveis_distintos": 419814,
+   "duplicatas": 0
+  },
+  "MG": {
+   "layer": "sicar_imoveis_mg",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:43:13+00:00",
+   "number_matched": 1185420,
+   "linhas_lidas": 1185420,
+   "imoveis_distintos": 1185420,
+   "duplicatas": 0
+  },
+  "MS": {
+   "layer": "sicar_imoveis_ms",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T07:56:09+00:00",
+   "number_matched": 90598,
+   "linhas_lidas": 90598,
+   "imoveis_distintos": 90598,
+   "duplicatas": 0
+  },
+  "MT": {
+   "layer": "sicar_imoveis_mt",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:00:59+00:00",
+   "number_matched": 222127,
+   "linhas_lidas": 222127,
+   "imoveis_distintos": 222127,
+   "duplicatas": 0
+  },
+  "PA": {
+   "layer": "sicar_imoveis_pa",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:07:30+00:00",
+   "number_matched": 393453,
+   "linhas_lidas": 393453,
+   "imoveis_distintos": 393452,
+   "duplicatas": 1
+  },
+  "PB": {
+   "layer": "sicar_imoveis_pb",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:09:59+00:00",
+   "number_matched": 221195,
+   "linhas_lidas": 221195,
+   "imoveis_distintos": 221195,
+   "duplicatas": 0
+  },
+  "PE": {
+   "layer": "sicar_imoveis_pe",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:15:14+00:00",
+   "number_matched": 436289,
+   "linhas_lidas": 436289,
+   "imoveis_distintos": 436289,
+   "duplicatas": 0
+  },
+  "PI": {
+   "layer": "sicar_imoveis_pi",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:18:36+00:00",
+   "number_matched": 338170,
+   "linhas_lidas": 338170,
+   "imoveis_distintos": 338170,
+   "duplicatas": 0
+  },
+  "PR": {
+   "layer": "sicar_imoveis_pr",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:26:03+00:00",
+   "number_matched": 559625,
+   "linhas_lidas": 559625,
+   "imoveis_distintos": 559625,
+   "duplicatas": 0
+  },
+  "RJ": {
+   "layer": "sicar_imoveis_rj",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:19:23+00:00",
+   "number_matched": 69486,
+   "linhas_lidas": 69486,
+   "imoveis_distintos": 69486,
+   "duplicatas": 0
+  },
+  "RN": {
+   "layer": "sicar_imoveis_rn",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:20:17+00:00",
+   "number_matched": 118034,
+   "linhas_lidas": 118034,
+   "imoveis_distintos": 118034,
+   "duplicatas": 0
+  },
+  "RO": {
+   "layer": "sicar_imoveis_ro",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:22:00+00:00",
+   "number_matched": 198429,
+   "linhas_lidas": 198429,
+   "imoveis_distintos": 198429,
+   "duplicatas": 0
+  },
+  "RR": {
+   "layer": "sicar_imoveis_rr",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:22:14+00:00",
+   "number_matched": 30345,
+   "linhas_lidas": 30345,
+   "imoveis_distintos": 30345,
+   "duplicatas": 0
+  },
+  "RS": {
+   "layer": "sicar_imoveis_rs",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:32:42+00:00",
+   "number_matched": 680523,
+   "linhas_lidas": 680523,
+   "imoveis_distintos": 680523,
+   "duplicatas": 0
+  },
+  "SC": {
+   "layer": "sicar_imoveis_sc",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:31:55+00:00",
+   "number_matched": 437518,
+   "linhas_lidas": 437518,
+   "imoveis_distintos": 437518,
+   "duplicatas": 0
+  },
+  "SE": {
+   "layer": "sicar_imoveis_se",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:33:03+00:00",
+   "number_matched": 125310,
+   "linhas_lidas": 125310,
+   "imoveis_distintos": 125310,
+   "duplicatas": 0
+  },
+  "SP": {
+   "layer": "sicar_imoveis_sp",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:42:27+00:00",
+   "number_matched": 474313,
+   "linhas_lidas": 474313,
+   "imoveis_distintos": 474310,
+   "duplicatas": 3
+  },
+  "TO": {
+   "layer": "sicar_imoveis_to",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "fetched_at": "2026-11-28T08:35:23+00:00",
+   "number_matched": 112800,
+   "linhas_lidas": 112800,
+   "imoveis_distintos": 112800,
+   "duplicatas": 0
+  }
+ }
+}

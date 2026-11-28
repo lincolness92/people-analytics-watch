@@ -1,0 +1,41 @@
+metric,mercado,periodo_ini,periodo_fim,sistema_fim_bi,hhi_ini,hhi_2019,hhi_2023,hhi_fim,delta_hhi,tendencia_hhi_por_ano,tendencia_hhi_por_ano_ate_2024,cr4_ini_pct,cr4_fim_pct,faixa_bcb_ini,faixa_bcb_fim,faixa_cade_fim,lider_fim,lider_fim_pct,atravessa_perimetro_2025
+pf_consignado,PF consignado,201603,202606,800.1,1481,1300,1180,992,-489,-42.7,-37.0,73.7,57.3,moderada,baixa,baixa,Banco do Brasil,19.2,True
+pf_nao_consignado,PF não consignado,201603,202606,399.9,1134,1135,683,754,-380,-58.9,-78.9,56.5,48.9,moderada,baixa,baixa,Nubank,15.1,True
+pf_cartao,PF cartão,201603,202606,747.7,1751,1640,1176,1001,-750,-87.7,-91.0,74.5,55.8,moderada,moderada,baixa,Itaú Unibanco,20.2,True
+pf_habitacao,PF habitação,201603,202606,1403.0,5568,5251,4835,5088,-480,-63.5,-109.0,92.8,93.5,elevada,elevada,elevada,Caixa Econômica Federal,69.8,True
+pf_veiculos,PF veículos,201603,202606,426.3,1086,1370,1110,974,-112,-36.8,-25.6,60.2,52.4,moderada,baixa,baixa,Santander Brasil,19.7,True
+pf_rural,PF rural,201603,202606,686.2,3961,4063,3127,3129,-832,-119.6,-132.1,78.4,78.6,elevada,elevada,elevada,Banco do Brasil,53.5,True
+pf_outros,PF outros,201603,202606,235.7,1165,1128,1097,951,-214,-20.9,-10.3,64.4,51.9,moderada,baixa,baixa,Itaú Unibanco,17.4,True
+pf_total,PF total,201603,202606,4820.0,1638,1457,1267,1179,-459,-54.9,-61.8,71.9,61.9,moderada,moderada,baixa,Caixa Econômica Federal,24.7,True
+pj_capital_giro,PJ capital de giro,201603,202606,780.7,1224,975,957,897,-327,-25.0,-28.3,63.6,52.1,moderada,baixa,baixa,Bradesco,15.7,True
+pj_investimento,PJ investimento,201603,202606,321.3,3079,1727,976,1143,-1936,-183.2,-244.6,75.8,52.5,elevada,moderada,baixa,Banco do Brasil,29.0,True
+pj_cheque_especial,PJ cheque especial,201603,202606,67.0,1226,1334,1193,1263,37,-5.1,-12.7,64.1,63.8,moderada,moderada,baixa,Itaú Unibanco,26.0,True
+pj_recebiveis,PJ recebíveis,201603,202606,216.3,1050,1186,778,723,-327,-46.6,-48.9,59.3,47.1,moderada,baixa,baixa,Itaú Unibanco,13.8,True
+pj_comex,PJ comércio exterior,201603,202606,256.2,845,1193,1182,1168,323,-23.2,-36.0,50.9,58.9,baixa,moderada,baixa,Banco do Brasil,25.4,True
+pj_infraestrutura,PJ infraestrutura,201603,202606,689.0,3328,3572,3162,3032,-296,-32.7,-13.4,84.1,79.6,elevada,elevada,elevada,BNDES,51.5,True
+pj_rural,PJ rural,201603,202606,91.0,1427,1157,878,1101,-326,-61.6,-100.4,63.5,58.8,moderada,moderada,baixa,Itaú Unibanco,20.6,True
+pj_habitacional,PJ habitacional,201603,202606,63.5,1865,2680,3012,2844,979,79.8,139.2,82.3,91.7,elevada,elevada,elevada,Caixa Econômica Federal,44.2,True
+pj_outros,PJ outros,201603,202606,210.2,2611,1266,944,964,-1647,-100.8,-128.2,77.2,55.3,elevada,baixa,baixa,Banco do Brasil,16.7,True
+pj_total,PJ total,201603,202606,3273.7,1228,1161,908,900,-328,-41.1,-48.5,65.0,53.4,moderada,baixa,baixa,Itaú Unibanco,18.2,True
+pj_micro,PJ micro (porte),201603,202606,173.9,1618,827,613,1102,-516,-64.6,-150.6,73.7,53.9,moderada,moderada,baixa,PagBank (PagSeguro),25.5,True
+pj_pequena,PJ pequena (porte),201603,202606,412.0,1598,997,973,1162,-436,-32.3,-59.6,72.6,57.4,moderada,moderada,baixa,Bradesco,24.1,True
+pj_media,PJ média (porte),201603,202606,709.6,1038,879,755,829,-209,-22.0,-33.1,57.1,51.5,moderada,baixa,baixa,Bradesco,15.8,True
+pj_grande,PJ grande (porte),201603,202606,1294.4,1977,1610,1239,1268,-709,-64.4,-88.7,73.2,63.7,elevada,moderada,baixa,BNDES,25.7,True
+credito_rural,Rural PF + PJ,201603,202606,777.2,3142,3391,2702,2635,-507,-86.6,-84.6,74.5,72.7,elevada,elevada,elevada,Banco do Brasil,48.7,True
+credito_imobiliario,Imobiliário PF + PJ,201603,202606,1466.5,4980,5151,4748,4950,-30,-39.7,-68.3,91.2,93.1,elevada,elevada,elevada,Caixa Econômica Federal,68.7,True
+credito_pf_pj,Crédito PF + PJ,201603,202606,8093.7,1203,1158,1014,949,-254,-34.4,-36.5,62.9,57.2,moderada,baixa,baixa,Caixa Econômica Federal,18.0,True
+reg_sudeste,"Crédito, tomador no Sudeste",201603,202606,3434.5,1273,1132,1013,960,-313,-34.7,-39.3,64.8,56.2,moderada,baixa,baixa,Caixa Econômica Federal,19.1,True
+reg_sul,"Crédito, tomador no Sul",201603,202606,1486.0,1199,1029,914,873,-326,-35.7,-42.3,59.3,51.1,moderada,baixa,baixa,Caixa Econômica Federal,19.4,True
+reg_nordeste,"Crédito, tomador no Nordeste",201603,202606,1084.6,1448,1333,1240,1147,-301,-35.4,-35.4,67.6,61.0,moderada,moderada,baixa,Caixa Econômica Federal,23.4,True
+reg_norte,"Crédito, tomador no Norte",201603,202606,421.4,1483,1327,1089,992,-491,-58.0,-63.4,69.7,54.9,moderada,baixa,baixa,Banco do Brasil,21.4,True
+reg_centro_oeste,"Crédito, tomador no Centro-Oeste",201603,202606,931.6,1428,1303,1148,1160,-268,-35.0,-46.8,66.5,59.3,moderada,moderada,baixa,Banco do Brasil,22.7,True
+depositos_vista,Depósitos à vista,201603,202606,518.0,1705,1640,1362,1332,-373,-78.9,-98.3,75.1,62.7,moderada,moderada,baixa,Itaú Unibanco,26.4,False
+depositos_poupanca,Poupança,201603,202606,1046.4,2359,2358,2232,2373,14,-9.3,-24.1,89.7,87.5,elevada,elevada,moderada,Caixa Econômica Federal,38.8,False
+depositos_prazo,Depósitos a prazo,201603,202606,4763.8,1121,1125,935,877,-244,-36.9,-38.6,59.5,52.4,moderada,baixa,baixa,Itaú Unibanco,18.0,False
+depositos_total,Depósitos totais,201603,202606,6931.9,1384,1309,1010,932,-452,-62.0,-70.0,68.6,55.8,moderada,baixa,baixa,Itaú Unibanco,17.0,False
+lca,LCA,201603,202606,563.3,4812,2834,1943,1473,-3339,-274.3,-325.9,84.6,60.8,elevada,moderada,baixa,Banco do Brasil,32.6,False
+lci,LCI,201603,202606,537.3,3256,2006,2204,3119,-137,47.1,-49.0,84.5,90.7,elevada,elevada,elevada,Caixa Econômica Federal,50.5,False
+captacoes,Captações totais,201603,202606,14268.9,1211,1226,1048,917,-294,-38.0,-34.5,63.0,55.8,moderada,baixa,baixa,Itaú Unibanco,15.6,False
+ativo_total,Ativo total,201603,202606,19458.9,1072,1050,881,821,-251,-34.8,-37.4,57.9,51.5,moderada,baixa,baixa,Itaú Unibanco,15.5,False
+carteira_credito,Carteira de crédito (Resumo),201603,202606,7974.8,1215,1136,1000,957,-258,-34.6,-40.0,62.8,57.8,moderada,baixa,baixa,Caixa Econômica Federal,17.1,False
+agencias,Agências,201603,202606,14922,1503,1498,1421,1464,-39,-17.0,-24.9,72.1,69.5,moderada,moderada,baixa,Banco do Brasil,26.4,False

@@ -1,0 +1,850 @@
+{
+ "built_at": "2026-11-28T07:44:51+00:00",
+ "preregistro": "labs/rural/resultados/a7_preregistro.json",
+ "lspa": {
+  "url": "https://apisidra.ibge.gov.br/values/t/6588/n3/all/v/35/p/all/c48/39428,39443",
+  "ultimo_mes": "2026-10"
+ },
+ "ultimo_mes_scr": "2026-09",
+ "horizontes": {
+  "3": {
+   "todas": {
+    "n": 2781,
+    "mae_pp": {
+     "RW": 0.5758,
+     "SN": 1.5035,
+     "PONTE": 0.5187,
+     "CLIMA": 0.5722,
+     "CLIMA+S": 0.5713,
+     "PONTE+C": 0.5589,
+     "PONTE+C+S": 0.5559,
+     "PONTE+S": 0.5437
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.3716,
+     "SN": 1.1245,
+     "PONTE": 0.3083,
+     "CLIMA": 0.3746,
+     "CLIMA+S": 0.3731,
+     "PONTE+C": 0.3914,
+     "PONTE+C+S": 0.3858,
+     "PONTE+S": 0.3474
+    },
+    "mae_rw_pp": 0.5758,
+    "barra": "PONTE",
+    "reducao_A": 0.0015,
+    "dif_A_pp": -0.0009,
+    "ic95_A": [
+     -0.005,
+     0.0012
+    ],
+    "reducao_B": -0.0717,
+    "dif_B_pp": 0.0372,
+    "ic95_B": [
+     0.0068,
+     0.059
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0483,
+     "dif_pp": 0.025,
+     "ic95": [
+      0.0086,
+      0.0377
+     ]
+    }
+   },
+   "ic_B_abaixo_de_zero": false,
+   "2018-2024": {
+    "n": 2295,
+    "mae_pp": {
+     "RW": 0.4743,
+     "SN": 1.0836,
+     "PONTE": 0.4389,
+     "CLIMA": 0.5042,
+     "CLIMA+S": 0.5026,
+     "PONTE+C": 0.4876,
+     "PONTE+C+S": 0.4843,
+     "PONTE+S": 0.4646
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.2024,
+     "SN": 0.4785,
+     "PONTE": 0.1759,
+     "CLIMA": 0.2368,
+     "CLIMA+S": 0.2342,
+     "PONTE+C": 0.2483,
+     "PONTE+C+S": 0.2421,
+     "PONTE+S": 0.2214
+    },
+    "mae_rw_pp": 0.4743,
+    "barra": "PONTE",
+    "reducao_A": 0.0031,
+    "dif_A_pp": -0.0016,
+    "ic95_A": [
+     -0.0045,
+     0.0014
+    ],
+    "reducao_B": -0.1035,
+    "dif_B_pp": 0.0454,
+    "ic95_B": [
+     0.0131,
+     0.0666
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0587,
+     "dif_pp": 0.0258,
+     "ic95": [
+      0.0045,
+      0.0391
+     ]
+    }
+   },
+   "2025-2026": {
+    "n": 486,
+    "mae_pp": {
+     "RW": 1.0555,
+     "SN": 3.4866,
+     "PONTE": 0.8957,
+     "CLIMA": 0.893,
+     "CLIMA+S": 0.8956,
+     "PONTE+C": 0.8956,
+     "PONTE+C+S": 0.8942,
+     "PONTE+S": 0.9173
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.8144,
+     "SN": 2.8154,
+     "PONTE": 0.6548,
+     "CLIMA": 0.7353,
+     "CLIMA+S": 0.7367,
+     "PONTE+C": 0.7658,
+     "PONTE+C+S": 0.7618,
+     "PONTE+S": 0.6773
+    },
+    "mae_rw_pp": 1.0555,
+    "barra": "PONTE+C",
+    "reducao_A": -0.0028,
+    "dif_A_pp": 0.0025,
+    "ic95_A": [
+     -0.0073,
+     0.0154
+    ],
+    "reducao_B": 0.0015,
+    "dif_B_pp": -0.0014,
+    "ic95_B": [
+     -0.0144,
+     0.0165
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0241,
+     "dif_pp": 0.0216,
+     "ic95": [
+      0.013,
+      0.0298
+     ]
+    }
+   },
+   "ufs_graos": {
+    "n": 515,
+    "mae_pp": {
+     "RW": 0.3314,
+     "SN": 0.8892,
+     "PONTE": 0.2881,
+     "CLIMA": 0.3553,
+     "CLIMA+S": 0.3562,
+     "PONTE+C": 0.3683,
+     "PONTE+C+S": 0.367,
+     "PONTE+S": 0.3231
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.3853,
+     "SN": 1.1436,
+     "PONTE": 0.325,
+     "CLIMA": 0.3814,
+     "CLIMA+S": 0.3817,
+     "PONTE+C": 0.4058,
+     "PONTE+C+S": 0.403,
+     "PONTE+S": 0.3691
+    },
+    "mae_rw_pp": 0.3314,
+    "barra": "PONTE",
+    "reducao_A": -0.0026,
+    "dif_A_pp": 0.0009,
+    "ic95_A": [
+     -0.0047,
+     0.0039
+    ],
+    "reducao_B": -0.2736,
+    "dif_B_pp": 0.0788,
+    "ic95_B": [
+     0.0175,
+     0.1107
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.1214,
+     "dif_pp": 0.035,
+     "ic95": [
+      0.0125,
+      0.0643
+     ]
+    }
+   },
+   "exploratorio_correlacao_safra_residuo_ponte": {
+    "todas": {
+     "n": 4212,
+     "rev_ano": 0.061,
+     "rev_ant": 0.132,
+     "var_esp": -0.078,
+     "rev_soja": 0.037
+    },
+    "ufs_graos": {
+     "n": 780,
+     "rev_ano": 0.022,
+     "rev_ant": 0.032,
+     "var_esp": -0.01,
+     "rev_soja": -0.012
+    }
+   },
+   "coef_padronizados_ponte_c_s": {
+    "rev_ano": 0.0076,
+    "rev_ant": 0.065,
+    "var_esp": -0.015,
+    "rev_soja": 0.0238
+   },
+   "lambda_amostra_toda": 0.05
+  },
+  "6": {
+   "todas": {
+    "n": 2700,
+    "mae_pp": {
+     "RW": 0.907,
+     "SN": 1.4832,
+     "PONTE": 0.839,
+     "CLIMA": 0.975,
+     "CLIMA+S": 0.9723,
+     "PONTE+C": 0.9489,
+     "PONTE+C+S": 0.9461,
+     "PONTE+S": 0.8933
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.6397,
+     "SN": 1.1497,
+     "PONTE": 0.5702,
+     "CLIMA": 0.7648,
+     "CLIMA+S": 0.7608,
+     "PONTE+C": 0.7686,
+     "PONTE+C+S": 0.7639,
+     "PONTE+S": 0.6566
+    },
+    "mae_rw_pp": 0.907,
+    "barra": "PONTE",
+    "reducao_A": 0.0028,
+    "dif_A_pp": -0.0027,
+    "ic95_A": [
+     -0.0135,
+     0.0037
+    ],
+    "reducao_B": -0.1276,
+    "dif_B_pp": 0.1071,
+    "ic95_B": [
+     0.0225,
+     0.1928
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0647,
+     "dif_pp": 0.0543,
+     "ic95": [
+      0.0136,
+      0.0931
+     ]
+    }
+   },
+   "ic_B_abaixo_de_zero": false,
+   "2018-2024": {
+    "n": 2295,
+    "mae_pp": {
+     "RW": 0.7274,
+     "SN": 1.0873,
+     "PONTE": 0.689,
+     "CLIMA": 0.8511,
+     "CLIMA+S": 0.8482,
+     "PONTE+C": 0.8215,
+     "PONTE+C+S": 0.8192,
+     "PONTE+S": 0.7477
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.3534,
+     "SN": 0.5506,
+     "PONTE": 0.3229,
+     "CLIMA": 0.4871,
+     "CLIMA+S": 0.4786,
+     "PONTE+C": 0.4861,
+     "PONTE+C+S": 0.4767,
+     "PONTE+S": 0.4224
+    },
+    "mae_rw_pp": 0.7274,
+    "barra": "PONTE",
+    "reducao_A": 0.0035,
+    "dif_A_pp": -0.0029,
+    "ic95_A": [
+     -0.0095,
+     0.0064
+    ],
+    "reducao_B": -0.189,
+    "dif_B_pp": 0.1302,
+    "ic95_B": [
+     0.0376,
+     0.2303
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0852,
+     "dif_pp": 0.0587,
+     "ic95": [
+      0.0027,
+      0.0908
+     ]
+    }
+   },
+   "2025-2026": {
+    "n": 405,
+    "mae_pp": {
+     "RW": 1.9246,
+     "SN": 3.7263,
+     "PONTE": 1.6892,
+     "CLIMA": 1.6773,
+     "CLIMA+S": 1.676,
+     "PONTE+C": 1.6707,
+     "PONTE+C+S": 1.6651,
+     "PONTE+S": 1.7184
+    },
+    "mae_pp_ponderado": {
+     "RW": 1.5481,
+     "SN": 3.0503,
+     "PONTE": 1.3548,
+     "CLIMA": 1.6458,
+     "CLIMA+S": 1.6562,
+     "PONTE+C": 1.6648,
+     "PONTE+C+S": 1.675,
+     "PONTE+S": 1.3997
+    },
+    "mae_rw_pp": 1.9246,
+    "barra": "PONTE+C",
+    "reducao_A": 0.0008,
+    "dif_A_pp": -0.0013,
+    "ic95_A": [
+     -0.0354,
+     0.0361
+    ],
+    "reducao_B": 0.0033,
+    "dif_B_pp": -0.0056,
+    "ic95_B": [
+     -0.0481,
+     0.0425
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0173,
+     "dif_pp": 0.0293,
+     "ic95": [
+      0.0026,
+      0.0613
+     ]
+    }
+   },
+   "ufs_graos": {
+    "n": 500,
+    "mae_pp": {
+     "RW": 0.521,
+     "SN": 0.9103,
+     "PONTE": 0.4769,
+     "CLIMA": 0.6872,
+     "CLIMA+S": 0.685,
+     "PONTE+C": 0.6838,
+     "PONTE+C+S": 0.682,
+     "PONTE+S": 0.5604
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.6438,
+     "SN": 1.1748,
+     "PONTE": 0.5829,
+     "CLIMA": 0.7823,
+     "CLIMA+S": 0.7825,
+     "PONTE+C": 0.7897,
+     "PONTE+C+S": 0.7906,
+     "PONTE+S": 0.6842
+    },
+    "mae_rw_pp": 0.521,
+    "barra": "PONTE",
+    "reducao_A": 0.0032,
+    "dif_A_pp": -0.0022,
+    "ic95_A": [
+     -0.0134,
+     0.0078
+    ],
+    "reducao_B": -0.43,
+    "dif_B_pp": 0.2051,
+    "ic95_B": [
+     0.0751,
+     0.3147
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.175,
+     "dif_pp": 0.0835,
+     "ic95": [
+      0.0369,
+      0.1476
+     ]
+    }
+   },
+   "exploratorio_correlacao_safra_residuo_ponte": {
+    "todas": {
+     "n": 4131,
+     "rev_ano": 0.057,
+     "rev_ant": 0.166,
+     "var_esp": -0.11,
+     "rev_soja": 0.051
+    },
+    "ufs_graos": {
+     "n": 765,
+     "rev_ano": -0.006,
+     "rev_ant": 0.001,
+     "var_esp": 0.0,
+     "rev_soja": -0.036
+    }
+   },
+   "coef_padronizados_ponte_c_s": {
+    "rev_ano": -0.0553,
+    "rev_ant": 0.0824,
+    "var_esp": -0.001,
+    "rev_soja": 0.0638
+   },
+   "lambda_amostra_toda": 0.01
+  },
+  "9": {
+   "todas": {
+    "n": 2619,
+    "mae_pp": {
+     "RW": 1.2533,
+     "SN": 1.5061,
+     "PONTE": 1.1691,
+     "CLIMA": 2.1917,
+     "CLIMA+S": 2.1987,
+     "PONTE+C": 2.1324,
+     "PONTE+C+S": 2.1407,
+     "PONTE+S": 1.2653
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.9344,
+     "SN": 1.1781,
+     "PONTE": 0.8543,
+     "CLIMA": 1.6198,
+     "CLIMA+S": 1.617,
+     "PONTE+C": 1.5863,
+     "PONTE+C+S": 1.5849,
+     "PONTE+S": 0.9921
+    },
+    "mae_rw_pp": 1.2533,
+    "barra": "PONTE",
+    "reducao_A": -0.0032,
+    "dif_A_pp": 0.007,
+    "ic95_A": [
+     -0.0106,
+     0.0417
+    ],
+    "reducao_B": -0.8311,
+    "dif_B_pp": 0.9717,
+    "ic95_B": [
+     0.0767,
+     2.6821
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0823,
+     "dif_pp": 0.0962,
+     "ic95": [
+      0.0366,
+      0.148
+     ]
+    }
+   },
+   "ic_B_abaixo_de_zero": false,
+   "2018-2024": {
+    "n": 2295,
+    "mae_pp": {
+     "RW": 1.0175,
+     "SN": 1.1681,
+     "PONTE": 0.9703,
+     "CLIMA": 2.1049,
+     "CLIMA+S": 2.1159,
+     "PONTE+C": 2.061,
+     "PONTE+C+S": 2.0735,
+     "PONTE+S": 1.0715
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.5743,
+     "SN": 0.6735,
+     "PONTE": 0.5439,
+     "CLIMA": 1.4332,
+     "CLIMA+S": 1.4322,
+     "PONTE+C": 1.4202,
+     "PONTE+C+S": 1.4203,
+     "PONTE+S": 0.6954
+    },
+    "mae_rw_pp": 1.0175,
+    "barra": "PONTE",
+    "reducao_A": -0.0052,
+    "dif_A_pp": 0.0109,
+    "ic95_A": [
+     -0.0091,
+     0.048
+    ],
+    "reducao_B": -1.137,
+    "dif_B_pp": 1.1032,
+    "ic95_B": [
+     0.0691,
+     3.0972
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.1043,
+     "dif_pp": 0.1012,
+     "ic95": [
+      0.0261,
+      0.1459
+     ]
+    }
+   },
+   "2025-2026": {
+    "n": 324,
+    "mae_pp": {
+     "RW": 2.9234,
+     "SN": 3.8999,
+     "PONTE": 2.5769,
+     "CLIMA": 2.8066,
+     "CLIMA+S": 2.7855,
+     "PONTE+C": 2.6375,
+     "PONTE+C+S": 2.6165,
+     "PONTE+S": 2.6382
+    },
+    "mae_pp_ponderado": {
+     "RW": 2.3826,
+     "SN": 3.2081,
+     "PONTE": 2.1027,
+     "CLIMA": 2.3704,
+     "CLIMA+S": 2.3603,
+     "PONTE+C": 2.2545,
+     "PONTE+C+S": 2.247,
+     "PONTE+S": 2.1853
+    },
+    "mae_rw_pp": 2.9234,
+    "barra": "PONTE",
+    "reducao_A": 0.0075,
+    "dif_A_pp": -0.0211,
+    "ic95_A": [
+     -0.0299,
+     -0.012
+    ],
+    "reducao_B": -0.0154,
+    "dif_B_pp": 0.0396,
+    "ic95_B": [
+     -0.1704,
+     0.1482
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0238,
+     "dif_pp": 0.0613,
+     "ic95": [
+      0.029,
+      0.094
+     ]
+    }
+   },
+   "ufs_graos": {
+    "n": 485,
+    "mae_pp": {
+     "RW": 0.7499,
+     "SN": 0.9333,
+     "PONTE": 0.696,
+     "CLIMA": 1.8386,
+     "CLIMA+S": 1.8443,
+     "PONTE+C": 1.8073,
+     "PONTE+C+S": 1.8168,
+     "PONTE+S": 0.8256
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.9506,
+     "SN": 1.2067,
+     "PONTE": 0.8751,
+     "CLIMA": 1.6442,
+     "CLIMA+S": 1.6494,
+     "PONTE+C": 1.6148,
+     "PONTE+C+S": 1.6219,
+     "PONTE+S": 1.0316
+    },
+    "mae_rw_pp": 0.7499,
+    "barra": "PONTE",
+    "reducao_A": -0.0031,
+    "dif_A_pp": 0.0057,
+    "ic95_A": [
+     -0.0045,
+     0.0323
+    ],
+    "reducao_B": -1.6104,
+    "dif_B_pp": 1.1208,
+    "ic95_B": [
+     0.1108,
+     3.0443
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.1863,
+     "dif_pp": 0.1296,
+     "ic95": [
+      0.0485,
+      0.2096
+     ]
+    }
+   },
+   "exploratorio_correlacao_safra_residuo_ponte": {
+    "todas": {
+     "n": 4050,
+     "rev_ano": 0.116,
+     "rev_ant": 0.167,
+     "var_esp": -0.063,
+     "rev_soja": 0.088
+    },
+    "ufs_graos": {
+     "n": 750,
+     "rev_ano": -0.002,
+     "rev_ant": -0.038,
+     "var_esp": 0.035,
+     "rev_soja": -0.029
+    }
+   },
+   "coef_padronizados_ponte_c_s": {
+    "rev_ano": 0.013,
+    "rev_ant": 0.0975,
+    "var_esp": 0.0838,
+    "rev_soja": 0.1288
+   },
+   "lambda_amostra_toda": 0.01
+  },
+  "12": {
+   "todas": {
+    "n": 2538,
+    "mae_pp": {
+     "RW": 1.5304,
+     "SN": 1.5304,
+     "PONTE": 1.4567,
+     "CLIMA": 2.7181,
+     "CLIMA+S": 2.7313,
+     "PONTE+C": 2.6435,
+     "PONTE+C+S": 2.6622,
+     "PONTE+S": 1.5952
+    },
+    "mae_pp_ponderado": {
+     "RW": 1.2063,
+     "SN": 1.2063,
+     "PONTE": 1.1336,
+     "CLIMA": 2.0695,
+     "CLIMA+S": 2.0604,
+     "PONTE+C": 2.0301,
+     "PONTE+C+S": 2.0277,
+     "PONTE+S": 1.3227
+    },
+    "mae_rw_pp": 1.5304,
+    "barra": "PONTE",
+    "reducao_A": -0.0049,
+    "dif_A_pp": 0.0132,
+    "ic95_A": [
+     -0.0342,
+     0.105
+    ],
+    "reducao_B": -0.8276,
+    "dif_B_pp": 1.2055,
+    "ic95_B": [
+     0.1288,
+     3.1135
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0951,
+     "dif_pp": 0.1385,
+     "ic95": [
+      0.0464,
+      0.2078
+     ]
+    }
+   },
+   "ic_B_abaixo_de_zero": false,
+   "2018-2024": {
+    "n": 2295,
+    "mae_pp": {
+     "RW": 1.2799,
+     "SN": 1.2799,
+     "PONTE": 1.2373,
+     "CLIMA": 2.5861,
+     "CLIMA+S": 2.6049,
+     "PONTE+C": 2.5228,
+     "PONTE+C+S": 2.5479,
+     "PONTE+S": 1.3788
+    },
+    "mae_pp_ponderado": {
+     "RW": 0.8404,
+     "SN": 0.8404,
+     "PONTE": 0.8105,
+     "CLIMA": 1.8616,
+     "CLIMA+S": 1.856,
+     "PONTE+C": 1.8333,
+     "PONTE+C+S": 1.8358,
+     "PONTE+S": 1.0079
+    },
+    "mae_rw_pp": 1.2799,
+    "barra": "PONTE",
+    "reducao_A": -0.0073,
+    "dif_A_pp": 0.0188,
+    "ic95_A": [
+     -0.0308,
+     0.1236
+    ],
+    "reducao_B": -1.0592,
+    "dif_B_pp": 1.3106,
+    "ic95_B": [
+     0.1269,
+     3.5028
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.1143,
+     "dif_pp": 0.1415,
+     "ic95": [
+      0.0305,
+      0.2089
+     ]
+    }
+   },
+   "2025-2026": {
+    "n": 243,
+    "mae_pp": {
+     "RW": 3.8968,
+     "SN": 3.8968,
+     "PONTE": 3.5285,
+     "CLIMA": 3.9645,
+     "CLIMA+S": 3.9249,
+     "PONTE+C": 3.783,
+     "PONTE+C+S": 3.7413,
+     "PONTE+S": 3.6393
+    },
+    "mae_pp_ponderado": {
+     "RW": 3.1895,
+     "SN": 3.1895,
+     "PONTE": 2.8851,
+     "CLIMA": 3.1966,
+     "CLIMA+S": 3.1686,
+     "PONTE+C": 3.0972,
+     "PONTE+C+S": 3.0677,
+     "PONTE+S": 3.0297
+    },
+    "mae_rw_pp": 3.8968,
+    "barra": "PONTE",
+    "reducao_A": 0.01,
+    "dif_A_pp": -0.0396,
+    "ic95_A": [
+     -0.0408,
+     -0.038
+    ],
+    "reducao_B": -0.0603,
+    "dif_B_pp": 0.2128,
+    "ic95_B": [
+     0.1344,
+     0.2956
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.0314,
+     "dif_pp": 0.1108,
+     "ic95": [
+      0.0911,
+      0.1328
+     ]
+    }
+   },
+   "ufs_graos": {
+    "n": 470,
+    "mae_pp": {
+     "RW": 0.9554,
+     "SN": 0.9554,
+     "PONTE": 0.902,
+     "CLIMA": 2.2837,
+     "CLIMA+S": 2.2836,
+     "PONTE+C": 2.2327,
+     "PONTE+C+S": 2.2456,
+     "PONTE+S": 1.0769
+    },
+    "mae_pp_ponderado": {
+     "RW": 1.2396,
+     "SN": 1.2396,
+     "PONTE": 1.1672,
+     "CLIMA": 2.1081,
+     "CLIMA+S": 2.11,
+     "PONTE+C": 2.0689,
+     "PONTE+C+S": 2.0767,
+     "PONTE+S": 1.3757
+    },
+    "mae_rw_pp": 0.9554,
+    "barra": "PONTE",
+    "reducao_A": 0.0,
+    "dif_A_pp": -0.0001,
+    "ic95_A": [
+     -0.0469,
+     0.0865
+    ],
+    "reducao_B": -1.4896,
+    "dif_B_pp": 1.3436,
+    "ic95_B": [
+     0.1616,
+     3.4787
+    ],
+    "exploratorio_ponte_s": {
+     "reducao_vs_ponte": -0.1939,
+     "dif_pp": 0.1749,
+     "ic95": [
+      0.0617,
+      0.2711
+     ]
+    }
+   },
+   "exploratorio_correlacao_safra_residuo_ponte": {
+    "todas": {
+     "n": 3969,
+     "rev_ano": 0.158,
+     "rev_ant": 0.177,
+     "var_esp": -0.046,
+     "rev_soja": 0.101
+    },
+    "ufs_graos": {
+     "n": 735,
+     "rev_ano": -0.003,
+     "rev_ant": -0.029,
+     "var_esp": 0.029,
+     "rev_soja": -0.024
+    }
+   },
+   "coef_padronizados_ponte_c_s": {
+    "rev_ano": 0.1073,
+    "rev_ant": 0.1121,
+    "var_esp": 0.082,
+    "rev_soja": 0.1573
+   },
+   "lambda_amostra_toda": 0.05
+  }
+ },
+ "reducao_A": {
+  "3": 0.0015,
+  "6": 0.0028,
+  "9": -0.0032,
+  "12": -0.0049
+ },
+ "reducao_B": {
+  "3": -0.0717,
+  "6": -0.1276,
+  "9": -0.8311,
+  "12": -0.8276
+ },
+ "leitura_A_literal": "refuta",
+ "leitura_B_decisiva": "refuta",
+ "ufs_sem_lspa_em_alguma_origem": []
+}

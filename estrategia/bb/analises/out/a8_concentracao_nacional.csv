@@ -1,0 +1,961 @@
+period,metric,mercado,unidade,level,cosif,sistema_bi,hhi,cr4_pct,en,unidades,lider,lider_pct,bb_pct,bb_rank,faixa_bcb,faixa_cade
+201603,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,278.7,1481,73.7,6.8,456,Banco do Brasil,22.5,22.52,1,moderada,baixa
+201603,pf_consignado,PF consignado,entidade,1005,cosif_antigo,278.7,1480,73.7,6.8,748,Banco do Brasil,22.5,22.52,,moderada,baixa
+201612,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,287.9,1460,73.0,6.9,423,Caixa Econômica Federal,22.2,21.77,2,moderada,baixa
+201612,pf_consignado,PF consignado,entidade,1005,cosif_antigo,287.9,1459,73.0,6.9,745,Caixa Econômica Federal,22.2,21.77,,moderada,baixa
+201712,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,311.2,1396,70.7,7.2,411,Banco do Brasil,21.6,21.62,1,moderada,baixa
+201712,pf_consignado,PF consignado,entidade,1005,cosif_antigo,311.2,1395,70.7,7.2,732,Banco do Brasil,21.6,21.62,,moderada,baixa
+201812,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,337.4,1311,67.6,7.6,396,Banco do Brasil,21.1,21.06,1,moderada,baixa
+201812,pf_consignado,PF consignado,entidade,1005,cosif_antigo,337.4,1309,67.6,7.6,723,Banco do Brasil,21.1,21.06,,moderada,baixa
+201912,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,384.0,1300,66.5,7.7,385,Banco do Brasil,21.2,21.17,1,moderada,baixa
+201912,pf_consignado,PF consignado,entidade,1005,cosif_antigo,384.0,1298,66.5,7.7,712,Banco do Brasil,21.2,21.17,,moderada,baixa
+202012,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,440.7,1265,65.5,7.9,382,Banco do Brasil,21.2,21.22,1,moderada,baixa
+202012,pf_consignado,PF consignado,entidade,1005,cosif_antigo,440.7,1262,65.5,7.9,714,Banco do Brasil,21.2,21.22,,moderada,baixa
+202112,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,515.7,1247,65.5,8.0,406,Banco do Brasil,20.7,20.71,1,moderada,baixa
+202112,pf_consignado,PF consignado,entidade,1005,cosif_antigo,515.7,1243,65.5,8.0,742,Banco do Brasil,20.7,20.71,,moderada,baixa
+202212,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,590.3,1201,64.4,8.3,420,Banco do Brasil,19.5,19.51,1,moderada,baixa
+202212,pf_consignado,PF consignado,entidade,1005,cosif_antigo,590.3,1197,64.4,8.4,752,Banco do Brasil,19.5,19.51,,moderada,baixa
+202312,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,626.9,1180,63.0,8.5,431,Banco do Brasil,20.2,20.16,1,moderada,baixa
+202312,pf_consignado,PF consignado,entidade,1005,cosif_antigo,626.9,1176,63.0,8.5,763,Banco do Brasil,20.2,20.16,,moderada,baixa
+202409,pf_consignado,PF consignado,concorrente,1005,cosif_antigo,670.4,1135,61.1,8.8,438,Banco do Brasil,20.5,20.47,1,moderada,baixa
+202409,pf_consignado,PF consignado,entidade,1005,cosif_antigo,670.4,1131,61.1,8.8,770,Banco do Brasil,20.5,20.47,,moderada,baixa
+202512,pf_consignado,PF consignado,concorrente,1009,cosif2025,751.8,1015,57.7,9.9,444,Banco do Brasil,19.2,19.2,1,moderada,baixa
+202512,pf_consignado,PF consignado,entidade,1009,cosif2025,751.8,1012,57.7,9.9,786,Banco do Brasil,19.2,19.2,,moderada,baixa
+202606,pf_consignado,PF consignado,concorrente,1009,cosif2025,800.1,992,57.3,10.1,436,Banco do Brasil,19.2,19.22,1,baixa,baixa
+202606,pf_consignado,PF consignado,entidade,1009,cosif2025,800.1,989,57.3,10.1,774,Banco do Brasil,19.2,19.22,,baixa,baixa
+201603,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,105.1,1134,56.5,8.8,653,Banco do Brasil,26.6,26.63,1,moderada,baixa
+201603,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,105.1,1109,56.5,9.0,1036,Banco do Brasil,26.6,26.63,,moderada,baixa
+201612,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,97.5,1257,60.6,8.0,582,Banco do Brasil,27.2,27.25,1,moderada,baixa
+201612,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,97.5,1218,60.6,8.2,992,Banco do Brasil,27.2,27.25,,moderada,baixa
+201712,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,97.2,1135,59.6,8.8,548,Banco do Brasil,25.0,25.01,1,moderada,baixa
+201712,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,97.2,1084,59.6,9.2,958,Banco do Brasil,25.0,25.01,,moderada,baixa
+201812,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,112.1,1124,60.5,8.9,529,Banco do Brasil,23.7,23.7,1,moderada,baixa
+201812,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,112.1,1065,60.5,9.4,938,Banco do Brasil,23.7,23.7,,moderada,baixa
+201912,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,134.8,1135,60.2,8.8,501,Banco do Brasil,22.5,22.53,1,moderada,baixa
+201912,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,134.8,1068,60.2,9.4,892,Banco do Brasil,22.5,22.53,,moderada,baixa
+202012,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,154.9,922,51.2,10.8,486,Banco do Brasil,20.0,20.01,1,baixa,baixa
+202012,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,154.9,837,50.7,12.0,880,Banco do Brasil,20.0,20.01,,baixa,baixa
+202112,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,222.6,776,47.0,12.9,487,Banco do Brasil,16.9,16.91,1,baixa,baixa
+202112,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,222.6,705,47.0,14.2,875,Banco do Brasil,16.9,16.91,,baixa,baixa
+202212,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,265.0,726,44.9,13.8,525,Banco do Brasil,16.4,16.43,1,baixa,baixa
+202212,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,265.0,662,44.2,15.1,902,Banco do Brasil,16.4,16.43,,baixa,baixa
+202312,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,282.1,683,43.2,14.6,510,Banco do Brasil,16.7,16.68,1,baixa,baixa
+202312,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,282.1,617,43.0,16.2,882,Banco do Brasil,16.7,16.68,,baixa,baixa
+202409,pf_nao_consignado,PF não consignado,concorrente,1005,cosif_antigo,323.7,701,45.5,14.3,511,Banco do Brasil,15.1,15.13,1,baixa,baixa
+202409,pf_nao_consignado,PF não consignado,entidade,1005,cosif_antigo,323.7,618,45.5,16.2,878,Banco do Brasil,15.1,15.13,,baixa,baixa
+202512,pf_nao_consignado,PF não consignado,concorrente,1009,cosif2025,392.6,735,48.4,13.6,531,Nubank,14.2,13.66,2,baixa,baixa
+202512,pf_nao_consignado,PF não consignado,entidade,1009,cosif2025,392.6,674,48.4,14.8,892,Nubank,14.2,13.66,,baixa,baixa
+202606,pf_nao_consignado,PF não consignado,concorrente,1009,cosif2025,399.9,754,48.9,13.3,523,Nubank,15.1,14.01,2,baixa,baixa
+202606,pf_nao_consignado,PF não consignado,entidade,1009,cosif2025,399.9,695,48.9,14.4,881,Nubank,15.1,14.01,,baixa,baixa
+201603,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,165.2,1751,74.5,5.7,204,Itaú Unibanco,33.2,13.79,3,moderada,moderada
+201603,pf_cartao,PF cartão,entidade,1005,cosif_antigo,165.2,1751,74.5,5.7,331,Itaú Unibanco,33.2,13.79,,moderada,moderada
+201612,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,184.6,1748,75.7,5.7,156,Itaú Unibanco,32.0,13.37,3,moderada,moderada
+201612,pf_cartao,PF cartão,entidade,1005,cosif_antigo,184.6,1748,75.7,5.7,293,Itaú Unibanco,32.0,13.37,,moderada,moderada
+201712,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,200.5,1782,75.7,5.6,158,Itaú Unibanco,33.4,12.82,3,moderada,moderada
+201712,pf_cartao,PF cartão,entidade,1005,cosif_antigo,200.5,1782,75.7,5.6,290,Itaú Unibanco,33.4,12.82,,moderada,moderada
+201812,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,236.2,1693,73.6,5.9,142,Itaú Unibanco,32.8,12.33,4,moderada,moderada
+201812,pf_cartao,PF cartão,entidade,1005,cosif_antigo,236.2,1692,73.6,5.9,269,Itaú Unibanco,32.8,12.33,,moderada,moderada
+201912,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,278.4,1640,71.6,6.1,134,Itaú Unibanco,32.7,11.59,4,moderada,moderada
+201912,pf_cartao,PF cartão,entidade,1005,cosif_antigo,278.4,1640,71.6,6.1,254,Itaú Unibanco,32.7,11.59,,moderada,moderada
+202012,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,286.2,1489,69.0,6.7,172,Itaú Unibanco,30.1,11.71,4,moderada,baixa
+202012,pf_cartao,PF cartão,entidade,1005,cosif_antigo,286.2,1487,69.0,6.7,289,Itaú Unibanco,30.1,11.71,,moderada,baixa
+202112,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,392.8,1373,66.1,7.3,175,Itaú Unibanco,28.5,12.54,3,moderada,baixa
+202112,pf_cartao,PF cartão,entidade,1005,cosif_antigo,392.8,1363,66.1,7.3,294,Itaú Unibanco,28.5,12.54,,moderada,baixa
+202212,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,494.2,1287,62.3,7.8,180,Itaú Unibanco,27.3,11.42,3,moderada,baixa
+202212,pf_cartao,PF cartão,entidade,1005,cosif_antigo,494.2,1261,62.3,7.9,290,Itaú Unibanco,27.3,11.42,,moderada,baixa
+202312,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,544.0,1176,60.2,8.5,136,Itaú Unibanco,24.9,10.45,4,moderada,baixa
+202312,pf_cartao,PF cartão,entidade,1005,cosif_antigo,544.0,1114,57.6,9.0,245,Itaú Unibanco,24.9,10.45,,moderada,baixa
+202409,pf_cartao,PF cartão,concorrente,1005,cosif_antigo,568.1,1108,58.4,9.0,127,Itaú Unibanco,23.4,9.64,4,moderada,baixa
+202409,pf_cartao,PF cartão,entidade,1005,cosif_antigo,568.1,1025,54.7,9.8,235,Itaú Unibanco,23.4,9.64,,moderada,baixa
+202512,pf_cartao,PF cartão,concorrente,1009,cosif2025,735.4,1025,56.5,9.8,127,Itaú Unibanco,21.0,9.76,4,moderada,baixa
+202512,pf_cartao,PF cartão,entidade,1009,cosif2025,735.4,1021,56.5,9.8,227,Itaú Unibanco,21.0,9.76,,moderada,baixa
+202606,pf_cartao,PF cartão,concorrente,1009,cosif2025,747.7,1001,55.8,10.0,129,Itaú Unibanco,20.2,9.35,4,moderada,baixa
+202606,pf_cartao,PF cartão,entidade,1009,cosif2025,747.7,997,55.8,10.0,228,Itaú Unibanco,20.2,9.35,,baixa,baixa
+201603,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,509.1,5568,92.8,1.8,33,Caixa Econômica Federal,73.6,7.49,2,elevada,elevada
+201603,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,509.1,5568,92.8,1.8,33,Caixa Econômica Federal,73.6,7.49,,elevada,elevada
+201612,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,534.5,5519,93.3,1.8,31,Caixa Econômica Federal,73.2,7.75,2,elevada,elevada
+201612,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,534.5,5519,93.3,1.8,31,Caixa Econômica Federal,73.2,7.75,,elevada,elevada
+201712,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,567.1,5575,93.7,1.8,35,Caixa Econômica Federal,73.6,7.77,2,elevada,elevada
+201712,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,567.1,5575,93.7,1.8,35,Caixa Econômica Federal,73.6,7.77,,elevada,elevada
+201812,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,598.9,5388,93.2,1.9,54,Caixa Econômica Federal,72.2,8.02,2,elevada,elevada
+201812,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,598.9,5388,93.2,1.9,54,Caixa Econômica Federal,72.2,8.02,,elevada,elevada
+201912,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,639.0,5251,92.7,1.9,58,Caixa Econômica Federal,71.1,7.65,2,elevada,elevada
+201912,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,639.0,5251,92.7,1.9,58,Caixa Econômica Federal,71.1,7.65,,elevada,elevada
+202012,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,715.8,5094,92.1,2.0,71,Caixa Econômica Federal,69.9,6.53,4,elevada,elevada
+202012,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,715.8,5094,92.1,2.0,72,Caixa Econômica Federal,69.9,6.53,,elevada,elevada
+202112,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,824.3,4645,92.0,2.2,70,Caixa Econômica Federal,66.2,5.59,5,elevada,elevada
+202112,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,824.3,4645,92.0,2.2,78,Caixa Econômica Federal,66.2,5.59,,elevada,elevada
+202212,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,934.6,4661,92.3,2.1,71,Caixa Econômica Federal,66.3,4.92,5,elevada,elevada
+202212,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,934.6,4661,92.3,2.1,103,Caixa Econômica Federal,66.3,4.92,,elevada,elevada
+202312,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,1044.5,4835,92.5,2.1,67,Caixa Econômica Federal,67.8,4.52,5,elevada,elevada
+202312,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,1044.5,4835,92.5,2.1,108,Caixa Econômica Federal,67.8,4.52,,elevada,elevada
+202409,pf_habitacao,PF habitação,concorrente,1005,cosif_antigo,1140.1,4954,92.7,2.0,69,Caixa Econômica Federal,68.8,4.21,5,elevada,elevada
+202409,pf_habitacao,PF habitação,entidade,1005,cosif_antigo,1140.1,4954,92.7,2.0,112,Caixa Econômica Federal,68.8,4.21,,elevada,elevada
+202512,pf_habitacao,PF habitação,concorrente,1009,cosif2025,1320.4,5010,93.2,2.0,76,Caixa Econômica Federal,69.2,3.53,5,elevada,elevada
+202512,pf_habitacao,PF habitação,entidade,1009,cosif2025,1320.4,5010,93.2,2.0,123,Caixa Econômica Federal,69.2,3.53,,elevada,elevada
+202606,pf_habitacao,PF habitação,concorrente,1009,cosif2025,1403.0,5088,93.5,2.0,77,Caixa Econômica Federal,69.8,3.22,5,elevada,elevada
+202606,pf_habitacao,PF habitação,entidade,1009,cosif2025,1403.0,5087,93.5,2.0,125,Caixa Econômica Federal,69.8,3.22,,elevada,elevada
+201603,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,157.9,1086,60.2,9.2,310,Santander Brasil,18.4,4.51,7,moderada,baixa
+201603,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,157.9,1086,60.2,9.2,637,Santander Brasil,18.4,4.51,,moderada,baixa
+201612,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,145.6,1192,63.2,8.4,274,Santander Brasil,20.2,3.79,8,moderada,baixa
+201612,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,145.6,1191,63.2,8.4,632,Santander Brasil,20.2,3.79,,moderada,baixa
+201712,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,151.3,1318,66.4,7.6,319,Santander Brasil,23.5,2.79,10,moderada,baixa
+201712,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,151.3,1317,66.4,7.6,688,Santander Brasil,23.5,2.79,,moderada,baixa
+201812,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,171.4,1375,67.4,7.3,299,Santander Brasil,25.1,2.17,10,moderada,baixa
+201812,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,171.4,1373,67.4,7.3,670,Santander Brasil,25.1,2.17,,moderada,baixa
+201912,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,204.5,1370,67.1,7.3,290,Santander Brasil,25.0,1.78,11,moderada,baixa
+201912,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,204.5,1368,67.1,7.3,651,Santander Brasil,25.0,1.78,,moderada,baixa
+202012,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,222.1,1354,67.1,7.4,275,Santander Brasil,24.9,1.89,10,moderada,baixa
+202012,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,222.1,1351,67.1,7.4,643,Santander Brasil,24.9,1.89,,moderada,baixa
+202112,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,243.2,1277,65.9,7.8,270,Santander Brasil,23.6,1.84,10,moderada,baixa
+202112,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,243.2,1273,65.9,7.9,638,Santander Brasil,23.6,1.84,,moderada,baixa
+202212,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,260.1,1168,62.5,8.6,271,Santander Brasil,22.2,1.55,12,moderada,baixa
+202212,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,260.1,1163,62.5,8.6,634,Santander Brasil,22.2,1.55,,moderada,baixa
+202312,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,289.4,1110,59.5,9.0,254,Santander Brasil,21.1,1.51,12,moderada,baixa
+202312,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,289.4,1104,59.5,9.1,615,Santander Brasil,21.1,1.51,,moderada,baixa
+202409,pf_veiculos,PF veículos,concorrente,1005,cosif_antigo,333.7,1091,57.8,9.2,250,Santander Brasil,21.5,1.34,14,moderada,baixa
+202409,pf_veiculos,PF veículos,entidade,1005,cosif_antigo,333.7,1086,57.8,9.2,608,Santander Brasil,21.5,1.34,,moderada,baixa
+202512,pf_veiculos,PF veículos,concorrente,1009,cosif2025,413.5,969,51.8,10.3,247,Santander Brasil,19.5,2.56,11,baixa,baixa
+202512,pf_veiculos,PF veículos,entidade,1009,cosif2025,413.5,966,51.8,10.4,601,Santander Brasil,19.5,2.56,,baixa,baixa
+202606,pf_veiculos,PF veículos,concorrente,1009,cosif2025,426.3,974,52.4,10.3,240,Santander Brasil,19.7,2.46,12,baixa,baixa
+202606,pf_veiculos,PF veículos,entidade,1009,cosif2025,426.3,970,52.4,10.3,591,Santander Brasil,19.7,2.46,,baixa,baixa
+201603,pf_rural,PF rural,concorrente,1005,cosif_antigo,206.0,3961,78.4,2.5,246,Banco do Brasil,61.9,61.89,1,elevada,elevada
+201603,pf_rural,PF rural,entidade,1005,cosif_antigo,206.0,3920,74.0,2.6,490,Banco do Brasil,61.9,61.89,,elevada,elevada
+201612,pf_rural,PF rural,concorrente,1005,cosif_antigo,212.8,4110,79.8,2.4,234,Banco do Brasil,63.1,63.1,1,elevada,elevada
+201612,pf_rural,PF rural,entidade,1005,cosif_antigo,212.8,4061,74.7,2.5,482,Banco do Brasil,63.1,63.1,,elevada,elevada
+201712,pf_rural,PF rural,concorrente,1005,cosif_antigo,225.2,3947,79.6,2.5,208,Banco do Brasil,61.6,61.65,1,elevada,elevada
+201712,pf_rural,PF rural,entidade,1005,cosif_antigo,225.2,3880,73.3,2.6,461,Banco do Brasil,61.6,61.65,,elevada,elevada
+201812,pf_rural,PF rural,concorrente,1005,cosif_antigo,241.4,3896,80.1,2.6,190,Banco do Brasil,61.1,61.13,1,elevada,elevada
+201812,pf_rural,PF rural,entidade,1005,cosif_antigo,241.4,3813,72.9,2.6,443,Banco do Brasil,61.1,61.13,,elevada,elevada
+201912,pf_rural,PF rural,concorrente,1005,cosif_antigo,255.2,4063,82.5,2.5,178,Banco do Brasil,62.3,62.35,1,elevada,elevada
+201912,pf_rural,PF rural,entidade,1005,cosif_antigo,255.2,3957,74.3,2.5,434,Banco do Brasil,62.3,62.35,,elevada,elevada
+202012,pf_rural,PF rural,concorrente,1005,cosif_antigo,292.5,3717,80.3,2.7,168,Banco do Brasil,59.3,59.31,1,elevada,elevada
+202012,pf_rural,PF rural,entidade,1005,cosif_antigo,292.5,3585,70.7,2.8,426,Banco do Brasil,59.3,59.31,,elevada,elevada
+202112,pf_rural,PF rural,concorrente,1005,cosif_antigo,379.7,3547,80.0,2.8,161,Banco do Brasil,57.6,57.62,1,elevada,elevada
+202112,pf_rural,PF rural,entidade,1005,cosif_antigo,379.7,3382,68.0,3.0,425,Banco do Brasil,57.6,57.62,,elevada,elevada
+202212,pf_rural,PF rural,concorrente,1005,cosif_antigo,492.0,3343,78.8,3.0,167,Banco do Brasil,55.8,55.82,1,elevada,elevada
+202212,pf_rural,PF rural,entidade,1005,cosif_antigo,492.0,3207,69.5,3.1,430,Banco do Brasil,55.8,55.82,,elevada,elevada
+202312,pf_rural,PF rural,concorrente,1005,cosif_antigo,575.1,3127,77.8,3.2,157,Banco do Brasil,53.7,53.71,1,elevada,elevada
+202312,pf_rural,PF rural,entidade,1005,cosif_antigo,575.1,2998,68.3,3.3,433,Banco do Brasil,53.7,53.71,,elevada,elevada
+202409,pf_rural,PF rural,concorrente,1005,cosif_antigo,623.3,3149,78.1,3.2,156,Banco do Brasil,53.9,53.89,1,elevada,elevada
+202409,pf_rural,PF rural,entidade,1005,cosif_antigo,623.3,3019,68.8,3.3,434,Banco do Brasil,53.9,53.89,,elevada,elevada
+202512,pf_rural,PF rural,concorrente,1009,cosif2025,683.2,3007,77.7,3.3,154,Banco do Brasil,52.2,52.2,1,elevada,elevada
+202512,pf_rural,PF rural,entidade,1009,cosif2025,683.2,2850,69.1,3.5,430,Banco do Brasil,52.2,52.2,,elevada,elevada
+202606,pf_rural,PF rural,concorrente,1009,cosif2025,686.2,3129,78.6,3.2,148,Banco do Brasil,53.5,53.46,1,elevada,elevada
+202606,pf_rural,PF rural,entidade,1009,cosif2025,686.2,2979,70.2,3.4,424,Banco do Brasil,53.5,53.46,,elevada,elevada
+201603,pf_outros,PF outros,concorrente,1005,cosif_antigo,97.8,1165,64.4,8.6,642,Itaú Unibanco,18.6,7.56,5,moderada,baixa
+201603,pf_outros,PF outros,entidade,1005,cosif_antigo,97.8,1150,64.4,8.7,1019,Itaú Unibanco,18.6,7.56,,moderada,baixa
+201612,pf_outros,PF outros,concorrente,1005,cosif_antigo,96.8,1197,65.7,8.4,575,Itaú Unibanco,17.7,7.32,5,moderada,baixa
+201612,pf_outros,PF outros,entidade,1005,cosif_antigo,96.8,1180,65.7,8.5,982,Itaú Unibanco,17.7,7.32,,moderada,baixa
+201712,pf_outros,PF outros,concorrente,1005,cosif_antigo,98.3,1134,61.1,8.8,527,Santander Brasil,16.4,11.21,5,moderada,baixa
+201712,pf_outros,PF outros,entidade,1005,cosif_antigo,98.3,1109,61.1,9.0,934,Santander Brasil,16.4,11.21,,moderada,baixa
+201812,pf_outros,PF outros,concorrente,1005,cosif_antigo,105.9,1089,57.7,9.2,498,Santander Brasil,17.4,11.65,4,moderada,baixa
+201812,pf_outros,PF outros,entidade,1005,cosif_antigo,105.9,1059,57.7,9.4,903,Santander Brasil,17.4,11.65,,moderada,baixa
+201912,pf_outros,PF outros,concorrente,1005,cosif_antigo,116.3,1128,58.9,8.9,470,Itaú Unibanco,19.6,7.89,5,moderada,baixa
+201912,pf_outros,PF outros,entidade,1005,cosif_antigo,116.3,1085,58.9,9.2,858,Itaú Unibanco,19.6,7.89,,moderada,baixa
+202012,pf_outros,PF outros,concorrente,1005,cosif_antigo,133.7,1197,60.5,8.4,444,Itaú Unibanco,22.5,7.3,5,moderada,baixa
+202012,pf_outros,PF outros,entidade,1005,cosif_antigo,133.7,1145,60.5,8.7,838,Itaú Unibanco,22.5,7.3,,moderada,baixa
+202112,pf_outros,PF outros,concorrente,1005,cosif_antigo,147.4,1133,59.1,8.8,428,Santander Brasil,19.0,6.78,6,moderada,baixa
+202112,pf_outros,PF outros,entidade,1005,cosif_antigo,147.4,1060,59.1,9.4,814,Santander Brasil,19.0,6.78,,moderada,baixa
+202212,pf_outros,PF outros,concorrente,1005,cosif_antigo,180.0,1126,58.5,8.9,437,Itaú Unibanco,18.8,7.15,7,moderada,baixa
+202212,pf_outros,PF outros,entidade,1005,cosif_antigo,180.0,1043,57.9,9.6,815,Itaú Unibanco,18.8,7.15,,moderada,baixa
+202312,pf_outros,PF outros,concorrente,1005,cosif_antigo,189.6,1097,58.3,9.1,425,Itaú Unibanco,19.5,8.49,6,moderada,baixa
+202312,pf_outros,PF outros,entidade,1005,cosif_antigo,189.6,980,56.2,10.2,799,Itaú Unibanco,19.5,8.49,,baixa,baixa
+202409,pf_outros,PF outros,concorrente,1005,cosif_antigo,202.3,1050,55.6,9.5,406,Itaú Unibanco,19.3,9.02,6,moderada,baixa
+202409,pf_outros,PF outros,entidade,1005,cosif_antigo,202.3,966,55.6,10.4,775,Itaú Unibanco,19.3,9.02,,baixa,baixa
+202512,pf_outros,PF outros,concorrente,1009,cosif2025,233.9,930,51.2,10.8,388,Itaú Unibanco,16.9,10.04,5,baixa,baixa
+202512,pf_outros,PF outros,entidade,1009,cosif2025,233.9,780,48.9,12.8,749,Itaú Unibanco,16.9,10.04,,baixa,baixa
+202606,pf_outros,PF outros,concorrente,1009,cosif2025,235.7,951,51.9,10.5,384,Itaú Unibanco,17.4,9.82,4,baixa,baixa
+202606,pf_outros,PF outros,entidade,1009,cosif2025,235.7,781,48.2,12.8,742,Itaú Unibanco,17.4,9.82,,baixa,baixa
+201603,pf_total,PF total,concorrente,1005,cosif_antigo,1574.3,1638,71.9,6.1,865,Caixa Econômica Federal,30.9,18.78,2,moderada,moderada
+201603,pf_total,PF total,entidade,1005,cosif_antigo,1574.3,1635,71.9,6.1,1249,Caixa Econômica Federal,30.9,18.78,,moderada,moderada
+201612,pf_total,PF total,concorrente,1005,cosif_antigo,1616.6,1705,74.4,5.9,802,Caixa Econômica Federal,31.1,18.85,2,moderada,moderada
+201612,pf_total,PF total,entidade,1005,cosif_antigo,1616.6,1701,74.4,5.9,1214,Caixa Econômica Federal,31.1,18.85,,moderada,moderada
+201712,pf_total,PF total,concorrente,1005,cosif_antigo,1714.1,1663,73.2,6.0,760,Caixa Econômica Federal,30.4,18.59,2,moderada,moderada
+201712,pf_total,PF total,entidade,1005,cosif_antigo,1714.1,1658,73.2,6.0,1171,Caixa Econômica Federal,30.4,18.59,,moderada,moderada
+201812,pf_total,PF total,concorrente,1005,cosif_antigo,1864.0,1546,71.1,6.5,716,Caixa Econômica Federal,28.1,18.33,2,moderada,moderada
+201812,pf_total,PF total,entidade,1005,cosif_antigo,1864.0,1540,71.1,6.5,1126,Caixa Econômica Federal,28.1,18.33,,moderada,moderada
+201912,pf_total,PF total,concorrente,1005,cosif_antigo,2074.4,1457,69.6,6.9,687,Caixa Econômica Federal,26.4,17.7,2,moderada,baixa
+201912,pf_total,PF total,entidade,1005,cosif_antigo,2074.4,1450,69.6,6.9,1080,Caixa Econômica Federal,26.4,17.7,,moderada,baixa
+202012,pf_total,PF total,concorrente,1005,cosif_antigo,2337.8,1404,68.4,7.1,667,Caixa Econômica Federal,25.8,16.96,2,moderada,baixa
+202012,pf_total,PF total,entidade,1005,cosif_antigo,2337.8,1394,68.4,7.2,1065,Caixa Econômica Federal,25.8,16.96,,moderada,baixa
+202112,pf_total,PF total,concorrente,1005,cosif_antigo,2821.7,1312,66.7,7.6,662,Caixa Econômica Federal,23.8,16.91,2,moderada,baixa
+202112,pf_total,PF total,entidade,1005,cosif_antigo,2821.7,1298,66.7,7.7,1055,Caixa Econômica Federal,23.8,16.91,,moderada,baixa
+202212,pf_total,PF total,concorrente,1005,cosif_antigo,3323.1,1291,66.3,7.7,671,Caixa Econômica Federal,23.9,16.76,2,moderada,baixa
+202212,pf_total,PF total,entidade,1005,cosif_antigo,3323.1,1276,66.3,7.8,1053,Caixa Econômica Federal,23.9,16.76,,moderada,baixa
+202312,pf_total,PF total,concorrente,1005,cosif_antigo,3652.7,1267,64.9,7.9,671,Caixa Econômica Federal,24.5,16.79,2,moderada,baixa
+202312,pf_total,PF total,entidade,1005,cosif_antigo,3652.7,1250,64.9,8.0,1048,Caixa Econômica Federal,24.5,16.79,,moderada,baixa
+202409,pf_total,PF total,concorrente,1005,cosif_antigo,3976.2,1239,63.9,8.1,669,Caixa Econômica Federal,24.5,16.5,2,moderada,baixa
+202409,pf_total,PF total,entidade,1005,cosif_antigo,3976.2,1220,63.9,8.2,1042,Caixa Econômica Federal,24.5,16.5,,moderada,baixa
+202512,pf_total,PF total,concorrente,1009,cosif2025,4654.3,1164,61.7,8.6,655,Caixa Econômica Federal,24.1,15.29,2,moderada,baixa
+202512,pf_total,PF total,entidade,1009,cosif2025,4654.3,1149,61.7,8.7,1018,Caixa Econômica Federal,24.1,15.29,,moderada,baixa
+202606,pf_total,PF total,concorrente,1009,cosif2025,4820.0,1179,61.9,8.5,644,Caixa Econômica Federal,24.7,15.14,2,moderada,baixa
+202606,pf_total,PF total,entidade,1009,cosif2025,4820.0,1164,61.9,8.6,1004,Caixa Econômica Federal,24.7,15.14,,moderada,baixa
+201603,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,329.1,1224,63.6,8.2,510,Banco do Brasil,23.0,22.96,1,moderada,baixa
+201603,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,329.1,1221,63.6,8.2,882,Banco do Brasil,23.0,22.96,,moderada,baixa
+201612,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,303.4,1184,64.2,8.4,477,Banco do Brasil,19.4,19.37,1,moderada,baixa
+201612,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,303.4,1177,64.2,8.5,875,Banco do Brasil,19.4,19.37,,moderada,baixa
+201712,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,277.2,1076,61.1,9.3,450,Banco do Brasil,17.0,17.03,1,moderada,baixa
+201712,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,277.2,1061,61.1,9.4,855,Banco do Brasil,17.0,17.03,,moderada,baixa
+201812,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,276.4,1009,58.8,9.9,425,Banco do Brasil,16.5,16.53,1,moderada,baixa
+201812,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,276.4,984,58.8,10.2,834,Banco do Brasil,16.5,16.53,,baixa,baixa
+201912,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,292.7,975,56.7,10.3,407,Banco do Brasil,16.1,16.14,1,baixa,baixa
+201912,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,292.7,936,56.7,10.7,799,Banco do Brasil,16.1,16.14,,baixa,baixa
+202012,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,562.9,994,56.7,10.1,404,Bradesco,16.4,13.41,3,baixa,baixa
+202012,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,562.9,961,56.7,10.4,798,Bradesco,16.4,13.41,,baixa,baixa
+202112,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,576.0,982,57.4,10.2,402,Bradesco,16.4,13.97,3,baixa,baixa
+202112,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,576.0,929,57.4,10.8,794,Bradesco,16.4,13.97,,baixa,baixa
+202212,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,599.7,970,57.5,10.3,404,Banco do Brasil,15.8,15.8,1,baixa,baixa
+202212,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,599.7,907,57.5,11.0,787,Banco do Brasil,15.8,15.8,,baixa,baixa
+202312,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,603.7,957,56.7,10.5,393,Banco do Brasil,17.0,17.0,1,baixa,baixa
+202312,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,603.7,876,56.7,11.4,776,Banco do Brasil,17.0,17.0,,baixa,baixa
+202409,pj_capital_giro,PJ capital de giro,concorrente,1005,cosif_antigo,635.1,866,52.7,11.5,378,Banco do Brasil,15.6,15.58,1,baixa,baixa
+202409,pj_capital_giro,PJ capital de giro,entidade,1005,cosif_antigo,635.1,761,52.7,13.1,755,Banco do Brasil,15.6,15.58,,baixa,baixa
+202512,pj_capital_giro,PJ capital de giro,concorrente,1009,cosif2025,757.3,869,51.9,11.5,392,Bradesco,14.9,11.68,3,baixa,baixa
+202512,pj_capital_giro,PJ capital de giro,entidade,1009,cosif2025,757.3,762,51.9,13.1,764,Bradesco,14.9,11.68,,baixa,baixa
+202606,pj_capital_giro,PJ capital de giro,concorrente,1009,cosif2025,780.7,897,52.1,11.1,378,Bradesco,15.7,10.87,3,baixa,baixa
+202606,pj_capital_giro,PJ capital de giro,entidade,1009,cosif2025,780.7,787,52.1,12.7,745,Bradesco,15.7,10.87,,baixa,baixa
+201603,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,126.4,3079,75.8,3.2,329,Banco do Brasil,53.7,53.74,1,elevada,elevada
+201603,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,126.4,3078,75.8,3.2,653,Banco do Brasil,53.7,53.74,,elevada,elevada
+201612,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,86.2,1951,65.0,5.1,303,Banco do Brasil,41.3,41.32,1,elevada,moderada
+201612,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,86.2,1950,65.0,5.1,652,Banco do Brasil,41.3,41.32,,elevada,moderada
+201712,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,103.4,3237,71.7,3.1,323,Banco do Brasil,55.8,55.77,1,elevada,elevada
+201712,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,103.4,3235,71.7,3.1,675,Banco do Brasil,55.8,55.77,,elevada,elevada
+201812,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,117.0,2813,70.5,3.6,317,Banco do Brasil,51.4,51.42,1,elevada,elevada
+201812,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,117.0,2809,70.5,3.6,675,Banco do Brasil,51.4,51.42,,elevada,elevada
+201912,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,142.4,1727,64.6,5.8,308,Banco do Brasil,37.5,37.52,1,moderada,moderada
+201912,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,142.4,1719,64.6,5.8,653,Banco do Brasil,37.5,37.52,,moderada,moderada
+202012,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,174.1,1513,61.0,6.6,309,Banco do Brasil,34.6,34.63,1,moderada,moderada
+202012,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,174.1,1498,61.0,6.7,664,Banco do Brasil,34.6,34.63,,moderada,baixa
+202112,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,212.8,1155,56.6,8.7,302,Banco do Brasil,27.8,27.75,1,moderada,baixa
+202112,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,212.8,1130,56.6,8.9,661,Banco do Brasil,27.8,27.75,,moderada,baixa
+202212,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,248.7,974,52.8,10.3,300,Banco do Brasil,23.5,23.53,1,baixa,baixa
+202212,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,248.7,948,52.8,10.5,655,Banco do Brasil,23.5,23.53,,baixa,baixa
+202312,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,271.1,976,51.6,10.2,281,Banco do Brasil,24.3,24.35,1,baixa,baixa
+202312,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,271.1,950,51.6,10.5,637,Banco do Brasil,24.3,24.35,,baixa,baixa
+202409,pj_investimento,PJ investimento,concorrente,1005,cosif_antigo,294.8,1040,51.4,9.6,277,Banco do Brasil,26.4,26.38,1,moderada,baixa
+202409,pj_investimento,PJ investimento,entidade,1005,cosif_antigo,294.8,1014,51.4,9.9,633,Banco do Brasil,26.4,26.38,,moderada,baixa
+202512,pj_investimento,PJ investimento,concorrente,1009,cosif2025,321.0,1050,51.3,9.5,278,Banco do Brasil,26.7,26.68,1,moderada,baixa
+202512,pj_investimento,PJ investimento,entidade,1009,cosif2025,321.0,1027,51.3,9.7,627,Banco do Brasil,26.7,26.68,,moderada,baixa
+202606,pj_investimento,PJ investimento,concorrente,1009,cosif2025,321.3,1143,52.5,8.8,276,Banco do Brasil,29.0,29.01,1,moderada,baixa
+202606,pj_investimento,PJ investimento,entidade,1009,cosif2025,321.3,1123,52.5,8.9,620,Banco do Brasil,29.0,29.01,,moderada,baixa
+201603,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,52.3,1226,64.1,8.2,410,Bradesco,22.4,6.84,5,moderada,baixa
+201603,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,52.3,1211,64.1,8.3,764,Bradesco,22.4,6.84,,moderada,baixa
+201612,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,43.7,1270,63.7,7.9,354,Bradesco,23.6,8.92,5,moderada,baixa
+201612,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,43.7,1245,63.7,8.0,734,Bradesco,23.6,8.92,,moderada,baixa
+201712,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,37.7,1266,63.8,7.9,323,Bradesco,20.9,7.14,4,moderada,baixa
+201712,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,37.7,1229,63.8,8.1,708,Bradesco,20.9,7.14,,moderada,baixa
+201812,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,38.4,1230,62.5,8.1,299,Itaú Unibanco,22.1,6.88,4,moderada,baixa
+201812,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,38.4,1184,62.5,8.4,687,Itaú Unibanco,22.1,6.88,,moderada,baixa
+201912,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,41.3,1334,64.4,7.5,282,Itaú Unibanco,26.0,6.75,5,moderada,baixa
+201912,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,41.3,1280,64.2,7.8,656,Itaú Unibanco,26.0,6.75,,moderada,baixa
+202012,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,26.6,1105,58.9,9.0,271,Itaú Unibanco,21.8,5.72,5,moderada,baixa
+202012,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,26.6,1038,56.8,9.6,648,Itaú Unibanco,21.8,5.72,,moderada,baixa
+202112,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,43.3,1312,63.2,7.6,262,Itaú Unibanco,27.5,5.36,5,moderada,baixa
+202112,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,43.3,1252,61.1,8.0,638,Itaú Unibanco,27.5,5.36,,moderada,baixa
+202212,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,51.1,1196,60.6,8.4,262,Itaú Unibanco,25.6,6.17,5,moderada,baixa
+202212,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,51.1,1115,58.2,9.0,630,Itaú Unibanco,25.6,6.17,,moderada,baixa
+202312,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,50.7,1193,59.8,8.4,243,Itaú Unibanco,26.1,7.06,5,moderada,baixa
+202312,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,50.7,1062,56.0,9.4,608,Itaú Unibanco,26.1,7.06,,moderada,baixa
+202409,pj_cheque_especial,PJ cheque especial,concorrente,1005,cosif_antigo,56.3,1157,59.2,8.6,234,Itaú Unibanco,25.2,7.74,5,moderada,baixa
+202409,pj_cheque_especial,PJ cheque especial,entidade,1005,cosif_antigo,56.3,1012,55.6,9.9,597,Itaú Unibanco,25.2,7.74,,moderada,baixa
+202512,pj_cheque_especial,PJ cheque especial,concorrente,1009,cosif2025,60.4,1236,62.2,8.1,228,Itaú Unibanco,25.8,7.81,5,moderada,baixa
+202512,pj_cheque_especial,PJ cheque especial,entidade,1009,cosif2025,60.4,1059,57.3,9.4,584,Itaú Unibanco,25.8,7.81,,moderada,baixa
+202606,pj_cheque_especial,PJ cheque especial,concorrente,1009,cosif2025,67.0,1263,63.8,7.9,223,Itaú Unibanco,26.0,7.22,5,moderada,baixa
+202606,pj_cheque_especial,PJ cheque especial,entidade,1009,cosif2025,67.0,1088,58.4,9.2,577,Itaú Unibanco,26.0,7.22,,moderada,baixa
+201603,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,80.6,1050,59.3,9.5,397,Itaú Unibanco,20.2,12.79,3,moderada,baixa
+201603,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,80.6,1043,59.3,9.6,726,Itaú Unibanco,20.2,12.79,,moderada,baixa
+201612,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,83.3,1093,57.0,9.2,367,Santander Brasil,23.5,9.02,3,moderada,baixa
+201612,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,83.3,1086,57.0,9.2,723,Santander Brasil,23.5,9.02,,moderada,baixa
+201712,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,98.7,1072,58.2,9.3,346,Santander Brasil,23.0,7.52,4,moderada,baixa
+201712,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,98.7,1067,58.2,9.4,702,Santander Brasil,23.0,7.52,,moderada,baixa
+201812,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,122.6,1111,59.4,9.0,328,Santander Brasil,20.4,6.36,5,moderada,baixa
+201812,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,122.6,1107,59.4,9.0,685,Santander Brasil,20.4,6.36,,moderada,baixa
+201912,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,146.5,1186,60.6,8.4,321,Santander Brasil,22.3,4.96,5,moderada,baixa
+201912,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,146.5,1182,60.6,8.5,668,Santander Brasil,22.3,4.96,,moderada,baixa
+202012,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,147.4,1053,57.8,9.5,306,Santander Brasil,21.0,4.92,6,moderada,baixa
+202012,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,147.4,1051,57.8,9.5,656,Santander Brasil,21.0,4.92,,moderada,baixa
+202112,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,215.5,972,55.3,10.3,293,Bradesco,17.7,4.5,8,baixa,baixa
+202112,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,215.5,969,55.3,10.3,642,Bradesco,17.7,4.5,,baixa,baixa
+202212,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,248.9,855,51.3,11.7,307,Bradesco,17.4,4.94,8,baixa,baixa
+202212,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,248.9,851,51.3,11.8,654,Bradesco,17.4,4.94,,baixa,baixa
+202312,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,235.3,778,47.7,12.9,292,Santander Brasil,14.1,5.54,5,baixa,baixa
+202312,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,235.3,772,47.7,13.0,636,Santander Brasil,14.1,5.54,,baixa,baixa
+202409,pj_recebiveis,PJ recebíveis,concorrente,1005,cosif_antigo,214.5,762,47.2,13.1,288,Bradesco,14.9,5.43,6,baixa,baixa
+202409,pj_recebiveis,PJ recebíveis,entidade,1005,cosif_antigo,214.5,754,47.2,13.3,630,Bradesco,14.9,5.43,,baixa,baixa
+202512,pj_recebiveis,PJ recebíveis,concorrente,1009,cosif2025,234.3,767,47.5,13.0,280,Itaú Unibanco,15.0,5.61,6,baixa,baixa
+202512,pj_recebiveis,PJ recebíveis,entidade,1009,cosif2025,234.3,760,47.5,13.2,618,Itaú Unibanco,15.0,5.61,,baixa,baixa
+202606,pj_recebiveis,PJ recebíveis,concorrente,1009,cosif2025,216.3,723,47.1,13.8,269,Itaú Unibanco,13.8,5.63,5,baixa,baixa
+202606,pj_recebiveis,PJ recebíveis,entidade,1009,cosif2025,216.3,714,47.1,14.0,606,Itaú Unibanco,13.8,5.63,,baixa,baixa
+201603,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,143.4,845,50.9,11.8,60,Bradesco,16.7,13.74,2,baixa,baixa
+201603,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,143.4,845,50.9,11.8,60,Bradesco,16.7,13.74,,baixa,baixa
+201612,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,157.8,1314,63.4,7.6,61,Banco do Brasil,26.0,26.03,1,moderada,baixa
+201612,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,157.8,1314,63.4,7.6,61,Banco do Brasil,26.0,26.03,,moderada,baixa
+201712,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,154.5,1481,67.4,6.8,62,Banco do Brasil,30.0,30.04,1,moderada,baixa
+201712,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,154.5,1481,67.4,6.8,62,Banco do Brasil,30.0,30.04,,moderada,baixa
+201812,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,178.8,1405,66.8,7.1,60,Banco do Brasil,26.8,26.8,1,moderada,baixa
+201812,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,178.8,1405,66.8,7.1,60,Banco do Brasil,26.8,26.8,,moderada,baixa
+201912,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,177.0,1193,63.8,8.4,59,Bradesco,22.9,18.42,2,moderada,baixa
+201912,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,177.0,1193,63.8,8.4,59,Bradesco,22.9,18.42,,moderada,baixa
+202012,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,186.5,1181,62.6,8.5,56,Bradesco,22.4,18.36,2,moderada,baixa
+202012,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,186.5,1181,62.6,8.5,56,Bradesco,22.4,18.36,,moderada,baixa
+202112,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,214.4,1087,59.6,9.2,60,Bradesco,19.5,18.06,2,moderada,baixa
+202112,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,214.4,1087,59.6,9.2,60,Bradesco,19.5,18.06,,moderada,baixa
+202212,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,228.0,1038,57.3,9.6,64,Banco do Brasil,20.7,20.73,1,moderada,baixa
+202212,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,228.0,1038,57.3,9.6,64,Banco do Brasil,20.7,20.73,,moderada,baixa
+202312,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,219.4,1182,59.8,8.5,62,Banco do Brasil,25.8,25.81,1,moderada,baixa
+202312,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,219.4,1182,59.8,8.5,62,Banco do Brasil,25.8,25.81,,moderada,baixa
+202409,pj_comex,PJ comércio exterior,concorrente,1005,cosif_antigo,258.8,1209,61.9,8.3,60,Banco do Brasil,24.9,24.89,1,moderada,baixa
+202409,pj_comex,PJ comércio exterior,entidade,1005,cosif_antigo,258.8,1209,61.9,8.3,60,Banco do Brasil,24.9,24.89,,moderada,baixa
+202512,pj_comex,PJ comércio exterior,concorrente,1009,cosif2025,260.0,1214,60.4,8.2,61,Banco do Brasil,26.2,26.22,1,moderada,baixa
+202512,pj_comex,PJ comércio exterior,entidade,1009,cosif2025,260.0,1214,60.4,8.2,82,Banco do Brasil,26.2,26.22,,moderada,baixa
+202606,pj_comex,PJ comércio exterior,concorrente,1009,cosif2025,256.2,1168,58.9,8.6,62,Banco do Brasil,25.4,25.43,1,moderada,baixa
+202606,pj_comex,PJ comércio exterior,entidade,1009,cosif2025,256.2,1167,58.9,8.6,90,Banco do Brasil,25.4,25.43,,moderada,baixa
+201603,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,691.9,3328,84.1,3.0,134,BNDES,54.5,11.85,3,elevada,elevada
+201603,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,691.9,3328,84.1,3.0,203,BNDES,54.5,11.85,,elevada,elevada
+201612,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,642.1,3216,84.1,3.1,132,BNDES,53.2,11.09,3,elevada,elevada
+201612,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,642.1,3216,84.1,3.1,197,BNDES,53.2,11.09,,elevada,elevada
+201712,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,584.1,3165,84.5,3.2,178,BNDES,52.3,10.83,3,elevada,elevada
+201712,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,584.1,3165,84.5,3.2,227,BNDES,52.3,10.83,,elevada,elevada
+201812,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,536.7,3471,86.7,2.9,159,BNDES,55.2,9.57,3,elevada,elevada
+201812,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,536.7,3471,86.7,2.9,199,BNDES,55.2,9.57,,elevada,elevada
+201912,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,468.7,3572,88.8,2.8,152,BNDES,55.5,9.39,3,elevada,elevada
+201912,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,468.7,3572,88.8,2.8,184,BNDES,55.5,9.39,,elevada,elevada
+202012,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,493.1,3561,87.9,2.8,151,BNDES,55.5,8.36,3,elevada,elevada
+202012,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,493.1,3561,87.9,2.8,241,BNDES,55.5,8.36,,elevada,elevada
+202112,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,477.8,3633,87.8,2.8,151,BNDES,56.1,7.41,3,elevada,elevada
+202112,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,477.8,3633,87.8,2.8,238,BNDES,56.1,7.41,,elevada,elevada
+202212,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,506.4,3453,84.9,2.9,150,BNDES,54.6,6.25,3,elevada,elevada
+202212,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,506.4,3453,84.9,2.9,240,BNDES,54.6,6.25,,elevada,elevada
+202312,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,523.3,3162,81.9,3.2,141,BNDES,52.0,5.97,3,elevada,elevada
+202312,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,523.3,3162,81.9,3.2,186,BNDES,52.0,5.97,,elevada,elevada
+202409,pj_infraestrutura,PJ infraestrutura,concorrente,1005,cosif_antigo,553.4,3011,80.9,3.3,147,BNDES,50.4,6.38,3,elevada,elevada
+202409,pj_infraestrutura,PJ infraestrutura,entidade,1005,cosif_antigo,553.4,3011,80.9,3.3,193,BNDES,50.4,6.38,,elevada,elevada
+202512,pj_infraestrutura,PJ infraestrutura,concorrente,1009,cosif2025,670.5,3073,79.6,3.3,149,BNDES,52.0,6.02,3,elevada,elevada
+202512,pj_infraestrutura,PJ infraestrutura,entidade,1009,cosif2025,670.5,3073,79.6,3.3,197,BNDES,52.0,6.02,,elevada,elevada
+202606,pj_infraestrutura,PJ infraestrutura,concorrente,1009,cosif2025,689.0,3032,79.6,3.3,150,BNDES,51.5,5.93,3,elevada,elevada
+202606,pj_infraestrutura,PJ infraestrutura,entidade,1009,cosif2025,689.0,3031,79.6,3.3,204,BNDES,51.5,5.93,,elevada,elevada
+201603,pj_rural,PJ rural,concorrente,1005,cosif_antigo,61.8,1427,63.5,7.0,135,Banco do Brasil,29.6,29.59,1,moderada,baixa
+201603,pj_rural,PJ rural,entidade,1005,cosif_antigo,61.8,1407,62.6,7.1,283,Banco do Brasil,29.6,29.59,,moderada,baixa
+201612,pj_rural,PJ rural,concorrente,1005,cosif_antigo,67.4,1393,63.1,7.2,133,Banco do Brasil,29.0,28.96,1,moderada,baixa
+201612,pj_rural,PJ rural,entidade,1005,cosif_antigo,67.4,1369,62.0,7.3,283,Banco do Brasil,29.0,28.96,,moderada,baixa
+201712,pj_rural,PJ rural,concorrente,1005,cosif_antigo,53.3,1779,67.6,5.6,72,Banco do Brasil,36.3,36.3,1,moderada,moderada
+201712,pj_rural,PJ rural,entidade,1005,cosif_antigo,53.3,1777,67.6,5.6,225,Banco do Brasil,36.3,36.3,,moderada,moderada
+201812,pj_rural,PJ rural,concorrente,1005,cosif_antigo,51.7,1550,62.9,6.5,72,Banco do Brasil,32.8,32.82,1,moderada,moderada
+201812,pj_rural,PJ rural,entidade,1005,cosif_antigo,51.7,1547,62.9,6.5,218,Banco do Brasil,32.8,32.82,,moderada,moderada
+201912,pj_rural,PJ rural,concorrente,1005,cosif_antigo,40.9,1157,61.5,8.6,76,Banco do Brasil,21.3,21.32,1,moderada,baixa
+201912,pj_rural,PJ rural,entidade,1005,cosif_antigo,40.9,1152,61.5,8.7,210,Banco do Brasil,21.3,21.32,,moderada,baixa
+202012,pj_rural,PJ rural,concorrente,1005,cosif_antigo,38.0,1000,57.2,10.0,78,Banco do Brasil,16.2,16.22,1,moderada,baixa
+202012,pj_rural,PJ rural,entidade,1005,cosif_antigo,38.0,992,57.2,10.1,211,Banco do Brasil,16.2,16.22,,baixa,baixa
+202112,pj_rural,PJ rural,concorrente,1005,cosif_antigo,47.1,971,52.3,10.3,84,Banco do Brasil,20.2,20.2,1,baixa,baixa
+202112,pj_rural,PJ rural,entidade,1005,cosif_antigo,47.1,949,52.3,10.5,231,Banco do Brasil,20.2,20.2,,baixa,baixa
+202212,pj_rural,PJ rural,concorrente,1005,cosif_antigo,47.8,822,46.6,12.2,89,Itaú Unibanco,13.6,11.84,2,baixa,baixa
+202212,pj_rural,PJ rural,entidade,1005,cosif_antigo,47.8,759,46.6,13.2,247,Itaú Unibanco,13.6,11.84,,baixa,baixa
+202312,pj_rural,PJ rural,concorrente,1005,cosif_antigo,58.9,878,47.6,11.4,103,Santander Brasil,17.5,9.5,3,baixa,baixa
+202312,pj_rural,PJ rural,entidade,1005,cosif_antigo,58.9,805,47.6,12.4,275,Santander Brasil,17.5,9.5,,baixa,baixa
+202409,pj_rural,PJ rural,concorrente,1005,cosif_antigo,64.6,973,52.5,10.3,106,Santander Brasil,19.4,8.57,4,baixa,baixa
+202409,pj_rural,PJ rural,entidade,1005,cosif_antigo,64.6,921,52.5,10.9,278,Santander Brasil,19.4,8.57,,baixa,baixa
+202512,pj_rural,PJ rural,concorrente,1009,cosif2025,82.0,1068,58.3,9.4,110,Itaú Unibanco,19.5,10.65,4,moderada,baixa
+202512,pj_rural,PJ rural,entidade,1009,cosif2025,82.0,1002,58.3,10.0,303,Itaú Unibanco,19.5,10.65,,moderada,baixa
+202606,pj_rural,PJ rural,concorrente,1009,cosif2025,91.0,1101,58.8,9.1,111,Itaú Unibanco,20.6,12.84,3,moderada,baixa
+202606,pj_rural,PJ rural,entidade,1009,cosif2025,91.0,1035,58.8,9.7,304,Itaú Unibanco,20.6,12.84,,moderada,baixa
+201603,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,50.5,1865,82.3,5.4,16,Caixa Econômica Federal,23.9,11.8,5,elevada,moderada
+201603,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,50.5,1865,82.3,5.4,16,Caixa Econômica Federal,23.9,11.8,,elevada,moderada
+201612,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,44.9,2010,82.8,5.0,14,Caixa Econômica Federal,27.2,13.56,5,elevada,moderada
+201612,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,44.9,2010,82.8,5.0,14,Caixa Econômica Federal,27.2,13.56,,elevada,moderada
+201712,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,35.6,2223,84.8,4.5,14,Caixa Econômica Federal,33.1,12.81,4,elevada,moderada
+201712,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,35.6,2223,84.8,4.5,14,Caixa Econômica Federal,33.1,12.81,,elevada,moderada
+201812,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,25.9,2445,87.2,4.1,14,Caixa Econômica Federal,38.5,10.91,4,elevada,moderada
+201812,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,25.9,2445,87.2,4.1,14,Caixa Econômica Federal,38.5,10.91,,elevada,moderada
+201912,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,18.1,2680,87.2,3.7,14,Caixa Econômica Federal,43.2,9.29,4,elevada,elevada
+201912,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,18.1,2680,87.2,3.7,14,Caixa Econômica Federal,43.2,9.29,,elevada,elevada
+202012,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,16.4,2757,89.4,3.6,15,Caixa Econômica Federal,44.8,10.03,4,elevada,elevada
+202012,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,16.4,2757,89.4,3.6,15,Caixa Econômica Federal,44.8,10.03,,elevada,elevada
+202112,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,17.7,3542,92.4,2.8,14,Caixa Econômica Federal,53.7,2.9,5,elevada,elevada
+202112,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,17.7,3542,92.4,2.8,14,Caixa Econômica Federal,53.7,2.9,,elevada,elevada
+202212,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,25.6,3353,92.7,3.0,14,Caixa Econômica Federal,50.8,3.48,4,elevada,elevada
+202212,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,25.6,3353,92.7,3.0,14,Caixa Econômica Federal,50.8,3.48,,elevada,elevada
+202312,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,37.6,3012,91.5,3.3,13,Caixa Econômica Federal,46.7,5.47,4,elevada,elevada
+202312,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,37.6,3012,91.5,3.3,13,Caixa Econômica Federal,46.7,5.47,,elevada,elevada
+202409,pj_habitacional,PJ habitacional,concorrente,1005,cosif_antigo,43.7,2836,90.7,3.5,13,Caixa Econômica Federal,44.4,6.78,4,elevada,elevada
+202409,pj_habitacional,PJ habitacional,entidade,1005,cosif_antigo,43.7,2836,90.7,3.5,13,Caixa Econômica Federal,44.4,6.78,,elevada,elevada
+202512,pj_habitacional,PJ habitacional,concorrente,1009,cosif2025,59.0,2767,90.6,3.6,12,Caixa Econômica Federal,43.4,7.65,4,elevada,elevada
+202512,pj_habitacional,PJ habitacional,entidade,1009,cosif2025,59.0,2767,90.6,3.6,12,Caixa Econômica Federal,43.4,7.65,,elevada,elevada
+202606,pj_habitacional,PJ habitacional,concorrente,1009,cosif2025,63.5,2844,91.7,3.5,12,Caixa Econômica Federal,44.2,7.8,4,elevada,elevada
+202606,pj_habitacional,PJ habitacional,entidade,1009,cosif2025,63.5,2844,91.7,3.5,12,Caixa Econômica Federal,44.2,7.8,,elevada,elevada
+201603,pj_outros,PJ outros,concorrente,1005,cosif_antigo,118.3,2611,77.2,3.8,476,Banco do Brasil,47.4,47.36,1,elevada,elevada
+201603,pj_outros,PJ outros,entidade,1005,cosif_antigo,118.3,2605,77.2,3.8,835,Banco do Brasil,47.4,47.36,,elevada,elevada
+201612,pj_outros,PJ outros,concorrente,1005,cosif_antigo,122.1,2415,80.6,4.1,409,Banco do Brasil,42.8,42.77,1,elevada,moderada
+201612,pj_outros,PJ outros,entidade,1005,cosif_antigo,122.1,2410,80.6,4.1,791,Banco do Brasil,42.8,42.77,,elevada,moderada
+201712,pj_outros,PJ outros,concorrente,1005,cosif_antigo,78.6,1426,69.1,7.0,390,Banco do Brasil,25.2,25.2,1,moderada,baixa
+201712,pj_outros,PJ outros,entidade,1005,cosif_antigo,78.6,1414,69.1,7.1,774,Banco do Brasil,25.2,25.2,,moderada,baixa
+201812,pj_outros,PJ outros,concorrente,1005,cosif_antigo,81.0,1351,68.6,7.4,365,Banco do Brasil,22.9,22.91,1,moderada,baixa
+201812,pj_outros,PJ outros,entidade,1005,cosif_antigo,81.0,1329,68.6,7.5,752,Banco do Brasil,22.9,22.91,,moderada,baixa
+201912,pj_outros,PJ outros,concorrente,1005,cosif_antigo,86.7,1266,65.9,7.9,341,Banco do Brasil,21.1,21.14,1,moderada,baixa
+201912,pj_outros,PJ outros,entidade,1005,cosif_antigo,86.7,1231,65.9,8.1,717,Banco do Brasil,21.1,21.14,,moderada,baixa
+202012,pj_outros,PJ outros,concorrente,1005,cosif_antigo,95.3,1322,66.4,7.6,333,Banco do Brasil,22.2,22.19,1,moderada,baixa
+202012,pj_outros,PJ outros,entidade,1005,cosif_antigo,95.3,1266,66.4,7.9,713,Banco do Brasil,22.2,22.19,,moderada,baixa
+202112,pj_outros,PJ outros,concorrente,1005,cosif_antigo,110.6,1186,61.8,8.4,334,Banco do Brasil,23.0,23.0,1,moderada,baixa
+202112,pj_outros,PJ outros,entidade,1005,cosif_antigo,110.6,1116,61.8,9.0,713,Banco do Brasil,23.0,23.0,,moderada,baixa
+202212,pj_outros,PJ outros,concorrente,1005,cosif_antigo,138.0,1073,58.8,9.3,335,Banco do Brasil,20.9,20.93,1,moderada,baixa
+202212,pj_outros,PJ outros,entidade,1005,cosif_antigo,138.0,1002,58.8,10.0,708,Banco do Brasil,20.9,20.93,,moderada,baixa
+202312,pj_outros,PJ outros,concorrente,1005,cosif_antigo,176.9,944,54.3,10.6,335,Banco do Brasil,16.9,16.89,1,baixa,baixa
+202312,pj_outros,PJ outros,entidade,1005,cosif_antigo,176.9,877,54.3,11.4,705,Banco do Brasil,16.9,16.89,,baixa,baixa
+202409,pj_outros,PJ outros,concorrente,1005,cosif_antigo,166.5,1012,57.9,9.9,334,Banco do Brasil,19.6,19.56,1,moderada,baixa
+202409,pj_outros,PJ outros,entidade,1005,cosif_antigo,166.5,970,57.9,10.3,699,Banco do Brasil,19.6,19.56,,baixa,baixa
+202512,pj_outros,PJ outros,concorrente,1009,cosif2025,198.1,944,54.8,10.6,322,Banco do Brasil,17.8,17.82,1,baixa,baixa
+202512,pj_outros,PJ outros,entidade,1009,cosif2025,198.1,894,54.8,11.2,681,Banco do Brasil,17.8,17.82,,baixa,baixa
+202606,pj_outros,PJ outros,concorrente,1009,cosif2025,210.2,964,55.3,10.4,318,Banco do Brasil,16.7,16.74,1,baixa,baixa
+202606,pj_outros,PJ outros,entidade,1009,cosif2025,210.2,907,55.3,11.0,672,Banco do Brasil,16.7,16.74,,baixa,baixa
+201603,pj_total,PJ total,concorrente,1005,cosif_antigo,2037.9,1228,65.0,8.1,615,Banco do Brasil,19.2,19.18,1,moderada,baixa
+201603,pj_total,PJ total,entidade,1005,cosif_antigo,2037.9,1227,65.0,8.2,993,Banco do Brasil,19.2,19.18,,moderada,baixa
+201612,pj_total,PJ total,concorrente,1005,cosif_antigo,1896.3,1262,66.2,7.9,562,BNDES,18.1,17.47,2,moderada,baixa
+201612,pj_total,PJ total,entidade,1005,cosif_antigo,1896.3,1260,66.2,7.9,968,BNDES,18.1,17.47,,moderada,baixa
+201712,pj_total,PJ total,concorrente,1005,cosif_antigo,1737.4,1238,65.3,8.1,518,BNDES,17.6,17.38,2,moderada,baixa
+201712,pj_total,PJ total,entidade,1005,cosif_antigo,1737.4,1236,65.3,8.1,927,BNDES,17.6,17.38,,moderada,baixa
+201812,pj_total,PJ total,concorrente,1005,cosif_antigo,1774.0,1189,64.5,8.4,488,BNDES,16.7,16.26,2,moderada,baixa
+201812,pj_total,PJ total,entidade,1005,cosif_antigo,1774.0,1187,64.5,8.4,906,BNDES,16.7,16.26,,moderada,baixa
+201912,pj_total,PJ total,concorrente,1005,cosif_antigo,1836.4,1161,63.2,8.6,470,Itaú Unibanco,19.9,13.43,4,moderada,baixa
+201912,pj_total,PJ total,entidade,1005,cosif_antigo,1836.4,1158,63.2,8.6,868,Itaú Unibanco,19.9,13.43,,moderada,baixa
+202012,pj_total,PJ total,concorrente,1005,cosif_antigo,2181.5,1103,59.7,9.1,465,Itaú Unibanco,21.1,12.6,3,moderada,baixa
+202012,pj_total,PJ total,entidade,1005,cosif_antigo,2181.5,1098,59.7,9.1,867,Itaú Unibanco,21.1,12.6,,moderada,baixa
+202112,pj_total,PJ total,concorrente,1005,cosif_antigo,2401.0,1035,57.4,9.7,478,Itaú Unibanco,20.0,12.13,3,moderada,baixa
+202112,pj_total,PJ total,entidade,1005,cosif_antigo,2401.0,1026,57.4,9.7,877,Itaú Unibanco,20.0,12.13,,moderada,baixa
+202212,pj_total,PJ total,concorrente,1005,cosif_antigo,2575.6,953,54.6,10.5,481,Itaú Unibanco,18.8,12.29,3,baixa,baixa
+202212,pj_total,PJ total,entidade,1005,cosif_antigo,2575.6,942,54.6,10.6,871,Itaú Unibanco,18.8,12.29,,baixa,baixa
+202312,pj_total,PJ total,concorrente,1005,cosif_antigo,2630.2,908,52.8,11.0,475,Itaú Unibanco,18.0,13.13,2,baixa,baixa
+202312,pj_total,PJ total,entidade,1005,cosif_antigo,2630.2,894,52.8,11.2,861,Itaú Unibanco,18.0,13.13,,baixa,baixa
+202409,pj_total,PJ total,concorrente,1005,cosif_antigo,2864.8,931,53.7,10.7,468,Itaú Unibanco,19.1,13.11,2,baixa,baixa
+202409,pj_total,PJ total,entidade,1005,cosif_antigo,2864.8,916,53.7,10.9,850,Itaú Unibanco,19.1,13.11,,baixa,baixa
+202512,pj_total,PJ total,concorrente,1009,cosif2025,3244.1,917,53.8,10.9,472,Itaú Unibanco,18.9,11.86,3,baixa,baixa
+202512,pj_total,PJ total,entidade,1009,cosif2025,3244.1,899,53.8,11.1,846,Itaú Unibanco,18.9,11.86,,baixa,baixa
+202606,pj_total,PJ total,concorrente,1009,cosif2025,3273.7,900,53.4,11.1,461,Itaú Unibanco,18.2,11.78,3,baixa,baixa
+202606,pj_total,PJ total,entidade,1009,cosif2025,3273.7,881,53.4,11.3,829,Itaú Unibanco,18.2,11.78,,baixa,baixa
+201603,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,159.0,1618,73.7,6.2,549,Caixa Econômica Federal,28.9,8.41,4,moderada,moderada
+201603,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,159.0,1615,73.7,6.2,908,Caixa Econômica Federal,28.9,8.41,,moderada,moderada
+201612,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,138.5,1845,75.7,5.4,505,Caixa Econômica Federal,34.6,8.02,4,elevada,moderada
+201612,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,138.5,1841,75.7,5.4,893,Caixa Econômica Federal,34.6,8.02,,elevada,moderada
+201712,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,111.1,2000,70.6,5.0,466,Bradesco,39.5,4.21,4,elevada,moderada
+201712,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,111.1,1988,70.6,5.0,851,Bradesco,39.5,4.21,,elevada,moderada
+201812,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,50.2,949,52.0,10.5,433,Caixa Econômica Federal,19.4,7.51,3,baixa,baixa
+201812,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,50.2,877,51.5,11.4,825,Caixa Econômica Federal,19.4,7.51,,baixa,baixa
+201912,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,56.2,827,50.4,12.1,405,Caixa Econômica Federal,17.3,4.81,7,baixa,baixa
+201912,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,56.2,741,50.4,13.5,779,Caixa Econômica Federal,17.3,4.81,,baixa,baixa
+202012,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,87.8,828,48.4,12.1,409,Caixa Econômica Federal,18.0,5.71,8,baixa,baixa
+202012,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,87.8,745,48.4,13.4,789,Caixa Econômica Federal,18.0,5.71,,baixa,baixa
+202112,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,94.2,813,45.9,12.3,400,Caixa Econômica Federal,20.5,5.22,7,baixa,baixa
+202112,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,94.2,713,45.1,14.0,778,Caixa Econômica Federal,20.5,5.22,,baixa,baixa
+202212,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,131.3,1018,54.0,9.8,411,Caixa Econômica Federal,24.3,3.17,9,moderada,baixa
+202212,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,131.3,943,54.0,10.6,783,Caixa Econômica Federal,24.3,3.17,,baixa,baixa
+202312,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,84.2,613,41.5,16.3,398,Caixa Econômica Federal,11.3,3.45,7,baixa,baixa
+202312,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,84.2,405,36.4,24.7,768,Caixa Econômica Federal,11.3,3.45,,baixa,baixa
+202409,pj_micro,PJ micro (porte),concorrente,1005,cosif_antigo,86.7,596,42.9,16.8,400,Sistema Sicredi,11.5,3.89,8,baixa,baixa
+202409,pj_micro,PJ micro (porte),entidade,1005,cosif_antigo,86.7,353,32.2,28.4,765,Caixa Econômica Federal,10.7,3.89,,baixa,baixa
+202512,pj_micro,PJ micro (porte),concorrente,1009,cosif2025,190.2,1476,61.7,6.8,390,Caixa Econômica Federal,29.5,1.26,11,moderada,baixa
+202512,pj_micro,PJ micro (porte),entidade,1009,cosif2025,190.2,1424,60.4,7.0,747,Caixa Econômica Federal,29.5,1.26,,moderada,baixa
+202606,pj_micro,PJ micro (porte),concorrente,1009,cosif2025,173.9,1102,53.9,9.1,382,PagBank (PagSeguro),25.5,1.4,13,moderada,baixa
+202606,pj_micro,PJ micro (porte),entidade,1009,cosif2025,173.9,1034,52.0,9.7,739,PagBank (PagSeguro),25.5,1.4,,moderada,baixa
+201603,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,181.5,1598,72.6,6.3,511,Banco do Brasil,29.0,29.04,1,moderada,moderada
+201603,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,181.5,1592,72.6,6.3,875,Banco do Brasil,29.0,29.04,,moderada,moderada
+201612,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,157.1,1584,72.8,6.3,469,Banco do Brasil,27.0,27.04,1,moderada,moderada
+201612,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,157.1,1574,72.8,6.4,862,Banco do Brasil,27.0,27.04,,moderada,moderada
+201712,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,123.8,1335,65.7,7.5,444,Banco do Brasil,24.7,24.67,1,moderada,baixa
+201712,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,123.8,1308,65.7,7.6,839,Banco do Brasil,24.7,24.67,,moderada,baixa
+201812,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,115.6,1114,61.7,9.0,426,Banco do Brasil,21.1,21.09,1,moderada,baixa
+201812,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,115.6,1043,61.7,9.6,828,Banco do Brasil,21.1,21.09,,moderada,baixa
+201912,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,130.8,997,56.4,10.0,400,Banco do Brasil,17.6,17.63,1,baixa,baixa
+201912,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,130.8,890,56.4,11.2,786,Banco do Brasil,17.6,17.63,,baixa,baixa
+202012,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,243.1,1193,60.7,8.4,399,Bradesco,22.9,13.18,2,moderada,baixa
+202012,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,243.1,1120,60.7,8.9,786,Bradesco,22.9,13.18,,moderada,baixa
+202112,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,274.1,1090,57.7,9.2,409,Bradesco,20.1,13.57,2,moderada,baixa
+202112,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,274.1,1003,57.7,10.0,792,Bradesco,20.1,13.57,,moderada,baixa
+202212,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,324.4,1041,55.5,9.6,416,Bradesco,19.5,14.76,2,moderada,baixa
+202212,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,324.4,933,55.5,10.7,790,Bradesco,19.5,14.76,,baixa,baixa
+202312,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,349.8,973,54.2,10.3,410,Bradesco,16.1,15.89,2,baixa,baixa
+202312,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,349.8,849,54.2,11.8,783,Bradesco,16.1,15.89,,baixa,baixa
+202409,pj_pequena,PJ pequena (porte),concorrente,1005,cosif_antigo,349.2,975,53.8,10.3,404,Bradesco,16.7,15.95,2,baixa,baixa
+202409,pj_pequena,PJ pequena (porte),entidade,1005,cosif_antigo,349.2,820,53.1,12.2,773,Bradesco,16.7,15.95,,baixa,baixa
+202512,pj_pequena,PJ pequena (porte),concorrente,1009,cosif2025,407.8,1128,57.5,8.9,387,Bradesco,22.7,11.41,4,moderada,baixa
+202512,pj_pequena,PJ pequena (porte),entidade,1009,cosif2025,407.8,993,57.5,10.1,748,Bradesco,22.7,11.41,,baixa,baixa
+202606,pj_pequena,PJ pequena (porte),concorrente,1009,cosif2025,412.0,1162,57.4,8.6,384,Bradesco,24.1,10.94,3,moderada,baixa
+202606,pj_pequena,PJ pequena (porte),entidade,1009,cosif2025,412.0,1014,57.1,9.9,741,Bradesco,24.1,10.94,,moderada,baixa
+201603,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,462.3,1038,57.1,9.6,399,Banco do Brasil,20.7,20.66,1,moderada,baixa
+201603,pj_media,PJ média (porte),entidade,1005,cosif_antigo,462.3,1034,57.1,9.7,753,Banco do Brasil,20.7,20.66,,moderada,baixa
+201612,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,441.5,1025,56.3,9.8,376,Banco do Brasil,18.4,18.43,1,moderada,baixa
+201612,pj_media,PJ média (porte),entidade,1005,cosif_antigo,441.5,1020,56.3,9.8,753,Banco do Brasil,18.4,18.43,,moderada,baixa
+201712,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,321.6,979,57.7,10.2,378,Banco do Brasil,18.8,18.77,1,baixa,baixa
+201712,pj_media,PJ média (porte),entidade,1005,cosif_antigo,321.6,971,57.7,10.3,764,Banco do Brasil,18.8,18.77,,baixa,baixa
+201812,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,310.7,919,55.9,10.9,361,Banco do Brasil,17.9,17.92,1,baixa,baixa
+201812,pj_media,PJ média (porte),entidade,1005,cosif_antigo,310.7,908,55.9,11.0,746,Banco do Brasil,17.9,17.92,,baixa,baixa
+201912,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,305.7,879,54.0,11.4,360,Itaú Unibanco,16.8,15.38,2,baixa,baixa
+201912,pj_media,PJ média (porte),entidade,1005,cosif_antigo,305.7,860,54.0,11.6,731,Itaú Unibanco,16.8,15.38,,baixa,baixa
+202012,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,418.7,885,54.3,11.3,361,Itaú Unibanco,17.1,13.16,3,baixa,baixa
+202012,pj_media,PJ média (porte),entidade,1005,cosif_antigo,418.7,868,54.3,11.5,737,Itaú Unibanco,17.1,13.16,,baixa,baixa
+202112,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,493.0,879,53.3,11.4,381,Itaú Unibanco,17.1,11.98,3,baixa,baixa
+202112,pj_media,PJ média (porte),entidade,1005,cosif_antigo,493.0,854,53.3,11.7,758,Itaú Unibanco,17.1,11.98,,baixa,baixa
+202212,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,545.5,804,50.4,12.4,388,Itaú Unibanco,16.3,11.94,3,baixa,baixa
+202212,pj_media,PJ média (porte),entidade,1005,cosif_antigo,545.5,769,50.4,13.0,760,Itaú Unibanco,16.3,11.94,,baixa,baixa
+202312,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,575.2,755,49.0,13.3,383,Itaú Unibanco,14.1,12.66,3,baixa,baixa
+202312,pj_media,PJ média (porte),entidade,1005,cosif_antigo,575.2,711,49.0,14.1,759,Itaú Unibanco,14.1,12.66,,baixa,baixa
+202409,pj_media,PJ média (porte),concorrente,1005,cosif_antigo,605.6,754,48.1,13.3,376,Bradesco,14.0,13.5,3,baixa,baixa
+202409,pj_media,PJ média (porte),entidade,1005,cosif_antigo,605.6,699,48.1,14.3,750,Bradesco,14.0,13.5,,baixa,baixa
+202512,pj_media,PJ média (porte),concorrente,1009,cosif2025,726.2,826,52.3,12.1,373,Bradesco,14.6,12.28,3,baixa,baixa
+202512,pj_media,PJ média (porte),entidade,1009,cosif2025,726.2,762,52.3,13.1,742,Bradesco,14.6,12.28,,baixa,baixa
+202606,pj_media,PJ média (porte),concorrente,1009,cosif2025,709.6,829,51.5,12.1,368,Bradesco,15.8,11.93,3,baixa,baixa
+202606,pj_media,PJ média (porte),entidade,1009,cosif2025,709.6,758,51.5,13.2,727,Bradesco,15.8,11.93,,baixa,baixa
+201603,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,851.4,1977,73.2,5.1,181,BNDES,36.9,20.87,2,elevada,moderada
+201603,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,851.4,1976,73.2,5.1,333,BNDES,36.9,20.87,,elevada,moderada
+201612,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,813.8,1779,70.3,5.6,166,BNDES,33.9,19.78,2,moderada,moderada
+201612,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,813.8,1779,70.3,5.6,319,BNDES,33.9,19.78,,moderada,moderada
+201712,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,866.5,1784,73.3,5.6,165,BNDES,32.8,19.94,2,moderada,moderada
+201712,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,866.5,1784,73.3,5.6,288,BNDES,32.8,19.94,,moderada,moderada
+201812,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,847.1,1759,72.9,5.7,176,BNDES,32.7,20.08,2,moderada,moderada
+201812,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,847.1,1759,72.9,5.7,335,BNDES,32.7,20.08,,moderada,moderada
+201912,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,787.4,1610,69.2,6.2,179,BNDES,31.9,17.9,2,moderada,moderada
+201912,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,787.4,1610,69.2,6.2,324,BNDES,31.9,17.9,,moderada,moderada
+202012,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,960.5,1348,63.1,7.4,196,BNDES,27.2,16.01,2,moderada,baixa
+202012,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,960.5,1348,63.1,7.4,369,BNDES,27.2,16.01,,moderada,baixa
+202112,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,1015.0,1240,60.9,8.1,217,BNDES,25.2,15.53,2,moderada,baixa
+202112,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,1015.0,1240,60.9,8.1,413,BNDES,25.2,15.53,,moderada,baixa
+202212,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,1051.2,1232,60.8,8.1,239,BNDES,25.2,15.62,2,moderada,baixa
+202212,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,1051.2,1231,60.8,8.1,453,BNDES,25.2,15.62,,moderada,baixa
+202312,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,1047.4,1239,61.2,8.1,247,BNDES,25.3,16.91,2,moderada,baixa
+202312,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,1047.4,1238,61.2,8.1,479,BNDES,25.3,16.91,,moderada,baixa
+202409,pj_grande,PJ grande (porte),concorrente,1005,cosif_antigo,1110.6,1213,60.6,8.2,257,BNDES,24.7,17.13,2,moderada,baixa
+202409,pj_grande,PJ grande (porte),entidade,1005,cosif_antigo,1110.6,1212,60.6,8.3,489,BNDES,24.7,17.13,,moderada,baixa
+202512,pj_grande,PJ grande (porte),concorrente,1009,cosif2025,1210.7,1275,62.1,7.8,267,BNDES,26.8,16.88,2,moderada,baixa
+202512,pj_grande,PJ grande (porte),entidade,1009,cosif2025,1210.7,1273,62.1,7.9,532,BNDES,26.8,16.88,,moderada,baixa
+202606,pj_grande,PJ grande (porte),concorrente,1009,cosif2025,1294.4,1268,63.7,7.9,269,BNDES,25.7,16.98,2,moderada,baixa
+202606,pj_grande,PJ grande (porte),entidade,1009,cosif2025,1294.4,1266,63.7,7.9,503,BNDES,25.7,16.98,,moderada,baixa
+201603,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,267.8,3142,74.5,3.2,255,Banco do Brasil,54.4,54.44,1,elevada,elevada
+201603,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,267.8,3091,69.6,3.2,499,Banco do Brasil,54.4,54.44,,elevada,elevada
+201612,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,280.2,3194,75.1,3.1,246,Banco do Brasil,54.9,54.88,1,elevada,elevada
+201612,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,280.2,3135,69.9,3.2,494,Banco do Brasil,54.9,54.88,,elevada,elevada
+201712,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,278.5,3379,74.4,3.0,217,Banco do Brasil,56.8,56.79,1,elevada,elevada
+201712,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,278.5,3333,70.9,3.0,470,Banco do Brasil,56.8,56.79,,elevada,elevada
+201812,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,293.2,3311,73.8,3.0,198,Banco do Brasil,56.1,56.13,1,elevada,elevada
+201812,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,293.2,3251,69.2,3.1,451,Banco do Brasil,56.1,56.13,,elevada,elevada
+201912,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,296.0,3391,76.0,2.9,186,Banco do Brasil,56.7,56.68,1,elevada,elevada
+201912,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,296.0,3309,70.4,3.0,443,Banco do Brasil,56.7,56.68,,elevada,elevada
+202012,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,330.5,3150,74.4,3.2,177,Banco do Brasil,54.4,54.36,1,elevada,elevada
+202012,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,330.5,3042,67.1,3.3,435,Banco do Brasil,54.4,54.36,,elevada,elevada
+202112,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,426.8,3078,75.2,3.2,171,Banco do Brasil,53.5,53.5,1,elevada,elevada
+202112,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,426.8,2940,65.1,3.4,436,Banco do Brasil,53.5,53.5,,elevada,elevada
+202212,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,539.8,2924,74.6,3.4,176,Banco do Brasil,51.9,51.92,1,elevada,elevada
+202212,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,539.8,2800,66.0,3.6,440,Banco do Brasil,51.9,51.92,,elevada,elevada
+202312,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,634.1,2702,73.2,3.7,165,Banco do Brasil,49.6,49.6,1,elevada,elevada
+202312,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,634.1,2584,64.5,3.9,441,Banco do Brasil,49.6,49.6,,elevada,elevada
+202409,credito_rural,Rural PF + PJ,concorrente,1005,cosif_antigo,687.9,2705,73.0,3.7,166,Banco do Brasil,49.6,49.63,1,elevada,elevada
+202409,credito_rural,Rural PF + PJ,entidade,1005,cosif_antigo,687.9,2588,64.3,3.9,444,Banco do Brasil,49.6,49.63,,elevada,elevada
+202512,credito_rural,Rural PF + PJ,concorrente,1009,cosif2025,765.3,2551,72.1,3.9,164,Banco do Brasil,47.7,47.75,1,elevada,elevada
+202512,credito_rural,Rural PF + PJ,entidade,1009,cosif2025,765.3,2411,63.8,4.1,440,Banco do Brasil,47.7,47.75,,elevada,moderada
+202606,credito_rural,Rural PF + PJ,concorrente,1009,cosif2025,777.2,2635,72.7,3.8,159,Banco do Brasil,48.7,48.7,1,elevada,elevada
+202606,credito_rural,Rural PF + PJ,entidade,1009,cosif2025,777.2,2501,64.8,4.0,435,Banco do Brasil,48.7,48.7,,elevada,elevada
+201603,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,559.7,4980,91.2,2.0,33,Caixa Econômica Federal,69.1,7.88,2,elevada,elevada
+201603,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,559.7,4980,91.2,2.0,33,Caixa Econômica Federal,69.1,7.88,,elevada,elevada
+201612,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,579.3,5055,92.1,2.0,31,Caixa Econômica Federal,69.6,8.2,2,elevada,elevada
+201612,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,579.3,5055,92.1,2.0,31,Caixa Econômica Federal,69.6,8.2,,elevada,elevada
+201712,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,602.7,5259,93.1,1.9,35,Caixa Econômica Federal,71.2,8.07,2,elevada,elevada
+201712,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,602.7,5259,93.1,1.9,35,Caixa Econômica Federal,71.2,8.07,,elevada,elevada
+201812,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,624.8,5206,92.9,1.9,54,Caixa Econômica Federal,70.8,8.14,2,elevada,elevada
+201812,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,624.8,5206,92.9,1.9,54,Caixa Econômica Federal,70.8,8.14,,elevada,elevada
+201912,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,657.1,5151,92.5,1.9,58,Caixa Econômica Federal,70.4,7.7,2,elevada,elevada
+201912,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,657.1,5151,92.5,1.9,58,Caixa Econômica Federal,70.4,7.7,,elevada,elevada
+202012,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,732.1,5024,92.0,2.0,71,Caixa Econômica Federal,69.4,6.6,4,elevada,elevada
+202012,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,732.1,5024,92.0,2.0,72,Caixa Econômica Federal,69.4,6.6,,elevada,elevada
+202112,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,842.1,4615,92.0,2.2,70,Caixa Econômica Federal,65.9,5.53,5,elevada,elevada
+202112,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,842.1,4615,92.0,2.2,78,Caixa Econômica Federal,65.9,5.53,,elevada,elevada
+202212,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,960.2,4613,92.2,2.2,71,Caixa Econômica Federal,65.9,4.88,5,elevada,elevada
+202212,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,960.2,4613,92.2,2.2,103,Caixa Econômica Federal,65.9,4.88,,elevada,elevada
+202312,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,1082.1,4748,92.2,2.1,67,Caixa Econômica Federal,67.1,4.55,5,elevada,elevada
+202312,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,1082.1,4748,92.2,2.1,108,Caixa Econômica Federal,67.1,4.55,,elevada,elevada
+202409,credito_imobiliario,Imobiliário PF + PJ,concorrente,1005,cosif_antigo,1183.8,4844,92.4,2.1,70,Caixa Econômica Federal,67.9,4.3,5,elevada,elevada
+202409,credito_imobiliario,Imobiliário PF + PJ,entidade,1005,cosif_antigo,1183.8,4844,92.4,2.1,113,Caixa Econômica Federal,67.9,4.3,,elevada,elevada
+202512,credito_imobiliario,Imobiliário PF + PJ,concorrente,1009,cosif2025,1379.4,4874,92.7,2.1,77,Caixa Econômica Federal,68.1,3.71,5,elevada,elevada
+202512,credito_imobiliario,Imobiliário PF + PJ,entidade,1009,cosif2025,1379.4,4874,92.7,2.1,124,Caixa Econômica Federal,68.1,3.71,,elevada,elevada
+202606,credito_imobiliario,Imobiliário PF + PJ,concorrente,1009,cosif2025,1466.5,4950,93.1,2.0,77,Caixa Econômica Federal,68.7,3.42,5,elevada,elevada
+202606,credito_imobiliario,Imobiliário PF + PJ,entidade,1009,cosif2025,1466.5,4950,93.1,2.0,125,Caixa Econômica Federal,68.7,3.42,,elevada,elevada
+201603,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,3612.2,1203,62.9,8.3,907,Banco do Brasil,19.0,19.01,1,moderada,baixa
+201603,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,3612.2,1201,62.9,8.3,1305,Banco do Brasil,19.0,19.01,,moderada,baixa
+201612,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,3512.9,1267,65.7,7.9,839,Caixa Econômica Federal,19.8,18.1,2,moderada,baixa
+201612,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,3512.9,1265,65.7,7.9,1265,Caixa Econômica Federal,19.8,18.1,,moderada,baixa
+201712,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,3451.5,1258,65.4,7.9,793,Caixa Econômica Federal,20.1,17.98,2,moderada,baixa
+201712,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,3451.5,1255,65.4,8.0,1220,Caixa Econômica Federal,20.1,17.98,,moderada,baixa
+201812,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,3638.0,1199,64.1,8.3,751,Caixa Econômica Federal,18.8,17.32,2,moderada,baixa
+201812,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,3638.0,1195,64.1,8.4,1179,Caixa Econômica Federal,18.8,17.32,,moderada,baixa
+201912,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,3910.8,1158,63.4,8.6,722,Caixa Econômica Federal,17.5,15.69,3,moderada,baixa
+201912,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,3910.8,1152,63.4,8.7,1129,Caixa Econômica Federal,17.5,15.69,,moderada,baixa
+202012,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,4519.3,1118,62.0,8.9,703,Itaú Unibanco,17.7,14.85,3,moderada,baixa
+202012,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,4519.3,1110,62.0,9.0,1116,Itaú Unibanco,17.7,14.85,,moderada,baixa
+202112,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,5222.7,1072,61.0,9.3,707,Itaú Unibanco,17.2,14.71,3,moderada,baixa
+202112,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,5222.7,1062,61.0,9.4,1115,Itaú Unibanco,17.2,14.71,,moderada,baixa
+202212,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,5898.7,1040,60.1,9.6,717,Caixa Econômica Federal,17.1,14.81,3,moderada,baixa
+202212,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,5898.7,1028,60.1,9.7,1114,Caixa Econômica Federal,17.1,14.81,,moderada,baixa
+202312,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,6282.9,1014,59.0,9.9,724,Caixa Econômica Federal,17.7,15.26,3,moderada,baixa
+202312,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,6282.9,999,59.0,10.0,1115,Caixa Econômica Federal,17.7,15.26,,baixa,baixa
+202409,credito_pf_pj,Crédito PF + PJ,concorrente,1005,cosif_antigo,6840.9,1003,58.9,10.0,727,Caixa Econômica Federal,17.6,15.08,3,moderada,baixa
+202409,credito_pf_pj,Crédito PF + PJ,entidade,1005,cosif_antigo,6840.9,987,58.9,10.1,1115,Caixa Econômica Federal,17.6,15.08,,baixa,baixa
+202512,credito_pf_pj,Crédito PF + PJ,concorrente,1009,cosif2025,7898.3,949,57.2,10.5,715,Caixa Econômica Federal,17.5,13.88,3,baixa,baixa
+202512,credito_pf_pj,Crédito PF + PJ,entidade,1009,cosif2025,7898.3,933,57.2,10.7,1092,Caixa Econômica Federal,17.5,13.88,,baixa,baixa
+202606,credito_pf_pj,Crédito PF + PJ,concorrente,1009,cosif2025,8093.7,949,57.2,10.5,701,Caixa Econômica Federal,18.0,13.78,3,baixa,baixa
+202606,credito_pf_pj,Crédito PF + PJ,entidade,1009,cosif2025,8093.7,933,57.2,10.7,1071,Caixa Econômica Federal,18.0,13.78,,baixa,baixa
+201603,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,1706.4,1273,64.8,7.9,804,Caixa Econômica Federal,19.8,19.06,2,moderada,baixa
+201603,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,1706.4,1271,64.8,7.9,1181,Caixa Econômica Federal,19.8,19.06,,moderada,baixa
+201612,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,1659.1,1288,63.3,7.8,763,Caixa Econômica Federal,20.7,17.99,2,moderada,baixa
+201612,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,1659.1,1286,63.3,7.8,1174,Caixa Econômica Federal,20.7,17.99,,moderada,baixa
+201712,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,1614.3,1267,62.7,7.9,728,Caixa Econômica Federal,21.0,17.64,2,moderada,baixa
+201712,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,1614.3,1266,62.7,7.9,1138,Caixa Econômica Federal,21.0,17.64,,moderada,baixa
+201812,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,1671.3,1202,61.3,8.3,703,Caixa Econômica Federal,19.8,16.6,2,moderada,baixa
+201812,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,1671.3,1200,61.3,8.3,1111,Caixa Econômica Federal,19.8,16.6,,moderada,baixa
+201912,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,1735.8,1132,60.0,8.8,680,Caixa Econômica Federal,18.6,14.59,2,moderada,baixa
+201912,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,1735.8,1129,60.0,8.9,1074,Caixa Econômica Federal,18.6,14.59,,moderada,baixa
+202012,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,2016.8,1084,58.7,9.2,656,Caixa Econômica Federal,18.0,13.8,3,moderada,baixa
+202012,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,2016.8,1080,58.7,9.3,1057,Caixa Econômica Federal,18.0,13.8,,moderada,baixa
+202112,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,2295.4,1044,58.2,9.6,664,Caixa Econômica Federal,17.3,12.95,3,moderada,baixa
+202112,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,2295.4,1037,58.2,9.6,1058,Caixa Econômica Federal,17.3,12.95,,moderada,baixa
+202212,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,2556.5,1031,58.4,9.7,674,Caixa Econômica Federal,17.9,12.87,3,moderada,baixa
+202212,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,2556.5,1023,58.4,9.8,1058,Caixa Econômica Federal,17.9,12.87,,moderada,baixa
+202312,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,2707.2,1013,57.6,9.9,676,Caixa Econômica Federal,18.6,12.96,3,moderada,baixa
+202312,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,2707.2,1004,57.6,10.0,1056,Caixa Econômica Federal,18.6,12.96,,moderada,baixa
+202409,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1005,cosif_antigo,2867.8,997,57.3,10.0,685,Caixa Econômica Federal,19.0,12.76,3,baixa,baixa
+202409,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1005,cosif_antigo,2867.8,986,57.3,10.1,1064,Caixa Econômica Federal,19.0,12.76,,baixa,baixa
+202512,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1009,cosif2025,3328.1,950,55.9,10.5,670,Caixa Econômica Federal,18.8,11.78,3,baixa,baixa
+202512,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1009,cosif2025,3328.1,940,55.9,10.6,1038,Caixa Econômica Federal,18.8,11.78,,baixa,baixa
+202606,reg_sudeste,"Crédito, tomador no Sudeste",concorrente,1009,cosif2025,3434.5,960,56.2,10.4,661,Caixa Econômica Federal,19.1,11.52,3,baixa,baixa
+202606,reg_sudeste,"Crédito, tomador no Sudeste",entidade,1009,cosif2025,3434.5,950,56.2,10.5,1025,Caixa Econômica Federal,19.1,11.52,,baixa,baixa
+201603,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,557.5,1199,59.3,8.3,682,Caixa Econômica Federal,22.5,21.24,2,moderada,baixa
+201603,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,557.5,1174,59.3,8.5,982,Caixa Econômica Federal,22.5,21.24,,moderada,baixa
+201612,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,563.9,1214,60.6,8.2,630,Caixa Econômica Federal,22.9,20.24,2,moderada,baixa
+201612,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,563.9,1185,60.6,8.4,953,Caixa Econômica Federal,22.9,20.24,,moderada,baixa
+201712,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,560.3,1201,59.6,8.3,601,Caixa Econômica Federal,23.3,19.62,2,moderada,baixa
+201712,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,560.3,1172,59.6,8.5,911,Caixa Econômica Federal,23.3,19.62,,moderada,baixa
+201812,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,606.1,1109,57.3,9.0,579,Caixa Econômica Federal,21.6,18.7,2,moderada,baixa
+201812,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,606.1,1071,57.3,9.3,912,Caixa Econômica Federal,21.6,18.7,,moderada,baixa
+201912,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,661.0,1029,55.4,9.7,564,Caixa Econômica Federal,20.3,16.93,2,moderada,baixa
+201912,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,661.0,978,55.4,10.2,894,Caixa Econômica Federal,20.3,16.93,,baixa,baixa
+202012,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,782.6,977,54.1,10.2,565,Caixa Econômica Federal,19.8,15.54,2,baixa,baixa
+202012,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,782.6,910,54.1,11.0,911,Caixa Econômica Federal,19.8,15.54,,baixa,baixa
+202112,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,927.1,937,53.3,10.7,564,Caixa Econômica Federal,18.7,15.49,2,baixa,baixa
+202112,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,927.1,854,53.3,11.7,917,Caixa Econômica Federal,18.7,15.49,,baixa,baixa
+202212,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,1077.8,919,52.4,10.9,590,Caixa Econômica Federal,18.8,15.35,2,baixa,baixa
+202212,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,1077.8,830,52.3,12.0,954,Caixa Econômica Federal,18.8,15.35,,baixa,baixa
+202312,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,1158.8,914,52.4,10.9,593,Caixa Econômica Federal,19.2,15.11,2,baixa,baixa
+202312,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,1158.8,813,51.2,12.3,950,Caixa Econômica Federal,19.2,15.11,,baixa,baixa
+202409,reg_sul,"Crédito, tomador no Sul",concorrente,1005,cosif_antigo,1255.9,913,52.6,11.0,601,Caixa Econômica Federal,19.3,14.78,2,baixa,baixa
+202409,reg_sul,"Crédito, tomador no Sul",entidade,1005,cosif_antigo,1255.9,803,50.9,12.5,961,Caixa Econômica Federal,19.3,14.78,,baixa,baixa
+202512,reg_sul,"Crédito, tomador no Sul",concorrente,1009,cosif2025,1452.6,864,50.8,11.6,569,Caixa Econômica Federal,18.9,13.49,2,baixa,baixa
+202512,reg_sul,"Crédito, tomador no Sul",entidade,1009,cosif2025,1452.6,749,49.0,13.3,918,Caixa Econômica Federal,18.9,13.49,,baixa,baixa
+202606,reg_sul,"Crédito, tomador no Sul",concorrente,1009,cosif2025,1486.0,873,51.1,11.5,569,Caixa Econômica Federal,19.4,13.34,2,baixa,baixa
+202606,reg_sul,"Crédito, tomador no Sul",entidade,1009,cosif2025,1486.0,760,49.1,13.2,916,Caixa Econômica Federal,19.4,13.34,,baixa,baixa
+201603,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,400.4,1448,67.6,6.9,576,Caixa Econômica Federal,26.3,19.27,2,moderada,baixa
+201603,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,400.4,1448,67.6,6.9,871,Caixa Econômica Federal,26.3,19.27,,moderada,baixa
+201612,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,403.9,1478,68.5,6.8,569,Caixa Econômica Federal,26.8,18.7,2,moderada,baixa
+201612,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,403.9,1477,68.5,6.8,904,Caixa Econômica Federal,26.8,18.7,,moderada,baixa
+201712,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,408.6,1471,68.1,6.8,552,Caixa Econômica Federal,26.8,18.8,2,moderada,baixa
+201712,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,408.6,1470,68.1,6.8,890,Caixa Econômica Federal,26.8,18.8,,moderada,baixa
+201812,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,427.4,1410,66.5,7.1,535,Caixa Econômica Federal,25.8,18.29,2,moderada,baixa
+201812,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,427.4,1409,66.5,7.1,898,Caixa Econômica Federal,25.8,18.29,,moderada,baixa
+201912,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,466.9,1333,65.6,7.5,525,Caixa Econômica Federal,24.2,17.77,2,moderada,baixa
+201912,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,466.9,1332,65.6,7.5,882,Caixa Econômica Federal,24.2,17.77,,moderada,baixa
+202012,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,522.4,1331,66.1,7.5,531,Caixa Econômica Federal,24.6,17.51,2,moderada,baixa
+202012,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,522.4,1330,66.1,7.5,898,Caixa Econômica Federal,24.6,17.51,,moderada,baixa
+202112,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,623.4,1290,66.1,7.8,545,Caixa Econômica Federal,23.3,17.9,2,moderada,baixa
+202112,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,623.4,1288,66.1,7.8,913,Caixa Econômica Federal,23.3,17.9,,moderada,baixa
+202212,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,733.1,1248,65.0,8.0,566,Caixa Econômica Federal,23.2,17.51,2,moderada,baixa
+202212,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,733.1,1246,65.0,8.0,930,Caixa Econômica Federal,23.2,17.51,,moderada,baixa
+202312,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,799.9,1240,63.9,8.1,577,Caixa Econômica Federal,23.7,18.33,2,moderada,baixa
+202312,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,799.9,1236,63.9,8.1,939,Caixa Econômica Federal,23.7,18.33,,moderada,baixa
+202409,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1005,cosif_antigo,872.2,1212,63.0,8.3,581,Caixa Econômica Federal,23.3,18.56,2,moderada,baixa
+202409,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1005,cosif_antigo,872.2,1206,63.0,8.3,942,Caixa Econômica Federal,23.3,18.56,,moderada,baixa
+202512,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1009,cosif2025,1039.8,1128,60.6,8.9,566,Caixa Econômica Federal,22.9,16.69,2,moderada,baixa
+202512,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1009,cosif2025,1039.8,1126,60.6,8.9,916,Caixa Econômica Federal,22.9,16.69,,moderada,baixa
+202606,reg_nordeste,"Crédito, tomador no Nordeste",concorrente,1009,cosif2025,1084.6,1147,61.0,8.7,565,Caixa Econômica Federal,23.4,16.79,2,moderada,baixa
+202606,reg_nordeste,"Crédito, tomador no Nordeste",entidade,1009,cosif2025,1084.6,1146,61.0,8.7,917,Caixa Econômica Federal,23.4,16.79,,moderada,baixa
+201603,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,117.3,1483,69.7,6.7,457,Banco do Brasil,25.2,25.16,1,moderada,baixa
+201603,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,117.3,1480,69.7,6.8,703,Banco do Brasil,25.2,25.16,,moderada,baixa
+201612,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,117.5,1512,70.6,6.6,429,Banco do Brasil,24.6,24.63,1,moderada,moderada
+201612,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,117.5,1509,70.6,6.6,699,Banco do Brasil,24.6,24.63,,moderada,moderada
+201712,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,120.0,1488,69.9,6.7,431,Banco do Brasil,24.4,24.37,1,moderada,baixa
+201712,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,120.0,1485,69.9,6.7,722,Banco do Brasil,24.4,24.37,,moderada,baixa
+201812,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,129.3,1418,68.0,7.1,412,Banco do Brasil,24.9,24.88,1,moderada,baixa
+201812,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,129.3,1413,68.0,7.1,719,Banco do Brasil,24.9,24.88,,moderada,baixa
+201912,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,146.5,1327,65.8,7.5,421,Banco do Brasil,24.2,24.18,1,moderada,baixa
+201912,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,146.5,1320,65.8,7.6,719,Banco do Brasil,24.2,24.18,,moderada,baixa
+202012,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,173.1,1278,64.5,7.8,423,Banco do Brasil,23.8,23.78,1,moderada,baixa
+202012,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,173.1,1269,64.5,7.9,734,Banco do Brasil,23.8,23.78,,moderada,baixa
+202112,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,220.8,1168,61.4,8.6,452,Banco do Brasil,23.0,22.97,1,moderada,baixa
+202112,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,220.8,1155,61.4,8.7,784,Banco do Brasil,23.0,22.97,,moderada,baixa
+202212,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,270.2,1105,59.6,9.0,487,Banco do Brasil,22.5,22.5,1,moderada,baixa
+202212,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,270.2,1092,59.6,9.2,816,Banco do Brasil,22.5,22.5,,moderada,baixa
+202312,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,308.3,1089,57.7,9.2,489,Banco do Brasil,23.2,23.17,1,moderada,baixa
+202312,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,308.3,1074,57.7,9.3,820,Banco do Brasil,23.2,23.17,,moderada,baixa
+202409,reg_norte,"Crédito, tomador no Norte",concorrente,1005,cosif_antigo,343.6,1056,56.1,9.5,494,Banco do Brasil,23.1,23.08,1,moderada,baixa
+202409,reg_norte,"Crédito, tomador no Norte",entidade,1005,cosif_antigo,343.6,1041,56.1,9.6,826,Banco do Brasil,23.1,23.08,,moderada,baixa
+202512,reg_norte,"Crédito, tomador no Norte",concorrente,1009,cosif2025,408.0,977,54.2,10.2,483,Banco do Brasil,21.2,21.16,1,baixa,baixa
+202512,reg_norte,"Crédito, tomador no Norte",entidade,1009,cosif2025,408.0,966,54.2,10.4,800,Banco do Brasil,21.2,21.16,,baixa,baixa
+202606,reg_norte,"Crédito, tomador no Norte",concorrente,1009,cosif2025,421.4,992,54.9,10.1,482,Banco do Brasil,21.4,21.35,1,baixa,baixa
+202606,reg_norte,"Crédito, tomador no Norte",entidade,1009,cosif2025,421.4,981,54.9,10.2,804,Banco do Brasil,21.4,21.35,,baixa,baixa
+201603,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,330.5,1428,66.5,7.0,592,Banco do Brasil,24.4,24.37,1,moderada,baixa
+201603,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,330.5,1421,66.5,7.0,903,Banco do Brasil,24.4,24.37,,moderada,baixa
+201612,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,334.1,1469,68.3,6.8,566,Caixa Econômica Federal,24.9,24.12,2,moderada,baixa
+201612,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,334.1,1462,68.3,6.8,901,Caixa Econômica Federal,24.9,24.12,,moderada,baixa
+201712,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,342.1,1472,67.2,6.8,541,Caixa Econômica Federal,25.3,24.15,2,moderada,baixa
+201712,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,342.1,1464,67.2,6.8,884,Caixa Econômica Federal,25.3,24.15,,moderada,baixa
+201812,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,372.3,1371,64.4,7.3,522,Banco do Brasil,24.4,24.39,1,moderada,baixa
+201812,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,372.3,1358,64.4,7.4,883,Banco do Brasil,24.4,24.39,,moderada,baixa
+201912,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,405.0,1303,62.4,7.7,513,Banco do Brasil,24.0,23.95,1,moderada,baixa
+201912,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,405.0,1286,62.4,7.8,867,Banco do Brasil,24.0,23.95,,moderada,baixa
+202012,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,479.5,1190,59.8,8.4,501,Banco do Brasil,22.6,22.56,1,moderada,baixa
+202012,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,479.5,1168,59.8,8.6,869,Banco do Brasil,22.6,22.56,,moderada,baixa
+202112,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,563.5,1167,59.0,8.6,517,Banco do Brasil,23.2,23.17,1,moderada,baixa
+202112,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,563.5,1136,59.0,8.8,884,Banco do Brasil,23.2,23.17,,moderada,baixa
+202212,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,662.1,1151,58.5,8.7,547,Banco do Brasil,22.9,22.92,1,moderada,baixa
+202212,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,662.1,1122,58.5,8.9,909,Banco do Brasil,22.9,22.92,,moderada,baixa
+202312,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,744.9,1148,57.8,8.7,538,Banco do Brasil,23.2,23.23,1,moderada,baixa
+202312,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,744.9,1117,57.8,9.0,902,Banco do Brasil,23.2,23.23,,moderada,baixa
+202409,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1005,cosif_antigo,799.7,1154,57.8,8.7,539,Banco do Brasil,23.5,23.49,1,moderada,baixa
+202409,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1005,cosif_antigo,799.7,1122,57.8,8.9,900,Banco do Brasil,23.5,23.49,,moderada,baixa
+202512,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1009,cosif2025,909.4,1146,58.6,8.7,527,Banco do Brasil,22.8,22.84,1,moderada,baixa
+202512,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1009,cosif2025,909.4,1116,58.6,9.0,883,Banco do Brasil,22.8,22.84,,moderada,baixa
+202606,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",concorrente,1009,cosif2025,931.6,1160,59.3,8.6,519,Banco do Brasil,22.7,22.74,1,moderada,baixa
+202606,reg_centro_oeste,"Crédito, tomador no Centro-Oeste",entidade,1009,cosif2025,931.6,1131,59.3,8.8,870,Banco do Brasil,22.7,22.74,,moderada,baixa
+201603,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,310.9,1705,75.1,5.9,515,Itaú Unibanco,28.4,19.92,2,moderada,moderada
+201603,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,310.9,1699,75.1,5.9,894,Itaú Unibanco,28.4,19.92,,moderada,moderada
+201612,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,282.0,2158,82.8,4.6,455,Itaú Unibanco,35.4,24.35,2,elevada,moderada
+201612,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,282.0,2150,82.8,4.7,862,Itaú Unibanco,35.4,24.35,,elevada,moderada
+201712,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,299.6,2122,81.2,4.7,418,Itaú Unibanco,36.0,23.15,2,elevada,moderada
+201712,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,299.6,2110,81.2,4.7,825,Itaú Unibanco,36.0,23.15,,elevada,moderada
+201812,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,280.3,1720,75.5,5.8,385,Itaú Unibanco,27.9,24.01,2,moderada,moderada
+201812,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,280.3,1694,75.5,5.9,792,Itaú Unibanco,27.9,24.01,,moderada,moderada
+201912,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,328.3,1640,72.9,6.1,363,Itaú Unibanco,28.2,21.49,2,moderada,moderada
+201912,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,328.3,1612,72.9,6.2,753,Itaú Unibanco,28.2,21.49,,moderada,moderada
+202012,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,508.0,1575,70.4,6.3,345,Itaú Unibanco,29.0,19.28,2,moderada,moderada
+202012,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,508.0,1532,70.4,6.5,739,Itaú Unibanco,29.0,19.28,,moderada,moderada
+202112,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,570.2,1605,69.1,6.2,330,Itaú Unibanco,30.0,20.77,2,moderada,moderada
+202112,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,570.2,1562,69.1,6.4,718,Itaú Unibanco,30.0,20.77,,moderada,moderada
+202212,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,516.1,1371,65.1,7.3,335,Itaú Unibanco,24.9,20.88,2,moderada,baixa
+202212,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,516.1,1307,65.1,7.7,715,Itaú Unibanco,24.9,20.88,,moderada,baixa
+202312,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,514.9,1362,64.5,7.3,314,Itaú Unibanco,24.0,21.12,2,moderada,baixa
+202312,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,514.9,1279,64.5,7.8,689,Itaú Unibanco,24.0,21.12,,moderada,baixa
+202409,depositos_vista,Depósitos à vista,concorrente,1005,cosif_antigo,543.0,1437,64.3,7.0,308,Itaú Unibanco,26.9,19.89,2,moderada,baixa
+202409,depositos_vista,Depósitos à vista,entidade,1005,cosif_antigo,543.0,1333,64.3,7.5,678,Itaú Unibanco,26.9,19.89,,moderada,baixa
+202512,depositos_vista,Depósitos à vista,concorrente,1005,cosif2025,531.4,1386,62.9,7.2,297,Itaú Unibanco,27.4,17.26,2,moderada,baixa
+202512,depositos_vista,Depósitos à vista,entidade,1005,cosif2025,531.4,1264,62.2,7.9,661,Itaú Unibanco,27.4,17.26,,moderada,baixa
+202606,depositos_vista,Depósitos à vista,concorrente,1005,cosif2025,518.0,1332,62.7,7.5,283,Itaú Unibanco,26.4,16.63,2,moderada,baixa
+202606,depositos_vista,Depósitos à vista,entidade,1005,cosif2025,518.0,1208,61.5,8.3,641,Itaú Unibanco,26.4,16.63,,moderada,baixa
+201603,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,653.0,2359,89.7,4.2,19,Caixa Econômica Federal,36.5,23.27,2,elevada,moderada
+201603,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,653.0,2359,89.7,4.2,19,Caixa Econômica Federal,36.5,23.27,,elevada,moderada
+201612,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,674.8,2402,90.3,4.2,18,Caixa Econômica Federal,37.4,22.49,2,elevada,moderada
+201612,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,674.8,2402,90.3,4.2,18,Caixa Econômica Federal,37.4,22.49,,elevada,moderada
+201712,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,734.4,2397,90.0,4.2,17,Caixa Econômica Federal,37.7,21.83,2,elevada,moderada
+201712,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,734.4,2397,90.0,4.2,17,Caixa Econômica Federal,37.7,21.83,,elevada,moderada
+201812,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,807.6,2348,89.3,4.3,18,Caixa Econômica Federal,36.9,21.65,2,elevada,moderada
+201812,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,807.6,2348,89.3,4.3,18,Caixa Econômica Federal,36.9,21.65,,elevada,moderada
+201912,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,855.7,2358,88.9,4.2,18,Caixa Econômica Federal,37.5,21.14,2,elevada,moderada
+201912,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,855.7,2358,88.9,4.2,18,Caixa Econômica Federal,37.5,21.14,,elevada,moderada
+202012,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,1051.7,2312,88.0,4.3,55,Caixa Econômica Federal,37.1,20.86,2,elevada,moderada
+202012,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,1051.7,2312,88.0,4.3,56,Caixa Econômica Federal,37.1,20.86,,elevada,moderada
+202112,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,1053.8,2207,87.4,4.5,92,Caixa Econômica Federal,34.6,21.39,2,elevada,moderada
+202112,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,1053.8,2207,87.4,4.5,108,Caixa Econômica Federal,34.6,21.39,,elevada,moderada
+202212,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,1017.5,2229,87.3,4.5,88,Caixa Econômica Federal,35.5,20.98,2,elevada,moderada
+202212,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,1017.5,2229,87.3,4.5,111,Caixa Econômica Federal,35.5,20.98,,elevada,moderada
+202312,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,1000.6,2232,87.1,4.5,85,Caixa Econômica Federal,35.8,20.68,2,elevada,moderada
+202312,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,1000.6,2231,87.1,4.5,108,Caixa Econômica Federal,35.8,20.68,,elevada,moderada
+202409,depositos_poupanca,Poupança,concorrente,1005,cosif_antigo,1039.7,2261,86.8,4.4,93,Caixa Econômica Federal,36.6,20.71,2,elevada,moderada
+202409,depositos_poupanca,Poupança,entidade,1005,cosif_antigo,1039.7,2260,86.8,4.4,117,Caixa Econômica Federal,36.6,20.71,,elevada,moderada
+202512,depositos_poupanca,Poupança,concorrente,1005,cosif2025,1046.3,2326,87.3,4.3,128,Caixa Econômica Federal,37.9,20.57,2,elevada,moderada
+202512,depositos_poupanca,Poupança,entidade,1005,cosif2025,1046.3,2326,87.3,4.3,324,Caixa Econômica Federal,37.9,20.57,,elevada,moderada
+202606,depositos_poupanca,Poupança,concorrente,1005,cosif2025,1046.4,2373,87.5,4.2,124,Caixa Econômica Federal,38.8,20.65,2,elevada,moderada
+202606,depositos_poupanca,Poupança,entidade,1005,cosif2025,1046.4,2372,87.5,4.2,325,Caixa Econômica Federal,38.8,20.65,,elevada,moderada
+201603,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,925.9,1121,59.5,8.9,598,Banco do Brasil,21.3,21.31,1,moderada,baixa
+201603,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,925.9,1108,59.5,9.0,986,Banco do Brasil,21.3,21.31,,moderada,baixa
+201612,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,1048.1,1195,63.9,8.4,531,Caixa Econômica Federal,20.2,18.82,2,moderada,baixa
+201612,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,1048.1,1180,63.9,8.5,948,Caixa Econômica Federal,20.2,18.82,,moderada,baixa
+201712,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,1179.5,1137,62.3,8.8,494,Itaú Unibanco,18.2,16.03,2,moderada,baixa
+201712,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,1179.5,1122,62.3,8.9,909,Itaú Unibanco,18.2,16.03,,moderada,baixa
+201812,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,1423.2,1165,61.4,8.6,447,Itaú Unibanco,20.3,14.17,2,moderada,baixa
+201812,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,1423.2,1152,61.4,8.7,862,Itaú Unibanco,20.3,14.17,,moderada,baixa
+201912,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,1551.1,1125,61.2,8.9,424,Itaú Unibanco,20.3,14.49,2,moderada,baixa
+201912,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,1551.1,1111,61.2,9.0,821,Itaú Unibanco,20.3,14.49,,moderada,baixa
+202012,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,2259.3,1159,63.2,8.6,414,Itaú Unibanco,22.6,12.2,4,moderada,baixa
+202012,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,2259.3,1148,63.2,8.7,814,Itaú Unibanco,22.6,12.2,,moderada,baixa
+202112,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,2494.9,1064,60.8,9.4,405,Itaú Unibanco,21.1,12.69,3,moderada,baixa
+202112,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,2494.9,1050,60.8,9.5,800,Itaú Unibanco,21.1,12.69,,moderada,baixa
+202212,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,2968.9,995,58.6,10.0,401,Itaú Unibanco,19.9,14.19,2,baixa,baixa
+202212,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,2968.9,978,58.6,10.2,786,Itaú Unibanco,19.9,14.19,,baixa,baixa
+202312,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,3558.7,935,55.6,10.7,385,Itaú Unibanco,19.1,13.62,2,baixa,baixa
+202312,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,3558.7,916,55.6,10.9,765,Itaú Unibanco,19.1,13.62,,baixa,baixa
+202409,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif_antigo,3920.3,867,53.0,11.5,378,Itaú Unibanco,18.5,13.16,2,baixa,baixa
+202409,depositos_prazo,Depósitos a prazo,entidade,1005,cosif_antigo,3920.3,843,53.0,11.9,753,Itaú Unibanco,18.5,13.16,,baixa,baixa
+202512,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif2025,4467.7,878,52.9,11.4,368,Itaú Unibanco,18.5,12.91,2,baixa,baixa
+202512,depositos_prazo,Depósitos a prazo,entidade,1005,cosif2025,4467.7,850,52.9,11.8,736,Itaú Unibanco,18.5,12.91,,baixa,baixa
+202606,depositos_prazo,Depósitos a prazo,concorrente,1005,cosif2025,4763.8,877,52.4,11.4,359,Itaú Unibanco,18.0,13.37,2,baixa,baixa
+202606,depositos_prazo,Depósitos a prazo,entidade,1005,cosif2025,4763.8,843,52.4,11.9,723,Itaú Unibanco,18.0,13.37,,baixa,baixa
+201603,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,2028.4,1384,68.6,7.2,630,Banco do Brasil,22.4,22.39,1,moderada,baixa
+201603,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,2028.4,1376,68.6,7.3,1018,Banco do Brasil,22.4,22.39,,moderada,baixa
+201612,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,2134.8,1505,73.3,6.6,565,Caixa Econômica Federal,24.0,20.9,2,moderada,moderada
+201612,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,2134.8,1493,73.3,6.7,982,Caixa Econômica Federal,24.0,20.9,,moderada,baixa
+201712,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,2346.0,1425,71.2,7.0,527,Caixa Econômica Federal,21.6,19.19,2,moderada,baixa
+201712,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,2346.0,1412,71.2,7.1,947,Caixa Econômica Federal,21.6,19.19,,moderada,baixa
+201812,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,2661.4,1365,69.9,7.3,482,Caixa Econômica Federal,19.6,18.26,3,moderada,baixa
+201812,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,2661.4,1352,69.9,7.4,900,Caixa Econômica Federal,19.6,18.26,,moderada,baixa
+201912,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,2895.6,1309,68.3,7.6,467,Itaú Unibanco,19.2,17.76,3,moderada,baixa
+201912,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,2895.6,1294,68.3,7.7,866,Itaú Unibanco,19.2,17.76,,moderada,baixa
+202012,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,4003.1,1246,66.0,8.0,464,Itaú Unibanco,21.0,15.68,2,moderada,baixa
+202012,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,4003.1,1229,66.0,8.1,870,Itaú Unibanco,21.0,15.68,,moderada,baixa
+202112,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,4356.8,1155,63.0,8.7,500,Itaú Unibanco,20.5,16.01,2,moderada,baixa
+202112,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,4356.8,1135,63.0,8.8,902,Itaú Unibanco,20.5,16.01,,moderada,baixa
+202212,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,4792.0,1066,60.3,9.4,539,Itaú Unibanco,19.0,16.22,2,moderada,baixa
+202212,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,4792.0,1040,60.3,9.6,931,Itaú Unibanco,19.0,16.22,,moderada,baixa
+202312,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,5436.0,1010,58.4,9.9,551,Itaú Unibanco,18.2,15.37,2,moderada,baixa
+202312,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,5436.0,980,58.4,10.2,940,Itaú Unibanco,18.2,15.37,,baixa,baixa
+202409,depositos_total,Depósitos totais,concorrente,1005,cosif_antigo,5896.7,955,56.2,10.5,579,Itaú Unibanco,18.0,14.81,2,baixa,baixa
+202409,depositos_total,Depósitos totais,entidade,1005,cosif_antigo,5896.7,920,56.2,10.9,965,Itaú Unibanco,18.0,14.81,,baixa,baixa
+202512,depositos_total,Depósitos totais,concorrente,1005,cosif2025,6537.1,937,55.9,10.7,613,Itaú Unibanco,17.8,14.24,2,baixa,baixa
+202512,depositos_total,Depósitos totais,entidade,1005,cosif2025,6537.1,897,55.9,11.1,990,Itaú Unibanco,17.8,14.24,,baixa,baixa
+202606,depositos_total,Depósitos totais,concorrente,1005,cosif2025,6931.9,932,55.8,10.7,608,Itaú Unibanco,17.0,14.79,2,baixa,baixa
+202606,depositos_total,Depósitos totais,entidade,1005,cosif2025,6931.9,887,55.8,11.3,981,Itaú Unibanco,17.0,14.79,,baixa,baixa
+201603,lca,LCA,concorrente,1005,cosif_antigo,197.5,4812,84.6,2.1,53,Banco do Brasil,68.6,68.58,1,elevada,elevada
+201603,lca,LCA,entidade,1005,cosif_antigo,197.5,4812,84.6,2.1,70,Banco do Brasil,68.6,68.58,,elevada,elevada
+201612,lca,LCA,concorrente,1005,cosif_antigo,188.8,4519,83.2,2.2,54,Banco do Brasil,66.2,66.19,1,elevada,elevada
+201612,lca,LCA,entidade,1005,cosif_antigo,188.8,4519,83.2,2.2,78,Banco do Brasil,66.2,66.19,,elevada,elevada
+201712,lca,LCA,concorrente,1005,cosif_antigo,148.9,3785,83.2,2.6,68,Banco do Brasil,59.7,59.71,1,elevada,elevada
+201712,lca,LCA,entidade,1005,cosif_antigo,148.9,3785,83.2,2.6,133,Banco do Brasil,59.7,59.71,,elevada,elevada
+201812,lca,LCA,concorrente,1005,cosif_antigo,148.7,3144,82.0,3.2,71,Banco do Brasil,53.1,53.07,1,elevada,elevada
+201812,lca,LCA,entidade,1005,cosif_antigo,148.7,3142,82.0,3.2,178,Banco do Brasil,53.1,53.07,,elevada,elevada
+201912,lca,LCA,concorrente,1005,cosif_antigo,153.7,2834,81.4,3.5,76,Banco do Brasil,49.4,49.38,1,elevada,elevada
+201912,lca,LCA,entidade,1005,cosif_antigo,153.7,2830,81.4,3.5,208,Banco do Brasil,49.4,49.38,,elevada,elevada
+202012,lca,LCA,concorrente,1005,cosif_antigo,154.0,2654,76.6,3.8,73,Banco do Brasil,48.2,48.19,1,elevada,elevada
+202012,lca,LCA,entidade,1005,cosif_antigo,154.0,2649,76.6,3.8,218,Banco do Brasil,48.2,48.19,,elevada,elevada
+202112,lca,LCA,concorrente,1005,cosif_antigo,193.0,2117,67.2,4.7,76,Banco do Brasil,42.2,42.17,1,elevada,moderada
+202112,lca,LCA,entidade,1005,cosif_antigo,193.0,2107,67.2,4.7,239,Banco do Brasil,42.2,42.17,,elevada,moderada
+202212,lca,LCA,concorrente,1005,cosif_antigo,336.7,1722,64.0,5.8,93,Banco do Brasil,36.3,36.31,1,moderada,moderada
+202212,lca,LCA,entidade,1005,cosif_antigo,336.7,1709,64.0,5.9,269,Banco do Brasil,36.3,36.31,,moderada,moderada
+202312,lca,LCA,concorrente,1005,cosif_antigo,460.1,1943,65.6,5.1,102,Banco do Brasil,39.9,39.94,1,elevada,moderada
+202312,lca,LCA,entidade,1005,cosif_antigo,460.1,1927,65.6,5.2,287,Banco do Brasil,39.9,39.94,,elevada,moderada
+202409,lca,LCA,concorrente,1005,cosif_antigo,494.7,1903,65.7,5.3,114,Banco do Brasil,39.3,39.26,1,elevada,moderada
+202409,lca,LCA,entidade,1005,cosif_antigo,494.7,1884,65.7,5.3,301,Banco do Brasil,39.3,39.26,,elevada,moderada
+202512,lca,LCA,concorrente,1005,cosif2025,598.3,1658,63.5,6.0,151,Banco do Brasil,35.6,35.62,1,moderada,moderada
+202512,lca,LCA,entidade,1005,cosif2025,598.3,1602,62.4,6.2,404,Banco do Brasil,35.6,35.62,,moderada,moderada
+202606,lca,LCA,concorrente,1005,cosif2025,563.3,1473,60.8,6.8,146,Banco do Brasil,32.6,32.55,1,moderada,baixa
+202606,lca,LCA,entidade,1005,cosif2025,563.3,1403,59.7,7.1,400,Banco do Brasil,32.6,32.55,,moderada,baixa
+201603,lci,LCI,concorrente,1005,cosif_antigo,209.8,3256,84.5,3.1,51,Caixa Econômica Federal,53.7,8.9,4,elevada,elevada
+201603,lci,LCI,entidade,1005,cosif_antigo,209.8,3256,84.5,3.1,51,Caixa Econômica Federal,53.7,8.9,,elevada,elevada
+201612,lci,LCI,concorrente,1005,cosif_antigo,203.3,2940,84.1,3.4,51,Caixa Econômica Federal,49.6,8.4,5,elevada,elevada
+201612,lci,LCI,entidade,1005,cosif_antigo,203.3,2940,84.1,3.4,51,Caixa Econômica Federal,49.6,8.4,,elevada,elevada
+201712,lci,LCI,concorrente,1005,cosif_antigo,187.8,2532,82.9,3.9,52,Caixa Econômica Federal,43.9,8.99,5,elevada,elevada
+201712,lci,LCI,entidade,1005,cosif_antigo,187.8,2532,82.9,3.9,52,Caixa Econômica Federal,43.9,8.99,,elevada,elevada
+201812,lci,LCI,concorrente,1005,cosif_antigo,156.6,2138,82.1,4.7,51,Caixa Econômica Federal,37.5,11.02,4,elevada,moderada
+201812,lci,LCI,entidade,1005,cosif_antigo,156.6,2138,82.1,4.7,51,Caixa Econômica Federal,37.5,11.02,,elevada,moderada
+201912,lci,LCI,concorrente,1005,cosif_antigo,142.1,2006,82.5,5.0,51,Caixa Econômica Federal,33.9,11.96,4,elevada,moderada
+201912,lci,LCI,entidade,1005,cosif_antigo,142.1,2006,82.5,5.0,51,Caixa Econômica Federal,33.9,11.96,,elevada,moderada
+202012,lci,LCI,concorrente,1005,cosif_antigo,122.1,1973,83.7,5.1,92,Caixa Econômica Federal,29.9,10.18,4,elevada,moderada
+202012,lci,LCI,entidade,1005,cosif_antigo,122.1,1973,83.7,5.1,169,Caixa Econômica Federal,29.9,10.18,,elevada,moderada
+202112,lci,LCI,concorrente,1005,cosif_antigo,140.9,1701,74.8,5.9,113,Bradesco,29.4,8.91,4,moderada,moderada
+202112,lci,LCI,entidade,1005,cosif_antigo,140.9,1698,74.8,5.9,232,Bradesco,29.4,8.91,,moderada,moderada
+202212,lci,LCI,concorrente,1005,cosif_antigo,238.4,1816,78.6,5.5,130,Caixa Econômica Federal,31.0,5.12,5,elevada,moderada
+202212,lci,LCI,entidade,1005,cosif_antigo,238.4,1808,78.6,5.5,300,Caixa Econômica Federal,31.0,5.12,,elevada,moderada
+202312,lci,LCI,concorrente,1005,cosif_antigo,361.6,2204,80.0,4.5,131,Caixa Econômica Federal,40.5,4.08,5,elevada,moderada
+202312,lci,LCI,entidade,1005,cosif_antigo,361.6,2196,80.0,4.6,390,Caixa Econômica Federal,40.5,4.08,,elevada,moderada
+202409,lci,LCI,concorrente,1005,cosif_antigo,367.4,2688,84.1,3.7,110,Caixa Econômica Federal,46.7,3.85,5,elevada,elevada
+202409,lci,LCI,entidade,1005,cosif_antigo,367.4,2687,84.1,3.7,296,Caixa Econômica Federal,46.7,3.85,,elevada,elevada
+202512,lci,LCI,concorrente,1005,cosif2025,500.1,3131,90.4,3.2,88,Caixa Econômica Federal,50.8,3.22,5,elevada,elevada
+202512,lci,LCI,entidade,1005,cosif2025,500.1,3131,90.4,3.2,193,Caixa Econômica Federal,50.8,3.22,,elevada,elevada
+202606,lci,LCI,concorrente,1005,cosif2025,537.3,3119,90.7,3.2,87,Caixa Econômica Federal,50.5,2.87,5,elevada,elevada
+202606,lci,LCI,entidade,1005,cosif2025,537.3,3119,90.7,3.2,143,Caixa Econômica Federal,50.5,2.87,,elevada,elevada
+201603,captacoes,Captações totais,concorrente,1005,cosif_antigo,5830.9,1211,63.0,8.3,699,Banco do Brasil,18.9,18.9,1,moderada,baixa
+201603,captacoes,Captações totais,entidade,1005,cosif_antigo,5830.9,1209,63.0,8.3,1088,Banco do Brasil,18.9,18.9,,moderada,baixa
+201612,captacoes,Captações totais,concorrente,1005,cosif_antigo,5846.6,1275,66.6,7.8,634,Banco do Brasil,18.7,18.67,1,moderada,baixa
+201612,captacoes,Captações totais,entidade,1005,cosif_antigo,5846.6,1273,66.6,7.9,1052,Banco do Brasil,18.7,18.67,,moderada,baixa
+201712,captacoes,Captações totais,concorrente,1005,cosif_antigo,5842.5,1257,66.2,8.0,591,Banco do Brasil,18.2,18.24,1,moderada,baixa
+201712,captacoes,Captações totais,entidade,1005,cosif_antigo,5842.5,1254,66.2,8.0,1014,Banco do Brasil,18.2,18.24,,moderada,baixa
+201812,captacoes,Captações totais,concorrente,1005,cosif_antigo,6135.3,1230,66.1,8.1,547,Banco do Brasil,18.1,18.07,1,moderada,baixa
+201812,captacoes,Captações totais,entidade,1005,cosif_antigo,6135.3,1226,66.1,8.2,968,Banco do Brasil,18.1,18.07,,moderada,baixa
+201912,captacoes,Captações totais,concorrente,1005,cosif_antigo,6175.8,1226,66.2,8.2,530,Banco do Brasil,18.4,18.37,1,moderada,baixa
+201912,captacoes,Captações totais,entidade,1005,cosif_antigo,6175.8,1221,66.2,8.2,931,Banco do Brasil,18.4,18.37,,moderada,baixa
+202012,captacoes,Captações totais,concorrente,1005,cosif_antigo,7731.9,1148,63.6,8.7,517,Itaú Unibanco,17.6,17.24,2,moderada,baixa
+202012,captacoes,Captações totais,entidade,1005,cosif_antigo,7731.9,1142,63.6,8.8,925,Itaú Unibanco,17.6,17.24,,moderada,baixa
+202112,captacoes,Captações totais,concorrente,1005,cosif_antigo,8307.5,1112,62.6,9.0,546,Banco do Brasil,18.3,18.33,1,moderada,baixa
+202112,captacoes,Captações totais,entidade,1005,cosif_antigo,8307.5,1104,62.6,9.1,950,Banco do Brasil,18.3,18.33,,moderada,baixa
+202212,captacoes,Captações totais,concorrente,1005,cosif_antigo,9269.3,1073,61.6,9.3,587,Itaú Unibanco,17.6,17.13,2,moderada,baixa
+202212,captacoes,Captações totais,entidade,1005,cosif_antigo,9269.3,1062,61.6,9.4,982,Itaú Unibanco,17.6,17.13,,moderada,baixa
+202312,captacoes,Captações totais,concorrente,1005,cosif_antigo,10440.7,1048,60.6,9.5,595,Itaú Unibanco,17.4,16.45,2,moderada,baixa
+202312,captacoes,Captações totais,entidade,1005,cosif_antigo,10440.7,1036,60.6,9.7,987,Itaú Unibanco,17.4,16.45,,moderada,baixa
+202409,captacoes,Captações totais,concorrente,1005,cosif_antigo,11600.1,1021,59.5,9.8,620,Itaú Unibanco,17.0,16.76,2,moderada,baixa
+202409,captacoes,Captações totais,entidade,1005,cosif_antigo,11600.1,1008,59.5,9.9,1010,Itaú Unibanco,17.0,16.76,,moderada,baixa
+202512,captacoes,Captações totais,concorrente,1005,cosif2025,13467.0,924,56.1,10.8,669,Itaú Unibanco,16.2,14.34,2,baixa,baixa
+202512,captacoes,Captações totais,entidade,1005,cosif2025,13467.0,907,56.1,11.0,1052,Itaú Unibanco,16.1,14.34,,baixa,baixa
+202606,captacoes,Captações totais,concorrente,1005,cosif2025,14268.9,917,55.8,10.9,663,Itaú Unibanco,15.6,14.5,2,baixa,baixa
+202606,captacoes,Captações totais,entidade,1005,cosif2025,14268.9,897,55.7,11.2,1044,Itaú Unibanco,15.5,14.5,,baixa,baixa
+201603,ativo_total,Ativo total,concorrente,1005,cosif_antigo,8243.5,1072,57.9,9.3,1089,Banco do Brasil,17.0,17.02,1,moderada,baixa
+201603,ativo_total,Ativo total,entidade,1005,cosif_antigo,8243.5,1069,57.9,9.4,1489,Banco do Brasil,17.0,17.02,,moderada,baixa
+201612,ativo_total,Ativo total,concorrente,1005,cosif_antigo,8253.6,1149,61.4,8.7,1017,Banco do Brasil,17.0,16.96,1,moderada,baixa
+201612,ativo_total,Ativo total,entidade,1005,cosif_antigo,8253.6,1146,61.4,8.7,1445,Banco do Brasil,17.0,16.96,,moderada,baixa
+201712,ativo_total,Ativo total,concorrente,1005,cosif_antigo,8484.4,1114,60.5,9.0,967,Itaú Unibanco,17.1,16.13,2,moderada,baixa
+201712,ativo_total,Ativo total,entidade,1005,cosif_antigo,8484.4,1081,59.7,9.2,1399,Itaú Unibanco,16.3,16.13,,moderada,baixa
+201812,ativo_total,Ativo total,concorrente,1005,cosif_antigo,9073.7,1069,59.3,9.4,919,Itaú Unibanco,17.2,15.63,2,moderada,baixa
+201812,ativo_total,Ativo total,entidade,1005,cosif_antigo,9073.7,1034,58.5,9.7,1352,Itaú Unibanco,16.5,15.63,,moderada,baixa
+201912,ativo_total,Ativo total,concorrente,1005,cosif_antigo,9431.2,1050,58.9,9.5,890,Itaú Unibanco,17.4,15.62,2,moderada,baixa
+201912,ativo_total,Ativo total,entidade,1005,cosif_antigo,9431.2,1014,58.1,9.9,1304,Itaú Unibanco,16.6,15.62,,moderada,baixa
+202012,ativo_total,Ativo total,concorrente,1005,cosif_antigo,11406.8,1000,57.4,10.0,890,Itaú Unibanco,17.6,15.02,2,baixa,baixa
+202012,ativo_total,Ativo total,entidade,1005,cosif_antigo,11406.8,965,56.8,10.4,1314,Itaú Unibanco,17.0,15.02,,baixa,baixa
+202112,ativo_total,Ativo total,concorrente,1005,cosif_antigo,12223.4,962,56.3,10.4,900,Itaú Unibanco,17.1,15.7,2,baixa,baixa
+202112,ativo_total,Ativo total,entidade,1005,cosif_antigo,12223.4,917,55.5,10.9,1319,Itaú Unibanco,16.3,15.7,,baixa,baixa
+202212,ativo_total,Ativo total,concorrente,1005,cosif_antigo,13652.3,917,55.0,10.9,944,Itaú Unibanco,17.4,14.73,2,baixa,baixa
+202212,ativo_total,Ativo total,entidade,1005,cosif_antigo,13652.3,867,54.2,11.5,1353,Itaú Unibanco,16.6,14.73,,baixa,baixa
+202312,ativo_total,Ativo total,concorrente,1005,cosif_antigo,15190.6,881,53.8,11.3,975,Itaú Unibanco,16.9,14.18,2,baixa,baixa
+202312,ativo_total,Ativo total,entidade,1005,cosif_antigo,15190.6,829,53.0,12.1,1382,Itaú Unibanco,16.1,14.18,,baixa,baixa
+202409,ativo_total,Ativo total,concorrente,1005,cosif_antigo,16986.3,861,52.9,11.6,1008,Itaú Unibanco,16.7,14.38,2,baixa,baixa
+202409,ativo_total,Ativo total,entidade,1005,cosif_antigo,16986.3,813,52.1,12.3,1412,Itaú Unibanco,16.0,14.38,,baixa,baixa
+202512,ativo_total,Ativo total,concorrente,1005,cosif2025,18331.0,828,51.8,12.1,1033,Itaú Unibanco,15.8,13.39,2,baixa,baixa
+202512,ativo_total,Ativo total,entidade,1005,cosif2025,18331.0,772,50.9,13.0,1430,Itaú Unibanco,15.0,13.39,,baixa,baixa
+202606,ativo_total,Ativo total,concorrente,1005,cosif2025,19458.9,821,51.5,12.2,1014,Itaú Unibanco,15.5,13.28,2,baixa,baixa
+202606,ativo_total,Ativo total,entidade,1005,cosif2025,19458.9,764,50.6,13.1,1406,Itaú Unibanco,14.6,13.28,,baixa,baixa
+201603,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,3527.4,1215,62.8,8.2,915,Banco do Brasil,19.9,19.91,1,moderada,baixa
+201603,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,3527.4,1213,62.8,8.2,1314,Banco do Brasil,19.9,19.91,,moderada,baixa
+201612,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,3461.9,1276,65.1,7.8,843,Caixa Econômica Federal,20.5,18.89,2,moderada,baixa
+201612,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,3461.9,1273,65.1,7.9,1270,Caixa Econômica Federal,20.5,18.89,,moderada,baixa
+201712,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,3411.6,1266,64.9,7.9,795,Caixa Econômica Federal,20.7,18.54,2,moderada,baixa
+201712,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,3411.6,1263,64.9,7.9,1222,Caixa Econômica Federal,20.7,18.54,,moderada,baixa
+201812,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,3582.5,1200,63.5,8.3,754,Caixa Econômica Federal,19.4,17.87,2,moderada,baixa
+201812,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,3582.5,1196,63.5,8.4,1183,Caixa Econômica Federal,19.4,17.87,,moderada,baixa
+201912,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,3787.3,1136,62.1,8.8,730,Caixa Econômica Federal,18.3,16.41,2,moderada,baixa
+201912,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,3787.3,1130,62.1,8.8,1136,Caixa Econômica Federal,18.3,16.41,,moderada,baixa
+202012,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,4412.8,1095,60.9,9.1,709,Caixa Econômica Federal,17.8,15.45,3,moderada,baixa
+202012,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,4412.8,1088,60.9,9.2,1123,Caixa Econômica Federal,17.8,15.45,,moderada,baixa
+202112,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,5129.8,1051,60.0,9.5,714,Caixa Econômica Federal,16.9,15.3,3,moderada,baixa
+202112,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,5129.8,1040,60.0,9.6,1122,Caixa Econômica Federal,16.9,15.3,,moderada,baixa
+202212,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,5833.4,1024,59.4,9.8,712,Caixa Econômica Federal,17.4,15.28,3,moderada,baixa
+202212,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,5833.4,1011,59.4,9.9,1109,Caixa Econômica Federal,17.4,15.28,,moderada,baixa
+202312,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,6232.8,1000,58.3,10.0,718,Caixa Econômica Federal,18.0,15.65,2,baixa,baixa
+202312,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,6232.8,984,58.3,10.2,1109,Caixa Econômica Federal,18.0,15.65,,baixa,baixa
+202409,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif_antigo,6745.2,984,58.0,10.2,723,Caixa Econômica Federal,17.9,15.57,2,baixa,baixa
+202409,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif_antigo,6745.2,967,58.0,10.3,1112,Caixa Econômica Federal,17.9,15.57,,baixa,baixa
+202512,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif2025,7763.9,961,57.8,10.4,707,Caixa Econômica Federal,16.7,14.38,3,baixa,baixa
+202512,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif2025,7763.9,941,57.8,10.6,1088,Caixa Econômica Federal,16.7,14.38,,baixa,baixa
+202606,carteira_credito,Carteira de crédito (Resumo),concorrente,1005,cosif2025,7974.8,957,57.8,10.4,696,Caixa Econômica Federal,17.1,14.15,3,baixa,baixa
+202606,carteira_credito,Carteira de crédito (Resumo),entidade,1005,cosif2025,7974.8,937,57.8,10.7,1069,Caixa Econômica Federal,17.1,14.15,,baixa,baixa
+201603,agencias,Agências,concorrente,1005,cosif_antigo,23668,1503,72.1,6.7,397,Banco do Brasil,23.0,22.96,1,moderada,moderada
+201603,agencias,Agências,entidade,1005,cosif_antigo,23668,1503,72.1,6.7,397,Banco do Brasil,23.0,22.96,,moderada,moderada
+201612,agencias,Agências,concorrente,1005,cosif_antigo,23425,1645,75.6,6.1,389,Banco do Brasil,23.2,23.24,1,moderada,moderada
+201612,agencias,Agências,entidade,1005,cosif_antigo,23425,1645,75.6,6.1,389,Banco do Brasil,23.2,23.24,,moderada,moderada
+201712,agencias,Agências,concorrente,1005,cosif_antigo,22425,1532,73.2,6.5,392,Banco do Brasil,21.6,21.56,1,moderada,moderada
+201712,agencias,Agências,entidade,1005,cosif_antigo,22425,1531,73.2,6.5,394,Banco do Brasil,21.6,21.56,,moderada,moderada
+201812,agencias,Agências,concorrente,1005,cosif_antigo,22142,1524,72.9,6.6,390,Banco do Brasil,21.4,21.37,1,moderada,moderada
+201812,agencias,Agências,entidade,1005,cosif_antigo,22142,1524,72.9,6.6,393,Banco do Brasil,21.4,21.37,,moderada,moderada
+201912,agencias,Agências,concorrente,1005,cosif_antigo,21383,1498,71.8,6.7,395,Bradesco,21.1,20.41,2,moderada,baixa
+201912,agencias,Agências,entidade,1005,cosif_antigo,21383,1497,71.8,6.7,398,Bradesco,21.1,20.41,,moderada,baixa
+202012,agencias,Agências,concorrente,1005,cosif_antigo,19934,1485,70.7,6.7,426,Banco do Brasil,22.0,21.97,1,moderada,baixa
+202012,agencias,Agências,entidade,1005,cosif_antigo,19934,1484,70.7,6.7,435,Banco do Brasil,22.0,21.97,,moderada,baixa
+202112,agencias,Agências,concorrente,1005,cosif_antigo,18943,1445,69.9,6.9,458,Banco do Brasil,21.1,21.06,1,moderada,baixa
+202112,agencias,Agências,entidade,1005,cosif_antigo,18943,1445,69.9,6.9,468,Banco do Brasil,21.1,21.06,,moderada,baixa
+202212,agencias,Agências,concorrente,1005,cosif_antigo,18639,1433,69.1,7.0,513,Banco do Brasil,21.4,21.42,1,moderada,baixa
+202212,agencias,Agências,entidade,1005,cosif_antigo,18639,1433,69.1,7.0,524,Banco do Brasil,21.4,21.42,,moderada,baixa
+202312,agencias,Agências,concorrente,1005,cosif_antigo,18238,1421,69.4,7.0,571,Banco do Brasil,21.9,21.95,1,moderada,baixa
+202312,agencias,Agências,entidade,1005,cosif_antigo,18238,1420,69.4,7.0,585,Banco do Brasil,21.9,21.95,,moderada,baixa
+202409,agencias,Agências,concorrente,1005,cosif_antigo,17577,1413,69.3,7.1,612,Banco do Brasil,22.8,22.79,1,moderada,baixa
+202409,agencias,Agências,entidade,1005,cosif_antigo,17577,1413,69.3,7.1,628,Banco do Brasil,22.8,22.79,,moderada,baixa
+202512,agencias,Agências,concorrente,1005,cosif2025,16054,1425,69.3,7.0,682,Banco do Brasil,24.8,24.77,1,moderada,baixa
+202512,agencias,Agências,entidade,1005,cosif2025,16054,1424,69.3,7.0,695,Banco do Brasil,24.8,24.77,,moderada,baixa
+202606,agencias,Agências,concorrente,1005,cosif2025,14922,1464,69.5,6.8,687,Banco do Brasil,26.4,26.4,1,moderada,baixa
+202606,agencias,Agências,entidade,1005,cosif2025,14922,1464,69.5,6.8,700,Banco do Brasil,26.4,26.4,,moderada,baixa

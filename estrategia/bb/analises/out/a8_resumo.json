@@ -1,0 +1,78 @@
+{
+ "gerado_em": "2026-11-28",
+ "faixas_bcb": [
+  1000,
+  1800
+ ],
+ "faixas_cade": [
+  1500,
+  2500
+ ],
+ "translog": {
+  "bancos (b1+b2)": {
+   "n": 913,
+   "instituicoes": 134,
+   "r2": 0.9907
+  },
+  "cooperativas (b3)": {
+   "n": 4371,
+   "instituicoes": 543,
+   "r2": 0.9904
+  },
+  "não bancários (n1+n4)": {
+   "n": 356,
+   "instituicoes": 80,
+   "r2": 0.9516
+  }
+ },
+ "jogadas": {
+  "manter": [
+   "PF rural",
+   "PF outros",
+   "PJ investimento",
+   "PJ cheque especial",
+   "PJ comércio exterior",
+   "PJ outros",
+   "Crédito, tomador no Centro-Oeste"
+  ],
+  "sair (rever presença)": [
+   "PJ micro (porte)"
+  ],
+  "comprar": [],
+  "parceria": [],
+  "atacar canal": [
+   "PF não consignado",
+   "PF cartão",
+   "PF total",
+   "PJ capital de giro",
+   "PJ total",
+   "PJ pequena (porte)",
+   "PJ média (porte)",
+   "Crédito PF + PJ",
+   "Crédito, tomador no Sudeste",
+   "Crédito, tomador no Sul",
+   "Crédito, tomador no Nordeste",
+   "Depósitos à vista",
+   "Poupança",
+   "Depósitos totais",
+   "LCA",
+   "Captações totais"
+  ],
+  "atacar preço": [],
+  "atacar produto": [
+   "PF consignado",
+   "PF habitação",
+   "PF veículos",
+   "PJ recebíveis",
+   "PJ infraestrutura",
+   "PJ rural",
+   "PJ habitacional",
+   "PJ grande (porte)",
+   "Rural PF + PJ",
+   "Imobiliário PF + PJ",
+   "Crédito, tomador no Norte",
+   "Depósitos a prazo",
+   "LCI"
+  ]
+ }
+}
