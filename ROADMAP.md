@@ -101,7 +101,7 @@ CVM FRE para a árvore societária e o controlador (hoje curadoria manual); outr
 Unicred, Ailos); KM1 dos emissores com URL quebrada no catálogo (Sicredi, Sicoob, Daycoval, BNP, BNB…).
 ✅ **Primeiro uso: plano de guerra do BB com dado público (28/11/2026, `estrategia/bb/`, fora do site).** Três panoramas
 (Atena, a decisão em crise; vantagens injustas; tomada hostil de todos os mercados), 55 premissas v0, dossiê de 54 fatos
-conferidos em fonte primária (CVM IPE, SGS, camada `data/ifs`), conselho de 5 cadeiras (Opus, Fable, DeepSeek V4 Pro,
+com fonte e trecho (a maioria em fonte primária: CVM IPE, SGS, camada `data/ifs`; os de imprensa marcados; H1 pendente), conselho de 5 cadeiras (Opus, Fable, DeepSeek V4 Pro,
 Qwen3.8 2,4T, Kimi K3) em rodadas R1–R5: 127 premissas, 254 críticas cegas, 127 réplicas, 3 juízes e agregação por código
 (US$ 4,41 nas cadeiras abertas). Análises 1–6 (quem ganhou cada p.p., inadimplência rural ajustada ao mix, municípios,
 passivo em p.p. do CDI, varejo com taxas por banco, dez anos de resultado) e laboratório rural (`labs/rural/`).
@@ -113,6 +113,8 @@ calibração humana dos juízes, propostas no modelo de `04-proximos-passos.md`.
 ✅ Pesquisas de estado da arte (`docs/research/`): Radar Febraban × mundo (45 temas, 10 ausentes do radar), retorno de
 dados e IA (roteiro de medição por tipo de iniciativa) e fundação de dados (BCBS 239, Resolução Conjunta 18/2025).
 Para o Research Watch: fontes chinesas e criptografia pós-quântica estão fora do acervo hoje.
+✅ Entrega v1 do plano (28/11/2026): `estrategia/bb/06-estado-premissas.md` (49 premissas com evidência, 15 próximos testes,
+lições do conselho) e `estrategia/bb/07-plano-v1.md` (diagnóstico, três panoramas, 8 propostas condicionais).
 
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.

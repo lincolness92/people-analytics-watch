@@ -6,6 +6,12 @@ perguntas. Os outros quatro são: o registro de premissas ([`01-premissas.md`](0
 concorrentes ([`02-concorrentes.md`](02-concorrentes.md)), o protocolo do conselho de modelos
 ([`03-conselho.md`](03-conselho.md)) e a sequência até as propostas ([`04-proximos-passos.md`](04-proximos-passos.md)).
 
+Arquivos acrescentados depois da v0:
+
+- [`05-panoramas.md`](05-panoramas.md): os três panoramas (Atena, vantagens injustas, tomada hostil), a camada de conhecimento e a fundação de dados.
+- [`06-estado-premissas.md`](06-estado-premissas.md): o estado de cada premissa depois da rodada 1 do conselho e das análises, as 15 a testar em seguida e as mudanças de método.
+- [`07-plano-v1.md`](07-plano-v1.md): o plano v1, com o diagnóstico validado, os três panoramas, oito propostas condicionais e as decisões pendentes.
+
 ## Regras deste trabalho
 
 1. **Só informação pública**: releases de resultados, CVM (IPE, DFP/ITR, FRE), dados do Banco Central (IF.data,
