@@ -1,0 +1,188 @@
+{
+ "criticas": [
+  {
+   "premissa": "P01",
+   "contrario": "A queda pode ser cíclica: BB reduziu apetite e pode retomar quando a inadimplência cair. O ganho da Caixa (1,18%→6,81%) sugere deslocamento temporário por política pública, não tendência permanente.",
+   "alternativa": "Queda decorre de reclassificação de carteiras ou mudanças de perímetro no IF.data, não de perda real de clientes; parte pode ter migrado para outras linhas.",
+   "riscos_de_dado": [
+    "Mudança de perímetro de conglomerado (1005) para prudencial (1009) em 03/2025 afeta comparação.",
+    "Quebra de série por Cosif 2025 a partir de 03/2025.",
+    "Possível dupla contagem de cooperativas centrais e singulares no agregado.",
+    "Sazonalidade trimestral na participação."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "SICOR (BCB)"
+    ],
+    "descricao": "Estimar quebra estrutural na série 2014-2026; se quebra não significativa antes de 2023 ou explicada apenas pela Caixa, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P02",
+   "contrario": "A diferença bruta pode desaparecer ao controlar por porte e região: cooperativas concentram em pequenos produtores e regiões menos arriscadas, enquanto BB atende tomadores maiores e mais alavancados.",
+   "alternativa": "O maior atraso do BB reflete seleção adversa: clientes rejeitados pelas cooperativas migram para o BB, que assume risco pior.",
+   "riscos_de_dado": [
+    "IF.data não separa cooperativas centrais e singulares, podendo inflar denominador.",
+    "SCR.data não tem dados por cultura; controle de mix pode ser incompleto.",
+    "Faixas de atraso diferem entre fontes (15d vs 90d).",
+    "Fonte de recursos no SICOR pode não refletir a carteira total."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data (BCB)",
+     "SICOR (BCB)",
+     "IF.data (BCB)"
+    ],
+    "descricao": "Painel com efeitos fixos UF×trimestre e controles de porte/cultura/fonte; se coeficiente de cooperativa ≤0,5 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P04",
+   "contrario": "O ROE ex-agro pode ser inflado por itens não recorrentes ou por custo de captação subsidiado; Bradesco e Santander não excluem seus respectivos agronegócios, tornando a comparação injusta.",
+   "alternativa": "O desempenho ex-agro é artificialmente alto porque o agro absorve despesas corporativas; quando rateadas corretamente, o retorno cai.",
+   "riscos_de_dado": [
+    "DFP/ITR não alocam totalmente custo de funding e overhead por segmento.",
+    "RWA por classe de exposição no Pilar 3 pode usar média ou fim de período, distorcendo.",
+    "ROE dos pares não ajustado por one-offs.",
+    "Definição de 'agro' da administração pode ser ampla e não padronizada."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM IPE (BB releases)",
+     "DASFN Pilar 3",
+     "Bradesco/Santander releases"
+    ],
+    "descricao": "Reconstruir ROE ex-agro com metodologia pública; se ROE <13% em dois dos últimos quatro trimestres, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O ROE do BB excluindo agronegócio, calculado com metodologia pré-registrada e comparado a pares também excluindo as respectivas carteiras agro, fica entre 13% e 19% nos últimos quatro trimestres."
+  },
+  {
+   "premissa": "P05",
+   "contrario": "Instrumentos de mercado podem estar capturando os melhores riscos, mas o balanço bancário não necessariamente fica com o pior: bancos selecionam e precificam o risco que retêm, obtendo margem maior.",
+   "alternativa": "O crescimento fora do balanço reflete demanda por funding e não migração de risco; a qualidade por porte não difere após ajustar por garantias e seguro.",
+   "riscos_de_dado": [
+    "Dados de CPR/CRA/Fiagro não constam no dossiê; necessário MAPA, CVM e B3.",
+    "Dupla contagem entre CPR e CRA quando o CRA lastreia CPR.",
+    "Classificação por porte pode usar autodeclaração.",
+    "Inadimplência de veículos tem defasagem de divulgação."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "MAPA Boletim de Finanças Privadas do Agro",
+     "CVM dados abertos de Fiagro/FIDC",
+     "SICOR/SCR.data"
+    ],
+    "descricao": "Comparar inadimplência por UF e porte entre veículos e bancos; se veículos tiverem inadimplência igual ou maior, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "CPR, CRA e Fiagro crescem mais em grandes produtores e a inadimplência desses veículos é menor que a bancária na mesma UF e porte, após ajustar por garantias."
+  },
+  {
+   "premissa": "P07",
+   "contrario": "Cooperativas cresceram e mantiveram baixo atraso, refutando a regra geral; a Caixa é outlier e, sem ela, a correlação pode desaparecer.",
+   "alternativa": "O tipo de crescimento importa: expansão com subscrição fraca (Caixa) gera inadimplência, enquanto expansão com relacionamento local (cooperativas) não.",
+   "riscos_de_dado": [
+    "Mudanças de participação podem refletir fusões ou reclassificações, não crescimento orgânico.",
+    "Inadimplência por instituição é ruidosa para pequenos players.",
+    "Defasagem entre crescimento e default não testada formalmente; pode ser coincidente.",
+    "Caixa domina a regressão."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "SICOR (BCB)",
+     "Releases Caixa"
+    ],
+    "descricao": "Regressão de inadimplência sobre crescimento de participação excluindo Caixa; se coeficiente insignificante ou negativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O ritmo de ganho de participação em 2020–2023 prediz inadimplência de 2025–2026 apenas quando o crescimento se deu via expansão agressiva de crédito de alto risco; a Caixa é caso extremo."
+  },
+  {
+   "premissa": "P08",
+   "contrario": "Seguro pode aumentar risco moral: produtor segurado tende a relaxar manejo e pedir indenização, não reduzindo default.",
+   "alternativa": "Retração de seguro reflete queda de área plantada ou renda, não decisão do banco; inadimplência futura será determinada por preços, não seguro.",
+   "riscos_de_dado": [
+    "Dados de prêmios não constam no dossiê; necessário SUSEP/MAPA.",
+    "Seleção: quem contrata seguro é menor risco, confundindo causalidade.",
+    "Perda dado inadimplemento depende de execução de garantias, não só seguro.",
+    "Defasagem pode ser superior a um ano."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR",
+     "SUSEP SES",
+     "MAPA SISSER",
+     "SCR.data"
+    ],
+    "descricao": "Painel município-safra com variável instrumental para cobertura; se efeito do seguro sobre inadimplência for nulo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Após controlar por seleção, operações com seguro têm menor perda dada inadimplência; a retração de 2026 na contratação provavelmente aumenta perdas em 2027."
+  },
+  {
+   "premissa": "P10",
+   "contrario": "Pedidos de recuperação judicial são coincidentes ou atrasados: o produtor já está inadimplente quando ingressa, não antecipando a inadimplência agregada.",
+   "alternativa": "Inadimplência e RJ reagem ao mesmo choque climático ou de preços com defasagens similares; relação é espúria sem controle de choques comuns.",
+   "riscos_de_dado": [
+    "Classificação de processos como rurais no Datajud pode ser imprecisa.",
+    "Poucos trimestres (2025-2026) tornam defasagem sensível a outliers.",
+    "Inadimplência regional divulgada com atraso.",
+    "Comarca não coincide com município da propriedade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CNJ Datajud",
+     "SCR.data",
+     "SGS 21148"
+    ],
+    "descricao": "Testar causalidade de Granger e cross-correlação por UF com dados mensais; se lead máximo for zero ou negativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O fluxo de RJ rural por comarca antecede a inadimplência rural regional em 2 a 4 trimestres, após controlar por choques climáticos e de preços."
+  },
+  {
+   "premissa": "P11",
+   "contrario": "Programas de renegociação têm adesão lenta; pode crescer nos trimestres seguintes. A carteira renegociada pode melhorar após período de cura, reduzindo redefault.",
+   "alternativa": "Baixa adesão reflete elegibilidade restrita ou exigências documentais, não falta de demanda; alto redefault deve-se ao ambiente econômico, não ao desenho.",
+   "riscos_de_dado": [
+    "Dados de adesão e redefault não constam no dossiê; necessário CVM releases e balancetes.",
+    "Recebimento de 70% inclui pagamentos parciais, não redefault definitivo.",
+    "Carteira renegociada pequena; proporção alta pode ser pouco informativa.",
+    "Horizonte de redefault não especificado."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM IPE (BB releases)",
+     "Balancetes Cosif 2025",
+     "SGS 21148"
+    ],
+    "descricao": "Acompanhar adesão até 1T27 e redefault após 6 meses; se adesão >50% do elegível e redefault ≤2× carteira normal, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Até 1T27, a adesão à renegociação fica abaixo da metade do elegível e a carteira renegociada apresenta atraso acima do dobro da carteira normal após seis meses."
+  }
+ ]
+}

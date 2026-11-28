@@ -1,0 +1,177 @@
+{
+ "criticas": [
+  {
+   "premissa": "P50",
+   "contrario": "O 'hoje' mostra Rabobank caindo de 1,9% para 0,3%, mas o recuo pode ser reclassificação de perímetro (1005→1009 em 03/2025), não saída real. Estrangeiros podem atuar via fundos e Fiagro, invisíveis no IF.data.",
+   "alternativa": "A queda aparente reflete quebra de série do Cosif 2025 e migração da originação estrangeira para veículos de mercado de capitais, fora do balanço medido.",
+   "riscos_de_dado": [
+    "quebra de perímetro em 03/2025",
+    "originação para fundos não aparece em carteira",
+    "John Deere só até 12/2024, dado defasado"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "CVM (Fiagro/FIDC por originador)"
+    ],
+    "descricao": "Somar rural PF+PJ de Rabobank, Deere, CNH e similares em 2022-2026 com perímetro constante; se passar de 8% ou crescer 1 p.p./ano, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Rabobank, bancos de fabricantes e estrangeiros não ameaçam a fatia do BB em carteira nem em originação para veículos de mercado, medidos com perímetro constante."
+  },
+  {
+   "premissa": "P51",
+   "contrario": "Agrolend com R$ 968 mi de carteira é irrelevante frente a R$ 403,6 bi do agro do BB; crescer 50% ao ano sobre base minúscula não justifica parceria nem aquisição.",
+   "alternativa": "O crescimento das agfintechs pode ser só repasse de risco que bancos não querem, com rentabilidade frágil dependente de apetite de Fiagro, não modelo superior.",
+   "riscos_de_dado": [
+    "carteira própria não mede originação para fundos",
+    "meta de R$ 2 bi é intenção, não fato",
+    "fonte I-32 é imprensa, não documento primário"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM (Fiagro/FIDC por originador)",
+     "IF.data"
+    ],
+    "descricao": "Medir volume originado por agfintechs para veículos em 2024-2026; se estagnar ou cair, refuta a tese de canal crescente."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P53",
+   "contrario": "Desligar plataforma de testes não prova abandono: BCB pode retomar em novo desenho, e a CPR tokenizada na B3 pode avançar por via privada-regulatória sem piloto público.",
+   "alternativa": "O encerramento de nov/2025 pode ser troca de fornecedor ou de arquitetura, não desistência; imprensa (I-33) não é fonte oficial.",
+   "riscos_de_dado": [
+    "fato 'hoje' vem de imprensa, não de comunicado oficial",
+    "ausência de cronograma não é prova de ausência de projeto",
+    "horizonte 'fim de 2027' é arbitrário"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Comunicados BCB",
+     "normativos CVM",
+     "registros B3"
+    ],
+    "descricao": "Verificar fonte oficial do BCB até dez/2027: qualquer cronograma público de produção ou piloto retomado refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "Até dez/2027 não há cronograma oficial do BCB para tokenização pública em produção; confirmar o desligamento de nov/2025 em fonte primária antes de decidir."
+  },
+  {
+   "premissa": "P54",
+   "contrario": "O BB é grande em consignado e crédito PF; antecipação do saque-aniversário pode estar embutida em linhas de crédito pessoal sem rótulo próprio, e a restrição pode deslocar demanda, não eliminá-la.",
+   "alternativa": "Mesmo que o produto seja de bancos médios, a restrição pode reduzir concorrência em crédito pessoal e beneficiar o BB, tornando o tema relevante ao contrário.",
+   "riscos_de_dado": [
+    "'hoje' é lacuna [H], sem dado",
+    "datas de vigência conflitam na imprensa",
+    "linha pode não estar identificada no IF.data"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (crédito pessoal por instituição)",
+     "resoluções do Conselho Curador do FGTS"
+    ],
+    "descricao": "Identificar a carteira de antecipação do saque-aniversário do BB; se superar 1% do crédito PF, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N01",
+   "contrario": "O choque pode não ser só agro: inadimplência total subiu 1,57 p.p. e o sistema inteiro foi de 3,04% para 5,10%; Santander, sem agro relevante, perdeu 5,6 p.p. de ROAE, sinal de deterioração ampla.",
+   "alternativa": "A alta ex-agro pode refletir ciclo de crédito PF do sistema (crédito pessoal, cartão) e não falha específica do BB; o placebo com Itaú e Santander capta isso, mas definições de NPL diferem entre bancos.",
+   "riscos_de_dado": [
+    "perímetros de carteira agro diferem entre BB e SGS",
+    "definição de carteira classificada pode mudar com Cosif 2025",
+    "pesos do agro em set/25 e set/26 mudam com a carteira encolhendo 4,3% no trimestre"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB, Análise do Desempenho 3T26",
+     "Itaú e Santander, apresentações 3T26"
+    ],
+    "descricao": "Calcular NPL ex-agro do BB pela fórmula proposta com dados de set/25 e set/26; se alta ≥1,0 p.p. ou ≥2× a média dos pares, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N02",
+   "contrario": "A vantagem do BB pode ser só mix: sua carteira tem mais recursos equalizados e PJ, enquanto a parcela a taxa de mercado do sistema está em 17,21%; controlado o mix, o BB pode não selecionar melhor.",
+   "alternativa": "O resíduo baixo pode vir de renegociações e reestruturações que adiam o reconhecimento da perda, não de seleção superior; inadimplência contábil não mede risco econômico.",
+   "riscos_de_dado": [
+    "perímetros divergem: BB inclui PJ e agroindustrial, SGS 21148 é só PF",
+    "quebra de série IF.data em 03/2025",
+    "renegociados podem sair do denominador de vencidos"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "SICOR",
+     "SCR.data"
+    ],
+    "descricao": "Rodar a regressão por instituição controlando fonte de recurso e PJ; se o resíduo do BB for ≥0 em 3 dos 4 últimos trimestres, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N04",
+   "contrario": "Recuperações judiciais e inadimplência estratégica podem explicar parcela grande da variação entre UFs, e choques de safra são correlacionados entre UFs vizinhas, inflando o R² aparente de produção e preço.",
+   "alternativa": "A variação entre UFs pode refletir mix de culturas e de fontes de recurso, não choques; UFs com mais crédito de mercado teriam alta maior independentemente de safra.",
+   "riscos_de_dado": [
+    "Datajud não identifica saldo rural do devedor com precisão",
+    "SCR.data agregado por UF pode ocultar composição",
+    "decretos de emergência são autodeclarados por municípios"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data",
+     "IBGE LSPA/PAM",
+     "CEPEA",
+     "CNJ Datajud"
+    ],
+    "descricao": "Rodar a regressão entre UFs com placebo em PF não rural; se produção+preço der R²<0,25 ou recuperação judicial acrescentar ≥0,20, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N05",
+   "contrario": "Os ganhos de Caixa e Banco da Amazônia podem ser comerciais (capilaridade, preço) e não alocação de fundos; e Sicredi/Sicoob ganharam com recursos livres e LCA, sugerindo perda de mercado também.",
+   "alternativa": "A perda do BB pode ser auto-contenção de risco diante da inadimplência, não transferência de fontes; a carteira agro do BB caiu 4,3% no trimestre por decisão própria.",
+   "riscos_de_dado": [
+    "quebra de perímetro em 03/2025 contamina a série de participação",
+    "SICOR mede contratação, IF.data mede estoque: não são comparáveis diretamente",
+    "classificação de fonte de recursos pode mudar entre safras"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR",
+     "IF.data",
+     "normativos BCB/CMN"
+    ],
+    "descricao": "Decompor a variação da participação do BB por fonte de recursos nas safras 2019/20-2025/26; se ≥60% da perda for em recursos livres ou LCA, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  }
+ ]
+}

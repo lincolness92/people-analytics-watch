@@ -1,0 +1,7 @@
+{
+ "c1": {"modelo": "claude-opus-5-5", "familia": "claude", "via": "subagente do Claude Code (sem chave da API da Anthropic)"},
+ "c2": {"modelo": "claude-fable-5-2", "familia": "claude", "via": "subagente do Claude Code", "nota": "autor da v0: não é independente no braço B"},
+ "c3": {"modelo": "deepseek-ai/DeepSeek-V4-Pro", "familia": "deepseek", "reasoning": "medium"},
+ "c4": {"modelo": "Qwen/Qwen3.8-2.4T-A95B", "familia": "qwen", "reasoning": "medium"},
+ "c5": {"modelo": "moonshotai/Kimi-K3", "familia": "kimi", "reasoning": "medium", "nota": "no lugar da cadeira E (Gemini), sem chave do Google"}
+}

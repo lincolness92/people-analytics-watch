@@ -1,0 +1,191 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P21",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Hipótese explícita sem dado. Fonte BCB existe mas série e métrica não detalhadas no dossiê. Não controla por perfil de clientela ou canal digital."
+  },
+  {
+   "premissa": "P22",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-042",
+    "F-041"
+   ],
+   "sem_apoio": [
+    "hoje: depósitos à vista 22,3%→17,0% (F-038 diz 21,49%→16,63%)",
+    "hoje: captações 18,7%→14,9% (F-041 diz 17,76%→14,79%)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Enunciado cita F-038 e F-042 corretamente, mas campo 'hoje' traz números divergentes do dossiê. Teste e limiares bem definidos."
+  },
+  {
+   "premissa": "P23",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "I-30 e I-31 referenciados sem fato correspondente no dossiê"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fontes I-30/I-31 fora do dossiê. Teste condicionado a disponibilidade pública de contratos. Não separa perda por regulação de perda por competição."
+  },
+  {
+   "premissa": "P24",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "F-039 confere (21,14%→20,65%; hoje arredonda 21,1→20,7). Limiares claros. Falta controle explícito para tendência sistêmica da poupança."
+  },
+  {
+   "premissa": "P25",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "I-31 referenciado sem fato no dossiê"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Hipótese sem dado. Benchmark (fatia×variação do sistema) controla parcialmente. Menos de 3 eventos torna resultado só descritivo."
+  },
+  {
+   "premissa": "P26",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-048"
+   ],
+   "sem_apoio": [
+    "hoje: único banco em 555 (F-019 diz 577)",
+    "hoje: 437 em 12/2022 (sem fato no dossiê)",
+    "hoje: sistema com 23% menos agências (sem fato no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "DiD escalonado bem desenhado com controles e pré-tendência. Mas três números do campo 'hoje' não conferem com F-019/F-048."
+  },
+  {
+   "premissa": "P27",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [
+    "cerca de 25% do consignado de servidores (I-19, fora do dossiê; F-022 mostra 19,22% do consignado total)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiar de 20 trocas e queda de 20% bem fixados. Número de 25% vem de fonte não incluída no dossiê e diverge de F-022."
+  },
+  {
+   "premissa": "P28",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-012",
+    "F-014"
+   ],
+   "sem_apoio": [
+    "F-006 citado no enunciado não existe no dossiê",
+    "F-014 marcado como ilustrativo e confiança baixa, usado como fato medido"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-006 inexistente no dossiê. F-014 é ilustrativo (confiança baixa). Parte (b) tem método claro; parte (a) é descritiva sem limiar."
+  },
+  {
+   "premissa": "P29",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "I-29 referenciado sem fato no dossiê"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Hipótese sem dado. Limiares de 30%/1,5x claros. Não distingue inércia histórica de vantagem competitiva na gestão RPPS."
+  },
+  {
+   "premissa": "P30",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-028"
+   ],
+   "sem_apoio": [
+    "hoje: cooperativas singulares 10,7%→18,6% (não está no dossiê; soma Sicredi+Sicoob em F-028 dá 8,55%→14,88%)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-028 confere para BB e ganhos individuais. Número agregado de cooperativas singulares não tem respaldo no dossiê. Abertura por porte inexistente."
+  }
+ ]
+}

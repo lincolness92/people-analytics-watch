@@ -1,0 +1,196 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C4-N12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-029",
+    "F-030",
+    "F-028"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de participação e ganho do BNDES conferem. Teste exige excluir repasses, o que pede detalhe não explicitado na fonte pública."
+  },
+  {
+   "premissa": "C4-N13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-039",
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Participações e deltas conferem. Limiar de refutação claro (3+ semestres negativos). Faltou controle para estabilidade do sistema como um todo."
+  },
+  {
+   "premissa": "C4-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-037",
+    "F-004",
+    "F-009",
+    "F-010"
+   ],
+   "sem_apoio": [
+    "577 agências exclusivas – número não consta no dossiê nem em fonte pública citada"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Eficiência e participação conferem, mas '577 exclusivas' na decisão não tem apoio. Teto aplicado em fundamentada e soma."
+  },
+  {
+   "premissa": "C4-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-002",
+    "F-001",
+    "F-008",
+    "F-009"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "RSPL, lucro e ROE dos pares conferem. '~12-14%' é condicional ilustrativo; teste remete a NTN-B+prêmio corretamente. DuPont exige série não detalhada."
+  },
+  {
+   "premissa": "C5-N01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012",
+    "F-006",
+    "F-013"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "SGS 21148/21146 e inadimplência agro BB conferem. Limiar de 1 p.p. claro. 'Sistema sem BB' exige cálculo não trivial em SICOR."
+  },
+  {
+   "premissa": "C5-N02",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "SGS confere em nível sistema. Abertura BB por fonte (mercado vs direcionado) não está no dossiê; série pública específica não nomeada com clareza."
+  },
+  {
+   "premissa": "C5-N03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Participação agro e ganhadores conferem. Refutação sem limiar numérico ('taxas alinhadas' não quantificado). Série de taxas por instituição no BCB existe mas não detalhada no dossiê."
+  },
+  {
+   "premissa": "C5-N05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-022",
+    "F-023",
+    "F-049"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Deltas de consignado e crédito pessoal conferem. Controle sem consignação explícito. Refutação carece de limiar numérico para 'fluxo novo menor que estoque'."
+  },
+  {
+   "premissa": "C5-N07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031",
+    "F-027"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Participação comex e ganhos de Itaú/Citi conferem. Quebra de perímetro e câmbio tratados como confundidores. Ajuste metodológico não totalmente especificado."
+  },
+  {
+   "premissa": "C5-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-042",
+    "F-004",
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "LCA e MFB conferem. Controles (a prazo, poupança) nomeados. Refutação sem limiar numérico para 'custo/CDI estável'. Série de custo de captação não especificada."
+  }
+ ]
+}

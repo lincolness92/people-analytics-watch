@@ -1,0 +1,102 @@
+{
+ "source": "BCB SCR.data v2",
+ "methodology": "https://www.bcb.gov.br/pda/desig/metodologia_versao2.pdf",
+ "files": [
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2012.zip",
+   "fetched_at": "2026-11-28T05:37:13+00:00",
+   "bytes": 57310589,
+   "last_modified": "Thu, 16 Apr 2026 22:54:54 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2013.zip",
+   "fetched_at": "2026-11-28T05:38:03+00:00",
+   "bytes": 118581157,
+   "last_modified": "Thu, 16 Apr 2026 15:06:05 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2014.zip",
+   "fetched_at": "2026-11-28T05:38:35+00:00",
+   "bytes": 121662773,
+   "last_modified": "Thu, 16 Apr 2026 00:53:04 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2015.zip",
+   "fetched_at": "2026-11-28T05:39:07+00:00",
+   "bytes": 119966859,
+   "last_modified": "Wed, 15 Apr 2026 02:29:06 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2016.zip",
+   "fetched_at": "2026-11-28T05:39:39+00:00",
+   "bytes": 122061842,
+   "last_modified": "Tue, 14 Apr 2026 03:49:30 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2017.zip",
+   "fetched_at": "2026-11-28T05:40:15+00:00",
+   "bytes": 125712159,
+   "last_modified": "Fri, 10 Apr 2026 22:50:35 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2018.zip",
+   "fetched_at": "2026-11-28T05:40:53+00:00",
+   "bytes": 126106733,
+   "last_modified": "Thu, 09 Apr 2026 02:31:14 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2019.zip",
+   "fetched_at": "2026-11-28T05:41:33+00:00",
+   "bytes": 138829442,
+   "last_modified": "Wed, 08 Apr 2026 13:47:59 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2020.zip",
+   "fetched_at": "2026-11-28T05:42:16+00:00",
+   "bytes": 143249287,
+   "last_modified": "Tue, 07 Apr 2026 16:23:43 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2021.zip",
+   "fetched_at": "2026-11-28T05:43:03+00:00",
+   "bytes": 151079788,
+   "last_modified": "Mon, 06 Apr 2026 22:46:51 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2022.zip",
+   "fetched_at": "2026-11-28T05:43:50+00:00",
+   "bytes": 163892361,
+   "last_modified": "Thu, 02 Apr 2026 01:24:41 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2023.zip",
+   "fetched_at": "2026-11-28T05:44:40+00:00",
+   "bytes": 173569991,
+   "last_modified": "Fri, 27 Mar 2026 22:10:32 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2024.zip",
+   "fetched_at": "2026-11-28T05:45:32+00:00",
+   "bytes": 176123851,
+   "last_modified": "Fri, 20 Nov 2026 07:42:25 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2025.zip",
+   "fetched_at": "2026-11-28T05:46:26+00:00",
+   "bytes": 180113398,
+   "last_modified": "Sat, 24 Oct 2026 08:42:49 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/pda/desig/scrdata_2026.zip",
+   "fetched_at": "2026-11-28T05:12:00+00:00",
+   "bytes": 136118649,
+   "last_modified": "Fri, 27 Nov 2026 17:48:00 GMT",
+   "note": "baixado com curl; o HEAD de outro nó do CDN anunciou 136114308 bytes logo depois"
+  }
+ ],
+ "built_at": "2026-11-28T05:49:33+00:00",
+ "outputs": {
+  "scr_rural_uf_segmento.csv": "R$ milhões; soma das células rurais do SCR.data v2",
+  "raw/scr_rural_detail.csv.gz": "R$; todas as dimensões menos cnae_ocupacao"
+ }
+}

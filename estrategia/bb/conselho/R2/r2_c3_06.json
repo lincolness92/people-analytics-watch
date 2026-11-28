@@ -1,0 +1,186 @@
+{
+ "criticas": [
+  {
+   "premissa": "C2-N03",
+   "contrario": "A perda do BB pode vir das linhas equalizadas, pois a inadimplência do agro no BB subiu de 4,84% para 6,92% mesmo com carteira crescendo só 1,2% a/a. Não há abertura por fonte no dossiê para atribuir às taxas livres.",
+   "alternativa": "O dado sistêmico de rural PF (17,21% vs 9,59%) reflete perfil de tomador, não linha. No BB, operações de custeio equalizado podem piorar por efeito clima, independentemente do funding.",
+   "riscos_de_dado": [
+    "SGS 21146/21148 cobre só rural PF, não todo o agro nem PJ; o BB tem R$ 403,6 bi em carteira agro.",
+    "Não há abertura por fonte no dossiê; SICOR por instituição pode ter defasagem e reclassificações de linhas equalizadas.",
+    "Adimplência de 90 dias pode ser mascarada por prorrogações e renegociações."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR - Matriz de Dados do Crédito Rural",
+     "BB RI - abertura do agro por fonte",
+     "CVM ITR/DFP"
+    ],
+    "descricao": "Calcular no BB o saldo em atraso +90d do agro por fonte; se operações a taxa livre respondem por menos de 40% do atraso ou índice de concentração ≤ 1,1, a premissa é falsa."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Condicionar a premissa à abertura por fonte do BB: 'No BB, o atraso +90d das operações a taxa livre é pelo menos 1,5x o das equalizadas.' Só então atribuir perda majoritária."
+  },
+  {
+   "premissa": "C2-N04",
+   "contrario": "A participação do BB pode subir mais de 2 p.p. no fluxo novo, porque três dos cinco concorrentes reduzem a oferta em mais de 10%. Os clientes migram para quem continua emprestando, contradizendo a não subida.",
+   "alternativa": "A alta de 52,20% para 53,46% no saldo rural PF decorre de repactuação de contratos antigos, não de novas contratações. O fluxo novo pode seguir em queda.",
+   "riscos_de_dado": [
+    "IF.data mede saldo, não fluxo; renegociações entram no saldo e inflam a participação.",
+    "SICOR pode ter dupla contagem entre renovação e novo contrato e defasagem de registro.",
+    "Safra de verão concentra contratações; julho a dezembro não cobre toda a safra."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR - Matriz de Dados do Crédito Rural",
+     "IF.data (crédito rural por instituição)",
+     "Taxas de juros por instituição"
+    ],
+    "descricao": "Comparar share do BB no valor contratado novo sem prorrogação; se share sobe mais de 2,0 p.p. e ao menos três concorrentes reduzem contratação em mais de 10%, premissa é falsa."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N06",
+   "contrario": "O pico não passou: a projeção revisada implica custo de crédito de R$ 21,4–24,4 bi no 4T26, igual ou acima dos R$ 21,2 bi do 3T26. Cobertura caiu para 137,8%, sugerindo nova piora.",
+   "alternativa": "O custo alto no 3T26 pode ser provisão adicional para risco futuro, não formação realizada. A inadimplência de 90 dias pode subir depois por renegociações que saem do atraso.",
+   "riscos_de_dado": [
+    "Formação de inadimplência não é publicada; depende de variação de saldo e baixas, sujeita a critérios de write-off.",
+    "Atraso de 15 a 90 dias pode ser volátil; renegociado pode esconder piora.",
+    "dados trimestrais de bancos têm defasagem e revisões; comparar com pares exige ajuste contábil."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "RI BB - séries históricas",
+     "CVM ITR/DFP",
+     "BCB SGS 21148 e 21082",
+     "RI Itaú e Santander"
+    ],
+    "descricao": "Calcular formação = Δ +90d + baixas / carteira anterior; se 4T26 ≥ 3T26 ou atraso 15-90 sobe ou renegociado cresce >20%, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N07",
+   "contrario": "Sem aporte, o capital pode cair abaixo de 10,80%: o RWA pode crescer com crédito, o ativo fiscal diferido consumir capital deduzido, e o lucro projetado é insuficiente para cobrir distribuição e crescimento.",
+   "alternativa": "A queda de 12,23% para 10,80% já reflete pagamento de dividendos e aumento de RWA. A manutenção pode depender de venda de ativos ou mudança regulatória, não só lucro retido.",
+   "riscos_de_dado": [
+    "Série KM1 mostra sazonalidade (dez/25 pico 12,23%; set/26 10,80%); usar set/26 como base subestima capital futuro.",
+    "Projeções de lucro e distribuição não divulgadas em detalhe; premissas de payout e RWA são internas.",
+    "Mudanças de regulação prudencial ou deduções de ATF podem alterar CET1 sem transparência trimestral."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DASFN Pilar 3 KM1/CC1",
+     "CVM IPE projeções",
+     "RI BB política de dividendos",
+     "Comparar Itaú/Santander"
+    ],
+    "descricao": "Decompor variação trimestral de CET1: lucro, dividendos, RWA, deduções; projetar até dez/27 com ponto médio do lucro; refuta se CET1 <10,5% ou payout menor que 2025 ou deduções sobem >0,3 p.p. do RWA."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Reformular como projeção: 'Com lucro líquido de R$ 9–11 bi em 2026/27, payout idêntico a 2025 e RWA estável, o CET1 fica ≥10,80% até dez/27; sensível a deduções de ativo fiscal diferido.'"
+  },
+  {
+   "premissa": "C2-N09",
+   "contrario": "A participação pode estar caindo em todos os recortes, inclusive servidores. A queda total de 21,17% para 19,22% é pequena, mas não indica estabilidade específica.",
+   "alternativa": "A estabilidade geral pode esconder perda em servidores compensada por ganho temporário em INSS, ou as séries por tipo não são comparáveis.",
+   "riscos_de_dado": [
+    "Não há abertura por tipo no dossiê. SGS pode não ter série de consignado por origem de forma consistente.",
+    "IF.data não separa consignado por segmento; dados por banco dependem de divulgação voluntária.",
+    "Portabilidade e migração de margem podem distorcer a origem."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB SGS consignado por tipo",
+     "RI BB abertura consignado",
+     "IF.data",
+     "INSS/CNPS"
+    ],
+    "descricao": "Calcular participação do BB em cada recorte usando saldo do BB divulgado sobre total do SGS; refuta se participação em servidores cair mais de 2 p.p. desde 2019 ou INSS ficar estável (queda <1 p.p.)."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Condicionar à abertura por tipo: 'Se obtida a série de consignado por segmento, o BB mantém share em servidores (±1 p.p.) e cai >3 p.p. em INSS desde 2019.'"
+  },
+  {
+   "premissa": "C2-N10",
+   "contrario": "Grande parte da perda pode ser artefato: a mudança de conglomerado para prudencial em 03/2025 e a nova Cosif alteram classificação de porte. O salto do Bradesco em pequena (7,32%→24,08%) indica reclassificação, não ganho real.",
+   "alternativa": "A perda em micro/pequena/média pode ser transferência para grande empresa por mudança de critério. A estabilidade em grande (17,9%→16,98%) sugere que o BB não perdeu clientes, apenas reclassificou.",
+   "riscos_de_dado": [
+    "Quebra de série em 03/2025 (perímetro 1005→1009) e Cosif 2025 mudam definições; série não é comparável sem encadeamento.",
+    "Porte definido por faturamento; bancos podem reclassificar clientes anualmente.",
+    "IF.data agrega por conglomerado; Bradesco pode ter incorporado carteira de subsidiária, não migração real."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data PJ por porte",
+     "Balancetes Cosif 4010/4040",
+     "SCR.data",
+     "RI bancos"
+    ],
+    "descricao": "Calcular soma micro+pequena+média do BB, encadeada dentro de cada perímetro; refuta se queda até 12/2024 for <1,5 p.p. ou mais da metade da queda ocorrer em trimestre de reclassificação."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Reformular: 'Dentro do perímetro antigo (até 12/2024), a soma micro+pequena+média do BB cai ≥3 p.p.; a queda não é explicada por salto anual de reclassificação de concorrente acima de 5 p.p. em um trimestre.'"
+  },
+  {
+   "premissa": "C2-N13",
+   "contrario": "Pode ser minoria: em 577 municípios só-BB, cooperativas podem não ter posto físico, apenas correspondente ou digital. A exclusividade pode ser forte, ainda que não total.",
+   "alternativa": "Mesmo havendo posto, a presença de cooperativa pode ser recente e de baixa capacidade de crédito. A exclusividade de rede bancária física ainda é verdadeira para operações que exigem banco múltiplo.",
+   "riscos_de_dado": [
+    "ESTBAN não cobre cooperativas e digitais; dados de postos dependem de Unicad e podem incluir postos sem atendimento pleno.",
+    "Contagem por saldo de crédito pode subestimar presença de postos sem agência.",
+    "Pix por município pode refletir uso de bancos digitais, não presença física local."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN por município",
+     "Unicad - postos de cooperativas",
+     "BCB Pix por município",
+     "IBGE população"
+    ],
+    "descricao": "Identificar os 577 municípios; cruzar com coordenadas de postos de cooperativas do Unicad; premissa refutada se menos de 25% dos municípios tiverem posto."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N14",
+   "contrario": "Municípios só-BB podem ter economia agropecuária com poucos depósitos e alta demanda de crédito rural. A razão depósitos/crédito pode ser menor que em cidades com mais renda.",
+   "alternativa": "Depósitos baratos podem estar concentrados em grandes centros urbanos, não em municípios exclusivos. A capilaridade não garante captação barata.",
+   "riscos_de_dado": [
+    "Não há dados municipais no dossiê. ESTBAN tem saldo de crédito, mas depósitos à vista/poupança por município podem não ser divulgados por banco.",
+    "Comparação pareada por PIB do agro pode ser inviável sem dados de PIB municipal detalhados.",
+    "Sazonalidade de depósitos e inflação podem distorcer séries nominais."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN por município",
+     "Cosif agências",
+     "IBGE PIB municipal",
+     "RI BB"
+    ],
+    "descricao": "Calcular razão depósitos à vista+poupança sobre crédito por município do BB; parear por população e PIB agro; refuta se razão nos só-BB ≤ grupo pareado ou depósitos reais caíram >20% desde 2019."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Condicionar à obtenção de dados municipais: 'Nos municípios só-BB, a razão depósitos baratos/crédito é ≥20% maior que no grupo pareado e não caiu >10% real desde 2019.'"
+  }
+ ]
+}

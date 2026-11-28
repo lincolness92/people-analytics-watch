@@ -1,0 +1,194 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P41",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Hipótese explícita sem dado hoje. Fontes públicas nomeadas, duas definições de cliente como robustez. Sem números do dossiê citados; nada a conferir."
+  },
+  {
+   "premissa": "P42",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006",
+    "F-012",
+    "F-013"
+   ],
+   "sem_apoio": [
+    "BB rural 6,2% (dossiê: agro 6,92% F-006 ou carteira total 6,08% F-005)",
+    "sistema rural 5,6% (dossiê: rural PF 9,59% F-012 ou total 5,10% F-013)",
+    "BB consignado 0,5%",
+    "sistema consignado 1,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Quatro números do bloco 'hoje' não batem com o dossiê. Método de painel e limiar de significância são claros, mas a base factual está errada."
+  },
+  {
+   "premissa": "P43",
+   "notas": {
+    "testavel": 0,
+    "refutavel": 1,
+    "decisoria": 1,
+    "fundamentada": 2,
+    "so_publico": 1,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Descartada como premissa pelo próprio autor. Confirmação e refutação vagas. Fonte adequada declarada interna. Não orienta decisão."
+  },
+  {
+   "premissa": "P44",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares de 70%/90% e amostra mínima claros. Porém a pesquisa com recorte etário por instituição não existe hoje; premissa suspensa."
+  },
+  {
+   "premissa": "P45",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-008",
+    "F-016",
+    "F-017"
+   ],
+   "sem_apoio": [
+    "payout mínimo de 25% (referência I-01/I-03 não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "CET1 10,80% e 11,16% conferem com F-007. Payout 25% é parâmetro legal, mas não consta do dossiê. Limiares de folga e decisão são claros."
+  },
+  {
+   "premissa": "P46",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-009",
+    "F-010"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Inadimplência agro 4,84%→6,92% confere com F-006. Comparação com pares e separação estágio 1/2 vs vencido controlam a explicação alternativa."
+  },
+  {
+   "premissa": "P47",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-046"
+   ],
+   "sem_apoio": [
+    "patrimônio de R$ 181,8 bi (referência [FI] §3.1 não está no dossiê; F-046 permite estimar ~182,5 bi, mas o valor exato citado não consta)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Carteira agro R$ 403,6 bi confere (F-006). Patrimônio citado não está no dossiê. Limiares de 0,2/0,5 p.p. e decisão são claros."
+  },
+  {
+   "premissa": "P48",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "Selic em 13,75% (referência [FE] não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Corolário testável com SGS 21146 vs 21148 (F-012). Selic 13,75% não consta do dossiê. Decomposição Shapley separa fatores."
+  },
+  {
+   "premissa": "P49",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-036"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Enquadrada como monitoramento, não premissa. Limiar de 2 p.p. e prazo 12/2027 claros. Distingue norma aprovada de proposição em tramitação."
+  },
+  {
+   "premissa": "P50",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-030",
+    "F-036"
+   ],
+   "sem_apoio": [
+    "Rabobank 1,9%→0,3% do rural PF (não aparece em nenhum fato do dossiê)",
+    "John Deere perto de 1,8% até 12/2024 (não aparece no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Dois números do bloco 'hoje' sem respaldo no dossiê. Limiares de 5%/8% e 0,5/1 p.p. ao ano são claros. Separa dois trechos por mudança de perímetro."
+  }
+ ]
+}

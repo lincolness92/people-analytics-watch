@@ -44,14 +44,23 @@ O Claude lê o que foi marcado.
 5. Revisar a visão no documento editável https://claude.ai/artifact/JqYuvBZ5gnQkaVAgTZSXXd (decisões em aberto: nome,
    acesso por pessoa, token para o Claude acessar a aplicação, fontes, vídeos, próximo tema). Aprovado, vai para o `VISION.md`.
 6. Testar no iPhone: o microfone (com o teclado aberto) e uma pergunta real no Pergunte do site novo.
+7. Plano de guerra do BB: aprovar o dossiê do conselho por amostra (H1, `estrategia/bb/conselho/R0/dossie.json`) e
+   fixar os limiares das premissas escolhidas (H2, `estrategia/bb/conselho/R5/relatorio.md`).
+8. Conselho: acesso ao Astra e ao Gemini, quando houver; notas humanas em 10 premissas para calibrar os juízes.
+9. Licenças e certificados de fontes do Atena: CEPEA (CC BY-NC), B3 (proíbe coleta automatizada), cadeia ICP-Brasil
+   para os arquivos do Comex Stat (instalar ou não).
 
 ## Próximo (do lado do Claude)
+- Plano de guerra do BB: entrega v1 para 01/12 (`estrategia/bb/`), testes das premissas G01 e S01 do Atena.
 - Consumir as fontes mapeadas de prioridade alta (FEBRABAN e associações).
 - Site, leva 2: sparklines por subtema, radar "onde apostar", páginas de técnica e de paper.
 - Onboarding canônico pré-computado (a intenção mais fraca do agente depois da calibração).
 - Código e dados por método, e validar a ligação repositório ↔ paper.
 
 ## Observações
+- **Conselho:** rode as cadeiras abertas com `python3 estrategia/bb/conselho/council.py run <rodada> c3 c4 c5` e `HF_TOKEN` no ambiente
+  (lido de `~/.hermes/.env`). Cada cliente fixa o seu modelo (`LLM(models=[...])`): `PAW_MODEL` é do processo inteiro e
+  disputa entre threads.
 - **Normas sem texto na API:** algumas normas do Bacen vêm sem texto e ficam sem ficha (fora do site).
 - **Rota river:** essa rota da HF corta saídas longas mesmo com raciocínio "low". O cliente a rebaixa
   automaticamente depois da primeira falha.

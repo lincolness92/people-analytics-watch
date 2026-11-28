@@ -1,0 +1,179 @@
+{
+ "criticas": [
+  {
+   "premissa": "C5-N01",
+   "contrario": "BB agro (6,92%, F-006) está abaixo do sistema rural PF (9,59%, F-012), mas os perímetros diferem: 'agronegócio' do BB inclui PJ; SGS 21148 é só PF. A comparação pode mascarar seleção pior em subsegmentos.",
+   "alternativa": "A inadimplência menor do BB pode refletir mix com mais crédito direcionado e garantias reais (penhor, hipoteca), não qualidade de seleção. O choque de preços agrícolas atinge todos, mas colchões de garantia diferem.",
+   "riscos_de_dado": [
+    "Perímetro: BB 'agronegócio' ≠ SGS 21148 'rural PF'; comparação direta é inválida sem ajuste.",
+    "F-006 ressalva: cobertura do agro em set/26 não lida com segurança.",
+    "Defasagem: BB set/26 vs sistema out/26.",
+    "SGS 21146 (17,21%) é subconjunto com taxas de mercado; ponderação desconhecida."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR/BCB (inadimplência rural PF+PJ por instituição)",
+     "BB Apresentação 3T26 (inadimplência agro por subsegmento PF/PJ)"
+    ],
+    "descricao": "Calcular inadimplência +90d do agro BB no mesmo perímetro PF+PJ do SICOR e comparar com mediana dos cinco maiores originadores. Se BB superar mediana em >1 p.p., a tese sistêmica cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência do agro BB (6,92%, set/26) é inferior à do crédito rural PF do sistema (9,59%, out/26), mas os perímetros não são comparáveis. Antes de concluir choque sistêmico, é necessário alinhar a comparação em PF+PJ via SICOR."
+  },
+  {
+   "premissa": "C5-N02",
+   "contrario": "SGS 21146 (17,21%) e SGS 21148 (9,59%) são séries do sistema, não do BB. Não há no dossiê abertura da inadimplência do BB por faixa de taxa (direcionada vs mercado). A premissa extrapola dado sistêmico para o BB.",
+   "alternativa": "A inadimplência elevada na parcela de mercado pode refletir ciclo de preços de commodities e seca, não risco de seleção. Reduzir originação a mercado pode simplesmente transferir o produtor para cooperativas, sem resolver o problema de renda.",
+   "riscos_de_dado": [
+    "Dossiê não contém inadimplência do BB segmentada por taxa direcionada/mercado.",
+    "SGS 21146 e 21148 são séries do sistema; extrapolação para BB é inferência.",
+    "Perímetro do crédito rural muda com Cosif 2025 (ressalva em F-020 a F-043)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR/BCB (abertura por taxa e instituição)",
+     "BB Apresentação 3T26 (nota de provisão por segmento agro)"
+    ],
+    "descricao": "Obter inadimplência +90d do BB agro separando parcelas com taxa controlada e taxa de mercado. Se ambas superarem 6%, a concentração na parcela de mercado não se sustenta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "No sistema, a inadimplência do rural PF a taxas de mercado (17,21%, F-012) é muito superior à média (9,59%). Porém, não há dado no dossiê que permita afirmar que o BB reproduz essa concentração. Teste requer abertura SICOR por instituição e faixa de taxa."
+  },
+  {
+   "premissa": "C5-N03",
+   "contrario": "A perda de participação (F-021: −8,89 p.p.; F-036: −7,98 p.p.) pode refletir mudança regulatória (exigência de capital, direcionamento) e crescimento estrutural de cooperativas, não guerra de preço. Cooperativas têm modelo de custo diferente, não apenas preço menor.",
+   "alternativa": "Caixa (+4,91 p.p. em rural total, F-036) e Banco da Amazônia (+2,57 p.p.) podem ter ganhado participação por expansão de programas governamentais (Pronaf, FNO), não por preço. A perda do BB seria de mandato público, não de competitividade.",
+   "riscos_de_dado": [
+    "Perímetro muda de conglomerado financeiro (1005) para prudencial (1009) em 03/2025 (ressalva em F-021, F-036).",
+    "IF.data não distingue taxa média por instituição para crédito rural no dossiê.",
+    "Cooperativas não aparecem no ESTBAN (F-019), mas aparecem no IF.data; perímetros diferentes."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB Taxas de juros por instituição e modalidade (SGS)",
+     "SICOR (operações por instituição e fonte de recurso)"
+    ],
+    "descricao": "Comparar taxa média ponderada do BB em crédito rural com Caixa, Sicoob e Sicredi por semestre (2020-2026). Se diferença for <0,5 p.p., a tese de preço não se sustenta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB perdeu ~8 p.p. em rural PF e total (F-021, F-036) para Caixa, cooperativas e Banco da Amazônia. A causa (preço, regulação, programas governamentais) não é identificável só com participação. Requer cruzamento com taxas médias por instituição via SGS/SICOR."
+  },
+  {
+   "premissa": "C5-N07",
+   "contrario": "O ganho de participação em comex (+7,01 p.p., F-031) é acompanhado por Itaú (+3,49 p.p.), Citi (+3,61 p.p.) e Caixa (+3,43 p.p.). O crescimento pode ser do mercado total (boom de exportações), não vantagem competitiva do BB.",
+   "alternativa": "O ganho do BB em comex pode refletir operações ligadas ao agro exportador (financiamento de pré-embarque de soja, milho), que são extensão da carteira agro, não segmento autônomo de risco controlado.",
+   "riscos_de_dado": [
+    "Dossiê não contém inadimplência específica de comex do BB.",
+    "F-031 não distingue comex vinculado ao agro de comex industrial.",
+    "Rentabilidade por operação de comex não está no dossiê.",
+    "Perímetro muda em 03/2025 (ressalva padrão)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação 3T26 (inadimplência PJ por segmento)",
+     "Comex Stat/MDIC (fluxo total de exportações)",
+     "IF.data (saldo comex por instituição)"
+    ],
+    "descricao": "Verificar se o crescimento do saldo comex do BB acompanha o crescimento do fluxo total de exportações. Se a elasticidade for ≈1, o ganho é de mercado, não de share. Cruzar com inadimplência PJ comex vs PJ total."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB ganhou 7,01 p.p. em comex PJ (F-031), mas Itaú, Citi e Caixa também cresceram. Não há dado de inadimplência nem rentabilidade específica de comex no dossiê. Afirmar 'risco controlado' exige teste de inadimplência segmentada e correlação com fluxo de exportações."
+  },
+  {
+   "premissa": "C5-N09",
+   "contrario": "A poupança do BB ficou estável (21,14%→20,65%, F-039), e depósitos totais caíram menos (−2,97 p.p., F-041) que à vista (−4,86 p.p., F-038). O BB pode estar substituindo à vista por prazo, sem necessariamente elevar custo médio.",
+   "alternativa": "A migração de à vista para cooperativas e BTG pode refletir mudança de comportamento do cliente (Pix, contas digitais), não perda de relacionamento. O custo de captação pode não subir se o BB compensar com LCA/LCI.",
+   "riscos_de_dado": [
+    "Dossiê não contém custo médio de captação do BB nem dos pares.",
+    "F-038 a F-043 têm ressalva de mudança de perímetro em 03/2025.",
+    "Depósito à vista pode incluir contas inativas com saldo residual; qualidade do dado varia."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação 3T26 (custo médio de captação)",
+     "BCB SGS (taxa média de captação por modalidade)",
+     "IF.data (saldo por modalidade)"
+    ],
+    "descricao": "Calcular custo médio ponderado de captação do BB (à vista × 0 + poupança × TR + prazo × CDI) em 2019 vs 2026. Se o custo não subiu apesar da perda de à vista, a premissa de corrosão não se confirma."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C5-N11",
+   "contrario": "O total de agências do sistema em 06/2026 é 14.922 (F-048). Se o BB passou de 20,41% para 26,4%, isso implica ~3.940 agências. Sem o número absoluto de 2019, não se sabe se o BB fechou ou abriu. A premissa assume sem evidência.",
+   "alternativa": "A participação pode ter subido porque o BB fechou menos agências que Bradesco e Itaú (que reduziram fortemente), mas também pode ter aberto em municípios pequenos via correspondentes reclassificados como agência.",
+   "riscos_de_dado": [
+    "F-048 mostra participação, não número absoluto de agências do BB.",
+    "Ressalva de F-019: ESTBAN cobre só bancos com agência; cooperativas e digitais ficam fora.",
+    "Definição de 'agência' pode ter mudado entre 2019 e 2026 (postos de atendimento, agências digitais)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (número absoluto de agências por instituição)",
+     "BCB Agências e postos de atendimento"
+    ],
+    "descricao": "Extrair número absoluto de agências do BB em 12/2019 e 06/2026. Se caiu em termos absolutos, a tese de herança passiva se confirma. Se cresceu, a premissa é falsa."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C5-N13",
+   "contrario": "CET1 de 10,80% (F-007) está acima do mínimo regulatório de 7% (regra Basel III). A série F-016 mostra CET1 de 10,89% em 12/2024 e 12,23% em 12/2025. A queda para 10,80% pode ser sazonal (3T) e reverter no 4T com lucro.",
+   "alternativa": "A queda de CET1 pode refletir aumento de RWA por reclassificação contábil (Cosif 2025), não deterioração real de capital. O lucro revisado (F-008: R$9-11 bi) ainda gera capital orgânico se payout for reduzido.",
+   "riscos_de_dado": [
+    "Dossiê não informa o mínimo regulatório aplicável nem buffers (conservação, sistêmico).",
+    "F-007 e F-016 mostram séries trimestrais, mas não decompõem variação em lucro, dividendos, RWA.",
+    "Basileia (13,45%, F-007) inclui capital complementar; CET1 é mais restrito."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pilar 3 KM1 (DASFN/BCB)",
+     "BB Fato Relevante 11/11/2026 (F-008)",
+     "BCB Resolução CMN sobre buffers"
+    ],
+    "descricao": "Decompor variação de CET1 entre 3T25 e 3T26 em: lucro retido, dividendos pagos, variação de RWA, ajustes prudenciais. Se a queda vier de RWA por reclassificação, não há restrição real de capital."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "CET1 do BB caiu de 11,27% (jun/26) para 10,80% (set/26), e Basileia de 13,91% para 13,45% (F-007). Com lucro revisado para R$9-11 bi (F-008), a geração orgânica encolheu. Porém, o dossiê não informa buffers regulatórios nem decompõe a variação de RWA. A restrição existe, mas sua magnitude depende da decomposição."
+  },
+  {
+   "premissa": "C5-N15",
+   "contrario": "Com dados do F-004, despesas adm BB = R$10,3 bi, receitas (MFB + tarifas) = R$35,3 bi, resultando em eficiência ≈ 29,2% — melhor que Itaú (37,5%, F-009) e Santander (38,8%, F-010). A premissa pode estar factualmente errada.",
+   "alternativa": "A definição de eficiência do Itaú e Santander pode incluir receitas e despesas diferentes das do BB. A ressalva de F-009 alerta para definições distintas. O BB pode ter eficiência contábil boa mas eficiência econômica ruim se MFB estiver comprimida.",
+   "riscos_de_dado": [
+    "Dossiê não fornece índice de eficiência explícito do BB; cálculo 10,3/35,3 é aproximação.",
+    "Definições de eficiência diferem entre instituições (ressalva F-009).",
+    "MFB de R$26,0 bi (F-004) já está em queda (−5,5% t/t); denominador encolhendo piora índice futuro.",
+    "F-011 (Bradesco, Nubank) tem confiança média-baixa; comparação limitada."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação 3T26 (índice de eficiência reportado)",
+     "Itaú Apresentação 3T26",
+     "Santander Apresentação 3T26"
+    ],
+    "descricao": "Extrair o índice de eficiência reportado pelo BB na apresentação 3T26 e comparar com Itaú (37,5%) e Santander (38,8%) usando a mesma fórmula. Se BB reportar <35%, a premissa de ineficiência relativa é falsa."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O cálculo bruto com dados do F-004 sugere eficiência do BB ≈ 29%, inferior (melhor) a Itaú (37,5%) e Santander (38,8%). Porém, definições podem diferir. A premissa de ineficiência relativa não se sustenta sem o índice reportado pelo BB. O risco real é a MFB em queda (−5,5% t/t) comprimir o denominador."
+  }
+ ]
+}

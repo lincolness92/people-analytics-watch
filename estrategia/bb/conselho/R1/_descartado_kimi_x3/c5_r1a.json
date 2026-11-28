@@ -1,0 +1,611 @@
+{
+ "arvore": {
+  "id": "Q0",
+  "pergunta": "Como o BB volta a gerar retorno acima do custo de capital sem perder o que só ele tem?",
+  "filhas": [
+   {
+    "id": "Q1",
+    "pergunta": "A queda de retorno é aguda (ciclo de crédito do agro) ou estrutural (perda de participação e eficiência)?",
+    "filhas": [
+     {
+      "id": "Q1a",
+      "pergunta": "Quanto do custo de crédito de 2026 vem do agro e quanto vem de outras carteiras?",
+      "filhas": [
+       {
+        "id": "Q1a1",
+        "pergunta": "A inadimplência do agro é ciclo de safra/clima ou erro de subscrição do BB?",
+        "filhas": []
+       },
+       {
+        "id": "Q1a2",
+        "pergunta": "O custo de crédito fora do agro também está piorando?",
+        "filhas": []
+       }
+      ]
+     },
+     {
+      "id": "Q1b",
+      "pergunta": "O BB recupera retorno quando o ciclo do agro virar, sem mudar nada?",
+      "filhas": [
+       {
+        "id": "Q1b1",
+        "pergunta": "A simulação de RSPL sem agro (~17%) é reproduzível com dados públicos?",
+        "filhas": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "Q2",
+    "pergunta": "Onde o BB está perdendo terreno que não recupera sozinho?",
+    "filhas": [
+     {
+      "id": "Q2a",
+      "pergunta": "Em quais produtos a perda de participação é maior e para quem?",
+      "filhas": [
+       {
+        "id": "Q2a1",
+        "pergunta": "A perda em crédito pessoal e cartão para digitais é de preço, canal ou apetite de risco?",
+        "filhas": []
+       },
+       {
+        "id": "Q2a2",
+        "pergunta": "A perda em PJ pequena/média para Bradesco e cooperativas é reversível?",
+        "filhas": []
+       }
+      ]
+     },
+     {
+      "id": "Q2b",
+      "pergunta": "A captação barata (à vista, poupança, LCA) está encolhendo junto com o crédito?",
+      "filhas": []
+     }
+    ]
+   },
+   {
+    "id": "Q3",
+    "pergunta": "O que só o BB tem e como monetizar sem destruir?",
+    "filhas": [
+     {
+      "id": "Q3a",
+      "pergunta": "A capilaridade (577 municípios exclusivos) gera retorno ou só custo?",
+      "filhas": [
+       {
+        "id": "Q3a1",
+        "pergunta": "Agências em municípios exclusivos captam depósitos baratos e clientes rentáveis?",
+        "filhas": []
+       }
+      ]
+     },
+     {
+      "id": "Q3b",
+      "pergunta": "A liderança no agro (48,7% do sistema) ainda é vantagem depois da crise?",
+      "filhas": [
+       {
+        "id": "Q3b1",
+        "pergunta": "O BB precifica o risco do agro melhor que os concorrentes que ganharam participação?",
+        "filhas": []
+       }
+      ]
+     },
+     {
+      "id": "Q3c",
+      "pergunta": "O capital (CET1 10,8%) permite crescer onde o retorno é maior?",
+      "filhas": []
+     }
+    ]
+   }
+  ]
+ },
+ "premissas": [
+  {
+   "id": "N01",
+   "mercado": "agro",
+   "enunciado": "A inadimplência do agro do BB em 2026 é principalmente choque sistêmico de safra/clima, não falha de subscrição própria.",
+   "por_que_importa": "Se for sistêmica, basta atravessar o ciclo e ajustar preço; se for falha própria, é preciso refazer política de crédito e equipe.",
+   "teste": {
+    "fontes": [
+     "F-006",
+     "F-012",
+     "SICOR - Matriz de Dados do Crédito Rural",
+     "BCB SGS 21148, 21146"
+    ],
+    "metrica": "Inadimplência +90d do agro do BB versus inadimplência do crédito rural PF do sistema e versus bancos que ganharam participação (Caixa, Sicoob, Sicredi)",
+    "periodo": "2022-10 a 2026-10, mensal",
+    "comparacao": "BB contra sistema e contra cada concorrente que ganhou participação no rural"
+   },
+   "confirma_se": "Inadimplência do BB no agro ficar até 1 p.p. acima da média do sistema no rural",
+   "refuta_se": "Inadimplência do BB ficar mais de 2 p.p. acima da média do sistema no rural por 6 meses ou mais",
+   "decisao": {
+    "se_verdadeira": "Manter carteira agro e repreçar risco",
+    "se_falsa": "Reformar subscrição e reduzir origem nos segmentos piores"
+   },
+   "fatos": [
+    "F-006",
+    "F-012",
+    "F-021",
+    "F-036"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N02",
+   "mercado": "agro",
+   "enunciado": "O custo de crédito de 2026 concentra-se no agro; fora do agro a qualidade da carteira está estável.",
+   "por_que_importa": "Define se o problema de crédito é um foco único ou deterioração ampla que exigiria revisão de toda a política.",
+   "teste": {
+    "fontes": [
+     "F-003",
+     "F-005",
+     "F-006",
+     "BB Apresentação 3T26 (segmentos de carteira)",
+     "IF.data"
+    ],
+    "metrica": "Custo de crédito e inadimplência +90d por segmento (agro, PF não agro, PJ não agro)",
+    "periodo": "trimestral, 2024 a 2026",
+    "comparacao": "Segmento agro contra não agro dentro do BB; BB não agro contra Itaú e Santander"
+   },
+   "confirma_se": "Mais de 60% da alta do custo de crédito de 2026 vier do agro e inadimplência não agro subir menos de 1 p.p. no ano",
+   "refuta_se": "Inadimplência não agro subir mais de 1,5 p.p. no ano ou custo de crédito não agro crescer tanto quanto o do agro",
+   "decisao": {
+    "se_verdadeira": "Tratar o agro como caso isolado de ciclo",
+    "se_falsa": "Revisão ampla de risco em todas as carteiras"
+   },
+   "fatos": [
+    "F-003",
+    "F-005",
+    "F-006"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N03",
+   "mercado": "agro",
+   "enunciado": "O RSPL do BB sem o efeito do agro ficaria acima do custo de capital, como sugere a simulação da administração (~17%).",
+   "por_que_importa": "Se verdade, o negócio fora do agro já paga o capital e a estratégia é de ciclo, não de ruptura.",
+   "teste": {
+    "fontes": [
+     "F-015",
+     "F-002",
+     "BB Apresentação 3T26",
+     "CVM ITR/DFP"
+    ],
+    "metrica": "RSPL recalculado retirando resultado do segmento agro (receita, custo de crédito e capital alocado)",
+    "periodo": "9M26 e 2025",
+    "comparacao": "RSPL reportado contra RSPL simulado; checar consistência com lucro por segmento público"
+   },
+   "confirma_se": "RSPL ex-agro recalculado entre 14% e 18% no 9M26",
+   "refuta_se": "RSPL ex-agro recalculado abaixo de 12% no 9M26",
+   "decisao": {
+    "se_verdadeira": "Comunicar e proteger o negócio não agro; resolver o agro como programa separado",
+    "se_falsa": "Plano de retorno precisa mexer também no não agro"
+   },
+   "fatos": [
+    "F-015",
+    "F-002",
+    "F-001"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N04",
+   "mercado": "varejo_pf",
+   "enunciado": "A perda de participação do BB em crédito pessoal sem consignação e cartão para digitais é estrutural e não se reverte com o fim do ciclo do agro.",
+   "por_que_importa": "Esses produtos financiam margem futura; se a perda for permanente, o retorno estrutural do varejo cai.",
+   "teste": {
+    "fontes": [
+     "F-023",
+     "F-024",
+     "IF.data",
+     "Taxas de juros por instituição e modalidade"
+    ],
+    "metrica": "Participação do BB por trimestre e spread de taxa do BB contra Nubank e C6 nas mesmas modalidades",
+    "periodo": "2019-12 a 2026-06, trimestral",
+    "comparacao": "BB contra Nubank, C6, PicPay; preço contra preço"
+   },
+   "confirma_se": "Participação do BB continua caindo mesmo em trimestres de spread de preço menor que 3 p.p. contra digitais",
+   "refuta_se": "Participação estabiliza ou sobe quando o BB iguala preço",
+   "decisao": {
+    "se_verdadeira": "Competir por canal e experiência, não por preço",
+    "se_falsa": "Guerra de preço seletiva em crédito pessoal"
+   },
+   "fatos": [
+    "F-023",
+    "F-024",
+    "F-049"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N05",
+   "mercado": "varejo_pf",
+   "enunciado": "O consignado, onde o BB perde pouco (21,17% para 19,22%), é o produto de varejo que sustenta margem com risco baixo e deve ser defendido.",
+   "por_que_importa": "É a linha de varejo com participação estável; perdê-la para Agibank/BTG agravaria o problema de retorno.",
+   "teste": {
+    "fontes": [
+     "F-022",
+     "IF.data",
+     "INSS/Dataprev e CNPS"
+    ],
+    "metrica": "Participação, inadimplência e margem do consignado do BB contra os quatro maiores ganhadores",
+    "periodo": "2019 a 2026, semestral",
+    "comparacao": "BB contra Agibank, BTG, Mercantil, PicPay"
+   },
+   "confirma_se": "Participação do BB no consignado fica acima de 18% com inadimplência abaixo da média do produto",
+   "refuta_se": "Participação cair abaixo de 17% em 4 trimestres",
+   "decisao": {
+    "se_verdadeira": "Investir em retenção e refinanciamento do consignado",
+    "se_falsa": "Rever precificação e canais de consignado"
+   },
+   "fatos": [
+    "F-022"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 1,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N06",
+   "mercado": "empresas",
+   "enunciado": "A perda de participação em PJ pequena e média empresa para Bradesco e cooperativas é de relacionamento local, não de preço.",
+   "por_que_importa": "Se for relacionamento, a rede de agências do BB é a alavanca; se for preço, a resposta é outra.",
+   "teste": {
+    "fontes": [
+     "F-033",
+     "F-034",
+     "F-028",
+     "Taxas de juros por instituição e modalidade",
+     "ESTBAN"
+    ],
+    "metrica": "Participação por porte de PJ cruzada com taxa média por modalidade e presença de agência por município",
+    "periodo": "2019 a 2026",
+    "comparacao": "Municípios com e sem agência BB; BB contra Bradesco, Sicredi, Sicoob"
+   },
+   "confirma_se": "Nos municípios com agência BB a perda de participação em PJ pequena é menor que 3 p.p.; sem agência, maior que 6 p.p.",
+   "refuta_se": "Perda semelhante com e sem agência, com taxa do BB acima dos pares",
+   "decisao": {
+    "se_verdadeira": "Usar agências como motor de PJ local",
+    "se_falsa": "Atacar preço e esteira de crédito PJ"
+   },
+   "fatos": [
+    "F-033",
+    "F-034",
+    "F-028",
+    "F-019"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N07",
+   "mercado": "canais",
+   "enunciado": "Os 577 municípios onde só o BB tem agência geram captação barata e clientes rentáveis que compensam o custo da rede.",
+   "por_que_importa": "É o ativo que ninguém copia; se não gerar retorno, vira custo fixo a cortar.",
+   "teste": {
+    "fontes": [
+     "F-019",
+     "F-048",
+     "ESTBAN",
+     "IF.data"
+    ],
+    "metrica": "Depósitos à vista e poupança por agência, receita de tarifas e margem por cliente nos 577 municípios exclusivos contra municípios com concorrência",
+    "periodo": "2024 a 2026",
+    "comparacao": "Agências BB em municípios exclusivos contra agências BB em municípios com 2+ bancos"
+   },
+   "confirma_se": "Depósitos por agência nos exclusivos pelo menos iguais à média das agências BB e custo de captação menor",
+   "refuta_se": "Depósitos por agência nos exclusivos abaixo de 60% da média e em queda",
+   "decisao": {
+    "se_verdadeira": "Proteger e rentabilizar a rede exclusiva",
+    "se_falsa": "Converter agências deficitárias em correspondentes"
+   },
+   "fatos": [
+    "F-019",
+    "F-048",
+    "F-038",
+    "F-039"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N08",
+   "mercado": "captacao",
+   "enunciado": "A queda de participação em depósitos à vista e LCA eleva o custo de funding do BB e comprime a margem financeira.",
+   "por_que_importa": "Funding barato é metade da margem; perdê-lo torna o retorno estruturalmente menor.",
+   "teste": {
+    "fontes": [
+     "F-038",
+     "F-042",
+     "F-004",
+     "IF.data"
+    ],
+    "metrica": "Participação em à vista e LCA, custo médio de captação e margem financeira bruta",
+    "periodo": "2019 a 2026, trimestral",
+    "comparacao": "BB contra Sicredi, Sicoob e BTG (maiores ganhadores)"
+   },
+   "confirma_se": "Queda de 1 p.p. em à vista associada a queda da margem bruta no mesmo trimestre",
+   "refuta_se": "Margem estável apesar da perda de captação (substituição por funding barato equivalente)",
+   "decisao": {
+    "se_verdadeira": "Programa de retenção de depósitos de relacionamento",
+    "se_falsa": "Aceitar mix de funding atual e focar em ativo"
+   },
+   "fatos": [
+    "F-038",
+    "F-042",
+    "F-004",
+    "F-044"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N09",
+   "mercado": "capital",
+   "enunciado": "Com CET1 de 10,8% e queda de Basileia, o BB não tem espaço para crescer carteira e pagar dividendos altos ao mesmo tempo em 2027.",
+   "por_que_importa": "Força escolha explícita entre crescimento, dividendo e recompra de participação.",
+   "teste": {
+    "fontes": [
+     "F-007",
+     "F-016",
+     "F-017",
+     "DASFN Pilar 3"
+    ],
+    "metrica": "CET1, RWA por segmento e geração orgânica de capital por trimestre",
+    "periodo": "2023 a 2026, trimestral",
+    "comparacao": "Geração de capital contra crescimento de RWA necessário para recuperar participação"
+   },
+   "confirma_se": "CET1 abaixo de 11% por 2 trimestres com RWA estável ou crescente",
+   "refuta_se": "CET1 voltar acima de 11,5% com carteira crescendo",
+   "decisao": {
+    "se_verdadeira": "Priorizar alocação de capital por retorno e cortar crescimento de baixo retorno",
+    "se_falsa": "Retomar crescimento amplo da carteira"
+   },
+   "fatos": [
+    "F-007",
+    "F-016",
+    "F-017",
+    "F-018"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N10",
+   "mercado": "agro",
+   "enunciado": "Os concorrentes que ganharam participação no rural (Caixa, Sicoob, Sicredi, BASA) terão inadimplência igual ou pior que a do BB quando a carteira deles envelhecer.",
+   "por_que_importa": "Se sim, a liderança do BB no agro continua sendo vantagem de risco; se não, o BB perdeu o monopólio do know-how.",
+   "teste": {
+    "fontes": [
+     "F-021",
+     "F-036",
+     "SICOR",
+     "BCB SGS 21148"
+    ],
+    "metrica": "Inadimplência do rural por instituição por safra, por vintage de contratação",
+    "periodo": "safras 2022/23 a 2026/27",
+    "comparacao": "BB contra Caixa, Sicoob, Sicredi por vintage"
+   },
+   "confirma_se": "Inadimplência dos ganhadores de participação converge para o nível do BB ou acima em 4 trimestres",
+   "refuta_se": "Ganhadores mantêm inadimplência 2 p.p. abaixo do BB por 4 trimestres",
+   "decisao": {
+    "se_verdadeira": "Defender liderança no agro com preço de risco correto",
+    "se_falsa": "Ceder participação no agro e focar em cadeia (trade, insumos)"
+   },
+   "fatos": [
+    "F-021",
+    "F-036",
+    "F-012"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N11",
+   "mercado": "servicos",
+   "enunciado": "A receita de tarifas do BB cresce abaixo dos concorrentes porque a base de clientes ativos digitais encolhe, não por preço.",
+   "por_que_importa": "Tarifa é receita sem consumo de capital; entender a causa define o investimento.",
+   "teste": {
+    "fontes": [
+     "F-047",
+     "F-004",
+     "Tarifas bancárias por instituição",
+     "IF.data"
+    ],
+    "metrica": "Participação em rendas de tarifas, tarifa média por serviço e clientes ativos por canal",
+    "periodo": "2019 a 2026",
+    "comparacao": "BB contra Santander (maior ganhador) e Sicredi"
+   },
+   "confirma_se": "Tarifa média por serviço do BB alinhada aos pares e participação caindo junto com clientes ativos",
+   "refuta_se": "Tarifa média do BB abaixo dos pares nas mesmas cestas",
+   "decisao": {
+    "se_verdadeira": "Investir em retenção e ativação digital de clientes",
+    "se_falsa": "Rever tabela e pacotes de tarifas"
+   },
+   "fatos": [
+    "F-047",
+    "F-004"
+   ],
+   "valor_decisao": {
+    "tamanho": 1,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N12",
+   "mercado": "outro",
+   "enunciado": "O índice de eficiência do BB é estruturalmente pior que o de Itaú (37,5%) e Santander (38,8%), e isso explica parte da diferença de ROE.",
+   "por_que_importa": "Se a eficiência explica o gap, o plano de retorno passa por custo, não só por ciclo.",
+   "teste": {
+    "fontes": [
+     "F-009",
+     "F-010",
+     "F-004",
+     "CVM ITR/DFP",
+     "IF.data"
+    ],
+    "metrica": "Despesas administrativas sobre receita total do BB contra Itaú e Santander, mesma definição",
+    "periodo": "2023 a 2026, trimestral",
+    "comparacao": "BB contra Itaú e Santander com definições harmonizadas"
+   },
+   "confirma_se": "Eficiência do BB pior que 45% enquanto pares ficam abaixo de 40%",
+   "refuta_se": "Eficiência do BB igual ou melhor que pares; gap de ROE vem só de crédito",
+   "decisao": {
+    "se_verdadeira": "Programa de eficiência com meta pública",
+    "se_falsa": "Foco total em risco e ciclo, não em custo"
+   },
+   "fatos": [
+    "F-009",
+    "F-010",
+    "F-004"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N13",
+   "mercado": "empresas",
+   "enunciado": "O ganho de participação em comércio exterior (18,42% para 25,43%) mostra que o BB vence onde combina agro, capilaridade e cliente PJ.",
+   "por_que_importa": "Aponta o modelo replicável: negócios ligados à cadeia do agro, não crédito genérico.",
+   "teste": {
+    "fontes": [
+     "F-031",
+     "F-036",
+     "Comex Stat",
+     "IF.data"
+    ],
+    "metrica": "Participação em comex e sua correlação com carteira rural por UF e com exportações por UF",
+    "periodo": "2019 a 2026",
+    "comparacao": "UFs com forte presença rural do BB contra demais UFs"
+   },
+   "confirma_se": "Participação em comex maior nas UFs onde o BB lidera o rural",
+   "refuta_se": "Ganho de comex descolado da presença rural",
+   "decisao": {
+    "se_verdadeira": "Empacotar agro + comex + câmbio como oferta única",
+    "se_falsa": "Tratar comex como linha isolada de grandes empresas"
+   },
+   "fatos": [
+    "F-031",
+    "F-036"
+   ],
+   "valor_decisao": {
+    "tamanho": 1,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N14",
+   "mercado": "regulacao",
+   "enunciado": "A mudança de perímetro do IF.data (1005 para 1009) e o Cosif 2025 não explicam sozinhos as quedas de participação do BB.",
+   "por_que_importa": "Se for efeito contábil, a leitura estratégica muda: menos perda real do que parece.",
+   "teste": {
+    "fontes": [
+     "F-020",
+     "IF.data",
+     "Cosif: plano de contas e manual"
+    ],
+    "metrica": "Quebra da variação de participação em 03/2025 entre efeito de perímetro e variação de saldo real",
+    "periodo": "12/2024 a 06/2025",
+    "comparacao": "Séries antes e depois da mudança, por produto"
+   },
+   "confirma_se": "Salto de participação em 03/2025 explicado em menos de 0,5 p.p. pelo perímetro",
+   "refuta_se": "Mais de 1 p.p. da queda em qualquer produto vier da mudança de perímetro",
+   "decisao": {
+    "se_verdadeira": "Tratar perdas como reais e agir",
+    "se_falsa": "Refazer análise de participação com séries ajustadas"
+   },
+   "fatos": [
+    "F-020",
+    "F-037"
+   ],
+   "valor_decisao": {
+    "tamanho": 1,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N15",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB em clientes com crédito ficou estável (8,14% para 8,22%) enquanto a participação em saldo caiu, ou seja, o BB perdeu ticket e mix, não clientes.",
+   "por_que_importa": "Se o cliente fica e o saldo sai, o problema é oferta e preço; recuperável sem recomprar base.",
+   "teste": {
+    "fontes": [
+     "F-049",
+     "F-020",
+     "F-037",
+     "IF.data"
+    ],
+    "metrica": "Saldo médio de crédito por cliente do BB contra sistema e contra Nubank",
+    "periodo": "2019 a 2026, semestral",
+    "comparacao": "Ticket médio BB contra ticket médio do sistema e dos digitais"
+   },
+   "confirma_se": "Clientes estáveis e ticket médio caindo mais de 10% em termos reais",
+   "refuta_se": "Ticket estável e queda de clientes explicando a perda de saldo",
+   "decisao": {
+    "se_verdadeira": "Aumentar limite e mix para a base atual",
+    "se_falsa": "Campanha de aquisição de clientes"
+   },
+   "fatos": [
+    "F-049",
+    "F-020"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  }
+ ],
+ "lacunas": [
+  "Custo de crédito e inadimplência por segmento dentro do BB (agro, PF, PJ) por trimestre — fonte: BB Apresentação de Resultados e ITR (CVM).",
+  "Inadimplência do rural por instituição e por safra — fonte: SICOR (Matriz de Dados do Crédito Rural).",
+  "Cobertura de provisão da carteira agro do BB em set/26 — fonte: BB Apresentação 3T26 (não lida com segurança no dossiê).",
+  "Índice de eficiência do BB com a mesma definição de Itaú e Santander — fonte: ITR/DFP (CVM) e releases de RI.",
+  "Depósitos e receita por agência ou por município — fonte: ESTBAN (documento 4500) cruzado com IF.data.",
+  "Taxa média de juros por modalidade e instituição em crédito pessoal, cartão e PJ — fonte: BCB, Taxas de juros por instituição.",
+  "Custo de capital (Ke) de mercado para o BB — fonte: B3 COTAHIST e Relatório Focus, para estimar beta e prêmio.",
+  "RWA por segmento e geração orgânica de capital — fonte: DASFN Pilar 3 (templates OV1 e KM1).",
+  "Clientes ativos por canal (app, agência) do BB e dos digitais — fonte: releases de RI e Open Finance Brasil (diretório).",
+  "Reação de preço da ação BBAS3 à revisão de guidance com método correto — fonte: B3 COTAHIST (o F-014 é ilustrativo)."
+ ],
+ "leitura": "O agudo é o ciclo do agro: custo de crédito de R$ 58,6 bi em 9 meses, inadimplência rural do sistema saindo de 0,8% para 9,6%, e o RSPL do BB em 2,8% no trimestre. Isso derruba o resultado agora, mas é reversível. O estrutural é mais grave: o BB perde participação em quase tudo — crédito pessoal, cartão, PJ pequena, depósitos à vista, LCA — para digitais, cooperativas e Bradesco, enquanto o CET1 cai para 10,8%. O que só o BB tem é a rede: 577 municípios exclusivos e 48,7% do rural. A resposta a Q0 passa por atravessar o ciclo do agro sem queimar capital e transformar capilaridade em margem, não em custo."
+}

@@ -1,0 +1,164 @@
+{
+ "criticas": [
+  {
+   "premissa": "P49",
+   "contrario": "Não há no dossiê norma aprovada que reduza vantagem de custo das cooperativas. Pelo contrário, elas ganharam participação em crédito rural (F-021: +1,49 p.p. Sicredi; +2,27 p.p. Sicoob) e depósitos (F-038, F-041). Mudanças podem ser marginais ou demorar.",
+   "alternativa": "O ganho de participação das cooperativas pode vir de crédito direcionado e não de vantagem tributária; mesmo sem mudança regulatória, a vantagem pode persistir por subsídios ou isenções já existentes.",
+   "riscos_de_dado": [
+    "Dossiê só tem participação até 06/2026; não inclui normativos futuros.",
+    "F-020 ressalva quebra de perímetro contábil em 03/2025, distorcendo comparações.",
+    "Exigibilidades sobre depósitos à vista citadas em I-12 não têm dado mensurável."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, CMN, Congresso"
+    ],
+    "descricao": "Levantar normativos aprovados entre 2024 e 2026 que aumentem custo mensurável das cooperativas (exigibilidade, tributação, prudencial). Se nenhum normativo com impacto material, premissa refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P50",
+   "contrario": "A fatia do BB no rural PF caiu 8,9 p.p. (F-021), e o dossiê não mede Rabobank/John Deere após 12/2024; eles podem crescer em nichos. A soma pode ultrapassar 5% ou crescer rápido.",
+   "alternativa": "A queda do BB pode ser ocupada por cooperativas (Sicredi, Sicoob) e bancos públicos, não por estrangeiros; logo, a ameaça não se materializa.",
+   "riscos_de_dado": [
+    "IF.data tem quebra de perímetro entre 1005 e 1009 em 03/2025.",
+    "Participação de estrangeiros pode estar subestimada por consolidação prudencial.",
+    "John Deere só citado até 12/2024; Rabobank caiu de 1,9% para 0,3%."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)"
+    ],
+    "descricao": "Somar participação de Rabobank, John Deere, CNH, outros estrangeiros no crédito rural PF e PJ em 12/2019, 12/2024, 06/2026. Se soma >8% ou crescimento >1 p.p./ano, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Se a participação conjunta de estrangeiros no rural PF/PJ permanecer abaixo de 5% e sem crescimento anual acima de 1 p.p. no IF.data, monitorar; caso contrário, analisar modelo."
+  },
+  {
+   "premissa": "P52",
+   "contrario": "Grandes plataformas podem ter crédito relevante via fintechs; Nubank cresceu 3,27 p.p. no crédito PF total (F-020) e opera carteira digital. Mercado Pago é exceção, mas pode indicar tendência.",
+   "alternativa": "Ausência de crédito relevante hoje pode ser escolha estratégica temporária; plataformas detêm dados de transações que reduzem custo de entrada no crédito.",
+   "riscos_de_dado": [
+    "IF.data não classifica plataformas de pagamento separadamente.",
+    "Unicad não captura entidades de pagamento sem autorização bancária.",
+    "Dossiê não tem dado de carteira de crédito por plataforma."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Unicad (BCB), IF.data, Pix (BCB)"
+    ],
+    "descricao": "Listar plataformas autorizadas como iniciador de pagamento no Pix e cruzar com saldo de crédito no IF.data até 2027. Se alguma ultrapassar 0,5% do sistema, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P53",
+   "contrario": "O desligamento da plataforma de testes não impede retomada; BCB, CVM e B3 podem lançar cronograma oficial a qualquer momento. Ausência de piloto hoje não é evidência de ausência futura.",
+   "alternativa": "O desligamento pode ter motivos orçamentários ou técnicos temporários, não uma decisão de não produzir; iniciativas privadas podem avançar sem infraestrutura pública.",
+   "riscos_de_dado": [
+    "Fonte é imprensa (I-33), não confirmada no dossiê.",
+    "Horizonte do plano não definido; 'nicho' é vago.",
+    "Não há fatos públicos sobre cronograma de tokenização no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, CVM, B3"
+    ],
+    "descricao": "Buscar comunicados oficiais até fim de 2027 sobre retomada de piloto público ou regulamentação de CPR tokenizada. Se houver cronograma de produção, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P55",
+   "contrario": "Desconto pode refletir ROE baixo (F-002: 6,2% 9M26 vs Itaú 23,6% F-009), não política. Sem série de P/B, não se comprova persistência; F-014 é ilustrativo e de baixa confiança.",
+   "alternativa": "Retornos anormais negativos podem ser reação a fundamentos (revisão de lucro F-008) e não a política pública; pares também caem em eventos macroeconômicos.",
+   "riscos_de_dado": [
+    "F-014 é exemplo ilustrativo com ressalva de refazer com série de preços.",
+    "Não há dado de patrimônio por ação no dossiê.",
+    "Estudo de evento sem controle adequado pode confundir."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "B3 COTAHIST, CVM ITR/DFP"
+    ],
+    "descricao": "Calcular P/B diário do BB e pares 2019-2026; regredir desconto sobre ROE e dummies de eventos de política/revisão. Se coeficiente de política não for significativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N01",
+   "contrario": "Dados do dossiê: inadimplência total BB subiu 1,57 p.p. (F-005) e agro subiu 2,08 p.p. (F-006). Se agro for menos de 60% da carteira, ex-agro sobe acima de 0,5 p.p.; a premissa assume resultado sem cálculo.",
+   "alternativa": "Alta fora do agro pode ser explicada por PF/PJ de maior risco pós-pandemia, não por contágio do agro; sem decompor, atribuição é especulativa.",
+   "riscos_de_dado": [
+    "F-005 e F-006 podem usar definições de carteira diferentes (classificada vs total).",
+    "F-006 só fornece saldo agro em set/26, não em set/25.",
+    "Dossiê não tem NPL ex-agro calculado."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DFP/ITR (CVM), Análise do Desempenho (RI BB), IF.data"
+    ],
+    "descricao": "Calcular NPL ex-agro = (NPL_total*carteira_total − NPL_agro*carteira_agro)/(carteira_total−carteira_agro) para set/25 e set/26. Se Δ >0,5 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Antes de afirmar choque concentrado no agro, calcular a inadimplência +90d ex-agro do BB; só tratar como agudo se subir ≤0,5 p.p., senão abrir revisão estrutural."
+  },
+  {
+   "premissa": "C1-N03",
+   "contrario": "A inadimplência em linhas equalizadas pode ser maior devido a seleção adversa ou desenho do mandato; sem dados do BB, não se justifica assumir 60% em mercado. A referência do sistema (F-012) não se aplica automaticamente.",
+   "alternativa": "A alta em taxa de mercado no sistema pode ser puxada por outros bancos; o BB pode ter perfil mais equalizado ou cobertura maior via seguro.",
+   "riscos_de_dado": [
+    "SICOR não separa por instituição; IF.data não dá vencido por fonte de recurso.",
+    "DFP pode não abrir por linha/programa.",
+    "Definição de 'taxa de mercado' pode variar entre bancos."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR, DFP/ITR, Análise do Desempenho (RI BB)"
+    ],
+    "descricao": "Obter distribuição do saldo +90d agro do BB por fonte de recursos. Se <40% estiver em LCA/recursos livres, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Verificar na DFP/ITR e SICOR a distribuição do saldo vencido agro do BB; se ≥60% for não equalizado, cortar risco; senão, negociar compartilhamento com governo."
+  },
+  {
+   "premissa": "C1-N04",
+   "contrario": "Recuperações judiciais e inadimplência estratégica podem predominar; a correlação com produção/preço pode ser espúria, e UF pode não ser unidade adequada. Sem dados, R²≥0,5 é suposição.",
+   "alternativa": "A inadimplência rural pode resultar de alavancagem excessiva e crédito mal precificado, não de choque de safra; custos de produção subiram mesmo com preços altos.",
+   "riscos_de_dado": [
+    "Dados de produção/preço têm defasagem e revisões.",
+    "Pedidos de RJ no Datajud podem não capturar produtores rurais pessoa física.",
+    "SCR.data quebra em 03/2025 (Cosif)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data, IBGE LSPA/PAM, CEPEA, CNJ Datajud"
+    ],
+    "descricao": "Regredir Δ inadimplência rural PF por UF sobre choque de produção, preço e RJ. Se R² de produção+preço <0,25 ou RJ acrescenta ≥0,20, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Testar empiricamente a contribuição de produção, preço e RJ; só adotar renegociação como padrão se R² de produção+preço ≥0,50 e RJ acrescenta <0,10."
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C5-N09",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 0,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa com métrica definida, placebo para controle e números de participação suportados (F-038, F-039). Falta limiar numérico para refutação."
+  },
+  {
+   "premissa": "C5-N10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Fonte ESTBAN não inclui cooperativas, contradizendo o enunciado; pareamento é forte, mas falta limiar numérico para refutação."
+  },
+  {
+   "premissa": "C5-N11",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-048"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de participação suportados por F-048; teste com controle Caixa/Bradesco separa efeito de fechamento alheio."
+  },
+  {
+   "premissa": "C5-N12",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-047",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Três condições com limiares claros; números (19,67%, 15,54%, 4,6% a/a) conferem. Controle via Santander e linhas de tarifa."
+  },
+  {
+   "premissa": "C5-N13",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-008",
+    "F-016",
+    "F-017"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Projeção usa dados públicos; limiares de folga (<1 p.p.) e CET1 (>11%) fixados. Fatos citados em F-007/F-008 conferem."
+  },
+  {
+   "premissa": "C5-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-003",
+    "F-008",
+    "F-005"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares explícitos (21,2; 21,4; 0,5 p.p.) e controle via SGS rural. Números de custo e guidance conferem."
+  },
+  {
+   "premissa": "C5-N15",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_public": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-009",
+    "F-010",
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Eficiências de pares (37,5%; 38,8%) e 577 exclusivos conferem. Falta controle para mix de negócio na comparação de eficiência."
+  }
+ ]
+}

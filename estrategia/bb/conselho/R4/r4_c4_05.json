@@ -1,0 +1,177 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P51",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "R$ 968 mi de carteira Agrolend fim de 2025 [I-32]",
+    "meta de R$ 2 bi Agrolend [I-32]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Premissa admite ausência de dado no dossiê. Números do 'hoje' vêm de referência [I-32] não incluída. Teste condicional à CVM identificar originador."
+  },
+  {
+   "premissa": "P52",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares claros (0,5%; 0,1%; 4 trimestres). Nenhum fato numérico citado; 'hoje' vazio. Lista de instituições não está no dossiê, mas é definida como fixada antes."
+  },
+  {
+   "premissa": "P53",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Plataforma de testes desligada em nov/2025 [I-33]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fato do 'hoje' (desligamento nov/2025) vem de imprensa [I-33], não está no dossiê. Premissa pede reconfirmação em fonte oficial. Teste de ausência é válido mas fraco."
+  },
+  {
+   "premissa": "P54",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa admite que, sem abertura pública do BB, fica não verificada. Limiar de 1% é claro. Separa efeito direto de indireto. Nenhum número factual citado."
+  },
+  {
+   "premissa": "P55",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-014"
+   ],
+   "sem_apoio": [
+    "−6,9% em 12/08/2026 (não consta no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "−9,3% está em F-014 mas marcado como ilustrativo e confiança baixa. −6,9% não existe no dossiê. Método depende de série ainda não construída. Limiares estatísticos claros."
+  },
+  {
+   "premissa": "C1-N01",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006",
+    "F-015"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "1,57 p.p. (F-005: 6,08−4,51) e 2,08 p.p. (F-006: 6,92−4,84) conferem. Placebo com Itaú e Santander separa componente sistêmico. Decisões distintas e nomeadas."
+  },
+  {
+   "premissa": "C1-N02",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "6,92% (F-006), 9,59% (F-012 SGS 21148), 17,21% (F-012 SGS 21146) conferem. Controla mix e renegociação. Comparação entre instituições com carteira rural relevante."
+  },
+  {
+   "premissa": "C1-N03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "17,21% e 9,59% (F-012), 6,92% e R$ 403,6 bi (F-006) conferem. Testabilidade condicionada à publicação da abertura pelo BB. Faixa 40-60% fica inconclusiva."
+  },
+  {
+   "premissa": "C1-N04",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Metodologia bem especificada (painel UF, placebo PF não rural, efeito fixo). Período out/2022 a out/2026 coerente com F-012. Serasa pode não ser integralmente público; reduz so_publico."
+  },
+  {
+   "premissa": "C1-N05",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Caixa +5,63 p.p., Basa +2,65 p.p., BB −8,89 p.p.: todos conferem com F-021. Separa alocação de política de competição comercial. Nota quebra de série em 03/2025."
+  }
+ ]
+}

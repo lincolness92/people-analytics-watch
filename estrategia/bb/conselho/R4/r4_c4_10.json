@@ -1,0 +1,194 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C4-N02",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-036",
+    "F-021",
+    "F-030"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Ganhos de Caixa, Sicoob, Sicredi e Banco da Amazônia conferem. Cosif 03/2025 citado na refutação, mas teste não separa pré e pós quebra."
+  },
+  {
+   "premissa": "C4-N03",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023",
+    "F-022",
+    "F-020"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Estabilização de 13,66% para 14,01% (dez/25→jun/26) confere. Consignado como controle é adequado. Efeito Cosif mencionado mas não isolado no teste."
+  },
+  {
+   "premissa": "C4-N04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031",
+    "F-028",
+    "F-029"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números conferem (+7,01 pp; −5,27; −8,51). Ajuste de perímetro e câmbio nomeado mas metodologia não especificada com série pública concreta. Controles bons."
+  },
+  {
+   "premissa": "C4-N05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-042",
+    "F-036",
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Perda de 16,83 pp em LCA confere. Custo da LCA sobre CDI no ITR não tem série nomeada. Poupança como controle estável é adequada."
+  },
+  {
+   "premissa": "C4-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-004",
+    "F-047",
+    "F-003"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "R$ 9,3 bi serviços, R$ 26,0 bi MFB, R$ 21,2 bi custo crédito, share 15,54%: tudo confere. Itaú como benchmark não controla diferença de mix."
+  },
+  {
+   "premissa": "C4-N07",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-016",
+    "F-017",
+    "F-018"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "CET1 10,80–12,23%, Basileia 13,45%, alavancagem 6,97% conferem. Mínimo regulatório ~8,5% é parâmetro público, não fato do dossiê. Não separa RWA de capital."
+  },
+  {
+   "premissa": "C4-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-048"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "577 municípios exclusivos, 2290 com BB, 2810 total: conferem. Cálculo por agência e pareamento IBGE não detalhados no dossiê. Controle de prefeitura é bom."
+  },
+  {
+   "premissa": "C4-N09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-036",
+    "F-021",
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Share rural 48,7%, PF 53,46%, inadimplência 9,59% conferem. Norma CMN é pública mas série de instituições com carteira rural não nomeada. Cosif não isolado."
+  },
+  {
+   "premissa": "C4-N10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-003",
+    "F-012",
+    "F-008"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Custo 3T26 R$ 21,2 bi, 9M26 R$ 58,6 bi, projeção R$ 80-83 bi, SGS 21148 9,59%: conferem. 'Excluindo BB' exige subtração não detalhada. Ciclo 2015-17 fora do dossiê."
+  },
+  {
+   "premissa": "C4-N11",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-022",
+    "F-023",
+    "F-020"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "−1,95 pp, Agibank +3,43, BTG +2,88, sem consignação −8,52 pp: conferem. SGS por subsegmento (servidor/INSS/privado) sem código nomeado. Portabilidade como controle é adequada."
+  }
+ ]
+}

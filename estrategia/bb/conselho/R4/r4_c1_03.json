@@ -1,0 +1,179 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P31",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "18,4→25,4 confere (F-031). Limiares claros. Mas o IF.data dificilmente cruza comércio exterior, CNAE e instituição, como o texto admite. Sem comparação com pares: carteira de comex agro pode ser traço do sistema, não do BB."
+  },
+  {
+   "premissa": "P32",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-029"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "37,52→29,01 e recuperação desde 12/2022 conferem (F-029). Só (a) tem teste; (b) é inferida por exclusão. Desembolso do BNDES não é estoque. 'A queda é de recursos próprios' não é decisão."
+  },
+  {
+   "premissa": "P33",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-027"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "11,8%, 5,9% (metade) e 9% (três quartos) conferem com F-027. Limiares e exclusão de emissões próprias bem fixados. Comparar fatia de originação com fatia de crédito é régua frágil; 'sem ação' é decisão fraca."
+  },
+  {
+   "premissa": "P34",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 1,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "fatias de adquirência: Rede 18%, Cielo 17%, PagBank 17%, Stone 15%, Mercado Pago 9% (jan/2026)",
+    "BB com 5,6% das operações com recebíveis"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Nenhum número de 'hoje' está no dossiê. IF.data não separa depósito à vista PJ. Correlação transversal confunde com crescimento geral da instituição. Decisão 'integração total ou saída' não é uma só."
+  },
+  {
+   "premissa": "P35",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-004"
+   ],
+   "sem_apoio": [
+    "Pix com 54,7% das transações de varejo [I-24]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-004 confere (serviços +4,6% a/a, nominal). Teste real com IPCA e cuidado de reclassificação. Receita por linha não está no dossiê. Não separa mudança de política tarifária de perda de clientes."
+  },
+  {
+   "premissa": "P36",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "cerca de 200 milhões de consentimentos no sistema em 2026 [I-21]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares (0,5; 0,8; mediana) e comparação com pares de porte tratam o efeito escala. Fonte nova, fora do dossiê. Número de 'hoje' sem apoio; 'manter' é decisão fraca."
+  },
+  {
+   "premissa": "P37",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-027",
+    "F-023"
+   ],
+   "sem_apoio": [
+    "Mercado Pago com metade das contas pré-pagas (R$ 119 bi)",
+    "Mercado Pago com 3,6% do crédito pessoal sem consignação (não está em F-023)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares de crescimento claros, perímetro constante. Mas o teste não mede 'tamanho relevante frente ao BB em MPE', metade do enunciado. Base pequena cresce rápido por construção. Números de 'hoje' sem apoio."
+  },
+  {
+   "premissa": "P38",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "prêmios da Brasilseg −19% no 3T26",
+    "agrícola −32,3%",
+    "prestamista −26,9%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Regressão com Selic, sazonalidade e defasagens; limiares de R² parcial claros. IF.data dá saldo, não concessão de consignado. Choque comum (preço agrícola) não controlado. Números de 'hoje' fora do dossiê."
+  },
+  {
+   "premissa": "P39",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "CVM dados abertos e mediana dos pares separam perda do sistema de perda da BB Asset. Limiares claros nas duas partes. Nenhum fato do dossiê citado. 'Manter' é decisão fraca."
+  },
+  {
+   "premissa": "P40",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares nas duas partes e regra de não testável. Fonte nova, fora do dossiê. Juros altos favorecem consórcio frente ao crédito e não são controlados. 'Sem ação' é decisão fraca."
+  }
+ ]
+}

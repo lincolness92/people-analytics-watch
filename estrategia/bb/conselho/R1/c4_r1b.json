@@ -1,0 +1,534 @@
+{
+ "revisoes": [
+  {
+   "premissa": "P01",
+   "prob_verdadeira": 0.72,
+   "alternativa": "A queda pode refletir mudança de perímetro contábil (conglomerado→prudencial em 03/2025) e não só perda competitiva.",
+   "teste_decisivo": "IF.data trimestral 03/2014–09/2026, série 'Rural e agroindustrial PF', teste de quebra estrutural (Chow/Bai-Perron) antes e depois de 12/2023.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "53,7% (12/2023) – não está no dossiê; o dossiê traz 52,2% para 12/2025",
+    "8,6 dos 8,9 p.p. antes de 2024 – cálculo não reproduzido no dossiê"
+   ]
+  },
+  {
+   "premissa": "P02",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A diferença bruta pode ser inteiramente explicada pelo mix: cooperativas atendem Pronaf (menor ticket, menor risco) e o BB atende médio/grande com taxa de mercado.",
+   "teste_decisivo": "SCR.data: painel instituição×UF×porte×fonte de recursos, efeitos fixos de UF-tempo. Fonte: BCB SCR.data.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "BB 6,2%; Sicredi 1,2%; Sicoob 1,5%; cooperativas singulares 2,2%; sistema 5,6%; Caixa 14,4% – nenhum está no dossiê"
+   ]
+  },
+  {
+   "premissa": "P03",
+   "prob_verdadeira": 0.55,
+   "alternativa": "A inadimplência pode estar disseminada por porte e região, com a parcela de taxa de mercado apenas mais visível por ter provisão menor.",
+   "teste_decisivo": "ESTBAN verbete 163 por município × IBGE PAM (cultura dominante); curva de concentração (Lorenz) do aumento de provisões. Fonte: BCB ESTBAN + IBGE SIDRA t.5457.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P04",
+   "prob_verdadeira": 0.35,
+   "alternativa": "O ROE sem agro pode ser bem menor que 17% porque a perda de participação em PF, passivo e tarifas corrói a rentabilidade das demais linhas.",
+   "teste_decisivo": "Reconstruir com DFP/ITR (CVM): custo do crédito e margem por segmento; RWA por classe (DASFN OV1). Série 2019–2026.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "cerca de 17% – citado em F-015 com confiança média-baixa e valor exato não lido"
+   ]
+  },
+  {
+   "premissa": "P05",
+   "prob_verdadeira": 0.5,
+   "alternativa": "CPR e CRA podem estar financiando o mesmo produtor que antes tomava no BB, sem seleção adversa relevante; o risco pode ser similar.",
+   "teste_decisivo": "MAPA Boletim de Finanças Privadas do Agro (estoques CPR/CRA/Fiagro por porte); SICOR por porte; CVM dados abertos de Fiagro. Comparar inadimplência por porte.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "43% do crédito na safra 2025/26",
+    "R$ 593,8 bi de estoque CPR em out/2026",
+    "33% CRA+Fiagro no fim de 2025",
+    "19% em 2021"
+   ]
+  },
+  {
+   "premissa": "P06",
+   "prob_verdadeira": 0.7,
+   "alternativa": "A queda da LCA pode refletir migração do próprio BB para outras fontes de funding, não perda competitiva.",
+   "teste_decisivo": "IF.data Passivo, linha LCA, trimestral 2014–2026 por instituição; taxa de emissão em % do CDI (ANBIMA/B3). Fonte: IF.data + ANBIMA.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "PL propõe 7,5% de IR [I-25] – não está no dossiê"
+   ]
+  },
+  {
+   "premissa": "P07",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A Caixa pode ter inadimplência alta por entrar em segmentos que o BB já atendia (Pronaf), não por velocidade em si. Cooperativas cresceram rápido e têm atraso baixo.",
+   "teste_decisivo": "IF.data: variação de participação no rural PF 12/2019–12/2023 vs vencidos 06/2026, corte transversal com 20+ instituições. Correlação de Spearman.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "inadimplência acima de 90 dias de 25,4% da Caixa",
+    "contratações em queda de 23% em 2026"
+   ]
+  },
+  {
+   "premissa": "P08",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A queda dos prêmios pode refletir retração da demanda (produtor sem caixa) e não redução de cobertura efetiva; o efeito sobre inadimplência futura é incerto.",
+   "teste_decisivo": "SICOR (tipo de seguro por contrato) × MAPA SISSER (apólices, prêmio, sinistro por município e cultura) × SCR.data (inadimplência por UF). Painel município×safra.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "Prêmios Brasilseg −32,3% no 3T26",
+    "penhor rural −24,6%"
+   ]
+  },
+  {
+   "premissa": "P09",
+   "prob_verdadeira": 0.35,
+   "alternativa": "O clima pode ter poder preditivo baixo para inadimplência porque o produtor inadimplente já estava alavancado antes do choque; o gatilho é financeiro, não meteorológico.",
+   "teste_decisivo": "Backtest 2019–2026: preditores CHIRPS, ERA5-Land, NOAA ONI, ZARC; alvo SCR.data inadimplência rural por UF. AUC fora da amostra vs baseline sazonal.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "ONI +2,46 – não está no dossiê"
+   ]
+  },
+  {
+   "premissa": "P10",
+   "prob_verdadeira": 0.3,
+   "alternativa": "Os pedidos de RJ podem ser coincidentes ou defasados (consequência, não causa), e o recuo no 2T26 sem recuo da inadimplência sugere sinal fraco.",
+   "teste_decisivo": "CNJ Datajud (processos por comarca e classe) × SGS 21148. Correlação cruzada com defasagens de 1 a 6 trimestres, teste de placebo.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "1.990 pedidos em 2025",
+    "474 no 1T26 (+21,9%)",
+    "448 no 2T26 (−20,7%)"
+   ]
+  },
+  {
+   "premissa": "P11",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A renegociação pode estar funcionando parcialmente; a inadimplência pode continuar subindo por efeito de estoque mesmo com cura fluxo.",
+   "teste_decisivo": "Fatos relevantes e releases BB (CVM IPE): carteira renegociada e taxa de cura; balancetes Cosif 2025 (contas de operações renegociadas); SGS 21148.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "recebimento perto de 70% contra 90% esperados"
+   ]
+  },
+  {
+   "premissa": "P12",
+   "prob_verdadeira": 0.5,
+   "alternativa": "A fatia em comércio exterior (25,4%) já é relevante; o espaço pode ser menor que o imaginado nos demais serviços.",
+   "teste_decisivo": "SUSEP SES (prêmios seguro rural por seguradora); BCB dados de consórcios; IF.data câmbio. Comparar com 53% do crédito rural.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P13",
+   "prob_verdadeira": 0.45,
+   "alternativa": "O avanço das cooperativas no Sul pode ser específico da cultura associativa regional (imigração) e não se replicar no Centro-Oeste.",
+   "teste_decisivo": "IF.data por região 2012–2026; Unicad/BcBase (pontos de cooperativas por município e data de abertura). Curvas de adoção por UF.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Sul 10,6%→16,8%; Centro-Oeste 6,0%→7,7%; Sudeste 2,5%→4,5% – não estão no dossiê"
+   ]
+  },
+  {
+   "premissa": "P14",
+   "prob_verdadeira": 0.5,
+   "alternativa": "O BB pode ter saído voluntariamente do segmento (aperto de crédito) e os digitais ocuparam o espaço; não necessariamente o cliente era rentável no BB.",
+   "teste_decisivo": "IF.data (saldo, vencidos, nº clientes por instituição); BCB taxas de juros por instituição e modalidade (taxaJuros/v2). Margem ajustada ao risco aproximada.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Vencidos acima de 15 dias: Nubank 8,4%, BB 4,6%, sistema 6,4%"
+   ]
+  },
+  {
+   "premissa": "P15",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A portabilidade pode não chegar ao consignado no prazo previsto, ou o efeito pode ser pequeno porque o cliente de consignado é inerte.",
+   "teste_decisivo": "IF.data consignado por instituição, trimestral; BCB estatísticas de portabilidade; Open Finance endpoints opendata-loans. Antes/depois da data de início.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "cerca de R$ 154 bi no BB – derivável (19,22% × R$ 800 bi do sistema) mas não explícito no dossiê",
+    "Início previsto para nov/2026 [I-22]"
+   ]
+  },
+  {
+   "premissa": "P16",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A inadimplência inicial alta pode ser normal para uma modalidade nova (safra imatura) e convergir para a do consignado tradicional.",
+   "teste_decisivo": "BCB SGS do consignado privado (código a fixar); inadimplência por safra de concessão vs crédito pessoal sem consignação. Fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "inadimplência acima da do crédito pessoal a partir do 5º mês [I-20]"
+   ]
+  },
+  {
+   "premissa": "P17",
+   "prob_verdadeira": 0.6,
+   "alternativa": "A perda de participação pode ser estratégica (BB reduzindo exposição a cartão) e não seleção adversa.",
+   "teste_decisivo": "IF.data: cartão saldo e vencidos por instituição, trimestral 2019–2026. Comparar vencidos BB vs sistema por 3+ trimestres.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Vencidos acima de 15 dias: BB 15,4%, sistema 12,1% (06/2026)"
+   ]
+  },
+  {
+   "premissa": "P18",
+   "prob_verdadeira": 0.55,
+   "alternativa": "O BB pode não ter funding de longo prazo competitivo (poupança com direcionamento rural) para entrar em habitação de forma relevante.",
+   "teste_decisivo": "IF.data habitação por instituição; taxas de juros do imobiliário por instituição; normas MCR sobre direcionamento da poupança. Fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "saldo do BB parado em cerca de R$ 46 bi – derivável (3,22% × R$ 1,4 tri) mas não explícito",
+    "mercado dobrou – não verificado no dossiê"
+   ]
+  },
+  {
+   "premissa": "P19",
+   "prob_verdadeira": 0.5,
+   "alternativa": "O BB pode ter vendido ou reduzido a participação no BV; ou o BV pode estar perdendo mercado para bancos de montadora.",
+   "teste_decisivo": "CVM FRE do BB (participações societárias); IF.data veículos por instituição incluindo BV. Fonte: CVM + IF.data.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P20",
+   "prob_verdadeira": 0.5,
+   "alternativa": "A perda de depósitos à vista pode ser migração para poupança e CDB do próprio BB, não para concorrentes.",
+   "teste_decisivo": "IF.data depósitos à vista e nº clientes por instituição; Pix dados abertos (chaves e transações por participante). Fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "22,3%→17,0% – dossiê diz 21,49%→16,63% (F-038); divergência",
+    "Nubank 113 milhões de clientes [I-08]"
+   ]
+  },
+  {
+   "premissa": "P21",
+   "prob_verdadeira": 0.5,
+   "alternativa": "O BB pode ter índice de reclamações alto por ter base de clientes grande e rede física que gera atrito.",
+   "teste_decisivo": "BCB ranking de reclamações e ranking de ouvidorias, trimestral 2019–2026. Posição do BB entre os 10 maiores.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P22",
+   "prob_verdadeira": 0.55,
+   "alternativa": "A perda de participação em depósitos pode não ter se traduzido em custo maior se o BB compensou com LCA ou recursos direcionados.",
+   "teste_decisivo": "IF.data Passivo e DRE: despesa de captação ÷ saldo médio, por semestre 2014–2026, BB vs pares. Fonte: IF.data + Cosif.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "22,3%→17,0% – dossiê diz 21,49%→16,63%",
+    "18,7%→14,9% – dossiê diz 18,37%→14,5% (F-044)"
+   ]
+  },
+  {
+   "premissa": "P23",
+   "prob_verdadeira": 0.4,
+   "alternativa": "Os depósitos judiciais podem permanecer no BB por inércia institucional e custo de troca, mesmo com pressão dos tribunais.",
+   "teste_decisivo": "Balancetes Cosif (conta de depósitos judiciais); editais e contratos dos tribunais (PNCP e diários oficiais). Fonte: BCB + PNCP.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "TJRJ contrato vence em jul/2027 [I-30]"
+   ]
+  },
+  {
+   "premissa": "P24",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A poupança do BB pode estar estável em fatia, mas o crédito rural pode estar sendo financiado por outras fontes (LCA, recursos obrigatórios) sem impacto.",
+   "teste_decisivo": "SGS (saldo e captação líquida poupança rural); IF.data poupança por instituição; SICOR fonte de recursos das contratações do BB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P25",
+   "prob_verdadeira": 0.35,
+   "alternativa": "Em momentos de estresse, o fluxo pode ir para títulos públicos (Tesouro Selic) ou para Caixa/Itaú, não para o BB.",
+   "teste_decisivo": "IF.data e ESTBAN depósitos por instituição em torno de eventos de crise 2023–2026; estudo de evento com fatos relevantes. Fonte: BCB + CVM IPE.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P26",
+   "prob_verdadeira": 0.55,
+   "alternativa": "A presença exclusiva pode ser em municípios tão pequenos que a receita não cobre o custo da agência; a vantagem pode ser ilusória.",
+   "teste_decisivo": "ESTBAN mensal por município 2014–2026; diferenças em diferenças escalonado (Callaway-Sant'Anna) com entrada de cooperativa e saída de privado.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "2.300 municípios – dossiê diz 2.290 (F-019)",
+    "único em 555 – dossiê diz 577 (F-019)",
+    "437 em 12/2022 – não está no dossiê",
+    "sistema com 23% menos agências – não está no dossiê"
+   ]
+  },
+  {
+   "premissa": "P27",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A portabilidade de salário e de crédito pode já ter reduzido o valor da folha a ponto de o lance não se pagar.",
+   "teste_decisivo": "PNCP e diários oficiais (contratos de folha: vencedor, valor, prazo); IF.data e ESTBAN consignado e depósitos por município antes/depois da troca.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "cerca de 25% do consignado de servidores [I-19]"
+   ]
+  },
+  {
+   "premissa": "P28",
+   "prob_verdadeira": 0.55,
+   "alternativa": "O desconto na ação pode ser inteiramente explicado pela queda do ROE e pelo custo do crédito, sem prêmio de governança separado.",
+   "teste_decisivo": "B3 COTAHIST + CVM IPE: estudo de evento sobre fatos relevantes do BB 2019–2026, com pares como controle. Método em F-014.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P29",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A BB Asset pode ter taxa comparável à do mercado e a concentração em setor público pode ser escolha estratégica, não vulnerabilidade.",
+   "teste_decisivo": "CVM dados abertos de fundos (patrimônio, captação, taxa por gestor); CADPREV (demonstrativos dos regimes próprios). Fonte: CVM + CADPREV.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P30",
+   "prob_verdadeira": 0.6,
+   "alternativa": "A perda pode estar em médias empresas (migração para mercado de capitais) e não só em micro/pequenas.",
+   "teste_decisivo": "IF.data PJ por porte do tomador e modalidade, por instituição; taxas de juros de capital de giro. Fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "cooperativas singulares 10,7%→18,6% – não está no dossiê como agregado"
+   ]
+  },
+  {
+   "premissa": "P31",
+   "prob_verdadeira": 0.6,
+   "alternativa": "O crescimento em comércio exterior pode vir de grandes empresas não-agro (mineração, manufatura) e não da cadeia do agro.",
+   "teste_decisivo": "IF.data comércio exterior por instituição e CNAE do tomador; Comex Stat exportações por UF e produto. Fonte: IF.data + Comex Stat.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P32",
+   "prob_verdadeira": 0.55,
+   "alternativa": "A queda pode refletir menor demanda por investimento (juro alto) e não perda do BB como repassador.",
+   "teste_decisivo": "IF.data PJ investimento por instituição; BNDES dados abertos (operações indiretas por agente financeiro). Fonte: IF.data + BNDES.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P33",
+   "prob_verdadeira": 0.45,
+   "alternativa": "O BB pode ter participação relevante em originação via BB Banco de Investimento, e a fatia pode ser comparável à do crédito.",
+   "teste_decisivo": "Rankings ANBIMA de originação e distribuição 2019–2026; boletins de mercado de capitais. Fonte: ANBIMA.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P34",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A adquirência pode ainda gerar dado transacional valioso para crédito PJ mesmo sem garantir a conta principal.",
+   "teste_decisivo": "BCB estatísticas de pagamentos de varejo; Monitor Abecs; IF.data recebíveis PJ por instituição. Fonte: BCB + Abecs.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Rede 18%, Cielo 17%, PagBank 17%, Stone 15%, Mercado Pago 9% [I-28]",
+    "BB com 5,6% das operações com recebíveis [IFD]"
+   ]
+  },
+  {
+   "premissa": "P35",
+   "prob_verdadeira": 0.5,
+   "alternativa": "A receita de serviços pode ter migrado de conta corrente para outras linhas (consórcio, seguro, câmbio) sem perda líquida.",
+   "teste_decisivo": "DFP/ITR e releases BB (receita de prestação de serviços por linha); BCB tarifas por instituição; Pix dados abertos. Fonte: CVM + BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Pix com 54,7% das transações de varejo [I-24]"
+   ]
+  },
+  {
+   "premissa": "P36",
+   "prob_verdadeira": 0.45,
+   "alternativa": "O BB pode ser receptor líquido em algumas categorias (dados de crédito para consignado) mesmo sendo transmissor em outras.",
+   "teste_decisivo": "Painéis públicos Open Finance Brasil: consentimentos por instituição transmissora e receptora. Fonte: Open Finance Brasil.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Cerca de 200 milhões de consentimentos em 2026 [I-21]"
+   ]
+  },
+  {
+   "premissa": "P37",
+   "prob_verdadeira": 0.5,
+   "alternativa": "O crédito das instituições de pagamento pode ser de ticket muito baixo e risco alto, não competindo com o BB no mesmo segmento.",
+   "teste_decisivo": "IF.data crédito PJ e contas pré-pagas por conglomerado prudencial; demonstrações das adquirentes listadas. Fonte: IF.data + CVM.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Mercado Pago com R$ 119 bi e 3,6% do crédito pessoal sem consignação"
+   ]
+  },
+  {
+   "premissa": "P38",
+   "prob_verdadeira": 0.6,
+   "alternativa": "A queda dos prêmios pode ser cíclica (menos originação de crédito) e não estrutural; a Brasilseg pode diversificar canais.",
+   "teste_decisivo": "Releases BB Seguridade (prêmios por linha, trimestral); SUSEP SES; SICOR originação. Correlação e elasticidade. Fonte: CVM + SUSEP.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Prêmios Brasilseg −19% no 3T26; agrícola −32,3%; prestamista −26,9% [I-27]"
+   ]
+  },
+  {
+   "premissa": "P39",
+   "prob_verdadeira": 0.45,
+   "alternativa": "A BB Asset pode estar ganhando em fundos de alta taxa via plataformas digitais, e a concentração em renda fixa pode ser estável.",
+   "teste_decisivo": "CVM dados abertos de fundos (patrimônio, captação líquida, taxa por gestor e classe 2019–2026); ranking ANBIMA. Fonte: CVM + ANBIMA.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P40",
+   "prob_verdadeira": 0.45,
+   "alternativa": "O consórcio pode crescer por inércia comercial e não como substituto do crédito; o BB pode não estar ganhando fatia.",
+   "teste_decisivo": "BCB dados de consórcios por administradora e segmento; Anfavea (máquinas). Comparar crescimento com crédito de investimento rural.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P41",
+   "prob_verdadeira": 0.55,
+   "alternativa": "A rede física pode gerar receita (depósitos, consignado, seguro) que os digitais não capturam; a comparação por cliente pode ser enganosa.",
+   "teste_decisivo": "IF.data DRE (despesas de pessoal e administrativas; nº clientes) BB vs Nubank e Inter. Receita ÷ despesa por cliente. Fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P42",
+   "prob_verdadeira": 0.5,
+   "alternativa": "No consignado o BB seleciona melhor (0,5% vs 1,4%); no rural a diferença pode ser de mix. A escala de dados pode funcionar em algumas linhas e não em outras.",
+   "teste_decisivo": "Painel IF.data: inadimplência BB menos esperada pelo mix (região, modalidade, porte), 2014–2026. Resíduo por segmento.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Rural BB 6,2% vs sistema 5,6%",
+    "Consignado BB 0,5% vs 1,4%"
+   ]
+  },
+  {
+   "premissa": "P43",
+   "prob_verdadeira": 0.35,
+   "alternativa": "Os ganhos de eficiência podem vir de redução de rede e de pessoal, não de IA; a atribuição causal é difícil com dado público.",
+   "teste_decisivo": "Pesquisa FEBRABAN de Tecnologia Bancária; IF.data índice de eficiência; releases dos bancos (CVM IPE). Painel com defasagem.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P44",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A base pode envelhecer em todos os bancos tradicionais; o BB pode não ser exceção. Sem dado público por instituição e faixa etária.",
+   "teste_decisivo": "Pesquisas públicas com recorte etário (Raio X ANBIMA, Datafolha); Pix por faixa etária. Sem fonte pública por instituição.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P45",
+   "prob_verdadeira": 0.75,
+   "alternativa": "O capital pode não ser restrição ativa se o BB reduzir RWA (carteira encolhendo) e mantiver payout mínimo; a folga pode ser suficiente.",
+   "teste_decisivo": "DASFN KM1, OV1 e tabelas CR do BB, trimestral 2020–2026; simulação de consumo de RWA por mercado sob cenários. Fonte: DASFN/BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "payout no mínimo de 25% [I-01], [I-03]"
+   ]
+  },
+  {
+   "premissa": "P46",
+   "prob_verdadeira": 0.45,
+   "alternativa": "O salto do custo do crédito pode ser inteiramente econômico (deterioração da carteira) e a Res. 4.966 ter efeito marginal.",
+   "teste_decisivo": "Balancetes Cosif (contas de provisão por estágio); IF.data antes/depois 03/2025; comparação BB vs pares com menos parcela única. Fonte: BCB Cosif.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P47",
+   "prob_verdadeira": 0.7,
+   "alternativa": "A concentração pode ser mitigada por garantias reais (terra, safra) e seguro; o consumo de capital em choque pode ser menor que o sugerido.",
+   "teste_decisivo": "Releases (carteira agro); IF.data patrimônio; ESTBAN×PAM concentração por cultura e UF; cenário de perda com sensibilidades. Fonte: F-006 + F-046.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "patrimônio de R$ 181,8 bi – derivável de F-046 (10,48% × R$ 1,74 tri ≈ R$ 182,5 bi), mas o valor exato 181,8 não está no dossiê"
+   ]
+  },
+  {
+   "premissa": "P48",
+   "prob_verdadeira": 0.4,
+   "alternativa": "A inadimplência rural pode responder mais a preço de commodity e clima do que a Selic; o juro afeta o custo de rolagem, mas não é o fator dominante.",
+   "teste_decisivo": "Painel UF×mês: SCR.data vs Selic (SGS 432), preços (CEPEA), clima (CHIRPS), custos (CONAB). Decomposição da variância.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "Selic em 13,75% [FE]"
+   ]
+  },
+  {
+   "premissa": "P49",
+   "prob_verdadeira": 0.35,
+   "alternativa": "As mudanças regulatórias podem ser marginais e não alterar a vantagem estrutural das cooperativas (modelo de negócio, proximidade).",
+   "teste_decisivo": "Normativos BCB e CMN (pipeline); proposições no Congresso; IF.data custo de captação e eficiência das cooperativas. Fonte: BCB + Congresso.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "boletim MAPA sobre exigibilidades [I-12]"
+   ]
+  },
+  {
+   "premissa": "P50",
+   "prob_verdadeira": 0.7,
+   "alternativa": "Bancos de montadora e estrangeiros podem crescer via digitalização sem agência física, mudando a dinâmica de nicho.",
+   "teste_decisivo": "IF.data rural PF e PJ por instituição (Rabobank, John Deere, CNH Industrial). Verificar se soma fica abaixo de 5%.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Rabobank 1,9%→0,3%",
+    "John Deere perto de 1,8% até 12/2024"
+   ]
+  },
+  {
+   "premissa": "P51",
+   "prob_verdadeira": 0.45,
+   "alternativa": "As agfintechs podem não escalar por falta de funding próprio e dependência de fundos; o volume pode estagnar.",
+   "teste_decisivo": "CVM carteiras de Fiagro e FIDC por originador; Pesquisa ABCD/PwC; releases das empresas. Fonte: CVM.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Agrolend R$ 968 mi e meta R$ 2 bi [I-32]"
+   ]
+  },
+  {
+   "premissa": "P52",
+   "prob_verdadeira": 0.65,
+   "alternativa": "Uma big tech pode obter licença bancária ou adquirir um banco médio, mudando o cenário antes de 2027.",
+   "teste_decisivo": "Pix transações por iniciador; Unicad cadastro de instituições; IF.data carteira de crédito. Verificar se alguma passa de 0,5% do sistema.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P53",
+   "prob_verdadeira": 0.6,
+   "alternativa": "O Drex pode ser retomado com novo cronograma; a CPR tokenizada pode ganhar tração via CVM/B3 antes de 2028.",
+   "teste_decisivo": "Comunicados BCB; registros B3 (CPR como valor mobiliário); normativos CVM. Verificar cronograma oficial.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "Plataforma de testes desligada em nov/2025 [I-33]"
+   ]
+  },
+  {
+   "premissa": "P54",
+   "prob_verdadeira": 0.6,
+   "alternativa": "O BB pode ter exposição relevante via antecipação de saque-aniversário para servidores com FGTS, maior que 1% do crédito PF.",
+   "teste_decisivo": "IF.data crédito pessoal por instituição; releases BB; resoluções Conselho Curador FGTS. Verificar se carteira < 1% do crédito PF.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P55",
+   "prob_verdadeira": 0.55,
+   "alternativa": "O desconto pode ser inteiramente explicado pela queda do ROE (de 11,2% para 6,2% no 9M26) e não por governança separadamente.",
+   "teste_decisivo": "B3 COTAHIST preço diário; CVM patrimônio por ação; estudo de evento sobre fatos relevantes 2019–2026 com pares como controle. Método em F-014.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "−6,9% em 12/08/2026 – não está no dossiê"
+   ]
+  }
+ ]
+}

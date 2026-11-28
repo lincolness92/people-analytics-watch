@@ -1,0 +1,61 @@
+{
+ "built_at": "2026-11-28T05:43:57+00:00",
+ "series": {
+  "inad_rural_pf": {
+   "source": "BCB SGS 21148",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21148/dados?formato=json&dataInicial=01/01/2008",
+   "fetched_at": "2026-11-28T05:44:00+00:00",
+   "first": "2011-03",
+   "last": "2026-10"
+  },
+  "inad_rural_pf_mercado": {
+   "source": "BCB SGS 21146",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21146/dados?formato=json&dataInicial=01/01/2008",
+   "fetched_at": "2026-11-28T05:44:02+00:00",
+   "first": "2011-03",
+   "last": "2026-10"
+  },
+  "inad_rural_pf_regulada": {
+   "source": "BCB SGS 21147",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21147/dados?formato=json&dataInicial=01/01/2008",
+   "fetched_at": "2026-11-28T05:44:04+00:00",
+   "first": "2011-03",
+   "last": "2026-10"
+  },
+  "inad_rural_pj": {
+   "source": "BCB SGS 21136",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21136/dados?formato=json&dataInicial=01/01/2008",
+   "fetched_at": "2026-11-28T05:44:06+00:00",
+   "first": "2011-03",
+   "last": "2026-10"
+  },
+  "selic": {
+   "source": "BCB SGS 4189",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2008",
+   "fetched_at": "2026-11-28T05:44:08+00:00",
+   "first": "2008-01",
+   "last": "2026-11"
+  },
+  "preco_soja": {
+   "source": "Seab-PR/DERAL via Ipeadata DERAL12_PRSO12",
+   "url": "https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='DERAL12_PRSO12')",
+   "fetched_at": "2026-11-28T05:44:10+00:00",
+   "first": "1990-01",
+   "last": "2026-10"
+  },
+  "preco_milho": {
+   "source": "Seab-PR/DERAL via Ipeadata DERAL12_PRMI12",
+   "url": "https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='DERAL12_PRMI12')",
+   "fetched_at": "2026-11-28T05:44:12+00:00",
+   "first": "1990-01",
+   "last": "2026-10"
+  },
+  "preco_boi": {
+   "source": "Seab-PR/DERAL via Ipeadata DERAL12_PRBGO12",
+   "url": "https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='DERAL12_PRBGO12')",
+   "fetched_at": "2026-11-28T05:44:14+00:00",
+   "first": "1990-01",
+   "last": "2026-10"
+  }
+ }
+}

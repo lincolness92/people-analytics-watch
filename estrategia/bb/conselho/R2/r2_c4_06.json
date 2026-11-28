@@ -1,0 +1,181 @@
+{
+ "criticas": [
+  {
+   "premissa": "C2-N03",
+   "contrario": "O BB é o principal agente de crédito rural equalizado. A inadimplência do agro BB (6,92%, F-006) pode estar concentrada em custeio e investimento com taxas controladas, que sofreram com quebras de safra e queda de preços, não em recursos livres.",
+   "alternativa": "A inadimplência de 17,21% na parcela a taxa de mercado (F-012) pode refletir o perfil do sistema, dominado por bancos menores e fintechs. O BB, com carteira de R$ 403,6 bi (F-006), pode ter mix diferente, mais próximo do total de 9,59%.",
+   "riscos_de_dado": [
+    "F-012 é dado do sistema (SGS 21146/21148), não do BB. Extrapolar para o BB é inferência, não fato.",
+    "A abertura por fonte de recursos (controlado vs. livre) não está no dossiê. O SICOR seria necessário.",
+    "O saldo rural PF do sistema (R$ 550,5 bi, F-012) inclui instituições que o BB não compete diretamente."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR – Matriz de Dados do Crédito Rural por instituição e fonte de recursos",
+     "BB ITR/DFP – notas de risco de crédito por segmento"
+    ],
+    "descricao": "Cruzar o saldo em atraso +90d do agro BB por fonte (livre vs. controlada). Se o atraso se concentrar em linhas controladas, a premissa cai. Custo: uma consulta ao SICOR e uma leitura do ITR."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência do agro no sistema é maior nas linhas a taxa de mercado (17,21% vs. 9,59%, F-012). Verificar se o mesmo padrão se repete na carteira agro do BB antes de concluir que o risco está fora das linhas oficiais."
+  },
+  {
+   "premissa": "C2-N05",
+   "contrario": "O RSPL do BB foi 2,8% no 3T26 (F-002). Mesmo excluindo o agro, a margem financeira bruta caiu 5,5% t/t e as despesas subiram 4,8% a/a (F-004). O 'resto' pode não cobrir o custo de capital num cenário de Selic elevada.",
+   "alternativa": "A simulação de ~17% citada em F-015 pode usar alocação de capital que favorece o resultado ex-agro. Se o capital for alocado por RWA real de cada segmento, o RSPL ex-agro pode ser bem menor.",
+   "riscos_de_dado": [
+    "F-015 tem confiança média-baixa. O valor exato não foi lido com segurança. É simulação da administração, não número auditado.",
+    "O custo de capital por CAPM exige beta e prêmio de risco que não estão no dossiê. Qualquer número seria inventado.",
+    "A ressalva de F-009 alerta que ROE gerencial do Itaú e RSPL ajustado do BB têm definições diferentes, dificultando comparação."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB ITR/DFP – nota de segmento",
+     "B3 COTAHIST (beta BBAN3)",
+     "BCB SGS (Selic, IPCA)",
+     "Relatório Focus (juro real)"
+    ],
+    "descricao": "Recalcular o RSPL ex-agro com capital alocado por RWA e comparar com custo de capital por CAPM. Se a diferença for menor que 2 p.p., a premissa não se sustenta. Custo: uma planilha com dados públicos."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A administração simulou RSPL sem agro próximo de 17% (F-015, confiança média-baixa). É necessário recalcular com capital alocado por RWA e comparar com custo de capital estimado por CAPM antes de afirmar que o resto do banco rende acima do custo de capital."
+  },
+  {
+   "premissa": "C2-N06",
+   "contrario": "A projeção revisada do BB implica custo de crédito de R$ 21,4 a 24,4 bi no 4T26 (F-008: 80–83 menos 58,6). Isso é igual ou superior ao 3T26 (R$ 21,2 bi, F-003). A própria administração não projeta queda. O pico pode não ter passado.",
+   "alternativa": "O custo do crédito subiu 14,9% t/t no 3T26 (F-003). Pode ser efeito de provisionamento antecipado por mudança de modelo interno, não de formação real de inadimplência. A cobertura caiu (F-005), mas isso pode ser decisão contábil.",
+   "riscos_de_dado": [
+    "A formação de inadimplência (fluxo) não está no dossiê. Só há estoque de atraso (F-005) e custo do crédito (F-003).",
+    "O 4T26 ainda não ocorreu. Afirmar pico no 3T26 é extrapolação sem dado forward.",
+    "Baixas para prejuízo e renegociações podem mascarar a formação real. Sem esses dados, o pico é indetectável."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação 4T26 (CVM IPE, prevista para fev/2027)",
+     "BCB SGS 21148 e 21082",
+     "BB ITR – notas de provisão e renegociação"
+    ],
+    "descricao": "Comparar a formação de inadimplência (variação do atraso +90d + baixas) do 4T26 com a do 3T26. Se o 4T26 for maior ou igual, o pico não passou. Custo: esperar a publicação do 4T26."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O custo do crédito do BB subiu 14,9% t/t no 3T26 (F-003) e a projeção revisada implica 4T26 igual ou superior (F-008). Não há evidência de que o pico de formação de inadimplência já passou. Aguardar dado do 4T26."
+  },
+  {
+   "premissa": "C2-N08",
+   "contrario": "O Nubank atingiu 15,07% em crédito pessoal sem consignação (F-023) e 15,49% em cartão (F-024). Pode ter atraído clientes de bom risco com UX superior e taxas competitivas, não só risco alto. A perda do BB pode ser de relacionamento, não de seleção adversa.",
+   "alternativa": "A queda do BB pode refletir encolhimento deliberado da carteira (F-008: PF de 6–10% para 0–2%), não perda para entrantes de risco maior. O BB pode ter saído de segmentos que considerou marginais, independentemente do risco do cliente.",
+   "riscos_de_dado": [
+    "A inadimplência por modalidade e por instituição não está no dossiê. Sem ela, não dá para separar risco bom de ruim.",
+    "A mudança de perímetro de conglomerado financeiro para prudencial em 03/2025 (ressalva de F-020 a F-024) pode distorcer a série.",
+    "O saldo por cliente e a taxa média cobrada não estão no dossiê. A premissa assume sem evidência."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB – taxas de juros por instituição e modalidade",
+     "IF.data – clientes com crédito por instituição",
+     "Nubank 20-F (SEC EDGAR) – inadimplência e ticket médio"
+    ],
+    "descricao": "Comparar taxa média e inadimplência do BB vs. Nubank em crédito pessoal sem consignação. Se a taxa do Nubank for menor ou igual e a inadimplência similar, a premissa de 'risco maior' cai. Custo: consulta pública ao BCB e SEC."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB perdeu participação em crédito pessoal sem consignação (22,53%→14,01%, F-023) e cartão (11,59%→9,35%, F-024), com ganho concentrado em Nubank. Verificar se a perda foi em clientes de maior risco ou de melhor risco antes de decidir se deve reagir."
+  },
+  {
+   "premissa": "C2-N09",
+   "contrario": "A participação total do BB em consignado caiu de 21,17% para 19,22% (F-022). Agibank (+3,43 pp), BTG (+2,88 pp) e Mercantil (+1,71 pp) cresceram. A queda pode ser generalizada, incluindo servidores, se a portabilidade e a concorrência digital atingiram todos os recortes.",
+   "alternativa": "A estabilidade aparente pode esconder queda em servidores compensada por ganho em INSS, ou vice-versa. Sem a abertura, a premissa é uma hipótese não testada. O crescimento de Agibank e Mercantil sugere foco em INSS, mas não prova que o BB perdeu ali.",
+   "riscos_de_dado": [
+    "O dossiê não contém a abertura do consignado por tipo (servidor, INSS, privado). A premissa afirma uma divisão sem dado.",
+    "A série de IF.data muda de perímetro em 03/2025 (ressalva de F-022). A comparação 2019-2026 pode ter quebra.",
+    "O saldo do sistema em consignado (R$ 800 bi, F-022) não permite inferir a composição por recorte."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB SGS – séries de consignado por tipo de tomador",
+     "BB ITR/DFP – abertura da carteira consignada",
+     "INSS/Dataprev – estatísticas de consignados por banco"
+    ],
+    "descricao": "Obter a participação do BB em consignado de servidores vs. INSS vs. privado. Se a queda for uniforme nos três recortes, a premissa de estabilidade em servidores é falsa. Custo: consulta ao SGS e leitura do ITR."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em consignado caiu de 21,17% para 19,22% (F-022), com ganhos de Agibank, BTG e Mercantil. A abertura por recorte (servidores, INSS, privado) não está no dossiê e é necessária antes de afirmar onde a perda se concentra."
+  },
+  {
+   "premissa": "C2-N11",
+   "contrario": "O BB é o maior financiador do agro. O ganho em comércio exterior (18,42%→25,43%, F-031) pode vir de ACC e ACE para exportadores de soja, carne e açúcar, que são agro. Se for o caso, a diversificação é ilusória e a exposição ao ciclo agro aumenta.",
+   "alternativa": "O ganho pode vir de câmbio e trade finance para importadores e empresas de manufatura, impulsionado pela depreciação cambial. Itaú (+3,49 pp) e Citibank (+3,61 pp) também ganharam (F-031), sugerindo movimento setorial, não específico do agro.",
+   "riscos_de_dado": [
+    "A composição setorial da carteira de comércio exterior do BB não está no dossiê.",
+    "O saldo em comércio exterior é indexado ao câmbio. Variação cambial pode inflar o saldo sem novo crédito.",
+    "A mudança de perímetro em 03/2025 (ressalva de F-031) pode afetar a comparabilidade da série."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Pilar 3 – exposição por setor econômico",
+     "Comex Stat – exportações por NCM e UF",
+     "BB ITR/DFP – notas de concentração setorial"
+    ],
+    "descricao": "Verificar a parcela do agro na exposição de comércio exterior do BB e correlacionar o saldo com exportações agro vs. não-agro. Se a correlação com agro for >0,6, a premissa de diversificação cai. Custo: consulta pública ao Comex Stat e Pilar 3."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB ganhou participação em comércio exterior (18,42%→25,43%, F-031), mas a composição setorial da carteira não está no dossiê. Verificar se o ganho vem de exportadores do agro ou de outros setores antes de tratá-lo como diversificação."
+  },
+  {
+   "premissa": "C2-N13",
+   "contrario": "Os 577 municípios onde só o BB tem agência (F-019) podem ser muito pequenos e remotos para atrair cooperativas. Sicredi e Sicoob crescem em municípios maiores. A exclusividade pode ser real, e a presença de cooperativa pode ser irrelevante nesses locais.",
+   "alternativa": "Mesmo onde há posto de cooperativa, o BB pode ser o único com capacidade de crédito rural de grande porte e repasses do Tesouro. A cooperativa atende o pequeno produtor; o BB atende o médio e grande. A exclusividade funcional pode persistir.",
+   "riscos_de_dado": [
+    "F-019 alerta que ESTBAN não cobre cooperativas nem bancos digitais. A ausência no ESTBAN não prova ausência física.",
+    "A contagem é por presença de saldo, não por número de agências ou postos (ressalva de F-019).",
+    "O dado é de ago/2026. A entrada de cooperativas pode ter acelerado depois, ou não, sem série temporal no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB – cadastro de agências e postos de atendimento (Unicad)",
+     "IBGE – população e PIB municipal",
+     "ESTBAN por município (BCB)"
+    ],
+    "descricao": "Cruzar os 577 municípios com o cadastro de postos de cooperativas do BCB. Se menos de 25% tiverem posto, a exclusividade é real. Custo: uma consulta ao Unicad e um cruzamento com a lista do ESTBAN."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N15",
+   "contrario": "As receitas de serviços do BB cresceram 4,6% a/a (F-004), abaixo das despesas administrativas (+4,8%). A queda de participação em tarifas (19,67%→15,54%, F-047) pode ser generalizada, incluindo fundos, seguros e meios de pagamento, não só conta corrente. O Santander ganhou 4,56 pp em tarifas (F-047).",
+   "alternativa": "A perda de participação em tarifas pode refletir a migração de clientes para bancos digitais (Nubank, PicPay, F-020 a F-024), que não cobram tarifa de conta. A queda não seria de mix, mas de base de clientes que pagavam tarifa.",
+   "riscos_de_dado": [
+    "F-047 mede 'rendas de tarifas' no IF.data, que é recorte menor que receitas de serviços do balanço. A própria premissa reconhece isso.",
+    "A abertura por linha (conta corrente, fundos, seguros, consórcio) não está no dossiê.",
+    "A mudança de perímetro em 03/2025 (ressalva de F-047) pode distorcer a comparação 2019-2026.",
+    "O crescimento de 4,6% a/a (F-004) é nominal. Sem IPCA no dossiê, não dá para afirmar crescimento real."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB ITR/DFP – nota de receitas de prestação de serviços por linha",
+     "IF.data – rendas de prestação de serviços (recorte largo)",
+     "IBGE – IPCA"
+    ],
+    "descricao": "Abrir as receitas de serviços do BB por linha e calcular o crescimento real de cada uma. Se linhas não ligadas a crédito crescerem abaixo do IPCA, a premissa de crescimento real cai. Custo: leitura do ITR e consulta ao IBGE."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em rendas de tarifas caiu de 19,67% para 15,54% (F-047) e as receitas de serviços cresceram 4,6% a/a (F-004), abaixo das despesas (+4,8%). A abertura por linha e o crescimento real não estão no dossiê. Verificar antes de concluir que a perda é só em conta corrente."
+  }
+ ]
+}

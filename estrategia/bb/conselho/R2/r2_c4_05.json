@@ -1,0 +1,174 @@
+{
+ "criticas": [
+  {
+   "premissa": "C1-N06",
+   "contrario": "A queda de 5,5% t/t na MFB (F-004) pode refletir contração de volume: o guidance de carteira foi de +0,5–4,5% para −2,0–0,0% (F-008). Menos saldo gera menos receita de juros independentemente de inadimplência.",
+   "alternativa": "O custo de captação subiu com Selic elevada e competição por depósitos (F-038: perda de 4,9 p.p. em depósitos à vista). A margem encolhe por funding mais caro, não só por juros não apropriados.",
+   "riscos_de_dado": [
+    "Decomposição não está no dossiê; exige notas explicativas do ITR/DFP.",
+    "Estágio 3 e +90d têm definições que mudam com IFRS 9 e resolução CMN.",
+    "Efeito sazonal de safra pode distorcer comparação t/t."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM ITR 3T26 do BB (notas explicativas de receita de juros)",
+     "BCB SGS série de custo de captação"
+    ],
+    "descricao": "Abrir a variação da MFB em volume × taxa × juros não reconhecidos. Se volume e funding explicam >50%, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A queda t/t da MFB é majoritariamente explicada por contração de volume e custo de captação, não por juros não apropriados de ativos problemáticos. Testar decomposição antes de assumir reversão automática."
+  },
+  {
+   "premissa": "C1-N08",
+   "contrario": "ESTBAN não cobre cooperativas nem bancos digitais (ressalva F-019). Nos 577 municípios 'exclusivos', Sicredi, Sicoob ou correspondentes podem atender. A exclusividade é contábil, não comercial.",
+   "alternativa": "O crescimento de captação nesses municípios pode refletir ciclo agro favorável (safra recorde) e não a ausência de concorrência. Municípios agro-dependentes crescem juntos.",
+   "riscos_de_dado": [
+    "PIB municipal do IBGE defasado em 2 anos.",
+    "ESTBAN mede saldo, não fluxo; captação nova não aparece.",
+    "Pareamento por PIB per capita ignora composição setorial."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN por município (BCB)",
+     "IBGE PIB municipal",
+     "Cadastro de cooperativas no BCB"
+    ],
+    "descricao": "Contar pontos de cooperativa e correspondente nos 577 municípios. Se >30% têm atendimento cooperativo, a exclusividade é fictícia e o pareamento precisa reclassificar."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Nos municípios onde o BB é a única instituição com saldo no ESTBAN E não há ponto de cooperativa ou correspondente ativo, a captação/PIB cresce ≥5 p.p. acima de pares. Exige reclassificação prévia da exclusividade."
+  },
+  {
+   "premissa": "C1-N09",
+   "contrario": "O próprio dossiê alerta: 'ROE gerencial do Itaú e RSPL ajustado do BB têm definições diferentes' (F-009). A mesma ressalva vale para eficiência. Comparar 29% implícito do BB com 37,5% do Itaú é comparar métricas distintas.",
+   "alternativa": "O BB pode parecer eficiente porque a receita (denominador) caiu menos que a de pares, ou porque despesas de pessoal são capitalizadas differently. A eficiência contábil não captura custo de oportunidade da rede.",
+   "riscos_de_dado": [
+    "Fórmula de eficiência varia: inclui ou não provisão, resultado de participações.",
+    "Despesas administrativas do BB (F-004: R$10,3 bi) podem excluir custos alocados de holding.",
+    "Perímetro muda em 03/2025 (conglomerado → prudencial)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (Cosif 4010/4016)",
+     "CVM DFP/ITR padronizado"
+    ],
+    "descricao": "Calcular (desp. pessoal + admin) / (intermediação antes de provisão + tarifas) com a MESMA fórmula para BB, Itaú, Bradesco, Santander, 8 trimestres. Se BB > Itaú + 5 p.p. em 6/8, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N11",
+   "contrario": "O salto do Bradesco (7,32→24,08%, F-033) pode ser aquisição real de carteira ou reclassificação voluntária de clientes entre portes, não apenas artefato de perímetro. A quebra Cosif afeta todos, mas o ganho é assimétrico.",
+   "alternativa": "Bradesco pode ter comprado carteira de PME de outro banco ou reclassificado clientes de 'média' para 'pequena' internamente. O BNDES em PJ rural (+12,35 p.p., F-030) pode refletir desembolso de programa governamental.",
+   "riscos_de_dado": [
+    "Perímetro muda de conglomerado (1005) para prudencial (1009) em 03/2025 (ressalva F-020 a F-035).",
+    "Cosif 2025 redefine subcontas.",
+    "Soma das participações pode não fechar em 100% antes e depois."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data séries mensais dez/2024 a jun/2025",
+     "SCR.data por porte"
+    ],
+    "descricao": "Verificar se a soma das participações de todos os bancos em cada segmento fecha em 100% antes e depois de 03/2025. Se não fecha, há reclassificação. Medir o salto trimestral vs. desvio-padrão histórico."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N12",
+   "contrario": "O ganho de 7 p.p. em comex (F-031) coincide com ganhos de Citibank (+3,61) e Itaú (+3,49). Pode ser expansão do mercado total (mais exportações) e não conquista de share por preço ou relacionamento.",
+   "alternativa": "BB pode ter ganhado share por mandato governamental (financiamento a exportações com equalização via Proex/BNDES), não por competitividade de preço. A taxa ACC pode não refletir o custo efetivo com equalização.",
+   "riscos_de_dado": [
+    "Taxa ACC por instituição no BCB pode ter amostra pequena.",
+    "Comex Stat mede fluxo, não estoque de crédito.",
+    "Perímetro muda em 03/2025; série de participação pode ter quebra."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB taxas de juros por instituição e modalidade (ACC)",
+     "Comex Stat"
+    ],
+    "descricao": "Comparar taxa média mensal de ACC do BB com mediana dos 5 maiores, jan/2023–jun/2026. Se BB ≤ percentil 25 em ≥2/3 dos meses, o ganho é por desconto de preço."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O ganho de participação em comex (F-031) ocorreu com taxa de ACC do BB na mediana ou acima dos grandes bancos em ≥2/3 dos meses, excluindo operações com equalização governamental. Testar antes de alocar capital."
+  },
+  {
+   "premissa": "C1-N14",
+   "contrario": "A perda de 4,1 p.p. em tarifas (F-047) pode ser ampla: Pix reduziu TED/DOC, mas também afetou pacotes de serviços. Nubank e digitais não cobram tarifa nenhuma, pressionando todas as rubricas, não só transacionais.",
+   "alternativa": "O salto do Santander (+4,56 p.p., F-047) sugere reclassificação contábil ou aquisição, não crescimento orgânico. A perda do BB pode ser parcialmente artefato de perímetro (03/2025), como em outras séries.",
+   "riscos_de_dado": [
+    "Subcontas Cosif de tarifas mudam com o plano 2025.",
+    "Perímetro conglomerado→prudencial em 03/2025.",
+    "Tarifas de cartões podem migrar entre rubricas com arranjos de pagamento."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data subcontas de rendas de tarifas",
+     "CVM DFP/ITR"
+    ],
+    "descricao": "Decompor a variação de participação por subconta Cosif (transacional, cartões, fundos, crédito). Se <50% da perda está em transacionais, a premissa de 'efeito Pix' não se sustenta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N15",
+   "contrario": "A cobertura caiu de 174,3% para 137,8% em 12 meses (F-005) e a inadimplência agro subiu de 4,84% para 6,92% (F-006). Se a tendência continuar, em mais 2 trimestres a cobertura pode ficar abaixo de 100%.",
+   "alternativa": "A cobertura de 137,8% pode ser insuficiente porque o estoque +90d ainda não capturou safras que vão vencer nos próximos 6 meses. A perda esperada futura é maior que a provisionada.",
+   "riscos_de_dado": [
+    "Cobertura agro específica 'não foi lida com segurança' (ressalva F-006).",
+    "Baixas a prejuízo e recuperações exigem notas explicativas do ITR.",
+    "O limiar de 120% para agro não está no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ITR 3T26 BB (notas de provisão e baixas)",
+     "Apresentação de resultado 4T25 a 3T26"
+    ],
+    "descricao": "Calcular (baixas − recuperações, 4T) / saldo +90d médio do agro. Se ≥80% ou cobertura agro <100%, a provisão é insuficiente e 2027 terá custo de crédito elevado."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A cobertura atual basta SE as baixas líquidas de recuperação dos últimos 4 trimestres forem ≤50% do saldo +90d médio do agro E a cobertura agro for ≥120%. Ambos os números precisam ser extraídos do ITR; a cobertura agro não está confirmada no dossiê."
+  },
+  {
+   "premissa": "C2-N02",
+   "contrario": "A inadimplência rural PF no sistema saltou de 0,80% para 9,59% (F-012) e na parcela de mercado de 0,51% para 17,21%. Magnitude e velocidade sugerem componente comportamental/estratégico, não apenas quebra de safra localizada.",
+   "alternativa": "A expansão do saldo rural PF de R$387 bi para R$550 bi (F-012) pode ter levado crédito a produtores marginais. O atraso reflete seleção adversa na originação, não choque externo de renda.",
+   "riscos_de_dado": [
+    "SCR por UF pode ter classificação inconsistente de 'rural'.",
+    "Pedidos de recuperação judicial de PF rural são raros e defasados.",
+    "Séries SGS 21148 e 21146 têm nomes 'a confirmar' (ressalva F-012)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data por UF e cultura",
+     "CONAB/IBGE safra",
+     "CNJ Datajud recuperações judiciais"
+    ],
+    "descricao": "Regressão em painel por UF: inadimplência rural vs. variação de receita/hectare vs. pedidos de RJ. Se bloco RJ é significativo a 5% após controlar renda, a premissa de 'só quebra de safra' cai."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  }
+ ]
+}

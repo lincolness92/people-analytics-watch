@@ -1,0 +1,183 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C2-N11",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de F-031 conferem. Teste depende de abertura setorial não presente no dossiê, mas fontes públicas citadas. Sem números sem apoio."
+  },
+  {
+   "premissa": "C2-N13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Número 577 confere. Fontes sobre cooperativas não estão no dossiê, reduzindo testabilidade. Sem números sem apoio."
+  },
+  {
+   "premissa": "C2-N14",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-038",
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa ancorada em F-019; métrica de depósitos/crédito é mensurável via ESTBAN. Pareamento exige dados externos não presentes no dossiê. Sem números sem apoio."
+  },
+  {
+   "premissa": "C2-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-047",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de F-047 e F-004 conferem. Premissa reconhece ausência de medição no dossiê; fontes citadas são públicas. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N01",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Fontes e métrica do dossiê. Limiares numéricos claros. Controle de renegociação citado, mas não operacionalizado. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N02",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Cobertura mensurável por fontes públicas do dossiê. Limiares definidos. Comparação entre provisões e saldo +90d controla alternativa. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N03",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023",
+    "F-020"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de F-023 e F-020 conferem. Limiares claros. Controle de renegociação mencionado, mas não detalhado. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N04",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Número 19,22% confere. Limiar de confirmação e refutação. Distinção originação vs compra citada, mas não medida. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N05",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Número 9,35% confere. Limiares definidos. Comparação com concorrentes, mas sem controle formal de alternativa. Sem números sem apoio."
+  },
+  {
+   "premissa": "C3-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-028",
+    "F-027",
+    "F-033",
+    "F-034"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de F-028 conferem. Perímetro constante e comparação com pares controlam alternativa. Sem números sem apoio."
+  }
+ ]
+}

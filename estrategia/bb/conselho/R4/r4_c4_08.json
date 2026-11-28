@@ -1,0 +1,189 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C2-N11",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Ganho 18,42→25,43% confere com F-031. Teste principal (CNAE por instituição) pode não existir em fonte pública; premissa reconhece isso. Controle cambial e comparação com Itaú/Citibank bem desenhados."
+  },
+  {
+   "premissa": "C2-N13",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-021",
+    "F-036",
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "577 municípios e limitação do ESTBAN conferem com F-019. Ganhos de Sicredi/Sicoob em rural, depósitos e LCA confirmados. Separa presença física de contratação rural efetiva."
+  },
+  {
+   "premissa": "C2-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-037",
+    "F-004",
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "26,4% agências (F-048), 14,15% crédito (F-037), despesas +4,8% (F-004) conferem. Pareamento por população e agro, separação de depósitos de governo: controles robustos."
+  },
+  {
+   "premissa": "C2-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-047",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "19,67→15,54% (F-047) e serviços +4,6% (F-004) conferem. Abertura por linha de serviço não está no dossiê; exige ITR/DFP. Limiares de 70%/40% e IPCA+2pp claros."
+  },
+  {
+   "premissa": "C3-N01",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-003",
+    "F-005"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "403,6 bi, 4,84→6,92%, 21,2 bi conferem. Limiares 5,5/7,5 claros. Condição 'sem alta da renegociada' não é operacionalizada no teste; decisão algo genérica."
+  },
+  {
+   "premissa": "C3-N02",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Cobertura 174,3→137,8% confere (F-005). Enunciado diz 'não é gatilho', mas decisão lista 'liberar capital': tensão interna. Não separa efeito denominador de provisão efetiva."
+  },
+  {
+   "premissa": "C3-N03",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023",
+    "F-020"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "22,53→14,01% e Nubank +14,88pp conferem (F-023). Perímetro 1009 citado corretamente. Condição sobre renegociada PF mencionada mas sem métrica de verificação no teste."
+  },
+  {
+   "premissa": "C3-N04",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "19,22% confere (F-022). Separação originação vs compra de carteira é relevante, mas o teste não detalha como medir isso no IF.data. Decisão algo genérica."
+  },
+  {
+   "premissa": "C3-N05",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "9,35% e Nubank 15,49% conferem (F-024). Não controla crescimento do denominador nem saída de segmentos. Sem comparação além de Nubank, não isola efeito BB."
+  },
+  {
+   "premissa": "C3-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-028",
+    "F-027",
+    "F-033",
+    "F-034"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "16,14→10,87% e cooperativas +6,33pp (3,60+2,73) conferem (F-028). Perímetro constante citado. Falta controle para recuo deliberado de risco vs perda competitiva."
+  }
+ ]
+}

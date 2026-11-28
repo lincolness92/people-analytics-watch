@@ -1,0 +1,28 @@
+{
+ "replicas": [
+  {
+   "premissa": "C5-N13",
+   "resposta": "aceita_em_parte",
+   "argumento": "As críticas têm razão: o dossiê não informa buffers regulatórios nem decompõe a queda do CET1, e o guidance de carteira estável tende a liberar capital. Mas a queda de 0,47 p.p. no trimestre e o lucro revisado para baixo são fatos do dossiê. Reformulo com teste projetivo e limiar definido antes.",
+   "enunciado_novo": "Com o payout mínimo publicado e carteira estável (guidance −2% a 0%), o CET1 do BB em set/2027 fica a menos de 1 p.p. do requerimento total com colchões informado no Pilar 3 KM1.",
+   "confirma_se_novo": "Projeção com payout publicado, lucro do guidance e carteira estável resulta em folga de CET1 inferior a 1 p.p. sobre o requerimento total com colchões do KM1.",
+   "refuta_se_novo": "Folga projetada igual ou superior a 1 p.p., ou CET1 estabilizando acima de 11% com lucro recuperando."
+  },
+  {
+   "premissa": "C5-N14",
+   "resposta": "aceita",
+   "argumento": "As duas críticas convergem e são corretas: o próprio guidance implica 4T26 igual ou acima do 3T26, e meu critério de refutação (R$ 22 bi) caía dentro da faixa projetada, sendo incoerente. O enunciado composto também misturava duas teses. Aceito a reformulação com limiares objetivos.",
+   "enunciado_novo": "O custo do crédito do BB no 4T26 fica abaixo de R$ 21,2 bi (3T26), abaixo do piso implícito do guidance (R$ 21,4 bi), e o do 1T27 não supera o do 4T26.",
+   "confirma_se_novo": "Custo do 4T26 abaixo de R$ 21,2 bi e custo do 1T27 igual ou inferior ao do 4T26, com inadimplência +90d estável ou em queda.",
+   "refuta_se_novo": "Custo do 4T26 acima de R$ 21,2 bi (refuta o pico) ou acima de R$ 21,4 bi (refuta o conservadorismo do guidance), ou inadimplência subindo mais 0,5 p.p."
+  },
+  {
+   "premissa": "C5-N15",
+   "resposta": "aceita_em_parte",
+   "argumento": "As críticas mostram que o cálculo bruto com F-004 (≈29%) contradiz a tese de ineficiência relativa, e que as definições de eficiência diferem entre bancos. Aceito dividir a premissa e exigir fórmula uniforme no IF.data. Mantenho que a questão do espaço de corte fora dos municípios exclusivos é testável com dados públicos.",
+   "enunciado_novo": "(a) Com a mesma fórmula no IF.data, a eficiência do BB é ao menos 5 p.p. pior que a média de Itaú e Santander. (b) A maior parte das agências do BB está em municípios com outro banco ou cooperativa, indicando espaço de corte sem fechar rede exclusiva.",
+   "confirma_se_novo": "Eficiência do BB ao menos 5 p.p. pior que a média dos pares com fórmula idêntica, e maioria das agências fora dos 577 municípios exclusivos.",
+   "refuta_se_novo": "Diferença de eficiência menor que 3 p.p. com fórmula uniforme, ou maioria das agências concentrada em municípios exclusivos."
+  }
+ ]
+}

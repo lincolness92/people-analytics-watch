@@ -44,10 +44,13 @@ O pipeline roda no GitHub Actions; o site e as APIs, no Cloudflare Pages (Functi
 | `web/` | site estático (HTML/CSS/JS puro), lê `data.json` e `search.json` |
 | `data/<tema>/regulation.json` | normas do Bacen triadas e com ficha (o que exige, a quem, vigência, técnicas) |
 | `config/ifs/`, `src/pawatch/ifs/`, `data/ifs/` | camada de instituições financeiras: configuração, coletores (IF.data, ESTBAN, Pilar 3 KM1, CVM IPE), cadastro mestre e participação de mercado (dicionário em `docs/ifs-dados.md`) |
+| `labs/rural/`, `data/rural/` | laboratório de crédito rural: coletores (SCR.data, SICOR, IF.data rural, séries do SGS, clima NASA POWER) e protótipo de previsão da inadimplência por UF, com avaliação fora da amostra contra previsões ingênuas |
+| `docs/research/` | estado da arte por pesquisa direcionada: Radar Febraban × mundo, retorno de dados e IA, fundação de dados |
+| `estrategia/` | trabalho estratégico com dado público (fora do site): `estrategia/bb/` tem o plano, as premissas, as análises e o conselho de modelos (`conselho/council.py`, `aggregate.py`) |
 | `data/papers/` | textos completos e catálogo de repositórios, compartilhados entre temas |
 | `data/traces/` | traces do pipeline (60 dias na árvore) |
 | `evals/` | perguntas de referência, rodadas, juiz calibrado, calibrações e avaliação do scorer |
-| `docs/design/`, `docs/sources/` | referências de design do site; mapas de fontes: FEBRABAN (74 itens) e associações bancárias do mundo (121 organizações, 659 publicações) |
+| `docs/design/`, `docs/sources/` | referências de design do site; mapas de fontes: FEBRABAN (74 itens), associações bancárias do mundo (121 organizações, 659 publicações), finanças de IFs, fatores externos, leis e ontologias, repositórios e métodos (59 repositórios, 16 papers), sensores e garantias do Atena (53 fontes) |
 | `VISION.md` | visão do projeto (rascunho em discussão) |
 | `data/<tema>/digests/*.json` | fonte da verdade de cada dia (estruturado) |
 | `data/<tema>/seen.json` | papers já avaliados (não voltam) |

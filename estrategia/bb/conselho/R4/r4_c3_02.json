@@ -1,0 +1,183 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P21",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Teste claro com fonte pública, limiares numéricos e decisões distintas. Falta controle para perfil da base de clientes."
+  },
+  {
+   "premissa": "P22",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [
+    "22,3% → 17,0% (depósitos à vista)",
+    "18,7% → 14,9% (captações)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números no 'hoje' não constam no dossiê. Teste bem especificado, mas teto aplicado."
+  },
+  {
+   "premissa": "P23",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Fonte e métricas públicas, limiares objetivos. Não distingue perda competitiva de decisão estratégica."
+  },
+  {
+   "premissa": "P24",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "F-039 confere. Teste bem definido com limiares. Falta controle para mudanças de mercado."
+  },
+  {
+   "premissa": "P25",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Estudo de evento com comparação a pares. Sem números sem apoio. Confundimento parcial por eventos simultâneos."
+  },
+  {
+   "premissa": "P26",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-019"
+   ],
+   "sem_apoio": [
+    "2.300 municípios",
+    "555 municípios único banco",
+    "437 em 12/2022",
+    "23% menos agências"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números do 'hoje' divergem do dossiê (F-019: 2290 e 577). Teto aplicado. DiD forte, mas pontuação reduzida pelo teto."
+  },
+  {
+   "premissa": "P27",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [
+    "25% do consignado de servidores"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Percentual de consignado não está no dossiê. Teste depende de 20 trocas públicas, incerto. Teto aplicado."
+  },
+  {
+   "premissa": "P28",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-012",
+    "F-014"
+   ],
+   "sem_apoio": [
+    "F-006 (não consta no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Citação a F-006 inexistente no dossiê. Teste de evento robusto, mas teto aplicado. Decisões distintas, porém menos acionáveis."
+  },
+  {
+   "premissa": "P29",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Fontes públicas e limiares claros. Sem números sem apoio. Teste descritivo, pouca separação de confundidores."
+  },
+  {
+   "premissa": "P30",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-028"
+   ],
+   "sem_apoio": [
+    "10,7% → 18,6% cooperativas singulares"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números de cooperativas não estão no dossiê. F-028 confere, mas teto aplicado. Teste por porte é adequado."
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "criticas": [
+  {
+   "premissa": "P25",
+   "contrario": "O dossiê mostra queda contínua da fatia de depósitos do BB (F-038: 21,5%→16,6%; F-041: 17,8%→14,8%). Em crise, o poupador pode preferir Caixa, Tesouro Direto ou simplesmente migrar para digitais. Não há evidência no dossiê de ganho acima da fatia em evento específico.",
+   "alternativa": "A queda de depósitos é estrutural (cooperativas e digitais ganhando share, F-038 e F-041), não cíclica. O episódio [I-31] não está no dossiê; pode não ter gerado fluxo líquido para o BB.",
+   "riscos_de_dado": [
+    "ESTBAN não cobre digitais nem cooperativas (ressalva F-019).",
+    "O evento [I-31] não tem dados no dossiê.",
+    "Defasagem trimestral do IF.data pode mascarar fluxo de pânico de dias."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), depósitos por instituição, frequência mensal",
+     "Fatos relevantes do BCB sobre intervenções (CVM IPE)"
+    ],
+    "descricao": "Identificar datas de crises bancárias 2023-2026 via fatos relevantes. Medir variação mensal de depósitos BB vs. sua fatia média nos 6 meses anteriores. Se delta ≤ 0, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Em eventos de crise bancária com fato relevante do BCB, verificar se a captação líquida mensal do BB em depósitos totais supera a variação proporcional à sua fatia no trimestre anterior. Sem evidência no dossiê; hipótese a testar com IF.data mensal."
+  },
+  {
+   "premissa": "P27",
+   "contrario": "A queda do consignado BB é modesta (F-022: 21,2%→19,2%, −1,95pp em 6,5 anos). Novos entrantes (Agibank +3,43pp, BTG +2,88pp) explicam a perda. A portabilidade pode ser menos relevante que a concorrência por preço na origem.",
+   "alternativa": "O deslocamento pode vir de leilões novos vencidos por concorrentes, não de portabilidade de contratos existentes. Sem série de leilões no dossiê, não se distingue origem.",
+   "riscos_de_dado": [
+    "O 'cerca de 25%' vem de [I-19], veículo único, não do dossiê.",
+    "F-022 tem quebra de perímetro em 03/2025 (conglomerado→prudencial).",
+    "Sem dados de leilões (PNCP) no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "PNCP (contratos de folha por ente)",
+     "IF.data (consignado por município)",
+     "RAIS/CAGED (servidores por ente)"
+    ],
+    "descricao": "Selecionar 20 entes que trocaram banco de folha entre 2022 e 2026. Medir variação do saldo de consignado BB no município 12 e 36 meses após a troca. Se queda < 10%, refuta o limiar de 20%."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A troca de banco na folha de pagamento desloca parcela relevante do consignado local. O limiar de 20% em 3 anos é hipótese sem dado no dossiê. Testar com PNCP + IF.data municipal antes de definir lance máximo em licitações."
+  },
+  {
+   "premissa": "P28",
+   "contrario": "O CAR de −9,3% (F-014) é classificado como ilustrativo e de confiança baixa. Pode refletir a surpresa na magnitude do lucro (−67,5% t/t, F-001), não o papel de agente de políticas. A queda do agro é de mercado (F-012: inadimplência rural PF sistêmica subiu), não só de política.",
+   "alternativa": "A concentração agro é escolha de negócio: a carteira agro BB caiu 4,3% t/t (F-006), e a fatia rural no sistema recuou (F-036: 56,7%→48,7%). O desconto pode vir da inadimplência (F-005: 4,51%→6,08%), não da governança.",
+   "riscos_de_dado": [
+    "F-014 é ilustrativo; precisa ser refeito com série de preços.",
+    "F-015 (simulação RSPL sem agro) tem confiança média-baixa.",
+    "Não há dado de equalização do Tesouro no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Série de preços B3 (BBAS3) e Ibovespa",
+     "CVM IPE (fatos relevantes BB)",
+     "Tesouro Nacional (equalização por instituição)"
+    ],
+    "descricao": "Refazer CAR com preços diários em janela [−1,+3] e [−5,+10]. Separar eventos de política (anúncios de safra, equalização) de eventos de resultado. Se CAR em eventos de política não difere de zero, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Dividir em duas: (a) a inadimplência agro (F-005, F-006, F-012) explica a maior parte da queda de lucro e do custo do crédito; (b) o desconto de governança por papel de política pública é hipótese separada, a testar com CAR em eventos de anúncio de política, não de resultado."
+  },
+  {
+   "premissa": "P30",
+   "contrario": "O dossiê não tem abertura por porte. A perda de capital de giro (F-028: −5,27pp) pode estar em médias e grandes empresas migrando para mercado de capitais ou para bancos de atacado (BTG +1,55pp no PJ total, F-027). Cooperativas ganharam, mas Itaú e BNB também (F-028).",
+   "alternativa": "A perda pode ser generalizada por porte, com cooperativas ganhando em MPE e bancos de atacado em médias/grandes. Sem dado de porte, a concentração em MPE é hipótese.",
+   "riscos_de_dado": [
+    "Sem abertura por porte no dossiê (o próprio enunciado admite).",
+    "Quebra de perímetro 03/2025 (conglomerado→prudencial) afeta comparabilidade.",
+    "Pronampe/FGO podem distorcer séries de 2020-2022."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), PJ por porte do tomador e modalidade",
+     "Dados públicos Pronampe/FGO (MDIC, BNDES)"
+    ],
+    "descricao": "Solicitar via IF.data a série de capital de giro PJ por porte (micro, pequena, média, grande) para BB, Sicredi, Sicoob e Itaú, 2019-2026. Se a perda do BB se distribui uniformemente, refuta a concentração em MPE."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de capital de giro PJ do BB (F-028: 16,1%→10,9%) foi acompanhada de ganho de cooperativas (Sicredi +3,6pp, Sicoob +2,7pp), mas também de Itaú e BNB. A concentração em micro e pequenas é hipótese sem dado de porte no dossiê; testar com IF.data por porte antes de definir oferta."
+  },
+  {
+   "premissa": "P31",
+   "contrario": "O ganho em comércio exterior (F-031: 18,4%→25,4%) ocorreu junto com ganhos de Citibank (+3,61pp), Itaú (+3,49pp) e Caixa (+3,43pp). O mercado total cresceu. Não há dado de CNAE no dossiê para atribuir ao agro.",
+   "alternativa": "O crescimento pode vir de financiamento à importação (insumos industriais) ou de câmbio geral, não especificamente de exportação agro. Sem abertura por CNAE, a atribuição é especulativa.",
+   "riscos_de_dado": [
+    "Sem CNAE do tomador no dossiê.",
+    "Sem dados de Comex Stat no dossiê.",
+    "Quebra de perímetro 03/2025 pode afetar a série."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (comércio exterior por CNAE do tomador)",
+     "Comex Stat (MDIC), exportações por produto e UF",
+     "Relatório de câmbio BCB"
+    ],
+    "descricao": "Cruzar carteira de comércio exterior BB por CNAE (IF.data) com pauta exportadora (Comex Stat). Se CNAEs agro representam menos de 50% da carteira, refuta. Custo: um pedido de dados públicos."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A fatia do BB em comércio exterior cresceu (F-031: 18,4%→25,4%), mas o dossiê não permite atribuir ao agro. Citibank, Itaú e Caixa também ganharam. A hipótese de concentração em CNAEs agro precisa ser testada com IF.data por CNAE e Comex Stat."
+  },
+  {
+   "premissa": "P33",
+   "contrario": "O BB tem presença relevante em LCA (F-042: 49,4%→32,6%, ainda a maior fatia) e em crédito rural, que são formas de renda fixa ligadas ao agro. A originação de CRA e FIDC pode ser maior do que a hipótese sugere.",
+   "alternativa": "A comparação entre originação de títulos e carteira de crédito pode ser inadequada: são negócios diferentes com margens e riscos distintos. A fatia menor pode ser racional, não falha.",
+   "riscos_de_dado": [
+    "Nenhum dado ANBIMA no dossiê.",
+    "Premissa marcada como [H], sem evidência.",
+    "A fatia de crédito PJ (F-027: 11,8%) tem quebra de perímetro em 03/2025."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Rankings ANBIMA de originação e distribuição (públicos)",
+     "Boletins de mercado de capitais ANBIMA/CVM"
+    ],
+    "descricao": "Baixar rankings ANBIMA 2019-2026 (underwriting de debêntures, CRA, FIDC). Calcular fatia do BB. Se fatia ≥ 6% (metade de 11,8%), refuta. Custo: acesso gratuito ao site ANBIMA."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P34",
+   "contrario": "A fatia de 5,6% em recebíveis pode ser escolha estratégica, não incapacidade. O BB pode priorizar crédito PJ e consignado sobre adquirência. A Cielo é empresa separada; a relação não é automática.",
+   "alternativa": "O lojista pode manter conta no BB por crédito e folha, mesmo usando outra maquininha. A adquirência não é condição necessária para a conta principal. Sem dado de correlação no dossiê.",
+   "riscos_de_dado": [
+    "Os dados de adquirentes (Rede 18%, Cielo 17% etc.) vêm de [I-28], fora do dossiê.",
+    "O 5,6% de recebíveis é referência [IFD] sem detalhe no dossiê.",
+    "Sem série temporal de recebíveis PJ por instituição no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, estatísticas de pagamentos de varejo",
+     "Monitor Abecs (público)",
+     "IF.data (recebíveis PJ por instituição)"
+    ],
+    "descricao": "Medir correlação entre volume de adquirência e saldo de conta PJ por banco (IF.data + Abecs). Se bancos com pouca adquirência mantêm conta PJ, refuta a premissa de que adquirência garante a conta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A fatia do BB em recebíveis é baixa e estável, enquanto adquirentes independentes crescem. Mas o dossiê não permite concluir que isso ameaça a conta principal do lojista. Testar correlação entre adquirência e depósito PJ antes de decidir integração ou saída."
+  },
+  {
+   "premissa": "P36",
+   "contrario": "O BB tem base grande de clientes (F-049: 8,2% dos clientes com crédito). É natural que transmita mais dados por ter mais contas. Isso não implica perda competitiva; pode refletir escala, não fraqueza.",
+   "alternativa": "O fluxo assimétrico pode ser transitório: clientes novos em digitais autorizam envio do BB, mas à medida que a relação migra, o fluxo se inverte. Sem série temporal no dossiê.",
+   "riscos_de_dado": [
+    "Nenhum dado de Open Finance no dossiê.",
+    "O '200 milhões de consentimentos' vem de [I-21], fora do dossiê.",
+    "Painéis do Open Finance Brasil não estão citados como fonte no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Painéis públicos Open Finance Brasil (openfinancebrasil.org.br)",
+     "Diretório de participantes"
+    ],
+    "descricao": "Acessar painéis públicos de consentimentos por instituição transmissora/receptora. Calcular razão recebidos/transmitidos do BB. Se razão ≥ 0,5, refuta. Custo: acesso gratuito ao painel."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB pode ser transmissor líquido de dados no Open Finance, mas o dossiê não contém nenhum dado de consentimentos. A hipótese precisa ser verificada nos painéis públicos do Open Finance Brasil antes de justificar jornada de captura. A assimetria pode refletir escala da base, não fraqueza."
+  }
+ ]
+}

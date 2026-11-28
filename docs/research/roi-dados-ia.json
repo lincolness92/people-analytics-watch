@@ -1,0 +1,977 @@
+{
+ "title": "ROI de dados, analytics e IA: métodos, evidências e playbook de medição",
+ "generated": "2026-11-28",
+ "doc": "docs/research/roi-dados-ia.md",
+ "fields": {
+  "forca": "forte = experimento, quase-experimento, norma ou decisão de regulador; média = observacional sério, survey grande repetido, documento oficial com método; fraca = survey sem método aberto, previsão, fornecedor, frase de executivo",
+  "tipo_fonte": "acad | reg | auto (autodeclarado) | cons (consultoria/survey) | forn (fornecedor)",
+  "verificado_em": "data em que a fonte foi conferida na web; null = literatura conhecida, não reconferida nesta sessão",
+  "premissas": "prefixo R para não colidir com P01-P55 de estrategia/bb/01-premissas.md"
+ },
+ "valoracao_dados": {
+  "abordagens": [
+   {
+    "id": "custo",
+    "pergunta": "quanto custaria refazer?",
+    "formula": "reposição = coleta + limpeza + integração + armazenagem − obsolescência",
+    "uso": "piso; teto do que vale pagar para refazer",
+    "armadilha": "custo não é valor"
+   },
+   {
+    "id": "mercado",
+    "pergunta": "quanto alguém paga por algo igual?",
+    "formula": "preço comparável × ajuste",
+    "uso": "dado vendável; referência",
+    "armadilha": "quase não há mercado para dado bancário próprio (LGPD, LC 105/2001)"
+   },
+   {
+    "id": "renda",
+    "pergunta": "quanto caixa a mais o dado gera?",
+    "formula": "VP(fluxo com o dado) − VP(fluxo sem o dado); relief-from-royalty",
+    "uso": "decisão de investir (recomendada)",
+    "armadilha": "atribuição entre dado, modelo e processo"
+   }
+  ],
+  "modelos": [
+   {
+    "id": "moody-walsh-1999",
+    "descricao": "sete leis da informação; custo, mercado e utilidade",
+    "forca": "média"
+   },
+   {
+    "id": "laney-infonomics-2017",
+    "descricao": "IVI, BVI, PVI (A/B do KPI), CVI, MVI, EVI (renda)",
+    "forca": "fraca"
+   },
+   {
+    "id": "ablacao",
+    "descricao": "treinar com e sem a fonte; ΔAUC convertido em R$ pelo playbook",
+    "forca": "método padrão"
+   },
+   {
+    "id": "data-shapley",
+    "descricao": "contribuição marginal média por fonte (Ghorbani & Zou, ICML 2019)",
+    "forca": "média"
+   }
+  ],
+  "regra": "decidir pela abordagem de renda medida por experimento ou backtest; custo como piso; mercado como referência"
+ },
+ "metodos_equipe": {
+  "portfolio": "valor_equipe = Σ ganho_incremental_i × participação_atribuída_i − custo_equipe − custo_plataforma",
+  "atribuicao": "livro-razão único; Shapley quando há interação; regra combinada antes quando não há experimento fatorial",
+  "opcao_real": "VPL_com_opção = −C_piloto + p_sucesso × max(0, VPL_escala|sucesso)/(1+Ke)^t_piloto",
+  "voi": "VOI = E[valor|com informação] − E[valor|sem]; EVPI = E[max_a valor(a,θ)] − max_a E[valor(a,θ)]",
+  "inteligencia_ex_post": "valor_realizado = Σ 1[decisão mudou] × (valor_nova − valor_padrão); placar de Brier contra ingênuo e consenso",
+  "vpl_com_decaimento": "G_t = G_0 (1−d)^(t−1); VPL = −C_desenv − C_validação + Σ (G_t − C_op − C_mon)/(1+Ke)^t − Σ C_recal/(1+Ke)^t_r",
+  "exemplo_decaimento": {
+   "premissas": {
+    "G0": 10,
+    "C_desenv": 6,
+    "C_validacao": 1.5,
+    "C_op": 1,
+    "T": 5,
+    "Ke": 0.15
+   },
+   "vpl_por_d": {
+    "0.00": 22.67,
+    "0.15": 15.13,
+    "0.30": 9.51
+   }
+  }
+ },
+ "claims": [
+  {
+   "id": "brynjolfsson-li-raymond",
+   "afirmacao": "assistente genAI em atendimento: +14% casos/hora (WP; 15% em versão posterior), +34% novatos",
+   "fonte": "Brynjolfsson, Li & Raymond, NBER WP 31161; QJE 140(2)",
+   "data": "2023-04 / 2025",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.nber.org/papers/w31161"
+  },
+  {
+   "id": "cui-et-al",
+   "afirmacao": "3 experimentos de campo, 4.867 devs: +26,08% tarefas (EP 10,3%); juniores +27–39%, seniores +8–13%; adoção ~60% após 1 ano",
+   "fonte": "Cui, Demirer, Jaffe, Musolff, Peng & Salz, Management Science",
+   "data": "2025",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535"
+  },
+  {
+   "id": "metr-2025",
+   "afirmacao": "RCT 16 devs experientes, 246 tarefas: 19% mais lentos com IA; esperavam +24%, depois acharam +20%",
+   "fonte": "METR, arXiv 2507.09089",
+   "data": "2025-07-10",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+  },
+  {
+   "id": "humlum-vestergaard",
+   "afirmacao": "25 mil trabalhadores, 7 mil empresas (Dinamarca): economia de tempo autodeclarada 2,8%; efeito nulo em salário e horas (IC exclui >1–2%)",
+   "fonte": "Humlum & Vestergaard, NBER WP 33777",
+   "data": "2025-05",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.nber.org/papers/w33777"
+  },
+  {
+   "id": "dellacqua-bcg",
+   "afirmacao": "758 consultores: dentro da fronteira +12,2% tarefas, −25,1% tempo, +40% qualidade; fora, −19 p.p. acertos",
+   "fonte": "Dell'Acqua et al., HBS WP 24-013",
+   "data": "2023-09",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "noy-zhang",
+   "afirmacao": "escrita: −40% tempo, +18% qualidade",
+   "fonte": "Noy & Zhang, Science 381",
+   "data": "2023-07",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "peng-copilot",
+   "afirmacao": "uma tarefa, 95 devs: 55,8% mais rápido (autores ligados ao GitHub)",
+   "fonte": "Peng et al., arXiv 2302.06590",
+   "data": "2023-02",
+   "tipo_fonte": "acad/forn",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "ascarza-2018",
+   "afirmacao": "mirar retenção por uplift supera mirar por risco de churn",
+   "fonte": "Ascarza, JMR 55(1)",
+   "data": "2018",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "karlan-zinman-2008",
+   "afirmacao": "taxas sorteadas: demanda pouco elástica a cortes abaixo do padrão, mais a altas",
+   "fonte": "Karlan & Zinman, AER 98(3)",
+   "data": "2008",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "bertrand-et-al-2010",
+   "afirmacao": "conteúdo da oferta de crédito vale tanto quanto 200 p.b. para homens",
+   "fonte": "Bertrand et al., QJE 125(1)",
+   "data": "2010",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "berg-et-al-2020",
+   "afirmacao": "pegada digital AUC 69,6%, bureau 68,3%, combinados 73,6%",
+   "fonte": "Berg, Burg, Gombović & Puri, RFS 33(7)",
+   "data": "2020",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "fuster-et-al-2022",
+   "afirmacao": "ML melhora pouco a previsão média e redistribui entre grupos",
+   "fonte": "Fuster et al., Journal of Finance 77(1)",
+   "data": "2022",
+   "tipo_fonte": "acad",
+   "forca": "média-forte",
+   "verificado_em": null
+  },
+  {
+   "id": "gordon-et-al-2019",
+   "afirmacao": "métodos observacionais não recuperam o efeito de 15 experimentos grandes no Facebook",
+   "fonte": "Gordon et al., Marketing Science 38(2)",
+   "data": "2019",
+   "tipo_fonte": "acad",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "bhk-2011",
+   "afirmacao": "decisão por dados associada a 5–6% mais produção",
+   "fonte": "Brynjolfsson, Hitt & Kim, SSRN",
+   "data": "2011",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "bm-2016",
+   "afirmacao": "decisão por dados associada a ~3% de produtividade (censo industrial EUA)",
+   "fonte": "Brynjolfsson & McElheran, AER P&P 106(5)",
+   "data": "2016",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "j-curve",
+   "afirmacao": "intangíveis complementares geram curva J na produtividade medida",
+   "fonte": "Brynjolfsson, Rock & Syverson, AEJ: Macro 13(1)",
+   "data": "2021",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "acemoglu",
+   "afirmacao": "efeito na PTF ≈ 0,7% em 10 anos",
+   "fonte": "Acemoglu, NBER 32487; Economic Policy",
+   "data": "2024-05 / 2025",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "boe-covid-ml",
+   "afirmacao": "35% dos bancos do Reino Unido relataram piora de modelos de ML na pandemia",
+   "fonte": "Bank of England, Quarterly Bulletin 2020 Q4",
+   "data": "2020",
+   "tipo_fonte": "reg",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "mckinsey-2025",
+   "afirmacao": "39% atribuem algum EBIT à IA, a maioria <5%; ~6% high performers; redesenho de fluxo ~3×",
+   "fonte": "McKinsey, The state of AI in 2025",
+   "data": "2025",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+  },
+  {
+   "id": "mckinsey-2026",
+   "afirmacao": "37% atribuem EBIT; high performers ~6%",
+   "fonte": "McKinsey, The state of AI in 2026: On the road to ROI",
+   "data": "2026",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "bcg-2025",
+   "afirmacao": "5% future-built, 60% sem valor material, 35% começando (1.250 executivos)",
+   "fonte": "BCG, The Widening AI Value Gap",
+   "data": "2025-09-30",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://media-publications.bcg.com/The-Widening-AI-Value-Gap-October-2025.pdf"
+  },
+  {
+   "id": "bcg-2026",
+   "afirmacao": "future-built sobem para 7,5%",
+   "fonte": "BCG, release",
+   "data": "2026-09-30",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "mit-nanda",
+   "afirmacao": "'95% sem retorno'; achados preliminares; amostra e denominador criticados",
+   "fonte": "MIT NANDA, The GenAI Divide",
+   "data": "2025-07/08",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "gartner-poc",
+   "afirmacao": "≥30% dos projetos genAI abandonados após PoC até fim de 2025",
+   "fonte": "Gartner",
+   "data": "2024-07-29",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "gartner-agentic",
+   "afirmacao": ">40% dos projetos agênticos cancelados até fim de 2027",
+   "fonte": "Gartner",
+   "data": "2025-06-25",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "mgi-2023",
+   "afirmacao": "genAI US$2,6–4,4 tri/ano; bancos US$200–340 bi",
+   "fonte": "McKinsey Global Institute",
+   "data": "2023-06",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "klarna",
+   "afirmacao": "assistente 'faz o trabalho de 700 atendentes'; em mai/2025 volta a contratar pessoas",
+   "fonte": "Klarna (press release; CEO)",
+   "data": "2024-02-27 / 2025-05",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "iso-55013",
+   "afirmacao": "guia de gestão de ativos de dados; exclui valoração monetária",
+   "fonte": "ISO 55013:2024",
+   "data": "2024-07",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.iso.org/standard/82455.html"
+  },
+  {
+   "id": "china-mof",
+   "afirmacao": "dado pode ser intangível ou estoque; vigente 01/01/2024",
+   "fonte": "China MOF, Interim Provisions on Accounting Treatment of Enterprise Data Resources",
+   "data": "2023-08 / 2024-01-01",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "sna-2025",
+   "afirmacao": "dado passa a ser ativo produzido no SNA",
+   "fonte": "UN Statistical Commission, 2025 SNA",
+   "data": "2025-03",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://unstats.un.org/unsd/nationalaccount/sna2025.asp"
+  },
+  {
+   "id": "ias38",
+   "afirmacao": "pesquisa vai para despesa; desenvolvimento capitalizável com 6 critérios; listas de clientes internas não reconhecidas (38.63)",
+   "fonte": "IAS 38 / CPC 04 (R1)",
+   "data": "vigente",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "basel-intangiveis",
+   "afirmacao": "intangíveis deduzidos do capital principal",
+   "fonte": "Basel III (dez/2010) §67; Res. CMN 4.955/2021",
+   "data": "vigente",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "sr-26-2",
+   "afirmacao": "substitui SR 11-7 e SR 21-8; abordagem baseada em risco; mais relevante para > US$30 bi de ativos; RFI sobre IA anunciado",
+   "fonte": "Fed SR 26-2 / OCC Bulletin 2026-13",
+   "data": "2026-04-17",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm"
+  },
+  {
+   "id": "sr-11-7",
+   "afirmacao": "inventário, validação independente, desafio efetivo",
+   "fonte": "Fed SR 11-7 / OCC 2011-12",
+   "data": "2011-04-04",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "pra-ss1-23",
+   "afirmacao": "cinco princípios de risco de modelo, inclui IA",
+   "fonte": "PRA SS1/23",
+   "data": "2023-05 (vigente 2024-05)",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "res-4557",
+   "afirmacao": "gerenciamento integrado de riscos; risco de modelo tratado de forma breve; validação independente",
+   "fonte": "Res. CMN 4.557/2017",
+   "data": "2017-02-23",
+   "tipo_fonte": "reg",
+   "forca": "média",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "eu-ai-act",
+   "afirmacao": "avaliação de crédito de pessoa física é IA de alto risco (Anexo III)",
+   "fonte": "Reg. (UE) 2024/1689",
+   "data": "2024",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "jpm-2025-05",
+   "afirmacao": "tecnologia com retorno >2× e payback <5 anos; valor de IA/ML +35%; custo de fraude estável com ataques +12% a.a.",
+   "fonte": "JPMorgan Investor Day",
+   "data": "2025-05",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "jpm-2025-10",
+   "afirmacao": "~US$2 bi de despesa em IA, ~US$2 bi de benefício",
+   "fonte": "Jamie Dimon, Bloomberg TV (via Fortune)",
+   "data": "2025-10-08",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://fortune.com/2025/10/08/jamie-dimon-head-in-the-sand-ai-will-take-jobs-tip-iceberg/"
+  },
+  {
+   "id": "jpm-2026-02",
+   "afirmacao": "tecnologia ~US$19,8 bi em 2026; LLM Suite ~150 mil usuários/semana, ~4 h/semana; ~US$600 mi de eficiências reinvestidas; economia 'não está num VPL'",
+   "fonte": "JPMorgan Company Update",
+   "data": "2026-02",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "dbs-2023",
+   "afirmacao": "S$370 mi de valor econômico de IA",
+   "fonte": "DBS Annual Report 2023",
+   "data": "2024-02",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "dbs-2024",
+   "afirmacao": ">S$750 mi; >1.500 modelos; >370 casos; meta >S$1 bi em 2025",
+   "fonte": "DBS Annual Report 2024",
+   "data": "2025",
+   "tipo_fonte": "auto",
+   "forca": "fraca-média",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.dbs.com/annualreports/2024/cio-statement.html"
+  },
+  {
+   "id": "dbs-2025",
+   "afirmacao": "≈S$1 bi; >2.000 modelos; >430 casos; clientes com a solução × grupo de controle",
+   "fonte": "DBS Annual Report 2025",
+   "data": "2026",
+   "tipo_fonte": "auto",
+   "forca": "fraca-média",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.dbs.com/annualreports/2025/cio-statement.html"
+  },
+  {
+   "id": "bbva",
+   "afirmacao": "ChatGPT Enterprise 3 mil → 11 mil → ~120 mil; 2,8–3 h/semana autodeclaradas; >80% uso diário",
+   "fonte": "BBVA; OpenAI; Bloomberg",
+   "data": "2024-05 / 2025-05 / 2025-12-12",
+   "tipo_fonte": "auto/forn",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://openai.com/index/bbva-collaboration-expansion/"
+  },
+  {
+   "id": "cba-2024",
+   "afirmacao": "perdas com golpes caíram à metade no AF2024; espera no call center −40%",
+   "fonte": "Commonwealth Bank",
+   "data": "2024-11",
+   "tipo_fonte": "auto",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.commbank.com.au/articles/newsroom/2024/11/reimagining-banking-nov24.html"
+  },
+  {
+   "id": "cba-2025",
+   "afirmacao": "NameCheck 110 mi de usos, >A$880 mi evitados; golpes −76% desde o pico de fim de 2022",
+   "fonte": "CBA Annual Review 2025",
+   "data": "2025-09",
+   "tipo_fonte": "auto",
+   "forca": "fraca-média",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "cba-reversao",
+   "afirmacao": "desfez corte de 45 vagas substituídas por robô de voz após contestação sindical",
+   "fonte": "imprensa australiana",
+   "data": "2025-08",
+   "tipo_fonte": "auto",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "evident-roi",
+   "afirmacao": "bancos (de 50) que divulgam ROI de IA no portfólio: 4 (2024), 8 (2025), 12 (2026); em 2025 só BNP Paribas, DBS e JPMorgan com realizado e projetado",
+   "fonte": "Evident AI Index; S&P Global e Banking Dive (2026)",
+   "data": "2024-10 / 2025-10 / 2026-10",
+   "tipo_fonte": "cons",
+   "forca": "média",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "evident-outcomes",
+   "afirmacao": "173 casos novos em 12 meses; 30% com métrica de impacto; receita em 16%",
+   "fonte": "Evident AI Outcomes Report",
+   "data": "2025-08-01",
+   "tipo_fonte": "cons",
+   "forca": "média",
+   "verificado_em": "2026-11-28",
+   "url": "https://evidentinsights.com/insights/outcomes-report/"
+  }
+ ],
+ "mde": {
+  "formula": "n por braço ≈ 2 (z_0.975 + z_0.80)^2 σ² / δ² ≈ 15,7 σ²/δ²; proporção σ² = p(1−p); conglomerado × DE = 1 + (m−1)ρ; CUPED σ² × (1 − r²)",
+  "exemplos": [
+   {
+    "caso": "inadimplência",
+    "base": 0.05,
+    "delta": -0.005,
+    "n_por_braco": 29800
+   },
+   {
+    "caso": "churn 12 meses",
+    "base": 0.1,
+    "delta": -0.01,
+    "n_por_braco": 14100
+   },
+   {
+    "caso": "conversão de oferta",
+    "base": 0.03,
+    "delta": 0.003,
+    "n_por_braco": 50800
+   },
+   {
+    "caso": "cura na cobrança",
+    "base": 0.4,
+    "delta": 0.03,
+    "n_por_braco": 4200
+   },
+   {
+    "caso": "tempo por tarefa (CV=1)",
+    "delta_relativo": -0.1,
+    "n_por_braco": 1600
+   },
+   {
+    "caso": "fraude por transação",
+    "base": 0.001,
+    "delta_relativo": -0.2,
+    "n_por_braco": 392000
+   },
+   {
+    "caso": "efeito de desenho",
+    "m": 500,
+    "rho": 0.01,
+    "DE": 5.99
+   }
+  ]
+ },
+ "playbook": [
+  {
+   "tipo": "risco",
+   "metrica_primaria": "perda evitada no mesmo volume ou volume a mais no mesmo risco",
+   "metricas_rapidas": [
+    "Gini/AUC por safra",
+    "atraso 30+ em 3–6 meses"
+   ],
+   "desenho": "backtest fora do tempo champion×challenger; depois holdout 5–10% no modelo antigo",
+   "mde": "DeLong para ΔAUC; em R$, Δtaxa de maus no mesmo corte",
+   "tempo_leitura": "backtest semanas; produção 6 meses (proxy 30+), 12–18 meses (90+)",
+   "formula": "ganho = V × [maus_antigo(c) − maus_novo(c)] × LGD + ΔV × margem_líquida(c); VPL com decaimento d; ΔCapital só se IRB",
+   "premissas": [
+    "R05",
+    "R07",
+    "R08",
+    "R12"
+   ]
+  },
+  {
+   "tipo": "preco",
+   "metrica_primaria": "margem líquida de perda por real concedido",
+   "metricas_rapidas": [
+    "aceite",
+    "take-up",
+    "mix de risco dos aceitos"
+   ],
+   "desenho": "A/B de preço dentro de faixas aprovadas; sorteio por cliente; comitê e tratamento justo",
+   "mde": "Δaceite 0,3–1 p.p.; risco pelo n da inadimplência",
+   "tempo_leitura": "aceite 4–8 semanas; seleção adversa 6–12 meses",
+   "formula": "ΔΠ = Σ Q(p1)(p1 − FTP − c − PE(p1)) − Q(p0)(p0 − FTP − c − PE(p0)); Q(p) = Q0(1 + ε Δp/p0)",
+   "premissas": [
+    "R11"
+   ]
+  },
+  {
+   "tipo": "churn",
+   "metrica_primaria": "margem preservada",
+   "metricas_rapidas": [
+    "taxa de saída",
+    "principalidade"
+   ],
+   "desenho": "A/B com holdout; uplift (T-learner, floresta causal); Qini",
+   "mde": "~14 mil por braço para −1 p.p.",
+   "tempo_leitura": "3–6 meses",
+   "formula": "ganho = N_trat × uplift × CLV − N_trat × custo_contato − N_aceitos × incentivo",
+   "premissas": [
+    "R06"
+   ]
+  },
+  {
+   "tipo": "fraude",
+   "metrica_primaria": "perda evitada − custo de atrito",
+   "metricas_rapidas": [
+    "detecção",
+    "falsos positivos",
+    "tempo de bloqueio"
+   ],
+   "desenho": "modo sombra pareado + A/B só na regra de atrito",
+   "mde": "evento raro: avaliação pareada sobre todas as transações",
+   "tempo_leitura": "sombra 4–8 semanas; chargebacks 60–120 dias",
+   "formula": "ganho = Σ fraude × (TPR_novo − TPR_antigo) × valor − ΔFP × (custo_atendimento + receita_perdida + churn_bloqueio × CLV)",
+   "premissas": []
+  },
+  {
+   "tipo": "cobranca",
+   "metrica_primaria": "recuperação líquida (VP)",
+   "metricas_rapidas": [
+    "promessa de pagamento",
+    "cura 30/60 dias"
+   ],
+   "desenho": "A/B de abordagem ou ordem da fila, estratificado por faixa de atraso",
+   "mde": "~4 mil por braço para +3 p.p. de cura",
+   "tempo_leitura": "1–3 meses",
+   "formula": "ganho = N × Δcura × saldo_médio × (1 − LGD_cura) − custo_ação",
+   "premissas": []
+  },
+  {
+   "tipo": "automacao",
+   "metrica_primaria": "custo evitado realizado",
+   "metricas_rapidas": [
+    "tempo de ciclo",
+    "taxa de erro",
+    "fila"
+   ],
+   "desenho": "cunha escalonada por equipe ou praça",
+   "mde": "poder pelo número de equipes",
+   "tempo_leitura": "4–12 semanas",
+   "formula": "ganho = volume × Δtempo × custo_hora × r_realização + Δerros × custo_erro − custo_run",
+   "premissas": [
+    "R02"
+   ]
+  },
+  {
+   "tipo": "copiloto",
+   "metrica_primaria": "horas liberadas convertidas em custo ou produção",
+   "metricas_rapidas": [
+    "uso semanal",
+    "tempo por tarefa",
+    "qualidade por revisor cego"
+   ],
+   "desenho": "lista de espera sorteada ou encorajamento com variável instrumental",
+   "mde": "~1.600 tarefas por braço (CV=1), conglomerado = pessoa",
+   "tempo_leitura": "6–12 semanas tempo; 6–12 meses custo",
+   "formula": "ganho = N × a × h × semanas × w × r − licenças − tokens − governança",
+   "premissas": [
+    "R01",
+    "R02",
+    "R13"
+   ],
+   "exemplo": {
+    "N": 10000,
+    "a": 0.6,
+    "h_horas_semana_medidas": 1.5,
+    "semanas": 46,
+    "w_reais_hora": 80,
+    "r": 0.4,
+    "licenca_reais_mes": 150,
+    "ganho_mi": 13.2,
+    "custo_licencas_mi": 18.0,
+    "ponto_de_virada_r": 0.54,
+    "rotulo": "ilustrativo; premissas, não dados"
+   }
+  },
+  {
+   "tipo": "inteligencia",
+   "metrica_primaria": "valor das decisões que mudaram",
+   "metricas_rapidas": [
+    "Brier/erro contra ingênuo e consenso",
+    "% de decisões que usaram o produto"
+   ],
+   "desenho": "VOI ex ante + diário de decisões pré-registrado + placar de previsões",
+   "mde": "≥20–30 previsões resolvidas",
+   "tempo_leitura": "6–12 meses",
+   "formula": "valor = Σ 1[mudou] × (valor_nova − valor_padrão); ex ante EVPI",
+   "premissas": [
+    "R09",
+    "R10"
+   ]
+  }
+ ],
+ "bloco_4_retorno_esperado": {
+  "tipo_iniciativa": "risco|preco|churn|fraude|cobranca|automacao|copiloto|inteligencia",
+  "formula": "ganho_t = f(R..., P...)",
+  "premissas_usadas": [
+   {
+    "id": "R02",
+    "distribuicao": "beta(4,6)",
+    "estado": "hipotese"
+   },
+   {
+    "id": "R07",
+    "distribuicao": "uniforme(0.10,0.30)",
+    "estado": "hipotese"
+   }
+  ],
+  "custos": [
+   "desenvolvimento",
+   "validacao",
+   "atraso_validacao_meses",
+   "operacao",
+   "monitoramento",
+   "licencas"
+  ],
+  "ke": "Selic esperada (Focus) + prêmio",
+  "capital": "ΔRWA × índice-alvo (só IRB ou risco operacional)",
+  "saida": [
+   "vpl_p10",
+   "vpl_p50",
+   "vpl_p90",
+   "tir",
+   "payback_anos",
+   "roi",
+   "raroc_se_produto",
+   "prob_vpl_negativo"
+  ],
+  "ponto_de_virada": {
+   "premissa": "R02",
+   "valor": 0.54
+  },
+  "medicao_ligada": "8_medicao.desenho"
+ },
+ "atualizacao": {
+  "passos": [
+   "premissa como distribuição",
+   "a priori da evidência rigorosa; autodeclarado só como limite do otimista",
+   "Monte Carlo 10 mil sorteios → P10/P50/P90 e P(VPL<0)",
+   "atualização normal-normal ou beta-binomial ao chegar um teste",
+   "estado pelo ponto de virada",
+   "testar primeiro a de maior EVPPI",
+   "trocar substitutos públicos por experimento interno"
+  ],
+  "normal_normal": "média_post = (μ0/σ0² + x/σx²)/(1/σ0² + 1/σx²); dp_post = (1/σ0² + 1/σx²)^(−1/2)",
+  "exemplo": {
+   "prior": [
+    0.14,
+    0.07
+   ],
+   "piloto": [
+    0.06,
+    0.03
+   ],
+   "posterior": [
+    0.072,
+    0.028
+   ]
+  },
+  "estados": {
+   "hipotese": "só a priori",
+   "apoiada": "um teste a favor, intervalo largo",
+   "confirmada": "intervalo a posteriori exclui o ponto de virada",
+   "refutada": "intervalo do lado errado do ponto de virada"
+  }
+ },
+ "premissas": [
+  {
+   "id": "R01",
+   "enunciado": "O ganho de tempo de copilotos em trabalho bancário de escritório fica entre 5% e 15%",
+   "evidencia_hoje": "26% em código, 14–15% em atendimento, 2,8% na média (Humlum), BBVA ~7% autodeclarado",
+   "forca_hoje": "forte (estudos) / fraca (banco)",
+   "teste": "lista de espera sorteada; tempo em log; revisor cego",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "ganho medido entre 5% e 15%",
+   "refuta_se": "> 20% ou < 3%",
+   "decisao": "dimensionar licenças e metas pelo intervalo",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R02",
+   "enunciado": "Menos da metade das horas liberadas vira caixa sem redesenho do processo",
+   "evidencia_hoje": "Humlum: efeito nulo em salário e horas; McKinsey: redesenho ~3× nos high performers; JPMorgan: 'não está num VPL'",
+   "forca_hoje": "forte / fraca",
+   "teste": "cunha escalonada; custo por unidade produzida",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "r < 0,5 sem redesenho e > 0,5 com",
+   "refuta_se": "r > 0,5 sem redesenho",
+   "decisao": "proposta de produtividade exige plano de realocação",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R03",
+   "enunciado": "Números de ROI de IA divulgados por bancos não servem de base para proposta",
+   "evidencia_hoje": "8/50 (2025), 12/50 (2026); só DBS declara grupo de controle",
+   "forca_hoje": "média",
+   "teste": "codificar método, contrafactual e auditoria de cada divulgação, anual",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "< 25% com contrafactual",
+   "refuta_se": "> 50%",
+   "decisao": "usar só como limite do otimista",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R04",
+   "enunciado": "Bancos que mais divulgam IA melhoram a eficiência relativa aos pares em 2–3 anos",
+   "evidencia_hoje": "hipótese",
+   "forca_hoje": "—",
+   "teste": "DiD custo/receita JPM, DBS, BBVA, CBA × pares do país, 2018–2026, controle de margem",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "melhora relativa ≥ 2 p.p. em 3 anos com placebo limpo",
+   "refuta_se": "≈ 0",
+   "decisao": "metas de eficiência atreladas a casos de uso",
+   "liga_premissas": [
+    "P43"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R05",
+   "enunciado": "Dado alternativo soma 1–5 p.p. de AUC ao score tradicional; o valor está no complemento",
+   "evidencia_hoje": "Berg et al. 2020: +1,3 p.p. sozinho, +5,3 combinado",
+   "forca_hoje": "forte",
+   "teste": "ablação por fonte com backtest fora do tempo (público: bases abertas)",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "ΔAUC combinado ≥ 1 p.p. com IC > 0",
+   "refuta_se": "< 0,5 p.p.",
+   "decisao": "integrar a fonte se V × Δmaus × LGD paga o custo",
+   "liga_premissas": [
+    "P42"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R06",
+   "enunciado": "Mirar retenção por uplift rende mais por real que mirar por risco de churn",
+   "evidencia_hoje": "Ascarza 2018",
+   "forca_hoje": "forte",
+   "teste": "três braços: aleatório, risco, uplift; mesmo orçamento",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "uplift preserva ≥ 20% mais margem que risco",
+   "refuta_se": "empate",
+   "decisao": "treinar retenção para uplift com holdout permanente",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R07",
+   "enunciado": "Sem recalibração, um modelo de crédito perde 10–30% do ganho por ano",
+   "evidencia_hoje": "hipótese; BoE 2020: 35% dos bancos com piora na pandemia",
+   "forca_hoje": "média (choque) / sem evidência (taxa)",
+   "teste": "Gini por safra fora do tempo",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "queda anual 10–30%",
+   "refuta_se": "< 5%",
+   "decisao": "define d e a frequência de recalibração",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R08",
+   "enunciado": "No Brasil, o ganho de modelo de crédito entra por perda esperada e preço, quase nada por RWA",
+   "evidencia_hoje": "abordagem padronizada predominante",
+   "forca_hoje": "média",
+   "teste": "Pilar 3 OV1: parcela IRB do RWA de crédito, 2020–2026 (data/ifs/)",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "IRB < 10% do RWA de crédito",
+   "refuta_se": "> 30%",
+   "decisao": "tirar ΔCapital das fórmulas de modelos de crédito",
+   "liga_premissas": [
+    "P45"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R09",
+   "enunciado": "A área de inteligência de mercado se paga só se muda ao menos uma grande decisão por ano",
+   "evidencia_hoje": "hipótese (VOI)",
+   "forca_hoje": "—",
+   "teste": "diário de decisões por 12 meses",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "≥ 1 decisão mudada com Δvalor > custo anual",
+   "refuta_se": "nenhuma",
+   "decisao": "manter e ligar às decisões de capital, ou reorientar",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R10",
+   "enunciado": "Os nowcasts da camada pública batem o ingênuo em ≥ 10%",
+   "evidencia_hoje": "hipótese",
+   "forca_hoje": "—",
+   "teste": "inadimplência rural por UF, origem móvel 2018–2026, Diebold-Mariano",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "erro −10% significativo",
+   "refuta_se": "< 3%",
+   "decisao": "nowcast vira produto com valor de informação",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R11",
+   "enunciado": "O varejo de um banco grande tem volume para ler A/B de conversão em 4–8 semanas",
+   "evidencia_hoje": "~51 mil por braço para +0,3 p.p. sobre 3%",
+   "forca_hoje": "cálculo",
+   "teste": "clientes ativos e contato digital nos releases; MDE por semana",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "≥ 100 mil elegíveis/mês por produto",
+   "refuta_se": "< 30 mil",
+   "decisao": "experimentação contínua como padrão",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R12",
+   "enunciado": "Validação e governança somam 20–40% ao custo e 3–6 meses ao prazo de um modelo regulado",
+   "evidencia_hoje": "hipótese; SR 26-2 tende a reduzir para baixo risco",
+   "forca_hoje": "—",
+   "teste": "tempo e custo do fim do desenvolvimento à produção por nível de risco",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "dentro da faixa",
+   "refuta_se": "< 10% e < 1 mês",
+   "decisao": "atraso_validacao_meses em todo VPL; via rápida para modelos simples",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  },
+  {
+   "id": "R13",
+   "enunciado": "O ganho percebido supera o medido em ≥ 1,5×",
+   "evidencia_hoje": "METR: −19% medido × +20% percebido; Humlum: 2,8% declarado × efeito nulo",
+   "forca_hoje": "forte",
+   "teste": "coletar autodeclaração e medida no mesmo grupo em todo piloto",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "razão ≥ 1,5",
+   "refuta_se": "≈ 1",
+   "decisao": "proibir autodeclaração como métrica primária",
+   "liga_premissas": [],
+   "estado": "hipotese"
+  }
+ ]
+}

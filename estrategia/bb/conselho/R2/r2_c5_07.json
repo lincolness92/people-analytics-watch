@@ -1,0 +1,166 @@
+{
+ "criticas": [
+  {
+   "premissa": "C3-N02",
+   "contrario": "A cobertura caiu justamente porque a inadimplência subiu mais rápido que as provisões; com custo de crédito projetado em R$ 80–83 bi em 2026, a pressão continua e a recuperação acima de 150% pode exigir mais de um ano.",
+   "alternativa": "A queda de 174,3% para 137,8% pode refletir política deliberada de provisionamento menor (aproveitando colchão anterior), não deterioração; a recuperação seria contábil, não melhora real de risco.",
+   "riscos_de_dado": [
+    "cobertura depende do denominador +90d, que muda com baixas e vendas de carteira",
+    "quebra de série Cosif 2025 pode alterar classificação",
+    "valores intermediários não lidos com segurança"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação de Resultados trimestral (CVM IPE)",
+     "Pilar 3 DASFN"
+    ],
+    "descricao": "Ler a cobertura +90d nos releases trimestrais até dez/2027; se ficar abaixo de 150% em dez/2027, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C3-N04",
+   "contrario": "A participação está estável em ~19,2% desde 2022 e os ganhadores (Agibank, BTG) crescem estruturalmente; voltar a 21% exigiria reverter quatro anos de tendência em um ano.",
+   "alternativa": "A estabilidade recente (19,51%→19,22%) sugere equilíbrio, não queda; a premissa confunde platô com recuperação possível.",
+   "riscos_de_dado": [
+    "mudança de perímetro 1005→1009 em 03/2025 pode distorcer a série",
+    "Cosif 2025 altera definições",
+    "renegociações INSS podem inflar ou esvaziar saldo pontualmente"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)"
+    ],
+    "descricao": "Calcular a participação do BB em consignado em jun/2027 com o mesmo código; abaixo de 21% refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB no consignado se mantém acima de 19% em jun/2027, sem perda adicional relevante para bancos digitais e médios."
+  },
+  {
+   "premissa": "C3-N06",
+   "contrario": "A queda de 16,14% para 10,87% é contínua e os ganhadores são cooperativas com vantagem estrutural local; recuperar 1,1 p.p. em um ano contraria a trajetória de sete anos.",
+   "alternativa": "Parte da queda pode ser efeito da mudança de perímetro (1005→1009) e do Cosif 2025, não perda real de clientes; a série pode estar medindo contabilidade, não mercado.",
+   "riscos_de_dado": [
+    "quebra de série em 03/2025 (perímetro e Cosif)",
+    "definição de capital de giro pode mudar",
+    "comparação com cooperativas pode misturar perímetros diferentes"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)"
+    ],
+    "descricao": "Recalcular a participação em capital de giro PJ em jun/2027 com perímetro constante; abaixo de 12% refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em capital de giro PJ para de cair e se estabiliza acima de 10,5% em jun/2027, medida em perímetro constante."
+  },
+  {
+   "premissa": "C3-N08",
+   "contrario": "A queda de 21,49% para 16,63% é estrutural: cooperativas e digitais captam sem agências; a capilaridade física do BB não se traduz em depósitos à vista, como mostram os sete anos de perda.",
+   "alternativa": "A perda pode refletir migração de clientes para aplicações remuneradas (CDB, LCI) dentro do próprio sistema, não fuga de bancos; depósitos totais caíram menos (17,76%→14,79%).",
+   "riscos_de_dado": [
+    "quebra de série 03/2025",
+    "sazonalidade de junho",
+    "depósitos de grandes clientes institucionais podem distorcer um único mês"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)"
+    ],
+    "descricao": "Calcular a participação em depósitos à vista em jun/2027; abaixo de 17% refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em depósitos à vista estabiliza acima de 16% em jun/2027, interrompendo a queda iniciada em 2019."
+  },
+  {
+   "premissa": "C3-N10",
+   "contrario": "Serviços cresceram 4,6% a/a no 3T26 e a participação do BB em tarifas caiu de 19,67% para 15,54%; acelerar para 7% exigiria reversão de tendência sem evidência no dossiê.",
+   "alternativa": "O crescimento de 4,6% pode vir de reajuste de preços em base de clientes cativa, não de ganho de volume; reajustes não se repetem no mesmo ritmo.",
+   "riscos_de_dado": [
+    "base de comparação de um único trimestre",
+    "mudanças regulatórias de tarifas podem cortar receita",
+    "Cosif 2025 pode reclassificar receitas"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação de Resultados 3T27 (CVM IPE)"
+    ],
+    "descricao": "Comparar a receita de serviços do 3T27 com a do 3T26; crescimento abaixo de 7% a/a refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C3-N12",
+   "contrario": "Com custo de crédito projetado de R$ 80–83 bi em 2026 e inadimplência agro em 6,92%, o legado de perdas pode seguir pressionando 2027; quadruplicar o RSPL em quatro trimestres não tem precedente no dossiê.",
+   "alternativa": "O RSPL de 2,8% pode ser trimestre pontual de provisões concentradas; a simulação da administração (~17% sem agro) sugere que o problema é de um segmento, não do banco.",
+   "riscos_de_dado": [
+    "RSPL ajustado tem definição própria, não comparável ao ROE gerencial do Itaú",
+    "colunas intermediárias do PDF não conferidas",
+    "simulação sem agro não é auditada"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Apresentação de Resultados 3T27 (CVM IPE)"
+    ],
+    "descricao": "Ler o RSPL ajustado do 3T27 e do acumulado 12m; abaixo de 12% refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C3-N14",
+   "contrario": "O fechamento de agências deficitárias é tendência do setor e o BB já revisou projeções para baixo; manter 577 municípios exclusivos depende de decisão política, não de economia.",
+   "alternativa": "A exclusividade mede presença com saldo de crédito, não rentabilidade; pode persistir por obrigação pública sem gerar valor, tornando a premissa verdadeira mas irrelevante.",
+   "riscos_de_dado": [
+    "ESTBAN exclui cooperativas e digitais, superestimando exclusividade real",
+    "contagem por saldo, não por agência",
+    "defasagem de dois meses na base"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN (BCB)"
+    ],
+    "descricao": "Recontar municípios com presença exclusiva do BB no ESTBAN de ago/2027 com o mesmo código; abaixo de 500 refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "O BB mantém presença exclusiva (banco com agência e crédito) em pelo menos 500 municípios em ago/2027, e essa presença gera receita de serviços crescente nesses municípios."
+  },
+  {
+   "premissa": "C4-N09",
+   "contrario": "A participação do BB no rural já caiu de 56,68% para 48,7% com a exigibilidade vigente; a regulação não protegeu, e Caixa e cooperativas ganharam dentro da mesma regra.",
+   "alternativa": "A perda de participação pode ser escolha de risco do BB (carteira agro −4,3% t/t) diante da inadimplência, não falha da proteção regulatória; o BB recuou voluntariamente.",
+   "riscos_de_dado": [
+    "quebra de série 03/2025",
+    "inadimplência do sistema (SGS) tem perímetro diferente do IF.data",
+    "confunde participação em saldo com participação em originação"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "normas CMN/BCB sobre direcionamento rural"
+    ],
+    "descricao": "Verificar se a participação do BB no rural fica abaixo de 45% em 2027 ou se norma reduz a exigibilidade; qualquer um refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Premissa A: a exigibilidade de crédito rural se mantém sem redução normativa até 2027. Premissa B: mesmo com a exigibilidade, a participação do BB no rural segue caindo abaixo de 47%."
+  }
+ ]
+}

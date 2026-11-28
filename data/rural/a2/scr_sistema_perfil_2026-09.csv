@@ -1,0 +1,28 @@
+mes,dimensao,valor,carteira_rs_mi,inadimplencia_90d_pct
+2026-09,cliente,PF,677939.3,7.84
+2026-09,cliente,PJ,163953.9,0.85
+2026-09,origem,Com destinação específica,624415.6,5.52
+2026-09,origem,Sem destinação específica,217477.6,9.21
+2026-09,porte,PF Acima de 20 salários mínimos,484151.8,6.98
+2026-09,porte,PF Até 1 salário mínimo,8969.4,17.35
+2026-09,porte,PF Indisponível,10213.9,18.0
+2026-09,porte,PF Mais de 1 a 2 salários mínimos,11115.4,8.5
+2026-09,porte,PF Mais de 10 a 20 salários mínimos,64606.2,9.79
+2026-09,porte,PF Mais de 2 a 3 salários mínimos,12115.9,7.97
+2026-09,porte,PF Mais de 3 a 5 salários mínimos,25069.9,9.87
+2026-09,porte,PF Mais de 5 a 10 salários mínimos,60824.7,8.49
+2026-09,porte,PF Sem rendimento,872.0,7.29
+2026-09,porte,PJ Grande,139030.4,0.36
+2026-09,porte,PJ Indisponível,1714.7,0.74
+2026-09,porte,PJ Micro,626.7,4.03
+2026-09,porte,PJ Médio,19698.8,3.82
+2026-09,porte,PJ Pequeno,2883.4,3.24
+2026-09,regiao,CO,208179.0,9.46
+2026-09,regiao,N,63141.2,9.97
+2026-09,regiao,NE,65571.6,10.54
+2026-09,regiao,S,280721.0,4.1
+2026-09,regiao,SE,224280.4,4.5
+2026-09,segmento,Banco,682978.8,7.61
+2026-09,segmento,Cooperativa,129749.6,1.73
+2026-09,segmento,Desenvolvimento/Fomento,27975.8,0.83
+2026-09,segmento,Financeira,1189.1,4.39

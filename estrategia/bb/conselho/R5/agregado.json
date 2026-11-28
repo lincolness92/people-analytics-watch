@@ -1,0 +1,3899 @@
+{
+ "rodada": 1,
+ "dossie": {
+  "versao": "2026-11-28a",
+  "sha256": "597a743e2f9823d92338907f8fbff95d899fd4036063bed9c9d3e7a290d5f841",
+  "aprovado_h1": false
+ },
+ "premissas": [
+  {
+   "id": "C1-N01",
+   "origem": "R1A",
+   "mercado": "outro",
+   "enunciado": "Fora do agro, a inadimplência +90d do BB subiu no máximo 0,5 p.p. entre set/25 e set/26, ou seja, o choque é concentrado no agro.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.667,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N07",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "Com o guidance revisado, o capital principal do BB em dez/26 fica em pelo menos 10,80% (o nível de set/26) sem corte de payout nem emissão de capital.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.667,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N07",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "O BB mantém o capital principal em 10,80% ou mais até dez/2027 só com lucro retido, sem cortar a distribuição de dividendos abaixo da praticada em 2025 e sem aporte.",
+   "nota_media": 18,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 18,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.667,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P22",
+   "origem": "v0",
+   "mercado": "captacao",
+   "enunciado": "A perda de participação em depósitos à vista e LCA já aparece no custo médio de captação, medido em % do CDI, frente aos pares.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.55,
+   "iqr": 0.012,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.622,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P03",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "A maior parte do aumento da inadimplência vem de um grupo delimitado: médios e grandes produtores de soja, milho e pecuária no Centro-Oeste, em operações com taxas de mercado.",
+   "nota_media": 16,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": 0.55,
+   "iqr": 0.012,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.6,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N04",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "Na safra 2026/27, a participação do BB nas novas contratações de crédito rural não sobe enquanto os concorrentes privados e cooperativos reduzem a oferta.",
+   "nota_media": 17.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.593,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N11",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "O índice de capital principal (CET1) do BB fica acima de 11,5% em set/2027.",
+   "nota_media": 16,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.593,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N14",
+   "origem": "R1A",
+   "mercado": "outro",
+   "enunciado": "O índice de eficiência do BB é estruturalmente pior que o dos pares porque a rede de agências (26,4% do sistema) suporta apenas 14,15% da carteira de crédito.",
+   "nota_media": 14.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 2,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.527,
+   "duplicatas": [],
+   "desacordos": [
+    "D-050"
+   ]
+  },
+  {
+   "id": "C5-N13",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "Com CET1 de 10,8% e queda de lucro, o BB não tem espaço para crescer crédito e pagar dividendos sem emissão ou retenção.",
+   "nota_media": 14.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 15,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.527,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N02",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "Com o mesmo mix de fonte de recursos e tomador, a inadimplência rural do BB é pelo menos 1 p.p. menor que a prevista pelo mix, ou seja, o BB seleciona risco agro melhor que o sistema.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 17,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N04",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "Choques de produção e de preço por UF explicam pelo menos metade da variação entre UFs da alta da inadimplência rural; recuperações judiciais de produtores explicam pouco além disso.",
+   "nota_media": 16.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N15",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "A cobertura atual basta: as baixas a prejuízo líquidas de recuperação dos últimos 4 trimestres ficam em até 50% do saldo +90d médio do agro, com cobertura agro de pelo menos 120%.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N01",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A inadimplência acima de 90 dias do crédito rural do BB é menor ou igual à do resto do sistema (sistema sem o BB), em definição alinhada.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N02",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A alta do atraso rural se concentra em estados e culturas que tiveram quebra de renda (safra ou preço), e não acompanha o número de pedidos de recuperação judicial de produtores.",
+   "nota_media": 17.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N05",
+   "origem": "R1A",
+   "mercado": "outro",
+   "enunciado": "Sem o agro, o resto do BB rende acima do custo de capital próprio medido por dados de mercado.",
+   "nota_media": 16.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N02",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A perda de participação do BB no crédito rural (56,68% → 48,70%) foi principalmente para cooperativas (Sicoob +2,73 pp, Sicredi +1,66 pp) e Caixa (+4,91 pp), não para bancos privados.",
+   "nota_media": 15,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 12,
+    "c4": 17
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": [
+    "D-039"
+   ]
+  },
+  {
+   "id": "C5-N14",
+   "origem": "R1A",
+   "mercado": "outro",
+   "enunciado": "O custo de crédito de 2026 já atingiu o pico e as projeções revisadas (R$ 80–83 bi) são conservadoras.",
+   "nota_media": 15.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 15,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.519,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P04",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "Excluindo a carteira de agronegócio (resultado e capital alocado), o retorno do BB está no mesmo patamar de Bradesco e acima de Santander.",
+   "nota_media": 16.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": 0.375,
+   "iqr": 0.075,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "apertado",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.5,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P02",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "Controlando por região, porte do produtor, cultura e fonte de recursos, as cooperativas de crédito ainda têm atraso menor que o BB no crédito rural.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.475,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.493,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P46",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "Uma parte mensurável do aumento da provisão do BB em 2025–26 vem da regra de perda esperada aplicada a créditos rurais de parcela única, e não de deterioração adicional.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": 0.475,
+   "iqr": 0.1,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.493,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P09",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "Um escore feito só com dado público (ZARC, índice ENSO, chuva e umidade do solo, NDVI) antecipa em 6 a 9 meses a inadimplência rural por UF ou município.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.45,
+   "iqr": 0.112,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "apertado",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.467,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P33",
+   "origem": "v0",
+   "mercado": "empresas",
+   "enunciado": "A fatia do BB na originação e distribuição de renda fixa corporativa é bem menor que sua fatia no crédito PJ.",
+   "nota_media": 16.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.461,
+   "duplicatas": [],
+   "desacordos": [
+    "D-011"
+   ]
+  },
+  {
+   "id": "P39",
+   "origem": "v0",
+   "mercado": "conglomerado",
+   "enunciado": "A BB Asset lidera em patrimônio, mas com concentração em renda fixa e fundos do setor público, e perde o investidor de alta renda para plataformas.",
+   "nota_media": 16,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.461,
+   "duplicatas": [],
+   "desacordos": [
+    "D-013"
+   ]
+  },
+  {
+   "id": "C3-N01",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A inadimplência +90d da carteira de agronegócio do BB em set/2027 ficará abaixo de 5,5%.",
+   "nota_media": 15,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.461,
+   "duplicatas": [],
+   "desacordos": [
+    "D-028"
+   ]
+  },
+  {
+   "id": "C3-N12",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "O RSPL (ROE) ajustado do BB volta acima de 12% no 3T27.",
+   "nota_media": 15,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.461,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N09",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Na mesma definição contábil, o índice de eficiência do BB fica igual ou abaixo do do Itaú, ou seja, custo administrativo não explica o hiato de retorno.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N11",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "Pelo menos metade da perda do BB em PJ pequena e micro empresa (e do salto do Bradesco de 7,32% para 24,08% em pequena empresa) ocorre no trimestre da quebra de perímetro e de Cosif em 03/2025, ou seja, é artefato de série.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N13",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "Entre 2022 e 2026, o custo de captação do BB como % do CDI subiu pelo menos 5 p.p. de CDI a mais que a média dos pares, por perda de depósitos à vista e LCA.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.444,
+   "duplicatas": [
+    "C2-N12"
+   ],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N03",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A maior parte da perda do agro do BB vem de operações a taxa de mercado (recursos livres), e não das linhas controladas e equalizadas.",
+   "nota_media": 15.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": [
+    "D-027"
+   ]
+  },
+  {
+   "id": "C2-N10",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "A perda de participação do BB em micro, pequena e média empresa é real, e não efeito de reclassificação de porte ou da mudança de perímetro de 03/2025.",
+   "nota_media": 18,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 18,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N15",
+   "origem": "R1A",
+   "mercado": "regulacao",
+   "enunciado": "A inadimplência do crédito rural PF com taxas de mercado (SGS 21146) recua abaixo de 15% em out/2027.",
+   "nota_media": 15.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": [
+    "D-037"
+   ]
+  },
+  {
+   "id": "C5-N01",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A inadimplência do agro do BB reflete choque sistêmico do crédito rural, não seleção de crédito pior que a dos pares.",
+   "nota_media": 15.7,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "funde",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.444,
+   "duplicatas": [],
+   "desacordos": [
+    "D-052"
+   ]
+  },
+  {
+   "id": "P24",
+   "origem": "v0",
+   "mercado": "captacao",
+   "enunciado": "A captação líquida da poupança é negativa, e isso reduz a fonte obrigatória do crédito rural do BB.",
+   "nota_media": 16,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": 0.475,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.438,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P21",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB tem índice de reclamações menor que o dos pares e o dos digitais.",
+   "nota_media": 14.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.403,
+   "duplicatas": [],
+   "desacordos": [
+    "D-004"
+   ]
+  },
+  {
+   "id": "P25",
+   "origem": "v0",
+   "mercado": "captacao",
+   "enunciado": "Quando um banco médio ou digital entra em crise, o BB ganha depósitos acima da sua fatia.",
+   "nota_media": 15,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.037,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.403,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P29",
+   "origem": "v0",
+   "mercado": "setor_publico_rede",
+   "enunciado": "A BB Asset concentra recursos de regimes próprios de previdência e de caixa de prefeituras, com taxa de administração média inferior à do mercado.",
+   "nota_media": 14.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.037,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.403,
+   "duplicatas": [],
+   "desacordos": [
+    "D-008"
+   ]
+  },
+  {
+   "id": "P40",
+   "origem": "v0",
+   "mercado": "conglomerado",
+   "enunciado": "Com juro alto, o consórcio de máquinas agrícolas e veículos pesados cresce mais que o financiamento, e o BB está bem posicionado.",
+   "nota_media": 15,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 18,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.013,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.403,
+   "duplicatas": [],
+   "desacordos": [
+    "D-014"
+   ]
+  },
+  {
+   "id": "P19",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB compete em veículos por meio da participação societária no Banco BV, e o balanço próprio é irrelevante.",
+   "nota_media": 14,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 11
+   },
+   "tetos": 1,
+   "prob_mediana": 0.5,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": [
+    "D-002",
+    "D-003"
+   ]
+  },
+  {
+   "id": "C1-N08",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Nos municípios onde o BB é o único banco com agência, a captação do BB em relação ao PIB municipal cresceu pelo menos 5 p.p. a mais (acumulado 2019–2026) que em municípios pareados onde ele tem concorrência.",
+   "nota_media": 17.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N10",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A perda de 8,5 p.p. em crédito pessoal sem consignação foi escolha de risco: o BB perdeu participação junto com Itaú e Bradesco (diferença de até 2 p.p.) e manteve inadimplência e taxas bem abaixo das do Nubank.",
+   "nota_media": 16.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "mantem"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": [
+    "D-026"
+   ]
+  },
+  {
+   "id": "C1-N12",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "O ganho de 7 p.p. em comércio exterior veio sem desconto de preço: a taxa de ACC do BB ficou na mediana dos grandes bancos ou acima em pelo menos 2/3 dos meses.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N08",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB perdeu participação no crédito pessoal sem consignação e no cartão em volume de maior risco, e não em clientes de melhor risco.",
+   "nota_media": 17.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N13",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Na maioria dos 577 municípios onde só o BB tem agência bancária, existe posto de cooperativa de crédito, de modo que a exclusividade é menor do que o ESTBAN mostra.",
+   "nota_media": 17.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 17,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N14",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Os municípios onde só o BB tem agência têm mais depósito barato por real de crédito que os demais municípios do BB.",
+   "nota_media": 17.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 17,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N02",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A cobertura de provisões para crédito +90d do BB volta acima de 150% em dez/2027.",
+   "nota_media": 14.7,
+   "dif_juizes": 8,
+   "notas_por_juiz": {
+    "c1": 10,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": [
+    "D-029"
+   ]
+  },
+  {
+   "id": "C3-N03",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no crédito pessoal sem consignação fica acima de 14,5% em jun/2027.",
+   "nota_media": 16,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N06",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "A participação do BB em capital de giro PJ fica acima de 12% em jun/2027.",
+   "nota_media": 16,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.395,
+   "duplicatas": [],
+   "desacordos": [
+    "D-032"
+   ]
+  },
+  {
+   "id": "P26",
+   "origem": "v0",
+   "mercado": "setor_publico_rede",
+   "enunciado": "Nos municípios em que só o BB tem agência, a fatia de depósitos e de crédito é maior e mais estável, até a chegada de uma cooperativa.",
+   "nota_media": 13.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 16
+   },
+   "tetos": 3,
+   "prob_mediana": 0.575,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.392,
+   "duplicatas": [],
+   "desacordos": [
+    "D-007"
+   ]
+  },
+  {
+   "id": "P23",
+   "origem": "v0",
+   "mercado": "captacao",
+   "enunciado": "Tribunais passaram a licitar ou renegociar a custódia dos depósitos judiciais, e o BB perde saldo ou paga mais por ele.",
+   "nota_media": 14,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 12
+   },
+   "tetos": 1,
+   "prob_mediana": 0.475,
+   "iqr": 0.062,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.383,
+   "duplicatas": [],
+   "desacordos": [
+    "D-005",
+    "D-006"
+   ]
+  },
+  {
+   "id": "P41",
+   "origem": "v0",
+   "mercado": "eficiencia_dados",
+   "enunciado": "A despesa administrativa por cliente do BB é várias vezes a dos bancos digitais, e a diferença não é coberta por receita por cliente.",
+   "nota_media": 13.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 16,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": 0.525,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.383,
+   "duplicatas": [],
+   "desacordos": [
+    "D-015"
+   ]
+  },
+  {
+   "id": "P32",
+   "origem": "v0",
+   "mercado": "empresas",
+   "enunciado": "A queda no crédito de investimento PJ reflete menor uso de repasses e a entrada de cooperativas.",
+   "nota_media": 16,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 18,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": 0.525,
+   "iqr": 0.063,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.375,
+   "duplicatas": [],
+   "desacordos": [
+    "D-010"
+   ]
+  },
+  {
+   "id": "C1-N03",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "Pelo menos 60% do saldo vencido +90d do agro do BB está em crédito a taxa de mercado (LCA, recursos livres) e não em linhas equalizadas do mandato.",
+   "nota_media": 14.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.37,
+   "duplicatas": [],
+   "desacordos": [
+    "D-025"
+   ]
+  },
+  {
+   "id": "C2-N06",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "A formação de nova inadimplência do BB atingiu o pico no 3T26.",
+   "nota_media": 16.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.37,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N10",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "O custo do crédito do BB (R$ 58,6 bi 9M26, +33,2% a/a) vai recuar quando a inadimplência do sistema rural PF (9,59%) atingir o pico e começar a cair.",
+   "nota_media": 14.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 12,
+    "c4": 16
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.37,
+   "duplicatas": [],
+   "desacordos": [
+    "D-047"
+   ]
+  },
+  {
+   "id": "P49",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "Mudanças em exigibilidades, tributação e regras prudenciais reduzem a vantagem de custo das cooperativas nos próximos 3 anos.",
+   "nota_media": 15.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 17,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": 0.4,
+   "iqr": 0.113,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.369,
+   "duplicatas": [],
+   "desacordos": [
+    "D-018"
+   ]
+  },
+  {
+   "id": "P01",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "A queda da fatia do BB no crédito rural PF começou antes do ciclo de inadimplência e continuaria mesmo sem ele.",
+   "nota_media": 12.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 14
+   },
+   "tetos": 3,
+   "prob_mediana": 0.6499999999999999,
+   "iqr": 0.117,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.363,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P45",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "Com capital principal perto de 10,8% e lucro comprimido, o BB não tem capital para defender participação em todos os mercados ao mesmo tempo.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.6499999999999999,
+   "iqr": 0.112,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "apertado",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.363,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P05",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "CPR, CRA e Fiagro financiam cada vez mais os grandes produtores e as cadeias integradas, e deixam para o balanço dos bancos o risco pior.",
+   "nota_media": 12.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 14
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.012,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P36",
+   "origem": "v0",
+   "mercado": "canais",
+   "enunciado": "O BB é transmissor líquido de dados: mais clientes autorizam o envio dos seus dados do BB para outros do que o inverso.",
+   "nota_media": 12.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 14
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N05",
+   "origem": "R1A",
+   "mercado": "regulacao",
+   "enunciado": "Pelo menos 60% da perda de participação do BB no rural PF desde 2019 ocorreu em recursos equalizados ou fundos constitucionais direcionados a outros bancos públicos, e não em recursos livres ou LCA.",
+   "nota_media": 17,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 17,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N06",
+   "origem": "R1A",
+   "mercado": "outro",
+   "enunciado": "Pelo menos 60% da queda trimestral da margem financeira bruta (−5,5% t/t) vem de juros não apropriados sobre ativos problemáticos, e não de spread, mix ou custo de captação.",
+   "nota_media": 16.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N15",
+   "origem": "R1A",
+   "mercado": "servicos",
+   "enunciado": "A queda da participação do BB em rendas de tarifas vem de conta corrente e pacotes, e as receitas de serviços que não dependem de crédito (fundos, seguros, consórcio, meios de pagamento) crescem acima da inflação.",
+   "nota_media": 17,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 17,
+    "c3": 17,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N05",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no cartão de crédito PF fica acima de 9,5% em jun/2027.",
+   "nota_media": 15,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": [
+    "D-031"
+   ]
+  },
+  {
+   "id": "C4-N06",
+   "origem": "R1A",
+   "mercado": "servicos",
+   "enunciado": "Receitas de prestação de serviços (R$ 9,3 bi no 3T26, +4,6% a/a) crescem acima da inflação e podem compensar parcialmente a compressão de margem.",
+   "nota_media": 15,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 12,
+    "c4": 17
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": [
+    "D-043"
+   ]
+  },
+  {
+   "id": "C4-N09",
+   "origem": "R1A",
+   "mercado": "regulacao",
+   "enunciado": "A obrigatoriedade de direcionamento de crédito rural (exigibilidade) protege a posição do BB, mas a entrada de cooperativas e Caixa no segmento reduz essa proteção ao longo do tempo.",
+   "nota_media": 13,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 10,
+    "c4": 16
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.346,
+   "duplicatas": [],
+   "desacordos": [
+    "D-046"
+   ]
+  },
+  {
+   "id": "P31",
+   "origem": "v0",
+   "mercado": "empresas",
+   "enunciado": "O ganho do BB em comércio exterior vem do financiamento à exportação da cadeia do agro.",
+   "nota_media": 15.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": 0.575,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "justo",
+    "justo",
+    "justo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.336,
+   "duplicatas": [],
+   "desacordos": [
+    "D-009"
+   ]
+  },
+  {
+   "id": "C4-N05",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A perda de participação em LCA (49,38% → 32,55%, −16,83 pp) ameaça o modelo de funding do crédito rural do BB.",
+   "nota_media": 14,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 12,
+    "c4": 16
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.329,
+   "duplicatas": [],
+   "desacordos": [
+    "D-042"
+   ]
+  },
+  {
+   "id": "C4-N07",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "O CET1 do BB (10,80% em set/26, queda de 0,47 pp vs jun/26) ainda está acima do mínimo regulatório, mas a trajetória de queda limita crescimento e dividendos.",
+   "nota_media": 13.3,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 11,
+    "c4": 17
+   },
+   "tetos": 2,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.329,
+   "duplicatas": [],
+   "desacordos": [
+    "D-044"
+   ]
+  },
+  {
+   "id": "C5-N02",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A parcela do crédito rural a taxas de mercado concentra a inadimplência, e o BB pode reduzi-la sem perder o negócio direcionado.",
+   "nota_media": 13.7,
+   "dif_juizes": 8,
+   "notas_por_juiz": {
+    "c1": 10,
+    "c3": 18,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.329,
+   "duplicatas": [],
+   "desacordos": [
+    "D-053"
+   ]
+  },
+  {
+   "id": "C5-N10",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Os 577 municípios onde só o BB tem agência geram captação e crédito rentáveis, não apenas custo fixo.",
+   "nota_media": 11,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 10,
+    "c4": 9
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "funde",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.329,
+   "duplicatas": [],
+   "desacordos": [
+    "D-058"
+   ]
+  },
+  {
+   "id": "P15",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "Com a portabilidade pelo Open Finance chegando ao consignado, o BB perde participação ou margem de forma mensurável em 12 meses.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 2,
+   "prob_mediana": 0.475,
+   "iqr": 0.062,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.328,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P52",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "As grandes plataformas atuam em iniciação de pagamento e carteira digital, sem crédito relevante.",
+   "nota_media": 14.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 16,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": 0.6,
+   "iqr": 0.037,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.323,
+   "duplicatas": [],
+   "desacordos": [
+    "D-020"
+   ]
+  },
+  {
+   "id": "P18",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB tem uma base de clientes de renda estável e quase não participa do crédito habitacional.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 2,
+   "prob_mediana": 0.575,
+   "iqr": 0.062,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "divide",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.315,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P12",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "A fatia do BB nos demais serviços ao produtor (seguro, consórcio de máquinas, câmbio, pagamentos da cadeia, investimentos) é bem menor que os 53% do crédito.",
+   "nota_media": 14.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 16,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": 0.55,
+   "iqr": 0.1,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.311,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P35",
+   "origem": "v0",
+   "mercado": "canais",
+   "enunciado": "A receita de serviços de conta corrente do BB cai em termos reais desde 2021, e a rotatividade dos depósitos à vista aumentou.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.55,
+   "iqr": 0.012,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.311,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P55",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "O BB negocia com desconto persistente de preço sobre valor patrimonial frente aos pares, e o desconto aumenta em eventos ligados a política pública e a revisões de projeção.",
+   "nota_media": 13.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 16,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.55,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.311,
+   "duplicatas": [],
+   "desacordos": [
+    "D-023",
+    "D-024"
+   ]
+  },
+  {
+   "id": "C3-N04",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no consignado sobe acima de 21% em jun/2027.",
+   "nota_media": 15.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 17,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": [
+    "D-030"
+   ]
+  },
+  {
+   "id": "C4-N12",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "A recuperação parcial em PJ investimento (23,53% em 2022 → 29,01% em 2026) indica que o BB reconquistou espaço após a saída do BNDES, mas ainda está abaixo de 2019 (37,52%).",
+   "nota_media": 15.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N13",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A poupança do BB (20,65% do sistema, perda de apenas −0,49 pp em 6 anos) é estável e fornece funding barato que sustenta a margem no crédito imobiliário e rural.",
+   "nota_media": 16,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": [
+    "D-049"
+   ]
+  },
+  {
+   "id": "C5-N03",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "O BB perde participação no rural para Caixa, cooperativas e Banco da Amazônia por preço, não por retirada estratégica.",
+   "nota_media": 13.7,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 17,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": [
+    "D-054"
+   ]
+  },
+  {
+   "id": "C5-N08",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A queda da participação do BB em LCA (49,38% para 32,55%) encarece o funding do agro e aperta a margem financeira.",
+   "nota_media": 14.3,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 17,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": [
+    "D-057"
+   ]
+  },
+  {
+   "id": "C5-N09",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A perda de depósitos à vista para cooperativas e BTG corrói a vantagem de funding barato do BB.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C5-N12",
+   "origem": "R1A",
+   "mercado": "servicos",
+   "enunciado": "A receita de serviços do BB cresce abaixo da inflação e perde participação, e não compensará a queda da margem financeira.",
+   "nota_media": 14.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 15,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C5-N15",
+   "origem": "R1A",
+   "mercado": "regulacao",
+   "enunciado": "O BB opera com índice de eficiência pior que os pares privados e há espaço de corte de despesa sem fechar a rede exclusiva.",
+   "nota_media": 14,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 14,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.307,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N01",
+   "origem": "R1A",
+   "mercado": "agro",
+   "enunciado": "A inadimplência agro do BB (6,92% em set/26) é inferior à do sistema rural PF (9,59% em out/26), indicando que a carteira do BB é de melhor qualidade que a média.",
+   "nota_media": 12.3,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 9,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.296,
+   "duplicatas": [],
+   "desacordos": [
+    "D-038"
+   ]
+  },
+  {
+   "id": "C4-N15",
+   "origem": "R1A",
+   "mercado": "capital",
+   "enunciado": "O RSPL do BB (2,8% no 3T26) está abaixo do custo de capital estimado, e a recuperação para ≥ 12% exige simultaneamente queda do custo do crédito e crescimento de receita, não apenas corte de despesa.",
+   "nota_media": 13,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 12,
+    "c4": 16
+   },
+   "tetos": 2,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.296,
+   "duplicatas": [],
+   "desacordos": [
+    "D-051"
+   ]
+  },
+  {
+   "id": "P07",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "O ritmo de ganho de participação em 2020–2023 prediz a inadimplência de 2025–2026 entre instituições. A Caixa é o caso extremo e está recuando.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.42500000000000004,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.294,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P08",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "Operações com seguro ou Proagro perdem menos, e a retração de 2026 na contratação de seguro aumenta a perda dado o inadimplemento em 2027.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.288,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P42",
+   "origem": "v0",
+   "mercado": "eficiencia_dados",
+   "enunciado": "Com mais histórico que qualquer concorrente no rural e no setor público, o BB deveria ter inadimplência ajustada ao mix menor que a do sistema. Não tem.",
+   "nota_media": 12,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.012,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.288,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P51",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "As agfintechs são pequenas em carteira, mas originam para fundos e podem crescer como canal do mercado de capitais (P05).",
+   "nota_media": 12,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 14,
+    "c4": 10
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.038,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.288,
+   "duplicatas": [],
+   "desacordos": [
+    "D-019"
+   ]
+  },
+  {
+   "id": "P48",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "A inadimplência rural responde mais ao custo de rolagem (Selic) do que a preço e clima.",
+   "nota_media": 12,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.45,
+   "iqr": 0.137,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.267,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P14",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "A queda do BB no crédito pessoal sem consignação veio de clientes de risco aceitável que migraram, e não de risco que o BB evitou.",
+   "nota_media": 12,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.037,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.263,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P27",
+   "origem": "v0",
+   "mercado": "setor_publico_rede",
+   "enunciado": "O valor de uma folha de pagamento (consignado, depósitos, seguros) supera o preço pago nos leilões, mas a portabilidade de salário e de crédito reduz esse valor a cada ano.",
+   "nota_media": 12.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 14
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "apertado",
+    "justo",
+    "apertado",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.263,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C5-N05",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "O consignado é o segmento de PF onde o BB ainda defende participação e margem com vantagem de folha e convenios.",
+   "nota_media": 14.3,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 17,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "funde",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.263,
+   "duplicatas": [],
+   "desacordos": [
+    "D-055"
+   ]
+  },
+  {
+   "id": "P38",
+   "origem": "v0",
+   "mercado": "conglomerado",
+   "enunciado": "Os prêmios da Brasilseg acompanham a originação de crédito do BB, com pouca venda independente.",
+   "nota_media": 13,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 3,
+   "prob_mediana": 0.625,
+   "iqr": 0.075,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.259,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P28",
+   "origem": "v0",
+   "mercado": "setor_publico_rede",
+   "enunciado": "O papel de agente de políticas públicas traz volume e receita, mas concentra risco no agro e alimenta o desconto de governança na ação.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 2,
+   "prob_mediana": 0.575,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "divide",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.252,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P37",
+   "origem": "v0",
+   "mercado": "canais",
+   "enunciado": "Adquirentes independentes e marketplaces usam o fluxo de vendas para dar crédito e reter o saldo do pequeno lojista.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.575,
+   "iqr": 0.087,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.252,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P34",
+   "origem": "v0",
+   "mercado": "canais",
+   "enunciado": "Com a fatia atual, a adquirência não garante mais a conta principal do lojista para o BB.",
+   "nota_media": 11.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 9,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.247,
+   "duplicatas": [],
+   "desacordos": [
+    "D-012"
+   ]
+  },
+  {
+   "id": "C2-N09",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no consignado se mantém no recorte de servidores públicos e cai no recorte de INSS e de setor privado.",
+   "nota_media": 15.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 15
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.247,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C2-N11",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "O ganho do BB em comércio exterior (18,42% para 25,43%) vem de clientes fora da cadeia do agro em pelo menos metade do saldo.",
+   "nota_media": 16.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 17,
+    "c4": 17
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.247,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P30",
+   "origem": "v0",
+   "mercado": "empresas",
+   "enunciado": "A perda do BB em capital de giro PJ se concentra em micro e pequenas empresas e foi para as cooperativas.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.6,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.237,
+   "duplicatas": [
+    "C5-N06"
+   ],
+   "desacordos": []
+  },
+  {
+   "id": "P13",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "O avanço das cooperativas no Sul se repete, com atraso, no Centro-Oeste e no Sudeste.",
+   "nota_media": 11.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.5,
+   "iqr": 0.112,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.23,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N07",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "A participação do BB em comércio exterior PJ se mantém acima de 25% em jun/2027.",
+   "nota_media": 13.3,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 16,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.23,
+   "duplicatas": [],
+   "desacordos": [
+    "D-033"
+   ]
+  },
+  {
+   "id": "P47",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "A exposição do BB ao agronegócio equivale a mais de duas vezes o seu patrimônio, e um choque regional consome capital de forma relevante.",
+   "nota_media": 12.3,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 13
+   },
+   "tetos": 3,
+   "prob_mediana": 0.675,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.225,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P11",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "A adesão fica abaixo do necessário e a carteira renegociada volta a atrasar em proporção alta.",
+   "nota_media": 11.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 11
+   },
+   "tetos": 3,
+   "prob_mediana": 0.575,
+   "iqr": 0.075,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.224,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C1-N14",
+   "origem": "R1A",
+   "mercado": "servicos",
+   "enunciado": "Pelo menos 70% da perda de 4,1 p.p. de participação em tarifas vem de rubricas transacionais (conta, pacote, transferências), enquanto gestão de recursos e cartões crescem pelo menos como o sistema.",
+   "nota_media": 17.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 16,
+    "c3": 18,
+    "c4": 18
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.222,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N13",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "A participação do BB em agências fica acima de 25% em jun/2027.",
+   "nota_media": 13.3,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 14,
+    "c4": 14
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.219,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N03",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A perda de participação em crédito pessoal sem consignação (22,53% → 14,01%) é estrutural e irreversível, dominada por Nubank (+14,88 pp).",
+   "nota_media": 13.7,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 13,
+    "c3": 11,
+    "c4": 17
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.219,
+   "duplicatas": [
+    "C5-N04"
+   ],
+   "desacordos": [
+    "D-040"
+   ]
+  },
+  {
+   "id": "C4-N04",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "O crescimento em PJ comércio exterior (18,42% → 25,43%, +7,01 pp) é uma vantagem estrutural ligada à rede internacional e ao relacionamento com exportadores agro.",
+   "nota_media": 14.3,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 12,
+    "c4": 17
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "divide",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.219,
+   "duplicatas": [],
+   "desacordos": [
+    "D-041"
+   ]
+  },
+  {
+   "id": "C4-N08",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "Os 577 municípios onde o BB é o único banco com agência e crédito geram retorno positivo quando se considera a carteira total (depósitos + crédito + serviços), não apenas o spread de crédito.",
+   "nota_media": 14.7,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 12,
+    "c4": 17
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.219,
+   "duplicatas": [],
+   "desacordos": [
+    "D-045"
+   ]
+  },
+  {
+   "id": "P20",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB mantém a principalidade onde há folha e perde nos demais clientes.",
+   "nota_media": 12,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.55,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.207,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P53",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "A infraestrutura pública de tokenização não entra em produção no horizonte do plano; iniciativas privadas ficam restritas a nichos.",
+   "nota_media": 11.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 11
+   },
+   "tetos": 2,
+   "prob_mediana": 0.6,
+   "iqr": 0.038,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "descarta",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.198,
+   "duplicatas": [],
+   "desacordos": [
+    "D-021"
+   ]
+  },
+  {
+   "id": "P17",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O BB perde participação no cartão e, ao mesmo tempo, vê os atrasos subirem acima do sistema.",
+   "nota_media": 12,
+   "dif_juizes": 0,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.6,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.184,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P16",
+   "origem": "v0",
+   "mercado": "varejo_pf",
+   "enunciado": "O consignado privado tem inadimplência próxima à do crédito pessoal, e a liderança inicial do BB na originação se traduz em perda acima da precificada.",
+   "nota_media": 11,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 12,
+    "c4": 10
+   },
+   "tetos": 3,
+   "prob_mediana": 0.55,
+   "iqr": 0.05,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.178,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C4-N11",
+   "origem": "R1A",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação em consignado (21,17% → 19,22%, −1,95 pp) é defensável porque a folha de pagamento do servidor público é barreira de entrada que digitais não replicam facilmente.",
+   "nota_media": 13.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 16
+   },
+   "tetos": 1,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.176,
+   "duplicatas": [],
+   "desacordos": [
+    "D-048"
+   ]
+  },
+  {
+   "id": "P10",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "O fluxo de pedidos de recuperação judicial rural por comarca é um sinal antecedente de 2 a 4 trimestres da inadimplência rural regional.",
+   "nota_media": 12.7,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 12,
+    "c4": 14
+   },
+   "tetos": 3,
+   "prob_mediana": 0.35,
+   "iqr": 0.013,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.173,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P54",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "A antecipação do saque-aniversário era produto de bancos médios e fintechs; a restrição quase não toca o resultado do BB.",
+   "nota_media": 12.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 15,
+    "c4": 11
+   },
+   "tetos": 0,
+   "prob_mediana": 0.575,
+   "iqr": 0.062,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "justo",
+    "frouxo",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.168,
+   "duplicatas": [],
+   "desacordos": [
+    "D-022"
+   ]
+  },
+  {
+   "id": "C3-N08",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A participação do BB em depósitos à vista fica acima de 17% em jun/2027.",
+   "nota_media": 10.3,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 8,
+    "c4": 12
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.165,
+   "duplicatas": [],
+   "desacordos": [
+    "D-034"
+   ]
+  },
+  {
+   "id": "P06",
+   "origem": "v0",
+   "mercado": "agro",
+   "enunciado": "O BB deixou de ser o emissor dominante de LCA, e uma eventual tributação reduz ainda mais a vantagem de custo do funding do crédito rural livre.",
+   "nota_media": 12.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 12,
+    "c4": 15
+   },
+   "tetos": 2,
+   "prob_mediana": 0.725,
+   "iqr": 0.075,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "justo",
+    "justo"
+   ],
+   "vereditos": [
+    "mantem",
+    "divide"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.163,
+   "duplicatas": [],
+   "desacordos": [
+    "D-001"
+   ]
+  },
+  {
+   "id": "C3-N10",
+   "origem": "R1A",
+   "mercado": "servicos",
+   "enunciado": "A receita de prestação de serviços do BB cresce acima de 7% a/a no 3T27.",
+   "nota_media": 14.7,
+   "dif_juizes": 4,
+   "notas_por_juiz": {
+    "c1": 14,
+    "c3": 17,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "mantem"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.154,
+   "duplicatas": [],
+   "desacordos": [
+    "D-036"
+   ]
+  },
+  {
+   "id": "C5-N07",
+   "origem": "R1A",
+   "mercado": "empresas",
+   "enunciado": "Comércio exterior é o segmento PJ onde o BB ganha participação e pode crescer com risco controlado.",
+   "nota_media": 15.3,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 18,
+    "c4": 16
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "funde",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.154,
+   "duplicatas": [],
+   "desacordos": [
+    "D-056"
+   ]
+  },
+  {
+   "id": "C5-N11",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "O aumento da participação do BB em agências (20,41% para 26,4%) reflete fechamento de agências dos concorrentes, não expansão própria.",
+   "nota_media": 14,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 15,
+    "c3": 14,
+    "c4": 13
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "mantem",
+    "mantem"
+   ],
+   "replica": "contesta",
+   "classe": "disputa",
+   "prioridade_teste": 0.154,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "P50",
+   "origem": "v0",
+   "mercado": "capital_regulacao",
+   "enunciado": "Rabobank, bancos de fabricantes de máquinas e outros estrangeiros não ameaçam a fatia do BB.",
+   "nota_media": 11.7,
+   "dif_juizes": 1,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 12,
+    "c4": 12
+   },
+   "tetos": 3,
+   "prob_mediana": 0.7,
+   "iqr": 0.025,
+   "n_prob": 4,
+   "limiares": [
+    "justo",
+    "justo",
+    "frouxo",
+    "frouxo",
+    "justo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.148,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N14",
+   "origem": "R1A",
+   "mercado": "canais",
+   "enunciado": "O BB continua sendo o único banco com crédito em pelo menos 500 municípios em 2027.",
+   "nota_media": 9.3,
+   "dif_juizes": 3,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 8,
+    "c4": 9
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "consenso",
+   "prioridade_teste": 0.115,
+   "duplicatas": [],
+   "desacordos": []
+  },
+  {
+   "id": "C3-N09",
+   "origem": "R1A",
+   "mercado": "captacao",
+   "enunciado": "A participação do BB em LCA volta acima de 35% em jun/2027.",
+   "nota_media": 9,
+   "dif_juizes": 6,
+   "notas_por_juiz": {
+    "c1": 11,
+    "c3": 5,
+    "c4": 11
+   },
+   "tetos": 0,
+   "prob_mediana": null,
+   "iqr": null,
+   "n_prob": 0,
+   "limiares": [],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita_em_parte",
+   "classe": "disputa",
+   "prioridade_teste": 0.11,
+   "duplicatas": [],
+   "desacordos": [
+    "D-035"
+   ]
+  },
+  {
+   "id": "P44",
+   "origem": "v0",
+   "mercado": "eficiencia_dados",
+   "enunciado": "A base ativa do BB tem idade média maior e renova menos que a dos concorrentes.",
+   "nota_media": 10.3,
+   "dif_juizes": 5,
+   "notas_por_juiz": {
+    "c1": 12,
+    "c3": 7,
+    "c4": 12
+   },
+   "tetos": 0,
+   "prob_mediana": 0.5,
+   "iqr": 0.037,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "apertado",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "reformula"
+   ],
+   "replica": "aceita",
+   "classe": "disputa",
+   "prioridade_teste": 0.099,
+   "duplicatas": [],
+   "desacordos": [
+    "D-017"
+   ]
+  },
+  {
+   "id": "P43",
+   "origem": "v0",
+   "mercado": "eficiencia_dados",
+   "enunciado": "Bancos que divulgam uso amplo de IA em atendimento e crédito mostram ganho mensurável de eficiência nos 2 anos seguintes.",
+   "nota_media": 5,
+   "dif_juizes": 2,
+   "notas_por_juiz": {
+    "c1": 4,
+    "c3": 6,
+    "c4": 5
+   },
+   "tetos": 0,
+   "prob_mediana": 0.475,
+   "iqr": 0.075,
+   "n_prob": 4,
+   "limiares": [
+    "frouxo",
+    "frouxo",
+    "frouxo",
+    "apertado",
+    "frouxo"
+   ],
+   "vereditos": [
+    "reformula",
+    "descarta"
+   ],
+   "replica": "aceita",
+   "classe": "consenso",
+   "prioridade_teste": 0.0,
+   "duplicatas": [],
+   "desacordos": [
+    "D-016"
+   ]
+  }
+ ],
+ "custo_usd": {
+  "r1": 0.5749,
+  "r2": 1.5238,
+  "r3": 0.2005,
+  "r4": 2.1124
+ },
+ "avisos": [
+  "juízes sem calibração humana (R4 pede 10 premissas avaliadas por uma pessoa)",
+  "junção de duplicadas feita por código, sem conferência humana",
+  "dossiê sem aprovação H1"
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C1-N06",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Corte de 7–11% para 2,5–4,5% confere (F-008). Decomposição e limiares claros, com sazonalidade e pares. Juros não apropriados podem não estar abertos nas notas; o proxy oferecido é grosseiro."
+  },
+  {
+   "premissa": "C1-N07",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-018",
+    "F-008",
+    "F-016"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Queda de 0,47 p.p., 6,97% e lucro implícito de 0,4–2,4 bi conferem. Limiares e condição de RWA bem fixados. Ganhos extraordinários (venda de ativo, crédito tributário) não são separados."
+  },
+  {
+   "premissa": "C1-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "577 e as ressalvas do ESTBAN conferem (F-019). Pareamento, reclassificação por cooperativas e controle por Pix são bons. Métrica usa PIB municipal e o enunciado fala em habitante: inconsistência a corrigir."
+  },
+  {
+   "premissa": "C1-N09",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-004",
+    "F-009"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "29% (10,3 sobre 26,0 + 9,3) e 37,5% do Itaú conferem, com ressalva de definição. Mesma fórmula e corte por 03/2025. Índice sofre efeito de mix de receita, não só de custo."
+  },
+  {
+   "premissa": "C1-N10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Comparação com incumbentes, taxa e atraso é boa ideia. Regras deixam casos sem classe (perda ≥3 p.p. com taxa alta). Vencido por modalidade não está no dossiê. Taxa maior pode refletir mix mais arriscado."
+  },
+  {
+   "premissa": "C1-N11",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-033",
+    "F-030"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "7,32→24,08, 16,8 e 12,4 p.p. conferem (F-033, F-030). Placebo com séries sem quebra, soma do sistema e checagem de aquisições: forte. A segunda parte (perda do BB é real) não tem teste próprio."
+  },
+  {
+   "premissa": "C1-N12",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Ganho de 7 p.p. confere (F-031). Taxa de ACC por instituição é pública; limiares claros. Taxa depende do porte e risco do exportador, sem controle de mix."
+  },
+  {
+   "premissa": "C1-N13",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "4,9 p.p. e 16,8 p.p. conferem (F-038, F-042). Métrica, pares, efeito mix e Cosif 2025 bem definidos. A regra de LCA, citada como alternativa, não entra no teste."
+  },
+  {
+   "premissa": "C1-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-047"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "4,1 p.p. e Santander +4,56 conferem (F-047). Decomposição por subconta e limiares claros. Mas fatia é relativa ao sistema: Pix atinge todos, logo perda de fatia transacional não separa Pix de perda de franquia."
+  },
+  {
+   "premissa": "C1-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "174,3→137,8 confere (F-005); o texto prevê a falta de cobertura agro (F-006). Três condições com limiares claros. Abertura de baixas por carteira é incerta; comparação com ex-agro e pares ajuda."
+  }
+ ]
+}

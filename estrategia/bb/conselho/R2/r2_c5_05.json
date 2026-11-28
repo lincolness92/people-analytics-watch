@@ -1,0 +1,184 @@
+{
+ "criticas": [
+  {
+   "premissa": "C1-N07",
+   "contrario": "O lucro implícito do 4T26 (R$ 0,4–2,4 bi) mal cobre dividendos; com custo de crédito de R$ 21,2 bi no trimestre e RWA possivelmente estável, o CET1 pode cair abaixo de 10,80% mesmo sem evento extraordinário.",
+   "alternativa": "A queda de 0,47 p.p. no 3T26 pode refletir crescimento de RWA ou provisões pontuais, não tendência; dez/25 já mostrou CET1 de 12,23%, indicando sazonalidade favorável no fechamento do ano.",
+   "riscos_de_dado": [
+    "KM1 trimestral tem defasagem de publicação",
+    "payout declarado pode não estar no IPE até mar/27",
+    "comparação com pares usa perímetros de RWA diferentes"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pilar 3 KM1 (DASFN)",
+     "IPE CVM"
+    ],
+    "descricao": "Ler CET1 de dez/26 no KM1 e proventos no IPE; se CET1 < 10,50% ou emissão/corte anunciado, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N08",
+   "contrario": "Captação/PIB pode crescer menos nos exclusivos porque são municípios pobres e pequenos, onde o PIB cresce devagar e o dinheiro migra para cooperativas e Pix, invisíveis no ESTBAN.",
+   "alternativa": "Qualquer vantagem observada pode vir do mix (agro e prefeituras) e não da exclusividade; municípios exclusivos diferem sistematicamente dos pareados, e o pareamento não resolve viés de seleção.",
+   "riscos_de_dado": [
+    "ESTBAN não vê cooperativas nem digitais",
+    "PIB municipal tem defasagem de anos",
+    "captação por agência não mede domicílio do cliente",
+    "pareamento por poucas covariáveis"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN",
+     "IBGE PIB municipal",
+     "BcBase correspondentes",
+     "Pix por município"
+    ],
+    "descricao": "Calcular depósitos BB/PIB 2019–2026 nos 577 versus pareados, excluindo municípios com cooperativa; diferença ≤ 0 refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N10",
+   "contrario": "O BB perdeu 8,5 p.p. enquanto o Nubank ganhou 14,9 p.p.; se Itaú e Bradesco perderam menos, a perda do BB é desproporcional e indica fuga de clientes da própria base, não disciplina de risco.",
+   "alternativa": "A perda pode ser efeito da quebra de perímetro/Cosif em 03/2025 e de reclassificação de modalidades, não de escolha de risco; inadimplência menor pode refletir mix de clientes, não mérito de concessão.",
+   "riscos_de_dado": [
+    "quebra de perímetro 1005→1009 em 03/2025",
+    "Cosif 2025 muda definições",
+    "taxa e inadimplência por instituição podem não ser comparáveis por modalidade",
+    "dados de pares não estão no dossiê"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "Taxas de juros por instituição (BCB)"
+    ],
+    "descricao": "Comparar perda do BB com Itaú/Bradesco e inadimplência na modalidade; perda ≥ 3 p.p. maior com inadimplência menor refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N11",
+   "contrario": "A perda do BB em pequena empresa é gradual na série (17,63→14,76→11,41→10,94), sem salto único visível em 03/2025; o ganho do Bradesco pode ser estratégia real de PME, não artefato.",
+   "alternativa": "O salto do Bradesco pode refletir aquisição de carteira, mudança de segmentação de clientes ou reclassificação de porte, não a quebra de perímetro; e a queda do BB começa antes de 2025.",
+   "riscos_de_dado": [
+    "a própria premissa suspeita de artefato, mas a série mostra queda contínua",
+    "mudança de porte de clientes contamina a rubrica",
+    "SCR e IF.data têm perímetros diferentes"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data trimestral",
+     "SCR.data",
+     "Cosif"
+    ],
+    "descricao": "Decompor a variação trimestre a trimestre; se nenhum trimestre concentra > 25% da perda e ela é gradual, refuta a hipótese de artefato."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N13",
+   "contrario": "O custo de captação de todo o sistema subiu com o CDI alto; o BB pode ter subido junto com os pares, e a perda de LCA pode refletir mudança regulatória de lastro, não competitividade.",
+   "alternativa": "A alta relativa pode vir do mix (mais captação de mercado para financiar agro) e não de perda de captação barata; regras de LCA e direcionamento mudaram no período.",
+   "riscos_de_dado": [
+    "despesa de captação no Cosif muda com Cosif 2025",
+    "CDI médio do período é escolha do analista",
+    "pares com estruturas de funding muito diferentes (Caixa, Sicredi)"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "Cosif 4010/4016",
+     "SGS CDI"
+    ],
+    "descricao": "Calcular despesa de captação/saldo médio sobre CDI para BB e pares, 2022–2026; diferença ≤ 1 p.p. de CDI refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N14",
+   "contrario": "A perda pode ser ampla: o salto do Santander (+4,56 p.p.) sugere reclassificação ou ganho real em várias rubricas, e gestão de recursos do BB pode ter perdido para BTG e XP, que cresceram em captação.",
+   "alternativa": "A queda pode ser de preço (gratuidade Pix) e não de volume, afetando todos os incumbentes igualmente; a participação cai porque digitais entram com tarifa zero, sem perda de relacionamento.",
+   "riscos_de_dado": [
+    "subcontas Cosif mudam em 2025",
+    "quebra de perímetro 03/2025",
+    "salto do Santander pode ser artefato e distorcer o denominador",
+    "tarifas de gestão podem estar fora de 'rendas de tarifas'"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Cosif subcontas",
+     "DFP/ITR CVM"
+    ],
+    "descricao": "Decompor a participação por subconta; se < 50% da perda é transacional ou gestão+cartões crescem abaixo do sistema, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N01",
+   "contrario": "O sistema sem o BB inclui cooperativas e bancos regionais com perfis de risco diferentes; o BB pode estar pior que pares comparáveis (Caixa, Sicredi) mesmo parecendo melhor que o agregado.",
+   "alternativa": "A diferença de níveis (6,92% BB vs 9,59% sistema) pode ser só definição: BB usa +90d da carteira agro total, SGS 21148 é rural PF; com definição alinhada o BB pode ficar pior que o resto.",
+   "riscos_de_dado": [
+    "definições divergentes entre BB e SGS",
+    "sistema sem BB exige estimar atraso do BB, dado não público na mesma rubrica",
+    "mix PF/PJ e taxas de mercado vs direcionadas distorcem"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS 21148/21146",
+     "IF.data",
+     "SCR.data"
+    ],
+    "descricao": "Recomputar inadimplência do resto do sistema no recorte PF rural; diferença BB−resto > +1 p.p. refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N02",
+   "contrario": "Recuperação judicial de produtores disparou no período e pode ser a causa, não o sintoma: garantias rurais ficaram ilíquidas e o atraso vira estratégia de renegociação, não quebra de renda.",
+   "alternativa": "Renda e recuperação judicial são colineares: a quebra de safra causa os pedidos, e a regressão não separa os efeitos; o resultado pode refletir apenas qual UF teve seca.",
+   "riscos_de_dado": [
+    "SCR por UF agrega culturas diferentes",
+    "dados de recuperação judicial por produtor rural são incompletos",
+    "receita por hectare usa preço médio, não o do devedor",
+    "seleção: quem entra em RJ já estava inadimplente"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data",
+     "CONAB",
+     "CEPEA",
+     "Serasa",
+     "Datajud"
+    ],
+    "descricao": "Painel por UF: se UFs com maior queda de renda explicam < 40% da alta, ou RJ segue significativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+mes,grupo,observado_pct,esperado_pct,residuo_pp
+2023-12,bb,1.99,1.86,0.13
+2023-12,caixa,1.03,1.15,-0.12
+2023-12,cooperativas,0.64,2.47,-1.83
+2023-12,bb−coop dentro da célula (mix coop),,,1.48
+2026-06,bb,10.21,8.81,1.4
+2026-06,caixa,25.98,7.0,18.97
+2026-06,cooperativas,1.69,9.41,-7.71
+2026-06,bb−coop dentro da célula (mix coop),,,6.61
+2026-09,bb,11.36,9.84,1.52
+2026-09,caixa,31.18,7.76,23.42
+2026-09,cooperativas,1.7,11.05,-9.35
+2026-09,bb−coop dentro da célula (mix coop),,,8.17

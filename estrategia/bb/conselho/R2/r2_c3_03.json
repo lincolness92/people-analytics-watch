@@ -1,0 +1,189 @@
+{
+ "criticas": [
+  {
+   "premissa": "P37",
+   "contrario": "Adquirentes podem oferecer apenas antecipação de recebíveis, sem reter saldo do lojista. O saldo pré-pago do Mercado Pago pode vir de consumidores, não de pequenos lojistas.",
+   "alternativa": "O alto saldo pré-pago do Mercado Pago reflete uso como carteira digital por pessoas físicas; os 3,6% de crédito pessoal sem consignação são empréstimos a consumidores, não crédito PJ.",
+   "riscos_de_dado": [
+    "IF.data não separa saldo pré-pago de PF e PJ.",
+    "Segmento de pequeno lojista não é identificado.",
+    "Crédito pessoal sem consignação é PF, não PJ.",
+    "Adquirentes podem não reportar crédito PJ separadamente."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data crédito PJ por instituição",
+     "demonstrações de adquirentes listadas (CVM IPE)",
+     "saldo de contas de pagamento pré-pagas por cliente PJ (BCB)"
+    ],
+    "descricao": "Comparar crescimento do crédito PJ de adquirentes/marketplaces com o fluxo de vendas processado; refutar se o crédito PJ não crescer mais que o sistema ou não houver correlação com o fluxo."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Adquirentes independentes e marketplaces concedem crédito a pequenos lojistas usando o fluxo de vendas e retêm saldo dessas empresas em contas pré-pagas, medido pelo crédito PJ dessas instituições crescendo mais de 20% ao ano por três anos."
+  },
+  {
+   "premissa": "P38",
+   "contrario": "A queda de prêmios da Brasilseg pode ser causada por queda de preços agrícolas e menor renda, não por dependência da originação; venda independente em canais digitais e corretores pode existir.",
+   "alternativa": "Prêmios e originação caem juntos por choque macro comum (juros, inadimplência rural); a correlação não prova causalidade; a venda independente pode estar mascarada pelo ciclo.",
+   "riscos_de_dado": [
+    "Releases podem consolidar linhas com critérios diferentes.",
+    "SICOR não separa originação BB de outras instituições.",
+    "Defasagem entre originação e prêmio não observada.",
+    "Prêmio agrícola inclui renovação e preço, não só volume."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB Seguridade releases (CVM IPE)",
+     "SICOR (BCB) crédito rural",
+     "IF.data consignado"
+    ],
+    "descricao": "Regredir variação trimestral dos prêmios de rural e prestamista contra originação contemporânea e defasada do BB; refutar se R² < 0,3 ou coeficientes não significativos."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A variação trimestral dos prêmios de rural e prestamista da Brasilseg é explicada em mais de 70% pela originação trimestral de crédito rural e consignado do BB, com defasagem de até dois trimestres, controlando por safra e juros."
+  },
+  {
+   "premissa": "P40",
+   "contrario": "Consórcio pode não crescer mais que financiamento sob juro alto; restrição de renda afeta ambos; BB pode não estar bem posicionado, pois administradoras independentes e montadoras têm oferta.",
+   "alternativa": "Se consórcio crescer, pode ser por restrição de crédito, não preferência; a fatia da BB Consórcios pode não acompanhar o mercado se houver concorrência de cooperativas.",
+   "riscos_de_dado": [
+    "Não há dado público por administradora no dossiê.",
+    "Cotas ativas podem ter dupla contagem em grupos.",
+    "Crédito de investimento rural pode ser medido por SICOR com defasagem.",
+    "Anfavea cobre máquinas agrícolas, não veículos pesados."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB dados de consórcios por administradora",
+     "Anfavea/ABAC",
+     "SICOR investimento rural"
+    ],
+    "descricao": "Comparar crescimento das cotas ativas de consórcio de máquinas agrícolas e veículos pesados com o do crédito de investimento rural por dois anos; refutar se consórcio não crescer mais ou BB Consórcios perder fatia."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Se o juro real permanecer alto por dois anos, as cotas ativas de consórcio de máquinas agrícolas e veículos pesados crescerão mais que o crédito de investimento rural, e a BB Consórcios ganhará ou manterá participação."
+  },
+  {
+   "premissa": "P41",
+   "contrario": "A despesa por cliente do BB maior pode corresponder a receita por cliente maior, dada a oferta de produtos complexos e atendimento presencial; a rede física pode atender clientes de maior valor.",
+   "alternativa": "A diferença de custo reflete mix de clientes: BB tem muitos clientes governo, rural e de baixa renda com alto custo de serviço, enquanto digitais têm clientes de menor custo e receita.",
+   "riscos_de_dado": [
+    "Base de clientes ativos não é padronizada entre bancos.",
+    "Receita por cliente pode ser distorcida por receitas de tesouraria e seguros.",
+    "Despesas administrativas incluem agências que servem também a serviços públicos.",
+    "Dupla contagem de clientes em diferentes produtos."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data despesas e receitas por instituição",
+     "releases de base de clientes (BB, Nubank, Inter)",
+     "cadastro de agências BCB"
+    ],
+    "descricao": "Calcular receita líquida ÷ despesa administrativa por cliente ativo para BB e digitais; refutar se a razão do BB for maior ou igual à dos digitais."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A razão receita líquida por cliente ativo sobre despesa administrativa por cliente ativo do BB é menor que a do Nubank e do Inter, usando definição única de cliente ativo com crédito ou investimento."
+  },
+  {
+   "premissa": "P43",
+   "contrario": "Divulgar uso de IA não é evidência de ganho; bancos podem divulgar por marketing; eficiência pode melhorar por corte de despesas ou alta de receita, não por IA.",
+   "alternativa": "Bancos que investem em IA também investem em digitalização geral; o ganho de eficiência pode vir da transformação digital como um todo, não especificamente da IA.",
+   "riscos_de_dado": [
+    "Pesquisa FEBRABAN é autodeclaratória, sem auditoria.",
+    "Índice de eficiência é afetado por receita não operacional.",
+    "Divulgação desigual entre bancos; amostra pequena.",
+    "Defasagem de dois anos pode conter outros fatores."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pesquisa FEBRABAN de Tecnologia Bancária",
+     "IF.data índice de eficiência",
+     "releases CVM IPE"
+    ],
+    "descricao": "Comparar a evolução do índice de eficiência de bancos que declaram IA em crédito e atendimento com os que não declaram, controlando por tamanho e crescimento de receita; refutar se não houver diferença significativa após oito trimestres."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Bancos que declaram na FEBRABAN uso de IA em crédito ou atendimento apresentam queda estatisticamente significativa no índice de eficiência nos oito trimestres seguintes, controlando por crescimento de receita."
+  },
+  {
+   "premissa": "P44",
+   "contrario": "Não há dado público por instituição que comprove idade média maior; BB pode ter grande base jovem via digital e contas salário, mesmo que pesquisas de principal banco mostrem perfil mais velho.",
+   "alternativa": "A sub-representação de jovens em pesquisas pode refletir o uso do BB como banco secundário por jovens, não ausência de base; a idade média é distorcida por aposentados e servidores.",
+   "riscos_de_dado": [
+    "Pesquisas de principal banco não captam multibancarização.",
+    "Amostra pode ser pequena para faixas etárias por banco.",
+    "Dados do Pix por faixa etária são agregados, sem instituição.",
+    "Definição de cliente ativo varia."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Raio X do Investidor",
+     "Datafolha/Febraban",
+     "BCB Pix por faixa etária (agregado)"
+    ],
+    "descricao": "Repetir a pesquisa por três edições; refutar se a participação do BB entre menores de 30 anos for estável ou acima da média do sistema."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Em pesquisas públicas de principal banco, o BB aparece sub-representado entre menores de 30 anos por três edições consecutivas, indicando base ativa mais velha e menor renovação; sem dado público por instituição para idade média."
+  },
+  {
+   "premissa": "P46",
+   "contrario": "O aumento da provisão pode ser inteiramente econômico: a inadimplência agro subiu de 4,84% para 6,92% (F-006), justificando provisões maiores sem mudança contábil.",
+   "alternativa": "Parte do aumento pode vir da regra de perda esperada, mas a deterioração real também ocorreu; atribuir a regra sem separar pode subestimar o risco.",
+   "riscos_de_dado": [
+    "Quebra de série Cosif em 03/2025 invalida comparação simples.",
+    "Contas de provisão por estágio podem não ser comparáveis antes/depois.",
+    "IF.data muda perímetro de conglomerado financeiro para prudencial.",
+    "Créditos de parcela única podem não estar identificados separadamente."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Balancetes Cosif contas de provisão por estágio",
+     "IF.data antes e depois de 03/2025",
+     "notas explicativas DFP BB"
+    ],
+    "descricao": "Comparar o crescimento da provisão com o crescimento dos vencidos acima de 90 dias no BB e em pares com baixa parcela única; refutar se a razão provisão/vencidos for similar entre bancos."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A provisão do BB em 2025–26 reflete, em parte mensurável, o efeito da nova regra de perda esperada em créditos rurais de parcela única, além da deterioração econômica; a parcela contábil é separável via notas explicativas e comparação com pares."
+  },
+  {
+   "premissa": "P47",
+   "contrario": "A carteira agro é diversificada entre culturas e regiões, com garantias oficiais e seguro; um choque regional pode não consumir capital porque as perdas são cobertas por garantias e provisões.",
+   "alternativa": "A exposição de 2,2 vezes o patrimônio é bruta, não ponderada por risco; o capital consumido depende de perdas líquidas de garantias, que podem ser baixas para crédito rural oficial.",
+   "riscos_de_dado": [
+    "Carteira agro inclui linhas com garantia do Tesouro ou fundos, reduzindo risco.",
+    "Patrimônio de 06/2026 pode não ser comparável com carteira de 09/2026.",
+    "ESTBAN×PAM pode não captar garantias por operação.",
+    "Concentração por cultura/UF pode estar desatualizada."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Relatório de Gerenciamento de Riscos do BB (Pilar 3)",
+     "ESTBAN por município",
+     "PAM/IBGE",
+     "sensibilidades de P09"
+    ],
+    "descricao": "Simular perda na principal cultura/UF com cenário de um desvio-padrão, líquido de garantias; refutar se o impacto no capital principal for menor que 0,2 p.p."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A carteira agro do BB (R$ 403,6 bi) equivale a 2,2 vezes o patrimônio líquido (R$ 181,8 bi); um choque regional na principal cultura, líquido de garantias oficiais, reduziria o capital principal em mais de 0,5 p.p."
+  }
+ ]
+}

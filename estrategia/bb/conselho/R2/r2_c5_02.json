@@ -1,0 +1,183 @@
+{
+ "criticas": [
+  {
+   "premissa": "P26",
+   "contrario": "Municípios de banco único são pequenos e pobres; depósitos e crédito locais podem ser irrisórios e voláteis, e a cooperativa pode ampliar o mercado em vez de roubar fatia do BB.",
+   "alternativa": "A estabilidade observada pode vir de folha de servidores e repasses federais, não da ausência de concorrente; o efeito atribuído à capilaridade seria efeito do setor público local.",
+   "riscos_de_dado": [
+    "ESTBAN exclui cooperativas e digitais, logo 'único banco' não significa 'única instituição'",
+    "contagem por saldo, não por agência",
+    "seleção: municípios onde privados saíram diferem dos demais",
+    "defasagem entre evento e saldo mensal"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN mensal por município",
+     "cadastro de agências BCB",
+     "Unicad/BcBase cooperativas"
+    ],
+    "descricao": "Diff-in-diff escalonado comparando municípios com saída de privado e entrada de cooperativa a municípios sem evento; se trajetórias de depósitos não divergirem, premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P27",
+   "contrario": "Com portabilidade de salário e Pix, o vínculo folha-banco enfraqueceu; o valor do cliente pode já estar abaixo do preço dos leilões, que refletiriam competição excessiva.",
+   "alternativa": "O deslocamento de consignado após troca de folha pode refletir renegociação de taxas pelo concorrente, não fidelidade à folha; e contratos antigos concentram o estoque.",
+   "riscos_de_dado": [
+    "sem série pública consolidada de leilões de folha",
+    "RAIS não identifica banco da folha",
+    "IF.data por município mistura efeitos de outros fatores locais",
+    "fonte única de imprensa para os 25% de consignado"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "PNCP e diários oficiais",
+     "IF.data consignado por município",
+     "ESTBAN"
+    ],
+    "descricao": "Empilhar trocas de banco de folha e medir migração do consignado do município em 3 anos contra municípios controle; deslocamento pequeno refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P29",
+   "contrario": "Regimes próprios e caixas de prefeituras podem estar dispersos entre gestores, e a taxa do BB pode ser igual ou maior que a mediana; premissa hoje é só hipótese sem dado.",
+   "alternativa": "Mesmo havendo concentração, ela pode vir de mandatos históricos de baixa margem já precificados, não de vantagem defensável; imprensa conflita sobre o patrimônio.",
+   "riscos_de_dado": [
+    "fontes de imprensa conflitantes sobre patrimônio da BB Asset",
+    "CADPREV com cobertura e qualidade heterogêneas por ente",
+    "taxa média ponderada pode esconder mix de produtos",
+    "sem número no dossiê"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CADPREV",
+     "dados abertos CVM de fundos",
+     "ranking ANBIMA"
+    ],
+    "descricao": "Cruzar aplicações dos regimes próprios por gestor e comparar taxa média ponderada do BB com a mediana; fatia abaixo de 30% ou taxa acima da mediana refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Medir primeiro: qual a fatia da BB Asset nos recursos de regimes próprios e caixas municipais e qual sua taxa média ponderada versus a mediana do mercado (CADPREV, CVM, ANBIMA)."
+  },
+  {
+   "premissa": "P31",
+   "contrario": "O ganho de 18,4% para 25,4% pode vir de grandes contas de atacado ou de operações pontuais de comércio exterior, não da cadeia do agro; crescimento recente pode ser concentração.",
+   "alternativa": "A alta pode refletir queda do denominador dos concorrentes ou reclassificação de perímetro (1005→1009 em 03/2025), não ganho real em CNAEs do agro.",
+   "riscos_de_dado": [
+    "quebra de perímetro do IF.data em 03/2025",
+    "CNAE do tomador não identifica cadeia (trading não é agro)",
+    "série curta pós-quebra",
+    "poucos tomadores grandes podem dominar a linha"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data comércio exterior por CNAE",
+     "Comex Stat por UF/produto"
+    ],
+    "descricao": "Abrir a carteira de comércio exterior do BB por CNAE; se menos da metade estiver em agro e agroindústria, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P32",
+   "contrario": "A queda de 37,5% para 29,0% pode ser escolha própria de preço e risco, não perda de canal de fomento; e houve recuperação desde 12/2022, o que contradiz tendência estrutural.",
+   "alternativa": "A variação pode ser efeito da quebra de perímetro de 03/2025 e do Cosif 2025, e o ganho de cooperativas pode ser em recursos próprios delas, não em repasses do BNDES.",
+   "riscos_de_dado": [
+    "quebra de perímetro 1005→1009 em 03/2025",
+    "Cosif 2025 muda definições",
+    "série não monotônica (recuperação desde 2022)",
+    "dados BNDES por agente ainda não levantados"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "dados abertos BNDES por agente",
+     "IF.data PJ investimento"
+    ],
+    "descricao": "Se a fatia do BB nas operações indiretas do BNDES se mantiver estável enquanto a participação em PJ investimento cai, a explicação de repasse é refutada."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Separar: (a) a fatia do BB em repasses do BNDES caiu? (b) a fatia em investimento PJ com recursos próprios caiu? Causas e decisões são distintas."
+  },
+  {
+   "premissa": "P33",
+   "contrario": "O BB pode ter fatia relevante em distribuição via sua rede e base de clientes, ainda que fraco em originação; a premissa é hipótese sem nenhum número no dossiê.",
+   "alternativa": "Fatia baixa em originação pode coexistir com receita relevante em distribuição e estruturação de títulos do agro (LCA, CRA), mudando a conclusão estratégica.",
+   "riscos_de_dado": [
+    "nenhum dado de ANBIMA no dossiê",
+    "rankings de originação variam por método (valor, número, prazo)",
+    "perímetro: emissões de bancos do próprio conglomerado podem distorcer"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "rankings ANBIMA 2019–2026",
+     "boletins de mercado de capitais"
+    ],
+    "descricao": "Comparar fatia do BB em originação e distribuição de renda fixa corporativa com os 11,8% no crédito PJ; se comparável, premissa refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Medir a fatia do BB em originação e em distribuição de renda fixa corporativa (ANBIMA) e comparar com os 11,8% no crédito PJ antes de concluir."
+  },
+  {
+   "premissa": "P35",
+   "contrario": "Receita de serviços do BB cresceu 4,6% a/a no 3T26 (F-004); queda real desde 2021 pode não existir, e rotatividade maior pode até elevar receita por transação.",
+   "alternativa": "Eventual queda real pode vir de isenções regulatórias e pacotes digitais, não do Pix; e o Pix pode gerar receitas novas já contabilizadas em outras linhas.",
+   "riscos_de_dado": [
+    "sem leitura da receita por linha no dossiê",
+    "deflator não especificado",
+    "mudanças de classificação contábil (Cosif 2025) quebram a série",
+    "54,7% do Pix é dado de imprensa, não primário"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DFP/ITR do BB por linha de serviço",
+     "BCB tarifas por instituição",
+     "dados abertos Pix"
+    ],
+    "descricao": "Deflacionar a receita de conta corrente e transferências por 5 anos; queda real menor que 15% refuta a premissa."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P36",
+   "contrario": "Como maior banco de varejo, o BB pode ser receptor líquido: clientes de outros bancos enviam dados para o BB em consignado e cartão; a razão pode ser maior que 1.",
+   "alternativa": "Mesmo transmitindo mais, o valor estratégico pode ser baixo: consentimentos são revogáveis e o BB já tem dados internos ricos; o fluxo pode não alimentar risco concorrente de forma decisiva.",
+   "riscos_de_dado": [
+    "nenhum dado de consentimentos por instituição no dossiê",
+    "200 milhões de consentimentos é cifra de imprensa",
+    "consentimento ativo ≠ uso efetivo",
+    "dupla contagem de consentimentos renovados"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "painéis públicos Open Finance Brasil",
+     "diretório de participantes"
+    ],
+    "descricao": "Calcular a razão consentimentos recebidos ÷ transmitidos do BB; se próxima de 1 ou maior, a premissa é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Medir a razão de consentimentos recebidos sobre transmitidos do BB no Open Finance; só se for claramente menor que 1 faz sentido falar em transmissor líquido."
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P31",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números conferem com F-031. Teste condicional à abertura por CNAE no IF.data, o que reduz testabilidade. Limiares claros. Decisão nomeada mas genérica."
+  },
+  {
+   "premissa": "P32",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-029"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "37,52→29,01 e recuperação desde 12/2022 conferem com F-029. Separa repasse BNDES de recursos próprios. Fonte pública nomeada. Decisão de 'rever estratégia' é vaga."
+  },
+  {
+   "premissa": "P33",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-027"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "11,78% confere com F-027. Hipótese sem dado atual, mas fonte (ANBIMA) e limiares bem definidos. Separa originação de distribuição. Decisão nomeada."
+  },
+  {
+   "premissa": "P34",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038"
+   ],
+   "sem_apoio": [
+    "5,6% das operações com recebíveis [IFD]",
+    "Rede 18%, Cielo 17%, PagBank 17%, Stone 15%, Mercado Pago 9% [I-28]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fatias de adquirência e 5,6% de recebíveis não estão no dossiê. F-038 cobre depósitos totais, não PJ. Teto aplicado por números sem apoio."
+  },
+  {
+   "premissa": "P35",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "F-004 (não existe no dossiê)",
+    "Pix 54,7% das transações de varejo [I-24]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-004 é citado como fonte de receita de serviços, mas não consta do dossiê. Pix 54,7% sem respaldo. Teto aplicado. Limiares e controle de reclassificação são bons."
+  },
+  {
+   "premissa": "P36",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "200 milhões de consentimentos no sistema em 2026 [I-21]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Dado de 200 milhões não está no dossiê. Teste depende de painel público cuja granularidade por instituição é incerta. Compara com pares, controlando escala."
+  },
+  {
+   "premissa": "P37",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [
+    "Mercado Pago 3,6% do crédito pessoal sem consignação",
+    "R$ 119 bi em contas pré-pagas"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-023 não lista Mercado Pago. R$ 119 bi e 3,6% sem apoio no dossiê. Perímetro constante e limiares claros. Teto aplicado."
+  },
+  {
+   "premissa": "P38",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Prêmios Brasilseg −19% 3T26 [I-27]",
+    "agrícola −32,3% [I-27]",
+    "prestamista −26,9% [I-27]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Nenhum dos três percentuais de prêmio está no dossiê. Método (regressão com controles) é robusto. Fontes públicas nomeadas. Teto aplicado por números sem apoio."
+  },
+  {
+   "premissa": "P39",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Hipótese sem dado atual, declarada [H]. Nenhum número inventado. CVM e ANBIMA são fontes públicas. Separa fundos exclusivos e compara à mediana dos pares."
+  },
+  {
+   "premissa": "P40",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Hipótese sem dado, declarada [H]. Fonte (BCB consórcios) marcada como nova, disponibilidade incerta. Limiares claros. Separa crescimento do mercado da captura do BB."
+  }
+ ]
+}

@@ -657,6 +657,22 @@ class LLMProviderTests(unittest.TestCase):
         self.assertEqual((llm.usage["calls"], llm.usage["failures"], llm.usage["prompt_tokens"]), (2, 1, 110))
         self.assertGreater(llm.usage["cost_usd"], 0.001)
 
+    def test_client_model_list_overrides_env(self):
+        # two clients in one process can use different models (PAW_MODEL is process-wide and races across threads)
+        import os
+        from pawatch import llm as L
+        os.environ["PAW_MODEL"] = "x/Flash"
+        os.environ["HF_TOKEN"], os.environ["DEEPSEEK_API_KEY"] = "hf", "ds"
+        orig = L.price_book
+        L.price_book = lambda *a, **k: self.book()
+        try:
+            pinned = L.LLM(models=["deepseek:deepseek-v4-pro"])
+            default = L.LLM()
+            self.assertEqual([r for r, _ in pinned.plan(1000, 100)], ["deepseek:deepseek-v4-pro"])
+            self.assertTrue(all(r.startswith(("x/Flash", "deepseek:deepseek-flash")) for r, _ in default.plan(1000, 100)))
+        finally:
+            L.price_book = orig
+
 
 class PipelineTraceTests(unittest.TestCase):
     def test_protobuf_matches_the_js_encoder(self):

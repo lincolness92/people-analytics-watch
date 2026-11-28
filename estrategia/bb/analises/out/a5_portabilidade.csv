@@ -1,0 +1,11 @@
+janela,pos_portabilidade,delta_bb_nao_consignado_pp,delta_bb_cartao_pp,diferenca_pp,cruza_202412
+12/2016-06/2017,False,0.08,-0.3,0.38,False
+12/2017-06/2018,False,-1.21,-0.55,-0.66,False
+12/2018-06/2019,False,0.67,-0.84,1.51,False
+12/2019-06/2020,False,0.87,-0.7,1.57,False
+12/2020-06/2021,False,-0.99,-0.44,-0.54,False
+12/2021-06/2022,False,-0.52,-0.79,0.27,False
+12/2022-06/2023,False,0.62,-0.41,1.03,False
+12/2023-06/2024,False,-1.04,-0.74,-0.3,False
+12/2024-06/2025,False,-2.1,0.08,-2.18,True
+12/2025-06/2026,True,0.36,-0.41,0.77,False

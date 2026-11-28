@@ -1,0 +1,183 @@
+{
+ "criticas": [
+  {
+   "premissa": "P37",
+   "contrario": "O crédito via adquirente é de tíquete baixo e prazo curto; o lojista prefere manter relacionamento bancário para capital de giro maior. A retenção de saldo pode ser regulatória, não estratégica.",
+   "alternativa": "O crescimento do crédito PJ em fintechs pode refletir migração de cadastro (perímetro prudencial 1009, F-020) e não conquista real de cliente do BB.",
+   "riscos_de_dado": [
+    "O valor de R$ 119 bi em contas pré-pagas do Mercado Pago não está no dossiê; não pode ser usado como fato.",
+    "A participação de 3,6% em crédito pessoal sem consignação não aparece no dossiê; F-023 lista Nubank, XP, BV, PicPay, mas não Mercado Pago nesse segmento.",
+    "Quebra de perímetro em 03/2025 (conglomerado 1005→1009) pode inflar crescimento de fintechs (F-020, F-023)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), série de crédito PJ por conglomerado prudencial",
+     "Demonstrações CVM de adquirentes listadas"
+    ],
+    "descricao": "Verificar se o crédito PJ de adquirentes/marketplaces cresce >20% a/a por 3 anos após controlar a quebra de perímetro de 03/2025."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Adquirentes e marketplaces expandem crédito ao pequeno lojista via fluxo de vendas. Confirmar com IF.data (crédito PJ por conglomerado prudencial, pós-quebra 03/2025) e demonstrações CVM das adquirentes listadas. O valor de R$ 119 bi citado não consta do dossiê e deve ser verificado na fonte primária."
+  },
+  {
+   "premissa": "P39",
+   "contrario": "A BB Asset pode estar ganhando captação em fundos de varejo de baixa taxa justamente porque o cliente migra para renda fixa em ciclo de juro alto; a concentração seria racional, não fraqueza.",
+   "alternativa": "A perda de investidor de alta renda pode ser efeito de plataforma aberta (resolução CVM 175) e não de deficiência da BB Asset. Todos os bancos de varejo perdem para plataformas.",
+   "riscos_de_dado": [
+    "Nenhum fato do dossiê sustenta a afirmação sobre liderança em patrimônio, concentração em renda fixa ou perda para plataformas.",
+    "A referência '[H]; fontes conflitantes [I-29]' indica que a premissa é hipótese não testada.",
+    "Dados CVM/ANBIMA de captação líquida por gestor não estão no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM, dados abertos de fundos (patrimônio, captação líquida, taxa por gestor e classe)",
+     "Ranking ANBIMA de gestão"
+    ],
+    "descricao": "Comparar captação líquida da BB Asset em fundos de varejo de maior taxa versus pares, 2022–2026. Se positiva por 3 anos, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Hipótese não testada: a BB Asset pode perder o investidor de alta renda para plataformas. Nenhum dado do dossiê confirma ou refuta. Exige série CVM/ANBIMA de captação líquida por gestor e classe (2019–2026) antes de qualquer conclusão."
+  },
+  {
+   "premissa": "P40",
+   "contrario": "Com Selic elevada, o consórcio perde atratividade frente ao financiamento subsidiado (Pronamp, Moderfrota) que tem taxa abaixo do mercado. O produtor prefere juro baixo a taxa de administração.",
+   "alternativa": "O crescimento do consórcio pode ser cíclico e refletir restrição de crédito (F-008: carteira agro projetada em −3% a −1%), não preferência estrutural do cliente.",
+   "riscos_de_dado": [
+    "Nenhum fato do dossiê contém dados de consórcio por administradora ou segmento.",
+    "F-029 mostra queda de participação do BB em PJ investimento (37,52%→29,01%), mas não distingue consórcio de financiamento.",
+    "A referência '[H]' indica hipótese sem evidência no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, dados de consórcios por administradora e segmento",
+     "Anfavea (vendas de máquinas)"
+    ],
+    "descricao": "Verificar se cotas ativas de consórcio de máquinas crescem mais que crédito de investimento rural por 2 anos consecutivos e se a BB Consórcios ganha participação."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Hipótese: consórcio de máquinas cresce mais que financiamento em ciclo de juro alto. Não há dados no dossiê para confirmar. F-029 mostra perda de participação do BB em PJ investimento, mas sem separar consórcio. Exige série BCB de consórcios por administradora."
+  },
+  {
+   "premissa": "P42",
+   "contrario": "O BB pode ter inadimplência maior no rural justamente porque atende o pequeno produtor (Pronaf) que o sistema não atende; a vantagem de dados não elimina risco de renda e clima.",
+   "alternativa": "A diferença de inadimplência pode ser efeito de mix (mais parcela única, mais Norte/Nordeste) e não de falha de modelo. O consignado (F-022) mostra BB melhor, o que sugere que o modelo funciona quando o dado é estruturado.",
+   "riscos_de_dado": [
+    "Os números citados no 'hoje' (BB 6,2% vs sistema 5,6% rural; BB 0,5% vs 1,4% consignado) não batem com o dossiê. F-006 mostra BB agro em 6,92% (set/26). F-012 mostra sistema rural PF em 9,59% (out/26). A comparação está inconsistente.",
+    "Definição de 'rural' varia: F-006 é agronegócio (carteira de R$ 403,6 bi); F-012 é crédito rural PF (SGS 21148). Não são o mesmo perímetro.",
+    "A quebra Cosif em 03/2025 (F-020) afeta comparabilidade temporal."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), inadimplência por modalidade e instituição",
+     "SGS 21148 e 21146 (BCB)",
+     "Apresentação de resultados BB (CVM IPE)"
+    ],
+    "descricao": "Construir painel 2014–2026: inadimplência do BB menos a esperada pelo mix (região, modalidade, porte). Se o resíduo for negativo e significativo, o BB seleciona melhor e a premissa se refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Com mais histórico no rural e no setor público, o BB deveria ter inadimplência ajustada ao mix menor que a do sistema. Os números citados (6,2% vs 5,6%) não coincidem com o dossiê (F-006: 6,92%; F-012: 9,59%). É preciso alinhar perímetro (agronegócio vs crédito rural PF) antes de testar. No consignado, o BB parece melhor; no rural, a comparação está mal definida."
+  },
+  {
+   "premissa": "P43",
+   "contrario": "Ganhos de eficiência podem vir de corte de agências e pessoal, não de IA. A correlação entre divulgação de IA e melhora de eficiência pode ser espúria: bancos maiores investem mais em ambos.",
+   "alternativa": "A melhora de eficiência observada (F-009: Itaú 37,5%; F-010: Santander 38,8%) pode refletir escala e digitalização iniciada antes da IA generativa, não o uso de IA em si.",
+   "riscos_de_dado": [
+    "Nenhum fato do dossiê contém dados sobre investimento em IA ou ganho de eficiência atribuído a IA.",
+    "A referência '[H]' e 'testabilidade baixa' indicam que a premissa é especulativa.",
+    "Divulgação de IA é voluntária e desigual; não há série padronizada.",
+    "O índice de eficiência do BB não está no dossiê para comparação."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pesquisa FEBRABAN de Tecnologia Bancária",
+     "IF.data (índice de eficiência por instituição)",
+     "Releases CVM IPE dos bancos"
+    ],
+    "descricao": "Regressão painel: variação do índice de eficiência (IF.data) contra gasto em tecnologia (FEBRABAN) com defasagem de 2 anos, controlando por tamanho e corte de agências. Se coeficiente não significativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P45",
+   "contrario": "O BB pode defender participação via redução de payout (hoje no mínimo de 25%), emissão de dívida subordinada ou securitização de carteira agro, sem cortar crédito. Capital não é restrição binária.",
+   "alternativa": "A queda do CET1 (F-007: 11,16%→10,80%; F-016: série) pode ser transitória, ligada ao pico de provisão (F-003: R$ 58,6 bi 9M26). Se a provisão se estabilizar, o capital se recupera sem corte de mercado.",
+   "riscos_de_dado": [
+    "O payout de 25% é citado como '[I-01], [I-03]', referências que não estão no dossiê.",
+    "O mínimo regulatório com adicionais (buffer) não está no dossiê; o limiar de 1,5 p.p. é escolhido sem base visível.",
+    "F-016 e F-017 mostram a série, mas a projeção para 2027 exige premissas de RWA que não estão no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DASFN/BCB (KM1, OV1, tabelas CR do BB, trimestral)",
+     "Resoluções CMN/BCB sobre adicionais de capital",
+     "Fato relevante BB (CVM IPE) com projeções de RWA"
+    ],
+    "descricao": "Simular CET1 projetado para 2027 sob cenário base de crescimento de carteira (F-008: −2% a 0%) e custo de crédito (R$ 80–83 bi). Se folga sobre mínimo + buffer for >2,5 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P46",
+   "contrario": "O aumento da provisão pode ser inteiramente econômico: a inadimplência rural subiu de 4,84% para 6,92% (F-006) e a do sistema de 0,80% para 9,59% (F-012). A regra de perda esperada apenas antecipou o reconhecimento.",
+   "alternativa": "A quebra de série Cosif em 03/2025 (F-020, ressalvas) pode explicar parte da variação por reclassificação contábil, sem relação com a regra de perda esperada nem com deterioração real.",
+   "riscos_de_dado": [
+    "A referência '[H]' indica hipótese não testada.",
+    "A quebra de perímetro (conglomerado 1005→prudencial 1009) em 03/2025 (F-020) impede comparação antes/depois sem ajuste.",
+    "As contas novas de provisão por estágio (Cosif 2025) não estão no dossiê.",
+    "O custo do crédito de R$ 58,6 bi (F-003) e a projeção de R$ 80–83 bi (F-008) não separam efeito contábil de econômico."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Balancetes Cosif (contas de provisão por estágio, IF.data)",
+     "DFP do BB (notas explicativas, CVM IPE)",
+     "IF.data de pares com menos crédito de parcela única"
+    ],
+    "descricao": "Comparar a razão provisão/vencidos do BB contra pares (Itaú F-009, Santander F-010) antes e depois de 03/2025. Se a proporção do BB subir mais que a dos pares, o efeito contábil é plausível. Se for igual, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P48",
+   "contrario": "A inadimplência rural pode responder mais a preço de commodity e clima (seca, El Niño) do que a Selic. O produtor toma crédito subsidiado (Pronaf, Pronamp) cuja taxa não acompanha a Selic integralmente.",
+   "alternativa": "O salto de inadimplência (F-012: 0,80%→9,59% em 4 anos) pode refletir o fim da moratória e renegociações pós-pandemia, não um fator macro único. A série pode ter quebra estrutural.",
+   "riscos_de_dado": [
+    "A Selic de 13,75% é citada como '[FE]', fora do dossiê.",
+    "Nenhum fato do dossiê contém série de preços agrícolas (CEPEA), clima (CHIRPS) ou custos (CONAB).",
+    "F-012 mostra a tendência de inadimplência, mas não decompõe por fator causal.",
+    "A referência '[H]' indica hipótese não testada.",
+    "O painel UF × mês citado não está no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS 432 (Selic, BCB)",
+     "SGS 21148 e 21146 (inadimplência rural, BCB)",
+     "CEPEA (preços agrícolas)",
+     "CHIRPS/INMET (clima)",
+     "CONAB (custos de produção)"
+    ],
+    "descricao": "Decomposição de variância em painel UF × mês (2019–2026): regressão da inadimplência rural contra Selic, índice de preço CEPEA e indicador de seca. Se preço/clima explicam mais variância que Selic, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Hipótese não testada: a inadimplência rural responde mais a Selic do que a preço e clima. O dossiê mostra a tendência (F-012: 0,80%→9,59%), mas não contém séries de preço, clima ou Selic para decomposição. Exige painel UF × mês com SGS 21148/21146, SGS 432, CEPEA e CHIRPS antes de qualquer conclusão."
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "replicas": [
+  {
+   "premissa": "C4-N01",
+   "resposta": "aceita",
+   "argumento": "As duas críticas procedem. O benchmark contém o próprio BB, o perímetro difere (agro total vs rural PF), as datas não coincidem e o mix de fontes de recursos não é controlado. Com só dois pontos no dossiê, não há série trimestral. Reformulo para exigir mesmo perímetro, mesma data e sistema excluindo BB.",
+   "enunciado_novo": "Na mesma data e no mesmo perímetro (rural PF, por fonte de recursos), a inadimplência +90d do BB é inferior à do sistema excluindo o BB, por três trimestres consecutivos.",
+   "confirma_se_novo": "Inadimplência BB rural PF ≤ 80% da inadimplência do sistema rural PF sem BB, separadamente para crédito controlado e de mercado, em 3 trimestres seguidos na mesma data.",
+   "refuta_se_novo": "Inadimplência BB rural PF > 100% da inadimplência do sistema sem BB em qualquer trimestre, ou a diferença desaparece ao controlar por fonte de recursos."
+  },
+  {
+   "premissa": "C4-N02",
+   "resposta": "aceita",
+   "argumento": "As críticas são corretas. A soma dos ganhos excede a perda do BB, então atribuir 'para quem' é arbitrário sem categorias fixadas antes. Itaú ganhou em PJ rural. A quebra Cosif 2025 e a mistura PF+PJ comprometem a leitura. Reformulo com categorias pré-definidas e separação PF/PJ.",
+   "enunciado_novo": "Com categorias institucionais fixadas antes do cálculo (pública, cooperativa, privada, desenvolvimento) e separado PF de PJ, mais de 70% dos ganhos líquidos de participação no crédito rural entre dez/2019 e jun/2026 ficaram com cooperativas e bancos públicos.",
+   "confirma_se_novo": "Ganhos líquidos de cooperativas e bancos públicos ≥ 70% do total, em PF e PJ separadamente, com categorias definidas antes da consulta ao IF.data.",
+   "refuta_se_novo": "Bancos privados somam ≥ 50% dos ganhos líquidos em PF ou PJ, ou a quebra Cosif 03/2025 explica mais da metade da variação observada."
+  },
+  {
+   "premissa": "C4-N03",
+   "resposta": "aceita",
+   "argumento": "A primeira crítica é decisiva: a participação subiu de 13,66% para 14,01% entre dez/25 e jun/26, e a perda anual foi ~0,9 pp, abaixo do gatilho de 1 pp. O próprio critério de refutação já foi acionado. 'Irreversível' não é testável em janela finita. Reformulo para observar persistência da recuperação.",
+   "enunciado_novo": "A perda de participação em crédito pessoal sem consignação foi acentuada entre 2022 e 2025, mas estabilizou entre dez/25 e jun/26. A continuidade da recuperação precisa ser confirmada antes de qualquer decisão de saída.",
+   "confirma_se_novo": "Participação BB em sem consignação se mantém ≥ 14,0% em dez/2026 e jun/2027, sem alta da inadimplência da linha no ITR.",
+   "refuta_se_novo": "Participação volta a cair abaixo de 13,5% em dez/2026, ou a recuperação de jun/26 se revela efeito de perímetro Cosif 2025."
+  },
+  {
+   "premissa": "C4-N04",
+   "resposta": "aceita_em_parte",
+   "argumento": "O ganho de participação é fato no dossiê, mas as críticas acertam ao apontar a quebra de perímetro em 03/2025, o efeito cambial e a queda recente de 0,79 pp. Atribuir 'vantagem estrutural' e correlação com agro exige mais evidência. Aceito o crescimento, contesto a causalidade estrutural.",
+   "enunciado_novo": "O crescimento da participação em PJ comércio exterior é relevante, mas precisa ser isolado da quebra de perímetro de 03/2025 e do efeito cambial antes de ser atribuído a vantagem estrutural. A ligação com a carteira agro ainda não está demonstrada.",
+   "confirma_se_novo": "Após ajuste de perímetro e câmbio, share cresce ≥ 0,5 pp/ano por 3 semestres; e exportações agro por estado (Comex Stat) correlacionam com a carteira de comércio exterior do BB.",
+   "refuta_se_novo": "O salto de share se concentra entre 12/2024 e 03/2025 (efeito perímetro), ou share cai por 2 semestres seguidos após ajuste cambial."
+  },
+  {
+   "premissa": "C4-N05",
+   "resposta": "aceita",
+   "argumento": "As críticas procedem. Participação não é volume; o sistema cresceu e o BB pode ter estoque estável. A poupança está perto de 20,6%. Com carteira agro em queda, a necessidade de funding diminui. Não há dado no dossiê de que LCA seja a principal fonte rural. Reformulo para focar em saldo absoluto e custo.",
+   "enunciado_novo": "É preciso testar se o saldo de LCA do BB em R$ e seu custo relativo ao CDI estão caindo em relação à carteira rural que exige lastro, antes de concluir que o funding agro está ameaçado.",
+   "confirma_se_novo": "Saldo LCA BB em R$ cai ≥ 10% em 12 meses enquanto carteira rural livre cresce, e custo da LCA sobre CDI sobe ≥ 0,5 pp, segundo ITR.",
+   "refuta_se_novo": "Saldo LCA BB em R$ está estável ou cresce, ou a razão LCA/carteira rural se mantém, ou BB compensa com CDA e debêntures agro."
+  },
+  {
+   "premissa": "C4-N06",
+   "resposta": "aceita_em_parte",
+   "argumento": "O crescimento de 4,6% a/a é fato no dossiê. Mas a crítica acerta: R$ 9,3 bi contra R$ 21,2 bi de custo do crédito mostra limite claro. Inflação não está no dossiê. Share em tarifas está estável, não cresce. 'Compensar parcialmente' é quase trivial. Reformulo para medir cobertura em R$.",
+   "enunciado_novo": "Receitas de serviços cresceram 4,6% a/a no 3T26, mas a participação no sistema está estável. A capacidade de compensar a compressão de margem é limitada e precisa ser medida em R$ contra a queda da margem financeira bruta.",
+   "confirma_se_novo": "Em 12 meses até 3T27, ganho em R$ de serviços ≥ 30% da queda em R$ da margem financeira bruta, e crescimento ≥ IPCA (série pública SGS).",
+   "refuta_se_novo": "Crescimento de serviços < IPCA, ou ganho em R$ cobre < 10% da queda de margem, ou share no sistema cai abaixo de 14%."
+  },
+  {
+   "premissa": "C4-N07",
+   "resposta": "aceita",
+   "argumento": "As críticas procedem. A série é volátil (12,01; 10,89; 12,23; 10,80), não mostra trajetória linear de queda. O mínimo regulatório com colchões não está no dossiê. O confirma_se original contradizia o enunciado. Reformulo para focar na folga sobre requerimento total, não em 'trajetória'.",
+   "enunciado_novo": "O CET1 do BB oscilou entre 10,80% e 12,23% de 2023 a set/26. É preciso medir a folga sobre o requerimento total com colchões (Pilar 3 KM1) para avaliar se há restrição real a crescimento e dividendos.",
+   "confirma_se_novo": "Folga do CET1 sobre requerimento total com colchões cai por 2 trimestres seguidos no KM1, atingindo menos de 1,5 pp.",
+   "refuta_se_novo": "Folga se mantém ≥ 2 pp por 2 trimestres, ou CET1 volta acima de 11,5% com retenção de lucros e queda de RWA."
+  },
+  {
+   "premissa": "C4-N08",
+   "resposta": "aceita",
+   "argumento": "As críticas são corretas. Receita e custo por município não são públicos. ESTBAN dá saldos, não resultado. O grupo de controle tem viés de seleção. A exclusividade pode ser obrigação social. Reformulo para usar o que é mensurável: saldo por agência via ESTBAN, pareado por porte via IBGE.",
+   "enunciado_novo": "Nos 577 municípios onde é o único banco com agência, o BB tem saldo de crédito mais depósitos por agência (ESTBAN) igual ou superior ao de municípios de mesmo porte e PIB (IBGE) com concorrência, indicando uso relevante da presença.",
+   "confirma_se_novo": "Saldo por agência nos 577 municípios ≥ mediana de municípios pareados por população e PIB com 2+ bancos, em 2 anos seguidos.",
+   "refuta_se_novo": "Saldo por agência nos exclusivos < 70% da mediana dos pareados, ou a diferença se explica por contas de prefeitura e folha."
+  },
+  {
+   "premissa": "C4-N09",
+   "resposta": "aceita",
+   "argumento": "As críticas procedem. A exigibilidade vale para todas as instituições, não é fosso exclusivo do BB. O BB perdeu share com a regra vigente. O enunciado era composto. Reformulo separando: (a) manutenção da norma e (b) dinâmica de participação independente da norma.",
+   "enunciado_novo": "(a) A exigibilidade de crédito rural se mantém sem redução normativa até 2027. (b) Mesmo com a exigibilidade vigente, a participação do BB no rural segue em queda, indicando que a regra não impede perda de share para cooperativas e Caixa.",
+   "confirma_se_novo": "(a) Nenhuma norma CMN reduz exigibilidade até 2027. (b) Share BB rural cai abaixo de 47% em jun/2027 mesmo sem mudança normativa.",
+   "refuta_se_novo": "(a) Norma CMN reduz exigibilidade ou amplia rol de instituições. (b) Share BB estabiliza ≥ 49% por 2 semestres, indicando que a regra ainda protege."
+  },
+  {
+   "premissa": "C4-N10",
+   "resposta": "aceita_em_parte",
+   "argumento": "A lógica de pico e recuperação faz sentido, mas as críticas acertam: a SGS 21148 contém o BB (metade do rural PF), o custo do crédito inclui segmentos fora do agro, e Cosif 2025 muda a temporalidade da provisão. O ciclo 2015-2017 não está no dossiê. Reformulo para isolar agro e remover circularidade.",
+   "enunciado_novo": "O custo do crédito agro do BB começa a cair em até dois trimestres após o pico da inadimplência rural PF do sistema excluindo o BB, medido por segmento no ITR. O pico ainda não está estabelecido.",
+   "confirma_se_novo": "Inadimplência rural PF do sistema sem BB cai ≥ 1 pp por 2 trimestres, e custo do crédito agro BB recua no trimestre seguinte, ambos por segmento no ITR.",
+   "refuta_se_novo": "Inadimplência rural PF sem BB sobe acima de 12%, ou custo do crédito agro BB segue alto por 3 trimestres após queda da inadimplência, ou custo total 2026 > R$ 83 bi."
+  }
+ ]
+}

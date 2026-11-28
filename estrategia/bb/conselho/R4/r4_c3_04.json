@@ -1,0 +1,175 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P41",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Hipótese sem números factuais; fontes públicas operacionalizam comparação, mas não controla perfil de cliente."
+  },
+  {
+   "premissa": "P42",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Rural BB 6,2% contra 5,6% do sistema",
+    "Consignado BB 0,5% contra 1,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Painel detalhado com limiares, mas números de 'hoje' não constam no dossiê; P02 indefinido. Aplicado teto."
+  },
+  {
+   "premissa": "P43",
+   "notas": {
+    "testavel": 0,
+    "refutavel": 0,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Reconhece falta de série pública e usa divulgação desigual; sem limiares numéricos nem decisão clara."
+  },
+  {
+   "premissa": "P44",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 0,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Condicional a pesquisa inexistente; suspensa e sem orientação atual; limiares futuros não resgatam testabilidade hoje."
+  },
+  {
+   "premissa": "P45",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-008"
+   ],
+   "sem_apoio": [
+    "payout mínimo de 25% (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fonte e simulação claras; payout mínimo 25% sem apoio no dossiê. Aplicado teto."
+  },
+  {
+   "premissa": "P46",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Verifica números F-006 e testa efeito contábil com pares; bem desenhado."
+  },
+  {
+   "premissa": "P47",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-006"
+   ],
+   "sem_apoio": [
+    "patrimônio de R$ 181,8 bi e razão 2,2 vezes (não no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Usa 403,6 bi do F-006, mas patrimônio 181,8 bi e razão 2,2 não estão no dossiê. Teto aplicado."
+  },
+  {
+   "premissa": "P48",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "Selic em 13,75% (não no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Selic 13,75% sem base no dossiê; restante do desenho é testável com fontes públicas."
+  },
+  {
+   "premissa": "P49",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Pergunta de monitoramento com fontes e limiares claros; sem números factuais a conferir."
+  },
+  {
+   "premissa": "P50",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Rabobank 1,9%→0,3% do rural PF",
+    "John Deere perto de 1,8% até 12/2024"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Dados de Rabobank e John Deere não estão no dossiê; IF.data e CVM permitem teste. Teto aplicado."
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "replicas": [
+  {
+   "premissa": "C5-N01",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que o benchmark contém o próprio BB e que os perímetros diferem (BB agro PF+PJ contra sistema só PF). Isso inválida a comparação direta. Reformulo alinhando perímetro, data e excluindo o BB do sistema, por fonte de recursos.",
+   "enunciado_novo": "Na mesma data e por fonte de recursos, a inadimplência +90d do crédito rural PF do BB fica abaixo da do sistema excluindo o BB, medida via SICOR e ITR.",
+   "confirma_se_novo": "Inadimplência do BB PF rural abaixo ou igual à do sistema sem BB, por fonte de recursos, na mesma data",
+   "refuta_se_novo": "Inadimplência do BB PF rural superar a do sistema sem BB em mais de 1 p.p. na mesma data e fonte"
+  },
+  {
+   "premissa": "C5-N02",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que o dossiê não tem a abertura do BB por faixa de taxa e que o enunciado é composto. Divido em duas partes testáveis: concentração da inadimplência na parcela de mercado e efeito do corte sobre o direcionado.",
+   "enunciado_novo": "(a) No BB, a inadimplência da parcela a taxa de mercado é pelo menos o dobro da direcionada (ITR/SICOR). (b) Onde o BB reduz a parcela de mercado, sua participação no crédito direcionado do município não cai (SICOR).",
+   "confirma_se_novo": "(a) razão de inadimplência mercado/direcionado ≥ 2 no BB; (b) participação no direcionado estável onde houve corte",
+   "refuta_se_novo": "(a) inadimplências similares nas duas parcelas; (b) queda do direcionado do BB frente a cooperativas onde houve corte"
+  },
+  {
+   "premissa": "C5-N03",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que nas linhas equalizadas a taxa é fixa e que o próprio guidance do BB indica retração declarada. A perda de participação por si só não identifica causa. Restrinjo a premissa às linhas de taxa livre, comparando dentro do mesmo programa.",
+   "enunciado_novo": "Nas linhas rurais com taxa livre, a taxa do BB fica acima da dos ganhadores de participação no mesmo programa (SICOR), e é nessas linhas, não nas equalizadas, que o BB perde participação.",
+   "confirma_se_novo": "Taxa do BB acima dos ganhadores em linhas livres e perda de participação concentrada nessas linhas",
+   "refuta_se_novo": "Taxas alinhadas nas linhas livres com perda mesmo assim, ou perda concentrada nas linhas equalizadas"
+  },
+  {
+   "premissa": "C5-N05",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que margem por contrato não é pública, que estoque esconde fluxo e que a portabilidade corrói a vantagem de folha. Reformulo medindo o fluxo novo e a taxa média do BB contra o sistema, por tipo de consignado.",
+   "enunciado_novo": "A participação do BB no consignado cai menos que em outros segmentos de PF, mas a defesa só se confirma se a participação no fluxo novo não for menor que a do estoque e a taxa média do BB não cair mais que a do sistema.",
+   "confirma_se_novo": "Participação em originação nova próxima da do estoque e taxa média do BB alinhada ao sistema",
+   "refuta_se_novo": "Participação no fluxo novo menor que no estoque ou taxa do BB caindo mais que o sistema"
+  },
+  {
+   "premissa": "C5-N07",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que o ganho atravessa a quebra de perímetro de 03/2025, que concorrentes também cresceram e que não há inadimplência de comex no dossiê. Reformulo isolando perímetro, câmbio e a fatia ligada ao agro exportador.",
+   "enunciado_novo": "Isolada a quebra de perímetro de 03/2025 e o efeito câmbio, a participação do BB em comex cresceu, e a exposição de comex a exportadores do agro é medida antes de acelerar o segmento.",
+   "confirma_se_novo": "Crescimento de participação após ajuste de perímetro e câmbio, com inadimplência de comex abaixo da média PJ",
+   "refuta_se_novo": "Ganho explicado por perímetro/câmbio, elasticidade ≈1 com fluxo de exportações, ou risco concentrado no agro"
+  },
+  {
+   "premissa": "C5-N08",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que correlação temporal não separa Selic, mix e inadimplência, e que a margem de 2026 caiu também por juros de créditos em atraso. Reformulo medindo diretamente o custo de captação sobre o CDI e a abertura da margem no ITR.",
+   "enunciado_novo": "Entre 2024 e 2026, o custo de captação do BB como proporção do CDI sobe, e a substituição de LCA por fontes mais caras explica parte relevante disso, segundo a abertura do ITR.",
+   "confirma_se_novo": "Custo de captação/CDI em alta com participação de fontes mais caras crescendo na composição",
+   "refuta_se_novo": "Custo de captação/CDI estável; margem caindo por receita de crédito, não por despesa de captação"
+  },
+  {
+   "premissa": "C5-N09",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que depósito à vista é fatia pequena do funding e que o compulsório reduz seu ganho. A premissa só se sustenta se a vantagem de custo de captação do BB contra o sistema de fato diminuir. Reformulo nesse sentido.",
+   "enunciado_novo": "A vantagem do BB em custo de captação (despesa de captação sobre captações, IF.data) contra a média do sistema diminui entre 2019 e 2026, e a perda de depósitos à vista explica parte dessa redução.",
+   "confirma_se_novo": "Diferença de custo de captação BB versus sistema encolhendo no período",
+   "refuta_se_novo": "Vantagem de custo de captação do BB estável apesar da perda de participação em à vista"
+  },
+  {
+   "premissa": "C5-N10",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que depósitos per capita não provam rentabilidade e que ESTBAN não vê cooperativas. Reformulo medindo saldo por agência, excluindo municípios com cooperativa, e reconhecendo que rentabilidade exige custos por agência, não públicos.",
+   "enunciado_novo": "Nos municípios onde o BB é a única instituição (incluindo cooperativas no levantamento), o saldo de crédito mais depósitos por agência é igual ou maior que em municípios pareados com concorrência.",
+   "confirma_se_novo": "Saldo por agência nos municípios exclusivos igual ou maior que nos pareados",
+   "refuta_se_novo": "Saldo por agência menor e em queda por três anos nos municípios exclusivos"
+  },
+  {
+   "premissa": "C5-N11",
+   "resposta": "contesta",
+   "argumento": "As críticas não refutam a premissa; reforçam o teste já proposto. O teste em número absoluto de agências, somando postos, é barato e direto, e decide se o BB fechou menos que os pares ou abriu agências. Mantenho o enunciado e o teste.",
+   "enunciado_novo": null,
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C5-N12",
+   "resposta": "aceita_em_parte",
+   "argumento": "Aceito que o enunciado é composto, que a participação está estável desde 2022 e que IPCA não está no dossiê. Divido em três partes testáveis: crescimento real, participação e capacidade de compensar a margem em R$.",
+   "enunciado_novo": "(a) A receita de serviços do BB cresce abaixo do IPCA em 12 meses até set/2027. (b) A participação do BB em rendas de tarifas cai abaixo de 15,4% em 2027. (c) O ganho em R$ de serviços cobre menos da metade da queda da margem financeira.",
+   "confirma_se_novo": "As três condições (a), (b) e (c) verificadas com ITR, SGS IPCA e IF.data",
+   "refuta_se_novo": "Serviços crescendo acima do IPCA ou ganho em R$ cobrindo mais da metade da queda da margem"
+  }
+ ]
+}

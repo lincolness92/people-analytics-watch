@@ -1,0 +1,183 @@
+{
+ "criticas": [
+  {
+   "premissa": "P49",
+   "contrario": "O dossiê mostra Sicredi e Sicoob ganhando participação em quase todos os segmentos (F-020 a F-042). Se a vantagem fosse só regulatória e temporária, a erosão já deveria aparecer. Não aparece.",
+   "alternativa": "A vantagem das cooperativas pode ser estrutural (governança, vínculo local, custo de agência), não regulatória. Normas novas teriam efeito marginal sobre esse modelo.",
+   "riscos_de_dado": [
+    "O boletim MAPA citado não está no dossiê; não há normativo aprovado documentado.",
+    "Quebra de perímetro em 03/2025 (conglomerado→prudencial) pode distorcer séries de cooperativas.",
+    "Não há série de custo de captação das cooperativas no dossiê para medir vantagem."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB IF.data (custo de captação por conglomerado)",
+     "Repositório de normativos BCB/CMN",
+     "Câmara e Senado (proposições tributárias sobre cooperativas)"
+    ],
+    "descricao": "Listar normativos aprovados desde 2024 que alterem exigibilidade ou tributação de cooperativas; medir variação do spread de captação delas vs. bancos comerciais no IF.data."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Há normativos aprovados ou em tramitação que elevam mensuravelmente o custo de captação ou a exigibilidade das cooperativas nos próximos 3 anos? Sem evidência de norma concreta, tratar como hipótese não testada."
+  },
+  {
+   "premissa": "P51",
+   "contrario": "O número citado (Agrolend R$ 968 mi) não está no dossiê. Sem ele, a premissa é especulação. Além disso, originar para fundos não implica crescimento sustentável; fundos podem internalizar a originação.",
+   "alternativa": "Agfintechs podem ser adquiridas por bancos maiores ou fundos antes de escalar como canal independente. O crescimento pode ser por M&A, não orgânico.",
+   "riscos_de_dado": [
+    "O valor de R$ 968 mi não consta de nenhum fato do dossiê; fonte não verificável aqui.",
+    "Meta de R$ 2 bi é declaração da empresa, não dado público auditado.",
+    "CVM não publica volume originado por empresa específica em Fiagro de forma padronizada."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM (registro de Fiagro e FIDC, informes mensais)",
+     "IF.data (carteira por instituição não bancária)",
+     "Releases e fatos relevantes das agfintechs na CVM"
+    ],
+    "descricao": "Verificar no IF.data se a carteira das agfintechs registradas supera 0,1% do sistema. Consultar informes CVM de Fiagro para identificar originadores recorrentes."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Agfintechs originam volume crescente para veículos de mercado de capitais (Fiagro, FIDC)? Confirmar com IF.data e CVM antes de usar qualquer número de release. Sem dado no dossiê, tratar como hipótese."
+  },
+  {
+   "premissa": "P52",
+   "contrario": "O dossiê contradiz diretamente. Nubank ganhou +3,27 p.p. em crédito PF total (F-020), +14,88 p.p. em crédito pessoal (F-023), +12,15 p.p. em cartão (F-024) e +11,6 p.p. em clientes com crédito (F-049). Isso é crédito relevante.",
+   "alternativa": "A premissa talvez se refira a plataformas de pagamento puras (não Nubank). Mas o enunciado diz 'grandes plataformas' sem definir quais. Mercado Pago já é exceção reconhecida.",
+   "riscos_de_dado": [
+    "O enunciado não define 'grandes plataformas'; Nubank é banco ou plataforma?",
+    "F-049 mostra Nubank com 16,22% dos clientes com crédito do sistema em jun/26.",
+    "A quebra de perímetro em 03/2025 pode afetar a classificação de algumas instituições."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB IF.data (carteira de crédito por instituição)",
+     "BCB Unicad (licenças e autorizações)",
+     "Pix (estatísticas de transações por iniciador)"
+    ],
+    "descricao": "Listar instituições com licença de IP ou SCD cuja carteira de crédito supere 0,5% do sistema no IF.data. Verificar se alguma obteve licença bancária plena."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Plataformas de pagamento sem licença bancária plena (excluindo Nubank e Mercado Pago, já tratados) mantêm carteira de crédito abaixo de 0,5% do sistema? Definir escopo explicitamente. O dossiê já refuta a versão ampla."
+  },
+  {
+   "premissa": "P54",
+   "contrario": "O BB é o maior operador de consignado (19,22% do sistema, F-022). Se a restrição ao saque-aniversário migrar demanda para consignado ou crédito pessoal, o BB pode ser afetado indiretamente por repricing.",
+   "alternativa": "A restrição pode não tocar o BB diretamente, mas pode alterar o mix de crédito PF, deslocando tomadores para linhas com inadimplência diferente. O efeito seria indireto.",
+   "riscos_de_dado": [
+    "O dossiê não contém nenhum dado sobre saque-aniversário ou carteira do BB nessa linha.",
+    "O campo 'hoje' admite conflito de datas entre veículos, indicando incerteza regulatória.",
+    "IF.data não segrega saque-aniversário como modalidade própria; está dentro de crédito pessoal."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (crédito pessoal por instituição e modalidade)",
+     "Resoluções do Conselho Curador do FGTS",
+     "BB: Apresentação de Resultados (abertura de carteira PF)"
+    ],
+    "descricao": "Verificar na apresentação do BB se há abertura de carteira de antecipação FGTS. No IF.data, checar se alguma instituição concentra essa linha. Consultar resoluções FGTS vigentes."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "A carteira do BB em antecipação de saque-aniversário é material (>1% do crédito PF)? Sem dado no dossiê, classificar como hipótese de baixa prioridade até verificar abertura na apresentação de resultados."
+  },
+  {
+   "premissa": "P55",
+   "contrario": "O desconto P/VP pode refletir simplesmente ROE menor. F-009 mostra Itaú com ROE de 23,6%; F-010 mostra Santander com 11,9%. O BB com lucro de R$ 1,3 bi no 3T26 (F-001) tem ROE comprimido. O desconto acompanha fundamentals, não política.",
+   "alternativa": "O retorno anormal de −9,3% (F-014) é classificado como ilustrativo e de confiança baixa. Pode refletir revisão de lucro (F-008: de R$ 18-22 bi para R$ 9-11 bi), não 'política pública' per se.",
+   "riscos_de_dado": [
+    "F-014 tem confiança baixa e ressalva 'exemplo ilustrativo de método; refazer com série de preços'.",
+    "O estudo de evento citado não foi executado; não há CAR calculado com dados reais.",
+    "Definição de 'evento de política pública' é subjetiva e pode ser escolhida ex-post."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "B3 COTAHIST (preços diários)",
+     "CVM IPE (fatos relevantes do BB 2019-2026)",
+     "IF.data (patrimônio líquido por instituição)"
+    ],
+    "descricao": "Calcular P/VP diário do BB vs. Itaú, Bradesco, Santander. Rodar estudo de evento com janela [−1,+3] em todos os fatos relevantes do BB, usando pares como controle. Verificar se o resíduo é significativo após controlar por ROE."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O desconto P/VP do BB frente aos pares excede o explicável pelo ROE, e eventos de revisão de projeção ou política pública geram retorno anormal negativo significativo? Refazer F-014 com série real antes de concluir."
+  },
+  {
+   "premissa": "C1-N02",
+   "contrario": "A inadimplência agro do BB (6,92%, F-006) vs. rural PF do sistema (9,59%, F-012) não é comparável. O BB inclui PJ e agroindustrial; o SGS é só PF. A 'vantagem' pode ser inteiramente de mix.",
+   "alternativa": "O BB pode ter inadimplência menor não por seleção melhor, mas por carteira mais antiga (safra anterior) ou por renegociações que mascaram vencidos. A cobertura caiu de 174% para 138% (F-005), sugerindo reconhecimento atrasado.",
+   "riscos_de_dado": [
+    "Perímetro BB (agro = PF+PJ+agroindustrial) difere do SGS 21148 (só rural PF).",
+    "F-006 ressalva que cobertura agro do BB em set/26 não foi lida com segurança.",
+    "SICOR e SCR.data necessários para o teste não estão no dossiê.",
+    "Quebra de série Cosif em 03/2025 afeta comparabilidade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR (matriz de crédito rural por instituição, fonte e tomador)",
+     "IF.data (vencido >90d por modalidade)",
+     "BCB SGS 21148 e 21146"
+    ],
+    "descricao": "Regressão cross-section: inadimplência rural PF por instituição como função da fração a taxa de mercado e da fração PJ. Verificar se o resíduo do BB é ≤ −1 p.p. em 3 de 4 trimestres."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N03",
+   "contrario": "Se a maior parte do vencido agro do BB estiver em crédito equalizado (Pronaf, Pronamp, Moderfrota), a tese de 'cortar risco sem tocar mandato' cai. O BB é operador de política pública; o risco pode ser do desenho, não da execução.",
+   "alternativa": "A inadimplência de 6,92% (F-006) pode estar concentrada em renegociações de safras anteriores (2023/24) que ainda não venceram contabilmente. O pico pode ser transitório, não estrutural.",
+   "riscos_de_dado": [
+    "O dossiê não contém abertura do vencido agro do BB por fonte de recursos.",
+    "F-012 dá a proporção no sistema (17,21% mercado vs. 9,59% total), mas não no BB.",
+    "A ressalva de F-006 diz que cobertura agro não foi lida com segurança.",
+    "Sem DFP/ITR do BB com essa abertura, o teste depende de dado não disponível."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB: DFP e ITR na CVM (notas explicativas de carteira por fonte)",
+     "SICOR (contratos por fonte de recursos)",
+     "BCB SGS 21146 vs. 21148 (proporção mercado/total no sistema)"
+    ],
+    "descricao": "Obter nas notas explicativas do ITR/DFP do BB a abertura do vencido agro por fonte (equalizado vs. livre). Se não disponível, usar SICOR para estimar a fração da carteira BB contratada a taxa de mercado."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C1-N05",
+   "contrario": "F-021 mostra que Sicredi (+1,49 p.p.) e Sicoob (+2,27 p.p.) também ganharam no rural PF, não só bancos públicos. Se cooperativas ganham em recursos livres e LCA, a perda do BB é parcialmente comercial, não só alocação de política.",
+   "alternativa": "A perda pode ser mista: Caixa e Basa ganham em equalizados (política), mas Sicredi e Sicoob ganham em LCA e recursos livres (mercado). Atribuir 60% a um lado exige decomposição que o dossiê não fornece.",
+   "riscos_de_dado": [
+    "F-021 mostra ganhos por instituição, mas não por fonte de recursos.",
+    "A quebra de perímetro em 03/2025 (conglomerado→prudencial) pode afetar a série.",
+    "SICOR seria necessário para decompor por fonte; não está no dossiê.",
+    "O total de ganhos listados (5,63+2,65+2,27+1,49=12,04 p.p.) excede a perda do BB (8,89 p.p.), indicando que outros perderam também."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR (contratação rural PF por fonte e instituição)",
+     "IF.data (saldo por modalidade e fonte)",
+     "Normativos BCB/CMN sobre alocação de fundos constitucionais"
+    ],
+    "descricao": "Decompor a variação de participação do BB no rural PF (F-021) por fonte de recursos usando SICOR. Verificar se a perda em equalizados/fundos ≥ 60% do total. Checar quebra de série em 03/2025."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação do BB no rural PF (−8,89 p.p., F-021) concentra-se em fontes equalizadas e fundos constitucionais (alocação de política) ou em recursos livres e LCA (concorrência comercial)? Decompor por fonte via SICOR antes de escolher resposta institucional ou comercial."
+  }
+ ]
+}

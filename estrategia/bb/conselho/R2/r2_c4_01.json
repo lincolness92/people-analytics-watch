@@ -1,0 +1,177 @@
+{
+ "criticas": [
+  {
+   "premissa": "P13",
+   "contrario": "O avanço cooperativista no Sul é cultural e histórico (décadas de Sicredi/Sicoob). Centro-Oeste tem fazendas corporativas que preferem relacionamento bancário. Sudeste tem concorrência densa de digitais. A 'replicação com atraso' pode não ocorrer.",
+   "alternativa": "Os ganhos de Sicredi e Sicoob podem refletir programas específicos (Pronaf via cooperativas, expansão de agências) e não migração orgânica de clientes do BB. A curva pode saturar cedo.",
+   "riscos_de_dado": [
+    "Os números agregados 'cooperativas' (10,6→16,8% etc.) não estão no dossiê; o dossiê mostra instituições individuais (F-054, F-052, F-053).",
+    "Mudança de perímetro 1005→1009 em 03/2025 afeta comparabilidade temporal.",
+    "ESTBAN não cobre cooperativas (ressalva F-019), limitando a análise municipal."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), séries por região e conglomerado cooperativo, 2012–2026",
+     "Unicad/BCB (pontos de atendimento por município)"
+    ],
+    "descricao": "Construir série trimestral de Sicredi+Sicoob por região. Verificar se a inclinação no CO/SE nos últimos 3 anos é estatisticamente paralela à do Sul no período equivalente anterior."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação combinada de Sicredi e Sicoob no crédito total cresce no Centro-Oeste e no Sudeste em ritmo igual ou superior ao observado no Sul entre 2015 e 2020, medida em pp/ano pelo IF.data (perímetro 1009)."
+  },
+  {
+   "premissa": "P15",
+   "contrario": "A perda do BB em consignado é lenta: −1,95 pp em 6,5 anos (F-022). A portabilidade digital pode não alterar essa trajetória se as taxas do BB já forem competitivas. O efeito em 12 meses pode ser indistinguível do ruído.",
+   "alternativa": "A queda de participação pode ser explicada pela entrada agressiva de Agibank (+3,43 pp), BTG (+2,88 pp) e Mercantil (+1,71 pp) (F-022), independentemente de portabilidade. São ganhos de originação, não de migração.",
+   "riscos_de_dado": [
+    "O valor 'R$ 154 bi' é derivado (19,22% × R$ 800 bi, F-022), não está explícito no dossiê.",
+    "A referência '[I-22]' (início nov/2026) não consta do dossiê; não pode ser tratada como fato.",
+    "O crédito pessoal portável desde fev/2026 é citado como precedente, mas não há dados de efeito no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (consignado por instituição, trimestral)",
+     "BCB, estatísticas de portabilidade de crédito (série a identificar)",
+     "Open Finance, endpoints opendata-loans"
+    ],
+    "descricao": "Comparar a variação trimestral da fatia do BB em consignado nos 4 trimestres anteriores e posteriores à efetivação da portabilidade. Caso anterior: crédito pessoal (fev/2026)."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Após a entrada em vigor da portabilidade digital do consignado, a participação do BB cai mais de 1 pp em 4 trimestres (base: 19,22% em jun/2026, F-022), ou a taxa média do BB recua mais que a mediana dos cinco maiores, medido pelo IF.data e pelas estatísticas de portabilidade do BCB."
+  },
+  {
+   "premissa": "P16",
+   "contrario": "Inadimplência elevada nos primeiros meses de uma modalidade nova é padrão (seleção adversa inicial, curva de aprendizado). O BCB pode ter apontado pico transitório. A safra ainda é curta para concluir que a perda é estrutural e acima da precificada.",
+   "alternativa": "A inadimplência superior à do crédito pessoal (F-023 mostra BB caindo de 22,53% para 14,01% nesse segmento) pode refletir o perfil do tomador do consignado privado (rotatividade alta, empregadores menores), não falha de precificação do BB.",
+   "riscos_de_dado": [
+    "As referências '[I-19]', '[I-20]' e a 'meta de 20%' não constam do dossiê.",
+    "Não há código SGS de inadimplência do consignado privado no dossiê.",
+    "A inadimplência total do BB (6,08%, F-005) não é decomposta por modalidade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, SGS (código do consignado privado a identificar)",
+     "BCB, boxes do Relatório de Política Monetária",
+     "Ministério do Trabalho (volumes por instituição)"
+    ],
+    "descricao": "Construir curva de inadimplência por safra de concessão do consignado privado e comparar com a do crédito pessoal sem consignação no mesmo horizonte (5º, 9º, 13º mês)."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência do consignado privado, medida por safra de concessão (BCB/SGS), supera a do crédito pessoal sem consignação após 12 meses de forma persistente (≥3 safras consecutivas), indicando perda acima da precificada pelo BB."
+  },
+  {
+   "premissa": "P18",
+   "contrario": "A baixa participação em habitação (3,22%, F-025) pode ser escolha estratégica, não limitação. O funding habitacional (FGTS/SBPE) é dominado pela Caixa. A 'renda estável' do servidor não implica demanda por imóvel via BB.",
+   "alternativa": "O BB pode ter saído deliberadamente do habitacional para concentrar capital no agro e no consignado. A queda de 7,65% para 3,22% (F-025) coincide com ganhos de Itaú (+3,83 pp) e Bradesco (+1,01 pp), sugerindo migração para bancos com funding imobiliário próprio.",
+   "riscos_de_dado": [
+    "'R$ 46 bi' e 'mercado dobrou' não estão no dossiê; o total de jun/2026 é R$ 1,4 tri (F-025), mas o de 2019 não é fornecido.",
+    "A premissa junta duas afirmações distintas: base de renda estável e baixa participação em habitação.",
+    "O direcionamento da poupança rural (MCR) é citado como '[H] a confirmar', sem dado no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (habitação por instituição e região)",
+     "BCB, séries de funding imobiliário (SBPE/FGTS)",
+     "RAIS/CAGED (servidores por município)"
+    ],
+    "descricao": "Verificar se a fatia do BB em habitação é inferior a 1/3 da fatia em consignado (19,22%/3 ≈ 6,4%) em todas as regiões, e se o funding de longo prazo do BB permite expansão."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P19",
+   "contrario": "A participação do BB em veículos cresceu de 1,78% para 2,46% (F-026, +0,68 pp). O balanço próprio não é irrelevante; está expandindo. A tese de que o BV é o único veículo competitivo não se sustenta nos dados.",
+   "alternativa": "O crescimento em veículos pode vir de segmentos específicos (máquinas agrícolas, frotas PJ) que não passam pelo BV. A estratégia pode ser complementar, não substituta.",
+   "riscos_de_dado": [
+    "A participação no BV é marcada '[M], a confirmar' — não há dado no dossiê.",
+    "O BV (Votorantim) aparece em F-023 (crédito pessoal, 0,39→2,22%), mas não em veículos no dossiê.",
+    "Sem o dado do BV, a premissa é infalsificável com o dossiê atual."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM, FRE do BB (participações societárias)",
+     "IF.data (veículos por instituição, incluindo Banco BV)"
+    ],
+    "descricao": "Confirmar se o BB detém participação no BV e qual a fatia do BV em veículos. Verificar se a soma BB+BV justifica a tese de 'veículo único'."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "A estratégia do BB em veículos PF depende da participação societária no Banco BV (a confirmar via FRE/CVM). O balanço próprio do BB em veículos cresceu de 1,78% para 2,46% (F-026), mas a relevância relativa frente ao BV precisa ser medida antes de decidir se abre frente própria."
+  },
+  {
+   "premissa": "P21",
+   "contrario": "Sem nenhum dado no dossiê, a premissa é inteiramente especulativa. O BB tem a maior rede física (2.290 municípios, F-019) e base ampla, o que pode gerar volume absoluto de reclamações elevado mesmo com taxa baixa.",
+   "alternativa": "Não há evidência citada. A premissa pode ser verdadeira ou falsa; o dossiê é silente. Qualquer conclusão seria invenção.",
+   "riscos_de_dado": [
+    "O campo 'hoje' diz '[H]. Sem cálculo.' — zero dados no dossiê.",
+    "O ranking de reclamações do BCB muda de metodologia periodicamente.",
+    "Reclamações absolutas vs. ponderadas por base de clientes dão resultados opostos."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, ranking de reclamações (trimestral, 2019–2026)",
+     "BCB, ranking de ouvidorias"
+    ],
+    "descricao": "Baixar o ranking trimestral do BCB. Calcular a posição do BB entre os 10 maiores bancos por reclamações ponderadas por clientes, nos últimos 8 trimestres."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB figura no melhor terço do ranking de reclamações ponderadas do BCB entre os dez maiores bancos, por pelo menos 8 trimestres consecutivos (2024–2026). Sem esse dado, a premissa não pode ser avaliada."
+  },
+  {
+   "premissa": "P22",
+   "contrario": "Perda de participação em depósitos (F-038: −4,86 pp) e LCA (F-042: −16,83 pp) não implica automaticamente custo maior. O BB pode compensar com volume, ou a base remanescente pode ser mais estável (governo, agro). A margem pode estar protegida.",
+   "alternativa": "A queda em LCA pode refletir mudança regulatória ou de mercado (Sicredi +6,85 pp, Sicoob +5,38 pp em F-042), não perda de competitividade do BB. O custo pode não ter mudado se o BB substituiu LCA por outra fonte equivalente.",
+   "riscos_de_dado": [
+    "'Custo: sem cálculo' — a variável central da premissa não existe no dossiê.",
+    "Os números citados (22,3→17,0%; 49,4→32,6%) diferem levemente do dossiê (F-038: 21,49→16,63; F-042: 49,38→32,55).",
+    "'Captações 18,7% → 14,9%' não aparece em nenhum fato do dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (Passivo e DRE por instituição)",
+     "Balancetes Cosif (despesa de captação ÷ saldo médio)",
+     "DASFN/BCB (LIQ1 e NSFR)"
+    ],
+    "descricao": "Calcular o custo médio de captação do BB em % do CDI por semestre (2019–2026) e comparar com Itaú, Bradesco, Santander, Caixa e Sicredi. Verificar se o diferencial subiu ≥3 pp."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação do BB em depósitos à vista (−4,86 pp, F-038) e LCA (−16,83 pp, F-042) entre 2019 e 2026 elevou o custo médio de captação do BB em % do CDI em pelo menos 3 pp frente à média de Itaú, Bradesco, Santander e Caixa, medido por balancetes Cosif semestrais."
+  },
+  {
+   "premissa": "P24",
+   "contrario": "A fatia do BB na poupança é quase estável: 21,14% → 20,65%, apenas −0,49 pp (F-039). Não há evidência de captação líquida negativa específica do BB. A premissa assume um mecanismo (poupança→rural) sem dado que o confirme.",
+   "alternativa": "A estabilidade da fatia (F-039) sugere que o BB acompanha o mercado. Se a poupança do sistema encolhe, o BB encolhe junto, mas não perde relativamente. O crédito rural pode estar sendo financiado por LCA ou recursos livres, sem impacto no custo.",
+   "riscos_de_dado": [
+    "'Captação líquida negativa' não é demonstrada; o dossiê só mostra participação, não fluxo.",
+    "'Composição das fontes: sem cálculo' — o elo poupança→rural não é verificado.",
+    "O código SGS da poupança rural não está no dossiê. F-012 mostra inadimplência rural, não funding."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB, SGS (saldo e captação líquida da poupança rural, código a identificar)",
+     "IF.data (poupança por instituição)",
+     "SICOR (fonte de recursos das contratações rurais do BB)"
+    ],
+    "descricao": "Verificar se a captação líquida da poupança do BB é negativa nos últimos 4 trimestres e se a parcela do crédito rural financiada por poupança caiu mais de 5 pp em 3 safras (SICOR)."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A captação líquida da poupança do BB é negativa há pelo menos 4 trimestres (SGS/BCB), e a parcela do crédito rural do BB financiada por poupança caiu mais de 5 pp em 3 safras (SICOR), obrigando substituição por LCA ou recursos livres a custo maior. A fatia de poupança do BB é estável (−0,49 pp, F-039), mas o fluxo absoluto precisa ser medido."
+  }
+ ]
+}

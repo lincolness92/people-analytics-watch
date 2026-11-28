@@ -1,0 +1,182 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P21",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Fonte pública clara (ranking do BCB) e limiares em trimestres bem fixados. Não cita fato. Índice por milhão de clientes depende da definição de base de clientes, não controlada. Decisões vagas."
+  },
+  {
+   "premissa": "P22",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [
+    "depósitos à vista 22,3% → 17,0% (F-038 dá 21,49 → 16,63)",
+    "captações 18,7% → 14,9% (dossiê dá 18,37 → 14,5)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Enunciado confere com F-038 e F-042, mas 'hoje' contradiz o próprio enunciado. Métrica, período antes do Cosif 2025, pares e limiares em p.p. do CDI bem definidos. Mix de instrumentos parcialmente tratado."
+  },
+  {
+   "premissa": "P23",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares por contagem de contratos e regra de não testável claros. Fatos sobre TJRJ e banco regional não estão no dossiê. 'Manter' é decisão fraca; não separa mudança de juros ou regra do CNJ de perda de posição."
+  },
+  {
+   "premissa": "P24",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-039"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,14→20,65 confere (F-039). Duas partes com limiares e inconclusivo definidos. Código SGS 'a fixar'. Mudanças de direcionamento no MCR podem mover a fonte sem fluxo negativo; não controladas. 'Sem ação' é fraco."
+  },
+  {
+   "premissa": "P25",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Contrafactual pela fatia pré-evento, exclusão da instituição em crise e comparação com Caixa e Itaú são bons. Poucos eventos, sazonalidade e notícias simultâneas não tratadas. Nenhum fato do dossiê citado."
+  },
+  {
+   "premissa": "P26",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-048"
+   ],
+   "sem_apoio": [
+    "único banco em 555 municípios (F-019 dá 577)",
+    "437 em 12/2022",
+    "sistema com 23% menos agências"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Desenho forte: diferenças em diferenças escalonado, pareamento, tendência prévia, limiares de 10% e 5%. Mas 555 não confere com F-019 (577) e os demais números de 'hoje' não estão no dossiê."
+  },
+  {
+   "premissa": "P27",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "BB com cerca de 25% do consignado de servidores [I-19]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares claros e controle por municípios. Mas não há consignado por município e instituição no ESTBAN; o próprio texto admite. A troca de folha é endógena à relação com o ente. Número de 'hoje' sem apoio."
+  },
+  {
+   "premissa": "P28",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006",
+    "F-012",
+    "F-014"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "(a) é afirmada sem teste: F-005, F-006 e F-012 mostram piora, não 'maior parte'. (b) tem estudo de evento bem fixado. −9,3% está em F-014, mas o dossiê marca como ilustrativo e o texto usa como fato."
+  },
+  {
+   "premissa": "P29",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Medição com limiares claros e cuidado com fundos de fundos. CADPREV é fonte nova, fora do dossiê. Não testa a tese de vulnerabilidade a plataformas; 'sem ação' é decisão fraca."
+  },
+  {
+   "premissa": "P30",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 1,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-028",
+    "F-032",
+    "F-033"
+   ],
+   "sem_apoio": [
+    "cooperativas singulares 10,7% → 18,6% (Sicredi+Sicoob em F-028: 8,55 → 14,88)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "16,1→10,9, Sicredi +3,6, Sicoob +2,7 e Itaú/BNB conferem com F-028. Número de 'hoje' sem apoio. IF.data não cruza modalidade e porte. 'Ver P33' não é decisão. Pronampe é confundidor citado, não controlado."
+  }
+ ]
+}

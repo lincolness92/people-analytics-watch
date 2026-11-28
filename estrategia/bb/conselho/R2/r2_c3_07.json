@@ -1,0 +1,188 @@
+{
+ "criticas": [
+  {
+   "premissa": "C4-N01",
+   "contrario": "A comparação é inválida: BB agro (PF+PJ, set/26) vs sistema rural PF (out/26). BB pode ter inadimplência maior na parcela PF de mercado. A qualidade não é comparável sem mesmo perímetro e data.",
+   "alternativa": "BB tem composição com mais crédito subsidiado e antigo; inadimplência menor reflete mix, não originação superior.",
+   "riscos_de_dado": [
+    "Datas diferentes: set/26 vs out/26.",
+    "Perímetro diferente: agro total BB vs rural PF sistema.",
+    "Cobertura do agro BB incerta (F-006).",
+    "Definição de inadimplência pode variar entre BB e SGS."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-006",
+     "F-012",
+     "IF.data BCB"
+    ],
+    "descricao": "Comparar inadimplência +90d da carteira rural PF do BB com SGS 21148 no mesmo mês (out/26). Se BB > sistema, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência da carteira rural PF do BB, medida no mesmo período e perímetro do SGS 21148, é inferior à média do sistema, indicando possível melhor qualidade relativa após ajuste de composição."
+  },
+  {
+   "premissa": "C4-N02",
+   "contrario": "Itaú ganhou 6,8 pp em PJ rural (F-030); bancos privados também avançaram em subsegmentos, não só cooperativas e públicos.",
+   "alternativa": "Ganho de Caixa e cooperativas reflete expansão de linhas subsidiadas, não concorrência por preço; BB pode ter reduzido exposição deliberadamente.",
+   "riscos_de_dado": [
+    "Perímetro IF.data mudou em 03/2025.",
+    "Cosif 2025 altera definições.",
+    "Lista 'maiores ganhos' não é exaustiva; soma excede perda do BB.",
+    "Classificação público/privado/coop pode ser ambígua."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-036",
+     "F-030",
+     "IF.data BCB"
+    ],
+    "descricao": "Recalcular variação de share por instituição e classificar por tipo. Se bancos privados somarem >50% da perda do BB, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação no crédito rural total foi principalmente para Caixa, Banco da Amazônia e cooperativas; Itaú ganhou em PJ rural, mas o impacto agregado dos privados é menor."
+  },
+  {
+   "premissa": "C4-N03",
+   "contrario": "Perda pode ser cíclica por desalavancagem do BB; share pode se recuperar com digital e pricing. Irreversibilidade não é mostrada.",
+   "alternativa": "BB reduziu oferta a clientes de maior risco; Nubank absorveu demanda reprimida. Não é vantagem estrutural do Nubank.",
+   "riscos_de_dado": [
+    "Perímetro IF.data mudou em 03/2025.",
+    "Cosif 2025 altera contas.",
+    "Segmento 'sem consignação' pode ter reclassificações.",
+    "Dados semestrais mascaram volatilidade trimestral."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-023",
+     "F-020",
+     "IF.data BCB"
+    ],
+    "descricao": "Observar share trimestral por 4 trimestres. Se queda desacelerar para <0,3 pp/ano ou BB ganhar share, refuta irreversibilidade."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação em crédito pessoal sem consignação foi acentuada e dominada pelo Nubank; sua continuidade precisa ser testada antes de decisão de saída."
+  },
+  {
+   "premissa": "C4-N04",
+   "contrario": "Itaú e Citi ganharam quase o mesmo; ganho pode ser cíclico de câmbio/commodities, não vantagem estrutural.",
+   "alternativa": "BB expandiu linhas para clientes agro existentes; não há evidência de vantagem internacional única.",
+   "riscos_de_dado": [
+    "Perímetro IF.data mudou em 03/2025.",
+    "Cosif 2025 muda definição de comércio exterior.",
+    "Ganho de share não separa volume de variação cambial."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-031",
+     "IF.data BCB",
+     "SGS câmbio"
+    ],
+    "descricao": "Regredir share BB contra câmbio e exportações. Se correlação alta e share cair com câmbio, refuta vantagem estrutural."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O crescimento em PJ comércio exterior foi relevante, mas não há evidência suficiente para atribuir a vantagem estrutural; requer teste de persistência e margem."
+  },
+  {
+   "premissa": "C4-N05",
+   "contrario": "Não há dado no dossiê que LCA seja principal funding rural; BB tem poupança estável e outras fontes. Perda de share não implica ameaça.",
+   "alternativa": "BB reduziu emissão de LCA por gestão de liquidez ou regulação, não por perda de capacidade competitiva.",
+   "riscos_de_dado": [
+    "Perímetro IF.data mudou em 03/2025.",
+    "Cosif 2025 pode reclassificar LCA.",
+    "Só share, não volume nem custo.",
+    "Falta dado de passivo do BB por produto."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-042",
+     "F-036",
+     "IF.data passivo"
+    ],
+    "descricao": "Comparar custo e volume de funding rural BB com carteira rural. Se funding adequado e custo estável, refuta ameaça."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação em LCA reduziu uma fonte tradicional; é preciso testar se o funding rural do BB está sob pressão de volume ou custo."
+  },
+  {
+   "premissa": "C4-N06",
+   "contrario": "BB perdeu share em rendas de tarifas (F-047); crescimento de 4,6% a/a pode ser abaixo do mercado. Inflação não está no dossiê, logo 'acima da inflação' não é verificável.",
+   "alternativa": "Crescimento de serviços vem de repasse de preços, não de volume; não compensa margem.",
+   "riscos_de_dado": [
+    "F-004 é um trimestre; F-047 termina 06/2026.",
+    "Inflação não fornecida.",
+    "Definição de serviços BB vs IF.data pode diferir.",
+    "Dado anual de tarifas pode incluir efeitos não recorrentes."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-004",
+     "F-047",
+     "IBGE IPCA"
+    ],
+    "descricao": "Comparar crescimento BB de tarifas com IPCA e crescimento do sistema. Se BB < IPCA ou < sistema, refuta compensação."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Receitas de serviços cresceram 4,6% a/a, mas a participação no sistema caiu; a capacidade de compensar margem é limitada e precisa ser comparada à inflação."
+  },
+  {
+   "premissa": "C4-N07",
+   "contrario": "A queda pode ser pontual por risco agro; CET1 pode se recuperar com lucros retidos. 'Acima do mínimo' não está no dossiê.",
+   "alternativa": "Queda reflete aumento de RWA por inadimplência agro; se ciclo melhorar, capital se reconstitui.",
+   "riscos_de_dado": [
+    "Pilar 3 pode divergir do BB.",
+    "Capital pode ser gerenciado via RWA.",
+    "Um trimestre é pouco para tendência.",
+    "Mínimo regulatório não consta no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-007",
+     "F-016",
+     "F-017",
+     "F-018"
+    ],
+    "descricao": "Aguardar dois trimestres de CET1. Se estabilizar ≥10,5% ou subir, refuta trajetória de queda limitante."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "CET1 caiu para 10,80% em set/26; se a queda persistir, poderá limitar crescimento e dividendos, mas é preciso confirmar tendência."
+  },
+  {
+   "premissa": "C4-N08",
+   "contrario": "Não há dado de rentabilidade por município. Exclusividade não implica lucro; pode ser obrigação social ou custo político.",
+   "alternativa": "BB mantém agências exclusivas por papel público, não por retorno positivo.",
+   "riscos_de_dado": [
+    "ESTBAN só mede crédito em agência, não depósitos/serviços.",
+    "Sem custo por município.",
+    "Seleção de municípios pode mudar com fechamento de agências.",
+    "F-048 não dá rentabilidade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-019",
+     "IF.data municipal",
+     "CVM BB"
+    ],
+    "descricao": "Estimar receita e custo por município exclusivo vs não exclusivo. Se exclusivos tiverem ROA menor ou negativo, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A presença exclusiva em 577 municípios pode gerar vantagem, mas não há evidência de retorno positivo; é preciso medir rentabilidade por município."
+  }
+ ]
+}

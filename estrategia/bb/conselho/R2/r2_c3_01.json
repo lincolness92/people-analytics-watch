@@ -1,0 +1,173 @@
+{
+ "criticas": [
+  {
+   "premissa": "P13",
+   "contrario": "No CO e SE, a perda do BB vem mais de digitais e Itaú, conforme F-052 e F-053; cooperativas crescem pouco. Não há defasagem garantida.",
+   "alternativa": "A queda do BB reflete avanço de fintechs e bancos privados, não difusão do modelo cooperativo do Sul.",
+   "riscos_de_dado": [
+    "IF.data teve quebra de perímetro em 03/2025.",
+    "Cosif 2025 reclassifica crédito; dados de cooperativas por UF não estão no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data regional por instituição",
+     "Unicad/BcBase pontos de atendimento cooperativas",
+     "ESTBAN BB por município"
+    ],
+    "descricao": "Calcular correlação defasada entre fatia de cooperativas no Sul e no CO/SE por UF; se não houver defasagem significativa, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação do BB no CO e SE é causada em parte por cooperativas, replicando o Sul com defasagem; medir por IF.data regional e Unicad."
+  },
+  {
+   "premissa": "P14",
+   "contrario": "A queda pode ser redução intencional de risco; o BB aumentou provisões e sua inadimplência total subiu, mas não há dado por modalidade no dossiê.",
+   "alternativa": "Perda de participação pode ser efeito contábil ou realocação para consignado, não migração de clientes bons.",
+   "riscos_de_dado": [
+    "Quebra de perímetro no IF.data em 03/2025.",
+    "Cosif 2025 muda classificação; inadimplência por modalidade não está no dossiê; dupla contagem de clientes."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data saldo e vencidos por modalidade",
+     "BCB taxaJuros/v2 por instituição",
+     "SCR por faixa de risco"
+    ],
+    "descricao": "Comparar margem ajustada ao risco do BB e digitais no crédito pessoal não consignado; se digitais tiverem margem menor, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A queda do BB no crédito pessoal sem consignação vem de migração de clientes de risco aceitável; medir margem ajustada ao risco por IF.data e taxas."
+  },
+  {
+   "premissa": "P16",
+   "contrario": "Consignado privado tem desconto em folha e costuma ter inadimplência menor que crédito pessoal; perda acima do preço pode ser erro de modelagem do BB.",
+   "alternativa": "Alta de inadimplência apontada pelo BCB pode ser pontual, ligada ao ciclo e à safra, não estrutural.",
+   "riscos_de_dado": [
+    "Série SGS do consignado privado não fixada no dossiê.",
+    "Dados por instituição não são públicos; I-20 é imprensa; defasagem de safra."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB SGS consignado privado por safra",
+     "Ministério do Trabalho volumes",
+     "releases BB"
+    ],
+    "descricao": "Comparar curva de inadimplência por safra do consignado privado com crédito pessoal; se convergir para consignado tradicional após 12 meses, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência do consignado privado originado pelo BB supera a do crédito pessoal em pelo menos X p.p. na safra de 12 meses; medir por SGS e releases."
+  },
+  {
+   "premissa": "P17",
+   "contrario": "A elevação de atrasos no cartão pode resultar de redução de limites e concentração em clientes arriscados, não seleção adversa por perder mercado.",
+   "alternativa": "Composição da carteira de cartão do BB pode explicar inadimplência diferente; não há piora relativa de gestão.",
+   "riscos_de_dado": [
+    "IF.data cartão classifica emissores de forma variável.",
+    "Vencidos acima de 15 dias dependem de baixa para prejuízo; quebra de perímetro 03/2025."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data cartão saldo e vencidos",
+     "DASFN taxas de cartão",
+     "Monitor Abecs"
+    ],
+    "descricao": "Acompanhar vencidos de cartão do BB vs sistema por 3 trimestres; se BB convergir para abaixo ou igual, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB perde participação no cartão enquanto seus vencidos ficam acima do sistema por 3 trimestres consecutivos; confirmar com IF.data e DASFN."
+  },
+  {
+   "premissa": "P19",
+   "contrario": "A participação direta do BB em veículos subiu de 1,78% para 2,46% (F-026); o balanço próprio não é irrelevante, podendo atuar onde o BV não atua.",
+   "alternativa": "O aumento do BB em veículos pode ser operação própria para compensar perda do BV ou realocação contábil.",
+   "riscos_de_dado": [
+    "Participação no BV não está no dossiê.",
+    "IF.data pode consolidar BV ou não; quebra de perímetro 03/2025 distorce comparabilidade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM FRE BB participações",
+     "IF.data veículos por instituição incluindo BV"
+    ],
+    "descricao": "Verificar percentual de participação no BV e share do BV em veículos; se participação for irrelevante ou BV perder mercado, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P20",
+   "contrario": "A perda de depósitos à vista pode ocorrer mesmo em clientes com folha, pois a concorrência digital facilita dividir a principalidade.",
+   "alternativa": "A queda de depósitos à vista reflete migração para contas de pagamento e investimentos, mantendo a principalidade via consignado.",
+   "riscos_de_dado": [
+    "IF.data depósitos à vista tem quebra de perímetro.",
+    "Dados de Pix e folha por cliente são privados; número de clientes pode incluir inativos."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data depósitos à vista",
+     "Pix dados abertos por participante",
+     "ANBIMA Raio X",
+     "Datafolha para Abecs"
+    ],
+    "descricao": "Comparar share do BB em transações Pix entre clientes com e sem folha; se a queda for igual nos dois grupos, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A principalidade do BB cai mais entre clientes sem vínculo de folha; medir por depósitos à vista e transações Pix com pesquisas públicas."
+  },
+  {
+   "premissa": "P22",
+   "contrario": "A perda de participação em depósitos à vista e LCA não implica aumento do custo relativo; o BB pode compensar com outras fontes baratas e escala.",
+   "alternativa": "O custo de captação pode subir para todos os bancos por efeito macro e regulação, não refletindo perda específica do BB.",
+   "riscos_de_dado": [
+    "Cosif 2025 muda definições contábeis.",
+    "Comparar custo entre instituições requer ajuste para FGC, compulsório e mix; despesa de captação não está no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data Passivo e DR",
+     "balancetes Cosif",
+     "DASFN LIQ1/NSFR"
+    ],
+    "descricao": "Calcular custo médio de captação em % CDI do BB vs pares 2014-2026; se diferencial ficar abaixo de 3 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O custo médio de captação do BB em % do CDI sobe pelo menos 3 p.p. em relação à média dos pares em 5 anos; medir por Cosif e IF.data."
+  },
+  {
+   "premissa": "P23",
+   "contrario": "A custódia de depósitos judiciais tende a permanecer no BB por segurança e relacionamento; um ou dois tribunais não representam tendência.",
+   "alternativa": "O caso do TJRJ pode ser exceção local, com motivação política, não competitiva.",
+   "riscos_de_dado": [
+    "Não há saldo de depósitos judiciais aberto no dossiê.",
+    "ESTBAN verbete 414 pode ter sido fechado; editais de tribunais não são compilados."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Balancetes Cosif depósitos judiciais",
+     "PNCP editais",
+     "diários oficiais",
+     "CNJ atos"
+    ],
+    "descricao": "Levantar saldo e remuneração de depósitos judiciais do BB em três grandes tribunais até 2027; se estáveis, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "descarta",
+   "texto_novo": null
+  }
+ ]
+}

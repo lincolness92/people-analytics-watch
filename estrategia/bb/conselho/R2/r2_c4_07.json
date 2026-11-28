@@ -1,0 +1,175 @@
+{
+ "criticas": [
+  {
+   "premissa": "C3-N01",
+   "contrario": "A tendência é de alta forte: 4,84%→6,92% em 12 meses. No sistema, inadimplência rural PF já está em 9,59% e na parcela de mercado em 17,21% (F-012). Esperar queda para abaixo de 5,5% em um ano contraria o momentum e o cenário sistêmico.",
+   "alternativa": "O salto pode refletir reclassificação contábil ou reconhecimento tardio de perdas, não deterioração contínua. Se for evento único, o nível 'verdadeiro' já era mais alto antes, e a premissa de retorno a 5,5% não tem base.",
+   "riscos_de_dado": [
+    "F-006: cobertura do agro em set/26 não foi lida com segurança; provisão pode estar defasada.",
+    "Carteira agro caiu 4,3% t/t (F-006); denominador menor infla o percentual de inadimplência.",
+    "Sazonalidade da safra: set/26 pode não ser comparável a set/27 sem ajuste de ciclo."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS 21148",
+     "SGS 21146",
+     "F-006"
+    ],
+    "descricao": "Acompanhar mensalmente a inadimplência rural PF no SGS. Se em mar/2027 a série ainda estiver acima de 8%, a meta de 5,5% em set/2027 é implausível."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência +90d da carteira agro do BB em set/2027 ficará abaixo de 6,5%, assumindo que a tendência de alta observada (4,84%→6,92%) desacelera mas não reverte completamente."
+  },
+  {
+   "premissa": "C3-N03",
+   "contrario": "Nubank ganhou 14,88 p.p. em 6,5 anos (F-023). BB perdeu 8,52 p.p. A vantagem de custo digital é estrutural. Esperar estabilização acima de 14,5% pressupõe que a hemorragia para, sem evidência de mudança competitiva.",
+   "alternativa": "Parte da queda pode ser efeito da mudança de perímetro (conglomerado 1005→prudencial 1009 em 03/2025, F-020). A perda real de participação pode ser menor que os 8,52 p.p. sugeridos.",
+   "riscos_de_dado": [
+    "Quebra de série em 03/2025 por mudança de perímetro e Cosif 2025 (ressalva F-020/F-023).",
+    "Crédito pessoal sem consignação pode incluir produtos reclassificados; definição não é estável.",
+    "Comparação dez/2019 vs jun/2026 cruza a quebra; tendência linear pode ser enganosa."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "F-023"
+    ],
+    "descricao": "Recalcular a participação do BB usando apenas dados pós-03/2025 (perímetro 1009). Se a queda trimestral persistir acima de 0,3 p.p., a meta de 14,5% em jun/2027 é improvável."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em crédito pessoal sem consignação não cai abaixo de 13,0% em jun/2027, medido exclusivamente no perímetro prudencial (1009) vigente desde 03/2025."
+  },
+  {
+   "premissa": "C3-N05",
+   "contrario": "Nubank saltou de 3,34% para 15,49% (F-024). BB caiu de 11,59% para 9,35%. A economia de cartão favorece escala digital e custo zero de aquisição. Manter acima de 9,5% exige reverter tendência de 2,24 p.p. de perda.",
+   "alternativa": "A queda do BB pode refletir redução deliberada de exposição a cartão (risco), não perda competitiva. Se for escolha estratégica, a premissa testa uma decisão interna, não uma força de mercado.",
+   "riscos_de_dado": [
+    "Mesma quebra de perímetro 1005→1009 em 03/2025 (ressalva F-024).",
+    "'Saldo de cartão' pode incluir rotativo, parcelado e à vista; composição muda com juros.",
+    "Cooperativas e digitais sem agência não aparecem no ESTBAN, mas aparecem no IF.data."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "F-024"
+    ],
+    "descricao": "Verificar mensalmente o saldo de cartão PF do BB no IF.data. Se em dez/2026 a participação ainda cair abaixo de 9,0%, a meta de 9,5% em jun/2027 refuta-se por inércia."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em cartão de crédito PF não cai abaixo de 8,5% em jun/2027, reconhecendo que a tendência de perda para digitais é estrutural."
+  },
+  {
+   "premissa": "C3-N07",
+   "contrario": "Itaú ganhou 3,49 p.p., Citi 3,61 p.p., Caixa 3,43 p.p. (F-031). A concorrência se intensifica. O ganho do BB pode estar no topo; manter 25% exige defender posição contra três competidores agressivos.",
+   "alternativa": "O ganho do BB pode concentrar-se em poucos clientes grandes ou operações específicas de trade finance ligadas a commodities. Se esses clientes migrarem, a participação cai rápido sem mudança estrutural.",
+   "riscos_de_dado": [
+    "Comércio exterior é volátil: depende de câmbio, safra e geopolítica. Um ano atípico distorce.",
+    "Quebra de perímetro 1005→1009 em 03/2025 aplica-se também aqui (ressalva F-031).",
+    "Saldo em jun/2026 pode refletir operações de curto prazo que não se repetem."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "F-031"
+    ],
+    "descricao": "Verificar concentração dos 10 maiores clientes de comércio exterior do BB no IF.data. Se a participação depender de menos de 5 clientes, a premissa é frágil."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C3-N09",
+   "contrario": "Sicredi ganhou 6,85 p.p. e Sicoob 5,38 p.p. em LCA (F-042). Cooperativas têm vantagem estrutural no agro. BB perdeu 16,83 p.p. desde 2019. Recuperar 2,45 p.p. em 12 meses contraria tendência de 6,5 anos.",
+   "alternativa": "A carteira agro do BB caiu 4,3% t/t (F-006). Se a demanda por crédito agro encolhe, a necessidade de funding via LCA também cai, e a participação pode subir por efeito denominador, não por captação ativa.",
+   "riscos_de_dado": [
+    "Quebra de perímetro 1005→1009 em 03/2025 (ressalva F-042).",
+    "Regras tributárias da LCA podem mudar; isenção de IR é decisão política.",
+    "LCA tem vencimento e renovação; saldo em jun pode não representar captação contínua."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB)",
+     "F-042"
+    ],
+    "descricao": "Acompanhar captação líquida mensal de LCA do BB vs. Sicredi/Sicoob. Se em mar/2027 o BB ainda perder captação líquida, a meta de 35% é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em LCA não cai abaixo de 30% em jun/2027, reconhecendo que cooperativas e BTG mantêm vantagem estrutural de captação no agro."
+  },
+  {
+   "premissa": "C3-N11",
+   "contrario": "CET1 caiu de 11,27% (jun/26) para 10,80% (set/26) em um trimestre (F-007). Lucro projetado caiu de R$18-22 bi para R$9-11 bi (F-008). Custo de crédito subiu 33,2% em 9M26 (F-003). Recuperar 11,5% exige geração de capital que o cenário não sustenta.",
+   "alternativa": "A queda do CET1 pode ser provisões extraordinárias. Se a inadimplência estabilizar, o custo de crédito normaliza e o capital se recompõe sem necessidade de retenção adicional.",
+   "riscos_de_dado": [
+    "F-016 mostra CET1 em 12,23% em dez/25 e queda para 10,80% em set/26; a velocidade é atípica.",
+    "RWA pode crescer por reclassificação de risco, não por novo crédito.",
+    "Basileia caiu de 14,81% para 13,45% (F-007); buffer total também encolhe."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pilar 3 KM1 (DASFN/BCB)",
+     "F-007",
+     "F-016"
+    ],
+    "descricao": "Verificar CET1 no Pilar 3 de dez/2026. Se ainda abaixo de 10,5%, a meta de 11,5% em set/2027 exige retenção integral de lucro, incompatível com dividendos."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C3-N13",
+   "contrario": "A participação subiu de 20,41% para 26,4% (F-048) porque o sistema fechou agências, não porque o BB abriu. É ganho passivo. Além disso, 577 municípios só têm BB (F-019), mas isso não prova rentabilidade da rede.",
+   "alternativa": "O aumento de participação pode refletir exclusivamente o fechamento acelerado de agências por Bradesco e Itaú. O BB pode estar encolhendo em termos absolutos, apenas mais devagar.",
+   "riscos_de_dado": [
+    "ESTBAN cobre só bancos com agência; cooperativas e digitais ficam fora (ressalva F-019).",
+    "Contagem é por presença de saldo, não por número de agências (ressalva F-019).",
+    "Participação em agências não mede receita nem eficiência; é métrica de estrutura, não de resultado."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN (BCB)",
+     "F-048",
+     "F-019"
+    ],
+    "descricao": "Verificar o número absoluto de agências do BB no ESTBAN em jun/2027. Se caiu em termos absolutos, a 'participação acima de 25%' é ilusão estatística."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "O número absoluto de municípios com agência do BB não cai abaixo de 2.200 em jun/2027, e a receita por agência não fica abaixo da média do sistema."
+  },
+  {
+   "premissa": "C3-N15",
+   "contrario": "A inadimplência saltou de 0,51% para 17,21% em 4 anos (F-012). Não há mecanismo de reversão visível no dossiê. Renda agro depende de commodity e clima. Esperar queda para 15% em 12 meses é otimista sem catalisador identificado.",
+   "alternativa": "O salto pode refletir mudança regulatória (fim de equalização, reclassificação de operações) e não deterioração real do tomador. Se for efeito de definição, a série não é comparável no tempo.",
+   "riscos_de_dado": [
+    "F-012: nomes das séries vêm de documento específico; confirmar definição da SGS 21146.",
+    "A parcela 'taxas de mercado' pode ter perímetro alterado por resolução do CMN.",
+    "Defasagem: inadimplência +90d reflete concessão de 6-12 meses antes; política antiga ainda contamina."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS 21146 (BCB)",
+     "F-012"
+    ],
+    "descricao": "Verificar a série mensal da SGS 21146. Se em abr/2027 ainda estiver acima de 16%, a meta de 15% em out/2027 é refutada por inércia da carteira vencida."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência do crédito rural PF com taxas de mercado (SGS 21146) não ultrapassa 20% em out/2027, reconhecendo que a tendência de alta pode continuar sem intervenção de política pública."
+  }
+ ]
+}

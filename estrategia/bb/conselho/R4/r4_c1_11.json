@@ -1,0 +1,182 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C4-N12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-029",
+    "F-030"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "23,53→29,01 e BNDES +12,35 p.p. conferem. Alternativas bem nomeadas, mas o IF.data não separa repasses do BNDES e a janela 12/2024–06/2026 cruza a quebra que diz isolar. Limiar sem margem."
+  },
+  {
+   "premissa": "C4-N13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-039",
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "20,65%, −0,49, −4,86, −16,83 e Caixa 38,76% conferem. Boa ressalva sobre estoque relativo. 'Estável' sem limiar; captação líquida do sistema não diz nada do BB. Decisões genéricas."
+  },
+  {
+   "premissa": "C4-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-037",
+    "F-009",
+    "F-010",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "26,4%, 14,15%, 37,5% e 38,8% conferem. Mesma fórmula, limiar de 8 p.p. e alternativa de receita deprimida. 'Próximo ao Bradesco' é vago. Funções de banco público citadas, sem medida."
+  },
+  {
+   "premissa": "C4-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 1,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-002",
+    "F-009",
+    "F-011"
+   ],
+   "sem_apoio": [
+    "custo de capital de cerca de 12–14% (Selic + prêmio)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "2,8%, 6,2%, 23,6% e 15,6–16,1% conferem (Bradesco não primário). Custo de capital sem apoio. Decisão invertida: RSPL abaixo do custo mesmo sem o agro leva a 'manter curso'. Prêmio não fixado."
+  },
+  {
+   "premissa": "C5-N01",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiar de 1 p.p. e comparação com o sistema sem o BB são bons. Mas a métrica cruza agro total do BB com rural PF do sistema, e SICOR não mede atraso; o BB não abre por fonte no dossiê."
+  },
+  {
+   "premissa": "C5-N02",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "17,21% confere (F-012). Abertura do BB por fonte não existe no dossiê. 'Similares' e 'estável' sem limiar. Parte (b) compara municípios sem pareamento."
+  },
+  {
+   "premissa": "C5-N03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Ideia relevante (preço contra execução), mas sem limiares: 'acima', 'alinhadas'. O enunciado usa SICOR e o teste não. Taxa por linha não controla risco do tomador. Nenhum fato citado."
+  },
+  {
+   "premissa": "C5-N05",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "−1,95 p.p. confere (F-022). Fluxo novo de consignado por instituição não está em fonte pública citada. 'Próxima' e 'alinhada' sem limiar. Controle pelo crédito pessoal não serve."
+  },
+  {
+   "premissa": "C5-N07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "18,42→25,43 confere (F-031). Perímetro, câmbio e exportações citados sem método; 'elasticidade ≈1' sem limiar. Inadimplência de comex por instituição não está no dossiê."
+  },
+  {
+   "premissa": "C5-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Controle por depósitos a prazo e poupança e alternativa do lado da receita nomeados. Mas não há limiar ('em alta', 'parte relevante'). Nenhum fato citado. Decisões genéricas."
+  }
+ ]
+}

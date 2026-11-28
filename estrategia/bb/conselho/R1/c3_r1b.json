@@ -1,0 +1,526 @@
+{
+ "revisoes": [
+  {
+   "premissa": "P01",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Queda reflete o ciclo de crédito e aumento de inadimplência, não mudança estrutural.",
+   "teste_decisivo": "Teste de quebra estrutural na série IF.data desde 2014; fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "53,7% (12/2023) não está no dossiê",
+    "62,4%, 55,8%, 53,5% são arredondamentos de 62,35, 55,82, 53,46"
+   ]
+  },
+  {
+   "premissa": "P02",
+   "prob_verdadeira": 0.45,
+   "alternativa": "Diferença de inadimplência reflete mix de clientes e porte, não modelo cooperativo.",
+   "teste_decisivo": "Painel com controles de região, porte, cultura e fonte; fonte: SCR.data e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "6,2%, 1,2%, 1,5%, 2,2%, 5,6%, 14,4% (vencidos acima de 15 dias rural PF) não estão no dossiê"
+   ]
+  },
+  {
+   "premissa": "P03",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Aumento disseminado proporcionalmente pela carteira.",
+   "teste_decisivo": "Curva de concentração do aumento de provisões por município; fonte: ESTBAN e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P04",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Simulação da administração superestima retorno sem agro; ROE sem agro fica abaixo de 13%.",
+   "teste_decisivo": "Reconstrução do ROE sem agro usando RWA por classe (DASFN) e custo por carteira (DFP/ITR).",
+   "limiar": "apertado",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P05",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Mercado de capitais financia proporção similar de risco ao balanço.",
+   "teste_decisivo": "Comparar inadimplência de Fiagro/FIDC vs bancos na mesma UF e porte; fonte: CVM e SCR.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "43% do crédito concedido na safra 2025/26",
+    "R$ 593,8 bi estoque CPR out/2026",
+    "33% CRA/Fiagro fim 2025 (19% em 2021)"
+   ]
+  },
+  {
+   "premissa": "P06",
+   "prob_verdadeira": 0.8,
+   "alternativa": "Queda se deve apenas ao crescimento de cooperativas sobre base pequena, sem perda de preço.",
+   "teste_decisivo": "Comparar taxa de emissão de LCA do BB vs pares; fonte: ANBIMA/B3.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "PL propõe 7,5% de IR"
+   ]
+  },
+  {
+   "premissa": "P07",
+   "prob_verdadeira": 0.4,
+   "alternativa": "Crescimento não prediz inadimplência; Caixa é caso isolado.",
+   "teste_decisivo": "Correlação entre variação de participação (12/2019–12/2023) e inadimplência (06/2026); fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "25,4% inadimplência Caixa",
+    "queda de 23% contratações 2026"
+   ]
+  },
+  {
+   "premissa": "P08",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Seguro não afeta perda significativamente.",
+   "teste_decisivo": "Painel município × safra com cobertura vs sinistro; fonte: SICOR e SUSEP.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "32,3% queda prêmios agrícolas",
+    "24,6% queda penhor rural"
+   ]
+  },
+  {
+   "premissa": "P09",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Modelo não supera baseline sazonal.",
+   "teste_decisivo": "Backtest fora da amostra com AUC ≥0,70; fonte: SCR.data, CHIRPS, ERA5-Land, NOAA.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "ONI +2,46"
+   ]
+  },
+  {
+   "premissa": "P10",
+   "prob_verdadeira": 0.35,
+   "alternativa": "Pedidos de recuperação judicial são coincidentes, não antecedentes.",
+   "teste_decisivo": "Correlação defasada entre pedidos e inadimplência; fonte: CNJ Datajud e SGS 21148.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "1.990 pedidos 2025",
+    "474 1T26 (+21,9%)",
+    "448 2T26 (-20,7%)"
+   ]
+  },
+  {
+   "premissa": "P11",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Renegociação estabiliza a carteira e reduz inadimplência por dois trimestres.",
+   "teste_decisivo": "Acompanhar adesão e atraso pós-renegociação; fonte: CVM IPE e SGS 21148.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "70% recebimento vs 90% esperado"
+   ]
+  },
+  {
+   "premissa": "P12",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Participação em serviços já é comparável à do crédito rural.",
+   "teste_decisivo": "Medir fatia do BB em seguro rural, consórcio e câmbio; fonte: SUSEP, BCB consórcios, IF.data.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P13",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Dinâmica do Sul não se repete em outras regiões.",
+   "teste_decisivo": "Curvas de adoção de cooperativas por UF com defasagem; fonte: IF.data regional e Unicad.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "10,6% → 16,8% Sul",
+    "6,0% → 7,7% CO",
+    "2,5% → 4,5% Sudeste"
+   ]
+  },
+  {
+   "premissa": "P14",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Digitais cresceram comprando risco.",
+   "teste_decisivo": "Margem ajustada ao risco aproximada (taxa − vencidos × perda) BB vs digitais; fonte: BCB taxas e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "8,4% Nubank vencidos",
+    "4,6% BB vencidos",
+    "6,4% sistema vencidos"
+   ]
+  },
+  {
+   "premissa": "P15",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Portabilidade não afeta significativamente a fatia ou margem do BB.",
+   "teste_decisivo": "Acompanhar fatia do BB no consignado após início da portabilidade; fonte: IF.data e BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "início nov/2026"
+   ]
+  },
+  {
+   "premissa": "P16",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Risco do Crédito do Trabalhador semelhante ao consignado tradicional.",
+   "teste_decisivo": "Comparar inadimplência por safra entre modalidades; fonte: BCB e MTP.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P17",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Atrasos do BB no cartão convergem para o sistema.",
+   "teste_decisivo": "Comparar vencidos do BB vs sistema por 3 trimestres; fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "15,4% BB vencidos cartão",
+    "12,1% sistema vencidos cartão"
+   ]
+  },
+  {
+   "premissa": "P18",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Falta funding de longo prazo a custo competitivo.",
+   "teste_decisivo": "Verificar estrutura de funding do BB para habitação; fonte: MCR e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "R$ 46 bi saldo imobiliário BB"
+   ]
+  },
+  {
+   "premissa": "P19",
+   "prob_verdadeira": 0.5,
+   "alternativa": "BB deve competir diretamente em veículos.",
+   "teste_decisivo": "Confirmar participação societária no Banco BV; fonte: CVM FRE.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P20",
+   "prob_verdadeira": 0.55,
+   "alternativa": "BB mantém principalidade onde tem folha de pagamento.",
+   "teste_decisivo": "Comparar fatia do BB em transações Pix vs depósitos; fonte: Pix dados abertos e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "113 milhões clientes Nubank"
+   ]
+  },
+  {
+   "premissa": "P21",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Reclamações do BB comparáveis aos pares.",
+   "teste_decisivo": "Ranking de reclamações do BCB, BB vs dez maiores, por 8 trimestres.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P22",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Diferencial de custo de captação permanece estável.",
+   "teste_decisivo": "Calcular custo de captação em % do CDI BB vs pares; fonte: IF.data e Cosif.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P23",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Contratos de depósitos judiciais renovados nas mesmas condições.",
+   "teste_decisivo": "Verificar editais e contratos de tribunais; fonte: PNCP e diários oficiais.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P24",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Captação líquida da poupança rural estável.",
+   "teste_decisivo": "Série SGS de poupança rural e fontes de recursos do rural; fonte: BCB SGS e SICOR.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P25",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Fluxo de depósitos em estresse vai para Caixa, Itaú ou títulos públicos.",
+   "teste_decisivo": "Estudo de evento em torno de crises bancárias; fonte: ESTBAN e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P26",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Presença física não gera vantagem mensurável em depósitos ou crédito.",
+   "teste_decisivo": "Diferenças em diferenças escalonado com entrada/saída de concorrentes; fonte: ESTBAN e Unicad.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "2300 municípios (dossiê 2290)",
+    "555 único (dossiê 577)",
+    "437 (12/2022)",
+    "23% menos agências"
+   ]
+  },
+  {
+   "premissa": "P27",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Cliente segue menos a folha de pagamento.",
+   "teste_decisivo": "Deslocamento de consignado após troca de banco da folha; fonte: PNCP, RAIS, ESTBAN.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "25% consignado servidores"
+   ]
+  },
+  {
+   "premissa": "P28",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Eventos políticos não geram retorno anormal significativo.",
+   "teste_decisivo": "Estudo de evento com fatos relevantes e anúncios de política; fonte: CVM IPE e B3.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P29",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Fatia do BB em regimes próprios comparável aos pares.",
+   "teste_decisivo": "Dados CADPREV de aplicações por gestor; fonte: CADPREV e CVM.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P30",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Perda em capital de giro concentra-se em médias e grandes empresas.",
+   "teste_decisivo": "Abrir perda por porte do tomador; fonte: IF.data PJ por porte.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "10,7% → 18,6% cooperativas singulares"
+   ]
+  },
+  {
+   "premissa": "P31",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Crescimento em comércio exterior é disperso, não ligado ao agro.",
+   "teste_decisivo": "Classificar carteira por CNAE do tomador; fonte: IF.data e Comex Stat.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P32",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Queda no crédito de investimento é de recursos próprios, não repasses.",
+   "teste_decisivo": "Comparar fatia do BB nas operações indiretas do BNDES; fonte: BNDES dados abertos.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P33",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Participação em originação comparável à fatia no crédito PJ.",
+   "teste_decisivo": "Rankings ANBIMA de originação e distribuição; fonte: ANBIMA.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P34",
+   "prob_verdadeira": 0.5,
+   "alternativa": "BB ainda ganha em recebíveis com a Cielo.",
+   "teste_decisivo": "Dados de pagamentos de varejo por credenciador; fonte: BCB estatísticas de pagamentos.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Rede 18%, Cielo 17%, PagBank 17%, Stone 15%, Mercado Pago 9%",
+    "5,6% operações com recebíveis BB"
+   ]
+  },
+  {
+   "premissa": "P35",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Receita de serviços de conta corrente estável em termos reais.",
+   "teste_decisivo": "Série de receita de serviços por linha do BB; fonte: DFP/ITR.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "54,7% transações de varejo Pix"
+   ]
+  },
+  {
+   "premissa": "P36",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Razão entre consentimentos recebidos e transmitidos próxima de 1.",
+   "teste_decisivo": "Painéis públicos do Open Finance Brasil; fonte: OFB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "200 milhões consentimentos"
+   ]
+  },
+  {
+   "premissa": "P37",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Instituições de pagamento não crescem crédito PJ significativamente.",
+   "teste_decisivo": "IF.data crédito PJ por conglomerado prudencial; fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "R$ 119 bi contas pré-pagas Mercado Pago",
+    "3,6% crédito pessoal sem consignação"
+   ]
+  },
+  {
+   "premissa": "P38",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Parte relevante da venda de seguros é independente da originação.",
+   "teste_decisivo": "Correlação entre prêmios e originação; fonte: SUSEP e SICOR.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "-19% prêmios Brasilseg",
+    "-32,3% agrícola",
+    "-26,9% prestamista"
+   ]
+  },
+  {
+   "premissa": "P39",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Captação líquida em fundos de varejo de maior taxa é positiva.",
+   "teste_decisivo": "Dados CVM de fundos por gestor e classe; fonte: CVM.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P40",
+   "prob_verdadeira": 0.5,
+   "alternativa": "BB não ganha fatia em consórcio.",
+   "teste_decisivo": "Dados BCB de consórcios por administradora; fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P41",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Rede física se paga via receita por cliente.",
+   "teste_decisivo": "Razão receita/despesa por cliente BB vs digitais; fonte: IF.data e releases.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P42",
+   "prob_verdadeira": 0.5,
+   "alternativa": "BB seleciona melhor no consignado (0,5% vs 1,4%).",
+   "teste_decisivo": "Painel com resíduos de inadimplência ajustados ao mix; fonte: SCR.data e IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "6,2% BB rural vs 5,6% sistema",
+    "0,5% BB consignado vs 1,4% sistema"
+   ]
+  },
+  {
+   "premissa": "P43",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Sem relação mensurável entre uso de IA e eficiência.",
+   "teste_decisivo": "Pesquisa FEBRABAN e índice de eficiência; fonte: FEBRABAN e IF.data.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P44",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Perfil etário do BB sem diferença relevante.",
+   "teste_decisivo": "Pesquisas públicas com recorte etário; fonte: ANBIMA e Datafolha.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P45",
+   "prob_verdadeira": 0.6,
+   "alternativa": "Folga de capital acima de 2,5 p.p. no cenário base.",
+   "teste_decisivo": "Simulação de RWA por mercado com cenários; fonte: DASFN.",
+   "limiar": "apertado",
+   "numeros_sem_fonte": [
+    "payout mínimo 25%"
+   ]
+  },
+  {
+   "premissa": "P46",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Custo do crédito é todo econômico, sem efeito contábil relevante.",
+   "teste_decisivo": "Comparar provisão vs vencidos BB e pares antes/depois de 03/2025; fonte: IF.data e Cosif.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P47",
+   "prob_verdadeira": 0.7,
+   "alternativa": "Concentração suportável pelo capital.",
+   "teste_decisivo": "Cenário de choque de 1 desvio-padrão na principal cultura; fonte: ESTBAN × PAM e sensibilidades P09.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "R$ 181,8 bi patrimônio BB"
+   ]
+  },
+  {
+   "premissa": "P48",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Preço e clima dominam a inadimplência rural.",
+   "teste_decisivo": "Decomposição de variância com Selic, preços e clima; fonte: SCR.data, SGS, CEPEA.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "Selic 13,75%"
+   ]
+  },
+  {
+   "premissa": "P49",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Mudanças regulatórias marginais para cooperativas.",
+   "teste_decisivo": "Acompanhar normativos aprovados que elevam custo; fonte: BCB/CMN.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P50",
+   "prob_verdadeira": 0.65,
+   "alternativa": "Algum estrangeiro ou banco de montadora cresce acima de 1 p.p. ao ano.",
+   "teste_decisivo": "Participação no rural PF/PJ por instituição; fonte: IF.data.",
+   "limiar": "frouxo",
+   "numeros_sem_fonte": [
+    "1,9% → 0,3% Rabobank",
+    "1,8% John Deere"
+   ]
+  },
+  {
+   "premissa": "P51",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Volume originado por agfintechs estaciona.",
+   "teste_decisivo": "Carteiras de Fiagro/FIDC por originador; fonte: CVM.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "R$ 968 mi Agrolend",
+    "meta R$ 2 bi"
+   ]
+  },
+  {
+   "premissa": "P52",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Alguma big tech obtém licença bancária e passa de 0,5% do sistema.",
+   "teste_decisivo": "Unicad e IF.data para carteira de crédito; fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P53",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Há cronograma oficial de produção de Drex.",
+   "teste_decisivo": "Comunicados oficiais do BCB sobre Drex; fonte: BCB.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P54",
+   "prob_verdadeira": 0.5,
+   "alternativa": "Carteira do BB em antecipação do FGTS é maior que 1% do crédito PF.",
+   "teste_decisivo": "IF.data crédito pessoal por instituição; fonte: IF.data.",
+   "limiar": "justo",
+   "numeros_sem_fonte": []
+  },
+  {
+   "premissa": "P55",
+   "prob_verdadeira": 0.55,
+   "alternativa": "Desconto de preço acompanha apenas o ROE, sem efeito de governança.",
+   "teste_decisivo": "Estudo de evento com fatos relevantes do BB e pares; fonte: CVM IPE e B3.",
+   "limiar": "justo",
+   "numeros_sem_fonte": [
+    "-6,9% retorno 12/08/2026"
+   ]
+  }
+ ]
+}

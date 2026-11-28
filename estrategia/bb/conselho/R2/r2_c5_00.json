@@ -1,0 +1,182 @@
+{
+ "criticas": [
+  {
+   "premissa": "P02",
+   "contrario": "A diferença de atraso pode ser inteiramente composição: cooperativas atendem pequenos produtores, Pronaf subsidiado e clientes de relacionamento antigo; controlando, a vantagem some.",
+   "alternativa": "Cooperativas têm incentivo de mutualidade e podem renegociar informalmente, maquiando o atraso contábil sem melhor risco real.",
+   "riscos_de_dado": [
+    "quebra de perímetro 1005→1009 em 03/2025",
+    "Cosif 2025 muda definições",
+    "vencidos>15d não é inadimplência+90d",
+    "SCR tem defasagem de meses"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data",
+     "IF.data",
+     "SICOR"
+    ],
+    "descricao": "Painel instituição×UF×trimestre com efeitos fixos; se coeficiente de cooperativa some com controles de porte e programa, premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P03",
+   "contrario": "SGS 21148 mostra inadimplência rural PF subindo de 0,80% para 9,59% no sistema inteiro: choque disseminado, não cirúrgico; concentração pode ser ilusão de onde está a carteira.",
+   "alternativa": "O aumento reflete alta de juros e fim de subsídio, atingindo proporcionalmente todas as regiões; a 'concentração' só espelha o peso do Centro-Oeste na carteira.",
+   "riscos_de_dado": [
+    "afirmação da administração não é teste independente",
+    "ESTBAN por agência pode ter mudança de enquadramento",
+    "curva de concentração sensível ao denominador"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN",
+     "SCR.data",
+     "SGS 21146/21148"
+    ],
+    "descricao": "Calcular aumento de inadimplência por UF×porte normalizado pela carteira; se variação for uniforme, premissa refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P05",
+   "contrario": "CPR/CRA/Fiagro podem estar absorvendo risco pior que os bancos não querem; inadimplência dos veículos pode ser igual ou maior, só menos visível.",
+   "alternativa": "O crescimento fora do balanço reflete restrição de capital dos bancos e demanda por isenção, não seleção adversa contra o balanço.",
+   "riscos_de_dado": [
+    "percentuais de CPR e CRA vêm de imprensa (I-12, I-13), não conferidos em primário",
+    "definição de 'crédito rural em mercado' pode variar",
+    "dados de Fiagro na CVM têm defasagem"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM dados abertos de fundos",
+     "MAPA Boletim de Finanças Privadas do Agro",
+     "SCR.data"
+    ],
+    "descricao": "Comparar inadimplência de Fiagro/FIDC agro com bancária por UF e porte; se veículos forem piores ou iguais, premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P06",
+   "contrario": "A queda de participação pode ser só diluição: cooperativas cresceram sobre base pequena; o BB pode ter mantido volume e preço, sem perda real de vantagem de funding.",
+   "alternativa": "O BB reduziu LCA por escolha de gestão de balanço e capital, não por perda de competitividade; tributação do PL pode não passar.",
+   "riscos_de_dado": [
+    "quebra de perímetro 1005→1009 e Cosif 2025 afetam a série de LCA",
+    "PL 5.853/2026 é proposta, não fato",
+    "taxa de emissão por emissor ainda sem fonte definida"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data Passivo LCA",
+     "ANBIMA/B3 taxas de emissão"
+    ],
+    "descricao": "Verificar se o spread de emissão de LCA do BB sobre CDI convergiu ao dos pares; se manteve vantagem, premissa enfraquece."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Separar: (a) perda de participação em LCA é fato medido; (b) perda de vantagem de custo exige dado de taxa de emissão; (c) efeito da tributação é cenário, não premissa."
+  },
+  {
+   "premissa": "P08",
+   "contrario": "Seguro rural tem cobertura parcial, franquias e exclusões; quem contrata seguro pode ser justamente o produtor mais exposto (seleção adversa), e o efeito na perda pode ser nulo.",
+   "alternativa": "A queda de 32,3% nos prêmios da Brasilseg pode refletir retração da originação de crédito, não decisão de risco; correlação não implica perda maior em 2027.",
+   "riscos_de_dado": [
+    "dado de prêmios é de uma seguradora, não do sistema",
+    "SISSER tem defasagem de sinistro",
+    "confundir cobertura de seguro com Proagro"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR",
+     "SISSER/MAPA",
+     "SCR.data"
+    ],
+    "descricao": "Painel município×safra: comparar inadimplência pós-choque climático em municípios de alta e baixa cobertura; sem diferença, premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P09",
+   "contrario": "Inadimplência rural depende de preço de commodity, câmbio, juros e renegociação, não só de clima; escore climático pode não superar baseline sazonal fora da amostra.",
+   "alternativa": "ONI alto pode coincidir com outros fatores macro; aparente poder preditivo em 2019–2026 pode ser sobreajuste a poucos eventos (poucos El Niños na amostra).",
+   "riscos_de_dado": [
+    "amostra curta: poucos ciclos ENSO em 2019–2026",
+    "SCR por UF agrega mixes diferentes",
+    "ZARC muda por safra",
+    "risco de vazamento temporal no backtest"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CHIRPS",
+     "ERA5-Land",
+     "NOAA ONI",
+     "SCR.data"
+    ],
+    "descricao": "Backtest estritamente fora da amostra com validação por safra; AUC abaixo de 0,60 ou não superior ao baseline sazonal refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P11",
+   "contrario": "Dois trimestres de recebimento fraco podem ser defasagem de implantação da renegociação; a cura pode vir em 2027 e a inadimplência do agro já pode estar perto do pico.",
+   "alternativa": "O dado de 70% vs 90% vem de imprensa sobre teleconferência, não de documento primário; pode ser recorte parcial ou sazonalidade de colheita.",
+   "riscos_de_dado": [
+    "número de 70% não confirmado em documento primário",
+    "definição de 'elegível' e 'adesão' pode mudar nos atos do CMN",
+    "renegociada que cura pode sair da rubrica"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM IPE fatos relevantes BB",
+     "balancetes Cosif",
+     "SGS 21148"
+    ],
+    "descricao": "Se inadimplência do agro cair dois trimestres seguidos ou adesão superar metade do elegível até 1T27, premissa refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P12",
+   "contrario": "BB Seguridade é líder em seguro rural via Brasilseg e o BB domina consórcio de máquinas; a fatia fora do crédito pode já ser alta, tornando o espaço de venda cruzada pequeno.",
+   "alternativa": "Fatia menor em serviços pode refletir regulação (consórcio, câmbio concentrados em especialistas) e não oportunidade explorável pelo BB.",
+   "riscos_de_dado": [
+    "a maioria das fatias está marcada como [H], sem dado no dossiê",
+    "perímetro de consórcio por administradora é fonte nova, não validada",
+    "comércio exterior (25,4%) já é alto, contrariando o padrão"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SUSEP SES",
+     "BCB consórcios",
+     "releases BB Seguridade"
+    ],
+    "descricao": "Medir participação do grupo BB em prêmios rurais, consórcios de máquinas e câmbio agro; se duas ou mais já forem comparáveis aos 53% do crédito, premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Medir antes de afirmar: a participação do grupo BB em seguro rural, consórcio de máquinas e câmbio agro ainda não está medida no dossiê; a premissa vale como hipótese a testar, não como fato."
+  }
+ ]
+}

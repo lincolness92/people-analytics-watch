@@ -1,0 +1,189 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C3-N07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-031",
+    "F-035"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números 18,42%→25,43% conferem (F-031). Isolamento do câmbio não tem método especificado; limiar 20-25% deixa zona cinzenta."
+  },
+  {
+   "premissa": "C3-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-038",
+    "F-041"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,49%→16,63% e 577 municípios conferem. Limiar (17%/15%) mede participação total, não o diferencial entre municípios únicos e com concorrentes. ESTBAN não cobre digitais/cooperativas."
+  },
+  {
+   "premissa": "C3-N09",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-042",
+    "F-044"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "49,38%→32,55% conferem (F-042). Mas o teste mede participação, enquanto a premissa afirma custo sobre CDI. Desconexão entre enunciado e métrica. Isenção fiscal da LCA é confundidor não tratado."
+  },
+  {
+   "premissa": "C3-N10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-004",
+    "F-047"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "R$ 9,3 bi e +4,6% a/a conferem (F-004). Limiar 7%/2% é numérico. Mas 'maior parte do ganho vem de linhas vendidas na rede' é qualitativo e sem critério de medição claro."
+  },
+  {
+   "premissa": "C3-N11",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-016",
+    "F-017",
+    "F-018"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "CET1 11,16%→10,80% e Basileia 14,81%→13,45% conferem. Fonte Pilar 3 nomeada. Gap entre refutação (<10%) e confirmação (≥11,5%) deixa faixa indeterminada."
+  },
+  {
+   "premissa": "C3-N12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-001",
+    "F-002",
+    "F-009",
+    "F-015"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "RSPL 2,8% (F-002) e Itaú 23,6% (F-009) conferem. 'Itens não recorrentes relevantes' carece de definição numérica. F-015 tem confiança média-baixa."
+  },
+  {
+   "premissa": "C3-N13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-048"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "26,4% agências e 2.290 municípios conferem. Limiar 2.200 é claro. Mas crescimento em municípios com fechamento de concorrentes pode refletir tendência econômica local, não causalidade."
+  },
+  {
+   "premissa": "C3-N14",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 2,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "577 municípios conferem (F-019). Mas premissa inclui cooperativas, que ESTBAN não cobre (ressalva F-019). Receita de serviços por município não tem fonte pública nomeada no dossiê."
+  },
+  {
+   "premissa": "C3-N15",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012",
+    "F-013"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "0,51%→17,21% (SGS 21146) e 0,80%→9,59% (SGS 21148) conferem. Limiar 20% é claro. Verificar ausência de renegociação por dado público é difícil; controle parcial."
+  },
+  {
+   "premissa": "C4-N01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012",
+    "F-021"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "4,84%→6,92% e R$ 403,6 bi conferem (F-006). SGS 21148 é rural PF; F-006 é agro total (PF+PJ). Perímetro divergente dificulta comparação direta. Controle por fonte de recursos é bom."
+  }
+ ]
+}

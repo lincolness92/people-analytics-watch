@@ -1,0 +1,212 @@
+{
+ "built_at": "2026-11-28T07:09:37+00:00",
+ "power_api": "https://power.larc.nasa.gov/api/temporal/monthly/regional",
+ "parameters": [
+  "PRECTOTCORR",
+  "T2M_MAX"
+ ],
+ "mesh": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&intrarregiao=municipio&qualidade=minima",
+ "weights": "saldo rural SICOR por município em 2023-12",
+ "baseline": "1991-2015, por mês do ano",
+ "grid_points": 5184,
+ "files": [
+  {
+   "url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&intrarregiao=municipio&qualidade=minima",
+   "fetched_at": "2026-11-28T05:45:55+00:00",
+   "bytes": 3605638,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-44&longitude-max=-34&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:53+00:00",
+   "bytes": 2214896,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-54&longitude-max=-44&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:49+00:00",
+   "bytes": 2218415,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-64&longitude-max=-54&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:45+00:00",
+   "bytes": 2231372,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-74&longitude-max=-64&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:41+00:00",
+   "bytes": 2228547,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-44&longitude-max=-34&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:38+00:00",
+   "bytes": 2216562,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-54&longitude-max=-44&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:34+00:00",
+   "bytes": 2216207,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-64&longitude-max=-54&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:30+00:00",
+   "bytes": 2216637,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-74&longitude-max=-64&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:26+00:00",
+   "bytes": 2205395,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-44&longitude-max=-34&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:22+00:00",
+   "bytes": 2215717,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-54&longitude-max=-44&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:18+00:00",
+   "bytes": 2216819,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-64&longitude-max=-54&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:15+00:00",
+   "bytes": 2217716,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-74&longitude-max=-64&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:11+00:00",
+   "bytes": 2206572,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-44&longitude-max=-34&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:06+00:00",
+   "bytes": 2228618,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-54&longitude-max=-44&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:03+00:00",
+   "bytes": 2237175,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-64&longitude-max=-54&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:59+00:00",
+   "bytes": 2232425,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-74&longitude-max=-64&parameters=PRECTOTCORR&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:46:55+00:00",
+   "bytes": 2242098,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-44&longitude-max=-34&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:51+00:00",
+   "bytes": 2369488,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-54&longitude-max=-44&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:48+00:00",
+   "bytes": 2369854,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-64&longitude-max=-54&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:44+00:00",
+   "bytes": 2369884,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-14&latitude-max=-4&longitude-min=-74&longitude-max=-64&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:40+00:00",
+   "bytes": 2369717,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-44&longitude-max=-34&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:36+00:00",
+   "bytes": 2369561,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-54&longitude-max=-44&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:32+00:00",
+   "bytes": 2369915,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-64&longitude-max=-54&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:29+00:00",
+   "bytes": 2370184,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-24&latitude-max=-14&longitude-min=-74&longitude-max=-64&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:25+00:00",
+   "bytes": 2369989,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-44&longitude-max=-34&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:22+00:00",
+   "bytes": 2369154,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-54&longitude-max=-44&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:18+00:00",
+   "bytes": 2369515,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-64&longitude-max=-54&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:13+00:00",
+   "bytes": 2369866,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-34&latitude-max=-24&longitude-min=-74&longitude-max=-64&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:10+00:00",
+   "bytes": 2367435,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-44&longitude-max=-34&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:48:08+00:00",
+   "bytes": 2368794,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-54&longitude-max=-44&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:48:04+00:00",
+   "bytes": 2368897,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-64&longitude-max=-54&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:59+00:00",
+   "bytes": 2369483,
+   "last_modified": null
+  },
+  {
+   "url": "https://power.larc.nasa.gov/api/temporal/monthly/regional?latitude-min=-4&latitude-max=6&longitude-min=-74&longitude-max=-64&parameters=T2M_MAX&community=AG&start=1991&end=2026&format=JSON",
+   "fetched_at": "2026-11-28T05:47:55+00:00",
+   "bytes": 2369507,
+   "last_modified": null
+  }
+ ]
+}

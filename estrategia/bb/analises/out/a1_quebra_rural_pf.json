@@ -1,0 +1,253 @@
+{
+ "serie": [
+  {
+   "period": 201603,
+   "bb_pf_rural_pct": 61.89
+  },
+  {
+   "period": 201606,
+   "bb_pf_rural_pct": 64.27
+  },
+  {
+   "period": 201609,
+   "bb_pf_rural_pct": 63.48
+  },
+  {
+   "period": 201612,
+   "bb_pf_rural_pct": 63.1
+  },
+  {
+   "period": 201703,
+   "bb_pf_rural_pct": 62.95
+  },
+  {
+   "period": 201706,
+   "bb_pf_rural_pct": 64.35
+  },
+  {
+   "period": 201709,
+   "bb_pf_rural_pct": 62.07
+  },
+  {
+   "period": 201712,
+   "bb_pf_rural_pct": 61.65
+  },
+  {
+   "period": 201803,
+   "bb_pf_rural_pct": 61.5
+  },
+  {
+   "period": 201806,
+   "bb_pf_rural_pct": 63.06
+  },
+  {
+   "period": 201809,
+   "bb_pf_rural_pct": 61.75
+  },
+  {
+   "period": 201812,
+   "bb_pf_rural_pct": 61.13
+  },
+  {
+   "period": 201903,
+   "bb_pf_rural_pct": 61.36
+  },
+  {
+   "period": 201906,
+   "bb_pf_rural_pct": 63.04
+  },
+  {
+   "period": 201909,
+   "bb_pf_rural_pct": 61.53
+  },
+  {
+   "period": 201912,
+   "bb_pf_rural_pct": 62.35
+  },
+  {
+   "period": 202003,
+   "bb_pf_rural_pct": 60.58
+  },
+  {
+   "period": 202006,
+   "bb_pf_rural_pct": 61.85
+  },
+  {
+   "period": 202009,
+   "bb_pf_rural_pct": 60.43
+  },
+  {
+   "period": 202012,
+   "bb_pf_rural_pct": 59.31
+  },
+  {
+   "period": 202103,
+   "bb_pf_rural_pct": 58.78
+  },
+  {
+   "period": 202106,
+   "bb_pf_rural_pct": 59.73
+  },
+  {
+   "period": 202109,
+   "bb_pf_rural_pct": 57.62
+  },
+  {
+   "period": 202112,
+   "bb_pf_rural_pct": 57.62
+  },
+  {
+   "period": 202203,
+   "bb_pf_rural_pct": 57.51
+  },
+  {
+   "period": 202206,
+   "bb_pf_rural_pct": 57.82
+  },
+  {
+   "period": 202209,
+   "bb_pf_rural_pct": 56.21
+  },
+  {
+   "period": 202212,
+   "bb_pf_rural_pct": 55.82
+  },
+  {
+   "period": 202303,
+   "bb_pf_rural_pct": 55.51
+  },
+  {
+   "period": 202306,
+   "bb_pf_rural_pct": 55.8
+  },
+  {
+   "period": 202309,
+   "bb_pf_rural_pct": 54.86
+  },
+  {
+   "period": 202312,
+   "bb_pf_rural_pct": 53.71
+  },
+  {
+   "period": 202403,
+   "bb_pf_rural_pct": 53.87
+  },
+  {
+   "period": 202406,
+   "bb_pf_rural_pct": 54.35
+  },
+  {
+   "period": 202409,
+   "bb_pf_rural_pct": 53.89
+  },
+  {
+   "period": 202412,
+   "bb_pf_rural_pct": 53.32
+  },
+  {
+   "period": 202503,
+   "bb_pf_rural_pct": 53.41
+  },
+  {
+   "period": 202506,
+   "bb_pf_rural_pct": 54.02
+  },
+  {
+   "period": 202509,
+   "bb_pf_rural_pct": 52.95
+  },
+  {
+   "period": 202512,
+   "bb_pf_rural_pct": 52.2
+  },
+  {
+   "period": 202603,
+   "bb_pf_rural_pct": 52.31
+  },
+  {
+   "period": 202606,
+   "bb_pf_rural_pct": 53.46
+  }
+ ],
+ "tendencia_03_2016_a_12_2019": {
+  "de": 201603,
+  "ate": 201912,
+  "n": 16,
+  "pp_por_ano": -0.424,
+  "ep_nw_pp_por_ano": 0.106,
+  "t": -4.0
+ },
+ "tendencia_12_2019_a_09_2023": {
+  "de": 201912,
+  "ate": 202309,
+  "n": 16,
+  "pp_por_ano": -1.898,
+  "ep_nw_pp_por_ano": 0.065,
+  "t": -29.41
+ },
+ "tendencia_antes_12_2023": {
+  "de": 201603,
+  "ate": 202309,
+  "n": 31,
+  "pp_por_ano": -1.137,
+  "ep_nw_pp_por_ano": 0.113,
+  "t": -10.03
+ },
+ "tendencia_ate_12_2024_perimetro_antigo": {
+  "de": 201603,
+  "ate": 202412,
+  "n": 36,
+  "pp_por_ano": -1.239,
+  "ep_nw_pp_por_ano": 0.095,
+  "t": -13.04
+ },
+ "tendencia_12_2023_em_diante": {
+  "de": 202312,
+  "ate": 202606,
+  "n": 11,
+  "pp_por_ano": -0.681,
+  "ep_nw_pp_por_ano": 0.064,
+  "t": -10.7
+ },
+ "tendencia_serie_toda": {
+  "de": 201603,
+  "ate": 202606,
+  "n": 42,
+  "pp_por_ano": -1.23,
+  "ep_nw_pp_por_ano": 0.068,
+  "t": -18.22
+ },
+ "sup_f": {
+  "F": 31.7,
+  "quebra_estimada_em": 202012,
+  "rho_ar1_residuos": 0.686,
+  "p_bootstrap": 0.037,
+  "reps": 999,
+  "aparo": 0.15,
+  "modelo": "BB_share = a + b·t + sazonais(T2,T3,T4) [+ c·1(t≥τ) + d·(t−τ)·1(t≥τ)]"
+ },
+ "chow_12_2019": {
+  "F": 19.41,
+  "gl": [
+   2,
+   35
+  ],
+  "nota": "F clássico supõe erros independentes; com ρ alto ele exagera a significância"
+ },
+ "chow_12_2023": {
+  "F": 3.3,
+  "gl": [
+   2,
+   35
+  ],
+  "nota": "F clássico supõe erros independentes; com ρ alto ele exagera a significância"
+ },
+ "chow_03_2025_perimetro": {
+  "F": 0.07,
+  "gl": [
+   2,
+   35
+  ],
+  "nota": "F clássico supõe erros independentes; com ρ alto ele exagera a significância"
+ }
+}

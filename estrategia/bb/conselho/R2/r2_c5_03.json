@@ -1,0 +1,186 @@
+{
+ "criticas": [
+  {
+   "premissa": "P38",
+   "contrario": "A Brasilseg vende seguro de vida, previdência e ramos não ligados a crédito; a queda de 19% pode refletir preço, sinistralidade ou competição, não a originação. Venda casada é regra comercial, não evidência de dependência estrutural.",
+   "alternativa": "A queda dos prêmios pode vir de reajuste de preço, perda para concorrentes de seguro digital ou redução de sinistralidade esperada, e não da originação de crédito do BB.",
+   "riscos_de_dado": [
+    "perímetro: prêmios da Brasilseg incluem linhas sem vínculo com crédito",
+    "defasagem: prêmio emitido versus ganho",
+    "seleção: usar só rural e prestamista enviesa a conclusão",
+    "dado 'hoje' vem de fonte I-27 fora do dossiê"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "releases trimestrais da BB Seguridade",
+     "SUSEP SES",
+     "SICOR",
+     "IF.data"
+    ],
+    "descricao": "Regressão dos prêmios por linha contra a originação do BB por trimestre, 2019–2026; se R² ficar abaixo de 0,5 ou o coeficiente for instável, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Parte relevante dos prêmios da Brasilseg em rural e prestamista segue a originação de crédito do BB; medir a parcela explicada por linha antes de decidir diversificação."
+  },
+  {
+   "premissa": "P39",
+   "contrario": "Liderança em patrimônio com captação positiva em fundos de maior taxa indicaria que a BB Asset retém o cliente rico; o dossiê não traz nenhum número de captação da BB Asset, e o 'hoje' admite fontes conflitantes.",
+   "alternativa": "A perda de alta renda pode ser fenômeno do sistema inteiro (migração para plataformas abertas), não fraqueza específica da BB Asset; concentração em renda fixa pode refletir o perfil conservador da base, não falha comercial.",
+   "riscos_de_dado": [
+    "nenhum fato do dossiê mede captação ou taxa da BB Asset",
+    "classe de fundo muda de definição ao longo do tempo",
+    "fundos exclusivos e previdência podem ser contados duas vezes",
+    "ranking ANBIMA usa perímetro diferente do CVM"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM dados abertos de fundos",
+     "ANBIMA ranking de gestão"
+    ],
+    "descricao": "Captação líquida por classe e gestor, 2019–2026; se a BB Asset tiver captação positiva em fundos de taxa alta por 3 anos, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Separar em duas: (a) a BB Asset concentra patrimônio em renda fixa e setor público; (b) a BB Asset perde captação líquida de alta renda para plataformas. Testar cada uma com dado próprio."
+  },
+  {
+   "premissa": "P41",
+   "contrario": "O dossiê mostra o BB com 26,4% das agências do sistema (F-048) e presença única em 577 municípios (F-019): a rede física serve clientes que digitais não alcançam, e a receita por cliente pode ser maior onde não há concorrente.",
+   "alternativa": "A despesa por cliente maior pode refletir mix (agro, setor público, interior) e não ineficiência; clientes de digitais são mais jovens e urbanos, com custo de atendimento naturalmente menor.",
+   "riscos_de_dado": [
+    "número de clientes não está no dossiê; definições de 'cliente ativo' divergem entre bancos",
+    "despesa administrativa do BB (F-004) não é comparável diretamente com a de digitais por diferença de escopo",
+    "digitais reportam em perímetros diferentes (Nubank à SEC)"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data demonstração de resultado",
+     "releases de base de clientes",
+     "cadastro de agências BCB"
+    ],
+    "descricao": "Calcular receita e despesa por cliente ativo para BB, Nubank e Inter em 2025–2026 com definição harmonizada; se a razão do BB for maior, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Comparar receita e despesa por cliente ativo do BB com Nubank e Inter, ajustando pelo mix de produtos e região, antes de concluir que a rede não se paga."
+  },
+  {
+   "premissa": "P42",
+   "contrario": "O próprio 'hoje' mostra o consignado do BB com inadimplência de 0,5% contra 1,4% do sistema: há seleção melhor em ao menos uma linha. No rural, 6,2% contra 5,6% pode ser efeito de mix regional e de cultura, não de modelo ruim.",
+   "alternativa": "A inadimplência rural maior do BB pode vir da obrigação de atender regiões e produtores que concorrentes recusam (577 municípios exclusivos, F-019), e não de modelo de risco inferior.",
+   "riscos_de_dado": [
+    "números do 'hoje' não constam do dossiê de fatos",
+    "ajuste por mix exige painel que pode não ser público no detalhe necessário",
+    "quebra de série Cosif 2025 e mudança de perímetro em 03/2025 afetam comparações 2014–2026"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data ou IF.data por modalidade e UF",
+     "SGS inadimplência"
+    ],
+    "descricao": "Regressão da inadimplência por UF, modalidade e porte, 2014–2026, com dummy de banco; se o resíduo do BB for negativo e significativo no rural, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P44",
+   "contrario": "O dossiê não traz nenhum dado etário; o próprio enunciado admite testabilidade baixa com dado público. Premissa sem teste público viável não deveria orientar decisão.",
+   "alternativa": "Mesmo que a base seja mais velha, isso pode refletir fidelidade do consignado e do setor público, não falha de renovação; entrada de jovens pode ocorrer via Pix e conta digital sem aparecer em pesquisa por instituição.",
+   "riscos_de_dado": [
+    "pesquisas citadas não identificam banco principal com precisão",
+    "amostras por faixa etária são pequenas e oscilam entre edições",
+    "Pix por faixa etária não é público por instituição",
+    "nenhum fato do dossiê sustenta o enunciado"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Raio X do Investidor (ANBIMA)",
+     "Datafolha",
+     "releases do BB"
+    ],
+    "descricao": "Se três edições seguidas mostrarem o BB com participação entre menores de 30 anos igual ou acima da sua participação geral, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": false,
+   "veredito": "reformula",
+   "texto_novo": "Verificar, com pesquisas públicas por faixa etária, se o BB está sub-representado entre menores de 30 anos; sem dado público por instituição, adiar a decisão."
+  },
+  {
+   "premissa": "P45",
+   "contrario": "O dossiê mostra CET1 de 10,80% (F-007) e histórico de recomposição (12,23% em dez/2025, F-016); com payout no mínimo e lucro de R$ 8,6 bi em 9M26, o BB pode reconstruir folga sem cortar mercados.",
+   "alternativa": "A queda de capital pode ser efeito transitório do ciclo de crédito de 2026, não restrição estrutural; a revisão de projeções (F-008) já embute o custo de crédito maior.",
+   "riscos_de_dado": [
+    "o mínimo regulatório com adicionais não está no dossiê; precisa da série pública de exigências do BCB",
+    "cenário de 2027 depende de premissas de crescimento de RWA não fornecidas",
+    "limiares de 1,5 e 2,5 p.p. são arbitrários"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DASFN KM1 e OV1",
+     "exigências regulatórias BCB",
+     "projeções revisadas do BB (F-008)"
+    ],
+    "descricao": "Simular CET1 de 2027 com lucro projetado, payout mínimo e crescimento de RWA por mercado; se a folga sobre o mínimo passar de 2,5 p.p., a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P47",
+   "contrario": "Exposição de 2,2 vezes o patrimônio não implica perda proporcional: carteira agro tem garantias, subvenção e histórico de perdas muito menores que o saldo. Um choque de 1 desvio-padrão pode consumir menos de 0,2 p.p. de capital.",
+   "alternativa": "A concentração pode ser diversificada por cultura e região; o número agregado de R$ 403,6 bi (F-006) esconde pulverização que reduz o efeito de choque regional.",
+   "riscos_de_dado": [
+    "patrimônio de R$ 181,8 bi citado no 'hoje' não consta do dossiê de fatos",
+    "concentração por cultura e UF exige cruzamento ESTBAN × PAM ainda não feito",
+    "sensibilidades de P09 são externas a este dossiê"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN por UF",
+     "PAM IBGE",
+     "IF.data patrimônio",
+     "releases BB"
+    ],
+    "descricao": "Estimar perda da carteira agro por UF sob queda de 1 desvio-padrão na cultura dominante e dividir pelo RWA; se o consumo de CET1 ficar abaixo de 0,2 p.p., a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A carteira agro do BB (R$ 403,6 bi, F-006) supera o dobro do patrimônio; medir o consumo de capital num choque regional antes de fixar limites de concentração."
+  },
+  {
+   "premissa": "P48",
+   "contrario": "O dossiê mostra inadimplência rural PF subindo de 0,80% para 9,59% (F-012) em período com choques de preço e clima; a decomposição pode mostrar preço e clima dominando, e a Selic pode ser só correlação temporal.",
+   "alternativa": "Selic alta e inadimplência alta podem ser ambas consequência de choque de custos e preços de commodities; a correlação não identifica causalidade, e a parcela de taxas de mercado (F-012) é só parte da carteira.",
+   "riscos_de_dado": [
+    "Selic de 13,75% citada no 'hoje' não está no dossiê de fatos",
+    "séries SGS têm defasagem de publicação",
+    "painel UF × mês mistura safras e calendários diferentes",
+    "nomes das séries SGS vêm de documento auxiliar, não do catálogo"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS 432 (Selic)",
+     "CEPEA",
+     "CHIRPS",
+     "CONAB",
+     "SCR.data"
+    ],
+    "descricao": "Decomposição de variância da inadimplência rural por UF e mês desde 2023; se preço e clima explicarem parcela maior que o juro, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  }
+ ]
+}

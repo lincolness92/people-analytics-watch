@@ -1,0 +1,204 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P11",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "recebimento perto de 70%, contra 90% esperados (imprensa, não confirmada no dossiê)",
+    "renegociações 'abaixo do inicialmente esperado' atribuída ao fato relevante [FE], mas F-008 não contém essa expressão"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-008 confirma o fato relevante, mas não menciona renegociações. Os 70%/90% vêm de imprensa não verificada. Teste depende de abertura Cosif ainda não detalhada."
+  },
+  {
+   "premissa": "P12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "53,46% (F-021) e 25,43% (F-031) conferem. Limiar de 26,7% derivado corretamente. Fonte de consórcios é nova e pode não existir. Não separa ausência de oferta de ausência de demanda."
+  },
+  {
+   "premissa": "P13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-052",
+    "F-054"
+   ],
+   "sem_apoio": [
+    "Sul 10,6% → 16,8% (crédito rural PF por região não está no dossiê)",
+    "Centro-Oeste 6,0% → 7,7% (idem)",
+    "Sudeste 2,5% → 4,5% (idem)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-021 traz Sicredi/Sicoob nacional, mas a abertura regional por rural PF não consta dos fatos. Números [IFD] sem respaldo no dossiê. Não controla se crescimento coop é demanda nova ou migração do BB."
+  },
+  {
+   "premissa": "P14",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [
+    "Vencidos acima de 15 dias: Nubank 8,4%, BB 4,6%, sistema 6,4% (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-023 confirma 22,53%→14,01% e Nubank 0,19%→15,07%. Vencidos por instituição não constam. Perda presumida de 50/70/90% é arbitrária; não controla perfil de cliente."
+  },
+  {
+   "premissa": "P15",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [
+    "cerca de R$ 154 bi no BB [IFD] (não está no dossiê)",
+    "Início previsto para nov/2026 [I-22] (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-022 confirma 21,17%→19,22% e ritmo ~0,3 pp/ano. Saldo em reais e data de portabilidade sem apoio. Usa crédito pessoal como controle anterior, o que é bom."
+  },
+  {
+   "premissa": "P16",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-012",
+    "F-013"
+   ],
+   "sem_apoio": [
+    "meta de 20% desse mercado [I-19] (não está no dossiê)",
+    "inadimplência acima da do crédito pessoal a partir do 5º mês [I-20] (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "SGS code 'a fixar' e série por safra não confirmados no dossiê. F-012/F-013 dão contexto de inadimplência, mas não por safra. Premissa reconhece que sem série pública fica não testável."
+  },
+  {
+   "premissa": "P17",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [
+    "Vencidos acima de 15 dias: BB 15,4%, sistema 12,1% (06/2026) (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-024 confirma 11,59%→9,35% e Nubank 3,34%→15,49%. Vencidos por instituição não constam. Separa bem razão vs valor absoluto (denominador), mas DASFN/Abecs fora do dossiê."
+  },
+  {
+   "premissa": "P18",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-025",
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "7,65%→3,22% (F-025), 19,22% (F-022), R$ 1,4 tri (F-025) conferem. R$ 46 bi é derivável. Separa fato (a) de hipótese (b). Não aborda se a saída foi estratégica ou por funding."
+  },
+  {
+   "premissa": "P19",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-026"
+   ],
+   "sem_apoio": [
+    "Participação no BV: [M], a confirmar (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-026 confirma 1,78%→2,46%. Participação no BV sem apoio. Sem esse dado, a pergunta 'somam ou sobrepõem' fica sem resposta. Teste depende de FRE ainda não verificado."
+  },
+  {
+   "premissa": "P20",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-049"
+   ],
+   "sem_apoio": [
+    "22,3% → 17,0% em depósitos à vista (F-038 registra 21,49% → 16,63%; valores não batem)",
+    "Nubank 113 milhões de clientes [I-08] (não está no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-038 mostra 21,49%→16,63%, não 22,3%→17,0% como citado. Pix dados abertos com isolamento PF não confirmado. Refutação aborda troca de produto, o que é bom controle."
+  }
+ ]
+}

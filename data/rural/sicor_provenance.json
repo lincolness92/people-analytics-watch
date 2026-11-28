@@ -1,0 +1,198 @@
+{
+ "source": "BCB SICOR, microdados (Matriz de Dados do Crédito Rural)",
+ "base_url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/",
+ "dictionary": "https://www.bcb.gov.br/htms/sicor/manualDadosSicorCompleto.pdf",
+ "built_at": "2026-11-28T07:09:02+00:00",
+ "files": [
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_COMPLEMENTO_OPERACAO_BASICA.gz",
+   "fetched_at": "2026-11-28T06:48:57+00:00",
+   "bytes": 454185668,
+   "last_modified": "Wed, 25 Nov 2026 15:17:32 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2013.gz",
+   "fetched_at": "2026-11-28T05:40:21+00:00",
+   "bytes": 56814239,
+   "last_modified": "Wed, 25 Nov 2026 15:17:56 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2014.gz",
+   "fetched_at": "2026-11-28T05:40:39+00:00",
+   "bytes": 54928155,
+   "last_modified": "Wed, 25 Nov 2026 15:17:56 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2015.gz",
+   "fetched_at": "2026-11-28T05:40:58+00:00",
+   "bytes": 52682891,
+   "last_modified": "Wed, 25 Nov 2026 15:17:57 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2016.gz",
+   "fetched_at": "2026-11-28T05:41:12+00:00",
+   "bytes": 39702893,
+   "last_modified": "Wed, 25 Nov 2026 15:17:57 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2017.gz",
+   "fetched_at": "2026-11-28T05:41:30+00:00",
+   "bytes": 53391708,
+   "last_modified": "Wed, 25 Nov 2026 15:17:57 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2018.gz",
+   "fetched_at": "2026-11-28T05:41:48+00:00",
+   "bytes": 51955964,
+   "last_modified": "Wed, 25 Nov 2026 15:17:58 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2019.gz",
+   "fetched_at": "2026-11-28T05:42:05+00:00",
+   "bytes": 50851607,
+   "last_modified": "Wed, 25 Nov 2026 15:17:58 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2020.gz",
+   "fetched_at": "2026-11-28T05:42:24+00:00",
+   "bytes": 53975025,
+   "last_modified": "Wed, 25 Nov 2026 15:17:59 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2021.gz",
+   "fetched_at": "2026-11-28T05:42:43+00:00",
+   "bytes": 58171890,
+   "last_modified": "Wed, 25 Nov 2026 15:17:59 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2022.gz",
+   "fetched_at": "2026-11-28T05:43:03+00:00",
+   "bytes": 60698761,
+   "last_modified": "Wed, 25 Nov 2026 15:18:00 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2023.gz",
+   "fetched_at": "2026-11-28T05:43:24+00:00",
+   "bytes": 64965897,
+   "last_modified": "Wed, 25 Nov 2026 15:18:00 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2024.gz",
+   "fetched_at": "2026-11-28T05:43:47+00:00",
+   "bytes": 68164764,
+   "last_modified": "Wed, 25 Nov 2026 15:18:01 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2025.gz",
+   "fetched_at": "2026-11-28T05:44:09+00:00",
+   "bytes": 64757916,
+   "last_modified": "Wed, 25 Nov 2026 15:18:01 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_OPERACAO_BASICA_ESTADO_2026.gz",
+   "fetched_at": "2026-11-28T05:44:26+00:00",
+   "bytes": 52735473,
+   "last_modified": "Wed, 25 Nov 2026 15:18:02 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2013_01.gz",
+   "fetched_at": "2026-11-28T05:49:32+00:00",
+   "bytes": 1083580016,
+   "last_modified": "Wed, 25 Nov 2026 15:18:27 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2013_02.gz",
+   "fetched_at": "2026-11-28T05:54:39+00:00",
+   "bytes": 1077030628,
+   "last_modified": "Wed, 25 Nov 2026 15:18:33 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2014_01.gz",
+   "fetched_at": "2026-11-28T05:57:47+00:00",
+   "bytes": 653521096,
+   "last_modified": "Wed, 25 Nov 2026 15:18:38 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2014_02.gz",
+   "fetched_at": "2026-11-28T06:02:26+00:00",
+   "bytes": 975579840,
+   "last_modified": "Wed, 25 Nov 2026 15:18:45 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2015.gz",
+   "fetched_at": "2026-11-28T06:08:28+00:00",
+   "bytes": 1259596605,
+   "last_modified": "Wed, 25 Nov 2026 15:18:53 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2016.gz",
+   "fetched_at": "2026-11-28T06:20:05+00:00",
+   "bytes": 1134406640,
+   "last_modified": "Wed, 25 Nov 2026 15:19:00 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2017.gz",
+   "fetched_at": "2026-11-28T06:24:37+00:00",
+   "bytes": 993263260,
+   "last_modified": "Wed, 25 Nov 2026 15:19:07 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2018.gz",
+   "fetched_at": "2026-11-28T06:29:05+00:00",
+   "bytes": 980081190,
+   "last_modified": "Wed, 25 Nov 2026 15:19:13 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2019.gz",
+   "fetched_at": "2026-11-28T06:32:45+00:00",
+   "bytes": 800932412,
+   "last_modified": "Wed, 25 Nov 2026 15:19:18 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2020.gz",
+   "fetched_at": "2026-11-28T06:36:02+00:00",
+   "bytes": 697974611,
+   "last_modified": "Wed, 25 Nov 2026 15:19:23 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2021.gz",
+   "fetched_at": "2026-11-28T06:39:05+00:00",
+   "bytes": 665780402,
+   "last_modified": "Wed, 25 Nov 2026 15:19:27 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2022.gz",
+   "fetched_at": "2026-11-28T06:41:47+00:00",
+   "bytes": 573468535,
+   "last_modified": "Wed, 25 Nov 2026 15:19:32 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2023.gz",
+   "fetched_at": "2026-11-28T06:44:30+00:00",
+   "bytes": 565840629,
+   "last_modified": "Wed, 25 Nov 2026 15:19:36 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2024.gz",
+   "fetched_at": "2026-11-28T06:46:48+00:00",
+   "bytes": 473440965,
+   "last_modified": "Wed, 25 Nov 2026 15:19:39 GMT"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2025.gz",
+   "fetched_at": "2026-11-28T05:33:00+00:00",
+   "bytes": 294901428,
+   "note": "baixado com curl"
+  },
+  {
+   "url": "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_SALDOS_2026.gz",
+   "fetched_at": "2026-11-28T05:33:00+00:00",
+   "bytes": 84238053,
+   "note": "baixado com curl"
+  }
+ ],
+ "target_months": [
+  "2023-12",
+  "2026-09"
+ ]
+}

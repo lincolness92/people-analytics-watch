@@ -1,0 +1,195 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P11",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "recebimento perto de 70% contra 90% esperados (imprensa, não no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares claros e controle por baixas para prejuízo. Mas o teste depende de o BB publicar atraso da renegociada por safra, o que não há no dossiê. Citação 'abaixo do esperado' não consta em F-008."
+  },
+  {
+   "premissa": "P12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-031",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "53,46%, 25,43% e o limiar 26,7% conferem. Mas F-031 é comex PJ, não serviço ao produtor, e o texto ignora F-042 (LCA 32,55%, acima do limiar). Fatia em serviço contra fatia em crédito rural não tem o mesmo denominador."
+  },
+  {
+   "premissa": "P13",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-052",
+    "F-053",
+    "F-054"
+   ],
+   "sem_apoio": [
+    "cooperativas singulares: Sul 10,6→16,8%, Centro-Oeste 6,0→7,7%, Sudeste 2,5→4,5%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares de inclinação claros. Mas o IF.data do dossiê abre região só para crédito total, não rural PF; os números de 'hoje' não conferem com F-052 a F-054. Não controla ciclos distintos entre as janelas."
+  },
+  {
+   "premissa": "P14",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [
+    "vencidos >15 dias: Nubank 8,4%, BB 4,6%, sistema 6,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "22,53→14,01 e Nubank 0,19→15,07 conferem (F-023). Três cenários de perda são bons. Mercado Pago não aparece entre os ganhadores de F-023. Margem ignora custo de funding e carteira nova pouco maturada."
+  },
+  {
+   "premissa": "P15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "19,22%, 0,3 p.p./ano e R$ 154 bi (19,22% de R$ 800 bi) conferem com F-022. Regra de confirmação mistura 'ou' e 'e' e deixa casos sem classe. Datas de início da portabilidade não estão no dossiê."
+  },
+  {
+   "premissa": "P16",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "meta de 20% do consignado privado [I-19]",
+    "inadimplência acima do crédito pessoal a partir do 5º mês [I-20]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Série do BCB 'a fixar': fonte não nomeada. Limiar só de ordenação, sem magnitude. Não controla o perfil de safras iniciais de um produto novo. Números de 'por que importa' e 'hoje' fora do dossiê."
+  },
+  {
+   "premissa": "P17",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [
+    "vencidos >15 dias no cartão: BB 15,4%, sistema 12,1% (06/2026)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "11,6→9,4 confere (F-024). Bom cuidado em exigir saldo vencido em reais, não só a razão. Atraso por instituição não está no dossiê. Mix rotativo/à vista não controlado; 'manter' é decisão fraca."
+  },
+  {
+   "premissa": "P18",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-025",
+    "F-022"
+   ],
+   "sem_apoio": [
+    "saldo habitacional do BB parado em cerca de R$ 46 bi enquanto o mercado dobrou (sem total de 2019 no dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "7,65→3,22, 19,22 e R$ 1,4 tri conferem. 'Mercado dobrou' não tem apoio. Confirmação por 'ou' com critério normativo qualitativo. Custo de funding sozinho não separa capacidade de originação e distribuição."
+  },
+  {
+   "premissa": "P19",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-026"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "1,78→2,46 confere (F-026); participação no BV assumida como desconhecida. Teste simples e com limiares. Mas 'reavaliar' não é decisão, e soma ou sobreposição de clientes não se mede só com fatias."
+  },
+  {
+   "premissa": "P20",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038"
+   ],
+   "sem_apoio": [
+    "depósitos à vista 22,3% → 17,0% (F-038 dá 21,49% → 16,63%)",
+    "Nubank 113 milhões de clientes [I-08]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "O número central não confere com F-038. Limiar de 1,5 vez é claro. Isolar PF no Pix aberto é incerto, e quantidade de transações favorece digitais por desenho, sem controle."
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "criticas": [
+  {
+   "premissa": "P25",
+   "contrario": "Em crise, depositantes correm para bancos grandes percebidos como sistêmicos, como Caixa e Itaú, não necessariamente BB; a marca não é diferencial.",
+   "alternativa": "Variações na fatia de depósitos podem ser sazonais ou migração de clientes digitais independente de crise.",
+   "riscos_de_dado": [
+    "Mudança de perímetro IF.data (1005→1009) e Cosif 2025 pode distorcer séries.",
+    "ESTBAN só cobre bancos com agência; bancos digitais sem agência não aparecem.",
+    "Evento [I-31] não detalhado no dossiê; pode haver confundimento com outras notícias."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM IPE",
+     "BCB comunicados",
+     "IF.data depósitos"
+    ],
+    "descricao": "Estudo de evento: comparar captação líquida do BB em janela de 2 trimestres após crise de banco médio/digital com captação prevista pela fatia; se não exceder, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Em crises de bancos médios/digitais de 2023 a 2026, a variação da fatia de depósitos do BB supera a dos pares grandes e a captação líquida fica acima da esperada pela fatia pré-evento."
+  },
+  {
+   "premissa": "P26",
+   "contrario": "Presença única de agência não garante fatia maior; população local pode usar bancos digitais e cooperativas sem agência física.",
+   "alternativa": "Maior fatia decorre de ausência histórica de concorrência, não de estabilidade; sem evento, não há causalidade.",
+   "riscos_de_dado": [
+    "ESTBAN não inclui cooperativas e bancos digitais, subestimando concorrentes.",
+    "Contagem por presença de saldo, não número de agências, pode distorcer exposição.",
+    "Fronteiras municipais e aberturas/fechamentos de agências mal datados no Cadastro."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN municipal",
+     "Unicad",
+     "BcBase"
+    ],
+    "descricao": "Diferenças em diferenças escalonado: comparar fatia de depósitos/crédito do BB em municípios com saída de banco privado e entrada de cooperativa; se trajetórias não mudam, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Em municípios só-BB, a fatia de depósitos é maior e estável; a saída de banco privado a eleva e a entrada de cooperativa a reduz."
+  },
+  {
+   "premissa": "P28",
+   "contrario": "A reação negativa em 11/11/2026 refletiu revisão de lucro e piora do agro, não desconto de governança; investidores não punem papel de agente.",
+   "alternativa": "O retorno anormal −9,3% é ilustrativo e baixa confiança; pode ser ruído de mercado ou reação a projeções.",
+   "riscos_de_dado": [
+    "F-014 é ilustrativo, não refeito com preços reais.",
+    "Não há dados de receita de política ou equalização no dossiê.",
+    "Concentração de risco agro medida por NPL, não por exposição ponderada."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM IPE fatos relevantes",
+     "B3 preços",
+     "Tesouro equalização"
+    ],
+    "descricao": "Estudo de evento para anúncios de política em que BB atua como agente; se retornos anormais não forem negativos e receita de política não for relevante, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P29",
+   "contrario": "BB Asset pode não concentrar RPPS/caixas; gestoras menores e bancos privados disputam, e taxa média pode não ser inferior.",
+   "alternativa": "Qualquer concentração aparente vem de relações históricas, não de preço; a taxa baixa pode ser de mandatos antigos.",
+   "riscos_de_dado": [
+    "CADPREV tem dados autodeclarados e fundos agregados, com possível dupla contagem.",
+    "CVM dados abertos podem ter sobreposição de classes.",
+    "Fontes de imprensa conflitam sobre patrimônio da BB Asset (I-29)."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CADPREV",
+     "CVM fundos",
+     "ANBIMA"
+    ],
+    "descricao": "Calcular participação da BB Asset em RPPS e caixas; comparar taxa média com mediana do mercado. Se participação <30% ou taxa não inferior, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A BB Asset detém participação relevante em RPPS e caixas de prefeituras, medida no CADPREV/CVM, com taxa média abaixo da mediana do mercado."
+  },
+  {
+   "premissa": "P30",
+   "contrario": "A perda pode estar em médias e grandes empresas, que migram para mercado de capitais ou bancos privados, não cooperativas.",
+   "alternativa": "Queda do BB pode ser por maior seletividade de crédito após alta de inadimplência, não por concorrência.",
+   "riscos_de_dado": [
+    "IF.data não possui abertura por porte no dossiê.",
+    "Mudança de perímetro 1005→1009 e Cosif 2025 afeta comparação.",
+    "Cooperativas singulares 10,7%→18,6% não está nos fatos; usar IF.data."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data por porte",
+     "Pronampe/FGO"
+    ],
+    "descricao": "Calcular perda de BB em capital de giro por porte; se <60% vier de micro/pequenas, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda do BB em capital de giro PJ concentra-se em micro e pequenas empresas, medida no IF.data por porte, e a fatia das cooperativas nesses portes aumentou."
+  },
+  {
+   "premissa": "P32",
+   "contrario": "Queda em investimento PJ pode ser por menor apetite a risco do BB ou base alta de 2019, não por repasses ou cooperativas.",
+   "alternativa": "A recuperação desde 12/2022 sugere que a queda não é estrutural; pode ser ciclo de crédito.",
+   "riscos_de_dado": [
+    "Sem dados do BNDES no dossiê.",
+    "IF.data mudanças contábeis 2025.",
+    "Cooperativas não aparecem em maiores ganhos de investimento (F-029) exceto Sicoob."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BNDES operações indiretas",
+     "IF.data"
+    ],
+    "descricao": "Comparar evolução da fatia do BB em investimento PJ com fatia em operações indiretas BNDES; se a fatia BNDES não cai junto, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A queda do BB em investimento PJ acompanha a queda de sua fatia em operações indiretas do BNDES, não sendo explicada apenas por entrada de cooperativas."
+  },
+  {
+   "premissa": "P34",
+   "contrario": "Mesmo com fatia menor, a adquirência pode ser suficiente para reter conta do lojista via integração e antecipação; não é determinante.",
+   "alternativa": "Perda de conta principal pode dever-se a taxas de antecipação ou serviços digitais, não à adquirência.",
+   "riscos_de_dado": [
+    "Dados de adquirência não estão no dossiê; só imprensa I-28.",
+    "IF.data recebíveis pode não capturar adquirentes independentes.",
+    "Estável 5,6% pode não refletir fluxos recentes."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB pagamentos varejo",
+     "IF.data recebíveis",
+     "Cielo"
+    ],
+    "descricao": "Correlacionar fatia do BB em adquirência/recebíveis com abertura de contas principais de lojistas; se fatia cai e conta principal não enfraquece, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A fatia estável ou decrescente do BB em adquirência e recebíveis não se traduz em crescimento de contas principais de lojistas, medido por dados do BCB."
+  },
+  {
+   "premissa": "P35",
+   "contrario": "Receita total de serviços do BB cresceu 4,6% a/a; conta corrente pode estar estável, e rotatividade de depósitos pode não ter aumentado.",
+   "alternativa": "Mudança para Pix pode aumentar transações sem reduzir saldo; receita migra para outras linhas.",
+   "riscos_de_dado": [
+    "Não há abertura por linha de receita no dossiê.",
+    "Rotatividade de depósitos exige dados diários não disponíveis.",
+    "Deflator e base real não especificados."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DFP/ITR BB",
+     "BCB tarifas",
+     "Pix abertos"
+    ],
+    "descricao": "Calcular receita real de conta corrente/transferências e rotatividade de depósitos à vista; se não houver queda >15% real e aumento da rotatividade, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A receita real do BB com conta corrente cai mais de 15% em 5 anos e a rotatividade dos depósitos à vista aumenta, medidos em DFP/ITR e Pix."
+  }
+ ]
+}

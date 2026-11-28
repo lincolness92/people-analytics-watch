@@ -1,0 +1,183 @@
+{
+ "criticas": [
+  {
+   "premissa": "P14",
+   "contrario": "O BB pode ter saído justamente dos clientes piores: quem fica no banco tradicional tende a ser mais velho e de renda mais estável; a migração para digitais pode ter levado o risco junto, não o cliente bom.",
+   "alternativa": "A perda de fatia pode ser só efeito de preço: o BB cobrava mais caro e perdeu bons e maus clientes na mesma proporção; a inadimplência menor do BB (4,6% vs 8,4% do Nubank) não prova que os migrantes eram bons.",
+   "riscos_de_dado": [
+    "vencidos>15d não medem perda final nem perfil de quem migrou",
+    "quebra de perímetro 1005→1009 em 03/2025 e Cosif 2025",
+    "comparar BB com Nubank mistura carteiras de ticket e prazo diferentes",
+    "margem ajustada usa 'perda presumida' arbitrária"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (saldo, vencidos, clientes por instituição)",
+     "BCB taxaJuros/v2"
+    ],
+    "descricao": "Calcular taxa média menos vencidos vezes perda presumida para BB, Nubank e Mercado Pago em 2019 e 2026; se a margem ajustada dos digitais for claramente menor, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Não se sabe se o BB perdeu bons clientes ou evitou risco no crédito pessoal sem consignação; a resposta exige comparar margem ajustada ao risco do BB e dos digitais em dados públicos."
+  },
+  {
+   "premissa": "P15",
+   "contrario": "O consignado depende de convênio com o empregador (INSS, órgãos), não só do cliente; a portabilidade digital pode mudar pouco, como o histórico lento de 21,2%→19,2% em 6,5 anos sugere.",
+   "alternativa": "A queda de participação até hoje veio de concorrentes com preço menor (Agibank, BTG), não de portabilidade; atribuir perda futura ao Open Finance pode confundir causa.",
+   "riscos_de_dado": [
+    "data de início da portabilidade do consignado é só previsão [I-22], pode atrasar",
+    "estatísticas de portabilidade do BCB são fonte nova, ainda não validada",
+    "quebra de série 1005→1009 em 03/2025 contamina o antes/depois",
+    "limiar de 1 p.p. em 12 meses é arbitrário"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data consignado trimestral",
+     "BCB estatísticas de portabilidade",
+     "taxaJuros/v2 consignado"
+    ],
+    "descricao": "Acompanhar 4 trimestres após o início: se a fatia do BB e a taxa relativa aos pares não se moverem, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P17",
+   "contrario": "Vencidos maiores podem ser herança da carteira antiga, não seleção adversa nova; o BB pode estar encolhendo justamente a parte ruim, o que elevaria o indicador mecanicamente.",
+   "alternativa": "A fatia cai porque o Nubank cresceu muito no denominador; os vencidos do BB acima do sistema podem refletir mix (clientes de menor renda atendidos pelo BB) e não piora de crédito.",
+   "riscos_de_dado": [
+    "vencidos>15d em 06/2026 é um ponto só; a premissa exige 3 trimestres",
+    "quebra de perímetro e Cosif 2025 alteram a série",
+    "denominador do sistema cresce rápido com digitais, distorcendo a comparação",
+    "Monitor Abecs mede volume, não saldo nem risco"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data cartão: saldo e vencidos por instituição, trimestral"
+    ],
+    "descricao": "Se os vencidos do BB convergirem para o sistema em 3 trimestres, ou se a piora se explicar por mix de carteira, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P18",
+   "contrario": "O BB pode ter saído da habitação por falta de funding: sua poupança é majoritariamente rural e direcionada, e LCI caiu de 12% para 2,9% do sistema; sem funding barato, entrar seria destruir margem.",
+   "alternativa": "A fatia pequena pode ser escolha racional de alocação de capital, não falha; o mercado cresceu com Caixa e Itaú usando funding que o BB não tem.",
+   "riscos_de_dado": [
+    "'renda estável' da base não está medida no dossiê; RAIS cobre só servidores formais",
+    "saldo 'parado em R$ 46 bi' não consta no dossiê, precisa de fonte",
+    "regra de direcionamento da poupança rural [H] não confirmada",
+    "quebra de série 1005→1009"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data habitação e LCI por instituição",
+     "normas do MCR sobre direcionamento da poupança",
+     "taxaJuros imobiliário por instituição"
+    ],
+    "descricao": "Verificar o custo e o volume de funding habitacional disponível ao BB; se não houver funding compatível, a premissa de oportunidade cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Separar em duas: (a) o BB quase não participa da habitação (fato: 7,7%→3,2%); (b) existe funding compatível para crescer nesse mercado (hipótese a testar)."
+  },
+  {
+   "premissa": "P20",
+   "contrario": "Depósito à vista caindo pode ser só migração para poupança e CDB dentro do próprio BB ou do sistema, não perda de principalidade; o cliente pode continuar usando o BB como banco principal.",
+   "alternativa": "A queda de 22,3%→17,0% reflete o crescimento de cooperativas e digitais no denominador, não saída de clientes do BB; número de clientes com crédito do BB até subiu (8,14%→8,22%).",
+   "riscos_de_dado": [
+    "principalidade não é observável diretamente; Pix por participante é proxy imperfeito",
+    "pesquisas citadas medem intenção, não comportamento",
+    "quebra de perímetro 1005→1009",
+    "dados de Pix por participante podem não isolar PF"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data depósitos e clientes",
+     "Pix dados abertos por participante",
+     "Raio X do Investidor ANBIMA"
+    ],
+    "descricao": "Se a fatia do BB em transações Pix acompanhar a fatia em depósitos, a hipótese de perda de principalidade cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A fatia do BB em meios de pagamento do dia a dia (Pix, depósitos à vista) cai mais rápido que sua base de clientes, o que indicaria perda de principalidade fora da folha."
+  },
+  {
+   "premissa": "P21",
+   "contrario": "Bancos grandes concentram reclamações por volume e por público mais vulnerável; o BB, com maior capilaridade e base de beneficiários, tende a índice pior que digitais de base mais jovem e urbana.",
+   "alternativa": "Índice baixo pode refletir base de clientes mais velha que reclama menos, não serviço melhor; ranking de reclamações mede demanda reprimida, não satisfação.",
+   "riscos_de_dado": [
+    "premissa sem nenhum cálculo hoje ([H]); é chute até o dado existir",
+    "ranking do BCB muda de metodologia e de universo ao longo do tempo",
+    "comparar BB com digitais mistura públicos e produtos diferentes"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB ranking de reclamações trimestral 2019–2026",
+     "ranking de ouvidorias"
+    ],
+    "descricao": "Calcular o índice de reclamações por cliente do BB contra os dez maiores por 8 trimestres; se ficar no pior terço, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Hipótese a testar, sem dado hoje: o índice de reclamações por cliente do BB no ranking do BCB é menor que o dos grandes pares e dos digitais."
+  },
+  {
+   "premissa": "P23",
+   "contrario": "Um caso (TJRJ) não faz tendência; a experiência de outros tribunais com banco regional terminou em crise [I-31], o que pode até reforçar a preferência pela solidez do BB.",
+   "alternativa": "A pressão do TJRJ pode ser negociação de preço pontual perto do vencimento do contrato, prática normal de gestor público, e não mudança estrutural de mercado.",
+   "riscos_de_dado": [
+    "evidência atual é um único tribunal e notícia [I-30], não série",
+    "verbete ESTBAN 414 pode não estar aberto por instituição",
+    "editais no PNCP têm cobertura e prazo de publicação irregulares",
+    "saldo de depósitos judiciais por instituição exige recorte Cosif específico"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "balancetes Cosif, conta de depósitos judiciais",
+     "PNCP e diários oficiais dos grandes tribunais",
+     "atos do CNJ"
+    ],
+    "descricao": "Se até 2027 os grandes contratos forem renovados nas mesmas condições e o saldo do BB não cair, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Há sinal de que tribunais passaram a pressionar preço e abrir disputa pela custódia dos depósitos judiciais (caso TJRJ); falta medir se isso vira perda de saldo ou de margem no BB."
+  },
+  {
+   "premissa": "P24",
+   "contrario": "A fatia do BB na poupança está estável (21,1%→20,7%) e o saldo do sistema pode estar crescendo; captação líquida negativa do sistema não implica captação negativa do BB nem falta de fonte rural.",
+   "alternativa": "O BB pode estar trocando poupança por LCA (onde ainda tem 32,6% do sistema) ou por recursos livres sem custo relevante, tornando o problema pequeno.",
+   "riscos_de_dado": [
+    "código SGS da poupança rural ainda não fixado; a premissa não tem dado próprio hoje",
+    "composição das fontes do crédito rural do BB: sem cálculo",
+    "SICOR identifica fonte por contratação, não por estoque",
+    "limiar de 5 p.p. em 3 safras é arbitrário"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SGS poupança rural (série a fixar)",
+     "IF.data poupança por instituição",
+     "SICOR fonte de recursos das contratações do BB"
+    ],
+    "descricao": "Medir a parcela do crédito rural do BB financiada por poupança em 3 safras; se ficar estável, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Hipótese sem dado próprio ainda: medir se a captação líquida da poupança do BB é negativa e se a parcela do crédito rural financiada por poupança está caindo."
+  }
+ ]
+}

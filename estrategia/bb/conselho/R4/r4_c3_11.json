@@ -1,0 +1,187 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C4-N12",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-029",
+    "F-030"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Números de participação conferidos em F-029 e F-030. Teste define métrica e comparação pública; decisões são opostas. Não há número sem apoio."
+  },
+  {
+   "premissa": "C4-N13",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-039",
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Percentuais conferidos em F-039, F-038, F-042. Teste usa saldo real e custo relativo; decisões distintas. Sem número sem apoio."
+  },
+  {
+   "premissa": "C4-N14",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-037",
+    "F-009",
+    "F-010"
+   ],
+   "sem_apoio": [
+    "577 agências exclusivas"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Percentuais em F-048, F-037, F-009 e F-010 conferidos. '577 exclusivas' não consta do dossiê; teto aplicado."
+  },
+  {
+   "premissa": "C4-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-002",
+    "F-009",
+    "F-011"
+   ],
+   "sem_apoio": [
+    "custo de capital ~12-14%",
+    "RSPL ≥ 12%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "RSPL e pares conferidos em F-002, F-009, F-011. Números de custo de capital não estão no dossiê; teto aplicado."
+  },
+  {
+   "premissa": "C5-N01",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Teste compara BB vs sistema por fonte, com limiar de 1 p.p. Fontes públicas existentes no dossiê. Sem número sem apoio."
+  },
+  {
+   "premissa": "C5-N02",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa testável com razão ≥2 e comparação direcionada. Número 17,21% conferido em F-012."
+  },
+  {
+   "premissa": "C5-N03",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Teste usa taxas públicas e variação de participação; decisões opostas. Sem número sem apoio. Premissa não cita números específicos."
+  },
+  {
+   "premissa": "C5-N05",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Queda de 1,95 p.p. conferida em F-022; teste compara fluxo e taxa com controle. Sem número sem apoio."
+  },
+  {
+   "premissa": "C5-N07",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Participação 18,42%→25,43% conferida em F-031; teste controla perímetro e câmbio. Sem número sem apoio."
+  },
+  {
+   "premissa": "C5-N08",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa usa fontes públicas; compara fontes de funding e separa despesa de receita. Sem número sem apoio."
+  }
+ ]
+}

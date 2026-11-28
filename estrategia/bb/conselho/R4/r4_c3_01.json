@@ -1,0 +1,204 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P11",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-012",
+    "F-006"
+   ],
+   "sem_apoio": [
+    "70%",
+    "90%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-008 não traz renegociação; 70% e 90% não constam no dossiê. Fontes públicas, mas série de renegociada não especificada. Teto aplicado."
+  },
+  {
+   "premissa": "P12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "53,46% (F-021) e 25,43% (F-031) conferem. Fontes de serviços não estão no dossiê, reduz testável. Sem números sem apoio."
+  },
+  {
+   "premissa": "P13",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-036"
+   ],
+   "sem_apoio": [
+    "10,6%",
+    "16,8%",
+    "6,0%",
+    "7,7%",
+    "2,5%",
+    "4,5%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fatias regionais de Sicredi/Sicoob não constam no dossiê. IF.data público mas Unicad/BcBase fora do dossiê. Teto aplicado."
+  },
+  {
+   "premissa": "P14",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [
+    "Vencidos acima de 15 dias: Nubank 8,4%, BB 4,6%, sistema 6,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Participações 22,53% e 14,01% conferem com F-023; vencidos não estão no dossiê. taxaJuros/v2 não detalhada. Teto aplicado."
+  },
+  {
+   "premissa": "P15",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [
+    "nov/2026"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Base 19,22% confere com F-022; data de portabilidade não consta no dossiê. Fontes públicas, mas série de portabilidade não fixada. Teto aplicado."
+  },
+  {
+   "premissa": "P16",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "5º mês",
+    "out/2026"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Alegação do BCB sobre 5º mês não está no dossiê. Código SGS a fixar reduz testável. Teto aplicado."
+  },
+  {
+   "premissa": "P17",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [
+    "Vencidos acima de 15 dias: BB 15,4%, sistema 12,1%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Fatia 11,6%→9,4% confere com F-024; vencidos não constam. DASFN fora do dossiê. Teto aplicado."
+  },
+  {
+   "premissa": "P18",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-025",
+    "F-022"
+   ],
+   "sem_apoio": [
+    "R$ 46 bi"
+   ],
+   "teto_aplicado": true,
+   "comentario": "7,65%→3,22% (F-025) e 19,22% (F-022) conferem; saldo R$ 46 bi não está no dossiê. Normas MCR não detalhadas. Teto aplicado."
+  },
+  {
+   "premissa": "P19",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-026"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "1,78%→2,46% confere com F-026. Fontes CVM FRE e IF.data públicas, limiares claros. Sem números sem apoio."
+  },
+  {
+   "premissa": "P20",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 0,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-011"
+   ],
+   "sem_apoio": [
+    "22,3%",
+    "113 milhões de clientes"
+   ],
+   "teto_aplicado": true,
+   "comentario": "17,0% confere com F-038 (16,63% arredondado); 22,3% e 113 mi não constam. Pix dados abertos não isolam PF claramente. Teto aplicado."
+  }
+ ]
+}

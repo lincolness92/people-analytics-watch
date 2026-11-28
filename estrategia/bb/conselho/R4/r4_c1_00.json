@@ -1,0 +1,197 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "53,7% (12/2023)",
+    "8,6 dos 8,9 p.p. antes de 2024 (depende do ponto 12/2023, ausente do dossiê)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Teste bem desenhado (início do ciclo pela SGS 21148, quebra, recorte sem Caixa). 62,4, 55,8 e 53,5 conferem com F-021; 12/2023 e a conta de 8,6 p.p. não têm apoio. Alternativa Sicredi/Sicoob pouco tratada."
+  },
+  {
+   "premissa": "P02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [
+    "vencidos >15 dias rural PF 06/2026: BB 6,2%, Sicredi 1,2%, Sicoob 1,5%, singulares 2,2%, sistema 5,6%, Caixa 14,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Painel com efeitos fixos UF-trimestre, porte e origem de recursos separa bem mix de modelo. Limiares claros. Todos os números de 'hoje' estão fora do dossiê; SCR.data por instituição é incerto, como o próprio texto admite."
+  },
+  {
+   "premissa": "P03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "17,21% e 9,59% conferem com F-012 (sistema, não BB). Limiares de concentração claros. Afirmação da administração (I-02) não está no dossiê. Não separa porte de cultura/clima regional como causa."
+  },
+  {
+   "premissa": "P04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-020",
+    "F-022",
+    "F-024",
+    "F-025",
+    "F-042",
+    "F-043"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Sinais citados conferem (PF, LCA e LCI em queda em F-020 a F-043). Dois rateios e limiares em p.p. bem fixados. Reconstrução por segmento dos pares é difícil e o custo de funding do agro não é tratado."
+  },
+  {
+   "premissa": "P05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "CPR 43% do crédito da safra 2025/26",
+    "estoque de CPR R$ 593,8 bi (out/2026)",
+    "CRA e Fiagro 33% (2025) e 19% (2021)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Estrutura em duas partes e limiares claros, com cuidado de dupla contagem. Nenhum número de 'hoje' está no dossiê. Não controla safra/maturação das carteiras dos veículos, mais novas que as bancárias."
+  },
+  {
+   "premissa": "P06",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-042"
+   ],
+   "sem_apoio": [
+    "IR de 7,5% na LCA (PL 5.853/2026)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "49,38→32,55 e Sicredi+Sicoob 2,8→15,0 conferem com F-042. Parte (a) sem limiar de refutação; 'manter' é decisão fraca. Comparar % do CDI sem controlar prazo e liquidez da emissão confunde preço com mix."
+  },
+  {
+   "premissa": "P07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [
+    "inadimplência >90 dias da Caixa de 25,4%",
+    "contratações da Caixa −23% em 2026"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Caixa 1,2→6,8 confere (F-021). Critério de 'praça nova' não operacionalizado; Spearman com 20–30 instituições divididas em grupos tem pouco poder. Se falsa, nenhuma ação nomeada. Mix de porte e região não controlado."
+  },
+  {
+   "premissa": "P08",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "prêmios Brasilseg −32,3% no 3T26",
+    "penhor rural −24,6%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares e robustez com cobertura defasada bons. Mas o painel é município × safra e o alvo (SCR.data) só abre por UF: métrica e unidade não batem. Números de 'hoje' fora do dossiê."
+  },
+  {
+   "premissa": "P09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "ONI +2,46 (El Niño forte)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Backtest fora da amostra, datação por publicação e baseline macro: bom controle. AUC com limiares explícitos e ressalva de poucos eventos ENSO. Nenhuma fonte do teste está no dossiê; ONI citado sem apoio."
+  },
+  {
+   "premissa": "P10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 1,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "1.990 pedidos de RJ em 2025",
+    "474 no 1T26 (+21,9%)",
+    "448 no 2T26 (−20,7%)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Teste com defasagens, placebo, clima, preço e quebra legal: bom. Mas a decisão está invertida: se a premissa (não antecede) for verdadeira, o texto manda incluir no monitor. Números de RJ fora do dossiê."
+  }
+ ]
+}

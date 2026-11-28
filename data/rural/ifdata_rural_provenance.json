@@ -1,0 +1,12 @@
+{
+ "source": "BCB IF.data, relatórios de carteira PF e PJ por modalidade e prazo (Rural e Agroindustrial)",
+ "read_from": [
+  "data/ifs/raw/ifdata/",
+  "data/ifs/ifs.sqlite",
+  "data/ifs/registry.json"
+ ],
+ "base_url": "https://www3.bcb.gov.br/ifdata/rest/arquivos?nomeArquivo=...",
+ "files": "proveniência completa por arquivo em data/ifs/ifdata/provenance.json",
+ "levels": "1005 até 2024-12; 1009 desde 2025-03",
+ "unit": "R$ milhões"
+}

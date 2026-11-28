@@ -172,8 +172,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201603,volkswagen,lucro_liquido,financeiro,1005,-5240701.36,BRL,cosif_antigo
 201603,c6,lucro_liquido,financeiro,1005,4949623.13,BRL,cosif_antigo
 201603,nubank,lucro_liquido,financeiro,1005,3737870.15,BRL,cosif_antigo
-201603,sicoob,indice_basileia,prudencial,1004,112.53736,ratio,cosif_antigo
-201603,sicredi,indice_basileia,prudencial,1004,23.719956,ratio,cosif_antigo
 201603,bradesco,indice_basileia,prudencial,1004,0.168608,ratio,cosif_antigo
 201603,itau,indice_basileia,prudencial,1004,0.176819,ratio,cosif_antigo
 201603,safra,indice_basileia,prudencial,1004,0.153995,ratio,cosif_antigo
@@ -1746,8 +1744,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201606,volkswagen,lucro_liquido,financeiro,1005,18558384.06,BRL,cosif_antigo
 201606,c6,lucro_liquido,financeiro,1005,338973.66,BRL,cosif_antigo
 201606,nubank,lucro_liquido,financeiro,1005,8388886.44,BRL,cosif_antigo
-201606,sicredi,indice_basileia,prudencial,1004,29.792204,ratio,cosif_antigo
-201606,sicoob,indice_basileia,prudencial,1004,110.520447,ratio,cosif_antigo
 201606,bradesco,indice_basileia,prudencial,1004,0.17596,ratio,cosif_antigo
 201606,itau,indice_basileia,prudencial,1004,0.179874,ratio,cosif_antigo
 201606,safra,indice_basileia,prudencial,1004,0.164346,ratio,cosif_antigo
@@ -3320,8 +3316,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201609,volkswagen,lucro_liquido,financeiro,1005,42838327.7,BRL,cosif_antigo
 201609,c6,lucro_liquido,financeiro,1005,-5403036.05,BRL,cosif_antigo
 201609,nubank,lucro_liquido,financeiro,1005,3016988.58,BRL,cosif_antigo
-201609,sicredi,indice_basileia,prudencial,1004,34.216053,ratio,cosif_antigo
-201609,sicoob,indice_basileia,prudencial,1004,111.010573,ratio,cosif_antigo
 201609,bradesco,indice_basileia,prudencial,1004,0.144649,ratio,cosif_antigo
 201609,itau,indice_basileia,prudencial,1004,0.189636,ratio,cosif_antigo
 201609,safra,indice_basileia,prudencial,1004,0.155008,ratio,cosif_antigo
@@ -4872,8 +4866,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201612,volkswagen,lucro_liquido,financeiro,1005,124245160.39,BRL,cosif_antigo
 201612,c6,lucro_liquido,financeiro,1005,-9906300.67,BRL,cosif_antigo
 201612,nubank,lucro_liquido,financeiro,1005,8603254.94,BRL,cosif_antigo
-201612,sicredi,indice_basileia,prudencial,1004,36.104303,ratio,cosif_antigo
-201612,sicoob,indice_basileia,prudencial,1004,110.074794,ratio,cosif_antigo
 201612,bradesco,indice_basileia,prudencial,1004,0.15335,ratio,cosif_antigo
 201612,itau,indice_basileia,prudencial,1004,0.190741,ratio,cosif_antigo
 201612,safra,indice_basileia,prudencial,1004,0.154103,ratio,cosif_antigo
@@ -6419,8 +6411,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201703,volkswagen,lucro_liquido,financeiro,1005,110216584.5,BRL,cosif_antigo
 201703,c6,lucro_liquido,financeiro,1005,565862.62,BRL,cosif_antigo
 201703,nubank,lucro_liquido,financeiro,1005,2956355.82,BRL,cosif_antigo
-201703,sicredi,indice_basileia,prudencial,1004,35.139596,ratio,cosif_antigo
-201703,sicoob,indice_basileia,prudencial,1004,110.928302,ratio,cosif_antigo
 201703,bradesco,indice_basileia,prudencial,1004,0.152944,ratio,cosif_antigo
 201703,itau,indice_basileia,prudencial,1004,0.18132,ratio,cosif_antigo
 201703,safra,indice_basileia,prudencial,1004,0.146068,ratio,cosif_antigo
@@ -7965,8 +7955,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201706,volkswagen,lucro_liquido,financeiro,1005,231343500.9,BRL,cosif_antigo
 201706,c6,lucro_liquido,financeiro,1005,-2046014.34,BRL,cosif_antigo
 201706,nubank,lucro_liquido,financeiro,1005,6769335.89,BRL,cosif_antigo
-201706,sicredi,indice_basileia,prudencial,1004,35.011091,ratio,cosif_antigo
-201706,sicoob,indice_basileia,prudencial,1004,111.060498,ratio,cosif_antigo
 201706,bradesco,indice_basileia,prudencial,1004,0.166583,ratio,cosif_antigo
 201706,itau,indice_basileia,prudencial,1004,0.184482,ratio,cosif_antigo
 201706,safra,indice_basileia,prudencial,1004,0.154216,ratio,cosif_antigo
@@ -9528,8 +9516,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201709,volkswagen,lucro_liquido,financeiro,1005,100957202.52,BRL,cosif_antigo
 201709,c6,lucro_liquido,financeiro,1005,-3046904.22,BRL,cosif_antigo
 201709,nubank,lucro_liquido,financeiro,1005,2115807.87,BRL,cosif_antigo
-201709,sicredi,indice_basileia,prudencial,1004,34.68179,ratio,cosif_antigo
-201709,sicoob,indice_basileia,prudencial,1004,107.683925,ratio,cosif_antigo
 201709,bradesco,indice_basileia,prudencial,1004,0.176456,ratio,cosif_antigo
 201709,itau,indice_basileia,prudencial,1004,0.194685,ratio,cosif_antigo
 201709,safra,indice_basileia,prudencial,1004,0.153213,ratio,cosif_antigo
@@ -11090,8 +11076,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201712,bndes,lucro_liquido,financeiro,1005,4838496479.35,BRL,cosif_antigo
 201712,volkswagen,lucro_liquido,financeiro,1005,282324798.24,BRL,cosif_antigo
 201712,c6,lucro_liquido,financeiro,1005,-5965279.86,BRL,cosif_antigo
-201712,sicredi,indice_basileia,prudencial,1004,36.082101,ratio,cosif_antigo
-201712,sicoob,indice_basileia,prudencial,1004,111.487497,ratio,cosif_antigo
 201712,bradesco,indice_basileia,prudencial,1004,0.17119,ratio,cosif_antigo
 201712,itau,indice_basileia,prudencial,1004,0.187988,ratio,cosif_antigo
 201712,safra,indice_basileia,prudencial,1004,0.137219,ratio,cosif_antigo
@@ -12633,8 +12617,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201803,bndes,lucro_liquido,financeiro,1005,2063569177.86,BRL,cosif_antigo
 201803,volkswagen,lucro_liquido,financeiro,1005,181193782.11,BRL,cosif_antigo
 201803,c6,lucro_liquido,financeiro,1005,-2998433.76,BRL,cosif_antigo
-201803,sicredi,indice_basileia,prudencial,1004,33.059081,ratio,cosif_antigo
-201803,sicoob,indice_basileia,prudencial,1004,102.771008,ratio,cosif_antigo
 201803,bradesco,indice_basileia,prudencial,1004,0.158665,ratio,cosif_antigo
 201803,itau,indice_basileia,prudencial,1004,0.166125,ratio,cosif_antigo
 201803,safra,indice_basileia,prudencial,1004,0.133705,ratio,cosif_antigo
@@ -14179,8 +14161,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201806,bndes,lucro_liquido,financeiro,1005,4760492967.68,BRL,cosif_antigo
 201806,volkswagen,lucro_liquido,financeiro,1005,297744478.33,BRL,cosif_antigo
 201806,c6,lucro_liquido,financeiro,1005,-6853205.21,BRL,cosif_antigo
-201806,sicredi,indice_basileia,prudencial,1004,33.716977,ratio,cosif_antigo
-201806,sicoob,indice_basileia,prudencial,1004,105.07237,ratio,cosif_antigo
 201806,bradesco,indice_basileia,prudencial,1004,0.148627,ratio,cosif_antigo
 201806,itau,indice_basileia,prudencial,1004,0.171727,ratio,cosif_antigo
 201806,safra,indice_basileia,prudencial,1004,0.127815,ratio,cosif_antigo
@@ -15730,8 +15710,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201809,bndes,lucro_liquido,financeiro,1005,1603000714.8,BRL,cosif_antigo
 201809,volkswagen,lucro_liquido,financeiro,1005,137385306.04,BRL,cosif_antigo
 201809,c6,lucro_liquido,financeiro,1005,-3882614.43,BRL,cosif_antigo
-201809,sicredi,indice_basileia,prudencial,1004,32.267081,ratio,cosif_antigo
-201809,sicoob,indice_basileia,prudencial,1004,104.453529,ratio,cosif_antigo
 201809,bradesco,indice_basileia,prudencial,1004,0.167821,ratio,cosif_antigo
 201809,itau,indice_basileia,prudencial,1004,0.168899,ratio,cosif_antigo
 201809,safra,indice_basileia,prudencial,1004,0.13157,ratio,cosif_antigo
@@ -17279,8 +17257,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201812,bndes,lucro_liquido,financeiro,1005,1950283782.28,BRL,cosif_antigo
 201812,volkswagen,lucro_liquido,financeiro,1005,256582240.67,BRL,cosif_antigo
 201812,c6,lucro_liquido,financeiro,1005,-13937406.96,BRL,cosif_antigo
-201812,sicredi,indice_basileia,prudencial,1004,31.250561,ratio,cosif_antigo
-201812,sicoob,indice_basileia,prudencial,1004,103.937321,ratio,cosif_antigo
 201812,bradesco,indice_basileia,prudencial,1004,0.178261,ratio,cosif_antigo
 201812,itau,indice_basileia,prudencial,1004,0.179725,ratio,cosif_antigo
 201812,safra,indice_basileia,prudencial,1004,0.144326,ratio,cosif_antigo
@@ -18805,8 +18781,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201903,classico,lucro_liquido,financeiro,1005,-261404.51,BRL,cosif_antigo
 201903,bndes,lucro_liquido,financeiro,1005,11077784237.92,BRL,cosif_antigo
 201903,volkswagen,lucro_liquido,financeiro,1005,146025037.13,BRL,cosif_antigo
-201903,sicredi,indice_basileia,prudencial,1004,31.057444,ratio,cosif_antigo
-201903,sicoob,indice_basileia,prudencial,1004,101.857753,ratio,cosif_antigo
 201903,bradesco,indice_basileia,prudencial,1004,0.180787,ratio,cosif_antigo
 201903,itau,indice_basileia,prudencial,1004,0.160298,ratio,cosif_antigo
 201903,safra,indice_basileia,prudencial,1004,0.150583,ratio,cosif_antigo
@@ -20342,8 +20316,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201906,classico,lucro_liquido,financeiro,1005,6640998.3,BRL,cosif_antigo
 201906,bndes,lucro_liquido,financeiro,1005,13807584322.31,BRL,cosif_antigo
 201906,volkswagen,lucro_liquido,financeiro,1005,295442246.67,BRL,cosif_antigo
-201906,sicredi,indice_basileia,prudencial,1004,30.692127,ratio,cosif_antigo
-201906,sicoob,indice_basileia,prudencial,1004,99.011517,ratio,cosif_antigo
 201906,bradesco,indice_basileia,prudencial,1004,0.186395,ratio,cosif_antigo
 201906,itau,indice_basileia,prudencial,1004,0.163243,ratio,cosif_antigo
 201906,safra,indice_basileia,prudencial,1004,0.153385,ratio,cosif_antigo
@@ -21889,8 +21861,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201909,classico,lucro_liquido,financeiro,1005,-619458.63,BRL,cosif_antigo
 201909,bndes,lucro_liquido,financeiro,1005,2702036706.7,BRL,cosif_antigo
 201909,volkswagen,lucro_liquido,financeiro,1005,144977676.26,BRL,cosif_antigo
-201909,sicredi,indice_basileia,prudencial,1004,30.082084,ratio,cosif_antigo
-201909,sicoob,indice_basileia,prudencial,1004,95.089609,ratio,cosif_antigo
 201909,bradesco,indice_basileia,prudencial,1004,0.181487,ratio,cosif_antigo
 201909,itau,indice_basileia,prudencial,1004,0.154088,ratio,cosif_antigo
 201909,safra,indice_basileia,prudencial,1004,0.153298,ratio,cosif_antigo
@@ -23440,8 +23410,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 201912,bndes,lucro_liquido,financeiro,1005,3913477734.09,BRL,cosif_antigo
 201912,stone,lucro_liquido,financeiro,1005,-85415.7,BRL,cosif_antigo
 201912,volkswagen,lucro_liquido,financeiro,1005,340508049.42,BRL,cosif_antigo
-201912,sicoob,indice_basileia,prudencial,1004,94.389029,ratio,cosif_antigo
-201912,sicredi,indice_basileia,prudencial,1004,31.797812,ratio,cosif_antigo
 201912,bradesco,indice_basileia,prudencial,1004,0.165042,ratio,cosif_antigo
 201912,itau,indice_basileia,prudencial,1004,0.157742,ratio,cosif_antigo
 201912,safra,indice_basileia,prudencial,1004,0.139453,ratio,cosif_antigo
@@ -25035,8 +25003,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202003,classico,lucro_liquido,financeiro,1005,-417010.06,BRL,cosif_antigo
 202003,bndes,lucro_liquido,financeiro,1005,5544454148.73,BRL,cosif_antigo
 202003,volkswagen,lucro_liquido,financeiro,1005,36870284.25,BRL,cosif_antigo
-202003,sicoob,indice_basileia,prudencial,1004,94.130668,ratio,cosif_antigo
-202003,sicredi,indice_basileia,prudencial,1004,32.160131,ratio,cosif_antigo
 202003,bradesco,indice_basileia,prudencial,1004,0.139262,ratio,cosif_antigo
 202003,itau,indice_basileia,prudencial,1004,0.133412,ratio,cosif_antigo
 202003,safra,indice_basileia,prudencial,1004,0.141157,ratio,cosif_antigo
@@ -26621,8 +26587,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202006,classico,lucro_liquido,financeiro,1005,-417449.45,BRL,cosif_antigo
 202006,bndes,lucro_liquido,financeiro,1005,4961724150.26,BRL,cosif_antigo
 202006,volkswagen,lucro_liquido,financeiro,1005,106663849.66,BRL,cosif_antigo
-202006,sicoob,indice_basileia,prudencial,1004,92.502053,ratio,cosif_antigo
-202006,sicredi,indice_basileia,prudencial,1004,32.510268,ratio,cosif_antigo
 202006,bradesco,indice_basileia,prudencial,1004,0.150403,ratio,cosif_antigo
 202006,itau,indice_basileia,prudencial,1004,0.135159,ratio,cosif_antigo
 202006,safra,indice_basileia,prudencial,1004,0.145487,ratio,cosif_antigo
@@ -28220,8 +28184,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202009,classico,lucro_liquido,financeiro,1005,66515126.86,BRL,cosif_antigo
 202009,bndes,lucro_liquido,financeiro,1005,8726464144.84,BRL,cosif_antigo
 202009,volkswagen,lucro_liquido,financeiro,1005,120466409.2,BRL,cosif_antigo
-202009,sicoob,indice_basileia,prudencial,1004,87.28485,ratio,cosif_antigo
-202009,sicredi,indice_basileia,prudencial,1004,30.781587,ratio,cosif_antigo
 202009,bradesco,indice_basileia,prudencial,1004,0.151471,ratio,cosif_antigo
 202009,itau,indice_basileia,prudencial,1004,0.13746,ratio,cosif_antigo
 202009,safra,indice_basileia,prudencial,1004,0.152902,ratio,cosif_antigo
@@ -29821,8 +29783,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202012,classico,lucro_liquido,financeiro,1005,135705290.77,BRL,cosif_antigo
 202012,bndes,lucro_liquido,financeiro,1005,15719771765.91,BRL,cosif_antigo
 202012,volkswagen,lucro_liquido,financeiro,1005,250069067.14,BRL,cosif_antigo
-202012,sicoob,indice_basileia,prudencial,1004,86.010084,ratio,cosif_antigo
-202012,sicredi,indice_basileia,prudencial,1004,29.531963,ratio,cosif_antigo
 202012,bradesco,indice_basileia,prudencial,1004,0.158058,ratio,cosif_antigo
 202012,itau,indice_basileia,prudencial,1004,0.144964,ratio,cosif_antigo
 202012,safra,indice_basileia,prudencial,1004,0.145999,ratio,cosif_antigo
@@ -31435,8 +31395,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202103,classico,lucro_liquido,financeiro,1005,-1942622.65,BRL,cosif_antigo
 202103,bndes,lucro_liquido,financeiro,1005,9807600512.35,BRL,cosif_antigo
 202103,volkswagen,lucro_liquido,financeiro,1005,144249266.33,BRL,cosif_antigo
-202103,sicoob,indice_basileia,prudencial,1004,83.757009,ratio,cosif_antigo
-202103,sicredi,indice_basileia,prudencial,1004,31.792152,ratio,cosif_antigo
 202103,bradesco,indice_basileia,prudencial,1004,0.153672,ratio,cosif_antigo
 202103,itau,indice_basileia,prudencial,1004,0.144721,ratio,cosif_antigo
 202103,safra,indice_basileia,prudencial,1004,0.134757,ratio,cosif_antigo
@@ -33054,8 +33012,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202106,classico,lucro_liquido,financeiro,1005,57890387.91,BRL,cosif_antigo
 202106,bndes,lucro_liquido,financeiro,1005,15116080043.24,BRL,cosif_antigo
 202106,volkswagen,lucro_liquido,financeiro,1005,236426077.85,BRL,cosif_antigo
-202106,sicoob,indice_basileia,prudencial,1004,81.620417,ratio,cosif_antigo
-202106,sicredi,indice_basileia,prudencial,1004,27.193418,ratio,cosif_antigo
 202106,bradesco,indice_basileia,prudencial,1004,0.159509,ratio,cosif_antigo
 202106,itau,indice_basileia,prudencial,1004,0.149301,ratio,cosif_antigo
 202106,safra,indice_basileia,prudencial,1004,0.143654,ratio,cosif_antigo
@@ -34675,8 +34631,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202109,classico,lucro_liquido,financeiro,1005,80438474.69,BRL,cosif_antigo
 202109,bndes,lucro_liquido,financeiro,1005,11254525810.14,BRL,cosif_antigo
 202109,volkswagen,lucro_liquido,financeiro,1005,39124016.42,BRL,cosif_antigo
-202109,sicoob,indice_basileia,prudencial,1004,78.861624,ratio,cosif_antigo
-202109,sicredi,indice_basileia,prudencial,1004,25.923131,ratio,cosif_antigo
 202109,bradesco,indice_basileia,prudencial,1004,0.151792,ratio,cosif_antigo
 202109,itau,indice_basileia,prudencial,1004,0.147096,ratio,cosif_antigo
 202109,safra,indice_basileia,prudencial,1004,0.14226,ratio,cosif_antigo
@@ -36305,8 +36259,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202112,classico,lucro_liquido,financeiro,1005,89860521.01,BRL,cosif_antigo
 202112,bndes,lucro_liquido,financeiro,1005,18953008732.93,BRL,cosif_antigo
 202112,volkswagen,lucro_liquido,financeiro,1005,86139977.37,BRL,cosif_antigo
-202112,sicoob,indice_basileia,prudencial,1004,77.450827,ratio,cosif_antigo
-202112,sicredi,indice_basileia,prudencial,1004,25.635618,ratio,cosif_antigo
 202112,bradesco,indice_basileia,prudencial,1004,0.157592,ratio,cosif_antigo
 202112,itau,indice_basileia,prudencial,1004,0.147157,ratio,cosif_antigo
 202112,safra,indice_basileia,prudencial,1004,0.136594,ratio,cosif_antigo
@@ -37940,8 +37892,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202203,classico,lucro_liquido,financeiro,1005,62177557.17,BRL,cosif_antigo
 202203,bndes,lucro_liquido,financeiro,1005,12901944075.6,BRL,cosif_antigo
 202203,volkswagen,lucro_liquido,financeiro,1005,20652917.4,BRL,cosif_antigo
-202203,sicoob,indice_basileia,prudencial,1004,76.695216,ratio,cosif_antigo
-202203,sicredi,indice_basileia,prudencial,1004,26.378106,ratio,cosif_antigo
 202203,bradesco,indice_basileia,prudencial,1004,0.156784,ratio,cosif_antigo
 202203,itau,indice_basileia,prudencial,1004,0.139311,ratio,cosif_antigo
 202203,safra,indice_basileia,prudencial,1004,0.133897,ratio,cosif_antigo
@@ -39579,8 +39529,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202206,classico,lucro_liquido,financeiro,1005,117098830.28,BRL,cosif_antigo
 202206,bndes,lucro_liquido,financeiro,1005,24615500096.99,BRL,cosif_antigo
 202206,volkswagen,lucro_liquido,financeiro,1005,20939625.16,BRL,cosif_antigo
-202206,sicoob,indice_basileia,prudencial,1004,75.248483,ratio,cosif_antigo
-202206,sicredi,indice_basileia,prudencial,1004,25.138545,ratio,cosif_antigo
 202206,bradesco,indice_basileia,prudencial,1004,0.156472,ratio,cosif_antigo
 202206,itau,indice_basileia,prudencial,1004,0.140608,ratio,cosif_antigo
 202206,safra,indice_basileia,prudencial,1004,0.12941,ratio,cosif_antigo
@@ -41217,8 +41165,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202209,classico,lucro_liquido,financeiro,1005,-7963806.36,BRL,cosif_antigo
 202209,bndes,lucro_liquido,financeiro,1005,9586343035.11,BRL,cosif_antigo
 202209,volkswagen,lucro_liquido,financeiro,1005,73264390.9,BRL,cosif_antigo
-202209,sicoob,indice_basileia,prudencial,1004,76.09403,ratio,cosif_antigo
-202209,sicredi,indice_basileia,prudencial,1004,24.535399,ratio,cosif_antigo
 202209,bradesco,indice_basileia,prudencial,1004,0.158155,ratio,cosif_antigo
 202209,itau,indice_basileia,prudencial,1004,0.147202,ratio,cosif_antigo
 202209,safra,indice_basileia,prudencial,1004,0.123561,ratio,cosif_antigo
@@ -42857,8 +42803,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202212,classico,lucro_liquido,financeiro,1005,115263943.3,BRL,cosif_antigo
 202212,bndes,lucro_liquido,financeiro,1005,17127548388.34,BRL,cosif_antigo
 202212,volkswagen,lucro_liquido,financeiro,1005,134756770.35,BRL,cosif_antigo
-202212,sicoob,indice_basileia,prudencial,1004,77.94472,ratio,cosif_antigo
-202212,sicredi,indice_basileia,prudencial,1004,24.606604,ratio,cosif_antigo
 202212,bradesco,indice_basileia,prudencial,1004,0.148498,ratio,cosif_antigo
 202212,itau,indice_basileia,prudencial,1004,0.149726,ratio,cosif_antigo
 202212,safra,indice_basileia,prudencial,1004,0.127607,ratio,cosif_antigo
@@ -44501,8 +44445,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202303,classico,lucro_liquido,financeiro,1005,188229.31,BRL,cosif_antigo
 202303,bndes,lucro_liquido,financeiro,1005,3962687319.05,BRL,cosif_antigo
 202303,volkswagen,lucro_liquido,financeiro,1005,46312597.73,BRL,cosif_antigo
-202303,sicoob,indice_basileia,prudencial,1004,75.434628,ratio,cosif_antigo
-202303,sicredi,indice_basileia,prudencial,1004,24.135469,ratio,cosif_antigo
 202303,bradesco,indice_basileia,prudencial,1004,0.150932,ratio,cosif_antigo
 202303,itau,indice_basileia,prudencial,1004,0.149752,ratio,cosif_antigo
 202303,safra,indice_basileia,prudencial,1004,0.184119,ratio,cosif_antigo
@@ -46146,8 +46088,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202306,classico,lucro_liquido,financeiro,1005,143813095.76,BRL,cosif_antigo
 202306,bndes,lucro_liquido,financeiro,1005,9503165546.79,BRL,cosif_antigo
 202306,volkswagen,lucro_liquido,financeiro,1005,151156220.18,BRL,cosif_antigo
-202306,sicoob,indice_basileia,prudencial,1004,73.313525,ratio,cosif_antigo
-202306,sicredi,indice_basileia,prudencial,1004,23.983329,ratio,cosif_antigo
 202306,bradesco,indice_basileia,prudencial,1004,0.155425,ratio,cosif_antigo
 202306,itau,indice_basileia,prudencial,1004,0.151257,ratio,cosif_antigo
 202306,safra,indice_basileia,prudencial,1004,0.184789,ratio,cosif_antigo
@@ -47788,8 +47728,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202309,classico,lucro_liquido,financeiro,1005,79603203.89,BRL,cosif_antigo
 202309,bndes,lucro_liquido,financeiro,1005,4944616004.03,BRL,cosif_antigo
 202309,volkswagen,lucro_liquido,financeiro,1005,-45985542.07,BRL,cosif_antigo
-202309,sicoob,indice_basileia,prudencial,1009,69.40152,ratio,cosif_antigo
-202309,sicredi,indice_basileia,prudencial,1009,24.417821,ratio,cosif_antigo
 202309,bradesco,indice_basileia,prudencial,1009,0.159921,ratio,cosif_antigo
 202309,itau,indice_basileia,prudencial,1009,0.162697,ratio,cosif_antigo
 202309,safra,indice_basileia,prudencial,1009,0.190093,ratio,cosif_antigo
@@ -49441,8 +49379,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202312,classico,lucro_liquido,financeiro,1005,91321143.15,BRL,cosif_antigo
 202312,bndes,lucro_liquido,financeiro,1005,12399923628.41,BRL,cosif_antigo
 202312,volkswagen,lucro_liquido,financeiro,1005,-29667192.82,BRL,cosif_antigo
-202312,sicoob,indice_basileia,prudencial,1009,69.448294,ratio,cosif_antigo
-202312,sicredi,indice_basileia,prudencial,1009,24.312217,ratio,cosif_antigo
 202312,bradesco,indice_basileia,prudencial,1009,0.158239,ratio,cosif_antigo
 202312,itau,indice_basileia,prudencial,1009,0.170253,ratio,cosif_antigo
 202312,safra,indice_basileia,prudencial,1009,0.176451,ratio,cosif_antigo
@@ -51146,8 +51082,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202403,classico,lucro_liquido,financeiro,1005,-1930542.43,BRL,cosif_antigo
 202403,bndes,lucro_liquido,financeiro,1005,5237432936.43,BRL,cosif_antigo
 202403,volkswagen,lucro_liquido,financeiro,1005,42939768.64,BRL,cosif_antigo
-202403,sicoob,indice_basileia,prudencial,1009,69.014138,ratio,cosif_antigo
-202403,sicredi,indice_basileia,prudencial,1009,24.442265,ratio,cosif_antigo
 202403,bradesco,indice_basileia,prudencial,1009,0.153763,ratio,cosif_antigo
 202403,itau,indice_basileia,prudencial,1009,0.16395,ratio,cosif_antigo
 202403,safra,indice_basileia,prudencial,1009,0.173456,ratio,cosif_antigo
@@ -52852,8 +52786,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202406,classico,lucro_liquido,financeiro,1005,93154425.51,BRL,cosif_antigo
 202406,bndes,lucro_liquido,financeiro,1005,13334995543.15,BRL,cosif_antigo
 202406,volkswagen,lucro_liquido,financeiro,1005,134294413.89,BRL,cosif_antigo
-202406,sicoob,indice_basileia,prudencial,1009,66.806869,ratio,cosif_antigo
-202406,sicredi,indice_basileia,prudencial,1009,25.197425,ratio,cosif_antigo
 202406,bradesco,indice_basileia,prudencial,1009,0.151879,ratio,cosif_antigo
 202406,itau,indice_basileia,prudencial,1009,0.165617,ratio,cosif_antigo
 202406,safra,indice_basileia,prudencial,1009,0.177259,ratio,cosif_antigo
@@ -54565,8 +54497,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202409,classico,lucro_liquido,financeiro,1005,-1955728.78,BRL,cosif_antigo
 202409,bndes,lucro_liquido,financeiro,1005,5648833848.57,BRL,cosif_antigo
 202409,volkswagen,lucro_liquido,financeiro,1005,22826320.15,BRL,cosif_antigo
-202409,sicoob,indice_basileia,prudencial,1009,66.009675,ratio,cosif_antigo
-202409,sicredi,indice_basileia,prudencial,1009,25.78806,ratio,cosif_antigo
 202409,bradesco,indice_basileia,prudencial,1009,0.151049,ratio,cosif_antigo
 202409,itau,indice_basileia,prudencial,1009,0.174187,ratio,cosif_antigo
 202409,safra,indice_basileia,prudencial,1009,0.174377,ratio,cosif_antigo
@@ -56280,8 +56210,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202412,bndes,lucro_liquido,financeiro,1005,13052659973.67,BRL,cosif_antigo
 202412,volkswagen,lucro_liquido,financeiro,1005,310482768.81,BRL,cosif_antigo
 202412,original,lucro_liquido,financeiro,1005,-165892707.87,BRL,cosif_antigo
-202412,sicoob,indice_basileia,prudencial,1009,67.390372,ratio,cosif_antigo
-202412,sicredi,indice_basileia,prudencial,1009,25.907261,ratio,cosif_antigo
 202412,bradesco,indice_basileia,prudencial,1009,0.147828,ratio,cosif_antigo
 202412,itau,indice_basileia,prudencial,1009,0.165147,ratio,cosif_antigo
 202412,safra,indice_basileia,prudencial,1009,0.17652,ratio,cosif_antigo
@@ -58025,8 +57953,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202503,bndes,lucro_liquido,financeiro,1005,5617809222.16,BRL,cosif2025
 202503,volkswagen,lucro_liquido,financeiro,1005,399178318.77,BRL,cosif2025
 202503,original,lucro_liquido,financeiro,1005,16525164.41,BRL,cosif2025
-202503,sicoob,indice_basileia,prudencial,1009,76.861259,ratio,cosif2025
-202503,sicredi,indice_basileia,prudencial,1009,24.267762,ratio,cosif2025
 202503,bradesco,indice_basileia,prudencial,1009,0.154475,ratio,cosif2025
 202503,itau,indice_basileia,prudencial,1009,0.156441,ratio,cosif2025
 202503,safra,indice_basileia,prudencial,1009,0.179172,ratio,cosif2025
@@ -59765,8 +59691,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202506,classico,lucro_liquido,financeiro,1005,65787137.41,BRL,cosif2025
 202506,bndes,lucro_liquido,financeiro,1005,12369044376.73,BRL,cosif2025
 202506,original,lucro_liquido,financeiro,1005,11929338.64,BRL,cosif2025
-202506,sicoob,indice_basileia,prudencial,1009,76.08748,ratio,cosif2025
-202506,sicredi,indice_basileia,prudencial,1009,24.781697,ratio,cosif2025
 202506,bradesco,indice_basileia,prudencial,1009,0.154738,ratio,cosif2025
 202506,itau,indice_basileia,prudencial,1009,0.165319,ratio,cosif2025
 202506,safra,indice_basileia,prudencial,1009,0.179496,ratio,cosif2025
@@ -61505,8 +61429,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202509,bndes,lucro_liquido,financeiro,1005,3897466116.32,BRL,cosif2025
 202509,volkswagen,lucro_liquido,financeiro,1005,52126862.56,BRL,cosif2025
 202509,original,lucro_liquido,financeiro,1005,-14249505.44,BRL,cosif2025
-202509,sicoob,indice_basileia,prudencial,1009,75.574274,ratio,cosif2025
-202509,sicredi,indice_basileia,prudencial,1009,24.430913,ratio,cosif2025
 202509,bradesco,indice_basileia,prudencial,1009,0.158545,ratio,cosif2025
 202509,itau,indice_basileia,prudencial,1009,0.163955,ratio,cosif2025
 202509,safra,indice_basileia,prudencial,1009,0.176615,ratio,cosif2025
@@ -63249,8 +63171,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202512,bndes,lucro_liquido,financeiro,1005,13206947209.83,BRL,cosif2025
 202512,volkswagen,lucro_liquido,financeiro,1005,347894934.93,BRL,cosif2025
 202512,original,lucro_liquido,financeiro,1005,10893309.83,BRL,cosif2025
-202512,sicoob,indice_basileia,prudencial,1009,70.597205,ratio,cosif2025
-202512,sicredi,indice_basileia,prudencial,1009,24.182805,ratio,cosif2025
 202512,bradesco,indice_basileia,prudencial,1009,0.157777,ratio,cosif2025
 202512,itau,indice_basileia,prudencial,1009,0.151838,ratio,cosif2025
 202512,safra,indice_basileia,prudencial,1009,0.165527,ratio,cosif2025
@@ -65002,8 +64922,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202603,bndes,lucro_liquido,financeiro,1005,3748909636.55,BRL,cosif2025
 202603,volkswagen,lucro_liquido,financeiro,1005,-111881645.33,BRL,cosif2025
 202603,original,lucro_liquido,financeiro,1005,108760436.74,BRL,cosif2025
-202603,sicoob,indice_basileia,prudencial,1009,68.256326,ratio,cosif2025
-202603,sicredi,indice_basileia,prudencial,1009,23.692655,ratio,cosif2025
 202603,bradesco,indice_basileia,prudencial,1009,0.149045,ratio,cosif2025
 202603,itau,indice_basileia,prudencial,1009,0.147697,ratio,cosif2025
 202603,safra,indice_basileia,prudencial,1009,0.17349,ratio,cosif2025
@@ -66758,8 +66676,6 @@ period,inst_id,metric,series,level,value,unit,cosif
 202606,bndes,lucro_liquido,financeiro,1005,11153448439.13,BRL,cosif2025
 202606,volkswagen,lucro_liquido,financeiro,1005,-203091130.15,BRL,cosif2025
 202606,original,lucro_liquido,financeiro,1005,156076167.28,BRL,cosif2025
-202606,sicoob,indice_basileia,prudencial,1009,66.887706,ratio,cosif2025
-202606,sicredi,indice_basileia,prudencial,1009,24.052877,ratio,cosif2025
 202606,bradesco,indice_basileia,prudencial,1009,0.155573,ratio,cosif2025
 202606,itau,indice_basileia,prudencial,1009,0.153516,ratio,cosif2025
 202606,safra,indice_basileia,prudencial,1009,0.181411,ratio,cosif2025

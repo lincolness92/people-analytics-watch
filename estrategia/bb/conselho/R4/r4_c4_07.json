@@ -1,0 +1,189 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C2-N01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012",
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "6,92% (F-006) e 9,59% (F-012) conferem. Teste propõe IF.data por instituição, que existe mas não está pré-computado no dossiê; por isso testável 2. Placebo no consignado bem desenhado."
+  },
+  {
+   "premissa": "C2-N02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Saldo R$ 387→550 bi confere com F-012 (386.926→550.452 mi). Regressão em painel é factível com fontes públicas, mas não está no dossiê. Controle por UF sem quebra e placebo PF não rural separam bem."
+  },
+  {
+   "premissa": "C2-N03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "17,21% e 9,59% conferem (F-012). Premissa reconhece que depende de abertura por fonte de recursos que pode não existir publicamente. Testável e so_publico limitados por essa condição."
+  },
+  {
+   "premissa": "C2-N04",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-036"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "52,20% (dez/25) e 53,46% (jun/26) conferem com F-021. SICOR e IF.data são públicos. Separação fluxo/estoque e comparação com cinco concorrentes controlam renegociação."
+  },
+  {
+   "premissa": "C2-N05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-015",
+    "F-004",
+    "F-002"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "F-015 (~17%, simulação) e despesas +4,8% (F-004) conferem. Cálculo ex-agro depende de segmentação no ITR que pode ser limitada. Dois cenários e comparação com pares reduzem confundimento, mas não eliminam."
+  },
+  {
+   "premissa": "C2-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-003",
+    "F-008",
+    "F-005"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,2 bi, 58,6 bi, 80-83 bi e cobertura 174,3→137,8% conferem. Porém as decisões estão invertidas: pico não passou leva a 'retomar crescimento', pico passou leva a 'manter contração'. Mapeamento decisório incorreto."
+  },
+  {
+   "premissa": "C2-N07",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-007",
+    "F-016",
+    "F-018"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "9-11 bi (F-008), CET1 10,80% (F-007), 12,23% dez/25 (F-016), alavancagem 6,97% (F-018) conferem. Decomposição KM1/CC1 é pública. Controle de sazonalidade e comparação com pares bem definidos."
+  },
+  {
+   "premissa": "C2-N08",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-023",
+    "F-024",
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "22,53→14,01% (F-023), 11,59→9,35% (F-024), Nubank 15,07% (F-023) conferem. Consignado como controle (F-022, participação estável) separa efeito de risco do efeito de canal."
+  },
+  {
+   "premissa": "C2-N09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,17→19,22% e 19,51% em 2022 conferem (F-022). Ganhos de Agibank, BTG, Mercantil confirmados. Abertura por tipo (servidor/INSS) pode não ser pública; premissa reconhece e condiciona."
+  },
+  {
+   "premissa": "C2-N10",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-033",
+    "F-028",
+    "F-032",
+    "F-034"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Bradesco 7,32→24,08% (F-033), capital de giro 16,14→10,87% (F-028), micro 4,81→1,4% (F-032) conferem. Soma das três faixas neutraliza reclassificação; grande empresa como placebo."
+  }
+ ]
+}

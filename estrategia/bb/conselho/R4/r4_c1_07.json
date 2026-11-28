@@ -1,0 +1,187 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C2-N01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "6,92% e 9,59% conferem e a não comparabilidade é bem apontada. Conta 'sistema menos BB', placebo no consignado e limiares bons. Mix regional e de porte do BB não controlado antes de culpar a concessão."
+  },
+  {
+   "premissa": "C2-N02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "R$ 387 bi → 550 bi confere (F-012). Três explicações concorrentes, ortogonalização, placebo PF não rural e aviso de colinearidade: separa bem. Fontes do painel não estão no dossiê."
+  },
+  {
+   "premissa": "C2-N03",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "17,21% e 9,59% conferem. Limiares claros e renegociado somado. Mas depende de abertura do BB por fonte, que pode não existir. Tomadores a taxa livre diferem em porte e região, sem controle."
+  },
+  {
+   "premissa": "C2-N04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "52,20→53,46 confere (F-021). Separa fluxo novo de saldo e fixa três sinais para seleção adversa. Tíquete médio e taxa livre são proxies fracos de risco do tomador."
+  },
+  {
+   "premissa": "C2-N05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-015",
+    "F-004",
+    "F-009"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Simulação de F-015 corretamente excluída; 4,8% confere (F-004). Dois cenários, custo de capital fixado antes. Custo de funding atribuído ao agro e rateio de despesas não são tratados."
+  },
+  {
+   "premissa": "C2-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-008",
+    "F-003",
+    "F-005"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,4–24,4 bi e 174,3→137,8 conferem. Métrica e controle por renegociado bons. Mas a decisão está invertida (pico não passou → retomar crescimento) e a confirmação por 'ou' com um só sinal é frouxa."
+  },
+  {
+   "premissa": "C2-N07",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-016",
+    "F-007",
+    "F-018",
+    "F-008"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "12,23%, 10,80%, 6,97% e 'metade do previsto' conferem. Decomposição pelo CC1, ativo fiscal diferido, sazonalidade de dezembro e limiares claros. Cumpre todos os critérios."
+  },
+  {
+   "premissa": "C2-N08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-023",
+    "F-024"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "22,53→14,01, 11,59→9,35 e Nubank 15,07 conferem. Mesma fonte e limiares claros. Carteira nova dos entrantes, ainda pouco maturada, distorce o atraso, sem controle."
+  },
+  {
+   "premissa": "C2-N09",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,17→19,22, 19,51 e os ganhadores conferem (F-022). Limiares claros. Depende de o BB abrir o consignado por tipo, o que o dossiê não traz. Comparação com bancos de folha e de INSS ajuda."
+  },
+  {
+   "premissa": "C2-N10",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-033",
+    "F-028",
+    "F-032",
+    "F-034",
+    "F-035"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "7,32→24,08 e 16,14→10,87 conferem. Soma das faixas neutraliza reclassificação, placebo em grande empresa, detecção de saltos e perímetro separado. Bom desenho."
+  }
+ ]
+}

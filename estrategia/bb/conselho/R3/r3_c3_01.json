@@ -1,0 +1,44 @@
+{
+ "replicas": [
+  {
+   "premissa": "C3-N11",
+   "resposta": "aceita_em_parte",
+   "argumento": "A crítica mostra que CET1 alto pode vir de encolhimento de RWA, corte de dividendos ou deduções. Aceito reformular para exigir contribuição do lucro retido, evitando leitura enganosa.",
+   "enunciado_novo": "Em set/2027, o CET1 do BB fica acima de 11,5% com contribuição positiva do lucro retido na variação do capital, sem redução relevante de RWA ou corte total de dividendos.",
+   "confirma_se_novo": "CET1 >= 11,5% e contribuição do lucro retido positiva",
+   "refuta_se_novo": "CET1 < 10,0% ou contribuição do lucro retido <= 0"
+  },
+  {
+   "premissa": "C3-N12",
+   "resposta": "aceita_em_parte",
+   "argumento": "As críticas apontam inconsistência entre trimestre e acumulado 12m e dependência de itens não recorrentes. Aceito reformular para métrica acumulada sem reversões.",
+   "enunciado_novo": "O RSPL ajustado acumulado em 12 meses até o 3T27 fica em ou acima de 12%, sem depender de reversões de provisão ou créditos tributários não recorrentes listados no ITR.",
+   "confirma_se_novo": "RSPL acumulado 12m >= 12% sem itens não recorrentes relevantes",
+   "refuta_se_novo": "RSPL acumulado 12m < 8% ou >= 12% apenas com itens não recorrentes"
+  },
+  {
+   "premissa": "C3-N13",
+   "resposta": "aceita_em_parte",
+   "argumento": "Participação em agências é métrica de estrutura, não de valor; as críticas mostram que o ganho ocorre por fechamento de concorrentes. Aceito reformular para medir captura de clientes e manter piso absoluto.",
+   "enunciado_novo": "Entre jun/2026 e jun/2027, nos municípios onde concorrentes fecharam agências, o saldo de depósitos e crédito do BB no ESTBAN cresce mais do que nos municípios sem fechamento; e o número absoluto de agências do BB não cai abaixo de 2.200.",
+   "confirma_se_novo": "Diferença positiva de crescimento de depósitos e crédito nos municípios com fechamento; agências >= 2.200",
+   "refuta_se_novo": "Diferença nula ou negativa; ou agências < 2.200"
+  },
+  {
+   "premissa": "C3-N14",
+   "resposta": "aceita_em_parte",
+   "argumento": "ESTBAN exclui cooperativas e digitais; contagem pode refletir decisão do próprio BB, não valor. Aceito reformular para considerar cooperativas e exigir receita de serviços crescente.",
+   "enunciado_novo": "Em ago/2027, o BB continua sendo a única instituição financeira com ponto de atendimento (banco ou cooperativa) em pelo menos metade dos 577 municípios onde era o único banco com agência e crédito em ago/2026, e a receita de serviços nesses municípios cresce na comparação anual.",
+   "confirma_se_novo": "Exclusividade em metade ou mais dos municípios e receita de serviços anual crescente",
+   "refuta_se_novo": "Exclusividade em menos da metade ou receita de serviços estagnada/queda"
+  },
+  {
+   "premissa": "C3-N15",
+   "resposta": "aceita_em_parte",
+   "argumento": "A taxa pode cair por baixas, renegociação ou crescimento do denominador; além disso, 15% é otimista sem catalisador visível. Aceito reformular para piso de 20% e condição de composição.",
+   "enunciado_novo": "Em out/2027, a inadimplência do crédito rural PF com taxas de mercado (SGS 21146) não ultrapassa 20%, e eventual queda não decorre de crescimento do saldo dessa parcela acima do saldo rural PF total nem de programa de renegociação no período.",
+   "confirma_se_novo": "Taxa <= 20% e saldo da parcela não cresce acima do total nem há renegociação",
+   "refuta_se_novo": "Taxa > 20% ou queda explicada por crescimento do saldo/renegociação"
+  }
+ ]
+}

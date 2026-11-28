@@ -1,0 +1,148 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C5-N09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-038",
+    "F-039",
+    "F-041"
+   ],
+   "sem_apoio": [
+    "Métrica 'custo médio de captação' não consta como fato no dossiê; só há participação em depósitos"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Participação à vista (21,49→16,63%) e poupança estável confirmadas. Custo de captação não está no dossiê. Refutação sem limiar numérico."
+  },
+  {
+   "premissa": "C5-N10",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 2,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-048"
+   ],
+   "sem_apoio": [
+    "Premissa diz 'incluindo cooperativas', mas F-019 ressalva que ESTBAN não cobre cooperativas",
+    "'Margem estimada por município' não é dado público disponível no dossiê"
+   ],
+   "teto_aplicado": true,
+   "comentario": "577 e 2290 confirmados, mas premissa contradiz ressalva do F-019 sobre cooperativas. Métrica de margem municipal indisponível."
+  },
+  {
+   "premissa": "C5-N11",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-019"
+   ],
+   "sem_apoio": [
+    "Número absoluto de agências do BB não está no dossiê; só a participação (20,41→26,4%)"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Participação confirmada (F-048). Causa (fechamento alheio vs expansão) é interpretação sem dado absoluto no dossiê."
+  },
+  {
+   "premissa": "C5-N12",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-004",
+    "F-047",
+    "F-010"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "4,6% a/a, 19,67→15,54%, Santander +4,56pp todos confirmados. Sub-afirmações futuras são projeções testáveis."
+  },
+  {
+   "premissa": "C5-N13",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-008",
+    "F-016"
+   ],
+   "sem_apoio": [
+    "'Requerimento total com colchões' não aparece como valor explícito no dossiê"
+   ],
+   "teto_aplicado": false,
+   "comentario": "CET1 11,27→10,80 (−0,47pp) e guidance −2 a 0% confirmados. Colchão regulatório não está quantificado no dossiê."
+  },
+  {
+   "premissa": "C5-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-003",
+    "F-008",
+    "F-005",
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "21,2 bi, 58,6 bi, 80-83 bi, piso 21,4 bi (derivado), inadimplência 4,51→6,08%: tudo confere. Limiares claros."
+  },
+  {
+   "premissa": "C5-N15",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-009",
+    "F-010",
+    "F-019",
+    "F-004"
+   ],
+   "sem_apoio": [
+    "Eficiência do BB não está declarada no dossiê; alegação de '5 p.p. pior' não é verificável com os fatos disponíveis"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Itaú 37,5% e Santander 38,8% confirmados. 577 municípios exclusivos confirmado. Eficiência do BB ausente do dossiê."
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "criticas": [
+  {
+   "premissa": "P01",
+   "contrario": "A queda pode ser cíclica: cooperativas e Caixa expandiram justamente quando o BB recuou na originação por apetite de risco menor. Se o ciclo virar e o BB reabrir crédito, a fatia pode recuperar parte dos 8,9 p.p. perdidos.",
+   "alternativa": "A perda de fatia pode refletir mudança de perímetro contábil (conglomerado financeiro 1005 para prudencial 1009 em 03/2025, conforme ressalva de F-021) e não apenas competição. Parte da queda seria artefato estatístico.",
+   "riscos_de_dado": [
+    "O ponto 53,7% (12/2023) citado no 'hoje' não está no dossiê; só há 55,82% (12/2022) e 52,2% (12/2025) em F-021.",
+    "Quebra de série em 03/2025 (perímetro 1005→1009) pode distorcer a tendência pré/pós.",
+    "A confirmação exige dados de 2017–2023; o dossiê só cobre a partir de 12/2019."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB), série rural PF por instituição, trimestral 2014-2026",
+     "SICOR/BCB (contratações por instituição e segmento)"
+    ],
+    "descricao": "Rodar teste de quebra estrutural (Chow ou Bai-Perron) na série trimestral de fatia do BB. Se a quebra principal for posterior a 12/2023, a premissa cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A queda da fatia do BB no crédito rural PF (62,35%→53,46%, F-021) é majoritariamente anterior ao pico de inadimplência (F-012), mas a série tem quebra de perímetro em 03/2025. Confirmar com teste de quebra estrutural antes de classificar como puramente estrutural."
+  },
+  {
+   "premissa": "P03",
+   "contrario": "A inadimplência pode estar disseminada: o sistema inteiro passou de 0,80% para 9,59% no rural PF (F-012) e de 3,04% para 5,10% no total (F-013). O salto é amplo demais para ser só um grupo de médios/grandes no Centro-Oeste.",
+   "alternativa": "A parcela com taxas de mercado (SGS 21146: 17,21%) pode estar inflada por renegociações e reclassificações contábeis pós-ciclo, não por concentração geográfica ou de porte. O efeito denominador (carteira encolhendo, F-006: −4,3% t/t) também eleva o percentual.",
+   "riscos_de_dado": [
+    "A referência '[I-02]' é interna ao BB; não pode ser usada como evidência pública.",
+    "O dossiê não contém dado de inadimplência por município, porte ou cultura; a concentração geográfica é inferência não testada.",
+    "A cobertura do agro em set/26 não foi lida com segurança (ressalva F-006), limitando análise de provisão."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR.data/BCB (inadimplência por UF, porte e origem de recursos)",
+     "ESTBAN verbete 163 (por município)",
+     "IBGE PAM (cultura dominante por município)"
+    ],
+    "descricao": "Construir curva de Lorenz do aumento de provisões por município. Se os 15% maiores municípios explicarem menos de 40% do aumento, a concentração geográfica é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A inadimplência rural com taxas de mercado (17,21%, SGS 21146, F-012) é quase o dobro da total (9,59%, SGS 21148). A hipótese de concentração em médios/grandes do Centro-Oeste em soja, milho e pecuária ainda não foi testada com dado público por município e porte."
+  },
+  {
+   "premissa": "P04",
+   "contrario": "A perda de participação em quase todas as linhas de PF (F-020: −2,56 p.p.; F-024: −2,24 p.p.; F-025: −4,43 p.p.) e no passivo barato (F-042: −16,83 p.p.; F-043: −9,09 p.p.) sugere erosão de margem também fora do agro. O 'resto do banco' pode não estar tão saudável.",
+   "alternativa": "O lucro de R$ 1,3 bi no 3T26 (F-001) já inclui provisões elevadas (custo do crédito R$ 21,2 bi, F-003). Excluir o agro do numerador sem ajustar o denominador (capital alocado, despesas rateadas) pode inflar artificialmente o ROE 'sem agro'.",
+   "riscos_de_dado": [
+    "A referência '[I-01]' é declaração interna da administração; não é dado público verificável.",
+    "O dossiê não contém ROE segmentado, RWA por classe de exposição nem despesas rateadas por carteira.",
+    "Comparação com Bradesco e Santander exige dados dos pares que não estão no dossiê."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM: DFP/ITR do BB (nota de segmentos)",
+     "DASFN/BCB: tabelas OV1 e CR do Pilar 3 (RWA por exposição)",
+     "CVM: DFP/ITR de Bradesco e Santander (ROE reportado)"
+    ],
+    "descricao": "Reconstruir ROE do BB excluindo custo do crédito e RWA do agro. Se ficar abaixo de 13% nos últimos quatro trimestres, a premissa é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A administração afirma que, sem agro, o ROE do BB se equipara ao de pares. O dossiê não contém dados segmentados para verificar. A perda de fatia em PF, consignado, cartão, habitação e passivo barato (F-020 a F-043) é sinal contrário. Teste com DFP/ITR e Pilar 3 é necessário."
+  },
+  {
+   "premissa": "P06",
+   "contrario": "A queda de 49,38% para 32,55% (F-042) pode refletir o crescimento absoluto do mercado de LCA (total em 06/2026: R$ 563,3 bi) e a entrada de novos emissores, sem que o BB tenha perdido volume absoluto ou capacidade de precificação.",
+   "alternativa": "Sicredi e Sicoob cresceram em LCA (de 0,77%→7,62% e 2,04%→7,42%, F-042) por proximidade com o produtor e isenção de IR para cooperados, não por preço melhor. A tributação (PL 5.853/2026) afetaria todos igualmente, preservando a vantagem relativa do BB.",
+   "riscos_de_dado": [
+    "A referência '[I-25]' ao PL 5.853/2026 não está no dossiê; a tramitação e o teor exato precisam ser verificados na API da Câmara.",
+    "O dossiê não contém taxa de emissão em % do CDI por emissor; sem isso, não se mede convergência de preço.",
+    "Quebra de perímetro (1005→1009 em 03/2025) pode afetar a série de LCA."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data/BCB (série LCA por instituição)",
+     "ANBIMA ou B3 (taxa de emissão de LCA por emissor)",
+     "Câmara dos Deputados, API v2 (tramitação do PL 5.853/2026)"
+    ],
+    "descricao": "Comparar a taxa média de emissão de LCA do BB com a de Sicredi/Sicoob. Se o spread já for inferior a 10 bps, a perda de dominância não se traduz em perda de custo de funding."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P07",
+   "contrario": "Cooperativas (Sicredi: +1,49 p.p.; Sicoob: +2,27 p.p. no rural PF, F-021) cresceram rápido e mantêm inadimplência baixa. Se a tese fosse 'crescimento rápido → inadimplência futura', cooperativas deveriam ser o contraexemplo fatal.",
+   "alternativa": "A inadimplência da Caixa pode refletir não a velocidade de crescimento, mas a qualidade da originação (público de menor renda, garantias mais fracas) e a ausência de estrutura de cobrança rural especializada. O fator seria seleção, não ritmo.",
+   "riscos_de_dado": [
+    "A referência '[I-09]' (inadimplência de 25,4% da Caixa e queda de 23% nas contratações) é interna; não está no dossiê.",
+    "O dossiê mostra a variação de fatia da Caixa (1,18%→6,81%, F-021), mas não sua inadimplência específica.",
+    "Correlação transversal com 20-30 instituições tem poucos graus de liberdade; risco de overfitting."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data/BCB (participação por instituição no rural PF, 12/2019 a 12/2023)",
+     "SCR.data/BCB (inadimplência por instituição, 06/2026)",
+     "Releases públicos da Caixa"
+    ],
+    "descricao": "Regressão transversal: variação de fatia 2020-2023 vs. inadimplência 06/2026, controlando por porte e mix de carteira. Se o coeficiente não for significativo ou se cooperativas forem outlier, a regra de velocidade cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A Caixa ganhou 5,63 p.p. no rural PF (F-021) e é candidata a caso extremo, mas cooperativas também cresceram sem inadimplência proporcional. A hipótese de 'velocidade prediz inadimplência' precisa controlar por mix, porte e qualidade de originação antes de virar regra de governança."
+  },
+  {
+   "premissa": "P09",
+   "contrario": "Inadimplência rural é fortemente influenciada por preço de commodity, câmbio e política de crédito (taxa controlada vs. livre), variáveis que ZARC, ENSO e NDVI não capturam. O escore climático pode ter poder preditivo baixo para o componente financeiro do default.",
+   "alternativa": "Qualquer correlação entre clima e inadimplência pode ser mediada por variáveis de política (ex.: fim de prorrogas, mudança de classificação contábil) que coincidem temporalmente com eventos climáticos, gerando espúria.",
+   "riscos_de_dado": [
+    "O valor ONI +2,46 citado no 'hoje' não está no dossiê; a fonte seria NOAA, mas o número não pode ser tratado como fato aqui.",
+    "SCR.data por UF tem defasagem de publicação; backtest 2019-2026 pode ter look-ahead bias se a data de referência não for alinhada.",
+    "ZARC é zoneamento de risco, não previsão; usá-lo como preditor de inadimplência exige cuidado metodológico."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "NOAA ONI (índice ENSO)",
+     "CHIRPS/ERA5-Land (precipitação e umidade)",
+     "MAPA ZARC",
+     "SCR.data/BCB (inadimplência rural por UF)",
+     "SISSER/SUSEP (sinistralidade)"
+    ],
+    "descricao": "Backtest fora da amostra (2019-2024 treino, 2025-2026 teste). Se AUC ficar abaixo de 0,60 ou não superar baseline sazonal, a premissa é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "P10",
+   "contrario": "Os próprios dados citados no 'hoje' da premissa (recuo de 20,7% nos pedidos no 2T26 enquanto inadimplência seguiu subindo) sugerem que o sinal é coincidente ou defasado, não antecedente. A premissa pode já estar refutada pela evidência disponível.",
+   "alternativa": "Pedidos de recuperação judicial podem reagir à inadimplência já materializada (produtor busca proteção após o default), não antecipá-la. O fluxo seria consequência, não causa.",
+   "riscos_de_dado": [
+    "Os números 1.990 (2025), 474 (1T26) e 448 (2T26) são referenciados como '[I-14]' e '[FE]'; não estão no dossiê. A fonte pública seria CNJ Datajud.",
+    "A inadimplência rural do sistema (F-012) é mensal (out/2026); pedidos de RJ são trimestrais. Alinhamento temporal é crítico.",
+    "Recuperação judicial rural tem rito específico (Lei 14.112/2020); mudanças legislativas podem criar quebra de série."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CNJ Datajud (processos por comarca e classe)",
+     "BCB SGS 21148 (inadimplência rural PF, mensal)",
+     "Serasa (indicador de RJ, trimestral)"
+    ],
+    "descricao": "Correlação cruzada defasada (0 a 6 trimestres) entre fluxo de pedidos de RJ rural e inadimplência SGS 21148, por UF. Se o pico de correlação estiver em defasagem 0 ou negativa, o sinal não é antecedente."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A hipótese de que pedidos de recuperação judicial rural antecedem a inadimplência em 2-4 trimestres não se sustenta com a evidência disponível: o recuo de pedidos no 2T26 sem recuo da inadimplência (F-012) sugere sinal coincidente ou defasado. Testar com correlação cruzada antes de incluir em monitor."
+  },
+  {
+   "premissa": "P12",
+   "contrario": "O BB pode já ter participação relevante em serviços ao produtor que não aparecem no dossiê: BB Seguridade é líder em seguro rural, e o banco tem presença em câmbio (F-031: 25,43% em comércio exterior PJ). A premissa pode subestimar a posição atual.",
+   "alternativa": "A fatia de 53,46% no crédito rural PF (F-021) é inflada por obrigações regulatórias (exigibilidade de depósito à vista). Compará-la com serviços de mercado livre (seguro, consórcio) é comparar categorias com dinâmicas de competição distintas.",
+   "riscos_de_dado": [
+    "O dossiê só contém dado de comércio exterior PJ (F-031). Seguro, consórcio, pagamentos e investimentos não estão cobertos.",
+    "A referência '[H]' indica dado ausente; sem SUSEP SES e dados de consórcio do BCB, a premissa é não testável com o dossiê atual.",
+    "O perímetro 'serviços ao produtor' é mal definido: inclui apenas PF rural ou também PJ agroindustrial?"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SUSEP SES (prêmios de seguro rural por seguradora)",
+     "BCB (dados de consórcios por administradora)",
+     "IF.data/BCB (câmbio e pagamentos)",
+     "Releases públicos da BB Seguridade"
+    ],
+    "descricao": "Levantar a fatia do BB/BB Seguridade em seguro rural, consórcio de máquinas e câmbio agro. Se em pelo menos três serviços a fatia for superior a 26% (metade de 53%), a premissa é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A fatia do BB no crédito rural PF é 53,46% (F-021) e em comércio exterior PJ é 25,43% (F-031). Para os demais serviços ao produtor (seguro, consórcio, pagamentos, investimentos), o dossiê não contém dados. A hipótese de subpenetração é plausível mas não testável sem SUSEP SES e séries de consórcio do BCB."
+  }
+ ]
+}

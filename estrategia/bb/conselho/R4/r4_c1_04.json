@@ -1,0 +1,186 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P41",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-049"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Duas definições de cliente são um bom cuidado. Mas o limiar é só ordenação, sem margem. Receita por cliente depende do mix (atacado e agro no BB, varejo nos digitais), não controlado. 'A rede se paga' não é decisão."
+  },
+  {
+   "premissa": "P42",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "rural: BB 6,2% contra sistema 5,6%",
+    "consignado: BB 0,5% contra 1,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Controles de mix e checagem de obrigação de atendimento são bons. Mas confirma por não significância (baixo poder confirma) e o consignado não tem teste. Números de 'hoje' fora do dossiê."
+  },
+  {
+   "premissa": "P43",
+   "notas": {
+    "testavel": 0,
+    "refutavel": 0,
+    "decisoria": 1,
+    "fundamentada": 2,
+    "so_publico": 1,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Descartada pelo próprio autor: sem série pública, confirmação e refutação sem limiar, depende de casos internos. Honesta, mas não é premissa testável."
+  },
+  {
+   "premissa": "P44",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Limiares (70%, 90%, 300 entrevistas) claros e regra de suspensão. A fonte com recorte por banco pode não existir. Idade correlaciona com região e renda, sem controle. 'Sem ação' é decisão fraca."
+  },
+  {
+   "premissa": "P45",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-007",
+    "F-008",
+    "F-016"
+   ],
+   "sem_apoio": [
+    "payout no mínimo de 25% [I-01], [I-03]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "10,80% e 11,16% conferem (F-007); faixas da F-008 usadas corretamente. Limiares de folga claros e rodada com medidas extraordinárias. 'Crescer em todas as frentes' não está definido na simulação. Payout sem apoio."
+  },
+  {
+   "premissa": "P46",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-020"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "4,84→6,92 confere (F-006); quebra de 03/2025 está nas ressalvas. Limiares contra mediana de pares claros. Provisão maior por deterioração esperada também é econômica; o teste não separa bem. Abertura por estágio do rural é incerta."
+  },
+  {
+   "premissa": "P47",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-016"
+   ],
+   "sem_apoio": [
+    "patrimônio de R$ 181,8 bi (06/2026)",
+    "2,2 vezes a carteira agro sobre o patrimônio"
+   ],
+   "teto_aplicado": true,
+   "comentario": "403,6 bi confere (F-006). Estresse com limiares e faixa quando falta LGD. Patrimônio e razão de 2,2 vezes não estão no dossiê. 'A concentração é suportável' não é decisão."
+  },
+  {
+   "premissa": "P48",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "Selic em 13,75% [FE]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Bom uso de 21146 contra parcela regulada como contraste. Limiares claros. Mas a Selic não varia entre UFs: o painel confunde juro com tempo. Selic citada sem apoio."
+  },
+  {
+   "premissa": "P49",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Monitoramento com limiares em p.p. do CDI e comparação com grandes bancos. Afirmação sobre exigibilidades (I-12) não está no dossiê. Custo de captação pode subir por outras causas na janela."
+  },
+  {
+   "premissa": "P50",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 1,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-036"
+   ],
+   "sem_apoio": [
+    "Rabobank 1,9% → 0,3% do rural PF",
+    "John Deere perto de 1,8% até 12/2024"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares e dois trechos de perímetro bem fixados. Números de 'hoje' fora do dossiê. Origem de Fiagro por originador na CVM é incerta. 'Monitorar' contra 'analisar' quase não muda nada."
+  }
+ ]
+}

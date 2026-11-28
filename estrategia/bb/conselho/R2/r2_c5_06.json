@@ -1,0 +1,184 @@
+{
+ "criticas": [
+  {
+   "premissa": "C2-N04",
+   "contrario": "O BB pode ganhar fluxo novo justamente porque os concorrentes recuam por prudência; se o BB mantiver critério, a participação estável é sinal de disciplina, não de seleção adversa.",
+   "alternativa": "A alta de participação no saldo pode vir só de renegociação e prorrogação de dívida velha, sem nenhuma contratação nova; o fluxo pode estar até caindo.",
+   "riscos_de_dado": [
+    "saldo mistura renegociação com fluxo novo",
+    "quebra de perímetro 03/2025 no IF.data",
+    "SICOR e IF.data têm perímetros diferentes",
+    "sazonalidade forte da safra"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SICOR - Matriz de Dados do Crédito Rural",
+     "IF.data"
+    ],
+    "descricao": "Medir participação do BB só em contratações novas no SICOR, jul-dez/26 contra jul-dez/25; se subir >2 p.p. com queda dos concorrentes, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N05",
+   "contrario": "A simulação de 17% é da própria administração e não auditada; normalizar o custo do agro pela média 2019-23 pode superestimar o ex-agro se a deterioração for estrutural.",
+   "alternativa": "O RSPL baixo pode vir da margem financeira caindo e despesas subindo, não do agro; nesse caso o ex-agro também não cobre o custo de capital.",
+   "riscos_de_dado": [
+    "simulação da administração sem auditoria",
+    "valor de 17% lido com insegurança",
+    "definições de ROE divergem entre bancos",
+    "alocação de capital por segmento é arbitrária"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM ITR/DFP",
+     "B3 COTAHIST",
+     "Relatório Focus"
+    ],
+    "descricao": "Recalcular RSPL ex-agro com custo de crédito do agro na média 2019-23 e comparar com CAPM; se ficar abaixo do custo de capital no 9M26, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Recalculado com o custo de crédito do agro na média histórica, o RSPL do resto do BB supera o custo de capital próprio estimado por CAPM no 9M26."
+  },
+  {
+   "premissa": "C2-N07",
+   "contrario": "Com lucro projetado pela metade e RWA pressionado por inadimplência, manter 10,80% sem cortar dividendo é aritmeticamente difícil; a queda de 12,23% para 10,80% em nove meses sugere trajetória contrária.",
+   "alternativa": "A queda do capital pode vir de deduções prudenciais e ajustes patrimoniais, não de lucro fraco; o dossiê não decompõe, então a premissa pode estar medindo o sintoma errado.",
+   "riscos_de_dado": [
+    "falta decomposição do CET1 no dossiê",
+    "sazonalidade: dezembro é pico na série KM1",
+    "ativo fiscal diferido não medido",
+    "projeção depende de guidance revisado, não de fato"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Pilar 3 (KM1, OV1, CC1)",
+     "CVM ITR/DFP"
+    ],
+    "descricao": "Decompor a variação do CET1 de dez/25 a set/26 em lucro, dividendos, RWA e deduções; projetar com o ponto médio do guidance e verificar se fura 10,5%."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N08",
+   "contrario": "Entrantes como Nubank cresceram com clientes jovens e de boa renda que depois consolidam relacionamento; taxa alta cobrada pode refletir mix de produto, não risco do cliente.",
+   "alternativa": "A perda de participação pode ser escolha deliberada do BB de não disputar crédito caro, e não fuga de bons clientes; o Pix pode cair por migração de uso, não de conta principal.",
+   "riscos_de_dado": [
+    "quebra de perímetro 03/2025",
+    "taxa média por modalidade mistura perfis de cliente",
+    "inadimplência divulgada usa definições diferentes por banco",
+    "Pix não mede conta principal diretamente"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Taxas de juros por instituição (BCB)",
+     "SEC EDGAR (Nubank)",
+     "Estatísticas Pix"
+    ],
+    "descricao": "Comparar taxa média e inadimplência PF dos entrantes com as do BB; se taxas são próximas e inadimplência igual ou menor, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N10",
+   "contrario": "O salto do Bradesco de 7,32% para 24,08% em pequena empresa é incompatível com ganho comercial; sugere reclassificação de porte, o que contaminaria a leitura de perda real do BB.",
+   "alternativa": "A queda pode ser quase toda efeito da mudança de perímetro de 03/2025 e do Cosif 2025, não perda comercial; a série encadeada pode mostrar estabilidade.",
+   "riscos_de_dado": [
+    "quebra de perímetro 1005 para 1009 em 03/2025",
+    "Cosif 2025 muda definições",
+    "reclassificação de porte entre faixas",
+    "salto do Bradesco indica mudança de critério"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "SCR.data"
+    ],
+    "descricao": "Medir a participação do BB na soma micro+pequena+média só dentro do perímetro antigo até 12/2024; se a queda for <1,5 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N11",
+   "contrario": "Correlação temporal com exportação do agro não prova composição; o BB pode ter ganho em comércio exterior de indústria e serviços e a correlação aparecer só pelo ciclo macro comum.",
+   "alternativa": "O ganho pode ser efeito câmbio: linha indexada ao dólar infla o saldo em reais sem ganho real de clientes; ou pode vir de um único grande tomador.",
+   "riscos_de_dado": [
+    "saldo em reais contaminado por variação cambial",
+    "concentração em poucos tomadores distorce",
+    "parcela do agro na exposição corporativa não está no dossiê",
+    "correlação não identifica composição"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "Comex Stat",
+     "Pilar 3"
+    ],
+    "descricao": "Medir o saldo em dólar e cruzar com exposição por setor no Pilar 3; se agro+agroindústria passar de 50% da exposição corporativa, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O ganho do BB em comércio exterior, medido em dólar, vem majoritariamente de setores fora do agro e da agroindústria."
+  },
+  {
+   "premissa": "C2-N14",
+   "contrario": "Municípios pequenos e pobres tendem a ter pouco depósito e muito crédito rural subsidiado; a razão depósito/crédito pode ser pior nos só-BB, e a exclusividade pode valer nada em captação.",
+   "alternativa": "Depósito alto nesses municípios pode ser de prefeituras e fundos públicos, volátil e regulado, não captação de cliente estável que pague a agência.",
+   "riscos_de_dado": [
+    "ESTBAN não cobre cooperativas nem digitais",
+    "presença medida por saldo, não por agência",
+    "pareamento por PIB agro municipal usa dado defasado",
+    "depósito público pode inflar a razão"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN por município",
+     "IF.data"
+    ],
+    "descricao": "Calcular (vista+poupança)/crédito do BB por município, pareando só-BB com concorridos por população e agro; se a razão não for 20% maior, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  },
+  {
+   "premissa": "C2-N15",
+   "contrario": "Fundos, seguros e consórcio do BB podem estar crescendo abaixo do IPCA; o crescimento de 4,6% em serviços, perto das despesas, não evidencia motor real fora da tarifa de conta.",
+   "alternativa": "A queda de participação em tarifas pode ser efeito do recorte estreito do IF.data e da mudança de perímetro, não perda real de receita de conta corrente.",
+   "riscos_de_dado": [
+    "recorte 'rendas de tarifas' é estreito e não mede o negócio",
+    "quebra de perímetro 03/2025",
+    "linhas de serviço ligadas a crédito caem com a carteira",
+    "comparabilidade de notas entre bancos é limitada"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM ITR/DFP (nota de serviços)",
+     "IF.data",
+     "IBGE (IPCA)"
+    ],
+    "descricao": "Abrir a nota de receitas de serviços do BB por linha e medir crescimento real 2022-26 das linhas não ligadas a crédito; se abaixo do IPCA, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Premissa A: a queda de participação em tarifas concentra-se em conta corrente e pacotes. Premissa B: as receitas de serviços não ligadas a crédito crescem acima do IPCA."
+  }
+ ]
+}

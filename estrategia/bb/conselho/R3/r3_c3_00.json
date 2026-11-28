@@ -1,0 +1,84 @@
+{
+ "replicas": [
+  {
+   "premissa": "C3-N01",
+   "resposta": "aceita_em_parte",
+   "argumento": "A premissa original ignora baixas e renegociações e fixa limiar baixo frente à alta de 4,84% para 6,92%. A métrica de formação é mais robusta para captar melhora real.",
+   "enunciado_novo": "A formação de inadimplência do agro do BB (variação do +90d mais baixas para prejuízo, sobre a carteira) cai por dois trimestres seguidos até set/2027, sem alta da carteira renegociada.",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N02",
+   "resposta": "aceita_em_parte",
+   "argumento": "Cobertura isolada é ambígua: pode subir por baixa do denominador. A comparação de crescimento de provisão versus +90d informa melhor proteção e evita gatilho contábil.",
+   "enunciado_novo": "Em dez/2027, o saldo de provisões do BB cresce mais que o saldo +90d em relação a dez/2026, com a cobertura medida na carteira total e, em separado, no agro. Indicador de acompanhamento, não gatilho de 'liberar capital'.",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N03",
+   "resposta": "aceita_em_parte",
+   "argumento": "O guidance de crescimento PF 0-2% e a migração para renegociação tornam 14,5% implausível. Ajustar o limiar e excluir renegociação torna a premissa mais aderente ao perímetro e à estratégia.",
+   "enunciado_novo": "A participação do BB em crédito pessoal sem consignação não cai abaixo de 13,0% em jun/2027, medido exclusivamente no perímetro prudencial (1009) vigente desde 03/2025, e sem que o crescimento da linha seja explicado por aumento da carteira renegociada PF.",
+   "confirma_se_novo": 13.0,
+   "refuta_se_novo": 12.0
+  },
+  {
+   "premissa": "C3-N04",
+   "resposta": "aceita_em_parte",
+   "argumento": "A série está estável em ~19,2% e não há precedente de alta de 1,8 p.p. em um ano. Exigir originação própria evita atribuir ganho a compra de carteira.",
+   "enunciado_novo": "Em jun/2027, a participação do BB em consignado supera a de jun/2026 (19,22%) por originação própria, não por compra de carteira, segundo IF.data e ITR.",
+   "confirma_se_novo": "> 19,22%",
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N05",
+   "resposta": "aceita_em_parte",
+   "argumento": "Há incoerência no limiar original (enunciado 9,5% vs confirma 10,5%) e tendência estrutural de perda. Manter o nível de jun/2026 é mais realista e corrige o limiar.",
+   "enunciado_novo": "Em jun/2027, a participação do BB no saldo de cartão de crédito PF fica em ou acima de 9,35% (jun/2026); o limiar de confirmação é o mesmo do enunciado.",
+   "confirma_se_novo": 9.35,
+   "refuta_se_novo": 8.5
+  },
+  {
+   "premissa": "C3-N06",
+   "resposta": "aceita_em_parte",
+   "argumento": "O guidance prevê contração da carteira PJ e a queda é estrutural. Estabilizar acima de 10,5% reflete contenção de perda sem supor reversão improvável.",
+   "enunciado_novo": "A participação do BB em capital de giro PJ para de cair e se estabiliza acima de 10,5% em jun/2027, medida em perímetro constante.",
+   "confirma_se_novo": 10.5,
+   "refuta_se_novo": 10.0
+  },
+  {
+   "premissa": "C3-N07",
+   "resposta": "aceita_em_parte",
+   "argumento": "O salto pode decorrer de quebra de perímetro e câmbio. Isolar esses efeitos e comparar com dez/2022 testa ganho real, não artefato.",
+   "enunciado_novo": "Depois de isolar a quebra de perímetro de 03/2025 e o efeito do câmbio, a participação do BB em comércio exterior PJ em jun/2027 é maior que em dez/2022.",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N08",
+   "resposta": "aceita_em_parte",
+   "argumento": "A perda estrutural e a exclusão dos digitais da série tornam a meta de 17% frágil. O teste por município avalia se a capilaridade protege depósitos.",
+   "enunciado_novo": "Entre jun/2026 e jun/2027, o saldo de depósitos à vista do BB cai menos nos municípios onde ele é o único banco do que nos municípios com concorrentes (ESTBAN).",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N09",
+   "resposta": "aceita_em_parte",
+   "argumento": "A LCA pode não ser a fonte mais barata e a carteira agro encolhe. Antes de meta de participação, verificar custo relativo é essencial.",
+   "enunciado_novo": "Até jun/2027, a LCA segue sendo a fonte de funding agro mais barata do BB (custo sobre o CDI abaixo do de depósitos a prazo, no ITR); só então a meta de participação em LCA importa.",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  },
+  {
+   "premissa": "C3-N10",
+   "resposta": "aceita_em_parte",
+   "argumento": "Crescimento de 4,6% em um trimestre e itens não recorrentes tornam 7% frágil. Acumular 12m e deflacionar captura a contribuição real da rede.",
+   "enunciado_novo": "No acumulado 12m até o 3T27, a receita de serviços do BB cresce acima do IPCA, e a maior parte do ganho vem de linhas vendidas na rede (conta, cartões, seguros, consórcio), segundo a abertura do ITR.",
+   "confirma_se_novo": null,
+   "refuta_se_novo": null
+  }
+ ]
+}

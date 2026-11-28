@@ -1,0 +1,183 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "C2-N11",
+   "notas": {
+    "testavel": 1,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "18,42→25,43 confere (F-031). Medir em dólar e comparar com Itaú e Citibank é bom. Mas nenhuma fonte do dossiê abre comex por setor e instituição; o próprio texto prevê não testável."
+  },
+  {
+   "premissa": "C2-N13",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-019",
+    "F-036",
+    "F-038",
+    "F-042"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "577 e a limitação do ESTBAN conferem (F-019). Exigir contratação rural por cooperativa no SICOR separa presença de disputa. Mas no rural quem mais ganhou foi a Caixa (F-036), não Sicredi e Sicoob."
+  },
+  {
+   "premissa": "C2-N14",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-048",
+    "F-037",
+    "F-004",
+    "F-019"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "26,4%, 14,15% e 4,8% conferem. Separação de depósitos de governos e limiares claros. Pareamento só por população e agro omite renda e idade, que puxam poupança nos municípios exclusivos."
+  },
+  {
+   "premissa": "C2-N15",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-047",
+    "F-004"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "19,67→15,54, 4,6% e 4,8% conferem, com boa ressalva sobre o recorte de tarifas. (A) é relativa aos pares; (B) mede crescimento absoluto, que não separa o BB da alta do mercado."
+  },
+  {
+   "premissa": "C3-N01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-006",
+    "F-003"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "403,6 bi, 4,84→6,92 e 21,2 bi conferem (o último é custo total). Limiares 5,5 e 7,5 sem direção nem data, e a métrica (estoque +90d) não é a do enunciado (formação). Ciclo do sistema não é controlado."
+  },
+  {
+   "premissa": "C3-N02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 1,
+    "decisoria": 1,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "174,3→137,8 confere (F-005). O enunciado diz que não é gatilho de liberar capital, e a decisão libera capital. Limiares de cobertura não medem o enunciado. Baixas aceleradas elevam a cobertura sem melhora."
+  },
+  {
+   "premissa": "C3-N03",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-023"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "22,53→14,01 e +14,88 p.p. do Nubank conferem; perímetro 1009 bem fixado. Limiares soltos (13,0; 12,0). Renegociada PF não se mede no IF.data. Manter fatia não diz se o negócio é bom."
+  },
+  {
+   "premissa": "C3-N04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [
+    "F-022"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "19,22% confere (F-022). Separar originação de compra de carteira não tem método. Faixa inconclusiva larga (18,0 a 19,22). Decisões vagas, sem controle de qualidade do crescimento."
+  },
+  {
+   "premissa": "C3-N05",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [
+    "F-024"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "9,35% e 15,49% do Nubank conferem (F-024). Teste é só fatia contra limiar, sem atraso nem preço: manter fatia comprando risco confirma. Decisões vagas."
+  },
+  {
+   "premissa": "C3-N06",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 0
+   },
+   "citacoes_conferidas": [
+    "F-028"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "16,14→10,87 e +6,33 p.p. das cooperativas conferem (F-028). Teste só de nível de fatia, sem controle de qualidade nem de causa. Ligação entre resultado e decisão é fraca."
+  }
+ ]
+}

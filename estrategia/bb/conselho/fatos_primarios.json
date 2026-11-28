@@ -1,0 +1,319 @@
+{
+ "versao": "2026-11-28a",
+ "nota": "Fatos lidos em documento primário (CVM IPE ou API do BCB) em 28/11/2026, com o trecho que os sustenta. PDFs em data/ifs/raw/cvm/docs/ (fora do git).",
+ "fatos": [
+  {
+   "tema": "resultado",
+   "metrica": "lucro_ajustado_3t26",
+   "afirmacao": "Lucro líquido ajustado do BB no 3T26: R$ 1,3 bi (−67,5% sobre o 2T26; −66,5% sobre o 3T25); 9M26: R$ 8,6 bi (−42,4%)",
+   "valor": {
+    "3T26_bi": 1.3,
+    "var_tri_pct": -67.5,
+    "var_ano_pct": -66.5,
+    "9M26_bi": 8.6,
+    "var_9m_pct": -42.4
+   },
+   "unidade": "R$ bi",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE, 11/11/2026)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Lucro Líquido Ajustado 1,3 -67,5% -66,5% 8,6 -42,4% Resultado pressionado pelo custo do crédito",
+   "ressalvas": [],
+   "confianca": "alta (documento primário)"
+  },
+  {
+   "tema": "resultado",
+   "metrica": "rspl",
+   "afirmacao": "RSPL (ROE) do BB: 2,8% no 3T26 contra 8,4% no 3T25; 6,2% no 9M26 contra 11,2% no 9M25",
+   "valor": {
+    "3T25": 8.4,
+    "3T26": 2.8,
+    "9M25": 11.2,
+    "9M26": 6.2
+   },
+   "unidade": "%",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "RSPL 8,4 7,3 8,3 11,2 ... 2,8 6,2",
+   "ressalvas": [
+    "leitura do layout do PDF; colunas 3T25, 1T26?, 2T26, 9M25 a conferir"
+   ],
+   "confianca": "alta para 2,8% e 8,4%; média para as colunas intermediárias"
+  },
+  {
+   "tema": "resultado",
+   "metrica": "custo_credito",
+   "afirmacao": "Custo do crédito do BB: R$ 21,2 bi no 3T26 (+14,9% t/t; +18,4% a/a) e R$ 58,6 bi no 9M26 (+33,2%)",
+   "valor": {
+    "3T26_bi": 21.2,
+    "9M26_bi": 58.6
+   },
+   "unidade": "R$ bi",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Custo do Crédito 21,2 +14,9% +18,4% 58,6 +33,2%",
+   "ressalvas": [],
+   "confianca": "alta"
+  },
+  {
+   "tema": "resultado",
+   "metrica": "margem_tarifas",
+   "afirmacao": "BB 3T26: margem financeira bruta R$ 26,0 bi (−5,5% t/t; −1,5% a/a); receitas de prestação de serviços R$ 9,3 bi (+4,6% a/a); despesas administrativas R$ 10,3 bi (+4,8% a/a)",
+   "valor": {
+    "mfb_bi": 26.0,
+    "tarifas_bi": 9.3,
+    "desp_adm_bi": 10.3
+   },
+   "unidade": "R$ bi",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Margem Financeira Bruta 26,0 -5,5% -1,5% 80,9 +7,4% / Receitas de Prestação de Serviços 9,3 +1,6% +4,6% / Despesas Administrativas 10,3 +2,0% +4,8%",
+   "ressalvas": [],
+   "confianca": "alta"
+  },
+  {
+   "tema": "risco",
+   "metrica": "inad90_total",
+   "afirmacao": "Inadimplência acima de 90 dias da carteira do BB: 4,51% (set/25) → 6,08% (set/26); cobertura +90d de 174,3% para 137,8%",
+   "valor": {
+    "set25": 4.51,
+    "set26": 6.08,
+    "cobertura_set25": 174.3,
+    "cobertura_set26": 137.8
+   },
+   "unidade": "%",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Inad +90 dias Carteira de Crédito 6,08% ... Inad +90d 4,51 ... Cobertura +90d 174,3 155,4 158,4 148,5 137,8",
+   "ressalvas": [
+    "valores intermediários lidos do layout do gráfico; usar só set/25 e set/26"
+   ],
+   "confianca": "alta para set/25 e set/26"
+  },
+  {
+   "tema": "risco",
+   "metrica": "inad90_agro",
+   "afirmacao": "Inadimplência +90 dias do agronegócio no BB: 4,84% (set/25) → 6,92% (set/26). Carteira agro de R$ 403,6 bi em set/26 (−4,3% t/t, +1,2% a/a)",
+   "valor": {
+    "set25": 4.84,
+    "set26": 6.92,
+    "carteira_set26_bi": 403.6,
+    "var_tri_pct": -4.3,
+    "var_ano_pct": 1.2
+   },
+   "unidade": "%",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Inad +90d Agronegócio 4,84 ... 6,09 6,22 6,27 6,92 ... +1,2% -4,3% ... 398,8 403,6",
+   "ressalvas": [
+    "a cobertura do agro em set/26 não foi lida com segurança"
+   ],
+   "confianca": "alta para inadimplência e saldo"
+  },
+  {
+   "tema": "capital",
+   "metrica": "capital_set26",
+   "afirmacao": "Capital principal do BB: 11,16% (set/25), 11,27% (jun/26), 10,80% (set/26). Basileia: 14,81% → 13,91% → 13,45%",
+   "valor": {
+    "cet1": {
+     "set25": 11.16,
+     "jun26": 11.27,
+     "set26": 10.8
+    },
+    "basileia": {
+     "set25": 14.81,
+     "jun26": 13.91,
+     "set26": 13.45
+    }
+   },
+   "unidade": "%",
+   "data": "2026-09",
+   "fonte": "BB, Apresentação do Resultado 3T26 (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Capital Índice de Basileia 14,81 13,91 13,45 ... Capital Principal 11,16 11,27 10,80 Set/25 Jun/26 Set/26",
+   "ressalvas": [],
+   "confianca": "alta"
+  },
+  {
+   "tema": "projecoes",
+   "metrica": "guidance_2026",
+   "afirmacao": "Fato relevante de 11/11/2026: o BB revisou as projeções de 2026. Lucro líquido ajustado de R$ 18–22 bi para R$ 9–11 bi (realizado 9M26: 8,6); custo do crédito de R$ 65–70 bi para R$ 80–83 bi (realizado 9M26: 58,6); carteira de crédito de +0,5% a +4,5% para −2,0% a 0,0%; PF de 6–10% para 0–2%; empresas de −3% a +1% para −4% a −2%; agronegócio de −2% a +2% para −3% a −1%; margem financeira bruta de 7–11% para 2,5–4,5%",
+   "valor": {
+    "lucro_bi": {
+     "anterior": [
+      18,
+      22
+     ],
+     "revisado": [
+      9,
+      11
+     ],
+     "9M26": 8.6
+    },
+    "custo_credito_bi": {
+     "anterior": [
+      65,
+      70
+     ],
+     "revisado": [
+      80,
+      83
+     ],
+     "9M26": 58.6
+    }
+   },
+   "unidade": "R$ bi e %",
+   "data": "2026-11-11",
+   "fonte": "BB, Fato Relevante 'Projeções 2026 - revisadas' (CVM IPE)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587982&numSequencia=1112688&numVersao=1",
+   "trecho": "A reavaliação da projeção do Custo de Crédito foi necessária, principalmente, face: (a) à continuidade da elevação da inadimplência da carteira de agronegócios, refletindo o baixo nível de pontualizações das operações do segmento; e, (b) ao desempenho das renegociações com clientes inadimplentes no âmbito da MP nº 1.376/2026, abaixo do inicialmente esperado. Soma-se a esses fatores a maior concentração de vencimentos nessa carteira no decorrer do 3T26, cujas despesas de provisão terão impacto sobre o 4T26.",
+   "ressalvas": [],
+   "confianca": "alta (documento primário)"
+  },
+  {
+   "tema": "pares",
+   "metrica": "roe_itau",
+   "afirmacao": "Itaú Unibanco 3T26: resultado recorrente gerencial de R$ 12,6 bi (+6,7% a/a); ROE recorrente gerencial consolidado de 23,6% (24,5% no Brasil); carteira de R$ 1.544 bi (+10,9% a/a); índice de eficiência de 37,5%",
+   "valor": {
+    "lucro_bi": 12.6,
+    "roe": 23.6,
+    "roe_brasil": 24.5,
+    "carteira_bi": 1544,
+    "eficiencia": 37.5
+   },
+   "unidade": "R$ bi e %",
+   "data": "2026-09",
+   "fonte": "Itaú Unibanco, Apresentação com a Imprensa 3T26 (CVM IPE, 03/11/2026)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583276&numSequencia=1107982&numVersao=1",
+   "trecho": "Resultado recorrente gerencial R$ 12,6 bilhões ... ROE recorrente gerencial CONSOLIDADO 23,6% BRASIL 24,5%",
+   "ressalvas": [
+    "ROE gerencial do Itaú e RSPL ajustado do BB têm definições diferentes"
+   ],
+   "confianca": "alta"
+  },
+  {
+   "tema": "pares",
+   "metrica": "roe_santander",
+   "afirmacao": "Santander Brasil 3T26: lucro líquido recorrente de R$ 2,9 bi (−28,0% a/a); ROAE recorrente de 11,9% (−5,6 p.p. a/a); custo de crédito de 3,89%; eficiência de 38,8%",
+   "valor": {
+    "lucro_bi": 2.9,
+    "roae": 11.9,
+    "custo_credito_pct": 3.89,
+    "eficiencia": 38.8
+   },
+   "unidade": "R$ bi e %",
+   "data": "2026-09",
+   "fonte": "Santander Brasil, Apresentação de Resultados 3T26 (CVM IPE, 28/10/2026)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580899&numSequencia=1105605&numVersao=1",
+   "trecho": "Lucro Líquido Recorrente R$ 2,9 bilhões -28,0% vs. 3T25 ... ROAE Recorrente 11,9% -5,6 p.p. vs. 3T25 ... Custo de crédito 3,89%",
+   "ressalvas": [],
+   "confianca": "alta"
+  },
+  {
+   "tema": "pares",
+   "metrica": "roe_bradesco_nubank",
+   "afirmacao": "Bradesco 3T26: ROE de 15,6% a 16,1% e lucro de R$ 7,1 bi; Nubank 3T26: ROE de 32% e lucro de US$ 1,09 bi",
+   "valor": {
+    "bradesco_roe": [
+     15.6,
+     16.1
+    ],
+    "bradesco_lucro_bi": 7.1,
+    "nubank_roe": 32,
+    "nubank_lucro_usd_bi": 1.09
+   },
+   "unidade": "%",
+   "data": "2026-09",
+   "fonte": "imprensa, por resumo de busca (I-06, I-07 de 00-mapa.md)",
+   "url": null,
+   "trecho": null,
+   "ressalvas": [
+    "não conferido em documento primário: o Bradesco não aparece no IPE com apresentação de 3T26 na base local; o Nubank reporta à SEC"
+   ],
+   "confianca": "média-baixa (imprensa)"
+  },
+  {
+   "tema": "macro_agro",
+   "metrica": "inad_rural_pf_sistema",
+   "afirmacao": "Inadimplência do crédito rural PF no sistema (SGS 21148): 0,80% (out/2022) → 9,59% (out/2026). Na parcela com taxas de mercado (SGS 21146): 0,51% → 17,21%. Saldo do crédito rural PF (SGS 20609): R$ 386,9 bi → R$ 550,5 bi",
+   "valor": {
+    "sgs21148": {
+     "2022-10": 0.8,
+     "2026-10": 9.59
+    },
+    "sgs21146": {
+     "2022-10": 0.51,
+     "2026-10": 17.21
+    },
+    "sgs20609_mi": {
+     "2022-10": 386926,
+     "2026-10": 550452
+    }
+   },
+   "unidade": "% e R$ milhões",
+   "data": "2026-10",
+   "fonte": "BCB, SGS (api.bcb.gov.br), séries 21148, 21146, 20609",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21148/dados?formato=json",
+   "trecho": "21148: 01/10/2022 0.80; 01/10/2026 9.59 / 21146: 0.51; 17.21 / 20609: 386926; 550452",
+   "ressalvas": [
+    "os nomes das séries vêm de docs/sources/fatores-externos-e-propostas.md"
+   ],
+   "confianca": "alta"
+  },
+  {
+   "tema": "macro_agro",
+   "metrica": "inad_total_sistema",
+   "afirmacao": "Inadimplência total da carteira de crédito do sistema (SGS 21082): 3,04% (out/2022) → 5,10% (out/2026)",
+   "valor": {
+    "2022-10": 3.04,
+    "2026-10": 5.1
+   },
+   "unidade": "%",
+   "data": "2026-10",
+   "fonte": "BCB, SGS 21082",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.21082/dados?formato=json",
+   "trecho": "01/10/2022 3.04; 01/10/2026 5.10",
+   "ressalvas": [
+    "confirmar o nome da série no catálogo do SGS"
+   ],
+   "confianca": "média-alta"
+  },
+  {
+   "tema": "mercado",
+   "metrica": "reacao_11nov",
+   "afirmacao": "Reação do mercado à revisão de 11/11/2026: retorno anormal acumulado de −9,3% em [−1, +3] pregões",
+   "valor": {
+    "car_pct": -9.3
+   },
+   "unidade": "%",
+   "data": "2026-11",
+   "fonte": "docs/sources/fatores-externos-e-propostas.md §2.1 (ilustrativo)",
+   "url": null,
+   "trecho": null,
+   "ressalvas": [
+    "exemplo ilustrativo de método; refazer com série de preços"
+   ],
+   "confianca": "baixa"
+  },
+  {
+   "tema": "resultado",
+   "metrica": "roe_sem_agro",
+   "afirmacao": "A administração do BB apresentou uma simulação do RSPL sem o impacto do agro (cerca de 17% na imprensa; slide 'Simulação RSPL ... Impacto Agro')",
+   "valor": null,
+   "unidade": "%",
+   "data": "2026-11",
+   "fonte": "BB, Apresentação 3T26 (slide de simulação) e imprensa (I-01)",
+   "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588142&numSequencia=1112848&numVersao=2",
+   "trecho": "Simulação1 Impacto Agro ... Simulação RSPL Mercado Acumulado ... 16,7 ... 15,7",
+   "ressalvas": [
+    "simulação da administração, não número auditado; o valor exato não foi lido com segurança no layout"
+   ],
+   "confianca": "média-baixa"
+  }
+ ]
+}

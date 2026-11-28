@@ -1,0 +1,158 @@
+{
+ "criticas": [
+  {
+   "premissa": "C1-N06",
+   "contrario": "A queda pode vir de spread menor, mix de carteira ou custo de captação mais alto; a premissa não está no dossiê e depende de decomposição não auditada.",
+   "alternativa": "O aumento do custo de captação e o encolhimento da carteira agro reduziram margem sem relação com ativos problemáticos; juros não apropriados são efeito, não causa.",
+   "riscos_de_dado": [
+    "Decomposição de margem não é padronizada; juros não apropriados podem ser estimados; dados trimestrais têm volatilidade; classificação de ativos problemáticos varia."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM: DFP e ITR",
+     "Sites de RI dos bancos"
+    ],
+    "descricao": "Usar notas explicativas para decompor variação da margem entre juros de ativos problemáticos e demais componentes; se juros não apropriados <30% da queda, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A queda trimestral da margem financeira bruta é explicada em ≥50% por redução de receita de juros de ativos em estágio 3, conforme notas explicativas, e não por spread, mix ou captação."
+  },
+  {
+   "premissa": "C1-N07",
+   "contrario": "O capital pode cair abaixo de 10,80% mesmo com lucro pequeno, se houver crescimento de ativos ponderados por risco, marcação a mercado ou pagamento de dividendos intermediários.",
+   "alternativa": "A queda do CET1 em set/26 reflete mais RWA do que perda; em dez/26, RWA pode crescer com a carteira, pressionando o índice independentemente do payout.",
+   "riscos_de_dado": [
+    "KM1 de Pilar 3 pode ter defasagem; RWA não está no dossiê; política de payout e proventos intermediários não especificados; mudanças regulatórias podem afetar."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "DASFN: Pilar 3 como API",
+     "CVM: IPE"
+    ],
+    "descricao": "Verificar KM1 de dez/26 divulgado no Pilar 3; se <10,50% ou houver corte de payout/emissão, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Sem corte de payout nem emissão de capital, o capital principal em dez/26 fica no mínimo em 10,50%, considerando o efeito projetado de RWA e OCI."
+  },
+  {
+   "premissa": "C1-N09",
+   "contrario": "O índice calculado pode estar artificialmente baixo por diferenças de consolidação e de linhas de receita; sob a definição do Itaú, o BB pode ser menos eficiente.",
+   "alternativa": "A diferença aparente vem de receitas não recorrentes ou de tarifas que o BB reconhece de forma diferente, não de custo estrutural.",
+   "riscos_de_dado": [
+    "Fórmulas de eficiência não são padronizadas; documentos Cosif podem ter perímetros distintos; dados trimestrais podem ser influenciados por itens extraordinários."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "CVM: DFP e ITR",
+     "Balancetes e balanços (Cosif)"
+    ],
+    "descricao": "Calcular (despesas de pessoal+adm)/(resultado intermediação antes de provisão+tarifas) para 8 trimestres; se BB > Itaú +5 p.p. em 6 de 8, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Usando a mesma fórmula contábil, o índice de eficiência do BB fica ≤ ao do Itaú em pelo menos 6 dos últimos 8 trimestres."
+  },
+  {
+   "premissa": "C1-N10",
+   "contrario": "A perda de participação pode ser perda competitiva para fintechs, não escolha; BB pode ter ficado para trás em experiência digital ou preço, sem melhora de risco.",
+   "alternativa": "A queda reflete migração de clientes para crédito digital do Nubank, que oferece aprovação rápida; BB perdeu por atrito, não por decisão.",
+   "riscos_de_dado": [
+    "Dados de Itaú/Bradesco não estão no dossiê; inadimplência por instituição não é diretamente comparável; taxas médias podem esconder mix de risco; mudança de perímetro IF.data."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "Taxas de juros por instituição"
+    ],
+    "descricao": "Comparar perda do BB com média de Itaú/Bradesco 2019-2026; se BB ≥3 p.p. pior que média e inadimplência abaixo deles, refuta escolha."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "divide",
+   "texto_novo": "Dividir em: (1) BB perdeu participação em crédito pessoal sem consignação no máximo 2 p.p. a mais que média de Itaú/Bradesco; (2) BB manteve inadimplência e taxas abaixo do Nubank."
+  },
+  {
+   "premissa": "C1-N12",
+   "contrario": "O ganho pode ter vindo de preço abaixo dos pares para capturar volume, sacrificando margem; a taxa média pode esconder descontos em prazos ou clientes específicos.",
+   "alternativa": "O crescimento reflete saída de concorrentes (como Citibank) ou foco do BB em clientes exportadores, não vantagem de preço.",
+   "riscos_de_dado": [
+    "Série de taxas de ACC não está no dossiê; comparabilidade entre bancos exige mesmo prazo e garantia; sazonalidade cambial pode distorcer."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "Taxas de juros por instituição",
+     "IF.data"
+    ],
+    "descricao": "Comparar taxa média mensal de ACC do BB com mediana dos 5 maiores; se BB ≤ percentil 25 em ≥2/3 dos meses, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O ganho de participação em comércio exterior ocorreu sem desconto de preço: taxa média de ACC do BB ficou na mediana ou acima em pelo menos 2/3 dos meses de 2023-2026."
+  },
+  {
+   "premissa": "C1-N13",
+   "contrario": "O custo de captação pode ter subido por motivos de mercado (Selic, concorrência por funding) e não pela perda de depósitos à vista/LCA; a causalidade pode ser inversa.",
+   "alternativa": "Mudanças regulatórias na LCA e migração para depósitos a prazo remunerados explicam a alta; a perda de share é consequência, não causa.",
+   "riscos_de_dado": [
+    "Custo de captação não está no dossiê; cálculo como % do CDI exige duration e mix; pares podem ter estruturas diferentes; IF.data tem mudança de perímetro."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "Balancetes e balanços (Cosif)",
+     "BCB SGS"
+    ],
+    "descricao": "Calcular despesa de captação/saldo médio dividido por CDI para BB e pares 2022-2026; se diferença ≤1 p.p., refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Entre 2022 e 2026, o custo de captação do BB como % do CDI aumentou pelo menos 5 p.p. acima da média dos pares, calculado por despesa de captação sobre saldo médio."
+  },
+  {
+   "premissa": "C1-N15",
+   "contrario": "A cobertura de 137,8% é total, não específica do agro; no agro pode ser abaixo de 100%, e as baixas podem superar 50% do vencido, dados os colaterais.",
+   "alternativa": "A provisão pode estar defasada; as baixas ainda não refletem a piora porque os processos de recuperação são longos, então a cobertura aparente é ilusória.",
+   "riscos_de_dado": [
+    "Cobertura agro não foi lida no dossiê; dados de baixas e recuperações não estão no dossiê; +90d não captura toda a carteira problemática."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "CVM: DFP e ITR",
+     "Sites de RI dos bancos"
+    ],
+    "descricao": "Usar notas explicativas para calcular (baixas líquidas de recuperação)/saldo +90d médio do agro; se >80% ou cobertura agro <100%, refuta."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A cobertura agro do BB é de pelo menos 120% e as baixas líquidas de recuperação dos últimos 4 trimestres não excedem 50% do saldo +90d médio do agro."
+  },
+  {
+   "premissa": "C2-N01",
+   "contrario": "O BB pode estar pior que o resto do sistema no crédito rural, pois sua carteira inclui PJ rural com perfil diferente; a comparação agregada pode esconder piora em segmentos.",
+   "alternativa": "A diferença aparente a favor do BB decorre de definição: SGS 21148 é rural PF, enquanto BB agro pode incluir PJ e linhas com garantias diferentes.",
+   "riscos_de_dado": [
+    "Perímetros diferentes: SGS 21148 vs IF.data; cobertura do sistema inclui todas instituições; dados trimestrais podem ter sazonalidade; quebra de série em 03/2025."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BCB SGS 21148, 21146, 20609",
+     "IF.data"
+    ],
+    "descricao": "Calcular inadimplência +90d do rural sistema sem BB usando mesma definição de PF rural; se BB - resto > +1 p.p. em set/26, refuta."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Usando definição alinhada de crédito rural PF, a inadimplência +90d do BB é ≤ à do resto do sistema em set/26 e a alta em 12 meses não supera a do resto."
+  }
+ ]
+}

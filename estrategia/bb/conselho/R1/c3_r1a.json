@@ -1,0 +1,591 @@
+{
+ "arvore": {
+  "id": "q0",
+  "pergunta": "Como o BB volta a gerar retorno acima do custo de capital sem perder o que só ele tem?",
+  "filhas": [
+   {
+    "id": "q1",
+    "pergunta": "Quais são as fontes imediatas de destruição de valor?",
+    "filhas": [
+     {
+      "id": "q1a",
+      "pergunta": "O custo do crédito do agro é cíclico ou estrutural?",
+      "filhas": []
+     },
+     {
+      "id": "q1b",
+      "pergunta": "A margem financeira pode ser defendida via precificação?",
+      "filhas": []
+     },
+     {
+      "id": "q1c",
+      "pergunta": "Quais linhas PF/PJ têm perda de participação mais rápida?",
+      "filhas": []
+     }
+    ]
+   },
+   {
+    "id": "q2",
+    "pergunta": "Quais ativos únicos geram vantagem competitiva defensável?",
+    "filhas": [
+     {
+      "id": "q2a",
+      "pergunta": "A capilaridade em 577 municípios se converte em receita de serviços e funding barato?",
+      "filhas": []
+     },
+     {
+      "id": "q2b",
+      "pergunta": "A liderança em crédito rural e LCA é defensável contra cooperativas e digitais?",
+      "filhas": []
+     },
+     {
+      "id": "q2c",
+      "pergunta": "O funding de poupança e depósitos à vista ainda dá custo menor?",
+      "filhas": []
+     }
+    ]
+   },
+   {
+    "id": "q3",
+    "pergunta": "Como recompor retorno sobre capital sem expandir risco?",
+    "filhas": [
+     {
+      "id": "q3a",
+      "pergunta": "O CET1 de 10,8% permite recomprar carteiras ou exige otimização de RWA?",
+      "filhas": []
+     },
+     {
+      "id": "q3b",
+      "pergunta": "Quais segmentos (consignado, PJ grande, comércio exterior) têm ROE acima do custo?",
+      "filhas": []
+     },
+     {
+      "id": "q3c",
+      "pergunta": "Como monitorar a execução com dados públicos?",
+      "filhas": []
+     }
+    ]
+   }
+  ]
+ },
+ "premissas": [
+  {
+   "id": "N01",
+   "mercado": "agro",
+   "enunciado": "A inadimplência +90d da carteira de agronegócio do BB em set/2027 ficará abaixo de 5,5%.",
+   "por_que_importa": "A carteira agro é de R$ 403,6 bi; a inadimplência saltou de 4,84% para 6,92% e o custo de crédito subiu para R$ 21,2 bi no 3T26.",
+   "teste": {
+    "fontes": [
+     "F-005",
+     "F-006",
+     "SGS 21148",
+     "SGS 21146"
+    ],
+    "metrica": "% da carteira agro com atraso superior a 90 dias",
+    "periodo": "set/2026 a set/2027",
+    "comparacao": "histórico do BB e do sistema (BCB)"
+   },
+   "confirma_se": 5.5,
+   "refuta_se": 7.5,
+   "decisao": {
+    "se_verdadeira": "manter e recompor carteira agro",
+    "se_falsa": "reduzir exposição e renegociar"
+   },
+   "fatos": [
+    "F-005",
+    "F-006",
+    "F-012"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N02",
+   "mercado": "agro",
+   "enunciado": "A cobertura de provisões para crédito +90d do BB volta acima de 150% em dez/2027.",
+   "por_que_importa": "A cobertura caiu de 174,3% para 137,8% entre set/25 e set/26, reduzindo proteção contra novas perdas.",
+   "teste": {
+    "fontes": [
+     "F-005",
+     "F-006",
+     "DASFN Pilar 3"
+    ],
+    "metrica": "cobertura de provisão sobre saldo +90d (%)",
+    "periodo": "dez/2026 a dez/2027",
+    "comparacao": "histórico do BB e pares"
+   },
+   "confirma_se": 150,
+   "refuta_se": 130,
+   "decisao": {
+    "se_verdadeira": "liberar capital de provisão",
+    "se_falsa": "aumentar provisionamento"
+   },
+   "fatos": [
+    "F-005",
+    "F-006"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N03",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no crédito pessoal sem consignação fica acima de 14,5% em jun/2027.",
+   "por_que_importa": "A participação caiu de 22,53% para 14,01% entre dez/2019 e jun/2026, com Nubank ganhando 14,88 p.p.",
+   "teste": {
+    "fontes": [
+     "F-020",
+     "F-023",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em crédito pessoal sem consignação PF",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "concorrentes digitais e cooperativas"
+   },
+   "confirma_se": 14.5,
+   "refuta_se": 12.0,
+   "decisao": {
+    "se_verdadeira": "acelerar crédito pessoal digital",
+    "se_falsa": "redirecionar capital para consignado"
+   },
+   "fatos": [
+    "F-020",
+    "F-023",
+    "F-024"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N04",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no consignado sobe acima de 21% em jun/2027.",
+   "por_que_importa": "Consignado é linha de menor risco e o BB tem 19,22%; recuperar participação ajuda ROE sem aumentar inadimplência.",
+   "teste": {
+    "fontes": [
+     "F-022",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em consignado",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "bancos públicos e digitais"
+   },
+   "confirma_se": 21.0,
+   "refuta_se": 18.0,
+   "decisao": {
+    "se_verdadeira": "priorizar consignado INSS e convênios",
+    "se_falsa": "rever canais de originação"
+   },
+   "fatos": [
+    "F-022",
+    "F-020"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 1,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N05",
+   "mercado": "varejo_pf",
+   "enunciado": "A participação do BB no cartão de crédito PF fica acima de 9,5% em jun/2027.",
+   "por_que_importa": "Cartão é receita de juros e tarifas; o BB caiu para 9,35%, muito abaixo de Nubank (15,49%).",
+   "teste": {
+    "fontes": [
+     "F-024",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em cartão de crédito PF",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "Nubank e outros digitais"
+   },
+   "confirma_se": 10.5,
+   "refuta_se": 8.5,
+   "decisao": {
+    "se_verdadeira": "investir em cartão via app",
+    "se_falsa": "reduzir foco em cartão"
+   },
+   "fatos": [
+    "F-024"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N06",
+   "mercado": "empresas",
+   "enunciado": "A participação do BB em capital de giro PJ fica acima de 12% em jun/2027.",
+   "por_que_importa": "Capital de giro PJ caiu de 16,14% para 10,87%; cooperativas ganharam 6,33 p.p. combinadas.",
+   "teste": {
+    "fontes": [
+     "F-027",
+     "F-028",
+     "F-033",
+     "F-034",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em capital de giro PJ",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "Sicredi, Sicoob, Itaú"
+   },
+   "confirma_se": 12.0,
+   "refuta_se": 10.0,
+   "decisao": {
+    "se_verdadeira": "expandir crédito a PME com garantias",
+    "se_falsa": "focar em grandes empresas"
+   },
+   "fatos": [
+    "F-027",
+    "F-028",
+    "F-033",
+    "F-034"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N07",
+   "mercado": "empresas",
+   "enunciado": "A participação do BB em comércio exterior PJ se mantém acima de 25% em jun/2027.",
+   "por_que_importa": "Comércio exterior é um dos poucos segmentos em que o BB ganhou participação (18,42% para 25,43%).",
+   "teste": {
+    "fontes": [
+     "F-031",
+     "F-035",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em comércio exterior PJ",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "Itaú, Bradesco, Citibank"
+   },
+   "confirma_se": 25.0,
+   "refuta_se": 20.0,
+   "decisao": {
+    "se_verdadeira": "criar oferta integrada de câmbio e BNDES",
+    "se_falsa": "reavaliar atuação internacional"
+   },
+   "fatos": [
+    "F-031",
+    "F-035"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 1,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N08",
+   "mercado": "captacao",
+   "enunciado": "A participação do BB em depósitos à vista fica acima de 17% em jun/2027.",
+   "por_que_importa": "Depósitos à vista são funding barato; a participação caiu de 21,49% para 16,63% e bancos digitais/cooperativas ganham.",
+   "teste": {
+    "fontes": [
+     "F-019",
+     "F-038",
+     "F-041",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em depósitos à vista",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "Sicredi, Sicoob, BTG"
+   },
+   "confirma_se": 17.0,
+   "refuta_se": 15.0,
+   "decisao": {
+    "se_verdadeira": "usar capilaridade para captar depósitos à vista",
+    "se_falsa": "rever modelo de agências"
+   },
+   "fatos": [
+    "F-019",
+    "F-038",
+    "F-041"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N09",
+   "mercado": "captacao",
+   "enunciado": "A participação do BB em LCA volta acima de 35% em jun/2027.",
+   "por_que_importa": "LCA financia o agro; o BB caiu de 49,38% para 32,55%, enquanto cooperativas e BTG ganharam espaço.",
+   "teste": {
+    "fontes": [
+     "F-042",
+     "F-044",
+     "IF.data"
+    ],
+    "metrica": "% do saldo do sistema em LCA",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "Sicredi, Sicoob, Bradesco"
+   },
+   "confirma_se": 35.0,
+   "refuta_se": 30.0,
+   "decisao": {
+    "se_verdadeira": "ampliar funding agro via LCA",
+    "se_falsa": "diversificar funding"
+   },
+   "fatos": [
+    "F-042",
+    "F-044"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N10",
+   "mercado": "servicos",
+   "enunciado": "A receita de prestação de serviços do BB cresce acima de 7% a/a no 3T27.",
+   "por_que_importa": "Receitas de serviços cresceram 4,6% a/a no 3T26 (R$ 9,3 bi) e ajudam a compensar margem financeira fraca.",
+   "teste": {
+    "fontes": [
+     "F-004",
+     "F-047",
+     "CVM IPE"
+    ],
+    "metrica": "variação a/a da receita de prestação de serviços",
+    "periodo": "3T26 a 3T27",
+    "comparacao": "pares (Itaú, Santander)"
+   },
+   "confirma_se": 7.0,
+   "refuta_se": 2.0,
+   "decisao": {
+    "se_verdadeira": "monetizar capilaridade com serviços",
+    "se_falsa": "cortar custos de canais"
+   },
+   "fatos": [
+    "F-004",
+    "F-047"
+   ],
+   "valor_decisao": {
+    "tamanho": 1,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N11",
+   "mercado": "capital",
+   "enunciado": "O índice de capital principal (CET1) do BB fica acima de 11,5% em set/2027.",
+   "por_que_importa": "CET1 caiu de 11,16% para 10,80% entre set/25 e set/26, limitando distribuição e crescimento.",
+   "teste": {
+    "fontes": [
+     "F-007",
+     "F-016",
+     "F-017",
+     "F-018",
+     "DASFN Pilar 3"
+    ],
+    "metrica": "CET1/RWA (%)",
+    "periodo": "set/2026 a set/2027",
+    "comparacao": "mínimo regulatório e pares"
+   },
+   "confirma_se": 11.5,
+   "refuta_se": 10.0,
+   "decisao": {
+    "se_verdadeira": "distribuir dividendos / recomprar carteira",
+    "se_falsa": "reter lucro e otimizar RWA"
+   },
+   "fatos": [
+    "F-007",
+    "F-016",
+    "F-017",
+    "F-018"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N12",
+   "mercado": "capital",
+   "enunciado": "O RSPL (ROE) ajustado do BB volta acima de 12% no 3T27.",
+   "por_que_importa": "RSPL caiu para 2,8% no 3T26, muito abaixo do custo de capital e dos pares (Itaú 23,6%).",
+   "teste": {
+    "fontes": [
+     "F-001",
+     "F-002",
+     "F-015",
+     "CVM IPE"
+    ],
+    "metrica": "RSPL ajustado acumulado 12m (%)",
+    "periodo": "3T26 a 3T27",
+    "comparacao": "pares e custo de capital estimado"
+   },
+   "confirma_se": 12.0,
+   "refuta_se": 8.0,
+   "decisao": {
+    "se_verdadeira": "manter estratégia de crescimento",
+    "se_falsa": "revisão profunda de portfólio"
+   },
+   "fatos": [
+    "F-001",
+    "F-002",
+    "F-015"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N13",
+   "mercado": "canais",
+   "enunciado": "A participação do BB em agências fica acima de 25% em jun/2027.",
+   "por_que_importa": "A rede física é ativo único; o BB tem 26,4% das agências do sistema, mas precisa provar que gera receita.",
+   "teste": {
+    "fontes": [
+     "F-019",
+     "F-048",
+     "ESTBAN"
+    ],
+    "metrica": "% do total de agências do sistema",
+    "periodo": "jun/2026 a jun/2027",
+    "comparacao": "pares (Caixa, Bradesco, Itaú)"
+   },
+   "confirma_se": 25.0,
+   "refuta_se": 22.0,
+   "decisao": {
+    "se_verdadeira": "manter rede física como ativo estratégico",
+    "se_falsa": "acelerar fechamento/digitalização"
+   },
+   "fatos": [
+    "F-019",
+    "F-048"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 1,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "N14",
+   "mercado": "canais",
+   "enunciado": "O BB continua sendo o único banco com crédito em pelo menos 500 municípios em 2027.",
+   "por_que_importa": "Hoje o BB é o único banco com crédito em 577 municípios; capilaridade exclusiva pode justificar funding e tarifas.",
+   "teste": {
+    "fontes": [
+     "F-019",
+     "ESTBAN"
+    ],
+    "metrica": "número de municípios com presença exclusiva do BB (com crédito)",
+    "periodo": "ago/2026 a ago/2027",
+    "comparacao": "outros bancos com agência"
+   },
+   "confirma_se": 500,
+   "refuta_se": 400,
+   "decisao": {
+    "se_verdadeira": "usar exclusividade para receitas de serviço",
+    "se_falsa": "reavaliar custo de presença"
+   },
+   "fatos": [
+    "F-019"
+   ],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 1,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "N15",
+   "mercado": "regulacao",
+   "enunciado": "A inadimplência do crédito rural PF com taxas de mercado (SGS 21146) recua abaixo de 15% em out/2027.",
+   "por_que_importa": "A inadimplência da parcela com taxas de mercado saltou de 0,51% para 17,21%, indicando risco de política de funding.",
+   "teste": {
+    "fontes": [
+     "F-012",
+     "F-013",
+     "SGS 21146"
+    ],
+    "metrica": "inadimplência do crédito rural PF com taxas de mercado (%)",
+    "periodo": "out/2026 a out/2027",
+    "comparacao": "série histórica e carteira total"
+   },
+   "confirma_se": 15.0,
+   "refuta_se": 18.0,
+   "decisao": {
+    "se_verdadeira": "reduzir pressão por funding equalizado",
+    "se_falsa": "pressionar por política pública"
+   },
+   "fatos": [
+    "F-012",
+    "F-013"
+   ],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  }
+ ],
+ "lacunas": [
+  {
+   "dado": "Custo de capital e ROE por segmento de negócio do BB (agro, PF, PJ, tesouraria).",
+   "fonte": "BB Apresentação por segmento (CVM IPE), DFP/ITR"
+  },
+  {
+   "dado": "Inadimplência do agro por safra, região, porte e produto no BB.",
+   "fonte": "SCR.data, SICOR, BB divulgação"
+  },
+  {
+   "dado": "Cobertura de provisões do agro por safra e nível de provisionamento.",
+   "fonte": "BB DFP notas de risco, DASFN"
+  },
+  {
+   "dado": "Taxa média de juros e spread por modalidade do BB vs pares.",
+   "fonte": "BCB taxas de juros por instituição, Open Finance"
+  },
+  {
+   "dado": "Estatísticas de canais digitais: usuários ativos, transações e custo por transação.",
+   "fonte": "BB RI, DASFN canais de atendimento, Pix estatísticas"
+  },
+  {
+   "dado": "Receitas de serviços detalhadas (conta, cartão, consórcio, seguros, administração de fundos).",
+   "fonte": "DFP/ITR, Open Finance tarifas"
+  },
+  {
+   "dado": "Carteira de crédito por faixa de risco (AA-C) e por setor econômico.",
+   "fonte": "SCR.data, DFP nota explicativa"
+  },
+  {
+   "dado": "Reprecificação da carteira agro e impacto na margem financeira.",
+   "fonte": "BB RI, DFP, BCB taxas"
+  },
+  {
+   "dado": "Custo e prazo da captação por fonte (depósitos à vista, poupança, LCA, depósitos a prazo).",
+   "fonte": "IF.data, DFP passivo"
+  },
+  {
+   "dado": "ROE/RAROC por segmento cliente e região, incluindo sinergias com capilaridade.",
+   "fonte": "BB RI, DFP segmentos, ESTBAN/IF.data"
+  }
+ ],
+ "leitura": "Agudo: a queda do lucro e do ROE vem de custo de crédito agro (R$21,2 bi no 3T26) e inadimplência +90d de 6,08%, com cobertura caindo. É choque de safra e preço, não perda da franquia. Estrutural: o BB perde participação em PF (pessoal, cartão, habitação) e PME, enquanto captação barata encolhe. Mas tem capilaridade única (577 municípios só com BB), liderança em crédito rural e funding agrícola. A saída é precificar risco agro sem abandonar a carteira, usar canais físicos para captar depósitos e vender serviços, e rebalancear capital para linhas com ROE acima do custo."
+}

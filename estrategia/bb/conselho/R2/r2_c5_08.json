@@ -1,0 +1,68 @@
+{
+ "criticas": [
+  {
+   "premissa": "C4-N11",
+   "contrario": "A barreira da folha não impede perda: Agibank e BTG já somam 6,41 pp ganhos sem folha própria, via correspondente e refinanciamento. Portabilidade digital e compra de carteira contornam a barreira.",
+   "alternativa": "A perda de 1,95 pp pode refletir decisão própria de preço/risco do BB (guidance de carteira PF revisada para 0–2%), não defesa bem-sucedida; share estável seria efeito de inércia, não de barreira.",
+   "riscos_de_dado": [
+    "Quebra de perímetro 1005→1009 em 03/2025 e Cosif 2025 podem inflar ou desinflar shares",
+    "Série termina em 06/2026, antes da deterioração do 3T26",
+    "Critério de consolidação de Agibank/BTG pode mudar entre datas"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB) consignado por instituição",
+     "SCR/BCB inadimplência por modalidade"
+    ],
+    "descricao": "Calcular perda de share do BB em consignado privado (excluindo INSS) e taxa de portabilidade; se perda >1 pp/ano no segmento privado, a barreira não protege."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em consignado caiu 1,95 pp em 6,5 anos; a tese de defensabilidade via folha pública só se sustenta se a perda for concentrada no consignado privado e a inadimplência do segmento permanecer baixa — hipótese a testar por subsegmento."
+  },
+  {
+   "premissa": "C4-N13",
+   "contrario": "Estabilidade de share não implica funding barato: poupança tem remuneração regulada e pode estar estável por inércia de clientes cativos, enquanto o custo total de captação já subiu via LCA e depósitos remunerados.",
+   "alternativa": "A estabilidade (−0,49 pp) pode refletir o estoque regulatório vinculado ao crédito rural e habitacional do próprio BB, não preferência do cliente; se o crédito vinculado encolher, a poupança cai junto.",
+   "riscos_de_dado": [
+    "Quebra de perímetro 1005→1009 e Cosif 2025 afetam a série",
+    "Share de estoque não mede custo; falta dado de taxa média de captação no dossiê",
+    "Comparação com Caixa mistura função regulatória distinta"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data (BCB) poupança",
+     "BB, demonstrações contábeis (despesa de captação)"
+    ],
+    "descricao": "Cruzar share de poupança com custo médio de captação do BB vs sistema; se custo BB ≥ média do sistema mesmo com share estável, a premissa de funding barato cai."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em poupança está estável (~20,6%), mas estabilidade de estoque não prova funding barato; a premissa só vale se o custo médio de captação do BB estiver abaixo da média do sistema, o que o dossiê não mede."
+  },
+  {
+   "premissa": "C4-N15",
+   "contrario": "O 3T26 pode ser o fundo do ciclo: guidance revisado já embete custo de crédito de 80–83 bi em 2026; se o agro normalizar, RSPL pode voltar a dois dígitos sem mudança estrutural, como já ocorreu em ciclos anteriores.",
+   "alternativa": "O RSPL de 2,8% pode ser efeito de provisões extraordinárias concentradas no trimestre (custo de crédito +18,4% a/a), não de déficit estrutural de receita; a decomposição pode mostrar margem e eficiência preservadas.",
+   "riscos_de_dado": [
+    "Custo de capital de 12–14% é estimativa fora do dossiê; não há série pública citada para o prêmio de risco",
+    "RSPL ajustado do BB e ROE gerencial de Itaú/Bradesco têm definições diferentes (ressalva F-009)",
+    "Ressalva do F-002: colunas intermediárias a conferir"
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB, Apresentação de Resultados (série trimestral RSPL)",
+     "BCB, séries temporais (Selic)",
+     "IPEA/ANBIMA (NTN-B longa)"
+    ],
+    "descricao": "Decomposição DuPont do RSPL 2024–2026: se a queda for explicada quase toda por custo de crédito e a margem/eficiência estiverem estáveis, a tese de recuperação só via receita+custo simultâneos é refutada."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "mantem",
+   "texto_novo": null
+  }
+ ]
+}

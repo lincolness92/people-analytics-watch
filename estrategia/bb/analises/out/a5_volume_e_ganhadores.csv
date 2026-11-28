@@ -1,0 +1,25 @@
+produto,janela,sistema_fim_bi,cresc_anual_sistema_pct,cresc_anual_bb_pct,bb_base_pct,bb_fim_pct,bb_delta_pp,rank_bb_fim,ganhadores
+pf_consignado,03/2016-12/2019,384.0,8.9,7.1,22.52,21.17,-1.35,1,Santander Brasil +5.4; Bradesco +3.7; Safra +1.5; Banrisul +1.2
+pf_consignado,12/2019-12/2023,626.9,13.0,11.7,21.17,20.16,-1.01,1,C6 Bank +1.9; BTG Pactual +1.6; Agibank +1.3; Mercantil do Brasil +0.5
+pf_consignado,12/2023-06/2026,800.1,10.3,8.2,20.16,19.22,-0.94,1,C6 Bank +3.3; Agibank +2.1; BTG Pactual +1.2; PicPay +1.2
+pf_consignado,03/2016-06/2026,800.1,10.8,9.1,22.52,19.22,-3.3,1,C6 Bank +5.2; Agibank +3.5; BTG Pactual +2.9; Santander Brasil +1.7
+pf_nao_consignado,03/2016-12/2019,134.8,6.9,2.2,26.63,22.53,-4.1,1,Bradesco +6.9; Sistema Sicoob +3.0; Santander Brasil +2.1; Sistema Sicredi +1.5
+pf_nao_consignado,12/2019-12/2023,282.1,20.3,11.6,22.53,16.68,-5.84,1,Nubank +6.4; XP +4.4; Banco BV (Votorantim) +2.2; C6 Bank +2.1
+pf_nao_consignado,12/2023-06/2026,399.9,15.0,7.2,16.68,14.01,-2.67,2,Nubank +8.5; Mercado Pago +3.4; PicPay +1.2; Bradesco +1.1
+pf_nao_consignado,03/2016-06/2026,399.9,13.9,7.0,26.63,14.01,-12.61,2,Nubank +15.1; Mercado Pago +3.6; Sistema Sicoob +2.9; XP +2.8
+pf_cartao,03/2016-12/2019,278.4,14.9,9.8,13.79,11.59,-2.19,4,Nubank +3.3; Santander Brasil +1.5; Sistema Sicoob +0.6; Banrisul +0.5
+pf_cartao,12/2019-12/2023,544.0,18.2,15.2,11.59,10.45,-1.14,4,Nubank +8.6; C6 Bank +1.8; XP +1.4; Inter +1.3
+pf_cartao,12/2023-06/2026,747.7,13.6,8.6,10.45,9.35,-1.11,4,Nubank +3.5; Mercado Pago +3.2; PicPay +0.8; Inter +0.4
+pf_cartao,03/2016-06/2026,747.7,15.9,11.6,13.79,9.35,-4.44,4,Nubank +15.5; Mercado Pago +4.2; Inter +2.0; C6 Bank +1.7
+pf_habitacao,03/2016-12/2019,639.0,6.2,6.9,7.49,7.65,0.16,2,Bradesco +2.4; Santander Brasil +0.6; Itaú Unibanco +0.6; Inter +0.1
+pf_habitacao,12/2019-12/2023,1044.5,13.1,-0.9,7.65,4.52,-3.14,5,Itaú Unibanco +3.8; Bradesco +1.3; Inter +0.3; Sistema Sicredi +0.2
+pf_habitacao,12/2023-06/2026,1403.0,12.5,-1.7,4.52,3.22,-1.29,5,Caixa Econômica Federal +2.0; Inter +0.2; Sistema Sicredi +0.1; Sistema Sicoob +0.0
+pf_habitacao,03/2016-06/2026,1403.0,10.4,1.7,7.49,3.22,-4.27,5,Itaú Unibanco +4.4; Bradesco +3.4; Inter +0.6; Sistema Sicredi +0.3
+pf_veiculos,03/2016-12/2019,204.5,7.2,-16.4,4.51,1.78,-2.73,7,Santander Brasil +6.6; Safra +4.7; Banco BV (Votorantim) +1.4; Bradesco +1.1
+pf_veiculos,12/2019-12/2023,289.4,9.1,4.8,1.78,1.51,-0.26,9,BTG Pactual +7.5; Itaú Unibanco +2.2; C6 Bank +1.4; Volkswagen +1.1
+pf_veiculos,12/2023-06/2026,426.3,16.8,41.7,1.51,2.46,0.94,10,C6 Bank +5.2; Stellantis +3.1; Volkswagen +3.0; Daycoval +0.2
+pf_veiculos,03/2016-06/2026,426.3,10.2,3.9,4.51,2.46,-2.05,10,C6 Bank +6.6; BTG Pactual +5.5; Safra +4.4; Volkswagen +3.6
+pf_total,03/2016-12/2019,2074.4,7.6,5.9,18.78,17.7,-1.09,2,Santander Brasil +2.1; Bradesco +1.8; Itaú Unibanco +1.4; Sistema Sicredi +1.0
+pf_total,12/2019-12/2023,3652.7,15.2,13.7,17.7,16.79,-0.9,2,Nubank +1.8; BTG Pactual +1.1; Sistema Sicredi +0.9; C6 Bank +0.9
+pf_total,12/2023-06/2026,4820.0,11.7,7.2,16.79,15.14,-1.65,2,Nubank +1.5; C6 Bank +0.9; Mercado Pago +0.8; Agibank +0.4
+pf_total,03/2016-06/2026,4820.0,11.5,9.2,18.78,15.14,-3.64,2,Nubank +3.8; Sistema Sicredi +2.0; C6 Bank +1.8; Sistema Sicoob +1.2

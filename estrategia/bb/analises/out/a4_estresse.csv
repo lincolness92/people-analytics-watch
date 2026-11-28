@@ -1,0 +1,11 @@
+instrumento,episodio,bb_ini_pct,bb_fim_pct,delta_pp,desvio_padrao_trimestral_pp
+depositos_total,COVID (12/2019 -> 06/2020),17.76,16.19,-1.57,0.4
+depositos_total,liquidação do Banco Master (09/2025 -> 03/2026),14.63,14.89,0.26,0.4
+depositos_prazo,COVID (12/2019 -> 06/2020),14.49,13.02,-1.47,0.53
+depositos_prazo,liquidação do Banco Master (09/2025 -> 03/2026),13.27,13.62,0.35,0.53
+depositos_vista,COVID (12/2019 -> 06/2020),21.49,18.79,-2.71,1.08
+depositos_vista,liquidação do Banco Master (09/2025 -> 03/2026),18.05,17.25,-0.8,1.08
+depositos_poupanca,COVID (12/2019 -> 06/2020),21.14,20.75,-0.39,0.17
+depositos_poupanca,liquidação do Banco Master (09/2025 -> 03/2026),20.66,20.62,-0.05,0.17
+lca,COVID (12/2019 -> 06/2020),49.38,46.63,-2.75,1.31
+lca,liquidação do Banco Master (09/2025 -> 03/2026),39.91,33.29,-6.62,1.31

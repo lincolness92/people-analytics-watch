@@ -1,0 +1,1803 @@
+{
+ "title": "Atena: sensores (degraus 3 a 6) e garantias — inventário de fontes",
+ "generated": "2026-11-28",
+ "doc": "docs/sources/atena-sensores-garantias.md",
+ "scope": "Degraus 3 a 6 do Panorama 1 (estrategia/bb/05-panoramas.md §1) e garantias. Degraus 1 e 2 estão no laboratório rural e não são repetidos aqui.",
+ "fields": {
+  "degree": "3 safra e preço; 4 comercialização; 5 logística global; 6 observação da Terra; G garantias e recuperação",
+  "verified": "sim = chamada feita e dado lido; parcial = serviço respondeu, mas sem o dado (login, JS, chave) ou confirmado só por busca; não = falhou",
+  "uso_atena": "ids das premissas G01–G03 e S01–S05 que a fonte alimenta",
+  "test": "resultado de chamada pequena feita em 28/11/2026 com User-Agent genérico, sem desligar TLS"
+ },
+ "external_ids": {
+  "sicor": "fatores-externos-e-propostas.json#bcb-sicor (degrau 1, laboratório rural)",
+  "scr_data": "fatores-externos-e-propostas.json#bcb-scr-data (degrau 1, laboratório rural)",
+  "chirps": "fatores-externos-e-propostas.json#chirps (degrau 2, laboratório rural)"
+ },
+ "aprofunda": {
+  "ibge-lspa-6588": "ibge-lspa",
+  "ibge-pam-5457": "ibge-pam",
+  "conab-safra-xlsx": "conab-safras",
+  "cepea-indicadores": "cepea-indicadores",
+  "mapa-zarc": "mapa-zarc",
+  "comexstat-api": "comexstat",
+  "b3-futuros-agro": "b3-precos",
+  "mapbiomas": "mapbiomas",
+  "sicar-wfs": "sicar-car",
+  "cnj-datajud": "datajud"
+ },
+ "count": 53,
+ "sources": [
+  {
+   "id": "ibge-lspa-6588",
+   "name": "IBGE LSPA, SIDRA tabela 6588",
+   "degree": 3,
+   "publisher": "IBGE",
+   "url": "https://sidra.ibge.gov.br/tabela/6588",
+   "endpoint": "GET https://apisidra.ibge.gov.br/values/t/6588/n3/{UF}/v/35/p/last%201/c48/39443 (v35=produção; c48=produto; 39443=soja); metadados em servicodados.ibge.gov.br/api/v3/agregados/6588/metadados",
+   "measures": "área plantada, área colhida, produção e rendimento esperados da safra corrente; cada mês é uma revisão",
+   "granularity": {
+    "spatial": "Brasil, região, UF (N1–N3)",
+    "temporal": "mensal"
+   },
+   "history": "2006-09 a 2026-10",
+   "update_frequency": "mensal (meados do mês seguinte)",
+   "latency": "cerca de 2 semanas",
+   "format": "JSON",
+   "license": "pública (IBGE, uso livre com citação)",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 em 0,4 s; soja out/2026: PR 21,97 Mt, MT 50,67 Mt; metadados: início 200609, fim 202610"
+   },
+   "uso_atena": [
+    "S01",
+    "S02"
+   ],
+   "notes": "a série de revisões (vintage) permite medir a surpresa de safra por UF"
+  },
+  {
+   "id": "ibge-pam-5457",
+   "name": "IBGE PAM, SIDRA tabela 5457",
+   "degree": 3,
+   "publisher": "IBGE",
+   "url": "https://sidra.ibge.gov.br/tabela/5457",
+   "endpoint": "GET https://apisidra.ibge.gov.br/values/t/5457/n6/{municipio}/v/214,216,8331/p/{ano}/c782/40124 (214=produção, 216=área colhida, 8331=área plantada; 40124=soja)",
+   "measures": "área, produção, rendimento e valor da produção por cultura",
+   "granularity": {
+    "spatial": "município (N6), UF e outros",
+    "temporal": "anual"
+   },
+   "history": "1974 a 2025",
+   "update_frequency": "anual (setembro do ano seguinte)",
+   "latency": "~9 meses",
+   "format": "JSON",
+   "license": "pública (IBGE)",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 em 0,3 s; Sorriso (MT) 2024: soja 2,08 Mt, 599 mil ha colhidos; metadados: fim 2025"
+   },
+   "uso_atena": [
+    "S05",
+    "G01"
+   ],
+   "notes": "é o 'gabarito' de rendimento municipal para validar NDVI (S05)"
+  },
+  {
+   "id": "conab-safra-xlsx",
+   "name": "Conab, levantamento de safra de grãos (planilha por produto)",
+   "degree": 3,
+   "publisher": "Conab",
+   "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras/safra-de-graos/boletim-da-safra-de-graos",
+   "endpoint": ".../2o-levantamento-safra-2026-27/site_previsao_de_safra-por_produto-nov-2026.xlsx (um arquivo por levantamento)",
+   "measures": "área, produtividade e produção estimadas por produto e UF; 12 levantamentos por safra",
+   "granularity": {
+    "spatial": "UF",
+    "temporal": "mensal"
+   },
+   "history": "safras desde 1976/77 (série histórica no portal)",
+   "update_frequency": "mensal (calendário anual da Conab)",
+   "latency": "dias",
+   "format": "XLSX, PDF",
+   "license": "pública; páginas gov.br em CC BY-ND 3.0",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "página do 2º levantamento 2026/27 200; links para XLSX, e-book e apresentação. O portal portaldeinformacoes.conab.gov.br (série histórica TXT) falhou: nome do certificado TLS não confere"
+   },
+   "uso_atena": [
+    "S01"
+   ],
+   "notes": "o portal com TXT de série histórica segue com TLS quebrado (como em fatores-externos §1.2); não contornar"
+  },
+  {
+   "id": "conab-progresso",
+   "name": "Conab, progresso de safra (acompanhamento das lavouras)",
+   "degree": 3,
+   "publisher": "Conab",
+   "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras/progresso-de-safra",
+   "endpoint": "uma página por semana, ex. .../acompanhamento-das-lavouras-02-11-a-08-11-26",
+   "measures": "% de área semeada e colhida e condição das lavouras por cultura e UF",
+   "granularity": {
+    "spatial": "UF",
+    "temporal": "semanal"
+   },
+   "history": "desde 2019 no formato atual (verificar)",
+   "update_frequency": "semanal",
+   "latency": "~1 semana",
+   "format": "HTML, PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "índice 200; semana mais recente listada: 02–08/11/2026"
+   },
+   "uso_atena": [
+    "S01",
+    "S05"
+   ],
+   "notes": "é o calendário observado; substitui o calendário típico quando houver atraso de plantio"
+  },
+  {
+   "id": "conab-calendario",
+   "name": "Conab, calendário de plantio e colheita de grãos",
+   "degree": 3,
+   "publisher": "Conab",
+   "url": "https://antigo.conab.gov.br/outras-publicacoes/item/download/45710_77f0a5ee35e765e2248999f4c61e70c8",
+   "endpoint": "PDF (edições 2020 e 2022)",
+   "measures": "janelas típicas de plantio e colheita por cultura e UF",
+   "granularity": {
+    "spatial": "UF",
+    "temporal": "por safra (1ª, 2ª, 3ª)"
+   },
+   "history": "edições 2020 e 2022",
+   "update_frequency": "irregular",
+   "latency": null,
+   "format": "PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "localizado por busca em 28/11/2026; não baixado"
+   },
+   "uso_atena": [
+    "S01",
+    "S05"
+   ],
+   "notes": "para janela por município, usar a tábua do ZARC (decêndio por município)"
+  },
+  {
+   "id": "conab-monitoramento",
+   "name": "Conab, boletim de monitoramento agrícola (com índice de vegetação)",
+   "degree": 3,
+   "publisher": "Conab (com sensoriamento remoto)",
+   "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras/safra-de-graos/monitoramento-agricola",
+   "endpoint": ".../boletim-de-monitoramento-dos-cultivos-de-verao-inverno-novembro-2026",
+   "measures": "condição das lavouras por região produtora, com mapas de anomalia do índice de vegetação",
+   "granularity": {
+    "spatial": "mesorregião / região produtora",
+    "temporal": "mensal"
+   },
+   "history": "vários anos (verificar)",
+   "update_frequency": "mensal",
+   "latency": "dias",
+   "format": "PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; PDF de 3,2 MB (nov/2026); texto cita o índice de vegetação (IV) das regiões monitoradas"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "é o produto pronto de degrau 6; serve de comparação para o nosso NDVI"
+  },
+  {
+   "id": "conab-custos",
+   "name": "Conab, custos de produção",
+   "degree": 3,
+   "publisher": "Conab",
+   "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/custos-de-producao",
+   "endpoint": "portaldeinformacoes.conab.gov.br/custos-de-producao.html (planilhas)",
+   "measures": "custo variável, operacional e total por hectare e por saca, por cultura, município-referência e safra",
+   "granularity": {
+    "spatial": "município-referência (~50 polos)",
+    "temporal": "por safra"
+   },
+   "history": "desde 1997 (verificar)",
+   "update_frequency": "por safra",
+   "latency": null,
+   "format": "XLS, TXT",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "página gov.br 200; o portal de planilhas falhou (TLS, nome do certificado)"
+   },
+   "uso_atena": [
+    "S02",
+    "G03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "cepea-indicadores",
+   "name": "CEPEA/ESALQ, indicadores de preço",
+   "degree": 3,
+   "publisher": "CEPEA/ESALQ-USP",
+   "url": "https://www.cepea.org.br/br/indicador/soja.aspx",
+   "endpoint": "XLS direto: https://www.cepea.org.br/br/indicador/series/soja.aspx?id=92 (Paranaguá); id=12 (Paraná)",
+   "measures": "preço físico diário à vista por praça (soja, milho, boi, café, algodão, trigo e outros)",
+   "granularity": {
+    "spatial": "praça (porto ou estado)",
+    "temporal": "diária"
+   },
+   "history": "soja Paranaguá desde 1997 (verificar no XLS)",
+   "update_frequency": "diária",
+   "latency": "D+1",
+   "format": "HTML, XLS (BIFF)",
+   "license": "CC BY-NC 4.0 (na página do indicador)",
+   "cost": "grátis para uso não comercial; uso comercial pede licença ao CEPEA",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "página 200; XLS 200 (384 KB); soja Paraná 27/11/2026 = R$ 160,74/sc"
+   },
+   "uso_atena": [
+    "S02",
+    "G03"
+   ],
+   "notes": "a licença NC barra o uso interno no banco sem acordo; no estudo público serve"
+  },
+  {
+   "id": "b3-futuros-agro",
+   "name": "B3, ajustes e histórico de futuros agrícolas",
+   "degree": 3,
+   "publisher": "B3",
+   "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+   "endpoint": "boletim diário; contratos CCM (milho), BGI (boi), SJC (soja), ICF (café), ETN",
+   "measures": "curva de preço futuro em reais",
+   "granularity": {
+    "spatial": "contrato",
+    "temporal": "diária"
+   },
+   "history": "décadas",
+   "update_frequency": "diária",
+   "latency": null,
+   "format": "HTML; arquivos de market data licenciados",
+   "license": "termos da B3: coleta automatizada vedada, inclusive por IA",
+   "cost": "licença de market data (preço sob consulta)",
+   "verified": {
+    "status": "sim (só a página)",
+    "date": "2026-11-28",
+    "test": "200; a página diz que é vedada a coleta automatizada para qualquer fim; não coletamos"
+   },
+   "uso_atena": [
+    "S02"
+   ],
+   "notes": "alternativa pública: CEPEA (físico) e o prêmio de exportação; futuro só com licença"
+  },
+  {
+   "id": "mapa-zarc",
+   "name": "MAPA, Zoneamento Agrícola de Risco Climático (tábua de risco)",
+   "degree": 3,
+   "publisher": "MAPA / Embrapa",
+   "url": "https://www.gov.br/agricultura/pt-br/assuntos/riscos-seguro/programa-nacional-de-zoneamento-agricola-de-risco-climatico",
+   "endpoint": "CKAN dados.agricultura.gov.br (pacote ZARC); API Agritec: https://api.cnptia.embrapa.br/agritec/v2/zoneamento?idCultura=..&codigoIBGE=..&risco=20",
+   "measures": "janela de plantio de risco 20/30/40% por cultura, solo e decêndio",
+   "granularity": {
+    "spatial": "município × cultura × solo × decêndio",
+    "temporal": "por safra (portarias)"
+   },
+   "history": "desde 1996 (programa)",
+   "update_frequency": "por safra",
+   "latency": null,
+   "format": "CSV (CKAN), JSON (Agritec)",
+   "license": "CC BY (CKAN do MAPA)",
+   "cost": "grátis; Agritec pede cadastro OAuth2 na AgroAPI",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "CKAN: conexão expirou (40 e 60 s) em 28/11, embora o DNS resolva; Agritec 401 'Missing Credentials' (o endpoint existe); página do MAPA 200"
+   },
+   "uso_atena": [
+    "S01",
+    "S05"
+   ],
+   "notes": "no mapa anterior (fatores-externos §1.4) o CKAN deu 200; tentar de novo antes de concluir"
+  },
+  {
+   "id": "comexstat-api",
+   "name": "Comex Stat, API",
+   "degree": 4,
+   "publisher": "MDIC/Secex",
+   "url": "https://api-comexstat.mdic.gov.br/",
+   "endpoint": "POST /general {flow, monthDetail, period, filters:[{filter:'ncm',values:['12019000']}], details:['state','via','urf'], metrics:['metricFOB','metricKG']}",
+   "measures": "exportação e importação por NCM × UF × país × via × URF (porto) × mês",
+   "granularity": {
+    "spatial": "UF, município (base MUN), URF",
+    "temporal": "mensal"
+   },
+   "history": "1997 em diante",
+   "update_frequency": "mensal (1ª semana útil)",
+   "latency": "~5 dias",
+   "format": "JSON",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "500 em /general e /tables/urf: 'password authentication failed for user usr_comexstat' (erro do servidor; o mesmo do mapa de 28/11)"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "comexstat-bulk",
+   "name": "Comex Stat, base bruta em CSV",
+   "degree": 4,
+   "publisher": "MDIC/Secex",
+   "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+   "endpoint": "https://balanca.mdic.gov.br/balanca/bd/comexstat-bd/ncm/EXP_{ano}.csv; .../mun/EXP_{ano}_MUN.csv; tabelas em .../bd/tabelas/ (URF, NCM, VIA)",
+   "measures": "o mesmo da API, em arquivo anual (colunas documentadas: ano, mês, NCM, unidade, país, UF, via, URF, quantidade, kg, US$ FOB)",
+   "granularity": {
+    "spatial": "UF; município na base MUN (SH4)",
+    "temporal": "mensal"
+   },
+   "history": "1997 em diante",
+   "update_frequency": "mensal",
+   "latency": "~5 dias",
+   "format": "CSV (;)",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "página de links 200 (EXP_1997 … EXP_2026). Download falhou: o host usa certificado da AC SERPRO (cadeia ICP-Brasil) fora do repositório padrão; o host antigo balanca.economia.gov.br tem certificado vencido em 03/10/2026"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "solução legítima: instalar a cadeia ICP-Brasil/SERPRO publicada pelo ITI (decisão do operador); nunca desligar a verificação"
+  },
+  {
+   "id": "imf-portwatch-ports",
+   "name": "IMF PortWatch, atividade diária por porto (estimada por AIS)",
+   "degree": 4,
+   "publisher": "FMI e Universidade de Oxford (AIS do UN Global Platform)",
+   "url": "https://portwatch.imf.org/",
+   "endpoint": "ArcGIS: https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query?where=portid='port885'&outFields=date,portcalls_dry_bulk,export_dry_bulk&f=json",
+   "measures": "escalas por tipo de navio e toneladas estimadas de importação e exportação (granel sólido, contêiner, tanque etc.)",
+   "granularity": {
+    "spatial": "porto (103 no Brasil: Paranaguá port885, Santos port1160, Rio Grande port1104, Itaqui port506, Santarém port2372, Vila do Conde port2046, Itacoatiara port2099)",
+    "temporal": "diária"
+   },
+   "history": "2019-01-01 a 2026-11-20",
+   "update_frequency": "semanal (defasagem ~8 dias)",
+   "latency": "~8 dias",
+   "format": "JSON (ArcGIS REST), CSV no portal",
+   "license": "termos de dados do FMI: uso com atribuição (FMI PortWatch e UN Global Platform); reuso comercial pede permissão; treino de LLM vedado sem permissão",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; Paranaguá 19/11/2026: 4 escalas de granel sólido, 156.393 t exportadas (estimativa); 18/11: 121.548 t"
+   },
+   "uso_atena": [
+    "S03",
+    "S04"
+   ],
+   "notes": "é o substituto gratuito mais forte do AIS comercial para a pergunta 'o grão está saindo?'"
+  },
+  {
+   "id": "appa-lineup",
+   "name": "Portos do Paraná (APPA), line-up de navios",
+   "degree": 4,
+   "publisher": "APPA",
+   "url": "https://www.appaweb.appa.pr.gov.br/appaweb/pesquisa.aspx?WCI=relLineUpRetroativo",
+   "endpoint": "HTML (relatório de line-up, inclusive retroativo)",
+   "measures": "navio, IMO, berço, sentido (exp/imp), mercadoria, tonelagem prevista e realizada, datas de chegada e atracação",
+   "granularity": {
+    "spatial": "navio × berço (Paranaguá e Antonina)",
+    "temporal": "contínua"
+   },
+   "history": "retroativo disponível (profundidade a medir)",
+   "update_frequency": "várias vezes ao dia",
+   "latency": "tempo real",
+   "format": "HTML",
+   "license": "pública; termos não publicados",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 em 2,8 s (222 KB); linhas de soja, farelo de soja, milho e fertilizantes com toneladas e datas de nov/2026"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "guardar foto diária (a página muda); não guardar nomes de pessoas (só há empresas e navios)"
+  },
+  {
+   "id": "santos-navios-esperados",
+   "name": "Porto de Santos (APS), navios esperados e mensário",
+   "degree": 4,
+   "publisher": "Autoridade Portuária de Santos",
+   "url": "https://www.portodesantos.com.br/informacoes-operacionais/operacoes-portuarias/navegacao-e-movimento-de-navios/navios-esperados-carga/",
+   "endpoint": "HTML (esperados); mensário estatístico em PDF",
+   "measures": "navio, IMO, bandeira, agência, operação (EMB/DESC), mercadoria, tonelagem, data prevista",
+   "granularity": {
+    "spatial": "navio × terminal",
+    "temporal": "contínua; mensário mensal"
+   },
+   "history": "mensário: vários anos",
+   "update_frequency": "diária",
+   "latency": "tempo real",
+   "format": "HTML, PDF",
+   "license": "pública; termos não publicados",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 (258 KB); itens 'EMB SOJA A GRANEL', 'EMB MILHO A GRANEL' com 58–70 mil t; mensário 200 com PDFs"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "portosrs-lineup",
+   "name": "Portos RS (Rio Grande), line-up",
+   "degree": 4,
+   "publisher": "Portos RS",
+   "url": "https://www.portosrs.com.br/site/",
+   "endpoint": "http://www.portosrs.com.br/portoweb/zf/login/logar/_module/atracacao/_controller/rel-lineup/_action/index/cd_usuario/publico/",
+   "measures": "line-up de navios",
+   "granularity": {
+    "spatial": "navio",
+    "temporal": "contínua"
+   },
+   "history": "?",
+   "update_frequency": "diária",
+   "latency": null,
+   "format": "HTML, PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "o link 'público' devolve tela de login (200, sem dados); portosrs.com.br sem www tem erro de nome no TLS"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "usar PortWatch (port1104) e Comex Stat (URF Rio Grande) no lugar"
+  },
+  {
+   "id": "itaqui-navios",
+   "name": "Porto do Itaqui (EMAP), navios esperados e atracados",
+   "degree": 4,
+   "publisher": "EMAP",
+   "url": "https://www.portodoitaqui.com/porto-agora/navios/esperados",
+   "endpoint": "HTML com dados carregados por JavaScript",
+   "measures": "navios esperados, fundeados e atracados",
+   "granularity": {
+    "spatial": "navio",
+    "temporal": "contínua"
+   },
+   "history": "?",
+   "update_frequency": "diária",
+   "latency": null,
+   "format": "HTML/JS",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "200, mas o HTML estático não traz a lista (carga por JS); o caminho 'programados' deu 404"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "Arco Norte: usar PortWatch (Itaqui, Santarém, Vila do Conde, Itacoatiara) e Comex Stat"
+  },
+  {
+   "id": "antaq-estatistico",
+   "name": "ANTAQ, Estatístico Aquaviário",
+   "degree": 4,
+   "publisher": "ANTAQ",
+   "url": "https://web3.antaq.gov.br/ea/sense/download.html",
+   "endpoint": "arquivos anuais por atracação e carga (TXT/ZIP)",
+   "measures": "movimentação por instalação, mercadoria, sentido e navegação",
+   "granularity": {
+    "spatial": "instalação portuária",
+    "temporal": "mensal"
+   },
+   "history": "2010 em diante",
+   "update_frequency": "mensal",
+   "latency": null,
+   "format": "TXT em ZIP",
+   "license": "dados abertos",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "web3.antaq.gov.br não resolveu no DNS em 28/11; página de estatísticas em gov.br/antaq deu 404"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "testar de novo; é a base oficial de tonelagem por porto"
+  },
+  {
+   "id": "conab-boletim-logistico",
+   "name": "Conab, boletim logístico",
+   "degree": 4,
+   "publisher": "Conab",
+   "url": "https://www.gov.br/conab/pt-br/atuacao/logistica/boletim-logistico",
+   "endpoint": "PDF mensal",
+   "measures": "fretes rodoviários por rota, exportação por porto, corredores",
+   "granularity": {
+    "spatial": "rota e porto",
+    "temporal": "mensal"
+   },
+   "history": "vários anos",
+   "update_frequency": "mensal",
+   "latency": null,
+   "format": "PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "página 200; as edições listadas no HTML são de 2024 (verificar se há 2025–2026)"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "imea-comercializacao",
+   "name": "IMEA, comercialização da safra em Mato Grosso",
+   "degree": 4,
+   "publisher": "IMEA (instituto ligado ao setor em MT)",
+   "url": "https://www.imea.com.br/imea-site/relatorios-mercado",
+   "endpoint": "relatórios por cadeia (HTML com JS + PDF)",
+   "measures": "% da safra de soja e milho já vendida pelo produtor em MT, frente à média",
+   "granularity": {
+    "spatial": "MT (macrorregiões)",
+    "temporal": "mensal"
+   },
+   "history": "vários anos",
+   "update_frequency": "mensal",
+   "latency": null,
+   "format": "PDF",
+   "license": "termos não verificados",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "página 200, conteúdo carregado por JS; o PDF de comercialização não foi baixado"
+   },
+   "uso_atena": [
+    "S03"
+   ],
+   "notes": "é o único indicador público de ritmo de venda do produtor que achamos; outros (consultorias) são pagos"
+  },
+  {
+   "id": "usda-ams-brazil-soy",
+   "name": "USDA AMS, Brazil Soybean Transportation (trimestral)",
+   "degree": 4,
+   "publisher": "USDA AMS",
+   "url": "https://www.ams.usda.gov/services/transportation-analysis/brazil",
+   "endpoint": "https://www.ams.usda.gov/sites/default/files/media/1st-2nd_Quarter_2026.pdf",
+   "measures": "frete rodoviário por rota (ex. Sorriso→Santos), frete marítimo e custo total até Xangai, embarques por porto",
+   "granularity": {
+    "spatial": "rota",
+    "temporal": "trimestral"
+   },
+   "history": "desde ~2004 (arquivo)",
+   "update_frequency": "trimestral",
+   "latency": "~2 meses",
+   "format": "PDF; datasets AMS",
+   "license": "domínio público (governo dos EUA)",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; PDF de 5,5 MB (1º–2º tri/2026): custo de soja dos portos do Sul e do Norte até Xangai subiu 31–34%"
+   },
+   "uso_atena": [
+    "S02",
+    "S03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "un-comtrade",
+   "name": "UN Comtrade API",
+   "degree": 5,
+   "publisher": "ONU (UNSD)",
+   "url": "https://comtradeplus.un.org/",
+   "endpoint": "GET https://comtradeapi.un.org/public/v1/preview/C/{A|M}/HS?reporterCode=..&period=..&cmdCode=1201&flowCode=M (sem chave, ≤500 linhas); getDA para disponibilidade",
+   "measures": "comércio bilateral por HS e mês ou ano",
+   "granularity": {
+    "spatial": "país × parceiro",
+    "temporal": "mensal e anual"
+   },
+   "history": "desde 1962 (anual)",
+   "update_frequency": "conforme o país informa",
+   "latency": "China: >18 meses",
+   "format": "JSON",
+   "license": "termos da ONU; grátis com limite; premium pago",
+   "cost": "grátis (limitado); premium sob assinatura",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; China mensal só até 2024-12 (última carga 07/2025); Brasil 2024 HS 1201: 98,8 Mt exportadas, 72,6 Mt para a China; 2ª chamada seguida deu 429"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "não serve para o presente; serve para pesos estruturais (quem compra o quê)"
+  },
+  {
+   "id": "gacc-china",
+   "name": "Alfândega da China (GACC), estatísticas mensais",
+   "degree": 5,
+   "publisher": "GACC",
+   "url": "http://english.customs.gov.cn/statics/report/monthly.html",
+   "endpoint": "tabelas HTML mensais; base online stats.customs.gov.cn",
+   "measures": "importação chinesa por produto (soja em volume e valor) e por país (base online)",
+   "granularity": {
+    "spatial": "China; país de origem na base online",
+    "temporal": "mensal"
+   },
+   "history": "décadas",
+   "update_frequency": "mensal (~7–20 dias após o mês)",
+   "latency": "~2–3 semanas",
+   "format": "HTML",
+   "license": "termos da GACC",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "página em inglês 200 (tabelas); stats.customs.gov.cn 412 com desafio JavaScript antirrobô"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "não contornar o desafio; ler as tabelas mensais publicadas"
+  },
+  {
+   "id": "aisstream",
+   "name": "aisstream.io (AIS terrestre em tempo real)",
+   "degree": 5,
+   "publisher": "aisstream.io",
+   "url": "https://aisstream.io/documentation",
+   "endpoint": "WebSocket com chave grátis e filtro por caixa (BoundingBoxes)",
+   "measures": "posição e dados estáticos de navios em tempo real",
+   "granularity": {
+    "spatial": "navio",
+    "temporal": "segundos"
+   },
+   "history": "sem histórico",
+   "update_frequency": "contínua",
+   "latency": "tempo real",
+   "format": "JSON (WebSocket)",
+   "license": "termos do serviço; sem SLA",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "documentação 200; pede chave; não conectamos"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "só antenas em terra: cobre portos e costa, não o mar aberto; histórico é por nossa conta"
+  },
+  {
+   "id": "aishub",
+   "name": "AISHub (troca de dados AIS)",
+   "degree": 5,
+   "publisher": "AISHub",
+   "url": "https://www.aishub.net/api",
+   "endpoint": "API para quem contribui com um receptor AIS",
+   "measures": "posições AIS agregadas da rede de voluntários",
+   "granularity": {
+    "spatial": "navio",
+    "temporal": "minutos"
+   },
+   "history": "curto",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "JSON/XML/CSV",
+   "license": "acesso condicionado a enviar dados de uma estação",
+   "cost": "grátis com contrapartida (receptor ~US$ 100–300, não verificado)",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "200 na página da API"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": null
+  },
+  {
+   "id": "gfw-api",
+   "name": "Global Fishing Watch API",
+   "degree": 5,
+   "publisher": "Global Fishing Watch",
+   "url": "https://globalfishingwatch.org/our-apis/",
+   "endpoint": "https://gateway.api.globalfishingwatch.org/v3/... (token)",
+   "measures": "eventos de navios (visitas a porto, encontros), foco em pesca",
+   "granularity": {
+    "spatial": "navio, evento",
+    "temporal": "diária"
+   },
+   "history": "2012 em diante",
+   "update_frequency": "diária",
+   "latency": null,
+   "format": "JSON",
+   "license": "uso não comercial com token grátis",
+   "cost": "grátis (não comercial)",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "401 'invalid token' sem chave (o serviço responde)"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "pouco útil para graneleiros; citado para completar o quadro"
+  },
+  {
+   "id": "vesselfinder-api",
+   "name": "VesselFinder API (comercial)",
+   "degree": 5,
+   "publisher": "VesselFinder",
+   "url": "https://www.vesselfinder.com/vessel-positions-api",
+   "endpoint": "API por créditos ou assinatura de frota",
+   "measures": "posições, escalas em porto, dados do navio",
+   "granularity": {
+    "spatial": "navio",
+    "temporal": "minutos"
+   },
+   "history": "conforme o plano",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "JSON/XML",
+   "license": "comercial",
+   "cost": "10 mil créditos = € 330; 20 mil = € 625; 50 mil = € 1.470 (sem IVA); 1 crédito por registro terrestre, 5–10 por registro de satélite; frota de 20 navios por hora = € 140/mês",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "preços lidos nas páginas oficiais via busca em 28/11/2026; não compramos"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "o preço por posição é baixo; caro é montar o histórico de uma frota grande"
+  },
+  {
+   "id": "kpler-marinetraffic-spire",
+   "name": "Kpler (MarineTraffic), Spire Maritime (comercial)",
+   "degree": 5,
+   "publisher": "Kpler; Spire",
+   "url": "https://www.marinetraffic.com/en/ais-api-services",
+   "endpoint": "contrato corporativo",
+   "measures": "AIS terrestre e por satélite, fluxos de carga (Kpler estima carga por navio e destino)",
+   "granularity": {
+    "spatial": "navio e carga",
+    "temporal": "minutos"
+   },
+   "history": "anos",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "API",
+   "license": "comercial",
+   "cost": "sem preço público; contrato anual sob cotação",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "página 200; nenhuma tabela de preço publicada (confirmado por busca)"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "só se S04 for refutada"
+  },
+  {
+   "id": "baltic-proxies",
+   "name": "Índices de frete: Baltic (BDI) e substitutos",
+   "degree": 5,
+   "publisher": "Baltic Exchange; Breakwave (ETF BDRY); USDA AMS (GTR)",
+   "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+   "endpoint": "GTR semanal em PDF (ex. GTR11262026.pdf); BDRY via Yahoo chart (não oficial)",
+   "measures": "custo do frete marítimo de granel; o GTR traz fretes de grãos e cita rotas do Brasil",
+   "granularity": {
+    "spatial": "rota",
+    "temporal": "semanal / diária"
+   },
+   "history": "anos",
+   "update_frequency": "semanal",
+   "latency": "~1 semana",
+   "format": "PDF; JSON (Yahoo)",
+   "license": "BDI: licença da Baltic Exchange; GTR: domínio público; Yahoo: uso pessoal",
+   "cost": "BDI pago; os outros grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "GTR de 26/11/2026 200 (4,3 MB); BDRY 200, fechamentos recentes 12,12–12,84"
+   },
+   "uso_atena": [
+    "S04"
+   ],
+   "notes": "BDRY é ETF de futuros de frete, não o índice; serve só como direção"
+  },
+  {
+   "id": "cdse-sentinel2",
+   "name": "Copernicus Data Space Ecosystem (Sentinel-1/2/3)",
+   "degree": 6,
+   "publisher": "ESA / Comissão Europeia",
+   "url": "https://dataspace.copernicus.eu/",
+   "endpoint": "STAC https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items?bbox=..&datetime=..; OData https://catalogue.dataspace.copernicus.eu/odata/v1/Products",
+   "measures": "refletância de superfície (L2A) a 10–60 m; base para NDVI e área plantada",
+   "granularity": {
+    "spatial": "pixel de 10 m; tile de 110 km",
+    "temporal": "revisita de ~5 dias"
+   },
+   "history": "2015 em diante (L2A global desde ~2017)",
+   "update_frequency": "contínua",
+   "latency": "horas",
+   "format": "SAFE/JP2, COG",
+   "license": "dados Copernicus: livre e aberto, com atribuição",
+   "cost": "grátis; download pede conta grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "STAC 200; tile 21LXG (Sorriso) com cenas de 18/11 (67,5% de nuvem), 21/11 e 26/11/2026; OData 200, produtos de 0,66–1,09 GB"
+   },
+   "uso_atena": [
+    "S05",
+    "G01"
+   ],
+   "notes": null
+  },
+  {
+   "id": "earth-search-aws",
+   "name": "Earth Search (Element 84) sobre AWS Open Data",
+   "degree": 6,
+   "publisher": "Element 84 / AWS",
+   "url": "https://earth-search.aws.element84.com/v1",
+   "endpoint": "STAC /search?collections=sentinel-2-l2a; COGs em s3://sentinel-cogs (leitura por faixa de bytes)",
+   "measures": "Sentinel-2 L2A em COG, Landsat C2",
+   "granularity": {
+    "spatial": "pixel de 10 m",
+    "temporal": "~5 dias"
+   },
+   "history": "2015 em diante",
+   "update_frequency": "contínua",
+   "latency": "horas",
+   "format": "COG",
+   "license": "dados Copernicus (aberto); bucket público",
+   "cost": "grátis, sem conta",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "STAC 200 (mesmas cenas); leitura de faixa do B04 deu 206 em 0,8 s (COG 10980×10980, deflate)"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "o melhor caminho para servidor doméstico: lê só a janela do município ou do talhão"
+  },
+  {
+   "id": "planetary-computer",
+   "name": "Microsoft Planetary Computer (catálogo de dados)",
+   "degree": 6,
+   "publisher": "Microsoft",
+   "url": "https://planetarycomputer.microsoft.com/api/stac/v1",
+   "endpoint": "STAC /search; token SAS anônimo em /api/sas/v1/token/{coleção}",
+   "measures": "Sentinel-2, Landsat, MODIS, ESA WorldCover e outros",
+   "granularity": {
+    "spatial": "pixel",
+    "temporal": "conforme a coleção"
+   },
+   "history": "conforme a coleção",
+   "update_frequency": "contínua",
+   "latency": "horas",
+   "format": "COG, Zarr",
+   "license": "licença de cada coleção",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "STAC 200; token SAS 200 sem conta (validade ~1 dia)"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "o ambiente de notebooks (Hub) foi descontinuado; o catálogo e os dados seguem"
+  },
+  {
+   "id": "google-earth-engine",
+   "name": "Google Earth Engine",
+   "degree": 6,
+   "publisher": "Google",
+   "url": "https://developers.google.com/earth-engine/guides/noncommercial_tiers",
+   "endpoint": "API Python/JS com projeto Cloud",
+   "measures": "catálogo de petabytes e processamento no servidor",
+   "granularity": {
+    "spatial": "pixel",
+    "temporal": "conforme a coleção"
+   },
+   "history": "décadas",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "API",
+   "license": "não comercial: grátis (Community Tier, 150 EECU-hora); comercial: pago",
+   "cost": "comercial: US$ 0,40/EECU-hora no plano Limited; Basic US$ 500/mês; Professional US$ 2.000/mês",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "termos e preços lidos nas páginas oficiais via busca em 28/11/2026; sem conta"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "pesquisa aberta cabe no tier não comercial; uso pelo banco é comercial"
+  },
+  {
+   "id": "ornl-modis-subsets",
+   "name": "ORNL DAAC, MODIS/VIIRS Land Product Subsets (REST)",
+   "degree": 6,
+   "publisher": "NASA / ORNL DAAC",
+   "url": "https://modis.ornl.gov/data/modis_webservice.html",
+   "endpoint": "GET https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=..&longitude=..&startDate=A2026273&endDate=A2026320&kmAboveBelow=0&kmLeftRight=0",
+   "measures": "NDVI/EVI de 16 dias a 250 m em ponto ou janela de até 100 km",
+   "granularity": {
+    "spatial": "pixel de 250 m",
+    "temporal": "16 dias"
+   },
+   "history": "2000 em diante",
+   "update_frequency": "16 dias",
+   "latency": "~2–3 semanas",
+   "format": "JSON",
+   "license": "dados da NASA: abertos",
+   "cost": "grátis, sem conta",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 em 16 s; composição de 30/09/2026 com bandas e confiabilidade do pixel"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "Terra e Aqua estão no fim da vida útil; a continuidade é VIIRS (VNP13, 500 m)"
+  },
+  {
+   "id": "bdc-inpe",
+   "name": "Brazil Data Cube (INPE), STAC",
+   "degree": 6,
+   "publisher": "INPE",
+   "url": "https://data.inpe.br/bdc/stac/v1/",
+   "endpoint": "STAC com cubos prontos",
+   "measures": "cubos de Sentinel-2 e Landsat de 16 dias, MOD13Q1/MYD13Q1 em COG, CBERS-4/4A, Amazonia-1",
+   "granularity": {
+    "spatial": "pixel de 10–250 m",
+    "temporal": "8–16 dias"
+   },
+   "history": "conforme o cubo",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "COG",
+   "license": "dados abertos do INPE",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; coleções 'Sentinel-2/MSI Level-2A Data Cube LCF 16 days' e 'MOD13Q1 v061 COG' listadas"
+   },
+   "uso_atena": [
+    "S05"
+   ],
+   "notes": "cubo regularizado poupa o pré-processamento de nuvem"
+  },
+  {
+   "id": "mapbiomas",
+   "name": "MapBiomas Brasil, cobertura e uso da terra (coleção 11)",
+   "degree": 6,
+   "publisher": "MapBiomas",
+   "url": "https://brasil.mapbiomas.org/downloads/estatisticas/",
+   "endpoint": "XLSX de estatísticas (ex. MAPBIOMAS_BRAZIL-COL.11-BIOME_STATE.xlsx); rasters anuais em GEE e GCS",
+   "measures": "uso da terra anual, com classes agrícolas (soja, cana, outras temporárias, pasto)",
+   "granularity": {
+    "spatial": "pixel de 30 m; município, UF, bioma",
+    "temporal": "anual"
+   },
+   "history": "1985 em diante",
+   "update_frequency": "anual (coleção 11 publicada em 08/2026)",
+   "latency": "~8 meses",
+   "format": "XLSX, GeoTIFF",
+   "license": "CC BY 4.0",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "página 200; links XLSX da coleção 11 com data 2026/08"
+   },
+   "uso_atena": [
+    "S05",
+    "G01"
+   ],
+   "notes": "máscara de soja para agregar NDVI só sobre lavoura"
+  },
+  {
+   "id": "mapbiomas-alerta",
+   "name": "MapBiomas Alerta, API GraphQL",
+   "degree": 6,
+   "publisher": "MapBiomas",
+   "url": "https://plataforma.alerta.mapbiomas.org/api/v2/graphql",
+   "endpoint": "GraphQL (consulta de dados com login)",
+   "measures": "alertas de desmatamento validados, cruzados com CAR",
+   "granularity": {
+    "spatial": "polígono / imóvel",
+    "temporal": "contínua"
+   },
+   "history": "2019 em diante",
+   "update_frequency": "semanal",
+   "latency": null,
+   "format": "JSON",
+   "license": "CC BY 4.0; cadastro",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200 em {__typename} sem login"
+   },
+   "uso_atena": [
+    "G01"
+   ],
+   "notes": "risco socioambiental da garantia (imóvel embargado não serve)"
+  },
+  {
+   "id": "sicar-wfs",
+   "name": "SICAR / CAR, GeoServer WFS por UF",
+   "degree": 6,
+   "publisher": "Serviço Florestal Brasileiro (MGI)",
+   "url": "https://geoserver.car.gov.br/geoserver/sicar/wfs",
+   "endpoint": "WFS 2.0: typeNames=sicar:sicar_imoveis_{uf}; resultType=hits para contar",
+   "measures": "polígono do imóvel, código, situação, condição, área, módulos fiscais, tipo, município",
+   "granularity": {
+    "spatial": "imóvel rural",
+    "temporal": "contínua"
+   },
+   "history": "desde 2014 (cadastro)",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "GML, GeoJSON (WFS)",
+   "license": "dados públicos; CAR é declaratório",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "GetCapabilities 200 (27 camadas, uma por UF); MT: 222.127 imóveis; campos: cod_imovel, status_imovel, condicao, area, m_fiscal, tipo_imovel, municipio, cod_municipio_ibge, geometria; sem nome nem CPF"
+   },
+   "uso_atena": [
+    "G01",
+    "S05"
+   ],
+   "notes": "a página de download por estado entra em laço de redirecionamento (captcha); o WFS funciona"
+  },
+  {
+   "id": "sigef-incra",
+   "name": "SIGEF / Acervo Fundiário (INCRA)",
+   "degree": 6,
+   "publisher": "INCRA",
+   "url": "https://sigef.incra.gov.br/",
+   "endpoint": "consulta de parcelas; shapefiles do acervo fundiário por UF",
+   "measures": "parcelas georreferenciadas e certificadas (limites com precisão)",
+   "granularity": {
+    "spatial": "parcela",
+    "temporal": "contínua"
+   },
+   "history": "2013 em diante",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "SHP, WMS/WFS",
+   "license": "dados públicos",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "sigef.incra.gov.br: 'Request Rejected' (firewall de aplicação); acervofundiario.incra.gov.br não resolveu no DNS"
+   },
+   "uso_atena": [
+    "G01"
+   ],
+   "notes": "o CAR basta para área e módulo fiscal; o SIGEF importa para a matrícula e a qualidade da garantia"
+  },
+  {
+   "id": "lei-13986",
+   "name": "Lei 13.986/2020 (Lei do Agro): patrimônio rural em afetação, CIR, CPR",
+   "degree": "G",
+   "publisher": "Congresso Nacional",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2020/lei-13986-7-abril-2020-789955-normaatualizada-pl.html",
+   "endpoint": "texto consolidado (Câmara); LexML urn:lex:br:federal:lei:2020-04-07;13986",
+   "measures": "art. 10 §4º: terreno, acessões e benfeitorias do patrimônio em afetação vinculado a CIR/CPR não são atingidos por falência ou recuperação judicial (exceto lavouras, móveis e semoventes); §3º II: impenhorável para outras dívidas; art. 17: CIR",
+   "granularity": {
+    "spatial": "norma",
+    "temporal": "evento"
+   },
+   "history": "07/04/2020",
+   "update_frequency": "por alteração",
+   "latency": null,
+   "format": "HTML",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "Câmara 200 (texto lido); planalto.gov.br recusou a conexão (reset) a partir deste servidor"
+   },
+   "uso_atena": [
+    "G01",
+    "G02"
+   ],
+   "notes": null
+  },
+  {
+   "id": "lei-14711",
+   "name": "Lei 14.711/2023 (marco das garantias)",
+   "degree": "G",
+   "publisher": "Congresso Nacional",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2023/lei-14711-30-outubro-2023-794873-normaatualizada-pl.html",
+   "endpoint": "texto consolidado (Câmara)",
+   "measures": "art. 9º: execução extrajudicial da hipoteca pelo registro de imóveis; nova redação do art. 27 da Lei 9.514 (2º leilão aceita lance ≥ dívida, ou ≥ 50% da avaliação a critério do credor; §5º-A: saldo remanescente segue devido, salvo imóvel residencial do art. 26-A); art. 9º-A: extensão da alienação fiduciária; art. 853-A do Código Civil: agente de garantia",
+   "granularity": {
+    "spatial": "norma",
+    "temporal": "evento"
+   },
+   "history": "30/10/2023",
+   "update_frequency": "por alteração",
+   "latency": null,
+   "format": "HTML",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "Câmara 200 (artigos lidos)"
+   },
+   "uso_atena": [
+    "G02",
+    "G03"
+   ],
+   "notes": "a aplicação do art. 9º às cédulas rurais hipotecárias (DL 167/1967) precisa de leitura jurídica"
+  },
+  {
+   "id": "lrf-art49",
+   "name": "Lei 11.101/2005, art. 49 §§6º–9º (redação da Lei 14.112/2020)",
+   "degree": "G",
+   "publisher": "Congresso Nacional",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2005/lei-11101-9-fevereiro-2005-535663-normaatualizada-pl.html",
+   "endpoint": "texto consolidado (Câmara)",
+   "measures": "na RJ do produtor só entram créditos da atividade rural (§6º); recursos controlados do crédito rural ficam fora (§7º), salvo se não renegociados antes do pedido (§8º); dívida de compra de terra dos últimos 3 anos fica fora (§9º). A CPR com liquidação física ou barter fica fora pela Lei 8.929, art. 11",
+   "granularity": {
+    "spatial": "norma",
+    "temporal": "evento"
+   },
+   "history": "24/12/2020",
+   "update_frequency": "por alteração",
+   "latency": null,
+   "format": "HTML",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "Câmara 200 (§§6º–9º lidos); CPR física: fonte secundária"
+   },
+   "uso_atena": [
+    "G02"
+   ],
+   "notes": null
+  },
+  {
+   "id": "stf-temas-961-982",
+   "name": "STF, Temas 961 e 982",
+   "degree": "G",
+   "publisher": "STF",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/",
+   "endpoint": "páginas dos temas; notícias do STF",
+   "measures": "Tema 982 (RE 860.631, 26/10/2023): a execução extrajudicial da Lei 9.514 é constitucional. Tema 961 (ARE 1.038.507, 2020): a pequena propriedade rural familiar (< 4 módulos fiscais) é impenhorável mesmo dada em hipoteca; decisão de 21/09/2026 estende o raciocínio a outras garantias reais, como a alienação fiduciária",
+   "granularity": {
+    "spatial": "precedente",
+    "temporal": "evento"
+   },
+   "history": "2020–2026",
+   "update_frequency": "por decisão",
+   "latency": null,
+   "format": "HTML",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "por busca e notícia de registrodeimoveis.org.br (200, 21/09/2026); inteiro teor não lido"
+   },
+   "uso_atena": [
+    "G01",
+    "G02"
+   ],
+   "notes": "Tema 961 é o maior risco jurídico para a garantia de imóvel pequeno"
+  },
+  {
+   "id": "stj-precedentes",
+   "name": "STJ, Tema 1145 e Súmula 298; dados abertos de acórdãos",
+   "degree": "G",
+   "publisher": "STJ",
+   "url": "https://dadosabertos.web.stj.jus.br/",
+   "endpoint": "CKAN: /api/3/action/package_show?id=espelhos-de-acordaos-terceira-turma (JSON mensal)",
+   "measures": "Tema 1145 (22/06/2022): produtor com mais de 2 anos de atividade e registro na Junta no pedido pode pedir RJ. Súmula 298: alongamento da dívida rural é direito do devedor. Espelhos de acórdãos por turma para medir tendência",
+   "granularity": {
+    "spatial": "acórdão",
+    "temporal": "mensal"
+   },
+   "history": "espelhos por turma; íntegras 2008–2020 e do Diário",
+   "update_frequency": "mensal",
+   "latency": "~1 mês",
+   "format": "JSON",
+   "license": "Creative Commons Atribuição (no CKAN)",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "CKAN 200: 22 pacotes; 3ª Turma com 56 arquivos, último 20261031.json"
+   },
+   "uso_atena": [
+    "G02"
+   ],
+   "notes": "a 3ª e a 4ª Turmas (2ª Seção) julgam direito privado e RJ"
+  },
+  {
+   "id": "cnj-datajud",
+   "name": "CNJ DataJud, API pública",
+   "degree": "G",
+   "publisher": "CNJ",
+   "url": "https://datajud-wiki.cnj.jus.br/api-publica/acesso",
+   "endpoint": "Elasticsearch: POST https://api-publica.datajud.cnj.jus.br/api_publica_{tribunal}/_search (chave pública publicada na wiki)",
+   "measures": "metadados de processos: classe (TPU), assunto, órgão, datas, movimentos",
+   "granularity": {
+    "spatial": "processo; tribunal",
+    "temporal": "diária"
+   },
+   "history": "conforme carga dos tribunais",
+   "update_frequency": "contínua",
+   "latency": null,
+   "format": "JSON",
+   "license": "dados públicos; a chave muda (pegar na wiki)",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "wiki 200; buscas em TJMT e TJGO: 429 (fila do cluster cheia) e tempo esgotado em 28/11"
+   },
+   "uso_atena": [
+    "G02"
+   ],
+   "notes": "usar só agregados (contagens por classe, assunto, ano e tribunal); não guardar partes"
+  },
+  {
+   "id": "cnj-justica-em-numeros",
+   "name": "CNJ, Justiça em Números",
+   "degree": "G",
+   "publisher": "CNJ",
+   "url": "https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/",
+   "endpoint": "relatório anual e painel",
+   "measures": "tempo médio de tramitação por fase (conhecimento, execução) e por tribunal",
+   "granularity": {
+    "spatial": "tribunal",
+    "temporal": "anual"
+   },
+   "history": "2004 em diante",
+   "update_frequency": "anual (edição 2026 publicada)",
+   "latency": null,
+   "format": "PDF, painel",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "200; edições 2025 e 2026 listadas"
+   },
+   "uso_atena": [
+    "G02"
+   ],
+   "notes": "não separa execução de crédito rural; serve de referência de prazo judicial"
+  },
+  {
+   "id": "serasa-rj-agro",
+   "name": "Serasa Experian, recuperação judicial no agro (releases trimestrais)",
+   "degree": "G",
+   "publisher": "Serasa Experian",
+   "url": "https://www.serasaexperian.com.br/sala-de-imprensa/agronegocios/",
+   "endpoint": "releases",
+   "measures": "pedidos de RJ no agro por perfil (produtor PF, PJ, empresas do setor); inadimplência de produtores",
+   "granularity": {
+    "spatial": "Brasil (alguns por UF)",
+    "temporal": "trimestral"
+   },
+   "history": "2021 em diante",
+   "update_frequency": "trimestral",
+   "latency": "~6 semanas",
+   "format": "HTML",
+   "license": "dados da empresa; citar",
+   "cost": "grátis (release); base detalhada paga",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "por busca: 2025 = 1.990 pedidos (recorde); 1º tri/2026 = 474 (+21,9%); 2º tri/2026 = 448 (−20,7%); produtor PF no 2º tri = 197"
+   },
+   "uso_atena": [
+    "G02",
+    "G03"
+   ],
+   "notes": "metodologia própria; grupos se sobrepõem e não somam"
+  },
+  {
+   "id": "deral-precos-terras",
+   "name": "SEAB/Deral (PR), preços de terras agrícolas",
+   "degree": "G",
+   "publisher": "SEAB-PR",
+   "url": "https://www.agricultura.pr.gov.br/terras",
+   "endpoint": "PDF por ano (ex. .../terras_pdf_publicacao_20.pdf) e metodologia",
+   "measures": "preço da terra por tipo (mecanizada, não mecanizada etc.) e região/núcleo",
+   "granularity": {
+    "spatial": "núcleo regional / município (PR)",
+    "temporal": "anual (referência março)"
+   },
+   "history": "1998 em diante",
+   "update_frequency": "anual",
+   "latency": "~6 meses",
+   "format": "PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "sim",
+    "date": "2026-11-28",
+    "test": "página 200; PDFs de publicações e metodologia listados"
+   },
+   "uso_atena": [
+    "G03"
+   ],
+   "notes": "metodologia mudou em 2017 e em 2025: quebra de série"
+  },
+  {
+   "id": "iea-sp-terras",
+   "name": "IEA-SP, valor de terra nua e arrendamento",
+   "degree": "G",
+   "publisher": "IEA / SAA-SP",
+   "url": "https://iea.agricultura.sp.gov.br/ftpiea/Terra/",
+   "endpoint": "arquivos no FTP do IEA",
+   "measures": "valor da terra nua por tipo e município",
+   "granularity": {
+    "spatial": "município (SP)",
+    "temporal": "semestral / anual"
+   },
+   "history": "desde os anos 1970",
+   "update_frequency": "anual",
+   "latency": null,
+   "format": "XLS, PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "o host não resolveu no DNS em 28/11"
+   },
+   "uso_atena": [
+    "G03"
+   ],
+   "notes": null
+  },
+  {
+   "id": "rfb-vtn",
+   "name": "Receita Federal, Valor da Terra Nua (VTN/SIPT) por município",
+   "degree": "G",
+   "publisher": "Receita Federal",
+   "url": "https://www.gov.br/pt-br/servicos/cadastrar-o-valor-da-terra-nua",
+   "endpoint": "tabela nacional anual (publicada em agosto, antes do ITR)",
+   "measures": "VTN por hectare por município e por 6 classes de aptidão agrícola",
+   "granularity": {
+    "spatial": "município",
+    "temporal": "anual"
+   },
+   "history": "vários anos",
+   "update_frequency": "anual",
+   "latency": null,
+   "format": "PDF/XLSX",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "tabela 2026 divulgada em 08/2026 (Fenacon e prefeituras); a URL oficial da tabela não foi localizada (404 no caminho testado)"
+   },
+   "uso_atena": [
+    "G03"
+   ],
+   "notes": "é a única série nacional por município; é valor de referência fiscal, não preço de mercado"
+  },
+  {
+   "id": "incra-ppr",
+   "name": "INCRA, planilhas de preços referenciais de terras (PPR) e RAMT",
+   "degree": "G",
+   "publisher": "INCRA",
+   "url": "https://www.gov.br/incra/",
+   "endpoint": "PDF por superintendência e mercado regional de terras",
+   "measures": "preço de terra por mercado regional, para desapropriação",
+   "granularity": {
+    "spatial": "mercado regional de terras",
+    "temporal": "irregular"
+   },
+   "history": "anos 2000 em diante",
+   "update_frequency": "irregular",
+   "latency": null,
+   "format": "PDF",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "o caminho testado deu 404"
+   },
+   "uso_atena": [
+    "G03"
+   ],
+   "notes": "série comercial: S&P Global (ex-AgraFNP), paga, sem preço público"
+  },
+  {
+   "id": "leiloes-extrajudiciais",
+   "name": "Leilões extrajudiciais de imóveis rurais",
+   "degree": "G",
+   "publisher": "leiloeiros oficiais, cartórios, credores",
+   "url": null,
+   "endpoint": "editais em portais de leiloeiros e em jornais; não há base central pública",
+   "measures": "data, avaliação, lance mínimo, resultado (arrematado, deserto, suspenso)",
+   "granularity": {
+    "spatial": "imóvel",
+    "temporal": "por evento"
+   },
+   "history": "?",
+   "update_frequency": "por evento",
+   "latency": null,
+   "format": "HTML, PDF",
+   "license": "variável",
+   "cost": "coleta manual ou pedido via LAI (ONR/CNJ)",
+   "verified": {
+    "status": "não",
+    "date": "2026-11-28",
+    "test": "nenhuma base pública agregada encontrada em 28/11/2026"
+   },
+   "uso_atena": [
+    "G02",
+    "G03"
+   ],
+   "notes": "lacuna principal: o teste de G02 começa por amostra manual de editais"
+  },
+  {
+   "id": "risco-politico-rural",
+   "name": "Evidência pública de risco político e reputacional",
+   "degree": "G",
+   "publisher": "Congresso, Executivo, tribunais, imprensa",
+   "url": "https://www2.camara.leg.br/legin/fed/medpro/2025/medidaprovisoria-1314-5-setembro-2025-797939-normaatualizada-pe.html",
+   "endpoint": "MPs, resoluções do CMN, decisões liminares noticiadas",
+   "measures": "MP 1.314/2025 (R$ 12 bi para renegociar dívida rural; vigência encerrada em 12/02/2026); MP 1.376/2026 (15/07/2026; regras pelo CMN); liminares de 2026 em GO, MT e RO que suspendem leilão ou consolidação de fazendas (falha de intimação, alongamento pela Súmula 298, Tema 961)",
+   "granularity": {
+    "spatial": "Brasil",
+    "temporal": "por evento"
+   },
+   "history": "2025–2026",
+   "update_frequency": "por evento",
+   "latency": null,
+   "format": "HTML",
+   "license": "pública",
+   "cost": "grátis",
+   "verified": {
+    "status": "parcial",
+    "date": "2026-11-28",
+    "test": "Câmara 200 (MP 1.314); demais por busca"
+   },
+   "uso_atena": [
+    "G02"
+   ],
+   "notes": "sem nomes de pessoas; contar eventos por mês e UF"
+  }
+ ],
+ "premissas_schema": "estrategia/bb/03-conselho.md §5 (premissas.jsonl)",
+ "premissas": [
+  {
+   "id": "G01",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "Nas UFs e municípios com mais crédito rural fora do Pronaf, a maior parte da área está em imóveis com 4 ou mais módulos fiscais, fora da proteção da pequena propriedade (STF Tema 961). Logo, a garantia de imóvel pode ser executada na maior parte da exposição.",
+   "por_que_importa": "Se a garantia não pode ser executada, ela não muda a LGD. O Tema 961 e a decisão de 09/2026 ampliam a proteção para além da hipoteca.",
+   "teste": {
+    "fontes": [
+     "sicar-wfs",
+     "sicor",
+     "ibge-pam-5457",
+     "mapbiomas"
+    ],
+    "metrica": "parcela da área do CAR ativo em imóveis com m_fiscal ≥ 4, por município, ponderada pelo valor contratado no SICOR fora do Pronaf",
+    "periodo": "CAR: foto de 11/2026; SICOR: safras 2020/21 a 2025/26",
+    "comparacao": "entre UFs; e entre a carteira total e a parte com taxa de mercado"
+   },
+   "confirma_se": "≥ 70% do valor fora do Pronaf está em municípios onde ≥ 70% da área do CAR é de imóveis com 4 ou mais módulos fiscais",
+   "refuta_se": "< 50% do valor fora do Pronaf cumpre essa condição",
+   "decisao": {
+    "se_verdadeira": "Lutar: alienação fiduciária ou CIR com patrimônio em afetação como padrão para médio e grande produtor, com LGD menor no preço",
+    "se_falsa": "A garantia de imóvel vale pouco onde está o risco: seguro, CPR com penhor de safra e limite por produtor; recuar onde não houver garantia executável"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "G02",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "Depois da Lei 14.711/2023, a execução extrajudicial de imóvel rural chega à arrematação ou à adjudicação em até 12 meses, e menos de 30% dos casos são suspensos na Justiça (liminar, RJ, alongamento).",
+   "por_que_importa": "O valor da garantia depende do prazo e do custo. Se metade das execuções para na Justiça, a garantia só vale no papel e o custo político cresce.",
+   "teste": {
+    "fontes": [
+     "leiloes-extrajudiciais",
+     "cnj-datajud",
+     "stj-precedentes",
+     "serasa-rj-agro",
+     "risco-politico-rural"
+    ],
+    "metrica": "(a) tempo mediano da consolidação ao leilão; (b) parcela de leilões rurais suspensos ou anulados; (c) ações contra leilão e pedidos de RJ de produtor por 1.000 contratos (DataJud; SICOR no denominador)",
+    "periodo": "2021 a 2026, com corte em 30/10/2023",
+    "comparacao": "antes × depois da Lei 14.711; rural × residencial urbano; UFs com e sem onda de RJ"
+   },
+   "confirma_se": "tempo mediano ≤ 12 meses e suspensão < 30% numa amostra de editais com n ≥ 200",
+   "refuta_se": "tempo mediano > 24 meses ou suspensão > 50%",
+   "decisao": {
+    "se_verdadeira": "Lutar: trocar a garantia na renegociação (hipoteca por alienação fiduciária ou CIR) e reduzir a provisão das operações com garantia nova",
+    "se_falsa": "Não dar crédito de LGD à garantia de imóvel no preço; tratar a renegociação como a cura; reavaliar a carteira com taxa de mercado"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 3
+   }
+  },
+  {
+   "id": "G03",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "O preço da terra nas regiões de maior inadimplência rural caiu menos de 15% em termos reais desde o pico de 2023–2024. Com o desconto de leilão (lance de 50% da avaliação), a garantia ainda cobre a dívida típica por hectare.",
+   "por_que_importa": "A garantia protege só enquanto a terra vale mais que a dívida. Se a terra cai junto com a safra, a garantia falha quando mais se precisa dela.",
+   "teste": {
+    "fontes": [
+     "rfb-vtn",
+     "deral-precos-terras",
+     "iea-sp-terras",
+     "sicor",
+     "scr_data",
+     "conab-custos"
+    ],
+    "metrica": "variação real do VTN e do preço de terra por município ou região (IPCA); LTV implícito = saldo rural por hectare financiado ÷ (0,5 × preço da terra)",
+    "periodo": "2019 a 2026",
+    "comparacao": "quartil de maior × menor inadimplência rural por UF (SCR.data); PR e SP como controle de qualidade do VTN"
+   },
+   "confirma_se": "queda real < 15% no quartil de maior inadimplência e LTV implícito ≤ 0,8",
+   "refuta_se": "queda real > 25% ou LTV implícito > 1,0 no quartil de maior inadimplência",
+   "decisao": {
+    "se_verdadeira": "Lutar com garantia: limite por LTV e por preço de terra da região",
+    "se_falsa": "Recuar onde terra e safra caem juntas; exigir seguro e garantia de safra; reduzir o limite por produtor"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "S01",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "A surpresa de safra por UF (revisões do LSPA e da Conab frente à 1ª estimativa) antecipa em 2 a 3 trimestres a alta da inadimplência rural da UF, além do que o clima (degrau 2) já explica.",
+   "por_que_importa": "O degrau 3 custa quase nada. Se acrescenta informação, entra no monitor já.",
+   "teste": {
+    "fontes": [
+     "ibge-lspa-6588",
+     "conab-safra-xlsx",
+     "conab-progresso",
+     "scr_data",
+     "chirps"
+    ],
+    "metrica": "erro absoluto médio da previsão de inadimplência rural por UF, fora da amostra, origem móvel",
+    "periodo": "2012T1 a 2026T3",
+    "comparacao": "clima (degrau 2) × clima + surpresa de safra; ingênuo sazonal como piso"
+   },
+   "confirma_se": "redução do erro ≥ 10% nos horizontes de 2 e 3 trimestres",
+   "refuta_se": "redução < 3%",
+   "decisao": {
+    "se_verdadeira": "Subir o degrau 3 no monitor por UF (custo de dados zero)",
+    "se_falsa": "Ficar nos degraus 1 e 2; usar a safra só como narrativa"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "S02",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "A margem do produtor por hectare (preço na colheita × produtividade − custo Conab) explica a inadimplência rural por UF melhor que a produtividade sozinha: o choque de 2023–2026 é mais de preço e custo do que de quebra física.",
+   "por_que_importa": "Separa a tese 'clima' (lutar com sensores) da tese 'preço' (risco que o banco não controla, que puxa para recuar ou para hedge).",
+   "teste": {
+    "fontes": [
+     "cepea-indicadores",
+     "conab-custos",
+     "ibge-pam-5457",
+     "ibge-lspa-6588",
+     "scr_data",
+     "usda-ams-brazil-soy"
+    ],
+    "metrica": "R² parcial e ganho fora da amostra da margem por hectare sobre o modelo só com produtividade, em painel UF × safra",
+    "periodo": "safras 2010/11 a 2025/26",
+    "comparacao": "margem × produtividade × clima; soja e milho separados"
+   },
+   "confirma_se": "a margem eleva o R² parcial em ≥ 0,10 e domina a produtividade em 2023–2026",
+   "refuta_se": "ganho < 0,03 ou a produtividade domina",
+   "decisao": {
+    "se_verdadeira": "Precificar e limitar por margem (cenários de preço e custo); oferecer hedge e CPR com preço travado",
+    "se_falsa": "Concentrar o monitor em clima e safra (S01, S05)"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 3,
+    "incerteza": 3,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "S03",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "O ritmo de exportação de grãos por UF e porto (Comex Stat mensal e PortWatch diário) desvia do padrão sazonal 1 a 2 meses antes do aumento de atraso no crédito rural das UFs exportadoras.",
+   "por_que_importa": "Produtor que retém grão espera preço ou não tem o que vender. Os dois casos mudam o risco do custeio que vence.",
+   "teste": {
+    "fontes": [
+     "comexstat-bulk",
+     "imf-portwatch-ports",
+     "appa-lineup",
+     "santos-navios-esperados",
+     "imea-comercializacao",
+     "scr_data"
+    ],
+    "metrica": "anomalia sazonal de toneladas exportadas (NCM 1201, 1005, 2304) por UF e porto; ganho de previsão do atraso 15–90 dias sobre S01",
+    "periodo": "2019-01 a 2026-10 (limite do PortWatch); Comex Stat desde 1997",
+    "comparacao": "S01 × S01 + comercialização"
+   },
+   "confirma_se": "redução adicional do erro ≥ 5% no horizonte de 1 a 2 meses",
+   "refuta_se": "redução < 2%",
+   "decisao": {
+    "se_verdadeira": "Pôr o degrau 4 no monitor (PortWatch grátis; Comex Stat quando o TLS for resolvido)",
+    "se_falsa": "Não manter coletor de portos; Comex Stat só como contexto"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 3,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "S04",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "Dados logísticos globais (AIS de chegada na China, frete marítimo, importação da GACC) não acrescentam previsão de risco rural por UF além do degrau 4, num horizonte de 1 a 2 trimestres.",
+   "por_que_importa": "É o primeiro degrau com custo real (AIS comercial). A premissa é escrita para o gasto ter de se justificar.",
+   "teste": {
+    "fontes": [
+     "imf-portwatch-ports",
+     "gacc-china",
+     "baltic-proxies",
+     "un-comtrade",
+     "scr_data"
+    ],
+    "metrica": "ganho de previsão do modelo S03 ao somar importação chinesa de soja (GACC), frete (GTR) e chegadas a portos chineses (PortWatch)",
+    "periodo": "2019 a 2026",
+    "comparacao": "S03 × S03 + logística global"
+   },
+   "confirma_se": "ganho < 2% (não vale pagar)",
+   "refuta_se": "ganho ≥ 5%",
+   "decisao": {
+    "se_verdadeira": "Não comprar AIS comercial; ficar com PortWatch e GACC",
+    "se_falsa": "Orçar AIS: começar pela VesselFinder (a partir de € 330) e só depois cotar Kpler"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 1,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  },
+  {
+   "id": "S05",
+   "versao": 1,
+   "origem": "atena-v0",
+   "autor": "mapa-fontes",
+   "mercado": "agro",
+   "enunciado": "A anomalia de NDVI no pico vegetativo (MODIS 250 m, só sobre a soja do MapBiomas) por município prevê o rendimento da PAM com correlação ≥ 0,6 e chega 6 a 9 meses antes do IBGE.",
+   "por_que_importa": "Dá a quebra por município durante a safra, antes do vencimento do custeio, num servidor doméstico.",
+   "teste": {
+    "fontes": [
+     "ornl-modis-subsets",
+     "bdc-inpe",
+     "mapbiomas",
+     "ibge-pam-5457",
+     "conab-monitoramento",
+     "chirps"
+    ],
+    "metrica": "correlação entre a anomalia de NDVI (dez–fev) e o desvio de rendimento da soja na PAM, por município; ganho sobre o SPI do CHIRPS",
+    "periodo": "safras 2001/02 a 2024/25",
+    "comparacao": "NDVI × chuva (degrau 2) × os dois; municípios de MT, GO, PR e RS"
+   },
+   "confirma_se": "r ≥ 0,6 e ganho sobre a chuva em ≥ 2/3 dos municípios testados",
+   "refuta_se": "r < 0,4",
+   "decisao": {
+    "se_verdadeira": "Ligar o degrau 6 por município (MODIS/VIIRS); Sentinel-2 só em amostra e para avaliar garantias",
+    "se_falsa": "Usar o boletim de monitoramento da Conab como sinal pronto, sem pipeline de satélite"
+   },
+   "fatos": [],
+   "valor_decisao": {
+    "tamanho": 2,
+    "incerteza": 2,
+    "alavanca": 2
+   }
+  }
+ ]
+}

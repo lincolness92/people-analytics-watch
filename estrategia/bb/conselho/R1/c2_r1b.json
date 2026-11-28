@@ -1,0 +1,444 @@
+{
+  "revisoes": [
+    {
+      "premissa": "P01",
+      "prob_verdadeira": 0.6,
+      "alternativa": "A queda de 2019 a 2022 pode vir de decisão de governo (recursos equalizados indo para Caixa, Basa e cooperativas), não de perda competitiva. A alta de 2026 (52,20% para 53,46%) pode ser renegociação que segura saldo no BB.",
+      "teste_decisivo": "SICOR: participação do BB no fluxo contratado por fonte de recursos e safra, separando controlado de livre. IF.data encadeado dentro de cada perímetro (antes e depois de 03/2025).",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["53,7% em 12/2023", "8,6 dos 8,9 p.p. antes de 2024", "série até 09/2026 (dossiê vai até 06/2026)"]
+    },
+    {
+      "premissa": "P02",
+      "prob_verdadeira": 0.4,
+      "alternativa": "Carteira que cresce rápido dilui o atraso (denominador novo). Cooperativa também pode rolar mais, baixar antes para prejuízo ou compensar com cota do associado. Atraso acima de 15 dias não é comparável a +90.",
+      "teste_decisivo": "IF.data: vencidos em t sobre carteira de quatro trimestres antes, por instituição, somando renegociados e baixas. SICOR para mix por programa, porte e UF.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["BB 6,2%", "Sicredi 1,2%", "Sicoob 1,5%", "cooperativas singulares 2,2%", "sistema 5,6%", "Caixa 14,4%"]
+    },
+    {
+      "premissa": "P03",
+      "prob_verdadeira": 0.5,
+      "alternativa": "O crédito rural já é concentrado em poucos municípios. Qualquer perda parecerá concentrada sem haver falha localizada. A tese vem da administração, que tem interesse nela. O agro do BB (6,92%) está abaixo do rural PF do sistema (9,59%).",
+      "teste_decisivo": "Comparar a curva de concentração do aumento do atraso com a curva de concentração da própria carteira (SCR.data por UF e porte; ESTBAN por município). Só o excesso sobre a carteira conta.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P04",
+      "prob_verdadeira": 0.35,
+      "alternativa": "A simulação tira a perda do agro, mas mantém o que o agro traz (LCA, depósito do produtor, seguros). O RSPL já era 8,4% no 3T25, com atraso do agro em 4,84%. O resto do banco também piora.",
+      "teste_decisivo": "ITR, nota de segmentos, mais Pilar 3 (OV1): RSPL ex-agro com capital alocado por RWA, em duas hipóteses de rateio. Comparar com custo de capital (COTAHIST, Focus), não só com pares.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["17% (só imprensa, F-015 com confiança média-baixa)", "ROE do Bradesco (só imprensa, F-011)"]
+    },
+    {
+      "premissa": "P05",
+      "prob_verdadeira": 0.45,
+      "alternativa": "Veículos de mercado têm história curta, renegociam fora da vista e não marcam atraso como banco. Parte da CPR está no balanço dos próprios bancos, inclusive do BB: há dupla contagem entre mercado e banco.",
+      "teste_decisivo": "CVM, dados abertos de fundos: atraso e provisão das carteiras de Fiagro e FIDC do agro, por safra de emissão, contra SCR.data na mesma UF e porte. Tirar a CPR detida por bancos.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["CPR com 43% do crédito da safra 2025/26", "estoque de CPR de R$ 593,8 bi", "CRA e Fiagro com 33% (19% em 2021)"]
+    },
+    {
+      "premissa": "P06",
+      "prob_verdadeira": 0.6,
+      "alternativa": "O BB pode ter emitido menos LCA por escolha, por ter fonte mais barata (poupança, depósitos), ou por falta de lastro quando a carteira encolhe (35,62% para 32,55% em seis meses). Queda de fatia não prova perda de preço.",
+      "teste_decisivo": "Taxa de emissão de LCA em % do CDI por emissor (B3 ou ANBIMA, fonte nova) e saldo absoluto de LCA do BB contra o lastro rural livre (IF.data, SICOR).",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["PL 5.853/2026", "IR de 7,5%"]
+    },
+    {
+      "premissa": "P07",
+      "prob_verdadeira": 0.45,
+      "alternativa": "O que pesa pode ser quando e onde se entrou (linhas a taxa de mercado, no topo do ciclo), não a velocidade. Com 20 a 30 instituições, a Caixa sozinha pode criar a correlação. As cooperativas contrariam a regra.",
+      "teste_decisivo": "IF.data: correlação de postos sem a Caixa e com controle de mix (livre contra controlado, SICOR). Repetir com atraso sobre carteira defasada.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["inadimplência de 25,4% na Caixa", "contratações da Caixa em queda de 23%"]
+    },
+    {
+      "premissa": "P08",
+      "prob_verdadeira": 0.5,
+      "alternativa": "Município com mais seguro pode ser o de maior risco (seleção) ou o de produtor mais capitalizado. A queda dos prêmios pode ser só reflexo de menos crédito concedido e de preço menor da saca, não de menos cobertura.",
+      "teste_decisivo": "SISSER e SICOR: área segurada sobre área financiada por município. Diferenças em diferenças em torno de choque climático (CHIRPS, S2iD), com SCR.data por UF.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["prêmios agrícolas −32,3% no 3T26", "penhor rural −24,6%"]
+    },
+    {
+      "premissa": "P09",
+      "prob_verdadeira": 0.35,
+      "alternativa": "Há um só grande ciclo de atraso na amostra (2023 a 2026). Um modelo acerta por acaso ou por persistência da série. Preço, juro e recuperação judicial podem explicar mais que o clima.",
+      "teste_decisivo": "Backtest por blocos de tempo com alvo em SCR.data por UF. Referência deve ser um modelo autorregressivo com preço (CEPEA), não a sazonalidade. Medir o ganho sobre essa referência.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["ONI +2,46"]
+    },
+    {
+      "premissa": "P10",
+      "prob_verdadeira": 0.3,
+      "alternativa": "O pedido de recuperação judicial tende a vir depois do atraso, como defesa. Pode também seguir moda jurídica regional. O efeito relevante pode ser na perda final (garantia travada), não no tempo.",
+      "teste_decisivo": "CNJ Datajud por comarca (data do pedido) contra SCR.data rural por UF: causalidade de Granger nos dois sentidos, com placebo em crédito não rural.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["1.990 pedidos em 2025", "474 no 1T26 (+21,9%)", "448 no 2T26 (−20,7%)"]
+    },
+    {
+      "premissa": "P11",
+      "prob_verdadeira": 0.6,
+      "alternativa": "Renegociar tira o saldo da faixa de atraso. O critério de refutação (atraso cai dois trimestres) pode ser cumprido só por rolagem. Em crédito de parcela anual, a cura só aparece depois da próxima safra, não no 1T27.",
+      "teste_decisivo": "RI do BB e balancetes Cosif: atraso mais saldo renegociado, juntos, sobre a carteira. Reincidência da safra renegociada após o primeiro vencimento.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["MP 1.376/2026", "recebimento perto de 70%", "90% esperados", "citação 'abaixo do inicialmente esperado'"]
+    },
+    {
+      "premissa": "P12",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Fatia de 53% no crédito vem de recursos direcionados. Nenhum mercado livre tem essa concentração. Fatia menor nos serviços pode ser o normal, não subuso. Comércio exterior (25,43%) é de empresas, não do produtor.",
+      "teste_decisivo": "SUSEP SES: fatia da Brasilseg no prêmio rural. BCB, consórcios por administradora (fonte nova). Comparar com a fatia do líder em cada mercado, não com a do crédito.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P13",
+      "prob_verdadeira": 0.35,
+      "alternativa": "A força das cooperativas no Sul tem raiz histórica (propriedade pequena, tradição associativa). No Centro-Oeste, quem ganha junto são Nubank e BTG, tanto quanto as cooperativas (F-052). O tíquete grande limita a cooperativa.",
+      "teste_decisivo": "Unicad: abertura de postos de cooperativas por município e ano. IF.data por região: ajustar curva de difusão por UF e testar se o Centro-Oeste acelera ou estaciona.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Sul 10,6% → 16,8%", "Centro-Oeste 6,0% → 7,7%", "Sudeste 2,5% → 4,5%", "recorte 'cooperativas singulares' não está no dossiê"]
+    },
+    {
+      "premissa": "P14",
+      "prob_verdadeira": 0.3,
+      "alternativa": "Os digitais ampliaram o mercado com clientes novos. A fatia do BB em clientes com crédito ficou parada (8,14% para 8,22%), o que não combina com migração. A fatia cai porque o total cresce.",
+      "teste_decisivo": "IF.data: saldo absoluto e número de clientes do BB na modalidade. Taxas por instituição (BCB). Margem após perda, custo de captação e despesa, não só taxa menos atraso.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["vencidos do Nubank 8,4%", "BB 4,6%", "sistema 6,4%"]
+    },
+    {
+      "premissa": "P15",
+      "prob_verdadeira": 0.45,
+      "alternativa": "A fatia já está parada desde 2022 (19,51% para 19,22%). Uma queda futura pode vir do crescimento do consignado privado, que aumenta o total do sistema, ou de mudança no teto do INSS, não da portabilidade.",
+      "teste_decisivo": "Fatia do BB só no consignado de servidores (RI do BB sobre SGS por tipo), antes e depois. Estatísticas de portabilidade do BCB (fonte nova). Pares de folha como controle.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["início em nov/2026", "crédito pessoal portável desde fev/2026", "R$ 154 bi (confere por conta: 19,22% de R$ 800,1 bi)"]
+    },
+    {
+      "premissa": "P16",
+      "prob_verdadeira": 0.6,
+      "alternativa": "As primeiras safras podem ser piores por falha de desconto em folha e por seleção dos primeiros tomadores. Isso melhora com o tempo e não mede o risco de regime.",
+      "teste_decisivo": "BCB (SGS e boxes): curvas de atraso por safra de concessão e por mês de idade, contra crédito pessoal. RI do BB para a carteira própria. RAIS para rotatividade por empregador.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["meta de 20% do mercado", "inadimplência maior a partir do 5º mês"]
+    },
+    {
+      "premissa": "P17",
+      "prob_verdadeira": 0.5,
+      "alternativa": "Se o BB perde volume à vista (cliente que paga a fatura), o atraso sobre saldo sobe por conta do denominador. Estar acima do sistema é nível, não alta. Critério de baixa para prejuízo também difere.",
+      "teste_decisivo": "IF.data: atraso sobre saldo que rende juro (rotativo e parcelado), BB contra sistema, em variação e não em nível, por oito trimestres.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["vencidos do BB 15,4%", "sistema 12,1%"]
+    },
+    {
+      "premissa": "P18",
+      "prob_verdadeira": 0.3,
+      "alternativa": "A saída pode ser racional: a fatia do BB em LCI caiu de 11,96% para 2,87% e a poupança dele é rural. Sem funding longo e barato, habitação consome capital e rende pouco. Caixa e Itaú dominam.",
+      "teste_decisivo": "Taxa do imobiliário por instituição (BCB) menos custo de LCI ou captação de mercado, contra consumo de capital (Pilar 3). Se a margem não cobre o capital, não é espaço em branco.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["saldo de cerca de R$ 46 bi (a conta do dossiê dá perto de R$ 45 bi)", "mercado dobrou"]
+    },
+    {
+      "premissa": "P19",
+      "prob_verdadeira": 0.5,
+      "alternativa": "A fatia direta do BB subiu (1,78% para 2,46%): o balanço próprio não é nulo. Participação societária dá resultado de equivalência, mas não dá o cliente nem o dado ao BB.",
+      "teste_decisivo": "CVM FRE e ITR do BB: participação no BV e resultado de equivalência. IF.data: fatia do BV em veículos PF ao longo do tempo.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["participação no BV não está no dossiê"]
+    },
+    {
+      "premissa": "P20",
+      "prob_verdadeira": 0.5,
+      "alternativa": "Quem mais ganhou depósito à vista foram Sicredi e Sicoob, não os digitais (F-038). A perda parece ser de produtor e pequena empresa, não de jovem. Pix menor que depósito é normal para banco com governo e empresas.",
+      "teste_decisivo": "Pix por participante: tendência da fatia do BB em transações de pessoa física, contra Itaú, Bradesco e Caixa. O que importa é a queda relativa, não o nível.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["depósitos à vista 22,3% → 17,0% (dossiê: 21,49% → 16,63%)", "113 milhões de clientes do Nubank"]
+    },
+    {
+      "premissa": "P21",
+      "prob_verdadeira": 0.45,
+      "alternativa": "O índice é reclamações por cliente. Base grande com contas pouco ativas melhora o índice sem melhorar o serviço. O mix de produtos também muda a taxa de reclamação.",
+      "teste_decisivo": "Ranking de reclamações do BCB, 2019 a 2026, por tema da reclamação, e ranking de ouvidorias. Normalizar por clientes com crédito (IF.data) como checagem.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P22",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Custo em % do CDI muda com o nível da Selic: poupança e depósito à vista pesam mais quando o juro é alto. A diferença para os pares pode vir do ciclo de juros, não da fatia. Há quebra em 03/2025.",
+      "teste_decisivo": "ITR/DFP e balancetes Cosif: custo por instrumento, BB contra pares, comparando períodos de Selic parecida. Separar depósitos judiciais e de governo.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["depósitos à vista 22,3% → 17,0% (dossiê: 21,49% → 16,63%)", "captações 18,7% → 14,9% (dossiê: 18,37% → 14,50%)"]
+    },
+    {
+      "premissa": "P23",
+      "prob_verdadeira": 0.5,
+      "alternativa": "A cobrança do tribunal pode ser tática de negociação. O saldo também cai quando leis permitem ao Estado usar parte dos depósitos judiciais, sem nenhuma disputa entre bancos.",
+      "teste_decisivo": "Balancetes Cosif: conta de depósitos judiciais por instituição, trimestral. Contratos no PNCP e diários oficiais (fonte nova), com remuneração e prazo.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["contrato do TJRJ vence em jul/2027"]
+    },
+    {
+      "premissa": "P24",
+      "prob_verdadeira": 0.45,
+      "alternativa": "Saída da poupança é do sistema todo e segue a Selic. A fatia do BB está estável. Com a carteira rural encolhendo, a parcela financiada por poupança pode até subir. O teste mede uma razão com denominador em queda.",
+      "teste_decisivo": "SICOR: contratações do BB por fonte de recursos e safra, em reais e não só em parcela. SGS: saldo e captação líquida da poupança rural.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P25",
+      "prob_verdadeira": 0.35,
+      "alternativa": "O BB também está sob estresse em 2026 (lucro −67,5%). A fuga pode ir para Tesouro, Caixa ou grandes privados. Entradas no BB podem ser sazonais (safra, 13º) ou de governo e tribunais, não de marca.",
+      "teste_decisivo": "ESTBAN mensal: depósitos do BB nos municípios onde o banco em crise tinha agência, contra municípios sem ela, antes e depois do evento. Controle de sazonalidade pelo mesmo mês de anos anteriores.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P26",
+      "prob_verdadeira": 0.45,
+      "alternativa": "O BB fica sozinho onde os privados saíram por não dar retorno: é seleção, não vantagem. O ESTBAN não vê cooperativas, então a fatia do BB é 100% por construção e não dá para medir fatia após a entrada delas.",
+      "teste_decisivo": "ESTBAN: depósitos reais do BB (nível, deflacionado) por município em torno da data de abertura de posto de cooperativa (Unicad). Grupo de controle pareado por população e agro.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["único banco em 555 municípios (dossiê: 577)", "2.300 municípios (dossiê: 2.290)", "437 em 12/2022", "sistema com 23% menos agências"]
+    },
+    {
+      "premissa": "P27",
+      "prob_verdadeira": 0.5,
+      "alternativa": "O estoque de consignado tem prazo longo e não troca de banco com a folha. Três anos subestimam o efeito. ESTBAN não abre consignado por município, e IF.data não é municipal: o teste como escrito pode não existir.",
+      "teste_decisivo": "PNCP (fonte nova) para datar trocas de folha de estados e capitais. Medir depósitos do BB no município (ESTBAN) e a fatia do BB no consignado de servidores (RI sobre SGS) depois das grandes trocas.",
+      "limiar": "apertado",
+      "numeros_sem_fonte": ["cerca de 25% do consignado de servidores"]
+    },
+    {
+      "premissa": "P28",
+      "prob_verdadeira": 0.4,
+      "alternativa": "O −9,3% reagiu a resultado e projeção, não a política. E o atraso está na parcela a taxa de mercado (17,21%), não na controlada: o risco pode vir de escolha comercial, não do mandato público.",
+      "teste_decisivo": "Classificar os eventos antes de ver o preço (política ou resultado) e medir retorno anormal com pares como controle (COTAHIST). SICOR: parcela livre e controlada no BB.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["−9,3% é ilustrativo (F-014, confiança baixa)"]
+    },
+    {
+      "premissa": "P29",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Taxa baixa pode ser efeito do tipo de fundo que o regime próprio pode comprar (renda fixa simples), não de fraqueza de preço. Comparar taxa média entre gestores com mix diferente engana.",
+      "teste_decisivo": "CADPREV (fonte nova) para fatia por gestor. CVM, dados de fundos: taxa do BB contra a mediana dentro da mesma classe de fundo e do mesmo tipo de cotista.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P30",
+      "prob_verdadeira": 0.45,
+      "alternativa": "A queda forte é entre 12/2022 e 12/2025 (15,80% para 11,68%), atravessando a mudança de perímetro e de Cosif. O salto do Bradesco em pequena empresa sugere reclassificação de porte. Programas da pandemia vencendo também explicam.",
+      "teste_decisivo": "IF.data: fatia do BB em micro + pequena + média somadas, encadeada dentro de cada perímetro. Perda em reais por porte. O IF.data não cruza porte com modalidade.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["cooperativas singulares 10,7% → 18,6% (dossiê tem Sicredi 3,01% → 6,61% e Sicoob 5,54% → 8,27%)"]
+    },
+    {
+      "premissa": "P31",
+      "prob_verdadeira": 0.5,
+      "alternativa": "O salto de 20,73% (2022) para 26,22% (2025) cruza a troca de perímetro, que pode ter incluído agências no exterior. Saldo é indexado ao dólar. Pode ser recuo de outros bancos, não avanço do BB.",
+      "teste_decisivo": "IF.data dentro de cada perímetro e em dólar. RI do BB e Pilar 3 para exposição por setor. Comex Stat por produto. O IF.data não dá CNAE por modalidade.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P32",
+      "prob_verdadeira": 0.35,
+      "alternativa": "A série faz um V (37,52%, 23,53%, 29,01%), o que aponta para fator temporário ou reclassificação, não tendência. Os ganhos listados dos concorrentes somam bem menos que a perda do BB.",
+      "teste_decisivo": "Dados abertos do BNDES (fonte nova): operações indiretas por agente financeiro, 2019 a 2026. IF.data trimestral para datar o vale e ver quem cresceu naquele trimestre.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P33",
+      "prob_verdadeira": 0.55,
+      "alternativa": "A fatia do BB em grande empresa quase não mudou (17,90% para 16,98%): a grande empresa não saiu do crédito do BB. Rankings de originação contam a mesma oferta para vários coordenadores.",
+      "teste_decisivo": "Rankings ANBIMA de originação e de distribuição, 2019 a 2026, com crédito dividido entre coordenadores. Comparar com a fatia em grande empresa, não com o PJ total.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P34",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Fatia parada em recebíveis pode vir da regra de registro, que deixou o recebível livre para qualquer banco, e não da Cielo. O controle da Cielo é dividido, o que limita integrar.",
+      "teste_decisivo": "IF.data: fatia em recebíveis do BB contra a do Itaú (que integra a Rede) e a do Bradesco (sócio na Cielo), como controles. Demonstrações da Cielo.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Rede 18%", "Cielo 17%", "PagBank 17%", "Stone 15%", "Mercado Pago 9%", "BB com 5,6% das operações com recebíveis"]
+    },
+    {
+      "premissa": "P35",
+      "prob_verdadeira": 0.65,
+      "alternativa": "A queda pode ter começado antes do Pix, com conta digital gratuita. Rotatividade de depósito não tem medida pública. Queda real de 15% em cinco anos ocorre só com receita nominal parada.",
+      "teste_decisivo": "ITR/DFP: receita de conta corrente por linha, deflacionada pelo IPCA, com teste de quebra em nov/2020 contra a tendência anterior. Pares como controle.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Pix com 54,7% das transações de varejo"]
+    },
+    {
+      "premissa": "P36",
+      "prob_verdadeira": 0.7,
+      "alternativa": "Todo banco grande e antigo transmite mais do que recebe, porque o dado está onde a conta está. Razão abaixo de 0,5 pode ser o normal dos incumbentes e não um problema do BB.",
+      "teste_decisivo": "Painéis do Open Finance (fonte nova): razão recebidos sobre transmitidos do BB contra Itaú, Bradesco, Santander e Caixa, por cliente.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["cerca de 200 milhões de consentimentos"]
+    },
+    {
+      "premissa": "P37",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Crescer 20% ao ano sobre base pequena é mecânico. Boa parte é antecipação de recebível, que não é risco do lojista. Em microempresa, quem ganhou do BB no dossiê foram Inter, C6 e Sicredi, não adquirentes.",
+      "teste_decisivo": "IF.data: crédito a micro e pequena por instituição, incluindo instituições de pagamento, em reais e em fatia, só no perímetro pós-03/2025.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Mercado Pago com metade do saldo pré-pago", "R$ 119 bi", "3,6% do crédito pessoal sem consignação"]
+    },
+    {
+      "premissa": "P38",
+      "prob_verdadeira": 0.7,
+      "alternativa": "Prêmio e crédito podem cair juntos por causa comum (renda do agro, preço da saca, verba de subvenção), sem dependência de canal. Em série curta com tendência, 70% de explicação aparece à toa.",
+      "teste_decisivo": "RI da BB Seguridade e SUSEP SES: regressão em diferenças, com controle de preço (CEPEA) e de subvenção (SISSER). Parcela dos prêmios vendida no canal bancário, se divulgada.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["prêmios −19% no 3T26", "agrícola −32,3%", "prestamista −26,9%"]
+    },
+    {
+      "premissa": "P39",
+      "prob_verdadeira": 0.55,
+      "alternativa": "Com juro alto, o varejo todo sai de fundo para título isento e renda fixa direta. Captação negativa pode ser da indústria, não da BB Asset.",
+      "teste_decisivo": "CVM, dados de fundos: captação líquida da BB Asset por classe, menos a da indústria na mesma classe, 2019 a 2026.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P40",
+      "prob_verdadeira": 0.45,
+      "alternativa": "O crédito de investimento rural cai por causa da inadimplência. O consórcio 'cresce mais' por comparação, sem crescer de fato. Cotas vendidas têm cancelamento alto.",
+      "teste_decisivo": "BCB, consórcios por administradora e segmento (fonte nova): cotas ativas líquidas de exclusões e fatia da BB Consórcios, em nível e não só contra o crédito.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P41",
+      "prob_verdadeira": 0.5,
+      "alternativa": "Receita por cliente dividida por despesa por cliente é só receita sobre despesa: o número de clientes some da conta. O teste vira índice de eficiência e não diz nada sobre a rede. Cliente de digital inclui conta quase inativa.",
+      "teste_decisivo": "IF.data: despesa administrativa sobre ativo e sobre receita, BB contra pares. ESTBAN por agência para o custo e o saldo da rede. Eficiência do BB não está no dossiê.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P42",
+      "prob_verdadeira": 0.4,
+      "alternativa": "O sistema rural é metade BB: comparar com ele atenua tudo. Em +90 dias, o agro do BB (6,92%) fica abaixo do rural PF do sistema (9,59%), sinal oposto ao do registro. O mandato limita a seleção.",
+      "teste_decisivo": "Painel de P02 com o sistema sem o BB como comparação, na mesma faixa de atraso e na mesma data. Resíduo com intervalo de confiança.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["rural: BB 6,2% contra 5,6%", "consignado: BB 0,5% contra 1,4%"]
+    },
+    {
+      "premissa": "P43",
+      "prob_verdadeira": 0.35,
+      "alternativa": "Causalidade inversa: banco mais rentável investe e divulga mais. Divulgação de IA é marketing. Poucos bancos e muitos fatores juntos.",
+      "teste_decisivo": "Não há teste forte com dado público. O menos fraco: eficiência (IF.data) antes e depois, bancos que divulgam gasto (FEBRABAN, IPE) contra os demais, com tendência prévia.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P44",
+      "prob_verdadeira": 0.65,
+      "alternativa": "Base mais velha pode ser ativo: aposentado e servidor sustentam o consignado. Todo banco tradicional aparece pouco entre jovens em pesquisa. O dado relevante é o BB contra os outros incumbentes.",
+      "teste_decisivo": "Pesquisas com recorte etário (ANBIMA, Datafolha): BB contra Itaú, Bradesco e Caixa abaixo de 30 anos, em três edições. Limite: não há dado público por instituição.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P45",
+      "prob_verdadeira": 0.6,
+      "alternativa": "A carteira encolhe (−2% a 0%), o que libera capital. A restrição pode ser retorno, não capital. Parte da queda desde dez/25 (12,23% para 10,80%) pode ser sazonal ou dedução de ativo fiscal. O 'cenário base' é do analista.",
+      "teste_decisivo": "Pilar 3 (KM1, OV1, CC1): decompor a variação do capital principal em lucro, dividendos, RWA e deduções. Mínimo com adicionais nos normativos do BCB. Conferir no 4T26.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["payout de 25%", "mínimo regulatório com adicionais não está no dossiê"]
+    },
+    {
+      "premissa": "P46",
+      "prob_verdadeira": 0.3,
+      "alternativa": "O dossiê aponta o contrário: a cobertura caiu de 174,3% para 137,8%, logo a provisão cresceu menos que o atraso. O efeito da regra pode estar na margem (juro que deixa de ser apropriado), não na provisão.",
+      "teste_decisivo": "Balancetes Cosif e notas da DFP: provisão por estágio e juro não apropriado, BB contra pares, de 03/2025 a 09/2026. Margem financeira com e sem créditos em atraso.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Res. 4.966 (o dossiê cita só Cosif 2025)"]
+    },
+    {
+      "premissa": "P47",
+      "prob_verdadeira": 0.75,
+      "alternativa": "A razão de 2,2 vezes é conta, não teste. Exposição bruta ignora garantia, Proagro e equalização. Os perímetros diferem: carteira agro do release (R$ 403,6 bi) contra rural do IF.data (cerca de R$ 378 bi por conta).",
+      "teste_decisivo": "Usar o choque já ocorrido: variação do capital principal de set/25 a set/26 atribuível ao custo de crédito do agro (RI, Pilar 3). É mais firme que simular com P09.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["patrimônio de R$ 181,8 bi (conta do dossiê: 10,48% de R$ 1.741 bi, perto de R$ 182,5 bi)"]
+    },
+    {
+      "premissa": "P48",
+      "prob_verdadeira": 0.45,
+      "alternativa": "A Selic é igual para todas as UFs. Em painel, ela se confunde com qualquer tendência nacional (regra contábil, recuperações judiciais). A decomposição da variância dará peso ao juro por construção.",
+      "teste_decisivo": "Interação entre Selic e parcela de crédito a taxa livre por UF (SCR.data, SICOR), com efeito fixo de tempo. SGS 21146 contra a parcela controlada como contraste.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Selic em 13,75%"]
+    },
+    {
+      "premissa": "P49",
+      "prob_verdadeira": 0.25,
+      "alternativa": "A vantagem das cooperativas pode ser tributária e de modelo (sobras ao associado, custo local), que essas normas não tocam. Elas ganham também em giro, depósitos e LCA, fora do rural.",
+      "teste_decisivo": "Normativos do BCB e CMN com data de vigência. IF.data: custo de captação e margem das cooperativas antes e depois de cada norma, com bancos como controle.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P50",
+      "prob_verdadeira": 0.65,
+      "alternativa": "No rural PJ, o Itaú foi de 13,79% para 20,59%, e a Volkswagen ganhou em investimento PJ: fora do rural PF há disputa. Série que some em 12/2024 pode ser troca de perímetro, não saída. Crédito externo e CPR ficam fora.",
+      "teste_decisivo": "IF.data: rural PF e PJ e investimento PJ por instituição, com conferência no Unicad de quem saiu do perímetro em 03/2025.",
+      "limiar": "justo",
+      "numeros_sem_fonte": ["Rabobank 1,9% → 0,3%", "John Deere perto de 1,8% até 12/2024"]
+    },
+    {
+      "premissa": "P51",
+      "prob_verdadeira": 0.4,
+      "alternativa": "Crescer 50% ao ano sobre base mínima não é ameaça. Em ciclo de inadimplência, o funding desses veículos seca, e o modelo pode encolher sozinho.",
+      "teste_decisivo": "CVM, dados de fundos: volume e atraso de Fiagro e FIDC por originador, 2023 a 2027, em reais e como parcela do fluxo novo do rural (SICOR).",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["Agrolend com R$ 968 mi", "meta de R$ 2 bi"]
+    },
+    {
+      "premissa": "P52",
+      "prob_verdadeira": 0.75,
+      "alternativa": "Tirar o Mercado Pago da definição deixa a premissa quase impossível de refutar. A ameaça pode vir pela distribuição (crédito embutido de parceiro), que não aparece no balanço da plataforma.",
+      "teste_decisivo": "IF.data e Unicad: carteira por conglomerado ligado a plataforma, com o Mercado Pago dentro. Pix por iniciador de pagamento.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P53",
+      "prob_verdadeira": 0.7,
+      "alternativa": "O que pode mudar o jogo no agro é o registro privado e a CPR digital, que não dependem da infraestrutura pública. Confirma e refuta não se excluem (pode não haver piloto e haver cronograma).",
+      "teste_decisivo": "Comunicados do BCB e normativos da CVM. B3: volume de CPR registrada e tokenizada por ano.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["plataforma desligada em nov/2025"]
+    },
+    {
+      "premissa": "P54",
+      "prob_verdadeira": 0.65,
+      "alternativa": "Efeito indireto: sem antecipar o FGTS, o cliente perde uma fonte para pagar outras dívidas, e o atraso no crédito pessoal do BB pode subir mesmo sem carteira nessa linha.",
+      "teste_decisivo": "RI do BB: saldo da linha sobre o crédito PF. SGS: atraso do crédito pessoal antes e depois da restrição, com consignado como controle.",
+      "limiar": "justo",
+      "numeros_sem_fonte": []
+    },
+    {
+      "premissa": "P55",
+      "prob_verdadeira": 0.5,
+      "alternativa": "O desconto pode ser só retorno baixo: RSPL de 2,8% contra 23,6% do Itaú. Qualquer desconto passa de 30% nessa distância. Os dois eventos citados são de resultado e projeção, não de política.",
+      "teste_decisivo": "COTAHIST e ITR: regressão de preço sobre valor patrimonial contra ROE entre pares, 2019 a 2026. O resíduo do BB é o desconto de governança. Eventos classificados antes de ver o preço.",
+      "limiar": "frouxo",
+      "numeros_sem_fonte": ["−6,9% em 12/08/2026", "−9,3% é ilustrativo (F-014)"]
+    }
+  ]
+}

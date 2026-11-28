@@ -1,0 +1,159 @@
+{
+ "criticas": [
+  {
+   "premissa": "C4-N10",
+   "contrario": "A inadimplência do sistema rural PF pode continuar subindo; o pico não é garantido e a carteira do BB pode piorar mesmo com sistema estável. O custo do crédito reflete também PJ e PF urbano.",
+   "alternativa": "A alta da inadimplência rural PF pode ser concentrada em crédito com taxas de mercado (SGS 21146), que tem peso menor no BB, enquanto o BB pode já ter provisionado o suficiente.",
+   "riscos_de_dado": [
+    "SGS 21148 é sistema, não BB; defasagem entre inadimplência e provisão; quebra de série no IF.data; F-012 só dois pontos."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "F-003",
+     "F-012",
+     "F-008"
+    ],
+    "descricao": "Acompanhar SGS 21148 e custo do crédito do BB por trimestre; refuta se SGS 21148 subir a 12% ou custo anual ultrapassar R$ 83 bi antes de queda."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O custo do crédito do BB deve cair após queda sustentada da inadimplência agro do BB e do sistema rural PF, mas o pico não está estabelecido."
+  },
+  {
+   "premissa": "C4-N12",
+   "contrario": "O aumento de participação pode ser efeito denominador: o total do sistema em PJ investimento pode ter encolhido, e o BB não ganhou volume real. Ou a saída do BNDES foi temporária.",
+   "alternativa": "A mudança de perímetro contábil Cosif 2025 ou reclassificação de linhas pode explicar o salto sem ganho comercial.",
+   "riscos_de_dado": [
+    "F-029 usa IF.data com mudança de conglomerado 1005 para 1009 em 03/2025; definição de PJ investimento pode variar; semestral pode esconder tendência."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "F-029"
+    ],
+    "descricao": "Comparar crescimento absoluto do saldo PJ investimento do BB com o sistema; refuta se o crescimento do BB for menor que o do sistema no mesmo período."
+   },
+   "limiar_manipulavel": false,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A participação do BB em PJ investimento subiu de 23,53% para 29,01%, mas é preciso confirmar ganho absoluto antes de afirmar recuperação."
+  },
+  {
+   "premissa": "C4-N14",
+   "contrario": "O BB tem funções de banco público e presença em áreas não rentáveis; a rede de agências também sustenta depósitos, serviços e programas sociais, não apenas carteira de crédito. A eficiência baixa pode vir de receita fraca.",
+   "alternativa": "A receita total do BB está deprimida por crédito e margem, inflando o índice de eficiência; o custo fixo por agência pode ser igual ou menor que pares.",
+   "riscos_de_dado": [
+    "Índice de eficiência não é padronizado; F-009 e F-010 usam métricas gerenciais diferentes; agências por saldo não consideram depósitos; F-004 só tem despesa administrativa."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "BB 3T26",
+     "Itaú 3T26"
+    ],
+    "descricao": "Calcular custo administrativo por agência e receita total por agência no IF.data; refuta se o custo por agência do BB for próximo ao de pares."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O BB tem custo administrativo elevado e participação em agências acima da carteira, mas a relação causal com eficiência exige medir receita e custo por agência."
+  },
+  {
+   "premissa": "C5-N05",
+   "contrario": "Agibank, BTG e PicPay ganharam participação rapidamente; a vantagem de folha pode ser corroída por mudanças regulatórias ou concorrência digital. A margem pode estar caindo mesmo com share estável.",
+   "alternativa": "A participação estável pode ser inércia da carteira antiga, não novas concessões; a originação nova pode estar perdendo espaço.",
+   "riscos_de_dado": [
+    "F-022 inclui todo consignado; IF.data muda perímetro em 03/2025; não há margem por contrato no dossiê; participação de estoque esconde fluxo."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "SCR/BCB",
+     "Dataprev"
+    ],
+    "descricao": "Comparar participação do BB na originação nova de consignado com o estoque; refuta se a participação em fluxo for menor que a do estoque."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O consignado tem a menor queda de participação do BB, mas a defesa de margem e folha precisa ser medida no fluxo novo, não só no estoque."
+  },
+  {
+   "premissa": "C5-N08",
+   "contrario": "O BB pode substituir LCA por depósitos a prazo ou poupança com custo semelhante; a perda de participação pode não elevar custo se o custo médio de captação cair.",
+   "alternativa": "A queda de LCA pode refletir menor demanda por crédito agro ou mudança regulatória, não perda de competitividade.",
+   "riscos_de_dado": [
+    "F-042 share IF.data muda perímetro; LCA pode ser classificada de forma diferente; custo de captação não está no dossiê; correlação não é causalidade."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "BB 3T26"
+    ],
+    "descricao": "Comparar custo de captação do BB e margem financeira bruta trimestral; refuta se margem estável apesar da queda de LCA."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A perda de participação em LCA pode encarecer o funding agro, mas é necessário medir o custo efetivo de captação antes de afirmar compressão de margem."
+  },
+  {
+   "premissa": "C5-N10",
+   "contrario": "Os municípios só-BB podem ser pequenos, de baixa renda e depósitos insuficientes para cobrir custos; a presença pode ser justificada por política pública, não lucro.",
+   "alternativa": "A captação nesses municípios pode ser alta, mas o custo de manutenção da agência e risco de crédito local podem tornar o conjunto deficitário.",
+   "riscos_de_dado": [
+    "ESTBAN só cobre bancos com agência, não cooperativas e digitais; presença por saldo, não lucro; dados municipais de custo não disponíveis; F-019 é estática."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "ESTBAN",
+     "IF.data"
+    ],
+    "descricao": "Comparar depósitos e crédito per capita em municípios só-BB com municípios pareados com concorrência; refuta se depósitos per capita forem menores e em queda."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "Os 577 municípios exclusivos podem gerar depósitos e crédito, mas a rentabilidade só é confirmada com apuração de receitas e custos por agência."
+  },
+  {
+   "premissa": "C5-N12",
+   "contrario": "O BB pode ter linhas de serviços crescendo acima da inflação e da média do sistema; a receita total de serviços cresceu 4,6% a/a, que pode superar inflação de 2026.",
+   "alternativa": "A perda de participação em tarifas pode ser devida a reclassificação contábil ou à base grande do BB, não a fraqueza comercial.",
+   "riscos_de_dado": [
+    "F-004 é um trimestre; inflação não está no dossiê; F-047 share IF.data muda perímetro; ganho do Santander pode incluir aquisições."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "IF.data",
+     "BB 3T26",
+     "Santander 3T26"
+    ],
+    "descricao": "Calcular crescimento real por linha de tarifa do BB vs sistema; refuta se BB crescer acima do sistema em linhas relevantes em 2026."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "A receita de serviços do BB cresceu 4,6% a/a e perdeu participação; para concluir que não compensa margem, é preciso comparar crescimento real por linha."
+  },
+  {
+   "premissa": "C5-N14",
+   "contrario": "O custo de crédito pode não ter atingido pico: 9M26 está em 58,6 bi e a faixa revisada exige 21,4 a 24,4 bi no 4T26, acima do 3T26; a inadimplência continua subindo.",
+   "alternativa": "As projeções revisadas podem ser conservadoras por prudência, mas também podem ser revisadas para cima se a inadimplência agro piorar.",
+   "riscos_de_dado": [
+    "Projeções são estimativas gerenciais; F-005 e F-006 mostram inadimplência crescente; cobertura caiu; custo trimestral é volátil."
+   ],
+   "teste_que_refuta": {
+    "fontes": [
+     "BB 4T26",
+     "SGS 21148"
+    ],
+    "descricao": "Observar custo do 4T26 e inadimplência +90d; refuta se custo anual exceder R$ 83 bi ou inadimplência subir mais 0,5 p.p."
+   },
+   "limiar_manipulavel": true,
+   "decisao_muda": true,
+   "veredito": "reformula",
+   "texto_novo": "O custo do crédito de 2026 está alto e a projeção revisada é de R$ 80–83 bi; não há evidência de pico até a inadimplência cair de forma consistente."
+  }
+ ]
+}

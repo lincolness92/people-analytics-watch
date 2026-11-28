@@ -1,0 +1,203 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "53,7% (12/2023)",
+    "8,6 p.p. de queda"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Queda até 2022 apoiada em F-021, mas 2023 e delta intermediário não constam; teto. Teste com quebra estrutural e decomposição da Caixa é forte."
+  },
+  {
+   "premissa": "P02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [
+    "Vencidos acima de 15 dias BB 6,2%, Sicredi 1,2%, Sicoob 1,5%, cooperativas singulares 2,2%, sistema 5,6%, Caixa 14,4%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Dados de vencidos citados não têm correspondência exata no dossiê; teto. Controles de painel são adequados."
+  },
+  {
+   "premissa": "P03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "SGS 21146 e 21148 conferem. Teste com células e limiares nítidos; decisão distinta."
+  },
+  {
+   "premissa": "P04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-020",
+    "F-021",
+    "F-022",
+    "F-024",
+    "F-025",
+    "F-027",
+    "F-028",
+    "F-029",
+    "F-030",
+    "F-036",
+    "F-037",
+    "F-042",
+    "F-043"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Referências de perda de fatia estão no dossiê. Método de reconstrução com limiares claros."
+  },
+  {
+   "premissa": "P05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "CPR 43% do crédito concedido safra 2025/26",
+    "estoque CPR R$ 593,8 bi",
+    "CRA/Fiagro 33% do crédito rural em mercado fim 2025"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números de mercado de capitais do agro ausentes; teto. Testável, mas depende de CVM para parte (b)."
+  },
+  {
+   "premissa": "P06",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-042"
+   ],
+   "sem_apoio": [
+    "PL propõe 7,5% de IR"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-042 confere, mas alíquota de IR não está no dossiê; teto. Teste de preço depende de fonte externa."
+  },
+  {
+   "premissa": "P07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [
+    "inadimplência acima de 90 dias 25,4%",
+    "contratações queda 23% em 2026"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Participação da Caixa em F-021, demais números ausentes; teto. Análise de grupos é adequada."
+  },
+  {
+   "premissa": "P08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Prêmios Brasilseg caíram 32,3%",
+    "penhor rural 24,6%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Dados de prêmios não constam; teto. Painel com controles, mas fontes climáticas não listadas."
+  },
+  {
+   "premissa": "P09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "ONI +2,46"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Indicador ENSO não consta; teto. Backtest com AUC limiares, mas depende de dados externos."
+  },
+  {
+   "premissa": "P10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "1.990 pedidos em 2025",
+    "474 no 1T26 (+21,9%)",
+    "448 no 2T26 (−20,7%)"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números de recuperação judicial ausentes; teto. Correlação defasada com placebo bem definida."
+  }
+ ]
+}

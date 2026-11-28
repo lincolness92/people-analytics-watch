@@ -1,0 +1,233 @@
+metric,janela,inst_id,nome,gap_taxa_vs_mediana_pp_aa,meses,share_ini_pct,share_fim_pct,delta_share_pp
+pf_nao_consignado,12/2019-12/2023,daycoval,Daycoval,237.9,48,0.1,0.06,-0.04
+pf_nao_consignado,12/2019-12/2023,basa,Banco da Amazônia,-45.5,47,0.34,0.35,0.01
+pf_nao_consignado,12/2019-12/2023,mercantil,Mercantil do Brasil,127.7,47,1.11,1.83,0.72
+pf_nao_consignado,12/2019-12/2023,bv,Banco BV (Votorantim),-18.2,41,0.39,2.58,2.19
+pf_nao_consignado,12/2019-12/2023,btg,BTG Pactual,-5.9,45,0.95,1.43,0.48
+pf_nao_consignado,12/2019-12/2023,banrisul,Banrisul,-15.7,48,1.7,0.77,-0.93
+pf_nao_consignado,12/2019-12/2023,bb,Banco do Brasil,-17.8,48,22.53,16.68,-5.84
+pf_nao_consignado,12/2019-12/2023,inter,Inter,-41.9,25,0.0,0.86,0.86
+pf_nao_consignado,12/2019-12/2023,bradesco,Bradesco,7.5,48,18.53,11.06,-7.47
+pf_nao_consignado,12/2019-12/2023,itau,Itaú Unibanco,-15.7,48,10.97,8.67,-2.3
+pf_nao_consignado,12/2019-12/2023,santander,Santander Brasil,-10.1,48,8.19,5.41,-2.78
+pf_nao_consignado,12/2019-12/2023,banestes,Banestes,-14.3,47,0.16,0.11,-0.05
+pf_nao_consignado,12/2019-12/2023,sicoob,Sistema Sicoob,-61.5,8,6.39,6.78,0.39
+pf_nao_consignado,12/2019-12/2023,mercado-pago,Mercado Pago,87.6,27,0,0.29,0.29
+pf_nao_consignado,12/2019-12/2023,abc-brasil,ABC Brasil,-37.9,12,0.03,0.0,-0.03
+pf_nao_consignado,12/2019-12/2023,pagbank,PagBank (PagSeguro),528.0,17,0,0.26,0.26
+pf_nao_consignado,12/2019-12/2023,bmg,BMG,381.9,47,0.58,1.2,0.62
+pf_nao_consignado,12/2019-12/2023,c6,C6 Bank,-37.4,48,0.0,2.08,2.08
+pf_nao_consignado,12/2019-12/2023,agibank,Agibank,186.7,48,0.8,1.21,0.41
+pf_nao_consignado,12/2019-12/2023,nubank,Nubank,1.4,48,0.19,6.59,6.4
+pf_nao_consignado,12/2019-12/2023,safra,Safra,-51.6,48,0.68,2.3,1.62
+pf_nao_consignado,12/2019-12/2023,xp,XP,-4.5,35,0.0,4.44,4.44
+pf_nao_consignado,12/2019-12/2023,bnb,Banco do Nordeste,-20.8,48,0.02,0.01,-0.01
+pf_nao_consignado,12/2019-12/2023,caixa,Caixa Econômica Federal,-42.4,48,3.28,3.75,0.46
+pf_nao_consignado,12/2023-06/2026,daycoval,Daycoval,253.0,30,0.06,0.06,0.0
+pf_nao_consignado,12/2023-06/2026,basa,Banco da Amazônia,-46.3,30,0.35,0.34,-0.01
+pf_nao_consignado,12/2023-06/2026,original,Original,-54.0,29,0,0.01,0.01
+pf_nao_consignado,12/2023-06/2026,mercantil,Mercantil do Brasil,116.7,30,1.83,1.33,-0.5
+pf_nao_consignado,12/2023-06/2026,picpay,PicPay,57.0,29,0.53,1.72,1.19
+pf_nao_consignado,12/2023-06/2026,bv,Banco BV (Votorantim),-43.5,30,2.58,2.22,-0.36
+pf_nao_consignado,12/2023-06/2026,btg,BTG Pactual,-14.5,30,1.43,1.53,0.09
+pf_nao_consignado,12/2023-06/2026,banrisul,Banrisul,-24.3,30,0.77,0.9,0.13
+pf_nao_consignado,12/2023-06/2026,bb,Banco do Brasil,-15.2,30,16.68,14.01,-2.67
+pf_nao_consignado,12/2023-06/2026,inter,Inter,-57.5,19,0.86,1.15,0.3
+pf_nao_consignado,12/2023-06/2026,bradesco,Bradesco,-6.5,30,11.06,12.15,1.1
+pf_nao_consignado,12/2023-06/2026,itau,Itaú Unibanco,-30.7,30,8.67,7.68,-0.99
+pf_nao_consignado,12/2023-06/2026,santander,Santander Brasil,-33.5,30,5.41,3.57,-1.84
+pf_nao_consignado,12/2023-06/2026,banestes,Banestes,-12.9,30,0.11,0.09,-0.02
+pf_nao_consignado,12/2023-06/2026,sicoob,Sistema Sicoob,-70.3,16,6.78,6.34,-0.43
+pf_nao_consignado,12/2023-06/2026,mercado-pago,Mercado Pago,83.2,29,0.29,3.64,3.35
+pf_nao_consignado,12/2023-06/2026,pagbank,PagBank (PagSeguro),-68.6,7,0.26,0.47,0.21
+pf_nao_consignado,12/2023-06/2026,bmg,BMG,281.1,29,1.2,0.53,-0.67
+pf_nao_consignado,12/2023-06/2026,c6,C6 Bank,-50.4,29,2.08,0.47,-1.61
+pf_nao_consignado,12/2023-06/2026,agibank,Agibank,68.5,30,1.21,1.36,0.14
+pf_nao_consignado,12/2023-06/2026,nubank,Nubank,26.3,30,6.59,15.07,8.48
+pf_nao_consignado,12/2023-06/2026,safra,Safra,-55.9,29,2.3,1.01,-1.3
+pf_nao_consignado,12/2023-06/2026,xp,XP,-23.2,29,4.44,2.83,-1.61
+pf_nao_consignado,12/2023-06/2026,bnb,Banco do Nordeste,-0.8,28,0.01,0.01,-0.0
+pf_nao_consignado,12/2023-06/2026,caixa,Caixa Econômica Federal,-42.3,30,3.75,2.63,-1.11
+pf_consignado,12/2019-12/2023,daycoval,Daycoval,-1.1,144,1.54,2.01,0.46
+pf_consignado,12/2019-12/2023,basa,Banco da Amazônia,-2.2,77,0.0,0.0,-0.0
+pf_consignado,12/2019-12/2023,mercantil,Mercantil do Brasil,1.7,78,0.4,0.93,0.53
+pf_consignado,12/2019-12/2023,bv,Banco BV (Votorantim),15.5,41,0.34,0.08,-0.26
+pf_consignado,12/2019-12/2023,btg,BTG Pactual,3.5,97,0.03,1.66,1.63
+pf_consignado,12/2019-12/2023,banrisul,Banrisul,1.2,144,4.11,3.18,-0.94
+pf_consignado,12/2019-12/2023,bb,Banco do Brasil,-2.7,144,21.17,20.16,-1.01
+pf_consignado,12/2019-12/2023,inter,Inter,-4.6,123,0.24,0.71,0.47
+pf_consignado,12/2019-12/2023,bradesco,Bradesco,0.1,144,16.41,14.65,-1.76
+pf_consignado,12/2019-12/2023,volkswagen,Volkswagen,-3.3,45,0.01,0.01,-0.01
+pf_consignado,12/2019-12/2023,itau,Itaú Unibanco,1.2,144,12.67,11.71,-0.96
+pf_consignado,12/2019-12/2023,santander,Santander Brasil,-0.4,141,10.76,10.56,-0.2
+pf_consignado,12/2019-12/2023,banestes,Banestes,3.0,141,0.35,0.46,0.12
+pf_consignado,12/2019-12/2023,sicoob,Sistema Sicoob,-6.8,141,1.19,1.45,0.26
+pf_consignado,12/2019-12/2023,abc-brasil,ABC Brasil,-4.6,22,0,0.01,0.01
+pf_consignado,12/2019-12/2023,pagbank,PagBank (PagSeguro),-5.8,67,0,0.1,0.1
+pf_consignado,12/2019-12/2023,bmg,BMG,-1.2,127,0.11,0.51,0.4
+pf_consignado,12/2019-12/2023,c6,C6 Bank,2.4,88,0,1.93,1.93
+pf_consignado,12/2019-12/2023,agibank,Agibank,-2.0,105,0.07,1.4,1.33
+pf_consignado,12/2019-12/2023,sicredi,Sistema Sicredi,-4.2,96,1.12,1.44,0.32
+pf_consignado,12/2019-12/2023,nubank,Nubank,-4.6,14,0,0.09,0.09
+pf_consignado,12/2019-12/2023,safra,Safra,-2.8,144,2.31,1.68,-0.63
+pf_consignado,12/2019-12/2023,bnb,Banco do Nordeste,-3.3,141,0.03,0.03,-0.0
+pf_consignado,12/2019-12/2023,caixa,Caixa Econômica Federal,-5.1,144,16.25,16.47,0.21
+pf_consignado,12/2023-06/2026,daycoval,Daycoval,-0.3,88,2.01,2.01,0.0
+pf_consignado,12/2023-06/2026,basa,Banco da Amazônia,0.6,25,0.0,0.0,-0.0
+pf_consignado,12/2023-06/2026,pine,Pine,33.4,6,0.41,1.46,1.05
+pf_consignado,12/2023-06/2026,mercantil,Mercantil do Brasil,8.1,43,0.93,2.11,1.18
+pf_consignado,12/2023-06/2026,picpay,PicPay,4.5,72,0.01,1.19,1.18
+pf_consignado,12/2023-06/2026,bv,Banco BV (Votorantim),9.6,22,0.08,0.03,-0.05
+pf_consignado,12/2023-06/2026,btg,BTG Pactual,4.0,89,1.66,2.91,1.24
+pf_consignado,12/2023-06/2026,banrisul,Banrisul,2.3,89,3.18,2.34,-0.84
+pf_consignado,12/2023-06/2026,bb,Banco do Brasil,-0.9,90,20.16,19.22,-0.94
+pf_consignado,12/2023-06/2026,inter,Inter,-0.8,60,0.71,0.99,0.27
+pf_consignado,12/2023-06/2026,bradesco,Bradesco,-0.5,90,14.65,13.56,-1.1
+pf_consignado,12/2023-06/2026,volkswagen,Volkswagen,-13.8,30,0.01,0.01,-0.0
+pf_consignado,12/2023-06/2026,itau,Itaú Unibanco,-0.1,90,11.71,10.16,-1.54
+pf_consignado,12/2023-06/2026,santander,Santander Brasil,1.0,90,10.56,7.01,-3.55
+pf_consignado,12/2023-06/2026,banestes,Banestes,-2.3,90,0.46,0.49,0.02
+pf_consignado,12/2023-06/2026,sicoob,Sistema Sicoob,-6.6,69,1.45,1.38,-0.07
+pf_consignado,12/2023-06/2026,pagbank,PagBank (PagSeguro),-4.8,50,0.1,0.2,0.1
+pf_consignado,12/2023-06/2026,bmg,BMG,0.5,87,0.51,0.66,0.15
+pf_consignado,12/2023-06/2026,c6,C6 Bank,6.1,71,1.93,5.25,3.32
+pf_consignado,12/2023-06/2026,agibank,Agibank,3.1,85,1.4,3.5,2.11
+pf_consignado,12/2023-06/2026,sicredi,Sistema Sicredi,-2.6,60,1.44,1.17,-0.28
+pf_consignado,12/2023-06/2026,nubank,Nubank,-3.6,75,0.09,0.73,0.65
+pf_consignado,12/2023-06/2026,safra,Safra,-3.2,86,1.68,1.32,-0.36
+pf_consignado,12/2023-06/2026,xp,XP,-13.8,6,0,0.0,0.0
+pf_consignado,12/2023-06/2026,bnb,Banco do Nordeste,-2.2,72,0.03,0.02,-0.01
+pf_consignado,12/2023-06/2026,caixa,Caixa Econômica Federal,-3.9,90,16.47,14.35,-2.12
+pf_cartao,12/2019-12/2023,bnp-paribas,BNP Paribas,203.8,10,1.2,0.07,-1.14
+pf_cartao,12/2019-12/2023,daycoval,Daycoval,-186.6,96,0.19,0.31,0.13
+pf_cartao,12/2019-12/2023,mercantil,Mercantil do Brasil,-98.2,94,0.12,0.15,0.03
+pf_cartao,12/2019-12/2023,stellantis,Stellantis,-195.9,10,0,0.0,0.0
+pf_cartao,12/2019-12/2023,bv,Banco BV (Votorantim),126.3,80,0.99,0.92,-0.08
+pf_cartao,12/2019-12/2023,btg,BTG Pactual,-14.3,96,0,1.3,1.3
+pf_cartao,12/2019-12/2023,banrisul,Banrisul,-22.3,96,0.56,0.41,-0.14
+pf_cartao,12/2019-12/2023,bb,Banco do Brasil,-26.9,95,11.59,10.45,-1.14
+pf_cartao,12/2019-12/2023,inter,Inter,-82.5,82,0.31,1.63,1.32
+pf_cartao,12/2019-12/2023,bradesco,Bradesco,23.3,96,14.44,12.85,-1.6
+pf_cartao,12/2019-12/2023,itau,Itaú Unibanco,30.6,96,32.66,24.91,-7.76
+pf_cartao,12/2019-12/2023,santander,Santander Brasil,-9.9,94,12.92,9.35,-3.57
+pf_cartao,12/2019-12/2023,banestes,Banestes,-37.6,94,0.14,0.12,-0.02
+pf_cartao,12/2019-12/2023,sicoob,Sistema Sicoob,-130.8,94,1.3,1.71,0.41
+pf_cartao,12/2019-12/2023,mercado-pago,Mercado Pago,1190.0,67,0,0.94,0.94
+pf_cartao,12/2019-12/2023,bmg,BMG,137.7,94,2.62,1.63,-0.98
+pf_cartao,12/2019-12/2023,c6,C6 Bank,-17.1,96,0.02,1.8,1.77
+pf_cartao,12/2019-12/2023,agibank,Agibank,111.8,96,0.11,0.24,0.13
+pf_cartao,12/2019-12/2023,nubank,Nubank,-21.1,86,3.34,11.96,8.63
+pf_cartao,12/2019-12/2023,safra,Safra,-12.9,96,0.11,0.28,0.17
+pf_cartao,12/2019-12/2023,xp,XP,-182.9,80,0,1.45,1.45
+pf_cartao,12/2019-12/2023,bnb,Banco do Nordeste,-74.2,96,0.02,0.01,-0.01
+pf_cartao,12/2019-12/2023,caixa,Caixa Econômica Federal,-82.2,96,3.95,2.73,-1.23
+pf_cartao,12/2023-06/2026,daycoval,Daycoval,-263.6,60,0.31,0.37,0.05
+pf_cartao,12/2023-06/2026,bnp-paribas,BNP Paribas,154.7,38,0.07,0.0,-0.06
+pf_cartao,12/2023-06/2026,mercantil,Mercantil do Brasil,-39.0,58,0.15,0.21,0.07
+pf_cartao,12/2023-06/2026,picpay,PicPay,138.1,52,0.43,1.2,0.77
+pf_cartao,12/2023-06/2026,stellantis,Stellantis,-180.2,54,0.0,0.0,-0.0
+pf_cartao,12/2023-06/2026,bv,Banco BV (Votorantim),104.0,60,0.92,0.7,-0.22
+pf_cartao,12/2023-06/2026,btg,BTG Pactual,-83.8,60,1.3,1.11,-0.19
+pf_cartao,12/2023-06/2026,banrisul,Banrisul,-23.6,60,0.41,0.37,-0.05
+pf_cartao,12/2023-06/2026,bb,Banco do Brasil,-72.7,60,10.45,9.35,-1.11
+pf_cartao,12/2023-06/2026,inter,Inter,18.5,40,1.63,2.02,0.39
+pf_cartao,12/2023-06/2026,bradesco,Bradesco,35.1,60,12.85,10.71,-2.14
+pf_cartao,12/2023-06/2026,itau,Itaú Unibanco,34.0,60,24.91,20.23,-4.67
+pf_cartao,12/2023-06/2026,santander,Santander Brasil,20.2,60,9.35,8.73,-0.62
+pf_cartao,12/2023-06/2026,banestes,Banestes,-58.9,60,0.12,0.1,-0.02
+pf_cartao,12/2023-06/2026,sicoob,Sistema Sicoob,-172.4,46,1.71,1.66,-0.05
+pf_cartao,12/2023-06/2026,mercado-pago,Mercado Pago,129.8,51,0.94,4.19,3.25
+pf_cartao,12/2023-06/2026,bmg,BMG,-80.7,58,1.63,1.74,0.11
+pf_cartao,12/2023-06/2026,c6,C6 Bank,-5.1,58,1.8,1.67,-0.12
+pf_cartao,12/2023-06/2026,agibank,Agibank,-186.3,60,0.24,0.34,0.1
+pf_cartao,12/2023-06/2026,nubank,Nubank,-86.1,60,11.96,15.49,3.53
+pf_cartao,12/2023-06/2026,safra,Safra,-61.7,50,0.28,0.14,-0.13
+pf_cartao,12/2023-06/2026,xp,XP,-130.3,60,1.45,1.22,-0.23
+pf_cartao,12/2023-06/2026,bnb,Banco do Nordeste,-109.1,56,0.01,0.01,-0.0
+pf_cartao,12/2023-06/2026,caixa,Caixa Econômica Federal,-105.0,60,2.73,3.09,0.37
+pf_veiculos,12/2019-12/2023,daycoval,Daycoval,17.2,48,0.52,0.8,0.28
+pf_veiculos,12/2019-12/2023,basa,Banco da Amazônia,-7.4,22,0.0,0.0,0.0
+pf_veiculos,12/2019-12/2023,stellantis,Stellantis,-3.1,46,0,0.71,0.71
+pf_veiculos,12/2019-12/2023,bv,Banco BV (Votorantim),3.2,41,18.65,15.47,-3.18
+pf_veiculos,12/2019-12/2023,btg,BTG Pactual,13.8,48,0,7.46,7.46
+pf_veiculos,12/2019-12/2023,banrisul,Banrisul,1.8,39,0.01,0.0,-0.0
+pf_veiculos,12/2019-12/2023,bb,Banco do Brasil,-2.0,48,1.78,1.51,-0.26
+pf_veiculos,12/2019-12/2023,bradesco,Bradesco,-0.1,48,14.17,11.41,-2.76
+pf_veiculos,12/2019-12/2023,volkswagen,Volkswagen,-7.3,48,3.55,4.6,1.06
+pf_veiculos,12/2019-12/2023,itau,Itaú Unibanco,0.6,48,9.27,11.48,2.21
+pf_veiculos,12/2019-12/2023,santander,Santander Brasil,-1.1,48,25.01,21.11,-3.9
+pf_veiculos,12/2019-12/2023,banestes,Banestes,-0.1,46,0.01,0.01,-0.0
+pf_veiculos,12/2019-12/2023,c6,C6 Bank,2.2,26,0,1.45,1.45
+pf_veiculos,12/2019-12/2023,safra,Safra,-2.0,48,6.78,7.29,0.51
+pf_veiculos,12/2019-12/2023,caixa,Caixa Econômica Federal,0.2,48,0.4,0.03,-0.37
+pf_veiculos,12/2023-06/2026,daycoval,Daycoval,19.3,30,0.8,1.05,0.25
+pf_veiculos,12/2023-06/2026,basa,Banco da Amazônia,-10.1,26,0.0,0.04,0.03
+pf_veiculos,12/2023-06/2026,stellantis,Stellantis,-6.0,30,0.71,3.78,3.07
+pf_veiculos,12/2023-06/2026,bv,Banco BV (Votorantim),5.7,30,15.47,13.18,-2.3
+pf_veiculos,12/2023-06/2026,btg,BTG Pactual,14.7,30,7.46,5.55,-1.91
+pf_veiculos,12/2023-06/2026,banrisul,Banrisul,1.8,16,0.0,0.0,-0.0
+pf_veiculos,12/2023-06/2026,bb,Banco do Brasil,2.0,30,1.51,2.46,0.94
+pf_veiculos,12/2023-06/2026,inter,Inter,-2.2,19,0.0,0.01,0.01
+pf_veiculos,12/2023-06/2026,bradesco,Bradesco,0.0,30,11.41,11.3,-0.11
+pf_veiculos,12/2023-06/2026,volkswagen,Volkswagen,-4.8,30,4.6,7.59,2.99
+pf_veiculos,12/2023-06/2026,itau,Itaú Unibanco,2.8,30,11.48,8.28,-3.2
+pf_veiculos,12/2023-06/2026,santander,Santander Brasil,-3.8,30,21.11,19.67,-1.45
+pf_veiculos,12/2023-06/2026,banestes,Banestes,-0.1,30,0.01,0.01,-0.0
+pf_veiculos,12/2023-06/2026,c6,C6 Bank,2.1,29,1.45,6.6,5.15
+pf_veiculos,12/2023-06/2026,safra,Safra,-1.8,30,7.29,6.44,-0.84
+pf_veiculos,12/2023-06/2026,caixa,Caixa Econômica Federal,1.2,30,0.03,0.02,-0.01
+pj_capital_giro,12/2019-12/2023,daycoval,Daycoval,-3.8,96,1.42,1.38,-0.03
+pj_capital_giro,12/2019-12/2023,basa,Banco da Amazônia,3.4,92,0.25,0.34,0.1
+pj_capital_giro,12/2019-12/2023,stellantis,Stellantis,-5.2,18,0,0.05,0.05
+pj_capital_giro,12/2019-12/2023,bb,Banco do Brasil,-0.7,96,16.14,17.0,0.87
+pj_capital_giro,12/2019-12/2023,volkswagen,Volkswagen,-16.0,22,0.08,0.03,-0.05
+pj_capital_giro,12/2019-12/2023,santander,Santander Brasil,9.3,94,7.69,5.62,-2.07
+pj_capital_giro,12/2019-12/2023,sicoob,Sistema Sicoob,-12.7,81,5.54,7.58,2.04
+pj_capital_giro,12/2019-12/2023,bmg,BMG,18.3,42,0.19,0.06,-0.12
+pj_capital_giro,12/2019-12/2023,nubank,Nubank,23.8,8,0,0.02,0.02
+pj_capital_giro,12/2019-12/2023,safra,Safra,-4.4,96,5.95,3.92,-2.03
+pj_capital_giro,12/2019-12/2023,xp,XP,-5.3,30,0,1.27,1.27
+pj_capital_giro,12/2019-12/2023,bnb,Banco do Nordeste,-5.6,89,0.21,0.53,0.32
+pj_capital_giro,12/2019-12/2023,pine,Pine,-2.9,35,0.6,0.29,-0.3
+pj_capital_giro,12/2019-12/2023,mercantil,Mercantil do Brasil,-4.0,76,0.19,0.1,-0.09
+pj_capital_giro,12/2019-12/2023,bv,Banco BV (Votorantim),0.5,45,0.6,0.37,-0.23
+pj_capital_giro,12/2019-12/2023,btg,BTG Pactual,-1.7,65,1.6,1.35,-0.25
+pj_capital_giro,12/2019-12/2023,banrisul,Banrisul,4.3,90,1.38,1.13,-0.25
+pj_capital_giro,12/2019-12/2023,inter,Inter,-2.7,30,0.24,0.38,0.14
+pj_capital_giro,12/2019-12/2023,bradesco,Bradesco,-0.5,96,15.8,13.55,-2.25
+pj_capital_giro,12/2019-12/2023,itau,Itaú Unibanco,-4.1,96,14.54,13.34,-1.2
+pj_capital_giro,12/2019-12/2023,banestes,Banestes,4.5,82,0.28,0.35,0.07
+pj_capital_giro,12/2019-12/2023,citibank,Citibank,-12.2,19,1.11,0.43,-0.68
+pj_capital_giro,12/2019-12/2023,mercado-pago,Mercado Pago,89.3,56,0,0.01,0.01
+pj_capital_giro,12/2019-12/2023,abc-brasil,ABC Brasil,-5.7,68,1.48,1.38,-0.1
+pj_capital_giro,12/2019-12/2023,c6,C6 Bank,10.5,85,0.02,0.49,0.47
+pj_capital_giro,12/2019-12/2023,rabobank,Rabobank,-13.1,12,0.55,0.09,-0.46
+pj_capital_giro,12/2019-12/2023,bocom,Bocom,-7.8,8,0.36,0.69,0.33
+pj_capital_giro,12/2019-12/2023,caixa,Caixa Econômica Federal,-0.7,94,10.24,12.83,2.58
+pj_capital_giro,12/2023-06/2026,daycoval,Daycoval,-6.4,60,1.38,0.59,-0.79
+pj_capital_giro,12/2023-06/2026,basa,Banco da Amazônia,4.7,60,0.34,0.43,0.09
+pj_capital_giro,12/2023-06/2026,original,Original,-4.1,27,0,0.14,0.14
+pj_capital_giro,12/2023-06/2026,mercantil,Mercantil do Brasil,-14.6,27,0.1,0.04,-0.06
+pj_capital_giro,12/2023-06/2026,picpay,PicPay,104.7,14,0.56,0.37,-0.19
+pj_capital_giro,12/2023-06/2026,stellantis,Stellantis,-21.3,6,0.05,0.06,0.01
+pj_capital_giro,12/2023-06/2026,bv,Banco BV (Votorantim),3.9,36,0.37,0.13,-0.24
+pj_capital_giro,12/2023-06/2026,btg,BTG Pactual,21.3,60,1.35,0.75,-0.6
+pj_capital_giro,12/2023-06/2026,banrisul,Banrisul,4.5,60,1.13,1.15,0.02
+pj_capital_giro,12/2023-06/2026,bb,Banco do Brasil,2.3,60,17.0,10.87,-6.13
+pj_capital_giro,12/2023-06/2026,inter,Inter,1.4,34,0.38,0.55,0.17
+pj_capital_giro,12/2023-06/2026,bradesco,Bradesco,-3.8,60,13.55,15.68,2.13
+pj_capital_giro,12/2023-06/2026,volkswagen,Volkswagen,-14.7,11,0.03,0.01,-0.02
+pj_capital_giro,12/2023-06/2026,itau,Itaú Unibanco,-7.4,60,13.34,15.24,1.9
+pj_capital_giro,12/2023-06/2026,santander,Santander Brasil,6.4,60,5.62,4.81,-0.81
+pj_capital_giro,12/2023-06/2026,banestes,Banestes,4.6,52,0.35,0.33,-0.02
+pj_capital_giro,12/2023-06/2026,sicoob,Sistema Sicoob,-16.6,33,7.58,8.27,0.69
+pj_capital_giro,12/2023-06/2026,mercado-pago,Mercado Pago,91.3,60,0.01,0.16,0.14
+pj_capital_giro,12/2023-06/2026,abc-brasil,ABC Brasil,-10.4,33,1.38,0.36,-1.01
+pj_capital_giro,12/2023-06/2026,pagbank,PagBank (PagSeguro),-21.2,22,0.0,5.67,5.67
+pj_capital_giro,12/2023-06/2026,bmg,BMG,7.8,13,0.06,0.05,-0.01
+pj_capital_giro,12/2023-06/2026,c6,C6 Bank,16.9,58,0.49,0.3,-0.19
+pj_capital_giro,12/2023-06/2026,nubank,Nubank,54.8,60,0.02,0.65,0.62
+pj_capital_giro,12/2023-06/2026,safra,Safra,2.0,53,3.92,2.25,-1.67
+pj_capital_giro,12/2023-06/2026,xp,XP,-12.8,49,1.27,0.61,-0.67
+pj_capital_giro,12/2023-06/2026,bnb,Banco do Nordeste,-8.8,56,0.53,0.84,0.31
+pj_capital_giro,12/2023-06/2026,caixa,Caixa Econômica Federal,-1.2,60,12.83,10.32,-2.51

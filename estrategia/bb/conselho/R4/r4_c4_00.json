@@ -1,0 +1,200 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P01",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-021",
+    "F-012"
+   ],
+   "sem_apoio": [
+    "53,7% em 12/2023 não consta no dossiê (F-021 traz 12/2019, 12/2022, 12/2025, 06/2026)",
+    "derivação '8,6 dos 8,9 p.p.' depende desse ponto ausente"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Limiares claros e controle da Caixa, mas o ponto de 12/2023 não está no dossiê; a conta '8,6 de 8,9' fica inverificável."
+  },
+  {
+   "premissa": "P02",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-005",
+    "F-006"
+   ],
+   "sem_apoio": [
+    "BB 6,2% vencidos >15d",
+    "Sicredi 1,2%",
+    "Sicoob 1,5%",
+    "Caixa 14,4% — nenhum desses valores por instituição está no dossiê"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Painel com efeitos fixos e controles de mix é bem desenhado, mas os números de referência (>15d por instituição) não constam no dossiê."
+  },
+  {
+   "premissa": "P03",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "SGS 21146 (17,21%) e 21148 (9,59%) confirmados em F-012. Limiares de 60%/40% e 20 p.p. são claros. Falta controle por risco inerente à taxa de mercado."
+  },
+  {
+   "premissa": "P04",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-020",
+    "F-042",
+    "F-043"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Referências a F-020, F-042, F-043 conferem. Duplo rateio (saldo e receita) mitiga confundimento de alocação, mas comparabilidade com pares permanece difícil."
+  },
+  {
+   "premissa": "P05",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "CPR 43% do crédito na safra 2025/26 [I-12]",
+    "estoque CPR R$ 593,8 bi out/2026",
+    "CRA+Fiagro 33% (19% em 2021) [I-13]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Estrutura (a)+(b) é lógica e os limiares são claros, mas todos os números de contexto vêm de fontes [I-12/I-13] ausentes do dossiê."
+  },
+  {
+   "premissa": "P06",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 2,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-042"
+   ],
+   "sem_apoio": [
+    "PL 5.853/2026 com 7,5% de IR [I-25] — citado como cenário fora da premissa, mas sem respaldo no dossiê"
+   ],
+   "teto_aplicado": false,
+   "comentario": "Queda de 49,38→32,55% e Sicredi+Sicoob 2,8→15,0% confirmados em F-042. Separação fatia/preço é boa. PL é contextual e explicitamente excluído."
+  },
+  {
+   "premissa": "P07",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-021"
+   ],
+   "sem_apoio": [
+    "inadimplência Caixa 25,4% [I-09]",
+    "contratações Caixa −23% em 2026 [I-09]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Caixa 1,18→6,81% confirmada em F-021. Desenho (excluir Caixa, separar grupos) é robusto. Mas os números de inadimplência e contratações da Caixa não estão no dossiê."
+  },
+  {
+   "premissa": "P08",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Brasilseg −32,3% no 3T26 [I-27]",
+    "penhor rural −24,6% [I-27]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Painel município×safra com efeitos fixos e teste de safra anterior é rigoroso. Contudo, nenhum número citado consta no dossiê; referência [I-27] é externa."
+  },
+  {
+   "premissa": "P09",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "ONI +2,46 [FE]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Backtest com AUC e ganho sobre baseline é bem especificado. Único número citado (ONI +2,46) não está no dossiê. Amostra curta de eventos ENSO é reconhecida."
+  },
+  {
+   "premissa": "P10",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-012"
+   ],
+   "sem_apoio": [
+    "1.990 pedidos RJ em 2025 [I-14]",
+    "474 no 1T26 (+21,9%) [I-14]",
+    "448 no 2T26 (−20,7%) [I-14]"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Tendência de inadimplência confirmada por F-012, mas os três números de RJ vêm de [I-14], fora do dossiê. Placebo e controle de clima/preço fortalecem o desenho."
+  }
+ ]
+}

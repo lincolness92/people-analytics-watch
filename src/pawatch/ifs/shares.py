@@ -134,7 +134,13 @@ def national(con, reg, log=log):
             member_of = mm(p, lv)
             total, by, others = split_shares(vals, member_of)
             regime = ifdata.cosif_regime(p, cif)
+            ncodes = {}
+            for code in vals:
+                if code in member_of:
+                    ncodes[member_of[code]] = ncodes.get(member_of[code], 0) + 1
             for inst, v in by.items():
+                if m["unit"] == "ratio" and ncodes.get(inst, 0) != 1:
+                    continue  # a ratio can't be summed across entities (sistemas cooperativos): no value is better than a wrong one
                 value_rows.append({"period": p, "inst_id": inst, "metric": m["id"], "series": series, "level": lv,
                                    "value": round(v, 2 if m["unit"] == "BRL" else 6), "unit": m["unit"],
                                    "cosif": regime})

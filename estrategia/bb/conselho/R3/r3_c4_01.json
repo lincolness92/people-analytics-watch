@@ -1,0 +1,44 @@
+{
+ "replicas": [
+  {
+   "premissa": "C4-N11",
+   "resposta": "aceita_em_parte",
+   "argumento": "A perda de 1,95 pp está no dossiê (F-022), mas o mecanismo causal (folha como barreira) não é observável: IF.data não separa servidor, INSS e privado, e a portabilidade contorna a folha. O limiar de 0,5 pp/ano foi calibrado pós-hoc. Reformulo para hipótese testável por subsegmento.",
+   "enunciado_novo": "A participação do BB em consignado caiu 1,95 pp (21,17%→19,22%) entre 2019 e 2026. A tese de defensabilidade via folha de servidor público só se sustenta se a perda for menor no consignado de servidor que no INSS e no privado, e se a portabilidade não explicar o ganho de Agibank e BTG.",
+   "confirma_se_novo": "Perda de share no consignado de servidor público < perda no INSS e no privado (SGS por tipo, série semestral 2022-2027); taxa de portabilidade do segmento servidor < 5% ao ano.",
+   "refuta_se_novo": "Perda no servidor igual ou maior que nos demais subsegmentos; ou portabilidade + correspondentes explicam >60% do ganho de Agibank/BTG (IF.data por instituição)."
+  },
+  {
+   "premissa": "C4-N12",
+   "resposta": "aceita_em_parte",
+   "argumento": "Os números de participação existem (F-029), mas a narrativa de 'saída do BNDES' não está no dossiê — F-030 mostra BNDES ganhando em PJ rural. A quebra de perímetro em 03/2025 e possível efeito denominador impedem afirmar reconquista. Reformulo para exigir confirmação em saldo absoluto.",
+   "enunciado_novo": "A participação do BB em PJ investimento subiu de 23,53% (2022) para 29,01% (2026), mas o ganho pode refletir efeito denominador, reclassificação Cosif 2025 ou repasses BNDES. A recuperação só se confirma se o saldo em R$ do BB, excluídos repasses, crescer mais que o do sistema.",
+   "confirma_se_novo": "Saldo BB em PJ investimento (R$, excluídos repasses BNDES) cresce acima do sistema entre 12/2024 e 06/2026, isolando o salto de 03/2025.",
+   "refuta_se_novo": "Saldo absoluto do BB cai ou cresce menos que o sistema; ou o salto coincide com a quebra de perímetro 1005→1009 sem ganho comercial subjacente."
+  },
+  {
+   "premissa": "C4-N13",
+   "resposta": "aceita_em_parte",
+   "argumento": "A estabilidade de share (−0,49 pp, F-039) está documentada, mas share não prova volume nem custo. Se a poupança do sistema encolhe, o BB perde funding com participação parada. O custo médio de captação não está no dossiê. A ligação com imobiliário (3,22%, F-025) é fraca. Reformulo para exigir saldo real e custo.",
+   "enunciado_novo": "A participação do BB em poupança está estável (~20,6%, perda de 0,49 pp em 6 anos). Porém, estabilidade de estoque relativo não prova funding barato nem volume crescente. A premissa só vale se o saldo em R$ corrigido pelo IPCA se mantiver e o custo de captação do BB ficar abaixo da média do sistema.",
+   "confirma_se_novo": "Saldo de poupança BB em R$ (IPCA-corrigido) estável ou crescente; custo médio de captação BB < média do sistema (IF.data, despesas de captação); poupança cobre fração estável da carteira rural direcionada.",
+   "refuta_se_novo": "Saldo real cai; ou captação líquida da poupança do sistema é negativa por 3+ semestres (SGS); ou custo de captação BB ≥ média do sistema."
+  },
+  {
+   "premissa": "C4-N14",
+   "resposta": "aceita",
+   "argumento": "A conta está errada: R$ 10,3 bi / R$ 35,3 bi ≈ 29%, abaixo dos 37,5% do Itaú (F-009). O critério de confirmação (>55%) é inconsistente com os próprios números citados. Além disso, agências sustentam depósitos, folha e governo, não só crédito. A premissa como redigida não se sustenta.",
+   "enunciado_novo": "O BB mantém 26,4% das agências do sistema (F-048) para 14,15% da carteira de crédito (F-037). Se há desproporção estrutural de custo, ela deve ser medida com a mesma fórmula de eficiência no IF.data para todos os bancos, incluindo receita e custo por agência, e considerando funções de banco público.",
+   "confirma_se_novo": "Índice de eficiência (despesa administrativa / receita de intermediação + serviços) do BB, calculado com a mesma fórmula no IF.data, supera o de Itaú, Bradesco e Santander por >8 pp; e custo por agência BB > média dos pares.",
+   "refuta_se_novo": "Eficiência do BB é igual ou melhor que a dos pares na mesma fórmula; ou custo por agência é próximo ao de Bradesco (rede grande); ou a diferença se explica por receita deprimida, não custo elevado."
+  },
+  {
+   "premissa": "C4-N15",
+   "resposta": "aceita_em_parte",
+   "argumento": "O RSPL de 2,8% (3T26) e 6,2% (9M26) estão no dossiê (F-002). Mas o custo de capital de 12-14% é memória, não dado do dossiê — seria necessário citar NTN-B + prêmio. A exigência de 'simultaneamente' é forte sem decomposição DuPont. F-015 sugere que normalização do agro pode bastar. Reformulo removendo magnitude não documentada.",
+   "enunciado_novo": "O RSPL do BB (2,8% no 3T26; 6,2% no 9M26, F-002) está deprimido. Se a queda é estrutural ou cíclica depende de decomposição DuPont: se o custo do crédito explica a maior parte e margem/eficiência estão estáveis, a normalização do agro pode bastar. O custo de capital deve ser medido por série pública (NTN-B + prêmio), não por estimativa.",
+   "confirma_se_novo": "Decomposição DuPont mostra que, recalculado com custo do crédito de 2024, o RSPL de 2026 ainda fica abaixo do custo de capital medido por NTN-B 10 anos + prêmio de mercado (série ANBIMA/Tesouro).",
+   "refuta_se_novo": "Recalculado com custo do crédito de 2024, o RSPL ultrapassa o custo de capital; ou a queda é explicada >80% por provisões extraordinárias do agro, com margem e eficiência preservadas."
+  }
+ ]
+}

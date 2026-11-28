@@ -1,0 +1,53 @@
+instrumento,janela,sistema_fim_bi,crescimento_sistema_pct,bb_saldo_fim_bi,crescimento_bb_pct,bb_base_pct,bb_fim_pct,bb_delta_pp,d_Caixa,d_Privados grandes,d_Cooperativas,d_Digitais e IPs,d_Outros públicos,"d_Médios, nicho e estrangeiros",d_Demais (fora do cadastro),top3_ganhadores
+depositos_vista,03/2016-12/2019,328.3,5.6,70.5,13.9,19.92,21.49,1.57,2.55,9.14,5.35,0.74,0.15,-17.31,-2.2,Bradesco +5.0; Santander Brasil +4.3; Caixa Econômica Federal +2.5
+depositos_vista,12/2019-12/2023,514.9,56.8,108.7,54.2,21.49,21.12,-0.37,-1.31,-7.67,6.66,0.28,0.62,1.52,0.27,Sistema Sicoob +2.8; Sistema Sicredi +2.6; Outras cooperativas (fora Sicredi/Sicoob) +1.3
+depositos_vista,12/2023-06/2026,518.0,0.6,86.2,-20.8,21.12,16.63,-4.49,1.28,-0.98,3.3,-0.28,-0.36,1.62,-0.09,Sistema Sicredi +2.6; Itaú Unibanco +2.5; Caixa Econômica Federal +1.3
+depositos_vista,03/2016-06/2026,518.0,66.6,86.2,39.1,19.92,16.63,-3.29,2.52,0.49,15.31,0.74,0.41,-14.16,-2.02,Sistema Sicredi +7.1; Sistema Sicoob +5.4; Santander Brasil +2.9
+depositos_poupanca,03/2016-12/2019,855.7,31.1,180.9,19.1,23.27,21.14,-2.12,1.02,0.66,1.35,0.04,-0.03,-0.09,-0.83,Caixa Econômica Federal +1.0; Sistema Sicredi +1.0; Itaú Unibanco +0.5
+depositos_poupanca,12/2019-12/2023,1000.6,16.9,206.9,14.4,21.14,20.68,-0.47,-1.72,0.4,1.71,0.12,-0.14,0.0,0.1,Sistema Sicredi +1.0; Itaú Unibanco +0.6; Sistema Sicoob +0.5
+depositos_poupanca,12/2023-06/2026,1046.4,4.6,216.1,4.4,20.68,20.65,-0.03,2.95,-3.42,0.91,-0.02,-0.03,-0.17,-0.19,Caixa Econômica Federal +3.0; Sistema Sicredi +0.6; Sistema Sicoob +0.2
+depositos_poupanca,03/2016-06/2026,1046.4,60.3,216.1,42.3,23.27,20.65,-2.61,2.25,-2.35,3.97,0.13,-0.2,-0.26,-0.93,Sistema Sicredi +2.6; Caixa Econômica Federal +2.2; Sistema Sicoob +1.0
+depositos_prazo,03/2016-12/2019,1551.1,67.5,224.7,13.9,21.31,14.49,-6.82,-8.07,18.92,-0.43,0.25,-0.77,2.5,-5.57,Itaú Unibanco +10.3; Bradesco +5.6; Santander Brasil +3.0
+depositos_prazo,12/2019-12/2023,3558.7,129.4,484.7,115.7,14.49,13.62,-0.87,-3.08,-4.64,0.65,5.64,-1.36,3.51,0.16,Nubank +2.9; BTG Pactual +2.2; C6 Bank +0.9
+depositos_prazo,12/2023-06/2026,4763.8,33.9,636.9,31.4,13.62,13.37,-0.25,-0.14,-2.98,2.57,3.02,0.3,-0.32,-2.2,Sistema Sicoob +1.2; Nubank +1.0; Sistema Sicredi +0.9
+depositos_prazo,03/2016-06/2026,4763.8,414.5,636.9,222.8,21.31,13.37,-7.94,-11.29,11.3,2.78,8.91,-1.83,5.68,-7.61,Itaú Unibanco +8.0; Bradesco +4.0; Nubank +3.9
+lca,03/2016-12/2019,153.7,-22.2,75.9,-44.0,68.58,49.38,-19.2,-0.45,18.87,3.75,0.08,-4.22,2.34,-1.17,Santander Brasil +8.3; Itaú Unibanco +6.7; Bradesco +3.8
+lca,12/2019-12/2023,460.1,199.4,183.8,142.2,49.38,39.94,-9.44,2.77,-6.86,10.1,-0.36,0.91,2.22,0.66,Sistema Sicredi +7.6; Caixa Econômica Federal +2.8; BTG Pactual +2.1
+lca,12/2023-06/2026,563.3,22.4,183.4,-0.2,39.94,32.55,-7.39,-1.3,2.03,4.09,1.84,1.13,-0.01,-0.39,Sistema Sicoob +3.4; Original +2.1; BNDES +1.7
+lca,03/2016-06/2026,563.3,185.3,183.4,35.4,68.58,32.55,-36.03,1.03,14.05,17.93,1.57,-2.18,4.54,-0.9,Sistema Sicredi +7.5; Sistema Sicoob +7.3; Bradesco +5.7
+lci,03/2016-12/2019,142.1,-32.3,17.0,-9.0,8.9,11.96,3.05,-19.72,13.21,0,1.87,0.3,2.63,-1.34,Bradesco +8.9; Santander Brasil +5.8; BTG Pactual +1.5
+lci,12/2019-12/2023,361.6,154.5,14.8,-13.1,11.96,4.08,-7.88,6.58,-2.51,5.44,0.6,-0.53,-2.06,0.36,Itaú Unibanco +8.2; Caixa Econômica Federal +6.6; Sistema Sicoob +2.9
+lci,12/2023-06/2026,537.3,48.6,15.4,4.6,4.08,2.87,-1.21,9.94,0.76,-4.39,-0.45,0.04,-1.98,-2.71,Caixa Econômica Federal +9.9; Itaú Unibanco +1.4; Bradesco +0.8
+lci,03/2016-06/2026,537.3,156.1,15.4,-17.4,8.9,2.87,-6.03,-3.2,11.47,1.05,2.01,-0.19,-1.41,-3.7,Itaú Unibanco +8.1; Bradesco +5.1; Inter +1.9
+depositos_total,03/2016-12/2019,2895.6,42.7,514.3,13.2,22.39,17.76,-4.63,-3.73,10.72,1.45,0.55,-0.58,-0.94,-2.83,Itaú Unibanco +4.5; Bradesco +3.5; Santander Brasil +2.7
+depositos_total,12/2019-12/2023,5436.0,87.7,835.7,62.5,17.76,15.37,-2.39,-5.33,-2.94,2.32,4.51,-0.78,4.1,0.51,Nubank +2.1; BTG Pactual +1.9; Sistema Sicredi +1.2
+depositos_total,12/2023-06/2026,6931.9,27.5,1025.2,22.7,15.37,14.79,-0.58,-0.56,-2.9,2.5,2.46,0.09,0.14,-1.15,Sistema Sicoob +1.1; Sistema Sicredi +1.0; Mercado Pago +0.7
+depositos_total,03/2016-06/2026,6931.9,241.7,1025.2,125.7,22.39,14.79,-7.6,-9.61,4.88,6.27,7.51,-1.28,3.3,-3.47,Sistema Sicredi +3.0; Nubank +2.7; Sistema Sicoob +2.7
+captacoes,03/2016-12/2019,6175.8,5.9,1134.7,2.9,18.9,18.37,-0.53,-1.31,6.37,1.7,0.44,-5.66,0.76,-1.76,Itaú Unibanco +3.2; Bradesco +1.7; Santander Brasil +1.4
+captacoes,12/2019-12/2023,10440.7,69.1,1717.4,51.4,18.37,16.45,-1.92,-2.44,-1.72,2.45,2.68,-3.19,3.88,0.27,BTG Pactual +1.8; Nubank +1.2; Sistema Sicredi +1.2
+captacoes,12/2023-06/2026,14268.9,36.7,2068.5,20.4,16.45,14.5,-1.95,-0.33,-3.78,0.95,2.03,3.35,0.71,-0.99,BNDES +3.4; BTG Pactual +1.1; XP +0.5
+captacoes,03/2016-06/2026,14268.9,144.7,2068.5,87.7,18.9,14.5,-4.41,-4.08,0.87,5.1,5.15,-5.5,5.35,-2.48,BTG Pactual +2.3; Sistema Sicredi +2.2; Sistema Sicoob +2.1
+dep_interfinanceiros,03/2016-12/2019,114.0,11.1,29.1,-21.2,36.04,25.55,-10.49,-1.43,-4.8,12.53,0.07,-0.1,0.18,4.03,Sistema Sicoob +9.9; Sistema Sicredi +2.6; Volkswagen +2.2
+dep_interfinanceiros,12/2019-12/2023,206.0,80.7,23.7,-18.5,25.55,11.52,-14.04,0.97,-0.07,16.53,1.9,0.75,7.29,-13.33,Sistema Sicoob +10.9; Sistema Sicredi +5.6; BTG Pactual +3.3
+dep_interfinanceiros,12/2023-06/2026,373.6,81.3,71.1,199.5,11.52,19.02,7.51,0.43,7.52,-5.26,0.43,-0.56,-5.19,-4.87,Bradesco +8.0; PagBank (PagSeguro) +0.9; Bocom +0.5
+dep_interfinanceiros,03/2016-06/2026,373.6,264.2,71.1,92.2,36.04,19.02,-17.02,-0.02,2.65,23.8,2.4,0.08,2.27,-14.17,Sistema Sicoob +15.4; Bradesco +8.5; Sistema Sicredi +8.4
+compromissadas,03/2016-12/2019,1435.9,-11.7,416.3,16.1,22.06,28.99,6.93,-4.24,-4.9,0.59,0.03,2.09,0.17,-0.69,BNDES +2.0; BTG Pactual +1.4; XP +1.1
+compromissadas,12/2019-12/2023,2142.4,49.2,582.8,40.0,28.99,27.2,-1.79,-0.17,-3.07,-0.34,0.46,0.02,4.54,0.34,BTG Pactual +2.4; XP +1.6; Banrisul +0.5
+compromissadas,12/2023-06/2026,2762.0,28.9,701.1,20.3,27.2,25.38,-1.82,-2.43,-1.58,0.12,0.68,0.31,4.94,-0.2,BTG Pactual +4.0; XP +1.7; BNDES +0.5
+compromissadas,03/2016-06/2026,2762.0,69.9,701.1,95.5,22.06,25.38,3.32,-6.84,-9.55,0.37,1.17,2.42,9.65,-0.55,BTG Pactual +7.8; XP +4.4; BNDES +1.9
+titulos,03/2016-12/2019,821.3,-5.2,124.7,-29.2,20.34,15.19,-5.16,-12.64,16.19,0.57,0.27,-2.6,6.09,-2.73,Bradesco +8.3; Itaú Unibanco +7.3; Safra +2.7
+titulos,12/2019-12/2023,1650.1,100.9,236.8,89.9,15.19,14.35,-0.83,3.6,-7.05,3.99,0.47,-1.28,1.66,-0.56,Caixa Econômica Federal +3.6; Sistema Sicredi +2.6; XP +1.6
+titulos,12/2023-06/2026,2752.6,66.8,249.2,5.2,14.35,9.05,-5.3,1.25,-10.8,-1.18,1.51,18.56,-2.58,-1.47,BNDES +18.6; Caixa Econômica Federal +1.2; Nubank +0.5
+titulos,03/2016-06/2026,2752.6,217.9,249.2,41.5,20.34,9.05,-11.29,-7.78,-1.66,3.38,2.26,14.68,5.17,-4.76,BNDES +14.8; Itaú Unibanco +3.6; BTG Pactual +2.3
+letras_financeiras,03/2016-12/2019,356.7,9.4,5.3,142.4,0.67,1.48,0.81,-10.66,10.4,0.17,0.03,0.89,7.08,-8.72,Bradesco +12.3; Itaú Unibanco +8.2; Safra +3.8
+letras_financeiras,12/2019-12/2023,488.7,37.0,9.6,81.9,1.48,1.97,0.49,0.79,-17.12,1.2,0.83,-1.15,13.15,1.83,BTG Pactual +5.4; XP +1.7; Volkswagen +1.6
+letras_financeiras,12/2023-06/2026,733.5,50.1,25.8,168.7,1.97,3.52,1.55,2.29,-11.1,-0.36,4.59,0.72,2.07,0.23,Caixa Econômica Federal +2.3; BTG Pactual +2.3; Nubank +1.8
+letras_financeiras,03/2016-06/2026,733.5,124.9,25.8,1085.0,0.67,3.52,2.85,-7.59,-17.82,1.02,5.45,0.46,22.29,-6.66,BTG Pactual +6.7; Safra +3.2; Daycoval +2.4
+repasses,03/2016-12/2019,1023.1,-22.0,79.4,-29.9,8.64,7.76,-0.88,14.48,2.05,0.84,0.76,-20.38,2.84,0.29,Caixa Econômica Federal +14.5; Santander Brasil +1.7; Rabobank +1.0
+repasses,12/2019-12/2023,1212.1,18.5,62.0,-21.9,7.76,5.12,-2.64,4.55,1.54,1.77,1.28,-14.15,4.49,3.15,Caixa Econômica Federal +4.5; Santander Brasil +2.0; J.P. Morgan +1.7
+repasses,12/2023-06/2026,1822.4,50.3,93.0,49.8,5.12,5.1,-0.02,-0.11,0.36,0.68,4.23,-2.45,-0.82,-1.88,Stone +1.6; PagBank (PagSeguro) +1.4; Bradesco +1.0
+repasses,03/2016-06/2026,1822.4,39.0,93.0,-17.9,8.64,5.1,-3.54,18.93,3.96,3.29,6.27,-36.98,6.51,1.55,Caixa Econômica Federal +18.9; Santander Brasil +3.2; PagBank (PagSeguro) +2.5
+depositos_a,03/2016-12/2019,2895.6,42.7,514.3,13.2,22.39,17.76,-4.63,-3.73,10.72,1.46,0.55,-0.58,-0.94,-2.85,Itaú Unibanco +4.5; Bradesco +3.5; Santander Brasil +2.7
+depositos_a,12/2019-12/2023,5436.0,87.7,835.7,62.5,17.76,15.37,-2.39,-5.33,-2.94,2.09,4.51,-0.78,4.1,0.74,Nubank +2.1; BTG Pactual +1.9; Sistema Sicredi +1.2
+depositos_a,12/2023-06/2026,6931.9,27.5,1025.2,22.7,15.37,14.79,-0.58,-0.56,-2.9,2.12,2.46,0.09,0.14,-0.77,Sistema Sicoob +1.1; Sistema Sicredi +1.0; Mercado Pago +0.7
+depositos_a,03/2016-06/2026,6931.9,241.7,1025.2,125.7,22.39,14.79,-7.6,-9.61,4.88,5.67,7.51,-1.28,3.3,-2.87,Sistema Sicredi +3.0; Nubank +2.7; Sistema Sicoob +2.7

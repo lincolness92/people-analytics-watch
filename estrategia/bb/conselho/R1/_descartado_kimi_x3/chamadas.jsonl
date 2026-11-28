@@ -1,0 +1,3 @@
+{"rodada": "r1", "cadeira": "c5", "tarefa": "r1a", "rota": "moonshotai/Kimi-K3:digitalocean", "ok": true, "segundos": 149.6, "erro": null, "prompt_tokens": 22151, "completion_tokens": 7390, "cost_usd": 0.101365, "calls": 1, "failures": 0}
+{"rodada": "r1", "cadeira": "c4", "tarefa": "r1a", "rota": "moonshotai/Kimi-K3:digitalocean", "ok": true, "segundos": 149.7, "erro": null, "prompt_tokens": 22151, "completion_tokens": 7385, "cost_usd": 0.1013, "calls": 1, "failures": 0}
+{"rodada": "r1", "cadeira": "c3", "tarefa": "r1a", "rota": "moonshotai/Kimi-K3:digitalocean", "ok": true, "segundos": 156.2, "erro": null, "prompt_tokens": 22151, "completion_tokens": 7808, "cost_usd": 0.157599, "calls": 1, "failures": 0}

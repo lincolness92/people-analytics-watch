@@ -50,7 +50,8 @@ configuração). Nenhum comando chama LLM, então nenhum abre trace (`src/pawatc
    marcam `absent = gap_base|gap_latest`, deixam `delta_pp` vazio e não entram no ranking de ganhadores e perdedores.
 5. **Sistemas cooperativos.** Sicredi e Sicoob são a soma bruta do banco cooperativo, das centrais e das singulares
    cujo nome contém o padrão (`name_regex` em `config/ifs/registry.json`). Ativo, captações, depósitos e PL têm dupla
-   contagem (depósito da singular na central e no banco); as carteiras de crédito por cliente, não. Cooperativa sem o
+   contagem (depósito da singular na central e no banco); as carteiras de crédito por cliente, não. Índices (unidade `ratio`, como o de Basileia) não
+   são somáveis: para instituições com mais de uma entidade no nível, a linha de índice não é gravada. Cooperativa sem o
    nome do sistema na razão social fica fora.
 6. **ESTBAN: linhas com o total do banco embutido.** Desde 2025 (Itaú em Brasília em 2025-09 e 2025-11 a 2026-03) e
    para quase todos os bancos desde **2026-04**, a linha de um município (quase sempre Brasília) traz o valor do

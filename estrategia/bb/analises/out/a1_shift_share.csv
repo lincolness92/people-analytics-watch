@@ -1,0 +1,9 @@
+janela,celulas,delta_pp,mix_pp,competitivo_pp,competitivo_frac_da_variacao,residuo_celulas_vs_total_oficial_pct
+03/2016-12/2019,produto (PF 7 + PJ 9 modalidades + exterior PF e PJ),-3.31,0.22,-3.53,1.065,"{'201603': 0.0, '201912': 0.0}"
+03/2016-12/2019,regiao (5 regioes),-3.27,0.18,-3.45,1.054,
+12/2019-12/2023,produto (PF 7 + PJ 9 modalidades + exterior PF e PJ),-0.43,1.82,-2.25,5.183,"{'201912': 0.0, '202312': 0.0}"
+12/2019-12/2023,regiao (5 regioes),-0.96,0.26,-1.22,1.268,
+12/2023-06/2026,produto (PF 7 + PJ 9 modalidades + exterior PF e PJ),-1.48,-0.45,-1.02,0.692,"{'202312': 0.0, '202606': 0.0}"
+12/2023-06/2026,regiao (5 regioes),-1.39,0.03,-1.42,1.024,
+03/2016-06/2026,produto (PF 7 + PJ 9 modalidades + exterior PF e PJ),-5.22,1.67,-6.9,1.32,"{'201603': 0.0, '202606': 0.0}"
+03/2016-06/2026,regiao (5 regioes),-5.62,0.42,-6.05,1.075,

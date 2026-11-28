@@ -82,6 +82,8 @@ precificação e ganho; reprodução de papers e testes de hipótese.
 CVM IPE e FRE, Open Finance, SEC), `docs/sources/fatores-externos-e-propostas.*` (52 fontes; BCB, IBGE, MAPA, clima;
 métodos e modelo de proposta) e `docs/sources/leis-ontologias-formatos.*` (normas.leg.br, base legal das normas,
 ontologias, armazenamento).
+✅ Mapa do Atena (28/11/2026): `docs/sources/atena-sensores-garantias.*` (53 fontes dos degraus 3–6 e de garantias,
+testadas no dia; propostas G01–G03 e S01–S05, ainda fora de `estrategia/bb/01-premissas.md`).
 Recomendação (no documento da visão): piloto vertical em crédito rural antes de ir em largura. Fases: 0 base comum
 (cadastro mestre, modelo de afirmações em SQLite, ~3 dias); 1 piloto rural (~2 semanas); 2 lei ↔ norma (~1,5 semana);
 3 os 10 maiores bancos (~2 semanas); 4 mundo (~2–3 semanas). Decisões pendentes: Parquet/DuckDB, contato da SEC,
@@ -97,6 +99,17 @@ ponte Cosif antigo → 2025 conta a conta pelos balancetes (4060/4066); IHH e RC
 denominador regional do crédito com cooperativas; reconciliação com os releases (IPE → PDF → números com página);
 CVM FRE para a árvore societária e o controlador (hoje curadoria manual); outros sistemas cooperativos (Cresol,
 Unicred, Ailos); KM1 dos emissores com URL quebrada no catálogo (Sicredi, Sicoob, Daycoval, BNP, BNB…).
+✅ **Primeiro uso: plano de guerra do BB com dado público (28/11/2026, `estrategia/bb/`, fora do site).** Três panoramas
+(Atena, a decisão em crise; vantagens injustas; tomada hostil de todos os mercados), 55 premissas v0, dossiê de 54 fatos
+conferidos em fonte primária (CVM IPE, SGS, camada `data/ifs`), conselho de 5 cadeiras (Opus, Fable, DeepSeek V4 Pro,
+Qwen3.8 2,4T, Kimi K3) em rodadas R1–R5: 127 premissas, 254 críticas cegas, 127 réplicas, 3 juízes e agregação por código
+(US$ 4,41 nas cadeiras abertas). Análises 1–6 (quem ganhou cada p.p., inadimplência rural ajustada ao mix, municípios,
+passivo em p.p. do CDI, varejo com taxas por banco, dez anos de resultado) e laboratório rural (`labs/rural/`).
+Próximos: pré-registro dos limiares (H2), testes das premissas de maior prioridade, Astra e Gemini como cadeiras,
+calibração humana dos juízes, propostas no modelo de `04-proximos-passos.md`.
+✅ Pesquisas de estado da arte (`docs/research/`): Radar Febraban × mundo (45 temas, 10 ausentes do radar), retorno de
+dados e IA (roteiro de medição por tipo de iniciativa) e fundação de dados (BCBS 239, Resolução Conjunta 18/2025).
+Para o Research Watch: fontes chinesas e criptografia pós-quântica estão fora do acervo hoje.
 
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.

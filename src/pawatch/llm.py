@@ -214,7 +214,10 @@ def parse_json(text):
 
 
 class LLM:
-    def __init__(self):
+    def __init__(self, models=None):
+        # models: this client's own quality order (overrides PAW_MODEL). Use it when threads need different models:
+        # PAW_MODEL is process-wide, so setting it per thread races.
+        self.model_list = [m for m in (models or []) if m] or None
         self.hf_token = _hf_token()
         self.deepseek_key = _deepseek_key()
         if not self.hf_token and not self.deepseek_key:
@@ -229,7 +232,7 @@ class LLM:
     def plan(self, est_in, est_out, json_mode=True):
         """Every route to try, in order: models by preference, each model's routes by estimated cost.
         Items: (route, attempts)."""
-        ms = models()
+        ms = self.model_list or models()
         wanted = [m for m in ms if not _pinned(m)]
         book = price_book(self.hf_token, self.deepseek_key, wanted) if wanted else {"hf": {}, "ds_models": {}, "ds_prices": {}}
         out = []

@@ -1,0 +1,774 @@
+{
+ "title": "Fundação de dados em bancos grandes: normas, casos, fracassos e o programa na marra",
+ "generated": "2026-11-28",
+ "doc": "docs/research/fundacao-dados.md",
+ "fields": {
+  "forca": "forte = norma, regulador, enforcement, relatório oficial de supervisão, experimento; média = observacional sério, survey grande repetido, caso com método; fraca = survey sem método aberto, previsão, fornecedor, frase de executivo",
+  "tipo_fonte": "acad | reg | auto | cons | forn",
+  "verificado_em": "data em que a fonte foi conferida na web; null = literatura conhecida, não reconferida",
+  "premissas": "prefixo F (F01–F12)"
+ },
+ "claims": [
+  {
+   "id": "bcbs239",
+   "afirmacao": "14 princípios em 4 grupos; prazo G-SIBs jan/2016; D-SIBs 3 anos após designação",
+   "fonte": "BCBS 239",
+   "data": "2013-01",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.bis.org/publ/bcbs239.htm"
+  },
+  {
+   "id": "bcbs-d559",
+   "afirmacao": "31 G-SIBs avaliados; só 2 cumprem todos os princípios; trabalho significativo na maioria",
+   "fonte": "BCBS, Progress in adopting the Principles (d559)",
+   "data": "2023-11-28",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.bis.org/bcbs/publ/d559.htm"
+  },
+  {
+   "id": "bcbs-nl36",
+   "afirmacao": "governança no conselho mas cultura em construção; linhagem difícil; ad hoc em crise é obstáculo; testar ad hoc em tempos bons; mostrar benefício para financiar linhagem; controles compensatórios",
+   "fonte": "BCBS Newsletter 36",
+   "data": "2026-01-06",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.bis.org/publ/bcbs_nl36.htm"
+  },
+  {
+   "id": "ecb-2018",
+   "afirmacao": "revisão temática de 25 bancos significativos; implementação insatisfatória na maioria",
+   "fonte": "BCE, thematic review RDARR",
+   "data": "2018-05",
+   "tipo_fonte": "reg",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "ecb-rdarr",
+   "afirmacao": "guia final; sem exigência legal nova; sete áreas incl. órgão de administração, papéis, arquitetura integrada com linhagem, qualidade, tempestividade, programas",
+   "fonte": "BCE, Guide on effective RDARR",
+   "data": "2024-05-03",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.ssm.europa.eu/ecb/pub/pdf/ssm.supervisory_guides240503_riskreporting.en.pdf"
+  },
+  {
+   "id": "rc18",
+   "afirmacao": "política de qualidade das informações prestadas ao BCB com base no BCBS 239; 12 dimensões; conselho e diretoria; inventário com responsáveis; testes; relatório; plano de ação; diretor responsável; guarda 5 anos; vigência 01/01/2026, adequação até 31/12/2026",
+   "fonte": "Resolução Conjunta CMN/BCB n.º 18",
+   "data": "2025-11-28",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "rc18-dimensoes",
+   "afirmacao": "acessibilidade, acurácia, adaptabilidade, clareza, comparabilidade, completude, confiabilidade, consistência, integridade, rastreabilidade, relevância, tempestividade",
+   "fonte": "Voto 81/2025-CMN, minuta anexa",
+   "data": "2025-11-27",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://normativos.bcb.gov.br/Votos/CMN/202581/Voto_do_CMN_81_2025.pdf"
+  },
+  {
+   "id": "voto-172",
+   "afirmacao": "unidades do BCB 'ainda se deparam, constantemente, com inconsistências nas informações prestadas'",
+   "fonte": "Voto 172/2025-BCB",
+   "data": "2025-11-17",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "res-4968-5178",
+   "afirmacao": "controles internos; desde 2024 exige mecanismos para garantir a qualidade da informação",
+   "fonte": "Res. CMN 4.968/2021 alterada pela 5.178/2024",
+   "data": "2021-11-25 / 2024-09-26",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "lgpd-qualidade",
+   "afirmacao": "princípio da qualidade dos dados pessoais (art. 6.º, V)",
+   "fonte": "Lei 13.709/2018",
+   "data": "2018-08-14",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "citi-2020",
+   "afirmacao": "ordens de consentimento Fed/OCC sobre risco, dados e governança; US$400 mi OCC",
+   "fonte": "OCC/Fed; Citigroup 8-K",
+   "data": "2020-10-07",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/831001/000110465920113933/tm2032793d1_8k.htm"
+  },
+  {
+   "id": "citi-2024",
+   "afirmacao": "US$135,6 mi (Fed 60,6 + OCC 75) por progresso insuficiente em qualidade de dados e falta de monitoramento do efeito nos reportes",
+   "fonte": "Fed e OCC",
+   "data": "2024-07-10",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20240710a.htm"
+  },
+  {
+   "id": "cba-apra",
+   "afirmacao": "falhas de governança, cultura e responsabilização; add-on A$1 bi",
+   "fonte": "APRA Prudential Inquiry into CBA",
+   "data": "2018-04-30",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "cba-austrac",
+   "afirmacao": "A$700 mi; 53.750 reportes atrasados por erro de código",
+   "fonte": "AUSTRAC × CBA",
+   "data": "2018-06",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "westpac-austrac",
+   "afirmacao": "A$1,3 bi; >23 mi de infrações; ~19,5 mi IFTIs não reportados",
+   "fonte": "AUSTRAC × Westpac",
+   "data": "2020-09",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "tsb",
+   "afirmacao": "migração falhou em abr/2018; £48,65 mi",
+   "fonte": "FCA e PRA",
+   "data": "2022-12-20",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "capital-one",
+   "afirmacao": "vazamento de 2019 (~100 mi de pessoas); US$80 mi por falhas de risco na migração para nuvem",
+   "fonte": "OCC",
+   "data": "2020-08-06",
+   "tipo_fonte": "reg",
+   "forca": "forte",
+   "verificado_em": null
+  },
+  {
+   "id": "jpm-mesh",
+   "afirmacao": "data mesh na AWS com produtos de dados por domínio e catálogo central",
+   "fonte": "AWS/JPMorgan (blog e eventos)",
+   "data": "2020–2022",
+   "tipo_fonte": "auto/forn",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "dbs-valor",
+   "afirmacao": "≈S$1 bi de valor de IA em 2025, medido contra grupo de controle",
+   "fonte": "DBS Annual Report 2025",
+   "data": "2026",
+   "tipo_fonte": "auto",
+   "forca": "fraca-média",
+   "verificado_em": "2026-11-28"
+  },
+  {
+   "id": "wavestone-2024",
+   "afirmacao": "78% dizem que fatores humanos são a barreira; 48% se dizem data-driven",
+   "fonte": "Wavestone Data and AI Leadership Executive Survey 2024",
+   "data": "2024",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": "2026-11-28",
+   "url": "https://www.wavestone.com/en/insight/data-ai-executive-leadership-survey-2024/"
+  },
+  {
+   "id": "sambasivan-2021",
+   "afirmacao": "92% de 53 profissionais tiveram cascatas de dados",
+   "fonte": "Sambasivan et al., CHI",
+   "data": "2021",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "gartner-mesh",
+   "afirmacao": "data mesh 'obsoleto antes do platô'",
+   "fonte": "Gartner Hype Cycle for Data Management",
+   "data": "2022",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "gartner-gov",
+   "afirmacao": "80% das iniciativas de governança de D&A vão fracassar até 2027",
+   "fonte": "Gartner",
+   "data": "2024-02-28",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "gartner-custo",
+   "afirmacao": "dado ruim custa US$12,9 mi/ano por organização",
+   "fonte": "Gartner",
+   "data": "2020–2021",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "ibm-custo",
+   "afirmacao": "dado ruim custa US$3,1 tri/ano aos EUA",
+   "fonte": "IBM via Redman, HBR",
+   "data": "2016",
+   "tipo_fonte": "forn",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "hbr-3pct",
+   "afirmacao": "só 3% das empresas têm dado no padrão básico; 47% dos registros novos com erro crítico",
+   "fonte": "Nagle, Redman & Sammon, HBR",
+   "data": "2017-09",
+   "tipo_fonte": "cons",
+   "forca": "fraca-média",
+   "verificado_em": null
+  },
+  {
+   "id": "1-10-100",
+   "afirmacao": "prevenir 1, corrigir 10, falhar 100",
+   "fonte": "Labovitz & Chang",
+   "data": "1992",
+   "tipo_fonte": "cons",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "anaconda",
+   "afirmacao": "~45% do tempo de cientistas de dados em preparação",
+   "fonte": "Anaconda State of Data Science",
+   "data": "2020",
+   "tipo_fonte": "forn",
+   "forca": "fraca",
+   "verificado_em": null
+  },
+  {
+   "id": "bhk-bm",
+   "afirmacao": "decisão por dados associada a 5–6% (2011) e ~3% (2016) de produtividade",
+   "fonte": "Brynjolfsson, Hitt & Kim 2011; Brynjolfsson & McElheran 2016",
+   "data": "2011 / 2016",
+   "tipo_fonte": "acad",
+   "forca": "média",
+   "verificado_em": null
+  },
+  {
+   "id": "lacuna-causal",
+   "afirmacao": "não encontrado estudo causal ligando conformidade BCBS 239 a resultado",
+   "fonte": "busca desta sessão",
+   "data": "2026-11-28",
+   "tipo_fonte": "—",
+   "forca": "—",
+   "verificado_em": "2026-11-28"
+  }
+ ],
+ "padroes": [
+  {
+   "id": "dama-dmbok2",
+   "data": "2017; rev. 2024",
+   "uso": "vocabulário e papéis",
+   "forca": "média"
+  },
+  {
+   "id": "dcam-cdmc",
+   "data": "~2020; 2021",
+   "uso": "linha de base de maturidade comparável",
+   "forca": "média"
+  },
+  {
+   "id": "iso-iec-25012",
+   "data": "2008",
+   "uso": "dicionário de dimensões",
+   "forca": "forte"
+  },
+  {
+   "id": "iso-8000",
+   "data": "2011–",
+   "uso": "dados mestres",
+   "forca": "forte"
+  },
+  {
+   "id": "iso-iec-5259",
+   "data": "2024–25",
+   "uso": "dados de treino de modelos",
+   "forca": "forte"
+  },
+  {
+   "id": "wang-strong-1996",
+   "data": "1996",
+   "uso": "15 dimensões do usuário",
+   "forca": "média"
+  },
+  {
+   "id": "dama-uk-6",
+   "data": "2013",
+   "uso": "SLA mínimo",
+   "forca": "fraca-média"
+  },
+  {
+   "id": "data-mesh",
+   "data": "2019; 2022",
+   "uso": "domínio dono; dado como produto; plataforma; governança federada",
+   "forca": "média (conceito)"
+  },
+  {
+   "id": "odcs",
+   "data": "2023; v3 2024",
+   "uso": "contratos de dados",
+   "forca": "fraca-média"
+  },
+  {
+   "id": "lei-fibo",
+   "data": "2012–; 2014–",
+   "uso": "MDM de contraparte",
+   "forca": "forte"
+  },
+  {
+   "id": "openlineage",
+   "data": "2021–",
+   "uso": "linhagem automática",
+   "forca": "média"
+  }
+ ],
+ "sla": {
+  "qualidade_cde": "média ponderada das dimensões medidas (as 12 da RC 18)",
+  "sla": "qualidade_CDE ≥ meta E atraso ≤ janela E incidentes_sev1 = 0 no mês",
+  "nota_dominio": "Σ peso × 1[SLA cumprido] / Σ peso"
+ },
+ "medicao_programa": {
+  "formula": "ganho = horas_reconciliação_evitadas × custo_hora + Δajustes_manuais × custo_ajuste + Δincidentes_sev1 × custo_incidente + Δtempo_até_modelo × valor_mensal_modelos + p(multa/add-on evitado) × valor + Σ casos destravados",
+  "desenho": "cunha escalonada por domínio, ordem sorteada dentro do nível de prioridade"
+ },
+ "opcoes": [
+  {
+   "id": "O1",
+   "opcao": "Mandato do conselho",
+   "intensidades": {
+    "leve": "política aprovada",
+    "media": "política + diretor responsável (mínimo RC 18)",
+    "na_marra": "conselho aprova metas de qualidade e acompanha trimestralmente como capital e liquidez"
+   },
+   "evidencia": "RC 18/2025; BCBS 239 P1; Guia BCE 2024",
+   "forca": "forte",
+   "premissas": [
+    "F01",
+    "F02"
+   ]
+  },
+  {
+   "id": "O2",
+   "opcao": "Donos por domínio",
+   "intensidades": {
+    "leve": "dono nomeado",
+    "media": "dono com CDEs, definições e SLAs",
+    "na_marra": "SLA no scorecard e no bônus; sem dono, sem uso em decisão"
+   },
+   "evidencia": "BCBS 239 P1; RC 18; BCE 2024",
+   "forca": "forte (norma) / fraca (bônus)",
+   "premissas": [
+    "F03"
+   ]
+  },
+  {
+   "id": "O3",
+   "opcao": "Começar pelas decisões",
+   "intensidades": {
+    "leve": "inventário amplo",
+    "media": "CDEs dos reportes ao BCB",
+    "na_marra": "CDEs das 20 maiores decisões + reportes (100–300)"
+   },
+   "evidencia": "BCBS 239 (materialidade); DCAM",
+   "forca": "média",
+   "premissas": [
+    "F04"
+   ]
+  },
+  {
+   "id": "O4",
+   "opcao": "Integração obrigatória",
+   "intensidades": {
+    "leve": "catálogo voluntário",
+    "media": "contrato para fontes novas",
+    "na_marra": "sem contrato, sem ingestão; sem CDE certificado, sem modelo em produção"
+   },
+   "evidencia": "ODCS; SR 26-2; ISO/IEC 5259",
+   "forca": "fraca-média",
+   "premissas": [
+    "F05"
+   ]
+  },
+  {
+   "id": "O5",
+   "opcao": "Prova do relatório ad hoc",
+   "intensidades": {
+    "leve": "—",
+    "media": "exercício anual",
+    "na_marra": "drill trimestral: exposição a choque novo em ≤ 1 dia útil, reconciliada"
+   },
+   "evidencia": "BCBS 239 P6; BCBS Newsletter 36",
+   "forca": "forte",
+   "premissas": [
+    "F06"
+   ]
+  },
+  {
+   "id": "O6",
+   "opcao": "Arquitetura",
+   "intensidades": {
+    "leve": "data lake central",
+    "media": "mesh com produtos por domínio",
+    "na_marra": "federado com núcleo forte: MDM, catálogo, linhagem e regras centrais executáveis"
+   },
+   "evidencia": "Dehghani 2022; JPMorgan (auto); Gartner 2022",
+   "forca": "fraca-média",
+   "premissas": [
+    "F07"
+   ]
+  },
+  {
+   "id": "O7",
+   "opcao": "Custo visível",
+   "intensidades": {
+    "leve": "relatório de incidentes",
+    "media": "painel de custo por domínio",
+    "na_marra": "chargeback ao domínio produtor"
+   },
+   "evidencia": "prática de mercado",
+   "forca": "fraca",
+   "premissas": [
+    "F08"
+   ]
+  },
+  {
+   "id": "O8",
+   "opcao": "MDM de cliente e grupo econômico",
+   "intensidades": {
+    "leve": "chave CPF/CNPJ",
+    "media": "CNPJ raiz e grupo",
+    "na_marra": "registro de ouro com LEI, CNPJ raiz, grupo e ligações de cadeia"
+   },
+   "evidencia": "ISO 8000; ISO 17442; BCBS 239 P3–4",
+   "forca": "forte (norma)",
+   "premissas": [
+    "F11"
+   ]
+  },
+  {
+   "id": "O9",
+   "opcao": "Incentivo e cultura",
+   "intensidades": {
+    "leve": "treinamento",
+    "media": "campeões de dados",
+    "na_marra": "metas de dado no bônus dos executivos de negócio; decidir sem dado certificado exige justificativa"
+   },
+   "evidencia": "Wavestone 2024; BCBS Newsletter 36",
+   "forca": "fraca",
+   "premissas": [
+    "F10"
+   ]
+  },
+  {
+   "id": "O10",
+   "opcao": "Terceira linha e supervisão",
+   "intensidades": {
+    "leve": "—",
+    "media": "auditoria anual da política",
+    "na_marra": "auditoria contínua dos CDEs; relatório ao conselho nas 12 dimensões"
+   },
+   "evidencia": "RC 18; BCBS 239 P12–14",
+   "forca": "forte (norma)",
+   "premissas": [
+    "F09"
+   ]
+  }
+ ],
+ "sequencia": [
+  {
+   "fase": 0,
+   "nome": "Mandato",
+   "prazo": "0–90 dias",
+   "entra": [
+    "O1",
+    "O2",
+    "O3",
+    "linha de base DCAM",
+    "primeiro drill O5"
+   ],
+   "marcos": [
+    "conselho aprovou",
+    "% CDEs com dono",
+    "tempo do drill de base"
+   ]
+  },
+  {
+   "fase": 1,
+   "nome": "Núcleo",
+   "prazo": "3–12 meses",
+   "entra": [
+    "O4",
+    "linhagem automática dos CDEs",
+    "O8",
+    "O7 painel",
+    "gate de modelos"
+   ],
+   "marcos": [
+    "SLA por domínio",
+    "cobertura de linhagem",
+    "drill ≤ 1 dia"
+   ]
+  },
+  {
+   "fase": 2,
+   "nome": "Domínios",
+   "prazo": "12–24 meses",
+   "entra": [
+    "O6",
+    "O2/O9 bônus",
+    "O7 chargeback",
+    "entrada escalonada dos domínios comerciais"
+   ],
+   "marcos": [
+    "cunha escalonada",
+    "tempo até modelo em produção"
+   ]
+  },
+  {
+   "fase": 3,
+   "nome": "Valor",
+   "prazo": "24+ meses",
+   "entra": [
+    "dado como insumo medido dos casos de uso",
+    "revisão de incentivos"
+   ],
+   "marcos": [
+    "ganho atribuído por domínio"
+   ]
+  }
+ ],
+ "regra_sequencia": "primeiro o que o regulador exige e o que sustenta capital e provisão; depois o que destrava os casos de maior valor; arquitetura depois de mandato e dono",
+ "premissas": [
+  {
+   "id": "F01",
+   "enunciado": "Estender a RC 18 do reporte regulatório ao uso gerencial custa menos que um programa separado",
+   "evidencia_hoje": "RC 18 já exige governança, inventário, dimensões e testes até 31/12/2026",
+   "forca_hoje": "forte (norma)",
+   "teste": "custo marginal interno; acompanhar notas do BCB e consultorias em 2027",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "custo marginal < 30%",
+   "refuta_se": "> 70%",
+   "decisao": "um programa só, com o diretor da RC 18 como dono",
+   "liga_premissas": [],
+   "opcoes": [
+    "O1"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F02",
+   "enunciado": "Programas de dados de bancos fracassam por governança e dono, não por tecnologia",
+   "evidencia_hoje": "BCBS 2023 e 2026; BCE 2024; Citi 2024; APRA 2018",
+   "forca_hoje": "forte",
+   "teste": "codificar causas em relatórios BCBS, guias BCE e enforcement 2013–2026",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "governança ≥ 2× tecnologia como causa raiz",
+   "refuta_se": "empate",
+   "decisao": "começar por O1 e O2, não por plataforma",
+   "liga_premissas": [],
+   "opcoes": [
+    "O1",
+    "O2"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F03",
+   "enunciado": "Dono por domínio com meta no scorecard melhora a qualidade mais que CDO central sem orçamento",
+   "evidencia_hoje": "coerente com BCBS/BCE, sem estudo de efeito",
+   "forca_hoje": "fraca",
+   "teste": "cunha escalonada sorteada; nota de SLA",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "+15 p.p. de SLA em 2 trimestres vs sem meta",
+   "refuta_se": "< 5 p.p.",
+   "decisao": "meta de dado no bônus de todos os donos",
+   "liga_premissas": [],
+   "opcoes": [
+    "O2"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F04",
+   "enunciado": "Começar por 100–300 CDEs das grandes decisões dá valor antes que inventário completo",
+   "evidencia_hoje": "materialidade BCBS 239 (forte); efeito em tempo (fraca)",
+   "forca_hoje": "média",
+   "teste": "tempo até drill ≤ 1 dia e até primeiro modelo com dado certificado",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "ambos ≤ 6 meses",
+   "refuta_se": "> 12 meses",
+   "decisao": "escopo curto e expansão por onda",
+   "liga_premissas": [],
+   "opcoes": [
+    "O3"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F05",
+   "enunciado": "Contratos de dados na origem reduzem incidentes de qualidade em ≥ 30% em 6 meses",
+   "evidencia_hoje": "relatos de prática",
+   "forca_hoje": "fraca",
+   "teste": "DiD entre pipelines com e sem contrato",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "queda ≥ 30%",
+   "refuta_se": "< 10%",
+   "decisao": "sem contrato, sem ingestão",
+   "liga_premissas": [],
+   "opcoes": [
+    "O4"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F06",
+   "enunciado": "O tempo do drill ad hoc é a melhor métrica única de prontidão de dados",
+   "evidencia_hoje": "BCBS 239 P6; recomendação jan/2026",
+   "forca_hoje": "forte",
+   "teste": "drill trimestral com choque escolhido na hora, reconciliado; correlacionar com SLA",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "cai com o SLA e ≤ 1 dia em 12 meses",
+   "refuta_se": "não se mexe com o SLA",
+   "decisao": "drill vira indicador do conselho",
+   "liga_premissas": [],
+   "opcoes": [
+    "O1",
+    "O5"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F07",
+   "enunciado": "Em banco grande regulado, federado com núcleo forte vence mesh puro e centralização pura",
+   "evidencia_hoje": "casos autodeclarados; ceticismo Gartner",
+   "forca_hoje": "fraca",
+   "teste": "comparar tempo de entrega e SLA de domínios federados × time central",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "federado ≥ 30% mais rápido com SLA igual ou melhor",
+   "refuta_se": "SLA piora",
+   "decisao": "define O6",
+   "liga_premissas": [],
+   "opcoes": [
+    "O6"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F08",
+   "enunciado": "Reconciliação e correção manual consomem ≥ 20% do tempo de analistas de risco e finanças",
+   "evidencia_hoje": "surveys 40–45% para cientistas de dados",
+   "forca_hoje": "fraca",
+   "teste": "diário de tempo de duas semanas em amostra sorteada",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "≥ 20%",
+   "refuta_se": "< 10%",
+   "decisao": "o custo visível paga a fase 1",
+   "liga_premissas": [],
+   "opcoes": [
+    "O7"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F09",
+   "enunciado": "O risco regulatório domina o caso de negócio nos dois primeiros anos",
+   "evidencia_hoje": "multas crescentes com atraso (Citi 2020→2024); RC 18 com prazo 31/12/2026",
+   "forca_hoje": "forte",
+   "teste": "acompanhar ações e exigências do BCB ligadas à RC 18 em 2027",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "há ações ou exigências ligadas à RC 18 em 2027",
+   "refuta_se": "norma vira só papel",
+   "decisao": "fases 0–1 financiadas como conformidade",
+   "liga_premissas": [],
+   "opcoes": [
+    "O10"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F10",
+   "enunciado": "A cultura de dados muda com incentivo e com quem decide, não com treinamento",
+   "evidencia_hoje": "Wavestone 78% (fraca); BCBS jan/2026 cita resistência (forte)",
+   "forca_hoje": "fraca",
+   "teste": "três grupos: treinamento, incentivo, os dois; uso de dado certificado nas decisões",
+   "testavel_com_dado_publico": false,
+   "confirma_se": "incentivo ≥ 2× treinamento",
+   "refuta_se": "treinamento sozinho basta",
+   "decisao": "define O9",
+   "liga_premissas": [],
+   "opcoes": [
+    "O9"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F11",
+   "enunciado": "Sem MDM de grupo econômico, os painéis de concentração erram de forma relevante",
+   "evidencia_hoje": "hipótese",
+   "forca_hoje": "—",
+   "teste": "concentração por CNPJ × por grupo econômico em data/ifs/ e cadastros públicos",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "por grupo ≥ 20% maior nos 20 maiores",
+   "refuta_se": "< 5%",
+   "decisao": "MDM de grupo econômico na fase 1",
+   "liga_premissas": [
+    "P03",
+    "P47"
+   ],
+   "opcoes": [
+    "O8"
+   ],
+   "estado": "hipotese"
+  },
+  {
+   "id": "F12",
+   "enunciado": "O dado público do Watch tem defeitos medíveis nas 12 dimensões da RC 18",
+   "evidencia_hoje": "hipótese; revisões e quebras conhecidas",
+   "forca_hoje": "—",
+   "teste": "rodar as 12 dimensões sobre data/ifs/ (revisões, lacunas, conciliação ESTBAN × IF.data, atraso)",
+   "testavel_com_dado_publico": true,
+   "confirma_se": "≥ 3 dimensões com defeito material",
+   "refuta_se": "nenhuma",
+   "decisao": "publicar painel de qualidade do Watch como prova de conceito",
+   "liga_premissas": [],
+   "opcoes": [
+    "O5"
+   ],
+   "estado": "hipotese"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+de,para,referencia,diferencial_ini_pp_cdi,diferencial_fim_pp_cdi,piora_pp_cdi,regra_3pp_atingida
+2017,2022,pares,1.9,9.5,7.6,True
+2017,2022,privados,1.6,9.0,7.4,True
+2018,2023,pares,-5.2,4.6,9.8,True
+2018,2023,privados,-9.5,3.4,12.9,True
+2019,2024,pares,5.3,11.3,6.0,True
+2019,2024,privados,2.1,5.1,3.0,False
+média 2017-2019,média 2022-2024,pares,0.7,8.5,7.8,True
+média 2017-2019,média 2022-2024,privados,-1.9,5.8,7.8,True

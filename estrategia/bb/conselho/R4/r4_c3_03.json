@@ -1,0 +1,179 @@
+{
+ "julgamentos": [
+  {
+   "premissa": "P31",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-031"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Premissa cita F-031: 18,4%→25,4% confere. Teste especifica fontes públicas, limiares numéricos e decisões distintas."
+  },
+  {
+   "premissa": "P32",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-029"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Cita F-029: 37,52%→29,01% com recuperação desde 12/2022, confere. Teste separa repasse de recursos próprios."
+  },
+  {
+   "premissa": "P33",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [
+    "F-027"
+   ],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Cita F-027: 11,8% confere. Limiares claros para originação e distribuição, decisões específicas."
+  },
+  {
+   "premissa": "P34",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Rede 18%",
+    "Cielo 17%",
+    "PagBank 17%",
+    "Stone 15%",
+    "Mercado Pago 9%",
+    "BB 5,6% em recebíveis"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números de mercado não estão no dossiê; teto aplicado. Teste correlacional sem controle claro de variáveis."
+  },
+  {
+   "premissa": "P35",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "F-004",
+    "Pix com 54,7% das transações"
+   ],
+   "teto_aplicado": true,
+   "comentario": "F-004 ausente do dossiê e número do Pix não suportado; teto aplicado. Teste depende de série reapresentada."
+  },
+  {
+   "premissa": "P36",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 3,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Cerca de 200 milhões de consentimentos"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Número de consentimentos sem fonte no dossiê; teto aplicado. Comparação com pares ajuda, mas não é controle."
+  },
+  {
+   "premissa": "P37",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 3,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 1
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Mercado Pago com R$ 119 bi",
+    "3,6% do crédito pessoal"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números do Mercado Pago não estão no dossiê; teto aplicado. Crescimento vs sistema é controle fraco."
+  },
+  {
+   "premissa": "P38",
+   "notas": {
+    "testavel": 2,
+    "refutavel": 2,
+    "decisoria": 2,
+    "fundamentada": 1,
+    "so_publico": 3,
+    "confundimento": 2
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [
+    "Prêmios da Brasilseg −19%",
+    "agrícola −32,3%",
+    "prestamista −26,9%"
+   ],
+   "teto_aplicado": true,
+   "comentario": "Números de prêmios não estão no dossiê; teto aplicado. Regressão com controles, mas fonte dos prêmios é release."
+  },
+  {
+   "premissa": "P39",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Sem números factuais citados. Limiares claros, fontes públicas e comparação com pares."
+  },
+  {
+   "premissa": "P40",
+   "notas": {
+    "testavel": 3,
+    "refutavel": 3,
+    "decisoria": 3,
+    "fundamentada": 3,
+    "so_publico": 3,
+    "confundimento": 3
+   },
+   "citacoes_conferidas": [],
+   "sem_apoio": [],
+   "teto_aplicado": false,
+   "comentario": "Sem números factuais citados. Teste com fontes públicas, limiares e decisão específica."
+  }
+ ]
+}
