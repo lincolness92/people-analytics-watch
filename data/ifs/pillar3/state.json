@@ -1,0 +1,1960 @@
+{
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:51+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:52+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:53+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:55+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:56+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:57+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:28:58+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:00+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:01+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:02+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:04+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:05+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:06+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:07+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:09+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:10+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:11+00:00"
+ },
+ "https://cda.cloud.itau.com.br/dadosabertos/pilar3/km1/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:12+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:14+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:15+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:16+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:17+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:19+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:20+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:21+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:22+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:24+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:25+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:26+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:27+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:29+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:30+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:31+00:00"
+ },
+ "https://api.externo.bb.com.br/dadosabertos/v1/relatorios/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:32+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:34+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:36+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:37+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:38+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:40+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:41+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:42+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:44+00:00"
+ },
+ "https://api.caixa.gov.br:8443/dadosabertos/pilar3/1.2.0/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:29:45+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:32:02+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:34:17+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:35:25+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:36:06+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:36:48+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:37:29+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:24+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:25+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:26+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:27+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:28+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:30+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:31+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:32+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:33+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:34+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:36+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:37+00:00"
+ },
+ "https://openapi.bradesco.com.br/bradesco/dadosabertos/pilar3/km1/2026-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:38+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/20-05-27_202408_km1_v2.json": {
+  "status": 404,
+  "error": "HTTP 404 for https://cms.santander.com.br/sites/WRI/documentos/km1/20-05-27_202408_km1_v2.json: <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE",
+  "tried_at": "2026-11-28T04:39:28+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/20-08-27_222708_20200630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:40+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/20-11-10_222836_20200930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:41+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/21-03-12_151102_20201231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:43+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/21-05-25_202403_20210331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:44+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/21-08-23_181046_20210630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:45+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/21-11-08_134007_20210930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:46+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/22-03-07_122544_20211231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:47+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/22-05-04_133436_20220331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:48+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/22-08-18_202807_20220630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:49+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/22-12-16_125215_20220930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:50+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/23-03-22_115220_20221231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:52+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/23-05-15_170830_20230331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:53+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/23-08-28_203145_20230630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:54+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/23-11-23_165546_20230930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:55+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/24-04-09_145256_20231231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:56+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/24-05-21_143919_20240331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:57+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/24-08-29_213513_20240630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:58+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/24-11-21_130102_20240930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:38:59+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/25-03-27_182744_20241231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:01+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/25-05-26_122506_20250331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:02+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/25-08-29_151210_20250630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:03+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/25-11-27_144425_20250930_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:04+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/26-04-02_195320_20251231_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:05+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/26-05-29_214729_20260331_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:07+00:00"
+ },
+ "https://cms.santander.com.br/sites/WRI/documentos/km1/26-08-29_060653_20260630_km1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:08+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:12+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:16+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:32+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:36+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:41+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:45+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:49+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:53+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:39:57+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:01+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:05+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:09+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:13+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:18+00:00"
+ },
+ "https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/v2/2025-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://dadosabertos.bndes.gov.br/bacen/pilar3/km1/v2/2025-4: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><cent",
+  "tried_at": "2026-11-28T04:40:22+00:00"
+ },
+ "https://ri.btgpactual.com/api/dadosabertos/pillar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:24+00:00"
+ },
+ "https://ri.btgpactual.com/api/dadosabertos/pillar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:25+00:00"
+ },
+ "https://ri.btgpactual.com/api/dadosabertos/pillar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:27+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:28+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:29+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:30+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:32+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:33+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:34+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:35+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2023-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:36+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2024-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:37+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2024-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:39+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2024-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:40+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2024-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:41+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2025-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:42+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2025-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:43+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/2025-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:45+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:46+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:47+00:00"
+ },
+ "https://pilar3.nubank.com.br/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:48+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/1-1": {
+  "status": 400,
+  "error": "HTTP 400 for https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/1-1: ",
+  "tried_at": "2026-11-28T04:40:49+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:51+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:52+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:53+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:54+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:55+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:56+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:57+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:40:59+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:00+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:01+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:02+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:03+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:04+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:05+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:06+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:07+00:00"
+ },
+ "https://api-parceiros.xpi.com.br/risco-regulatorio-xp/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:09+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:10+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:12+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:13+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:14+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:16+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:17+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:19+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:20+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:21+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:23+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:24+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:25+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:27+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:28+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:29+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:31+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:32+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:34+00:00"
+ },
+ "https://www.safra.com.br/dadosabertos/pilar3/km1/v2/2026-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:35+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:37+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:38+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:39+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:41+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:42+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:44+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:45+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:47+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:48+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:49+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:51+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:52+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:54+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:55+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:57+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:41:58+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/v2/2026-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/v2/2026-1: HTTP Error 500: Internal Server Error",
+  "tried_at": "2026-11-28T04:42:15+00:00"
+ },
+ "https://www.banrisul.com.br/bob/data/opendata/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:17+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:18+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:19+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:21+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:22+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:23+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:24+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:25+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:26+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:27+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:29+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:30+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:31+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:32+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2023-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:33+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2024-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:34+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2024-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:35+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2024-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:37+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2024-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:38+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/2025-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:39+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:40+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:41+00:00"
+ },
+ "https://dadosabertos-p.c6bank.info/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:42+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:44+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:46+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:47+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:48+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:50+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:51+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:52+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:54+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:55+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:56+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:58+00:00"
+ },
+ "https://corporateportal.brazil.citibank.com/dadosabertossfn/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:42:59+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:01+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:03+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:04+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:05+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:07+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:08+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:09+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:10+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:12+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:14+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:15+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:16+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:17+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:19+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:20+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:21+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:22+00:00"
+ },
+ "https://api.bancobv.com.br/dasfn/pilartres/km1/v2/2026-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:23+00:00"
+ },
+ "https://mercadopago.com.br/informacoes-adicionais/dados-abertos/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:25+00:00"
+ },
+ "https://mercadopago.com.br/informacoes-adicionais/dados-abertos/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:27+00:00"
+ },
+ "https://mercadopago.com.br/informacoes-adicionais/dados-abertos/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:28+00:00"
+ },
+ "https://mercadopago.com.br/informacoes-adicionais/dados-abertos/km1/v2/2026-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:43:30+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:31+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:32+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:34+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2021-4: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:35+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:36+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:37+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:38+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2022-4: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:40+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:41+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:42+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:43+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2023-4: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:45+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:46+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:47+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:48+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2024-4: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:50+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:51+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:52+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:53+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2025-4: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:54+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-1: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:56+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-2: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:57+00:00"
+ },
+ "https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://ri.daycoval.com.br/pt/informacoes-financeiras/gestao-de-riscos-e-pr/download/km1/v2/2026-3: <!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta h",
+  "tried_at": "2026-11-28T04:43:58+00:00"
+ },
+ "https://www.jpmorgan.com.br/content/dam/jpm/global/disclosures/BR/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:01+00:00"
+ },
+ "https://www.jpmorgan.com.br/content/dam/jpm/global/disclosures/BR/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:03+00:00"
+ },
+ "https://www.jpmorgan.com.br/content/dam/jpm/global/disclosures/BR/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:05+00:00"
+ },
+ "https://www.jpmorgan.com.br/content/dam/jpm/global/disclosures/BR/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:07+00:00"
+ },
+ "https://www.jpmorgan.com.br/content/dam/jpm/global/disclosures/BR/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:09+00:00"
+ },
+ "https://cm.risk.bancointer.com.br/km1/v2/2025-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://cm.risk.bancointer.com.br/km1/v2/2025-4: 404 page not found",
+  "tried_at": "2026-11-28T04:44:10+00:00"
+ },
+ "https://cm.risk.bancointer.com.br/km1/v2/2026-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://cm.risk.bancointer.com.br/km1/v2/2026-1: 404 page not found",
+  "tried_at": "2026-11-28T04:44:11+00:00"
+ },
+ "https://cm.risk.bancointer.com.br/km1/v2/2026-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://cm.risk.bancointer.com.br/km1/v2/2026-2: 404 page not found",
+  "tried_at": "2026-11-28T04:44:13+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-1": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-1: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:21+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-2": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-2: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:22+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-3": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-3: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:23+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-4": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2020-4: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:25+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-1": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-1: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:26+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-2": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-2: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:27+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-3": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-3: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:28+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-4": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2021-4: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:30+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-1": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-1: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:31+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-2": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-2: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:32+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-3": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-3: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:33+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-4": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2022-4: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:35+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2023-1": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2023-1: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:36+00:00"
+ },
+ "https://www.bnb.gov.br/dadosabertos/pilar3/km1/2023-2": {
+  "status": 400,
+  "error": "HTTP 400 for https://www.bnb.gov.br/dadosabertos/pilar3/km1/2023-2: {\"mensagemErro\":\"O parâmetro informado é inválido\"}",
+  "tried_at": "2026-11-28T04:44:37+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:50+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:55+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:56+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:57+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:58+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:44:59+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:01+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:02+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:04+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:05+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:06+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:07+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:08+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/2023-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:10+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:11+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:12+00:00"
+ },
+ "https://api.abcbrasil.com.br/ABCBrasil.DadosAbertos.API/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:13+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/v2/2025-4.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:16+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/v2/KM1-2026-1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:18+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/v2/KM1-2026-2.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:20+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2020-1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:22+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2020-2.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:24+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2020-3.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:26+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2020-4.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:27+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2021-1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:29+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2021-2.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:31+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2021-3.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:34+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2021-4.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:35+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2022-1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:37+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2022-2.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:39+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2022-3.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:41+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2022-4.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:43+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2023-1.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:45+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2023-2.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:47+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2023-3.json": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:49+00:00"
+ },
+ "https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2023-4.json": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.vwfs.com.br/content/dam/bluelabel/valid/www-vwfs-com-br/documents/json/km1/KM1-2023-4.json: <!DOCTYPE html>\n<html lang=\"pt\" class=\"js-enable-3rd-party-float-grid\">\n<head>\n    ",
+  "tried_at": "2026-11-28T04:45:51+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:53+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:54+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:55+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:57+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:58+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:45:59+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:00+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:01+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:03+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:04+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:05+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:06+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:08+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:09+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:10+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:11+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:12+00:00"
+ },
+ "https://opendata.cloudbr.rabobank.com/api/pilar/km1/v2/2026-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:14+00:00"
+ },
+ "https://dadosabertos.stone.com.br/api/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:16+00:00"
+ },
+ "https://dadosabertos.stone.com.br/api/pilar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:17+00:00"
+ },
+ "https://dadosabertos.stone.com.br/api/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:19+00:00"
+ },
+ "https://api.svc.picpay.com/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:20+00:00"
+ },
+ "https://api.svc.picpay.com/pilar3/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:21+00:00"
+ },
+ "https://api.svc.picpay.com/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:23+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:25+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:26+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-3: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:27+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2020-4: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:28+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:30+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:31+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-3: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:32+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2021-4: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:33+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:35+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:36+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-3: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:37+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2022-4: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:38+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2023-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2023-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:39+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2023-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2023-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:41+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2024-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2024-4: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:42+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:43+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:44+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/2025-3: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns",
+  "tried_at": "2026-11-28T04:46:46+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2025-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2025-4: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xm",
+  "tried_at": "2026-11-28T04:46:47+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-1: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xm",
+  "tried_at": "2026-11-28T04:46:48+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-2: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xm",
+  "tried_at": "2026-11-28T04:46:49+00:00"
+ },
+ "https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://securitiesservices.bnpparibas.com.br/jsonsfn/km1/v2/2026-3: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xm",
+  "tried_at": "2026-11-28T04:46:51+00:00"
+ },
+ "https://open-data-risks.agibank.com.br/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:52+00:00"
+ },
+ "https://open-data-risks.agibank.com.br/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:53+00:00"
+ },
+ "https://open-data-risks.agibank.com.br/km1/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:54+00:00"
+ },
+ "https://open-data-risks.agibank.com.br/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:55+00:00"
+ },
+ "https://open-data-risks.agibank.com.br/km1/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:56+00:00"
+ },
+ "https://api-partners.bancobmg.com.br/bacen-dados-abertos/v1/pilar/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:46:58+00:00"
+ },
+ "https://api-partners.bancobmg.com.br/bacen-dados-abertos/v1/pilar/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:08+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:09+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:10+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-3": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-3: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:11+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2020-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:12+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:13+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:14+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-3": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-3: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:15+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2021-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:16+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:17+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:18+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-3": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-3: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:19+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2022-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:20+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:21+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:22+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-3": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-3: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:23+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2023-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:24+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:25+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:26+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-3": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-3: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:27+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2024-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:28+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2025-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/2025-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to a",
+  "tried_at": "2026-11-28T04:47:29+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2025-4": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2025-4: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission t",
+  "tried_at": "2026-11-28T04:47:30+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2026-1": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2026-1: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission t",
+  "tried_at": "2026-11-28T04:47:31+00:00"
+ },
+ "https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2026-2": {
+  "status": 403,
+  "error": "HTTP 403 for https://bancomercantil.com.br/sites/default/files/mobile/pilar3/km1/v2/2026-2: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission t",
+  "tried_at": "2026-11-28T04:47:32+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2020-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:35+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2020-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:36+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2020-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:37+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2020-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:38+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:40+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:41+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:42+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:43+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:44+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:45+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:46+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:47+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:48+00:00"
+ },
+ "https://catalogo-risco-pub-prd.api.apps.paas.banestes.b.br/api/v1/external/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:47:50+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-1: ",
+  "tried_at": "2026-11-28T04:47:53+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-2: ",
+  "tried_at": "2026-11-28T04:47:56+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-3: ",
+  "tried_at": "2026-11-28T04:47:58+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2020-4: ",
+  "tried_at": "2026-11-28T04:48:00+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-1: ",
+  "tried_at": "2026-11-28T04:48:02+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-2: ",
+  "tried_at": "2026-11-28T04:48:04+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-3: ",
+  "tried_at": "2026-11-28T04:48:06+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2021-4: ",
+  "tried_at": "2026-11-28T04:48:08+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-1: ",
+  "tried_at": "2026-11-28T04:48:10+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-2: ",
+  "tried_at": "2026-11-28T04:48:12+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-3": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-3: ",
+  "tried_at": "2026-11-28T04:48:14+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2022-4: ",
+  "tried_at": "2026-11-28T04:48:16+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2023-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2023-1: ",
+  "tried_at": "2026-11-28T04:48:18+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2023-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2023-2: ",
+  "tried_at": "2026-11-28T04:48:19+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2025-4": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2025-4: ",
+  "tried_at": "2026-11-28T04:48:21+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2026-1": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2026-1: ",
+  "tried_at": "2026-11-28T04:48:23+00:00"
+ },
+ "https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2026-2": {
+  "status": 404,
+  "error": "HTTP 404 for https://www.bofabrazil.com.br/PHXcms/public/content/brazil/documents/dadosabertos/km1/v2/2026-2: ",
+  "tried_at": "2026-11-28T04:48:25+00:00"
+ },
+ "https://www.original.com.br/src/docs/pilar3/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:27+00:00"
+ },
+ "https://www.original.com.br/src/docs/pilar3/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:28+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2021-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:32+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2021-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:35+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2021-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:39+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2021-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:42+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2022-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:44+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2022-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:50+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2022-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:53+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2022-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:56+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2023-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:48:59+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/2023-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:49:02+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/v2/2025-4": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:49:05+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/v2/2026-1": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:49:07+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/v2/2026-2": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:49:10+00:00"
+ },
+ "https://api.bocombbm.com.br/opendatacatalog/v1/km1/v2/2026-3": {
+  "status": 200,
+  "fetched_at": "2026-11-28T04:49:13+00:00"
+ },
+ "https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2025-3": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2025-3: HTTP Error 503: Service Unavailable",
+  "tried_at": "2026-11-28T04:49:29+00:00"
+ },
+ "https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2025-4": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2025-4: HTTP Error 503: Service Unavailable",
+  "tried_at": "2026-11-28T04:49:45+00:00"
+ },
+ "https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2026-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2026-1: HTTP Error 503: Service Unavailable",
+  "tried_at": "2026-11-28T04:50:01+00:00"
+ },
+ "https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2026-2": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://pilar3stellantis.integraltrust.com.br/integraltrust/relatorios/pilar3/consultar/cliente/stellantis/km1/v2/2026-2: HTTP Error 503: Service Unavailable",
+  "tried_at": "2026-11-28T04:50:17+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-1: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:50:34+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-2": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-2: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:50:50+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-3": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-3: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:51:06+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-4": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2020-4: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:51:23+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-1: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:51:39+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-2": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-2: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:51:56+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-3": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-3: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:52:12+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-4": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2021-4: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:52:28+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2022-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/km1/2022-1: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:52:45+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/v2/02038232000164/km1/v2/2025-4": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/v2/02038232000164/km1/v2/2025-4: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:53:01+00:00"
+ },
+ "https://dadosabertos.sicoob.com.br/cda/api/pilar3/v2/02038232000164/km1/v2/2026-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicoob.com.br/cda/api/pilar3/v2/02038232000164/km1/v2/2026-1: HTTP Error 520: <none>",
+  "tried_at": "2026-11-28T04:53:17+00:00"
+ },
+ "https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2025-4": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2025-4: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer cer",
+  "tried_at": "2026-11-28T04:53:34+00:00"
+ },
+ "https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2026-1": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2026-1: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer cer",
+  "tried_at": "2026-11-28T04:53:50+00:00"
+ },
+ "https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2026-2": {
+  "status": -1,
+  "error": "request failed after 2 tries: https://dadosabertos.sicredi.com.br/dasfn/v1/0100/km1/v2/2026-2: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer cer",
+  "tried_at": "2026-11-28T04:54:06+00:00"
+ }
+}

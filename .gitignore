@@ -12,3 +12,7 @@ wrangler.toml
 # eval runs: raw runs (with source blocks) stay local; the judged summaries are kept
 evals/runs/*.json
 !evals/runs/*.judged.json
+
+# camada de instituições financeiras: arquivos brutos e a base local completa (refeitos pelos coletores)
+data/ifs/raw/
+data/ifs/ifs.sqlite*

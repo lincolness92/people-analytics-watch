@@ -1,0 +1,3995 @@
+{
+ "generated_at": "2026-11-28T04:28:13+00:00",
+ "as_of": 202606,
+ "count": 40,
+ "selection": {
+  "rank": {
+   "level": 1009,
+   "metric": "ativo_total",
+   "top_n": 40
+  },
+  "include": [
+   {
+    "leader_cnpj8": "18236120",
+    "why": "banco digital (Nubank)"
+   },
+   {
+    "leader_cnpj8": "00416968",
+    "why": "banco digital (Inter)"
+   },
+   {
+    "leader_cnpj8": "31872495",
+    "why": "banco digital (C6)"
+   },
+   {
+    "leader_cnpj8": "10573521",
+    "why": "instituição de pagamento (Mercado Pago)"
+   },
+   {
+    "leader_cnpj8": "22896431",
+    "why": "instituição de pagamento (PicPay)"
+   },
+   {
+    "leader_cnpj8": "08561701",
+    "why": "instituição de pagamento (PagBank/PagSeguro)"
+   },
+   {
+    "leader_cnpj8": "16501555",
+    "why": "instituição de pagamento (Stone)"
+   }
+  ],
+  "systems": [
+   "sicredi",
+   "sicoob"
+  ]
+ },
+ "sources": {
+  "ifdata": "IF.data 202606 (cache local)",
+  "cvm": [
+   "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv",
+   "https://dados.cvm.gov.br/dados/CIA_ESTRANG/CAD/DADOS/cad_cia_estrang.csv"
+  ],
+  "gleif": "https://api.gleif.org/api/v1/lei-records",
+  "dasfn": {
+   "url": "https://olinda.bcb.gov.br/olinda/servico/DASFN/versao/v1/odata/Recursos?$top=20000&$format=json",
+   "fetched_at": "2026-11-28T04:25:12+00:00"
+  },
+  "curation": "curadoria manual a partir de informação pública (B3, SEC, sites de RI); conferir antes de uso externo"
+ },
+ "institutions": [
+  {
+   "id": "itau",
+   "name": "Itaú Unibanco",
+   "kind": "conglomerado",
+   "ifdata_name": "ITAU - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080099",
+    "prudential_entity": 1000080099,
+    "financial_codes": [
+     "C0010069"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "60701190",
+   "members": [
+    {
+     "cnpj8": "60701190",
+     "name": "ITAÚ UNIBANCO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 2169409564736.47
+    },
+    {
+     "cnpj8": "60872504",
+     "name": "ITAÚ UNIBANCO HOLDING S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 493183395159.73
+    },
+    {
+     "cnpj8": "01425787",
+     "name": "REDECARD INSTITUIÇÃO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 178389094071.71
+    },
+    {
+     "cnpj8": "02206577",
+     "name": "LUIZACRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 19422650847.2
+    },
+    {
+     "cnpj8": "06881898",
+     "name": "FINANCEIRA ITAÚ CBD S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 9136786379.33
+    },
+    {
+     "cnpj8": "61194353",
+     "name": "ITAU CORRETORA DE VALORES S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 7589746997.68
+    },
+    {
+     "cnpj8": "62418140",
+     "name": "INTRAG DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 1244950689.41
+    },
+    {
+     "cnpj8": "46743943",
+     "name": "REDECARD SOCIEDADE DE CRÉDITO DIRETO S.A.",
+     "tcb": "n1",
+     "ti": "43",
+     "total_assets": 871157754.69
+    },
+    {
+     "cnpj8": "61182408",
+     "name": "BANCO INVESTCRED UNIBANCO S.A.",
+     "tcb": "b1",
+     "ti": "2",
+     "total_assets": 733944678.58
+    },
+    {
+     "cnpj8": "65654303",
+     "name": "DIBENS LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 648445573.52
+    },
+    {
+     "cnpj8": "31749596",
+     "name": "IDEAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 366311873.13
+    },
+    {
+     "cnpj8": "61384004",
+     "name": "AVENUE SECURITIES BANCO DE INVESTIMENTO S.A.",
+     "tcb": "b2",
+     "ti": "13",
+     "total_assets": 228402506.98
+    },
+    {
+     "cnpj8": "60394079",
+     "name": "BANCO ITAUBANK S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 193882455.91
+    },
+    {
+     "cnpj8": "05076239",
+     "name": "MICROINVEST S.A. SOCIEDADE DE CRÉDITO A MICROEMPREENDEDOR",
+     "tcb": "n1",
+     "ti": "10",
+     "total_assets": 131593340.52
+    },
+    {
+     "cnpj8": "61190658",
+     "name": "BANCO ITAÚ VEÍCULOS S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 109444975.69
+    },
+    {
+     "cnpj8": "17192451",
+     "name": "BANCO ITAUCARD S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 56432153.56
+    }
+   ],
+   "total_assets": 2846417632562.91,
+   "rank_assets": 1,
+   "tickers": [
+    "ITUB3",
+    "ITUB4",
+    "ITUB (NYSE)"
+   ],
+   "controller": "IUPAR – Itaú Unibanco Participações (Itaúsa e família Moreira Salles)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "14214",
+     "name": "DIBENS LEASING S.A.- ARREND. MERCANTIL",
+     "cnpj14": "65654303000173",
+     "status": "ATIVO",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "19348",
+     "name": "ITAÚ UNIBANCO HOLDING S.A.",
+     "cnpj14": "60872504000123",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1279",
+     "name": "ITAÚ UNIBANCO HOLDING S.A.",
+     "cnpj14": "60872504000123",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1287",
+     "name": "ITAU UNIBANCO S.A.",
+     "cnpj14": "60701190000104",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "20893",
+     "name": "REDECARD S/A",
+     "cnpj14": "01425787000104",
+     "status": "CANCELADA",
+     "sector": "Emp. Adm. Part. - Sem Setor Principal",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "60701190000104",
+   "leader_cnpj": "60.701.190/0001-04",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "ITAÚ UNIBANCO S.A.",
+   "lei": {
+    "lei": "BZO2P8KHO2O10H5QQ663",
+    "legal_name": "ITAU UNIBANCO S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=60.701.190/0001-04&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:26:58+00:00"
+   },
+   "lei_listed": {
+    "lei": "5493002W2IVG62O3ZJ94",
+    "legal_name": "ITAÚ UNIBANCO HOLDING S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=60.872.504/0001-23&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:00+00:00",
+    "for": "ITAÚ UNIBANCO HOLDING S.A."
+   },
+   "pillar3": {
+    "cnpj14": "60701190000104",
+    "name": "ITAU UNIBANCO S.A.",
+    "resources": 18
+   }
+  },
+  {
+   "id": "bb",
+   "name": "Banco do Brasil",
+   "kind": "conglomerado",
+   "ifdata_name": "BB - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "público",
+   "uf": "DF",
+   "city": "BRASILIA",
+   "ifdata": {
+    "prudential_code": "C0080329",
+    "prudential_entity": 1000080329,
+    "financial_codes": [
+     "C0049906"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "00000000",
+   "members": [
+    {
+     "cnpj8": "00000000",
+     "name": "BANCO DO BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "1",
+     "total_assets": 2461086914237.77
+    },
+    {
+     "cnpj8": "24933830",
+     "name": "BB-BANCO DE INVESTIMENTO S/A",
+     "tcb": "b2",
+     "ti": "13",
+     "total_assets": 5676679805.44
+    },
+    {
+     "cnpj8": "31546476",
+     "name": "BB-LEASING S/A ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 5350132467.82
+    },
+    {
+     "cnpj8": "30822936",
+     "name": "BB GESTÃO DE RECURSOS - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 3841543765.38
+    }
+   ],
+   "total_assets": 2583568802583.73,
+   "rank_assets": 2,
+   "tickers": [
+    "BBAS3"
+   ],
+   "controller": "União Federal",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "1023",
+     "name": "BANCO DO BRASIL S.A.",
+     "cnpj14": "00000000000191",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "13935",
+     "name": "BB-LEASING SA ARRENDAMENTO MERCANTIL",
+     "cnpj14": "31546476000156",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "00000000000191",
+   "leader_cnpj": "00.000.000/0001-91",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO DO BRASIL S.A.",
+   "lei": {
+    "lei": "QE0Q0253K88YAGNPE356",
+    "legal_name": "BANCO DO BRASIL SA",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=00.000.000/0001-91&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:01+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "00000000000191",
+    "name": "BCO DO BRASIL S.A.",
+    "resources": 16
+   }
+  },
+  {
+   "id": "caixa",
+   "name": "Caixa Econômica Federal",
+   "kind": "conglomerado",
+   "ifdata_name": "CAIXA ECONÔMICA FEDERAL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "público",
+   "uf": "DF",
+   "city": "BRASILIA",
+   "ifdata": {
+    "prudential_code": "C0080738",
+    "prudential_entity": 1000080738,
+    "financial_codes": [
+     "C0051626"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "00360305",
+   "members": [
+    {
+     "cnpj8": "00360305",
+     "name": "CAIXA ECONOMICA FEDERAL",
+     "tcb": "b1",
+     "ti": "6",
+     "total_assets": 2368147225479.1
+    },
+    {
+     "cnpj8": "42040639",
+     "name": "CAIXA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 743603888.84
+    }
+   ],
+   "total_assets": 2385995356964.83,
+   "rank_assets": 3,
+   "tickers": [],
+   "controller": "União Federal (empresa pública)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "00360305000104",
+   "leader_cnpj": "00.360.305/0001-04",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "CAIXA ECONOMICA FEDERAL",
+   "lei": {
+    "lei": "254900EX2KZ57WQ1PL07",
+    "legal_name": "Caixa Economica Federal",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=00.360.305/0001-04&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:03+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "00360305000104",
+    "name": "CAIXA ECON. FEDERAL",
+    "resources": 9
+   }
+  },
+  {
+   "id": "bradesco",
+   "name": "Bradesco",
+   "kind": "conglomerado",
+   "ifdata_name": "BRADESCO - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "OSASCO",
+   "ifdata": {
+    "prudential_code": "C0080075",
+    "prudential_entity": 1000080075,
+    "financial_codes": [
+     "C0010045"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "60746948",
+   "members": [
+    {
+     "cnpj8": "60746948",
+     "name": "BANCO BRADESCO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 1952464273071.4
+    },
+    {
+     "cnpj8": "07207996",
+     "name": "BANCO BRADESCO FINANCIAMENTOS S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 68748096461.29
+    },
+    {
+     "cnpj8": "27098060",
+     "name": "BANCO DIGIO S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 28060663540.02
+    },
+    {
+     "cnpj8": "47509120",
+     "name": "BRADESCO LEASING S.A. - ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 19322032199.23
+    },
+    {
+     "cnpj8": "91884981",
+     "name": "BANCO JOHN DEERE S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 16770608933.15
+    },
+    {
+     "cnpj8": "06271464",
+     "name": "BANCO BRADESCO BBI S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 16757040870.04
+    },
+    {
+     "cnpj8": "01701201",
+     "name": "KIRTON BANK S.A. - BANCO MÚLTIPLO",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 15529830507.84
+    },
+    {
+     "cnpj8": "04184779",
+     "name": "BANCO BRADESCARD S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 15522405694.87
+    },
+    {
+     "cnpj8": "33147315",
+     "name": "BANCO BRADESCO BERJ S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 10462849130.73
+    },
+    {
+     "cnpj8": "74014747",
+     "name": "ÁGORA CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 9704669981.58
+    },
+    {
+     "cnpj8": "15011719",
+     "name": "BITZ INSTITUICAO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 764017871.75
+    },
+    {
+     "cnpj8": "58229246",
+     "name": "BRADESCO-KIRTON CORRETORA DE CÂMBIO S.A.",
+     "tcb": "n2",
+     "ti": "21",
+     "total_assets": 705149023.33
+    },
+    {
+     "cnpj8": "33254319",
+     "name": "BANCO LOSANGO S.A. - BANCO MÚLTIPLO",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 378208315.01
+    },
+    {
+     "cnpj8": "00066670",
+     "name": "BEM - DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 370674827.9
+    },
+    {
+     "cnpj8": "61855045",
+     "name": "BRADESCO S.A. CORRETORA DE TITULOS E VALORES MOBILIARIOS",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 240444245.3
+    },
+    {
+     "cnpj8": "40473435",
+     "name": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS INSTITUICAO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 119143511.36
+    },
+    {
+     "cnpj8": "03384738",
+     "name": "TIVIO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 86961890.57
+    },
+    {
+     "cnpj8": "07299480",
+     "name": "BEC DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 75665397.42
+    }
+   ],
+   "total_assets": 2015223670680.78,
+   "rank_assets": 4,
+   "tickers": [
+    "BBDC3",
+    "BBDC4",
+    "BBD (NYSE)",
+    "BBDO (NYSE)"
+   ],
+   "controller": "Cidade de Deus Participações e Fundação Bradesco",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "19640",
+     "name": "BRADESCO LEASING S.A. - ARRENDAMENTO MERCANTIL",
+     "cnpj14": "47509120000182",
+     "status": "ATIVO",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "906",
+     "name": "BANCO BRADESCO S.A.",
+     "cnpj14": "60746948000112",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1163",
+     "name": "BANCO BRADESCO BBI S.A.",
+     "cnpj14": "06271464000119",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1201",
+     "name": "BANCO BRADESCO BERJ S.A.",
+     "cnpj14": "33147315000115",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "12386",
+     "name": "BRADESCO LEASING S.A. - ARRENDAMENTO MERCANTIL",
+     "cnpj14": "47509120000182",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "17027",
+     "name": "BRADESCO LEASING S.A. - ARRENDAMENTO MERCANTIL",
+     "cnpj14": "47509120000182",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO HOLDING",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "60746948000112",
+   "leader_cnpj": "60.746.948/0001-12",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO BRADESCO S.A.",
+   "lei": {
+    "lei": "549300CTUU1RFXHQJE44",
+    "legal_name": "BANCO BRADESCO S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=60.746.948/0001-12&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:05+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "60746948000112",
+    "name": "BCO BRADESCO S.A.",
+    "resources": 19
+   }
+  },
+  {
+   "id": "santander",
+   "name": "Santander Brasil",
+   "kind": "conglomerado",
+   "ifdata_name": "SANTANDER - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080185",
+    "prudential_entity": 1000080185,
+    "financial_codes": [
+     "C0030379"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "90400888",
+   "members": [
+    {
+     "cnpj8": "90400888",
+     "name": "BANCO SANTANDER (BRASIL) S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 1209443082908.61
+    },
+    {
+     "cnpj8": "07707650",
+     "name": "SANTANDER SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 94908733182.62
+    },
+    {
+     "cnpj8": "10440482",
+     "name": "GETNET ADQUIRÊNCIA E SERVIÇOS PARA MEIOS DE PAGAMENTO S.A. INSTITUIÇÃO DE PAGAMENTO",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 74198666716.01
+    },
+    {
+     "cnpj8": "62307848",
+     "name": "BANCO RCI BRASIL S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 16401701232.67
+    },
+    {
+     "cnpj8": "47193149",
+     "name": "SANTANDER LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 14538148337.42
+    },
+    {
+     "cnpj8": "30172491",
+     "name": "BANCO HYUNDAI CAPITAL BRASIL S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 7931312349.46
+    },
+    {
+     "cnpj8": "10866788",
+     "name": "BANCO BANDEPE S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 7244739431.42
+    },
+    {
+     "cnpj8": "51014223",
+     "name": "SANTANDER INSTITUCIONAL CORRETORA DE CÂMBIO E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 2192232354.35
+    },
+    {
+     "cnpj8": "29162769",
+     "name": "SANTANDER CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 1088152032.67
+    },
+    {
+     "cnpj8": "03502968",
+     "name": "SANTANDER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 863362353.55
+    },
+    {
+     "cnpj8": "42054886",
+     "name": "GETNET SOCIEDADE DE CREDITO DIRETO S.A.",
+     "tcb": "n1",
+     "ti": "43",
+     "total_assets": 104287850.72
+    }
+   ],
+   "total_assets": 1314933066042.64,
+   "rank_assets": 5,
+   "tickers": [
+    "SANB3",
+    "SANB4",
+    "SANB11",
+    "BSBR (NYSE)"
+   ],
+   "controller": "Banco Santander, S.A. (Espanha)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "20532",
+     "name": "BANCO SANTANDER (BRASIL) S.A.",
+     "cnpj14": "90400888000142",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO HOLDING",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "21466",
+     "name": "BANCO RCI BRASIL S.A.",
+     "cnpj14": "62307848000115",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1090",
+     "name": "BANCO DE PERNAMBUCO S.A. - BANDEPE",
+     "cnpj14": "10866788000177",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "12165",
+     "name": "SANTANDER LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "cnpj14": "47193149000106",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "ESTRANGEIRO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "20559",
+     "name": "SANTANDER LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "cnpj14": "47193149000106",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "ESTRANGEIRO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "26140",
+     "name": "GETNET ADQUIRÊNCIA E SERVIÇOS PARA MEIOS DE PAGAMENTO S.A.",
+     "cnpj14": "10440482000154",
+     "status": "CANCELADA",
+     "sector": "Intermediação Financeira",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "90400888000142",
+   "leader_cnpj": "90.400.888/0001-42",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO SANTANDER (BRASIL) S.A.",
+   "lei": {
+    "lei": "549300D1H731B30TSI43",
+    "legal_name": "BANCO SANTANDER (BRASIL) S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=90.400.888/0001-42&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:06+00:00"
+   },
+   "lei_listed": {
+    "lei": "5493003TYWOS1RHXC621",
+    "legal_name": "BANCO RCI BRASIL S.A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=62.307.848/0001-15&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:08+00:00",
+    "for": "BANCO RCI BRASIL S.A."
+   },
+   "pillar3": {
+    "cnpj14": "90400888000142",
+    "name": "BCO SANTANDER (BRASIL) S.A.",
+    "resources": 26
+   }
+  },
+  {
+   "id": "bndes",
+   "name": "BNDES",
+   "kind": "conglomerado",
+   "ifdata_name": "BNDES - PRUDENCIAL",
+   "type": "banco de desenvolvimento",
+   "tcb": "b4",
+   "segment": "S2",
+   "control_type": "público",
+   "uf": "RJ",
+   "city": "RIO DE JANEIRO",
+   "ifdata": {
+    "prudential_code": "C0081847",
+    "prudential_entity": 1000081847,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "33657248",
+   "members": [
+    {
+     "cnpj8": "33657248",
+     "name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL",
+     "tcb": "b4",
+     "ti": "4",
+     "total_assets": 1073403746464.46
+    }
+   ],
+   "total_assets": 1057960580923.1,
+   "rank_assets": 6,
+   "tickers": [],
+   "controller": "União Federal (empresa pública)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "33657248000189",
+   "leader_cnpj": "33.657.248/0001-89",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "33657248000189",
+    "name": "BCO NAC DES ECON E SOCIAL",
+    "resources": 15
+   }
+  },
+  {
+   "id": "btg",
+   "name": "BTG Pactual",
+   "kind": "conglomerado",
+   "ifdata_name": "BTG PACTUAL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S1",
+   "control_type": "privado nacional",
+   "uf": "RJ",
+   "city": "RIO DE JANEIRO",
+   "ifdata": {
+    "prudential_code": "C0080336",
+    "prudential_entity": 1000080336,
+    "financial_codes": [
+     "C0049944"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "30306294",
+   "members": [
+    {
+     "cnpj8": "30306294",
+     "name": "BANCO BTG PACTUAL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 743258957050.63
+    },
+    {
+     "cnpj8": "59285411",
+     "name": "BANCO PAN S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 77255474113.74
+    },
+    {
+     "cnpj8": "17157777",
+     "name": "BANCO NACIONAL S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 23199019767.8
+    },
+    {
+     "cnpj8": "43815158",
+     "name": "BTG PACTUAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 19186457360.35
+    },
+    {
+     "cnpj8": "76543115",
+     "name": "BANCO SISTEMA S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 14045177242.05
+    },
+    {
+     "cnpj8": "15124464",
+     "name": "BANCO BESA S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 10702179556.22
+    },
+    {
+     "cnpj8": "02682287",
+     "name": "PAN FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 10058481392.78
+    },
+    {
+     "cnpj8": "59281253",
+     "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 2651421767.5
+    },
+    {
+     "cnpj8": "29650082",
+     "name": "BTG PACTUAL ASSET MANAGEMENT S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 2319654933.56
+    },
+    {
+     "cnpj8": "33222241",
+     "name": "BANCO NACIONAL DE INVESTIMENTOS S.A.",
+     "tcb": "b2",
+     "ti": "13",
+     "total_assets": 599760569.03
+    },
+    {
+     "cnpj8": "34711571",
+     "name": "VITREO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 210735649.34
+    },
+    {
+     "cnpj8": "59149941",
+     "name": "JV BTG SENIOR SOCIEDADE DE CRÉDITO DIRETO S.A.",
+     "tcb": "n1",
+     "ti": "43",
+     "total_assets": 4479694.28
+    }
+   ],
+   "total_assets": 858356835731.33,
+   "rank_assets": 7,
+   "tickers": [
+    "BPAC3",
+    "BPAC5",
+    "BPAC11"
+   ],
+   "controller": "sócios (BTG Pactual Holding)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "22616",
+     "name": "BANCO BTG PACTUAL S/A",
+     "cnpj14": "30306294000145",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1244",
+     "name": "BANCO BESA SA",
+     "cnpj14": "15124464000187",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1341",
+     "name": "BCO NACIONAL INVS SA",
+     "cnpj14": "33222241000134",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1350",
+     "name": "BANCO NACIONAL S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+     "cnpj14": "17157777000167",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "13897",
+     "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+     "cnpj14": "59281253000123",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "18554",
+     "name": "PAN FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "cnpj14": "02682287000102",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "21199",
+     "name": "BANCO PAN SA",
+     "cnpj14": "59285411000113",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "825",
+     "name": "BANCO BAMERINDUS BRASIL SA",
+     "cnpj14": "76543115000194",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "30306294000145",
+   "leader_cnpj": "30.306.294/0001-45",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO BTG PACTUAL S.A.",
+   "lei": {
+    "lei": "ZXLTQRYIK6IJH3R0IK66",
+    "legal_name": "BANCO BTG PACTUAL S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=30.306.294/0001-45&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:12+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "30306294000145",
+    "name": "BCO BTG PACTUAL S.A.",
+    "resources": 3
+   }
+  },
+  {
+   "id": "nubank",
+   "name": "Nubank",
+   "kind": "conglomerado",
+   "ifdata_name": "NU PAGAMENTOS - PRUDENCIAL",
+   "type": "não bancário de crédito",
+   "tcb": "n1",
+   "segment": "S2",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0084693",
+    "prudential_entity": 1000084693,
+    "financial_codes": [
+     "C0052058"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "18236120",
+   "members": [
+    {
+     "cnpj8": "30680829",
+     "name": "NU FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 267624695427.59
+    },
+    {
+     "cnpj8": "18236120",
+     "name": "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 122363229757.64
+    },
+    {
+     "cnpj8": "62169875",
+     "name": "NU INVESTIMENTOS S.A. - CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 5198065477.98
+    },
+    {
+     "cnpj8": "32219232",
+     "name": "NUPAY FOR BUSINESS INSTITUICAO DE PAGAMENTO LTDA.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 73122509.79
+    }
+   ],
+   "total_assets": 363325316026.46,
+   "rank_assets": 8,
+   "tickers": [
+    "NU (NYSE)",
+    "ROXO34"
+   ],
+   "controller": "Nu Holdings Ltd. (Ilhas Cayman)",
+   "curated_fields": [
+    "controller",
+    "cvm_extra",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "80209",
+     "name": "NU HOLDINGS LTD.",
+     "cnpj14": "24410913000144",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO HOLDING",
+     "register": "cia_estrangeira",
+     "matched": "curadoria (cvm_extra)"
+    }
+   ],
+   "leader_cnpj14": "18236120000158",
+   "leader_cnpj": "18.236.120/0001-58",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+   "lei": {
+    "lei": "25490039HH2GPH6TUN09",
+    "legal_name": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=18.236.120/0001-58&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:13+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "18236120000158",
+    "name": "NU PAGAMENTOS - IP",
+    "resources": 18
+   }
+  },
+  {
+   "id": "xp",
+   "name": "XP",
+   "kind": "conglomerado",
+   "ifdata_name": "XP - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "privado nacional",
+   "uf": "RJ",
+   "city": "RIO DE JANEIRO",
+   "ifdata": {
+    "prudential_code": "C0082475",
+    "prudential_entity": 1000082475,
+    "financial_codes": [
+     "C0052120"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "33264668",
+   "members": [
+    {
+     "cnpj8": "33264668",
+     "name": "BANCO XP S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 221732251267.15
+    },
+    {
+     "cnpj8": "02332886",
+     "name": "XP INVESTIMENTOS CORRETORA DE CÂMBIO,TÍTULOS E VALORES MOBILIÁRIOS S/A",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 132450652551.82
+    },
+    {
+     "cnpj8": "05389174",
+     "name": "XP SERVIÇOS FINANCEIROS DTVM LTDA",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 626158033.23
+    },
+    {
+     "cnpj8": "44475245",
+     "name": "XP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 6110256.16
+    }
+   ],
+   "total_assets": 305254264919.0,
+   "rank_assets": 9,
+   "tickers": [
+    "XP (Nasdaq)"
+   ],
+   "controller": "XP Inc. (Ilhas Cayman)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "33264668000103",
+   "leader_cnpj": "33.264.668/0001-03",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO XP S.A.",
+   "lei": {
+    "lei": "549300EFKGH6INYXWY64",
+    "legal_name": "BANCO XP S.A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=33.264.668/0001-03&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:15+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "33264668000103",
+    "name": "BCO XP S.A.",
+    "resources": 18
+   }
+  },
+  {
+   "id": "safra",
+   "name": "Safra",
+   "kind": "conglomerado",
+   "ifdata_name": "SAFRA - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080109",
+    "prudential_entity": 1000080109,
+    "financial_codes": [
+     "C0010083"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "58160789",
+   "members": [
+    {
+     "cnpj8": "58160789",
+     "name": "BANCO SAFRA S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 256683465209.87
+    },
+    {
+     "cnpj8": "45437547",
+     "name": "SAFRA SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 33188401598.23
+    },
+    {
+     "cnpj8": "17167412",
+     "name": "FINANCEIRA ALFA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 4992073429.23
+    },
+    {
+     "cnpj8": "62063177",
+     "name": "SAFRA LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 4735677990.37
+    },
+    {
+     "cnpj8": "03017677",
+     "name": "BANCO J. SAFRA S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 3752910231.12
+    },
+    {
+     "cnpj8": "60770336",
+     "name": "BANCO ALFA DE INVESTIMENTO S.A.",
+     "tcb": "b2",
+     "ti": "13",
+     "total_assets": 2952622992.4
+    },
+    {
+     "cnpj8": "03323840",
+     "name": "BANCO ALFA S.A.",
+     "tcb": "b1",
+     "ti": "2",
+     "total_assets": 1543753974.78
+    },
+    {
+     "cnpj8": "01638542",
+     "name": "SAFRA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 1535602617.8
+    },
+    {
+     "cnpj8": "65913436",
+     "name": "SAFRA ASSET CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 1013743888.85
+    },
+    {
+     "cnpj8": "46570800",
+     "name": "ALFA ARRENDAMENTO MERCANTIL S.A.",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 422311702.8
+    },
+    {
+     "cnpj8": "62178421",
+     "name": "ALFA CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 57158112.92
+    },
+    {
+     "cnpj8": "58330558",
+     "name": "SAFRA SOCIEDADE DE CREDITO DIRETO S.A.",
+     "tcb": "n1",
+     "ti": "43",
+     "total_assets": 15533201.93
+    }
+   ],
+   "total_assets": 273560422620.13,
+   "rank_assets": 10,
+   "tickers": [],
+   "controller": "família Safra",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "10340",
+     "name": "SAFRA LEASING SA ARRENDAMENTO  MERCANTIL",
+     "cnpj14": "62063177000194",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1384",
+     "name": "BANCO ALFA DE INVESTIMENTO S.A.",
+     "cnpj14": "60770336000165",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1406",
+     "name": "BANCO SAFRA S/A",
+     "cnpj14": "58160789000128",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "14184",
+     "name": "SAFRA LEASING SA ARRENDAMENTO  MERCANTIL",
+     "cnpj14": "62063177000194",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "19844",
+     "name": "SAFRA LEASING SA ARRENDAMENTO  MERCANTIL",
+     "cnpj14": "62063177000194",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "3891",
+     "name": "FINANCEIRA ALFA S.A.- C.F.I",
+     "cnpj14": "17167412000113",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "58160789000128",
+   "leader_cnpj": "58.160.789/0001-28",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO SAFRA S.A.",
+   "lei": {
+    "lei": "OWKQKLHXA6FSY7WZIY02",
+    "legal_name": "BANCO SAFRA S A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=58.160.789/0001-28&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:17+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "58160789000128",
+    "name": "BCO SAFRA S.A.",
+    "resources": 19
+   }
+  },
+  {
+   "id": "banrisul",
+   "name": "Banrisul",
+   "kind": "conglomerado",
+   "ifdata_name": "BANRISUL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "público",
+   "uf": "RS",
+   "city": "PORTO ALEGRE",
+   "ifdata": {
+    "prudential_code": "C0080154",
+    "prudential_entity": 1000080154,
+    "financial_codes": [
+     "C0030173"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "92702067",
+   "members": [
+    {
+     "cnpj8": "92702067",
+     "name": "BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 172827958733.96
+    },
+    {
+     "cnpj8": "92934215",
+     "name": "BANRISUL SOLUÇÕES EM PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 5840338927.43
+    },
+    {
+     "cnpj8": "93026847",
+     "name": "BANRISUL S/A - CORRETORA DE VALORES MOBILIARIOS E CAMBIO",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 199097414.87
+    }
+   ],
+   "total_assets": 172605049079.71,
+   "rank_assets": 13,
+   "tickers": [
+    "BRSR3",
+    "BRSR5",
+    "BRSR6"
+   ],
+   "controller": "Estado do Rio Grande do Sul",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "1210",
+     "name": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
+     "cnpj14": "92702067000196",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "24554",
+     "name": "BANRISUL SOLUÇÕES EM PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "cnpj14": "92934215000106",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "92702067000196",
+   "leader_cnpj": "92.702.067/0001-96",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.",
+   "lei": {
+    "lei": "254900W2BN097WLYIM20",
+    "legal_name": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=92.702.067/0001-96&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:19+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "92702067000196",
+    "name": "BCO DO ESTADO DO RGS S.A",
+    "resources": 18
+   }
+  },
+  {
+   "id": "c6",
+   "name": "C6 Bank",
+   "kind": "conglomerado",
+   "ifdata_name": "BANCO C6 - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0084844",
+    "prudential_entity": 1000084844,
+    "financial_codes": [
+     "C0052072"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "31872495",
+   "members": [
+    {
+     "cnpj8": "31872495",
+     "name": "BANCO C6 S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 117193732936.99
+    },
+    {
+     "cnpj8": "61348538",
+     "name": "BANCO C6 CONSIGNADO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 56164263321.57
+    },
+    {
+     "cnpj8": "32345784",
+     "name": "C6 CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 11539480273.61
+    }
+   ],
+   "total_assets": 170571082908.89,
+   "rank_assets": 14,
+   "tickers": [],
+   "controller": "C6 Holding (JPMorgan Chase é acionista minoritário)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "31872495000172",
+   "leader_cnpj": "31.872.495/0001-72",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO C6 S.A.",
+   "lei": {
+    "lei": "254900XL7MO8ZIMM8D46",
+    "legal_name": "Banco C6 S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=31.872.495/0001-72&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:20+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "31872495000172",
+    "name": "BANCO C6 S.A.",
+    "resources": 22
+   }
+  },
+  {
+   "id": "citibank",
+   "name": "Citibank",
+   "kind": "conglomerado",
+   "ifdata_name": "CITIBANK - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080192",
+    "prudential_entity": 1000080192,
+    "financial_codes": [
+     "C0030403"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "33479023",
+   "members": [
+    {
+     "cnpj8": "33479023",
+     "name": "BANCO CITIBANK S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 169403340824.47
+    },
+    {
+     "cnpj8": "33042953",
+     "name": "CITIBANK N.A.",
+     "tcb": "b1",
+     "ti": "28",
+     "total_assets": 26282571733.93
+    },
+    {
+     "cnpj8": "33868597",
+     "name": "CITIBANK DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 7217748187.68
+    },
+    {
+     "cnpj8": "33709114",
+     "name": "CITIGROUP GLOBAL MARKETS BRASIL, CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 2004570078.26
+    }
+   ],
+   "total_assets": 169145683686.19,
+   "rank_assets": 15,
+   "tickers": [],
+   "controller": "Citigroup Inc. (EUA)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "33479023000180",
+   "leader_cnpj": "33.479.023/0001-80",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO CITIBANK S.A.",
+   "lei": {
+    "lei": "1P0UUG7LC1S92QTNHG39",
+    "legal_name": "BANCO CITIBANK S A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=33.479.023/0001-80&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:22+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "33479023000180",
+    "name": "BCO CITIBANK S.A.",
+    "resources": 12
+   }
+  },
+  {
+   "id": "bv",
+   "name": "Banco BV (Votorantim)",
+   "kind": "conglomerado",
+   "ifdata_name": "VOTORANTIM - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080484",
+    "prudential_entity": 1000080484,
+    "financial_codes": [
+     "C0051011"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "59588111",
+   "members": [
+    {
+     "cnpj8": "59588111",
+     "name": "BANCO VOTORANTIM S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 147547552055.74
+    },
+    {
+     "cnpj8": "01858774",
+     "name": "BANCO BV S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 11825106957.77
+    },
+    {
+     "cnpj8": "13140088",
+     "name": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 561214556.37
+    }
+   ],
+   "total_assets": 154330716015.72,
+   "rank_assets": 16,
+   "tickers": [],
+   "controller": "Votorantim S.A. e Banco do Brasil (controle compartilhado)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "28126",
+     "name": "BANCO VOTORANTIM S.A.",
+     "cnpj14": "59588111000103",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "20133",
+     "name": "BV LEASING - ARRENDAMENTO MERCANTIL S/A",
+     "cnpj14": "01858774000110",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "59588111000103",
+   "leader_cnpj": "59.588.111/0001-03",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO VOTORANTIM S.A.",
+   "lei": {
+    "lei": "X2EUTZGMHS8RBQFIUS93",
+    "legal_name": "BANCO VOTORANTIM S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=59.588.111/0001-03&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:24+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "59588111000103",
+    "name": "BCO VOTORANTIM S.",
+    "resources": 18
+   }
+  },
+  {
+   "id": "mercado-pago",
+   "name": "Mercado Pago",
+   "kind": "conglomerado",
+   "ifdata_name": "MERCADO PAGO IP - PRUDENCIAL",
+   "type": "não bancário de crédito",
+   "tcb": "n1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "OSASCO",
+   "ifdata": {
+    "prudential_code": "C0084820",
+    "prudential_entity": 1000084820,
+    "financial_codes": [
+     "C0084820"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "10573521",
+   "members": [
+    {
+     "cnpj8": "10573521",
+     "name": "MERCADO PAGO INSTITUIÇÃO DE PAGAMENTO LTDA.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 105731564068.79
+    },
+    {
+     "cnpj8": "37679449",
+     "name": "MERCADO CRÉDITO SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 23031915120.74
+    },
+    {
+     "cnpj8": "57671443",
+     "name": "MERCADO PAGO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 10034864.26
+    }
+   ],
+   "total_assets": 125042639641.84,
+   "rank_assets": 17,
+   "tickers": [
+    "MELI (Nasdaq)",
+    "MELI34"
+   ],
+   "controller": "MercadoLibre, Inc.",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "10573521000191",
+   "leader_cnpj": "10.573.521/0001-91",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "MERCADO PAGO INSTITUIÇÃO DE PAGAMENTO LTDA.",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "10573521000191",
+    "name": "MERCADO PAGO IP LTDA.",
+    "resources": 4
+   }
+  },
+  {
+   "id": "cielo",
+   "name": "Cielo",
+   "kind": "conglomerado",
+   "ifdata_name": "CIELO IP - PRUDENCIAL",
+   "type": "instituição de pagamento",
+   "tcb": "n4",
+   "segment": "S5",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "BARUERI",
+   "ifdata": {
+    "prudential_code": "C0084710",
+    "prudential_entity": 1000084710,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "01027058",
+   "members": [
+    {
+     "cnpj8": "01027058",
+     "name": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 116680887728.72
+    }
+   ],
+   "total_assets": 115135780718.43,
+   "rank_assets": 18,
+   "tickers": [],
+   "controller": "Banco do Brasil e Bradesco (controle compartilhado)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "21733",
+     "name": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+     "cnpj14": "01027058000191",
+     "status": "ATIVO",
+     "sector": "Intermediação Financeira",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "01027058000191",
+   "leader_cnpj": "01.027.058/0001-91",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+   "lei": {
+    "lei": "635400V276LMQ5UZ6C26",
+    "legal_name": "CIELO S.A - INSTITUIÇÃO DE PAGAMENTO",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=01.027.058/0001-91&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:27+00:00"
+   },
+   "pillar3": null
+  },
+  {
+   "id": "daycoval",
+   "name": "Daycoval",
+   "kind": "conglomerado",
+   "ifdata_name": "BCO DAYCOVAL S.A - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0081744",
+    "prudential_entity": 1000081744,
+    "financial_codes": [
+     "C0051987"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "62232889",
+   "members": [
+    {
+     "cnpj8": "62232889",
+     "name": "BANCO DAYCOVAL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 99778656355.41
+    },
+    {
+     "cnpj8": "57731012",
+     "name": "DAYCOVAL LEASING SOCIEDADE DE ARRENDAMENTO MERCANTIL S.A.",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 3993756972.88
+    },
+    {
+     "cnpj8": "43818780",
+     "name": "DAYCOVAL LEASING - BANCO MÚLTIPLO S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 1910735128.77
+    },
+    {
+     "cnpj8": "49241570",
+     "name": "DAYCOVAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 322113506.6
+    }
+   ],
+   "total_assets": 107666358719.62,
+   "rank_assets": 19,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [
+    "name"
+   ],
+   "cvm": [
+    {
+     "code": "20796",
+     "name": "BANCO DAYCOVAL S.A.",
+     "cnpj14": "62232889000190",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "62232889000190",
+   "leader_cnpj": "62.232.889/0001-90",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO DAYCOVAL S.A.",
+   "lei": {
+    "lei": "2549006RWNEW44CYFF59",
+    "legal_name": "BANCO DAYCOVAL S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=62.232.889/0001-90&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:29+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "62232889000190",
+    "name": "BCO DAYCOVAL S.A.",
+    "resources": 23
+   }
+  },
+  {
+   "id": "jpmorgan",
+   "name": "J.P. Morgan",
+   "kind": "conglomerado",
+   "ifdata_name": "JP MORGAN CHASE - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080116",
+    "prudential_entity": 1000080116,
+    "financial_codes": [
+     "C0020107"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "33172537",
+   "members": [
+    {
+     "cnpj8": "33172537",
+     "name": "BANCO J.P. MORGAN S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 110025344998.16
+    },
+    {
+     "cnpj8": "32588139",
+     "name": "J.P. MORGAN CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 4955661185.78
+    },
+    {
+     "cnpj8": "33851205",
+     "name": "J.P. MORGAN S.A. - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 2074544343.93
+    },
+    {
+     "cnpj8": "46518205",
+     "name": "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",
+     "tcb": "b1",
+     "ti": "28",
+     "total_assets": 949889995.36
+    }
+   ],
+   "total_assets": 102123339701.22,
+   "rank_assets": 20,
+   "tickers": [],
+   "controller": "JPMorgan Chase & Co. (EUA)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "33172537000198",
+   "leader_cnpj": "33.172.537/0001-98",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO J.P. MORGAN S.A.",
+   "lei": {
+    "lei": "BMSV765KS3ZUWB7LXV33",
+    "legal_name": "Banco J.P. Morgan S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=33.172.537/0001-98&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:31+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "33172537000198",
+    "name": "BCO J.P. MORGAN S.A",
+    "resources": 5
+   }
+  },
+  {
+   "id": "inter",
+   "name": "Inter",
+   "kind": "conglomerado",
+   "ifdata_name": "INTER - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "MG",
+   "city": "BELO HORIZONTE",
+   "ifdata": {
+    "prudential_code": "C0080996",
+    "prudential_entity": 1000080996,
+    "financial_codes": [
+     "C0051884"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "00416968",
+   "members": [
+    {
+     "cnpj8": "00416968",
+     "name": "BANCO INTER S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 100898332410.02
+    },
+    {
+     "cnpj8": "22177858",
+     "name": "INTER PAG INSTITUIÇÃO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 2922090961.72
+    },
+    {
+     "cnpj8": "18945670",
+     "name": "INTER DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 959927155.14
+    }
+   ],
+   "total_assets": 101338829887.18,
+   "rank_assets": 21,
+   "tickers": [
+    "INTR (Nasdaq)",
+    "INBR32"
+   ],
+   "controller": "Inter&Co, Inc. (Ilhas Cayman)",
+   "curated_fields": [
+    "controller",
+    "cvm_extra",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "80217",
+     "name": "INTER & CO, INC.",
+     "cnpj14": "42737954000121",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO",
+     "register": "cia_estrangeira",
+     "matched": "curadoria (cvm_extra)"
+    },
+    {
+     "code": "24406",
+     "name": "BANCO INTER S.A.",
+     "cnpj14": "00416968000101",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "00416968000101",
+   "leader_cnpj": "00.416.968/0001-01",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO INTER S.A.",
+   "lei": {
+    "lei": "254900WOPB382XD4D411",
+    "legal_name": "BANCO INTER S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=00.416.968/0001-01&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:32+00:00"
+   },
+   "lei_listed": null,
+   "pillar3": {
+    "cnpj14": "00416968000101",
+    "name": "BANCO INTER",
+    "resources": 3
+   }
+  },
+  {
+   "id": "bnb",
+   "name": "Banco do Nordeste",
+   "kind": "conglomerado",
+   "ifdata_name": "BCO DO NORDESTE DO BRASIL S.A. - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S2",
+   "control_type": "público",
+   "uf": "CE",
+   "city": "FORTALEZA",
+   "ifdata": {
+    "prudential_code": "C0081593",
+    "prudential_entity": 1000081593,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "07237373",
+   "members": [
+    {
+     "cnpj8": "07237373",
+     "name": "BANCO DO NORDESTE DO BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 81039782769.7
+    }
+   ],
+   "total_assets": 81142979604.01,
+   "rank_assets": 22,
+   "tickers": [
+    "BNBR3"
+   ],
+   "controller": "União Federal",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "1228",
+     "name": "BANCO DO NORDESTE DO BRASIL SA",
+     "cnpj14": "07237373000120",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "07237373000120",
+   "leader_cnpj": "07.237.373/0001-20",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO DO NORDESTE DO BRASIL S.A.",
+   "lei": {
+    "lei": "254900VJWGYKL26WF806",
+    "legal_name": "BANCO DO NORDESTE DO BRASIL SA",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=07.237.373/0001-20&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:36+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "07237373000120",
+    "name": "BCO DO NORDESTE DO BRASIL S.A.",
+    "resources": 18
+   }
+  },
+  {
+   "id": "pagbank",
+   "name": "PagBank (PagSeguro)",
+   "kind": "conglomerado",
+   "ifdata_name": "PAGSEGURO - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0084813",
+    "prudential_entity": 1000084813,
+    "financial_codes": [
+     "C0052182"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "08561701",
+   "members": [
+    {
+     "cnpj8": "08561701",
+     "name": "PAGSEGURO INTERNET INSTITUIÇÃO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 73530146693.95
+    },
+    {
+     "cnpj8": "10264663",
+     "name": "BANCOSEGURO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 52291197004.4
+    },
+    {
+     "cnpj8": "46403683",
+     "name": "PAGINVEST CORRETORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 48288514.69
+    }
+   ],
+   "total_assets": 77074411750.44,
+   "rank_assets": 23,
+   "tickers": [
+    "PAGS (NYSE)"
+   ],
+   "controller": "PagSeguro Digital Ltd. (grupo UOL)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "08561701000101",
+   "leader_cnpj": "08.561.701/0001-01",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "PAGSEGURO INTERNET INSTITUIÇÃO DE PAGAMENTO S.A.",
+   "lei": null,
+   "pillar3": null
+  },
+  {
+   "id": "abc-brasil",
+   "name": "ABC Brasil",
+   "kind": "conglomerado",
+   "ifdata_name": "ABC-BRASIL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080312",
+    "prudential_entity": 1000080312,
+    "financial_codes": [
+     "C0041856"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "28195667",
+   "members": [
+    {
+     "cnpj8": "28195667",
+     "name": "BANCO ABC BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 66147426604.11
+    },
+    {
+     "cnpj8": "33817677",
+     "name": "ABC BRASIL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 39955049.2
+    }
+   ],
+   "total_assets": 69584916654.94,
+   "rank_assets": 24,
+   "tickers": [
+    "ABCB4"
+   ],
+   "controller": "Arab Banking Corporation (Bahrein)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "20958",
+     "name": "BANCO ABC BRASIL S/A",
+     "cnpj14": "28195667000106",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTRANGEIRO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "28195667000106",
+   "leader_cnpj": "28.195.667/0001-06",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO ABC BRASIL S.A.",
+   "lei": {
+    "lei": "549300K1V1WOTCGNSI96",
+    "legal_name": "BANCO ABC BRASIL S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=28.195.667/0001-06&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:39+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "28195667000106",
+    "name": "BANCO ABC BRASIL S.A.",
+    "resources": 19
+   }
+  },
+  {
+   "id": "basa",
+   "name": "Banco da Amazônia",
+   "kind": "independente",
+   "ifdata_name": "BCO DA AMAZONIA S.A. - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "público",
+   "uf": "PA",
+   "city": "BELEM",
+   "ifdata": {
+    "prudential_code": "C0081249",
+    "prudential_entity": 1000081249,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "04902979",
+   "members": [
+    {
+     "cnpj8": "04902979",
+     "name": "BANCO DA AMAZONIA S.A.",
+     "tcb": "b1",
+     "ti": "2",
+     "total_assets": 67352880771.74
+    }
+   ],
+   "total_assets": 67352880771.74,
+   "rank_assets": 25,
+   "tickers": [
+    "BAZA3"
+   ],
+   "controller": "União Federal",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "922",
+     "name": "BANCO DA AMAZÔNIA S.A.",
+     "cnpj14": "04902979000144",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "04902979000144",
+   "leader_cnpj": "04.902.979/0001-44",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO DA AMAZONIA S.A.",
+   "lei": {
+    "lei": "98450043AFEBE904C840",
+    "legal_name": "BANCO DA AMAZONIA SA",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=04.902.979/0001-44&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:41+00:00"
+   },
+   "pillar3": null
+  },
+  {
+   "id": "volkswagen",
+   "name": "Volkswagen",
+   "kind": "conglomerado",
+   "ifdata_name": "VOLKSWAGEN - PRUDENCIAL",
+   "type": "banco múltiplo sem carteira comercial, de investimento ou de câmbio",
+   "tcb": "b2",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080202",
+    "prudential_entity": 1000080202,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "59109165",
+   "members": [
+    {
+     "cnpj8": "59109165",
+     "name": "BANCO VOLKSWAGEN S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 61250495431.21
+    }
+   ],
+   "total_assets": 60906606118.74,
+   "rank_assets": 26,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [],
+   "leader_cnpj14": "59109165000149",
+   "leader_cnpj": "59.109.165/0001-49",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO VOLKSWAGEN S.A.",
+   "lei": {
+    "lei": "254900MPP5LNDWUHVM69",
+    "legal_name": "Banco Volkswagen S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=59.109.165/0001-49&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:43+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "59109165000149",
+    "name": "BCO VOLKSWAGEN S.A.",
+    "resources": 19
+   }
+  },
+  {
+   "id": "rabobank",
+   "name": "Rabobank",
+   "kind": "independente",
+   "ifdata_name": "BCO RABOBANK INTL BRASIL S.A. - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0081555",
+    "prudential_entity": 1000081555,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "01023570",
+   "members": [
+    {
+     "cnpj8": "01023570",
+     "name": "BANCO RABOBANK INTERNATIONAL BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 54678970426.16
+    }
+   ],
+   "total_assets": 54678970426.16,
+   "rank_assets": 27,
+   "tickers": [],
+   "controller": "Rabobank (Países Baixos)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "01023570000160",
+   "leader_cnpj": "01.023.570/0001-60",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO RABOBANK INTERNATIONAL BRASIL S.A.",
+   "lei": {
+    "lei": "5493005YWL4UW2ZLKR76",
+    "legal_name": "BANCO RABOBANK INTERNATIONAL BRASIL S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=01.023.570/0001-60&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:45+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "01023570000160",
+    "name": "BANCO RABOBANK INTERNAT BR SA",
+    "resources": 19
+   }
+  },
+  {
+   "id": "stone",
+   "name": "Stone",
+   "kind": "conglomerado",
+   "ifdata_name": "STONE IP - PRUDENCIAL",
+   "type": "não bancário de crédito",
+   "tcb": "n1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0084686",
+    "prudential_entity": 1000084686,
+    "financial_codes": [
+     "C0084686"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "16501555",
+   "members": [
+    {
+     "cnpj8": "16501555",
+     "name": "STONE INSTITUIÇÃO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 89229885376.52
+    },
+    {
+     "cnpj8": "53505601",
+     "name": "STONE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 33803604943.05
+    },
+    {
+     "cnpj8": "34590184",
+     "name": "STONE SOCIEDADE DE CRÉDITO DIRETO S.A.",
+     "tcb": "n1",
+     "ti": "43",
+     "total_assets": 790884060.44
+    }
+   ],
+   "total_assets": 54094406034.44,
+   "rank_assets": 28,
+   "tickers": [
+    "STNE (Nasdaq)"
+   ],
+   "controller": "StoneCo Ltd. (Ilhas Cayman)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "16501555000157",
+   "leader_cnpj": "16.501.555/0001-57",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "STONE INSTITUIÇÃO DE PAGAMENTO S.A.",
+   "lei": {
+    "lei": "254900U3RLNCGLUORA37",
+    "legal_name": "STONE INSTITUICAO DE PAGAMENTO S.A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=16.501.555/0001-57&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:46+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "16501555000157",
+    "name": "STONE PAGAMENTOS S.A.",
+    "resources": 3
+   }
+  },
+  {
+   "id": "picpay",
+   "name": "PicPay",
+   "kind": "conglomerado",
+   "ifdata_name": "PICPAY - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0088022",
+    "prudential_entity": 1000088022,
+    "financial_codes": [
+     "C0052632"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "22896431",
+   "members": [
+    {
+     "cnpj8": "09516419",
+     "name": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 48954093185.81
+    },
+    {
+     "cnpj8": "22896431",
+     "name": "PICPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
+     "tcb": "n4",
+     "ti": "41",
+     "total_assets": 12442385557.53
+    },
+    {
+     "cnpj8": "07138049",
+     "name": "PICPAY INVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 144120536.03
+    },
+    {
+     "cnpj8": "38146949",
+     "name": "CREDNOVO SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S. A.",
+     "tcb": "n1",
+     "ti": "44",
+     "total_assets": 11598713.12
+    }
+   ],
+   "total_assets": 51597897978.94,
+   "rank_assets": 29,
+   "tickers": [],
+   "controller": "grupo J&F",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "22896431000110",
+   "leader_cnpj": "22.896.431/0001-10",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "PICPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "22896431000110",
+    "name": "PICPAY",
+    "resources": 3
+   }
+  },
+  {
+   "id": "bnp-paribas",
+   "name": "BNP Paribas",
+   "kind": "conglomerado",
+   "ifdata_name": "BNP PARIBAS - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080673",
+    "prudential_entity": 1000080673,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "01522368",
+   "members": [
+    {
+     "cnpj8": "01522368",
+     "name": "BANCO BNP PARIBAS BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 58787928988.24
+    }
+   ],
+   "total_assets": 50896148455.79,
+   "rank_assets": 30,
+   "tickers": [],
+   "controller": "BNP Paribas (França)",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "01522368000182",
+   "leader_cnpj": "01.522.368/0001-82",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO BNP PARIBAS BRASIL S.A.",
+   "lei": {
+    "lei": "549300DFOXLW8ZHSK740",
+    "legal_name": "BANCO BNP PARIBAS BRASIL S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=01.522.368/0001-82&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:50+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "01522368000182",
+    "name": "BANCO BNP PARIBAS BRASIL S.A.",
+    "resources": 22
+   }
+  },
+  {
+   "id": "agibank",
+   "name": "Agibank",
+   "kind": "conglomerado",
+   "ifdata_name": "AGIBANK - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "CAMPINAS",
+   "ifdata": {
+    "prudential_code": "C0083694",
+    "prudential_entity": 1000083694,
+    "financial_codes": [
+     "C0051956"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "10664513",
+   "members": [
+    {
+     "cnpj8": "10664513",
+     "name": "BANCO AGIBANK S.A.",
+     "tcb": "b1",
+     "ti": "2",
+     "total_assets": 51241770490.22
+    },
+    {
+     "cnpj8": "13660104",
+     "name": "AGI FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 117446492.62
+    }
+   ],
+   "total_assets": 50363406567.6,
+   "rank_assets": 31,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [
+    {
+     "code": "24465",
+     "name": "BANCO AGIBANK S.A.",
+     "cnpj14": "10664513000150",
+     "status": "CANCELADA",
+     "sector": "Intermediação Financeira",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "10664513000150",
+   "leader_cnpj": "10.664.513/0001-50",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO AGIBANK S.A.",
+   "lei": {
+    "lei": "2549004ORSOMVRL6VQ34",
+    "legal_name": "BANCO AGIBANK S.A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=10.664.513/0001-50&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:52+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "10664513000150",
+    "name": "BCO AGIBANK S.A.",
+    "resources": 5
+   }
+  },
+  {
+   "id": "bmg",
+   "name": "BMG",
+   "kind": "conglomerado",
+   "ifdata_name": "BMG - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080178",
+    "prudential_entity": 1000080178,
+    "financial_codes": [
+     "C0030290"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "61186680",
+   "members": [
+    {
+     "cnpj8": "61186680",
+     "name": "BANCO BMG S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 50846808427.23
+    },
+    {
+     "cnpj8": "50585090",
+     "name": "BANCO BMG CONSIGNADO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 1843083176.23
+    },
+    {
+     "cnpj8": "62421979",
+     "name": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 1145201860.47
+    },
+    {
+     "cnpj8": "34265561",
+     "name": "BMG LEASING S.A. ARRENDAMENTO MERCANTIL",
+     "tcb": "n1",
+     "ti": "19",
+     "total_assets": 938678588.88
+    },
+    {
+     "cnpj8": "08030215",
+     "name": "BMG S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 17304911.47
+    }
+   ],
+   "total_assets": 49001127391.58,
+   "rank_assets": 32,
+   "tickers": [
+    "BMGB4"
+   ],
+   "controller": null,
+   "curated_fields": [
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "24600",
+     "name": "BANCO BMG S/A",
+     "cnpj14": "61186680000174",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1716",
+     "name": "BANCO BMG S/A",
+     "cnpj14": "61186680000174",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1724",
+     "name": "BMG LEASING S.A. -  ARREND. MERCANTIL",
+     "cnpj14": "34265561000134",
+     "status": "CANCELADA",
+     "sector": "Arrendamento Mercantil",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "61186680000174",
+   "leader_cnpj": "61.186.680/0001-74",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO BMG S.A.",
+   "lei": {
+    "lei": "549300IKNU8A627GPM07",
+    "legal_name": "BANCO BMG S.A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=61.186.680/0001-74&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:53+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "61186680000174",
+    "name": "BCO BMG S.A.",
+    "resources": 2
+   }
+  },
+  {
+   "id": "mercantil",
+   "name": "Mercantil do Brasil",
+   "kind": "conglomerado",
+   "ifdata_name": "MERCANTIL DO BRASIL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "MG",
+   "city": "BELO HORIZONTE",
+   "ifdata": {
+    "prudential_code": "C0080123",
+    "prudential_entity": 1000080123,
+    "financial_codes": [
+     "C0020152"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "17184037",
+   "members": [
+    {
+     "cnpj8": "17184037",
+     "name": "BANCO MERCANTIL DO BRASIL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 43054390513.15
+    },
+    {
+     "cnpj8": "33040601",
+     "name": "MERCANTIL FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO.",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 621256964.53
+    },
+    {
+     "cnpj8": "34169557",
+     "name": "BANCO MERCANTIL DE INVESTIMENTOS S/A",
+     "tcb": "b2",
+     "ti": "13",
+     "total_assets": 604306313.7
+    },
+    {
+     "cnpj8": "17364795",
+     "name": "MERCANTIL DO BRASIL DISTRIBUIDORA S.A. - TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 24157054.74
+    }
+   ],
+   "total_assets": 42662284494.79,
+   "rank_assets": 33,
+   "tickers": [
+    "BMEB3",
+    "BMEB4"
+   ],
+   "controller": null,
+   "curated_fields": [
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "1309",
+     "name": "BANCO MERCANTIL DE INVESTIMENTOS S.A.",
+     "cnpj14": "34169557000172",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "1325",
+     "name": "BANCO MERCANTIL BRASIL SA",
+     "cnpj14": "17184037000110",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    },
+    {
+     "code": "8540",
+     "name": "MERCANTIL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+     "cnpj14": "33040601000187",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "17184037000110",
+   "leader_cnpj": "17.184.037/0001-10",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO MERCANTIL DO BRASIL S.A.",
+   "lei": {
+    "lei": "2549009ZNE72F6STVN76",
+    "legal_name": "Banco Mercantil Do Brasil S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=17.184.037/0001-10&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:27:55+00:00"
+   },
+   "lei_listed": null,
+   "pillar3": {
+    "cnpj14": "17184037000110",
+    "name": "BCO MERCANTIL DO BR",
+    "resources": 24
+   }
+  },
+  {
+   "id": "banestes",
+   "name": "Banestes",
+   "kind": "conglomerado",
+   "ifdata_name": "BANESTES - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "público",
+   "uf": "ES",
+   "city": "VITORIA",
+   "ifdata": {
+    "prudential_code": "C0080147",
+    "prudential_entity": 1000080147,
+    "financial_codes": [
+     "C0030159"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "28127603",
+   "members": [
+    {
+     "cnpj8": "28127603",
+     "name": "BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 42689900921.87
+    },
+    {
+     "cnpj8": "28156057",
+     "name": "BANESTES DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S/A",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 262807224.06
+    }
+   ],
+   "total_assets": 42581868636.59,
+   "rank_assets": 34,
+   "tickers": [
+    "BEES3",
+    "BEES4"
+   ],
+   "controller": "Estado do Espírito Santo",
+   "curated_fields": [
+    "controller",
+    "name",
+    "tickers"
+   ],
+   "cvm": [
+    {
+     "code": "1155",
+     "name": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
+     "cnpj14": "28127603000178",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "ESTATAL",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "28127603000178",
+   "leader_cnpj": "28.127.603/0001-78",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "28127603000178",
+    "name": "BCO BANESTES S.A.",
+    "resources": 18
+   }
+  },
+  {
+   "id": "bofa-merrill-lynch",
+   "name": "Bofa Merrill Lynch",
+   "kind": "conglomerado",
+   "ifdata_name": "BOFA MERRILL LYNCH - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080556",
+    "prudential_entity": 1000080556,
+    "financial_codes": [
+     "C0051255"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "62073200",
+   "members": [
+    {
+     "cnpj8": "62073200",
+     "name": "BANK OF AMERICA MERRILL LYNCH BANCO MÚLTIPLO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 40609858521.04
+    },
+    {
+     "cnpj8": "02670590",
+     "name": "MERRILL LYNCH S.A. CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 1621402190.86
+    }
+   ],
+   "total_assets": 41219618067.25,
+   "rank_assets": 35,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [],
+   "leader_cnpj14": "62073200000121",
+   "leader_cnpj": "62.073.200/0001-21",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANK OF AMERICA MERRILL LYNCH BANCO MÚLTIPLO S.A.",
+   "lei": {
+    "lei": "KPTCWFWJ4GW0WZNEMH59",
+    "legal_name": "Bank of America Merrill Lynch Banco Multiplo S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=62.073.200/0001-21&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:28:00+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "62073200000121",
+    "name": "BANK OF AMERICA MERRILL LYNCH",
+    "resources": 17
+   }
+  },
+  {
+   "id": "original",
+   "name": "Original",
+   "kind": "conglomerado",
+   "ifdata_name": "ORIGINAL - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080903",
+    "prudential_entity": 1000080903,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "92894922",
+   "members": [
+    {
+     "cnpj8": "92894922",
+     "name": "BANCO ORIGINAL S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 37169760762.97
+    }
+   ],
+   "total_assets": 39403960332.06,
+   "rank_assets": 36,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [],
+   "leader_cnpj14": "92894922000108",
+   "leader_cnpj": "92.894.922/0001-08",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO ORIGINAL S.A.",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "92894922000108",
+    "name": "BANCO ORIGINAL",
+    "resources": 2
+   }
+  },
+  {
+   "id": "pine",
+   "name": "Pine",
+   "kind": "conglomerado",
+   "ifdata_name": "PINE - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0080374",
+    "prudential_entity": 1000080374,
+    "financial_codes": [
+     "C0050304"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "62144175",
+   "members": [
+    {
+     "cnpj8": "62144175",
+     "name": "BANCO PINE S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 37647107847.0
+    },
+    {
+     "cnpj8": "92236777",
+     "name": "PINE INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+     "tcb": "n2",
+     "ti": "16",
+     "total_assets": 9450754.49
+    }
+   ],
+   "total_assets": 37630206577.08,
+   "rank_assets": 37,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [
+    {
+     "code": "20567",
+     "name": "BANCO PINE S/A",
+     "cnpj14": "62144175000120",
+     "status": "ATIVO",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "62144175000120",
+   "leader_cnpj": "62.144.175/0001-20",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO PINE S.A.",
+   "lei": {
+    "lei": "549300B3S9ENN2P5WM84",
+    "legal_name": "BANCO PINE S/A",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=62.144.175/0001-20&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:28:04+00:00"
+   },
+   "pillar3": null
+  },
+  {
+   "id": "bocom",
+   "name": "Bocom",
+   "kind": "conglomerado",
+   "ifdata_name": "BOCOM - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "BA",
+   "city": "SALVADOR",
+   "ifdata": {
+    "prudential_code": "C0084624",
+    "prudential_entity": 1000084624,
+    "financial_codes": [
+     "C0052003"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "15114366",
+   "members": [
+    {
+     "cnpj8": "15114366",
+     "name": "BANCO BOCOM BBM S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 32001927804.58
+    },
+    {
+     "cnpj8": "15213150",
+     "name": "BOCOM BBM CORRETORA DE CÂMBIO E VALORES MOBILIÁRIOS S.A.",
+     "tcb": "n2",
+     "ti": "15",
+     "total_assets": 31849086.4
+    }
+   ],
+   "total_assets": 35789254801.97,
+   "rank_assets": 38,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [
+    {
+     "code": "930",
+     "name": "BANCO BOCOM BBM S.A.",
+     "cnpj14": "15114366000169",
+     "status": "CANCELADA",
+     "sector": "Bancos",
+     "control": "PRIVADO",
+     "register": "cia_aberta",
+     "matched": "CNPJ-base de membro"
+    }
+   ],
+   "leader_cnpj14": "15114366000169",
+   "leader_cnpj": "15.114.366/0001-69",
+   "leader_cnpj14_source": "CVM",
+   "leader_name": "BANCO BOCOM BBM S.A.",
+   "lei": {
+    "lei": "TQFFKDBY0PPZVC5WE666",
+    "legal_name": "BANCO BOCOM BBM S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=15.114.366/0001-69&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:28:06+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "15114366000169",
+    "name": "BCO BOCOM BBM S.A.",
+    "resources": 14
+   }
+  },
+  {
+   "id": "stellantis",
+   "name": "Stellantis",
+   "kind": "conglomerado",
+   "ifdata_name": "STELLANTIS - PRUDENCIAL",
+   "type": "banco múltiplo sem carteira comercial, de investimento ou de câmbio",
+   "tcb": "b2",
+   "segment": "S3",
+   "control_type": "privado com controle estrangeiro",
+   "uf": "SP",
+   "city": "SAO PAULO",
+   "ifdata": {
+    "prudential_code": "C0087298",
+    "prudential_entity": 1000087298,
+    "financial_codes": [
+     "C0052508"
+    ],
+    "period": 202606
+   },
+   "leader_cnpj8": "03502961",
+   "members": [
+    {
+     "cnpj8": "03502961",
+     "name": "STELLANTIS FINANCIAMENTOS SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
+     "tcb": "n1",
+     "ti": "14",
+     "total_assets": 21539453710.15
+    },
+    {
+     "cnpj8": "62237425",
+     "name": "BANCO STELLANTIS S.A.",
+     "tcb": "b2",
+     "ti": "8",
+     "total_assets": 15786564106.61
+    }
+   ],
+   "total_assets": 35052863043.81,
+   "rank_assets": 39,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [],
+   "leader_cnpj14": "03502961000192",
+   "leader_cnpj": "03.502.961/0001-92",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "STELLANTIS FINANCIAMENTOS SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
+   "lei": null,
+   "pillar3": {
+    "cnpj14": "03502961000192",
+    "name": "STELLANTIS FINANCIAMENTOS CFI",
+    "resources": 4
+   }
+  },
+  {
+   "id": "classico",
+   "name": "Bco Classico S.A.",
+   "kind": "conglomerado",
+   "ifdata_name": "BCO CLASSICO S.A. - PRUDENCIAL",
+   "type": "banco comercial, múltiplo com carteira comercial ou caixa econômica",
+   "tcb": "b1",
+   "segment": "S3",
+   "control_type": "privado nacional",
+   "uf": "RJ",
+   "city": "RIO DE JANEIRO",
+   "ifdata": {
+    "prudential_code": "C0081665",
+    "prudential_entity": 1000081665,
+    "financial_codes": [],
+    "period": 202606
+   },
+   "leader_cnpj8": "31597552",
+   "members": [
+    {
+     "cnpj8": "31597552",
+     "name": "BANCO CLASSICO S.A.",
+     "tcb": "b1",
+     "ti": "8",
+     "total_assets": 40612776298.85
+    }
+   ],
+   "total_assets": 34983677670.7,
+   "rank_assets": 40,
+   "tickers": [],
+   "controller": null,
+   "curated_fields": [],
+   "cvm": [],
+   "leader_cnpj14": "31597552000152",
+   "leader_cnpj": "31.597.552/0001-52",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO CLASSICO S.A.",
+   "lei": null,
+   "pillar3": null
+  },
+  {
+   "id": "sicoob",
+   "name": "Sistema Sicoob",
+   "kind": "sistema cooperativo",
+   "ifdata_name": null,
+   "type": "sistema cooperativo de crédito",
+   "tcb": "b3",
+   "segment": "S2",
+   "control_type": "privado nacional (cooperativas)",
+   "uf": "DF",
+   "city": "BRASILIA",
+   "ifdata": {
+    "prudential_code": "C0080879",
+    "prudential_entity": 1000080879,
+    "financial_codes": [
+     "C0051750"
+    ],
+    "name_regex": "SICOOB|BANCOOB",
+    "entities_at_rank_level": 277,
+    "period": 202606
+   },
+   "leader_cnpj8": "02038232",
+   "members_count": 277,
+   "members": [
+    {
+     "cnpj8": "02038232",
+     "name": "BANCO COOPERATIVO SICOOB S.A. - BANCO SICOOB",
+     "tcb": "b1",
+     "ti": "11",
+     "total_assets": 223159409234.55
+    },
+    {
+     "cnpj8": "25683434",
+     "name": "COOPERATIVA CENTRAL DE CRÉDITO DE MINAS GERAIS LTDA. - SICOOB CENTRAL CREDIMINAS",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 34542514920.6
+    },
+    {
+     "cnpj8": "80160260",
+     "name": "COOPERATIVA CENTRAL DE CRÉDITO DE SANTA CATARINA E RIO GRANDE DO SUL - SICOOB CENTRAL SC/RS",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 29002303571.92
+    },
+    {
+     "cnpj8": "00309024",
+     "name": "CENTRAL DAS COOPERATIVAS DE ECONOMIA E CREDITO DO ESTADO DE MINAS GERAIS LTDA. - SICOOB CENTRAL CECREMGE",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 27630783336.68
+    },
+    {
+     "cnpj8": "63917579",
+     "name": "COOPERATIVA CENTRAL DE CRÉDITO DO ESTADO DE SÃO PAULO - SICOOB SÃO PAULO",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 19289667338.06
+    },
+    {
+     "cnpj8": "32428294",
+     "name": "COOPERATIVA CENTRAL DE CREDITO DO ESPIRITO SANTO - SICOOB CENTRAL ES",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 15057606534.32
+    },
+    {
+     "cnpj8": "32430233",
+     "name": "COOPERATIVA DE CRÉDITO CONEXÃO - SICOOB CONEXÃO",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 14077036370.37
+    },
+    {
+     "cnpj8": "71328769",
+     "name": "SICOOB COCRED COOPERATIVA DE CRÉDITO",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 13447581276.08
+    },
+    {
+     "cnpj8": "78825270",
+     "name": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS - SICOOB MAXICRÉDITO",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 11925489895.76
+    },
+    {
+     "cnpj8": "42898825",
+     "name": "SICOOB CREDICOM - COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS MEDICOS E PROFISSIONAIS DA AREA DE SAUDE DO BRASIL LTDA.",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 10596586423.33
+    },
+    {
+     "cnpj8": "05036532",
+     "name": "CENTRAL DAS COOPERATIVAS DE CREDITO UNICOOB - SICOOB CENTRAL UNICOOB",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 9673654997.2
+    },
+    {
+     "cnpj8": "33416108",
+     "name": "COOPERATIVA CENTRAL DE CRÉDITO DE GOIÁS, DISTRITO FEDERAL E TOCANTINS LTDA. - SICOOB NOVA CENTRAL",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 9398098374.87
+    },
+    {
+     "cnpj8": "04243780",
+     "name": "CENTRAL SICOOB UNI DE COOPERATIVAS DE CRÉDITO",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 8966356974.63
+    },
+    {
+     "cnpj8": "81607046",
+     "name": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS SÃO MIGUEL DO OESTE - SICOOB SÃO MIGUEL SC/PR/RS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 8012201521.34
+    },
+    {
+     "cnpj8": "03632872",
+     "name": "COOPERATIVA DE CRÉDITO E INVESTIMENTO DO SUDOESTE  DA AMAZÔNIA LTDA - SICOOB CREDISUL",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 7797397809.68
+    },
+    {
+     "cnpj8": "03459850",
+     "name": "COOPERATIVA DE CRÉDITO SICOOB METROPOLITANO",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 7450454778.59
+    },
+    {
+     "cnpj8": "03502131",
+     "name": "COOPERATIVA CENTRAL DE CRÉDITO DO NORTE DO BRASIL - SICOOB NORTE",
+     "tcb": "b3C",
+     "ti": "9",
+     "total_assets": 7156586939.08
+    },
+    {
+     "cnpj8": "03320525",
+     "name": "COOPERATIVA DE CRÉDITO ARACOOP LTDA. - SICOOB ARACOOP",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6440974970.41
+    },
+    {
+     "cnpj8": "32467086",
+     "name": "COOPERATIVA DE CRÉDITO SUL DO ESPÍRITO SANTO - SICOOB SUL",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6150461941.66
+    },
+    {
+     "cnpj8": "02015588",
+     "name": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DO CENTRO SUL RONDONIENSE - SICOOB CREDIP.",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5947631036.79
+    },
+    {
+     "cnpj8": "78834975",
+     "name": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS DO VALE DO CANOINHAS - SICOOB CREDICANOINHAS/SC",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5864997039.63
+    },
+    {
+     "cnpj8": "31804966",
+     "name": "COOPERATIVA DE CRÉDITO COOPERMAIS - SICOOB COOPERMAIS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5001705454.96
+    },
+    {
+     "cnpj8": "04388688",
+     "name": "COOPERATIVA DE CRÉDITO SICOOB ENGECRED LTDA.",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 4576649000.14
+    },
+    {
+     "cnpj8": "05241619",
+     "name": "COOPERATIVA DE CRÉDITO SICOOB PRIMAVERA - SICOOB PRIMAVERA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 4220290189.55
+    },
+    {
+     "cnpj8": "78840071",
+     "name": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS DO ALTO URUGUAI CATARINENSE - SICOOB CREDIAUC",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 4208943263.38
+    }
+   ],
+   "total_assets": 729495718019.72,
+   "total_assets_note": "soma bruta das entidades do sistema (com dupla contagem)",
+   "rank_assets": null,
+   "tickers": [],
+   "controller": "cooperativas associadas (sistema cooperativo)",
+   "note": "Banco Sicoob (ex-Bancoob) + centrais + cooperativas singulares cujo nome contém SICOOB. Mesma ressalva de dupla contagem.",
+   "curated_fields": [
+    "controller"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "02038232000164",
+   "leader_cnpj": "02.038.232/0001-64",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO COOPERATIVO SICOOB S.A. - BANCO SICOOB",
+   "lei": {
+    "lei": "254900YR7GLPBCLLMT79",
+    "legal_name": "BANCO COOPERATIVO SICOOB S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=02.038.232/0001-64&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:28:13+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "02038232000164",
+    "name": "BANCO SICOOB S.A.",
+    "resources": 11
+   }
+  },
+  {
+   "id": "sicredi",
+   "name": "Sistema Sicredi",
+   "kind": "sistema cooperativo",
+   "ifdata_name": null,
+   "type": "sistema cooperativo de crédito",
+   "tcb": "b3",
+   "segment": "S2",
+   "control_type": "privado nacional (cooperativas)",
+   "uf": "RS",
+   "city": "PORTO ALEGRE",
+   "ifdata": {
+    "prudential_code": "C0080745",
+    "prudential_entity": 1000080745,
+    "financial_codes": [],
+    "name_regex": "SICREDI",
+    "entities_at_rank_level": 106,
+    "period": 202606
+   },
+   "leader_cnpj8": "01181521",
+   "members_count": 105,
+   "members": [
+    {
+     "cnpj8": "01181521",
+     "name": "BANCO COOPERATIVO SICREDI S.A.",
+     "tcb": "b1",
+     "ti": "11",
+     "total_assets": 234406076625.59
+    },
+    {
+     "cnpj8": "79342069",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DEXIS - SICREDI DEXIS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 15763618424.66
+    },
+    {
+     "cnpj8": "26529420",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO OURO VERDE - SICREDI OURO VERDE MT/PA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 14275374824.15
+    },
+    {
+     "cnpj8": "81099491",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VALE DO PIQUIRI ABCD - SICREDI VALE DO PIQUIRI ABCD PR/SP",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 14018360222.09
+    },
+    {
+     "cnpj8": "81466286",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CAMPOS GERAIS, GRANDE CURITIBA, VALE DO RIBEIRA E FORÇA DOS VENTOS - SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 13974600552.98
+    },
+    {
+     "cnpj8": "90608712",
+     "name": "COOPERATIVA DE CRÉDITO SICREDI SERRANA RS/ES",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 13586344109.68
+    },
+    {
+     "cnpj8": "78414067",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VANGUARDA - SICREDI VANGUARDA PR/SP/RJ",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 13507631657.58
+    },
+    {
+     "cnpj8": "91586982",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SICREDI PIONEIRA RS - SICREDI PIONEIRA RS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 12226563305.4
+    },
+    {
+     "cnpj8": "88894548",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO - SICREDI UNIAO RS/ES",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 10639747905.65
+    },
+    {
+     "cnpj8": "32995755",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUDOESTE MT/PA - SICREDI SUDOESTE MT/PA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 10429410074.99
+    },
+    {
+     "cnpj8": "26408161",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO SUL DO MATO GROSSO DO SUL E BAHIA - SICREDI CENTRO-SUL MS/BA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 9593675984.77
+    },
+    {
+     "cnpj8": "24654881",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO DOS ESTADOS DE MATO GROSSO DO SUL, TOCANTINS E OESTE DA BAHIA - SICREDI UNIÃO MS/TO E OESTE DA BA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 9392668844.02
+    },
+    {
+     "cnpj8": "87780268",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO DE ESTADOS RIO GRANDE DO SUL, SANTA CATARINA E MINAS GERAIS - SICREDI UNIESTADOS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 8886240381.93
+    },
+    {
+     "cnpj8": "26555235",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SORRISO - SICREDI CELEIRO MT/RR",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 8289954997.93
+    },
+    {
+     "cnpj8": "88038260",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO PLANALTO - SICREDI PLANALTO RS/MG",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 7597702393.34
+    },
+    {
+     "cnpj8": "89126130",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO DOS VALES - SICREDI REGIÃO DOS VALES RS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 7090259839.93
+    },
+    {
+     "cnpj8": "87795639",
+     "name": "COOPERATIVA DE CRÉDITO ALIANÇA - SICREDI ALIANÇA",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6738108536.34
+    },
+    {
+     "cnpj8": "37442605",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NORTE MATO-GROSSENSE E OESTE PARAENSE - SICREDI GRANDES RIOS MT/PA/AM",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6709540130.15
+    },
+    {
+     "cnpj8": "79052122",
+     "name": "COOPERATIVA DE CREDITO, POUPANÇA E INVESTIMENTO ALIANÇA - SICREDI ALIANÇA PR/SP",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6153197813.64
+    },
+    {
+     "cnpj8": "87733770",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CONEXÃO - SICREDI CONEXÃO",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 6025512352.74
+    },
+    {
+     "cnpj8": "10348181",
+     "name": "COOPERATIVA DE CRÉDITO DO VALE DO ITAJAÍ E LITORAL CATARINENSE - SICREDI VALE LITORAL SC",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5719662393.79
+    },
+    {
+     "cnpj8": "87853206",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO OURO BRANCO - SICREDI OURO BRANCO RS/MG",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5518860481.35
+    },
+    {
+     "cnpj8": "90497256",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTERESTADOS - SICREDI INTERESTADOS",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5480853583.5
+    },
+    {
+     "cnpj8": "92555150",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO ALTOS DA SERRA - SICREDI ALTOS DA SERRA RS/SC",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5237017363.34
+    },
+    {
+     "cnpj8": "02843443",
+     "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NORTE E NORDESTE DE SANTA CATARINA - SICREDI NORTE SC",
+     "tcb": "b3S",
+     "ti": "9",
+     "total_assets": 5226965073.0
+    }
+   ],
+   "total_assets": 656902151443.92,
+   "total_assets_note": "soma bruta das entidades do sistema (com dupla contagem)",
+   "rank_assets": null,
+   "tickers": [],
+   "controller": "cooperativas associadas (sistema cooperativo)",
+   "note": "Banco Cooperativo Sicredi + centrais + cooperativas singulares cujo nome contém SICREDI. Soma bruta: ativo, captações e PL têm dupla contagem (depósitos das cooperativas no banco e nas centrais); as carteiras de crédito por cliente não.",
+   "curated_fields": [
+    "controller"
+   ],
+   "cvm": [],
+   "leader_cnpj14": "01181521000155",
+   "leader_cnpj": "01.181.521/0001-55",
+   "leader_cnpj14_source": "calculado (matriz 0001 + dígitos verificadores)",
+   "leader_name": "BANCO COOPERATIVO SICREDI S.A.",
+   "lei": {
+    "lei": "213800I3REPPXE1XZ437",
+    "legal_name": "BANCO COOPERATIVO SICREDI S.A.",
+    "status": "ISSUED",
+    "entity_status": "ACTIVE",
+    "source": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=01.181.521/0001-55&page%5Bsize%5D=5",
+    "fetched_at": "2026-11-28T04:28:11+00:00"
+   },
+   "pillar3": {
+    "cnpj14": "01181521000155",
+    "name": "BCO COOPERATIVO SICREDI S.A",
+    "resources": 3
+   }
+  }
+ ]
+}

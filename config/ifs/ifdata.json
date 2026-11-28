@@ -1,0 +1,86 @@
+{
+ "_doc": "Coletor do IF.data (BCB) pelos arquivos JSON do site (a API OData devolve 500). Cada métrica é achada pelo nome do relatório e pelo caminho da coluna (regex), não pelo id interno, porque os ids das colunas contábeis mudaram com o Cosif 2025. Valores em R$ (unidades), como vêm nos arquivos; o site mostra em R$ mil. Ver docs/ifs-dados.md.",
+ "base_url": "https://www3.bcb.gov.br/ifdata/rest",
+ "index_files": ["relatorios", "relatorios2025a2030"],
+ "since": "2016-03",
+ "cosif_break": "2025-03",
+ "levels": {
+  "1004": "Conglomerados prudenciais e instituições independentes (regra antiga, até 2023-06)",
+  "1005": "Conglomerados financeiros e instituições independentes",
+  "1006": "Instituições individuais",
+  "1009": "Conglomerados prudenciais e instituições independentes (Res. CMN 4.950, desde 2023-09)"
+ },
+ "value_levels": {"1004": "all", "1005": "all", "1009": "all", "1006": ["ativo_total"]},
+ "series": {
+  "financeiro": {
+   "label": "Conglomerado financeiro (1005) em todo o período",
+   "chain": [{"level": 1005, "from": 200001, "to": 207912}]
+  },
+  "credito": {
+   "label": "Carteira de crédito: conglomerado financeiro (1005) até 2024-12; prudencial (1009) desde 2025-03, quando o IF.data passou a publicar os relatórios de crédito só no prudencial",
+   "chain": [{"level": 1005, "from": 200001, "to": 202412}, {"level": 1009, "from": 202503, "to": 207912}]
+  },
+  "prudencial": {
+   "label": "Conglomerado prudencial: 1004 até 2023-06, 1009 desde 2023-09",
+   "chain": [{"level": 1004, "from": 200001, "to": 202306}, {"level": 1009, "from": 202309, "to": 207912}]
+  }
+ },
+ "metrics": [
+  {"id": "ativo_total", "label": "Ativo total", "group": "balanço", "unit": "BRL", "report": "^Resumo", "column": "^Ativo Total$", "series": "financeiro", "share": true},
+  {"id": "carteira_credito", "label": "Carteira de crédito (Resumo; classificada até 2024)", "group": "balanço", "unit": "BRL", "report": "^Resumo", "column": "^Carteira de Crédito( Classificada)?$", "series": "financeiro", "share": true},
+  {"id": "captacoes", "label": "Captações", "group": "funding", "unit": "BRL", "report": "^Resumo", "column": "^Captações$", "series": "financeiro", "share": true},
+  {"id": "patrimonio_liquido", "label": "Patrimônio líquido", "group": "balanço", "unit": "BRL", "report": "^Resumo", "column": "^Patrimônio Líquido$", "series": "financeiro", "share": true},
+  {"id": "lucro_liquido", "label": "Lucro líquido (acumulado no semestre)", "group": "resultado", "unit": "BRL", "report": "^Resumo", "column": "^Lucro Líquido$", "series": "financeiro", "share": false},
+  {"id": "indice_basileia", "label": "Índice de Basileia (Resumo)", "group": "capital", "unit": "ratio", "report": "^Resumo", "column": "^Índice de Basileia$", "series": "prudencial", "share": false},
+  {"id": "agencias", "label": "Número de agências", "group": "rede", "unit": "count", "report": "^Resumo", "column": "^Número de Agências$", "series": "financeiro", "share": true},
+  {"id": "postos", "label": "Número de postos de atendimento", "group": "rede", "unit": "count", "report": "^Resumo", "column": "^Número de Postos de Atendimento$", "series": "financeiro", "share": true},
+  {"id": "depositos_total", "label": "Depósitos totais", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Depósitos?( Total)?\\s+\\(a\\)$", "series": "financeiro", "share": true},
+  {"id": "depositos_vista", "label": "Depósitos à vista", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Depósitos à Vista\\s+\\(a1\\)$", "series": "financeiro", "share": true},
+  {"id": "depositos_poupanca", "label": "Depósitos de poupança", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Depósitos de Poupança\\s+\\(a2\\)$", "series": "financeiro", "share": true},
+  {"id": "depositos_prazo", "label": "Depósitos a prazo", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Depósitos a Prazo\\s+\\(a4\\)$", "series": "financeiro", "share": true},
+  {"id": "lci", "label": "Letras de crédito imobiliário", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Letras de Crédito Imobiliário\\s+\\(c1\\)$", "series": "financeiro", "share": true},
+  {"id": "lca", "label": "Letras de crédito do agronegócio", "group": "funding", "unit": "BRL", "report": "^Passivo", "column": "> Letras de Crédito do Agronegócio\\s+\\(c2\\)$", "series": "financeiro", "share": true},
+  {"id": "rendas_tarifas", "label": "Rendas de tarifas bancárias (acumulado no semestre)", "group": "resultado", "unit": "BRL", "report": "^Demonstração de Resultado", "column": "Rendas de Tarifas Bancárias\\s+\\((d2|m)\\)$", "series": "financeiro", "share": true},
+
+  {"id": "pf_total", "label": "Crédito PF: total", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Total da Carteira de Pessoa Física$", "series": "credito", "share": true},
+  {"id": "pf_consignado", "label": "Crédito PF: consignado", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Empréstimo com Consignação em Folha > Total$", "series": "credito", "share": true},
+  {"id": "pf_nao_consignado", "label": "Crédito PF: empréstimo sem consignação", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Empréstimo sem Consignação em Folha > Total$", "series": "credito", "share": true},
+  {"id": "pf_veiculos", "label": "Crédito PF: veículos", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Veículos > Total$", "series": "credito", "share": true},
+  {"id": "pf_habitacao", "label": "Crédito PF: habitação", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Habitação > Total$", "series": "credito", "share": true},
+  {"id": "pf_cartao", "label": "Crédito PF: cartão de crédito", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Cartão de Crédito > Total$", "series": "credito", "share": true},
+  {"id": "pf_rural", "label": "Crédito PF: rural e agroindustrial", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Rural e Agroindustrial > Total$", "series": "credito", "share": true},
+  {"id": "pf_outros", "label": "Crédito PF: outros", "group": "crédito PF", "unit": "BRL", "report": "Pessoa Física - modalidade", "column": "^Outros Créditos > Total$", "series": "credito", "share": true},
+
+  {"id": "pj_total", "label": "Crédito PJ: total", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Total da Carteira de Pessoa Jurídica$", "series": "credito", "share": true},
+  {"id": "pj_capital_giro", "label": "Crédito PJ: capital de giro", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Capital de Giro > Total$", "series": "credito", "share": true},
+  {"id": "pj_investimento", "label": "Crédito PJ: investimento", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Investimento > Total$", "series": "credito", "share": true},
+  {"id": "pj_cheque_especial", "label": "Crédito PJ: cheque especial e conta garantida (capital de giro rotativo até 2017)", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^(Cheque Especial e Conta Garantida|Capital de Giro Rotativo) > Total$", "series": "credito", "share": true},
+  {"id": "pj_recebiveis", "label": "Crédito PJ: operações com recebíveis", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Operações com Recebíveis > Total$", "series": "credito", "share": true},
+  {"id": "pj_comex", "label": "Crédito PJ: comércio exterior", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Comércio Exterior > Total$", "series": "credito", "share": true},
+  {"id": "pj_infraestrutura", "label": "Crédito PJ: infraestrutura, desenvolvimento e projeto", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Financiamento de Infraestrutura.* > Total$", "series": "credito", "share": true},
+  {"id": "pj_rural", "label": "Crédito PJ: rural e agroindustrial", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Rural e Agroindustrial > Total$", "series": "credito", "share": true},
+  {"id": "pj_habitacional", "label": "Crédito PJ: habitacional", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Habitacional > Total$", "series": "credito", "share": true},
+  {"id": "pj_outros", "label": "Crédito PJ: outros", "group": "crédito PJ", "unit": "BRL", "report": "Pessoa Jurídica - modalidade", "column": "^Outros Créditos > Total$", "series": "credito", "share": true},
+  {"id": "pj_micro", "label": "Crédito PJ: tomador micro", "group": "crédito PJ porte", "unit": "BRL", "report": "Pessoa Jurídica - por porte", "column": "^Micro$", "series": "credito", "share": true},
+  {"id": "pj_pequena", "label": "Crédito PJ: tomador pequeno", "group": "crédito PJ porte", "unit": "BRL", "report": "Pessoa Jurídica - por porte", "column": "^Pequena$", "series": "credito", "share": true},
+  {"id": "pj_media", "label": "Crédito PJ: tomador médio", "group": "crédito PJ porte", "unit": "BRL", "report": "Pessoa Jurídica - por porte", "column": "^Média$", "series": "credito", "share": true},
+  {"id": "pj_grande", "label": "Crédito PJ: tomador grande", "group": "crédito PJ porte", "unit": "BRL", "report": "Pessoa Jurídica - por porte", "column": "^Grande$", "series": "credito", "share": true},
+
+  {"id": "reg_total", "label": "Crédito por região: total geral", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Total Geral$", "series": "credito", "share": true},
+  {"id": "reg_sudeste", "label": "Crédito na região Sudeste", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Sudeste$", "series": "credito", "share": true, "region": "Sudeste"},
+  {"id": "reg_sul", "label": "Crédito na região Sul", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Sul$", "series": "credito", "share": true, "region": "Sul"},
+  {"id": "reg_nordeste", "label": "Crédito na região Nordeste", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Nordeste$", "series": "credito", "share": true, "region": "Nordeste"},
+  {"id": "reg_norte", "label": "Crédito na região Norte", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Norte$", "series": "credito", "share": true, "region": "Norte"},
+  {"id": "reg_centro_oeste", "label": "Crédito na região Centro-Oeste", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Centro-?[Oo]este$", "series": "credito", "share": true, "region": "Centro-Oeste"},
+  {"id": "reg_nao_informada", "label": "Crédito: região não informada", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Região não Informada$", "series": "credito", "share": false},
+  {"id": "reg_exterior", "label": "Crédito no exterior", "group": "crédito região", "unit": "BRL", "report": "por região geográfica", "column": "^Total Exterior$", "series": "credito", "share": false},
+
+  {"id": "clientes_credito", "label": "Clientes com operações de crédito ativas", "group": "clientes", "unit": "count", "report": "quantidade de clientes", "column": "^Quantidade de clientes com operações ativas$", "series": "credito", "share": true},
+  {"id": "operacoes_credito", "label": "Operações de crédito ativas", "group": "clientes", "unit": "count", "report": "quantidade de clientes", "column": "^Quantidade de operações ativas$", "series": "credito", "share": true}
+ ],
+ "derived": [
+  {"id": "credito_rural", "label": "Crédito rural e agroindustrial (PF + PJ)", "group": "crédito produto", "unit": "BRL", "sum": ["pf_rural", "pj_rural"], "series": "credito", "share": true},
+  {"id": "credito_imobiliario", "label": "Crédito imobiliário (PF habitação + PJ habitacional)", "group": "crédito produto", "unit": "BRL", "sum": ["pf_habitacao", "pj_habitacional"], "series": "credito", "share": true},
+  {"id": "credito_pf_pj", "label": "Crédito PF + PJ (relatórios por modalidade)", "group": "crédito produto", "unit": "BRL", "sum": ["pf_total", "pj_total"], "series": "credito", "share": true}
+ ]
+}

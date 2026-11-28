@@ -1,0 +1,27 @@
+{
+ "_doc": "ESTBAN (Estatística Bancária Mensal por Município, documento 4500 do Cosif). Saldos por banco (CNPJ-base) e município, em R$. Não cobre cooperativas nem bancos sem agência. Cada métrica soma os verbetes listados que existirem no arquivo do mês (o leiaute mudou: os verbetes 164–166 de crédito rural deixaram de vir separados).",
+ "base_url": "https://www.bcb.gov.br/content/estatisticas/estatistica_bancaria_estban/municipio",
+ "name_patterns": ["{m}_ESTBAN.csv.zip", "{m}_ESTBAN.CSV.ZIP", "{m}_ESTBAN.ZIP", "{m}_ESTBAN.zip"],
+ "since": "2016-01",
+ "retry_missing_months": 12,
+ "metrics": {
+  "credito_total": {"label": "Operações de crédito (verbete 160)", "verbetes": ["160"]},
+  "emprestimos_titulos": {"label": "Empréstimos e títulos descontados (161)", "verbetes": ["161"]},
+  "financiamentos": {"label": "Financiamentos (162)", "verbetes": ["162"]},
+  "credito_rural": {"label": "Financiamentos rurais e agroindustriais (163 a 167)", "verbetes": ["163", "164", "165", "166", "167"]},
+  "credito_imobiliario": {"label": "Financiamentos imobiliários (169)", "verbetes": ["169"]},
+  "depositos_vista": {"label": "Depósitos à vista (401 a 419)", "verbetes": ["401"]},
+  "depositos_poupanca": {"label": "Depósitos de poupança (420)", "verbetes": ["420"]},
+  "depositos_prazo": {"label": "Depósitos a prazo (432)", "verbetes": ["432"]},
+  "depositos_total": {"label": "Depósitos à vista + poupança + a prazo (401, 420, 432)", "verbetes": ["401", "420", "432"]},
+  "ativo_total": {"label": "Total do ativo (399)", "verbetes": ["399"]}
+ },
+ "regions": {
+  "Norte": ["AC", "AM", "AP", "PA", "RO", "RR", "TO"],
+  "Nordeste": ["AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"],
+  "Centro-Oeste": ["DF", "GO", "MS", "MT"],
+  "Sudeste": ["ES", "MG", "RJ", "SP"],
+  "Sul": ["PR", "RS", "SC"]
+ },
+ "share_months": [3, 6, 9, 12]
+}

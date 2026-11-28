@@ -1,0 +1,9 @@
+{
+ "_doc": "Participação de mercado: instituição do cadastro mestre / total do sistema, no mesmo nível e data-base. Variação em pontos percentuais sobre 1, 3 e 5 anos (mesmo mês). Ganhadores e perdedores entre as instituições do cadastro; o resto do sistema aparece como 'demais'.",
+ "horizons_years": [1, 3, 5],
+ "top_movers": 5,
+ "top_share": 10,
+ "also_prudential": ["ativo_total", "carteira_credito", "captacoes", "patrimonio_liquido", "lucro_liquido", "indice_basileia"],
+ "estban_metrics": ["credito_total", "credito_rural", "credito_imobiliario", "emprestimos_titulos", "financiamentos", "depositos_total", "depositos_vista", "depositos_poupanca", "depositos_prazo"],
+ "estban_municipal_metrics": ["credito_total", "credito_rural", "depositos_total"]
+}

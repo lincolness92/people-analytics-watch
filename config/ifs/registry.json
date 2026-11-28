@@ -1,0 +1,57 @@
+{
+ "_doc": "Cadastro mestre. As instituições saem do IF.data (ranking por ativo total no nível prudencial da data-base mais recente) mais as listadas em 'include' e os sistemas cooperativos. 'curation' só acrescenta o que nenhuma fonte estruturada dá (nome curto, tickers, controlador) e fica marcado como curadoria manual. Chaves de 'curation': código do conglomerado prudencial (C00xxxxx) ou CNPJ-base de um membro.",
+ "rank": {"level": 1009, "metric": "ativo_total", "top_n": 40},
+ "include": [
+  {"leader_cnpj8": "18236120", "why": "banco digital (Nubank)"},
+  {"leader_cnpj8": "00416968", "why": "banco digital (Inter)"},
+  {"leader_cnpj8": "31872495", "why": "banco digital (C6)"},
+  {"leader_cnpj8": "10573521", "why": "instituição de pagamento (Mercado Pago)"},
+  {"leader_cnpj8": "22896431", "why": "instituição de pagamento (PicPay)"},
+  {"leader_cnpj8": "08561701", "why": "instituição de pagamento (PagBank/PagSeguro)"},
+  {"leader_cnpj8": "16501555", "why": "instituição de pagamento (Stone)"}
+ ],
+ "systems": [
+  {"id": "sicredi", "name": "Sistema Sicredi", "name_regex": "SICREDI", "bank_cnpj8": "01181521",
+   "note": "Banco Cooperativo Sicredi + centrais + cooperativas singulares cujo nome contém SICREDI. Soma bruta: ativo, captações e PL têm dupla contagem (depósitos das cooperativas no banco e nas centrais); as carteiras de crédito por cliente não."},
+  {"id": "sicoob", "name": "Sistema Sicoob", "name_regex": "SICOOB|BANCOOB", "bank_cnpj8": "02038232",
+   "note": "Banco Sicoob (ex-Bancoob) + centrais + cooperativas singulares cujo nome contém SICOOB. Mesma ressalva de dupla contagem."}
+ ],
+ "gleif_api": "https://api.gleif.org/api/v1/lei-records",
+ "cvm_cadastros": {
+  "cia_aberta": "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv",
+  "cia_estrangeira": "https://dados.cvm.gov.br/dados/CIA_ESTRANG/CAD/DADOS/cad_cia_estrang.csv"
+ },
+ "curation_source": "curadoria manual a partir de informação pública (B3, SEC, sites de RI); conferir antes de uso externo",
+ "curation": {
+  "C0080099": {"id": "itau", "name": "Itaú Unibanco", "tickers": ["ITUB3", "ITUB4", "ITUB (NYSE)"], "controller": "IUPAR – Itaú Unibanco Participações (Itaúsa e família Moreira Salles)"},
+  "C0080329": {"id": "bb", "name": "Banco do Brasil", "tickers": ["BBAS3"], "controller": "União Federal"},
+  "C0080738": {"id": "caixa", "name": "Caixa Econômica Federal", "tickers": [], "controller": "União Federal (empresa pública)"},
+  "C0080075": {"id": "bradesco", "name": "Bradesco", "tickers": ["BBDC3", "BBDC4", "BBD (NYSE)", "BBDO (NYSE)"], "controller": "Cidade de Deus Participações e Fundação Bradesco"},
+  "C0080185": {"id": "santander", "name": "Santander Brasil", "tickers": ["SANB3", "SANB4", "SANB11", "BSBR (NYSE)"], "controller": "Banco Santander, S.A. (Espanha)"},
+  "C0081847": {"id": "bndes", "name": "BNDES", "tickers": [], "controller": "União Federal (empresa pública)"},
+  "C0080336": {"id": "btg", "name": "BTG Pactual", "tickers": ["BPAC3", "BPAC5", "BPAC11"], "controller": "sócios (BTG Pactual Holding)"},
+  "C0084693": {"id": "nubank", "name": "Nubank", "tickers": ["NU (NYSE)", "ROXO34"], "controller": "Nu Holdings Ltd. (Ilhas Cayman)", "cvm_extra": ["80209"]},
+  "C0082475": {"id": "xp", "name": "XP", "tickers": ["XP (Nasdaq)"], "controller": "XP Inc. (Ilhas Cayman)"},
+  "C0080109": {"id": "safra", "name": "Safra", "tickers": [], "controller": "família Safra"},
+  "C0080154": {"id": "banrisul", "name": "Banrisul", "tickers": ["BRSR3", "BRSR5", "BRSR6"], "controller": "Estado do Rio Grande do Sul"},
+  "C0084844": {"id": "c6", "name": "C6 Bank", "tickers": [], "controller": "C6 Holding (JPMorgan Chase é acionista minoritário)"},
+  "C0080192": {"id": "citibank", "name": "Citibank", "tickers": [], "controller": "Citigroup Inc. (EUA)"},
+  "C0080484": {"id": "bv", "name": "Banco BV (Votorantim)", "tickers": [], "controller": "Votorantim S.A. e Banco do Brasil (controle compartilhado)"},
+  "C0084820": {"id": "mercado-pago", "name": "Mercado Pago", "tickers": ["MELI (Nasdaq)", "MELI34"], "controller": "MercadoLibre, Inc."},
+  "C0084710": {"id": "cielo", "name": "Cielo", "tickers": [], "controller": "Banco do Brasil e Bradesco (controle compartilhado)"},
+  "C0081744": {"id": "daycoval", "name": "Daycoval"},
+  "C0080116": {"id": "jpmorgan", "name": "J.P. Morgan", "tickers": [], "controller": "JPMorgan Chase & Co. (EUA)"},
+  "C0080996": {"id": "inter", "name": "Inter", "tickers": ["INTR (Nasdaq)", "INBR32"], "controller": "Inter&Co, Inc. (Ilhas Cayman)", "cvm_extra": ["80217"]},
+  "C0081593": {"id": "bnb", "name": "Banco do Nordeste", "tickers": ["BNBR3"], "controller": "União Federal"},
+  "C0084813": {"id": "pagbank", "name": "PagBank (PagSeguro)", "tickers": ["PAGS (NYSE)"], "controller": "PagSeguro Digital Ltd. (grupo UOL)"},
+  "C0080312": {"id": "abc-brasil", "name": "ABC Brasil", "tickers": ["ABCB4"], "controller": "Arab Banking Corporation (Bahrein)"},
+  "C0081249": {"id": "basa", "name": "Banco da Amazônia", "tickers": ["BAZA3"], "controller": "União Federal"},
+  "C0081555": {"id": "rabobank", "name": "Rabobank", "tickers": [], "controller": "Rabobank (Países Baixos)"},
+  "C0084686": {"id": "stone", "name": "Stone", "tickers": ["STNE (Nasdaq)"], "controller": "StoneCo Ltd. (Ilhas Cayman)"},
+  "C0088022": {"id": "picpay", "name": "PicPay", "tickers": [], "controller": "grupo J&F"},
+  "C0080673": {"id": "bnp-paribas", "name": "BNP Paribas", "tickers": [], "controller": "BNP Paribas (França)"},
+  "C0080178": {"id": "bmg", "name": "BMG", "tickers": ["BMGB4"]},
+  "C0080147": {"id": "banestes", "name": "Banestes", "tickers": ["BEES3", "BEES4"], "controller": "Estado do Espírito Santo"},
+  "C0080123": {"id": "mercantil", "name": "Mercantil do Brasil", "tickers": ["BMEB3", "BMEB4"]}
+ }
+}

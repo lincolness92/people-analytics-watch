@@ -86,6 +86,17 @@ Recomendação (no documento da visão): piloto vertical em crédito rural antes
 (cadastro mestre, modelo de afirmações em SQLite, ~3 dias); 1 piloto rural (~2 semanas); 2 lei ↔ norma (~1,5 semana);
 3 os 10 maiores bancos (~2 semanas); 4 mundo (~2–3 semanas). Decisões pendentes: Parquet/DuckDB, contato da SEC,
 licenças (ODbL, AGPL), confirmar o piloto.
+✅ **Fase 0 + dados para posição de mercado (28/11/2026):** `python -m pawatch ifs registry|collect|shares` (stdlib, SQLite
+local + CSV/JSON no git; dicionário em `docs/ifs-dados.md`). Cadastro mestre de 40 instituições (top 40 por ativo, com
+digitais e IPs; os bancos Sicredi e Sicoob viram os sistemas) com CNPJ, códigos IF.data, CVM, LEI e CNPJ do Pilar 3; IF.data 2016-03 a 2026-06
+(todas as entidades, 51 métricas); ESTBAN 2016-01 a 2026-08; KM1 de 25 instituições; CVM IPE (5.612 fatos relevantes e
+comunicados); participação nacional e regional com variação em 1/3/5 anos e flags de quebra (Cosif 2025, perímetro do
+crédito, linhas do ESTBAN com o total do banco embutido, meses incompletos).
+Próximos: rodar `ifs collect` e `ifs shares` no workflow diário (IF.data 09/2026 sai ~30/11; ESTBAN 09/2026 em 30/11);
+ponte Cosif antigo → 2025 conta a conta pelos balancetes (4060/4066); IHH e RC4 por produto e região; SCR.data como
+denominador regional do crédito com cooperativas; reconciliação com os releases (IPE → PDF → números com página);
+CVM FRE para a árvore societária e o controlador (hoje curadoria manual); outros sistemas cooperativos (Cresol,
+Unicred, Ailos); KM1 dos emissores com URL quebrada no catálogo (Sicredi, Sicoob, Daycoval, BNP, BNB…).
 
 ## Avaliação e laço de melhoria (25/11/2026)
 Atualização: juiz v2 calibrado (a nota honesta da v3 é 76); a v4, com normas no acervo e as correções da calibração, chega a 82.

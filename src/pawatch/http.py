@@ -13,7 +13,7 @@ OPENALEX_HOST = "api.openalex.org"
 _openalex_key_ok = True  # flips to False if the key is refused (e.g. not activated yet)
 
 
-def _request(url, data=None, headers=None, timeout=60, retries=3):
+def _request(url, data=None, headers=None, timeout=60, retries=3, raw=False):
     hdrs = {"User-Agent": USER_AGENT}
     hdrs.update(headers or {})
     body = None
@@ -26,7 +26,8 @@ def _request(url, data=None, headers=None, timeout=60, retries=3):
         req = urllib.request.Request(url, data=body, headers=hdrs)
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return resp.read().decode("utf-8", errors="replace")
+                body_bytes = resp.read()
+                return body_bytes if raw else body_bytes.decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
             last = e
             detail = e.read().decode("utf-8", errors="replace")[:500]
@@ -79,6 +80,12 @@ def get_text(url, params=None, **kw):
 
 def get_json(url, params=None, **kw):
     return json.loads(get_text(url, params, **kw))
+
+
+def get_bytes(url, params=None, **kw):
+    """Raw body (ZIPs, CSVs in latin-1): same retries as get_text, no decoding."""
+    full = f"{url}?{urllib.parse.urlencode(params)}" if params else url
+    return _request(full, raw=True, **kw)
 
 
 def post_json(url, payload, headers=None, **kw):

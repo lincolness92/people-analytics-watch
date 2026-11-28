@@ -43,6 +43,7 @@ O pipeline roda no GitHub Actions; o site e as APIs, no Cloudflare Pages (Functi
 | `server/` | núcleo do lado do servidor (agente, busca, LLM por preço, voz, traces, OAuth); `functions/` são só adaptadores HTTP |
 | `web/` | site estático (HTML/CSS/JS puro), lê `data.json` e `search.json` |
 | `data/<tema>/regulation.json` | normas do Bacen triadas e com ficha (o que exige, a quem, vigência, técnicas) |
+| `config/ifs/`, `src/pawatch/ifs/`, `data/ifs/` | camada de instituições financeiras: configuração, coletores (IF.data, ESTBAN, Pilar 3 KM1, CVM IPE), cadastro mestre e participação de mercado (dicionário em `docs/ifs-dados.md`) |
 | `data/papers/` | textos completos e catálogo de repositórios, compartilhados entre temas |
 | `data/traces/` | traces do pipeline (60 dias na árvore) |
 | `evals/` | perguntas de referência, rodadas, juiz calibrado, calibrações e avaliação do scorer |
@@ -72,6 +73,9 @@ python -m pawatch regulation [--topic X]       # normas do Bacen (triagem + fich
 python -m pawatch traces [--export]            # traces guardados do pipeline; --export manda ao Phoenix
 node evals/run.mjs --label X && node evals/judge.mjs evals/runs/<data>-X.json   # avaliar o agente
 PYTHONPATH=src python evals/scorer_eval.py --labels evals/scorer/2026-11-25-fable-labels.json  # avaliar o scorer
+python -m pawatch ifs collect [--source ifdata,estban,km1,ipe] [--since 2016-03]  # dados públicos de IFs
+python -m pawatch ifs registry                 # cadastro mestre de instituições (data/ifs/registry.json)
+python -m pawatch ifs shares                   # participação de mercado → data/ifs/shares/
 python -m unittest discover -s tests  # testes
 python3 -m http.server -d dist 8000   # ver o site local em http://localhost:8000
 ```
@@ -414,6 +418,39 @@ Limite: 3 pedidos por pessoa por dia.
   multilíngue e de baixa latência). O texto vai sem marcas de citação nem markdown; o limite é de 60 leituras por
   pessoa por dia.
 - O código fica em `server/voice.js`, `functions/api/stt.js` e `functions/api/tts.js`. No pacote offline, a voz não aparece.
+
+## Instituições financeiras: dados públicos e participação de mercado
+
+Camada genérica (qualquer instituição; outros países depois) para diagnóstico competitivo com evidência. O primeiro
+uso é um diagnóstico do Banco do Brasil, mas nada é específico de um banco: quem entra e como cada número é achado
+está em `config/ifs/*.json`. Código em `src/pawatch/ifs/`, só stdlib; nenhum comando chama LLM (por isso não abrem
+trace). Dicionário de dados completo, com unidades e ressalvas: **`docs/ifs-dados.md`**.
+
+```bash
+python -m pawatch ifs collect --source ifdata   # 1ª vez: IF.data desde 2016-03 (~40 min; depois só o que é novo)
+python -m pawatch ifs registry                  # cadastro mestre a partir do IF.data mais recente + CVM + GLEIF + DASFN
+python -m pawatch ifs collect                   # todas as fontes, incremental (ifdata, estban, km1, ipe)
+python -m pawatch ifs shares                    # participação de mercado e resumo
+python -m pawatch ifs collect --source ifdata,estban --reparse   # reextrai do cache local, sem rede
+```
+
+| Fonte | O que vem | Cobertura (28/11/2026) |
+|---|---|---|
+| IF.data (arquivos JSON do site; a API OData dá 500) | Resumo, ativo, passivo, DRE, crédito PF/PJ por modalidade, porte, região e clientes | 42 trimestres (2016-03 a 2026-06), todas as entidades dos níveis 1004/1005/1006/1009; 48 métricas + 3 derivadas |
+| ESTBAN por município | crédito (total, rural, imobiliário…) e depósitos por banco × município | 128 meses (2016-01 a 2026-08) |
+| Pilar 3 KM1 (catálogo DASFN) | capital, RWA, alavancagem, LCR, NSFR, com unidades normalizadas | 25 instituições, 2020-1 a 2026-3 |
+| CVM IPE | fatos relevantes e comunicados ao mercado (metadados + link do PDF) | 5.612 documentos de 20 instituições, 2016 a hoje |
+| Cadastro mestre | nome, CNPJ (8/14), códigos IF.data, CVM, LEI, segmento, tipo, controle, tickers e controlador (curadoria) | 40 instituições: as 40 maiores por ativo no prudencial (digitais e IPs entre elas), com os bancos Sicredi e Sicoob trocados pelos sistemas |
+
+Saídas versionadas em `data/ifs/` (~24 MB): `registry.json`; `ifdata/` (valores das instituições do cadastro, totais do
+sistema, proveniência por arquivo); `shares/` (participação nacional e regional, variação em 1, 3 e 5 anos,
+ganhadores e perdedores, `summary.json`); `pillar3/km1.csv`; `ipe/ipe.csv`; `estban/` (proveniência e correções). Os
+brutos (`data/ifs/raw/`, ~280 MB) e a base completa `data/ifs/ifs.sqlite` (~130 MB) ficam fora do git.
+
+O que mais importa ao ler os números: a **quebra do Cosif 2025** (03/2025) vai como flag, não é emendada; o crédito
+por modalidade muda do conglomerado **financeiro para o prudencial** em 2025-03 (`perimeter_change`); o ESTBAN de
+2025–2026 traz o **total nacional do banco embutido** numa linha (detectado e corrigido, com o bruto guardado) e meses
+em que um banco grande some (substituídos pelo mês completo anterior); Sicredi e Sicoob são somas brutas.
 
 ## Ajustes comuns
 

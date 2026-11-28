@@ -1,4 +1,4 @@
-"""CLI: python -m pawatch {run,render,bundle,notify,new-topic}. Without --topic, run every topic."""
+"""CLI: python -m pawatch {run,render,bundle,notify,new-topic,ifs,...}. Without --topic, run every topic."""
 
 import argparse
 import json
@@ -353,6 +353,8 @@ def main():
     tk = sub.add_parser("api-token", help="gera o token de API de um cliente (REST v1, MCP, A2A)")
     tk.add_argument("name", help="nome do cliente, ex.: claude-desktop")
     tk.set_defaults(fn=cmd_api_token)
+    from .ifs.cli import add_parser as add_ifs
+    add_ifs(sub)
     t = sub.add_parser("new-topic", help="monta o rascunho de um tema novo em topics/<slug>/")
     t.add_argument("name", help='nome do tema, ex.: "fraude bancária"')
     t.add_argument("--slug", help="pasta em topics/ (padrão: derivado do nome)")

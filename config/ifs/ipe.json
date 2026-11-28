@@ -1,0 +1,6 @@
+{
+ "_doc": "CVM IPE (informações periódicas e eventuais): índice anual de documentos com categoria, tipo, espécie, assunto, datas e o link do PDF no RAD. Só metadados; o PDF não é baixado. O ano corrente é baixado de novo a cada coleta (o arquivo é regravado quase todo dia); os anteriores, só se faltarem.",
+ "url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{year}.zip",
+ "since_year": 2016,
+ "categories": ["Fato Relevante", "Comunicado ao Mercado"]
+}
