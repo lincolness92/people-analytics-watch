@@ -1,0 +1,124 @@
+{
+  "_doc": "Fontes web do Credit Risk AI Watch, curadas e testadas em 26/11/2026 (rascunho de new-topic + reaproveitamento das fontes já testadas nos outros temas). kind: rss (itens com data na janela; pattern filtra pelo título), page (links novos numa listagem; pattern na URL) ou sitemap. Sem fonte viável hoje: CFPB e FinRegLab (bloqueiam robôs, 403), Serasa Experian e FICO (sem feed achado), Credit Scoring and Credit Control Conference (bienal; acompanhada pela página de notícias do CRC). Pendente: working papers do CRC (https://crc.business-school.ed.ac.uk/research/working-papers, página sem padrão de URL estável) e Febraban Tech pelo canal do YouTube.",
+  "sources": [
+    {
+      "name": "Credit Research Centre (Edimburgo) — notícias",
+      "watch": "Credit Research Centre (University of Edinburgh)",
+      "kind": "page",
+      "url": "https://crc.business-school.ed.ac.uk/news",
+      "pattern": "/news/[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS — Comitê de Basileia (BCBS)",
+      "watch": "Basel Committee on Banking Supervision (BCBS)",
+      "kind": "page",
+      "url": "https://www.bis.org/committees/bcbs/overview",
+      "pattern": "/publications/(?!research$|authors$|aer$|qr$|bulletin$|bis-paper$|working-paper$|central-bank$)[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS — Financial Stability Institute",
+      "watch": "Financial Stability Institute (FSI/BIS)",
+      "kind": "page",
+      "url": "https://www.bis.org/about/fsi/publications",
+      "pattern": "/publications/(?!research$|authors$|aer$|qr$|bulletin$|bis-paper$|working-paper$|central-bank$)[a-z0-9-]+$"
+    },
+    {
+      "name": "BIS Working Papers",
+      "watch": "Bank for International Settlements (BIS)",
+      "kind": "rss",
+      "url": "https://www.bis.org/doclist/wppubls.rss",
+      "pattern": "(?i)credit|loan|lending|default|borrow|debt|mortgage|consumer|household|delinquen|scor|machine learning|artificial intelligence|\\bAI\\b|model risk|expected loss|IFRS 9|provision|capital|Basel|IRB"
+    },
+    {
+      "name": "BIS Bulletins",
+      "watch": "Bank for International Settlements (BIS)",
+      "kind": "rss",
+      "url": "https://www.bis.org/doclist/bisbulletins.rss",
+      "pattern": "(?i)credit|loan|lending|default|borrow|debt|mortgage|consumer|household|delinquen|scor|machine learning|artificial intelligence|\\bAI\\b|model risk|expected loss|IFRS 9|provision|capital|Basel|IRB"
+    },
+    {
+      "name": "Banco Central do Brasil — notícias",
+      "watch": "Banco Central do Brasil",
+      "kind": "rss",
+      "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/noticias",
+      "pattern": "(?i)crédito|credito|inadimpl|endivid|cobran|renegoci|juros|cartão|cadastro positivo|consignado|desenrola|perda esperada|4\\.966|provis|resolu|norma|regra|\\bIA\\b|inteligência artificial|Open Finance|estabilidade financeira|economia bancária"
+    },
+    {
+      "name": "Banco Central do Brasil — notas",
+      "watch": "Banco Central do Brasil",
+      "kind": "rss",
+      "url": "https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/notasImprensa",
+      "pattern": "(?i)crédito|credito|inadimpl|endivid|cobran|renegoci|juros|cartão|cadastro positivo|consignado|desenrola|perda esperada|4\\.966|provis|resolu|norma|regra|\\bIA\\b|inteligência artificial|Open Finance|estabilidade financeira|economia bancária"
+    },
+    {
+      "name": "Febraban — notícias",
+      "watch": "Federação Brasileira de Bancos (Febraban)",
+      "kind": "page",
+      "url": "https://portal.febraban.org.br/",
+      "pattern": "/noticia/\\d+/pt-br/?$"
+    },
+    {
+      "name": "EBA",
+      "watch": "European Banking Authority (EBA)",
+      "kind": "rss",
+      "url": "https://www.eba.europa.eu/rss.xml",
+      "pattern": "(?i)credit|loan|IRB|internal model|default|LGD|\\bPD\\b|machine learning|artificial intelligence|\\bAI\\b|model|provision|IFRS|NPL|non-performing|forbearance|consumer"
+    },
+    {
+      "name": "Bank of England — PRA (publicações)",
+      "watch": "Prudential Regulation Authority (Bank of England)",
+      "kind": "rss",
+      "url": "https://www.bankofengland.co.uk/rss/prudential-regulation-publications",
+      "pattern": "(?i)credit|model|IRB|internal rating|default|loss|IFRS|\\bAI\\b|artificial intelligence|machine learning|Basel|mortgage|consumer"
+    },
+    {
+      "name": "Federal Reserve — FEDS papers",
+      "watch": "Federal Reserve Board",
+      "kind": "rss",
+      "url": "https://www.federalreserve.gov/feeds/feds.xml",
+      "pattern": "(?i)credit|loan|lending|default|borrow|debt|mortgage|consumer|household|delinquen|scor|machine learning|artificial intelligence|\\bAI\\b|model risk|expected loss|IFRS 9|provision|capital|Basel|IRB"
+    },
+    {
+      "name": "Federal Reserve — press",
+      "watch": "Federal Reserve Board",
+      "kind": "rss",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "pattern": "(?i)credit|model risk|lending|loan|consumer|\\bAI\\b|artificial intelligence|machine learning|capital|Basel|stress test"
+    },
+    {
+      "name": "Philadelphia Fed — Consumer Finance Institute (crédito ao consumidor)",
+      "watch": "Federal Reserve Bank of Philadelphia — Consumer Finance Institute",
+      "kind": "page",
+      "url": "https://www.philadelphiafed.org/consumer-finance/consumer-credit",
+      "pattern": "/consumer-finance/consumer-credit/[a-z0-9-]+$"
+    },
+    {
+      "name": "Financial Stability Board",
+      "watch": "Financial Stability Board (FSB)",
+      "kind": "rss",
+      "url": "https://www.fsb.org/feed/",
+      "pattern": "(?i)credit|lending|\\bAI\\b|artificial intelligence|machine learning|model|private credit|household"
+    },
+    {
+      "name": "Nubank Engineering",
+      "watch": "Nubank Engineering",
+      "kind": "rss",
+      "url": "https://building.nu.com/feed/",
+      "pattern": "(?i)credit|crédito|risco|foundation model|transformer|transaction|transaç|collection|cobran|underwriting|limit|default|inadimpl|fraud"
+    },
+    {
+      "name": "NY Fed — Liberty Street Economics",
+      "kind": "rss",
+      "url": "https://libertystreeteconomics.newyorkfed.org/feed/",
+      "pattern": "(?i)credit|debt|delinquen|loan|borrow|mortgage|card|household",
+      "watch": "Federal Reserve Bank of New York — Liberty Street Economics"
+    },
+    {
+      "name": "NBER — novos working papers",
+      "kind": "rss",
+      "url": "https://www.nber.org/rss/new.xml",
+      "pattern": "(?i)credit|loan|lending|default|borrow|debt|mortgage|delinquen|fintech",
+      "watch": "National Bureau of Economic Research (NBER)"
+    }
+  ]
+}

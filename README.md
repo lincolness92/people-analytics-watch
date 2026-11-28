@@ -5,7 +5,8 @@ o que funciona e com qual evidência, quem faz, o que mudou, para onde vai e o q
 agentes consultam essa memória pelo site, pela caixinha Pergunte (com voz), por REST, MCP e A2A.
 
 Cada tema é um pacote de configuração em `topics/<slug>/`. Os temas atuais são casos de teste da plataforma:
-**People Analytics Watch**, **Bank Fraud Watch** e **Bank Tech & AI Watch**. A visão e as fases estão em
+**People Analytics Watch**, **Bank Fraud Watch**, **Bank Tech & AI Watch** e **Credit Risk AI Watch** (este, o primeiro
+pedido pelo "Peça o seu Watch", em revisão). A visão e as fases estão em
 `VISION.md`; o que vem a seguir, em `ROADMAP.md`.
 
 O pipeline roda no GitHub Actions; o site e as APIs, no Cloudflare Pages (Functions). Não há servidor próprio.

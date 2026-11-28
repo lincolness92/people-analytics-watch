@@ -1,0 +1,44 @@
+{
+  "name": "Credit Risk AI Watch",
+  "brand": {
+    "text": "Credit Risk AI",
+    "em": "Watch",
+    "mark": "📉"
+  },
+  "description": "Digest de pesquisa e regulação state-of-the-art em risco de crédito de varejo e cobrança com machine learning e IA em bancos.",
+  "audience": "Você é o curador do CREDIT-RISK-AI-WATCH, um digest diário em PT-BR para as equipes de modelagem de risco de crédito e cobrança de um grande banco brasileiro. Elas querem só o que é state-of-the-art e acionável em: modelos de probabilidade de default (PD) e concessão de crédito de varejo (pessoa física e pequenas empresas só quando tratadas como varejo, em carteira massificada), definição e gestão de limites, behavior score e gestão da carteira, cobrança, recuperação e renegociação (incluindo IA generativa em cobrança), modelos fundacionais e de sequência treinados em dados transacionais, LGD/EAD e perda esperada (IFRS 9, Resolução CMN 4.966), explicabilidade e equidade, validação e gestão de risco de modelos, e regulação (Bacen/CMN, Basileia, LGPD, AI Act). O contexto brasileiro (Pix, Open Finance, Cadastro Positivo, superendividamento, as regras de endividamento ETI/CFI e de limites do rotativo de 25/11/2026, Febraban) vale atenção extra.",
+  "rubric_focus": "a modelagem de risco de crédito de varejo e a cobrança em bancos",
+  "rubric_strong": "dados reais de carteiras de crédito de varejo de bancos, fintechs ou bureaus, validação out-of-time e out-of-sample, comparação contra baseline forte (regressão logística/scorecard e gradient boosting) com métricas de discriminação e calibração (AUC/Gini, KS, Brier) e impacto em lucro ou perda, experimento ou A/B em produção (concessão, limites, cobrança), ou norma/relatório de regulador com exigências ou dados novos",
+  "off_topic": "crédito corporativo, project finance e rating de grandes empresas, mercado de capitais (CDS, títulos, spreads, rating soberano), risco sistêmico e macroprudencial sem modelo de crédito de varejo, fraude e PLD (há tema próprio), microfinanças sem modelo de risco, previsão de falência de empresas, P2P lending com dados públicos repetidos (Lending Club) sem contribuição de método, surveys genéricos de 'IA em finanças' sem dados novos, reestruturação de dívida soberana, determinantes de rentabilidade ou de NPL no nível do banco sem modelo de cliente, pesquisas de percepção ou aceitação de score por usuários, ensaios jurídicos de defesa do consumidor sem dados, empréstimos em cripto/DeFi, fraude em cartão",
+  "summary_lesson": "a lição prática para quem modela risco de crédito ou cobrança num banco",
+  "headline_example": "semana forte em modelos de sequência transacional para PD",
+  "trend_focus": "o que está mudando na modelagem de risco de crédito de varejo e na cobrança em bancos",
+  "source_kinds": "reguladores e organismos de padrão (Bacen/CMN, BIS/Basileia, EBA, PRA, Fed, CFPB), centros de pesquisa em credit scoring, associações e bureaus de crédito, e praticantes",
+  "themes": {
+    "pd_origination": "🎯 PD, concessão e scores de aplicação",
+    "behavior_limits": "📈 Behavior score, limites e gestão da carteira",
+    "collections": "📞 Cobrança, recuperação e renegociação",
+    "transactional_fm": "🧠 Modelos fundacionais e dados transacionais",
+    "explainability_fairness": "🔍 Explicabilidade e equidade",
+    "model_risk": "🧪 Validação e risco de modelo",
+    "expected_loss": "🏦 LGD, EAD, perda esperada e capital",
+    "regulation": "⚖️ Regulação: Bacen/CMN, Basileia e LGPD"
+  },
+  "order": 4,
+  "prefilter_keywords": "credit scor|credit risk|scorecard|probability of default|default prediction|default risk|loan default|credit default|consumer credit|retail credit|household credit|credit card|mortgage|lending|lender|borrower|underwriting|creditworth|credit limit|credit line|behaviou?ral scor|behaviou?r scor|delinquen|arrears|past[- ]due|debt collection|loan recovery|debt recovery|renegotiat|loan modification|forbearance|over-?indebted|loss given default|exposure at default|expected credit loss|\\bifrs ?9\\b|\\bcecl\\b|\\blgd\\b|\\bead\\b|\\birb\\b|internal ratings|basel|model risk|model validation|reject inference|credit bureau|alternative data|open banking|open finance|transaction data|transaction sequence|event sequence|foundation model|\\bloans?\\b|repayment|fintech|crédito|inadimpl|cobrança|renegocia|superendivid|dívida",
+  "watchlist_labels": {
+    "researchers": "Pesquisadores",
+    "journals": "Journals & conferências",
+    "centers": "Reguladores, padrões & centros",
+    "practitioners": "Praticantes & fontes",
+    "historical": "Referências históricas"
+  },
+  "rubric_anchors": [
+    "Personal Communication in an Automated World: Evidence from Loan Repayments (Journal of Finance): r 9, q 7 → 8. Atribuição aleatória de atendentes a clientes em atraso num banco; efeito na cura e na reincidência, mas sem números no resumo.",
+    "How Much Do Foundation Models Add to Gradient Boosting on Financial Event Sequences? (arXiv): r 8, q 7 → 7. 27 métodos, 5 sementes e intervalos por bootstrap contra LightGBM; dados sintéticos, públicos e dois proprietários de crédito comercial e churn, não de PD de varejo.",
+    "Debt Collection Negotiations with Large Language Models (Findings of ACL): r 8, q 5 → 6. LLM negocia dívidas em simulação com 13 métricas; sem evidência de produção nem resultado de recuperação.",
+    "Resolução CMN 5.349/2026 (Bacen/CMN): r 9, q 8 → 8. Exigência nova e direta para concessão e limites: indicadores ETI e CFI, patamares de comprometimento de renda e limites de exposição.",
+    "XGBoost com SHAP no German Credit ou Taiwan Default (UCI), sem baseline forte nem validação fora do tempo (periódico de acesso aberto): r 5, q 2 → 3. Dados públicos repetidos e nenhuma contribuição de método.",
+    "Previsão de default de empresas listadas ou rating de títulos corporativos com ML: r 2, q 5 → 3. Fora do escopo (crédito corporativo e mercado de capitais)."
+  ]
+}
